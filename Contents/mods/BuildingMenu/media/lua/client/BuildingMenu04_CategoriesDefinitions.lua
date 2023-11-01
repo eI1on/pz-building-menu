@@ -26564,6 +26564,84 @@ BuildingMenu.Categories = {
                 }
             },
             {
+                subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Garage"),
+                subCategoryIcon = "location_business_machinery_01_0",
+                objects = {
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Car_Lift_Pillar",
+                        "Tooltip_Garage_Deco_Generic",
+                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.MetalCounterSmallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge"
+                        },
+                        {
+                            sprite = "location_business_machinery_01_11",
+                            northSprite = "location_business_machinery_01_2",
+                            eastSprite = "location_business_machinery_01_13",
+                            southSprite = "location_business_machinery_01_0"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Car_Lift_Upper",
+                        "Tooltip_Garage_Deco_Generic",
+                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.MetalCounterSmallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge"
+                        },
+                        {
+                            sprite = "location_business_machinery_01_1",
+                            northSprite = "location_business_machinery_01_12",
+                            eastSprite = "location_business_machinery_01_1",
+                            southSprite = "location_business_machinery_01_12"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Car_Lift_Lower",
+                        "Tooltip_Garage_Deco_Generic",
+                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.MetalCounterSmallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge"
+                        },
+                        {
+                            sprite = "location_business_machinery_01_8",
+                            northSprite = "location_business_machinery_01_5",
+                            eastSprite = "location_business_machinery_01_10",
+                            southSprite = "location_business_machinery_01_3"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Car_Lift_Middle",
+                        "Tooltip_Garage_Deco_Generic",
+                        BuildingMenu.onBuildSimpleFurniture,
+                        BuildingMenu.MetalCounterSmallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge"
+                        },
+                        {
+                            sprite = "location_business_machinery_01_9",
+                            northSprite = "location_business_machinery_01_4",
+                            eastSprite = "location_business_machinery_01_9",
+                            southSprite = "location_business_machinery_01_4"
+                        }
+                    ),
+                }
+            },
+            {
                 subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Graves"),
                 subCategoryIcon = "location_community_cemetary_01_1",
                 objects = {
