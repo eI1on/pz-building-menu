@@ -14642,12 +14642,12 @@ BuildingMenu.Categories = {
                 }
             },
             {
-                subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Pannels"),
+                subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels"),
                 subCategoryIcon = "walls_detailing_01_16",
                 objects = {
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Wainscoting",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14665,7 +14665,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Wainscoting_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14683,7 +14683,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Wood_Panneling_Upper",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14701,7 +14701,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Wood_Panneling_Pillar_Upper",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14719,7 +14719,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Wood_Panneling",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14737,7 +14737,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Wood_Panneling_Corner",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14755,7 +14755,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Wood_Panneling_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14773,7 +14773,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Stained_Wood_Wainscoting",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14791,7 +14791,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Stained_Wood_Wainscoting_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14809,7 +14809,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14827,7 +14827,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14845,7 +14845,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Wall_Panneling",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14863,7 +14863,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14881,7 +14881,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14899,7 +14899,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14917,7 +14917,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14935,7 +14935,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14953,7 +14953,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Dark_Red_Brick_Wall_Panneling",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14971,7 +14971,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Dark_Red_Brick_Wall_Panneling_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -14989,7 +14989,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Dark_Red_Brick_Wall_Panneling_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15007,7 +15007,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Vibrant_Red_Brick_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15025,7 +15025,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Vibrant_Red_Brick_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15043,7 +15043,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Vibrant_Green_Brick_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15061,7 +15061,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Vibrant_Green_Brick_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15079,7 +15079,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15097,7 +15097,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15115,7 +15115,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15136,7 +15136,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Tan_Brick_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15154,7 +15154,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Tan_Brick_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15172,7 +15172,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Painted_White_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15190,7 +15190,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Painted_White_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15208,7 +15208,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Painted_White_Lower_Third_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15226,7 +15226,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Painted_Tan_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15244,7 +15244,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Painted_Tan_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15262,7 +15262,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Painted_Tan_Lower_Third_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15280,7 +15280,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Clapboard_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15298,7 +15298,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Clapboard_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15316,7 +15316,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Green_Cinderblock_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15334,7 +15334,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Green_Cinderblock_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15352,7 +15352,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15370,7 +15370,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15388,7 +15388,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15406,7 +15406,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Tan_Cinderblock_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15424,7 +15424,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Tan_Cinderblock_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15442,7 +15442,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15460,7 +15460,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15478,7 +15478,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15499,7 +15499,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15520,7 +15520,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Lower_Third_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15541,7 +15541,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Cinderblock_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15559,7 +15559,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Cinderblock_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15577,7 +15577,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grey_Stone_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15598,7 +15598,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grey_Stone_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15619,7 +15619,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Grey_Stone_Lower_Third_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15640,7 +15640,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15661,7 +15661,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,
@@ -15682,7 +15682,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway",
-                        "Tooltip_Wall_Pannels",
+                        "Tooltip_Wall_Panels",
                         BuildingMenu.onBuildSimpleFurniture,
                         BuildingMenu.WallDecorationRecipe,
                         true,

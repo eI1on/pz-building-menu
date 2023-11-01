@@ -1206,8 +1206,6 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Grey_Vinyl_Trim = "Grey Vinyl Trim",
   Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar = "Grey Vinyl Trim Pillar",
 
-  Tooltip_Wall_Panels = "A set of durable wall panels, perfect for fortifying your safe space or shelter."
-
   Tooltip_BuildingMenuObj_White_Wainscoting = "White Wainscoting",
   Tooltip_BuildingMenuObj_White_Wainscoting_Pillar = "White Wainscoting Pillar",
   Tooltip_BuildingMenuObj_White_Wood_Panneling_Upper = "White Wood Panneling Upper",
