@@ -1542,6 +1542,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Fireplace = "Fireplace",
   Tooltip_BuildingMenuObj_Fireplace_2Tiles_1 = "Fireplace Double 1",
   Tooltip_BuildingMenuObj_Fireplace_2Tiles_2 = "Fireplace Double 2",
+  Tooltip_BuildingMenuObj_Fireplace_Wooden_Shelf = "Fireplace Wooden Shelf",
   Tooltip_BuildingMenuObj_Red_Brick_FireplaceJamb_Sides_North = "Red Brick Jamb Sides North + Mirrored",
   Tooltip_BuildingMenuObj_Red_Brick_FireplaceJamb_Sides_West = "Red Brick Jamb Sides West + Mirrored",
   Tooltip_BuildingMenuObj_Red_Brick_FireplaceJamb_Middle = "Red Brick Jamb Middle",
@@ -1580,11 +1581,17 @@ Tooltip_EN = {
 
   Tooltip_BuildingMenuObj_Graffiti = "Graffiti",
 
+  Tooltip_BuildingMenuObj_Car_Lift_Pillar = "Car Lift Pillar",
+  Tooltip_BuildingMenuObj_Car_Lift_Upper = "Car Lift Upper Middle Part",
+  Tooltip_BuildingMenuObj_Car_Lift_Lower = "Car Lift Lower Part",
+  Tooltip_BuildingMenuObj_Car_Lift_Middle = "Car Lift Lower Middle Part",
+
   Tooltip_Posters_Generic = "Decorative poster that can add some character to your safehouse. Personalize your space with your favorite images and artwork.",
   Tooltip_Signs_Generic = "Generic sign, useful for conveying messages or marking key locations",
   Tooltip_Rug_Generic = "A cozy and versatile rug, adding warmth and style to your post-apocalyptic hideout.",
   Tooltip_Grave_Generic = "A somber resting place, a reminder of lives lost in the apocalypse.",
   Tooltip_Roadway_Generic = "Various decorative items to enhance the aesthetics of your roadway.",
+  Tooltip_Garage_Deco_Generic = "Various decorative items to personalize your garage space.",
   Tooltip_Flower_Beds_Generic = "A flower bed, offering a touch of natural beauty to your surroundings. <LINE> Comes in two variations: <RGB:1,0.8,0> <SPACE> slightly wilted <RGB:1,1,1><SPACE> or in   <RGB:1,0.8,0> <SPACE> full bloom <RGB:1,1,1> .",
   Tooltip_Hedges_Generic = "Hedge suitable for creating natural cover or a decorative touch to your surroundings.",
   Tooltip_Plants_Indoor_Generic = "Indoor plant that add a touch of nature to your indoor spaces, improving the ambiance.",
