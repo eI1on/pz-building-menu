@@ -1,0 +1,46 @@
+Recipe_EN = {
+    /* Make Glass Recipes */
+    Recipe_IGPrepareGlassShards = "Prepare glass for smelting",
+    Recipe_IGUnprepareGlassShards = "Remove glass from pan",
+    Recipe_IGRemoveGlassPane = "Extract glass pane",
+
+    /* Smash Glass Recipes */
+    Recipe_IGSmashGlassJar = "Smash into broken glass",
+    Recipe_IGSmashGlassPane = "Smash into broken glass",
+    Recipe_IGSmashWindshield = "Smash into broken glass",
+    Recipe_IGSmashWindows = "Smash into broken glass",
+
+    /* Window Recipes */
+    Recipe_IGMakeWindow01 = "Make Wooden Window",
+    Recipe_IGMakeWindow02 = "Make White Tiled Window",
+    Recipe_IGMakeWindow03 = "Make Tiled Window",
+    Recipe_IGMakeWindow04 = "Make White Window",
+    Recipe_IGMakeWindow05 = "Make Chrome Window",
+    Recipe_IGMakeWindow06 = "Make Slider Window",
+
+    /* Window Disassembly Recipes */
+    Recipe_IGDisassembleWindow01 = "Disassemble Wooden Window",
+    Recipe_IGDisassembleWindow02 = "Disassemble White Tiled Window",
+    Recipe_IGDisassembleWindow03 = "Disassemble Tiled Window",
+    Recipe_IGDisassembleWindow04 = "Disassemble White Window",
+    Recipe_IGDisassembleWindow05 = "Disassemble Chrome Window",
+    Recipe_IGDisassembleWindow06 = "Disassemble Slider Window",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_IGWindshield1 = "Make Standard Windshield",
+    Recipe_IGRearWindshield1 = "Make Standard Rear Windshield",
+    Recipe_IGFrontWindow1 = "Make Standard Front Window",
+    Recipe_IGRearWindow1 = "Make Standard Rear Window",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_IGWindshield2 = "Make Heavy-Duty Windshield",
+    Recipe_IGRearWindshield2 = "Make Heavy-Duty Rear Windshield",
+    Recipe_IGFrontWindow2 = "Make Heavy-Duty Front Window",
+    Recipe_IGRearWindow2 = "Make Heavy-Duty Rear Window",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_IGWindshield3 = "Make Sport Windshield",
+    Recipe_IGRearWindshield3 = "Make Sport Rear Windshield",
+    Recipe_IGFrontWindow3 = "Make Sport Front Window",
+    Recipe_IGRearWindow3 = "Make Sport Rear Window",
+}

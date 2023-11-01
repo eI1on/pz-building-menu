@@ -1,0 +1,52 @@
+module Base {
+
+    model BMBagOfAsphaltMixture
+	{
+		mesh = WorldItems/BMBagOfAsphaltMixture,
+		texture = WorldItems/BMBagOfAsphalt,
+		scale = 0.006,
+	}
+
+    model RoastingPanWithGlassShards {
+        mesh = WorldItems/IGRoastingPan,
+        texture = WorldItems/IGPanWithGlassShards,
+        scale = 0.3,
+    }
+
+    model RoastingPanWithGlassPane {
+        mesh = WorldItems/IGRoastingPan,
+        texture = WorldItems/IGPanWithGlassPane,
+        scale = 0.3,
+    }
+
+    model GlassPane {
+        mesh = WorldItems/IGGlassPane,
+        texture = WorldItems/IGGlassPane,
+        scale = 0.6,
+    }
+
+    model MagazineGlass {
+        mesh = WorldItems/IGMagazine,
+        texture = WorldItems/IGMagazineGlass,
+        scale = 0.4,
+
+        attachment world
+		{
+			offset = 0.0000 0.0000 -0.6050,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+
+    model MagazineCar {
+        mesh = WorldItems/IGMagazine,
+        texture = WorldItems/IGMagazineCar,
+        scale = 0.4,
+        
+        attachment world
+		{
+			offset = 0.0000 0.0000 -0.6050,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+
+}

@@ -1,0 +1,10 @@
+Items_EN = {
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "Pan with Glass Shards",
+    DisplayName_PanWithGlassPane = "Pan with Glass Pane",
+    DisplayName_GlassPane = "Glass Pane",
+
+    /* Magazines */
+    DisplayName_IGMagazineGlass = "Handyman Corner's Kitchen Kilns",
+    DisplayName_IGMagazineCars = "Precision Vehicle Windows and Crafting",
+}

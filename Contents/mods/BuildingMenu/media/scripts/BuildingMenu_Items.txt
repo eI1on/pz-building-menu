@@ -1,0 +1,93 @@
+module Base
+{
+    /* Asphalt Recipes */
+    item AsphaltMixturePowder
+	{
+	    DisplayCategory = Material,
+		Weight	=	5,
+		Type	=	Normal,
+		DisplayName	=	Bag of Asphalt Mixture Powder,
+		Icon	= AsphaltMixture,
+		Tooltip = Tooltip_AsphaltMixturePowder,
+		SurvivalGear = TRUE,
+		WorldStaticModel = BMBagOfAsphaltMixture,
+	}
+
+
+    item BucketAsphaltMixtureFull
+    {
+        DisplayCategory      =  Material,
+        Weight	             =	10,
+        Type	             =	Drainable,
+        UseWhileEquipped     =	FALSE,
+        UseDelta	         =	0.0625,
+        DisplayName	         =	Bucket of Asphalt Mixture,
+        ReplaceOnDeplete     =	BucketEmpty,
+        ReplaceOnUseOn	     =	WaterSource-BucketWaterFull,
+        Icon	             =	MetalBucket_Concrete,
+        StaticModel          =  Bucket,
+        EatType              =  Bucket,
+		WorldStaticModel = BucketFullConcrete_Ground,
+    }
+
+    /* Making Glass Items */
+    item PanWithGlassShards {
+        weight = 1.5,
+        Type = Food,
+        DisplayName = PanWithGlassShards,
+        DisplayCategory = Material,
+        Icon = PanWithGlassShards,
+        WorldStaticModel = RoastingPanWithGlassShards,
+        IsCookable = true,
+        MinutesToCook = 90,
+        MinutesToBurn = 900,
+        ReplaceOnCooked = PanWithGlassPane,
+    }
+
+
+    item PanWithGlassPane {
+        weight = 1.5,
+        Type = Normal,
+        DisplayName = PanWithGlassPane,
+        Icon = PanWithGlassPane,
+        DisplayCategory = Material,
+        WorldStaticModel = RoastingPanWithGlassPane,
+    }
+
+
+    item GlassPane {
+        weight = 1.0,
+        Type = Normal,
+        DisplayName = GlassPane,
+        Icon = GlassPane,
+        DisplayCategory = Material,
+        WorldStaticModel = GlassPane,
+    }
+
+    /* Glass Recipes */
+    item IGMagazineGlass {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = IGMagazineGlass,
+        Icon = IGMagazineGlass,
+        TeachedRecipes = IGPrepareGlassShards;IGUnprepareGlassShards;IGRemoveGlassPane,
+        ReplaceOnUse = IGMagazineGlass,
+        DisplayCategory = SkillBook,
+        StaticModel = IGMagazine,
+        WorldStaticModel = MagazineGlass,
+        Tooltip = Tooltip_IGMagazineGlass,
+    }
+
+    /* Car Recipes */
+    item IGMagazineCars {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = IGMagazineCars,
+        Icon = IGMagazineCar,
+        TeachedRecipes = IGWindshield1;IGWindshield2;IGWindshield3;IGRearWindshield1;IGRearWindshield2;IGRearWindshield3;IGFrontWindow1;IGFrontWindow2;IGFrontWindow3;IGRearWindow1;IGRearWindow2;IGRearWindow3,
+        ReplaceOnUse = IGMagazineCars,
+        DisplayCategory = SkillBook,
+        StaticModel = IGMagazine,
+        WorldStaticModel = MagazineCar,
+    }
+}

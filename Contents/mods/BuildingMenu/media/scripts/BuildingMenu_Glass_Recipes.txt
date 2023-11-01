@@ -1,0 +1,82 @@
+module Base
+{
+
+	recipe IGPrepareGlassShards {
+        RoastingPan,
+        Moveables.brokenglass_1_0/Moveables.brokenglass_1_1/Moveables.brokenglass_1_2/Moveables.brokenglass_1_3,
+        Result: PanWithGlassShards,
+        Time: 50.0,
+        NeedToBeLearn: True,
+        Category: Windows,
+    }
+
+
+    recipe IGUnprepareGlassShards {
+        PanWithGlassShards,
+        Time: 50.0,
+        Result: Moveables.brokenglass_1_0,
+        OnCreate: ImprovisedGlass_GiveBackRoastingPan,
+        NeedToBeLearn: True,
+        Category: Windows,
+    }
+
+
+    recipe IGRemoveGlassPane {
+        PanWithGlassPane,
+        Time: 30.0,
+        Result: GlassPane,
+        OnCreate: ImprovisedGlass_GiveBackRoastingPan,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedGlass_XPMakeGlass,
+        Sound:EmptyPan,
+        NeedToBeLearn: True,
+        Category: Windows,
+    }
+
+
+	recipe IGSmashGlassJar {
+        keep [Recipe.GetItemTypes.Hammer],
+        BeerEmpty/WineEmpty2/WhiskeyEmpty/WineEmpty/RemouladeEmpty/EmptyJar=2,
+        Result: Moveables.brokenglass_1_0,
+        Time: 15.0,
+        AnimMode: BuildLow,
+        Prop1: Hammer,
+        Sound: RemoveBrokenGlass,
+        Category: Windows,
+    }
+
+
+    recipe IGSmashGlassPane {
+        keep [Recipe.GetItemTypes.Hammer],
+        GlassPane,
+        Result: Moveables.brokenglass_1_0,
+        Time: 34.0,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: RemoveBrokenGlass,
+        Category: Windows,
+    }
+
+
+    recipe IGSmashWindshield {
+        keep [Recipe.GetItemTypes.Hammer],
+        Windshield1/Windshield2/Windshield3/RearWindshield1/RearWindshield2/RearWindshield3,
+        Result: Moveables.brokenglass_1_0,
+        Time: 120.0,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: RemoveBrokenGlass,
+        Category: Windows,
+    }
+
+
+    recipe IGSmashWindows {
+        keep [Recipe.GetItemTypes.Hammer],
+        FrontWindow1/FrontWindow2/FrontWindow3/RearWindow1/RearWindow2/RearWindow3,
+        Result: Moveables.brokenglass_1_0,
+        Time: 100.0,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: RemoveBrokenGlass,
+        Category: Windows,
+    }
+}

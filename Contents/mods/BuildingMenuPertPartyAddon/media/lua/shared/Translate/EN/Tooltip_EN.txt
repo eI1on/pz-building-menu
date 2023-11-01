@@ -1,0 +1,36 @@
+Tooltip_EN = {
+
+  Tooltip_BuildingMenuObj_Fancy_Black_Wood_Panel_Wall = "Fancy Black Wood Panel Wall",
+  Tooltip_BuildingMenuObj_Fancy_Black_Wood_Panel_Door_Frame = "Fancy Black Wood Panel Door Frame",
+  Tooltip_BuildingMenuObj_Fancy_Black_Wood_Panel_Window_Frame = "Fancy Black Wood Panel Window Frame",
+  Tooltip_BuildingMenuObj_Fancy_Black_Wood_Panel_Arched_Window_Frame = "Fancy Black Wood Panel Arched Window Frame",
+  Tooltip_BuildingMenuObj_Fancy_Black_Wood_Panel_Pillar = "Fancy Black Wood Panel Pillar",
+  Tooltip_Fancy_Black_Wood_Panel_Wall = "An old-fashioned fancy black wood panel wall with an intricate and decorative design.",
+  Tooltip_Fancy_Black_Wood_Panel_Door_Frame = "An old-fashioned fancy black wood panel door frame, essential for adding doors to your decorative wall.",
+  Tooltip_Fancy_Black_Wood_Panel_Window_Frame = "An old-fashioned fancy black wood panel wall with an opening to allow natural light inside.",
+  Tooltip_Fancy_Black_Wood_Panel_Pillar = "A pillar made from old-fashioned fancy black wood panel, designed for decorative structural support.",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Wood_Panel_Wall = "Fancy White Wood Panel Wall",
+  Tooltip_BuildingMenuObj_Fancy_White_Wood_Panel_Door_Frame = "Fancy White Wood Panel Door Frame",
+  Tooltip_BuildingMenuObj_Fancy_White_Wood_Panel_Window_Frame = "Fancy White Wood Panel Window Frame",
+  Tooltip_BuildingMenuObj_Fancy_White_Wood_Panel_Arched_Window_Frame = "Fancy White Wood Panel Arched Window Frame",
+  Tooltip_BuildingMenuObj_Fancy_White_Wood_Panel_Pillar = "Fancy White Wood Panel Pillar",
+  Tooltip_Fancy_White_Wood_Panel_Wall = "An old-fashioned fancy white wood panel wall with an intricate and decorative design.",
+  Tooltip_Fancy_White_Wood_Panel_Door_Frame = "An old-fashioned fancy white wood panel door frame, essential for adding doors to your decorative wall.",
+  Tooltip_Fancy_White_Wood_Panel_Window_Frame = "An old-fashioned fancy white wood panel wall with an opening to allow natural light inside.",
+  Tooltip_Fancy_White_Wood_Panel_Pillar = "A pillar made from old-fashioned fancy white wood panel, designed for decorative structural support.",
+
+
+  Tooltip_BuildingMenuObj_Pert_Fire_Door_Frame_West = "Fire Door Frame West",
+  Tooltip_BuildingMenuObj_Pert_Fire_Door_Frame_North = "Fire Door Frame North",
+  Tooltip_BuildingMenuObj_Pert_Fire_Door_Trim = "Fire Door Trim",
+
+
+  Tooltip_BuildingMenuObj_Pert_Halloween_Hedge = "Hedge with a Skeleton",
+  Tooltip_BuildingMenuObj_Pert_Halloween_Pumpkin = "Jack-o'-lantern",
+  Tooltip_BuildingMenuObj_Pert_Halloween_WitchHat = "Witch Hat Cone",
+  Tooltip_BuildingMenuObj_Pert_Halloween_DeadTree = "Dead Tree",
+  Tooltip_BuildingMenuObj_Pert_Halloween_BloodFlamingo = "Blood Flamingo",
+  Tooltip_BuildingMenuObj_Pert_Halloween_Grave = "Grave",
+
+}

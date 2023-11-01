@@ -1,0 +1,10 @@
+IGUI_EN = {
+
+    IGUI_BuildingMenuSubCat_Walls_Fancy_White_Wood_Panel = "Fancy White Wood Panel",
+    IGUI_BuildingMenuSubCat_Walls_Fancy_Black_Wood_Panel = "Fancy Black Wood Panel",
+
+    IGUI_BuildingMenuSubCat_Doors_Fire_Doors = "Fire Doors",
+    
+    IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween = "Halloween",
+
+}

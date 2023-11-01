@@ -1,0 +1,7 @@
+name=Building Menu - Melos Tiles Addon
+poster=poster.png
+id=BuildingMenuMelosTilesAddon
+description=Ready to take your building experience up a notch? This is an add-on for the Building Menu that adds buildable objects from Melos Tiles for Miles Tilepack.
+require=BuildingMenu,melos_tiles_for_miles_pack
+tags=Build 41,Misc,Multiplayer,Interface
+versionMin=41.0

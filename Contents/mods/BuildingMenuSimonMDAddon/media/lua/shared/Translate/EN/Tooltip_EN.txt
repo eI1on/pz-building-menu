@@ -1,0 +1,32 @@
+Tooltip_EN = {
+
+  Tooltip_BuildingMenuObj_Scrap_Wall = "Scrap Wall",
+  Tooltip_BuildingMenuObj_Scrap_Door_Frame = "Scrap Door Frame",
+  Tooltip_BuildingMenuObj_Scrap_Window_Frame = "Scrap Widnow Frame",
+  Tooltip_BuildingMenuObj_Scrap_Pillar = "Scrap Pillar",
+  Tooltip_Scrap_Wall = "",
+  Tooltip_Scrap_Door_Frame = "",
+  Tooltip_Scrap_Window_Frame = "",
+  Tooltip_Scrap_Pillar = "",
+
+
+  Tooltip_BuildingMenuObj_Corrugated_Metal = "Corrugated Metal",
+  Tooltip_BuildingMenuObj_Corrugated_Roof = "Corrugated Metal Roof",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_1 = "Corrugated Metal Pitched 1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_2 = "Corrugated Metal Pitched 2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_3 = "Corrugated Metal Pitched 3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_1 = "Corrugated Metal Inner 1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_2 = "Corrugated Metal Inner 2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_3 = "Corrugated Metal Inner 3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_1 = "Corrugated Metal Valley 1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_2 = "Corrugated Metal Valley 2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_3 = "Corrugated Metal Valley 3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_1 = "Corrugated Metal Outer 1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_2 = "Corrugated Metal Outer 2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_3 = "Corrugated Metal Outer 3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched = "Corrugated Metal Pitched",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner = "Corrugated Metal  Inner",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer = "Corrugated Metal Outer",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley = "Corrugated Metal Valley",
+
+}

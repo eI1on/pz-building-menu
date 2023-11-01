@@ -1,0 +1,138 @@
+module Base
+{
+
+	/* Standard Vehicles */
+    recipe IGWindshield1 {
+        keep Scalpel,
+        DuctTape=3,
+        GlassPane=2,
+        Result:Windshield1,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindshieldCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 900.0,
+        Category: Windows,
+    }
+    recipe IGRearWindshield1 {
+        keep Scalpel,
+        DuctTape=3,
+        GlassPane=2,
+        Result:RearWindshield1,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindshieldCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 900.0,
+        Category: Windows,
+    }
+    recipe IGFrontWindow1 {
+        keep Scalpel,
+        GlassPane,
+        Result:FrontWindow1,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindowCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 600.0,
+        Category: Windows,
+    }
+    recipe IGRearWindow1 {
+        keep Scalpel,
+        GlassPane,
+        Result:RearWindow1,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindowCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 600.0,
+        Category: Windows,
+    }
+
+
+    /* Heavy-Duty Vehicles */
+    recipe IGWindshield2 {
+        keep Scalpel,
+        DuctTape=3,
+        GlassPane=2,
+        Result:Windshield2,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindshieldCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 900.0,
+        Category: Windows,
+    }
+    recipe IGRearWindshield2 {
+        keep Scalpel,
+        DuctTape=3,
+        GlassPane=2,
+        Result:RearWindshield2,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindshieldCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 900.0,
+        Category: Windows,
+    }
+    recipe IGFrontWindow2 {
+        keep Scalpel,
+        GlassPane,
+        Result:FrontWindow2,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindowCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 600.0,
+        Category: Windows,
+    }
+    recipe IGRearWindow2 {
+        keep Scalpel,
+        GlassPane,
+        Result:RearWindow2,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindowCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 600.0,
+        Category: Windows,
+    }
+
+
+    /* Sport Vehicles */
+    recipe IGWindshield3 {
+        keep Scalpel,
+        DuctTape=3,
+        GlassPane=2,
+        Result:Windshield3,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindshieldCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 900.0,
+        Category: Windows,
+    }
+    recipe IGRearWindshield3 {
+        keep Scalpel,
+        DuctTape=3,
+        GlassPane=2,
+        Result:RearWindshield3,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindshieldCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 900.0,
+        Category: Windows,
+    }
+    recipe IGFrontWindow3 {
+        keep Scalpel,
+        GlassPane,
+        Result:FrontWindow3,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindowCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 600.0,
+        Category: Windows,
+    }
+    recipe IGRearWindow3 {
+        keep Scalpel,
+        GlassPane,
+        Result:RearWindow3,
+        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeWindowCar,
+        SkillRequired:Mechanics=2,
+        NeedToBeLearn: True,
+        Time: 600.0,
+        Category: Windows,
+    }
+
+}
