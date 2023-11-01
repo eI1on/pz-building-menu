@@ -19553,7 +19553,7 @@ BuildingMenu.Categories = {
                         "Tooltip_BuildingMenuObj_Yellow_Markings",
                         "Tooltip_Road_Line_Generic",
                         BuildingMenu.onBuildSimpleFurniture,
-                        BuildingMenu.PaintWhite,
+                        BuildingMenu.PaintYellow,
                         true,
                         {
                             actionAnim = "paint",
@@ -19572,7 +19572,7 @@ BuildingMenu.Categories = {
                         "Tooltip_BuildingMenuObj_Yellow_Markings",
                         "Tooltip_Road_Line_Generic",
                         BuildingMenu.onBuildSimpleFurniture,
-                        BuildingMenu.PaintWhite,
+                        BuildingMenu.PaintYellow,
                         true,
                         {
                             actionAnim = "paint",
@@ -19591,7 +19591,7 @@ BuildingMenu.Categories = {
                         "Tooltip_BuildingMenuObj_Yellow_Markings",
                         "Tooltip_Road_Line_Generic",
                         BuildingMenu.onBuildSimpleFurniture,
-                        BuildingMenu.PaintWhite,
+                        BuildingMenu.PaintYellow,
                         true,
                         {
                             actionAnim = "paint",
@@ -19615,7 +19615,7 @@ BuildingMenu.Categories = {
                         "Tooltip_BuildingMenuObj_Yellow_Markings",
                         "Tooltip_Road_Line_Generic",
                         BuildingMenu.onBuildSimpleFurniture,
-                        BuildingMenu.PaintWhite,
+                        BuildingMenu.PaintYellow,
                         true,
                         {
                             actionAnim = "paint",
@@ -19634,7 +19634,7 @@ BuildingMenu.Categories = {
                         "Tooltip_BuildingMenuObj_Yellow_Markings",
                         "Tooltip_Road_Line_Generic",
                         BuildingMenu.onBuildDoubleTileFurniture,
-                        BuildingMenu.PaintWhite,
+                        BuildingMenu.PaintYellow,
                         true,
                         {
                             actionAnim = "paint",
@@ -27223,6 +27223,32 @@ BuildingMenu.Categories = {
                             completionSound = "BuildWoodenStructureSmall"
                         },
                         {sprite = "fixtures_fireplaces_01_2", northSprite = "fixtures_fireplaces_01_3"}
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Fireplace_Wooden_Shelf",
+                        "Tooltip_Crown_Molding",
+                        BuildingMenu.onBuildThreeTileSimpleFurniture,
+                        BuildingMenu.WallDecorationRecipe,
+                        true,
+                        {
+                            actionAnim = "BuildLow",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureSmall",
+                            isCorner = true,
+                            needToBeAgainstWall = true,
+                            blockAllTheSquare = false,
+                            renderFloorHelper = true,
+                            canPassThrough = true,
+                            canBarricade = false
+                        },
+                        {
+                            sprite = "fixtures_fireplaces_01_23",
+                            sprite2 = "fixtures_fireplaces_01_30",
+                            sprite3 = "fixtures_fireplaces_01_31",
+                            northSprite = "fixtures_fireplaces_01_14",
+                            northSprite2 = "fixtures_fireplaces_01_15",
+                            northSprite3 = "fixtures_fireplaces_01_22",
+                        }
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Red_Brick_FireplaceJamb_Sides_West",

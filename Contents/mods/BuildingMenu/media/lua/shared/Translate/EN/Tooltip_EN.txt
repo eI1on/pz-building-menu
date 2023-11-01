@@ -1542,6 +1542,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Fireplace = "Fireplace",
   Tooltip_BuildingMenuObj_Fireplace_2Tiles_1 = "Fireplace Double 1",
   Tooltip_BuildingMenuObj_Fireplace_2Tiles_2 = "Fireplace Double 2",
+  Tooltip_BuildingMenuObj_Fireplace_Wooden_Shelf = "Fireplace Wooden Shelf",
   Tooltip_BuildingMenuObj_Red_Brick_FireplaceJamb_Sides_North = "Red Brick Jamb Sides North + Mirrored",
   Tooltip_BuildingMenuObj_Red_Brick_FireplaceJamb_Sides_West = "Red Brick Jamb Sides West + Mirrored",
   Tooltip_BuildingMenuObj_Red_Brick_FireplaceJamb_Middle = "Red Brick Jamb Middle",
