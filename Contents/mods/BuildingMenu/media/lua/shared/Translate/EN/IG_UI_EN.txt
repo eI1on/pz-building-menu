@@ -43,7 +43,8 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Walls_Painted_Purple = "Painted Purple",
     IGUI_BuildingMenuSubCat_Walls_Painted_Pink = "Painted Pink",
     IGUI_BuildingMenuSubCat_Walls_Painted_Other_Colours = "Painted Other Colours",
-    IGUI_BuildingMenuSubCat_Walls_Painted_Arched_Windows = "Painted Arched Window Walls",
+    IGUI_BuildingMenuSubCat_Walls_Interior_Arched_Windows = "Interior Arched Window Walls",
+    IGUI_BuildingMenuSubCat_Walls_Exterior_Arched_Windows = "Exterior Arched Window Walls",
 
     IGUI_BuildingMenuSubCat_Walls_PileoCrepe = "Pile o Crepe Walls",
     IGUI_BuildingMenuSubCat_Walls_Diner_Walls = "Diner Walls",
