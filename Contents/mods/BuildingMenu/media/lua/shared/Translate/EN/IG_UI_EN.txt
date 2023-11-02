@@ -88,7 +88,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Crown_Molding = "Crown Molding",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Edge Detailing",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Floor Molding",
-    IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Pannels = "Wall Pannels",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Wall Panels",
     
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Wooden",
