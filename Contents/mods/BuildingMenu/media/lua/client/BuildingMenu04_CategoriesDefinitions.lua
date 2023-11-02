@@ -2779,7 +2779,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Sloped_Small_Wall",
-                        "Tooltip_Tan_Clapboard_Wall",
+                        "Tooltip_White_Clapboard_Wall",
                         BuildingMenu.onBuildWall,
                         BuildingMenu.WhiteSmallWoodWallRecipe,
                         true,
@@ -2795,7 +2795,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Sloped_Medium_Wall",
-                        "Tooltip_Tan_Clapboard_Wall",
+                        "Tooltip_White_Clapboard_Wall",
                         BuildingMenu.onBuildWall,
                         BuildingMenu.WhiteBigWoodWallRecipe,
                         true,
@@ -2811,7 +2811,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Sloped_Big_Wall",
-                        "Tooltip_Tan_Clapboard_Wall",
+                        "Tooltip_White_Clapboard_Wall",
                         BuildingMenu.onBuildWall,
                         BuildingMenu.WhiteBigWoodWallRecipe,
                         true,
@@ -3005,7 +3005,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Sloped_Small_Wall",
-                        "Tooltip_Tan_Clapboard_Wall",
+                        "Tooltip_Brown_Clapboard_Wall",
                         BuildingMenu.onBuildWall,
                         BuildingMenu.BrownSmallWoodWallRecipe,
                         true,
@@ -3021,7 +3021,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Sloped_Medium_Wall",
-                        "Tooltip_Tan_Clapboard_Wall",
+                        "Tooltip_Brown_Clapboard_Wall",
                         BuildingMenu.onBuildWall,
                         BuildingMenu.BrownBigWoodWallRecipe,
                         true,
@@ -3037,7 +3037,7 @@ BuildingMenu.Categories = {
                     ),
                     BuildingMenu.createObject(
                         "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Sloped_Big_Wall",
-                        "Tooltip_Tan_Clapboard_Wall",
+                        "Tooltip_Brown_Clapboard_Wall",
                         BuildingMenu.onBuildWall,
                         BuildingMenu.BrownBigWoodWallRecipe,
                         true,
@@ -6822,7 +6822,7 @@ BuildingMenu.Categories = {
                 }
             },
             {
-                subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Painted_Arched_Windows"),
+                subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Interior_Arched_Windows"),
                 subCategoryIcon = "walls_interior_house_05_0",
                 objects = {
                     BuildingMenu.createObject(
@@ -7497,6 +7497,370 @@ BuildingMenu.Categories = {
                             corner = "walls_interior_house_04_87"
                         }
                     ),
+                }
+            },
+            {
+                subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Exterior_Arched_Windows"),
+                subCategoryIcon = "walls_exterior_house_03_0",
+                objects = {
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Grey_Stone_Arched_Window_Frame",
+                        "Tooltip_Grey_Stone_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.GreyBigStoneWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_0",
+                            northSprite = "walls_exterior_house_03_1",
+                            corner = "walls_exterior_house_02_3"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Blue_Brick_Arched_Window_Frame",
+                        "Tooltip_Blue_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.BlueBigBrickWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_2",
+                            northSprite = "walls_exterior_house_03_3",
+                            corner = "walls_exterior_house_01_3"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Tan_Stone_Arched_Window_Frame",
+                        "Tooltip_Tan_Stone_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.TanBigStoneWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_4",
+                            northSprite = "walls_exterior_house_03_5",
+                            corner = "walls_exterior_house_02_7"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Grey_Brick_Arched_Window_Frame",
+                        "Tooltip_Grey_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.GreyBigStoneWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_8",
+                            northSprite = "walls_exterior_house_03_9",
+                            corner = "walls_exterior_house_02_19"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Blue_Clapboard_Arched_Window_Frame",
+                        "Tooltip_Blue_Clapboard_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.BlueBigWoodWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_12",
+                            northSprite = "walls_exterior_house_03_13",
+                            corner = "walls_exterior_house_02_23"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Red_Brick_Arched_Window_Frame",
+                        "Tooltip_Red_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.RedBigBrickWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_14",
+                            northSprite = "walls_exterior_house_03_15",
+                            corner = "walls_exterior_house_02_67"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Tan_Clapboard_Arched_Window_Frame",
+                        "Tooltip_Tan_Clapboard_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.TanBigStoneWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_16",
+                            northSprite = "walls_exterior_house_03_17",
+                            corner = "walls_exterior_house_02_35"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_White_Clapboard_Arched_Window_Frame",
+                        "Tooltip_White_Clapboard_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.WhiteBigWoodWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_18",
+                            northSprite = "walls_exterior_house_03_19",
+                            corner = "walls_exterior_house_01_35"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Beige_Brick_Arched_Window_Frame",
+                        "Tooltip_Beige_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.BeigeBigBrickWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_20",
+                            northSprite = "walls_exterior_house_03_21",
+                            corner = "walls_exterior_house_02_39"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Brown_Brick_Arched_Window_Frame",
+                        "Tooltip_Brown_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.BrownBigBrickWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_22",
+                            northSprite = "walls_exterior_house_03_23",
+                            corner = "walls_exterior_house_02_99"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_White_Brick_Arched_Window_Frame",
+                        "Tooltip_White_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.WhiteBigBrickWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_24",
+                            northSprite = "walls_exterior_house_03_25",
+                            corner = "walls_exterior_house_02_51"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Brown_Clapboard_Arched_Window_Frame",
+                        "Tooltip_Brown_Clapboard_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.BrownBigWoodWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_26",
+                            northSprite = "walls_exterior_house_03_27",
+                            corner = "walls_exterior_house_01_51"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Green_Brick_Arched_Window_Frame",
+                        "Tooltip_Green_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.GreenBigBrickWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_28",
+                            northSprite = "walls_exterior_house_03_29",
+                            corner = "walls_exterior_house_01_51"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Old_Brick_Arched_Window_Frame",
+                        "Tooltip_Old_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.OldBigBrickWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_30",
+                            northSprite = "walls_exterior_house_03_31",
+                            corner = "walls_exterior_house_01_55"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Turquoise_Clapboard_Arched_Window_Frame",
+                        "Tooltip_Turquoise_Clapboard_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.TurquoiseBigWoodWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_32",
+                            northSprite = "walls_exterior_house_03_33",
+                            corner = "walls_exterior_house_02_83"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Tan_Brick_Arched_Window_Frame",
+                        "Tooltip_Tan_Brick_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.TanBigStoneWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_34",
+                            northSprite = "walls_exterior_house_03_35",
+                            corner = "walls_exterior_house_02_35"
+                        }
+                    ),
+                    BuildingMenu.createObject(
+                        "Tooltip_BuildingMenuObj_Pink_Clapboard_Arched_Window_Frame",
+                        "Tooltip_Pink_Clapboard_Window_Frame",
+                        BuildingMenu.onBuildWindowWall,
+                        BuildingMenu.PinkBigWoodWallRecipe,
+                        true,
+                        {
+                            actionAnim = "Build",
+                            noNeedHammer = false,
+                            completionSound = "BuildWoodenStructureLarge",
+                            isThumpable = true,
+                            canBarricade = true,
+                            hoppable = true,
+                            modData = {wallType = "windowsframe"}
+                        },
+                        {
+                            sprite = "walls_exterior_house_03_36",
+                            northSprite = "walls_exterior_house_03_37",
+                            corner = "walls_exterior_house_02_71"
+                        }
+                    ),
+
                 }
             },
             {
