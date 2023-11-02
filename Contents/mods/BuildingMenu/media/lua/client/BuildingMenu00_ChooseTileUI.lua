@@ -1,3 +1,5 @@
+require "ISUI/ISCollapsableWindow"
+
 if not getBuildingMenuInstance then
     require("BuildingMenu01_Main")
 end
@@ -20,8 +22,10 @@ function BuildingMenuTilePickerList:render()
     local tileWidth = 64;
     local tileHeight = 128;
 
+    local cols =  math.floor(self:getWidth()/64);
+
     for r = 1, 128 do
-        for c = 1, 4 do
+        for c = 1, cols do
             local objDef = self:findNextObject(objectsBuffer)
             if objDef then
                 local objSpriteName = objDef.data.sprites.sprite
@@ -52,7 +56,7 @@ function BuildingMenuTilePickerList:render()
     local c = math.floor(mouseX / tileWidth)
     local r = math.floor(mouseY / tileHeight)
 
-    if c >= 0 and r >= 0 and r < maxRow and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
+    if c >= 0 and r >= 0 and r < maxRow and c < cols and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
         local selectedObject = self.posToObjectNameTable[r + 1][c + 1];
         self.tooltip:addToUIManager();
         self.tooltip, selectedObject.canBuild = BuildingMenu.canBuildObject(self.character, self.tooltip, selectedObject.objDef.data.recipe);
@@ -148,16 +152,18 @@ end
 
 BuildingMenuChooseTileUI = ISCollapsableWindow:derive("BuildingMenuChooseTileUI");
 BuildingMenuChooseTileUI.instance = nil
+BuildingMenuChooseTileUI.largeFontHeight = getTextManager():getFontHeight(UIFont.Large)
+BuildingMenuChooseTileUI.mediumNewFontHeight = getTextManager():getFontHeight(UIFont.MediumNew)
+BuildingMenuChooseTileUI.smallFontHeight = getTextManager():getFontHeight(UIFont.Small)
+BuildingMenuChooseTileUI.upArrow = Keyboard.KEY_UP;
+BuildingMenuChooseTileUI.downArrow = Keyboard.KEY_DOWN;
 
-
-local FONT_HGT_MEDIUM = getTextManager():getFontHeight(UIFont.MediumNew)
 
 
 function BuildingMenuChooseTileUI.openPanel(x, y, playerObj)
     if y < 0 then y = 0 end
     if BuildingMenuChooseTileUI.instance == nil then
-        -- local window = BuildingMenuChooseTileUI:new(x, y, 822, 660, playerObj)
-        local window = BuildingMenuChooseTileUI:new(x, y, 570, 384, playerObj)
+        local window = BuildingMenuChooseTileUI:new(x, y, 570, 400, playerObj)
         window:initialise()
         window:addToUIManager()
         BuildingMenuChooseTileUI.instance = window
@@ -184,23 +190,25 @@ function BuildingMenuChooseTileUI:createChildren()
     self.gearButton:setVisible(true);
 
 
-    self.searchCategoriesListEntryBox = ISTextEntryBox:new('', 0, th, 150, 20)
+    self.searchCategoriesListEntryBox = ISTextEntryBox:new('', 0, th, self.width/4, 20)
     self.searchCategoriesListEntryBox.font = UIFont.Medium
     self.searchCategoriesListEntryBox.onTextChange = BuildingMenuChooseTileUI.onTextChangeModulesList
     self:addChild(self.searchCategoriesListEntryBox)
 
-    self.searchSubCategoriesListEntryBox = ISTextEntryBox:new('', self.searchCategoriesListEntryBox:getRight(), th, 150, 20)
+    self.searchSubCategoriesListEntryBox = ISTextEntryBox:new('', self.searchCategoriesListEntryBox:getRight(), th, self.width/4, 20)
     self.searchSubCategoriesListEntryBox.font = UIFont.Medium
     self.searchSubCategoriesListEntryBox.onTextChange = BuildingMenuChooseTileUI.onTextChangeSubModulesList
     self:addChild(self.searchSubCategoriesListEntryBox)
 
-    self.categoriesList = ISScrollingListBox:new(0, self.searchCategoriesListEntryBox:getBottom(), 150, self.height - th - 20);
+    self.categoriesList = ISScrollingListBox:new(0, self.searchCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - 43);
     self.categoriesList.anchorBottom = true;
     self.categoriesList:initialise();
     self.categoriesList:instantiate();
+    self.categoriesList:setAnchorRight(false);
+    self.categoriesList:setAnchorBottom(true);
     self.categoriesList.itemPadY = 10;
     self.categoriesList.backgroundColor.a = 0.25;
-    self.categoriesList.itemheight = FONT_HGT_MEDIUM + 20;
+    self.categoriesList.itemheight = BuildingMenuChooseTileUI.mediumNewFontHeight + 20;
     self.categoriesList.selected = 0;
     self.categoriesList.font = UIFont.MediumNew;
     self.categoriesList.doDrawItem = self.doDrawSubCategoriesListItem;
@@ -208,13 +216,15 @@ function BuildingMenuChooseTileUI:createChildren()
     self.categoriesList.onmousedown = self.onSelectCateg;
     self:addChild(self.categoriesList);
 
-    self.subCategoriesList = ISScrollingListBox:new(self.categoriesList:getRight(), self.searchSubCategoriesListEntryBox:getBottom(), 150, self.height - th - 20);
+    self.subCategoriesList = ISScrollingListBox:new(self.categoriesList:getRight(), self.searchSubCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - 43);
     self.subCategoriesList.anchorBottom = true;
     self.subCategoriesList:initialise();
     self.subCategoriesList:instantiate();
+    self.subCategoriesList:setAnchorRight(false);
+    self.subCategoriesList:setAnchorBottom(true);
     self.subCategoriesList.itemPadY = 10;
     self.subCategoriesList.backgroundColor.a = 0.25;
-    self.subCategoriesList.itemheight = FONT_HGT_MEDIUM + 10;
+    self.subCategoriesList.itemheight = BuildingMenuChooseTileUI.mediumNewFontHeight + 10;
     self.subCategoriesList.selected = 0;
     self.subCategoriesList.font = UIFont.NewSmall;
     self.subCategoriesList.doDrawItem = self.doDrawSubCategoriesListItem;
@@ -222,8 +232,7 @@ function BuildingMenuChooseTileUI:createChildren()
     self.subCategoriesList.onmousedown = self.onSelectSubCat;
     self:addChild(self.subCategoriesList);
 
-    self.tilesList = BuildingMenuTilePickerList:new(self.subCategoriesList:getRight(), th, self:getWidth() - 300, self:getHeight() - th, self.character)
-    self.tilesList.anchorRight = true;
+    self.tilesList = BuildingMenuTilePickerList:new(self.subCategoriesList:getRight(), th, self.width/2, self:getHeight() - th - 8, self.character)
     self.tilesList.anchorBottom = true;
     self.tilesList:initialise();
     self.tilesList:instantiate();
@@ -335,7 +344,7 @@ function BuildingMenuChooseTileUI:doDrawSubCategoriesListItem(y, item, alt)
         self:drawTextureScaledAspect(texture, 1, y, 25, self.itemheight, 1, 1, 1, 1);
     end
 
-    self:drawText(item.text, 25, y + (self.itemheight - FONT_HGT_MEDIUM) / 2, 1, 1, 1, 0.9, self.font);
+    self:drawText(item.text, 25, y + (self.itemheight - BuildingMenuChooseTileUI.mediumNewFontHeight) / 2, 1, 1, 1, 0.9, self.font);
     return y + self.itemheight;
 end
 
@@ -369,12 +378,36 @@ function BuildingMenuChooseTileUI:close()
 end
 
 
+function BuildingMenuChooseTileUI:update()
+    ISCollapsableWindow.update(self);
+end
+
+
+function BuildingMenuChooseTileUI:onResize()
+    ISUIElement.onResize(self);
+
+    self.searchCategoriesListEntryBox:setWidth(self.width/4);
+
+    self.searchSubCategoriesListEntryBox:setWidth(self.width/4);
+    self.searchSubCategoriesListEntryBox:setX(self.searchCategoriesListEntryBox:getRight())
+
+    self.categoriesList:setWidth(self.width/4);
+
+    self.subCategoriesList:setWidth(self.width/4);
+    self.subCategoriesList:setX(self.categoriesList:getRight())
+
+    self.tilesList:setWidth(self.width/2);
+    self.tilesList:setX(self.subCategoriesList:getRight())
+end
+
 function BuildingMenuChooseTileUI:new(x, y, width, height, character)
     local o = ISCollapsableWindow.new(self, x, y, width, height);
-    o:setResizable(false)
+    o:setResizable(true)
     o.title = getText("IGUI_BuildingMenu")
     o.character = character
     o.minOpaque = 1; -- in percentage
     o.maxOpaque = 1; -- in percentage
+    o.minimumWidth = 570;
+    o.minimumHeight = 400;
     return o;
 end
