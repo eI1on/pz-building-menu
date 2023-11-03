@@ -7,7 +7,7 @@ end
 local getText = getText
 local getTexture = getTexture
 local pairs = pairs
-
+local getTimeInMillis = getTimeInMillis()
 
 local BuildingMenu = getBuildingMenuInstance()
 
@@ -17,12 +17,16 @@ BuildingMenuTilePickerList = ISPanel:derive("BuildingMenuTilePickerList")
 function BuildingMenuTilePickerList:render()
     ISPanel.render(self)
 
+    local currentTime = getTimeInMillis
+    if currentTime - self.lastUpdateTime < self.updateInterval then
+        return
+    end
+
     local maxRow = 1
     local objectsBuffer = {}
-    local tileWidth = 64;
-    local tileHeight = 128;
+    local tileWidth, tileHeight = 64, 128;
 
-    local cols =  math.floor(self:getWidth()/64);
+    local cols =  math.floor(self:getWidth() / tileWidth);
 
     for r = 1, 128 do
         for c = 1, cols do
@@ -33,7 +37,14 @@ function BuildingMenuTilePickerList:render()
                     objectsBuffer[objSpriteName] = true
                     self.posToObjectNameTable[r] = self.posToObjectNameTable[r] or {}
                     self.posToObjectNameTable[r][c] = { objDef = objDef, canBuild = false }
-                    local texture = getTexture(objSpriteName)
+
+                    -- use cached texture if available, otherwise load and cache it
+                    local texture = self.textureCache[objSpriteName]
+                    if not texture then
+                        texture = getTexture(objSpriteName)
+                        self.textureCache[objSpriteName] = texture
+                    end
+
                     if texture then
                         self:drawTextureScaledAspect(texture, (c - 1) * tileWidth, (r - 1) * tileHeight, tileWidth, tileHeight, 1.0, 1.0, 1.0, 1.0)
                         maxRow = r
@@ -141,11 +152,14 @@ end
 function BuildingMenuTilePickerList:new(x, y, w, h, character)
     local o = ISPanel.new(self, x, y, w, h)
     o.backgroundColor.a = 0.25;
-    o.subCatData = nil
-    o.character = character
+    o.subCatData = nil;
+    o.character = character;
     o.posToObjectNameTable = {};
+    o.textureCache = {};
     o.tooltip = nil;
     o.message = nil;
+    o.lastUpdateTime = 0;
+    o.updateInterval = 1000;
     return o
 end
 
@@ -200,7 +214,7 @@ function BuildingMenuChooseTileUI:createChildren()
     self.searchSubCategoriesListEntryBox.onTextChange = BuildingMenuChooseTileUI.onTextChangeSubModulesList
     self:addChild(self.searchSubCategoriesListEntryBox)
 
-    self.categoriesList = ISScrollingListBox:new(0, self.searchCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - 43);
+    self.categoriesList = ISScrollingListBox:new(0, self.searchCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - self.searchCategoriesListEntryBox:getHeight() - self:resizeWidgetHeight());
     self.categoriesList.anchorBottom = true;
     self.categoriesList:initialise();
     self.categoriesList:instantiate();
@@ -216,7 +230,7 @@ function BuildingMenuChooseTileUI:createChildren()
     self.categoriesList.onmousedown = self.onSelectCateg;
     self:addChild(self.categoriesList);
 
-    self.subCategoriesList = ISScrollingListBox:new(self.categoriesList:getRight(), self.searchSubCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - 43);
+    self.subCategoriesList = ISScrollingListBox:new(self.categoriesList:getRight(), self.searchSubCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - self.searchSubCategoriesListEntryBox:getHeight() - self:resizeWidgetHeight());
     self.subCategoriesList.anchorBottom = true;
     self.subCategoriesList:initialise();
     self.subCategoriesList:instantiate();
@@ -302,7 +316,8 @@ end
 
 function BuildingMenuChooseTileUI.onSelectSubCat(_, item)
     BuildingMenuChooseTileUI.instance.tilesList.posToObjectNameTable = {};
-    BuildingMenuChooseTileUI.instance.tilesList.subCatData = item.objectsData
+    BuildingMenuChooseTileUI.instance.tilesList.subCatData = item.objectsData;
+    BuildingMenuChooseTileUI.instance.tilesList.textureCache = {};
 end
 
 
