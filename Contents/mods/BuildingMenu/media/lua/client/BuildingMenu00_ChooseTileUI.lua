@@ -200,7 +200,7 @@ function BuildingMenuChooseTileUI:createChildren()
     self.searchSubCategoriesListEntryBox.onTextChange = BuildingMenuChooseTileUI.onTextChangeSubModulesList
     self:addChild(self.searchSubCategoriesListEntryBox)
 
-    self.categoriesList = ISScrollingListBox:new(0, self.searchCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - 43);
+    self.categoriesList = ISScrollingListBox:new(0, self.searchCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - self.searchCategoriesListEntryBox:getHeight() - self:resizeWidgetHeight());
     self.categoriesList.anchorBottom = true;
     self.categoriesList:initialise();
     self.categoriesList:instantiate();
@@ -216,7 +216,7 @@ function BuildingMenuChooseTileUI:createChildren()
     self.categoriesList.onmousedown = self.onSelectCateg;
     self:addChild(self.categoriesList);
 
-    self.subCategoriesList = ISScrollingListBox:new(self.categoriesList:getRight(), self.searchSubCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - 43);
+    self.subCategoriesList = ISScrollingListBox:new(self.categoriesList:getRight(), self.searchSubCategoriesListEntryBox:getBottom(), self.width/4, self.height - th - self.searchSubCategoriesListEntryBox:getHeight() - self:resizeWidgetHeight());
     self.subCategoriesList.anchorBottom = true;
     self.subCategoriesList:initialise();
     self.subCategoriesList:instantiate();
