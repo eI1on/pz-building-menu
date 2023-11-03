@@ -13,35 +13,32 @@ function ISThreeTileGarageDoor:create(x, y, z, north, sprite)
     spriteBName = self.northSprite3
   end
 
-  local consumedItems = {}
-  consumedItems = buildUtil.consumeMaterial(self)
 
-  local keyID = -1
-  for _, item in ipairs(consumedItems) do
-    if item:getType() == 'Doorknob' and item:getKeyId() ~= -1 then
-      keyID = item:getKeyId()
-    end
-  end
-
-  self:addDoorPart(x, y, z, north, sprite, 1, keyID)
-  self:addDoorPart(xa, ya, z, north, spriteAName, 2, keyID)
-  self:addDoorPart(xb, yb, z, north, spriteBName, 3, keyID)
+  self:addDoorPart(x, y, z, north, sprite, 1)
+  self:addDoorPart(xa, ya, z, north, spriteAName, 2)
+  self:addDoorPart(xb, yb, z, north, spriteBName, 3)
 end
 
-function ISThreeTileGarageDoor:addDoorPart(x, y, z, north, sprite, index, keyID)
+function ISThreeTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
   local cell = getWorld():getCell()
   self.sq = cell:getGridSquare(x, y, z)
   if self:partExists(self.sq, index) then
     return
   end
   self.javaObject = IsoDoor.new(cell, self.sq, sprite, north)
-
 	self.javaObject:setHealth(self:getHealth());
-
-  if keyID ~= -1 then self.javaObject:setKeyId(keyID) end
-
-
   self.sq:AddSpecialObject(self.javaObject)
+
+  if index == 1 then
+    self.consumedItems = buildUtil.consumeMaterial(self)
+  end
+
+  for _, item in ipairs(self.consumedItems) do
+    if item:getType() == 'Doorknob' and item:getKeyId() ~= -1 then
+      self.javaObject:setKeyId(item:getKeyId())
+    end
+  end
+
   self.javaObject:transmitCompleteItemToServer()
 end
 
@@ -235,6 +232,9 @@ function ISThreeTileGarageDoor:new(sprite, sprite2, sprite3, northSprite, northS
   o.northSprite = northSprite
   o.northSprite2 = northSprite2
   o.northSprite3 = northSprite3
+
+  o.consumedItems = {}
+	o.isDoor = true;
   o.thumpDmg = 5
   o.name = 'Garage Door'
   return o
