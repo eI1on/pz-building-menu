@@ -46,7 +46,7 @@ function ISStove:new(player, name, sprite, northSprite)
   o:setNorthSprite(northSprite)
   o.player = player
   o.dismantable = true
-  o.needToBeAgainstWall = true
+  o.needToBeAgainstWall = false
   o.name = name
   o.stopOnWalk = true
   o.stopOnRun = true

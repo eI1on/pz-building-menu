@@ -4055,7 +4055,7 @@ BuildingMenu.Categories = {
                         "Tooltip_BuildingMenuObj_Fancy_Wood_Panel_Arched_Window_Frame",
                         "Tooltip_Fancy_Wood_Panel_Window_Frame",
                         BuildingMenu.onBuildWall,
-                        BuildingMenu.GreenBigWoodWallRecipe,
+                        BuildingMenu.BrownBigWoodWallRecipe,
                         true,
                         {
                             actionAnim = "Build",

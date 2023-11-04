@@ -206,14 +206,13 @@ local function addCookingAppliancesToMenu()
                 actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true,
-                needToBeAgainstWall = true
+                canBeAlwaysPlaced = true
             },
             {
                 sprite = "appliances_cooking_01_16",
                 northSprite = "appliances_cooking_01_17",
-                eastSprite = "appliances_cooking_01_19",
-                southSprite = "appliances_cooking_01_18"
+                eastSprite = "building_menu_01_17",
+                southSprite = "building_menu_01_16"
             }
         ),
     }
