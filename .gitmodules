@@ -1,0 +1,3 @@
+[submodule "Umbrella"]
+	path = Umbrella
+	url = https://github.com/asledgehammer/Umbrella.git
