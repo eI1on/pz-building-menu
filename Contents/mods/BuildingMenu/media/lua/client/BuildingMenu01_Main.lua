@@ -63,6 +63,22 @@ BuildingMenu.getPlayerSkills = function(playerObj)
     return skills
 end
 
+BuildingMenu.debugPrint = function(prefix, data)
+    if type(data) == "table" then
+        for key, value in pairs(data) do
+            if type(value) == "table" then
+                print(prefix .. key .. ":")
+                BuildingMenu.debugPrint(prefix .. "\t", value)
+            else
+                print(prefix .. key .. ": " .. tostring(value))
+            end
+        end
+    else
+        print(prefix .. tostring(data))
+    end
+end
+
+
 local function predicateNotBroken(item)
     return not item:isBroken()
 end

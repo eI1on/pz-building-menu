@@ -26940,7 +26940,11 @@ BuildingMenu.Categories = {
                         {
                             actionAnim = "Build",
                             noNeedHammer = false,
-                            completionSound = "BuildWoodenStructureLarge"
+                            completionSound = "BuildWoodenStructureLarge",
+                            isCorner = true,
+                            blockAllTheSquare = false,
+                            canPassThrough = true,
+                            solid = false,
                         },
                         {
                             sprite = "location_business_machinery_01_11",
@@ -26958,7 +26962,11 @@ BuildingMenu.Categories = {
                         {
                             actionAnim = "Build",
                             noNeedHammer = false,
-                            completionSound = "BuildWoodenStructureLarge"
+                            completionSound = "BuildWoodenStructureLarge",
+                            isCorner = true,
+                            blockAllTheSquare = false,
+                            canPassThrough = true,
+                            solid = false,
                         },
                         {
                             sprite = "location_business_machinery_01_1",
@@ -26976,7 +26984,11 @@ BuildingMenu.Categories = {
                         {
                             actionAnim = "Build",
                             noNeedHammer = false,
-                            completionSound = "BuildWoodenStructureLarge"
+                            completionSound = "BuildWoodenStructureLarge",
+                            isCorner = true,
+                            blockAllTheSquare = false,
+                            canPassThrough = true,
+                            solid = false,
                         },
                         {
                             sprite = "location_business_machinery_01_8",
@@ -26994,7 +27006,11 @@ BuildingMenu.Categories = {
                         {
                             actionAnim = "Build",
                             noNeedHammer = false,
-                            completionSound = "BuildWoodenStructureLarge"
+                            completionSound = "BuildWoodenStructureLarge",
+                            isCorner = true,
+                            blockAllTheSquare = false,
+                            canPassThrough = true,
+                            solid = false,
                         },
                         {
                             sprite = "location_business_machinery_01_9",

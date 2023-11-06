@@ -4,46 +4,50 @@ end
 
 local BuildingMenu = getBuildingMenuInstance()
 
+local exclusions = {
+    health = true
+}
+
 function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOptions)
-    object.name = name
-    object.player = player
+    object.name = name;
+    object.player = player;
 
     if not objectRecipe then return end
 
-    if objectRecipe.neededMaterials ~= nil then
-        for _, _currentMaterial in pairs(objectRecipe.neededMaterials) do
-            object.modData["need:" .. _currentMaterial.Material] = _currentMaterial.Amount;
+    local modData = object.modData; -- cache modData reference.
+
+    if objectRecipe.neededMaterials then
+        for _, material in pairs(objectRecipe.neededMaterials) do
+            modData["need:" .. material.Material] = material.Amount;
         end
     end
 
-    if objectRecipe.useConsumable ~= nil then
-        for _, _currentMaterial in pairs(objectRecipe.useConsumable) do
-            object.modData["use:" .. _currentMaterial.Consumable] = _currentMaterial.Amount;
+    if objectRecipe.useConsumable then
+        for _, consumable in pairs(objectRecipe.useConsumable) do
+            modData["use:" .. consumable.Consumable] = consumable.Amount;
         end
     end
 
-    if objectRecipe.skills ~= nil then
+    if objectRecipe.skills then
         for _, skill in pairs(objectRecipe.skills) do
-            object.modData["xp:" .. skill.Skill] = skill.Xp;
+            modData["xp:" .. skill.Skill] = skill.Xp;
         end
     end
 
-    if objectRecipe.neededTools ~= nil then
-        BuildingMenu.equipToolPrimary(object, player, objectRecipe.neededTools[1])
-        if objectRecipe.neededTools[2] ~= nil then
-            BuildingMenu.equipToolSecondary(object, player, objectRecipe.neededTools[2])
-        end
+    local neededTools = objectRecipe.neededTools
+    if neededTools then
+        BuildingMenu.equipToolPrimary(object, player, neededTools[1]);
+        -- if neededTools[2] then
+        --     BuildingMenu.equipToolSecondary(object, player, neededTools[2]);
+        -- end
     end
 
-    if objectOptions ~= nil then
+    if objectOptions then
         for option, value in pairs(objectOptions) do
-            local exclusions = {
-                "health"
-            }
             if not exclusions[option] then
                 if option == "modData" then
                     for modDataOption, modDataValue in pairs(value) do
-                        object.modData[modDataOption] = modDataValue
+                        modData[modDataOption] = modDataValue;
                     end
                 else
                     object[option] = value;
@@ -51,14 +55,14 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             end
         end
 
-        if objectOptions.containerType ~= nil then
-            function object:getHealth()
-                if objectOptions.health ~= nil then
-                    return objectOptions.health
-                else
-                    return buildUtil.getWoodHealth(self)
-                end
+        if objectOptions.containerType then
+            object.getHealth = function(self)
+                return objectOptions.health or buildUtil.getWoodHealth(self)
             end
+        end
+
+        if isDebugEnabled() then
+            BuildingMenu.debugPrint("[Building Menu Debug] ", objectOptions)
         end
     end
 
