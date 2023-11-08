@@ -62,6 +62,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         end
 
         if isDebugEnabled() then
+            BuildingMenu.debugPrint("[Building Menu Debug] ", name)
             BuildingMenu.debugPrint("[Building Menu Debug] ", objectOptions)
         end
     end
