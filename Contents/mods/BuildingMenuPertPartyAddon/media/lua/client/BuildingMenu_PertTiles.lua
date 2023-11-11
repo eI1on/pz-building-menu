@@ -86,7 +86,8 @@ local function addPertWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-    "[Pert] ".. getText("IGUI_BuildingMenuCat_Walls"),
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Walls"),
     "pert_walls_wallpaper_1_80",
     getText("IGUI_BuildingMenuSubCat_Walls_Fancy_White_Wood_Panel"),
     "pert_walls_wallpaper_1_80",
@@ -172,7 +173,8 @@ local function addPertWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-    "[Pert] ".. getText("IGUI_BuildingMenuCat_Walls"),
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Walls"),
     nil,
     getText("IGUI_BuildingMenuSubCat_Walls_Fancy_Black_Wood_Panel"),
     "pert_walls_wallpaper_1_84",
@@ -223,7 +225,8 @@ local function addPertDoorsToMenu()
         end
     end
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Doors"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Doors"),
         "pert_doors_01_8",
         getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
         "pert_doors_01_8",
@@ -326,7 +329,8 @@ local function addPertDoorsToMenu()
     )
 
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Doors"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_Fire_Doors"),
         "pert_doors_fire_1_0",
@@ -372,7 +376,8 @@ local function addPertDoorsToMenu()
         end
     end
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Doors"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
         "pert_doors_01_0",
@@ -446,7 +451,8 @@ local function addPertDoorsToMenu()
 
 
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Doors"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
         "pert_more_garage_doors_0",
@@ -460,7 +466,8 @@ local function addPertDoorsToMenu()
 
 
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Doors"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
         "pert_more_garage_doors_0",
@@ -532,7 +539,8 @@ local function addPertCountersToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Containers"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Containers"),
         "pert_bar_01_3",
         getText("IGUI_BuildingMenuSubCat_Containers_Bar"),
         "pert_bar_01_3",
@@ -571,7 +579,8 @@ local pertFilingCabinets = {
     ),
 }
 BuildingMenu.addObjectsToCategories(
-    "[Pert] ".. getText("IGUI_BuildingMenuCat_Containers"),
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Containers"),
     nil,
     getText("IGUI_BuildingMenuSubCat_Containers_Filing_Cabinets"),
     "pert_cyberdrive_systems_1_22",
@@ -619,7 +628,8 @@ local function addpertLargeTablesToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Furniture"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Furniture"),
         "pert_re-phoenix_4_53",
         getText("IGUI_BuildingMenuSubCat_Furniture_Small_Tables"),
         "pert_re-phoenix_4_53",
@@ -639,7 +649,8 @@ local function addpertLargeTablesToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        "[Pert] ".. getText("IGUI_BuildingMenuCat_Furniture"),
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Large_Tables"),
         "pert_re-phoenix_4_49",
@@ -701,7 +712,8 @@ local pertDecorationsRoadWork = {
     
 }
 BuildingMenu.addObjectsToCategories(
-    "[Pert] ".. getText("IGUI_BuildingMenuCat_Road_Work"),
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Road_Work"),
     "pert_re-phoenix_2_16",
     getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line"),
     "pert_re-phoenix_2_16",
@@ -827,7 +839,8 @@ local pertDecorationsSigns = {
     ),
 }
 BuildingMenu.addObjectsToCategories(
-    "[Pert] ".. getText("IGUI_BuildingMenuCat_Decorations"),
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Decorations"),
     "pert_re-phoenix_3_50",
     getText("IGUI_BuildingMenuSubCat_Decorations_Signs"),
     "pert_re-phoenix_3_50",
@@ -1027,7 +1040,8 @@ local pertDecorationsHalloween = {
     ),
 }
 BuildingMenu.addObjectsToCategories(
-    "[Pert] ".. getText("IGUI_BuildingMenuCat_Decorations"),
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Decorations"),
     "pert_halloween_01_9",
     getText("IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween"),
     "pert_halloween_01_9",
@@ -1065,7 +1079,8 @@ local pertFridgesObjects = {
 }
 
 BuildingMenu.addObjectsToCategories(
-    "[Pert] ".. getText("IGUI_BuildingMenuCat_Appliances"),
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Appliances"),
     "pert_re-phoenix_3_47",
     getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
     "pert_re-phoenix_3_47",

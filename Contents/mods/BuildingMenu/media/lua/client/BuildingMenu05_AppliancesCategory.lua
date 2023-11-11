@@ -161,6 +161,7 @@ local function addBathroomAppliancesToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
+        "Vanilla",
         getText("IGUI_BuildingMenuCat_Appliances"),
         "fixtures_sinks_01_21",
         getText("IGUI_BuildingMenuSubCat_Appliances_Bathroom"),
@@ -306,6 +307,7 @@ local function addCookingAppliancesToMenu()
     )
 
     BuildingMenu.addObjectsToCategories(
+        "Vanilla",
         getText("IGUI_BuildingMenuCat_Appliances"),
         "appliances_cooking_01_35",
         getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
@@ -421,6 +423,7 @@ local function addFridgeAppliancesToMenu()
     )
 
     BuildingMenu.addObjectsToCategories(
+        "Vanilla",
         getText("IGUI_BuildingMenuCat_Appliances"),
         "appliances_refrigeration_01_24",
         getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
@@ -535,6 +538,7 @@ local laundryObjects = {
     )
 }
 BuildingMenu.addObjectsToCategories(
+    "Vanilla",
     getText("IGUI_BuildingMenuCat_Appliances"),
     "appliances_laundry_01_1",
     getText("IGUI_BuildingMenuSubCat_Appliances_Laundry"),
