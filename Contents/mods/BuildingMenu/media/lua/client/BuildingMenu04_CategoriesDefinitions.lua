@@ -22857,10 +22857,38 @@ BuildingMenu.Tabs = {
                                 true,
                                 {isContainer = true, containerType = "desk"},
                                 {
+                                    sprite = "location_business_office_generic_01_45",
+                                    sprite2 = "location_business_office_generic_01_44",
+                                    northSprite = "location_business_office_generic_01_46",
+                                    northSprite2 = "location_business_office_generic_01_47"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_largeTableDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LargeFurnitureRecipe,
+                                true,
+                                {isContainer = true, containerType = "desk"},
+                                {
                                     sprite = "location_business_office_generic_01_6",
                                     sprite2 = "location_business_office_generic_01_5",
                                     northSprite = "location_business_office_generic_01_0",
                                     northSprite2 = "location_business_office_generic_01_1"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_largeTableDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LargeFurnitureRecipe,
+                                true,
+                                {isContainer = true, containerType = "desk"},
+                                {
+                                    sprite = "location_business_office_generic_01_10",
+                                    sprite2 = "location_business_office_generic_01_8",
+                                    northSprite = "location_business_office_generic_01_13",
+                                    northSprite2 = "location_business_office_generic_01_14"
                                 }
                             ),
                             BuildingMenu.createObject(
