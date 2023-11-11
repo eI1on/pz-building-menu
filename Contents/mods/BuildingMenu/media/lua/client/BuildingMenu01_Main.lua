@@ -46,7 +46,7 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(player, context, worldobjec
     local option = context:addOptionOnTop(getText("ContextMenu_BuildingMenu"), worldobjects, function()
         local x = getCore():getScreenWidth()/1.5;
         local y = getCore():getScreenHeight()/7.5;
-        BuildingMenuChooseTileUI.openPanel(x, y, playerObj);
+        ISBuildingMenuUI.openPanel(x, y, playerObj);
     end)
     option.iconTexture = getTexture("media/ui/building_menu.png");
 
@@ -304,8 +304,6 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
             tooltip.description = tooltip.description .. ISBuildMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
         end
     end
-
-    tooltip.description = tooltip.description .. " <LINE>"
 
     if ISBuildMenu.cheat then
         tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat mode active " .. tooltip.description .. BuildingMenu.textCanRotate;

@@ -393,7 +393,8 @@ local function addSimonMDWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-    "[SimonMD] ".. getText("IGUI_BuildingMenuCat_Walls"),
+    "Simon MDs",
+    getText("IGUI_BuildingMenuCat_Walls"),
     "walls_Simon_MD_92",
     getText("IGUI_BuildingMenuSubCat_Walls_Scrap"),
     "walls_Simon_MD_92",
@@ -731,7 +732,8 @@ local simonMDCorrugatedRoof = {
     )
 }
 BuildingMenu.addObjectsToCategories(
-    "[SimonMD] ".. getText("IGUI_BuildingMenuCat_Roofing"),
+    "Simon MDs",
+    getText("IGUI_BuildingMenuCat_Roofing"),
     "roofs_Simon_MD_8",
     getText("IGUI_BuildingMenuSubCat_Roofing_Scrap"),
     "roofs_Simon_MD_8",
@@ -807,7 +809,8 @@ end
 
 
 BuildingMenu.addObjectsToCategories(
-    "[SimonMD] ".. getText("IGUI_BuildingMenuCat_Doors"),
+    "Simon MDs",
+    getText("IGUI_BuildingMenuCat_Doors"),
     "furniture_Simon_MD_72",
     getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
     "furniture_Simon_MD_72",
@@ -821,7 +824,8 @@ end
 
 
 BuildingMenu.addObjectsToCategories(
-    "[SimonMD] ".. getText("IGUI_BuildingMenuCat_Doors"),
+    "Simon MDs",
+    getText("IGUI_BuildingMenuCat_Doors"),
     nil,
     getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
     "furniture_Simon_MD_72",
