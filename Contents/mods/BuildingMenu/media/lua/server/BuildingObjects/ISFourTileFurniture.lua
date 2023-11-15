@@ -14,90 +14,6 @@ ISFourTileFurniture = ISBuildingObject:derive("ISFourTileFurniture");
 --     \ /   \ /
 
 
-function ISFourTileFurniture:create(x, y, z, north, sprite)
-    local cell = getWorld():getCell()
-    local square = cell:getGridSquare(x, y, z)
-
-    -- determine the positions for the other 3 tiles in the 2x2 formation
-    local xa, ya = self:getSquare2Pos(square, north)
-    local xb, yb = self:getSquare3Pos(square, north)
-    local xc, yc = self:getSquare4Pos(square, north)
-
-    -- define the sprite names for the additional tiles
-    local spriteAName = self.sprite2
-    local spriteBName = self.sprite3
-    local spriteCName = self.sprite4
-
-    if self.north then
-        spriteAName = self.northSprite2
-        spriteBName = self.northSprite3
-        spriteCName = self.northSprite4
-    end
-
-    -- create all 4 parts of the 2x2 furniture
-    self:addFurniturePart(x, y, z, north, sprite, 1)
-    self:addFurniturePart(xa, ya, z, north, spriteAName, 2)
-    self:addFurniturePart(xb, yb, z, north, spriteBName, 3)
-    self:addFurniturePart(xc, yc, z, north, spriteCName, 4)
-end
-
-function ISFourTileFurniture:addFurniturePart(x, y, z, north, sprite, index)
-    local cell = getWorld():getCell();
-    self.sq = cell:getGridSquare(x, y, z);
-
-    -- check if the part already exists on this tile
-    if self:partExists(self.sq, index) then
-        return;
-    end
-
-    -- create the furniture part and set its properties
-    self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
-	self.javaObject:setMaxHealth(self:getHealth());
-	self.javaObject:setHealth(self.javaObject:getMaxHealth());
-    self.javaObject:setBreakSound("BreakObject");
-    self.sq:AddSpecialObject(self.javaObject);
-    self.javaObject:transmitCompleteItemToServer();
-end
-
-
-function ISFourTileFurniture:walkTo(x, y, z)
-	local playerObj = getSpecificPlayer(self.player)
-	local square = getCell():getGridSquare(x, y, z)
-	local square2 = self:getSquare2(square, self.north)
-	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
-		return luautils.walkAdj(playerObj, square)
-	end
-	return luautils.walkAdj(playerObj, square2)
-end
-
-function ISFourTileFurniture:removeFromGround(square)
-	for i = 0, square:getSpecialObjects():size() do
-		local thump = square:getSpecialObjects():get(i);
-		if instanceof(thump, "IsoThumpable") then
-			square:transmitRemoveItemFromSquare(thump);
-			break
-		end
-	end
-
-	local xa = square:getX();
-	local ya = square:getY();
-
-	if self:getNorth() then
-		ya = ya - 1;
-	else
-		xa = xa - 1;
-	end
-
-	square = getCell():getGridSquare(xa, ya, square:getZ());
-	for i = 0, square:getSpecialObjects():size() do
-		local thump = square:getSpecialObjects():get(i);
-		if instanceof(thump, "IsoThumpable") then
-			square:transmitRemoveItemFromSquare(thump);
-			break
-		end
-	end
-end
-
 function ISFourTileFurniture:new(name, sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
 	local o = {};
 	setmetatable(o, self);
@@ -124,10 +40,97 @@ function ISFourTileFurniture:new(name, sprite, sprite2, sprite3, sprite4, northS
 	return o;
 end
 
+
+function ISFourTileFurniture:create(x, y, z, north, sprite)
+    local cell = getWorld():getCell()
+    local square = cell:getGridSquare(x, y, z)
+
+    -- determine the positions for the other 3 tiles in the 2x2 formation
+    local xa, ya = self:getSquare2Pos(square, north)
+    local xb, yb = self:getSquare3Pos(square, north)
+    local xc, yc = self:getSquare4Pos(square, north)
+
+    -- define the sprite names for the additional tiles
+    local spriteAName = self.sprite2
+    local spriteBName = self.sprite3
+    local spriteCName = self.sprite4
+
+    if self.north then
+        spriteAName = self.northSprite2
+        spriteBName = self.northSprite3
+        spriteCName = self.northSprite4
+    end
+
+    buildUtil.consumeMaterial(self);
+
+    -- create all 4 parts of the 2x2 furniture
+    self:addFurniturePart(x, y, z, north, sprite, 1)
+    self:addFurniturePart(xa, ya, z, north, spriteAName, 2)
+    self:addFurniturePart(xb, yb, z, north, spriteBName, 3)
+    self:addFurniturePart(xc, yc, z, north, spriteCName, 4)
+end
+
+
+function ISFourTileFurniture:addFurniturePart(x, y, z, north, sprite, index)
+    local cell = getWorld():getCell();
+    self.sq = cell:getGridSquare(x, y, z);
+
+    -- check if the part already exists on this tile
+    if self:partExists(self.sq, index) then return; end
+
+    -- create the furniture part and set its properties
+    self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+    buildUtil.setInfo(self.javaObject, self);
+	self.javaObject:setMaxHealth(self:getHealth());
+	self.javaObject:setHealth(self.javaObject:getMaxHealth());
+    self.javaObject:setBreakSound("BreakObject");
+    self.sq:AddSpecialObject(self.javaObject);
+    self.javaObject:transmitCompleteItemToServer();
+end
+
+
+function ISFourTileFurniture:walkTo(x, y, z)
+	local playerObj = getSpecificPlayer(self.player)
+	local square = getCell():getGridSquare(x, y, z)
+	local square2 = self:getSquare2(square, self.north)
+	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
+		return luautils.walkAdj(playerObj, square)
+	end
+	return luautils.walkAdj(playerObj, square2)
+end
+
+
+local function removeItemFromSquare(square)
+    for i = 1, square:getSpecialObjects():size() do
+        local thump = square:getSpecialObjects():get(i - 1);
+        if instanceof(thump, "IsoThumpable") then
+            square:transmitRemoveItemFromSquare(thump)
+            break
+        end
+    end
+end
+
+function ISFourTileFurniture:removeFromGround(square)
+    local isNorth = self:getNorth()
+    local positions = {
+        self:getSquare2Pos(square, isNorth),
+        self:getSquare3Pos(square, isNorth),
+        self:getSquare4Pos(square, isNorth)
+    }
+
+    for _, pos in ipairs(positions) do
+        local xa, ya = unpack(pos)
+        local squareA = getCell():getGridSquare(xa, ya, square:getZ())
+        removeItemFromSquare(squareA)
+    end
+end
+
+
 -- return the health of the new furniture, it's 400 + 100 per carpentry lvl
 function ISFourTileFurniture:getHealth()
     return 400 + buildUtil.getWoodHealth(self);
 end
+
 
 function ISFourTileFurniture:render(x, y, z, square)
     local spriteName
@@ -238,6 +241,7 @@ function ISFourTileFurniture:render(x, y, z, square)
     end
 end
 
+
 function ISFourTileFurniture:isValid(square)
     if not self:haveMaterial(square) or not square:hasFloor(self.north) or square:isVehicleIntersecting() then
         return false
@@ -286,6 +290,7 @@ function ISFourTileFurniture:isValid(square)
     return true
 end
 
+
 function ISFourTileFurniture:getSquare2Pos(square, north)
     local x = square:getX()
     local y = square:getY()
@@ -299,6 +304,7 @@ function ISFourTileFurniture:getSquare2Pos(square, north)
 
     return x, y, z
 end
+
 
 function ISFourTileFurniture:getSquare3Pos(square, north)
     local x = square:getX()
@@ -316,6 +322,7 @@ function ISFourTileFurniture:getSquare3Pos(square, north)
     return x, y, z
 end
 
+
 function ISFourTileFurniture:getSquare4Pos(square, north)
     local x = square:getX()
     local y = square:getY()
@@ -330,10 +337,12 @@ function ISFourTileFurniture:getSquare4Pos(square, north)
     return x, y, z
 end
 
+
 function ISFourTileFurniture:getSquare2(square, north)
 	local x, y, z = self:getSquare2Pos(square, north)
 	return getCell():getGridSquare(x, y, z)
 end
+
 
 function ISFourTileFurniture:partExists(square, index)
     local spriteName = self.north and self["northSprite" .. index] or self["sprite" .. index]

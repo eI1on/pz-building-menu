@@ -169,7 +169,6 @@ local function addBathroomAppliancesToMenu()
         bathroomObjects
     )
 end
-addBathroomAppliancesToMenu()
 
 
 local function addCookingAppliancesToMenu()
@@ -315,7 +314,6 @@ local function addCookingAppliancesToMenu()
         cookingObjects
     )
 end
-addCookingAppliancesToMenu()
 
 
 local function addFridgeAppliancesToMenu()
@@ -425,123 +423,141 @@ local function addFridgeAppliancesToMenu()
     BuildingMenu.addObjectsToCategories(
         "Vanilla",
         getText("IGUI_BuildingMenuCat_Appliances"),
-        "appliances_refrigeration_01_24",
+        "appliances_refrigeration_01_1",
         getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
-        "appliances_refrigeration_01_24",
+        "appliances_refrigeration_01_1",
         fridgesObjects
     )
 end
-addFridgeAppliancesToMenu()
 
 
-local laundryObjects = {
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Laundry",
-        BuildingMenu.onBuildCombinationWasherDryer,
-        BuildingMenu.WashingMachineRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            buildLow = true,
-            canBeAlwaysPlaced = true,
-            renderFloorHelper = false,
-            dismantable = true
-        },
-        {
-            sprite = "appliances_laundry_01_1",
-            northSprite = "appliances_laundry_01_0",
-            eastSprite = "appliances_laundry_01_3",
-            southSprite = "appliances_laundry_01_2"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Laundry",
-        BuildingMenu.onBuildClothingDryer,
-        BuildingMenu.WashingMachineRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            buildLow = true,
-            canBeAlwaysPlaced = true,
-            renderFloorHelper = false,
-            dismantable = true
-        },
-        {
-            sprite = "appliances_laundry_01_13",
-            northSprite = "appliances_laundry_01_12",
-            eastSprite = "appliances_laundry_01_15",
-            southSprite = "appliances_laundry_01_14"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Laundry",
-        BuildingMenu.onBuildClothingWasher,
-        BuildingMenu.WashingMachineRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            buildLow = true,
-            canBeAlwaysPlaced = true,
-            renderFloorHelper = false,
-            dismantable = true
-        },
-        {
-            sprite = "appliances_laundry_01_5",
-            northSprite = "appliances_laundry_01_4",
-            eastSprite = "appliances_laundry_01_7",
-            southSprite = "appliances_laundry_01_6"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Laundry",
-        BuildingMenu.onBuildWashingBin,
-        BuildingMenu.WashingBinRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            buildLow = true,
-            canBeAlwaysPlaced = true,
-            renderFloorHelper = false,
-            dismantable = true,
-            containerType = "clothingdryerbasic"
-        },
-        {
-            sprite = "appliances_laundry_01_24",
-            northSprite = "appliances_laundry_01_25",
-            eastSprite = "appliances_laundry_01_24",
-            southSprite = "appliances_laundry_01_25"
-        }
+local function addLaundryAppliancesToMenu()
+    local laundryObjects = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Laundry",
+            BuildingMenu.onBuildCombinationWasherDryer,
+            BuildingMenu.WashingMachineRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                dismantable = true
+            },
+            {
+                sprite = "appliances_laundry_01_1",
+                northSprite = "appliances_laundry_01_0",
+                eastSprite = "appliances_laundry_01_3",
+                southSprite = "appliances_laundry_01_2"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Laundry",
+            BuildingMenu.onBuildClothingDryer,
+            BuildingMenu.WashingMachineRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                dismantable = true
+            },
+            {
+                sprite = "appliances_laundry_01_13",
+                northSprite = "appliances_laundry_01_12",
+                eastSprite = "appliances_laundry_01_15",
+                southSprite = "appliances_laundry_01_14"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Laundry",
+            BuildingMenu.onBuildClothingWasher,
+            BuildingMenu.WashingMachineRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                dismantable = true
+            },
+            {
+                sprite = "appliances_laundry_01_5",
+                northSprite = "appliances_laundry_01_4",
+                eastSprite = "appliances_laundry_01_7",
+                southSprite = "appliances_laundry_01_6"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Laundry",
+            BuildingMenu.onBuildWashingBin,
+            BuildingMenu.WashingBinRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                dismantable = true,
+                containerType = "clothingdryerbasic"
+            },
+            {
+                sprite = "appliances_laundry_01_24",
+                northSprite = "appliances_laundry_01_25",
+                eastSprite = "appliances_laundry_01_24",
+                southSprite = "appliances_laundry_01_25"
+            }
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Vanilla",
+        getText("IGUI_BuildingMenuCat_Appliances"),
+        "appliances_laundry_01_1",
+        getText("IGUI_BuildingMenuSubCat_Appliances_Laundry"),
+        "appliances_laundry_01_1",
+        laundryObjects
     )
-}
-BuildingMenu.addObjectsToCategories(
-    "Vanilla",
-    getText("IGUI_BuildingMenuCat_Appliances"),
-    "appliances_laundry_01_1",
-    getText("IGUI_BuildingMenuSubCat_Appliances_Laundry"),
-    "appliances_laundry_01_1",
-    laundryObjects
-)
+end
+
+
+local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.bathroomAppliances then
+        addBathroomAppliancesToMenu()
+    end
+    if SandboxVars.BuildingMenu.cookingAppliances then
+        addCookingAppliancesToMenu()
+    end
+    if SandboxVars.BuildingMenu.fridgeAppliances then
+        addFridgeAppliancesToMenu()
+    end
+    if SandboxVars.BuildingMenu.laundryAppliances then
+        addLaundryAppliancesToMenu()
+    end
+end
+Events.OnGameStart.Add(addCategoriesToBuildingMenu)

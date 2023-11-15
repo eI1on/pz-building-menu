@@ -1,0 +1,13 @@
+Sandbox_EN = {
+    Sandbox_BuildingMenu = "Building Menu",
+    Sandbox_BuildingMenu_isThumpable = "Thumpable Structures",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "Turn <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> to make structures built using the menu immune to zombie damage.",
+    Sandbox_BuildingMenu_bathroomAppliances = "Enable Bathroom Fixtures",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Enable to add sinks, toilets and other bathroom-related objects in the menu. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_cookingAppliances = "Enable Kitchen Appliances",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Enable to access stoves, ovens and other cooking-related objects in the menu. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_fridgeAppliances = "Enable Refrigeration Appliances",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Enable to include fridges and freezers in the menu. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_laundryAppliances = "Enable Laundry Appliances",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Enable to add washers and dryers in the menu. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+}

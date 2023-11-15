@@ -29,7 +29,7 @@ function ISFourTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
     if self:partExists(self.sq, index) then return end
 
     self.javaObject = IsoDoor.new(cell, self.sq, sprite, north)
-	self:overrideModData(index);
+    self:overrideModData(index);
 	self.javaObject:setHealth(self:getHealth());
     self.sq:AddSpecialObject(self.javaObject)
 

@@ -1,5 +1,33 @@
 ISThreeTileSimpleFurniture = ISBuildingObject:derive('ISThreeTileSimpleFurniture')
 
+--************************************************************************--
+--** ISThreeTileSimpleFurniture:new
+--**
+--************************************************************************--
+
+
+function ISThreeTileSimpleFurniture:new(sprite, sprite2, sprite3, northSprite, northSprite2, northSprite3)
+    local o = {}
+    setmetatable(o, self)
+    self.__index = self
+
+    o:init()
+    o:setSprite(sprite)
+
+    o.sprite2 = sprite2
+    o.sprite3 = sprite3
+
+    o.northSprite = northSprite
+    o.northSprite2 = northSprite2
+    o.northSprite3 = northSprite3
+    o.isWallLike = false;
+    o.thumpDmg = 5
+    o.name = 'Three Tile Furniture'
+
+    return o
+end
+
+
 function ISThreeTileSimpleFurniture:create(x, y, z, north, sprite)
     local cell = getWorld():getCell()
     local square = cell:getGridSquare(x, y, z)
@@ -15,84 +43,71 @@ function ISThreeTileSimpleFurniture:create(x, y, z, north, sprite)
 
     buildUtil.consumeMaterial(self)
 
-    self:addObjectPart(x, y, z, north, sprite, 1)
-    self:addObjectPart(xa, ya, z, north, spriteAName, 2)
-    self:addObjectPart(xb, yb, z, north, spriteBName, 3)
+    self:addFurniturePart(x, y, z, north, sprite, 1)
+    self:addFurniturePart(xa, ya, z, north, spriteAName, 2)
+    self:addFurniturePart(xb, yb, z, north, spriteBName, 3)
 end
 
-function ISThreeTileSimpleFurniture:addObjectPart(x, y, z, north, sprite, index)
+
+function ISThreeTileSimpleFurniture:addFurniturePart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell()
     self.sq = cell:getGridSquare(x, y, z)
 
+    -- check if the part already exists on this tile
     if self:partExists(self.sq, index) then return end
 
+    -- create the furniture part and set its properties
     self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
 	buildUtil.setInfo(self.javaObject, self);
-	buildUtil.consumeMaterial(self);
 	self.javaObject:setMaxHealth(self:getHealth());
 	self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
-
 	self.sq:AddSpecialObject(self.javaObject);
 	self.javaObject:transmitCompleteItemToServer();
 end
 
+
+function ISThreeTileSimpleFurniture:walkTo(x, y, z)
+	local playerObj = getSpecificPlayer(self.player)
+	local square = getCell():getGridSquare(x, y, z)
+	local square2 = self:getSquare2(square, self.north)
+	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
+		return luautils.walkAdj(playerObj, square)
+	end
+	return luautils.walkAdj(playerObj, square2)
+end
+
+
+local function removeItemFromSquare(square)
+    for i = 1, square:getSpecialObjects():size() do
+        local thump = square:getSpecialObjects():get(i - 1);
+        if instanceof(thump, "IsoThumpable") then
+            square:transmitRemoveItemFromSquare(thump)
+            break
+        end
+    end
+end
+
+
+function ISThreeTileSimpleFurniture:removeFromGround(square)
+    local isNorth = self:getNorth()
+    local positions = {
+        self:getSquare2Pos(square, isNorth),
+        self:getSquare3Pos(square, isNorth),
+    }
+
+    for _, pos in ipairs(positions) do
+        local xa, ya = unpack(pos)
+        local squareA = getCell():getGridSquare(xa, ya, square:getZ())
+        removeItemFromSquare(squareA)
+    end
+end
+
+
 function ISThreeTileSimpleFurniture:getHealth()
-    return 200 + buildUtil.getWoodHealth(self);
+    return 300 + buildUtil.getWoodHealth(self);
 end
 
-function ISThreeTileSimpleFurniture:isValid(square)
-    if not self:haveMaterial(square) then
-        return false
-    end
-    if not square:hasFloor(self.north) then
-        return false
-    end
-    if not self:partExists(square, 1) and not square:isFreeOrMidair(false) then
-        return false
-    end
-    if square:isVehicleIntersecting() then
-        return false
-    end
-
-    local xa, ya = self:getSquare2Pos(square, self.north)
-    local xb, yb = self:getSquare3Pos(square, self.north)
-    local squareA = getCell():getGridSquare(xa, ya, square:getZ())
-    local squareB = getCell():getGridSquare(xb, yb, square:getZ())
-
-    if (not squareA) or (not squareB) then
-        return false
-    end
-
-    local existsA = self:partExists(squareA, 2)
-    local existsB = self:partExists(squareB, 3)
-
-    if not existsA and not buildUtil.canBePlace(self, squareA) then
-        return false
-    end
-    if not existsB and not buildUtil.canBePlace(self, squareB) then
-        return false
-    end
-
-    if squareA:isSomethingTo(square) then
-        return false
-    end
-    if squareB:isSomethingTo(squareA) then
-        return false
-    end
-
-    if buildUtil.stairIsBlockingPlacement(square, true, self.north) then
-        return false
-    end
-    if buildUtil.stairIsBlockingPlacement(squareA, true, self.north) then
-        return false
-    end
-    if buildUtil.stairIsBlockingPlacement(squareB, true, self.north) then
-        return false
-    end
-
-    return true
-end
 
 function ISThreeTileSimpleFurniture:render(x, y, z, square)
     local spriteName
@@ -177,6 +192,60 @@ function ISThreeTileSimpleFurniture:render(x, y, z, square)
 end
 
 
+function ISThreeTileSimpleFurniture:isValid(square)
+    if not self:haveMaterial(square) then
+        return false
+    end
+    if not square:hasFloor(self.north) then
+        return false
+    end
+    if not self:partExists(square, 1) and not square:isFreeOrMidair(false) then
+        return false
+    end
+    if square:isVehicleIntersecting() then
+        return false
+    end
+
+    local xa, ya = self:getSquare2Pos(square, self.north)
+    local xb, yb = self:getSquare3Pos(square, self.north)
+    local squareA = getCell():getGridSquare(xa, ya, square:getZ())
+    local squareB = getCell():getGridSquare(xb, yb, square:getZ())
+
+    if (not squareA) or (not squareB) then
+        return false
+    end
+
+    local existsA = self:partExists(squareA, 2)
+    local existsB = self:partExists(squareB, 3)
+
+    if not existsA and not buildUtil.canBePlace(self, squareA) then
+        return false
+    end
+    if not existsB and not buildUtil.canBePlace(self, squareB) then
+        return false
+    end
+
+    if squareA:isSomethingTo(square) then
+        return false
+    end
+    if squareB:isSomethingTo(squareA) then
+        return false
+    end
+
+    if buildUtil.stairIsBlockingPlacement(square, true, self.north) then
+        return false
+    end
+    if buildUtil.stairIsBlockingPlacement(squareA, true, self.north) then
+        return false
+    end
+    if buildUtil.stairIsBlockingPlacement(squareB, true, self.north) then
+        return false
+    end
+
+    return true
+end
+
+
 function ISThreeTileSimpleFurniture:getSquare2Pos(square, north)
     local x = square:getX()
     local y = square:getY()
@@ -189,6 +258,7 @@ function ISThreeTileSimpleFurniture:getSquare2Pos(square, north)
     end
     return x, y, z
 end
+
 
 function ISThreeTileSimpleFurniture:getSquare3Pos(square, north)
     local x = square:getX()
@@ -214,25 +284,4 @@ function ISThreeTileSimpleFurniture:partExists(square, index)
       end
     end
     return false
-end
-
-function ISThreeTileSimpleFurniture:new(sprite, sprite2, sprite3, northSprite, northSprite2, northSprite3)
-    local o = {}
-    setmetatable(o, self)
-    self.__index = self
-
-    o:init()
-    o:setSprite(sprite)
-
-    o.sprite2 = sprite2
-    o.sprite3 = sprite3
-
-    o.northSprite = northSprite
-    o.northSprite2 = northSprite2
-    o.northSprite3 = northSprite3
-    o.isWallLike = false;
-    o.thumpDmg = 5
-    o.name = 'Three Tile Furniture'
-
-    return o
 end

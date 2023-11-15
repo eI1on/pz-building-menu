@@ -1177,6 +1177,8 @@ Tooltip_EN = {
 
   Tooltip_Crown_Molding = "Elegant crown molding, adding a touch of sophistication to your shelter's interior.",
 
+  Tooltip_Metal_Drum = "A sturdy metal drum designed for collecting and storing water.",
+
   Tooltip_BuildingMenuObj_White_Door_Trim = "White Door Trim",
   Tooltip_BuildingMenuObj_White_Crown_Molding = "White Crown Molding",
   Tooltip_BuildingMenuObj_White_Crown_Molding_Pillar = "White Crown Molding Pillar",
@@ -1454,6 +1456,9 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Metal_Stairs = "Metal Stairs",
 
   Tooltip_Asphalt_Generic = "A smooth and sturdy asphalt surface, perfect for constructing roads and pathways.",
+  Tooltip_StreetCrack_Overlay_1 = "A small fissure in the road's surface. Watch your step! <BR><RGB:1,0.8,0> Rotate <RGB:1,1,1><SPACE> to adjust size and depth.",
+  Tooltip_StreetCrack_Overlay_2 = "A small fissure in the road's surface. Watch your step!",
+  Tooltip_Grime_Overlay = "A filthy layer of grime and dirt.",
 
   Tooltip_BuildingMenuObj_Light_Asphalt = "Light Asphalt",
   Tooltip_BuildingMenuObj_Light_Asphalt_Corner = "Light Asphalt Corner",
@@ -1480,7 +1485,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Old_Asphalt_Corner = "Old Asphalt Corner",
 
   Tooltip_BuildingMenuObj_Grime_Overlay = "Grime Overlay",
-
+  Tooltip_BuildingMenuObj_Street_Overlay = "Street Overlay",
 
   Tooltip_Dirt_Generic = "A mound of earth, waiting to be shaped.",
   Tooltip_Grass_Generic = "Lush green grass, perfect for gardens and bedding.",
@@ -1520,6 +1525,8 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Scarecrow = "Scarecrow",
   Tooltip_BuildingMenuObj_Skeleton = "Skeleton",
 
+  Tooltip_BuildingMenuObj_Logs = "Logs",
+
   Tooltip_BuildingMenuObj_Brown_Bar_Counter = "Brown Bar Counter",
   Tooltip_BuildingMenuObj_Brown_Bar_Counter_Corner = "Brown Bar Counter Corner",
   Tooltip_BuildingMenuObj_Black_Bar_Counter = "Black Bar Counter",
@@ -1553,6 +1560,9 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Wooden Barrel Shelves 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Wooden Barrel Shelves 2",
 
+  Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Big Wall Shelves",
+  Tooltip_Dresser = "A sturdy wooden dresser for storing clothing and personal items.",
+
   Tooltip_BuildingMenuObj_Toddler_Rug_Corner = "Toddler Rug Corner",
   Tooltip_BuildingMenuObj_Toddler_Rug_Edge = "Toddler Rug Edge",
   Tooltip_BuildingMenuObj_Toddler_Rug_Inner = "Toddler Rug Inner",
@@ -1583,6 +1593,7 @@ Tooltip_EN = {
 
   Tooltip_Fireplace = "A classic fireplace for warmth and cooking. <RGB:1,0.8,0><SPACE> If you also want the jambs, build them first, otherwise it will overlap the fireplace.",
   Tooltip_BuildingMenuObj_Generator = "Generator",
+  Tooltip_BuildingMenuObj_Metal_Drum = "Metal Drum",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Mens Room",
   Tooltip_BuildingMenuObj_Ladies_Room = "Ladies Room",
@@ -1613,6 +1624,10 @@ Tooltip_EN = {
   Tooltip_Flower_Beds_Generic = "A flower bed, offering a touch of natural beauty to your surroundings. <LINE> Comes in two variations: <RGB:1,0.8,0> <SPACE> slightly wilted <RGB:1,1,1><SPACE> or in   <RGB:1,0.8,0> <SPACE> full bloom <RGB:1,1,1> .",
   Tooltip_Hedges_Generic = "Hedge suitable for creating natural cover or a decorative touch to your surroundings.",
   Tooltip_Plants_Indoor_Generic = "Indoor plant that add a touch of nature to your indoor spaces, improving the ambiance.",
+
+  Tooltip_BuildingMenuObj_Wall_Vines = "Wall Vines",
+  Tooltip_BuildingMenuObj_Floor_Vines = "Floor Vines",
+  Tooltip_Wall_Vines_Generic = "Lush, creeping vines that can be attached to walls. Adds a touch of nature and camouflage to your structures.",
 
   Tooltip_Lighting = "It needs a battery to function. Can't be picked up.",
   Tooltip_BuildingMenuObj_Switch = "Switch",

@@ -1,0 +1,41 @@
+VERSION = 1,
+
+option BuildingMenu.isThumpable
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_isThumpable,
+}
+
+option BuildingMenu.bathroomAppliances
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_bathroomAppliances,
+}
+
+option BuildingMenu.cookingAppliances
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_cookingAppliances,
+}
+
+option BuildingMenu.fridgeAppliances
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_fridgeAppliances,
+}
+
+option BuildingMenu.laundryAppliances
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_laundryAppliances,
+}

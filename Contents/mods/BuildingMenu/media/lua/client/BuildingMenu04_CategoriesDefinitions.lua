@@ -4,72 +4,31 @@ end
 
 local BuildingMenu = getBuildingMenuInstance()
 
-function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon, subcategoryName, subCategoryIcon, objects)
-    if BuildingMenu.Tabs then
-        -- find or create the tab
-        local tab
-        for _, t in ipairs(BuildingMenu.Tabs) do
-            if t.tabName == tabName then
-                tab = t
-                break
-            end
-        end
-        if not tab then
-            tab = {
-                tabName = tabName,
-                categories = {}
-            }
-            table.insert(BuildingMenu.Tabs, tab)
-        end
-
-        -- find or create the category within the tab
-        local category
-        for _, cat in ipairs(tab.categories) do
-            if cat.categoryName == categoryName then
-                category = cat
-                break
-            end
-        end
-        if not category then
-            category = {
-                categoryName = categoryName,
-                subcategories = {}
-            }
-            if categoryIcon then
-                category.categoryIcon = categoryIcon
-            end
-            table.insert(tab.categories, category)
-        elseif categoryIcon then
-            category.categoryIcon = categoryIcon
-        end
-
-        -- find or create the subcategory within the category
-        local subcategory
-        for _, subcat in ipairs(category.subcategories) do
-            if subcat.subcategoryName == subcategoryName then
-                subcategory = subcat
-                break
-            end
-        end
-        if not subcategory then
-            subcategory = {
-                subcategoryName = subcategoryName,
-                objects = {}
-            }
-            if subCategoryIcon then
-                subcategory.subCategoryIcon = subCategoryIcon
-            end
-            table.insert(category.subcategories, subcategory)
-        elseif subCategoryIcon then
-            subcategory.subCategoryIcon = subCategoryIcon
-        end
-
-        -- add the objects to the subcategory
-        for _, obj in ipairs(objects) do
-            table.insert(subcategory.objects, obj)
+local function findOrCreateItem(list, keyName, keyValue, newItem)
+    for _, item in ipairs(list) do
+        if item[keyName] == keyValue then
+            return item
         end
     end
+    table.insert(list, newItem)
+    return newItem
 end
+
+function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon, subcategoryName, subCategoryIcon, objects)
+    if not BuildingMenu.Tabs then return end
+
+    local tab = findOrCreateItem(BuildingMenu.Tabs, "tabName", tabName, {tabName = tabName, categories = {}})
+    local category = findOrCreateItem(tab.categories, "categoryName", categoryName, {categoryName = categoryName, subcategories = {}})
+    category.categoryIcon = category.categoryIcon or categoryIcon
+
+    local subcategory = findOrCreateItem(category.subcategories, "subcategoryName", subcategoryName, {subcategoryName = subcategoryName, objects = {}})
+    subcategory.subCategoryIcon = subcategory.subCategoryIcon or subCategoryIcon
+
+    for _, obj in ipairs(objects) do
+        table.insert(subcategory.objects, obj)
+    end
+end
+
 
 
 function BuildingMenu.createObject(name, description, action, recipe, isRecipeKnown, options, sprites)
@@ -8874,7 +8833,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -8897,7 +8856,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -8920,7 +8879,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -8943,7 +8902,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -8966,7 +8925,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -8989,7 +8948,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -9008,7 +8967,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -9027,7 +8986,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -9046,7 +9005,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -9065,7 +9024,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -9084,7 +9043,7 @@ BuildingMenu.Tabs = {
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
                                 BuildingMenu.onBuildWall,
-                                BuildingMenu.MetalFencePostRecipe,
+                                BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
                                     firstItem = "BlowTorch",
@@ -18586,7 +18545,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Gravel_Corner",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.GravelBlendRecipe,
                                 true,
                                 {
@@ -18610,7 +18569,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Gravel_Edge",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.GravelBlendRecipe,
                                 true,
                                 {
@@ -18647,7 +18606,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Beige_Gravel_Corner",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.GravelBlendRecipe,
                                 true,
                                 {
@@ -18671,7 +18630,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Beige_Gravel_Edge",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.GravelBlendRecipe,
                                 true,
                                 {
@@ -18713,7 +18672,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Beige_Asphalt_Corner",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.AsphaltBlendRecipe,
                                 true,
                                 {
@@ -18737,7 +18696,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Beige_Asphalt_Edge",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.AsphaltBlendRecipe,
                                 true,
                                 {
@@ -18774,7 +18733,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Light_Asphalt_Corner",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.AsphaltBlendRecipe,
                                 true,
                                 {
@@ -18798,7 +18757,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Light_Asphalt_Edge",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.AsphaltBlendRecipe,
                                 true,
                                 {
@@ -18840,7 +18799,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Medium_Asphalt_Corner",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.AsphaltBlendRecipe,
                                 true,
                                 {
@@ -18882,7 +18841,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Asphalt_Corner",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.AsphaltBlendRecipe,
                                 true,
                                 {
@@ -18924,7 +18883,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Old_Asphalt_Corner",
                                 "Tooltip_Asphalt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.AsphaltBlendRecipe,
                                 true,
                                 {
@@ -18948,13 +18907,867 @@ BuildingMenu.Tabs = {
                         }
                     },
                     {
-                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Overlay"),
+                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Street_Overlay"),
+                        subCategoryIcon = "d_streetcracks_1_16",
+                        objects = {
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_0",
+                                    northSprite = "d_streetcracks_1_8",
+                                    eastSprite = "d_streetcracks_1_16"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_1",
+                                    northSprite = "d_streetcracks_1_9",
+                                    eastSprite = "d_streetcracks_1_17"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_2",
+                                    northSprite = "d_streetcracks_1_10",
+                                    eastSprite = "d_streetcracks_1_18"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_3",
+                                    northSprite = "d_streetcracks_1_11",
+                                    eastSprite = "d_streetcracks_1_19"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_4",
+                                    northSprite = "d_streetcracks_1_12",
+                                    eastSprite = "d_streetcracks_1_20"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_5",
+                                    northSprite = "d_streetcracks_1_13",
+                                    eastSprite = "d_streetcracks_1_21"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_6",
+                                    northSprite = "d_streetcracks_1_14",
+                                    eastSprite = "d_streetcracks_1_22"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_1",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "d_streetcracks_1_7",
+                                    northSprite = "d_streetcracks_1_15",
+                                    eastSprite = "d_streetcracks_1_23"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_0",
+                                    northSprite = "blends_streetoverlays_01_0",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_1",
+                                    northSprite = "blends_streetoverlays_01_1",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_2",
+                                    northSprite = "blends_streetoverlays_01_2",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_3",
+                                    northSprite = "blends_streetoverlays_01_3",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_4",
+                                    northSprite = "blends_streetoverlays_01_4",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_5",
+                                    northSprite = "blends_streetoverlays_01_5",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_6",
+                                    northSprite = "blends_streetoverlays_01_6",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_7",
+                                    northSprite = "blends_streetoverlays_01_7",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_8",
+                                    northSprite = "blends_streetoverlays_01_8",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_9",
+                                    northSprite = "blends_streetoverlays_01_9",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_10",
+                                    northSprite = "blends_streetoverlays_01_10",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_11",
+                                    northSprite = "blends_streetoverlays_01_11",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_12",
+                                    northSprite = "blends_streetoverlays_01_12",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_13",
+                                    northSprite = "blends_streetoverlays_01_13",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_14",
+                                    northSprite = "blends_streetoverlays_01_14",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_15",
+                                    northSprite = "blends_streetoverlays_01_15",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_16",
+                                    northSprite = "blends_streetoverlays_01_16",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_17",
+                                    northSprite = "blends_streetoverlays_01_17",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_18",
+                                    northSprite = "blends_streetoverlays_01_18",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_19",
+                                    northSprite = "blends_streetoverlays_01_19",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_20",
+                                    northSprite = "blends_streetoverlays_01_20",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_21",
+                                    northSprite = "blends_streetoverlays_01_21",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_22",
+                                    northSprite = "blends_streetoverlays_01_22",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_23",
+                                    northSprite = "blends_streetoverlays_01_23",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_24",
+                                    northSprite = "blends_streetoverlays_01_24",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_25",
+                                    northSprite = "blends_streetoverlays_01_25",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_26",
+                                    northSprite = "blends_streetoverlays_01_26",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_27",
+                                    northSprite = "blends_streetoverlays_01_27",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_28",
+                                    northSprite = "blends_streetoverlays_01_28",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_29",
+                                    northSprite = "blends_streetoverlays_01_29",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_30",
+                                    northSprite = "blends_streetoverlays_01_30",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_StreetCrack_Overlay_2",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.StreetCrackRecipe,
+                                true,
+                                {
+                                    actionAnim = "DestroyFloor",
+                                    noNeedHammer = true,
+                                    craftingBank = "SledgehammerHit",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_streetoverlays_01_31",
+                                    northSprite = "blends_streetoverlays_01_31",
+                                }
+                            ),
+                        }
+                    },
+                    {
+                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Floor_Overlay"),
                         subCategoryIcon = "overlay_grime_floor_01_0",
                         objects = {
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -18965,7 +19778,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -18976,9 +19788,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -18989,7 +19801,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19000,9 +19811,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19013,7 +19824,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19024,9 +19834,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19037,7 +19847,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19048,9 +19857,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19061,7 +19870,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19072,9 +19880,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19085,7 +19893,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19096,9 +19903,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19109,7 +19916,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19120,9 +19926,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19133,7 +19939,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19144,9 +19949,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19157,7 +19962,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19168,9 +19972,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19181,7 +19985,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19192,9 +19995,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19205,7 +20008,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19216,9 +20018,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19229,7 +20031,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19240,9 +20041,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19253,7 +20054,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19264,9 +20064,9 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Grime_Overlay",
-                                "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                "Tooltip_BuildingMenuObj_Street_Overlay",
+                                "Tooltip_Grime_Overlay",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19277,7 +20077,6 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
                                     canBarricade = false,
-                                    isThumpable = true,
                                     isCorner = true
                                 },
                                 {
@@ -19296,7 +20095,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19319,7 +20118,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19342,7 +20141,78 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_45",
+                                    northSprite = "street_curbs_01_44",
+                                    eastSprite = "street_curbs_01_46",
+                                    southSprite = "street_curbs_01_2"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_3",
+                                    northSprite = "street_curbs_01_3"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_4",
+                                    northSprite = "street_curbs_01_5"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19365,7 +20235,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19388,7 +20258,30 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_11",
+                                    northSprite = "street_curbs_01_10"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19411,7 +20304,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19434,7 +20327,30 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_16",
+                                    northSprite = "street_curbs_01_17"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19457,7 +20373,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19480,7 +20396,191 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_22",
+                                    northSprite = "street_curbs_01_23"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_24",
+                                    northSprite = "street_curbs_01_25"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_35",
+                                    northSprite = "street_curbs_01_32"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_34",
+                                    northSprite = "street_curbs_01_33"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_36",
+                                    northSprite = "street_curbs_01_38"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_37",
+                                    northSprite = "street_curbs_01_39"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_48",
+                                    northSprite = "street_curbs_01_51"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_49",
+                                    northSprite = "street_curbs_01_50"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19503,7 +20603,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Sidewalk_Edge",
                                 "Tooltip_Sidewalk_Edge_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.ConcreteFloorRecipe,
                                 true,
                                 {
@@ -19521,6 +20621,31 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "street_curbs_01_56",
                                     northSprite = "street_curbs_01_56"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Sidewalk_Edge",
+                                "Tooltip_Sidewalk_Edge_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "street_curbs_01_59",
+                                    northSprite = "street_curbs_01_60",
+                                    eastSprite = "street_curbs_01_61",
+                                    southSprite = "street_curbs_01_62"
                                 }
                             ),
                         }
@@ -19545,7 +20670,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dirt_Corner",
                                 "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19582,7 +20707,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grass_Corner",
                                 "Tooltip_Grass_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19606,7 +20731,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grass_Edge",
                                 "Tooltip_Grass_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -19636,7 +20761,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Line",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19660,7 +20785,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Line_Corner",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19684,7 +20809,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Thick_White_Line",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19703,7 +20828,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Thick_White_Line_Corner",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19727,7 +20852,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Thick_White_Line_T",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19751,7 +20876,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Thick_White_Line_Triangles",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19776,7 +20901,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19795,7 +20920,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19814,7 +20939,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19838,7 +20963,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintWhite,
                                 true,
                                 {
@@ -19887,7 +21012,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Yellow_Line",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintYellow,
                                 true,
                                 {
@@ -19911,7 +21036,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Yellow_Line_Corner",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintYellow,
                                 true,
                                 {
@@ -19936,7 +21061,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Yellow_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintYellow,
                                 true,
                                 {
@@ -19955,7 +21080,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Yellow_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintYellow,
                                 true,
                                 {
@@ -19974,7 +21099,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Yellow_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintYellow,
                                 true,
                                 {
@@ -19998,7 +21123,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Yellow_Markings",
                                 "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildFloorOverlay,
                                 BuildingMenu.PaintYellow,
                                 true,
                                 {
@@ -22372,7 +23497,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scarecrow",
                                 "Tooltip_ClothesStand",
-                                BuildingMenu.onBuildScarecrow,
+                                BuildingMenu.onBuildMannequin,
                                 BuildingMenu.MannequinRecipe,
                                 true,
                                 {
@@ -22385,7 +23510,8 @@ BuildingMenu.Tabs = {
                                     buildLow = true,
                                     canBeAlwaysPlaced = true,
                                     renderFloorHelper = false,
-                                    dismantable = true
+                                    dismantable = true,
+                                    scriptStr = "Base.MannequinScarecrow01",
                                 },
                                 {
                                     sprite = "location_shop_mall_01_65",
@@ -22397,7 +23523,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Skeleton",
                                 "Tooltip_ClothesStand",
-                                BuildingMenu.onBuildSkeleton,
+                                BuildingMenu.onBuildMannequin,
                                 BuildingMenu.MannequinRecipe,
                                 true,
                                 {
@@ -22410,7 +23536,8 @@ BuildingMenu.Tabs = {
                                     buildLow = true,
                                     canBeAlwaysPlaced = true,
                                     renderFloorHelper = false,
-                                    dismantable = true
+                                    dismantable = true,
+                                    scriptStr = "Base.MannequinSkeleton01",
                                 },
                                 {
                                     sprite = "location_shop_mall_01_66",
@@ -22418,7 +23545,127 @@ BuildingMenu.Tabs = {
                                     eastSprite = "location_shop_mall_01_66",
                                     southSprite = "location_shop_mall_01_66"
                                 }
-                            )
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Logs",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "logs",
+                                    renderFloorHelper = false,
+                                    canBeAlwaysPlaced = true,
+                                    dismantable = true,
+                                    isContainer = true,
+                                    capacity = 200
+                                },
+                                {
+                                    sprite = "camping_01_25",
+                                    sprite2 = "camping_01_24",
+                                    northSprite1 = "camping_01_38",
+                                    northSprite2 = "camping_01_39"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Logs",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "logs",
+                                    renderFloorHelper = false,
+                                    canBeAlwaysPlaced = true,
+                                    dismantable = true,
+                                    isContainer = true,
+                                    capacity = 200
+                                },
+                                {
+                                    sprite = "camping_01_27",
+                                    sprite2 = "camping_01_26",
+                                    northSprite1 = "camping_01_36",
+                                    northSprite2 = "camping_01_37"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Logs",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "logs",
+                                    renderFloorHelper = false,
+                                    canBeAlwaysPlaced = true,
+                                    dismantable = true,
+                                    isContainer = true,
+                                    capacity = 200
+                                },
+                                {
+                                    sprite = "camping_01_29",
+                                    sprite2 = "camping_01_28",
+                                    northSprite1 = "camping_01_34",
+                                    northSprite2 = "camping_01_35"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Logs",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "logs",
+                                    renderFloorHelper = false,
+                                    canBeAlwaysPlaced = true,
+                                    dismantable = true,
+                                    isContainer = true,
+                                    capacity = 200
+                                },
+                                {
+                                    sprite = "camping_01_31",
+                                    sprite2 = "camping_01_30",
+                                    northSprite1 = "camping_01_32",
+                                    northSprite2 = "camping_01_33"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Logs",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "logs",
+                                    renderFloorHelper = false,
+                                    canBeAlwaysPlaced = true,
+                                    dismantable = true,
+                                    isContainer = true,
+                                    capacity = 200
+                                },
+                                {
+                                    sprite = "camping_01_41",
+                                    sprite2 = "camping_01_40",
+                                    northSprite1 = "camping_01_42",
+                                    northSprite2 = "camping_01_43"
+                                }
+                            ),
                         }
                     }
                 }
@@ -23321,6 +24568,132 @@ BuildingMenu.Tabs = {
                                     sprite2 = "location_restaurant_spiffos_02_20",
                                     northSprite = "location_restaurant_spiffos_02_16",
                                     northSprite2 = "location_restaurant_spiffos_02_17"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_woodenChairDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LeatherFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "location_restaurant_diner_01_33",
+                                    sprite2 = "location_restaurant_diner_01_32",
+                                    northSprite = "location_restaurant_diner_01_34",
+                                    northSprite2 = "location_restaurant_diner_01_35"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_woodenChairDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LeatherFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "location_restaurant_diner_01_37",
+                                    sprite2 = "location_restaurant_diner_01_36",
+                                    northSprite = "location_restaurant_diner_01_38",
+                                    northSprite2 = "location_restaurant_diner_01_39"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_woodenChairDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LeatherFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "location_restaurant_pileocrepe_01_29",
+                                    sprite2 = "location_restaurant_pileocrepe_01_28",
+                                    northSprite = "location_restaurant_pileocrepe_01_24",
+                                    northSprite2 = "location_restaurant_pileocrepe_01_25"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_woodenChairDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LeatherFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "location_restaurant_pileocrepe_01_31",
+                                    sprite2 = "location_restaurant_pileocrepe_01_30",
+                                    northSprite = "location_restaurant_pileocrepe_01_26",
+                                    northSprite2 = "location_restaurant_pileocrepe_01_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_woodenChairDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LeatherFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "location_restaurant_pizzawhirled_01_45",
+                                    sprite2 = "location_restaurant_pizzawhirled_01_44",
+                                    northSprite = "location_restaurant_pizzawhirled_01_40",
+                                    northSprite2 = "location_restaurant_pizzawhirled_01_41"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_woodenChairDesc",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LeatherFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "location_restaurant_pizzawhirled_01_47",
+                                    sprite2 = "location_restaurant_pizzawhirled_01_46",
+                                    northSprite = "location_restaurant_pizzawhirled_01_42",
+                                    northSprite2 = "location_restaurant_pizzawhirled_01_43"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -24686,6 +26059,46 @@ BuildingMenu.Tabs = {
                                     eastSprite = "furniture_shelving_01_46",
                                     southSprite = "furniture_shelving_01_47"
                                 }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_bookcaseDesc",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.LargeFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "shelves",
+                                    canBeAlwaysPlaced = true,
+                                    isContainer = true,
+                                    canBeLockedByPadlock = true
+                                },
+                                {
+                                    sprite = "furniture_shelving_01_10",
+                                    northSprite = "furniture_shelving_01_9"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Big_Wall_Shelves",
+                                "Tooltip_craft_bookcaseDesc",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.LargeFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "shelves",
+                                    canBeAlwaysPlaced = true,
+                                    isContainer = true,
+                                    canBeLockedByPadlock = true
+                                },
+                                {
+                                    sprite = "furniture_shelving_01_8",
+                                    northSprite = "furniture_shelving_01_8"
+                                }
                             )
                         }
                     },
@@ -24695,7 +26108,7 @@ BuildingMenu.Tabs = {
                         objects = {
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildSimpleFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24715,7 +26128,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildSimpleFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24735,7 +26148,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildSimpleFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24755,7 +26168,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24776,7 +26189,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24797,7 +26210,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildSimpleFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24817,7 +26230,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24838,7 +26251,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24859,7 +26272,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildSimpleFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24879,7 +26292,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24900,7 +26313,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24921,7 +26334,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildSimpleFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24941,7 +26354,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24962,7 +26375,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -24983,7 +26396,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildSimpleFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -25003,7 +26416,7 @@ BuildingMenu.Tabs = {
                             ),
                             BuildingMenu.createObject(
                                 "",
-                                "",
+                                "Tooltip_Dresser",
                                 BuildingMenu.onBuildDoubleTileFurniture,
                                 BuildingMenu.LargeFurnitureRecipe,
                                 true,
@@ -27496,6 +28909,256 @@ BuildingMenu.Tabs = {
                         }
                     },
                     {
+                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Vegetation_Vines"),
+                        subCategoryIcon = "f_wallvines_1_43",
+                        objects = {
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_24",
+                                    northSprite = "f_wallvines_1_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_25",
+                                    northSprite = "f_wallvines_1_26"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_28",
+                                    northSprite = "f_wallvines_1_29"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_30",
+                                    northSprite = "f_wallvines_1_33"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_31",
+                                    northSprite = "f_wallvines_1_32"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_34",
+                                    northSprite = "f_wallvines_1_35"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_36",
+                                    northSprite = "f_wallvines_1_39"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_37",
+                                    northSprite = "f_wallvines_1_38"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_40",
+                                    northSprite = "f_wallvines_1_41"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_42",
+                                    northSprite = "f_wallvines_1_45"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_43",
+                                    northSprite = "f_wallvines_1_44"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wall_Vines",
+                                "Tooltip_Wall_Vines_Generic",
+                                BuildingMenu.onBuildWallOverlay,
+                                BuildingMenu.WallVinesRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = true,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                },
+                                {
+                                    sprite = "f_wallvines_1_46",
+                                    northSprite = "f_wallvines_1_47"
+                                }
+                            ),
+                        }
+                    },
+                    {
                         subcategoryName = getText("IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor"),
                         subCategoryIcon = "vegetation_indoor_01_7",
                         objects = {
@@ -28029,15 +29692,127 @@ BuildingMenu.Tabs = {
                                     completionSound = "BuildMetalStructureMedium"
                                 },
                                 {sprite = "appliances_misc_01_0", northSprite = "appliances_misc_01_0"}
-                            )
+                            ),
+                        }
+                    },
+                    {
+                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Survival_Metal_Drums"),
+                        subCategoryIcon = "crafted_01_24",
+                        objects = {
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Metal_Drum",
+                                "Tooltip_Metal_Drum",
+                                BuildingMenu.onMetalDrum,
+                                BuildingMenu.MetalDrumRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchMid",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "crafted_01_24"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Metal_Drum",
+                                "Tooltip_Metal_Drum",
+                                BuildingMenu.onMetalDrum,
+                                BuildingMenu.MetalDrumRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchMid",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "building_menu_barrels_02_16"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Metal_Drum",
+                                "Tooltip_Metal_Drum",
+                                BuildingMenu.onMetalDrum,
+                                BuildingMenu.MetalDrumRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchMid",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "crafted_01_28"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Metal_Drum",
+                                "Tooltip_Metal_Drum",
+                                BuildingMenu.onMetalDrum,
+                                BuildingMenu.MetalDrumRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchMid",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "building_menu_barrels_02_0"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Metal_Drum",
+                                "Tooltip_Metal_Drum",
+                                BuildingMenu.onMetalDrum,
+                                BuildingMenu.MetalDrumRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchMid",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "building_menu_barrels_02_4"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Metal_Drum",
+                                "Tooltip_Metal_Drum",
+                                BuildingMenu.onMetalDrum,
+                                BuildingMenu.MetalDrumRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchMid",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "building_menu_barrels_02_8"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Metal_Drum",
+                                "Tooltip_Metal_Drum",
+                                BuildingMenu.onMetalDrum,
+                                BuildingMenu.MetalDrumRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchMid",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "building_menu_barrels_02_12"}
+                            ),
                         }
                     }
-                    -- {
-                    --     subcategoryName = getText("IGUI_BuildingMenuSubCat_Survival_Water_Well"),
-                    --     objects = {
-                    --         BuildingMenu.createObject("Tooltip_BuildingMenuObj_Water_Well", "Tooltip_Water_Well", BuildingMenu.onBuildWaterWell, BuildingMenu.WaterWellRecipe, { canPassThrough = false, needToBeAgainstWall = false, blockAllTheSquare = false, renderFloorHelper = true, canBarricade = false, isThumpable = false}, { sprite = "camping_01_16", northSprite = "camping_01_16"}),
-                    --     }
-                    -- },
                 }
             },
             {

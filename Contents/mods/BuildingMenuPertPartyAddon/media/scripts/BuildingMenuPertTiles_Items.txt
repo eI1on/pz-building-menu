@@ -1,0 +1,28 @@
+module Radio
+{
+    item TvMonster
+	{
+	    DisplayCategory = Communications,
+		Type			= Radio,
+		Icon			= Television,
+		Weight          	= 10.0,
+
+		DisplayName		= Monster Television,
+        
+		UseDelta		= 0.007, 
+		UseWhileEquipped	= FALSE,
+		DisappearOnUse		= FALSE,
+		TwoWay			= FALSE,
+		TransmitRange		= 0,
+		MicRange		= 0,
+		BaseVolumeRange		= 15,
+		IsPortable		= FALSE,
+		IsTelevision		= TRUE,
+		MinChannel		= 200,
+		MaxChannel		= 1000000,
+		UsesBattery		= FALSE,
+		IsHighTier		= FALSE,
+		WorldObjectSprite	= pert_re-phoenix_2_120,
+		AcceptMediaType = 1,
+	}
+}

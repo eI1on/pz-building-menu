@@ -5,7 +5,7 @@ function ISWindowWallObj:create(x, y, z, north, sprite)
     self.sq = cell:getGridSquare(x, y, z)
 
     self.javaObject = IsoWindow.new(getCell(), self.sq, getSprite(sprite), north)
-    buildUtil.consumeMaterial(self)
+	buildUtil.consumeMaterial(self)
     self.sq:AddSpecialObject(self.javaObject)
 
     buildUtil.checkCorner(x,y,z,north,self, self.javaObject);
@@ -87,9 +87,7 @@ function ISWindowWallObj:isValid(square)
 		end
 	end
 
-
 	return true
-
 end
 
 function ISWindowWallObj:render(x, y, z, square)

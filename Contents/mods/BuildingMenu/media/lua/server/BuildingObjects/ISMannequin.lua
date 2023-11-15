@@ -4,15 +4,15 @@ function ISMannequin:create(x, y, z, north, sprite)
   local cell = getWorld():getCell()
   self.sq = cell:getGridSquare(x, y, z)
   self.javaObject = IsoMannequin.new(getCell(), self.sq, getSprite(sprite))
+
+  if self.scriptStr then
+    local mannequinScript = getScriptManager():getMannequinScript(self.scriptStr);
+    self.javaObject:setMannequinScriptName(mannequinScript:getName())
+  end
+
   self.javaObject:setMovedThumpable(true)
 
-	-- local _mannequinInv = ItemContainer.new()
-  -- _mannequinInv:setType('mannequin')
-  -- _mannequinInv:setCapacity(50)
-	-- _mannequinInv:removeAllItems()
-  -- _mannequinInv:setParent(self.javaObject)
-  -- self.javaObject:setContainer(_mannequinInv)
-
+  self.javaObject:createContainersFromSpriteProperties()
 	for i=1,self.javaObject:getContainerCount() do
 		self.javaObject:getContainerByIndex(i-1):setExplored(true)
 	end
@@ -42,7 +42,8 @@ function ISMannequin:new(player, sprite)
   o.canBarricade = false;
   o.player = player
   o.dismantable = true
-  o.name = name
+  o.name = "Mannequin";
+  o.scriptStr = nil;
   o.stopOnWalk = false
   o.stopOnRun = false
   o.blockAllTheSquare = false;

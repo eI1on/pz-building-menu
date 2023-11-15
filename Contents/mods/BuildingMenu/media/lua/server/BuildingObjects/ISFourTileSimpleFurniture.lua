@@ -32,7 +32,6 @@ function ISFourTileSimpleFurniture:addObjectPart(x, y, z, north, sprite, index)
 
     self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
 	buildUtil.setInfo(self.javaObject, self);
-	buildUtil.consumeMaterial(self);
 	self.javaObject:setMaxHealth(self:getHealth());
 	self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");

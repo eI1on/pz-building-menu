@@ -9,7 +9,9 @@ local exclusions = {
 }
 
 function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOptions)
-    object.name = name;
+    if name then
+        object.name = name;
+    end
     object.player = player;
 
     if not objectRecipe then return end
@@ -262,6 +264,14 @@ BuildingMenu.onBuildMetalCounter = function( sprites, name, player, objectRecipe
 end
 
 
+BuildingMenu.onMetalDrum = function( sprites, name, player, objectRecipe, objectOptions)
+	local _barrel = ISMetalDrum:new(player, sprites.sprite)
+
+    -- passing the name break the ISMetalDrum object
+    BuildingMenu.buildObject(_barrel, nil, player, objectRecipe, objectOptions)
+end
+
+
 BuildingMenu.onBuildMetalShelf = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalshelf = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
@@ -281,6 +291,13 @@ BuildingMenu.onBuildDoubleMetalShelf = function( sprites, name, player, objectRe
 
     BuildingMenu.buildObject(_metalDoubleShelf, name, player, objectRecipe, objectOptions)
 end
+
+BuildingMenu.onBuildDoubleTileContainer = function( sprites, name, player, objectRecipe, objectOptions)
+    local _doubleTileContainer = ISDoubleTileContainer:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
+
+    BuildingMenu.buildObject(_doubleTileContainer, name, player, objectRecipe, objectOptions)
+end
+
 
 BuildingMenu.onBuildMannequin = function( sprites, name, player, objectRecipe, objectOptions)
     local _mannequin = ISMannequin:new(player, sprites.sprite)
@@ -361,6 +378,7 @@ BuildingMenu.onBuildDoubleTileFurniture = function( sprites, name, player, objec
 
     BuildingMenu.buildObject(_doubleTileFurniture, name, player, objectRecipe, objectOptions)
 end
+
 
 BuildingMenu.onBuildWoodenContainer = function( sprites, name, player, objectRecipe, objectOptions)
     local _woodenContainer = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
@@ -482,6 +500,36 @@ BuildingMenu.onBuildFloor = function( sprites, name, player, objectRecipe, objec
     end
 
     BuildingMenu.buildObject(_floor, name, player, objectRecipe, objectOptions)
+end
+
+
+BuildingMenu.onBuildFloorOverlay = function( sprites, name, player, objectRecipe, objectOptions)
+    local _floorOverlay = ISFloorOverlay:new(sprites.sprite, sprites.northSprite)
+
+    if sprites.eastSprite then
+        _floorOverlay:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _floorOverlay:setSouthSprite(sprites.southSprite)
+    end
+
+    BuildingMenu.buildObject(_floorOverlay, name, player, objectRecipe, objectOptions)
+end
+
+
+BuildingMenu.onBuildWallOverlay = function( sprites, name, player, objectRecipe, objectOptions)
+    local _wallOverlay = ISWallOverlay:new(sprites.sprite, sprites.northSprite)
+
+    if sprites.eastSprite then
+        _wallOverlay:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _wallOverlay:setSouthSprite(sprites.southSprite)
+    end
+
+    BuildingMenu.buildObject(_wallOverlay, name, player, objectRecipe, objectOptions)
 end
 
 

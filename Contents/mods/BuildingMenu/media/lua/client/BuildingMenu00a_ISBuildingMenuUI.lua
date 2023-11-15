@@ -12,18 +12,19 @@ local BuildingMenu = getBuildingMenuInstance()
 
 BuildingMenuTilePickerList = ISPanel:derive("BuildingMenuTilePickerList")
 
+local TILE_WIDTH, TILE_HEIGHT = 64, 128
+
 function BuildingMenuTilePickerList:render()
     ISPanel.render(self)
 
     self:setStencilRect(0, 0, self:getWidth(), self:getHeight())
 
-    local maxRow = 1
     local objectsBuffer = {}
-    local tileWidth, tileHeight = 64, 128;
-    local cols = math.floor(self:getWidth() / tileWidth)
+    local maxCols = math.floor(self:getWidth() / TILE_WIDTH)
+    local maxRows = math.ceil(#(self.subCatData or {}) / maxCols)
 
-    for r = 1, 128 do
-        for c = 1, cols do
+    for r = 1, maxRows  do
+        for c = 1, maxCols do
             local objDef = self:findNextObject(objectsBuffer)
             if objDef then
                 local objSpriteName = objDef.data.sprites.sprite
@@ -40,31 +41,33 @@ function BuildingMenuTilePickerList:render()
                     end
 
                     if texture then
-                        self:drawTextureScaledAspect(texture, (c - 1) * tileWidth, (r - 1) * tileHeight, tileWidth, tileHeight, 1.0, 1.0, 1.0, 1.0)
-                        maxRow = r
+                        self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0)
                     end
                 end
             end
         end
     end
-    self:setScrollHeight(maxRow * tileHeight)
+    self:setScrollHeight(maxRows * TILE_HEIGHT);
 
-    local mouseX = self:getMouseX()
-    local mouseY = self:getMouseY()
+    self:updateTooltip(maxCols, maxRows);
+    self:clearStencilRect();
+end
 
-    -- calculate the position of the tile list panel relative to the parent, considering the title bar height and panel tab height
+
+function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
+    local mouseX, mouseY = self:getMouseX(), self:getMouseY()
     local panelY = self:getY() - self:getYScroll() - self.parent:titleBarHeight() - self.parent.panel.tabHeight
     if mouseY < panelY or mouseY > panelY + self:getHeight() then  self:clearStencilRect(); return  end
 
-    local c = math.floor(mouseX / tileWidth)
-    local r = math.floor(mouseY / tileHeight)
+    local c = math.floor(mouseX / TILE_WIDTH)
+    local r = math.floor(mouseY / TILE_HEIGHT)
 
-    if c >= 0 and r >= 0 and r < maxRow and c < cols and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
+    if c >= 0 and r >= 0 and r < maxRows and c < maxCols and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
         local selectedObject = self.posToObjectNameTable[r + 1][c + 1];
         self.tooltip, selectedObject.canBuild = BuildingMenu.canBuildObject(self.character, self.tooltip, selectedObject.objDef.data.recipe);
 
         local borderColor = selectedObject.canBuild and { 0.6, 0, 1, 0 } or { 0.6, 1, 0, 0 }
-        self:drawRectBorder(c * tileWidth, r * tileHeight, tileWidth, tileHeight, unpack(borderColor))
+        self:drawRectBorder(c * TILE_WIDTH, r * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, unpack(borderColor))
         self.tooltip:addToUIManager();
         self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
         self.tooltip.description = selectedObject.objDef.description .. " <RGB:1,0,0> " .. self.tooltip.description;
@@ -73,19 +76,14 @@ function BuildingMenuTilePickerList:render()
         self.tooltip:setVisible(false);
         self.tooltip:removeFromUIManager()
     end
-    self:clearStencilRect();
 end
 
 
 function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
-    if self.subCatData then
-        for _, objectDef in pairs(self.subCatData) do
-            if objectDef.data and objectDef.data.sprites then
-                local objSpriteName = objectDef.data.sprites.sprite
-                if not objectsBuffer[objSpriteName] then
-                    return objectDef
-                end
-            end
+    if not self.subCatData then return nil end
+    for _, objectDef in pairs(self.subCatData) do
+        if objectDef.data and objectDef.data.sprites and not objectsBuffer[objectDef.data.sprites.sprite] then
+            return objectDef
         end
     end
     return nil
@@ -108,11 +106,20 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
         local objectName = objData.objDef.name
         local recipe = objData.objDef.data.recipe
         local options = objData.objDef.data.options
+
+        local modifiedOptions = {}
+        for k, v in pairs(options) do
+            modifiedOptions[k] = v
+        end
+        if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
+            modifiedOptions.isThumpable = false
+        end
         local onBuild = objData.objDef.data.action
 
-        onBuild(spritesName, objectName, self.character:getPlayerNum(), recipe, options)
+        onBuild(spritesName, objectName, self.character:getPlayerNum(), recipe, modifiedOptions)
     end
 end
+
 
 
 function BuildingMenuTilePickerList:onMouseUp(x, y)
@@ -154,6 +161,7 @@ function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
     o.textureCache = {};
     o.tooltip = nil;
     o.message = nil;
+    o.overwriteIsThumpable = false;
     o.parent = parent;
     return o
 end
@@ -277,6 +285,16 @@ end
 
 function ISBuildingMenuUI:onGearButtonClick()
     local context = ISContextMenu.get(0, self:getAbsoluteX() + self:getWidth(), self:getAbsoluteY() + self.gearButton:getY())
+
+    if isDebugEnabled() or (isClient() and (getAccessLevel() == "admin")) then
+        local option = context:addOption("Not Thumpable", self, function(self) 
+            self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable
+            if isDebugEnabled() then
+                BuildingMenu.debugPrint("[Building Menu Debug] self.tilesList.overwriteIsThumpable: ", self.tilesList.overwriteIsThumpable)
+            end
+        end)
+        context:setOptionChecked(option, self.tilesList.overwriteIsThumpable)
+    end
 
     local minOpaqueOption = context:addOption(getText("UI_chat_context_opaque_min"), ISBuildingMenuUI.instance);
     local minOpaqueSubMenu = context:getNew(context);

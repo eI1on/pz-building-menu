@@ -2,13 +2,13 @@
 --**                    ROBERT JOHNSON                     **
 --***********************************************************
 
-ISDoubleMetalShelf = ISBuildingObject:derive("ISDoubleMetalShelf");
+ISDoubleTileContainer = ISBuildingObject:derive("ISDoubleTileContainer");
 
 --************************************************************************--
---** ISDoubleMetalShelf:new
+--** ISDoubleTileContainer:new
 --**
 --************************************************************************--
-function ISDoubleMetalShelf:create(x, y, z, north, sprite)
+function ISDoubleTileContainer:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
 	self:setInfo(self.sq, north, sprite, self);
@@ -37,7 +37,7 @@ function ISDoubleMetalShelf:create(x, y, z, north, sprite)
 	buildUtil.consumeMaterial(self);
 end
 
-function ISDoubleMetalShelf:walkTo(x, y, z)
+function ISDoubleTileContainer:walkTo(x, y, z)
 	local playerObj = getSpecificPlayer(self.player)
 	local square = getCell():getGridSquare(x, y, z)
 	local square2 = self:getSquare2(square, self.north)
@@ -47,25 +47,24 @@ function ISDoubleMetalShelf:walkTo(x, y, z)
 	return luautils.walkAdj(playerObj, square2)
 end
 
-function ISDoubleMetalShelf:setInfo(square, north, sprite)
+function ISDoubleTileContainer:setInfo(square, north, sprite)
 	-- add furniture to our ground
 	local thumpable = IsoThumpable.new(getCell(), square, sprite, north, self);
 	-- name of the item for the tooltip
 	buildUtil.setInfo(thumpable, self);
 
-	-- local _shelfInv = ItemContainer.new()
-    -- _shelfInv:setType('shelves')
-    -- _shelfInv:setCapacity(50)
-	-- _shelfInv:removeAllItems()
-    -- _shelfInv:setParent(self.javaObject)
-    -- thumpable:setContainer(_shelfInv)
-	
-	-- it spawns items in the container
+	local _inv = ItemContainer.new()
+    _inv:setType(self.containerType or 'crate')
+    _inv:setCapacity(self.capacity or 50)
+	_inv:removeAllItems()
+    _inv:setParent(self.javaObject)
+	_inv:setExplored(true)
+    thumpable:setContainer(_inv)
 
-	thumpable:createContainersFromSpriteProperties()
-
-	for i=1,thumpable:getContainerCount() do
-		thumpable:getContainerByIndex(i-1):setExplored(true)
+	local sharedSprite = getSprite(self:getSprite())
+	if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
+		local props = ISMoveableSpriteProps.new(sharedSprite)
+		self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq))
 	end
 
 	-- the furniture have 200 base health + 100 per carpentry lvl
@@ -77,7 +76,7 @@ function ISDoubleMetalShelf:setInfo(square, north, sprite)
 	thumpable:transmitCompleteItemToServer();
 end
 
-function ISDoubleMetalShelf:removeFromGround(square)
+function ISDoubleTileContainer:removeFromGround(square)
 	for i = 0, square:getSpecialObjects():size() do
 		local thump = square:getSpecialObjects():get(i);
 		if instanceof(thump, "IsoThumpable") then
@@ -105,7 +104,7 @@ function ISDoubleMetalShelf:removeFromGround(square)
 	end
 end
 
-function ISDoubleMetalShelf:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
+function ISDoubleTileContainer:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
@@ -125,11 +124,11 @@ function ISDoubleMetalShelf:new(player, name, sprite1, sprite2, northSprite1, no
 end
 
 -- return the health of the new furniture, it's 200 + 100 per carpentry lvl
-function ISDoubleMetalShelf:getHealth()
+function ISDoubleTileContainer:getHealth()
 	return 200 + buildUtil.getWoodHealth(self);
 end
 
-function ISDoubleMetalShelf:render(x, y, z, square)
+function ISDoubleTileContainer:render(x, y, z, square)
 	-- render the first part
 	ISBuildingObject.render(self, x, y, z, square)
 	-- render the other part of the furniture
@@ -164,22 +163,18 @@ function ISDoubleMetalShelf:render(x, y, z, square)
 	end
 end
 
-function ISDoubleMetalShelf:isValid(square)
-	if not ISBuildingObject.isValid(self, square) then
-		return false
-    end
+function ISDoubleTileContainer:isValid(square)
     if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
-	if square:isVehicleIntersecting() then return false end
-	local xa, ya, za = self:getSquare2Pos(square, self.north)
-	local squareA = getCell():getGridSquare(xa, ya, za)
-	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement( squareA, true ) then
-		return false
+	if not self:haveMaterial(square) then return false end
+	local sharedSprite = getSprite(self:getSprite())
+	if square and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
+		local props = ISMoveableSpriteProps.new(sharedSprite)
+		return props:canPlaceMoveable("bogus", square, nil)
 	end
-	if squareA:isVehicleIntersecting() then return false end
-	return true
+	return ISBuildingObject.isValid(self, square);
 end
 
-function ISDoubleMetalShelf:getSquare2Pos(square, north)
+function ISDoubleTileContainer:getSquare2Pos(square, north)
 	local x = square:getX()
 	local y = square:getY()
 	local z = square:getZ()
@@ -191,7 +186,7 @@ function ISDoubleMetalShelf:getSquare2Pos(square, north)
 	return x, y, z
 end
 
-function ISDoubleMetalShelf:getSquare2(square, north)
+function ISDoubleTileContainer:getSquare2(square, north)
 	local x, y, z = self:getSquare2Pos(square, north)
 	return getCell():getGridSquare(x, y, z)
 end

@@ -11,12 +11,13 @@ BuildingMenu = {}
 
 
 BuildingMenu.playerCanPlaster = false
-BuildingMenu.textTooltipHeader = '<RGB:2,2,2> <LINE> <LINE>' .. getText('Tooltip_craft_Needs') .. ' : <LINE> '
+BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip_craft_Needs') .. ' : <LINE> '
 BuildingMenu.textCanRotate = '<LINE> <RGB:1,1,1>' .. getText('Tooltip_craft_pressToRotate', Keyboard.getKeyName(getCore():getKey('Rotate building')))
 
 
 BuildingMenu.Tools = {}
 BuildingMenu.Tools['Hammer'] = {'Base.Hammer', 'Base.HammerStone', 'Base.BallPeenHammer', 'Base.WoodenMallet', 'Base.ClubHammer'}
+BuildingMenu.Tools['Sledgehammer'] = {'Base.Sledgehammer', 'Base.Sledgehammer2'}
 BuildingMenu.Tools['Paintbrush'] = {'Base.Paintbrush'}
 BuildingMenu.Tools['Screwdriver'] = {'Base.Screwdriver'}
 BuildingMenu.Tools['Saw'] = {'Base.Saw'}
@@ -296,14 +297,17 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
     tooltip.description = tooltip.description .. " <LINE>"
 
     local playerSkills = BuildingMenu.getPlayerSkills(playerObj)
-    for _, skill in pairs(objectRecipe.skills) do
-        if playerSkills[skill.Skill] < skill.Level then
-            tooltip.description = tooltip.description .. ISBuildMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
-            _canBuildResult = false
-        else
-            tooltip.description = tooltip.description .. ISBuildMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
+    if objectRecipe.skills then
+        for _, skill in pairs(objectRecipe.skills) do
+            if playerSkills[skill.Skill] < skill.Level then
+                tooltip.description = tooltip.description .. ISBuildMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
+                _canBuildResult = false
+            else
+                tooltip.description = tooltip.description .. ISBuildMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
+            end
         end
     end
+
 
     if ISBuildMenu.cheat then
         tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat mode active " .. tooltip.description .. BuildingMenu.textCanRotate;

@@ -2,24 +2,39 @@
 --**                    ROBERT JOHNSON                     **
 --***********************************************************
 
-ISFloorOverlay = ISBuildingObject:derive("ISFloorOverlay");
+ISWallOverlay = ISBuildingObject:derive("ISWallOverlay");
 
 --************************************************************************--
---** ISFloorOverlay:new
+--** ISWallOverlay:new
 --**
 --************************************************************************--
-function ISFloorOverlay:create(x, y, z, north, sprite)
+
+local function isRelevantWall(isCorner, object, north)
+    local properties = object:getProperties()
+
+    if isCorner then
+        return properties:Is("WallNW") and not instanceof(object, "IsoWindow")
+    end
+
+    if not instanceof(object, "IsoWindow") then
+        return (north and (properties:Is("WallN") or properties:Is("WindowN") or properties:Is("WallNW") or properties:Is("DoorWallN"))) or 
+               (not north and (properties:Is("WallW") or properties:Is("WindowW") or properties:Is("WallNW") or properties:Is("DoorWallW")))
+    end
+
+    return false
+end
+
+
+function ISWallOverlay:create(x, y, z, north, sprite)
 	self.sq = getWorld():getCell():getGridSquare(x, y, z);
 	buildUtil.consumeMaterial(self);
 
     local objects = self.sq:getObjects()
-    local objectsSize = objects:size()
     local spriteInstance = getSprite(sprite):newInstance()
 
-    for i = 0, objectsSize - 1 do
+    for i = 0, objects:size() - 1 do
         local object = objects:get(i)
-        local properties = object:getProperties()
-        if (properties and properties:Is(IsoFlagType.solidfloor)) or object:isFloor() then
+        if isRelevantWall(self.isCorner, object, north) then
             local attachedAnimSprite = object:getAttachedAnimSprite()
             if attachedAnimSprite == nil then
                 attachedAnimSprite = ArrayList:new()
@@ -27,6 +42,7 @@ function ISFloorOverlay:create(x, y, z, north, sprite)
             end
             attachedAnimSprite:add(spriteInstance)
             if isClient() then object:transmitUpdatedSpriteToServer() end
+			break;
         end
     end
 
@@ -36,39 +52,32 @@ function ISFloorOverlay:create(x, y, z, north, sprite)
 end
 
 
-function ISFloorOverlay:new(sprite, northSprite)
+function ISWallOverlay:new(sprite, northSprite)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
 	o:setSprite(sprite);
 	o:setNorthSprite(northSprite);
-	o.buildLow = true;
-	o.floor = true;
 	return o;
 end
 
-function ISFloorOverlay:isValid(square)
-	if not self:haveMaterial(square) then return false end
-	if square:getZ() > 0 then
-		local below = getCell():getGridSquare(square:getX(), square:getY(), square:getZ() - 1)
-		if below and below:HasStairs() then
-			return false
-		end
-	end
-	for i = 0, square:getObjects():size() - 1 do
-		local item = square:getObjects():get(i);
-		if (item:getTextureName() and luautils.stringStarts(item:getTextureName(), "vegetation_farming")) or
-				(item:getSpriteName() and luautils.stringStarts(item:getSpriteName(), "vegetation_farming")) 
-				-- or not (item:getProperties() and item:getProperties():Is(IsoFlagType.solidfloor)) 
-					then
-						return false;
-		end
-	end
-	return square:connectedWithFloor();
+function ISWallOverlay:isValid(square)
+	if self.needToBeAgainstWall then
+        for i=0,square:getObjects():size()-1 do
+           local obj = square:getObjects():get(i);
+           if isRelevantWall(self.isCorner, obj, self.north) then
+               return true;
+           end
+        end
+        return false;
+    else
+        if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+    end
+    return true;
 end
 
-function ISFloorOverlay:render(x, y, z, square)
+function ISWallOverlay:render(x, y, z, square)
 	ISBuildingObject.render(self, x, y, z, square)
 end
 

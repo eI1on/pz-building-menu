@@ -424,6 +424,66 @@ BuildingMenu.OldSmallBrickWallRecipe = {
     }
 }
 
+BuildingMenu.OrangeBigBrickWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 6
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 8
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintOrange",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 5,
+            Xp = 30
+        }
+    }
+}
+
+BuildingMenu.OrangeSmallBrickWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 3
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 4
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintOrange",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 4,
+            Xp = 25
+        }
+    }
+}
+
 BuildingMenu.BlueBigBrickWallRecipe = {
     neededTools = {
         "Hammer",
@@ -600,6 +660,66 @@ BuildingMenu.WhiteSmallBrickWallRecipe = {
     useConsumable = {
         {
             Consumable = "Base.PaintWhite",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 4,
+            Xp = 25
+        }
+    }
+}
+
+BuildingMenu.PurpleBigBrickWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 6
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 8
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintPurple",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 5,
+            Xp = 30
+        }
+    }
+}
+
+BuildingMenu.PurpleSmallBrickWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 3
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 4
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintPurple",
             Amount = 1
         }
     },
@@ -951,6 +1071,66 @@ BuildingMenu.TurquoiseBigWoodWallRecipe = {
 }
 
 BuildingMenu.TurquoiseSmallWoodWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 3
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 4
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintTurquoise",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 4,
+            Xp = 25
+        }
+    }
+}
+
+BuildingMenu.TurquoiseBigBrickWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 6
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 8
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintTurquoise",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 5,
+            Xp = 30
+        }
+    }
+}
+
+BuildingMenu.TurquoiseSmallBrickWallRecipe = {
     neededTools = {
         "Hammer",
         "Paintbrush"
@@ -2266,26 +2446,6 @@ BuildingMenu.YellowBrownSmallWoodWallRecipe = {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 BuildingMenu.BigMetalBarWallRecipe = {
     neededTools = {
         "BlowTorch",
@@ -2299,11 +2459,11 @@ BuildingMenu.BigMetalBarWallRecipe = {
         },
         {
             Material = 'Base.MetalBar',
-            Amount = 6
+            Amount = 4
         },
         {
             Material = 'Base.Screws',
-            Amount = 10
+            Amount = 8
         },
     },
     useConsumable = {
@@ -2338,11 +2498,11 @@ BuildingMenu.SmallMetalBarWallRecipe = {
         },
         {
             Material = 'Base.MetalBar',
-            Amount = 4
+            Amount = 2
         },
         {
             Material = 'Base.Screws',
-            Amount = 5
+            Amount = 6
         },
     },
     useConsumable = {
@@ -2363,29 +2523,6 @@ BuildingMenu.SmallMetalBarWallRecipe = {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 BuildingMenu.BigMetalWallRecipe = {
@@ -3527,6 +3664,7 @@ BuildingMenu.AsphaltBlendRecipe = {
     }
 }
 
+
 BuildingMenu.DirtRecipe = {
     neededTools = {
         "Shovel"
@@ -3536,16 +3674,15 @@ BuildingMenu.DirtRecipe = {
             Consumable = "Base.Dirtbag",
             Amount = 1
         }
-    },
-    skills = {
-        {
-            Skill = "Woodwork",
-            Level = 1,
-            Xp = 5
-        }
     }
 }
 
+
+BuildingMenu.StreetCrackRecipe = {
+    neededTools = {
+        "Sledgehammer"
+    }
+}
 
 BuildingMenu.PaintWhite = {
     neededTools = {
@@ -4245,6 +4382,32 @@ BuildingMenu.FlowerPotRecipe = {
     }
 }
 
+
+BuildingMenu.WallVinesRecipe = {
+    neededTools = {
+        "Shovel"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Twigs",
+            Amount = 5
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.BucketWaterFull",
+            Amount = 2
+        }
+    },
+    skills = {
+        {
+            Skill = "Farming",
+            Level = 4,
+            Xp = 15
+        }
+    }
+}
+
 BuildingMenu.WaterWellRecipe = {
     neededTools = {
         "Shovel"
@@ -4840,6 +5003,44 @@ BuildingMenu.MannequinRecipe = {
     }
 }
 
+
+BuildingMenu.MetalDrumRecipe = {
+    neededTools = {
+        "BlowTorch",
+        "WeldingMask"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.SheetMetal",
+            Amount = 15
+        },
+        {
+            Material = "Base.SmallSheetMetal",
+            Amount = 10
+        },
+        {
+            Material = 'Base.Screws',
+            Amount = 20
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = 'Base.BlowTorch',
+            Amount = 10
+        },
+        {
+            Consumable = "Base.WeldingRods",
+            Amount = BuildingMenu.weldingRodUses(10)
+        },
+    },
+    skills = {
+        {
+            Skill = "MetalWelding",
+            Level = 7,
+            Xp = 35
+        }
+    }
+}
 
 BuildingMenu.GeneratorRecipe = {
     neededTools = {

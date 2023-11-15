@@ -1,5 +1,33 @@
 ISThreeTileGarageDoor = ISBuildingObject:derive('ISThreeTileGarageDoor')
 
+--************************************************************************--
+--** ISThreeTileGarageDoor:new
+--**
+--************************************************************************--
+
+
+function ISThreeTileGarageDoor:new(sprite, sprite2, sprite3, northSprite, northSprite2, northSprite3)
+  local o = {}
+  setmetatable(o, self)
+  self.__index = self
+  o:init()
+  o:setSprite(sprite)
+
+  o.sprite2 = sprite2
+  o.sprite3 = sprite3
+
+  o.northSprite = northSprite
+  o.northSprite2 = northSprite2
+  o.northSprite3 = northSprite3
+
+  o.consumedItems = {}
+	o.isDoor = true;
+  o.thumpDmg = 5
+  o.name = 'Garage Door'
+  return o
+end
+
+
 function ISThreeTileGarageDoor:create(x, y, z, north, sprite)
   local cell = getWorld():getCell()
   local square = cell:getGridSquare(x, y, z)
@@ -26,7 +54,7 @@ function ISThreeTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
     return
   end
   self.javaObject = IsoDoor.new(cell, self.sq, sprite, north)
-	self.javaObject:setHealth(self:getHealth());
+  self.javaObject:setHealth(self:getHealth());
   self.sq:AddSpecialObject(self.javaObject)
 
   if index == 1 then
@@ -217,25 +245,4 @@ function ISThreeTileGarageDoor:partExists(square, index)
     end
   end
   return false
-end
-
-function ISThreeTileGarageDoor:new(sprite, sprite2, sprite3, northSprite, northSprite2, northSprite3)
-  local o = {}
-  setmetatable(o, self)
-  self.__index = self
-  o:init()
-  o:setSprite(sprite)
-
-  o.sprite2 = sprite2
-  o.sprite3 = sprite3
-
-  o.northSprite = northSprite
-  o.northSprite2 = northSprite2
-  o.northSprite3 = northSprite3
-
-  o.consumedItems = {}
-	o.isDoor = true;
-  o.thumpDmg = 5
-  o.name = 'Garage Door'
-  return o
 end
