@@ -48,7 +48,12 @@ end
 
 BuildingMenu.Tabs = {
     {
-        tabName = "Vanilla",
+        tabName = getText("IGUI_BuildingMenuTab_Favorite"),
+        categories = {
+        },
+    },
+    {
+        tabName = getText("IGUI_BuildingMenuTab_General"),
         categories = {
             {
                 categoryName = getText("IGUI_BuildingMenuCat_Walls"),
@@ -14461,162 +14466,153 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Door_Trim",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_61", northSprite = "walls_detailing_01_62"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Crown_Molding",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_29", northSprite = "walls_detailing_01_30"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Crown_Molding_Pillar",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_28", northSprite = "walls_detailing_01_28"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Vinyl_Trim",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_24", northSprite = "walls_detailing_01_25"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_26", northSprite = "walls_detailing_01_26"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Black_Vinyl_Trim",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_32", northSprite = "walls_detailing_01_33"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Black_Vinyl_Trim_Pillar",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_34", northSprite = "walls_detailing_01_34"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Tile_Trim",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_36", northSprite = "walls_detailing_01_37"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Tile_Trim_Pillar",
                                 "Tooltip_Crown_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_39", northSprite = "walls_detailing_01_39"}
                             )
@@ -14629,108 +14625,102 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Block_Edge",
                                 "Tooltip_Edge_Detailing",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_8", northSprite = "walls_detailing_01_9"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Block_Edge_Side",
                                 "Tooltip_Edge_Detailing",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_10", northSprite = "walls_detailing_01_11"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Block_Edge_Pillar",
                                 "Tooltip_Edge_Detailing",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_12"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Block_Edge",
                                 "Tooltip_Edge_Detailing",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_48", northSprite = "walls_detailing_01_49"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Block_Edge_Side",
                                 "Tooltip_Edge_Detailing",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_50", northSprite = "walls_detailing_01_51"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Block_Edge_Pillar",
                                 "Tooltip_Edge_Detailing",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "Build",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureLarge",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_52"}
                             ),
@@ -14797,234 +14787,221 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Marble_Trim",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_5", northSprite = "walls_detailing_01_6"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Tile_Trim",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_13", northSprite = "walls_detailing_01_14"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Baseboard",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_21", northSprite = "walls_detailing_01_22"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Tile_Trim_Pillar",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_20", northSprite = "walls_detailing_01_20"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Simple_Trim",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_4", northSprite = "walls_interior_detailing_01_5"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Simple_Trim_Pillar",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_7", northSprite = "walls_interior_detailing_01_7"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Simple_Trim_Doorway",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_14", northSprite = "walls_interior_detailing_01_15"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Tile_Trim",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_45", northSprite = "walls_detailing_01_46"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Simple_Trim",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_36", northSprite = "walls_interior_detailing_01_37"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Simple_Trim_Pillar",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_39", northSprite = "walls_interior_detailing_01_39"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Simple_Trim_Doorway",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_46", northSprite = "walls_interior_detailing_01_47"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Vinyl_Trim",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_88", northSprite = "walls_detailing_01_89"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar",
                                 "Tooltip_Floor_Molding",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_90", northSprite = "walls_detailing_01_90"}
                             )
@@ -15037,486 +15014,459 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Wainscoting",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_16", northSprite = "walls_detailing_01_17"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Wainscoting_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_19", northSprite = "walls_detailing_01_19"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Wood_Panneling_Upper",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_56", northSprite = "walls_detailing_01_57"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Wood_Panneling_Pillar_Upper",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_59", northSprite = "walls_detailing_01_59"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Wood_Panneling",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_0", northSprite = "walls_interior_detailing_01_1"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Wood_Panneling_Corner",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_3", northSprite = "walls_interior_detailing_01_3"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Wood_Panneling_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_10", northSprite = "walls_interior_detailing_01_11"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Stained_Wood_Wainscoting",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_80", northSprite = "walls_detailing_01_81"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Stained_Wood_Wainscoting_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_83", northSprite = "walls_detailing_01_83"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_83", northSprite = "walls_detailing_01_84"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_detailing_01_87", northSprite = "walls_detailing_01_87"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Wall_Panneling",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_32", northSprite = "walls_interior_detailing_01_33"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_35", northSprite = "walls_interior_detailing_01_35"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_42", northSprite = "walls_interior_detailing_01_43"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_48", northSprite = "walls_interior_detailing_01_49"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_51", northSprite = "walls_interior_detailing_01_51"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_58", northSprite = "walls_interior_detailing_01_59"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Red_Brick_Wall_Panneling",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_52", northSprite = "walls_interior_detailing_01_53"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Red_Brick_Wall_Panneling_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_55", northSprite = "walls_interior_detailing_01_55"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Red_Brick_Wall_Panneling_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_62", northSprite = "walls_interior_detailing_01_63"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Vibrant_Red_Brick_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_60", northSprite = "walls_commercial_03_61"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Vibrant_Red_Brick_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_63", northSprite = "walls_commercial_03_63"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Vibrant_Green_Brick_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_68", northSprite = "walls_commercial_03_69"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Vibrant_Green_Brick_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_71", northSprite = "walls_commercial_03_71"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_96", northSprite = "walls_interior_detailing_01_97"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_99", northSprite = "walls_interior_detailing_01_99"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_106",
@@ -15526,360 +15476,340 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Tan_Brick_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_44", northSprite = "walls_commercial_03_45"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Tan_Brick_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_47", northSprite = "walls_commercial_03_47"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Painted_White_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_64", northSprite = "walls_interior_detailing_01_65"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Painted_White_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_67", northSprite = "walls_interior_detailing_01_67"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Painted_White_Lower_Third_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_74", northSprite = "walls_interior_detailing_01_75"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Painted_Tan_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_68", northSprite = "walls_interior_detailing_01_69"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Painted_Tan_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_71", northSprite = "walls_interior_detailing_01_71"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Painted_Tan_Lower_Third_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_78", northSprite = "walls_interior_detailing_01_79"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Clapboard_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_28", northSprite = "walls_commercial_03_29"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Clapboard_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_31", northSprite = "walls_commercial_03_31"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Green_Cinderblock_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_80", northSprite = "walls_interior_detailing_01_81"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Green_Cinderblock_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_83", northSprite = "walls_interior_detailing_01_83"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_84", northSprite = "walls_interior_detailing_01_85"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_87", northSprite = "walls_interior_detailing_01_87"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_interior_detailing_01_94", northSprite = "walls_interior_detailing_01_95"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Tan_Cinderblock_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_20", northSprite = "walls_commercial_03_21"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Tan_Cinderblock_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_23", northSprite = "walls_commercial_03_23"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_52", northSprite = "walls_commercial_03_53"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_55", northSprite = "walls_commercial_03_55"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_116",
@@ -15889,18 +15819,17 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_119",
@@ -15910,18 +15839,17 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Lower_Third_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_126",
@@ -15931,54 +15859,51 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Cinderblock_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_12", northSprite = "walls_commercial_03_13"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Cinderblock_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {sprite = "walls_commercial_03_15", northSprite = "walls_commercial_03_15"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Stone_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_100",
@@ -15988,18 +15913,17 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Stone_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_103",
@@ -16009,18 +15933,17 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grey_Stone_Lower_Third_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_110",
@@ -16030,18 +15953,17 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_112",
@@ -16051,18 +15973,17 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_115",
@@ -16072,18 +15993,17 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway",
                                 "Tooltip_Wall_Panels",
-                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.onBuildWallOverlay,
                                 BuildingMenu.WallDecorationRecipe,
                                 true,
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
                                     completionSound = "BuildWoodenStructureSmall",
-                                    needToBeAgainstWall = false,
+                                    needToBeAgainstWall = true,
                                     blockAllTheSquare = false,
                                     canPassThrough = true,
-                                    isThumpable = true,
-                                    isCorner = true
+                                    canBarricade = false,
                                 },
                                 {
                                     sprite = "walls_interior_detailing_01_122",

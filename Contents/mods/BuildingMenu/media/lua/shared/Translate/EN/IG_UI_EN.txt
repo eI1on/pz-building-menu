@@ -2,6 +2,10 @@ IGUI_EN = {
 
     IGUI_BuildingMenu = "Building Menu",
 
+    IGUI_BuildingMenuTab_Favorite = "Favorite",
+    IGUI_BuildingMenuTab_General = "General",
+
+
     IGUI_CraftCategory_Windows = "Windows",
 
     IGUI_BuildingMenuCat_Walls = "Walls",

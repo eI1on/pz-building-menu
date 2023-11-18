@@ -1,5 +1,6 @@
 ContextMenu_EN = {
   
   ContextMenu_BuildingMenu = "Building Menu",
+  ContextMenu_RemoveWallDetailing = "Remove Wall Detailing",
 
 }

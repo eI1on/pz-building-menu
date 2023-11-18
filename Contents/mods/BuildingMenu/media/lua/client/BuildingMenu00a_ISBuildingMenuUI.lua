@@ -234,27 +234,30 @@ function ISBuildingMenuUI:createChildren()
         self.panel:addView(tabName, newTab);
         newTab.parent = self;
 
-        newTab.categories = tab.categories;
-
-        for _, category in pairs(tab.categories) do
-            local catName = category.categoryName;
-            local catIcon = category.categoryIcon;
-            local subCatData = category.subcategories;
-            newTab.categoriesList:addItem(catName, {icon = catIcon, subCatData = subCatData});
+        if tab.categories then
+            newTab.categories = tab.categories;
+            for _, category in pairs(tab.categories) do
+                local catName = category.categoryName;
+                local catIcon = category.categoryIcon;
+                local subCatData = category.subcategories;
+                newTab.categoriesList:addItem(catName, {icon = catIcon, subCatData = subCatData});
+            
+                if category.subcategories then
+                    local subCategories = newTab.categoriesList.items[newTab.categoriesList.selected].item.subCatData;
+                    for _, subcategories in pairs(subCategories) do
+                        local subCatName = subcategories.subcategoryName;
+                        local subCatIcon = subcategories.subCategoryIcon;
+                        local objectsData = subcategories.objects;
         
-            local subCategories = newTab.categoriesList.items[newTab.categoriesList.selected].item.subCatData;
-            for _, subcategories in pairs(subCategories) do
-                local subCatName = subcategories.subcategoryName;
-                local subCatIcon = subcategories.subCategoryIcon;
-                local objectsData = subcategories.objects;
-
-                newTab.subCategoriesList:addItem(subCatName, {icon = subCatIcon, objectsData = objectsData});
+                        newTab.subCategoriesList:addItem(subCatName, {icon = subCatIcon, objectsData = objectsData});
+                    end
+                end
             end
         end
 
         table.insert(self.tabs, newTab);
     end
-
+    self.panel:activateView(getText("IGUI_BuildingMenuTab_General"));
 
     self.tilesList = BuildingMenuTilePickerList:new(self.width/2, self.panel.tabHeight + th, self.width/2, self:getHeight() - th - rh - self.panel.tabHeight, self.character, self);
     self.tilesList.anchorBottom = true;
@@ -382,7 +385,9 @@ function ISBuildingMenuUI:update()
         self.lastSelectedSubCategoryIndex = currentTab.subCategoriesList.selected
         local selectedSubCategoryItem = currentTab.subCategoriesList.items[currentTab.subCategoriesList.selected]
         if selectedSubCategoryItem then
-            self:updateTilesList(selectedSubCategoryItem.item.objectsData)
+            self:updateTilesList(selectedSubCategoryItem.item.objectsData);
+        else
+            self:updateTilesList(nil);
         end
     end
 end

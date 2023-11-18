@@ -1,12 +1,6 @@
 require "ISUI/ISPanel"
 
-if not getBuildingMenuInstance then
-    require("BuildingMenu01_Main")
-end
-
 local getTexture = getTexture
-
-local BuildingMenu = getBuildingMenuInstance()
 
 ISBuildingMenuTabUI = ISPanelJoypad:derive("ISBuildingMenuTabUI");
 ISBuildingMenuTabUI.instance = nil;

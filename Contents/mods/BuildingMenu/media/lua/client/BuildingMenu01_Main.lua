@@ -80,8 +80,12 @@ BuildingMenu.debugPrint = function(prefix, data)
 end
 
 
-local function predicateNotBroken(item)
+function BuildingMenu.predicateNotBroken(item)
     return not item:isBroken()
+end
+
+function BuildingMenu.predicateHasTag(item, tag)
+    return not item:isBroken() and item:hasTag(tag)
 end
 
 BuildingMenu.weldingRodUses = function(torchUses)
@@ -103,7 +107,7 @@ end
 BuildingMenu.haveAToolToBuild = function(inv)
     local haveATool = nil
     for _, type in pairs (BuildingMenu.Tools['Hammer']) do
-        haveATool = inv:containsTypeEvalRecurse(type, predicateNotBroken)
+        haveATool = inv:containsTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
         if haveATool then
             haveATool = true
             break
@@ -116,7 +120,7 @@ BuildingMenu.getAvailableTools = function(inv, tool)
     local tools = nil
     local toolsList = BuildingMenu.Tools[tool]
     for _, type in pairs(toolsList) do
-        tools = inv:getBestTypeEvalRecurse(type, predicateNotBroken)
+        tools = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
         if tools then return tools end
     end
 end
