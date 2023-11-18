@@ -1,165 +1,195 @@
-ISHighMetalFence = ISBuildingObject:derive('ISHighMetalFence')
+ISHighMetalFence = ISBuildingObject:derive("ISHighMetalFence")
+
+--************************************************************************--
+--** ISHighMetalFence:new
+--**
+--************************************************************************--
+function ISHighMetalFence:new(sprite, sprite2, northSprite, northSprite2)
+    local o = {}
+    setmetatable(o, self)
+    self.__index = self
+    o:init()
+    o:setSprite(sprite)
+    o:setNorthSprite(northSprite)
+
+    o.sprite = sprite
+    o.sprite2 = sprite2
+
+    o.northSprite = northSprite
+    o.northSprite2 = northSprite2
+
+    return o
+end
 
 function ISHighMetalFence:create(x, y, z, north, sprite)
     local cell = getWorld():getCell()
-    self.sq = cell:getGridSquare(x, y, z)
-
-    local xa, ya = self:getSquare2Pos(self.sq, north)
+    local square = cell:getGridSquare(x, y, z)
+    local xa, ya = self:getSquare2Pos(square, north)
+    local spriteAName = self.sprite2
 
     if self.north then
-        self:addPart(x - 1, y + 1, z, north, self.northSprite1)
-        self:addPart(xa - 2, ya, z, north, self.northSprite2)
-    else
-        self:addPart(x, y - 1, z, north, self.sprite1)
-        self:addPart(xa + 1, ya - 2, z, north, self.sprite2)
+        spriteAName = self.northSprite2
     end
 
+    self:addPart(x, y, z, north, sprite, 1)
+    self:addPart(xa, ya, z, north, spriteAName, 2)
     buildUtil.consumeMaterial(self)
 end
 
-function ISHighMetalFence:addPart(x, y, z, north, sprite)
+function ISHighMetalFence:addPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell()
-    local sq = cell:getGridSquare(x, y, z)
-    if not north then
-        sq = cell:getGridSquare(x, y + 1, z)
-    else
-        sq = cell:getGridSquare(x + 1, y - 1, z)
+    self.sq = cell:getGridSquare(x, y, z)
+    if self:partExists(self.sq, index) then
+        return
     end
 
-    self.javaObject = IsoThumpable.new(cell, sq, sprite, north, self)
-    buildUtil.setInfo(self.javaObject, self);
+    self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self)
+    buildUtil.setInfo(self.javaObject, self)
     self.javaObject:setThumpSound("ZombieThumpMetal")
-
-    sq:AddSpecialObject(self.javaObject)
+    self.javaObject:setHealth(self:getHealth())
+    self.sq:AddSpecialObject(self.javaObject)
     self.javaObject:transmitCompleteItemToServer()
 end
 
-function ISHighMetalFence:checkCorner(x,y,z,north)
-	local found = false;
-	local sx = x;
-	local sy = y;
-	local sq2 = getCell():getGridSquare(x + 1, y - 1, z);
-	for i = 0, sq2:getSpecialObjects():size() - 1 do
-		local item = sq2:getSpecialObjects():get(i);
-		if instanceof(item, "IsoThumpable") and item:getNorth() ~= north  then
-			found = true;
-			sx = x + 1;
-			sy = y;
-			break;
-		end
-	end
-	if found then
-		ISHighMetalFence:addCorner(sx,sy,z,north);
-	end
-end
-
-function ISHighMetalFence:addCorner(x,y,z, north)
-	local sq = getCell():getGridSquare(x, y, z);
-	local corner = IsoThumpable.new(getCell(), sq, "TileWalls_51", north, self);
-	corner:setCorner(true);
-	corner:setCanBarricade(false);
-	sq:AddSpecialObject(corner);
-	corner:transmitCompleteItemToServer();
-end
-
 function ISHighMetalFence:getHealth()
-    return 200 + buildUtil.getWoodHealth(self)
+    return 500 + buildUtil.getWoodHealth(self)
 end
 
 function ISHighMetalFence:render(x, y, z, square)
-    ISBuildingObject.render(self, x, y, z, square)
-    local spriteAName = self.northSprite2
+    local spriteName
+    if not self:partExists(square, 1) then
+        spriteName = self:getSprite()
+        local sprite = IsoSprite.new()
+        sprite:LoadFramesNoDirPageSimple(spriteName)
+
+        local spriteFree = ISBuildingObject.isValid(self, square)
+        if buildUtil.stairIsBlockingPlacement(square, true, self.north) then
+            spriteFree = false
+        end
+        if spriteFree then
+            sprite:RenderGhostTile(x, y, z)
+        else
+            sprite:RenderGhostTileRed(x, y, z)
+        end
+    end
+
+
+    local spriteAName = self.sprite2
+    local xa, ya = self:getSquare2Pos(square, self.north)
+    local squareA = getCell():getGridSquare(xa, ya, z)
+    if self.north then
+        spriteName = self.northSprite
+        spriteAName = self.northSprite2
+    end
+
+    if squareA == nil and getWorld():isValidSquare(xa, ya, z) then
+        squareA = IsoGridSquare.new(getCell(), nil, xa, ya, z)
+        getCell():ConnectNewSquare(squareA, false)
+    end
 
     local spriteAFree = true
-
-    local xa, ya, za = self:getSquare2Pos(square, self.north)
-
-    if not self.north then
-        spriteAName = self.sprite2
-    end
-
-    local squareA = getCell():getGridSquare(xa, ya, za)
-
-    if not self.canBeAlwaysPlaced and (not squareA or not squareA:isFreeOrMidair(true)) then
+    local existsA = self:partExists(squareA, 2)
+    if not existsA and not buildUtil.canBePlace(self, squareA) then
         spriteAFree = false
     end
 
-    if squareA and squareA:isVehicleIntersecting() then
+    if squareA and (squareA:isSomethingTo(square) or buildUtil.stairIsBlockingPlacement(squareA, true, self.north)) then
         spriteAFree = false
     end
 
-    local spriteA = IsoSprite.new()
-    spriteA:LoadFramesNoDirPageSimple(spriteAName)
-    if spriteAFree then
-        if not self.north then
-            spriteA:RenderGhostTile(xa + 1, ya - 1, za)
+    if not existsA then
+        local spriteA = IsoSprite.new()
+        spriteA:LoadFramesNoDirPageSimple(spriteAName)
+        if spriteAFree then
+            spriteA:RenderGhostTile(xa, ya, z)
         else
-            spriteA:RenderGhostTile(xa - 1, ya - 1, za)
-        end
-    else
-        if not self.north then
-            spriteA:RenderGhostTileRed(xa + 1, ya - 1, za)
-        else
-            spriteA:RenderGhostTileRed(xa - 1, ya - 1, za)
+            spriteA:RenderGhostTileRed(xa, ya, z)
         end
     end
 end
 
 function ISHighMetalFence:isValid(square)
-    if not ISBuildingObject.isValid(self, square) then
+    -- initial quick checks
+    if square:isVehicleIntersecting() or not self:haveMaterial(square) or 
+       not square:hasFloor(self.north) or 
+       (not self:partExists(square, 1) and not square:isFreeOrMidair(false)) then
         return false
     end
 
-    if buildUtil.stairIsBlockingPlacement(square, true) then
+    -- function to check objects in a square
+    local function checkObjects(sq)
+        for i = 1, sq:getObjects():size() do
+            local object = sq:getObjects():get(i - 1)
+            local sprite = object:getSprite()
+
+            if sprite then
+                local properties = sprite:getProperties()
+                local spriteGrid = sprite:getSpriteGrid()
+                if (properties:Is(IsoFlagType.collideN) and self.north) or
+                   (properties:Is(IsoFlagType.collideW) and not self.north) or
+                   (spriteGrid and ((self.north and spriteGrid:getSpriteGridPosY(sprite) > 0) or
+                                    (not self.north and spriteGrid:getSpriteGridPosX(sprite) > 0))) then
+                    return false
+                end
+            end
+
+            if instanceof(object, "IsoThumpable") and object:getNorth() == self.north and 
+               not object:isCorner() and not object:isFloor() and not object:isBlockAllTheSquare() then
+                return false
+            end
+
+            if (instanceof(object, "IsoWindow") or instanceof(object, "IsoDoor")) and 
+                object:getNorth() == self.north then
+                return false
+            end
+        end
+        return true
+    end
+
+    -- check current square
+    if not checkObjects(square) then return false end
+
+    -- check for stair blocking
+    if buildUtil.stairIsBlockingPlacement(square, true, self.north) then return false end
+
+    -- check adjacent square
+    local xa, ya = self:getSquare2Pos(square, self.north)
+    local squareA = getCell():getGridSquare(xa, ya, square:getZ())
+    if not squareA or not squareA:hasFloor(self.north) or 
+       (not self:partExists(squareA, 1) and not squareA:isFreeOrMidair(false)) then
         return false
     end
 
-    if square:isVehicleIntersecting() then
-        return false
-    end
+    -- check objects in adjacent square
+    if not checkObjects(squareA) then return false end
 
-    local xa, ya, za = self:getSquare2Pos(square, self.north)
-    local squareA = getCell():getGridSquare(xa, ya, za)
-    if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) then
-        return false
-    end
-
-    if squareA:isVehicleIntersecting() then
-        return false
-    end
+    -- check stair blocking in adjacent square
+    if buildUtil.stairIsBlockingPlacement(squareA, true, self.north) then return false end
 
     return true
 end
+
 
 function ISHighMetalFence:getSquare2Pos(square, north)
     local x = square:getX()
     local y = square:getY()
     local z = square:getZ()
-
     if north then
-        y = y + 1
+        x = x + 1
     else
-        x = x - 1
+        y = y - 1
     end
-
     return x, y, z
 end
 
-function ISHighMetalFence:new(sprite1, sprite2, northSprite1, northSprite2)
-    local o = {}
-
-    setmetatable(o, self)
-    self.__index = self
-
-    o:init()
-    o:setSprite(sprite1)
-    o:setNorthSprite(northSprite1)
-
-    o.sprite1 = sprite1
-    o.sprite2 = sprite2
-    o.northSprite1 = northSprite1
-    o.northSprite2 = northSprite2
-    o.corner = corner
-
-    return o
+function ISHighMetalFence:partExists(square, index)
+    local spriteName = self.north and self["northSprite" .. index] or self["sprite" .. index]
+    local objects = square:getSpecialObjects()
+    for i = 1, objects:size() do
+        local object = objects:get(i - 1)
+        if object:getNorth() == self.north and object:getSprite():getName() == spriteName then
+            return true
+        end
+    end
+    return false
 end

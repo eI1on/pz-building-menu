@@ -1,5 +1,23 @@
 module Base
 {
+    /* Overwrite the Concrete Bucket*/
+	item BucketConcreteFull
+	{
+	    DisplayCategory = Material,
+		Weight	=	10,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.0625,
+		DisplayName	=	Bucket of Concrete,
+		ReplaceOnDeplete	=	BucketEmpty,
+		ReplaceOnUseOn	=	WaterSource-BucketWaterFull,
+		Icon	=	MetalBucket_Concrete,
+		StaticModel = Bucket,
+		EatType = Bucket,
+		WorldStaticModel = BucketFullConcrete_Ground,
+	}
+
+
     /* Asphalt Recipes */
     item AsphaltMixturePowder
 	{

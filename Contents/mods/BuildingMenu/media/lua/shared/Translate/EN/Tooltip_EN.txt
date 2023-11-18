@@ -796,6 +796,7 @@ Tooltip_EN = {
   Tooltip_Bank_Window_Frame = "A window frame section with a design inspired by a bank.",
   Tooltip_Bank_Pillar = "A pillar with a design inspired by a bank.",
 
+  Tooltip_BuildingMenuObj_Elevator_Wall = "Elevator Wall",
   Tooltip_BuildingMenuObj_Metal_Wall = "Metal Walls Wall",
   Tooltip_BuildingMenuObj_Metal_Door_Frame = "Metal Walls Door Frame",
   Tooltip_BuildingMenuObj_Metal_Window_Frame = "Metal Walls Window",
@@ -1310,7 +1311,12 @@ Tooltip_EN = {
   Tooltip_High_Metal_Fence_Generic = "A towering high metal fence, providing maximum security against the relentless zombie threat.",
 
   Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence = "Chainlink and Razor Wire Fence",
+  Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Corner = "Chainlink and Razor Wire Fence Corner",
+  Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Post = "Chainlink and Razor Wire Fence Post",
+  
   Tooltip_BuildingMenuObj_Fence_Chain = "Fence Chain",
+  Tooltip_BuildingMenuObj_Fence_Chain_Corner = "Fence Chain Corner",
+  Tooltip_BuildingMenuObj_Fence_Chain_Post = "Fence Chain Post",
 
   Tooltip_BuildingMenuObj_Tall_Decorative_Wooden_Fence = "Decorative Wooden Fence",
   Tooltip_BuildingMenuObj_Tall_Decorative_Wooden_Fence_Post = "Decorative Wooden Fence Post",
@@ -1440,9 +1446,9 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Brown_Railroad_Metal_Panel = "Brown Railroad Metal Plate",
   Tooltip_BuildingMenuObj_Grey_Railroad_Metal_Panel = "Grey Railraod Metal Plate",
   Tooltip_BuildingMenuObj_Wide_Plank = "Wide Plank",
+  Tooltip_BuildingMenuObj_Elevator_Floor = "Elevator Floor",
 
   Tooltip_BuildingMenuObj_Exterior_Tile = "Exterior Tile",
-
 
   Tooltip_Staris_Generic = "A set of sturdy stairs, offering a reliable means of ascending or descending within your shelter.",
 
@@ -1454,6 +1460,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_White_Motel_Stairs = "White Motel Stairs",
   Tooltip_BuildingMenuObj_Modern_Stairs = "Modern Staris",
   Tooltip_BuildingMenuObj_Metal_Stairs = "Metal Stairs",
+  Tooltip_BuildingMenuObj_Elevator_Stairs = "Elevator Stairs",
 
   Tooltip_Asphalt_Generic = "A smooth and sturdy asphalt surface, perfect for constructing roads and pathways.",
   Tooltip_StreetCrack_Overlay_1 = "A small fissure in the road's surface. Watch your step! <BR><RGB:1,0.8,0> Rotate <RGB:1,1,1><SPACE> to adjust size and depth.",

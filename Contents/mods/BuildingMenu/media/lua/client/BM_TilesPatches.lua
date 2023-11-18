@@ -2,6 +2,11 @@ local function setSpriteProperty(spriteName, propertyName, propertyValue, checkI
     local props = getSprite(spriteName):getProperties();
     props:Set(propertyName, propertyValue, checkIsoFlagType);
 end
+local function unSetSpriteProperty(spriteName, propertyName)
+    local props = getSprite(spriteName):getProperties();
+    props:UnSet(propertyName);
+end
+
 
 local function toggleSpritesProperties()
     local sprites = {
@@ -15,5 +20,4 @@ local function toggleSpritesProperties()
         setSpriteProperty(sprite, "ContainerCapacity", "100", false);
     end
 end
-toggleSpritesProperties()
 Events.OnGameStart.Add(toggleSpritesProperties)

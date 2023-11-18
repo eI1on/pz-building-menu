@@ -7,7 +7,9 @@ function ISStove:create(x, y, z, north, sprite)
   self.javaObject:setMovedThumpable(true)
   self.sq:AddSpecialObject(self.javaObject)
   buildUtil.consumeMaterial(self)
-  self.javaObject:transmitCompleteItemToServer()
+  self.javaObject:transmitCompleteItemToServer();
+  self.sq:RecalcProperties();
+  self.sq:RecalcAllWithNeighbours(true);
 end
 
 function ISStove:isValid(square)

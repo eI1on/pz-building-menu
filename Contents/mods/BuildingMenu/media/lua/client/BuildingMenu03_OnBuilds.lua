@@ -300,6 +300,37 @@ end
 
 
 BuildingMenu.onBuildMannequin = function( sprites, name, player, objectRecipe, objectOptions)
+    -- local scriptName = objectOptions.scriptName
+    -- local scripts = getScriptManager():getAllMannequinScripts()
+    -- local script = nil
+    -- for i=1,scripts:size() do
+    --     local s = scripts:get(i-1)
+    --     if s:getName() == scriptName then
+    --         script = s;
+    --     end
+    -- end
+    -- if script then
+    --     local spriteName = script:isFemale() and "location_shop_mall_01_65" or "location_shop_mall_01_68";
+    --     local obj = IsoMannequin.new(getCell(), nil, getSprite(spriteName));
+    --     obj:setMannequinScriptName(script:getName());
+
+    --     local item = InventoryItemFactory.CreateItem("Moveables.Moveable");
+    --     item:ReadFromWorldSprite(spriteName);
+    --     obj:setCustomSettingsToItem(item);
+    --     item:setActualWeight(tonumber("1"));
+    --     item:setCustomWeight(true);
+    -- 	   getSpecificPlayer(player):getInventory():AddItem(item);
+
+    --     local mo = ISMoveableCursor:new(getSpecificPlayer(player));
+    --     mo:setMoveableMode("place");
+    --     mo:tryInitialItem(item);
+    --     BuildingMenu.buildObject(mo, nil, mo.player, objectRecipe, objectOptions)
+    --     -- getCell():setDrag(mo, mo.player);
+    -- else
+    --     BuildingMenu.debugPrint("[BuildingMenu] ", "Mannequin script now found!!!")
+    --     return
+    -- end
+
     local _mannequin = ISMannequin:new(player, sprites.sprite)
 
     if sprites.northSprite then

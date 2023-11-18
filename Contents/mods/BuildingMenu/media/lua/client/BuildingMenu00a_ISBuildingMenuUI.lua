@@ -410,8 +410,8 @@ end
 
 function ISBuildingMenuUI:updateTilesList(objectsData)
     self.tilesList.posToObjectNameTable = {};
-    self.tilesList.subCatData = objectsData;
     self.tilesList.textureCache = {};
+    self.tilesList.subCatData = objectsData;
 end
 
 

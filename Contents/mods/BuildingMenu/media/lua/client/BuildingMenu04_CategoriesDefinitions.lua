@@ -8584,6 +8584,52 @@ BuildingMenu.Tabs = {
                         subCategoryIcon = "industry_trucks_01_4",
                         objects = {
                             BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Elevator_Wall",
+                                "Tooltip_Metal_Wall",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BigMetalWallRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorch",
+                                    completionSound = "BuildMetalStructureWallFrame",
+                                    isThumpable = true,
+                                    canBarricade = false,
+                                    noNeedHammer = true,
+                                    modData = {wallType = "wall"}
+                                },
+                                {
+                                    sprite = "fixtures_escalators_01_48",
+                                    northSprite = "fixtures_escalators_01_51",
+                                    corner = "industry_trucks_01_7"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Elevator_Wall",
+                                "Tooltip_Metal_Wall",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BigMetalWallRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorch",
+                                    completionSound = "BuildMetalStructureWallFrame",
+                                    isThumpable = true,
+                                    canBarricade = false,
+                                    noNeedHammer = true,
+                                    modData = {wallType = "wall"}
+                                },
+                                {
+                                    sprite = "fixtures_escalators_01_49",
+                                    northSprite = "fixtures_escalators_01_50",
+                                    corner = "industry_trucks_01_7"
+                                }
+                            ),
+                            BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Metal_Wall",
                                 "Tooltip_Metal_Wall",
                                 BuildingMenu.onBuildWall,
@@ -16190,10 +16236,50 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "fencing_01_50",
                                     sprite2 = "fencing_01_51",
-                                    northSprite = "fencing_01_49",
-                                    northSprite2 = "fencing_01_48",
+                                    northSprite = "fencing_01_48",
+                                    northSprite2 = "fencing_01_49",
                                     corner = "fencing_01_53"
                                 }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Corner",
+                                "Tooltip_High_Metal_Fence_Generic",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.HighMetalFenceRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorch",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium",
+                                    canBeAlwaysPlaced = true,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {sprite = "fencing_01_52", northSprite = "fencing_01_52"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Post",
+                                "Tooltip_High_Metal_Fence_Generic",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.HighMetalFencePostRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorch",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium",
+                                    canBeAlwaysPlaced = true,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {sprite = "fencing_01_53", northSprite = "fencing_01_53"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Fence_Chain",
@@ -16215,10 +16301,50 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "fencing_01_58",
                                     sprite2 = "fencing_01_59",
-                                    northSprite = "fencing_01_57",
-                                    northSprite2 = "fencing_01_56",
-                                    corner = "fencing_01_60"
+                                    northSprite = "fencing_01_56",
+                                    northSprite2 = "fencing_01_57",
+                                    corner = "fencing_01_61"
                                 }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Fence_Chain_Corner",
+                                "Tooltip_High_Metal_Fence_Generic",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.HighMetalFenceRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorch",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium",
+                                    canBeAlwaysPlaced = true,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {sprite = "fencing_01_60", northSprite = "fencing_01_60"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Fence_Chain_Post",
+                                "Tooltip_High_Metal_Fence_Generic",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.HighMetalFencePostRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorch",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium",
+                                    canBeAlwaysPlaced = true,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true
+                                },
+                                {sprite = "fencing_01_61", northSprite = "fencing_01_61"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Tall_Decorative_Wooden_Fence",
@@ -16237,8 +16363,9 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "fencing_01_10",
                                     sprite2 = "fencing_01_11",
-                                    northSprite = "fencing_01_9",
-                                    northSprite2 = "fencing_01_8"
+                                    northSprite = "fencing_01_8",
+                                    northSprite2 = "fencing_01_9",
+                                    corner = "fencing_01_13"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -16276,7 +16403,8 @@ BuildingMenu.Tabs = {
                                     sprite = "fencing_01_72",
                                     sprite2 = "fencing_01_72",
                                     northSprite = "fencing_01_73",
-                                    northSprite2 = "fencing_01_73"
+                                    northSprite2 = "fencing_01_73",
+                                    corner = "fencing_01_74"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -16333,8 +16461,9 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "fencing_01_66",
                                     sprite2 = "fencing_01_67",
-                                    northSprite = "fencing_01_65",
-                                    northSprite2 = "fencing_01_64"
+                                    northSprite = "fencing_01_64",
+                                    northSprite2 = "fencing_01_65",
+                                    corner = "fencing_01_69"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -16355,7 +16484,7 @@ BuildingMenu.Tabs = {
                                     canBarricade = false,
                                     isCorner = true
                                 },
-                                {sprite = "fencing_01_69", northSprite = "fencing_01_69"}
+                                {sprite = "fencing_01_68", northSprite = "fencing_01_68"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence_Post",
@@ -16375,7 +16504,7 @@ BuildingMenu.Tabs = {
                                     canBarricade = false,
                                     isCorner = true
                                 },
-                                {sprite = "fencing_01_68", northSprite = "fencing_01_68"}
+                                {sprite = "fencing_01_69", northSprite = "fencing_01_69"}
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Wired_Fence",
@@ -16397,8 +16526,8 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "fencing_01_82",
                                     sprite2 = "fencing_01_83",
-                                    northSprite = "fencing_01_81",
-                                    northSprite2 = "fencing_01_80"
+                                    northSprite = "fencing_01_80",
+                                    northSprite2 = "fencing_01_81"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -16441,8 +16570,8 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "fencing_01_90",
                                     sprite2 = "fencing_01_91",
-                                    northSprite = "fencing_01_89",
-                                    northSprite2 = "fencing_01_88"
+                                    northSprite = "fencing_01_88",
+                                    northSprite2 = "fencing_01_89"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -17761,7 +17890,56 @@ BuildingMenu.Tabs = {
                                     eastSprite = "industry_railroad_05_44",
                                     southSprite = "industry_railroad_05_47"
                                 }
-                            )
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Elevator_Floor",
+                                "Tooltip_Floor_Generic",
+                                BuildingMenu.onBuildFloor,
+                                BuildingMenu.MetalFloorRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchFloor",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {sprite = "fixtures_escalators_01_3", northSprite = "fixtures_escalators_01_12"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Elevator_Floor",
+                                "Tooltip_Floor_Generic",
+                                BuildingMenu.onBuildFloor,
+                                BuildingMenu.MetalFloorRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchFloor",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "fixtures_escalators_01_4",
+                                    northSprite = "fixtures_escalators_01_11",
+                                    eastSprite = "fixtures_escalators_01_5",
+                                    southSprite = "fixtures_escalators_01_13"
+                                }
+                            ),
                         }
                     },
                     {
@@ -18510,7 +18688,34 @@ BuildingMenu.Tabs = {
                                     pillar = "fixtures_stairs_01_14",
                                     pillarNorth = "fixtures_stairs_01_14"
                                 }
-                            )
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Elevator_Stairs",
+                                "Tooltip_Staris_Generic",
+                                BuildingMenu.onBuildStairs,
+                                BuildingMenu.MetalStairsRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorch",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium",
+                                    isThumpable = false
+                                },
+                                {
+                                    sprite = "fixtures_escalators_01_0",
+                                    upToLeft01 = "fixtures_escalators_01_0",
+                                    upToLeft02 = "fixtures_escalators_01_1",
+                                    upToLeft03 = "fixtures_escalators_01_2",
+                                    upToRight01 = "fixtures_escalators_01_8",
+                                    upToRight02 = "fixtures_escalators_01_9",
+                                    upToRight03 = "fixtures_escalators_01_10",
+                                    pillar = "fixtures_stairs_01_14",
+                                    pillarNorth = "fixtures_stairs_01_14"
+                                }
+                            ),
                         }
                     }
                 }
@@ -22720,7 +22925,8 @@ BuildingMenu.Tabs = {
                                     buildLow = true,
                                     canBeAlwaysPlaced = true,
                                     renderFloorHelper = false,
-                                    dismantable = true
+                                    dismantable = true,
+                                    scriptName = "FemaleBlack01",
                                 },
                                 {
                                     sprite = "location_shop_mall_01_65",
@@ -28569,6 +28775,27 @@ BuildingMenu.Tabs = {
                                     sprite = "location_community_cemetary_01_9",
                                     northSprite = "location_community_cemetary_01_8"
                                 }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Grave_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.GraveRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    renderFloorHelper = false,
+                                    canBeAlwaysPlaced = true,
+                                    blockAllTheSquare = true,
+                                    canBeLockedByPadlock = true
+                                },
+                                {
+                                    sprite = "location_community_cemetary_01_11",
+                                    northSprite = "location_community_cemetary_01_11"
+                                }
                             )
                         }
                     }
@@ -29211,6 +29438,23 @@ BuildingMenu.Tabs = {
                                     canPassThrough = true,
                                     isCorner = true
                                 },
+                                {sprite = "location_shop_mall_01_47", northSprite = "location_shop_mall_01_47"}
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Plants_Indoor_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FlowerPotRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    isCorner = true
+                                },
                                 {sprite = "vegetation_indoor_01_9", northSprite = "vegetation_indoor_01_9"}
                             ),
                             BuildingMenu.createObject(
@@ -29285,6 +29529,12 @@ BuildingMenu.Tabs = {
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
+                                    canPassThrough = true,
+                                    isCorner=  true,
+                                    modData = {
+                                        value = 10,
+                                        max = 10
+                                    },
                                     completionSound = "BuildWoodenStructureSmall"
                                 },
                                 {sprite = "fixtures_fireplaces_01_0", northSprite = "fixtures_fireplaces_01_5"}
@@ -29298,6 +29548,8 @@ BuildingMenu.Tabs = {
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
+                                    canPassThrough = true,
+                                    isCorner=  true,
                                     completionSound = "BuildWoodenStructureSmall"
                                 },
                                 {sprite = "fixtures_fireplaces_01_1", northSprite = "fixtures_fireplaces_01_4"}
@@ -29311,6 +29563,8 @@ BuildingMenu.Tabs = {
                                 {
                                     actionAnim = "BuildLow",
                                     noNeedHammer = false,
+                                    canPassThrough = true,
+                                    isCorner=  true,
                                     completionSound = "BuildWoodenStructureSmall"
                                 },
                                 {sprite = "fixtures_fireplaces_01_2", northSprite = "fixtures_fireplaces_01_3"}
