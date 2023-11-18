@@ -428,7 +428,7 @@ function ISBuildingMenuUI:populateFavoritesTab()
                     end
                 end
                 if #subCatData > 0 then
-                    favoriteTab.categoriesList:addItem(category.categoryName, {icon = category.categoryIcon, subCatData = subCatData})
+                    favoriteTab.categoriesList:addItem("[" ..tab.tabName.. "] " .. category.categoryName, {icon = category.categoryIcon, subCatData = subCatData})
                 end
             end
         end

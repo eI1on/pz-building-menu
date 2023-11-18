@@ -148,22 +148,22 @@ function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
     local favoritesDict = listType == "categoriesList" and modData.favorites.categories or modData.favorites.subcategories
     favoritesDict[itemIcon] = not favoritesDict[itemIcon]
 
-    if self.buildingMenuTab then
-        self.buildingMenuTab:populateFavoritesTab()
-        if self.buildingMenuTab:getActiveTab().tab == getText("IGUI_BuildingMenuTab_Favorite") and listType == "subCategoriesList" then
-            self.buildingMenuTab:updateSubCategoriesListForFavorite(self.buildingMenuTab:getActiveTab())
+    if self.buildingMenuUI then
+        self.buildingMenuUI:populateFavoritesTab()
+        if self.buildingMenuUI:getActiveTab().tab == getText("IGUI_BuildingMenuTab_Favorite") and listType == "subCategoriesList" then
+            self.buildingMenuUI:updateSubCategoriesListForFavorite(self.buildingMenuUI:getActiveTab())
         end
     end
 end
 
 
 
-function ISBuildingMenuTabUI:new(x, y, width, height, buildingMenuTab)
+function ISBuildingMenuTabUI:new(x, y, width, height, buildingMenuUI)
     local o = ISPanelJoypad:new(x, y, width, height)
     setmetatable(o, self)
     self.__index = self
-    o.buildingMenuTab = buildingMenuTab
-    o.character = buildingMenuTab.character
+    o.buildingMenuUI = buildingMenuUI
+    o.character = buildingMenuUI.character
     o.tab = nil
     o.categories = {}
     o.favoriteStar = getTexture("media/ui/FavoriteStar.png");
