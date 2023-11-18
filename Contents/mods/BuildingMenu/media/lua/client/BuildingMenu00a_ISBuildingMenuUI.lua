@@ -329,6 +329,18 @@ function ISBuildingMenuUI:onGearButtonClick()
     end
 end
 
+function ISBuildingMenuUI:getActiveTab()
+    return self.panel.activeView.view;
+end
+
+function ISBuildingMenuUI:getFavoriteTab()
+    for _, tab in pairs(self.tabs) do
+        if tab.tab == getText("IGUI_BuildingMenuTab_Favorite") then
+            return tab
+        end
+    end
+    return nil
+end
 
 function ISBuildingMenuUI:getActiveCategoriesList()
     return self.panel.activeView.view.categoriesList;
@@ -350,7 +362,7 @@ function ISBuildingMenuUI:render()
 end
 
 function ISBuildingMenuUI:update()
-    local currentTab = self.panel.activeView.view
+    local currentTab = self:getActiveTab()
 
     -- check if the active tab has changed
     if self.lastActiveTab ~= currentTab then
@@ -360,6 +372,10 @@ function ISBuildingMenuUI:update()
 
         -- update categories list for the new tab
         self:updateCategoriesList(currentTab.categories)
+
+        if currentTab.tab == getText("IGUI_BuildingMenuTab_Favorite") then
+            self:populateFavoritesTab()
+        end
     end
 
     -- check and update for category change within the same tab
@@ -391,6 +407,53 @@ function ISBuildingMenuUI:update()
         end
     end
 end
+
+function ISBuildingMenuUI:populateFavoritesTab()
+    local modData = self.character:getModData()
+    local favorites = modData.favorites or { categories = {}, subcategories = {} }
+
+    local favoriteTab = self:getFavoriteTab()
+    if not favoriteTab or self:getActiveTab() ~= favoriteTab then return end
+
+    favoriteTab.categoriesList:clear()
+    favoriteTab.subCategoriesList:clear()
+
+    for _, tab in pairs(BuildingMenu.Tabs) do
+        for _, category in pairs(tab.categories) do
+            if favorites.categories[category.categoryIcon] then
+                local subCatData = {}
+                for _, subcategory in pairs(category.subcategories) do
+                    if favorites.subcategories[subcategory.subCategoryIcon] then
+                        table.insert(subCatData, subcategory)
+                    end
+                end
+                if #subCatData > 0 then
+                    favoriteTab.categoriesList:addItem(category.categoryName, {icon = category.categoryIcon, subCatData = subCatData})
+                end
+            end
+        end
+    end
+end
+
+
+
+function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
+    local modData = self.character:getModData()
+    local favorites = modData.favorites or { categories = {}, subcategories = {} }
+
+    local selectedCategoryIndex = favoriteTab.categoriesList.selected
+    if selectedCategoryIndex > 0 then
+        local selectedCategoryItem = favoriteTab.categoriesList.items[selectedCategoryIndex]
+        favoriteTab.subCategoriesList:clear()
+
+        for _, subcategory in pairs(selectedCategoryItem.item.subCatData) do
+            if favorites.subcategories[subcategory.subCategoryIcon] then
+                favoriteTab.subCategoriesList:addItem(subcategory.subcategoryName, {icon = subcategory.subCategoryIcon, objectsData = subcategory.objects})
+            end
+        end
+    end
+end
+
 
 
 function ISBuildingMenuUI:updateCategoriesList(categories)

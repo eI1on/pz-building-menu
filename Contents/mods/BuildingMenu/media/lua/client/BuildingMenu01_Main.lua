@@ -33,7 +33,6 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(player, context, worldobjec
     if test and ISWorldObjectContextMenu.Test then return true end
 
     local playerObj = getSpecificPlayer(player)
-    local inv = playerObj:getInventory()
 
     if playerObj:getVehicle() then return end
 
