@@ -5,7 +5,9 @@ end
 local BuildingMenu = getBuildingMenuInstance()
 
 local exclusions = {
-    health = true
+    health = true,
+    firstItem = true,
+    secondItem = true
 }
 
 function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOptions)
@@ -39,9 +41,9 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
     local neededTools = objectRecipe.neededTools
     if neededTools then
         BuildingMenu.equipToolPrimary(object, player, neededTools[1]);
-        -- if neededTools[2] then
-        --     BuildingMenu.equipToolSecondary(object, player, neededTools[2]);
-        -- end
+        if neededTools[2] then
+            BuildingMenu.equipToolSecondary(object, player, neededTools[2]);
+        end
     end
 
     if objectOptions then
@@ -56,7 +58,28 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
                 end
             end
         end
-
+        local inv = getSpecificPlayer(player):getInventory()
+        local item = nil
+        if objectOptions.firstItem then
+            item = BuildingMenu.getAvailableTool(inv, objectOptions.firstItem);
+            if item and instanceof(item, "InventoryItem") then
+                print(item:getType())
+                objectOptions.firstItem = item:getType()
+            else
+                print("[Building Menu] ERROR at creating - firstItem - for: ", name)
+                return
+            end
+        end
+        if objectOptions.secondItem then
+            item = BuildingMenu.getAvailableTool(inv, objectOptions.secondItem);
+            if item and instanceof(item, "InventoryItem") then
+                print(item:getType())
+                objectOptions.secondItem = item:getType()
+            else
+                print("[Building Menu] ERROR at creating - secondItem - for: ", name)
+                return
+            end
+        end
         if objectOptions.containerType then
             object.getHealth = function(self)
                 return objectOptions.health or buildUtil.getWoodHealth(self)
@@ -518,6 +541,37 @@ BuildingMenu.onBuildHighMetalFence = function( sprites, name, player, objectReci
     BuildingMenu.buildObject(_highMetalFence, name, player, objectRecipe, objectOptions)
 end
 
+
+BuildingMenu.onBuildNaturalFloor = function( sprites, name, player, objectRecipe, objectOptions)
+    local playerObj = getSpecificPlayer(player)
+    local inv = playerObj:getInventory()
+    local bag, uses = nil, nil
+
+    local function findBagAndUses(inv, consumables)
+        local requiredBags = { ["Base.Dirtbag"] = true, ["Base.Gravelbag"] = true, ["Base.Sandbag"] = true }
+        for _, consumable in pairs(consumables) do
+            if requiredBags[consumable.Consumable] then
+                return inv:getFirstTypeRecurse(consumable.Consumable), consumable.Amount
+            end
+        end
+    end
+
+    if objectRecipe.useConsumable then
+        bag, uses = findBagAndUses(inv, objectRecipe.useConsumable)
+    end
+
+    local _floor = ISBMNaturalFloor:new(sprites.sprite, sprites.northSprite, bag, uses, playerObj)
+
+    if sprites.eastSprite then
+        _floor:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _floor:setSouthSprite(sprites.southSprite)
+    end
+
+    BuildingMenu.buildObject(_floor, name, player, objectRecipe, objectOptions)
+end
 
 BuildingMenu.onBuildFloor = function( sprites, name, player, objectRecipe, objectOptions)
     local _floor = ISWoodenFloor:new(sprites.sprite, sprites.northSprite)

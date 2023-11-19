@@ -20782,7 +20782,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dirt",
                                 "Tooltip_Dirt_Generic",
-                                BuildingMenu.onBuildFloor,
+                                BuildingMenu.onBuildNaturalFloor,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -20819,7 +20819,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Grass",
                                 "Tooltip_Grass_Generic",
-                                BuildingMenu.onBuildFloor,
+                                BuildingMenu.onBuildNaturalFloor,
                                 BuildingMenu.DirtRecipe,
                                 true,
                                 {
@@ -20847,10 +20847,10 @@ BuildingMenu.Tabs = {
                                     isCorner = true
                                 },
                                 {
-                                    sprite = "blends_natural_01_20",
-                                    northSprite = "blends_natural_01_18",
-                                    eastSprite = "blends_natural_01_19",
-                                    southSprite = "blends_natural_01_17"
+                                    sprite = "blends_natural_01_19",
+                                    northSprite = "blends_natural_01_17",
+                                    eastSprite = "blends_natural_01_20",
+                                    southSprite = "blends_natural_01_18"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -20871,12 +20871,134 @@ BuildingMenu.Tabs = {
                                     isCorner = true
                                 },
                                 {
-                                    sprite = "blends_natural_01_26",
-                                    northSprite = "blends_natural_01_27",
-                                    eastSprite = "blends_natural_01_25",
-                                    southSprite = "blends_natural_01_24"
+                                    sprite = "blends_natural_01_25",
+                                    northSprite = "blends_natural_01_24",
+                                    eastSprite = "blends_natural_01_26",
+                                    southSprite = "blends_natural_01_27"
                                 }
-                            )
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Generic",
+                                BuildingMenu.onBuildNaturalFloor,
+                                BuildingMenu.DirtRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling"
+                                },
+                                {sprite = "blends_natural_01_32", northSprite = "blends_natural_01_32"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass_Corner",
+                                "Tooltip_Grass_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.DirtRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_natural_01_35",
+                                    northSprite = "blends_natural_01_33",
+                                    eastSprite = "blends_natural_01_36",
+                                    southSprite = "blends_natural_01_34"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass_Edge",
+                                "Tooltip_Grass_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.DirtRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_natural_01_41",
+                                    northSprite = "blends_natural_01_40",
+                                    eastSprite = "blends_natural_01_42",
+                                    southSprite = "blends_natural_01_43"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Generic",
+                                BuildingMenu.onBuildNaturalFloor,
+                                BuildingMenu.DirtRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling"
+                                },
+                                {sprite = "blends_natural_01_48", northSprite = "blends_natural_01_48"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass_Corner",
+                                "Tooltip_Grass_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.DirtRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_natural_01_51",
+                                    northSprite = "blends_natural_01_49",
+                                    eastSprite = "blends_natural_01_52",
+                                    southSprite = "blends_natural_01_50"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass_Edge",
+                                "Tooltip_Grass_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.DirtRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "blends_natural_01_57",
+                                    northSprite = "blends_natural_01_56",
+                                    eastSprite = "blends_natural_01_58",
+                                    southSprite = "blends_natural_01_59"
+                                }
+                            ),
                         }
                     },
                     {

@@ -3388,11 +3388,11 @@ BuildingMenu.MetalFencePostRecipe = {
     neededMaterials = {
         {
             Material = 'Base.SmallSheetMetal',
-            Amount = 4
+            Amount = 3
         },
         {
             Material = 'Base.MetalBar',
-            Amount = 4
+            Amount = 2
         },
         {
             Material = 'Base.Screws',
@@ -3402,11 +3402,11 @@ BuildingMenu.MetalFencePostRecipe = {
     useConsumable = {
         {
             Consumable = 'Base.BlowTorch',
-            Amount = 5
+            Amount = 3
         },
         {
             Consumable = "Base.WeldingRods",
-            Amount = BuildingMenu.weldingRodUses(5)
+            Amount = BuildingMenu.weldingRodUses(3)
         }
     },
     skills = {

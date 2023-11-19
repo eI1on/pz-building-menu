@@ -14,18 +14,89 @@ BuildingMenu.playerCanPlaster = false
 BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip_craft_Needs') .. ' : <LINE> '
 BuildingMenu.textCanRotate = '<LINE> <RGB:1,1,1>' .. getText('Tooltip_craft_pressToRotate', Keyboard.getKeyName(getCore():getKey('Rotate building')))
 
-
+-- Tags: Screwdriver, CutPlant, DigPlow (eg: HandFork), Sledgehammer, ChopTree (eg: Axe), ClearAshes (eg: Broom), TakeDirt (eg: Shovel), Crowbar, Hammer, RemoveBarricade (eg: Claw Hammer)
 BuildingMenu.Tools = {}
-BuildingMenu.Tools['Hammer'] = {'Base.Hammer', 'Base.HammerStone', 'Base.BallPeenHammer', 'Base.WoodenMallet', 'Base.ClubHammer'}
-BuildingMenu.Tools['Sledgehammer'] = {'Base.Sledgehammer', 'Base.Sledgehammer2'}
-BuildingMenu.Tools['Paintbrush'] = {'Base.Paintbrush'}
-BuildingMenu.Tools['Screwdriver'] = {'Base.Screwdriver'}
-BuildingMenu.Tools['Saw'] = {'Base.Saw'}
-BuildingMenu.Tools['HandShovel'] = {'farming.HandShovel'}
-BuildingMenu.Tools['Shovel'] = {'Base.Shovel', 'Base.Shovel2'}
-BuildingMenu.Tools['BlowTorch'] = {'Base.BlowTorch'}
-BuildingMenu.Tools['WeldingMask'] = {'Base.WeldingMask'}
-BuildingMenu.Tools['Needle'] = {'Base.Needle'}
+BuildingMenu.Tools = {
+    Hammer = {
+        types = {
+            'Base.Hammer',
+            'Base.HammerStone',
+            'Base.BallPeenHammer',
+            'Base.ClubHammer',
+            'ToolsOfTheTrade.BrickHammer', --Tools of the Trade
+            'ToolsOfTheTrade.StubbyHammer', --Tools of the Trade
+            'MWPWeapons.oxnailhammer', -- [Reworked] MWPWeapons
+            'MWPWeapons.fatmaxbrickhammer', -- [Reworked] MWPWeapons
+            'MWPWeapons.m48tacticalwarhammer', -- [Reworked] MWPWeapons
+        },
+        tags = {'Hammer'}
+    },
+    Sledgehammer = {
+        types = {
+            'Base.Sledgehammer',
+            'Base.Sledgehammer2',
+            'ToolsOfTheTrade.PoliceBreachingHammer', --Tools of the Trade
+            'ToolsOfTheTrade.RailwaySpikeHammer', --Tools of the Trade
+            'ToolsOfTheTrade.WarHammer', --Tools of the Trade
+            'ToolsOfTheTrade.IndustrialBreachingHammer', --Tools of the Trade
+            'ToolsOfTheTrade.CoreHammer', --Tools of the Trade
+            'ToolsOfTheTrade.RailroadHammer', --Tools of the Trade
+            'ToolsOfTheTrade.RebarHammer', --Tools of the Trade
+            'SWeapons.SalvagedSledgehammer', -- Scrap Weapons
+            'MWPWeapons.roughneckgorillasledgehammer',-- [Reworked] MWPWeapons
+            'AuthenticZClothing.AuthenticTagillaSledgehammer', -- Authentic Z
+        },
+        tags = {'Sledgehammer'}
+    },
+    Paintbrush = {
+        types = {'Base.Paintbrush'},
+        tags = {}
+    },
+    Screwdriver = {
+        types = {'Base.Screwdriver'},
+        tags = {'Screwdriver'}
+    },
+    Saw = {
+        types = {
+            'Base.Saw', 
+            'Base.GardenSaw',
+            'ToolsOfTheTrade.Backsaw', -- Tools of the Trade
+            'ToolsOfTheTrade.RyobaSaw', -- Tools of the Trade
+        },
+        tags = {'Saw'}
+    },
+    HandShovel = {
+        types = {'farming.HandShovel'},
+        tags = {'DigPlow'}
+    },
+    Shovel = {
+        types = {
+            'Base.Shovel',
+            'SOMW.EntrenchingShovel', --SOMW
+            'MWPWeapons.sptesnaztacticalshovel', -- [Reworked] MWPWeapons
+            'ToolsOfTheTrade.TrenchShovel' -- Tools of the Trade
+        },
+        tags = {'TakeDirt'}
+    },
+    BlowTorch = {
+        types = {'Base.BlowTorch'},
+        tags = {}
+    },
+    WeldingMask = {
+        types = {
+            'Base.WeldingMask',
+            'AuthenticZClothing.Hat_TagillaMask2', -- Authentic Z
+            'AuthenticZClothing.Hat_TagillaMask', -- Authentic Z
+            'Base.Hat_WelderMask2' -- Scrap Armor
+        },
+        tags = {'WeldingMask'}
+    },
+    Needle = {
+        types = {'Base.Needle'},
+        tags = {'SewingNeedle'}
+    }
+}
+
 
 
 BuildingMenu.OnFillWorldObjectContextMenu = function(player, context, worldobjects, test)
@@ -79,11 +150,11 @@ BuildingMenu.debugPrint = function(prefix, data)
 end
 
 
-function BuildingMenu.predicateNotBroken(item)
+BuildingMenu.predicateNotBroken = function(item)
     return not item:isBroken()
 end
 
-function BuildingMenu.predicateHasTag(item, tag)
+BuildingMenu.predicateHasTag = function(item, tag)
     return not item:isBroken() and item:hasTag(tag)
 end
 
@@ -104,58 +175,101 @@ BuildingMenu.getMoveableDisplayName = function(sprite)
 end
 
 BuildingMenu.haveAToolToBuild = function(inv)
-    local haveATool = nil
-    for _, type in pairs (BuildingMenu.Tools['Hammer']) do
-        haveATool = inv:containsTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
-        if haveATool then
-            haveATool = true
-            break
+    local toolInfo = BuildingMenu.Tools['Hammer']
+    if toolInfo.types then
+        for _, type in ipairs(toolInfo.types) do
+            if inv:containsTypeEvalRecurse(type, BuildingMenu.predicateNotBroken) then
+                return true
+            end
         end
     end
-    return haveATool
+    if toolInfo.tags then
+        for _, tag in ipairs(toolInfo.tags) do
+            if inv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end) then
+                return true
+            end
+        end
+    end
+    return false
 end
 
-BuildingMenu.getAvailableTools = function(inv, tool)
-    local tools = nil
-    local toolsList = BuildingMenu.Tools[tool]
-    for _, type in pairs(toolsList) do
-        tools = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
-        if tools then return tools end
+BuildingMenu.getAvailableTool = function(inv, tool)
+    local toolInfo = BuildingMenu.Tools[tool]
+    if toolInfo.types then
+        for _, type in ipairs(toolInfo.types) do
+            local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
+            if item then return item end
+        end
     end
+    if toolInfo.tags then
+        for _, tag in ipairs(toolInfo.tags) do
+            local item = inv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
+            if item then return item end
+        end
+    end
+    return nil
 end
+
 
 BuildingMenu.equipToolPrimary = function(object, player, tool)
-    local tools = nil
+    local item = nil
     local inv = getSpecificPlayer(player):getInventory()
-    tools = BuildingMenu.getAvailableTools(inv, tool)
-    if tools then
-        ISInventoryPaneContextMenu.equipWeapon(tools, true, false, player)
+    item = BuildingMenu.getAvailableTool(inv, tool)
+    if not item then return end
+    if item then
+        ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), player)
         object.noNeedHammer = true
     end
 end
 
 BuildingMenu.equipToolSecondary = function(object, player, tool)
-    local tools = nil
+    local item = nil
     local inv = getSpecificPlayer(player):getInventory()
-    tools = BuildingMenu.getAvailableTools(inv, tool)
-    if tools then
-        ISInventoryPaneContextMenu.equipWeapon(tools, false, false, player)
+    item = BuildingMenu.getAvailableTool(inv, tool)
+    if not item then return end
+    if instanceof(item, "Clothing") then
+        if not item:isEquipped() then
+            ISInventoryPaneContextMenu.wearItem(item, player)
+        end
+    else
+        -- ISInventoryPaneContextMenu.equipWeapon(item, false, item:isTwoHandWeapon(), player)
     end
 end
 
 BuildingMenu.tooltipCheckForTool = function(inv, tool, tooltip)
-    local tools = BuildingMenu.getAvailableTools(inv, tool)
+    local toolInfo = BuildingMenu.Tools[tool]
+    local found = false
 
-    if tools then
-        tooltip.description = tooltip.description .. ISBuildMenu.ghs .. tools:getName() .. ' <LINE>'
-        return true
-    else
-        for _, type in pairs(BuildingMenu.Tools[tool]) do
-            tooltip.description = tooltip.description .. ISBuildMenu.bhs .. getItemNameFromFullType(type) .. ' <LINE>'
-            return false
+    if toolInfo.types then
+        for _, type in ipairs(toolInfo.types) do
+            local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
+            if item then
+                tooltip.description = tooltip.description .. ISBuildMenu.ghs .. item:getName() .. ' <LINE>'
+                found = true
+                break
+            end
         end
     end
+
+    if not found and toolInfo.tags then
+        for _, tag in ipairs(toolInfo.tags) do
+            local item = inv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
+            if item then
+                tooltip.description = tooltip.description .. ISBuildMenu.ghs .. item:getName() .. ' <LINE>'
+                found = true
+                break
+            end
+        end
+    end
+
+    if not found then
+        tooltip.description = tooltip.description .. ISBuildMenu.bhs .. ((toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool) .. ' <LINE>'
+        return false
+    end
+    return true
 end
+
+
 
 BuildingMenu.tooltipCheckForMaterial = function(inv, material, amount, tooltip)
     local type = string.split(material, '\\.')[2]
@@ -180,6 +294,7 @@ BuildingMenu.tooltipCheckForMaterial = function(inv, material, amount, tooltip)
             return true
         end
     end
+    tooltip.description = tooltip.description .. ISBuildMenu.bhs .. ' ERROR at tooltipCheckForMaterial' .. ' <LINE>'
 end
 
 BuildingMenu.tooltipCheckForConsumable = function(inv, material, amount, tooltip)

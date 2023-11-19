@@ -10,6 +10,8 @@ local pairs = pairs
 
 local BuildingMenu = getBuildingMenuInstance()
 
+
+
 BuildingMenuTilePickerList = ISPanel:derive("BuildingMenuTilePickerList")
 
 local TILE_WIDTH, TILE_HEIGHT = 64, 128
@@ -57,7 +59,7 @@ end
 function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
     local mouseX, mouseY = self:getMouseX(), self:getMouseY()
     local panelY = self:getY() - self:getYScroll() - self.parent:titleBarHeight() - self.parent.panel.tabHeight
-    if mouseY < panelY or mouseY > panelY + self:getHeight() then  self:clearStencilRect(); return  end
+    if mouseY < panelY or mouseY > panelY + self:getHeight() or mouseX < 0 or mouseX > self:getWidth() then  self:clearStencilRect(); return  end
 
     local c = math.floor(mouseX / TILE_WIDTH)
     local r = math.floor(mouseY / TILE_HEIGHT)
@@ -445,10 +447,11 @@ function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
     if selectedCategoryIndex > 0 then
         local selectedCategoryItem = favoriteTab.categoriesList.items[selectedCategoryIndex]
         favoriteTab.subCategoriesList:clear()
-
-        for _, subcategory in pairs(selectedCategoryItem.item.subCatData) do
-            if favorites.subcategories[subcategory.subCategoryIcon] then
-                favoriteTab.subCategoriesList:addItem(subcategory.subcategoryName, {icon = subcategory.subCategoryIcon, objectsData = subcategory.objects})
+        if selectedCategoryItem then
+            for _, subcategory in pairs(selectedCategoryItem.item.subCatData) do
+                if favorites.subcategories[subcategory.subCategoryIcon] then
+                    favoriteTab.subCategoriesList:addItem(subcategory.subcategoryName, {icon = subcategory.subCategoryIcon, objectsData = subcategory.objects})
+                end
             end
         end
     end
