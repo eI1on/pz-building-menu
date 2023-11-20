@@ -1,9 +1,11 @@
 local function setSpriteProperty(spriteName, propertyName, propertyValue, checkIsoFlagType)
     local props = getSprite(spriteName):getProperties();
+    if not props then return end
     props:Set(propertyName, propertyValue, checkIsoFlagType);
 end
 local function unSetSpriteProperty(spriteName, propertyName)
     local props = getSprite(spriteName):getProperties();
+    if not props then return end
     props:UnSet(propertyName);
 end
 

@@ -4341,7 +4341,7 @@ BuildingMenu.FlowerBedRecipe = {
         },
         {
             Consumable = "Base.BucketWaterFull",
-            Amount = 10
+            Amount = 5
         }
     },
     skills = {
@@ -4349,6 +4349,25 @@ BuildingMenu.FlowerBedRecipe = {
             Skill = "Farming",
             Level = 4,
             Xp = 15
+        }
+    }
+}
+
+BuildingMenu.GrassRecipe = {
+    neededTools = {
+        "HandShovel"
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.BucketWaterFull",
+            Amount = 5
+        }
+    },
+    skills = {
+        {
+            Skill = "Farming",
+            Level = 2,
+            Xp = 2
         }
     }
 }

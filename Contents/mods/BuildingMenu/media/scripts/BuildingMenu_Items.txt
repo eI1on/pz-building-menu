@@ -1,6 +1,6 @@
 module Base
 {
-    /* Overwrite the Concrete Bucket*/
+    /* Overwrite Vanilla Items*/
 	item BucketConcreteFull
 	{
 	    DisplayCategory = Material,
@@ -17,6 +17,53 @@ module Base
 		WorldStaticModel = BucketFullConcrete_Ground,
 	}
 
+    item Dirtbag
+	{
+	    DisplayCategory = Material,
+		Weight	=	2,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.125,
+		DisplayName	=	Dirt Bag,
+		Icon	=	Sandbag,
+		ReplaceOnDeplete	=	EmptySandbag,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		WorldStaticModel = DirtBag_Ground,
+        Tooltip = Tooltip_item_empty_sack_container,
+	}
+
+	item Sandbag
+	{
+	    DisplayCategory = Material,
+		Weight	=	2,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.125,
+		DisplayName	=	Sand Bag,
+		Icon	=	Sandbag,
+		ReplaceOnDeplete	=	EmptySandbag,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		WorldStaticModel = SandBag,
+		Tooltip = Tooltip_item_empty_sack_container,
+	}
+
+	item Gravelbag
+	{
+	    DisplayCategory = Material,
+		Weight	=	2,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.125,
+		DisplayName	=	Gravel Bag,
+		Icon	=	Gravelbag,
+		ReplaceOnDeplete	=	EmptySandbag,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		WorldStaticModel = GravelBag,
+		Tooltip = Tooltip_item_empty_sack_container,
+	}
 
     /* Asphalt Recipes */
     item AsphaltMixturePowder

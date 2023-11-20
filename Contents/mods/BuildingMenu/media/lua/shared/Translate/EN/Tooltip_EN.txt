@@ -1504,6 +1504,8 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Grass_Corner = "Grass Corner",
   Tooltip_BuildingMenuObj_Grass_Edge = "Grass Edge",
 
+  Tooltip_Grass_Overlay_Generic = "Lush green grass. <BR><RGB:1,0.8,0> Rotate <RGB:1,1,1><SPACE> to adjust size.",
+
   Tooltip_BuildingMenuObj_Sidewalk_Edge = "Sidewalk Edge",
   Tooltip_Sidewalk_Edge_Generic = "A simple sidewalk side overlay",
 

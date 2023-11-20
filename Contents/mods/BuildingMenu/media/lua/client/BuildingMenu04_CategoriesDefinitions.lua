@@ -29074,6 +29074,480 @@ BuildingMenu.Tabs = {
                         }
                     },
                     {
+                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Vegetation_Grass"),
+                        subCategoryIcon = "blends_grassoverlays_01_0",
+                        objects = {
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_0", 
+                                    northSprite = "blends_grassoverlays_01_8",
+                                    eastSprite = "blends_grassoverlays_01_16"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_1", 
+                                    northSprite = "blends_grassoverlays_01_9",
+                                    eastSprite = "blends_grassoverlays_01_17"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_2", 
+                                    northSprite = "blends_grassoverlays_01_10",
+                                    eastSprite = "blends_grassoverlays_01_18"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_3", 
+                                    northSprite = "blends_grassoverlays_01_11",
+                                    eastSprite = "blends_grassoverlays_01_19"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_4", 
+                                    northSprite = "blends_grassoverlays_01_12",
+                                    eastSprite = "blends_grassoverlays_01_20"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_5", 
+                                    northSprite = "blends_grassoverlays_01_13",
+                                    eastSprite = "blends_grassoverlays_01_21"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_24", 
+                                    northSprite = "blends_grassoverlays_01_32",
+                                    eastSprite = "blends_grassoverlays_01_40"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_25", 
+                                    northSprite = "blends_grassoverlays_01_33",
+                                    eastSprite = "blends_grassoverlays_01_41"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_26", 
+                                    northSprite = "blends_grassoverlays_01_34",
+                                    eastSprite = "blends_grassoverlays_01_42"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_27", 
+                                    northSprite = "blends_grassoverlays_01_35",
+                                    eastSprite = "blends_grassoverlays_01_43"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_28", 
+                                    northSprite = "blends_grassoverlays_01_36",
+                                    eastSprite = "blends_grassoverlays_01_44"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_29", 
+                                    northSprite = "blends_grassoverlays_01_37",
+                                    eastSprite = "blends_grassoverlays_01_45"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_48", 
+                                    northSprite = "blends_grassoverlays_01_56",
+                                    eastSprite = "blends_grassoverlays_01_64"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_49", 
+                                    northSprite = "blends_grassoverlays_01_57",
+                                    eastSprite = "blends_grassoverlays_01_65"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_50", 
+                                    northSprite = "blends_grassoverlays_01_58",
+                                    eastSprite = "blends_grassoverlays_01_66"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_51", 
+                                    northSprite = "blends_grassoverlays_01_59",
+                                    eastSprite = "blends_grassoverlays_01_67"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_52", 
+                                    northSprite = "blends_grassoverlays_01_60",
+                                    eastSprite = "blends_grassoverlays_01_68"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Grass",
+                                "Tooltip_Grass_Overlay_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.GrassRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    isBush = true,
+                                    solid = false,
+                                    moveWithWind = true
+                                },
+                                {
+                                    sprite = "blends_grassoverlays_01_53", 
+                                    northSprite = "blends_grassoverlays_01_61",
+                                    eastSprite = "blends_grassoverlays_01_69"
+                                }
+                            ),
+                        }
+                    },
+                    {
                         subcategoryName = getText("IGUI_BuildingMenuSubCat_Vegetation_Hedges"),
                         subCategoryIcon = "vegetation_ornamental_01_1",
                         objects = {

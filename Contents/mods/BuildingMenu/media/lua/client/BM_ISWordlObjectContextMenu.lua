@@ -35,7 +35,16 @@ function BuildingMenu.onRemoveWallDetailing(worldobjects, square, wallDetailing,
     getCell():setDrag(bo, player)
 end
 
+function BuildingMenu.onToggleThumpableLight(lightSource, player)
+    local playerObj = getSpecificPlayer(player)
+    if luautils.walkAdj(playerObj, lightSource:getSquare()) then
+        ISTimedActionQueue.add(ISToggleLight:new(playerObj, lightSource, 5))
+    end
+end
+
 local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
+    if test and ISWorldObjectContextMenu.Test then return true end
+    if test then return ISWorldObjectContextMenu.setTest() end
     local playerObj = getSpecificPlayer(player)
     local playerInv = playerObj:getInventory()
     local wallVine, wallDetailing
@@ -62,11 +71,31 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
         end
     end
 
-    if not playerObj:getVehicle() then
-        if wallVine and not test then
+    local thump = nil
+    local square = nil
+    for _, v in ipairs(worldobjects) do
+      square = v:getSquare()
+      if instanceof(v, 'IsoThumpable') then
+        if not v:haveFuel() then
+          if v:getModData()['IsLighting'] then
+            thump = v
+          end
+        end
+      end
+    end
+
+    if not playerObj:getVehicle() and not test then
+        if thump then
+            if thump:isLightSourceOn() then
+                context:addOption(getText 'ContextMenu_Turn_Off', thump, ISLightContextMenu.onToggleThumpableLight, player)
+            elseif thump:getSquare():haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier) then
+                context:addOption(getText 'ContextMenu_Turn_On', thump, ISLightContextMenu.onToggleThumpableLight, player)
+            end
+        end
+        if wallVine then
             context:addOptionOnTop(getText("ContextMenu_RemoveWallVine"), worldobjects, ISWorldObjectContextMenu.onRemovePlant, wallVine, true, player)
         end
-        if wallDetailing and not test then
+        if wallDetailing then
             context:addOptionOnTop(getText("ContextMenu_RemoveWallDetailing"), worldobjects, BuildingMenu.onRemoveWallDetailing, wallDetailing, true, player)
         end
     end
