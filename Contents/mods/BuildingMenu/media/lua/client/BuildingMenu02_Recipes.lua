@@ -1378,8 +1378,7 @@ BuildingMenu.BrownSmallWoodWallRecipe = {
 
 BuildingMenu.BigWoodWallRecipe = {
     neededTools = {
-        "Hammer",
-        "Paintbrush"
+        "Hammer"
     },
     neededMaterials = {
         {
@@ -1402,8 +1401,7 @@ BuildingMenu.BigWoodWallRecipe = {
 
 BuildingMenu.SmallWoodWallRecipe = {
     neededTools = {
-        "Hammer",
-        "Paintbrush"
+        "Hammer"
     },
     neededMaterials = {
         {
@@ -4401,6 +4399,45 @@ BuildingMenu.FlowerPotRecipe = {
     }
 }
 
+
+BuildingMenu.PlantCrateRecipe = {
+    neededTools = {
+        "Shovel",
+        "Hammer"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 6
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 5
+        },
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.Dirtbag",
+            Amount = 2
+        },
+        {
+            Consumable = "Base.BucketWaterFull",
+            Amount = 5
+        },
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 4,
+            Xp = 10
+        },
+        {
+            Skill = "Farming",
+            Level = 2,
+            Xp = 15
+        }
+    }
+}
 
 BuildingMenu.WallVinesRecipe = {
     neededTools = {

@@ -1,9 +1,7 @@
-local function setSpriteProperty(spriteName, propertyName, propertyValue, checkIsoFlagType)
-    local props = getSprite(spriteName):getProperties();
-    props:Set(propertyName, propertyValue, checkIsoFlagType);
-end
+require('BM_Utils')
 
-local function toggleSpritesProperties()
+
+Events.OnLoadedTileDefinitions.Add(function(manager)
     local sprites = {
         "melos_tiles_walls_garage_01_0",
         "melos_tiles_walls_garage_01_1",
@@ -37,8 +35,9 @@ local function toggleSpritesProperties()
         "melos_tiles_walls_garage_02_98"
     }
     for _, sprite in ipairs(sprites) do
-        setSpriteProperty(sprite, "WallW", "", false);
-        setSpriteProperty(sprite, "WallW", "", true);
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "WallW", "", false);
+        BM_Utils.setSpriteProperty(props, "WallW", "", true);
     end
 
     sprites = {
@@ -74,8 +73,9 @@ local function toggleSpritesProperties()
         "melos_tiles_walls_garage_02_101"
     }
     for _, sprite in ipairs(sprites) do
-        setSpriteProperty(sprite, "WallN", "", false);
-        setSpriteProperty(sprite, "WallN", "", true);
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "WallN", "", false);
+        BM_Utils.setSpriteProperty(props, "WallN", "", true);
     end
 
 
@@ -98,12 +98,12 @@ local function toggleSpritesProperties()
         "melos_tiles_gardencenter_02_119"
     }
     for _, sprite in ipairs(sprites) do
-        setSpriteProperty(sprite, "ContainerCapacity", "100", false);
-        setSpriteProperty(sprite, "container", "logs", false);
-        setSpriteProperty(sprite, "container", "", true);
-        setSpriteProperty(sprite, "PickUpTool", "Hammer", false);
-        setSpriteProperty(sprite, "PlaceTool", "Hammer", false);
-        setSpriteProperty(sprite, "IsMovAble", "", true);
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "100", false);
+        BM_Utils.setSpriteProperty(props, "container", "logs", false);
+        BM_Utils.setSpriteProperty(props, "container", "", true);
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, "IsMovAble", "", true);
     end
-end
-Events.OnGameStart.Add(toggleSpritesProperties)
+end)

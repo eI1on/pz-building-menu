@@ -65,7 +65,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             if item and instanceof(item, "InventoryItem") then
                 print(item:getType())
                 objectOptions.firstItem = item:getType()
-            else
+            elseif not ISBuildMenu.cheat then
                 print("[Building Menu] ERROR at creating - firstItem - for: ", name)
                 return
             end
@@ -75,7 +75,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             if item and instanceof(item, "InventoryItem") then
                 print(item:getType())
                 objectOptions.secondItem = item:getType()
-            else
+            elseif not ISBuildMenu.cheat then
                 print("[Building Menu] ERROR at creating - secondItem - for: ", name)
                 return
             end

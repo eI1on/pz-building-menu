@@ -22449,7 +22449,7 @@ BuildingMenu.Tabs = {
                                     containerType = "smallbox",
                                     canBeAlwaysPlaced = true,
                                     blockAllTheSquare = true,
-                                    canBeLockedByPadlock = true
+                                    canBeLockedByPadlock = false
                                 },
                                 {sprite = "location_shop_greenes_01_37", northSprite = "location_shop_greenes_01_38"}
                             ),
@@ -22625,6 +22625,7 @@ BuildingMenu.Tabs = {
                                     noNeedHammer = true,
                                     completionSound = "BuildMetalStructureMedium",
                                     containerType = "shelves",
+                                    needToBeAgainstWall = true,
                                     canBeAlwaysPlaced = false,
                                     renderFloorHelper = true,
                                     buildLow = true

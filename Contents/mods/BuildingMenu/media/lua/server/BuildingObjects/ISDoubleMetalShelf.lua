@@ -49,7 +49,7 @@ end
 
 function ISDoubleMetalShelf:setInfo(square, north, sprite)
 	-- add furniture to our ground
-	local thumpable = IsoThumpable.new(getCell(), square, sprite, north, self);
+	local thumpable = IsoThumpable.new(getCell(), square, sprite, not north, self);
 	-- name of the item for the tooltip
 	buildUtil.setInfo(thumpable, self);
 
@@ -161,6 +161,14 @@ function ISDoubleMetalShelf:render(x, y, z, square)
 		spriteA:RenderGhostTile(xa, ya, za);
 	else
 		spriteA:RenderGhostTileRed(xa, ya, za);
+	end
+	-- optionally draw a second floor tile to aid placement
+	if self.renderFloorHelper then
+		if not self.RENDER_SPRITE_FLOOR then
+			self.RENDER_SPRITE_FLOOR = IsoSprite.new()
+			self.RENDER_SPRITE_FLOOR:LoadFramesNoDirPageSimple('carpentry_02_56')
+		end
+		self.RENDER_SPRITE_FLOOR:RenderGhostTile(xa, ya, za)
 	end
 end
 

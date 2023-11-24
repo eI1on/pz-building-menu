@@ -1,0 +1,9 @@
+IGUI_EN = {
+    IGUI_BuildingMenuSubCat_Containers_Block_Trasher = "Block Trasher",
+
+    IGUI_BuildingMenuCat_Garden_Stuff = "Garden Stuff",
+    IGUI_BuildingMenuSubCat_Plant_Containers = "Plant Containers",
+    IGUI_BuildingMenuSubCat_Plant_Shelves = "Plant Shelves",
+    IGUI_BuildingMenuSubCat_Small_Plant_Containers = "Small Plant Containers",
+    IGUI_BuildingMenuSubCat_Garden_Fencing = "Garden Fencing",
+}
