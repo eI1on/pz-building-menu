@@ -1,11 +1,20 @@
 require "ISUI/ISPanel"
 
+---@type function
 local getTexture = getTexture
 
+--- Class representing a tab in the Building Menu UI.
+---@class ISBuildingMenuTabUI: ISPanelJoypad
 ISBuildingMenuTabUI = ISPanelJoypad:derive("ISBuildingMenuTabUI");
+
+--- Singleton instance of ISBuildingMenuTabUI.
+---@type ISBuildingMenuTabUI|nil
 ISBuildingMenuTabUI.instance = nil;
+---@type number
 ISBuildingMenuTabUI.largeFontHeight = getTextManager():getFontHeight(UIFont.Large)
+---@type number
 ISBuildingMenuTabUI.mediumNewFontHeight = getTextManager():getFontHeight(UIFont.MediumNew)
+---@type number
 ISBuildingMenuTabUI.smallFontHeight = getTextManager():getFontHeight(UIFont.Small)
 
 
@@ -15,8 +24,8 @@ function ISBuildingMenuTabUI:initialise()
 end
 
 
+--- Creates the UI components for the tab.
 function ISBuildingMenuTabUI:create()
-
     self.categoriesList = ISScrollingListBox:new(0, 0, self.width/4, self.height);
     self.categoriesList.anchorBottom = true;
     self.categoriesList:initialise();
@@ -50,9 +59,13 @@ function ISBuildingMenuTabUI:create()
     self.subCategoriesList.onMouseDown = self.onMouseDown_List;
     self.subCategoriesList.drawBorder = true;
     self:addChild(self.subCategoriesList);
-
 end
 
+--- Draws a list item in the tab.
+---@param y number
+---@param item table
+---@param alt boolean
+---@return number
 function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
     self:drawRectBorder(0, (y), self:getWidth(), self.itemheight - 1, 0.9, self.borderColor.r, self.borderColor.g, self.borderColor.b)
     if self.selected == item.index then
@@ -100,18 +113,25 @@ function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
 end
 
 
-
+--- Gets the favorite icon X position in the list.
+---@param listType string
+---@return number
 function ISBuildingMenuTabUI:getFavoriteX(listType)
     local scrollBarWid = self[listType]:isVScrollBarVisible() and 13 or 0
     return self[listType]:getWidth() - scrollBarWid - self.favPadX - self.favWidth - self.favPadX
 end
 
-
+--- Checks if the mouse is over the favorite icon.
+---@param x number
+---@param listType string
+---@return boolean
 function ISBuildingMenuTabUI:isMouseOverFavorite(x, listType)
     return (x >= self:getFavoriteX(listType)) and not self[listType]:isMouseOverScrollBar()
 end
 
-
+--- Handles the mouse down event on the list.
+---@param x number
+---@param y number
 function ISBuildingMenuTabUI:onMouseDown_List(x, y)
     local row = self:rowAt(x, y)
     if row == -1 then return end
@@ -133,7 +153,9 @@ function ISBuildingMenuTabUI:update()
 
 end
 
-
+--- Adds or removes an item from favorites.
+---@param fromKeyboard boolean
+---@param listType string
 function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
     local list = self[listType]
     if list:size() == 0 then return end
@@ -156,8 +178,13 @@ function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
     end
 end
 
-
-
+--- Constructor for ISBuildingMenuTabUI.
+---@param x number
+---@param y number
+---@param width number
+---@param height number
+---@param buildingMenuUI ISBuildingMenuUI
+---@return ISBuildingMenuTabUI
 function ISBuildingMenuTabUI:new(x, y, width, height, buildingMenuUI)
     local o = ISPanelJoypad:new(x, y, width, height)
     setmetatable(o, self)

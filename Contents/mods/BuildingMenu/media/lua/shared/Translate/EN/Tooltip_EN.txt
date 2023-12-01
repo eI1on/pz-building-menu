@@ -1439,6 +1439,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Brown_Diagonal_Tiles = "Brown Diagonal Tiles",
 
   Tooltip_BuildingMenuObj_Concrete = "Concrete",
+  Tooltip_BuildingMenuObj_Concrete_Corner = "Concrete Corner",
   Tooltip_BuildingMenuObj_Rusty_Mesh = "Rusty Mesh",
   Tooltip_BuildingMenuObj_Rusty_Mesh_Grate = "Rusty Mesh Grate",
   Tooltip_BuildingMenuObj_Steel_Bars_Floor = "Steel Bars",

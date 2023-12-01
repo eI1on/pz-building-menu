@@ -2,14 +2,22 @@ if not getBuildingMenuInstance then
     require("BuildingMenu01_Main")
 end
 
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
+---@type table<string, boolean>
 local exclusions = {
     health = true,
     firstItem = true,
     secondItem = true
 }
 
+--- Builds an object.
+---@param object any
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOptions)
     if name then
         object.name = name;
@@ -82,6 +90,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         end
         if objectOptions.containerType then
             object.getHealth = function(self)
+                if isDebugEnabled() then print("[Building Menu] objectOptions.health: ", objectOptions.health, " buildUtil.getWoodHealth(self): ", buildUtil.getWoodHealth(self)) end
                 return objectOptions.health or buildUtil.getWoodHealth(self)
             end
         end
@@ -96,8 +105,11 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
 end
 
 
-
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildSink = function( sprites, name, player, objectRecipe, objectOptions)
     local _sink = ISSink:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -112,6 +124,11 @@ BuildingMenu.onBuildSink = function( sprites, name, player, objectRecipe, object
     BuildingMenu.buildObject(_sink, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildBathtub = function( sprites, name, player, objectRecipe, objectOptions)
     local _bathtub = ISBathtub:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
 
@@ -119,6 +136,11 @@ BuildingMenu.onBuildBathtub = function( sprites, name, player, objectRecipe, obj
 end
 
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildFireplace = function( sprites, name, player, objectRecipe, objectOptions)
     local _fireplace = ISStove:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -134,6 +156,11 @@ BuildingMenu.onBuildFireplace = function( sprites, name, player, objectRecipe, o
 end
 
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildOven = function( sprites, name, player, objectRecipe, objectOptions)
     local _oven = ISOven:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -148,6 +175,11 @@ BuildingMenu.onBuildOven = function( sprites, name, player, objectRecipe, object
     BuildingMenu.buildObject(_oven, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildStove = function( sprites, name, player, objectRecipe, objectOptions)
     local _stove = ISStove:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -163,6 +195,11 @@ BuildingMenu.onBuildStove = function( sprites, name, player, objectRecipe, objec
 end
 
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildBarbecue = function( sprites, name, player, objectRecipe, objectOptions)
     local _stove = ISBarbecue:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -170,12 +207,22 @@ BuildingMenu.onBuildBarbecue = function( sprites, name, player, objectRecipe, ob
 end
 
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildGenerator = function( sprites, name, player, objectRecipe, objectOptions)
     local _generator = ISGenerator:new(sprites.sprite, sprites.northSprite)
 
     BuildingMenu.buildObject(_generator, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildMicrowaveOven = function( sprites, name, player, objectRecipe, objectOptions)
     local _microwaveOven = ISMicrowaveOven:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -190,6 +237,11 @@ BuildingMenu.onBuildMicrowaveOven = function( sprites, name, player, objectRecip
     BuildingMenu.buildObject(_microwaveOven, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildSimpleFridge = function( sprites, name, player, objectRecipe, objectOptions)
     local _simpleFridge = ISFridge:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -204,18 +256,44 @@ BuildingMenu.onBuildSimpleFridge = function( sprites, name, player, objectRecipe
     BuildingMenu.buildObject(_simpleFridge, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildLargeFridge = function( sprites, name, player, objectRecipe, objectOptions)
     local _doubleFridge = ISDoubleFridge:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
 
     BuildingMenu.buildObject(_doubleFridge, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
+BuildingMenu.onBuildTripleFridge = function( sprites, name, player, objectRecipe, objectOptions)
+    local _tripleFridge = ISTripleFridge:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite1, sprites.northSprite2, sprites.northSprite3)
+
+    BuildingMenu.buildObject(_tripleFridge, name, player, objectRecipe, objectOptions)
+end
+
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildPopsicleFridge = function( sprites, name, player, objectRecipe, objectOptions)
     local _popsicleFridge = ISPopsicleFridge:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
 
     BuildingMenu.buildObject(_popsicleFridge, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildCombinationWasherDryer = function( sprites, name, player, objectRecipe, objectOptions)
     local _combinationWasherDryer = ISCombinationWasherDryer:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -230,6 +308,11 @@ BuildingMenu.onBuildCombinationWasherDryer = function( sprites, name, player, ob
     BuildingMenu.buildObject(_combinationWasherDryer, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildClothingDryer = function( sprites, name, player, objectRecipe, objectOptions)
     local _clothingDryer = ISClothingDryer:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -244,6 +327,11 @@ BuildingMenu.onBuildClothingDryer = function( sprites, name, player, objectRecip
     BuildingMenu.buildObject(_clothingDryer, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildClothingWasher = function( sprites, name, player, objectRecipe, objectOptions)
     local _clothingWasher = ISClothingWasher:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -258,6 +346,11 @@ BuildingMenu.onBuildClothingWasher = function( sprites, name, player, objectReci
     BuildingMenu.buildObject(_clothingWasher, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildWashingBin = function( sprites, name, player, objectRecipe, objectOptions)
     local _washingBin = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
@@ -272,6 +365,11 @@ BuildingMenu.onBuildWashingBin = function( sprites, name, player, objectRecipe, 
     BuildingMenu.buildObject(_washingBin, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildMetalCounter = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalCounter = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
@@ -286,7 +384,11 @@ BuildingMenu.onBuildMetalCounter = function( sprites, name, player, objectRecipe
     BuildingMenu.buildObject(_metalCounter, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onMetalDrum = function( sprites, name, player, objectRecipe, objectOptions)
 	local _barrel = ISMetalDrum:new(player, sprites.sprite)
 
@@ -294,7 +396,11 @@ BuildingMenu.onMetalDrum = function( sprites, name, player, objectRecipe, object
     BuildingMenu.buildObject(_barrel, nil, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildMetalShelf = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalshelf = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
@@ -309,20 +415,36 @@ BuildingMenu.onBuildMetalShelf = function( sprites, name, player, objectRecipe, 
     BuildingMenu.buildObject(_metalshelf, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildDoubleMetalShelf = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalDoubleShelf = ISDoubleMetalShelf:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
 
     BuildingMenu.buildObject(_metalDoubleShelf, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildDoubleTileContainer = function( sprites, name, player, objectRecipe, objectOptions)
     local _doubleTileContainer = ISDoubleTileContainer:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
 
     BuildingMenu.buildObject(_doubleTileContainer, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildMannequin = function( sprites, name, player, objectRecipe, objectOptions)
+    -- TODO: Make the placing of Mannequins 3D ? Now it's possible to place only facing N. It should be changed in ISMannequin file
+
     -- local scriptName = objectOptions.scriptName
     -- local scripts = getScriptManager():getAllMannequinScripts()
     -- local script = nil
@@ -371,6 +493,11 @@ BuildingMenu.onBuildMannequin = function( sprites, name, player, objectRecipe, o
     BuildingMenu.buildObject(_mannequin, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildScarecrow = function( sprites, name, player, objectRecipe, objectOptions)
     local _scarecrow = ISScarecrow:new(player, sprites.sprite)
 
@@ -389,6 +516,11 @@ BuildingMenu.onBuildScarecrow = function( sprites, name, player, objectRecipe, o
     BuildingMenu.buildObject(_scarecrow, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildSkeleton = function( sprites, name, player, objectRecipe, objectOptions)
     local _skeleton = ISSkeleton:new(player, sprites.sprite)
 
@@ -407,6 +539,11 @@ BuildingMenu.onBuildSkeleton = function( sprites, name, player, objectRecipe, ob
     BuildingMenu.buildObject(_skeleton, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildClothingRack = function( sprites, name, player, objectRecipe, objectOptions)
     local _clothingRack = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
@@ -421,19 +558,33 @@ BuildingMenu.onBuildClothingRack = function( sprites, name, player, objectRecipe
     BuildingMenu.buildObject(_clothingRack, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildDoubleClothingRack = function( sprites, name, player, objectRecipe, objectOptions)
     local _doubleClothingRack = ISDoubleClothingRack:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
 
     BuildingMenu.buildObject(_doubleClothingRack, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildDoubleTileFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _doubleTileFurniture = ISDoubleTileFurniture:new(name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2)
 
     BuildingMenu.buildObject(_doubleTileFurniture, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildWoodenContainer = function( sprites, name, player, objectRecipe, objectOptions)
     local _woodenContainer = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
@@ -448,7 +599,11 @@ BuildingMenu.onBuildWoodenContainer = function( sprites, name, player, objectRec
     BuildingMenu.buildObject(_woodenContainer, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildSimpleFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _simpleFurniture = ISSimpleFurniture:new(name, sprites.sprite, sprites.northSprite)
 
@@ -463,6 +618,11 @@ BuildingMenu.onBuildSimpleFurniture = function( sprites, name, player, objectRec
     BuildingMenu.buildObject(_simpleFurniture, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildDoor = function( sprites, name, player, objectRecipe, objectOptions)
     local _door = ISWoodenDoor:new(sprites.sprite, sprites.northSprite, sprites.openSprite, sprites.openNorthSprite)
 
@@ -477,30 +637,55 @@ BuildingMenu.onBuildDoor = function( sprites, name, player, objectRecipe, object
     BuildingMenu.buildObject(_door, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuild3TileGarageDoor = function( sprites, name, player, objectRecipe, objectOptions)
     local _garageDoor = ISThreeTileGarageDoor:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite, sprites.northSprite2, sprites.northSprite3)
 
     BuildingMenu.buildObject(_garageDoor, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuild4TileGarageDoor = function( sprites, name, player, objectRecipe, objectOptions)
     local _garageDoor = ISFourTileGarageDoor:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.sprite4, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4)
 
     BuildingMenu.buildObject(_garageDoor, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildThreeTileSimpleFurniture = function( sprites, name, player, objectRecipe, objectOptions)
-    local _threeTileSimpleFurniture = ISThreeTileGarageDoor:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite, sprites.northSprite2, sprites.northSprite3)
+    local _threeTileSimpleFurniture = ISThreeTileSimpleFurniture:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite, sprites.northSprite2, sprites.northSprite3)
 
     BuildingMenu.buildObject(_threeTileSimpleFurniture, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildFourTileSimpleFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _fourTileSimpleFurniture = ISFourTileSimpleFurniture:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.sprite4, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4)
 
     BuildingMenu.buildObject(_fourTileSimpleFurniture, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildFourTileFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _fourTileFurniture = ISFourTileFurniture:new(name, sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.sprite4, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4)
 
@@ -513,7 +698,11 @@ BuildingMenu.onBuildDoorFrame = function( sprites, name, player, objectRecipe, o
     BuildingMenu.buildObject(_doorFrame, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildWall = function( sprites, name, player, objectRecipe, objectOptions)
     local _wall = ISWoodenWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
@@ -528,20 +717,33 @@ BuildingMenu.onBuildWall = function( sprites, name, player, objectRecipe, object
     BuildingMenu.buildObject(_wall, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildWaterWell = function( sprites, name, player, objectRecipe, objectOptions)
     local _waterwell = ISWaterWell:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player))
 
     BuildingMenu.buildObject(_waterwell, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildHighMetalFence = function( sprites, name, player, objectRecipe, objectOptions)
     local _highMetalFence = ISHighMetalFence:new(sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2)
 
     BuildingMenu.buildObject(_highMetalFence, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildNaturalFloor = function( sprites, name, player, objectRecipe, objectOptions)
     local playerObj = getSpecificPlayer(player)
     local inv = playerObj:getInventory()
@@ -573,6 +775,11 @@ BuildingMenu.onBuildNaturalFloor = function( sprites, name, player, objectRecipe
     BuildingMenu.buildObject(_floor, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildFloor = function( sprites, name, player, objectRecipe, objectOptions)
     local _floor = ISWoodenFloor:new(sprites.sprite, sprites.northSprite)
 
@@ -587,7 +794,11 @@ BuildingMenu.onBuildFloor = function( sprites, name, player, objectRecipe, objec
     BuildingMenu.buildObject(_floor, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildFloorOverlay = function( sprites, name, player, objectRecipe, objectOptions)
     local _floorOverlay = ISFloorOverlay:new(sprites.sprite, sprites.northSprite)
 
@@ -602,7 +813,11 @@ BuildingMenu.onBuildFloorOverlay = function( sprites, name, player, objectRecipe
     BuildingMenu.buildObject(_floorOverlay, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildWallOverlay = function( sprites, name, player, objectRecipe, objectOptions)
     local _wallOverlay = ISWallOverlay:new(sprites.sprite, sprites.northSprite)
 
@@ -617,27 +832,44 @@ BuildingMenu.onBuildWallOverlay = function( sprites, name, player, objectRecipe,
     BuildingMenu.buildObject(_wallOverlay, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildStairs = function( sprites, name, player, objectRecipe, objectOptions)
     local _stairs = ISWoodenStairs:new(sprites.upToLeft01, sprites.upToLeft02, sprites.upToLeft03, sprites.upToRight01, sprites.upToRight02, sprites.upToRight03, sprites.pillar, sprites.pillarNorth)
 
     BuildingMenu.buildObject(_stairs, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildWindowWall = function( sprites, name, player, objectRecipe, objectOptions)
     local _windowWall = ISWindowWallObj:new(sprites.sprite, sprites.northSprite, player)
 
     BuildingMenu.buildObject(_windowWall, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildWindow = function( sprites, name, player, objectRecipe, objectOptions)
     local _window = ISWindowObj:new(sprites.sprite, sprites.northSprite, player)
 
     BuildingMenu.buildObject(_window, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildLightSource = function( sprites, name, player, objectRecipe, objectOptions)
     local _lightSource = ISLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player))
 
@@ -661,6 +893,11 @@ BuildingMenu.onBuildLightSource = function( sprites, name, player, objectRecipe,
     BuildingMenu.buildObject(_lightSource, name, player, objectRecipe, objectOptions)
 end
 
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildLightPole = function( sprites, name, player, objectRecipe, objectOptions)
     local _lightPole = ISLightSource:new(sprites.sprite, sprites.sprite, getSpecificPlayer(player))
 
@@ -684,7 +921,11 @@ BuildingMenu.onBuildLightPole = function( sprites, name, player, objectRecipe, o
     BuildingMenu.buildObject(_lightPole, name, player, objectRecipe, objectOptions)
 end
 
-
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildOutdoorLight = function( sprites, name, player, objectRecipe, objectOptions)
     local _outdoorLight = ISLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player))
 

@@ -12,6 +12,8 @@ ISWallOverlay = ISBuildingObject:derive("ISWallOverlay");
 local function isRelevantWall(isCorner, object, north)
     local properties = object:getProperties()
 
+    if object:getModData().WindowWall then return true end
+
     if isCorner then
         return properties:Is("WallNW") and not instanceof(object, "IsoWindow")
     end

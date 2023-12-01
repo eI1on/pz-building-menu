@@ -1,13 +1,13 @@
 require("BuildingMenu04_CategoriesDefinitions")
 
-
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
 
 
 local function addDylanContainersToMenu()
-    local blakcCoffeeContainer = {
-        BuildingMenu.createObject(
+    local function createLockerObject(spriteName)
+        return BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildWoodenContainer,
@@ -26,41 +26,21 @@ local function addDylanContainersToMenu()
                 canBeLockedByPadlock = true
             },
             {
-                sprite = "BlackCoffeeCo01_8",
-                northSprite = "BlackCoffeeCo01_8",
+                sprite = spriteName,
+                northSprite = spriteName
             }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.MetalLockerRecipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructrueMedium",
-                containerType = "locker",
-                canBeAlwaysPlaced = true,
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            {
-                sprite = "BlackCoffeeCo01_9",
-                northSprite = "BlackCoffeeCo01_9",
-            }
-        ),
-    }
+        )
+    end
+    local blackCoffeeContainer = {}
+    table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_8"))
+    table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_9"))
     BuildingMenu.addObjectsToCategories(
     "Dylan",
     getText("IGUI_BuildingMenuCat_Containers"),
     "BlackCoffeeCo01_8",
     getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
     "BlackCoffeeCo01_8",
-    blakcCoffeeContainer
+    blackCoffeeContainer
     )
 
 
@@ -75,6 +55,7 @@ local function addDylanContainersToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
+                containerType = "counter",
                 isThumpable = true
             },
             {
@@ -96,6 +77,7 @@ local function addDylanContainersToMenu()
             "Block_Trasher_51",
             dylanCounter
     )
+
     dylanCounter = {}
     table.insert(dylanCounter, createCounterObject("DylansBar01_", 43))
     table.insert(dylanCounter, createCounterObject("DylansBar01_", 42))
@@ -109,8 +91,8 @@ local function addDylanContainersToMenu()
     )
 
 
-    local dylanBookshelves = {
-        BuildingMenu.createObject(
+    local function createDylanBookshelf(sprite, sprite2, northSprite, northSprite2)
+        return BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
             BuildingMenu.onBuildDoubleTileFurniture,
@@ -120,101 +102,24 @@ local function addDylanContainersToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                containerType = "wardrobe",
+                containerType = "shelves",
                 isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
-                sprite = "Block_Trasher_1",
-                sprite2 = "Block_Trasher_0",
-                northSprite = "Block_Trasher_2",
-                northSprite2 = "Block_Trasher_3"
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
-            BuildingMenu.LargeFurnitureRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = false,
-                completionSound = "BuildWoodenStructrueLarge",
-                containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
-            },
-            {
-                sprite = "Block_Trasher_5",
-                sprite2 = "Block_Trasher_4",
-                northSprite = "Block_Trasher_6",
-                northSprite2 = "Block_Trasher_7"
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
-            BuildingMenu.LargeFurnitureRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = false,
-                completionSound = "BuildWoodenStructrueLarge",
-                containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
-            },
-            {
-                sprite = "Block_Trasher_60",
-                sprite2 = "Block_Trasher_61",
-                northSprite = "Block_Trasher_62",
-                northSprite2 = "Block_Trasher_63"
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
-            BuildingMenu.LargeFurnitureRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = false,
-                completionSound = "BuildWoodenStructrueLarge",
-                containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
-            },
-            {
-                sprite = "Bookies_Store_13",
-                sprite2 = "Bookies_Store_12",
-                northSprite = "Bookies_Store_14",
-                northSprite2 = "Bookies_Store_15"
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
-            BuildingMenu.LargeFurnitureRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = false,
-                completionSound = "BuildWoodenStructrueLarge",
-                containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
-            },
-            {
-                sprite = "Bookies_Store_45",
-                sprite2 = "Bookies_Store_44",
-                northSprite = "Bookies_Store_46",
-                northSprite2 = "Bookies_Store_47"
+                sprite = sprite,
+                sprite2 = sprite2,
+                northSprite = northSprite,
+                northSprite2 = northSprite2
             }
         )
+    end
+    local dylanBookshelves = {
+        createDylanBookshelf("Block_Trasher_1", "Block_Trasher_0", "Block_Trasher_2", "Block_Trasher_3"),
+        createDylanBookshelf("Block_Trasher_5", "Block_Trasher_4", "Block_Trasher_6", "Block_Trasher_7"),
+        createDylanBookshelf("Block_Trasher_60", "Block_Trasher_61", "Block_Trasher_62", "Block_Trasher_63"),
+        createDylanBookshelf("Bookies_Store_13", "Bookies_Store_12", "Bookies_Store_14", "Bookies_Store_15"),
+        createDylanBookshelf("Bookies_Store_45", "Bookies_Store_44", "Bookies_Store_46", "Bookies_Store_47")
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
@@ -227,44 +132,6 @@ local function addDylanContainersToMenu()
     
 end
 addDylanContainersToMenu()
-
-local function addFridgeAppliancesToMenu()
-
-    local fridgesObjects = {
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Fridges",
-            BuildingMenu.onBuildSimpleFridge,
-            BuildingMenu.FridgeRecipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructrueMedium",
-                buildLow = true,
-                canBeAlwaysPlaced = true,
-                renderFloorHelper = false,
-                containerType = "fridge",
-                dismantable = true
-            },
-            {
-                sprite = "DylansElectronics01_50",
-                northSprite = "DylansElectronics01_51"
-            }
-        )
-    }
-    BuildingMenu.addObjectsToCategories(
-        "Dylan",
-        getText("IGUI_BuildingMenuCat_Appliances"),
-        "DylansElectronics01_50",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
-        "DylansElectronics01_50",
-        fridgesObjects
-    )
-end
 
 
 
@@ -338,12 +205,12 @@ local function addGardenStuffToMenu()
     )
 
 
-    local plantCrateObjects = {
-        BuildingMenu.createObject(
+    local function createPlantCrateObject(sprite, northSprite, recipe)
+        return BuildingMenu.createObject(
             "",
             "Tooltip_Random_Garden_Stuff",
             BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
+            recipe,
             true,
             {
                 actionAnim = "DigShovel",
@@ -355,749 +222,29 @@ local function addGardenStuffToMenu()
                 isCorner = false,
                 isThumpable = true,
             },
-            {sprite = "DylansGardenStuff01_19", northSprite = "DylansGardenStuff01_19"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_20", northSprite = "DylansGardenStuff01_20"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_21", northSprite = "DylansGardenStuff01_21"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_22", northSprite = "DylansGardenStuff01_22"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_23", northSprite = "DylansGardenStuff01_23"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_24", northSprite = "DylansGardenStuff01_24"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_25", northSprite = "DylansGardenStuff01_25"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_26", northSprite = "DylansGardenStuff01_26"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_27", northSprite = "DylansGardenStuff01_27"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_28", northSprite = "DylansGardenStuff01_28"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_29", northSprite = "DylansGardenStuff01_29"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_30", northSprite = "DylansGardenStuff01_30"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_31", northSprite = "DylansGardenStuff01_31"}
-        ),
+            { sprite = sprite, northSprite = northSprite or sprite }
+        )
+    end
 
+    local plantCrateObjects = {}
 
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_38", northSprite = "DylansGardenStuff01_38"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_42", northSprite = "DylansGardenStuff01_42"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_39", northSprite = "DylansGardenStuff01_39"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_40", northSprite = "DylansGardenStuff01_40"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_41", northSprite = "DylansGardenStuff01_41"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff01_0", northSprite = "DylansGardenStuff01_1"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.FlowerBedRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_3", northSprite = "DylansGardenStuff02_3"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.FlowerBedRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_4", northSprite = "DylansGardenStuff02_4"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.FlowerBedRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_5", northSprite = "DylansGardenStuff02_5"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.FlowerBedRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_6", northSprite = "DylansGardenStuff02_6"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.FlowerBedRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_7", northSprite = "DylansGardenStuff02_7"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_2", northSprite = "DylansGardenStuff02_2"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_14", northSprite = "DylansGardenStuff02_15"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_16", northSprite = "DylansGardenStuff02_16"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_17", northSprite = "DylansGardenStuff02_17"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_18", northSprite = "DylansGardenStuff02_18"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_19", northSprite = "DylansGardenStuff02_19"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_20", northSprite = "DylansGardenStuff02_20"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_21", northSprite = "DylansGardenStuff02_21"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_22", northSprite = "DylansGardenStuff02_22"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_23", northSprite = "DylansGardenStuff02_23"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_24", northSprite = "DylansGardenStuff02_24"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_25", northSprite = "DylansGardenStuff02_25"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_26", northSprite = "DylansGardenStuff02_26"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_27", northSprite = "DylansGardenStuff02_27"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_28", northSprite = "DylansGardenStuff02_28"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_29", northSprite = "DylansGardenStuff02_29"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_30", northSprite = "DylansGardenStuff02_30"}
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                blockAllTheSquare = true,
-                canPassThrough = false,
-                isCorner = false,
-                isThumpable = true,
-            },
-            {sprite = "DylansGardenStuff02_31", northSprite = "DylansGardenStuff02_31"}
-        ),
-    }
+    local function addPlantCrateObjects(startIndex, endIndex, baseName, specialCases, recipe)
+        for i = startIndex, endIndex do
+            local spriteName = baseName .. "_" .. tostring(i)
+            local northSpriteName = specialCases and specialCases[i] or spriteName
+            table.insert(plantCrateObjects, createPlantCrateObject(spriteName, northSpriteName, recipe))
+        end
+    end
+    
+    addPlantCrateObjects(19, 31, "DylansGardenStuff01", nil, BuildingMenu.PlantCrateRecipe)
+    addPlantCrateObjects(38, 41, "DylansGardenStuff01", nil, BuildingMenu.PlantCrateRecipe)
+    table.insert(plantCrateObjects, createPlantCrateObject("DylansGardenStuff01_0", "DylansGardenStuff01_1", BuildingMenu.PlantCrateRecipe))
+    
+    addPlantCrateObjects(3, 7, "DylansGardenStuff02", nil, BuildingMenu.FlowerBedRecipe)
+    table.insert(plantCrateObjects, createPlantCrateObject("DylansGardenStuff02_14", "DylansGardenStuff02_15", BuildingMenu.PlantCrateRecipe))
+    table.insert(plantCrateObjects, createPlantCrateObject("DylansGardenStuff02_2", nil, BuildingMenu.PlantCrateRecipe))
+    addPlantCrateObjects(16, 31, "DylansGardenStuff02", nil, BuildingMenu.PlantCrateRecipe)
+    
     BuildingMenu.addObjectsToCategories(
         "Dylan",
         getText("IGUI_BuildingMenuCat_Garden_Stuff"),
@@ -1199,9 +346,8 @@ local function addGardenStuffToMenu()
     )
 
 
-    plantCrateObjects = {}
-    plantCrateObjects = {
-        BuildingMenu.createObject(
+    local function createSmallPlantContainer(sprite)
+        return BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Small_Plant_Crate",
             "Tooltip_Random_Garden_Stuff",
             BuildingMenu.onBuildSimpleFurniture,
@@ -1216,163 +362,17 @@ local function addGardenStuffToMenu()
                 isCorner = true,
                 isThumpable = true,
             },
-            {sprite = "building_menu_dylan_garden_stuff_8", northSprite = "building_menu_dylan_garden_stuff_8"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_13", northSprite = "building_menu_dylan_garden_stuff_13"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_14", northSprite = "building_menu_dylan_garden_stuff_14"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_15", northSprite = "building_menu_dylan_garden_stuff_15"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_16", northSprite = "building_menu_dylan_garden_stuff_16"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_17", northSprite = "building_menu_dylan_garden_stuff_17"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_18", northSprite = "building_menu_dylan_garden_stuff_18"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_19", northSprite = "building_menu_dylan_garden_stuff_19"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_20", northSprite = "building_menu_dylan_garden_stuff_20"}
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Small_Plant_Crate",
-            "Tooltip_Random_Garden_Stuff",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
-            true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = true,
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                isCorner = true,
-                isThumpable = true,
-            },
-            {sprite = "building_menu_dylan_garden_stuff_21", northSprite = "building_menu_dylan_garden_stuff_21"}
-        ),
+            { sprite = sprite, northSprite = sprite }
+        )
+    end
 
-    }
+
+    plantCrateObjects = {}
+    table.insert(plantCrateObjects, createSmallPlantContainer("building_menu_dylan_garden_stuff_8"))
+    for i = 13, 21 do
+        local spriteName = "building_menu_dylan_garden_stuff_" .. tostring(i)
+        table.insert(plantCrateObjects, createSmallPlantContainer(spriteName))
+    end
     BuildingMenu.addObjectsToCategories(
         "Dylan",
         getText("IGUI_BuildingMenuCat_Garden_Stuff"),
@@ -1381,6 +381,7 @@ local function addGardenStuffToMenu()
         "building_menu_dylan_garden_stuff_8",
         plantCrateObjects
     )
+
 
     local gardenWallsObjects = {
         BuildingMenu.createObject(
@@ -1471,6 +472,7 @@ end
 addGardenStuffToMenu()
 
 
+
 local function addMetalCountersToMenu()
     local metalCounterObjects = {
         BuildingMenu.createObject(
@@ -1487,6 +489,7 @@ local function addMetalCountersToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
+                isThumpable = true,
                 isContainer = true,
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
@@ -1515,6 +518,7 @@ local function addMetalCountersToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
+                isThumpable = true,
                 isContainer = true,
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
@@ -1611,10 +615,9 @@ local function addMetalCountersToMenu()
                 actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
+                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
-                health = 1000,
             },
             {
                 sprite = "DylansRandomFurniture01_10",
@@ -1634,10 +637,9 @@ local function addMetalCountersToMenu()
                 actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
+                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
-                health = 1000,
             },
             {
                 sprite = "DylansRandomFurniture01_12",
@@ -1653,8 +655,242 @@ local function addMetalCountersToMenu()
         "DarthGunStore_10",
         metalCounterObjects
     )
+
+    local labCounterObjects = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildDoubleMetalShelf,
+            BuildingMenu.MetalLockerWGlassRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "counter",
+                isThumpable = true,
+                isContainer = true,
+                blockAllTheSquare = false,
+                needToBeAgainstWall = true,
+                canBeAlwaysPlaced = false,
+                renderFloorHelper = false,
+                buildLow = true
+            },
+            {
+                sprite = "DylansRandomFurniture03_37",
+                sprite2 = "DylansRandomFurniture03_36",
+                northSprite1 = "DylansRandomFurniture03_38",
+                northSprite2 = "DylansRandomFurniture03_39"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildDoubleMetalShelf,
+            BuildingMenu.MetalLockerWGlassRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "counter",
+                isThumpable = true,
+                isContainer = true,
+                blockAllTheSquare = false,
+                needToBeAgainstWall = true,
+                canBeAlwaysPlaced = false,
+                renderFloorHelper = false,
+                buildLow = true
+            },
+            {
+                sprite = "DylansRandomFurniture03_49",
+                sprite2 = "DylansRandomFurniture03_48",
+                northSprite1 = "DylansRandomFurniture03_50",
+                northSprite2 = "DylansRandomFurniture03_51"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildDoubleMetalShelf,
+            BuildingMenu.MetalLockerRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "counter",
+                isThumpable = true,
+                isContainer = true,
+                blockAllTheSquare = false,
+                needToBeAgainstWall = true,
+                canBeAlwaysPlaced = false,
+                renderFloorHelper = false,
+                buildLow = true
+            },
+            {
+                sprite = "DylansRandomFurniture03_45",
+                sprite2 = "DylansRandomFurniture03_44",
+                northSprite1 = "DylansRandomFurniture03_46",
+                northSprite2 = "DylansRandomFurniture03_47"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildDoubleMetalShelf,
+            BuildingMenu.MetalLockerRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "counter",
+                isThumpable = true,
+                isContainer = true,
+                blockAllTheSquare = false,
+                needToBeAgainstWall = true,
+                canBeAlwaysPlaced = false,
+                renderFloorHelper = false,
+                buildLow = true
+            },
+            {
+                sprite = "DylansRandomFurniture03_59",
+                sprite2 = "DylansRandomFurniture03_58",
+                northSprite1 = "DylansRandomFurniture03_56",
+                northSprite2 = "DylansRandomFurniture03_57"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.MetalLockerRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "counter",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true,
+            },
+            {
+                sprite = "DylansRandomFurniture03_34",
+                northSprite = "DylansRandomFurniture03_35",
+                eastSprite = "DylansRandomFurniture03_33",
+                southSprite = "DylansRandomFurniture03_32"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.MetalLockerWGlassRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "shelves",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true,
+            },
+            {
+                sprite = "DylansRandomFurniture03_54",
+                northSprite = "DylansRandomFurniture03_55"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.MetalLockerWGlassRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "shelves",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true,
+            },
+            {
+                sprite = "DylansRandomFurniture03_60",
+                northSprite = "DylansRandomFurniture03_61"
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Dylan",
+        getText("IGUI_BuildingMenuCat_Containers"),
+        "",
+        getText("IGUI_BuildingMenuSubCat_Lab_Containers"),
+        "DylansRandomFurniture03_38",
+        labCounterObjects
+    )
 end
 addMetalCountersToMenu()
+
+
+
+local function addFridgeAppliancesToMenu()
+    local fridgesObjects = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Fridges",
+            BuildingMenu.onBuildSimpleFridge,
+            BuildingMenu.FridgeRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructrueMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                containerType = "fridge",
+                dismantable = true
+            },
+            {
+                sprite = "DylansElectronics01_50",
+                northSprite = "DylansElectronics01_51"
+            }
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Dylan",
+        getText("IGUI_BuildingMenuCat_Appliances"),
+        "DylansElectronics01_50",
+        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "DylansElectronics01_50",
+        fridgesObjects
+    )
+end
 
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.fridgeAppliances then

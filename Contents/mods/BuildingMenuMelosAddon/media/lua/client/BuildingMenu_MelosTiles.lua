@@ -1,6 +1,7 @@
 require("BuildingMenu04_CategoriesDefinitions")
 
 
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
 

@@ -1,5 +1,6 @@
 require("BuildingMenu04_CategoriesDefinitions")
 
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
 
@@ -363,7 +364,7 @@ local function addFridgeAppliancesToMenu()
         table.insert(fridgesObjects, createFridgeObject(unpack(config)))
     end
 
-    table.insert(fridgesObjects, 
+    table.insert(fridgesObjects,
         BuildingMenu.createObject(
             "",
             "Tooltip_Fridges",
@@ -388,6 +389,36 @@ local function addFridgeAppliancesToMenu()
                 sprite2 = "appliances_refrigeration_01_18",
                 northSprite1 = "appliances_refrigeration_01_16",
                 northSprite2 = "appliances_refrigeration_01_17"
+            }
+        )
+    )
+    table.insert(fridgesObjects,
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Fridges",
+            BuildingMenu.onBuildTripleFridge,
+            BuildingMenu.FridgeRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                containerType = "fridge",
+                dismantable = true
+            },
+            {
+                sprite = "location_shop_generic_01_67",
+                sprite2 = "location_shop_generic_01_68",
+                sprite3 = "location_shop_generic_01_69",
+                northSprite1 = "location_shop_generic_01_64",
+                northSprite2 = "location_shop_generic_01_65",
+                northSprite3 = "location_shop_generic_01_66",
             }
         )
     )

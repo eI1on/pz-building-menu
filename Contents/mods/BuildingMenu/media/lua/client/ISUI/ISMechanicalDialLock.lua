@@ -1,16 +1,24 @@
 require "ISUI/ISPanelJoypad"
 
+---@class ISMechanicalDialLock : ISPanelJoypad
 ISMechanicalDialLock = ISPanelJoypad:derive("ISMechanicalDialLock");
 
+---@type number
 local xPos = 150;
+---@type number
 local yPos = 150;
 
+---@type number
 local steps = 100;
+---@type number
 local stepSize = 3.6;
 
+---@type Vector3f
 local tmpVec1 = Vector3f.new();
+---@type Vector3f
 local tmpVec2 = Vector3f.new():set(1, 0, 0);
 
+---@function ISMechanicalDialLock:initialise
 function ISMechanicalDialLock:initialise()
     ISPanel.initialise(self);
     ISMechanicalDialLock.instance = self;
@@ -101,6 +109,11 @@ function ISMechanicalDialLock:render()
     end
 end
 
+--- Draws a number on the screen.
+---@param number number The number to draw.
+---@param color string The color of the number.
+---@param x number The X-coordinate.
+---@param y number The Y-coordinate.
 function ISMechanicalDialLock:drawNumber(number, color, x, y)
     local r, g, b = 1, 1, 1
     if color == 'grey' then
@@ -127,7 +140,8 @@ function ISMechanicalDialLock:drawDirectionArrow()
     end
 end
 
-
+--- Updates the dial based on the new angle.
+---@param newAngle number The new angle.
 function ISMechanicalDialLock:updateDial(newAngle)
     local angleDiff = self:calculateAngleDifference(newAngle, self.lastAngle)
 
@@ -161,6 +175,9 @@ function ISMechanicalDialLock:updateDial(newAngle)
 end
 
 
+--- Handles mouse movement.
+---@param dx number The change in X-coordinate.
+---@param dy number The change in Y-coordinate.
 function ISMechanicalDialLock:onMouseMove(dx, dy)
     if self.mouseDown then
         local newAngle = self:getMouseAngle()
@@ -168,16 +185,23 @@ function ISMechanicalDialLock:onMouseMove(dx, dy)
     end
 end
 
-
+--- Handles mouse button press.
+---@param x number The X-coordinate of the mouse.
+---@param y number The Y-coordinate of the mouse.
 function ISMechanicalDialLock:onMouseDown(x, y)
     self.mouseDown = true;
     self.lastAngle = self:getMouseAngle();
 end
 
+--- Handles mouse button release.
+---@param x number The X-coordinate of the mouse.
+---@param y number The Y-coordinate of the mouse.
 function ISMechanicalDialLock:onMouseUp(x, y)
     self.mouseDown = false;
 end
 
+--- Handles button click events.
+---@param button ISButton The clicked button.
 function ISMechanicalDialLock:onClick(button)
     if button.internal == "CANCEL" then
         self.isCancelled = true;
@@ -188,11 +212,13 @@ function ISMechanicalDialLock:onClick(button)
         table.insert(self.lockCombination, currentNumber);
         if #self.lockCombination == 3 then
             self.thumpable:getModData().code = self:getCode();
+            self.thumpable:transmitModData();
             self:close();
         end
     end
 end
 
+--- Checks if a number on the dial is matched.
 function ISMechanicalDialLock:isNumberMatched()
     local currentNumber = self:convertAngleToNumber(self.dialAngle)
     if self.lockCombination[self.currentNumberIndex] == currentNumber then
@@ -209,13 +235,17 @@ function ISMechanicalDialLock:isNumberMatched()
     return false
 end
 
-
+--- Converts an angle to a number on the dial.
+---@param angle number The angle to convert.
+---@return number number The converted number.
 function ISMechanicalDialLock:convertAngleToNumber(angle)
     local adjustedAngle = (360 - angle) % 360;
     local number = math.floor(adjustedAngle / (360 / steps));
     return number;
 end
 
+--- Gets the mouse angle relative to the dial.
+---@return number number The mouse angle.
 function ISMechanicalDialLock:getMouseAngle()
     tmpVec1:set(self:getMouseX() - xPos, self:getMouseY() - yPos, 0);
     local angle = tmpVec1:angle(tmpVec2);
@@ -223,6 +253,10 @@ function ISMechanicalDialLock:getMouseAngle()
     return -((angle / math.pi) * 180) % 360
 end
 
+--- Calculates the difference between two angles.
+---@param newAngle number The new angle.
+---@param lastAngle number The last angle.
+---@return number number The angle difference.
 function ISMechanicalDialLock:calculateAngleDifference(newAngle, lastAngle)
     local diff = newAngle - lastAngle;
     if diff > 180 then diff = diff - 360; end
@@ -230,6 +264,9 @@ function ISMechanicalDialLock:calculateAngleDifference(newAngle, lastAngle)
     return diff
 end
 
+--- Parses the combination code.
+---@param code number The code to parse.
+---@return table table The parsed combination.
 function ISMechanicalDialLock:parseCombination(code)
     local combination = {};
     while code > 0 do
@@ -242,6 +279,8 @@ function ISMechanicalDialLock:parseCombination(code)
     return combination
 end
 
+--- Gets the combination code.
+---@return number number The combination code.
 function ISMechanicalDialLock:getCode()
     local code = 0;
     for i = 1, #self.lockCombination do
@@ -250,6 +289,7 @@ function ISMechanicalDialLock:getCode()
     return code
 end
 
+--- Closes the ISMechanicalDialLock panel.
 function ISMechanicalDialLock:close()
     local keys = {"Left", "Right", "Forward", "Backward", "Melee"}
     for _, key in ipairs(keys) do
@@ -277,6 +317,17 @@ function ISMechanicalDialLock:close()
     ISPanel.close(self);
 end
 
+--- Creates a new instance of ISMechanicalDialLock.
+---@param x number The X-coordinate of the panel.
+---@param y number The Y-coordinate of the panel.
+---@param width number The width of the panel.
+---@param height number The height of the panel.
+---@param target any The target of the panel.
+---@param onclick function The onclick function.
+---@param player number The player number.
+---@param thumpable IsoThumpable The thumpable object.
+---@param isNew boolean Indicates if it's a new code.
+---@return ISMechanicalDialLock ISMechanicalDialLock The created instance.
 function ISMechanicalDialLock:new(x, y, width, height, target, onclick, player, thumpable, isNew)
     local o = ISPanelJoypad:new(x, y, width, height);
     setmetatable(o, self);
@@ -318,6 +369,8 @@ function ISMechanicalDialLock:new(x, y, width, height, target, onclick, player, 
     return o
 end
 
+--- Event handler for key press events.
+---@param key number The key code.
 Events.OnKeyKeepPressed.Add(function(key)
     if ISMechanicalDialLock.instance then
         local dialAngle = ISMechanicalDialLock.instance.lastAngle

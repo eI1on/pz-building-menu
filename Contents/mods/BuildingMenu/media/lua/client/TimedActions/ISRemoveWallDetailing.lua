@@ -1,13 +1,12 @@
---***********************************************************
---**                    THE INDIE STONE                    **
---***********************************************************
 require 'BuildingMenu01_Main'
 require "TimedActions/ISBaseTimedAction"
+
 local RemovableWallDetailingTiles = require 'ValidWallDetailingTiles'
-local BuildingMenu = getBuildingMenuInstance()
 
 ISRemoveWallDetailing = ISBaseTimedAction:derive("ISRemoveWallDetailing")
 
+-- Checks if the action is valid.
+---@return boolean true if valid, false otherwise.
 function ISRemoveWallDetailing:isValid()
 	if self.wallDetailing and not self:getWallDetailingObject(self.square) then
 		return false
@@ -15,6 +14,8 @@ function ISRemoveWallDetailing:isValid()
 	return (self.weapon and self.weapon:getCondition() > 0) or not self.weapon;
 end
 
+-- Waits for the action to start.
+---@return boolean true to start the action, false otherwise.
 function ISRemoveWallDetailing:waitToStart()
 	if self.wallDetailing then
 		local object = self:getWallDetailingObject(self.square)
@@ -50,6 +51,9 @@ function ISRemoveWallDetailing:stop()
     ISBaseTimedAction.stop(self)
 end
 
+-- Handles animation events.
+---@param event string The animation event.
+---@param parameter string The event parameter.
 function ISRemoveWallDetailing:animEvent(event, parameter)
 	if event == 'Chop' then
 		local hammer = self.character:getPrimaryHandItem();
@@ -57,6 +61,9 @@ function ISRemoveWallDetailing:animEvent(event, parameter)
 	end
 end
 
+-- Gets the wall detailing object on a given square.
+---@param square IsoGridSquare The square to search for the object.
+---@return Object object, number i The object and its index, or nil if not found.
 function ISRemoveWallDetailing:getWallDetailingObject(square)
 	if not square then return nil end
 	for i=0,square:getObjects():size()-1 do
@@ -98,6 +105,11 @@ function ISRemoveWallDetailing:useEndurance()
 	end
 end
 
+-- Creates a new instance of ISRemoveWallDetailing.
+---@param character IsoPlayer The player character.
+---@param square IsoGridSquare The target square.
+---@param wallDetailing string The type of removal action.
+---@return ISRemoveWallDetailing class The created instance.
 function ISRemoveWallDetailing:new(character, square, wallDetailing)
 	local o = {}
 	setmetatable(o, self)

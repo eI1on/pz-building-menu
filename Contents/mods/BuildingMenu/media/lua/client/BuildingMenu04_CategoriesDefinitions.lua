@@ -2,6 +2,7 @@ if not getBuildingMenuInstance then
     require("BuildingMenu01_Main")
 end
 
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
 local function findOrCreateItem(list, keyName, keyValue, newItem)
@@ -16025,7 +16026,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Large_White_Window",
                                 "Tooltip_Windows_Generic",
-                                BuildingMenu.onBuildWindowWall,
+                                BuildingMenu.onBuildWindow,
                                 BuildingMenu.WindowRecipe,
                                 true,
                                 {
@@ -17666,20 +17667,6 @@ BuildingMenu.Tabs = {
                         subCategoryIcon = "floors_exterior_street_01_0",
                         objects = {
                             BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Concrete",
-                                "Tooltip_Floor_Generic",
-                                BuildingMenu.onBuildFloor,
-                                BuildingMenu.ConcreteFloorRecipe,
-                                true,
-                                {
-                                    actionAnim = "DigTrowel",
-                                    noNeedHammer = true,
-                                    craftingBank = "Shoveling",
-                                    completionSound = "DropSoilFromGravelBag"
-                                },
-                                {sprite = "floors_exterior_street_01_0", northSprite = "floors_exterior_street_01_0"}
-                            ),
-                            BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Rusty_Mesh",
                                 "Tooltip_Floor_Generic",
                                 BuildingMenu.onBuildSimpleFurniture,
@@ -18648,6 +18635,44 @@ BuildingMenu.Tabs = {
                         subcategoryName = getText("IGUI_BuildingMenuSubCat_Road_Work_Asphalt"),
                         subCategoryIcon = "blends_street_01_32",
                         objects = {
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Concrete",
+                                "Tooltip_Floor_Generic",
+                                BuildingMenu.onBuildFloor,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigTrowel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    completionSound = "DropSoilFromGravelBag"
+                                },
+                                {sprite = "floors_exterior_street_01_0", northSprite = "floors_exterior_street_01_0"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Concrete_Corner",
+                                "Tooltip_Floor_Generic",
+                                BuildingMenu.onBuildFloorOverlay,
+                                BuildingMenu.ConcreteFloorRecipe,
+                                true,
+                                {
+                                    actionAnim = "DigShovel",
+                                    noNeedHammer = true,
+                                    craftingBank = "Shoveling",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "building_menu_floors_01_3",
+                                    northSprite = "building_menu_floors_01_1",
+                                    eastSprite = "building_menu_floors_01_4",
+                                    southSprite = "building_menu_floors_01_2"
+                                }
+                            ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Gravel",
                                 "Tooltip_Asphalt_Generic",
@@ -22343,6 +22368,139 @@ BuildingMenu.Tabs = {
                                 "",
                                 "Tooltip_Counter_Generic",
                                 BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "location_shop_generic_01_89",
+                                    northSprite = "location_shop_generic_01_88",
+                                    eastSprite = "location_shop_generic_01_90",
+                                    southSprite = "location_shop_generic_01_91"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "location_shop_generic_01_93",
+                                    northSprite = "location_shop_generic_01_92",
+                                    eastSprite = "location_shop_generic_01_94",
+                                    southSprite = "location_shop_generic_01_95"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "location_restaurant_pie_01_43",
+                                    northSprite = "location_restaurant_pie_01_45",
+                                    eastSprite = "location_restaurant_pie_01_47",
+                                    southSprite = "location_restaurant_pie_01_41"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "location_restaurant_pie_01_42",
+                                    northSprite = "location_restaurant_pie_01_44",
+                                    eastSprite = "location_restaurant_pie_01_46",
+                                    southSprite = "location_restaurant_pie_01_40"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "location_restaurant_pie_01_53",
+                                    northSprite = "location_restaurant_pie_01_52",
+                                    eastSprite = "location_restaurant_pie_01_54",
+                                    southSprite = "location_restaurant_pie_01_55"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "location_shop_greenes_01_25",
+                                    northSprite = "location_shop_greenes_01_24",
+                                    eastSprite = "location_shop_greenes_01_26",
+                                    southSprite = "location_shop_greenes_01_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "location_shop_greenes_01_29",
+                                    northSprite = "location_shop_greenes_01_28",
+                                    eastSprite = "location_shop_greenes_01_30",
+                                    southSprite = "location_shop_greenes_01_31"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
                                 BuildingMenu.MetalGlassCounterRecipe,
                                 true,
                                 {
@@ -22376,7 +22534,120 @@ BuildingMenu.Tabs = {
                                     eastSprite = "location_shop_generic_01_102",
                                     southSprite = "location_shop_generic_01_96"
                                 }
-                            )
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "displaycasebakery",
+                                    renderFloorHelper = false,
+                                    dismantable = true,
+                                    isContainer = true,
+                                    capacity = 100
+                                },
+                                {
+                                    sprite = "location_shop_generic_01_35",
+                                    sprite2 = "location_shop_generic_01_34",
+                                    northSprite1 = "location_shop_generic_01_32",
+                                    northSprite2 = "location_shop_generic_01_33"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "displaycasebakery",
+                                    renderFloorHelper = false,
+                                    dismantable = true,
+                                    isContainer = true,
+                                    capacity = 100
+                                },
+                                {
+                                    sprite = "location_restaurant_pie_01_51",
+                                    sprite2 = "location_restaurant_pie_01_50",
+                                    northSprite1 = "location_restaurant_pie_01_48",
+                                    northSprite2 = "location_restaurant_pie_01_49"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildTripleFridge,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    buildLow = true,
+                                    canBeAlwaysPlaced = true,
+                                    renderFloorHelper = false,
+                                    containerType = "fridge",
+                                    dismantable = true
+                                },
+                                {
+                                    sprite = "location_shop_generic_01_83",
+                                    sprite2 = "location_shop_generic_01_84",
+                                    sprite3 = "location_shop_generic_01_85",
+                                    northSprite1 = "location_shop_generic_01_80",
+                                    northSprite2 = "location_shop_generic_01_81",
+                                    northSprite3 = "location_shop_generic_01_82",
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LargeFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructrueLarge",
+                                    containerType = "shelves",
+                                    isContainer = true,
+                                    canBeLockedByPadlock = true
+                                },
+                                {
+                                    sprite = "location_shop_generic_01_73",
+                                    sprite2 = "location_shop_generic_01_72",
+                                    northSprite = "location_shop_generic_01_74",
+                                    northSprite2 = "location_shop_generic_01_75"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildDoubleTileFurniture,
+                                BuildingMenu.LargeFurnitureRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructrueLarge",
+                                    containerType = "shelves",
+                                    isContainer = true,
+                                    canBeLockedByPadlock = true
+                                },
+                                {
+                                    sprite = "location_shop_generic_01_77",
+                                    sprite2 = "location_shop_generic_01_76",
+                                    northSprite = "location_shop_generic_01_78",
+                                    northSprite2 = "location_shop_generic_01_79"
+                                }
+                            ),
                         }
                     },
                     {

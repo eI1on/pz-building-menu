@@ -1,7 +1,10 @@
 require 'TimedActions/ISBaseTimedAction'
 
+---@class ISToggleLight : ISBaseTimedAction
 ISToggleLight = ISBaseTimedAction:derive('ISToggleLight')
 
+--- Checks if the light source can be toggled.
+---@return boolean
 function ISToggleLight:isValid()
   if self.lightSource:getSquare():haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier) or self.lightSource:isLightSourceOn() then
     return true
@@ -31,6 +34,11 @@ function ISToggleLight:perform()
   ISBaseTimedAction.perform(self)
 end
 
+--- Constructor for the ISToggleLight class.
+---@param character IsoPlayer
+---@param lightSource IsoObject
+---@param time integer
+---@return ISToggleLight
 function ISToggleLight:new(character, lightSource, time)
   local o = ISBaseTimedAction.new(self, character)
   o.stopOnWalk = true

@@ -1,29 +1,23 @@
---***********************************************************
---**                    ROBERT JOHNSON                     **
---***********************************************************
-
 ISDoubleFridge = ISBuildingObject:derive("ISDoubleFridge");
 
 --************************************************************************--
 --** ISDoubleFridge:new
 --**
 --************************************************************************--
+
 function ISDoubleFridge:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
 	self:setInfo(self.sq, north, sprite, self);
 
-	-- name of our 2 sprites needed for the rest of the furniture
 	local spriteAName = self.northSprite2;
 
 	local xa = x;
 	local ya = y;
 
-	-- we get the x and y of our next tile (depend if we're placing the furniture north or not)
-	if north then
-		ya = ya - 1;
+	if north then 
+		ya = ya - 1; 
 	else
-		-- if we're not north we also change our sprite
 		spriteAName = self.sprite2;
 		xa = xa - 1;
 	end
@@ -31,7 +25,7 @@ function ISDoubleFridge:create(x, y, z, north, sprite)
 
 	local oldModData = self.modData
 	self.modData = {}
-	self:setInfo(squareA, north, spriteAName, self);
+	self:setInfo(squareA, north, spriteAName);
 
 	self.modData = oldModData
 	buildUtil.consumeMaterial(self);
@@ -48,9 +42,8 @@ function ISDoubleFridge:walkTo(x, y, z)
 end
 
 function ISDoubleFridge:setInfo(square, north, sprite)
-	-- add furniture to our ground
 	local thumpable = IsoThumpable.new(getCell(), square, sprite, north, self);
-	-- name of the item for the tooltip
+
 	buildUtil.setInfo(thumpable, self);
 
 	-- local _fridgeInv = ItemContainer.new()
@@ -75,8 +68,6 @@ function ISDoubleFridge:setInfo(square, north, sprite)
 		thumpable:getContainerByIndex(i-1):setExplored(true)
 	end
 
-
-	-- the furniture have 200 base health + 100 per carpentry lvl
 	thumpable:setMaxHealth(self:getHealth());
 	thumpable:setHealth(thumpable:getMaxHealth())
 
@@ -86,7 +77,6 @@ function ISDoubleFridge:setInfo(square, north, sprite)
 		self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq))
 	end
 
-	-- the sound that will be played when our furniture will be broken
 	thumpable:setBreakSound("BreakObject");
 	square:AddSpecialObject(thumpable);
 	thumpable:transmitCompleteItemToServer();
@@ -139,37 +129,31 @@ function ISDoubleFridge:new(player, name, sprite1, sprite2, northSprite1, northS
 	return o;
 end
 
--- return the health of the new furniture, it's 200 + 100 per carpentry lvl
 function ISDoubleFridge:getHealth()
 	return 200 + buildUtil.getWoodHealth(self);
 end
 
 function ISDoubleFridge:render(x, y, z, square)
-	-- render the first part
+
 	ISBuildingObject.render(self, x, y, z, square)
-	-- render the other part of the furniture
-	-- name of our 2 sprites needed for the rest of the furniture
+
 	local spriteAName = self.northSprite2;
 
 	local spriteAFree = true;
 
-	-- we get the x and y of our next tile (depend if we're placing the object north or not)
 	local xa, ya, za = self:getSquare2Pos(square, self.north)
 
-	-- if we're not north we also change our sprite
 	if not self.north then
 		spriteAName = self.sprite2;
 	end
 	local squareA = getCell():getGridSquare(xa, ya, za);
 
-	-- test if the square are free to add our furniture
 	if not self.canBeAlwaysPlaced and (not squareA or not squareA:isFreeOrMidair(true)) then
 		spriteAFree = false;
 	end
 
 	if squareA and squareA:isVehicleIntersecting() then spriteAFree = false end
 
-	-- render our second tile object
 	local spriteA = IsoSprite.new();
 	spriteA:LoadFramesNoDirPageSimple(spriteAName);
 	if spriteAFree then

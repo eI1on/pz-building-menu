@@ -4,14 +4,19 @@ if not getBuildingMenuInstance then
     require("BuildingMenu01_Main")
 end
 
+---@type function
 local getText = getText
+---@type function
 local getTexture = getTexture
+---@type function
 local pairs = pairs
 
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
 
-
+--- Class representing the tile picker list in the Building Menu.
+---@class BuildingMenuTilePickerList: ISPanel
 BuildingMenuTilePickerList = ISPanel:derive("BuildingMenuTilePickerList")
 
 local TILE_WIDTH, TILE_HEIGHT = 64, 128
@@ -55,7 +60,9 @@ function BuildingMenuTilePickerList:render()
     self:clearStencilRect();
 end
 
-
+--- Updates the tooltip for the tile picker list. TODO: optimize BuildingMenu.canBuildObject, takes 5ms to render the tooltip when hovering over the object
+---@param maxCols number
+---@param maxRows number
 function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
     local mouseX, mouseY = self:getMouseX(), self:getMouseY()
     local panelY = self:getY() - self:getYScroll() - self.parent:titleBarHeight() - self.parent.panel.tabHeight
@@ -80,7 +87,9 @@ function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
     end
 end
 
-
+--- Finds the next object in the tile picker list.
+---@param objectsBuffer table
+---@return table|nil
 function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
     if not self.subCatData then return nil end
     for _, objectDef in pairs(self.subCatData) do
@@ -92,12 +101,18 @@ function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
 end
 
 
+--- Handles mouse wheel events for the tile picker list.
+---@param del number
+---@return boolean
 function BuildingMenuTilePickerList:onMouseWheel(del)
     self:setYScroll(self:getYScroll() - del * 128)
     return true
 end
 
 
+--- Handles mouse down events on the tile picker list.
+---@param x number
+---@param y number
 function BuildingMenuTilePickerList:onMouseDown(x, y)
     local c = math.floor(x / 64)
     local r = math.floor(y / 128)
@@ -122,8 +137,9 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
     end
 end
 
-
-
+--- Handles mouse up events on the tile picker list.
+---@param x number
+---@param y number
 function BuildingMenuTilePickerList:onMouseUp(x, y)
     self.message = nil;
     if self.tooltip and self.tooltip:getIsVisible() then
@@ -132,7 +148,9 @@ function BuildingMenuTilePickerList:onMouseUp(x, y)
     end
 end
 
-
+--- Handles mouse movement outside the tile picker list.
+---@param dx number
+---@param dy number
 function BuildingMenuTilePickerList:onMouseMoveOutside(dx, dy)
 	self.message = nil;
 	if self.tooltip and self.tooltip:getIsVisible() then
@@ -154,6 +172,14 @@ function BuildingMenuTilePickerList:createChildren()
 end
 
 
+--- Constructor for BuildingMenuTilePickerList.
+---@param x number
+---@param y number
+---@param w number
+---@param h number
+---@param character IsoPlayer
+---@param parent any
+---@return BuildingMenuTilePickerList class
 function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
     local o = ISPanel.new(self, x, y, w, h)
     o.backgroundColor.a = 0.25;
@@ -169,7 +195,11 @@ function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
 end
 
 
+---@class ISBuildingMenuUI: ISCollapsableWindow
 ISBuildingMenuUI = ISCollapsableWindow:derive("ISBuildingMenuUI");
+
+--- Singleton instance of ISBuildingMenuUI.
+---@type ISBuildingMenuUI|nil
 ISBuildingMenuUI.instance = nil
 ISBuildingMenuUI.largeFontHeight = getTextManager():getFontHeight(UIFont.Large)
 ISBuildingMenuUI.mediumNewFontHeight = getTextManager():getFontHeight(UIFont.MediumNew)
@@ -177,8 +207,10 @@ ISBuildingMenuUI.smallFontHeight = getTextManager():getFontHeight(UIFont.Small)
 ISBuildingMenuUI.upArrow = Keyboard.KEY_UP;
 ISBuildingMenuUI.downArrow = Keyboard.KEY_DOWN;
 
-
-
+--- Opens the Building Menu UI panel.
+---@param x number
+---@param y number
+---@param playerObj IsoPlayer
 function ISBuildingMenuUI.openPanel(x, y, playerObj)
     if y < 0 then y = 0 end
     if ISBuildingMenuUI.instance == nil then
@@ -192,6 +224,7 @@ end
 
 local minOpaqueVal = 0;
 local maxOpaqueVal = 0.5;
+--- Creates child elements for the Building Menu UI.
 function ISBuildingMenuUI:createChildren()
     ISCollapsableWindow.createChildren(self)
     local th = self:titleBarHeight();
@@ -273,21 +306,25 @@ function ISBuildingMenuUI:createChildren()
     self:onMaxOpaqueChange(maxOpaqueVal);
 end
 
-
+--- Changes the maximum opacity of the UI.
+---@class target ISBuildingMenuUI
+---@param value number
 ISBuildingMenuUI.onMinOpaqueChange = function(target, value)
     target.minOpaque = logTo01(value);
     target.backgroundColor.a = target.maxOpaque;
     minOpaqueVal = value;
 end
 
-
+--- Changes the maximum opacity of the UI.
+---@class target ISBuildingMenuUI
+---@param value number
 ISBuildingMenuUI.onMaxOpaqueChange = function(target, value)
     target.maxOpaque = logTo01(value);
     target.backgroundColor.a = target.maxOpaque;
     maxOpaqueVal = value;
 end
 
-
+--- Handles the gear button click in the Building Menu UI.
 function ISBuildingMenuUI:onGearButtonClick()
     local context = ISContextMenu.get(0, self:getAbsoluteX() + self:getWidth(), self:getAbsoluteY() + self.gearButton:getY())
 
@@ -331,10 +368,14 @@ function ISBuildingMenuUI:onGearButtonClick()
     end
 end
 
+--- Retrieves the currently active tab in the UI.
+---@return ISBuildingMenuTabUI
 function ISBuildingMenuUI:getActiveTab()
     return self.panel.activeView.view;
 end
 
+--- Retrieves the favorite tab in the UI.
+---@return ISBuildingMenuTabUI|nil
 function ISBuildingMenuUI:getFavoriteTab()
     for _, tab in pairs(self.tabs) do
         if tab.tab == getText("IGUI_BuildingMenuTab_Favorite") then
@@ -344,10 +385,14 @@ function ISBuildingMenuUI:getFavoriteTab()
     return nil
 end
 
+--- Retrieves the active categories list in the UI.
+---@return ISUIElement|nil
 function ISBuildingMenuUI:getActiveCategoriesList()
     return self.panel.activeView.view.categoriesList;
 end
 
+--- Retrieves the active subcategories list in the UI.
+---@return ISUIElement|nil
 function ISBuildingMenuUI:getActiveSubCategoriesList()
     return self.panel.activeView.view.subCategoriesList;
 end
@@ -410,6 +455,7 @@ function ISBuildingMenuUI:update()
     end
 end
 
+--- Populates the favorites tab in the Building Menu UI.
 function ISBuildingMenuUI:populateFavoritesTab()
     local modData = self.character:getModData()
     local favorites = modData.favorites or { categories = {}, subcategories = {} }
@@ -437,8 +483,8 @@ function ISBuildingMenuUI:populateFavoritesTab()
     end
 end
 
-
-
+--- Updates the subcategories list for the favorite tab.
+---@param favoriteTab ISBuildingMenuTabUI
 function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
     local modData = self.character:getModData()
     local favorites = modData.favorites or { categories = {}, subcategories = {} }
@@ -458,7 +504,8 @@ function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
 end
 
 
-
+--- Updates the categories list in the UI.
+---@param categories table
 function ISBuildingMenuUI:updateCategoriesList(categories)
     local currentCategoriesList = self:getActiveCategoriesList();
     currentCategoriesList:clear();
@@ -468,7 +515,8 @@ function ISBuildingMenuUI:updateCategoriesList(categories)
     end
 end
 
-
+--- Updates the subcategories list in the UI.
+---@param subCatData table
 function ISBuildingMenuUI:updateSubCategoriesList(subCatData)
     local currentSubCategoriesList = self:getActiveSubCategoriesList();
     currentSubCategoriesList:clear();
@@ -478,7 +526,8 @@ function ISBuildingMenuUI:updateSubCategoriesList(subCatData)
     end
 end
 
-
+--- Updates the tiles list in the UI.
+---@param objectsData table
 function ISBuildingMenuUI:updateTilesList(objectsData)
     self.tilesList.posToObjectNameTable = {};
     self.tilesList.textureCache = {};
@@ -500,9 +549,17 @@ function ISBuildingMenuUI:onResize()
 end
 
 
+--- Constructor for ISBuildingMenuUI.
+---@param x number
+---@param y number
+---@param width number
+---@param height number
+---@param character IsoPlayer
+---@return ISBuildingMenuUI
 function ISBuildingMenuUI:new(x, y, width, height, character)
     local o = ISCollapsableWindow.new(self, x, y, width, height);
     o:setResizable(true);
+    
     o.title = getText("IGUI_BuildingMenu");
     o.character = character;
     o.minOpaque = 1; -- in percentage

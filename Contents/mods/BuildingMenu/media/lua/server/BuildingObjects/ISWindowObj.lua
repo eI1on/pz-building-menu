@@ -18,6 +18,8 @@ function ISWindowObj:isValid(square)
         return false
     end
 
+    if self:getSprite() == "fixtures_windows_01_72" then return true end
+
     local sharedSprite = getSprite(self:getSprite())
     if sharedSprite then
         local props = ISMoveableSpriteProps.new(sharedSprite)

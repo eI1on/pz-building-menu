@@ -46,9 +46,9 @@ end
 function ISThreeTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell()
     self.sq = cell:getGridSquare(x, y, z)
-    if self:partExists(self.sq, index) then
-        return
-    end
+
+    if self:partExists(self.sq, index) then return end
+
     self.javaObject = IsoDoor.new(cell, self.sq, sprite, north)
     self.javaObject:setHealth(self:getHealth())
     self.sq:AddSpecialObject(self.javaObject)
@@ -143,11 +143,9 @@ function ISThreeTileGarageDoor:render(x, y, z, square)
 
     local spriteAName = self.sprite2
     local spriteBName = self.sprite3
-    local spriteCName = self.sprite4
 
     local spriteAFree = true
     local spriteBFree = true
-    local spriteCFree = true
 
     local xa, ya = self:getSquare2Pos(square, self.north)
     local xb, yb = self:getSquare3Pos(square, self.north)

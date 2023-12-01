@@ -2,6 +2,7 @@ if not getBuildingMenuInstance then
     require("BuildingMenu01_Main")
 end
 
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
 
@@ -3976,6 +3977,53 @@ BuildingMenu.MetalLockerRecipe = {
         "WeldingMask"
     },
     neededMaterials = {
+        {
+            Material = "Base.SheetMetal",
+            Amount = 4
+        },
+        {
+            Material = 'Base.SmallSheetMetal',
+            Amount = 4
+        },
+        {
+            Material = "Base.Screws",
+            Amount = 5
+        },
+        {
+            Material = "Base.Hinge",
+            Amount = 2
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = 'Base.BlowTorch',
+            Amount = 5
+        },
+        {
+            Consumable = "Base.WeldingRods",
+            Amount = BuildingMenu.weldingRodUses(5)
+        }
+    },
+    skills = {
+        {
+            Skill = "MetalWelding",
+            Level = 5,
+            Xp = 35
+        }
+    }
+}
+
+BuildingMenu.MetalLockerWGlassRecipe = {
+    neededTools = {
+        "BlowTorch",
+        "Screwdriver",
+        "WeldingMask"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.GlassPane",
+            Amount = 4
+        },
         {
             Material = "Base.SheetMetal",
             Amount = 4

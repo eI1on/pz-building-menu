@@ -2,8 +2,13 @@ require 'BuildingMenu01_Main'
 local RemovableWallVinesTiles = require 'ValidWallVineTiles'
 local RemovableWallDetailingTiles = require 'ValidWallDetailingTiles'
 
+---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
+--- Checks if the wall item is removable based on its sprite name and a list of patterns.
+---@param spriteName string
+---@param patterns table
+---@return boolean
 local function isRemovableWallItem(spriteName, patterns)
     for _, pattern in ipairs(patterns) do
         if luautils.stringStarts(spriteName, pattern) then
@@ -13,6 +18,10 @@ local function isRemovableWallItem(spriteName, patterns)
     return false
 end
 
+--- Handles the removal of wall detailing.
+---@param playerObj IsoPlayer
+---@param square IsoGridSquare
+---@param wallDetailing IsoObject|nil
 function BuildingMenu.doRemoveWallDetailing(playerObj, square, wallDetailing)
     local playerInv = playerObj:getInventory()
     if wallDetailing then
@@ -29,12 +38,20 @@ function BuildingMenu.doRemoveWallDetailing(playerObj, square, wallDetailing)
     ISTimedActionQueue.add(ISRemoveWallDetailing:new(playerObj, square, wallDetailing));
 end
 
+--- Triggers when removing wall detailing.
+---@param worldobjects table
+---@param square IsoGridSquare
+---@param wallDetailing IsoObject|nil
+---@param player integer
 function BuildingMenu.onRemoveWallDetailing(worldobjects, square, wallDetailing, player)
     local playerObj = getSpecificPlayer(player)
     local bo = ISRemoveWallDetailingCursor:new(playerObj, "wallDetailing")
     getCell():setDrag(bo, player)
 end
 
+--- Toggles the light of a thumpable object.
+---@param lightSource IsoThumpable
+---@param player integer
 function BuildingMenu.onToggleThumpableLight(lightSource, player)
     local playerObj = getSpecificPlayer(player)
     if luautils.walkAdj(playerObj, lightSource:getSquare()) then
@@ -43,9 +60,12 @@ function BuildingMenu.onToggleThumpableLight(lightSource, player)
 end
 
 
+--- Opens the safe when the correct combination is entered.
+---@param dialLockUI ISMechanicalDialLock
+---@param player integer
+---@param thumpable IsoThumpable
 function BuildingMenu:onSetOpenSafe(dialLockUI, player, thumpable)
     local dialog = dialLockUI
-    print("onSetOpenSafe: ", dialog:getCode())
     if thumpable:getLockedByCode() == dialog:getCode() then
         local objSpriteName = thumpable:getSprite():getName()
         local reversedObjSpriteName = BuildingMenu.checkSafeSprite(objSpriteName)
@@ -64,9 +84,12 @@ function BuildingMenu:onSetOpenSafe(dialLockUI, player, thumpable)
 end
 
 
+--- Closes the safe.
+---@param dialLockUI ISMechanicalDialLock
+---@param player integer
+---@param thumpable IsoThumpable
 function BuildingMenu:onSetCloseSafe(dialLockUI, player, thumpable)
     local dialog = dialLockUI
-    print("onSetCloseSafe: ", dialog:getCode())
     if dialog:getCode() ~= 0 then
         local objSpriteName = thumpable:getSprite():getName()
         local reversedObjSpriteName = BuildingMenu.checkSafeSprite(objSpriteName)
@@ -84,7 +107,9 @@ function BuildingMenu:onSetCloseSafe(dialLockUI, player, thumpable)
     end
 end
 
-
+--- Triggers when the player completes walking to the safe to open it.
+---@param player integer
+---@param thump IsoThumpable
 BuildingMenu.onOpenSafeWalkToComplete = function(player, thump)
     local modal = ISMechanicalDialLock:new(0, 0, 300, 430, nil, BuildingMenu.onSetOpenSafe, player, thump, false);
     modal:initialise();
@@ -94,6 +119,9 @@ BuildingMenu.onOpenSafeWalkToComplete = function(player, thump)
     end
 end
 
+--- Sets a new safe code after walking to the safe is complete.
+---@param player integer
+---@param thump IsoThumpable
 BuildingMenu.onSetNewSafeCodeWalkToComplete = function(player, thump)
     local modal = ISMechanicalDialLock:new(0, 0, 300, 430, nil, BuildingMenu.onSetCloseSafe, player, thump, true);
     modal:initialise();
@@ -103,6 +131,9 @@ BuildingMenu.onSetNewSafeCodeWalkToComplete = function(player, thump)
     end
 end
 
+--- Triggers when the player completes walking to the safe to close it.
+---@param player integer
+---@param thump IsoThumpable
 BuildingMenu.onCloseSafeWalkToComplete = function(player, thump)
     local modal = ISMechanicalDialLock:new(0, 0, 300, 430, nil, BuildingMenu.onSetCloseSafe, player, thump, false);
     modal:initialise();
@@ -112,7 +143,10 @@ BuildingMenu.onCloseSafeWalkToComplete = function(player, thump)
     end
 end
 
-
+--- Handles the interaction with a safe, including walking to it if needed.
+---@param player integer
+---@param thump IsoThumpable
+---@param interactionType string
 local function handleSafeInteraction(player, thump, interactionType)
     local playerObj = getSpecificPlayer(player)
     ISTimedActionQueue.clear(playerObj)
@@ -129,8 +163,10 @@ local function handleSafeInteraction(player, thump, interactionType)
     end
 end
 
+--- A table mapping safe sprites from closed to open states and vice versa.
+-- ["closed state sprite"] = "open state sprite"
+---@type table<string, string>
 local BM_SafeSprites = {
-             -- closed state sprite = open state sprite
     ["building_menu_dylan_safes_0"] = "building_menu_dylan_safes_2",
     ["building_menu_dylan_safes_1"] = "building_menu_dylan_safes_3",
     ["building_menu_dylan_safes_4"] = "building_menu_dylan_safes_6",
@@ -139,6 +175,9 @@ local BM_SafeSprites = {
     ["building_menu_dylan_safes_9"] = "building_menu_dylan_safes_11",
 }
 
+--- Checks if the given sprite name is a safe and returns the corresponding open/close sprite.
+---@param spriteName string
+---@return string|nil
 function BuildingMenu.checkSafeSprite(spriteName)
     for closedSprite, openSprite in pairs(BM_SafeSprites) do
         if closedSprite == spriteName then
@@ -150,6 +189,9 @@ function BuildingMenu.checkSafeSprite(spriteName)
     return nil
 end
 
+--- Determines if the safe is open based on the sprite name.
+---@param spriteName string
+---@return boolean|nil
 function BuildingMenu.isSafeOpen(spriteName)
     for closedSprite, openSprite in pairs(BM_SafeSprites) do
         if openSprite == spriteName then
@@ -161,7 +203,11 @@ function BuildingMenu.isSafeOpen(spriteName)
     return nil
 end
 
-
+--- Handles the creation of context menu options for world objects.
+---@param player integer
+---@param context ISContextMenu
+---@param worldobjects table
+---@param test boolean
 local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
     if test and ISWorldObjectContextMenu.Test then return true end
     if test then return ISWorldObjectContextMenu.setTest() end
