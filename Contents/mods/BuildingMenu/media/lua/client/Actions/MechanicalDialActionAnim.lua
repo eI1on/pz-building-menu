@@ -1,6 +1,9 @@
 require "TimedActions/ISBaseTimedAction"
 
 ---@class MechanicalDialActionAnim : ISBaseTimedAction
+---@field character any
+---@field maxTime any
+---@field part IsoObject
 MechanicalDialActionAnim = ISBaseTimedAction:derive("MechanicalDialActionAnim")
 
 --- Checks if the action is valid.
@@ -41,7 +44,7 @@ function MechanicalDialActionAnim:perform()
 end
 
 --- Creates a new instance of MechanicalDialActionAnim.
----@param character IsoGameCharacter
+---@param character IsoPlayer
 ---@param part IsoObject
 ---@return MechanicalDialActionAnim
 function MechanicalDialActionAnim:new(character, part)

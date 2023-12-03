@@ -1,7 +1,3 @@
---***********************************************************
---**                    ROBERT JOHNSON                     **
---***********************************************************
-
 ISBathtub = ISBuildingObject:derive("ISBathtub");
 
 --************************************************************************--
@@ -109,9 +105,9 @@ function ISBathtub:new(player, name, sprite1, sprite2, northSprite1, northSprite
 	return o;
 end
 
--- return the health of the new furniture, it's 200 + 100 per carpentry lvl
+-- return the health of the new furniture, it's 300 + 100 per carpentry lvl
 function ISBathtub:getHealth()
-	return 200 + buildUtil.getWoodHealth(self);
+	return 300 + buildUtil.getWoodHealth(self);
 end
 
 function ISBathtub:render(x, y, z, square)

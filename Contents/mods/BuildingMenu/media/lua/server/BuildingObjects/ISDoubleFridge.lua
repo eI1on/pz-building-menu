@@ -4,6 +4,24 @@ ISDoubleFridge = ISBuildingObject:derive("ISDoubleFridge");
 --** ISDoubleFridge:new
 --**
 --************************************************************************--
+function ISDoubleFridge:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
+	local o = {};
+	setmetatable(o, self);
+	self.__index = self;
+	o:init();
+	o:setSprite(sprite1);
+	o:setNorthSprite(northSprite1);
+	o.player = player;
+	o.sprite2 = sprite2;
+	o.northSprite2 = northSprite2;
+	o.name = name;
+	o.canBarricade = false;
+	o.dismantable = true;
+	o.blockAllTheSquare = true;
+	o.canBeAlwaysPlaced = true;
+	o.buildLow = false;
+	return o;
+end
 
 function ISDoubleFridge:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
@@ -108,25 +126,6 @@ function ISDoubleFridge:removeFromGround(square)
 			break
 		end
 	end
-end
-
-function ISDoubleFridge:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
-	local o = {};
-	setmetatable(o, self);
-	self.__index = self;
-	o:init();
-	o:setSprite(sprite1);
-	o:setNorthSprite(northSprite1);
-	o.player = player;
-	o.sprite2 = sprite2;
-	o.northSprite2 = northSprite2;
-	o.name = name;
-	o.canBarricade = false;
-	o.dismantable = true;
-	o.blockAllTheSquare = true;
-	o.canBeAlwaysPlaced = true;
-	o.buildLow = false;
-	return o;
 end
 
 function ISDoubleFridge:getHealth()

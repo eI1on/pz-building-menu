@@ -27,6 +27,10 @@ function ISBarbecue:render(x, y, z, square)
     ISBuildingObject.render(self, x, y, z, square)
 end
 
+--************************************************************************--
+--** ISBarbecue:new
+--**
+--************************************************************************--
 function ISBarbecue:new(player, name, sprite, northSprite)
     local o = {}
 

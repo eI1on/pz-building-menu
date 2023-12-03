@@ -9,7 +9,9 @@ function ISWindowWallObj:create(x, y, z, north, sprite)
 	self.javaObject:getModData().WindowWall = true;
     self.sq:AddSpecialObject(self.javaObject)
 
-    buildUtil.checkCorner(x,y,z,north,self, self.javaObject);
+	if self.corner then
+		buildUtil.checkCorner(x,y,z,north,self, self.javaObject);
+	end
 
     self.javaObject:transmitCompleteItemToServer()
 end
@@ -35,7 +37,7 @@ end
 
 function ISWindowWallObj:addCorner(x,y,z, north)
 	local sq = getCell():getGridSquare(x, y, z);
-	local corner = IsoThumpable.new(getCell(), sq, "TileWalls_51", north, self);
+	local corner = IsoThumpable.new(getCell(), sq, self.corner, north, self);
 	corner:setCorner(true);
 	corner:setCanBarricade(false);
 	sq:AddSpecialObject(corner);
@@ -106,6 +108,7 @@ function ISWindowWallObj:new(sprite, northSprite, player)
     o.canBarricade = true
     o.dismantable = true
     o.stopOnWalk = true
+	o.corner = nil;
     o.stopOnRun = true
     o.maxTime = 150
     return o

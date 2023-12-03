@@ -1,5 +1,32 @@
 ISFourTileSimpleFurniture = ISBuildingObject:derive('ISFourTileSimpleFurniture')
 
+--************************************************************************--
+--** ISFourTileSimpleFurniture:new
+--**
+--************************************************************************--
+function ISFourTileSimpleFurniture:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
+    local o = {}
+    setmetatable(o, self)
+    self.__index = self
+
+    o:init()
+    o:setSprite(sprite)
+
+    o.sprite2 = sprite2
+    o.sprite3 = sprite3
+    o.sprite4 = sprite4
+
+    o.northSprite = northSprite
+    o.northSprite2 = northSprite2
+    o.northSprite3 = northSprite3
+    o.northSprite4 = northSprite4
+    o.isWallLike = false;
+    o.thumpDmg = 5
+    o.name = 'Four Tile Furniture'
+
+    return o
+end
+
 function ISFourTileSimpleFurniture:create(x, y, z, north, sprite)
     local cell = getWorld():getCell()
     local square = cell:getGridSquare(x, y, z)
@@ -41,7 +68,7 @@ function ISFourTileSimpleFurniture:addObjectPart(x, y, z, north, sprite, index)
 end
 
 function ISFourTileSimpleFurniture:getHealth()
-    return 200 + buildUtil.getWoodHealth(self);
+    return 300 + buildUtil.getWoodHealth(self);
 end
 
 function ISFourTileSimpleFurniture:isValid(square)
@@ -268,27 +295,4 @@ function ISFourTileSimpleFurniture:partExists(square, index)
       end
     end
     return false
-end
-
-function ISFourTileSimpleFurniture:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
-    local o = {}
-    setmetatable(o, self)
-    self.__index = self
-
-    o:init()
-    o:setSprite(sprite)
-
-    o.sprite2 = sprite2
-    o.sprite3 = sprite3
-    o.sprite4 = sprite4
-
-    o.northSprite = northSprite
-    o.northSprite2 = northSprite2
-    o.northSprite3 = northSprite3
-    o.northSprite4 = northSprite4
-    o.isWallLike = false;
-    o.thumpDmg = 5
-    o.name = 'Four Tile Furniture'
-
-    return o
 end

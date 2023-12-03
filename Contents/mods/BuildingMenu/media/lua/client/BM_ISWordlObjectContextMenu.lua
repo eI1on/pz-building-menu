@@ -1,6 +1,7 @@
 require 'BuildingMenu01_Main'
 local RemovableWallVinesTiles = require 'ValidWallVineTiles'
 local RemovableWallDetailingTiles = require 'ValidWallDetailingTiles'
+local RemovableTrafficLineTiles = require'ValidTrafficLineTiles'
 
 ---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
@@ -9,7 +10,7 @@ local BuildingMenu = getBuildingMenuInstance()
 ---@param spriteName string
 ---@param patterns table
 ---@return boolean
-local function isRemovableWallItem(spriteName, patterns)
+local function isRemovableDetailItem(spriteName, patterns)
     for _, pattern in ipairs(patterns) do
         if luautils.stringStarts(spriteName, pattern) then
             return true
@@ -21,22 +22,39 @@ end
 --- Handles the removal of wall detailing.
 ---@param playerObj IsoPlayer
 ---@param square IsoGridSquare
----@param wallDetailing IsoObject|nil
+---@param wallDetailing string
 function BuildingMenu.doRemoveWallDetailing(playerObj, square, wallDetailing)
-    local playerInv = playerObj:getInventory()
-    if wallDetailing then
-        ISTimedActionQueue.add(ISWalkToTimedAction:new(playerObj, square))
-    else
-        if not luautils.walkAdj(playerObj, square, true) then return end
-    end
+    local playerInv = playerObj:getInventory();
+    
+    ISTimedActionQueue.add(ISWalkToTimedAction:new(playerObj, square));
+
     local handItem = playerObj:getPrimaryHandItem()
     if not handItem or not BuildingMenu.predicateHasTag(handItem, "Hammer") then
-		handItem = playerInv:getFirstEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "Hammer") end)
+		handItem = playerInv:getFirstEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "Hammer") end);
 		if not handItem then return end
-		ISWorldObjectContextMenu.equip(playerObj, playerObj:getPrimaryHandItem(), handItem, true)
+		ISWorldObjectContextMenu.equip(playerObj, playerObj:getPrimaryHandItem(), handItem, true);
     end
-    ISTimedActionQueue.add(ISRemoveWallDetailing:new(playerObj, square, wallDetailing));
+    ISTimedActionQueue.add(ISRemoveDetail:new(playerObj, square, wallDetailing));
 end
+
+--- Handles the removal of traffic lines.
+---@param playerObj IsoPlayer
+---@param square IsoGridSquare
+---@param trafficLine string
+function BuildingMenu.doRemoveTrafficLine(playerObj, square, trafficLine)
+    local playerInv = playerObj:getInventory()
+
+    if not luautils.walkAdj(playerObj, square, true) then return end
+
+    local handItem = playerObj:getPrimaryHandItem();
+    local trowel = playerInv:getFirstTypeRecurse("farming.HandShovel");
+    if handItem ~=  trowel then
+		if not trowel then return end
+		ISWorldObjectContextMenu.equip(playerObj, playerObj:getPrimaryHandItem(), trowel, true);
+    end
+    ISTimedActionQueue.add(ISRemoveDetail:new(playerObj, square, trafficLine));
+end
+
 
 --- Triggers when removing wall detailing.
 ---@param worldobjects table
@@ -45,9 +63,22 @@ end
 ---@param player integer
 function BuildingMenu.onRemoveWallDetailing(worldobjects, square, wallDetailing, player)
     local playerObj = getSpecificPlayer(player)
-    local bo = ISRemoveWallDetailingCursor:new(playerObj, "wallDetailing")
+    local bo = ISRemoveDetailCursor:new(playerObj, "wallDetailing")
     getCell():setDrag(bo, player)
 end
+
+
+--- Triggers when removing traffic lines.
+---@param worldobjects table
+---@param square IsoGridSquare
+---@param trafficLine IsoObject|nil
+---@param player integer
+function BuildingMenu.onRemoveTrafficLine(worldobjects, square, trafficLine, player)
+    local playerObj = getSpecificPlayer(player)
+    local bo = ISRemoveDetailCursor:new(playerObj, "trafficLine")
+    getCell():setDrag(bo, player)
+end
+
 
 --- Toggles the light of a thumpable object.
 ---@param lightSource IsoThumpable
@@ -216,7 +247,8 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
     local playerInv = playerObj:getInventory()
     local hasCuttingTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "CutPlant") end)
     local hasHammerTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "Hammer") end)
-    local thump, wallVine, wallDetailing, safe = nil, nil, nil, nil
+    local hasTrowelTool = playerInv:getFirstTypeRecurse("farming.HandShovel")
+    local thump, wallVine, wallDetailing, trafficLine, safe = nil, nil, nil, nil, nil
 
     for _, worldObj in ipairs(worldobjects) do
         local attached = worldObj:getAttachedAnimSprite()
@@ -225,10 +257,14 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
                 local sprite = attached:get(n - 1)
                 if sprite and sprite:getParentSprite() then
                     local spriteName = sprite:getParentSprite():getName()
-                    if hasCuttingTool and isRemovableWallItem(spriteName, RemovableWallVinesTiles) then
+                    if hasCuttingTool and isRemovableDetailItem(spriteName, RemovableWallVinesTiles) then
                         wallVine = worldObj:getSquare()
-                    elseif hasHammerTool and isRemovableWallItem(spriteName, RemovableWallDetailingTiles) then
+                    end
+                    if hasHammerTool and isRemovableDetailItem(spriteName, RemovableWallDetailingTiles) then
                         wallDetailing = worldObj:getSquare()
+                    end
+                    if hasTrowelTool and isRemovableDetailItem(spriteName, RemovableTrafficLineTiles) then
+                        trafficLine = worldObj:getSquare()
                     end
                 end
             end
@@ -256,6 +292,9 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
         end
         if wallDetailing then
             context:addOptionOnTop(getText("ContextMenu_RemoveWallDetailing"), worldobjects, BuildingMenu.onRemoveWallDetailing, wallDetailing, true, player)
+        end
+        if trafficLine then
+            context:addOptionOnTop(getText("ContextMenu_RemoveTrafficLine"), worldobjects, BuildingMenu.onRemoveTrafficLine, trafficLine, true, player)
         end
         if safe then
             local objSpriteName = safe:getSprite():getName()

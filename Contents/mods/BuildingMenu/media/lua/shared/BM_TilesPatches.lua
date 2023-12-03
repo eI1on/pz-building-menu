@@ -24,6 +24,5 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "CanBreak", "", true);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Crowbar", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, IsoFlagType.attachedW);
     end
 end)

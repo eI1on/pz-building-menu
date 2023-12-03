@@ -2,7 +2,7 @@ if isClient() then return end
 
 local RemovableWallVinesTiles = require 'ValidWallVineTiles'
 local RemovableWallDetailingTiles = require 'ValidWallDetailingTiles'
-
+local RemovableTrafficLineTiles = require'ValidTrafficLineTiles'
 
 local BM_Commands = {}
 BM_Commands.object = {}
@@ -156,7 +156,7 @@ local function _getWallVineObject(square)
 	end
 end
 
-local function _getWallDetailingObject(square)
+local function _getDetailingObject(square, removableTable)
 	if not square then return end
 	for i=0,square:getObjects():size()-1 do
 		local object = square:getObjects():get(i);
@@ -166,7 +166,7 @@ local function _getWallDetailingObject(square)
                 local sprite = attached:get(n - 1)
                 if sprite and sprite:getParentSprite() and sprite:getParentSprite():getName() then
                     local spriteName = sprite:getParentSprite():getName()
-                    for _, pattern in ipairs(RemovableWallDetailingTiles) do
+                    for _, pattern in ipairs(removableTable) do
                         if luautils.stringStarts(spriteName, pattern) then
                             return object, n-1
                         end
@@ -198,22 +198,35 @@ BM_Commands.object.removeBush = function(player, args)
     end
 end
 
-BM_Commands.object.removeWallDetailing = function(player, args)
+BM_Commands.object.removeDetailing = function(player, args)
 	local sq = getCell():getGridSquare(args.x, args.y, args.z)
 	if sq then
-		if args.wallDetailing then
-            local object, index = _getWallDetailingObject(sq)
+		if args.removeType == "wallDetailing" then
+            local object, index = _getDetailingObject(sq, RemovableWallDetailingTiles)
 			if object and index then
 				object:RemoveAttachedAnim(index)
 				object:transmitUpdatedSpriteToClients()
 				sq:removeErosionObject("WallVines")
 			end
 			local topSq = getCell():getGridSquare(sq:getX(), sq:getY(), sq:getZ() + 1)
-			local object, index = _getWallDetailingObject(topSq)
+			local object, index = _getDetailingObject(topSq, RemovableWallDetailingTiles)
 			if object and index then
 				object:RemoveAttachedAnim(index)
 				object:transmitUpdatedSpriteToClients()
 				topSq:removeErosionObject("WallVines")
+			end
+        end
+		if args.removeType == "trafficLine" then
+            local object, index = _getDetailingObject(sq, RemovableTrafficLineTiles)
+			if object and index then
+				object:RemoveAttachedAnim(index)
+				object:transmitUpdatedSpriteToClients()
+			end
+			local topSq = getCell():getGridSquare(sq:getX(), sq:getY(), sq:getZ() + 1)
+			local object, index = _getDetailingObject(topSq, RemovableTrafficLineTiles)
+			if object and index then
+				object:RemoveAttachedAnim(index)
+				object:transmitUpdatedSpriteToClients()
 			end
         end
     end

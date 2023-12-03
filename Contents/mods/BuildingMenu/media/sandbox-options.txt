@@ -39,3 +39,11 @@ option BuildingMenu.laundryAppliances
     page = BuildingMenu,
     translation = BuildingMenu_laundryAppliances,
 }
+
+option BuildingMenu.metalDrums
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_metalDrums,
+}

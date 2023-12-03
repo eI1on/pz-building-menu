@@ -4,8 +4,6 @@ ISTripleFridge = ISBuildingObject:derive('ISTripleFridge')
 --** ISTripleFridge:new
 --**
 --************************************************************************--
-
-
 function ISTripleFridge:new(sprite, sprite2, sprite3, northSprite, northSprite2, northSprite3)
     local o = {}
     setmetatable(o, self)
@@ -21,7 +19,7 @@ function ISTripleFridge:new(sprite, sprite2, sprite3, northSprite, northSprite2,
     o.northSprite3 = northSprite3
     o.isWallLike = false;
     o.thumpDmg = 5
-    o.name = 'Three Tile Furniture'
+    o.name = 'Three Tile Fridge'
 
     return o
 end

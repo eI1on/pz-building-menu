@@ -1,13 +1,28 @@
---***********************************************************
---**                    ROBERT JOHNSON                     **
---***********************************************************
-
 ISPopsicleFridge = ISBuildingObject:derive("ISPopsicleFridge");
 
 --************************************************************************--
 --** ISPopsicleFridge:new
 --**
 --************************************************************************--
+function ISPopsicleFridge:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
+	local o = {};
+	setmetatable(o, self);
+	self.__index = self;
+	o:init();
+	o:setSprite(sprite1);
+	o:setNorthSprite(northSprite1);
+	o.player = player;
+	o.sprite2 = sprite2;
+	o.northSprite2 = northSprite2;
+	o.name = name;
+	o.canBarricade = false;
+	o.dismantable = true;
+	o.blockAllTheSquare = true;
+	o.canBeAlwaysPlaced = true;
+	o.buildLow = true;
+	return o;
+end
+
 function ISPopsicleFridge:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
@@ -102,25 +117,6 @@ function ISPopsicleFridge:removeFromGround(square)
 			break
 		end
 	end
-end
-
-function ISPopsicleFridge:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
-	local o = {};
-	setmetatable(o, self);
-	self.__index = self;
-	o:init();
-	o:setSprite(sprite1);
-	o:setNorthSprite(northSprite1);
-	o.player = player;
-	o.sprite2 = sprite2;
-	o.northSprite2 = northSprite2;
-	o.name = name;
-	o.canBarricade = false;
-	o.dismantable = true;
-	o.blockAllTheSquare = true;
-	o.canBeAlwaysPlaced = true;
-	o.buildLow = true;
-	return o;
 end
 
 -- return the health of the new furniture, it's 200 + 100 per carpentry lvl

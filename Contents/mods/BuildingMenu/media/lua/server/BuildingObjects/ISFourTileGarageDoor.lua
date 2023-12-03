@@ -1,5 +1,35 @@
 ISFourTileGarageDoor = ISBuildingObject:derive('ISFourTileGarageDoor')
 
+--************************************************************************--
+--** ISFourTileGarageDoor:new
+--**
+--************************************************************************--
+function ISFourTileGarageDoor:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
+    local o = {}
+    setmetatable(o, self)
+    self.__index = self
+
+    o:init()
+    o:setSprite(sprite)
+
+    o.sprite2 = sprite2
+    o.sprite3 = sprite3
+    o.sprite4 = sprite4
+
+    o.northSprite = northSprite
+    o.northSprite2 = northSprite2
+    o.northSprite3 = northSprite3
+    o.northSprite4 = northSprite4
+    
+    o.consumedItems = {}
+	o.isDoor = true;
+    o.isWallLike = true;
+    o.thumpDmg = 5
+    o.name = 'Big Garage Door'
+
+    return o
+end
+
 function ISFourTileGarageDoor:create(x, y, z, north, sprite)
     local cell = getWorld():getCell()
     local square = cell:getGridSquare(x, y, z)
@@ -311,30 +341,4 @@ function ISFourTileGarageDoor:partExists(square, index)
       end
     end
     return false
-end
-
-function ISFourTileGarageDoor:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
-    local o = {}
-    setmetatable(o, self)
-    self.__index = self
-
-    o:init()
-    o:setSprite(sprite)
-
-    o.sprite2 = sprite2
-    o.sprite3 = sprite3
-    o.sprite4 = sprite4
-
-    o.northSprite = northSprite
-    o.northSprite2 = northSprite2
-    o.northSprite3 = northSprite3
-    o.northSprite4 = northSprite4
-    
-    o.consumedItems = {}
-	o.isDoor = true;
-    o.isWallLike = true;
-    o.thumpDmg = 5
-    o.name = 'Big Garage Door'
-
-    return o
 end

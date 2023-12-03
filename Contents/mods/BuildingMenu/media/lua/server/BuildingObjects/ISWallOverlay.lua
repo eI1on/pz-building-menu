@@ -1,14 +1,9 @@
---***********************************************************
---**                    ROBERT JOHNSON                     **
---***********************************************************
-
 ISWallOverlay = ISBuildingObject:derive("ISWallOverlay");
 
 --************************************************************************--
 --** ISWallOverlay:new
 --**
 --************************************************************************--
-
 local function isRelevantWall(isCorner, object, north)
     local properties = object:getProperties()
 

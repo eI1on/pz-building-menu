@@ -90,8 +90,8 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         end
         if objectOptions.containerType then
             object.getHealth = function(self)
-                if isDebugEnabled() then print("[Building Menu] objectOptions.health: ", objectOptions.health, " buildUtil.getWoodHealth(self): ", buildUtil.getWoodHealth(self)) end
-                return objectOptions.health or buildUtil.getWoodHealth(self)
+                if isDebugEnabled() then print("[Building Menu] objectOptions.health: ", objectOptions.health, " buildUtil.getWoodHealth(self): ", (100 + buildUtil.getWoodHealth(self))) end
+                return objectOptions.health or (100 + buildUtil.getWoodHealth(self))
             end
         end
 

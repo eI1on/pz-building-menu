@@ -1,7 +1,3 @@
---***********************************************************
---**                    ROBERT JOHNSON                     **
---***********************************************************
-
 ISFridge = ISBuildingObject:derive("ISFridge");
 
 --************************************************************************--
@@ -65,9 +61,9 @@ function ISFridge:new(player, name, sprite, northSprite)
 	return o;
 end
 
--- return the health of the new container, it's 200 + 100 per carpentry lvl
+-- return the health of the new container, it's 300 + 100 per carpentry lvl
 function ISFridge:getHealth()
-	return 200 + buildUtil.getWoodHealth(self);
+	return 300 + buildUtil.getWoodHealth(self);
 end
 
 function ISFridge:isValid(square)

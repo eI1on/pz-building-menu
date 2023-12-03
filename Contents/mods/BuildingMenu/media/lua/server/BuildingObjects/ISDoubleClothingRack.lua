@@ -1,13 +1,28 @@
---***********************************************************
---**                    ROBERT JOHNSON                     **
---***********************************************************
-
 ISDoubleClothingRack = ISBuildingObject:derive("ISDoubleClothingRack");
 
 --************************************************************************--
 --** ISDoubleClothingRack:new
 --**
 --************************************************************************--
+function ISDoubleClothingRack:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
+	local o = {};
+	setmetatable(o, self);
+	self.__index = self;
+	o:init();
+	o:setSprite(sprite1);
+	o:setNorthSprite(northSprite1);
+	o.player = player;
+	o.sprite2 = sprite2;
+	o.northSprite2 = northSprite2;
+	o.name = name;
+	o.canBarricade = false;
+	o.dismantable = true;
+	o.blockAllTheSquare = false;
+	o.canBeAlwaysPlaced = true;
+	o.buildLow = true;
+	return o;
+end
+
 function ISDoubleClothingRack:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
@@ -103,28 +118,9 @@ function ISDoubleClothingRack:removeFromGround(square)
 	end
 end
 
-function ISDoubleClothingRack:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
-	local o = {};
-	setmetatable(o, self);
-	self.__index = self;
-	o:init();
-	o:setSprite(sprite1);
-	o:setNorthSprite(northSprite1);
-	o.player = player;
-	o.sprite2 = sprite2;
-	o.northSprite2 = northSprite2;
-	o.name = name;
-	o.canBarricade = false;
-	o.dismantable = true;
-	o.blockAllTheSquare = false;
-	o.canBeAlwaysPlaced = true;
-	o.buildLow = true;
-	return o;
-end
-
 -- return the health of the new furniture, it's 200 + 100 per carpentry lvl
 function ISDoubleClothingRack:getHealth()
-	return 200 + buildUtil.getWoodHealth(self);
+	return 300 + buildUtil.getWoodHealth(self);
 end
 
 function ISDoubleClothingRack:render(x, y, z, square)

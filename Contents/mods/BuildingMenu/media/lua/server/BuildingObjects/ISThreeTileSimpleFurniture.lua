@@ -4,8 +4,6 @@ ISThreeTileSimpleFurniture = ISBuildingObject:derive('ISThreeTileSimpleFurniture
 --** ISThreeTileSimpleFurniture:new
 --**
 --************************************************************************--
-
-
 function ISThreeTileSimpleFurniture:new(sprite, sprite2, sprite3, northSprite, northSprite2, northSprite3)
     local o = {}
     setmetatable(o, self)
