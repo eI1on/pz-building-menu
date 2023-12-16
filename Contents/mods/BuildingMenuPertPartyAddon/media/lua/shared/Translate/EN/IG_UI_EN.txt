@@ -5,6 +5,10 @@ IGUI_EN = {
 
     IGUI_BuildingMenuSubCat_Doors_Fire_Doors = "Fire Doors",
     
-    IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween = "Halloween",
+    IGUI_BuildingMenuCat_Festive = "Festive",
+    IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween = "Halloween Decorations",
+    IGUI_BuildingMenuSubCat_Pert_Structures_Christmas = "Ginger Bread Structures",
+    IGUI_BuildingMenuSubCat_Pert_Detailing_Christmas = "Ginger Bread Detailing",
+    IGUI_BuildingMenuSubCat_Pert_Decorations_Christmas = "Christmas Decorations",
 
 }

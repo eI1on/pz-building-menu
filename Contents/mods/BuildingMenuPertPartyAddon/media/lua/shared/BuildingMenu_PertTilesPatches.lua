@@ -18,4 +18,83 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "IsoType", "IsoTelevision", false);
         BM_Utils.setSpriteProperty(props, "CustomItem", "Radio.TvMonster", false);
     end
+
+    sprites = {
+        "pert_Christmas_01_0",
+        "pert_Christmas_01_2",
+        "pert_Christmas_01_4",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowW);
+    end
+
+    sprites = {
+        "pert_Christmas_01_1",
+        "pert_Christmas_01_5",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
+    end
+
+    sprites = {
+        "pert_Christmas_01_8",
+        "pert_Christmas_01_12",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "IsoType", "IsoThumpable", false);
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowW);
+    end
+
+    sprites = {
+        "pert_Christmas_01_9",
+        "pert_Christmas_01_13",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "IsoType", "IsoThumpable", false);
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
+    end
+    
+    sprites = {
+        "pert_Christmas_01_86",
+        "pert_Christmas_01_87",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "IsoType", "IsoThumpable", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+    end
+        
+    sprites = {
+        "pert_Christmas_01_72",
+        "pert_Christmas_01_73",
+        "pert_Christmas_01_74",
+        "pert_Christmas_01_75",
+        "pert_Christmas_01_76",
+        "pert_Christmas_01_77",
+        "pert_Christmas_01_78",
+        "pert_Christmas_01_79",
+        "pert_Christmas_01_82",
+        "pert_Christmas_01_83",
+        "pert_Christmas_01_84",
+        "pert_Christmas_01_85",
+
+        "pert_Christmas_02_8", -- christams runners
+        "pert_Christmas_02_9",
+        "pert_Christmas_02_10",
+        "pert_Christmas_02_11",
+        "pert_Christmas_02_12",
+        "pert_Christmas_02_13",
+        "pert_Christmas_02_14",
+        "pert_Christmas_02_15"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+    end
 end)

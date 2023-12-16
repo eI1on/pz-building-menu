@@ -20,7 +20,10 @@ function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon
 
     local tab = findOrCreateItem(BuildingMenu.Tabs, "tabName", tabName, {tabName = tabName, categories = {}})
     local category = findOrCreateItem(tab.categories, "categoryName", categoryName, {categoryName = categoryName, subcategories = {}})
-    category.categoryIcon = category.categoryIcon or categoryIcon
+
+    if categoryIcon ~= nil and categoryIcon ~= "" then
+        category.categoryIcon = categoryIcon
+    end
 
     local subcategory = findOrCreateItem(category.subcategories, "subcategoryName", subcategoryName, {subcategoryName = subcategoryName, objects = {}})
     subcategory.subCategoryIcon = subcategory.subCategoryIcon or subCategoryIcon
@@ -8592,7 +8595,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Elevator_Wall",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalWallRecipe,
                                 true,
                                 {
@@ -8615,7 +8618,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Elevator_Wall",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalWallRecipe,
                                 true,
                                 {
@@ -8638,7 +8641,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Metal_Wall",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalWallRecipe,
                                 true,
                                 {
@@ -8682,7 +8685,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Metal_Window_Frame",
                                 "Tooltip_Metal_Window_Frame",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalWallRecipe,
                                 true,
                                 {
@@ -8706,7 +8709,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Metal_Pillar",
                                 "Tooltip_Metal_Pillar",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalWallRecipe,
                                 true,
                                 {
@@ -8726,7 +8729,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Metal_Wall",
                                 "Tooltip_Dark_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalWallRecipe,
                                 true,
                                 {
@@ -8770,7 +8773,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Metal_Window_Frame",
                                 "Tooltip_Dark_Metal_Window_Frame",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalWallRecipe,
                                 true,
                                 {
@@ -8794,7 +8797,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Dark_Metal_Pillar",
                                 "Tooltip_Dark_Metal_Pillar",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalWallRecipe,
                                 true,
                                 {
@@ -8814,7 +8817,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Jail_Wall",
                                 "Tooltip_Jail_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
@@ -8858,7 +8861,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Jail_Pillar",
                                 "Tooltip_Jail_Pillar",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
@@ -8884,7 +8887,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
@@ -8894,6 +8897,7 @@ BuildingMenu.Tabs = {
                                     actionAnim = "BlowTorch",
                                     completionSound = "BuildMetalStructureWallFrame",
                                     isThumpable = true,
+                                    hoppable = true,
                                     canBarricade = false,
                                     noNeedHammer = true,
                                     modData = {wallType = "wall"}
@@ -8901,13 +8905,12 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "construction_01_29",
                                     northSprite = "construction_01_16",
-                                    corner = ""
                                 }
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
@@ -8917,6 +8920,7 @@ BuildingMenu.Tabs = {
                                     actionAnim = "BlowTorch",
                                     completionSound = "BuildMetalStructureWallFrame",
                                     isThumpable = true,
+                                    hoppable = true,
                                     canBarricade = false,
                                     noNeedHammer = true,
                                     modData = {wallType = "wall"}
@@ -8924,13 +8928,12 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "construction_01_17",
                                     northSprite = "construction_01_28",
-                                    corner = ""
                                 }
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
@@ -8940,6 +8943,7 @@ BuildingMenu.Tabs = {
                                     actionAnim = "BlowTorch",
                                     completionSound = "BuildMetalStructureWallFrame",
                                     isThumpable = true,
+                                    hoppable = true,
                                     canBarricade = false,
                                     noNeedHammer = true,
                                     modData = {wallType = "wall"}
@@ -8947,13 +8951,12 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "construction_01_18",
                                     northSprite = "construction_01_27",
-                                    corner = ""
                                 }
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
@@ -8963,6 +8966,7 @@ BuildingMenu.Tabs = {
                                     actionAnim = "BlowTorch",
                                     completionSound = "BuildMetalStructureWallFrame",
                                     isThumpable = true,
+                                    hoppable = true,
                                     canBarricade = false,
                                     noNeedHammer = true,
                                     modData = {wallType = "wall"}
@@ -8970,13 +8974,12 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "construction_01_19",
                                     northSprite = "construction_01_26",
-                                    corner = ""
                                 }
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Metal_Wall",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.BigMetalBarWallRecipe,
                                 true,
                                 {
@@ -8986,6 +8989,7 @@ BuildingMenu.Tabs = {
                                     actionAnim = "BlowTorch",
                                     completionSound = "BuildMetalStructureWallFrame",
                                     isThumpable = true,
+                                    hoppable = true,
                                     canBarricade = false,
                                     noNeedHammer = true,
                                     modData = {wallType = "wall"}
@@ -8993,13 +8997,12 @@ BuildingMenu.Tabs = {
                                 {
                                     sprite = "construction_01_20",
                                     northSprite = "construction_01_25",
-                                    corner = ""
                                 }
                             ),
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
@@ -9018,7 +9021,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
@@ -9037,7 +9040,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
@@ -9056,7 +9059,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
@@ -9075,7 +9078,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {
@@ -9094,7 +9097,7 @@ BuildingMenu.Tabs = {
                             BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Scaffold_Side",
                                 "Tooltip_Wrought_Iron_Fence",
-                                BuildingMenu.onBuildWall,
+                                BuildingMenu.onBuildMetalWall,
                                 BuildingMenu.SmallMetalBarWallRecipe,
                                 true,
                                 {

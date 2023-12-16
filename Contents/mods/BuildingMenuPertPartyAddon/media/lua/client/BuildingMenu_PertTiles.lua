@@ -1039,7 +1039,7 @@ local pertDecorationsHalloween = {
 }
 BuildingMenu.addObjectsToCategories(
     "Perts Party",
-    getText("IGUI_BuildingMenuCat_Decorations"),
+    getText("IGUI_BuildingMenuCat_Festive"),
     "pert_halloween_01_9",
     getText("IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween"),
     "pert_halloween_01_9",
@@ -1084,3 +1084,998 @@ BuildingMenu.addObjectsToCategories(
     "pert_re-phoenix_3_47",
     pertFridgesObjects
 )
+
+
+local function addChristmasDecorationsToMenu()
+    local pertGingerBreadWalls= {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Ginger_Bread_Window",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.FloorRugRecipe,
+            true,
+            {
+                actionAnim = "VehicleWorkOnTire",
+                noNeedHammer = true,
+                craftingBank = "ClothesRipping",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_02_8",
+                northSprite = "pert_Christmas_02_9",
+                eastSprite = "pert_Christmas_02_10",
+                southSprite = "pert_Christmas_02_11"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Ginger_Bread_Window",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.FloorRugRecipe,
+            true,
+            {
+                actionAnim = "VehicleWorkOnTire",
+                noNeedHammer = true,
+                craftingBank = "ClothesRipping",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_02_12",
+                northSprite = "pert_Christmas_02_13",
+                eastSprite = "pert_Christmas_02_14",
+                southSprite = "pert_Christmas_02_15"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Wall",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {
+                sprite = "pert_Christmas_01_0",
+                northSprite = "pert_Christmas_01_1",
+                corner = "pert_Christmas_01_3"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Wall_Corner",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {
+                sprite = "pert_Christmas_01_2",
+                northSprite = "pert_Christmas_01_2",
+                corner = "pert_Christmas_01_3"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Door_Frame",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildDoorFrame,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                modData = {wallType = "doorframe"}
+            },
+            {
+                sprite = "pert_Christmas_01_10",
+                northSprite = "pert_Christmas_01_11",
+                corner = "pert_Christmas_01_3"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Simple_Window_Frame",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = true,
+                hoppable = true,
+                modData = {wallType = "windowsframe"}
+            },
+            {
+                sprite = "pert_Christmas_01_8",
+                northSprite = "pert_Christmas_01_9",
+                corner = "pert_Christmas_01_3"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Pillar",
+            "Tooltip_Old_Wood_Pillar",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                modData = {wallType = "pillar"}
+            },
+            {sprite = "pert_Christmas_01_3", northSprite = "pert_Christmas_01_3"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Wall",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {
+                sprite = "pert_Christmas_01_4",
+                northSprite = "pert_Christmas_01_5",
+                corner = "pert_Christmas_01_7"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Wall_Corner",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {
+                sprite = "pert_Christmas_01_6",
+                northSprite = "pert_Christmas_01_6",
+                corner = "pert_Christmas_01_7"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Door_Frame",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildDoorFrame,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                modData = {wallType = "doorframe"}
+            },
+            {
+                sprite = "pert_Christmas_01_14",
+                northSprite = "pert_Christmas_01_15",
+                corner = "pert_Christmas_01_7"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Simple_Window_Frame",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = true,
+                hoppable = true,
+                modData = {wallType = "windowsframe"}
+            },
+            {
+                sprite = "pert_Christmas_01_12",
+                northSprite = "pert_Christmas_01_13",
+                corner = "pert_Christmas_01_7"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Pillar",
+            "Tooltip_Old_Wood_Pillar",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                modData = {wallType = "pillar"}
+            },
+            {sprite = "pert_Christmas_01_7", northSprite = "pert_Christmas_01_7"}
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Ginger_Bread_Window",
+            BuildingMenu.onBuildWindow,
+            BuildingMenu.WindowRecipe,
+            true,
+            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            {sprite = "pert_Christmas_01_16", northSprite = "pert_Christmas_01_17"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Door",
+            "Tooltip_Ginger_Bread_Door",
+            BuildingMenu.onBuildDoor,
+            BuildingMenu.WoodenDoorRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                modData = {wallType = "doorframe"}
+            },
+            {
+                sprite = "pert_Christmas_01_56",
+                northSprite = "pert_Christmas_01_57",
+                openSprite = "pert_Christmas_01_58",
+                openNorthSprite = "pert_Christmas_01_59"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Door",
+            "Tooltip_Ginger_Bread_Door",
+            BuildingMenu.onBuildDoor,
+            BuildingMenu.WoodenDoorRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                modData = {wallType = "doorframe"}
+            },
+            {
+                sprite = "pert_Christmas_01_60",
+                northSprite = "pert_Christmas_01_61",
+                openSprite = "pert_Christmas_01_62",
+                openNorthSprite = "pert_Christmas_01_63"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_1",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_24", northSprite = "pert_Christmas_01_37"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_2",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_25", northSprite = "pert_Christmas_01_36"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_3",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_26", northSprite = "pert_Christmas_01_35"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_4",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_32", northSprite = "pert_Christmas_01_29"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_5",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_33", northSprite = "pert_Christmas_01_28"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_6",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_34", northSprite = "pert_Christmas_01_27"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Small_Wall",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_39", northSprite = "pert_Christmas_01_31"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Medium_Wall",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_38", northSprite = "pert_Christmas_01_30"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Big_Wall",
+            "Tooltip_Ginger_Bread_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "pert_Christmas_01_40", northSprite = "pert_Christmas_01_41"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Red_Slide_Stairs",
+            "Tooltip_Red_Slide_Stairs",
+            BuildingMenu.onBuildStairs,
+            BuildingMenu.MetalStairsRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = false
+            },
+            {
+                sprite = "pert_Christmas_01_53",
+                upToLeft01 = "pert_Christmas_01_53",
+                upToLeft02 = "pert_Christmas_01_52",
+                upToLeft03 = "pert_Christmas_01_51",
+                upToRight01 = "pert_Christmas_01_48",
+                upToRight02 = "pert_Christmas_01_49",
+                upToRight03 = "pert_Christmas_01_50",
+                pillar = "pert_Christmas_01_94",
+                pillarNorth = "pert_Christmas_01_95"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing_Post",
+            "Tooltip_Wooden_Railing_Post",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "pert_Christmas_01_91", northSprite = "pert_Christmas_01_91"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing",
+            "Tooltip_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "pert_Christmas_01_88",
+                northSprite = "pert_Christmas_01_89",
+                corner = "pert_Christmas_01_91"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing",
+            "Tooltip_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "pert_Christmas_01_92",
+                northSprite = "pert_Christmas_01_93",
+                corner = "pert_Christmas_01_91"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing_Corner",
+            "Tooltip_Wooden_Railing_Post",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "pert_Christmas_01_90", northSprite = "pert_Christmas_01_90"}
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Festive"),
+    "",
+    getText("IGUI_BuildingMenuSubCat_Pert_Structures_Christmas"),
+    "pert_Christmas_01_4",
+    pertGingerBreadWalls
+    )
+    
+    local gingerBreadDetailing = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+            },
+            {sprite = "pert_Christmas_01_66", northSprite = "pert_Christmas_01_67"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {sprite = "pert_Christmas_01_68", northSprite = "pert_Christmas_01_69"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {sprite = "pert_Christmas_01_70", northSprite = "pert_Christmas_01_70"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {sprite = "pert_Christmas_01_71", northSprite = "pert_Christmas_01_71"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {sprite = "pert_Christmas_01_64", northSprite = "pert_Christmas_01_65"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {
+                sprite = "pert_Christmas_01_96",
+                northSprite = "pert_Christmas_01_97",
+                eastSprite = "pert_Christmas_01_98",
+                southSprite = "pert_Christmas_01_99"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {sprite = "pert_Christmas_01_42", northSprite = "pert_Christmas_01_43"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {sprite = "pert_Christmas_01_104", northSprite = "pert_Christmas_01_104"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Icing",
+            "Tooltip_Icing_Detailing",
+            BuildingMenu.onBuildWallOverlay,
+            BuildingMenu.WallDecorationRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = true,
+            },
+            {sprite = "pert_Christmas_01_105", northSprite = "pert_Christmas_01_105"}
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+    "Perts Party",
+    getText("IGUI_BuildingMenuCat_Festive"),
+    "",
+    getText("IGUI_BuildingMenuSubCat_Pert_Detailing_Christmas"),
+    "pert_Christmas_01_42",
+    gingerBreadDetailing
+    )
+
+    local christmasDecorations = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Gingerbread_Tree",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_73",
+                northSprite = "pert_Christmas_01_74",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Gingerbread_Tree",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_72",
+                northSprite = "pert_Christmas_01_75",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Gingerbread_Tree",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_76",
+                northSprite = "pert_Christmas_01_77",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Gingerbread_Tree",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_78",
+                northSprite = "pert_Christmas_01_79",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Gingerbread_Tree",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_83",
+                northSprite = "pert_Christmas_01_84",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Gingerbread_Tree",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_82",
+                northSprite = "pert_Christmas_01_85",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting_Christmas",
+            BuildingMenu.onBuildLightPole,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_94",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting_Christmas",
+            BuildingMenu.onBuildLightPole,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_95",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_80",
+                northSprite = "pert_Christmas_01_80",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_81",
+                northSprite = "pert_Christmas_01_81",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Snowman",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_100",
+                northSprite = "pert_Christmas_01_103",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Snowman",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_101",
+                northSprite = "pert_Christmas_01_102",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.MetalCounterSmallRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "postbox",
+                renderFloorHelper = false,
+                canBeAlwaysPlaced = true,
+                isCorner = true,
+                canBeLockedByPadlock = false
+            },
+            {
+                sprite = "pert_Christmas_01_44",
+                northSprite = "pert_Christmas_01_45",
+                eastSprite = "pert_Christmas_01_46",
+                southSprite = "pert_Christmas_01_47"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = true
+            },
+            {
+                sprite = "pert_Christmas_01_108",
+                northSprite = "pert_Christmas_01_110",
+                eastSprite = "pert_Christmas_01_111",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                containerType = "smallcrate",
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            {sprite = "pert_Christmas_01_86", northSprite = "pert_Christmas_01_86"}
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Christmas_Decoration_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                containerType = "smallcrate",
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            {sprite = "pert_Christmas_01_87", northSprite = "pert_Christmas_01_87"}
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Festive"),
+        "",
+        getText("IGUI_BuildingMenuSubCat_Pert_Decorations_Christmas"),
+        "pert_Christmas_01_81",
+        christmasDecorations
+    )
+end
+addChristmasDecorationsToMenu()

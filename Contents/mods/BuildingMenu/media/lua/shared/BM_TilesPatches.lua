@@ -25,4 +25,17 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Crowbar", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
     end
+
+    sprites = {
+        "construction_01_19",
+        "construction_01_20",
+        "construction_01_25",
+        "construction_01_26"
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.unsetSpriteProperty(props, "BlocksPlacement");
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.solidtrans);
+    end
 end)

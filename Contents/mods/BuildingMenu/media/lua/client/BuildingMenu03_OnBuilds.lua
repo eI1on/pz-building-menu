@@ -1,6 +1,7 @@
 if not getBuildingMenuInstance then
     require("BuildingMenu01_Main")
 end
+require("BM_Utils")
 
 ---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
@@ -98,6 +99,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         if isDebugEnabled() then
             BuildingMenu.debugPrint("[Building Menu Debug] ", name)
             BuildingMenu.debugPrint("[Building Menu Debug] ", objectOptions)
+            BM_Utils.printPropNamesFromSprite(object:getSprite())
         end
     end
 
@@ -715,6 +717,25 @@ BuildingMenu.onBuildWall = function( sprites, name, player, objectRecipe, object
     end
 
     BuildingMenu.buildObject(_wall, name, player, objectRecipe, objectOptions)
+end
+
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
+BuildingMenu.onBuildMetalWall = function( sprites, name, player, objectRecipe, objectOptions)
+    local _metalWall = ISMetalWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
+
+    if sprites.eastSprite then
+        _metalWall:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _metalWall:setSouthSprite(sprites.southSprite)
+    end
+
+    BuildingMenu.buildObject(_metalWall, name, player, objectRecipe, objectOptions)
 end
 
 ---@param sprites table

@@ -7,7 +7,7 @@ BM_Utils = BM_Utils or {}
 ---@param propertyValue string|nil The value to set the property to.
 ---@param checkIsoFlagType boolean|nil Additional flag to indicate if IsoFlagType should be checked.
 function BM_Utils.setSpriteProperty(props, propertyName, propertyValue, checkIsoFlagType)
-    if type(propertyName) == "userdata" and IsoFlagType[propertyName] and propertyValue == nil then
+    if type(propertyName) == "userdata" and propertyValue == nil then
         props:Set(propertyName)
     elseif type(propertyName) == "string" and type(propertyValue) == "string" then
         if checkIsoFlagType == nil then
@@ -15,7 +15,7 @@ function BM_Utils.setSpriteProperty(props, propertyName, propertyValue, checkIso
         else
             props:Set(propertyName, propertyValue, checkIsoFlagType)
         end
-    elseif type(propertyName) == "userdata" and IsoFlagType[propertyName] and type(propertyValue) == "string" then
+    elseif type(propertyName) == "userdata" and type(propertyValue) == "string" then
         props:Set(propertyName, propertyValue)
     else
         print("[Building Menu] Invalid parameter types or count for Set function")
@@ -29,7 +29,7 @@ end
 function BM_Utils.unsetSpriteProperty(props, propertyName)
     if type(propertyName) == "string" then
         props:UnSet(propertyName)
-    elseif type(propertyName) == "userdata" and IsoFlagType[propertyName] then
+    elseif type(propertyName) == "userdata" then
         props:UnSet(propertyName)
     else
         print("[Building Menu] Invalid parameter type for UnSet function")
@@ -42,4 +42,19 @@ function BM_Utils.printPropNamesFromSprite(sprite)
     local props = IsoSpriteManager.instance:getSprite(sprite):getProperties();
     print("[Building Menu] Property Names for ".. sprite .." :", props:getPropertyNames());
     print("[Building Menu] Flags List for ".. sprite .." :", props:getFlagsList());
+end
+
+--- Calculates the health of metal buildings based on Metalwelding perk.
+---@param ISItem ISBuildingObject
+---@return number
+function BM_Utils.getMetalHealth(ISItem)
+	if not ISItem or not ISItem.player then
+		return 100;
+	end
+	local playerObj = getSpecificPlayer(ISItem.player)
+	local health = (playerObj:getPerkLevel(Perks.MetalWelding) * 60);
+	if playerObj:HasTrait("Handy") then
+		health = health + 100;
+	end
+	return health;
 end

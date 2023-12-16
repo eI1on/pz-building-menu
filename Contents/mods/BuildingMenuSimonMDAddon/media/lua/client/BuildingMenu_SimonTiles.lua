@@ -9,7 +9,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -32,7 +32,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -55,7 +55,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -78,7 +78,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -101,7 +101,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -124,7 +124,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -147,7 +147,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -170,7 +170,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Wall",
             "Tooltip_Scrap_Wall",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -277,7 +277,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Window_Frame",
             "Tooltip_Scrap_Window_Frame",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -301,7 +301,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Window_Frame",
             "Tooltip_Scrap_Window_Frame",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -325,7 +325,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Window_Frame",
             "Tooltip_Scrap_Window_Frame",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -349,7 +349,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Window_Frame",
             "Tooltip_Scrap_Window_Frame",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
@@ -373,7 +373,7 @@ local function addSimonMDWallsToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Pillar",
             "Tooltip_Scrap_Pillar",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.SmallScrapWallRecipe,
             true,
             {

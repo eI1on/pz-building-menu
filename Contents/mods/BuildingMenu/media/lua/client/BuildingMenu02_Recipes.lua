@@ -2453,10 +2453,6 @@ BuildingMenu.BigMetalBarWallRecipe = {
     },
     neededMaterials = {
         {
-            Material = 'Base.SheetMetal',
-            Amount = 2
-        },
-        {
             Material = 'Base.MetalBar',
             Amount = 4
         },
@@ -2488,13 +2484,10 @@ BuildingMenu.BigMetalBarWallRecipe = {
 BuildingMenu.SmallMetalBarWallRecipe = {
     neededTools = {
         "BlowTorch",
+        "Screwdriver",
         "WeldingMask"
     },
     neededMaterials = {
-        {
-            Material = 'Base.SheetMetal',
-            Amount = 2
-        },
         {
             Material = 'Base.MetalBar',
             Amount = 2

@@ -33,4 +33,36 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Pert_Halloween_BloodFlamingo = "Blood Flamingo",
   Tooltip_BuildingMenuObj_Pert_Halloween_Grave = "Grave",
 
+  Tooltip_BuildingMenuObj_Ginger_Bread_Door = "Ginger Bread Door",
+  Tooltip_Ginger_Bread_Door = "Sweeten your entryway with this gingerbread door, complete with icing details.",
+
+  Tooltip_Ginger_Bread_Window = "Not very sturdy, but smells delightful!",
+
+  Tooltip_Ginger_Bread_Wall = "Sturdy and sweet, this gingerbread wall adds a holiday charm to your safe house while providing basic protection.",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Wall = "Ginger Bread Wall",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Wall_Corner = "Ginger Bread Wall Corner",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Door_Frame = "Ginger Bread Door Frame 1",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Simple_Window_Frame = "Ginger Bread Window Frame",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Pillar = "Ginger Bread Pillar",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_1 = "Ginger Bread Exterior Wall 1",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_2 = "Ginger Bread Exterior Wall 2",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_3 = "Ginger Bread Exterior Wall 3",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_4 = "Ginger Bread Exterior Wall 4",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_5 = "Ginger Bread Exterior Wall 5",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_6 = "Ginger Bread Exterior Wall 6",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Small_Wall = "Ginger Bread Exterior Sloped Small Wall",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Medium_Wall = "Ginger Bread Exterior Sloped Medium Wall",
+  Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Big_Wall = "Ginger Bread Exterior Sloped Big Wall",
+
+  Tooltip_BuildingMenuObj_Red_Slide_Stairs = "Red Slide Stairs",
+  Tooltip_Red_Slide_Stairs = "Perfect for spreading holiday cheer and making a sweet escape from the undead.",
+
+  Tooltip_BuildingMenuObj_Icing = "Icing",
+  Tooltip_Icing_Detailing = " Icing to add a frosted flair to your gingerbread constructions. It's not just for looks; it's for the festive spirit, too!",
+
+  Tooltip_BuildingMenuObj_Gingerbread_Tree = "Ginger Bread Tree",
+  Tooltip_BuildingMenuObj_Snowman = "Snowman",
+
+  Tooltip_Christmas_Decoration_Generic = "Assorted decorations to bring festive warmth to any survivor's shelter. A little holiday spirit to brighten the darkest winter days.",
+  Tooltip_Lighting_Christmas = "They don't just illuminate; they enchant your safehouse with the cozy glow of the holiday season.",
 }
