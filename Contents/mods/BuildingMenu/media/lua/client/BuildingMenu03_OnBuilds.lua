@@ -403,6 +403,18 @@ end
 ---@param player number
 ---@param objectRecipe table
 ---@param objectOptions table
+BuildingMenu.onRainCollectorBarrel = function( sprites, name, player, objectRecipe, objectOptions)
+	local _barrel = RainCollectorBarrel:new(player, sprites.sprite, objectOptions.waterMax or 400)
+
+    -- passing the name break the RainCollectorBarrel object
+    BuildingMenu.buildObject(_barrel, nil, player, objectRecipe, objectOptions)
+end
+
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 BuildingMenu.onBuildMetalShelf = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalshelf = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 

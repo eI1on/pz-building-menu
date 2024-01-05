@@ -107,7 +107,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "High",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Low",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Railing",
-    IGUI_BuildingMenuSubCat_Fencing_Other = "Other",`
+    IGUI_BuildingMenuSubCat_Fencing_Other = "Other",
 
     IGUI_BuildingMenuCat_Floors = "Floors",
     IGUI_BuildingMenuSubCat_Floors_Wooden = "Wooden",
@@ -162,7 +162,7 @@ IGUI_EN = {
 
     IGUI_BuildingMenuCat_Decorations = "Decorations",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Fireplaces",
-    IGUI_BuildingMenuSubCat_Decorations_Rugs = "Rugs",`
+    IGUI_BuildingMenuSubCat_Decorations_Rugs = "Rugs",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Posters",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Signs",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

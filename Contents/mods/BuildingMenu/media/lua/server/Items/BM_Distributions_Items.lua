@@ -115,6 +115,63 @@ table.insert(ProceduralDistributions.list["ToolStoreBooks"].items, "IGMagazineCa
 table.insert(ProceduralDistributions.list["ToolStoreBooks"].items, 2);
 
 
+-- Magazines: Secret Entrance Shelf
+table.insert(ProceduralDistributions.list["BinBar"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["BinBar"].items, 0.25);
+table.insert(ProceduralDistributions.list["BinGeneric"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["BinGeneric"].items, 0.25);
+table.insert(ProceduralDistributions.list["BookstoreMisc"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 0.5);
+table.insert(ProceduralDistributions.list["BreakRoomShelves"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["BreakRoomShelves"].items, 0.25);
+table.insert(ProceduralDistributions.list["CarSupplyTools"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CarSupplyTools"].items, 0.5);
+table.insert(ProceduralDistributions.list["CarWindows1"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CarWindows1"].items,0.25);
+table.insert(ProceduralDistributions.list["CarWindows2"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CarWindows2"].items,0.25);
+table.insert(ProceduralDistributions.list["CarWindows3"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CarWindows3"].items,0.25);
+table.insert(ProceduralDistributions.list["CrateBooks"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CrateBooks"].items, 0.25);
+table.insert(ProceduralDistributions.list["CrateMagazines"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CrateMagazines"].items, 0.25);
+table.insert(ProceduralDistributions.list["CrateMechanics"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CrateMechanics"].items, 0.25);
+table.insert(ProceduralDistributions.list["CrateTools"].junk.items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["CrateTools"].junk.items, 0.25);
+table.insert(ProceduralDistributions.list["FactoryLockers"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["FactoryLockers"].items, 0.5);
+table.insert(ProceduralDistributions.list["FilingCabinetGeneric"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["FilingCabinetGeneric"].items, 0.5);
+table.insert(ProceduralDistributions.list["GarageMechanics"].junk.items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["GarageMechanics"].junk.items, 0.25);
+table.insert(ProceduralDistributions.list["LibraryBooks"].junk.items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["LibraryBooks"].junk.items, 0.25);
+table.insert(ProceduralDistributions.list["MagazineRackMixed"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["MagazineRackMixed"].items, 0.25);
+table.insert(ProceduralDistributions.list["MechanicShelfBooks"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["MechanicShelfBooks"].items, 0.5);
+table.insert(ProceduralDistributions.list["MechanicShelfTools"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["MechanicShelfTools"].items, 0.5);
+table.insert(ProceduralDistributions.list["OfficeDesk"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["OfficeDesk"].items, 0.25);
+table.insert(ProceduralDistributions.list["OtherGeneric"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["OtherGeneric"].items, 0.25);
+table.insert(ProceduralDistributions.list["PostOfficeBooks"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["PostOfficeBooks"].items, 0.25);
+table.insert(ProceduralDistributions.list["PostOfficeMagazines"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["PostOfficeMagazines"].items,0.25);
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 0.25);
+table.insert(ProceduralDistributions.list["ShelfGeneric"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["ShelfGeneric"].items, 0.25);
+table.insert(ProceduralDistributions.list["StoreShelfMechanics"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["StoreShelfMechanics"].items, 0.25);
+table.insert(ProceduralDistributions.list["ToolStoreBooks"].items, "BMMagazineSecretEntrances");
+table.insert(ProceduralDistributions.list["ToolStoreBooks"].items, 0.25);
+
+
 -- Glass Panes
 table.insert(ProceduralDistributions.list["CabinetFactoryTools"].items, "GlassPane");
 table.insert(ProceduralDistributions.list["CabinetFactoryTools"].items, 2);

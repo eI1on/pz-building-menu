@@ -740,6 +740,37 @@ BuildingMenu.addObjectsToCategories(
 )
 
 
+local simonMDOthers = {
+    BuildingMenu.createObject(
+        "Tooltip_BuildingMenuObj_SecretEntranceDoor",
+        "Tooltip_SecretEntranceDoor",
+        BuildingMenu.onBuildDoor,
+        BuildingMenu.WoodenDoorRecipe,
+        "Build Secret Entrance",
+        {
+            actionAnim = "Build",
+            noNeedHammer = false,
+            completionSound = "BuildWoodenStructureLarge",
+            modData = {wallType = "doorframe"}
+        },
+        {
+            sprite = "fixtures_doors_Simon_MD_28",
+            northSprite = "fixtures_doors_Simon_MD_29",
+            openSprite = "fixtures_doors_Simon_MD_30",
+            openNorthSprite = "fixtures_doors_Simon_MD_31"
+        }
+    ),
+}
+BuildingMenu.addObjectsToCategories(
+    "Simon MDs",
+    getText("IGUI_BuildingMenuCat_SimonMD_Others"),
+    "fixtures_doors_Simon_MD_30",
+    getText("IGUI_BuildingMenuSubCat_SimonMD_Secret_Entrances"),
+    "fixtures_doors_Simon_MD_30",
+    simonMDOthers
+)
+
+
 local function create3TileGarageDoor(baseName, startSpriteNumber)
     local spriteData = {
         sprite = baseName .. startSpriteNumber,

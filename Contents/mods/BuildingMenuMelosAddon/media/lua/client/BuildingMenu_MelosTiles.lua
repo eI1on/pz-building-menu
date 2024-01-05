@@ -22290,125 +22290,6 @@ end
 addMelosFurnitureSet2ToMenu()
 
 
-local function addMelosCookingObjsToMenu()
-    local function createCookingObject(spriteIndex, northSpriteIndex, eastSpriteIndex, southSpriteIndex)
-        return BuildingMenu.createObject(
-            "",
-            "Tooltip_Oven",
-            BuildingMenu.onBuildOven,
-            BuildingMenu.OvenRecipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
-                canBeAlwaysPlaced = true,
-                renderFloorHelper = false
-            },
-            {
-                sprite = "melos_tiles_appliances_01_" .. spriteIndex,
-                northSprite = "melos_tiles_appliances_01_" .. northSpriteIndex,
-                eastSprite = "melos_tiles_appliances_01_" .. eastSpriteIndex,
-                southSprite = "melos_tiles_appliances_01_" .. southSpriteIndex
-            }
-        )
-    end
-
-    local melosCookingObjects = {}
-
-    for i = 0, 7 do
-        local spriteIndex = i * 4
-        local northSpriteIndex = spriteIndex + 1
-        local eastSpriteIndex = spriteIndex + 2
-        local southSpriteIndex = spriteIndex + 3
-
-        local cookingObject = createCookingObject(spriteIndex, northSpriteIndex, eastSpriteIndex, southSpriteIndex)
-        table.insert(melosCookingObjects, cookingObject)
-    end
-
-    BuildingMenu.addObjectsToCategories(
-       "Melos",
-        getText("IGUI_BuildingMenuCat_Appliances"),
-        "melos_tiles_appliances_01_0",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
-        "melos_tiles_appliances_01_0",
-        melosCookingObjects
-    )
-end
-addMelosCookingObjsToMenu()
-
-
-local function addMelosFridgesToMenu()
-    local function createFridgeObject(recipe, popsicleFridge, sprites)
-        return BuildingMenu.createObject(
-            "",
-            "Tooltip_Fridges",
-            popsicleFridge and BuildingMenu.onBuildPopsicleFridge or BuildingMenu.onBuildSimpleFridge,
-            recipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
-                canBeAlwaysPlaced = true,
-                renderFloorHelper = false,
-                containerType = "fridge",
-                dismantable = true
-            },
-            sprites
-        )
-    end
-    
-    local function createFridgeSprites(baseIndex)
-        return {
-            sprite = "melos_tiles_appliances_01_" .. baseIndex,
-            northSprite = "melos_tiles_appliances_01_" .. (baseIndex - 1),
-            eastSprite = "melos_tiles_appliances_01_" .. (baseIndex + 2),
-            southSprite = "melos_tiles_appliances_01_" .. (baseIndex + 1)
-        }
-    end
-    
-    local melosFridgesObjects = {}
-    
-    for i = 65, 77, 4 do
-        local sprites = createFridgeSprites(i)
-        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, false, sprites))
-    end
-
-    for i = 97, 109, 4 do
-        local sprites = createFridgeSprites(i)
-        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, false, sprites))
-    end
-
-    local additionalFridges = {
-        {sprite = "melos_tiles_appliances_01_87", sprite2 = "melos_tiles_appliances_01_86", northSprite1 = "melos_tiles_appliances_01_84", northSprite2 = "melos_tiles_appliances_01_85"},
-        {sprite = "melos_tiles_appliances_01_93", sprite2 = "melos_tiles_appliances_01_92", northSprite1 = "melos_tiles_appliances_01_94", northSprite2 = "melos_tiles_appliances_01_95"},
-    }
-
-    for _, fridgeData in ipairs(additionalFridges) do
-        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, true, fridgeData))
-    end
-
-    BuildingMenu.addObjectsToCategories(
-       "Melos",
-        getText("IGUI_BuildingMenuCat_Appliances"),
-        "melos_tiles_appliances_01_87",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
-        "melos_tiles_appliances_01_87",
-        melosFridgesObjects
-    )
-end
-addMelosFridgesToMenu()
-
-
 local function addMelosFlowersToMenu()
     local function createIndoorFlowerObject(sprite, northSprite)
         return BuildingMenu.createObject(
@@ -23415,3 +23296,131 @@ local function addMelosGrapeVinesToMenu()
     )
 end
 addMelosGrapeVinesToMenu()
+
+
+local function addMelosCookingObjsToMenu()
+    local function createCookingObject(spriteIndex, northSpriteIndex, eastSpriteIndex, southSpriteIndex)
+        return BuildingMenu.createObject(
+            "",
+            "Tooltip_Oven",
+            BuildingMenu.onBuildOven,
+            BuildingMenu.OvenRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false
+            },
+            {
+                sprite = "melos_tiles_appliances_01_" .. spriteIndex,
+                northSprite = "melos_tiles_appliances_01_" .. northSpriteIndex,
+                eastSprite = "melos_tiles_appliances_01_" .. eastSpriteIndex,
+                southSprite = "melos_tiles_appliances_01_" .. southSpriteIndex
+            }
+        )
+    end
+
+    local melosCookingObjects = {}
+
+    for i = 0, 7 do
+        local spriteIndex = i * 4
+        local northSpriteIndex = spriteIndex + 1
+        local eastSpriteIndex = spriteIndex + 2
+        local southSpriteIndex = spriteIndex + 3
+
+        local cookingObject = createCookingObject(spriteIndex, northSpriteIndex, eastSpriteIndex, southSpriteIndex)
+        table.insert(melosCookingObjects, cookingObject)
+    end
+
+    BuildingMenu.addObjectsToCategories(
+       "Melos",
+        getText("IGUI_BuildingMenuCat_Appliances"),
+        "melos_tiles_appliances_01_0",
+        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
+        "melos_tiles_appliances_01_0",
+        melosCookingObjects
+    )
+end
+
+
+local function addMelosFridgesToMenu()
+    local function createFridgeObject(recipe, popsicleFridge, sprites)
+        return BuildingMenu.createObject(
+            "",
+            "Tooltip_Fridges",
+            popsicleFridge and BuildingMenu.onBuildPopsicleFridge or BuildingMenu.onBuildSimpleFridge,
+            recipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                containerType = "fridge",
+                dismantable = true
+            },
+            sprites
+        )
+    end
+    
+    local function createFridgeSprites(baseIndex)
+        return {
+            sprite = "melos_tiles_appliances_01_" .. baseIndex,
+            northSprite = "melos_tiles_appliances_01_" .. (baseIndex - 1),
+            eastSprite = "melos_tiles_appliances_01_" .. (baseIndex + 2),
+            southSprite = "melos_tiles_appliances_01_" .. (baseIndex + 1)
+        }
+    end
+    
+    local melosFridgesObjects = {}
+    
+    for i = 65, 77, 4 do
+        local sprites = createFridgeSprites(i)
+        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, false, sprites))
+    end
+
+    for i = 97, 109, 4 do
+        local sprites = createFridgeSprites(i)
+        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, false, sprites))
+    end
+
+    local additionalFridges = {
+        {sprite = "melos_tiles_appliances_01_87", sprite2 = "melos_tiles_appliances_01_86", northSprite1 = "melos_tiles_appliances_01_84", northSprite2 = "melos_tiles_appliances_01_85"},
+        {sprite = "melos_tiles_appliances_01_93", sprite2 = "melos_tiles_appliances_01_92", northSprite1 = "melos_tiles_appliances_01_94", northSprite2 = "melos_tiles_appliances_01_95"},
+    }
+
+    for _, fridgeData in ipairs(additionalFridges) do
+        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, true, fridgeData))
+    end
+
+    BuildingMenu.addObjectsToCategories(
+       "Melos",
+        getText("IGUI_BuildingMenuCat_Appliances"),
+        "melos_tiles_appliances_01_87",
+        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "melos_tiles_appliances_01_87",
+        melosFridgesObjects
+    )
+end
+
+
+local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.cookingAppliances then
+        addMelosCookingObjsToMenu()
+    end
+    if SandboxVars.BuildingMenu.fridgeAppliances then
+        addMelosFridgesToMenu()
+    end
+end
+Events.OnGameStart.Add(addCategoriesToBuildingMenu)

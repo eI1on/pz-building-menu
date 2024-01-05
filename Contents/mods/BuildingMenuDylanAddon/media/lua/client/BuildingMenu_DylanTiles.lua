@@ -134,7 +134,6 @@ end
 addDylanContainersToMenu()
 
 
-
 local function addGardenStuffToMenu()
     local crateObjects = {
         BuildingMenu.createObject(
@@ -470,7 +469,6 @@ local function addGardenStuffToMenu()
 
 end
 addGardenStuffToMenu()
-
 
 
 local function addMetalCountersToMenu()
@@ -852,7 +850,6 @@ local function addMetalCountersToMenu()
     )
 end
 addMetalCountersToMenu()
-
 
 
 local function addFridgeAppliancesToMenu()

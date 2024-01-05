@@ -130,7 +130,7 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(player, context, worldobjec
 
     if BuildingMenu.getPlayerSkills(playerObj)["Woodwork"] > 7 or ISBuildMenu.cheat then
         BuildingMenu.playerCanPlaster = true
-        else
+    else
         BuildingMenu.playerCanPlaster = false
     end
 

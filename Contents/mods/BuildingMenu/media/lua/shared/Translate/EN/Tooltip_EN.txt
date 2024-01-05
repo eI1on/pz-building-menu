@@ -1,5 +1,6 @@
 Tooltip_EN = {
-
+    
+  Tooltip_BMMagazineSecretEntrances = "Flip through to find your secret escape. Building instructions are located under the Daddy Dirkie and SimonMDs tabs in the Building Menu.",
   Tooltip_IGMagazineGlass = "...they should at least find you handy",
   Tooltip_AsphaltMixturePowder = "Used to build roads. Requires a bucket of water.",
 
@@ -1069,7 +1070,7 @@ Tooltip_EN = {
   Tooltip_White_Windows_Door = "A white wooden door with windows for a view.",
   Tooltip_Brown_Door = "A brown wooden door for variety.",
   Tooltip_Brown_Window_Door = "A brown wooden door with windows for light.",
-  Tooltip_Wooden_Door = "A simple wooden door for survival.",
+  Tooltip_Wooden_Door = "A sturdy wooden door to safeguard your shelter. Basic but reliable for keeping threats at bay.",
   Tooltip_Rough_Wooden_Door = "A rough-grain wooden door with decorative panels.",
   Tooltip_Cherry_Door = "A cherry wooden door for elegance.",
   Tooltip_Tan_Door = "A tan wooden door, frame needed.",

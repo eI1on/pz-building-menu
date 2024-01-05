@@ -7,7 +7,7 @@ local BuildingMenu = getBuildingMenuInstance()
 local function addBathroomAppliancesToMenu()
     local function createBathroomObject(spec)
         return BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             spec.tooltip or "Tooltip_Sink",
             spec.buildFunc,
             spec.recipe,
@@ -135,7 +135,7 @@ local function addBathroomAppliancesToMenu()
             }
         },
         {
-            buildFunc = BuildingMenu.onBuildBathtub, 
+            buildFunc = BuildingMenu.onBuildBathtub,
             recipe = BuildingMenu.BathtubRecipe, 
             sprites = { 
                 sprite = "fixtures_bathroom_01_27",
@@ -175,7 +175,7 @@ end
 local function addCookingAppliancesToMenu()
     local cookingObjects = {
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Oven",
             BuildingMenu.onBuildBarbecue,
             BuildingMenu.StoveRecipe,
@@ -195,7 +195,7 @@ local function addCookingAppliancesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Oven",
             BuildingMenu.onBuildStove,
             BuildingMenu.StoveRecipe,
@@ -228,7 +228,7 @@ local function addCookingAppliancesToMenu()
     }
     for _, indexes in ipairs(spriteIndexes) do
         table.insert(cookingObjects, BuildingMenu.createObject(
-                "Tooltip_BuildingMenuObj_White_Line",
+                "",
                 "Tooltip_Oven",
                 BuildingMenu.onBuildOven,
                 BuildingMenu.OvenRecipe,
@@ -255,7 +255,7 @@ local function addCookingAppliancesToMenu()
     end
 
     table.insert(cookingObjects, BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Oven",
             BuildingMenu.onBuildMicrowaveOven,
             BuildingMenu.MicrowaveOvenRecipe,
@@ -281,7 +281,7 @@ local function addCookingAppliancesToMenu()
     )
 
     table.insert(cookingObjects, BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Oven",
             BuildingMenu.onBuildMicrowaveOven,
             BuildingMenu.MicrowaveOvenRecipe,
@@ -320,7 +320,7 @@ end
 local function addFridgeAppliancesToMenu()
     local function createFridgeObject(sprite, northSprite, eastSprite, southSprite)
         return BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildSimpleFridge,
             BuildingMenu.FridgeRecipe,
@@ -366,7 +366,7 @@ local function addFridgeAppliancesToMenu()
 
     table.insert(fridgesObjects,
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildLargeFridge,
             BuildingMenu.FridgeRecipe,
@@ -394,7 +394,7 @@ local function addFridgeAppliancesToMenu()
     )
     table.insert(fridgesObjects,
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildTripleFridge,
             BuildingMenu.FridgeRecipe,
@@ -424,7 +424,7 @@ local function addFridgeAppliancesToMenu()
     )
     table.insert(fridgesObjects,
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildPopsicleFridge,
             BuildingMenu.FridgeRecipe,
@@ -465,7 +465,7 @@ end
 local function addLaundryAppliancesToMenu()
     local laundryObjects = {
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Laundry",
             BuildingMenu.onBuildCombinationWasherDryer,
             BuildingMenu.WashingMachineRecipe,
@@ -490,7 +490,7 @@ local function addLaundryAppliancesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Laundry",
             BuildingMenu.onBuildClothingDryer,
             BuildingMenu.WashingMachineRecipe,
@@ -515,7 +515,7 @@ local function addLaundryAppliancesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Laundry",
             BuildingMenu.onBuildClothingWasher,
             BuildingMenu.WashingMachineRecipe,
@@ -540,7 +540,7 @@ local function addLaundryAppliancesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Laundry",
             BuildingMenu.onBuildWashingBin,
             BuildingMenu.WashingBinRecipe,
@@ -706,7 +706,7 @@ end
 local function addTrafficLinesToMenu()
     local whiteTrafficLines = {
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -728,7 +728,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -750,7 +750,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -772,7 +772,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -794,7 +794,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -816,7 +816,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -838,7 +838,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -860,7 +860,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -882,7 +882,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -904,7 +904,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -926,7 +926,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -948,7 +948,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -970,7 +970,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -992,7 +992,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1014,7 +1014,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1036,7 +1036,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1058,7 +1058,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1080,7 +1080,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1102,7 +1102,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1124,7 +1124,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1146,7 +1146,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1168,7 +1168,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1190,7 +1190,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1212,7 +1212,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1234,7 +1234,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1256,7 +1256,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1278,7 +1278,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1300,7 +1300,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1322,7 +1322,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1344,7 +1344,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1366,7 +1366,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1388,7 +1388,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1410,7 +1410,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1432,7 +1432,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1454,7 +1454,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1476,7 +1476,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1498,7 +1498,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1520,7 +1520,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1542,7 +1542,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1564,7 +1564,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1586,7 +1586,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1608,7 +1608,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1630,7 +1630,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1652,7 +1652,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1674,7 +1674,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1696,7 +1696,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1718,7 +1718,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1740,7 +1740,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1762,7 +1762,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1784,7 +1784,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1806,7 +1806,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1828,7 +1828,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1850,7 +1850,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1872,7 +1872,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1894,7 +1894,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1916,7 +1916,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1938,7 +1938,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1960,7 +1960,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -1982,7 +1982,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2004,7 +2004,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2026,7 +2026,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2048,7 +2048,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2070,7 +2070,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2092,7 +2092,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2114,7 +2114,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2136,7 +2136,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2158,7 +2158,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2180,7 +2180,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -2202,7 +2202,7 @@ local function addTrafficLinesToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Line",
+            "",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,

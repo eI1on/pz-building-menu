@@ -60,7 +60,7 @@ function BuildingMenuTilePickerList:render()
     self:clearStencilRect();
 end
 
---- Updates the tooltip for the tile picker list. TODO: optimize BuildingMenu.canBuildObject, takes 5ms to render the tooltip when hovering over the object
+--- Updates the tooltip for the tile picker list. TODO: optimize BuildingMenu.canBuildObject
 ---@param maxCols number
 ---@param maxRows number
 function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)

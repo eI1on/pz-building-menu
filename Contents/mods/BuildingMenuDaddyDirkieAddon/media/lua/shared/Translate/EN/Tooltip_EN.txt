@@ -1,0 +1,73 @@
+Tooltip_EN = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Secret Entrance Shelf",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Secret Entrance Door",
+  
+  Tooltip_SecretEntranceShelf = "A cunningly disguised shelf that keeps your books organized. Pair it with the Secret Entrance Door to create a seamless hidden passage within your safehouse.",
+  Tooltip_SecretEntranceDoor = "A cleverly designed shelf that swings open to reveal a hidden passage. Perfect for a quick and stealthy getaway.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Log Wall",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Log Door Frame",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Log Window Frame",
+  Tooltip_BuildingMenuObj_Twig_Window = "Twig Window",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Log Pillar",
+  Tooltip_BuildingMenuObj_Log_Crate = "Log Crate",
+
+  Tooltip_Log_Wall = "A sturdy wall made of tightly stacked logs.",
+  Tooltip_Log_Door_Frame = "A rugged frame made of logs for your doors.",
+  Tooltip_Log_Window_Frame = "A durable log frame for windows.",
+  Tooltip_Log_Pillar = "A strong, vertical log support.",
+  Tooltip_Log_Crate = "A simple yet robust crate crafted from logs.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Log Roof Pitched 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Log Roof Pitched 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Log Roof Pitched 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Log Stairs",
+  Tooltip_Forest_Furvival_Generic = "Essential for wilderness survival.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Chopping Block",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Fancy White Double Wardrobe",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Fancy White Double Wardrobe with Glass",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Fancy Oak Drawers",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Fancy Oak Wardrobe",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Light Wood Double Wardrobe",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Light Wood Double Wardrobe with Glass",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Fancy Dark Drawers",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Fancy Dark Wardrobe",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Barrel On Pallet",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Small Boxes On Pallet",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Vegetable Baskets On Pallet",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock and Wire Fence",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Cinderblock and Wire Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock and Wire Fence Post",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Cinderblock Fence",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cinderblock Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Cinderblock Fence Post",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Cinderblock Fence with Vines 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Cinderblock Fence with Vines 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock Fence Corner with Vines",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock Fence Post with Vines",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cinderblock and Planks Fence",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Cinderblock and Planks Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Cinderblock and Planks Fence Post",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Wooden Fence Post",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Wooden Fence",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Wooden Fence Corner",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "White Wooden Fence Post",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "White Wooden Fence",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "White Wooden Fence Corner",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "White Wooden Fence Gate",
+
+}

@@ -1,0 +1,7 @@
+name=Building Menu - Daddy Dirkie Dirk Tiles Addon
+poster=poster.png
+id=BuildingMenuDaddyDirkieAddon
+description=Ready to take your building experience up a notch? This is an add-on for the Building Menu that adds buildable objects from Daddy Dirkie Dirk Tilepack.
+require=BuildingMenu,Diederiks Tile Palooza
+tags=Build 41,Misc,Multiplayer,Interface
+versionMin=41.0

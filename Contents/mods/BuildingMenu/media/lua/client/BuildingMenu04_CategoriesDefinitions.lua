@@ -10163,7 +10163,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_0", northSprite = "roofs_01_5"}
                             ),
@@ -10181,7 +10182,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_1", northSprite = "roofs_01_4"}
                             ),
@@ -10199,7 +10201,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_2", northSprite = "roofs_01_3"}
                             ),
@@ -10217,7 +10220,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_8", northSprite = "roofs_01_8"}
                             ),
@@ -10235,7 +10239,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_9", northSprite = "roofs_01_9"}
                             ),
@@ -10253,7 +10258,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_10", northSprite = "roofs_01_10"}
                             ),
@@ -10271,7 +10277,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_11", northSprite = "roofs_01_11"}
                             ),
@@ -10289,7 +10296,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_12", northSprite = "roofs_01_12"}
                             ),
@@ -10307,7 +10315,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_13", northSprite = "roofs_01_13"}
                             ),
@@ -10325,7 +10334,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_24", northSprite = "roofs_01_29"}
                             ),
@@ -10343,7 +10353,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_25", northSprite = "roofs_01_28"}
                             ),
@@ -10361,7 +10372,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_26", northSprite = "roofs_01_27"}
                             ),
@@ -10379,7 +10391,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_6", northSprite = "roofs_01_7"}
                             ),
@@ -10397,7 +10410,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_21", northSprite = "roofs_01_21"}
                             ),
@@ -10415,7 +10429,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_30", northSprite = "roofs_01_31"}
                             ),
@@ -10433,7 +10448,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_20", northSprite = "roofs_01_20"}
                             )
@@ -10475,7 +10491,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_0", northSprite = "roofs_02_5"}
                             ),
@@ -10493,7 +10510,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_1", northSprite = "roofs_02_4"}
                             ),
@@ -10511,7 +10529,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_2", northSprite = "roofs_02_3"}
                             ),
@@ -10529,7 +10548,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_8", northSprite = "roofs_02_8"}
                             ),
@@ -10547,7 +10567,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_9", northSprite = "roofs_02_9"}
                             ),
@@ -10565,7 +10586,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_10", northSprite = "roofs_02_10"}
                             ),
@@ -10583,7 +10605,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_11", northSprite = "roofs_02_11"}
                             ),
@@ -10601,7 +10624,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_12", northSprite = "roofs_02_12"}
                             ),
@@ -10619,7 +10643,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_13", northSprite = "roofs_02_13"}
                             ),
@@ -10637,7 +10662,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_24", northSprite = "roofs_02_29"}
                             ),
@@ -10655,7 +10681,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_25", northSprite = "roofs_02_28"}
                             ),
@@ -10673,7 +10700,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_26", northSprite = "roofs_02_27"}
                             ),
@@ -10691,7 +10719,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_6", northSprite = "roofs_02_7"}
                             ),
@@ -10709,7 +10738,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_21", northSprite = "roofs_02_21"}
                             ),
@@ -10727,7 +10757,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_30", northSprite = "roofs_02_31"}
                             ),
@@ -10745,7 +10776,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_20", northSprite = "roofs_02_20"}
                             )
@@ -10787,7 +10819,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_0", northSprite = "roofs_03_5"}
                             ),
@@ -10805,7 +10838,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_1", northSprite = "roofs_03_4"}
                             ),
@@ -10823,7 +10857,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_2", northSprite = "roofs_03_3"}
                             ),
@@ -10841,7 +10876,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_8", northSprite = "roofs_03_8"}
                             ),
@@ -10859,7 +10895,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_9", northSprite = "roofs_03_9"}
                             ),
@@ -10877,7 +10914,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_10", northSprite = "roofs_03_10"}
                             ),
@@ -10895,7 +10933,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_11", northSprite = "roofs_03_11"}
                             ),
@@ -10913,7 +10952,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_12", northSprite = "roofs_03_12"}
                             ),
@@ -10931,7 +10971,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_13", northSprite = "roofs_03_13"}
                             ),
@@ -10949,7 +10990,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_24", northSprite = "roofs_03_29"}
                             ),
@@ -10967,7 +11009,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_25", northSprite = "roofs_03_28"}
                             ),
@@ -10985,7 +11028,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_26", northSprite = "roofs_03_27"}
                             ),
@@ -11003,7 +11047,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_6", northSprite = "roofs_03_7"}
                             ),
@@ -11021,7 +11066,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_21", northSprite = "roofs_03_21"}
                             ),
@@ -11039,7 +11085,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_30", northSprite = "roofs_03_31"}
                             ),
@@ -11057,7 +11104,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_03_20", northSprite = "roofs_03_20"}
                             )
@@ -11099,7 +11147,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_0", northSprite = "roofs_04_5"}
                             ),
@@ -11117,7 +11166,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_1", northSprite = "roofs_04_4"}
                             ),
@@ -11135,7 +11185,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_2", northSprite = "roofs_04_3"}
                             ),
@@ -11153,7 +11204,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_8", northSprite = "roofs_04_8"}
                             ),
@@ -11171,7 +11223,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_9", northSprite = "roofs_04_9"}
                             ),
@@ -11189,7 +11242,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_10", northSprite = "roofs_04_10"}
                             ),
@@ -11207,7 +11261,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_11", northSprite = "roofs_04_11"}
                             ),
@@ -11225,7 +11280,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_12", northSprite = "roofs_04_12"}
                             ),
@@ -11243,7 +11299,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_13", northSprite = "roofs_04_13"}
                             ),
@@ -11261,7 +11318,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_24", northSprite = "roofs_04_29"}
                             ),
@@ -11279,7 +11337,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_25", northSprite = "roofs_04_28"}
                             ),
@@ -11297,7 +11356,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_26", northSprite = "roofs_04_27"}
                             ),
@@ -11315,7 +11375,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_6", northSprite = "roofs_04_7"}
                             ),
@@ -11333,7 +11394,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_21", northSprite = "roofs_04_21"}
                             ),
@@ -11351,7 +11413,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_30", northSprite = "roofs_04_31"}
                             ),
@@ -11369,7 +11432,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_04_20", northSprite = "roofs_04_20"}
                             )
@@ -11411,7 +11475,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_0", northSprite = "roofs_05_5"}
                             ),
@@ -11429,7 +11494,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_1", northSprite = "roofs_05_4"}
                             ),
@@ -11447,7 +11513,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_2", northSprite = "roofs_05_3"}
                             ),
@@ -11465,7 +11532,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_8", northSprite = "roofs_05_8"}
                             ),
@@ -11483,7 +11551,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_9", northSprite = "roofs_05_9"}
                             ),
@@ -11501,7 +11570,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_10", northSprite = "roofs_05_10"}
                             ),
@@ -11519,7 +11589,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_11", northSprite = "roofs_05_11"}
                             ),
@@ -11537,7 +11608,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_12", northSprite = "roofs_05_12"}
                             ),
@@ -11555,7 +11627,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_13", northSprite = "roofs_05_13"}
                             ),
@@ -11573,7 +11646,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_24", northSprite = "roofs_05_29"}
                             ),
@@ -11591,7 +11665,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_25", northSprite = "roofs_05_28"}
                             ),
@@ -11609,7 +11684,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_26", northSprite = "roofs_05_27"}
                             ),
@@ -11627,7 +11703,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_6", northSprite = "roofs_05_7"}
                             ),
@@ -11645,7 +11722,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_21", northSprite = "roofs_05_21"}
                             ),
@@ -11663,7 +11741,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_30", northSprite = "roofs_05_31"}
                             ),
@@ -11681,7 +11760,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_20", northSprite = "roofs_05_20"}
                             )
@@ -11723,7 +11803,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_32", northSprite = "roofs_05_37"}
                             ),
@@ -11741,7 +11822,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_33", northSprite = "roofs_05_36"}
                             ),
@@ -11759,7 +11841,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_34", northSprite = "roofs_05_35"}
                             ),
@@ -11777,7 +11860,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_40", northSprite = "roofs_05_40"}
                             ),
@@ -11795,7 +11879,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_41", northSprite = "roofs_05_41"}
                             ),
@@ -11813,7 +11898,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_42", northSprite = "roofs_05_42"}
                             ),
@@ -11831,7 +11917,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_43", northSprite = "roofs_05_43"}
                             ),
@@ -11849,7 +11936,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_44", northSprite = "roofs_05_44"}
                             ),
@@ -11867,7 +11955,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_45", northSprite = "roofs_05_45"}
                             ),
@@ -11885,7 +11974,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_56", northSprite = "roofs_05_61"}
                             ),
@@ -11903,7 +11993,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_57", northSprite = "roofs_05_60"}
                             ),
@@ -11921,7 +12012,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_58", northSprite = "roofs_05_59"}
                             ),
@@ -11939,7 +12031,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_38", northSprite = "roofs_05_39"}
                             ),
@@ -11957,7 +12050,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_52", northSprite = "roofs_05_52"}
                             ),
@@ -11975,7 +12069,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_62", northSprite = "roofs_05_63"}
                             ),
@@ -11993,7 +12088,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_05_53", northSprite = "roofs_05_53"}
                             )
@@ -12035,7 +12131,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_32", northSprite = "roofs_01_37"}
                             ),
@@ -12053,7 +12150,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_33", northSprite = "roofs_01_36"}
                             ),
@@ -12071,7 +12169,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_34", northSprite = "roofs_01_35"}
                             ),
@@ -12089,7 +12188,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_40", northSprite = "roofs_01_40"}
                             ),
@@ -12107,7 +12207,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_41", northSprite = "roofs_01_41"}
                             ),
@@ -12125,7 +12226,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_42", northSprite = "roofs_01_42"}
                             ),
@@ -12143,7 +12245,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_43", northSprite = "roofs_01_43"}
                             ),
@@ -12161,7 +12264,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_44", northSprite = "roofs_01_44"}
                             ),
@@ -12179,7 +12283,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_45", northSprite = "roofs_01_45"}
                             ),
@@ -12197,7 +12302,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_56", northSprite = "roofs_01_61"}
                             ),
@@ -12215,7 +12321,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_57", northSprite = "roofs_01_60"}
                             ),
@@ -12233,7 +12340,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_58", northSprite = "roofs_01_59"}
                             ),
@@ -12251,7 +12359,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_38", northSprite = "roofs_01_39"}
                             ),
@@ -12269,7 +12378,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_52", northSprite = "roofs_01_52"}
                             ),
@@ -12287,7 +12397,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_62", northSprite = "roofs_01_63"}
                             ),
@@ -12305,7 +12416,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_01_53", northSprite = "roofs_01_53"}
                             )
@@ -12347,7 +12459,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_32", northSprite = "roofs_02_37"}
                             ),
@@ -12365,7 +12478,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_33", northSprite = "roofs_02_36"}
                             ),
@@ -12383,7 +12497,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_34", northSprite = "roofs_02_35"}
                             ),
@@ -12401,7 +12516,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_40", northSprite = "roofs_02_40"}
                             ),
@@ -12419,7 +12535,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_41", northSprite = "roofs_02_41"}
                             ),
@@ -12437,7 +12554,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_42", northSprite = "roofs_02_42"}
                             ),
@@ -12455,7 +12573,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_43", northSprite = "roofs_02_43"}
                             ),
@@ -12473,7 +12592,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_44", northSprite = "roofs_02_44"}
                             ),
@@ -12491,7 +12611,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_45", northSprite = "roofs_02_45"}
                             ),
@@ -12509,7 +12630,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_56", northSprite = "roofs_02_61"}
                             ),
@@ -12527,7 +12649,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_57", northSprite = "roofs_02_60"}
                             ),
@@ -12545,7 +12668,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_58", northSprite = "roofs_02_59"}
                             ),
@@ -12563,7 +12687,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_38", northSprite = "roofs_02_39"}
                             ),
@@ -12581,7 +12706,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_52", northSprite = "roofs_02_52"}
                             ),
@@ -12599,7 +12725,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {sprite = "roofs_02_53", northSprite = "roofs_02_53"}
                             )
@@ -12623,7 +12750,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_16", 
@@ -12646,7 +12774,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_17", 
@@ -12669,7 +12798,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_22", 
@@ -12692,7 +12822,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_18", 
@@ -12812,7 +12943,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_80", 
@@ -12835,7 +12967,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_81", 
@@ -12858,7 +12991,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_86", 
@@ -12881,7 +13015,8 @@ BuildingMenu.Tabs = {
                                     blockAllTheSquare = false,
                                     renderFloorHelper = true,
                                     canPassThrough = true,
-                                    canBarricade = false
+                                    canBarricade = false,
+                                    isCorner = true
                                 },
                                 {
                                     sprite = "location_military_tent_01_82", 
@@ -22900,9 +23035,9 @@ BuildingMenu.Tabs = {
                                     completionSound = "BuildMetalStructureMedium",
                                     containerType = "shelves",
                                     needToBeAgainstWall = true,
-                                    canBeAlwaysPlaced = false,
                                     renderFloorHelper = true,
-                                    buildLow = true
+                                    canBeAlwaysPlaced = true,
+                                    blockAllTheSquare = false,
                                 },
                                 {
                                     sprite = "furniture_shelving_01_29",

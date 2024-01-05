@@ -3,7 +3,7 @@ module Base
 
 	recipe IGPrepareGlassShards {
         RoastingPan,
-        Moveables.brokenglass_1_0/Moveables.brokenglass_1_1/Moveables.brokenglass_1_2/Moveables.brokenglass_1_3,
+        Moveables.brokenglass_1_0/Moveables.brokenglass_1_1/Moveables.brokenglass_1_2/Moveables.brokenglass_1_3/Base.brokenglass_1_0/Base.brokenglass_1_1/Base.brokenglass_1_2/Base.brokenglass_1_3,
         Result: PanWithGlassShards,
         Time: 50.0,
         NeedToBeLearn: True,

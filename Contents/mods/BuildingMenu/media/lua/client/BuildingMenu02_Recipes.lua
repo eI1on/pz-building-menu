@@ -3264,45 +3264,11 @@ BuildingMenu.HighWoodenFenceRecipe = {
     useConsumable = {
         {
             Consumable = "Base.Dirtbag",
-            Amount = 4
-        },
-        {
-            Consumable = "Base.BucketWaterFull",
-            Amount = 25
-        }
-    },
-    skills = {
-        {
-            Skill = "Woodwork",
-            Level = 4,
-            Xp = 15
-        }
-    }
-}
-
-BuildingMenu.HighWoodenFenceRecipe = {
-    neededTools = {
-        "Hammer",
-        "Shovel"
-    },
-    neededMaterials = {
-        {
-            Material = "Base.Plank",
-            Amount = 5
-        },
-        {
-            Material = "Base.Nails",
-            Amount = 10
-        }
-    },
-    useConsumable = {
-        {
-            Consumable = "Base.Dirtbag",
             Amount = 1
         },
         {
             Consumable = "Base.BucketWaterFull",
-            Amount = 25
+            Amount = 10
         }
     },
     skills = {
@@ -5443,3 +5409,76 @@ BuildingMenu.MetalChairRecipe = {
 }
 
 
+BuildingMenu.BigLogWallRecipe = {
+    neededTools = {
+        "Hammer"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Log",
+            Amount = 4
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 8
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 3,
+            Xp = 20
+        }
+    }
+}
+
+BuildingMenu.SmallLogWallRecipe = {
+    neededTools = {
+        "Hammer"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Log",
+            Amount = 2
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 6
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 2,
+            Xp = 15
+        }
+    }
+}
+
+
+BuildingMenu.PrimitveBedRecipe = {
+    neededTools = {
+        "Hammer"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Log",
+            Amount = 2
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 4
+        },
+        {
+            Material = "Base.Twigs",
+            Amount = 10
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 2,
+            Xp = 15
+        }
+    }
+}

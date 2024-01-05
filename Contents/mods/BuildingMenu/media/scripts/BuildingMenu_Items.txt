@@ -129,6 +129,21 @@ module Base
         WorldStaticModel = GlassPane,
     }
 
+
+    /* Secret Entrances Recipes */
+    item BMMagazineSecretEntrances {
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = BMMagazineSecretEntrances,
+        Icon = MagazineBlacksmith1,
+        TeachedRecipes = Build Secret Entrance,
+        ReplaceOnUse = BMMagazineSecretEntrances,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        Tooltip = Tooltip_BMMagazineSecretEntrances,
+    }
+
     /* Glass Recipes */
     item IGMagazineGlass {
         weight = 0.1,

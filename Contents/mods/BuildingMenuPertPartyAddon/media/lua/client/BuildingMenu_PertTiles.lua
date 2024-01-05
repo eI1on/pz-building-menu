@@ -1047,45 +1047,6 @@ BuildingMenu.addObjectsToCategories(
 )
 
 
-local pertFridgesObjects = {
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Fridges",
-        BuildingMenu.onBuildPopsicleFridge,
-        BuildingMenu.FridgeRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            buildLow = true,
-            canBeAlwaysPlaced = true,
-            renderFloorHelper = false,
-            containerType = "fridge",
-            dismantable = true
-        },
-        {
-            sprite = "pert_re-phoenix_3_47",
-            sprite2 = "pert_re-phoenix_3_46",
-            northSprite1 = "pert_re-phoenix_3_44",
-            northSprite2 = "pert_re-phoenix_3_45"
-        }
-    )
-}
-
-BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Appliances"),
-    "pert_re-phoenix_3_47",
-    getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
-    "pert_re-phoenix_3_47",
-    pertFridgesObjects
-)
-
-
 local function addChristmasDecorationsToMenu()
     local pertGingerBreadWalls= {
         BuildingMenu.createObject(
@@ -2079,3 +2040,49 @@ local function addChristmasDecorationsToMenu()
     )
 end
 addChristmasDecorationsToMenu()
+
+
+local function addFridgeAppliancesToMenu()
+    local pertFridgesObjects = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Fridges",
+            BuildingMenu.onBuildPopsicleFridge,
+            BuildingMenu.FridgeRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildLow = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                containerType = "fridge",
+                dismantable = true
+            },
+            {
+                sprite = "pert_re-phoenix_3_47",
+                sprite2 = "pert_re-phoenix_3_46",
+                northSprite1 = "pert_re-phoenix_3_44",
+                northSprite2 = "pert_re-phoenix_3_45"
+            }
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Appliances"),
+        "pert_re-phoenix_3_47",
+        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "pert_re-phoenix_3_47",
+        pertFridgesObjects
+    )
+end
+local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.fridgeAppliances then
+        addFridgeAppliancesToMenu()
+    end
+end
+Events.OnGameStart.Add(addCategoriesToBuildingMenu)
