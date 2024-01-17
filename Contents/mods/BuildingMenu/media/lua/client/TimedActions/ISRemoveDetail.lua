@@ -1,8 +1,8 @@
 require 'BuildingMenu01_Main'
 require "TimedActions/ISBaseTimedAction"
 
-local RemovableWallDetailingTiles = require 'ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require'ValidTrafficLineTiles'
+local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
+local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
 
 ISRemoveDetail = ISBaseTimedAction:derive("ISRemoveDetail")
 

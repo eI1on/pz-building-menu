@@ -26,7 +26,7 @@ end
 function ISPopsicleFridge:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
-	self:setInfo(self.sq, north, sprite, self);
+	self:setInfo(self.sq, north, sprite);
 
 	-- name of our 2 sprites needed for the rest of the furniture
 	local spriteAName = self.northSprite2;
@@ -46,7 +46,7 @@ function ISPopsicleFridge:create(x, y, z, north, sprite)
 
 	local oldModData = self.modData
 	self.modData = {}
-	self:setInfo(squareA, north, spriteAName, self);
+	self:setInfo(squareA, north, spriteAName);
 
 	self.modData = oldModData
 	buildUtil.consumeMaterial(self);

@@ -1,5 +1,5 @@
-local RemovableWallDetailingTiles = require 'ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require'ValidTrafficLineTiles'
+local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
+local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
 
 ISRemoveDetailCursor = ISBuildingObject:derive("ISRemoveDetailCursor")
 

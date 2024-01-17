@@ -1,0 +1,8 @@
+ContextMenu_EN = {
+
+  ContextMenu_Open_Safe = "Open Safe",
+  ContextMenu_Close_Safe = "Close Safe",
+  ContextMenu_Set_Safe_Code = "Set Safe Code",
+  ContextMenu_Reset_Lock = "Reset Safe Code",
+  
+}

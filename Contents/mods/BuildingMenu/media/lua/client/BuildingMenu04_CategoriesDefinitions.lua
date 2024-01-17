@@ -22,7 +22,7 @@ function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon
     local category = findOrCreateItem(tab.categories, "categoryName", categoryName, {categoryName = categoryName, subcategories = {}})
 
     if categoryIcon ~= nil and categoryIcon ~= "" then
-        category.categoryIcon = categoryIcon
+        category.categoryIcon = category.categoryIcon or categoryIcon
     end
 
     local subcategory = findOrCreateItem(category.subcategories, "subcategoryName", subcategoryName, {subcategoryName = subcategoryName, objects = {}})
@@ -21308,111 +21308,111 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             -- fanta street markings
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_White_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintWhite,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {sprite = "fanta_street_markings_01_0", northSprite = "fanta_street_markings_01_1"}
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_White_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintWhite,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {sprite = "fanta_street_markings_01_8", northSprite = "fanta_street_markings_01_9"}
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_White_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintWhite,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {
-                                    sprite = "fanta_street_markings_01_48",
-                                    northSprite = "fanta_street_markings_01_49",
-                                    eastSprite = "fanta_street_markings_01_51",
-                                    southSprite = "fanta_street_markings_01_50"
-                                }
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_White_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintWhite,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {sprite = "fanta_street_markings_01_57", northSprite = "fanta_street_markings_01_56"}
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_White_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildDoubleTileFurniture,
-                                BuildingMenu.PaintWhite,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {
-                                    sprite = "fanta_street_markings_01_42",
-                                    sprite2 = "fanta_street_markings_01_43",
-                                    northSprite = "fanta_street_markings_01_40",
-                                    northSprite2 = "fanta_street_markings_01_41"
-                                }
-                            )
+                        --     BuildingMenu.createObject(
+                        --         "Tooltip_BuildingMenuObj_White_Markings",
+                        --         "Tooltip_Road_Line_Generic",
+                        --         BuildingMenu.onBuildFloorOverlay,
+                        --         BuildingMenu.PaintWhite,
+                        --         true,
+                        --         {
+                        --             actionAnim = "paint",
+                        --             noNeedHammer = true,
+                        --             craftingBank = "Painting",
+                        --             needToBeAgainstWall = false,
+                        --             blockAllTheSquare = false,
+                        --             canPassThrough = true,
+                        --             canBarricade = false,
+                        --             isThumpable = true,
+                        --             isCorner = true
+                        --         },
+                        --         {sprite = "fanta_street_markings_01_0", northSprite = "fanta_street_markings_01_1"}
+                        --     ),
+                        --     BuildingMenu.createObject(
+                        --         "Tooltip_BuildingMenuObj_White_Markings",
+                        --         "Tooltip_Road_Line_Generic",
+                        --         BuildingMenu.onBuildFloorOverlay,
+                        --         BuildingMenu.PaintWhite,
+                        --         true,
+                        --         {
+                        --             actionAnim = "paint",
+                        --             noNeedHammer = true,
+                        --             craftingBank = "Painting",
+                        --             needToBeAgainstWall = false,
+                        --             blockAllTheSquare = false,
+                        --             canPassThrough = true,
+                        --             canBarricade = false,
+                        --             isThumpable = true,
+                        --             isCorner = true
+                        --         },
+                        --         {sprite = "fanta_street_markings_01_8", northSprite = "fanta_street_markings_01_9"}
+                        --     ),
+                        --     BuildingMenu.createObject(
+                        --         "Tooltip_BuildingMenuObj_White_Markings",
+                        --         "Tooltip_Road_Line_Generic",
+                        --         BuildingMenu.onBuildFloorOverlay,
+                        --         BuildingMenu.PaintWhite,
+                        --         true,
+                        --         {
+                        --             actionAnim = "paint",
+                        --             noNeedHammer = true,
+                        --             craftingBank = "Painting",
+                        --             needToBeAgainstWall = false,
+                        --             blockAllTheSquare = false,
+                        --             canPassThrough = true,
+                        --             canBarricade = false,
+                        --             isThumpable = true,
+                        --             isCorner = true
+                        --         },
+                        --         {
+                        --             sprite = "fanta_street_markings_01_48",
+                        --             northSprite = "fanta_street_markings_01_49",
+                        --             eastSprite = "fanta_street_markings_01_51",
+                        --             southSprite = "fanta_street_markings_01_50"
+                        --         }
+                        --     ),
+                        --     BuildingMenu.createObject(
+                        --         "Tooltip_BuildingMenuObj_White_Markings",
+                        --         "Tooltip_Road_Line_Generic",
+                        --         BuildingMenu.onBuildFloorOverlay,
+                        --         BuildingMenu.PaintWhite,
+                        --         true,
+                        --         {
+                        --             actionAnim = "paint",
+                        --             noNeedHammer = true,
+                        --             craftingBank = "Painting",
+                        --             needToBeAgainstWall = false,
+                        --             blockAllTheSquare = false,
+                        --             canPassThrough = true,
+                        --             canBarricade = false,
+                        --             isThumpable = true,
+                        --             isCorner = true
+                        --         },
+                        --         {sprite = "fanta_street_markings_01_57", northSprite = "fanta_street_markings_01_56"}
+                        --     ),
+                        --     BuildingMenu.createObject(
+                        --         "Tooltip_BuildingMenuObj_White_Markings",
+                        --         "Tooltip_Road_Line_Generic",
+                        --         BuildingMenu.onBuildDoubleTileFurniture,
+                        --         BuildingMenu.PaintWhite,
+                        --         true,
+                        --         {
+                        --             actionAnim = "paint",
+                        --             noNeedHammer = true,
+                        --             craftingBank = "Painting",
+                        --             needToBeAgainstWall = false,
+                        --             blockAllTheSquare = false,
+                        --             canPassThrough = true,
+                        --             canBarricade = false,
+                        --             isThumpable = true,
+                        --             isCorner = true
+                        --         },
+                        --         {
+                        --             sprite = "fanta_street_markings_01_42",
+                        --             sprite2 = "fanta_street_markings_01_43",
+                        --             northSprite = "fanta_street_markings_01_40",
+                        --             northSprite2 = "fanta_street_markings_01_41"
+                        --         }
+                        --     )
                         }
                     },
                     {
@@ -21468,111 +21468,111 @@ BuildingMenu.Tabs = {
                                 }
                             ),
                             -- fanta street markings
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Yellow_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintYellow,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {sprite = "fanta_street_markings_01_2", northSprite = "fanta_street_markings_01_3"}
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Yellow_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintYellow,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {sprite = "fanta_street_markings_01_10", northSprite = "fanta_street_markings_01_11"}
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Yellow_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintYellow,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {
-                                    sprite = "fanta_street_markings_01_52",
-                                    northSprite = "fanta_street_markings_01_53",
-                                    eastSprite = "fanta_street_markings_01_55",
-                                    southSprite = "fanta_street_markings_01_54"
-                                }
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Yellow_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildFloorOverlay,
-                                BuildingMenu.PaintYellow,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {sprite = "fanta_street_markings_01_59", northSprite = "fanta_street_markings_01_58"}
-                            ),
-                            BuildingMenu.createObject(
-                                "Tooltip_BuildingMenuObj_Yellow_Markings",
-                                "Tooltip_Road_Line_Generic",
-                                BuildingMenu.onBuildDoubleTileFurniture,
-                                BuildingMenu.PaintYellow,
-                                true,
-                                {
-                                    actionAnim = "paint",
-                                    noNeedHammer = true,
-                                    craftingBank = "Painting",
-                                    needToBeAgainstWall = false,
-                                    blockAllTheSquare = false,
-                                    canPassThrough = true,
-                                    canBarricade = false,
-                                    isThumpable = true,
-                                    isCorner = true
-                                },
-                                {
-                                    sprite = "fanta_street_markings_01_46",
-                                    sprite2 = "fanta_street_markings_01_47",
-                                    northSprite = "fanta_street_markings_01_44",
-                                    northSprite2 = "fanta_street_markings_01_45"
-                                }
-                            )
+                            -- BuildingMenu.createObject(
+                            --     "Tooltip_BuildingMenuObj_Yellow_Markings",
+                            --     "Tooltip_Road_Line_Generic",
+                            --     BuildingMenu.onBuildFloorOverlay,
+                            --     BuildingMenu.PaintYellow,
+                            --     true,
+                            --     {
+                            --         actionAnim = "paint",
+                            --         noNeedHammer = true,
+                            --         craftingBank = "Painting",
+                            --         needToBeAgainstWall = false,
+                            --         blockAllTheSquare = false,
+                            --         canPassThrough = true,
+                            --         canBarricade = false,
+                            --         isThumpable = true,
+                            --         isCorner = true
+                            --     },
+                            --     {sprite = "fanta_street_markings_01_2", northSprite = "fanta_street_markings_01_3"}
+                            -- ),
+                            -- BuildingMenu.createObject(
+                            --     "Tooltip_BuildingMenuObj_Yellow_Markings",
+                            --     "Tooltip_Road_Line_Generic",
+                            --     BuildingMenu.onBuildFloorOverlay,
+                            --     BuildingMenu.PaintYellow,
+                            --     true,
+                            --     {
+                            --         actionAnim = "paint",
+                            --         noNeedHammer = true,
+                            --         craftingBank = "Painting",
+                            --         needToBeAgainstWall = false,
+                            --         blockAllTheSquare = false,
+                            --         canPassThrough = true,
+                            --         canBarricade = false,
+                            --         isThumpable = true,
+                            --         isCorner = true
+                            --     },
+                            --     {sprite = "fanta_street_markings_01_10", northSprite = "fanta_street_markings_01_11"}
+                            -- ),
+                            -- BuildingMenu.createObject(
+                            --     "Tooltip_BuildingMenuObj_Yellow_Markings",
+                            --     "Tooltip_Road_Line_Generic",
+                            --     BuildingMenu.onBuildFloorOverlay,
+                            --     BuildingMenu.PaintYellow,
+                            --     true,
+                            --     {
+                            --         actionAnim = "paint",
+                            --         noNeedHammer = true,
+                            --         craftingBank = "Painting",
+                            --         needToBeAgainstWall = false,
+                            --         blockAllTheSquare = false,
+                            --         canPassThrough = true,
+                            --         canBarricade = false,
+                            --         isThumpable = true,
+                            --         isCorner = true
+                            --     },
+                            --     {
+                            --         sprite = "fanta_street_markings_01_52",
+                            --         northSprite = "fanta_street_markings_01_53",
+                            --         eastSprite = "fanta_street_markings_01_55",
+                            --         southSprite = "fanta_street_markings_01_54"
+                            --     }
+                            -- ),
+                            -- BuildingMenu.createObject(
+                            --     "Tooltip_BuildingMenuObj_Yellow_Markings",
+                            --     "Tooltip_Road_Line_Generic",
+                            --     BuildingMenu.onBuildFloorOverlay,
+                            --     BuildingMenu.PaintYellow,
+                            --     true,
+                            --     {
+                            --         actionAnim = "paint",
+                            --         noNeedHammer = true,
+                            --         craftingBank = "Painting",
+                            --         needToBeAgainstWall = false,
+                            --         blockAllTheSquare = false,
+                            --         canPassThrough = true,
+                            --         canBarricade = false,
+                            --         isThumpable = true,
+                            --         isCorner = true
+                            --     },
+                            --     {sprite = "fanta_street_markings_01_59", northSprite = "fanta_street_markings_01_58"}
+                            -- ),
+                            -- BuildingMenu.createObject(
+                            --     "Tooltip_BuildingMenuObj_Yellow_Markings",
+                            --     "Tooltip_Road_Line_Generic",
+                            --     BuildingMenu.onBuildDoubleTileFurniture,
+                            --     BuildingMenu.PaintYellow,
+                            --     true,
+                            --     {
+                            --         actionAnim = "paint",
+                            --         noNeedHammer = true,
+                            --         craftingBank = "Painting",
+                            --         needToBeAgainstWall = false,
+                            --         blockAllTheSquare = false,
+                            --         canPassThrough = true,
+                            --         canBarricade = false,
+                            --         isThumpable = true,
+                            --         isCorner = true
+                            --     },
+                            --     {
+                            --         sprite = "fanta_street_markings_01_46",
+                            --         sprite2 = "fanta_street_markings_01_47",
+                            --         northSprite = "fanta_street_markings_01_44",
+                            --         northSprite2 = "fanta_street_markings_01_45"
+                            --     }
+                            -- )
                         }
                     }
                 }

@@ -1,7 +1,7 @@
 Tooltip_EN = {
     
   Tooltip_BMMagazineSecretEntrances = "Flip through to find your secret escape. Building instructions are located under the Daddy Dirkie and SimonMDs tabs in the Building Menu.",
-  Tooltip_IGMagazineGlass = "...they should at least find you handy",
+  Tooltip_BMMagazineGlass = "...they should at least find you handy",
   Tooltip_AsphaltMixturePowder = "Used to build roads. Requires a bucket of water.",
 
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Grey Stone Wall",

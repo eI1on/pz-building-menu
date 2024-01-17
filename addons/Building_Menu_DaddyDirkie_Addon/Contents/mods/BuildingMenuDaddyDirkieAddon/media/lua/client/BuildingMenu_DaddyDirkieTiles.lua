@@ -518,16 +518,6 @@ local function addDaddyDirkieFencingToMenu()
                 openNorthSprite = "location_farm_accesories_spyjack_01_15"
             }
         ),
-
-
-
-
-
-
-
-
-
-        
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Fence_Post",
             "Tooltip_Wooden_Fence_Gate",

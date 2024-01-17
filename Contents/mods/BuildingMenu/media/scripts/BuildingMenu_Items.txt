@@ -1,70 +1,5 @@
 module Base
 {
-    /* Overwrite Vanilla Items*/
-	item BucketConcreteFull
-	{
-	    DisplayCategory = Material,
-		Weight	=	10,
-		Type	=	Drainable,
-		UseWhileEquipped	=	FALSE,
-		UseDelta	=	0.0625,
-		DisplayName	=	Bucket of Concrete,
-		ReplaceOnDeplete	=	BucketEmpty,
-		ReplaceOnUseOn	=	WaterSource-BucketWaterFull,
-		Icon	=	MetalBucket_Concrete,
-		StaticModel = Bucket,
-		EatType = Bucket,
-		WorldStaticModel = BucketFullConcrete_Ground,
-	}
-
-    item Dirtbag
-	{
-	    DisplayCategory = Material,
-		Weight	=	2,
-		Type	=	Drainable,
-		UseWhileEquipped	=	FALSE,
-		UseDelta	=	0.125,
-		DisplayName	=	Dirt Bag,
-		Icon	=	Sandbag,
-		ReplaceOnDeplete	=	EmptySandbag,
-		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
-		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
-		WorldStaticModel = DirtBag_Ground,
-        Tooltip = Tooltip_item_empty_sack_container,
-	}
-
-	item Sandbag
-	{
-	    DisplayCategory = Material,
-		Weight	=	2,
-		Type	=	Drainable,
-		UseWhileEquipped	=	FALSE,
-		UseDelta	=	0.125,
-		DisplayName	=	Sand Bag,
-		Icon	=	Sandbag,
-		ReplaceOnDeplete	=	EmptySandbag,
-		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
-		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
-		WorldStaticModel = SandBag,
-		Tooltip = Tooltip_item_empty_sack_container,
-	}
-
-	item Gravelbag
-	{
-	    DisplayCategory = Material,
-		Weight	=	2,
-		Type	=	Drainable,
-		UseWhileEquipped	=	FALSE,
-		UseDelta	=	0.125,
-		DisplayName	=	Gravel Bag,
-		Icon	=	Gravelbag,
-		ReplaceOnDeplete	=	EmptySandbag,
-		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
-		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
-		WorldStaticModel = GravelBag,
-		Tooltip = Tooltip_item_empty_sack_container,
-	}
-
     /* Asphalt Recipes */
     item AsphaltMixturePowder
 	{
@@ -145,29 +80,29 @@ module Base
     }
 
     /* Glass Recipes */
-    item IGMagazineGlass {
+    item BMMagazineGlass {
         weight = 0.1,
         Type = Literature,
-        DisplayName = IGMagazineGlass,
-        Icon = IGMagazineGlass,
-        TeachedRecipes = IGPrepareGlassShards;IGUnprepareGlassShards;IGRemoveGlassPane,
-        ReplaceOnUse = IGMagazineGlass,
+        DisplayName = BMMagazineGlass,
+        Icon = BMMagazineGlass,
+        TeachedRecipes = BMPrepareGlassShards;BMUnprepareGlassShards;BMRemoveGlassPane,
+        ReplaceOnUse = BMMagazineGlass,
         DisplayCategory = SkillBook,
-        StaticModel = IGMagazine,
+        StaticModel = BMMagazine,
         WorldStaticModel = MagazineGlass,
-        Tooltip = Tooltip_IGMagazineGlass,
+        Tooltip = Tooltip_BMMagazineGlass,
     }
 
     /* Car Recipes */
-    item IGMagazineCars {
+    item BMMagazineCars {
         weight = 0.1,
         Type = Literature,
-        DisplayName = IGMagazineCars,
-        Icon = IGMagazineCar,
-        TeachedRecipes = IGWindshield1;IGWindshield2;IGWindshield3;IGRearWindshield1;IGRearWindshield2;IGRearWindshield3;IGFrontWindow1;IGFrontWindow2;IGFrontWindow3;IGRearWindow1;IGRearWindow2;IGRearWindow3,
-        ReplaceOnUse = IGMagazineCars,
+        DisplayName = BMMagazineCars,
+        Icon = BMMagazineCar,
+        TeachedRecipes = BMWindshield1;BMWindshield2;BMWindshield3;BMRearWindshield1;BMRearWindshield2;BMRearWindshield3;BMFrontWindow1;BMFrontWindow2;BMFrontWindow3;BMRearWindow1;BMRearWindow2;BMRearWindow3,
+        ReplaceOnUse = BMMagazineCars,
         DisplayCategory = SkillBook,
-        StaticModel = IGMagazine,
+        StaticModel = BMMagazine,
         WorldStaticModel = MagazineCar,
     }
 }

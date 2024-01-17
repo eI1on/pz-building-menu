@@ -1,7 +1,7 @@
 module Base
 {
 
-	recipe IGPrepareGlassShards {
+	recipe BMPrepareGlassShards {
         RoastingPan,
         Moveables.brokenglass_1_0/Moveables.brokenglass_1_1/Moveables.brokenglass_1_2/Moveables.brokenglass_1_3/Base.brokenglass_1_0/Base.brokenglass_1_1/Base.brokenglass_1_2/Base.brokenglass_1_3,
         Result: PanWithGlassShards,
@@ -11,7 +11,7 @@ module Base
     }
 
 
-    recipe IGUnprepareGlassShards {
+    recipe BMUnprepareGlassShards {
         PanWithGlassShards,
         Time: 50.0,
         Result: Moveables.brokenglass_1_0,
@@ -21,7 +21,7 @@ module Base
     }
 
 
-    recipe IGRemoveGlassPane {
+    recipe BMRemoveGlassPane {
         PanWithGlassPane,
         Time: 30.0,
         Result: GlassPane,
@@ -33,7 +33,7 @@ module Base
     }
 
 
-	recipe IGSmashGlassJar {
+	recipe BMSmashGlassJar {
         keep [Recipe.GetItemTypes.Hammer],
         BeerEmpty/WineEmpty2/WhiskeyEmpty/WineEmpty/RemouladeEmpty/EmptyJar=2,
         Result: Moveables.brokenglass_1_0,
@@ -45,7 +45,7 @@ module Base
     }
 
 
-    recipe IGSmashGlassPane {
+    recipe BMSmashGlassPane {
         keep [Recipe.GetItemTypes.Hammer],
         GlassPane,
         Result: Moveables.brokenglass_1_0,
@@ -57,7 +57,7 @@ module Base
     }
 
 
-    recipe IGSmashWindshield {
+    recipe BMSmashWindshield {
         keep [Recipe.GetItemTypes.Hammer],
         Windshield1/Windshield2/Windshield3/RearWindshield1/RearWindshield2/RearWindshield3,
         Result: Moveables.brokenglass_1_0,
@@ -69,7 +69,7 @@ module Base
     }
 
 
-    recipe IGSmashWindows {
+    recipe BMSmashWindows {
         keep [Recipe.GetItemTypes.Hammer],
         FrontWindow1/FrontWindow2/FrontWindow3/RearWindow1/RearWindow2/RearWindow3,
         Result: Moveables.brokenglass_1_0,

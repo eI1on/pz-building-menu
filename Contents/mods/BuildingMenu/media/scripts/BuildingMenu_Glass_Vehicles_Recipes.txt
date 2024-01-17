@@ -2,7 +2,7 @@ module Base
 {
 
 	/* Standard Vehicles */
-    recipe IGWindshield1 {
+    recipe BMWindshield1 {
         keep Scalpel,
         DuctTape=3,
         GlassPane=2,
@@ -13,7 +13,7 @@ module Base
         Time: 900.0,
         Category: Windows,
     }
-    recipe IGRearWindshield1 {
+    recipe BMRearWindshield1 {
         keep Scalpel,
         DuctTape=3,
         GlassPane=2,
@@ -24,7 +24,7 @@ module Base
         Time: 900.0,
         Category: Windows,
     }
-    recipe IGFrontWindow1 {
+    recipe BMFrontWindow1 {
         keep Scalpel,
         GlassPane,
         Result:FrontWindow1,
@@ -34,7 +34,7 @@ module Base
         Time: 600.0,
         Category: Windows,
     }
-    recipe IGRearWindow1 {
+    recipe BMRearWindow1 {
         keep Scalpel,
         GlassPane,
         Result:RearWindow1,
@@ -47,7 +47,7 @@ module Base
 
 
     /* Heavy-Duty Vehicles */
-    recipe IGWindshield2 {
+    recipe BMWindshield2 {
         keep Scalpel,
         DuctTape=3,
         GlassPane=2,
@@ -58,7 +58,7 @@ module Base
         Time: 900.0,
         Category: Windows,
     }
-    recipe IGRearWindshield2 {
+    recipe BMRearWindshield2 {
         keep Scalpel,
         DuctTape=3,
         GlassPane=2,
@@ -69,7 +69,7 @@ module Base
         Time: 900.0,
         Category: Windows,
     }
-    recipe IGFrontWindow2 {
+    recipe BMFrontWindow2 {
         keep Scalpel,
         GlassPane,
         Result:FrontWindow2,
@@ -79,7 +79,7 @@ module Base
         Time: 600.0,
         Category: Windows,
     }
-    recipe IGRearWindow2 {
+    recipe BMRearWindow2 {
         keep Scalpel,
         GlassPane,
         Result:RearWindow2,
@@ -92,7 +92,7 @@ module Base
 
 
     /* Sport Vehicles */
-    recipe IGWindshield3 {
+    recipe BMWindshield3 {
         keep Scalpel,
         DuctTape=3,
         GlassPane=2,
@@ -103,7 +103,7 @@ module Base
         Time: 900.0,
         Category: Windows,
     }
-    recipe IGRearWindshield3 {
+    recipe BMRearWindshield3 {
         keep Scalpel,
         DuctTape=3,
         GlassPane=2,
@@ -114,7 +114,7 @@ module Base
         Time: 900.0,
         Category: Windows,
     }
-    recipe IGFrontWindow3 {
+    recipe BMFrontWindow3 {
         keep Scalpel,
         GlassPane,
         Result:FrontWindow3,
@@ -124,7 +124,7 @@ module Base
         Time: 600.0,
         Category: Windows,
     }
-    recipe IGRearWindow3 {
+    recipe BMRearWindow3 {
         keep Scalpel,
         GlassPane,
         Result:RearWindow3,

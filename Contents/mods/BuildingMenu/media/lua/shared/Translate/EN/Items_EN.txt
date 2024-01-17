@@ -6,8 +6,8 @@ Items_EN = {
     DisplayName_GlassPane = "Glass Pane",
 
     /* Magazines */
-    DisplayName_IGMagazineGlass = "Handyman Corner's Kitchen Kilns",
-    DisplayName_IGMagazineCars = "Precision Vehicle Windows and Crafting",
+    DisplayName_BMMagazineGlass = "Handyman Corner's Kitchen Kilns",
+    DisplayName_BMMagazineCars = "Precision Vehicle Windows and Crafting",
     DisplayName_BMMagazineSecretEntrances = "Secret Passageways Monthly",
 
 }

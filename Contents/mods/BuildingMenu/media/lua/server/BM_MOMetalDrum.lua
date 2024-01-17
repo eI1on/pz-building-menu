@@ -2,10 +2,9 @@ if isClient() then return end
 
 local function genTable()
 	local ret = {[0] = {}, {}, {}, {}}
-	ret.crafted_01_24 = ret[0]
-	ret.crafted_01_25 = ret[1]
-	ret.crafted_01_26 = ret[2]
-	ret.crafted_01_27 = ret[3]
+	for i = 24, 27 do
+		ret["crafted_01_" .. i] = ret[i - 24]
+	end
 	return ret
 end
 
@@ -13,16 +12,15 @@ local onNew = genTable()
 local onLoad = genTable()
 
 local function populate(tbl, sprite, func, prio)
-	local data = tbl[sprite]
-	if data then
-		data.func = func
-		data.prio = prio
+	if tbl[sprite] then
+		tbl[sprite].func = func
+		tbl[sprite].prio = prio
 		tbl[sprite] = nil
 	end
 end
 
 local fakeMapObjects = {}
-
+local oldMapObjects = MapObjects
 local oldOnNewWithSprite = MapObjects.OnNewWithSprite
 local oldOnLoadWithSprite = MapObjects.OnLoadWithSprite
 
@@ -36,20 +34,19 @@ function fakeMapObjects.OnLoadWithSprite(sprite, func, prio, ...)
 	return oldOnLoadWithSprite(sprite, func, prio, ...)
 end
 
-local oldMapObjects = MapObjects
 setmetatable(fakeMapObjects, { __index = oldMapObjects })
 MapObjects = fakeMapObjects
+
 local needle = "server/Map/MapObjects/MOMetalDrum.lua"
 for i = 0, getLoadedLuaCount() - 1 do
-	local path = getLoadedLua(i)
-	if path:sub(#path - #needle + 1) == needle then
-		reloadLuaFile(path)
+	if getLoadedLua(i):sub(-#needle) == needle then
+		reloadLuaFile(getLoadedLua(i))
 		break
 	end
 end
 MapObjects = oldMapObjects
 
-local customBarrelTiles = unpack(require 'ValidDrums')
+local customBarrelTiles = unpack(require 'BM_ValidDrums')
 local function setupForColour(prefix, begin)
 	for i = begin, begin + 3 do
 		local params = onNew[i % 4]
@@ -60,7 +57,7 @@ local function setupForColour(prefix, begin)
 end
 
 Events.OnLoadedTileDefinitions.Add(function()
-	for _,set in ipairs(customBarrelTiles) do
+	for _, set in ipairs(customBarrelTiles) do
 		for i = set.first, set.last, 4 do
 			setupForColour(set.prefix, i)
 		end

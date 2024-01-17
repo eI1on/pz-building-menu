@@ -33,6 +33,7 @@ function BM_Utils.unsetSpriteProperty(props, propertyName)
         props:UnSet(propertyName)
     else
         print("[Building Menu] Invalid parameter type for UnSet function")
+        print(propertyName)
     end
 end
 

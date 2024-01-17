@@ -1,0 +1,8 @@
+IGUI_EN = {
+
+    IGUI_BuildingMenuSubCat_Containers_Safes = "Safes",
+
+    IGUI_LockDial_Controls = "Controls: Left(A)/Right(D) keys or Mouse. <BR>Unlock Mechanism: Unlock the safe by aligning the dial with the correct number for 1 second. Slightly adjust the dial after the time elapses. <BR><BR>",
+    IGUI_LockDial_NewCode = "Controls: Left(A)/Right(D) keys or Mouse. <BR>Setting New Code: Press 'OK' after each selection to set each digit of the new code. <BR><BR><BR>",
+    
+}

@@ -1,6 +1,6 @@
 require("BuildingObjects/ISRemovePlantCursor")
 
-local RemovableWallVinesTiles = require 'ValidWallVineTiles'
+local RemovableWallVinesTiles = require 'BM_ValidWallVineTiles'
 
 local originalGetRemovableObject = ISRemovePlantCursor.getRemovableObject
 

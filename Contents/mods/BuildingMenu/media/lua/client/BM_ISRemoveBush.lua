@@ -1,6 +1,6 @@
 require("TimedActions/ISRemoveBush")
 
-local RemovableWallVinesTiles = require 'ValidWallVineTiles'
+local RemovableWallVinesTiles = require 'BM_ValidWallVineTiles'
 
 local originalGetWallVineObject = ISRemoveBush.getWallVineObject
 

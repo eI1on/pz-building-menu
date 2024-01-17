@@ -1,0 +1,59 @@
+version=1
+id=3137091536
+title=Building Menu - Daddy Dirkie Dirk Tiles Addon
+description=[h1] Building Menu - Daddy Dirkie Dirk Tiles Addon [/h1]
+description=Ready to take your building experience up a notch? This is an add-on for the Building Menu that adds buildable objects from Daddy Dirkie Dirk Tilepack.
+description=
+description=
+description=[hr][/hr]
+description=
+description=[h1]Over 1500 buildable objects:[/h1]
+description=[b] Carpentry [/b]
+description=[list]
+description=[*]
+description=[*] [i] and much more [/i]
+description=[/list]
+description=
+description=[hr][/hr]
+description=[h1] Frequently Asked Question: [/h1]
+description=[h2] Is it compatible with Multiplayer? [/h2]
+description= Yes! It has been extensively tested on a MP server!
+description=
+description=[h2] Does it work on existing saves? [/h2]
+description= Absolutely! Enable or disable mid-save without issues.
+description=
+description=[h2] Does it work for all game versions? [/h2]
+description= Only tested and working on the latest game version (v41.78.16).
+description=
+description=[hr][/hr]
+description=
+description=[h1] Addons: [/h1]
+description=While the Building Menu mod can run as a standalone, I recommend using it alongside other tilepacks mods for a richer experience ([i] each addon needs the tilepack loaded before[/i])
+description=
+description=Be sure to load the Building Menu Mod before any other of the addons to avoid any hiccups.
+description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3067798182][img] https://imgur.com/q5TVJpQ.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://imgur.com/BiKcEU6.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://imgur.com/otmitKV.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://imgur.com/bDIWwfr.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://imgur.com/r1DqTqW.png [/img][/url]
+description=
+description=
+description=[h1] Incompatibilities: [/h1]
+description=This mod inherits its core from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=515555911]More Builds[/url] by Project Sky. My mod revises object building methods and is [b]incompatible[/b] with More Builds.
+description=
+description=Glass items and methods to crate them are sourced from [url=https://steamcommunity.com/id/orcicorn]Orc[/url]'s mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2800412098]Improvised Glass[/url]. Which is [b]incompatible[/b] with this mod, because the windows are already added to the building menu.
+description=
+description=[h2] Thank You & Stay Safe: [/h2]
+description= Big shoutout to the Dawn of the Dead community for their invaluable support and bug-hunting assistance.
+description= You can find me on their [url=https://discord.gg/dawnpz] Discord [/url] server.
+description=
+description= This mod was crafted with love, I hope it brings joy to your building adventures. And always remember - watch out for those zombies!
+description=
+description=[hr][/hr]
+description=
+description=[h1] Don't forget to rate and favorite! [/h1]
+description=[img] https://imgur.com/eZp8dXD.png [/img]
+description=[quote=author]
+description=This mod's permissions fall under TIS's policy [url=https://theindiestone.com/forums/index.php?/topic/2530-mod-permissions/] On Lockdown [/url]
+description=This mod cannot be modified by anyone else, for anything else, at all, ever. Even if the user disappears, he or she would much rather you didn't touch the fruits of their hard labour.
+description=[/quote]
+description=[url=https://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36479][img] https://i.imgur.com/UJYBoAp.png [/img][/url]
+tags=Build 41;Building;Framework;Interface;Realistic;Textures
+visibility=unlisted

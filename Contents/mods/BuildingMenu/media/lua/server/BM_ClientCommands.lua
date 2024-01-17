@@ -1,8 +1,8 @@
 if isClient() then return end
 
-local RemovableWallVinesTiles = require 'ValidWallVineTiles'
-local RemovableWallDetailingTiles = require 'ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require'ValidTrafficLineTiles'
+local RemovableWallVinesTiles = require 'BM_ValidWallVineTiles'
+local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
+local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
 
 local BM_Commands = {}
 BM_Commands.object = {}
