@@ -143,7 +143,7 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(player, context, worldobjec
 
 end
 Events.OnFillWorldObjectContextMenu.Add(BuildingMenu.OnFillWorldObjectContextMenu)
-Events.OnGameBoot.Add(function() print("[Building Menu] ver:JAN_11_2024") end)
+Events.OnGameBoot.Add(function() print("[Building Menu] ver:JAN_18_2024") end)
 
 --- Gets the player's skills.
 ---@param playerObj IsoPlayer
@@ -502,7 +502,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
 
 
     if ISBuildMenu.cheat then
-        tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat mode active " .. tooltip.description .. BuildingMenu.textCanRotate;
+        tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltip.description .. BuildingMenu.textCanRotate;
         return tooltip, true
     else
         return tooltip, _canBuildResult

@@ -33,4 +33,32 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "IsMovAble", "", true);
     end
+
+    -- Not working, idk why.
+    -- sprites = {
+    --     "edit_ddd_RUS_Forest Survival_01_0",
+    -- }
+    -- for _, sprite in ipairs(sprites) do
+    --     local props = manager:getSprite(sprite):getProperties()
+    --     BM_Utils.unsetSpriteProperty(props, IsoFlagType.NoWallLighting);
+    --     BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedFloor); -- tried with both
+    --     BM_Utils.unsetSpriteProperty(props, "NoWallLighting");
+    --     BM_Utils.unsetSpriteProperty(props, "attachedFloor");
+    -- end
+
+    -- sprites = {
+    --     "edit_ddd_RUS_Forest Survival_01_8",
+    -- }
+    -- for _, sprite in ipairs(sprites) do
+    --     local props = manager:getSprite(sprite):getProperties()
+    --     BM_Utils.unsetSpriteProperty(props, "windowW");
+    -- end
+
+    -- sprites = {
+    --     "edit_ddd_RUS_Forest Survival_01_13",
+    -- }
+    -- for _, sprite in ipairs(sprites) do
+    --     local props = manager:getSprite(sprite):getProperties()
+    --     BM_Utils.unsetSpriteProperty(props, "windowN");
+    -- end
 end)
