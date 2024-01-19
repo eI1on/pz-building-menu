@@ -7167,7 +7167,7 @@ local function addMelosWallsToMenu()
                 modData = {wallType = "wall"}
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_01_104",
+                sprite = "melos_tiles_walls_bathroom_ddd_add_01_40",
                 northSprite = "melos_tiles_walls_bathroom_ddd_add_01_109"
             }
         ),
@@ -7730,7 +7730,7 @@ local function addMelosWallsToMenu()
                 modData = {wallType = "wall"}
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_02_104",
+                sprite = "melos_tiles_walls_bathroom_ddd_add_02_40",
                 northSprite = "melos_tiles_walls_bathroom_ddd_add_02_109"
             }
         ),
@@ -8856,7 +8856,7 @@ local function addMelosWallsToMenu()
                 modData = {wallType = "wall"}
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_04_104",
+                sprite = "melos_tiles_walls_bathroom_ddd_add_04_40",
                 northSprite = "melos_tiles_walls_bathroom_ddd_add_04_109"
             }
         ),
@@ -9419,7 +9419,7 @@ local function addMelosWallsToMenu()
                 modData = {wallType = "wall"}
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_03_104",
+                sprite = "melos_tiles_walls_bathroom_ddd_add_03_40",
                 northSprite = "melos_tiles_walls_bathroom_ddd_add_03_109"
             }
         ),
@@ -9982,7 +9982,7 @@ local function addMelosWallsToMenu()
                 modData = {wallType = "wall"}
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_05_104",
+                sprite = "melos_tiles_walls_bathroom_ddd_add_05_40",
                 northSprite = "melos_tiles_walls_bathroom_ddd_add_05_109"
             }
         ),
