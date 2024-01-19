@@ -9,7 +9,7 @@ description=
 description= To construct the default safes that come with this framework, you'll need the [b]Building Menu[/b] mod. This prerequisite mod allows you to access and build the safes within your world. 
 description= [i] Note: Without it you will not have access to the safes! [/i]
 description=
-description= [b] Animated Sprites:[/b] The sprite changes to reflect the safe's status - open or closed, providing a dynamic visual cue.
+description= [b] Animated Sprites:[/b] The sprite changes to reflect the safe's status: open or closed, providing a dynamic visual cue.
 description=
 description= [b] User-Friendly Instructions:[/b] Clear, step-by-step instructions are integrated within the mechanical lock UI, making it easy to understand.
 description=
@@ -40,4 +40,4 @@ description=This mod cannot be modified by anyone else, for anything else, at al
 description=[/quote]
 description=[url=https://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36479][img] https://i.imgur.com/UJYBoAp.png [/img][/url]
 tags=Build 41;Building;Framework;Interface;Realistic;Textures
-visibility=unlisted
+visibility=public

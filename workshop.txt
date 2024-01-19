@@ -85,9 +85,9 @@ description=
 description=
 description=[hr][/hr]
 description=[h2] Thank You & Stay Safe: [/h2]
-description= 
+description=
 description= Special thanks to [url=https://steamcommunity.com/id/Chuckleberry_Finn]Chuck[/url] for the fantastic poster artwork.
-description= 
+description=
 description= Big shoutout to the Dawn of the Dead community for their invaluable support and bug-hunting assistance.
 description= You can find me on their [url=https://discord.gg/dawnpz] Discord [/url] server.
 description=
@@ -105,4 +105,4 @@ description=This mod cannot be modified by anyone else, for anything else, at al
 description=[/quote]
 description=[url=https://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36479][img] https://i.imgur.com/UJYBoAp.png [/img][/url]
 tags=Build 41;Building;Framework;Interface;Realistic;Textures
-visibility=unlisted
+visibility=public

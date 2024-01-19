@@ -73,4 +73,4 @@ description=This mod cannot be modified by anyone else, for anything else, at al
 description=[/quote]
 description=[url=https://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36479][img] https://i.imgur.com/UJYBoAp.png [/img][/url]
 tags=Build 41;Building;Framework;Interface;Realistic;Textures
-visibility=unlisted
+visibility=public
