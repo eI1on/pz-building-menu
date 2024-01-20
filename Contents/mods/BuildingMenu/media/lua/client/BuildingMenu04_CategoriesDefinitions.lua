@@ -9306,6 +9306,302 @@ BuildingMenu.Tabs = {
                         }
                     },
                     {
+                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Industrial_Walls"),
+                        subCategoryIcon = "industry_01_0",
+                        objects = {
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_White_Industrial_Wall",
+                                "Tooltip_White_Industrial_Wall",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.GreenWhiteBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = false,
+                                    modData = {wallType = "wall"}
+                                },
+                                {
+                                    sprite = "industry_01_0",
+                                    northSprite = "industry_01_1",
+                                    corner = "industry_01_3"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_White_Industrial_Door_Frame",
+                                "Tooltip_White_Industrial_Door_Frame",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.GreenWhiteBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {
+                                    sprite = "industry_01_10",
+                                    northSprite = "industry_01_11",
+                                    corner = "industry_01_3"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_White_Industrial_Window_Frame",
+                                "Tooltip_White_Industrial_Window_Frame",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.GreenWhiteBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = true,
+                                    hoppable = true,
+                                    modData = {wallType = "windowsframe"}
+                                },
+                                {
+                                    sprite = "industry_01_8",
+                                    northSprite = "industry_01_9",
+                                    corner = "industry_01_3"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_White_Industrial_Pillar",
+                                "Tooltip_White_Industrial_Pillar",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.GreenWhiteSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    modData = {wallType = "pillar"}
+                                },
+                                {sprite = "industry_01_3", northSprite = "industry_01_3"}
+                            ),
+
+
+                            
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chestnut_Industrial_Wall",
+                                "Tooltip_Chestnut_Industrial_Wall",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BrownBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = false,
+                                    modData = {wallType = "wall"}
+                                },
+                                {
+                                    sprite = "industry_railroad_05_8",
+                                    northSprite = "industry_railroad_05_9",
+                                    corner = "industry_railroad_05_11"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chestnut_Industrial_Door_Frame",
+                                "Tooltip_Chestnut_Industrial_Door_Frame",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.BrownBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {
+                                    sprite = "industry_railroad_05_18",
+                                    northSprite = "industry_railroad_05_19",
+                                    corner = "industry_railroad_05_11"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chestnut_Industrial_Door_Frame_1",
+                                "Tooltip_Door_Trim",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.BrownSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {sprite = "industry_railroad_05_12", northSprite = "industry_railroad_05_15"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chestnut_Industrial_Door_Frame_2",
+                                "Tooltip_Door_Trim",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.BrownSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {sprite = "industry_railroad_05_13", northSprite = "industry_railroad_05_14"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chestnut_Industrial_Window_Frame",
+                                "Tooltip_Chestnut_Industrial_Window_Frame",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BrownBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = true,
+                                    hoppable = true,
+                                    modData = {wallType = "windowsframe"}
+                                },
+                                {
+                                    sprite = "industry_railroad_05_16",
+                                    northSprite = "industry_railroad_05_17",
+                                    corner = "industry_railroad_05_11"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Chestnut_Industrial_Pillar",
+                                "Tooltip_Chestnut_Industrial_Pillar",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BrownSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    modData = {wallType = "pillar"}
+                                },
+                                {sprite = "industry_railroad_05_11", northSprite = "industry_railroad_05_11"}
+                            ),
+
+
+
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Brown_Industrial_Wall",
+                                "Tooltip_Brown_Industrial_Wall",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BrownBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = false,
+                                    modData = {wallType = "wall"}
+                                },
+                                {
+                                    sprite = "industry_railroad_05_24",
+                                    northSprite = "industry_railroad_05_25",
+                                    corner = "industry_railroad_05_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Brown_Industrial_Door_Frame",
+                                "Tooltip_Brown_Industrial_Door_Frame",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.BrownBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {
+                                    sprite = "industry_railroad_05_34",
+                                    northSprite = "industry_railroad_05_35",
+                                    corner = "industry_railroad_05_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Brown_Industrial_Door_Frame_1",
+                                "Tooltip_Door_Trim",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.BrownSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {sprite = "industry_railroad_05_28", northSprite = "industry_railroad_05_31"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Brown_Industrial_Door_Frame_2",
+                                "Tooltip_Door_Trim",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.BrownSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {sprite = "industry_railroad_05_29", northSprite = "industry_railroad_05_30"}
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Brown_Industrial_Window_Frame",
+                                "Tooltip_Brown_Industrial_Window_Frame",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BrownBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = true,
+                                    hoppable = true,
+                                    modData = {wallType = "windowsframe"}
+                                },
+                                {
+                                    sprite = "industry_railroad_05_32",
+                                    northSprite = "industry_railroad_05_33",
+                                    corner = "industry_railroad_05_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Brown_Industrial_Pillar",
+                                "Tooltip_Brown_Industrial_Pillar",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.BrownSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    modData = {wallType = "pillar"}
+                                },
+                                {sprite = "industry_railroad_05_27", northSprite = "industry_railroad_05_27"}
+                            ),
+                        }
+                    },
+                    {
                         subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass"),
                         subCategoryIcon = "walls_commercial_01_0",
                         objects = {

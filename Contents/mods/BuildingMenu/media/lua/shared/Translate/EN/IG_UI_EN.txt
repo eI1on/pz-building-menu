@@ -59,6 +59,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Walls_Metal_Walls = "Metal Walls",
     IGUI_BuildingMenuSubCat_Walls_Scaffold = "Scaffold",
     IGUI_BuildingMenuSubCat_Walls_Garage_Walls = "Garage Walls",
+    IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Industrial Walls",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Brown Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Black Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Sewer Walls",

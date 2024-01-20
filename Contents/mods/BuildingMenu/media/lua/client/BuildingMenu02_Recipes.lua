@@ -1577,6 +1577,77 @@ BuildingMenu.GreenSmallWoodWallRecipe = {
     }
 }
 
+
+BuildingMenu.GreenWhiteBigWoodWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 6
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 8
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintGreen",
+            Amount = 1
+        },
+        {
+            Consumable = "Base.PaintWhite",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 5,
+            Xp = 30
+        }
+    }
+}
+
+
+BuildingMenu.GreenWhiteSmallWoodWallRecipe = {
+    neededTools = {
+        "Hammer",
+        "Paintbrush"
+    },
+    neededMaterials = {
+        {
+            Material = "Base.Plank",
+            Amount = 3
+        },
+        {
+            Material = "Base.Nails",
+            Amount = 4
+        }
+    },
+    useConsumable = {
+        {
+            Consumable = "Base.PaintGreen",
+            Amount = 1
+        },
+        {
+            Consumable = "Base.PaintWhite",
+            Amount = 1
+        }
+    },
+    skills = {
+        {
+            Skill = "Woodwork",
+            Level = 4,
+            Xp = 25
+        }
+    }
+}
+
+
 BuildingMenu.PurpleBigWoodWallRecipe = {
     neededTools = {
         "Hammer",

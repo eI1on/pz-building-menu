@@ -27,6 +27,13 @@ BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip
 ---@type string
 BuildingMenu.textCanRotate = '<LINE> <RGB:1,1,1>' .. getText('Tooltip_craft_pressToRotate', Keyboard.getKeyName(getCore():getKey('Rotate building')))
 
+---@type string
+BuildingMenu.ghs = " <RGB:" .. getCore():getGoodHighlitedColor():getR() .. "," .. getCore():getGoodHighlitedColor():getG() .. "," .. getCore():getGoodHighlitedColor():getB() .. "> "
+
+---@type string
+BuildingMenu.bhs = " <RGB:" .. getCore():getBadHighlitedColor():getR() .. "," .. getCore():getBadHighlitedColor():getG() .. "," .. getCore():getBadHighlitedColor():getB() .. "> "
+
+
 -- Tags: Screwdriver, CutPlant, DigPlow (eg: HandFork), Sledgehammer, ChopTree (eg: Axe), ClearAshes (eg: Broom), TakeDirt (eg: Shovel), Crowbar, Hammer, RemoveBarricade (eg: Claw Hammer)
 
 --- Definitions of tools used in the building menu.
@@ -290,6 +297,22 @@ BuildingMenu.equipToolSecondary = function(object, player, tool)
     end
 end
 
+
+---@param type string
+---@return InventoryItem
+function BuildingMenu.GetItemInstance(type)
+    if not BuildingMenu.ItemInstances then BuildingMenu.ItemInstances = {}; end
+    local item = BuildingMenu.ItemInstances[type];
+    if not item then
+        item = InventoryItemFactory.CreateItem(type);
+        if item then
+            BuildingMenu.ItemInstances[type] = item;
+            BuildingMenu.ItemInstances[item:getFullType()] = item;
+        end
+    end
+    return item
+end
+
 --- Tooltip check for a specific tool category.
 ---@param inv ItemContainer
 ---@param tool string
@@ -303,8 +326,8 @@ BuildingMenu.tooltipCheckForTool = function(inv, tool, tooltip)
         for _, type in ipairs(toolInfo.types) do
             local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
             if item then
-                tooltip.description = tooltip.description .. ISBuildMenu.ghs .. item:getName() .. ' <LINE>'
-                found = true
+                tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' <LINE>';
+                found = true;
                 break
             end
         end
@@ -314,7 +337,7 @@ BuildingMenu.tooltipCheckForTool = function(inv, tool, tooltip)
         for _, tag in ipairs(toolInfo.tags) do
             local item = inv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
             if item then
-                tooltip.description = tooltip.description .. ISBuildMenu.ghs .. item:getName() .. ' <LINE>'
+                tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' <LINE>'
                 found = true
                 break
             end
@@ -322,7 +345,7 @@ BuildingMenu.tooltipCheckForTool = function(inv, tool, tooltip)
     end
 
     if not found then
-        tooltip.description = tooltip.description .. ISBuildMenu.bhs .. ((toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool) .. ' <LINE>'
+        tooltip.description = tooltip.description .. BuildingMenu.bhs .. ((toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool) .. ' <LINE>'
         return false
     end
     return true
@@ -350,15 +373,19 @@ BuildingMenu.tooltipCheckForMaterial = function(inv, material, amount, tooltip)
             end
         end
 
-        if invItemCount < amount then
-            tooltip.description = tooltip.description .. ISBuildMenu.bhs .. getItemNameFromFullType(material) .. ' ' .. invItemCount .. '/' .. amount .. ' <LINE>'
-            return false
-        else
-            tooltip.description = tooltip.description .. ISBuildMenu.ghs .. getItemNameFromFullType(material) .. ' ' .. invItemCount .. '/' .. amount .. ' <LINE>'
-            return true
+        local item = BuildingMenu.GetItemInstance(material);
+        if item then
+            if invItemCount < amount then
+                tooltip.description = tooltip.description .. BuildingMenu.bhs .. item:getName() .. ' ' .. invItemCount .. '/' .. amount .. ' <LINE>';
+                return false
+            else
+                tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' ' .. invItemCount .. '/' .. amount .. ' <LINE>';
+                return true
+            end
         end
     end
-    tooltip.description = tooltip.description .. ISBuildMenu.bhs .. ' ERROR at tooltipCheckForMaterial' .. ' <LINE>'
+    tooltip.description = tooltip.description .. BuildingMenu.bhs .. ' ERROR at tooltipCheckForMaterial' .. ' <LINE>';
+    return false
 end
 
 --- Tooltip check for a consumable item.
@@ -415,7 +442,7 @@ BuildingMenu.tooltipCheckForConsumable = function(inv, material, amount, tooltip
         isEnough = invItemUses >= amount;
     end
 
-    tooltip.description = tooltip.description .. (isEnough and ISBuildMenu.ghs or ISBuildMenu.bhs) .. text;
+    tooltip.description = tooltip.description .. (isEnough and BuildingMenu.ghs or BuildingMenu.bhs) .. text;
     return isEnough;
 end
 
@@ -492,10 +519,10 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
     if objectRecipe.skills then
         for _, skill in pairs(objectRecipe.skills) do
             if playerSkills[skill.Skill] < skill.Level then
-                tooltip.description = tooltip.description .. ISBuildMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
+                tooltip.description = tooltip.description .. BuildingMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
                 _canBuildResult = false
             else
-                tooltip.description = tooltip.description .. ISBuildMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
+                tooltip.description = tooltip.description .. BuildingMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
             end
         end
     end
