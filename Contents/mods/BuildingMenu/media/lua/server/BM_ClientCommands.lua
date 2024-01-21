@@ -4,7 +4,7 @@ local RemovableWallVinesTiles = require 'BM_ValidWallVineTiles'
 local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
 local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
 
-local BM_Commands = {}
+BM_Commands = {}
 BM_Commands.object = {}
 BM_Commands.Lightpoles = {}
 

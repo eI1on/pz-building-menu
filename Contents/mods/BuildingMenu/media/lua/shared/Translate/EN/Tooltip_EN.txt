@@ -290,6 +290,15 @@ Tooltip_EN = {
   Tooltip_White_Panel_Window_Frame = "An old-fashioned white panel wall with an opening to let in natural light.",
   Tooltip_White_Panel_Pillar = "A pillar made from old-fashioned white panel, designed for structural support.",
 
+  Tooltip_BuildingMenuObj_Wooden_Panel_Wall = "Wooden Panel Wall",
+  Tooltip_BuildingMenuObj_Wooden_Panel_Door_Frame = "Wooden Panel Door Frame",
+  Tooltip_BuildingMenuObj_Wooden_Panel_Window_Frame = "Wooden Panel Window Frame",
+  Tooltip_BuildingMenuObj_Wooden_Panel_Pillar = "Wooden Panel Pillar",
+  Tooltip_Wooden_Panel_Wall = "An old-fashioned wooden panel wall for a classic and elegant appearance.",
+  Tooltip_Wooden_Panel_Door_Frame = "An old-fashioned wooden panel door frame, necessary for door installation.",
+  Tooltip_Wooden_Panel_Window_Frame = "An old-fashioned wooden panel wall with an opening to let in natural light.",
+  Tooltip_Wooden_Panel_Pillar = "A pillar made from old-fashioned wooden panel, designed for structural support.",
+
   Tooltip_BuildingMenuObj_Old_Wood_Panel_Wall = "Old Wood Panel Wall",
   Tooltip_BuildingMenuObj_Old_Wood_Panel_Door_Frame = "Old Wood Panel Door Frame",
   Tooltip_BuildingMenuObj_Old_Wood_Panel_Window_Frame = "Old Wood Panel Window Frame",
@@ -1476,6 +1485,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Rusty_Mesh_Grate = "Rusty Mesh Grate",
   Tooltip_BuildingMenuObj_Steel_Bars_Floor = "Steel Bars",
   Tooltip_BuildingMenuObj_Grey_Industrial_Floor = "Grey Industrial Floor",
+  Tooltip_BuildingMenuObj_Green_Industrial_Floor = "Green Industrial Floor",
   Tooltip_BuildingMenuObj_Brown_Railroad_Metal_Panel = "Brown Railroad Metal Plate",
   Tooltip_BuildingMenuObj_Grey_Railroad_Metal_Panel = "Grey Railraod Metal Plate",
   Tooltip_BuildingMenuObj_Wide_Plank = "Wide Plank",

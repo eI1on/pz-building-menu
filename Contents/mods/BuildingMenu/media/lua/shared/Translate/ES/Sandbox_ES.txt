@@ -1,0 +1,15 @@
+Sandbox_ES = {
+    Sandbox_BuildingMenu = "Menú de construcción",
+     Sandbox_BuildingMenu_isThumpable = "Estructuras que se pueden golpear",
+     Sandbox_BuildingMenu_isThumpable_tooltip = "Desactive <ESPACIO><RGB:1,0.8,0> <RGB:1,1,1><ESPACIO> para que las estructuras construidas usando el menú sean inmunes al daño de los zombis.",
+     Sandbox_BuildingMenu_bathroomAppliances = "Habilitar accesorios de baño",
+     Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilite agregar lavabos, inodoros y otros objetos relacionados con el baño en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+     Sandbox_BuildingMenu_cookingAppliances = "Habilitar electrodomésticos de cocina",
+     Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilitar el acceso a estufas, hornos y otros objetos relacionados con la cocina en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+     Sandbox_BuildingMenu_fridgeAppliances = "Habilitar aparatos de refrigeración",
+     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Habilitar para incluir refrigeradores y congeladores en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+     Sandbox_BuildingMenu_laundryAppliances = "Habilitar electrodomésticos de lavandería",
+     Sandbox_BuildingMenu_laundryAppliances_tooltip = "Habilitar para agregar lavadoras y secadoras en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+     Sandbox_BuildingMenu_metalDrums = "Habilitar tambores de metal",
+     Sandbox_BuildingMenu_metalDrums_tooltip = "Habilitar para agregar tambores metálicos en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+}

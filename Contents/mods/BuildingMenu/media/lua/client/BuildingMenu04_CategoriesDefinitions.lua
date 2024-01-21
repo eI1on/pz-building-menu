@@ -3268,6 +3268,88 @@ BuildingMenu.Tabs = {
                         }
                     },
                     {
+                        subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Wooden_Panel"),
+                        subCategoryIcon = "walls_exterior_wooden_01_24",
+                        objects = {
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wooden_Panel_Wall",
+                                "Tooltip_Wooden_Panel_Wall",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.WhiteBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = false,
+                                    modData = {wallType = "wall"}
+                                },
+                                {
+                                    sprite = "walls_exterior_wooden_01_24",
+                                    northSprite = "walls_exterior_wooden_01_25",
+                                    corner = "walls_exterior_wooden_01_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wooden_Panel_Door_Frame",
+                                "Tooltip_Wooden_Panel_Door_Frame",
+                                BuildingMenu.onBuildDoorFrame,
+                                BuildingMenu.WhiteBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    modData = {wallType = "doorframe"}
+                                },
+                                {
+                                    sprite = "walls_exterior_wooden_01_34",
+                                    northSprite = "walls_exterior_wooden_01_35",
+                                    corner = "walls_exterior_wooden_01_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wooden_Panel_Window_Frame",
+                                "Tooltip_Wooden_Panel_Window_Frame",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.WhiteBigWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true,
+                                    canBarricade = true,
+                                    hoppable = true,
+                                    modData = {wallType = "windowsframe"}
+                                },
+                                {
+                                    sprite = "walls_exterior_wooden_01_32",
+                                    northSprite = "walls_exterior_wooden_01_33",
+                                    corner = "walls_exterior_wooden_01_27"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Wooden_Panel_Pillar",
+                                "Tooltip_Wooden_Panel_Pillar",
+                                BuildingMenu.onBuildWall,
+                                BuildingMenu.WhiteSmallWoodWallRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isCorner = true,
+                                    modData = {wallType = "pillar"}
+                                },
+                                {sprite = "walls_exterior_wooden_01_27", northSprite = "walls_exterior_wooden_01_27"}
+                            ),
+                        }
+                    },
+                    {
                         subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Old_Wood_Panel"),
                         subCategoryIcon = "walls_exterior_wooden_01_28",
                         objects = {
@@ -18183,6 +18265,22 @@ BuildingMenu.Tabs = {
                                 {sprite = "industry_01_7", northSprite = "industry_01_7"}
                             ),
                             BuildingMenu.createObject(
+                                "Tooltip_BuildingMenuObj_Green_Industrial_Floor",
+                                "Tooltip_Floor_Generic",
+                                BuildingMenu.onBuildFloor,
+                                BuildingMenu.MetalFloorRecipe,
+                                true,
+                                {
+                                    firstItem = "BlowTorch",
+                                    secondItem = "WeldingMask",
+                                    craftingBank = "BlowTorch",
+                                    actionAnim = "BlowTorchFloor",
+                                    noNeedHammer = true,
+                                    completionSound = "BuildMetalStructureMedium"
+                                },
+                                {sprite = "industry_01_6", northSprite = "industry_01_6"}
+                            ),
+                            BuildingMenu.createObject(
                                 "Tooltip_BuildingMenuObj_Brown_Railroad_Metal_Panel",
                                 "Tooltip_Floor_Generic",
                                 BuildingMenu.onBuildFloor,
@@ -21894,6 +21992,44 @@ BuildingMenu.Tabs = {
                                     isThumpable = true
                                 },
                                 {
+                                    sprite = "carpentry_02_19",
+                                    northSprite = "carpentry_02_21",
+                                    eastSprite = "carpentry_02_23",
+                                    southSprite = "carpentry_02_17"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
+                                    sprite = "carpentry_02_18",
+                                    northSprite = "carpentry_02_20",
+                                    eastSprite = "carpentry_02_22",
+                                    southSprite = "carpentry_02_16"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Counter_Generic",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    isThumpable = true
+                                },
+                                {
                                     sprite = "fixtures_counters_01_3",
                                     northSprite = "fixtures_counters_01_5",
                                     eastSprite = "fixtures_counters_01_7",
@@ -23140,6 +23276,23 @@ BuildingMenu.Tabs = {
                                     canBeLockedByPadlock = true
                                 },
                                 {sprite = "location_shop_greenes_01_35", northSprite = "location_shop_greenes_01_36"}
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Half_Crate",
+                                BuildingMenu.onBuildWoodenContainer,
+                                BuildingMenu.CounterRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge",
+                                    containerType = "smallcrate",
+                                    canBeAlwaysPlaced = true,
+                                    blockAllTheSquare = true,
+                                    canBeLockedByPadlock = true
+                                },
+                                {sprite = "carpentry_01_16", northSprite = "carpentry_01_16"}
                             ),
                             BuildingMenu.createObject(
                                 "",
@@ -25418,6 +25571,72 @@ BuildingMenu.Tabs = {
                                     northSprite4 = "furniture_bedding_01_18"
                                 }
                             ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_bedDesc",
+                                BuildingMenu.onBuildFourTileFurniture,
+                                BuildingMenu.BedRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge"
+                                },
+                                {
+                                    sprite = "furniture_bedding_01_43",
+                                    sprite2 = "furniture_bedding_01_41",
+                                    sprite3 = "furniture_bedding_01_40",
+                                    sprite4 = "furniture_bedding_01_42",
+                                    northSprite = "furniture_bedding_01_44",
+                                    northSprite2 = "furniture_bedding_01_46",
+                                    northSprite3 = "furniture_bedding_01_47",
+                                    northSprite4 = "furniture_bedding_01_45"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_bedDesc",
+                                BuildingMenu.onBuildFourTileFurniture,
+                                BuildingMenu.BedRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge"
+                                },
+                                {
+                                    sprite = "furniture_bedding_01_55",
+                                    sprite2 = "furniture_bedding_01_54",
+                                    sprite3 = "furniture_bedding_01_52",
+                                    sprite4 = "furniture_bedding_01_53",
+                                    northSprite = "furniture_bedding_01_48",
+                                    northSprite2 = "furniture_bedding_01_49",
+                                    northSprite3 = "furniture_bedding_01_51",
+                                    northSprite4 = "furniture_bedding_01_50"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_bedDesc",
+                                BuildingMenu.onBuildFourTileFurniture,
+                                BuildingMenu.BedRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge"
+                                },
+                                {
+                                    sprite = "furniture_bedding_01_75",
+                                    sprite2 = "furniture_bedding_01_74",
+                                    sprite3 = "furniture_bedding_01_72",
+                                    sprite4 = "furniture_bedding_01_73",
+                                    northSprite = "furniture_bedding_01_80",
+                                    northSprite2 = "furniture_bedding_01_81",
+                                    northSprite3 = "furniture_bedding_01_83",
+                                    northSprite4 = "furniture_bedding_01_82"
+                                }
+                            ),
                         }
                     },
                     {
@@ -27418,7 +27637,12 @@ BuildingMenu.Tabs = {
                                     isThumpable = true,
                                     isCorner = true
                                 },
-                                {sprite = "floors_rugs_01_0", northSprite = "floors_rugs_01_1"}
+                                {
+                                    sprite = "floors_rugs_01_0",
+                                    northSprite = "floors_rugs_01_6",
+                                    eastSprite = "floors_rugs_01_7",
+                                    southSprite = "floors_rugs_01_1"
+                                }
                             ),
                             BuildingMenu.createObject(
                                 "",
@@ -27437,7 +27661,58 @@ BuildingMenu.Tabs = {
                                     isThumpable = true,
                                     isCorner = true
                                 },
-                                {sprite = "floors_rugs_01_2", northSprite = "floors_rugs_01_3"}
+                                {
+                                    sprite = "floors_rugs_01_2",
+                                    northSprite = "floors_rugs_01_5",
+                                    eastSprite = "floors_rugs_01_3",
+                                    southSprite = "floors_rugs_01_4"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_88",
+                                    northSprite = "floors_rugs_01_90",
+                                    eastSprite = "floors_rugs_01_89",
+                                    southSprite = "floors_rugs_01_91"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_92",
+                                    northSprite = "floors_rugs_01_93"
+                                }
                             ),
                             BuildingMenu.createObject(
                                 "",
@@ -27458,9 +27733,9 @@ BuildingMenu.Tabs = {
                                 },
                                 {
                                     sprite = "floors_rugs_01_8",
-                                    northSprite = "floors_rugs_01_9",
-                                    eastSprite = "floors_rugs_01_14",
-                                    southSprite = "floors_rugs_01_15"
+                                    northSprite = "floors_rugs_01_14",
+                                    eastSprite = "floors_rugs_01_15",
+                                    southSprite = "floors_rugs_01_9"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -27482,9 +27757,55 @@ BuildingMenu.Tabs = {
                                 },
                                 {
                                     sprite = "floors_rugs_01_10",
-                                    northSprite = "floors_rugs_01_11",
-                                    eastSprite = "floors_rugs_01_12",
-                                    southSprite = "floors_rugs_01_13"
+                                    northSprite = "floors_rugs_01_13",
+                                    eastSprite = "floors_rugs_01_11",
+                                    southSprite = "floors_rugs_01_12"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_80",
+                                    northSprite = "floors_rugs_01_82",
+                                    eastSprite = "floors_rugs_01_81",
+                                    southSprite = "floors_rugs_01_83"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_84",
+                                    northSprite = "floors_rugs_01_85"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -27506,9 +27827,9 @@ BuildingMenu.Tabs = {
                                 },
                                 {
                                     sprite = "floors_rugs_01_16",
-                                    northSprite = "floors_rugs_01_17",
-                                    eastSprite = "floors_rugs_01_22",
-                                    southSprite = "floors_rugs_01_23"
+                                    northSprite = "floors_rugs_01_22",
+                                    eastSprite = "floors_rugs_01_23",
+                                    southSprite = "floors_rugs_01_17"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -27530,9 +27851,55 @@ BuildingMenu.Tabs = {
                                 },
                                 {
                                     sprite = "floors_rugs_01_18",
-                                    northSprite = "floors_rugs_01_19",
-                                    eastSprite = "floors_rugs_01_20",
-                                    southSprite = "floors_rugs_01_21"
+                                    northSprite = "floors_rugs_01_21",
+                                    eastSprite = "floors_rugs_01_19",
+                                    southSprite = "floors_rugs_01_20"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_96",
+                                    northSprite = "floors_rugs_01_98",
+                                    eastSprite = "floors_rugs_01_97",
+                                    southSprite = "floors_rugs_01_99"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_100",
+                                    northSprite = "floors_rugs_01_101"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -27554,9 +27921,9 @@ BuildingMenu.Tabs = {
                                 },
                                 {
                                     sprite = "floors_rugs_01_78",
-                                    northSprite = "floors_rugs_01_79",
-                                    eastSprite = "floors_rugs_01_72",
-                                    southSprite = "floors_rugs_01_73"
+                                    northSprite = "floors_rugs_01_72",
+                                    eastSprite = "floors_rugs_01_73",
+                                    southSprite = "floors_rugs_01_79"
                                 }
                             ),
                             BuildingMenu.createObject(
@@ -27578,9 +27945,55 @@ BuildingMenu.Tabs = {
                                 },
                                 {
                                     sprite = "floors_rugs_01_74",
-                                    northSprite = "floors_rugs_01_75",
-                                    eastSprite = "floors_rugs_01_76",
-                                    southSprite = "floors_rugs_01_77"
+                                    northSprite = "floors_rugs_01_77",
+                                    eastSprite = "floors_rugs_01_75",
+                                    southSprite = "floors_rugs_01_76"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_104",
+                                    northSprite = "floors_rugs_01_106",
+                                    eastSprite = "floors_rugs_01_105",
+                                    southSprite = "floors_rugs_01_107"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_Rug_Generic",
+                                BuildingMenu.onBuildSimpleFurniture,
+                                BuildingMenu.FloorRugRecipe,
+                                true,
+                                {
+                                    actionAnim = "VehicleWorkOnTire",
+                                    noNeedHammer = true,
+                                    craftingBank = "ClothesRipping",
+                                    needToBeAgainstWall = false,
+                                    blockAllTheSquare = false,
+                                    canPassThrough = true,
+                                    canBarricade = false,
+                                    isThumpable = true,
+                                    isCorner = true
+                                },
+                                {
+                                    sprite = "floors_rugs_01_108",
+                                    northSprite = "floors_rugs_01_109"
                                 }
                             ),
                             BuildingMenu.createObject(

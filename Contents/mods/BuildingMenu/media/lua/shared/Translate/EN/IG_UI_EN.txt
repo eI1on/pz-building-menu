@@ -30,6 +30,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Clapboard = "Brown Clapboard",
     
     IGUI_BuildingMenuSubCat_Walls_White_Panel = "White Panel",
+    IGUI_BuildingMenuSubCat_Walls_Wooden_Panel = "Wooden Panel",
     IGUI_BuildingMenuSubCat_Walls_Old_Wood_Panel = "Old Wood Panel",
     IGUI_BuildingMenuSubCat_Walls_Red_Barn_Wood = "Red Barn Wood",
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Brown Panel",
