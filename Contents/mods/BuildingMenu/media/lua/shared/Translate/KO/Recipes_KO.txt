@@ -1,0 +1,46 @@
+Recipe_KO = {
+    /* 유리 제작 레시피 */
+    Recipe_BMPrepareGlassShards = "유리 녹일 준비하기",
+    Recipe_BMUnprepareGlassShards = "팬에서 유리 제거",
+    Recipe_BMRemoveGlassPane = "유리 판 추출하기",
+
+    /* 유리 파편 레시피 */
+    Recipe_BMSmashGlassJar = "깨진 유리로 만들기",
+    Recipe_BMSmashGlassPane = "깨진 유리로 만들기",
+    Recipe_BMSmashWindshield = "깨진 유리로 만들기",
+    Recipe_BMSmashWindows = "깨진 유리로 만들기",
+
+    /* 창문 레시피 */
+    Recipe_BMMakeWindow01 = "나무 창문 만들기",
+    Recipe_BMMakeWindow02 = "흰색 타일 창문 만들기",
+    Recipe_BMMakeWindow03 = "타일 창문 만들기",
+    Recipe_BMMakeWindow04 = "흰색 창문 만들기",
+    Recipe_BMMakeWindow05 = "크롬 창문 만들기",
+    Recipe_BMMakeWindow06 = "슬라이더 창문 만들기",
+
+    /* 창문 해체 레시피 */
+    Recipe_BMDisassembleWindow01 = "나무 창문 해체",
+    Recipe_BMDisassembleWindow02 = "흰색 타일 창문 해체",
+    Recipe_BMDisassembleWindow03 = "타일 창문 해체",
+    Recipe_BMDisassembleWindow04 = "흰색 창문 해체",
+    Recipe_BMDisassembleWindow05 = "크롬 창문 해체",
+    Recipe_BMDisassembleWindow06 = "슬라이더 창문 해체",
+
+    /* 차량: 표준 레시피 */
+    Recipe_BMWindshield1 = "일반 차량용 윈드실드 만들기",
+    Recipe_BMRearWindshield1 = "일반 차량용 후방 윈드실드 만들기",
+    Recipe_BMFrontWindow1 = "일반 차량용 전면 창문 만들기",
+    Recipe_BMRearWindow1 = "일반 차량용 후방 창문 만들기",
+
+    /* 차량: 중장비 레시피 */
+    Recipe_BMWindshield2 = "중장비 차량용 윈드실드 만들기",
+    Recipe_BMRearWindshield2 = "중장비 차량용 후방 윈드실드 만들기",
+    Recipe_BMFrontWindow2 = "중장비 차량용 전면 창문 만들기",
+    Recipe_BMRearWindow2 = "중장비 차량용 후방 창문 만들기",
+
+    /* 차량: 스포츠 레시피 */
+    Recipe_BMWindshield3 = "스포츠 차량용 윈드실드 만들기",
+    Recipe_BMRearWindshield3 = "스포츠 차량용 후방 윈드실드 만들기",
+    Recipe_BMFrontWindow3 = "스포츠 차량용 전면 창문 만들기",
+    Recipe_BMRearWindow3 = "스포츠 차량용 후방 창문 만들기",
+}

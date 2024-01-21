@@ -1,0 +1,15 @@
+Sandbox_KO = {
+    Sandbox_BuildingMenu = "건축 메뉴",
+    Sandbox_BuildingMenu_isThumpable = "치밀 수 있는 구조물",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "좀비 데미지에 면역인 구조물을 건축 메뉴를 사용하여 건설하려면 <SPACE><RGB:1,0.8,0> 끄기 <RGB:1,1,1><SPACE>로 설정하세요.",
+    Sandbox_BuildingMenu_bathroomAppliances = "욕실 가전 제품 활성화",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "싱크, 화장실 및 기타 욕실 관련 물건을 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    Sandbox_BuildingMenu_cookingAppliances = "주방 가전 제품 활성화",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "스토브, 오븐 및 기타 조리 관련 물건에 액세스하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    Sandbox_BuildingMenu_fridgeAppliances = "냉장 가전 제품 활성화",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "냉장고와 냉동고를 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    Sandbox_BuildingMenu_laundryAppliances = "세탁 가전 제품 활성화",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "세탁기와 건조기를 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    Sandbox_BuildingMenu_metalDrums = "금속 드럼 활성화",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "금속 드럼을 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+}
