@@ -546,6 +546,7 @@ function ISBuildingMenuUI:onResize()
     ISUIElement.onResize(self);
     self.tilesList:setWidth(self.width/2);
     self.tilesList:setX(self.width/2);
+    self.tilesList.posToObjectNameTable = {};
 end
 
 

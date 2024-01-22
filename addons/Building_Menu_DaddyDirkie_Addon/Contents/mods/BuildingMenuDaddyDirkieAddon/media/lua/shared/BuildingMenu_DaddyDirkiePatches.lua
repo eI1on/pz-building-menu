@@ -29,9 +29,11 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         local props = manager:getSprite(sprite):getProperties()
         BM_Utils.setSpriteProperty(props, "container", "crate", false);
         BM_Utils.setSpriteProperty(props, "container", "", true);
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "IsMovAble", "", true);
+        BM_Utils.setSpriteProperty(props, "IsMovAble", "", false);
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "100", false);
     end
 
     -- Not working, idk why.

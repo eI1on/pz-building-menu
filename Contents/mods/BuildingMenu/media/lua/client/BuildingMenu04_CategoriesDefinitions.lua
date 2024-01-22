@@ -25335,24 +25335,6 @@ BuildingMenu.Tabs = {
                                     completionSound = "BuildWoodenStructureLarge"
                                 },
                                 {
-                                    sprite = "furniture_bedding_01_29",
-                                    sprite2 = "furniture_bedding_01_28",
-                                    northSprite = "furniture_bedding_01_26",
-                                    northSprite2 = "furniture_bedding_01_27"
-                                }
-                            ),
-                            BuildingMenu.createObject(
-                                "",
-                                "Tooltip_craft_bedDesc",
-                                BuildingMenu.onBuildDoubleTileFurniture,
-                                BuildingMenu.BedRecipe,
-                                true,
-                                {
-                                    actionAnim = "Build",
-                                    noNeedHammer = false,
-                                    completionSound = "BuildWoodenStructureLarge"
-                                },
-                                {
                                     sprite = "furniture_bedding_01_33",
                                     sprite2 = "furniture_bedding_01_32",
                                     northSprite = "furniture_bedding_01_34",
@@ -25613,6 +25595,28 @@ BuildingMenu.Tabs = {
                                     northSprite2 = "furniture_bedding_01_49",
                                     northSprite3 = "furniture_bedding_01_51",
                                     northSprite4 = "furniture_bedding_01_50"
+                                }
+                            ),
+                            BuildingMenu.createObject(
+                                "",
+                                "Tooltip_craft_bedDesc",
+                                BuildingMenu.onBuildFourTileFurniture,
+                                BuildingMenu.BedRecipe,
+                                true,
+                                {
+                                    actionAnim = "Build",
+                                    noNeedHammer = false,
+                                    completionSound = "BuildWoodenStructureLarge"
+                                },
+                                {
+                                    sprite = "furniture_bedding_01_15",
+                                    sprite2 = "furniture_bedding_01_13",
+                                    sprite3 = "furniture_bedding_01_12",
+                                    sprite4 = "furniture_bedding_01_14",
+                                    northSprite = "furniture_bedding_01_4",
+                                    northSprite2 = "furniture_bedding_01_6",
+                                    northSprite3 = "furniture_bedding_01_7",
+                                    northSprite4 = "furniture_bedding_01_5"
                                 }
                             ),
                             BuildingMenu.createObject(
