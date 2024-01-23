@@ -5,7 +5,7 @@ require("BuildingMenu04_CategoriesDefinitions")
 local BuildingMenu = getBuildingMenuInstance()
 
 
-local function addMelosWallsToMenu()
+local function addMelosWallsCastleToMenu()
     local melosWallsCastle = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Glass_Wall",
@@ -898,7 +898,9 @@ local function addMelosWallsToMenu()
         "melos_tiles_castle_01_0",
         melosWallsCastle
     )
+end
 
+local function addMelosWallsCinderblockToMenu()
     local melosWallsWhiteCinderblock = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Wall",
@@ -6168,7 +6170,9 @@ local function addMelosWallsToMenu()
         "melos_tiles_walls_bathroom_01j_0",
         melosWallsRedCinderblock
     )
+end
 
+local function addMelosWallsBathroomToMenu()
     local melosWallsBathroomWhiteSmallTiles = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Wall",
@@ -12361,8 +12365,9 @@ local function addMelosWallsToMenu()
         "melos_tiles_walls_bathroom_ddd_add_12_0",
         melosWallsBathroomYellowLargeTiles
     )
+end
 
-
+local function addMelosWallsBrickToMenu()
     local melosWallsWhiteBrick = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Wall",
@@ -16582,9 +16587,8 @@ local function addMelosWallsToMenu()
         melosWallsPurpleBrick
     )
 end
-addMelosWallsToMenu()
 
-local function addMelosDoorsToMenu()
+local function addDoorsToMenu()
     local melosDoorObjects = {}
     local doorSpriteRanges = {
         {start = 0, stop = 23, baseName = "melos_tiles_doors_02_"},
@@ -16912,9 +16916,8 @@ local function addMelosDoorsToMenu()
         melosGarageDoorsObjects
     )
 end
-addMelosDoorsToMenu()
 
-local function addMelosWindowsToMenu()
+local function addWindowsPlusToMenu()
     local function createWindowObject(baseName, startSpriteNumber)
         return BuildingMenu.createObject(
             "",
@@ -18006,196 +18009,195 @@ local function addMelosWindowsToMenu()
         melosYellowBrickTripleLarge
     )
 end
-addMelosWindowsToMenu()
 
-
-local melosWireFences = {
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_High_Metal_Fence_Generic",
-        BuildingMenu.onBuildHighMetalFence,
-        BuildingMenu.HighMetalFenceRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            isThumpable = true,
-            hoppable = true,
-            blockAllTheSquare = false
-        },
-        {
-            sprite = "melos_tiles_fencing_02_50",
-            sprite2 = "melos_tiles_fencing_02_51",
-            northSprite = "melos_tiles_fencing_02_49",
-            northSprite2 = "melos_tiles_fencing_02_48"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_High_Metal_Fence_Generic",
-        BuildingMenu.onBuildWall,
-        BuildingMenu.HighMetalFenceRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            canBeAlwaysPlaced = true,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true
-        },
-        {sprite = "melos_tiles_fencing_02_52", northSprite = "melos_tiles_fencing_02_52"}
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_High_Metal_Fence_Generic",
-        BuildingMenu.onBuildHighMetalFence,
-        BuildingMenu.HighMetalFenceRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            isThumpable = true,
-            hoppable = true,
-            blockAllTheSquare = false
-        },
-        {
-            sprite = "melos_tiles_fencing_02_58",
-            sprite2 = "melos_tiles_fencing_02_59",
-            northSprite = "melos_tiles_fencing_02_57",
-            northSprite2 = "melos_tiles_fencing_02_56"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_High_Metal_Fence_Generic",
-        BuildingMenu.onBuildWall,
-        BuildingMenu.HighMetalFenceRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            canBeAlwaysPlaced = true,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true
-        },
-        {sprite = "melos_tiles_fencing_02_60", northSprite = "melos_tiles_fencing_02_60"}
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_High_Metal_Fence_Generic",
-        BuildingMenu.onBuildDoor,
-        BuildingMenu.MetalDoorRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            modData = {wallType = "doorframe"}
-        },
-        {
-            sprite = "melos_tiles_fencing_02_36",
-            northSprite = "melos_tiles_fencing_02_37",
-            openSprite = "melos_tiles_fencing_02_38",
-            openNorthSprite = "melos_tiles_fencing_02_39"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_High_Metal_Fence_Generic",
-        BuildingMenu.onBuildDoorFrame,
-        BuildingMenu.BigMetalWallRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            completionSound = "BuildMetalStructureWallFrame",
-            noNeedHammer = true,
-            modData = {wallType = "doorframe"}
-        },
-        {
-            sprite = "melos_tiles_fencing_02_32",
-            northSprite = "melos_tiles_fencing_02_33"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_High_Metal_Fence_Generic",
-        BuildingMenu.onBuildWall,
-        BuildingMenu.HighMetalFencePostRecipe,
-        "Make Metal Fences",
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            canBeAlwaysPlaced = true,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true
-        },
-        {sprite = "melos_tiles_fencing_02_34", northSprite = "melos_tiles_fencing_02_35"}
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Wooden_Fence_Gate",
-        BuildingMenu.onBuildDoor,
-        BuildingMenu.MetalDoorRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            dontNeedFrame = true,
-            canBarricade = false,
-            isThumpable = false
-        },
-        {
-            sprite = "melos_tiles_fencing_02_44",
-            northSprite = "melos_tiles_fencing_02_45",
-            openSprite = "melos_tiles_fencing_02_46",
-            openNorthSprite = "melos_tiles_fencing_02_47"
-        }
+local function addHighFencesToMenu()
+    local melosWireFences = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.HighMetalFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "melos_tiles_fencing_02_50",
+                sprite2 = "melos_tiles_fencing_02_51",
+                northSprite = "melos_tiles_fencing_02_49",
+                northSprite2 = "melos_tiles_fencing_02_48"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighMetalFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "melos_tiles_fencing_02_52", northSprite = "melos_tiles_fencing_02_52"}
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.HighMetalFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "melos_tiles_fencing_02_58",
+                sprite2 = "melos_tiles_fencing_02_59",
+                northSprite = "melos_tiles_fencing_02_57",
+                northSprite2 = "melos_tiles_fencing_02_56"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighMetalFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "melos_tiles_fencing_02_60", northSprite = "melos_tiles_fencing_02_60"}
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildDoor,
+            BuildingMenu.MetalDoorRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                modData = {wallType = "doorframe"}
+            },
+            {
+                sprite = "melos_tiles_fencing_02_36",
+                northSprite = "melos_tiles_fencing_02_37",
+                openSprite = "melos_tiles_fencing_02_38",
+                openNorthSprite = "melos_tiles_fencing_02_39"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildDoorFrame,
+            BuildingMenu.BigMetalWallRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                completionSound = "BuildMetalStructureWallFrame",
+                noNeedHammer = true,
+                modData = {wallType = "doorframe"}
+            },
+            {
+                sprite = "melos_tiles_fencing_02_32",
+                northSprite = "melos_tiles_fencing_02_33"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighMetalFencePostRecipe,
+            "Make Metal Fences",
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "melos_tiles_fencing_02_34", northSprite = "melos_tiles_fencing_02_35"}
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Wooden_Fence_Gate",
+            BuildingMenu.onBuildDoor,
+            BuildingMenu.MetalDoorRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                dontNeedFrame = true,
+                canBarricade = false,
+                isThumpable = false
+            },
+            {
+                sprite = "melos_tiles_fencing_02_44",
+                northSprite = "melos_tiles_fencing_02_45",
+                openSprite = "melos_tiles_fencing_02_46",
+                openNorthSprite = "melos_tiles_fencing_02_47"
+            }
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Melos",
+        getText("IGUI_BuildingMenuCat_Fencing"),
+        "melos_tiles_fencing_02_50",
+        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_High"),
+        "melos_tiles_fencing_02_50",
+        melosWireFences
     )
-}
-BuildingMenu.addObjectsToCategories(
-    "Melos",
-    getText("IGUI_BuildingMenuCat_Fencing"),
-    "melos_tiles_fencing_02_50",
-    getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_High"),
-    "melos_tiles_fencing_02_50",
-    melosWireFences
-)
+end
 
-
-local function addMelosFloorsToMenu()
+local function addFloorsToMenu()
     local baseNameMelosFloors = "melos_tiles_floors_01_"
     local dataFloors = {
         wooden = {8, 9, 10, 11, 48, 49, 50, 51, 52, 53, 54, 55},
@@ -18245,7 +18247,6 @@ local function addMelosFloorsToMenu()
     createAndAddFloorObjects("IGUI_BuildingMenuSubCat_Floors_Melos_Tiles", dataFloors.special)
     createAndAddFloorObjects("IGUI_BuildingMenuSubCat_Floors_Carpets", dataFloors.carpet)
 end
-addMelosFloorsToMenu()
 
 local function addMelosStairsToMenu()
     local function createWoodenStairsObject(baseName, startSpriteNumber)
@@ -18360,10 +18361,8 @@ local function addMelosStairsToMenu()
         melosMetalStairs
     )
 end
-addMelosStairsToMenu()
 
-
-local function addMelosCountersToMenu()
+local function addKitchenCountersToMenu()
     local function createCounterObject(spriteBaseName, spriteNumber)
         return BuildingMenu.createObject(
             "",
@@ -18416,7 +18415,9 @@ local function addMelosCountersToMenu()
         "melos_tiles_furniture_counters_01_11",
         melosCounters
     )
+end
 
+local function addMetalContainersToMenu()
     local function createMelosLockers(spriteBaseName, northBaseName, eastBaseName, southBaseName)
         return BuildingMenu.createObject(
             "",
@@ -18445,7 +18446,7 @@ local function addMelosCountersToMenu()
         )
     end
 
-    melosCounters = {}
+    local melosCounters = {}
     local baseName = "melos_tiles_furniture_storage_03_"
 
     for i = 1, 13, 4 do
@@ -18464,9 +18465,10 @@ local function addMelosCountersToMenu()
         "melos_tiles_furniture_storage_03_1",
         melosCounters
     )
+end
 
-
-    melosCounters = {
+local function addContainersOthersToMenu()
+    local melosCounters = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Logs",
             "Tooltip_Counter_Generic",
@@ -18572,9 +18574,7 @@ local function addMelosCountersToMenu()
          "melos_tiles_gardencenter_02_104",
          melosCounters
      )
-
 end
-addMelosCountersToMenu()
 
 local function addMelosSmallTablesToMenu()
     local melosSmallTables = {}
@@ -18612,7 +18612,6 @@ local function addMelosSmallTablesToMenu()
         melosSmallTables
     )
 end
-addMelosSmallTablesToMenu()
 
 local function createDoubleTileFurnitureObject(tooltip, recipe, sprite, sprite2, northSprite, northSprite2)
     return BuildingMenu.createObject(
@@ -18713,7 +18712,6 @@ local function addMelosLargeTablesToMenu()
         melosLargeTables
     )
 end
-addMelosLargeTablesToMenu()
 
 local function addMelosSimpleBedsToMenu()
     local tooltip = "Tooltip_craft_bedDesc"
@@ -18794,8 +18792,6 @@ local function addMelosSimpleBedsToMenu()
         melosSimpleBeds
     )
 end
-addMelosSimpleBedsToMenu()
-
 
 local function addMelosLargeBedsToMenu()
     local function createFourTileFurnitureObject(category, data)
@@ -18880,7 +18876,6 @@ local function addMelosLargeBedsToMenu()
         melosLargeBeds
     )
 end
-addMelosLargeBedsToMenu()
 
 local function addMelosCouchesToMenu()
     local function createFurnitureObject(recipe, spriteData, isSimpleFurniture)
@@ -19154,7 +19149,6 @@ local function addMelosCouchesToMenu()
         melosCouches
     )
 end
-addMelosCouchesToMenu()
 
 local function addMelosCharisToMenu()
     local melosChairs = {
@@ -19395,7 +19389,6 @@ local function addMelosCharisToMenu()
         melosChairs
     )
 end
-addMelosCharisToMenu()
 
 local function addMelosFurnitureSet1ToMenu()
     local melosFurnitureSets1 = {
@@ -20841,7 +20834,6 @@ local function addMelosFurnitureSet1ToMenu()
         melosFurnitureSets1
     )
 end
-addMelosFurnitureSet1ToMenu()
 
 local function addMelosFurnitureSet2ToMenu()
     local melosFurnitureSets2 = {
@@ -22287,8 +22279,6 @@ local function addMelosFurnitureSet2ToMenu()
         melosFurnitureSets2
     )
 end
-addMelosFurnitureSet2ToMenu()
-
 
 local function addMelosFlowersToMenu()
     local function createIndoorFlowerObject(sprite, northSprite)
@@ -22339,8 +22329,6 @@ local function addMelosFlowersToMenu()
         melosIndoorFlowers
     )
 end
-addMelosFlowersToMenu()
-
 
 local function addMelosPlantersToMenu()
     local function createFlowerPlanterObject(spriteIndex, northSpriteIndex)
@@ -22395,8 +22383,6 @@ local function addMelosPlantersToMenu()
         melosFlowerPlanters
     )
 end
-addMelosPlantersToMenu()
-
 
 local function addMelosWallVinesToMenu()
     local melosWallVines = {
@@ -22910,8 +22896,6 @@ local function addMelosWallVinesToMenu()
         melosWallVines
     )
 end
-addMelosWallVinesToMenu()
-
 
 local function addMelosGrapeVinesToMenu()
     local melosGrapeVines = {
@@ -23295,8 +23279,6 @@ local function addMelosGrapeVinesToMenu()
         melosGrapeVines
     )
 end
-addMelosGrapeVinesToMenu()
-
 
 local function addMelosCookingObjsToMenu()
     local function createCookingObject(spriteIndex, northSpriteIndex, eastSpriteIndex, southSpriteIndex)
@@ -23347,7 +23329,6 @@ local function addMelosCookingObjsToMenu()
         melosCookingObjects
     )
 end
-
 
 local function addMelosFridgesToMenu()
     local function createFridgeObject(recipe, popsicleFridge, sprites)
@@ -23416,6 +23397,68 @@ end
 
 
 local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.melosTilesCastleStructures then
+        addMelosWallsCastleToMenu()
+    end
+    if SandboxVars.BuildingMenu.brickWallsSubCategory then
+        addMelosWallsBrickToMenu()
+    end
+    if SandboxVars.BuildingMenu.cinderblockWallsSubCategory then
+        addMelosWallsCinderblockToMenu()
+    end
+    if SandboxVars.BuildingMenu.melosTilesBathroomWalls then
+        addMelosWallsBathroomToMenu()
+    end
+    if SandboxVars.BuildingMenu.doorsSubCategory then
+        addDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.windowsCategory then
+        addWindowsPlusToMenu()
+    end
+    if SandboxVars.BuildingMenu.highFencesSubCategory then
+        addHighFencesToMenu()
+    end
+    if SandboxVars.BuildingMenu.floorsCategory then
+        addFloorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.stairsCategory then
+        addMelosStairsToMenu()
+    end
+    if SandboxVars.BuildingMenu.kitchenCountersSubCategory then
+        addKitchenCountersToMenu()
+    end
+    if SandboxVars.BuildingMenu.metalContainersSubCategory then
+        addMetalContainersToMenu()
+    end
+    if SandboxVars.BuildingMenu.containersOthersSubCategory then
+        addContainersOthersToMenu()
+    end
+    if SandboxVars.BuildingMenu.tablesSubCategory then
+        addMelosSmallTablesToMenu()
+        addMelosLargeTablesToMenu()
+    end
+    if SandboxVars.BuildingMenu.bedsSubCategory then
+        addMelosSimpleBedsToMenu()
+        addMelosLargeBedsToMenu()
+    end
+    if SandboxVars.BuildingMenu.seatingFurnitureSubCategory then
+        addMelosCouchesToMenu()
+        addMelosCharisToMenu()
+    end
+    if SandboxVars.BuildingMenu.dressersAndWardrobesSubCategory then
+        addMelosFurnitureSet1ToMenu()
+        addMelosFurnitureSet2ToMenu()
+    end
+    if SandboxVars.BuildingMenu.indoorPlantsSubCategory then
+        addMelosFlowersToMenu()
+    end
+    if SandboxVars.BuildingMenu.outdoorPlantsSubCategory then
+        addMelosPlantersToMenu()
+    end
+    if SandboxVars.BuildingMenu.landscapingSubCategory then
+        addMelosWallVinesToMenu()
+        addMelosGrapeVinesToMenu()
+    end
     if SandboxVars.BuildingMenu.cookingAppliances then
         addMelosCookingObjsToMenu()
     end

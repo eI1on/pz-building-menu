@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option BuildingMenu.MelosTilesCategoryDivider
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_MelosTilesCategoryDivider,
+}
+
+option BuildingMenu.melosTilesCastleWalls
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_melosTilesCastleWalls,
+}
+
+option BuildingMenu.melosTilesBathroomWalls
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_melosTilesBathroomWalls,
+}

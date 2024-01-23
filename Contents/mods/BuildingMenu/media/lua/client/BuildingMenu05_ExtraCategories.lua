@@ -4,6 +4,377 @@ require("BuildingMenu04_CategoriesDefinitions")
 local BuildingMenu = getBuildingMenuInstance()
 
 
+local function addLightingToMenu()
+    local lighting = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Switch",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                actionAnim = "disassemble",
+                noNeedHammer = true,
+                craftingBank = "Dismantle",
+                renderFloorHelper = false,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_indoor_01_1",
+                northSprite = "lighting_indoor_01_0",
+                eastSprite = "lighting_indoor_01_2",
+                southSprite = "lighting_indoor_01_3"
+            }
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        getText("IGUI_BuildingMenuTab_General"),
+        getText("IGUI_BuildingMenuCat_Lighting"),
+        "lighting_outdoor_01_49",
+        getText("IGUI_BuildingMenuSubCat_Lighting_Indoor"),
+        "lighting_indoor_01_1",
+        lighting
+    )
+
+
+    lighting = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                actionAnim = "disassemble",
+                noNeedHammer = true,
+                craftingBank = "Dismantle",
+                renderFloorHelper = false,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_27",
+                northSprite = "lighting_outdoor_01_26",
+                eastSprite = "lighting_outdoor_01_31",
+                southSprite = "lighting_outdoor_01_30"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                actionAnim = "disassemble",
+                noNeedHammer = true,
+                craftingBank = "Dismantle",
+                renderFloorHelper = false,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_35",
+                northSprite = "lighting_outdoor_01_34",
+                eastSprite = "lighting_outdoor_01_38",
+                southSprite = "lighting_outdoor_01_39"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                actionAnim = "disassemble",
+                noNeedHammer = true,
+                craftingBank = "Dismantle",
+                renderFloorHelper = false,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_33",
+                northSprite = "lighting_outdoor_01_32",
+                eastSprite = "lighting_outdoor_01_37",
+                southSprite = "lighting_outdoor_01_36"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                actionAnim = "disassemble",
+                noNeedHammer = true,
+                craftingBank = "Dismantle",
+                renderFloorHelper = false,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_43",
+                northSprite = "lighting_outdoor_01_42",
+                eastSprite = "lighting_outdoor_01_47",
+                southSprite = "lighting_outdoor_01_46"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                actionAnim = "disassemble",
+                noNeedHammer = true,
+                craftingBank = "Dismantle",
+                renderFloorHelper = false,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_41",
+                northSprite = "lighting_outdoor_01_40",
+                eastSprite = "lighting_outdoor_01_45",
+                southSprite = "lighting_outdoor_01_44"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                actionAnim = "disassemble",
+                noNeedHammer = true,
+                craftingBank = "Dismantle",
+                renderFloorHelper = false,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_25",
+                northSprite = "lighting_outdoor_01_24",
+                eastSprite = "lighting_outdoor_01_29",
+                southSprite = "lighting_outdoor_01_28"
+            }
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        getText("IGUI_BuildingMenuTab_General"),
+        getText("IGUI_BuildingMenuCat_Lighting"),
+        "lighting_outdoor_01_49",
+        getText("IGUI_BuildingMenuSubCat_Lighting_Outdoor"),
+        "lighting_outdoor_01_27",
+        lighting
+    )
+
+
+    lighting = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightSource,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_49",
+                northSprite = "lighting_outdoor_01_48",
+                eastSprite = "lighting_outdoor_01_50",
+                southSprite = "lighting_outdoor_01_51"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Light_Post1",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightPole,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {sprite = "lighting_outdoor_01_0"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Light_Post2",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightPole,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {sprite = "lighting_outdoor_01_1"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Light_Post3",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightPole,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                isCorner = true
+            },
+            {sprite = "lighting_outdoor_01_2"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Light_Post4",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightPole,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = true,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_9",
+                northSprite = "lighting_outdoor_01_10",
+                eastSprite = "lighting_outdoor_01_11",
+                southSprite = "lighting_outdoor_01_8"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Light_Post4_Extension",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.MetalFencePostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "lighting_outdoor_01_16", northSprite = "lighting_outdoor_01_16"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Light_Post5",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildLightPole,
+            BuildingMenu.LightPostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = true,
+                isCorner = true
+            },
+            {
+                sprite = "lighting_outdoor_01_18",
+                northSprite = "lighting_outdoor_01_19"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Light_Post5_Extension",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.MetalFencePostRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "lighting_outdoor_01_17", northSprite = "lighting_outdoor_01_17"}
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        getText("IGUI_BuildingMenuTab_General"),
+        getText("IGUI_BuildingMenuCat_Lighting"),
+        "lighting_outdoor_01_49",
+        getText("IGUI_BuildingMenuSubCat_Lighting_Light_Posts"),
+        "lighting_outdoor_01_49",
+        lighting
+    )
+end
+
 local function addBathroomAppliancesToMenu()
     local function createBathroomObject(spec)
         return BuildingMenu.createObject(
@@ -703,3068 +1074,10 @@ local function addMetalDrumsToMenu()
 end
 
 
-local function addTrafficLinesToMenu()
-    local whiteTrafficLines = {
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_0",
-                northSprite = "street_trafficlines_curb_white_full_4",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_1",
-                northSprite = "street_trafficlines_curb_white_full_3",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_2",
-                northSprite = "street_trafficlines_curb_white_full_5",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_7",
-                northSprite = "street_trafficlines_curb_white_full_6",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_8",
-                northSprite = "street_trafficlines_curb_white_full_13",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_9",
-                northSprite = "street_trafficlines_curb_white_full_12",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_10",
-                northSprite = "street_trafficlines_curb_white_full_11",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_14",
-                northSprite = "street_trafficlines_curb_white_full_14",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_15",
-                northSprite = "street_trafficlines_curb_white_full_15",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_24",
-                northSprite = "street_trafficlines_curb_white_full_16",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_17",
-                northSprite = "street_trafficlines_curb_white_full_25",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_18",
-                northSprite = "street_trafficlines_curb_white_full_26",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_19",
-                northSprite = "street_trafficlines_curb_white_full_27",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_20",
-                northSprite = "street_trafficlines_curb_white_full_28",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_21",
-                northSprite = "street_trafficlines_curb_white_full_29",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_22",
-                northSprite = "street_trafficlines_curb_white_full_30",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_32",
-                northSprite = "street_trafficlines_curb_white_full_40",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_33",
-                northSprite = "street_trafficlines_curb_white_full_41",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_34",
-                northSprite = "street_trafficlines_curb_white_full_42",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_35",
-                northSprite = "street_trafficlines_curb_white_full_43",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_36",
-                northSprite = "street_trafficlines_curb_white_full_44",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_39",
-                northSprite = "street_trafficlines_curb_white_full_38",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_47",
-                northSprite = "street_trafficlines_curb_white_full_47",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_48",
-                northSprite = "street_trafficlines_curb_white_full_48",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_49",
-                northSprite = "street_trafficlines_curb_white_full_47",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_52",
-                northSprite = "street_trafficlines_curb_white_full_89",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_53",
-                northSprite = "street_trafficlines_curb_white_full_54",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_55",
-                northSprite = "street_trafficlines_curb_white_full_55",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_59",
-                northSprite = "street_trafficlines_curb_white_full_60",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_62",
-                northSprite = "street_trafficlines_curb_white_full_85",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_63",
-                northSprite = "street_trafficlines_curb_white_full_84",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_64",
-                northSprite = "street_trafficlines_curb_white_full_83",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_69",
-                northSprite = "street_trafficlines_curb_white_full_87",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_74",
-                northSprite = "street_trafficlines_curb_white_full_90",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_65",
-                northSprite = "street_trafficlines_curb_white_full_91",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_66",
-                northSprite = "street_trafficlines_curb_white_full_92",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_67",
-                northSprite = "street_trafficlines_curb_white_full_77",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_68",
-                northSprite = "street_trafficlines_curb_white_full_76",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_70",
-                northSprite = "street_trafficlines_curb_white_full_88",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_71",
-                northSprite = "street_trafficlines_curb_white_full_78",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_72",
-                northSprite = "street_trafficlines_curb_white_full_79",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_80",
-                northSprite = "street_trafficlines_curb_white_full_94",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_96",
-                northSprite = "street_trafficlines_curb_white_full_108",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_106",
-                northSprite = "street_trafficlines_curb_white_full_113",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_104",
-                northSprite = "street_trafficlines_curb_white_full_115",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_98",
-                northSprite = "street_trafficlines_curb_white_full_99",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_102",
-                northSprite = "street_trafficlines_curb_white_full_103",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_105",
-                northSprite = "street_trafficlines_curb_white_full_112",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_107",
-                northSprite = "street_trafficlines_curb_white_full_114",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_109",
-                northSprite = "street_trafficlines_curb_white_full_109",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_116",
-                northSprite = "street_trafficlines_curb_white_full_117",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_118",
-                northSprite = "street_trafficlines_curb_white_full_119",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_122",
-                northSprite = "street_trafficlines_curb_white_full_123",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_124",
-                northSprite = "street_trafficlines_curb_white_full_125",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_126",
-                northSprite = "street_trafficlines_curb_white_full_127",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_128",
-                northSprite = "street_trafficlines_curb_white_full_138",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_129",
-                northSprite = "street_trafficlines_curb_white_full_137",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_129",
-                northSprite = "street_trafficlines_curb_white_full_137",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_131",
-                northSprite = "street_trafficlines_curb_white_full_136",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_139",
-                northSprite = "street_trafficlines_curb_white_full_139",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_131",
-                northSprite = "street_trafficlines_curb_white_full_136",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_132",
-                northSprite = "street_trafficlines_curb_white_full_150",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_133",
-                northSprite = "street_trafficlines_curb_white_full_149",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_134",
-                northSprite = "street_trafficlines_curb_white_full_148",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_146",
-                northSprite = "street_trafficlines_curb_white_full_147",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_145",
-                northSprite = "street_trafficlines_curb_white_full_144",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_152",
-                northSprite = "street_trafficlines_curb_white_full_153",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_154",
-                northSprite = "street_trafficlines_curb_white_full_155",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintWhite,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_white_full_151",
-                northSprite = "street_trafficlines_curb_white_full_158",
-            }
-        ),
-    }
-    BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
-        "",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line"),
-        "street_trafficlines_01_8",
-        whiteTrafficLines
-    )
-
-    local yellowTrafficLines = {
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_0",
-                northSprite = "street_trafficlines_curb_yellow_full_4",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_1",
-                northSprite = "street_trafficlines_curb_yellow_full_3",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_2",
-                northSprite = "street_trafficlines_curb_yellow_full_5",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_7",
-                northSprite = "street_trafficlines_curb_yellow_full_6",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_8",
-                northSprite = "street_trafficlines_curb_yellow_full_13",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_9",
-                northSprite = "street_trafficlines_curb_yellow_full_12",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_10",
-                northSprite = "street_trafficlines_curb_yellow_full_11",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_14",
-                northSprite = "street_trafficlines_curb_yellow_full_14",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_15",
-                northSprite = "street_trafficlines_curb_yellow_full_15",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_24",
-                northSprite = "street_trafficlines_curb_yellow_full_16",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_17",
-                northSprite = "street_trafficlines_curb_yellow_full_25",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_18",
-                northSprite = "street_trafficlines_curb_yellow_full_26",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_19",
-                northSprite = "street_trafficlines_curb_yellow_full_27",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_20",
-                northSprite = "street_trafficlines_curb_yellow_full_28",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_21",
-                northSprite = "street_trafficlines_curb_yellow_full_29",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_22",
-                northSprite = "street_trafficlines_curb_yellow_full_30",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_32",
-                northSprite = "street_trafficlines_curb_yellow_full_40",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_33",
-                northSprite = "street_trafficlines_curb_yellow_full_41",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_34",
-                northSprite = "street_trafficlines_curb_yellow_full_42",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_35",
-                northSprite = "street_trafficlines_curb_yellow_full_43",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_36",
-                northSprite = "street_trafficlines_curb_yellow_full_44",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_39",
-                northSprite = "street_trafficlines_curb_yellow_full_38",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_47",
-                northSprite = "street_trafficlines_curb_yellow_full_47",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_48",
-                northSprite = "street_trafficlines_curb_yellow_full_48",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_49",
-                northSprite = "street_trafficlines_curb_yellow_full_47",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_52",
-                northSprite = "street_trafficlines_curb_yellow_full_89",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_53",
-                northSprite = "street_trafficlines_curb_yellow_full_54",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_55",
-                northSprite = "street_trafficlines_curb_yellow_full_55",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_59",
-                northSprite = "street_trafficlines_curb_yellow_full_60",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_62",
-                northSprite = "street_trafficlines_curb_yellow_full_85",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_63",
-                northSprite = "street_trafficlines_curb_yellow_full_84",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_64",
-                northSprite = "street_trafficlines_curb_yellow_full_83",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_69",
-                northSprite = "street_trafficlines_curb_yellow_full_87",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_74",
-                northSprite = "street_trafficlines_curb_yellow_full_90",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_65",
-                northSprite = "street_trafficlines_curb_yellow_full_91",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_66",
-                northSprite = "street_trafficlines_curb_yellow_full_92",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_67",
-                northSprite = "street_trafficlines_curb_yellow_full_77",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_68",
-                northSprite = "street_trafficlines_curb_yellow_full_76",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_70",
-                northSprite = "street_trafficlines_curb_yellow_full_88",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_71",
-                northSprite = "street_trafficlines_curb_yellow_full_78",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_72",
-                northSprite = "street_trafficlines_curb_yellow_full_79",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_80",
-                northSprite = "street_trafficlines_curb_yellow_full_94",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_96",
-                northSprite = "street_trafficlines_curb_yellow_full_108",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_106",
-                northSprite = "street_trafficlines_curb_yellow_full_113",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_104",
-                northSprite = "street_trafficlines_curb_yellow_full_115",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_98",
-                northSprite = "street_trafficlines_curb_yellow_full_99",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_102",
-                northSprite = "street_trafficlines_curb_yellow_full_103",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_105",
-                northSprite = "street_trafficlines_curb_yellow_full_112",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_107",
-                northSprite = "street_trafficlines_curb_yellow_full_114",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_109",
-                northSprite = "street_trafficlines_curb_yellow_full_109",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_116",
-                northSprite = "street_trafficlines_curb_yellow_full_117",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_118",
-                northSprite = "street_trafficlines_curb_yellow_full_119",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_122",
-                northSprite = "street_trafficlines_curb_yellow_full_123",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_124",
-                northSprite = "street_trafficlines_curb_yellow_full_125",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_126",
-                northSprite = "street_trafficlines_curb_yellow_full_127",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_128",
-                northSprite = "street_trafficlines_curb_yellow_full_138",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_129",
-                northSprite = "street_trafficlines_curb_yellow_full_137",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_129",
-                northSprite = "street_trafficlines_curb_yellow_full_137",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_131",
-                northSprite = "street_trafficlines_curb_yellow_full_136",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_139",
-                northSprite = "street_trafficlines_curb_yellow_full_139",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_131",
-                northSprite = "street_trafficlines_curb_yellow_full_136",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_132",
-                northSprite = "street_trafficlines_curb_yellow_full_150",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_133",
-                northSprite = "street_trafficlines_curb_yellow_full_149",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_134",
-                northSprite = "street_trafficlines_curb_yellow_full_148",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_146",
-                northSprite = "street_trafficlines_curb_yellow_full_147",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_145",
-                northSprite = "street_trafficlines_curb_yellow_full_144",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_152",
-                northSprite = "street_trafficlines_curb_yellow_full_153",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_154",
-                northSprite = "street_trafficlines_curb_yellow_full_155",
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Yellow_Line",
-            "Tooltip_Road_Line_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.PaintYellow,
-            true,
-            {
-                actionAnim = "paint",
-                noNeedHammer = true,
-                craftingBank = "Painting",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "street_trafficlines_curb_yellow_full_151",
-                northSprite = "street_trafficlines_curb_yellow_full_158",
-            }
-        ),
-    }
-    BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
-        "",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_Yellow_Line"),
-        "street_trafficlines_01_24",
-        yellowTrafficLines
-    )
-end
-
 local function addCategoriesToBuildingMenu()
-    addTrafficLinesToMenu()
+    if SandboxVars.BuildingMenu.lightingAppliances then
+        addLightingToMenu()
+    end
     if SandboxVars.BuildingMenu.bathroomAppliances then
         addBathroomAppliancesToMenu()
     end

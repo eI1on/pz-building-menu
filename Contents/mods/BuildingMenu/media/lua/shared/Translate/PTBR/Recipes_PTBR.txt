@@ -1,0 +1,46 @@
+Recipe_PTBR = {
+    /* Receitas para Produção de Vidro */
+    Recipe_BMPrepareGlassShards = "Preparar vidro para fusão",
+    Recipe_BMUnprepareGlassShards = "Remover vidro da Assadeira",
+    Recipe_BMRemoveGlassPane = "Extrair painel de vidro",
+
+    /* Receitas para Quebra de Vidro */
+    Recipe_BMSmashGlassJar = "Quebrar em vidro quebrado",
+    Recipe_BMSmashGlassPane = "Quebrar em vidro quebrado",
+    Recipe_BMSmashWindshield = "Quebrar em vidro quebrado",
+    Recipe_BMSmashWindows = "Quebrar em vidro quebrado",
+
+    /* Receitas para Janelas */
+    Recipe_BMMakeWindow01 = "Fazer Janela de Madeira",
+    Recipe_BMMakeWindow02 = "Fazer Janela de Azulejo Branco",
+    Recipe_BMMakeWindow03 = "Fazer Janela de Azulejo",
+    Recipe_BMMakeWindow04 = "Fazer Janela Branca",
+    Recipe_BMMakeWindow05 = "Fazer Janela Cromada",
+    Recipe_BMMakeWindow06 = "Fazer Janela de Correr",
+
+    /* Receitas para Desmontagem de Janelas */
+    Recipe_BMDisassembleWindow01 = "Desmontar Janela de Madeira",
+    Recipe_BMDisassembleWindow02 = "Desmontar Janela de Azulejo Branco",
+    Recipe_BMDisassembleWindow03 = "Desmontar Janela de Azulejo",
+    Recipe_BMDisassembleWindow04 = "Desmontar Janela Branca",
+    Recipe_BMDisassembleWindow05 = "Desmontar Janela Cromada",
+    Recipe_BMDisassembleWindow06 = "Desmontar Janela de Correr",
+
+    /* Receitas para Veículos: Popular */
+    Recipe_BMWindshield1 = "Fazer Para-brisa Popular",
+    Recipe_BMRearWindshield1 = "Fazer Para-brisa Traseiro Popular",
+    Recipe_BMFrontWindow1 = "Fazer Janela Dianteira Popular",
+    Recipe_BMRearWindow1 = "Fazer Janela Traseira Popular",
+
+    /* Receitas para Veículos: Pesado */
+    Recipe_BMWindshield2 = "Fazer Para-brisa Pesado",
+    Recipe_BMRearWindshield2 = "Fazer Para-brisa Traseiro Pesado",
+    Recipe_BMFrontWindow2 = "Fazer Janela Dianteira Pesado",
+    Recipe_BMRearWindow2 = "Fazer Janela Traseira Pesado",
+
+    /* Receitas para Veículos: Esportivo */
+    Recipe_BMWindshield3 = "Fazer Para-brisa Esportivo",
+    Recipe_BMRearWindshield3 = "Fazer Para-brisa Traseiro Esportivo",
+    Recipe_BMFrontWindow3 = "Fazer Janela Dianteira Esportiva",
+    Recipe_BMRearWindow3 = "Fazer Janela Traseira Esportiva",
+}

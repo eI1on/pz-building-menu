@@ -1,0 +1,11 @@
+Sandbox_EN = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkie Specific Categories _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Enable Secret Entrances Category",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Enable to add secret entrances. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Enable Forest Survival Category",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Enable to add forest survival structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+
+}

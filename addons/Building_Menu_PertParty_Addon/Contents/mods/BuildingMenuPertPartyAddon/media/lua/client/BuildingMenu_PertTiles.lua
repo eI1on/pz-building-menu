@@ -173,15 +173,12 @@ local function addPertWallsToMenu()
     BuildingMenu.addObjectsToCategories(
     "Perts Party",
     getText("IGUI_BuildingMenuCat_Walls"),
-    nil,
+    "pert_walls_wallpaper_1_80",
     getText("IGUI_BuildingMenuSubCat_Walls_Fancy_Black_Wood_Panel"),
     "pert_walls_wallpaper_1_84",
     pertFancyBlackWoodPanelWall
     )
 end
-addPertWallsToMenu()
-
-
 
 local function addPertDoorsToMenu()
     local pertDoorObjects = {}
@@ -329,7 +326,7 @@ local function addPertDoorsToMenu()
     BuildingMenu.addObjectsToCategories(
         "Perts Party",
         getText("IGUI_BuildingMenuCat_Doors"),
-        nil,
+        "pert_doors_01_8",
         getText("IGUI_BuildingMenuSubCat_Doors_Fire_Doors"),
         "pert_doors_fire_1_0",
         pertDoorObjects
@@ -376,12 +373,14 @@ local function addPertDoorsToMenu()
     BuildingMenu.addObjectsToCategories(
         "Perts Party",
         getText("IGUI_BuildingMenuCat_Doors"),
-        nil,
+        "pert_doors_01_8",
         getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
         "pert_doors_01_0",
         pertDoorObjects
     )
+end
 
+local function addGarageDoorsToMenu()
     local function create3TileGarageDoor(baseName, startSpriteNumber)
         local spriteData = {
             sprite = baseName .. startSpriteNumber,
@@ -451,7 +450,7 @@ local function addPertDoorsToMenu()
     BuildingMenu.addObjectsToCategories(
         "Perts Party",
         getText("IGUI_BuildingMenuCat_Doors"),
-        nil,
+        "pert_doors_01_8",
         getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
         "pert_more_garage_doors_0",
         pertGarageDoorsObjects
@@ -466,14 +465,12 @@ local function addPertDoorsToMenu()
     BuildingMenu.addObjectsToCategories(
         "Perts Party",
         getText("IGUI_BuildingMenuCat_Doors"),
-        nil,
+        "pert_doors_01_8",
         getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
         "pert_more_garage_doors_0",
         pertGarageDoorsObjects
     )
 end
-addPertDoorsToMenu()
-
 
 local function addPertCountersToMenu()
     local function createCounterObject(spriteBaseName, spriteNumber)
@@ -546,45 +543,44 @@ local function addPertCountersToMenu()
     )
 
 end
-addPertCountersToMenu()
 
-
-local pertFilingCabinets = {
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Counter_Generic",
-        BuildingMenu.onBuildWoodenContainer,
-        BuildingMenu.MetalCounterRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorchMid",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium",
-            containerType = "filingcabinet",
-            canBeAlwaysPlaced = true,
-            blockAllTheSquare = true,
-            canBeLockedByPadlock = true
-        },
-        {
-            sprite = "pert_cyberdrive_systems_1_22",
-            northSprite = "pert_cyberdrive_systems_1_23",
-            eastSprite = "pert_cyberdrive_systems_1_30",
-            southSprite = "pert_cyberdrive_systems_1_31"
-        }
-    ),
-}
-BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Containers"),
-    nil,
-    getText("IGUI_BuildingMenuSubCat_Containers_Filing_Cabinets"),
-    "pert_cyberdrive_systems_1_22",
-    pertFilingCabinets
-)
-
+local function addMetalContainersToMenu()
+    local pertFilingCabinets = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.MetalCounterRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                containerType = "filingcabinet",
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            {
+                sprite = "pert_cyberdrive_systems_1_22",
+                northSprite = "pert_cyberdrive_systems_1_23",
+                eastSprite = "pert_cyberdrive_systems_1_30",
+                southSprite = "pert_cyberdrive_systems_1_31"
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Containers"),
+        "pert_bar_01_3",
+        getText("IGUI_BuildingMenuSubCat_Containers_Filing_Cabinets"),
+        "pert_cyberdrive_systems_1_22",
+        pertFilingCabinets
+    )
+end
 
 local function createDoubleTileFurnitureObject(tooltip, recipe, sprite, sprite2, northSprite, northSprite2)
     return BuildingMenu.createObject(
@@ -649,403 +645,404 @@ local function addpertLargeTablesToMenu()
     BuildingMenu.addObjectsToCategories(
         "Perts Party",
         getText("IGUI_BuildingMenuCat_Furniture"),
-        nil,
+        "pert_re-phoenix_4_53",
         getText("IGUI_BuildingMenuSubCat_Furniture_Large_Tables"),
         "pert_re-phoenix_4_49",
         pertLargeTables
     )
 end
-addpertLargeTablesToMenu()
 
+local function addRoadworkPaintedRoadMarkingsToMenu()
+    local pertDecorationsRoadWork = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Line",
+            "Tooltip_Road_Line_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.PaintWhite,
+            true,
+            {
+                actionAnim = "paint",
+                noNeedHammer = true,
+                craftingBank = "Painting",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "pert_re-phoenix_2_16",
+                northSprite = "pert_re-phoenix_2_17",
+                eastSprite = "pert_re-phoenix_2_18",
+                southSprite = "pert_re-phoenix_2_19"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Line",
+            "Tooltip_Road_Line_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.PaintWhite,
+            true,
+            {
+                actionAnim = "paint",
+                noNeedHammer = true,
+                craftingBank = "Painting",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "pert_re-phoenix_2_32",
+                northSprite = "pert_re-phoenix_2_30",
+                eastSprite = "pert_re-phoenix_2_46",
+                southSprite = "pert_re-phoenix_2_48"
+            }
+        ),
+        
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "pert_re-phoenix_2_16",
+        getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line"),
+        "pert_re-phoenix_2_16",
+        pertDecorationsRoadWork
+    )
+end
 
-local pertDecorationsRoadWork = {
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_White_Line",
-        "Tooltip_Road_Line_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.PaintWhite,
-        true,
-        {
-            actionAnim = "paint",
-            noNeedHammer = true,
-            craftingBank = "Painting",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isThumpable = true,
-            isCorner = true
-        },
-        {
-            sprite = "pert_re-phoenix_2_16",
-            northSprite = "pert_re-phoenix_2_17",
-            eastSprite = "pert_re-phoenix_2_18",
-            southSprite = "pert_re-phoenix_2_19"
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_White_Line",
-        "Tooltip_Road_Line_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.PaintWhite,
-        true,
-        {
-            actionAnim = "paint",
-            noNeedHammer = true,
-            craftingBank = "Painting",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isThumpable = true,
-            isCorner = true
-        },
-        {
-            sprite = "pert_re-phoenix_2_32",
-            northSprite = "pert_re-phoenix_2_30",
-            eastSprite = "pert_re-phoenix_2_46",
-            southSprite = "pert_re-phoenix_2_48"
-        }
-    ),
-    
-}
-BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Road_Work"),
-    "pert_re-phoenix_2_16",
-    getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line"),
-    "pert_re-phoenix_2_16",
-    pertDecorationsRoadWork
-)
+local function addPostersAndSignsToMenu()
+    local pertDecorationsSigns = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Signs_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                solid = false,
+                renderFloorHelper = true,
+            },
+            {
+                sprite = "pert_re-phoenix_3_50",
+                northSprite = "pert_re-phoenix_3_51"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Signs_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                solid = false,
+                renderFloorHelper = true,
+            },
+            {
+                sprite = "pert_re-phoenix_3_56",
+                northSprite = "pert_re-phoenix_3_57"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Signs_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                solid = false,
+                renderFloorHelper = true,
+            },
+            {
+                sprite = "pert_re-phoenix_3_58",
+                northSprite = "pert_re-phoenix_3_59"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Signs_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                solid = false,
+                renderFloorHelper = true,
+            },
+            {
+                sprite = "pert_re-phoenix_3_64",
+                northSprite = "pert_re-phoenix_3_65"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Signs_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                solid = false,
+                renderFloorHelper = true,
+            },
+            {
+                sprite = "pert_re-phoenix_3_66",
+                northSprite = "pert_re-phoenix_3_67"
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Decorations"),
+        "pert_re-phoenix_3_50",
+        getText("IGUI_BuildingMenuSubCat_Decorations_Signs"),
+        "pert_re-phoenix_3_50",
+        pertDecorationsSigns
+    )
+end
 
-
-local pertDecorationsSigns = {
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Signs_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            solid = false,
-            renderFloorHelper = true,
-        },
-        {
-            sprite = "pert_re-phoenix_3_50",
-            northSprite = "pert_re-phoenix_3_51"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Signs_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            solid = false,
-            renderFloorHelper = true,
-        },
-        {
-            sprite = "pert_re-phoenix_3_56",
-            northSprite = "pert_re-phoenix_3_57"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Signs_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            solid = false,
-            renderFloorHelper = true,
-        },
-        {
-            sprite = "pert_re-phoenix_3_58",
-            northSprite = "pert_re-phoenix_3_59"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Signs_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            solid = false,
-            renderFloorHelper = true,
-        },
-        {
-            sprite = "pert_re-phoenix_3_64",
-            northSprite = "pert_re-phoenix_3_65"
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Signs_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            solid = false,
-            renderFloorHelper = true,
-        },
-        {
-            sprite = "pert_re-phoenix_3_66",
-            northSprite = "pert_re-phoenix_3_67"
-        }
-    ),
-}
-BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Decorations"),
-    "pert_re-phoenix_3_50",
-    getText("IGUI_BuildingMenuSubCat_Decorations_Signs"),
-    "pert_re-phoenix_3_50",
-    pertDecorationsSigns
-)
-
-
-local pertDecorationsHalloween = {
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_Hedge",
-        "Tooltip_Hedges_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.FlowerBedRecipe,
-        true,
-        {
-            actionAnim = "DigShovel",
-            noNeedHammer = true,
-            craftingBank = "Shoveling",
-            completionSound = "DropSoilFromGravelBag",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            isBush = true,
-            solid = false,
-            moveWithWind = true
-        },
-        {sprite = "pert_halloween_01_1", northSprite = "pert_halloween_01_0"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_Pumpkin",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            solid = false,
-        },
-        {
-            sprite = "pert_halloween_01_9",
-            northSprite = "pert_halloween_01_8"
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_Pumpkin",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            canPassThrough = true,
-            canBarricade = false,
-            isCorner = true,
-            solid = false,
-        },
-        {
-            sprite = "pert_halloween_01_11",
-            northSprite = "pert_halloween_01_10"
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_WitchHat",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            isCorner = true
-        },
-        {
-            sprite = "pert_halloween_01_36",
-            northSprite = "pert_halloween_01_37",
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_WitchHat",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            isCorner = true
-        },
-        {
-            sprite = "pert_halloween_01_38",
-            northSprite = "pert_halloween_01_39",
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_DeadTree",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            isCorner = true
-        },
-        {
-            sprite = "pert_halloween_01_16",
-            northSprite = "pert_halloween_01_16",
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_DeadTree",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            isCorner = true
-        },
-        {
-            sprite = "pert_halloween_01_17",
-            northSprite = "pert_halloween_01_17",
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_BloodFlamingo",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            isCorner = true
-        },
-        {
-            sprite = "pert_halloween_01_25",
-            northSprite = "pert_halloween_01_24",
-        }
-    ),
-    BuildingMenu.createObject(
-        "",
-        "Tooltip_Roadway_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.SignRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            isCorner = true
-        },
-        {
-            sprite = "pert_halloween_02_21",
-            northSprite = "pert_halloween_02_21",
-        }
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Pert_Halloween_Grave",
-        "Tooltip_Grave_Generic",
-        BuildingMenu.onBuildWoodenContainer,
-        BuildingMenu.GraveRecipe,
-        true,
-        {
-            actionAnim = "DigShovel",
-            noNeedHammer = true,
-            craftingBank = "Shoveling",
-            completionSound = "DropSoilFromGravelBag",
-            renderFloorHelper = false,
-            canBeAlwaysPlaced = true,
-            blockAllTheSquare = true,
-            canBeLockedByPadlock = true
-        },
-        {
-            sprite = "pert_halloween_01_32",
-            northSprite = "pert_halloween_01_32"
-        }
-    ),
-}
-BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Festive"),
-    "pert_halloween_01_9",
-    getText("IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween"),
-    "pert_halloween_01_9",
-    pertDecorationsHalloween
-)
-
+local function addHalloweenDecorationsToMenu()
+    local pertDecorationsHalloween = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_Hedge",
+            "Tooltip_Hedges_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.FlowerBedRecipe,
+            true,
+            {
+                actionAnim = "DigShovel",
+                noNeedHammer = true,
+                craftingBank = "Shoveling",
+                completionSound = "DropSoilFromGravelBag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                isBush = true,
+                solid = false,
+                moveWithWind = true
+            },
+            {sprite = "pert_halloween_01_1", northSprite = "pert_halloween_01_0"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_Pumpkin",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                solid = false,
+            },
+            {
+                sprite = "pert_halloween_01_9",
+                northSprite = "pert_halloween_01_8"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_Pumpkin",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true,
+                solid = false,
+            },
+            {
+                sprite = "pert_halloween_01_11",
+                northSprite = "pert_halloween_01_10"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_WitchHat",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isCorner = true
+            },
+            {
+                sprite = "pert_halloween_01_36",
+                northSprite = "pert_halloween_01_37",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_WitchHat",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isCorner = true
+            },
+            {
+                sprite = "pert_halloween_01_38",
+                northSprite = "pert_halloween_01_39",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_DeadTree",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isCorner = true
+            },
+            {
+                sprite = "pert_halloween_01_16",
+                northSprite = "pert_halloween_01_16",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_DeadTree",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isCorner = true
+            },
+            {
+                sprite = "pert_halloween_01_17",
+                northSprite = "pert_halloween_01_17",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_BloodFlamingo",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isCorner = true
+            },
+            {
+                sprite = "pert_halloween_01_25",
+                northSprite = "pert_halloween_01_24",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SignRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isCorner = true
+            },
+            {
+                sprite = "pert_halloween_02_21",
+                northSprite = "pert_halloween_02_21",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Pert_Halloween_Grave",
+            "Tooltip_Grave_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.GraveRecipe,
+            true,
+            {
+                actionAnim = "DigShovel",
+                noNeedHammer = true,
+                craftingBank = "Shoveling",
+                completionSound = "DropSoilFromGravelBag",
+                renderFloorHelper = false,
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            {
+                sprite = "pert_halloween_01_32",
+                northSprite = "pert_halloween_01_32"
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Festive"),
+        "pert_halloween_01_9",
+        getText("IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween"),
+        "pert_halloween_01_9",
+        pertDecorationsHalloween
+    )
+end
 
 local function addChristmasDecorationsToMenu()
     local pertGingerBreadWalls= {
@@ -1585,7 +1582,7 @@ local function addChristmasDecorationsToMenu()
     BuildingMenu.addObjectsToCategories(
     "Perts Party",
     getText("IGUI_BuildingMenuCat_Festive"),
-    "",
+    "pert_halloween_01_9",
     getText("IGUI_BuildingMenuSubCat_Pert_Structures_Christmas"),
     "pert_Christmas_01_4",
     pertGingerBreadWalls
@@ -1730,7 +1727,7 @@ local function addChristmasDecorationsToMenu()
     BuildingMenu.addObjectsToCategories(
     "Perts Party",
     getText("IGUI_BuildingMenuCat_Festive"),
-    "",
+    "pert_halloween_01_9",
     getText("IGUI_BuildingMenuSubCat_Pert_Detailing_Christmas"),
     "pert_Christmas_01_42",
     gingerBreadDetailing
@@ -2033,14 +2030,12 @@ local function addChristmasDecorationsToMenu()
     BuildingMenu.addObjectsToCategories(
         "Perts Party",
         getText("IGUI_BuildingMenuCat_Festive"),
-        "",
+        "pert_halloween_01_9",
         getText("IGUI_BuildingMenuSubCat_Pert_Decorations_Christmas"),
         "pert_Christmas_01_81",
         christmasDecorations
     )
 end
-addChristmasDecorationsToMenu()
-
 
 local function addFridgeAppliancesToMenu()
     local pertFridgesObjects = {
@@ -2080,7 +2075,38 @@ local function addFridgeAppliancesToMenu()
         pertFridgesObjects
     )
 end
+
 local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.woodWallsSubCategory then
+        addPertWallsToMenu()
+    end
+    if SandboxVars.BuildingMenu.doorsSubCategory then
+        addPertDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.garageDoorsSubCategory then
+        addGarageDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.commercialCountersSubCategory then
+        addPertCountersToMenu()
+    end
+    if SandboxVars.BuildingMenu.metalContainersSubCategory then
+        addMetalContainersToMenu()
+    end
+    if SandboxVars.BuildingMenu.tablesSubCategory then
+        addpertLargeTablesToMenu()
+    end
+    if SandboxVars.BuildingMenu.roadworkPaintedRoadMarkingsSubCategory then
+        addRoadworkPaintedRoadMarkingsToMenu()
+    end
+    if SandboxVars.BuildingMenu.postersAndSignsSubCategory then
+        addPostersAndSignsToMenu()
+    end
+    if SandboxVars.BuildingMenu.pertsPartyChristmas then
+        addChristmasDecorationsToMenu()
+    end
+    if SandboxVars.BuildingMenu.pertsPartyHalloween then
+        addHalloweenDecorationsToMenu()
+    end
     if SandboxVars.BuildingMenu.fridgeAppliances then
         addFridgeAppliancesToMenu()
     end

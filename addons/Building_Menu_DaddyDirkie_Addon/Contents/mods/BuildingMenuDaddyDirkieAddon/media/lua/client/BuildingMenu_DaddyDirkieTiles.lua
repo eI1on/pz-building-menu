@@ -101,9 +101,8 @@ local function addDaddyDirkieDoorsToMenu()
     )
 
 end
-addDaddyDirkieDoorsToMenu()
 
-local function addDaddyDirkieFencingToMenu()
+local function addHighFencesToMenu()
     local highFences = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence",
@@ -399,8 +398,9 @@ local function addDaddyDirkieFencingToMenu()
         highFences
     )
 
+end
 
-
+local function addLowAndRailingFencesToMenu()
     local lowFences = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Fence_Post",
@@ -643,10 +643,7 @@ local function addDaddyDirkieFencingToMenu()
         "location_farm_accesories_spyjack_01_11",
         lowFences
     )
-
-
 end
-addDaddyDirkieFencingToMenu()
 
 local function addDaddyDirkieBedroomFurnitureToMenu()
     local furnitureSets = {}
@@ -1327,8 +1324,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         furnitureDressers
     )
 end
-addDaddyDirkieBedroomFurnitureToMenu()
-
 
 local function addDaddyDirkieCouchesToMenu()
     local function createFurnitureObject(spriteData, isSimpleFurniture)
@@ -1556,10 +1551,8 @@ local function addDaddyDirkieCouchesToMenu()
         daddyDirkieCouches
     )
 end
-addDaddyDirkieCouchesToMenu()
 
-
-local function addDaddyDirkieCountersToMenu()
+local function addKitchenCountersToMenu()
     local daddyDirkieCounters = {}
     local dataCounters = {10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59, 66, 67, 74, 75, 82, 83, 90, 91, 98, 99, 106, 107}
 
@@ -1697,8 +1690,10 @@ local function addDaddyDirkieCountersToMenu()
         "d_furniture_kitchen_01_1",
         daddyDirkieCounters
     )
+end
 
-    daddyDirkieCounters = {
+local function addMetalContainersToMenu()
+    local daddyDirkieCounters = {
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
@@ -1922,8 +1917,9 @@ local function addDaddyDirkieCountersToMenu()
         "edit_ddd_RUS_location_business_machinery_02_1",
         daddyDirkieCounters
     )
+end
 
-
+local function addCratesToMenu()
     local daddyDirkieCrates = {
         BuildingMenu.createObject(
             "",
@@ -2292,8 +2288,6 @@ local function addDaddyDirkieCountersToMenu()
         daddyDirkieCrates
     )
 end
-addDaddyDirkieCountersToMenu()
-
 
 local function addDaddyDirkieStairsToMenu()
     local function createWoodenStairsObject1(baseName, startSpriteNumber)
@@ -2433,7 +2427,6 @@ local function addDaddyDirkieStairsToMenu()
         melosMetalStairs
     )
 end
-addDaddyDirkieStairsToMenu()
 
 local function addDaddyDirkieOthersToMenu()
     local daddyDirkieOthers = {
@@ -2529,8 +2522,6 @@ local function addDaddyDirkieOthersToMenu()
         daddyDirkieOthers
     )
 end
-addDaddyDirkieOthersToMenu()
-
 
 local function addDaddyDirkieForestSurvivalToMenu()
     local forestSurvival = {
@@ -3003,7 +2994,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
          forestSurvival
     )
 end
-addDaddyDirkieForestSurvivalToMenu()
 
 local function addDaddyDirkieCraftedStoveToMenu()
     local craftedStove = {
@@ -3063,7 +3053,6 @@ local function addDaddyDirkieCraftedStoveToMenu()
          craftedStove
     )
 end
-
 
 local function addDaddyDirkieBathroomAppliancesToMenu()
     local function createBathroomObject(spec)
@@ -3145,6 +3134,39 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
 end
 
 local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.doorsSubCategory then
+        addDaddyDirkieDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.highFencesSubCategory then
+        addHighFencesToMenu()
+    end
+    if SandboxVars.BuildingMenu.lowAndRailingFencesSubCategory then
+        addLowAndRailingFencesToMenu()
+    end
+    if SandboxVars.BuildingMenu.dressersAndWardrobesSubCategory then
+        addDaddyDirkieBedroomFurnitureToMenu()
+    end
+    if SandboxVars.BuildingMenu.kitchenCountersSubCategory then
+        addKitchenCountersToMenu()
+    end
+    if SandboxVars.BuildingMenu.cratesSubCategory then
+        addCratesToMenu()
+    end
+    if SandboxVars.BuildingMenu.metalContainersSubCategory then
+        addMetalContainersToMenu()
+    end
+    if SandboxVars.BuildingMenu.seatingFurnitureSubCategory then
+        addDaddyDirkieCouchesToMenu()
+    end
+    if SandboxVars.BuildingMenu.stairsCategory then
+        addDaddyDirkieStairsToMenu()
+    end
+    if SandboxVars.BuildingMenu.daddyDirkieSecretEntrances then
+        addDaddyDirkieOthersToMenu()
+    end
+    if SandboxVars.BuildingMenu.daddyDirkieForestSurvival then
+        addDaddyDirkieForestSurvivalToMenu()
+    end
     if SandboxVars.BuildingMenu.bathroomAppliances then
         addDaddyDirkieBathroomAppliancesToMenu()
     end
