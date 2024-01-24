@@ -1,15 +1,235 @@
 Sandbox_ES = {
-    Sandbox_BuildingMenu = "Menú de construcción",
-     Sandbox_BuildingMenu_isThumpable = "Estructuras que se pueden golpear",
-     Sandbox_BuildingMenu_isThumpable_tooltip = "Desactive <ESPACIO><RGB:1,0.8,0> <RGB:1,1,1><ESPACIO> para que las estructuras construidas usando el menú sean inmunes al daño de los zombis.",
-     Sandbox_BuildingMenu_bathroomAppliances = "Habilitar accesorios de baño",
-     Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilite agregar lavabos, inodoros y otros objetos relacionados con el baño en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
-     Sandbox_BuildingMenu_cookingAppliances = "Habilitar electrodomésticos de cocina",
-     Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilitar el acceso a estufas, hornos y otros objetos relacionados con la cocina en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
-     Sandbox_BuildingMenu_fridgeAppliances = "Habilitar aparatos de refrigeración",
-     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Habilitar para incluir refrigeradores y congeladores en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
-     Sandbox_BuildingMenu_laundryAppliances = "Habilitar electrodomésticos de lavandería",
-     Sandbox_BuildingMenu_laundryAppliances_tooltip = "Habilitar para agregar lavadoras y secadoras en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
-     Sandbox_BuildingMenu_metalDrums = "Habilitar tambores de metal",
-     Sandbox_BuildingMenu_metalDrums_tooltip = "Habilitar para agregar tambores metálicos en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+	Sandbox_BuildingMenu = "MenÃº de construcciÃ³n",
+	Sandbox_BuildingMenu_isThumpable = "Estructuras que se pueden golpear",
+	Sandbox_BuildingMenu_isThumpable_tooltip = "Desactive <ESPACIO><RGB:1,0.8,0> <RGB:1,1,1><ESPACIO> para que las estructuras construidas usando el menÃº sean inmunes al daÃ±o de los zombis.",
+
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Walls Category _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_woodWallsSubCategory = "Enable Wood Walls Subcategory",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Enable to add wooden walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Enable Clapboard Walls Subcategory",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Enable to add clapboard walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "Enable Stone Walls Subcategory",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Enable to add stone walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_brickWallsSubCategory = "Enable Brick Walls Subcategory",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Enable to add brick walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Enable Cinderblock Walls Subcategory",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Enable to add cinderblock walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "Enable Painted Walls Subcategory",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Enable to add painted walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Enable Arched Window Walls Subcategory",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Enable to add arched window walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "Enable Commercial Walls Subcategory",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Enable to add commercial walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "Enable Industrial Walls Subcategory",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Enable to add industrial walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Roofs Category _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_roofsCategory = "Enable Roofs Category",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Enable to add roof structures, such as shingles, shake shingles, glass. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Doors Category _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_doorsSubCategory = "Enable Doors Category",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Enable to add Wooden, Low, Panel, Metal, Glass doors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "Enable Garage Doors Subcategory",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Enable to add 3 and 4 Tile Garage Doors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Architecture Plus Category _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_architecturePlusCategory = "Enable Architecture Plus Category",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Enable to add Door Trims, Crown Molding, Edge Detailing, Floor Molding and Wall Panels. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Windows Category ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_windowsCategory = "Enable Windows Category",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Enable to add Windows. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Fencing Category ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_highFencesSubCategory = "Enable High Fences Subcategory",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Enable to add High Fences. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Enable Low fences and Railings Subcategory",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Enable to add Low Fences and Railings. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_otherFencesSubCategory = "Enable Other Fences Subcategory",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Enable to add other Fences such as Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Floors Category ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_floorsCategory = "Enable Floor Category",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Enable to add Floors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Stairs Category ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+ 
+    Sandbox_BuildingMenu_stairsCategory = "Enable Stairs Category",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Enable to add Stairs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Roadwork Category _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+ 
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Enable Asphalt Subcategory",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Enable to add asphalt. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Enable Overlays Subcategory",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Enable to add overlays such as Grime and Street Cracks. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Enable Sidewalk Edge Overlays Subcategory",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Enable to add Sidewalk Edge Overlays. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Enable Dirt and Grass Subcategory",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Enable to add Dirt and Grass tiles. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Enable Painted Road Markings Subcategory",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Enable to add Painted Road Markings. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Containers Category ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+ 
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Enable Kitchen Counters Subcategory",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Enable to add Kitchen Counters, Upper Counters. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Enable Commercial Counters Subcategory",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Enable to add Restaurant, Cafe, Bar, Diner Counters. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_cratesSubCategory = "Enable Crates Subcategory",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Enable to add simple Crates, Military Crates(100 capacity), Cardboard Boxes. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_metalContainersSubCategory = "Enable Metal Containers Subcategory",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Enable to add Metal Containers, Large Metal Shelves, Lockers. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "Enable Clothes Racks Subcategory",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Enable to add Clothes Racks and Mannequins. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_trashCansSubCategory = "Enable Trash Cans Subcategory",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Enable to add trash cans. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_containersOthersSubCategory = "Enable Other Containers Subcategory",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Enable to add Other Containers Subcategory. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+
+
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Furniture Category _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+ 
+    Sandbox_BuildingMenu_tablesSubCategory = "Enable Tables Subcategory",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Enable to add Small and Large Tables. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+    Sandbox_BuildingMenu_bedsSubCategory = "Enable Beds Subcategory",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Enable to add Simple and Large Beds. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Enable Seating Furnitures Subcategory",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Enable to add Benches, Couches, Chairs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Enable Bookshelves Subcategory",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Enable to add Bookshelves. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Enable Dressers Subcategory",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Enable to add Dressers, Drawers and Wardrobes. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+
+
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Decorations Category ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+ 
+    Sandbox_BuildingMenu_rugsSubCategory = "Enable Rugs Subcategory",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Enable to add Rugs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Enable Posters and Signs Subcategory",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Enable to add Posters and Signs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_graffitiSubCategory = "Enable Graffiti Subcategory",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Enable to add Graffiti. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Enable Other Decorations Subcategory",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Enable to add Other Decorations, such as road blocks, mailbox, barrier post, road cones, mail box. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+
+
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Vegetation Category ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "Enable Flower Beds Subcategory",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Enable to add Flower Beds in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Enable Indoor Plants Subcategory",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Enable to add Indoor Plants, such as Flower Pots in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Enable Outdoor Plants Subcategory",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Enable to add Outdoor Plants, such as outdoor Flower Containers in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_landscapingSubCategory = "Enable Landscaping Subcategory",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Enable to add Landscaping Vegetation, such as Grass, Hedges, Wall Vines in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+
+
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Survival Category _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_fireplaceSubCategory = "Enable Fireplace Subcategory",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Enable to add Fireplace and Jambs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+   
+    Sandbox_BuildingMenu_generatorSubCategory = "Enable Generator Subcategory",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Enable to add the Generator. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+
+	Sandbox_BuildingMenu_metalDrums = "Habilitar tambores de metal",
+	Sandbox_BuildingMenu_metalDrums_tooltip = "Habilitar para agregar tambores metÃ¡licos en el menÃº. <LINE><LINE> <RGB:1,0,0> Â¡REQUIERE REINICIAR EL CLIENTE!",
+
+
+
+	Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Appliances Category ____________",
+	Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+	Sandbox_BuildingMenu_lightingAppliances = "Enable Lighting Category",
+	Sandbox_BuildingMenu_lightingAppliances_tooltip = "Enable to add Lighting Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+
+	Sandbox_BuildingMenu_bathroomAppliances = "Habilitar accesorios de baÃ±o",
+	Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilite agregar lavabos, inodoros y otros objetos relacionados con el baÃ±o en el menÃº. <LINE><LINE> <RGB:1,0,0> Â¡REQUIERE REINICIAR EL CLIENTE!",
+
+	Sandbox_BuildingMenu_cookingAppliances = "Habilitar electrodomÃ©sticos de cocina",
+	Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilitar el acceso a estufas, hornos y otros objetos relacionados con la cocina en el menÃº. <LINE><LINE> <RGB:1,0,0> Â¡REQUIERE REINICIAR EL CLIENTE!",
+
+	Sandbox_BuildingMenu_fridgeAppliances = "Habilitar aparatos de refrigeraciÃ³n",
+	Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Habilitar para incluir refrigeradores y congeladores en el menÃº. <LINE><LINE> <RGB:1,0,0> Â¡REQUIERE REINICIAR EL CLIENTE!",
+
+	Sandbox_BuildingMenu_laundryAppliances = "Habilitar electrodomÃ©sticos de lavanderÃ­a",
+	Sandbox_BuildingMenu_laundryAppliances_tooltip = "Habilitar para agregar lavadoras y secadoras en el menÃº. <LINE><LINE> <RGB:1,0,0> Â¡REQUIERE REINICIAR EL CLIENTE!",
+
+
 }

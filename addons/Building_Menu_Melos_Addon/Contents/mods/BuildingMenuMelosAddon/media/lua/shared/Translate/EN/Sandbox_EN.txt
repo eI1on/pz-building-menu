@@ -1,0 +1,11 @@
+Sandbox_EN = {
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider = "_______________ Melos Tiles Specific Categories _______________",
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_melosTilesCastleWalls = "Enable Castle Walls Category",
+    Sandbox_BuildingMenu_melosTilesCastleWalls_tooltip = "Enable to add Castle structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+
+    Sandbox_BuildingMenu_melosTilesBathroomWalls = "Enable Bathroom Walls Category",
+    Sandbox_BuildingMenu_melosTilesBathroomWalls_tooltip = "Enable to add Castle structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+
+}

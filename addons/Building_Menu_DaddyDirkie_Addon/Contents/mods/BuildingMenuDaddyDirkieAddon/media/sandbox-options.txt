@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option BuildingMenu.DaddyDirkieCategoryDivider
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_DaddyDirkieCategoryDivider,
+}
+
+option BuildingMenu.daddyDirkieSecretEntrances
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_daddyDirkieSecretEntrances,
+}
+
+option BuildingMenu.daddyDirkieForestSurvival
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_daddyDirkieForestSurvival,
+}

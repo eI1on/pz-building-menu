@@ -401,463 +401,481 @@ local function addSimonMDWallsToMenu()
     )
 
 end
-addSimonMDWallsToMenu()
 
-
-local simonMDCorrugatedRoof = {
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Roof",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildFloor,
-        BuildingMenu.MetalFloorRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "furniture_Simon_MD_78", northSprite = "furniture_Simon_MD_87"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Roof",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildFloor,
-        BuildingMenu.MetalFloorRecipe,
-        true,
-        {
-            actionAnim = "BuildLow",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureSmall",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "furniture_Simon_MD_79", northSprite = "furniture_Simon_MD_86"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_1",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_8", northSprite = "roofs_Simon_MD_13"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_2",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_9", northSprite = "roofs_Simon_MD_12"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_3",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_10", northSprite = "roofs_Simon_MD_11"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_1",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_16", northSprite = "roofs_Simon_MD_16"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_2",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_17", northSprite = "roofs_Simon_MD_17"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_3",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_18", northSprite = "roofs_Simon_MD_18"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_1",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_19", northSprite = "roofs_Simon_MD_19"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_2",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_20", northSprite = "roofs_Simon_MD_20"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_3",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_21", northSprite = "roofs_Simon_MD_21"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_1",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_32", northSprite = "roofs_Simon_MD_37"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_2",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_33", northSprite = "roofs_Simon_MD_36"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_3",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_34", northSprite = "roofs_Simon_MD_35"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Pitched",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_14", northSprite = "roofs_Simon_MD_15"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Inner",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_29", northSprite = "roofs_Simon_MD_29"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Outer",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_38", northSprite = "roofs_Simon_MD_39"}
-    ),
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Valley",
-        "Tooltip_Roof_Generic",
-        BuildingMenu.onBuildSimpleFurniture,
-        BuildingMenu.ScrapRoofTileRecipe,
-        true,
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            needToBeAgainstWall = false,
-            blockAllTheSquare = false,
-            renderFloorHelper = true,
-            canPassThrough = true,
-            canBarricade = false
-        },
-        {sprite = "roofs_Simon_MD_28", northSprite = "roofs_Simon_MD_28"}
+local function addRoofingToMenu()
+    local simonMDCorrugatedRoof = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Roof",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildFloor,
+            BuildingMenu.MetalFloorRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "furniture_Simon_MD_78", northSprite = "furniture_Simon_MD_87"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Roof",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildFloor,
+            BuildingMenu.MetalFloorRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "furniture_Simon_MD_79", northSprite = "furniture_Simon_MD_86"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_8", northSprite = "roofs_Simon_MD_13"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_9", northSprite = "roofs_Simon_MD_12"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_10", northSprite = "roofs_Simon_MD_11"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_16", northSprite = "roofs_Simon_MD_16"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_17", northSprite = "roofs_Simon_MD_17"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_18", northSprite = "roofs_Simon_MD_18"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_19", northSprite = "roofs_Simon_MD_19"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_20", northSprite = "roofs_Simon_MD_20"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_21", northSprite = "roofs_Simon_MD_21"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_32", northSprite = "roofs_Simon_MD_37"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_33", northSprite = "roofs_Simon_MD_36"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_34", northSprite = "roofs_Simon_MD_35"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Pitched",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_14", northSprite = "roofs_Simon_MD_15"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Inner",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_29", northSprite = "roofs_Simon_MD_29"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Outer",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_38", northSprite = "roofs_Simon_MD_39"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Valley",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.ScrapRoofTileRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false
+            },
+            {sprite = "roofs_Simon_MD_28", northSprite = "roofs_Simon_MD_28"}
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_Roofing"),
+        "roofs_Simon_MD_8",
+        getText("IGUI_BuildingMenuSubCat_Roofing_Scrap"),
+        "roofs_Simon_MD_8",
+        simonMDCorrugatedRoof
     )
-}
-BuildingMenu.addObjectsToCategories(
-    "Simon MDs",
-    getText("IGUI_BuildingMenuCat_Roofing"),
-    "roofs_Simon_MD_8",
-    getText("IGUI_BuildingMenuSubCat_Roofing_Scrap"),
-    "roofs_Simon_MD_8",
-    simonMDCorrugatedRoof
-)
+end
 
+local function addSimonMDSecretEntrancesToMenu()
+    local simonMDOthers = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_SecretEntranceDoor",
+            "Tooltip_SecretEntranceDoor",
+            BuildingMenu.onBuildDoor,
+            BuildingMenu.WoodenDoorRecipe,
+            "Build Secret Entrance",
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                modData = {wallType = "doorframe"}
+            },
+            {
+                sprite = "fixtures_doors_Simon_MD_28",
+                northSprite = "fixtures_doors_Simon_MD_29",
+                openSprite = "fixtures_doors_Simon_MD_30",
+                openNorthSprite = "fixtures_doors_Simon_MD_31"
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_SimonMD_Others"),
+        "fixtures_doors_Simon_MD_30",
+        getText("IGUI_BuildingMenuSubCat_SimonMD_Secret_Entrances"),
+        "fixtures_doors_Simon_MD_30",
+        simonMDOthers
+    )
+end
 
-local simonMDOthers = {
-    BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_SecretEntranceDoor",
-        "Tooltip_SecretEntranceDoor",
-        BuildingMenu.onBuildDoor,
-        BuildingMenu.WoodenDoorRecipe,
-        "Build Secret Entrance",
-        {
-            actionAnim = "Build",
-            noNeedHammer = false,
-            completionSound = "BuildWoodenStructureLarge",
-            modData = {wallType = "doorframe"}
-        },
-        {
-            sprite = "fixtures_doors_Simon_MD_28",
-            northSprite = "fixtures_doors_Simon_MD_29",
-            openSprite = "fixtures_doors_Simon_MD_30",
-            openNorthSprite = "fixtures_doors_Simon_MD_31"
+local function addGarageDoorsToMenu()
+    local function create3TileGarageDoor(baseName, startSpriteNumber)
+        local spriteData = {
+            sprite = baseName .. startSpriteNumber,
+            sprite2 = baseName .. (startSpriteNumber + 1),
+            sprite3 = baseName .. (startSpriteNumber + 2),
+            northSprite = baseName .. (startSpriteNumber + 3),
+            northSprite2 = baseName .. (startSpriteNumber + 4),
+            northSprite3 = baseName .. (startSpriteNumber + 5)
         }
-    ),
-}
-BuildingMenu.addObjectsToCategories(
-    "Simon MDs",
-    getText("IGUI_BuildingMenuCat_SimonMD_Others"),
-    "fixtures_doors_Simon_MD_30",
-    getText("IGUI_BuildingMenuSubCat_SimonMD_Secret_Entrances"),
-    "fixtures_doors_Simon_MD_30",
-    simonMDOthers
-)
+
+        return BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_3_Tiles_Garage_Door",
+            "Tooltip_Garage_Door",
+            BuildingMenu.onBuild3TileGarageDoor,
+            BuildingMenu.GarageDoorRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            spriteData
+        )
+    end
+
+    local function create4TileGarageDoor(baseName, startSpriteNumber)
+        local spriteData = {
+            sprite = baseName .. startSpriteNumber,
+            sprite2 = baseName .. (startSpriteNumber + 1),
+            sprite3 = baseName .. (startSpriteNumber + 1),
+            sprite4 = baseName .. (startSpriteNumber + 2),
+            northSprite = baseName .. (startSpriteNumber + 3),
+            northSprite2 = baseName .. (startSpriteNumber + 4),
+            northSprite3 = baseName .. (startSpriteNumber + 4),
+            northSprite4 = baseName .. (startSpriteNumber + 5)
+        }
+
+        return BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_4_Tiles_Garage_Door",
+            "Tooltip_Garage_Door",
+            BuildingMenu.onBuild4TileGarageDoor,
+            BuildingMenu.GarageDoorRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            spriteData
+        )
+    end
 
 
-local function create3TileGarageDoor(baseName, startSpriteNumber)
-    local spriteData = {
-        sprite = baseName .. startSpriteNumber,
-        sprite2 = baseName .. (startSpriteNumber + 1),
-        sprite3 = baseName .. (startSpriteNumber + 2),
-        northSprite = baseName .. (startSpriteNumber + 3),
-        northSprite2 = baseName .. (startSpriteNumber + 4),
-        northSprite3 = baseName .. (startSpriteNumber + 5)
-    }
+    local simonMDGarageDoorsObjects = {}
+    local garageDoorSpriteRanges = {72}
 
-    return BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_3_Tiles_Garage_Door",
-        "Tooltip_Garage_Door",
-        BuildingMenu.onBuild3TileGarageDoor,
-        BuildingMenu.GarageDoorRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium"
-        },
-        spriteData
+    for _, startNumber in ipairs(garageDoorSpriteRanges) do
+        table.insert(simonMDGarageDoorsObjects, create3TileGarageDoor("furniture_Simon_MD_", startNumber))
+    end
+
+
+    BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_Doors"),
+        "furniture_Simon_MD_72",
+        getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
+        "furniture_Simon_MD_72",
+        simonMDGarageDoorsObjects
+    )
+
+    simonMDGarageDoorsObjects = {}
+    for _, startNumber in ipairs(garageDoorSpriteRanges) do
+        table.insert(simonMDGarageDoorsObjects, create4TileGarageDoor("furniture_Simon_MD_", startNumber))
+    end
+
+
+    BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_Doors"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
+        "furniture_Simon_MD_72",
+        simonMDGarageDoorsObjects
     )
 end
 
-local function create4TileGarageDoor(baseName, startSpriteNumber)
-    local spriteData = {
-        sprite = baseName .. startSpriteNumber,
-        sprite2 = baseName .. (startSpriteNumber + 1),
-        sprite3 = baseName .. (startSpriteNumber + 1),
-        sprite4 = baseName .. (startSpriteNumber + 2),
-        northSprite = baseName .. (startSpriteNumber + 3),
-        northSprite2 = baseName .. (startSpriteNumber + 4),
-        northSprite3 = baseName .. (startSpriteNumber + 4),
-        northSprite4 = baseName .. (startSpriteNumber + 5)
-    }
-
-    return BuildingMenu.createObject(
-        "Tooltip_BuildingMenuObj_4_Tiles_Garage_Door",
-        "Tooltip_Garage_Door",
-        BuildingMenu.onBuild4TileGarageDoor,
-        BuildingMenu.GarageDoorRecipe,
-        true,
-        {
-            firstItem = "BlowTorch",
-            secondItem = "WeldingMask",
-            craftingBank = "BlowTorch",
-            actionAnim = "BlowTorch",
-            noNeedHammer = true,
-            completionSound = "BuildMetalStructureMedium"
-        },
-        spriteData
-    )
+local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.industrialWallsSubCategory then
+        addSimonMDWallsToMenu()
+    end
+    if SandboxVars.BuildingMenu.roofsCategory then
+        addRoofingToMenu()
+    end
+    if SandboxVars.BuildingMenu.garageDoorsSubCategory then
+        addGarageDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.simonMDSecretEntrances then
+        addSimonMDSecretEntrancesToMenu()
+    end
 end
-
-
-local simonMDGarageDoorsObjects = {}
-local garageDoorSpriteRanges = {72}
-
-for _, startNumber in ipairs(garageDoorSpriteRanges) do
-    table.insert(simonMDGarageDoorsObjects, create3TileGarageDoor("furniture_Simon_MD_", startNumber))
-end
-
-
-BuildingMenu.addObjectsToCategories(
-    "Simon MDs",
-    getText("IGUI_BuildingMenuCat_Doors"),
-    "furniture_Simon_MD_72",
-    getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
-    "furniture_Simon_MD_72",
-    simonMDGarageDoorsObjects
-)
-
-simonMDGarageDoorsObjects = {}
-for _, startNumber in ipairs(garageDoorSpriteRanges) do
-    table.insert(simonMDGarageDoorsObjects, create4TileGarageDoor("furniture_Simon_MD_", startNumber))
-end
-
-
-BuildingMenu.addObjectsToCategories(
-    "Simon MDs",
-    getText("IGUI_BuildingMenuCat_Doors"),
-    nil,
-    getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
-    "furniture_Simon_MD_72",
-    simonMDGarageDoorsObjects
-)
+Events.OnGameStart.Add(addCategoriesToBuildingMenu)

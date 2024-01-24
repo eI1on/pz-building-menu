@@ -4,46 +4,7 @@ require("BuildingMenu04_CategoriesDefinitions")
 local BuildingMenu = getBuildingMenuInstance()
 
 
-
 local function addDylanContainersToMenu()
-    local function createLockerObject(spriteName)
-        return BuildingMenu.createObject(
-            "",
-            "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.MetalLockerRecipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructrueMedium",
-                containerType = "locker",
-                canBeAlwaysPlaced = true,
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            {
-                sprite = spriteName,
-                northSprite = spriteName
-            }
-        )
-    end
-    local blackCoffeeContainer = {}
-    table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_8"))
-    table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_9"))
-    BuildingMenu.addObjectsToCategories(
-    "Dylan",
-    getText("IGUI_BuildingMenuCat_Containers"),
-    "BlackCoffeeCo01_8",
-    getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
-    "BlackCoffeeCo01_8",
-    blackCoffeeContainer
-    )
-
-
     local function createCounterObject(spriteBaseName, spriteNumber)
         return BuildingMenu.createObject(
             "",
@@ -131,8 +92,6 @@ local function addDylanContainersToMenu()
     )
     
 end
-addDylanContainersToMenu()
-
 
 local function addGardenStuffToMenu()
     local crateObjects = {
@@ -468,10 +427,45 @@ local function addGardenStuffToMenu()
     )
 
 end
-addGardenStuffToMenu()
-
 
 local function addMetalCountersToMenu()
+    local function createLockerObject(spriteName)
+        return BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.MetalLockerRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructrueMedium",
+                containerType = "locker",
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            {
+                sprite = spriteName,
+                northSprite = spriteName
+            }
+        )
+    end
+    local blackCoffeeContainer = {}
+    table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_8"))
+    table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_9"))
+    BuildingMenu.addObjectsToCategories(
+    "Dylan",
+    getText("IGUI_BuildingMenuCat_Containers"),
+    "BlackCoffeeCo01_8",
+    getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
+    "BlackCoffeeCo01_8",
+    blackCoffeeContainer
+    )
+
     local metalCounterObjects = {
         BuildingMenu.createObject(
             "",
@@ -579,7 +573,7 @@ local function addMetalCountersToMenu()
     BuildingMenu.addObjectsToCategories(
         "Dylan",
         getText("IGUI_BuildingMenuCat_Containers"),
-        "",
+        "BlackCoffeeCo01_8",
         getText("IGUI_BuildingMenuSubCat_Containers_Metal"),
         "DarthGunStore_10",
         metalCounterObjects
@@ -774,14 +768,12 @@ local function addMetalCountersToMenu()
     BuildingMenu.addObjectsToCategories(
         "Dylan",
         getText("IGUI_BuildingMenuCat_Containers"),
-        "",
+        "BlackCoffeeCo01_8",
         getText("IGUI_BuildingMenuSubCat_Lab_Containers"),
         "DylansRandomFurniture03_38",
         labCounterObjects
     )
 end
-addMetalCountersToMenu()
-
 
 local function addFridgeAppliancesToMenu()
     local fridgesObjects = {
@@ -821,6 +813,16 @@ local function addFridgeAppliancesToMenu()
 end
 
 local function addCategoriesToBuildingMenu()
+    if SandboxVars.BuildingMenu.commercialCountersSubCategory then
+        addDylanContainersToMenu()
+
+    end
+    if SandboxVars.BuildingMenu.metalContainersSubCategory then
+        addMetalCountersToMenu()
+    end
+    if SandboxVars.BuildingMenu.outdoorPlantsSubCategory then
+        addGardenStuffToMenu()
+    end
     if SandboxVars.BuildingMenu.fridgeAppliances then
         addFridgeAppliancesToMenu()
     end
