@@ -1,7 +1,4 @@
 Tooltip_CN = {
-  -- Translated by: iaso2h
-  -- Date: Jan 25, 2024
-
   Tooltip_BMMagazineSecretEntrances = "通过翻转来发现你的秘密逃脱口。建造指示位于Daddy Dirkie和SimonMDs的面板之下。",
   Tooltip_BMMagazineGlass = "……让他们知道你是如此的心灵手巧",
   Tooltip_AsphaltMixturePowder = "用来建造道路。需要一桶水。",
@@ -450,7 +447,7 @@ Tooltip_CN = {
 
   Tooltip_BuildingMenuObj_Blue_Wall = "蓝色墙",
   Tooltip_BuildingMenuObj_Blue_Door_Frame = "蓝色门框",
-  Tooltip_BuildingMenuObj_Pile_o_Crepe_Blue_Glass_Door = "Pile O' Crepe 带窗户的蓝色门",
+  Tooltip_BuildingMenuObj_Pile_o_Crepe_Blue_Glass_Door = "Pile O' Crepe带窗户的蓝色门",
   Tooltip_BuildingMenuObj_Pizza_Whirled_Brown_Glass_Door = "旋转披萨褐色玻璃门",
   Tooltip_BuildingMenuObj_Blue_Window_Frame = "蓝色窗框",
   Tooltip_BuildingMenuObj_Blue_Pillar = "蓝色柱",
@@ -1565,7 +1562,7 @@ Tooltip_CN = {
 
   Tooltip_BuildingMenuObj_Thick_White_Line = "粗白线",
   Tooltip_BuildingMenuObj_Thick_White_Line_Corner = "粗白色转角线",
-  Tooltip_BuildingMenuObj_Thick_White_Line_T = "粗白色",
+  Tooltip_BuildingMenuObj_Thick_White_Line_T = "粗白色T型转角线",
   Tooltip_BuildingMenuObj_Thick_White_Line_Triangles = "粗白色三角形",
   Tooltip_BuildingMenuObj_White_Markings = "白色标记",
 
@@ -1612,7 +1609,7 @@ Tooltip_CN = {
   Tooltip_RecyclingBin = "在末世里，回收比什么都重要。",
 
   Tooltip_Pallet_of_Bricks = "用来藏匿东西的一堆旧砖头。",
-  Tooltip_Dog_House = "僵尸把狗子吃了，所以你现在把它的屋子用来放东西了。",
+  Tooltip_Dog_House = "僵尸把狗子吃了，所以现在它的屋子用来放东西了。",
   Tooltip_Outhouse_Box = "至少你知道没人会在里面翻看你的东西了。",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Empty_Shelves = "木制空酒架",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "木制酒架1",
@@ -1625,7 +1622,7 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_Toddler_Rug_Edge = "婴儿地毯边缘",
   Tooltip_BuildingMenuObj_Toddler_Rug_Inner = "婴儿地毯内部",
 
-  Tooltip_BuildingMenuObj_Fireplace = "壁炉Fireplace",
+  Tooltip_BuildingMenuObj_Fireplace = "壁炉",
   Tooltip_BuildingMenuObj_Fireplace_2Tiles_1 = "双开壁炉1",
   Tooltip_BuildingMenuObj_Fireplace_2Tiles_2 = "双开壁炉2",
   Tooltip_BuildingMenuObj_Fireplace_Wooden_Shelf = "木制壁炉架",
@@ -1664,9 +1661,9 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_UStoreIT_Sign = "U-Store It标识",
   Tooltip_BuildingMenuObj_ScarletOak_Sign = "Scarlet Oak Distillery标识",
   Tooltip_BuildingMenuObj_KnoxDistillery_Sign = "KNOX Distillery & Dressed to the 90s标识",
-  Tooltip_BuildingMenuObj_TheWanderingSashimi_Sign = "The Wandering SASHIMI & Start and 条纹Sign",
+  Tooltip_BuildingMenuObj_TheWanderingSashimi_Sign = "The Wandering SASHIMI & Start和条纹标志",
 
-  Tooltip_BuildingMenuObj_Graffiti = "Graffiti",
+  Tooltip_BuildingMenuObj_Graffiti = "涂鸦",
 
   Tooltip_BuildingMenuObj_Car_Lift_Pillar = "汽车举升机柱",
   Tooltip_BuildingMenuObj_Car_Lift_Upper = "汽车举升机上部",
