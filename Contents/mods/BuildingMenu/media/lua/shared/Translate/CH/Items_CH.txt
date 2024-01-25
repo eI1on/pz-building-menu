@@ -1,0 +1,13 @@
+Items_CH = {
+
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "裝有玻璃碎片的烤盤",
+    DisplayName_PanWithGlassPane = "裝有玻璃板的烤盤",
+    DisplayName_GlassPane = "玻璃板",
+
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "勤雜角——廚房窑爐",
+    DisplayName_BMMagazineCars = "精密車窗工藝",
+    DisplayName_BMMagazineSecretEntrances = "秘密通道月刊",
+
+}

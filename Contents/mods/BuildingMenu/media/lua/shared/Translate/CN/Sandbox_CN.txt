@@ -1,0 +1,236 @@
+Sandbox_CN = {
+    Sandbox_BuildingMenu = "建造菜单",
+    Sandbox_BuildingMenu_isThumpable = "可破坏建造物",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> 取消勾选 <RGB:1,1,1><SPACE> 将使建造物免于僵尸毁坏。",
+
+
+
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 墙分类 _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_woodWallsSubCategory = "开启木墙子类别",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "开启后添加木墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "开启隔板墙子类别",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "开启后添加隔板墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "开启石墙子类别",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "开启后添加石墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_brickWallsSubCategory = "开启砖墙子类别",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "开启后添加砖墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "开启砌块墙子类别",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "开启后添加砌块构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "开启粉刷墙子类别",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "开启后添加粉刷墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "开启拱墙子类别",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "开启后添加拱墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "开启商业墙子类别",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "开启后添加商业墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "开启工业墙子类别",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "开启后添加工业墙构造。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ 屋顶类别 _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_roofsCategory = "开启屋顶类别",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "开启后添加屋顶构造，比如：木瓦屋顶、简瓦屋顶、玻璃屋顶。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ 门类别 _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_doorsSubCategory = "开启门类别",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "开启后添加木门、矮门、面板门、金属门、玻璃门。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "开启车库门子类别",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "开启后添加3格、4格车库门。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ 更多建筑构造类别 _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_architecturePlusCategory = "开启更多建筑构造类别",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "开启后添加门饰边、顶部线脚、边缘装饰、地板线脚和墙面板。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ 窗类别 ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_windowsCategory = "开启窗类别",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "开启后添加窗户。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ 栅栏类别 ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_highFencesSubCategory = "开启高栅栏子类别",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "开启后添加高栅栏。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "开启矮栅栏和栏杆子类别",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "开启后添加矮栅栏和栏杆。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_otherFencesSubCategory = "开启其它栅栏子类别",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "开启后添加其它栅栏比如：艾斯科防爆墙、低金属栅栏、砖砌栅栏。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ 地板类别 ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_floorsCategory = "开启地板类别",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "开启后添加地板。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ 楼梯类别 ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_stairsCategory = "开启楼梯类别",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "开启后添加楼梯。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ 道路工程类别 _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "开启柏油路子类别",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "开启后添加柏油路。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "开启道路覆盖子类别",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "开启后添加覆盖，比如：尘垢和街道裂痕。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "开启人行道路缘石覆盖子类别",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "开启后添加人行道路缘石覆盖。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "开启泥土和草地子类别",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "开启后添加泥土和草地地块。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "开启道路标线子类别",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "开启后添加道路标线。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ 容器类别 ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "厨房柜台子类别",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "开启后添加厨房柜台、壁柜。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "开启商业柜台子类别",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "开启后添加饭点、自助餐厅、酒吧、餐厅柜台。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_cratesSubCategory = "开启箱子类别",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "开启后添加简易箱子、军用箱子（100容量）、纸板箱。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_metalContainersSubCategory = "开启金属容器子类别",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "开启后添加金属容器、大金属架、储物柜。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "开启衣架子类别",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "开启后添加衣架和服装模特。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_trashCansSubCategory = "开启垃圾桶子类别",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "开启后添加垃圾桶。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_containersOthersSubCategory = "开启其它容器子类别",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "开启后添加其它容器子类别。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ 家具类别 _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_tablesSubCategory = "开启桌子子类别",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "开启后添加大小桌子。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_bedsSubCategory = "开启床子类别",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "开启后添加单人床和大床。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "开启座椅家具子类别",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "开启后添加长椅、沙发和椅子。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "开启书架子类别",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "开启后添加书架。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "开启梳妆台子类别",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "开启后添加化妆台、抽屉和衣柜。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ 装饰选项 ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_rugsSubCategory = "开启地毯子类别",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "开启后添加地毯。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "开启海报和标记子类别",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "开启后添加海报和标记。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_graffitiSubCategory = "开启涂鸦子类别",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "开启后添加涂鸦。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "开启其它装饰子类别",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "开启后添加其它装饰，比如：路障、邮件箱、栅栏柱和路锥。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ 植被类别 ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "开启花圃子类别",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "开启后添加花圃子类别。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "开启室内盆栽子类别",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "开启后添加室内盆栽子类别。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "开启户外植物子类别",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "开启后添加户外植物、花盆。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_landscapingSubCategory = "开启街景子类别",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "开启后添加街景植被，比如草地、树篱和藤蔓。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ 生存类别 _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_fireplaceSubCategory = "开启壁炉子类别",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "开启后添加壁炉和侧壁。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_generatorSubCategory = "开启发电机子类别",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "开启后添加发电机。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_metalDrums = "开启金属油桶",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "开启后添加金属油桶。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+
+
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ 器械类别 ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果。",
+
+    Sandbox_BuildingMenu_lightingAppliances = "开启照明类别",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "开启后添加照明类别。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_bathroomAppliances = "开启洗浴设施子类别",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "开启后添加洗手池、马桶和其它洗浴相关设施。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_cookingAppliances = "开启厨房器械子类别",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "开启后添加烤炉、微波炉和其它烹饪相关器械。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_fridgeAppliances = "开启冰冻器械子类别",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "开启后添加冰箱和冷冻柜。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_laundryAppliances = "开启洗涤器械子类别",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "开启后添加洗衣机和烘干机。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+}
