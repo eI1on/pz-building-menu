@@ -1,0 +1,8 @@
+ContextMenu_CN = {
+
+  ContextMenu_Open_Safe = "打开保险箱",
+  ContextMenu_Close_Safe = "打开保险箱",
+  ContextMenu_Set_Safe_Code = "设置保险箱密码",
+  ContextMenu_Reset_Lock = "重置保险箱密码",
+
+}

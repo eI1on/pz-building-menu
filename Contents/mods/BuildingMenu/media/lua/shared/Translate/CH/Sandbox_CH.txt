@@ -1,4 +1,4 @@
-Sandbox_CN = {
+Sandbox_CH = {
     Sandbox_BuildingMenu = "建造菜單",
     Sandbox_BuildingMenu_isThumpable = "可破壞建造物",
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> 取消勾選 <RGB:1,1,1><SPACE> 將使建造物免於殭尸毁壞。",
@@ -227,7 +227,7 @@ Sandbox_CN = {
     Sandbox_BuildingMenu_cookingAppliances = "開啓廚房器械子類別",
     Sandbox_BuildingMenu_cookingAppliances_tooltip = "開啓後添加烤爐、微波爐和其它烹飪相關器械。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
 
-    Sandbox_BuildingMenu_fridgeAppliances = "開啓冰凍器械子類別",
+    Sandbox_BuildingMenu_fridgeAppliances = "開啓冷凍器械子類別",
     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "開啓後添加冰箱和冷凍匱。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
 
     Sandbox_BuildingMenu_laundryAppliances = "開啓洗滌器械子類別",

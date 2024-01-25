@@ -1,0 +1,8 @@
+IGUI_CN = {
+
+    IGUI_BuildingMenuSubCat_Containers_Safes = "保险箱",
+
+    IGUI_LockDial_Controls = "操控: 左(A)/右(D)键或者鼠标。 <BR>解锁机制：逆时针轻调转盘，当刻度与正确的数字对齐时停留1秒。 <BR><BR>",
+    IGUI_LockDial_NewCode = "操控: 左(A)/右(D)键或者鼠标。 <BR>设置新密码：点击“OK”给3位数密码组合添加当前数字。 <BR><BR><BR>",
+
+}

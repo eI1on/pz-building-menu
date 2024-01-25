@@ -447,7 +447,7 @@ Tooltip_CN = {
 
   Tooltip_BuildingMenuObj_Blue_Wall = "蓝色墙",
   Tooltip_BuildingMenuObj_Blue_Door_Frame = "蓝色门框",
-  Tooltip_BuildingMenuObj_Pile_o_Crepe_Blue_Glass_Door = "Pile O' Crepe带窗户的蓝色门",
+  Tooltip_BuildingMenuObj_Pile_o_Crepe_Blue_Glass_Door = "Pile O' Crepe带窗蓝门",
   Tooltip_BuildingMenuObj_Pizza_Whirled_Brown_Glass_Door = "旋转披萨褐色玻璃门",
   Tooltip_BuildingMenuObj_Blue_Window_Frame = "蓝色窗框",
   Tooltip_BuildingMenuObj_Blue_Pillar = "蓝色柱",
@@ -830,7 +830,7 @@ Tooltip_CN = {
   Tooltip_Jail_Wall = "用于关押犯人的坚固监狱墙。",
   Tooltip_Jail_Door_Frame = "加强过的监狱门框。",
   Tooltip_Jail_Pillar = "提供稳固支撑的监狱柱",
-  Tooltip_Jail_Door = "用于关押犯人的坚固监狱门。里面的人说话又好听，想出来是不可能的了。"
+  Tooltip_Jail_Door = "曾用于关押人才的坚固监狱门。里面的人说话又好听，出来是不可能出来的了。"
 
   Tooltip_BuildingMenuObj_Jail_Door = "监狱门",
   Tooltip_BuildingMenuObj_Jail_Window = "监狱窗户",
@@ -1151,7 +1151,6 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_Black_2_Pane_Door = "黑色面板门2",
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Right = "双开黑色玻璃门（右）",
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left = "双开黑色玻璃门（左）",
-  Tooltip_BuildingMenuObj_Black_2_Pane_Door = "黑色2 Pane Door",
   Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door = "单开栗木面板门",
   Tooltip_BuildingMenuObj_Single_Pane_Black_Door = "单开黑色面板门",
   Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "褐色滑动玻璃门",
@@ -1498,15 +1497,15 @@ Tooltip_CN = {
 
   Tooltip_Staris_Generic = "在庇护所里提供可靠上升下降手段的坚固楼梯。",
 
-  Tooltip_BuildingMenuObj_Simple_Wooden_Stairs = "简易的木制楼梯。",
-  Tooltip_BuildingMenuObj_Brown_Stairs = "褐色楼梯。",
-  Tooltip_BuildingMenuObj_Dark_Brown_Stairs = "深褐色楼梯。",
-  Tooltip_BuildingMenuObj_Yellow_Brown_Stairs = "黄褐色楼梯。",
-  Tooltip_BuildingMenuObj_White_Industrial_Stairs = "白色工业楼梯。",
-  Tooltip_BuildingMenuObj_White_Motel_Stairs = "白色汽车旅馆楼梯。",
-  Tooltip_BuildingMenuObj_Modern_Stairs = "现代楼梯。",
-  Tooltip_BuildingMenuObj_Metal_Stairs = "金属楼梯。",
-  Tooltip_BuildingMenuObj_Elevator_Stairs = "自动扶梯。",
+  Tooltip_BuildingMenuObj_Simple_Wooden_Stairs = "简易木制楼梯",
+  Tooltip_BuildingMenuObj_Brown_Stairs = "褐色楼梯",
+  Tooltip_BuildingMenuObj_Dark_Brown_Stairs = "深褐色楼梯",
+  Tooltip_BuildingMenuObj_Yellow_Brown_Stairs = "黄褐色楼梯",
+  Tooltip_BuildingMenuObj_White_Industrial_Stairs = "白色工业楼梯",
+  Tooltip_BuildingMenuObj_White_Motel_Stairs = "白色汽车旅馆楼梯",
+  Tooltip_BuildingMenuObj_Modern_Stairs = "现代楼梯",
+  Tooltip_BuildingMenuObj_Metal_Stairs = "金属楼梯",
+  Tooltip_BuildingMenuObj_Elevator_Stairs = "自动扶梯",
 
   Tooltip_Asphalt_Generic = "适用于建设道路和通道的、光滑又稳固的柏油路。",
   Tooltip_StreetCrack_Overlay_1 = "街道表面的一小道裂缝。当心脚下！ <BR><RGB:1,0.8,0> 旋转 <RGB:1,1,1><SPACE> 调整大小和高度。",
@@ -1670,9 +1669,9 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_Car_Lift_Lower = "汽车举升机下部",
   Tooltip_BuildingMenuObj_Car_Lift_Middle = "汽车举升机中部",
 
-  Tooltip_Posters_Generic = "海报装饰能给安全屋增添个性。快用你喜欢的图像和艺术品来装点你的安全屋吧。D,
+  Tooltip_Posters_Generic = "海报装饰能给安全屋增添个性。快用你喜欢的图像和艺术品来装点你的安全屋吧。"
   Tooltip_Signs_Generic = "便于传递扼要信息和标记关键地点的通用标识。",
-  Tooltip_Rug_Generic = "给末世藏匿点带来了温暖和风格舒适多用途的地毯。",
+  Tooltip_Rug_Generic = "风格舒适多用途的地毯，给末世藏匿点带来了温暖。",
   Tooltip_Grave_Generic = "用来纪念末世中逝去生命的昏暗栖息处。",
   Tooltip_Roadway_Generic = "增强道路美感的多种装饰品。",
   Tooltip_Garage_Deco_Generic = "个性化车库的多种装饰品。",

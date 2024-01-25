@@ -1,0 +1,11 @@
+Sandbox_CN = {
+    Sandbox_BuildingMenu_PertsPartyCategoryDivider = "_______________ Perts Party类别 _______________",
+    Sandbox_BuildingMenu_PertsPartyCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果",
+
+    Sandbox_BuildingMenu_pertsPartyChristmas = "开启圣诞节类别",
+    Sandbox_BuildingMenu_pertsPartyChristmas_tooltip = "开启后添加姜饼构造、圣诞节灯光。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_pertsPartyHalloween = "开启万圣节类别",
+    Sandbox_BuildingMenu_pertsPartyHalloween_tooltip = "开启后添加万圣节装饰。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+}

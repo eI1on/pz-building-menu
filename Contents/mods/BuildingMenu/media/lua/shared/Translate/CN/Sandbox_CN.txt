@@ -227,7 +227,7 @@ Sandbox_CN = {
     Sandbox_BuildingMenu_cookingAppliances = "开启厨房器械子类别",
     Sandbox_BuildingMenu_cookingAppliances_tooltip = "开启后添加烤炉、微波炉和其它烹饪相关器械。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
 
-    Sandbox_BuildingMenu_fridgeAppliances = "开启冰冻器械子类别",
+    Sandbox_BuildingMenu_fridgeAppliances = "开启冷冻器械子类别",
     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "开启后添加冰箱和冷冻柜。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
 
     Sandbox_BuildingMenu_laundryAppliances = "开启洗涤器械子类别",
