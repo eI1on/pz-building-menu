@@ -6,7 +6,7 @@ This document is intended for modders who wish to expand the Building Menu mod b
 # Creating Buildable Objects
 
 
-To introduce new buildable objects into the mod, you'll need to create them using the provided Lua function. Each object requires a set of parameters that define its characteristics and behavior in the game.
+To introduce new buildable objects into the menu, you'll need to create them using the provided Lua function. Each object requires a set of parameters that define its characteristics and behavior in the game.
 
 Here's the function signature and a brief description of each parameter (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L38-L50)):
 
