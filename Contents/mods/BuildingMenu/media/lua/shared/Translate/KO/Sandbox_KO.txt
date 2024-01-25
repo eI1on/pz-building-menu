@@ -3,219 +3,219 @@ Sandbox_KO = {
     Sandbox_BuildingMenu_isThumpable = "치밀 수 있는 구조물",
     Sandbox_BuildingMenu_isThumpable_tooltip = "좀비 데미지에 면역인 구조물을 건축 메뉴를 사용하여 건설하려면 <SPACE><RGB:1,0.8,0> 끄기 <RGB:1,1,1><SPACE>로 설정하세요.",
     
-    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Walls Category _______________",
-    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_woodWallsSubCategory = "Enable Wood Walls Subcategory",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Enable to add wooden walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+	Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 벽 카테고리 _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Enable Clapboard Walls Subcategory",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Enable to add clapboard walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_woodWallsSubCategory = "나무 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "나무 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "클랩보드 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "클랩보드 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "돌 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "돌 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_brickWallsSubCategory = "벽돌 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "벽돌 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "시멘트 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "시멘트 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "페인트 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "페인트 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "아치형 창문 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "아치형 창문 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "상업용 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "상업용 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "산업용 벽 서브카테고리 활성화",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "산업용 벽 구조물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-    Sandbox_BuildingMenu_stoneWallsSubCategory = "Enable Stone Walls Subcategory",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Enable to add stone walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-    Sandbox_BuildingMenu_brickWallsSubCategory = "Enable Brick Walls Subcategory",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Enable to add brick walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Enable Cinderblock Walls Subcategory",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Enable to add cinderblock walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ 지붕 카테고리 _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-    Sandbox_BuildingMenu_paintedWallsSubCategory = "Enable Painted Walls Subcategory",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Enable to add painted walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_roofsCategory = "지붕 카테고리 활성화",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "지붕 구조물을 추가합니다. 셰잉글, 진동 셰잉글, 유리와 같은 구조물이 포함됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Enable Arched Window Walls Subcategory",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Enable to add arched window walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-    Sandbox_BuildingMenu_commercialWallsSubCategory = "Enable Commercial Walls Subcategory",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Enable to add commercial walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-    Sandbox_BuildingMenu_industrialWallsSubCategory = "Enable Industrial Walls Subcategory",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Enable to add industrial walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ 문 카테고리 _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-
-
-    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Roofs Category _______________",
-    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_roofsCategory = "Enable Roofs Category",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Enable to add roof structures, such as shingles, shake shingles, glass. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_doorsSubCategory = "문 카테고리 활성화",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "나무, 저지, 패널, 금속, 유리 문을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "차고 문 서브카테고리 활성화",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "3타일 및 4타일 차고 문을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-
-
-    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Doors Category _______________",
-    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_doorsSubCategory = "Enable Doors Category",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Enable to add Wooden, Low, Panel, Metal, Glass doors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-    Sandbox_BuildingMenu_garageDoorsSubCategory = "Enable Garage Doors Subcategory",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Enable to add 3 and 4 Tile Garage Doors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-
-
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Architecture Plus Category _________",
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_architecturePlusCategory = "Enable Architecture Plus Category",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Enable to add Door Trims, Crown Molding, Edge Detailing, Floor Molding and Wall Panels. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ 아키텍처 플러스 카테고리 _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-
-
-    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Windows Category ______________",
-    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_windowsCategory = "Enable Windows Category",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Enable to add Windows. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_architecturePlusCategory = "아키텍처 플러스 카테고리 활성화",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "문 트림, 크라운 몰딩, 엣지 디테일링, 플로어 몰딩 및 월 패널을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-
-
-    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Fencing Category ______________",
-    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_highFencesSubCategory = "Enable High Fences Subcategory",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Enable to add High Fences. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Enable Low fences and Railings Subcategory",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Enable to add Low Fences and Railings. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
     
-    Sandbox_BuildingMenu_otherFencesSubCategory = "Enable Other Fences Subcategory",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Enable to add other Fences such as Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ 창문 카테고리 ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-
-
-    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Floors Category ______________",
-    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_floorsCategory = "Enable Floor Category",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Enable to add Floors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_windowsCategory = "창문 카테고리 활성화",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "창문을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-
-
-    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Stairs Category ______________",
-    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
- 
-    Sandbox_BuildingMenu_stairsCategory = "Enable Stairs Category",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Enable to add Stairs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+	
     
-
-    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Roadwork Category _____________",
-    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
- 
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Enable Asphalt Subcategory",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Enable to add asphalt. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ 울타리 카테고리 ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Enable Overlays Subcategory",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Enable to add overlays such as Grime and Street Cracks. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_highFencesSubCategory = "높은 울타리 서브카테고리 활성화",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "높은 울타리를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Enable Sidewalk Edge Overlays Subcategory",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Enable to add Sidewalk Edge Overlays. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "낮은 울타리 및 난간 서브카테고리 활성화",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "낮은 울타리와 난간을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Enable Dirt and Grass Subcategory",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Enable to add Dirt and Grass tiles. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_otherFencesSubCategory = "기타 울타리 서브카테고리 활성화",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "헤스코 배리어, 낮은 금속 울타리, 벽 울타리와 같은 다른 울타리를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Enable Painted Road Markings Subcategory",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Enable to add Painted Road Markings. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+	
+	
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ 바닥 카테고리 ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-
-
-    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Containers Category ____________",
-    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
- 
-    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Enable Kitchen Counters Subcategory",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Enable to add Kitchen Counters, Upper Counters. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_floorsCategory = "바닥 카테고리 활성화",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "바닥 추가를 활성화합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-    Sandbox_BuildingMenu_commercialCountersSubCategory = "Enable Commercial Counters Subcategory",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Enable to add Restaurant, Cafe, Bar, Diner Counters. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+	
+	
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ 계단 카테고리 ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
-    Sandbox_BuildingMenu_cratesSubCategory = "Enable Crates Subcategory",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Enable to add simple Crates, Military Crates(100 capacity), Cardboard Boxes. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_metalContainersSubCategory = "Enable Metal Containers Subcategory",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Enable to add Metal Containers, Large Metal Shelves, Lockers. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_clothesRacksSubCategory = "Enable Clothes Racks Subcategory",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Enable to add Clothes Racks and Mannequins. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_trashCansSubCategory = "Enable Trash Cans Subcategory",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Enable to add trash cans. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_containersOthersSubCategory = "Enable Other Containers Subcategory",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Enable to add Other Containers Subcategory. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-
-
-    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Furniture Category _____________",
-    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
- 
-    Sandbox_BuildingMenu_tablesSubCategory = "Enable Tables Subcategory",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Enable to add Small and Large Tables. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_stairsCategory = "계단 카테고리 활성화",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "계단 추가를 활성화합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-    Sandbox_BuildingMenu_bedsSubCategory = "Enable Beds Subcategory",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Enable to add Simple and Large Beds. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Enable Seating Furnitures Subcategory",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Enable to add Benches, Couches, Chairs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_bookshelvesSubCategory = "Enable Bookshelves Subcategory",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Enable to add Bookshelves. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Enable Dressers Subcategory",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Enable to add Dressers, Drawers and Wardrobes. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-
-
-    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Decorations Category ____________",
-    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
- 
-    Sandbox_BuildingMenu_rugsSubCategory = "Enable Rugs Subcategory",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Enable to add Rugs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Enable Posters and Signs Subcategory",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Enable to add Posters and Signs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_graffitiSubCategory = "Enable Graffiti Subcategory",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Enable to add Graffiti. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Enable Other Decorations Subcategory",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Enable to add Other Decorations, such as road blocks, mailbox, barrier post, road cones, mail box. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-
-
-    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Vegetation Category ____________",
-    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_flowerBedsSubCategory = "Enable Flower Beds Subcategory",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Enable to add Flower Beds in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Enable Indoor Plants Subcategory",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Enable to add Indoor Plants, such as Flower Pots in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Enable Outdoor Plants Subcategory",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Enable to add Outdoor Plants, such as outdoor Flower Containers in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_landscapingSubCategory = "Enable Landscaping Subcategory",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Enable to add Landscaping Vegetation, such as Grass, Hedges, Wall Vines in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-
-    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Survival Category _____________",
-    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_fireplaceSubCategory = "Enable Fireplace Subcategory",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Enable to add Fireplace and Jambs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_generatorSubCategory = "Enable Generator Subcategory",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Enable to add the Generator. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+	
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ 도로 공사 카테고리 _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "아스팔트 서브카테고리 활성화",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "아스팔트를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "오버레이 서브카테고리 활성화",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "그라임 및 균열과 같은 오버레이를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "보도 모서리 오버레이 서브카테고리 활성화",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "보도 모서리 오버레이를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "흙과 풀 서브카테고리 활성화",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "흙과 풀 타일을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "도로 표시 서브카테고리 활성화",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "도로 표지를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+	
+	
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ 보관함 카테고리 ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
+    
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "주방 카운터 서브카테고리 활성화",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "주방 카운터, 상부 카운터를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "상업 카운터 서브카테고리 활성화",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "레스토랑, 카페, 바, 다이너 카운터를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_cratesSubCategory = "상자 서브카테고리 활성화",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "간단한 상자, 군용 상자(100 용량), 판지 상자를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_metalContainersSubCategory = "금속 컨테이너 서브카테고리 활성화",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "금속 컨테이너, 대형 금속 선반, 사물함을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "의류 랙 서브카테고리 활성화",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "의류 랙 및 마네킹을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_trashCansSubCategory = "휴지통 서브카테고리 활성화",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "휴지통을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_containersOthersSubCategory = "기타 컨테이너 서브카테고리 활성화",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "다른 컨테이너 서브카테고리를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+	
+	
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ 가구 카테고리 _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
+    
+    Sandbox_BuildingMenu_tablesSubCategory = "테이블 서브카테고리 활성화",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "작은 테이블과 큰 테이블을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_bedsSubCategory = "침대 서브카테고리 활성화",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "일반 침대와 큰 침대를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "좌석 가구 서브카테고리 활성화",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "벤치, 소파, 의자를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "책장 서브카테고리 활성화",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "책장을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "드레서 서브카테고리 활성화",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "드레서, 서랍, 옷장을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+	
+	
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ 장식 카테고리 ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
+     
+    Sandbox_BuildingMenu_rugsSubCategory = "러그 서브카테고리 활성화",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "러그를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+       
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "포스터 및 표지 서브카테고리 활성화",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "포스터 및 표지를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+       
+    Sandbox_BuildingMenu_graffitiSubCategory = "그래피티 서브카테고리 활성화",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "그래피티를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+       
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "기타 장식 서브카테고리 활성화",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "도로 블록, 우체통, 바리어 포스트, 도로 콘, 우편함과 같은 기타 장식을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+    
+    
+    
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ 식물 카테고리 ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
+    
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "꽃 침대 서브카테고리 활성화",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "식물 카테고리에 꽃 침대를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+       
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "실내 식물 서브카테고리 활성화",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "실내 식물 카테고리에 실내 식물, 꽃 화분을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+       
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "야외 식물 서브카테고리 활성화",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "야외 식물 카테고리에 야외 꽃 화분과 같은 식물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+       
+    Sandbox_BuildingMenu_landscapingSubCategory = "조경 서브카테고리 활성화",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "조경 식물, 풀, 헤지, 벽 덩굴 등을 식물 카테고리에 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!"
+    
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ 생존 카테고리 _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
+    
+    Sandbox_BuildingMenu_fireplaceSubCategory = "벽난로 서브카테고리 활성화",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "벽난로 및 장작 추가를 활성화합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+       
+    Sandbox_BuildingMenu_generatorSubCategory = "발전기 서브카테고리 활성화",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "발전기 추가를 활성화합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+        
     Sandbox_BuildingMenu_metalDrums = "금속 드럼 활성화",
     Sandbox_BuildingMenu_metalDrums_tooltip = "금속 드럼을 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
 
 
 
-    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Appliances Category ____________",
-    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ 가구 카테고리 ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
 
-    Sandbox_BuildingMenu_lightingAppliances = "Enable Lighting Category",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Enable to add Lighting Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_lightingAppliances = "조명 카테고리 활성화",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "조명과 관련된 물건을 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
 
 	Sandbox_BuildingMenu_bathroomAppliances = "욕실 가전 제품 활성화",
     Sandbox_BuildingMenu_bathroomAppliances_tooltip = "싱크, 화장실 및 기타 욕실 관련 물건을 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
