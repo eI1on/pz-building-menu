@@ -1152,7 +1152,6 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Black_2_Pane_Door = "Black 2 Pane Door",
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Right = "Double Black Glass Door Right",
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left = "Double Black Glass Door Left",
-  Tooltip_BuildingMenuObj_Black_2_Pane_Door = "Black 2 Pane Door",
   Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door = "Single Pane Chestnut Door",
   Tooltip_BuildingMenuObj_Single_Pane_Black_Door = "Single Pane Black Door",
   Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "Brown Sliding Glass Door",
@@ -1487,7 +1486,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Grey_Industrial_Floor = "Grey Industrial Floor",
   Tooltip_BuildingMenuObj_Green_Industrial_Floor = "Green Industrial Floor",
   Tooltip_BuildingMenuObj_Brown_Railroad_Metal_Panel = "Brown Railroad Metal Plate",
-  Tooltip_BuildingMenuObj_Grey_Railroad_Metal_Panel = "Grey Railraod Metal Plate",
+  Tooltip_BuildingMenuObj_Grey_Railroad_Metal_Panel = "Grey Railroad Metal Plate",
   Tooltip_BuildingMenuObj_Wide_Plank = "Wide Plank",
   Tooltip_BuildingMenuObj_Elevator_Floor = "Elevator Floor",
 
@@ -1501,7 +1500,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Yellow_Brown_Stairs = "Yellow Brown Stairs",
   Tooltip_BuildingMenuObj_White_Industrial_Stairs = "White Industrial Stairs",
   Tooltip_BuildingMenuObj_White_Motel_Stairs = "White Motel Stairs",
-  Tooltip_BuildingMenuObj_Modern_Stairs = "Modern Staris",
+  Tooltip_BuildingMenuObj_Modern_Stairs = "Modern Stairs",
   Tooltip_BuildingMenuObj_Metal_Stairs = "Metal Stairs",
   Tooltip_BuildingMenuObj_Elevator_Stairs = "Elevator Stairs",
 

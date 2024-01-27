@@ -1,5 +1,5 @@
 Tooltip_EN = {
-    Tooltip_BuildingMenuObj_Small_Plant_Crate = "Small Cardbordbox with Flower Pot",
+    Tooltip_BuildingMenuObj_Small_Plant_Crate = "Small Cardboard box with Flower Pot",
     Tooltip_Random_Garden_Stuff = "Various gardening items and supplies to enhance your post-apocalyptic garden.",
     Tooltip_Garden_Fencing = "Decorative garden fencing to enhance your outdoor space.",
 
