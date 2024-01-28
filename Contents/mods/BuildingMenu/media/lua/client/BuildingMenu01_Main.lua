@@ -206,6 +206,19 @@ BuildingMenu.weldingRodUses = function(torchUses)
     return math.floor((torchUses + 0.1) / 2)
 end
 
+--- Rounds a number to a specified number of decimal places.
+--- If `numDecimalPlaces` is not provided or less than 1, the number is rounded to the nearest integer.
+--- @param num number The number to round.
+--- @param numDecimalPlaces number|nil The number of decimal places to round to. Optional; if nil or less than 1, rounds to the nearest integer.
+--- @return number num The rounded number.
+BuildingMenu.round = function(num, numDecimalPlaces)
+    if numDecimalPlaces and numDecimalPlaces > 0 then
+        local mult = 10 ^ numDecimalPlaces
+        return math.floor(num * mult + 0.5) / mult
+    end
+    return math.floor(num + 0.5)
+end
+
 --- Gets the display name of a moveable object.
 ---@param sprite string
 ---@return string|nil

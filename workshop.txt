@@ -23,7 +23,7 @@ description=[*] Various wall types (Stone, Brick, Clapboard, Wood Panel, Cinderb
 description=[*] Windows
 description=[*] Wooden, Glass Doors
 description=[*] Stairs
-description=[*] Decorative elements for walls ([i] can be removed with a hammer[/i]) 
+description=[*] Decorative elements for walls ([i] can be removed with a hammer[/i])
 description=[*] Fences
 description=[*] Floors
 description=[*] Furniture
@@ -73,7 +73,7 @@ description=This mod inherits its core from [url=https://steamcommunity.com/shar
 description=
 description=Glass items and methods to create them are sourced from [url=https://steamcommunity.com/id/orcicorn]Orc[/url]'s mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2800412098]Improvised Glass[/url]. Which is [b]incompatible[/b] with this mod, because the windows are already added to the building menu.
 description=
-description=[b]DO NOT USE [/b] mods like [i]More Builds, Lite, Expand, Improvised,[/i] and such. All can and will cause errors along with the Building Menu, some override vanilla files to add buildables (which is the worst thing they could do) that BM needs. 
+description=[b]DO NOT USE [/b] mods like [i]More Builds, Lite, Expand, Improvised,[/i] and such. All can and will cause errors along with the Building Menu, some override vanilla files to add buildables (which is the worst thing they could do) that BM needs.
 description=
 description=[h1] Bug Reports: [/h1]
 description=

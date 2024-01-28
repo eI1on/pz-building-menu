@@ -8,6 +8,13 @@ option BuildingMenu.isThumpable
     translation = BuildingMenu_isThumpable,
 }
 
+option BuildingMenu.EmptyBox1
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.WallsCategoryDivider
 {
@@ -89,7 +96,13 @@ option BuildingMenu.industrialWallsSubCategory
     translation = BuildingMenu_industrialWallsSubCategory,
 }
 
-
+option BuildingMenu.EmptyBox2
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.RoofsCategoryDivider
 {
@@ -107,7 +120,13 @@ option BuildingMenu.roofsCategory
     translation = BuildingMenu_roofsCategory,
 }
 
-
+option BuildingMenu.EmptyBox3
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.DoorsCategoryDivider
 {
@@ -133,7 +152,13 @@ option BuildingMenu.garageDoorsSubCategory
     translation = BuildingMenu_garageDoorsSubCategory,
 }
 
-
+option BuildingMenu.EmptyBox4
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.ArchitecturePlusCategoryDivider
 {
@@ -151,6 +176,13 @@ option BuildingMenu.architecturePlusCategory
     translation = BuildingMenu_architecturePlusCategory,
 }
 
+option BuildingMenu.EmptyBox5
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.WindowsCategoryDivider
 {
@@ -168,6 +200,13 @@ option BuildingMenu.windowsCategory
     translation = BuildingMenu_windowsCategory,
 }
 
+option BuildingMenu.EmptyBox6
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.FencingCategoryDivider
 {
@@ -201,6 +240,13 @@ option BuildingMenu.otherFencesSubCategory
     translation = BuildingMenu_otherFencesSubCategory,
 }
 
+option BuildingMenu.EmptyBox7
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.FloorsCategoryDivider
 {
@@ -218,7 +264,13 @@ option BuildingMenu.floorsCategory
     translation = BuildingMenu_lowAndRailingFencesSubCategory,
 }
 
-
+option BuildingMenu.EmptyBox8
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.StairsCategoryDivider
 {
@@ -236,7 +288,13 @@ option BuildingMenu.stairsCategory
     translation = BuildingMenu_stairsCategory,
 }
 
-
+option BuildingMenu.EmptyBox9
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.RoadworkCategoryDivider
 {
@@ -286,7 +344,13 @@ option BuildingMenu.roadworkPaintedRoadMarkingsSubCategory
     translation = BuildingMenu_roadworkPaintedRoadMarkingsSubCategory,
 }
 
-
+option BuildingMenu.EmptyBox10
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.ContainersCategoryDivider
 {
@@ -352,7 +416,13 @@ option BuildingMenu.containersOthersSubCategory
     translation = BuildingMenu_containersOthersSubCategory,
 }
 
-
+option BuildingMenu.EmptyBox11
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.FurnitureCategoryDivider
 {
@@ -402,6 +472,13 @@ option BuildingMenu.dressersAndWardrobesSubCategory
     translation = BuildingMenu_dressersAndWardrobesSubCategory,
 }
 
+option BuildingMenu.EmptyBox12
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.DecorationsCategoryDivider
 {
@@ -443,6 +520,13 @@ option BuildingMenu.otherDecorationsSubCategory
     translation = BuildingMenu_otherDecorationsSubCategory,
 }
 
+option BuildingMenu.EmptyBox13
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.VegetationCategoryDivider
 {
@@ -484,7 +568,13 @@ option BuildingMenu.landscapingSubCategory
     translation = BuildingMenu_landscapingSubCategory,
 }
 
-
+option BuildingMenu.EmptyBox14
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
 
 option BuildingMenu.SurvivalCategoryDivider
 {
@@ -517,6 +607,14 @@ option BuildingMenu.metalDrums
     default = false,
     page = BuildingMenu,
     translation = BuildingMenu_metalDrums,
+}
+
+option BuildingMenu.EmptyBox15
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
 }
 
 option BuildingMenu.AppliancesCategoryDivider
@@ -566,3 +664,340 @@ option BuildingMenu.laundryAppliances
     page = BuildingMenu,
     translation = BuildingMenu_laundryAppliances,
 }
+
+
+
+
+
+
+option BuildingMenuRecipes.MaterialsDivider
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_MaterialsDivider,
+}
+
+
+option BuildingMenuRecipes.paintUses
+{
+    type = enum,
+    numValues = 8,
+    default = 3,
+    page = BuildingMenuRecipes,
+    translation = PaintUses,
+    valueTranslation = BuildingMenuRecipes_deltaUses,
+}
+
+option BuildingMenuRecipes.blowTorchUses
+{
+    type = enum,
+    numValues = 8,
+    default = 3,
+    page = BuildingMenuRecipes,
+    translation = BlowTorchUses,
+    valueTranslation = BuildingMenuRecipes_deltaUses,
+}
+
+option BuildingMenuRecipes.bucketAsphaltMixtureUses
+{
+    type = enum,
+    numValues = 8,
+    default = 3,
+    page = BuildingMenuRecipes,
+    translation = BucketAsphaltMixtureUses,
+    valueTranslation = BuildingMenuRecipes_deltaUses,
+}
+
+option BuildingMenuRecipes.bucketConcreteUses
+{
+    type = enum,
+    numValues = 8,
+    default = 3,
+    page = BuildingMenuRecipes,
+    translation = BucketConcreteUses,
+    valueTranslation = BuildingMenuRecipes_deltaUses,
+}
+
+option BuildingMenuRecipes.bigWallWoodCount
+{
+    type = integer,
+    min = 1,
+    default = 6,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_bigWallWoodCount,
+}
+
+option BuildingMenuRecipes.bigWallNailsCount
+{
+    type = integer,
+    min = 1,
+    default = 8,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_bigWallNailsCount,
+}
+
+option BuildingMenuRecipes.smallWallWoodCount
+{
+    type = integer,
+    min = 1,
+    default = 3,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_smallWallWoodCount,
+}
+
+option BuildingMenuRecipes.smallWallNailsCount
+{
+    type = integer,
+    min = 1,
+    default = 4,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_smallWallNailsCount,
+}
+
+
+
+
+option BuildingMenuRecipes.bigObjectsWoodCount
+{
+    type = integer,
+    min = 1,
+    default = 6,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_bigObjectsWoodCount,
+}
+
+option BuildingMenuRecipes.bigObjectsNailsCount
+{
+    type = integer,
+    min = 1,
+    default = 10,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_bigObjectsNailsCount,
+}
+
+option BuildingMenuRecipes.smallObjectsWoodCount
+{
+    type = integer,
+    min = 1,
+    default = 4,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_smallObjectsWoodCount,
+}
+
+option BuildingMenuRecipes.smallObjectsNailsCount
+{
+    type = integer,
+    min = 1,
+    default = 6,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_smallObjectsNailsCount,
+}
+
+
+
+
+option BuildingMenuRecipes.glassPaneCount
+{
+    type = integer,
+    min = 1,
+    default = 2,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_glassPaneCount,
+}
+
+option BuildingMenuRecipes.metalBarsCount
+{
+    type = integer,
+    min = 1,
+    default = 4,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_metalBarsCount,
+}
+
+
+option BuildingMenuRecipes.screwsCount
+{
+    type = integer,
+    min = 1,
+    default = 10,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_screwsCount,
+}
+
+
+
+option BuildingMenuRecipes.sheetMetalCountForWalls
+{
+    type = integer,
+    min = 1,
+    default = 5,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_sheetMetalCountForWalls,
+}
+
+option BuildingMenuRecipes.sheetMetalCountForDoors
+{
+    type = integer,
+    min = 1,
+    default = 4,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_sheetMetalCountForDoors,
+}
+
+option BuildingMenuRecipes.sheetMetalCountForContainers
+{
+    type = integer,
+    min = 1,
+    default = 4,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_sheetMetalCountForContainers,
+}
+
+option BuildingMenuRecipes.sheetMetalCountForFixturesAndAppliances
+{
+    type = integer,
+    min = 1,
+    default = 4,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances,
+}
+
+option BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors
+{
+    type = integer,
+    min = 1,
+    default = 1,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors,
+}
+
+option BuildingMenuRecipes.EmptyBox1
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_EmptyBox,
+}
+
+option BuildingMenuRecipes.SkillsDivider
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_SkillsDivider,
+}
+
+option BuildingMenuRecipes.bigObjectsCarpentrySkill
+{
+    type = integer,
+    min = 1,
+    default = 5,
+    max = 10,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_bigObjectsCarpentrySkill,
+}
+
+option BuildingMenuRecipes.smallObjectsCarpentrySkill
+{
+    type = integer,
+    min = 1,
+    default = 4,
+    max = 10,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_smallObjectsCarpentrySkill,
+}
+
+
+option BuildingMenuRecipes.carpentryXpPerLevel
+{
+    type = double,
+    min = 0.05,
+    default = 2.5,
+    max = 100.0,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_carpentryXpPerLevel,
+}
+
+option BuildingMenuRecipes.metalweldingXpPerLevel
+{
+    type = double,
+    min = 0.05,
+    default = 3.5,
+    max = 100.0,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_metalweldingXpPerLevel,
+}
+
+option BuildingMenuRecipes.electricalXpPerLevel
+{
+    type = double,
+    min = 0.05,
+    default = 5.0,
+    max = 100.0,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_electricalXpPerLevel,
+}
+
+option BuildingMenuRecipes.EmptyBox2
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_EmptyBox,
+}
+
+option BuildingMenuRecipes.SpecialObjectsRecipesDivider
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_SpecialObjectsRecipesDivider,
+}
+
+option BuildingMenuRecipes.plankCountForMilitaryCrate
+{
+    type = integer,
+    min = 1,
+    default = 15,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_plankCountForMilitaryCrate,
+}
+
+option BuildingMenuRecipes.nailsCountForMilitaryCrate
+{
+    type = integer,
+    min = 1,
+    default = 10,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_nailsCountForMilitaryCrate,
+}
+
+option BuildingMenuRecipes.militaryCrateCarpentrySkill
+{
+    type = integer,
+    min = 1,
+    default = 9,
+    max = 10,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_militaryCrateCarpentrySkill,
+}
+

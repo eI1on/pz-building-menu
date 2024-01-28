@@ -20,7 +20,7 @@ module Base
         Weight	             =	10,
         Type	             =	Drainable,
         UseWhileEquipped     =	FALSE,
-        UseDelta	         =	0.0625,
+        UseDelta	         =	0.1,
         DisplayName	         =	Bucket of Asphalt Mixture,
         ReplaceOnDeplete     =	BucketEmpty,
         ReplaceOnUseOn	     =	WaterSource-BucketWaterFull,
