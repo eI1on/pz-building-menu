@@ -1,0 +1,7 @@
+Sandbox_CH = {
+    Sandbox_BuildingMenu_SimonMDCategoryDivider = "_______________ SimonMD類別 _______________",
+    Sandbox_BuildingMenu_SimonMDCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果",
+
+    Sandbox_BuildingMenu_simonMDSecretEntrances = "開啓秘密入口類別",
+    Sandbox_BuildingMenu_simonMDSecretEntrances_tooltip = "開啓後添加秘密入口。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+}

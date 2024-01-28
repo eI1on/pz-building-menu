@@ -1,0 +1,14 @@
+IGUI_CH = {
+
+    IGUI_BuildingMenuSubCat_Walls_Fancy_White_Wood_Panel = "花式白色木面板",
+    IGUI_BuildingMenuSubCat_Walls_Fancy_Black_Wood_Panel = "花式黑色木面板",
+
+    IGUI_BuildingMenuSubCat_Doors_Fire_Doors = "消防門",
+
+    IGUI_BuildingMenuCat_Festive = "節日",
+    IGUI_BuildingMenuSubCat_Pert_Decorations_Halloween = "萬聖節裝飾",
+    IGUI_BuildingMenuSubCat_Pert_Structures_Christmas = "姜餅結構",
+    IGUI_BuildingMenuSubCat_Pert_Detailing_Christmas = "姜餅細節裝飾",
+    IGUI_BuildingMenuSubCat_Pert_Decorations_Christmas = "聖誕節裝飾",
+
+}

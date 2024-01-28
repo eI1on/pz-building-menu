@@ -29,7 +29,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Brick = "Blue Brick",
     IGUI_BuildingMenuSubCat_Melos_Walls_Orange_Brick = "Orange Brick",
     IGUI_BuildingMenuSubCat_Melos_Walls_Green_Brick = "Green Brick",
-    IGUI_BuildingMenuSubCat_Melos_Walls_Purple_Brick = "Pruple Brick",
+    IGUI_BuildingMenuSubCat_Melos_Walls_Purple_Brick = "Purple Brick",
 
     IGUI_BuildingMenuSubCat_Windows_Rustic_Windows = "Rustic",
     IGUI_BuildingMenuSubCat_Windows_Round_Windows = "Round",

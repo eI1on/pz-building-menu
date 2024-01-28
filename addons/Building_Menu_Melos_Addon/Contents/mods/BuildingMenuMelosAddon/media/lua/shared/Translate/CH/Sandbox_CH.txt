@@ -1,0 +1,11 @@
+Sandbox_CH = {
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider = "_______________ Melos Tiles類別 _______________",
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果",
+
+    Sandbox_BuildingMenu_melosTilesCastleWalls = "開啓城堡墻類別",
+    Sandbox_BuildingMenu_melosTilesCastleWalls_tooltip = "開啓後添加城堡墻。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+
+    Sandbox_BuildingMenu_melosTilesBathroomWalls = "開啓浴室墻類別",
+    Sandbox_BuildingMenu_melosTilesBathroomWalls_tooltip = "開啓後添加浴室墻類別。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！
+
+}

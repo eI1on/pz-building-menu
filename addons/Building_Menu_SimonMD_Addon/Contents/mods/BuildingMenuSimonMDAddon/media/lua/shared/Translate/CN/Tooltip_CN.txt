@@ -1,0 +1,32 @@
+Tooltip_CN = {
+
+  Tooltip_BuildingMenuObj_Scrap_Wall = "废料墙",
+  Tooltip_BuildingMenuObj_Scrap_Door_Frame = "废料门框",
+  Tooltip_BuildingMenuObj_Scrap_Window_Frame = "废料窗框",
+  Tooltip_BuildingMenuObj_Scrap_Pillar = "废料柱",
+  Tooltip_Scrap_Wall = "变废为宝，用废料做成的门。",
+  Tooltip_Scrap_Door_Frame = "便于安装门的废料门框。",
+  Tooltip_Scrap_Window_Frame = "构造简单、采光良好的废料窗框。",
+  Tooltip_Scrap_Pillar = "由废料构筑而成的柱子，末日里回收比什么都重要。",
+
+
+  Tooltip_BuildingMenuObj_Corrugated_Metal = "波纹金属",
+  Tooltip_BuildingMenuObj_Corrugated_Roof = "波纹金属屋顶",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_1 = "波纹金属倾斜1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_2 = "波纹金属倾斜2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched_3 = "波纹金属倾斜3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_1 = "波纹金属内部1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_2 = "波纹金属内部2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_3 = "波纹金属内部3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_1 = "波纹金属拼接1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_2 = "波纹金属拼接2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_3 = "波纹金属拼接3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_1 = "波纹金属外部1",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_2 = "波纹金属外部2",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_3 = "波纹金属外部3",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched = "波纹金属倾斜",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Inner = "波纹金属内部",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Outer = "波纹金属外部",
+  Tooltip_BuildingMenuObj_Corrugated_Metal_Valley = "波纹金属拼接",
+
+}

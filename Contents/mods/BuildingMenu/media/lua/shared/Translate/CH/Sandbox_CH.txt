@@ -1,4 +1,4 @@
-Sandbox_CN = {
+Sandbox_CH = {
     Sandbox_BuildingMenu = "建造菜單",
     Sandbox_BuildingMenu_isThumpable = "可破壞建造物",
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> 取消勾選 <RGB:1,1,1><SPACE> 將使建造物免於殭尸毁壞。",
@@ -227,127 +227,10 @@ Sandbox_CN = {
     Sandbox_BuildingMenu_cookingAppliances = "開啓廚房器械子類別",
     Sandbox_BuildingMenu_cookingAppliances_tooltip = "開啓後添加烤爐、微波爐和其它烹飪相關器械。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
 
-    Sandbox_BuildingMenu_fridgeAppliances = "開啓冰凍器械子類別",
+    Sandbox_BuildingMenu_fridgeAppliances = "開啓冷凍器械子類別",
     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "開啓後添加冰箱和冷凍匱。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
 
     Sandbox_BuildingMenu_laundryAppliances = "開啓洗滌器械子類別",
     Sandbox_BuildingMenu_laundryAppliances_tooltip = "開啓後添加洗衣機和烘干機。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
-
-
-
-
-    Sandbox_BuildingMenuRecipes = "Building Menu Recipes",
-
-    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materials ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_PaintUses = "Paint Can Uses",
-    Sandbox_PaintUses_tooltip = "Uses per paint can. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BlowTorchUses = "Blow Torch Uses",
-    Sandbox_BlowTorchUses_tooltip = "Uses per blow torch. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BucketAsphaltMixtureUses = "Bucket with Asphalt Mix Uses",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Uses per Bucket with Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BucketConcreteUses = "Bucket with Concrete Uses",
-    Sandbox_BucketConcreteUses_tooltip = "Uses per Bucket with Concrete. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-
-    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "12 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "14 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "16 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20 Uses",
-
-
-
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Wood Material Cost for BIG Walls",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Sets wood needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Nails Material Cost for BIG Walls",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Sets nails needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Wood Material Cost for SMALL Walls",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Sets wood needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Nails Material Cost for SMALL Walls",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Sets nails needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Wood Material Cost for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Sets wood needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Nails Material Cost for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Sets nails needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Wood Material Cost for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Sets wood needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Nails Material Cost for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Sets nails needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-
-    Sandbox_BuildingMenuRecipes_glassPaneCount = "Glass Pane Material Cost",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Sets glass panes needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_metalBarsCount = "Metal Bars Material Cost",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Sets metal bars needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_screwsCount = "Screws Material Cost",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Sets screws needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Sheet Metal for WALLS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Sets sheet metal needed for WALLS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Sheet Metal for DOORS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Sets sheet metal needed for DOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Sheet Metal for CONTAINERS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Sets sheet metal needed for CONTAINERS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Sheet Metal for FIXTURES and APPLIANCES Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Sets sheet metal needed for FIXTURES and APPLIANCES. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal for ROOFING and FLOORS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sets sheet metal needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = = "This is only a line separator, checking it has no effect.",
-
-
-    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Skills ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Woodworking level for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Sets carpentry level needed for BIG Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Woodworking level for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Sets carpentry level needed for SMALL Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Woodworking XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "XP gain per carpentry level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Metalworking XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "XP gain per metalworking level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Electrical XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP gain per electrical level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Special Objects Recipes ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Wood Material Cost for Military Crate",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Sets planks required for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Nails Material Cost for Military Crate",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Sets nails required for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Woodworking Level for Military Crate",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Sets carpentry level needed for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
 
 }

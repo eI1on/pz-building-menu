@@ -1,6 +1,6 @@
 Tooltip_CH = {
   Tooltip_BMMagazineSecretEntrances = "通過翻轉來發現你的秘密逃脫口。建造指示位於Daddy Dirkie和SimonMDs的面板之下。",
-  Tooltip_BMMagazineGlass = "……讓大家知道你是如此的心靈手巧",
+  Tooltip_BMMagazineGlass = "……讓他們知道你是如此的心靈手巧",
   Tooltip_AsphaltMixturePowder = "用來建造道路。需要一桶水。",
 
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "灰色石頭墻",
@@ -447,7 +447,7 @@ Tooltip_CH = {
 
   Tooltip_BuildingMenuObj_Blue_Wall = "藍色墻",
   Tooltip_BuildingMenuObj_Blue_Door_Frame = "藍色門框",
-  Tooltip_BuildingMenuObj_Pile_o_Crepe_Blue_Glass_Door = "Pile O' Crepe帶窗戶的藍色門",
+  Tooltip_BuildingMenuObj_Pile_o_Crepe_Blue_Glass_Door = "Pile O' Crepe帶窗藍門",
   Tooltip_BuildingMenuObj_Pizza_Whirled_Brown_Glass_Door = "旋轉披薩褐色玻璃門",
   Tooltip_BuildingMenuObj_Blue_Window_Frame = "藍色窗框",
   Tooltip_BuildingMenuObj_Blue_Pillar = "藍色柱",
@@ -830,7 +830,7 @@ Tooltip_CH = {
   Tooltip_Jail_Wall = "用於關押犯人的堅固監獄墻。",
   Tooltip_Jail_Door_Frame = "加強過的監獄門框。",
   Tooltip_Jail_Pillar = "提供穩固支撐的監獄柱",
-  Tooltip_Jail_Door = "用於關押犯人的堅固監獄門。裏面的人説話又好聽，想出來是不可能的了。"
+  Tooltip_Jail_Door = "曾用於關押人才的堅固監獄門。裏面的人説話又好聽，出來是不可能出來的了。"
 
   Tooltip_BuildingMenuObj_Jail_Door = "監獄門",
   Tooltip_BuildingMenuObj_Jail_Window = "監獄窗戶",
@@ -1151,7 +1151,6 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Black_2_Pane_Door = "黑色面板門2",
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Right = "雙開黑色玻璃門（右）",
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left = "雙開黑色玻璃門（左）",
-  Tooltip_BuildingMenuObj_Black_2_Pane_Door = "黑色2 Pane Door",
   Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door = "單開慄木面板門",
   Tooltip_BuildingMenuObj_Single_Pane_Black_Door = "單開黑色面板門",
   Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "褐色滑動玻璃門",
@@ -1498,15 +1497,15 @@ Tooltip_CH = {
 
   Tooltip_Staris_Generic = "在庇護所裏提供可靠上昇下降手段的堅固樓梯。",
 
-  Tooltip_BuildingMenuObj_Simple_Wooden_Stairs = "簡易的木制樓梯。",
-  Tooltip_BuildingMenuObj_Brown_Stairs = "褐色樓梯。",
-  Tooltip_BuildingMenuObj_Dark_Brown_Stairs = "深褐色樓梯。",
-  Tooltip_BuildingMenuObj_Yellow_Brown_Stairs = "黃褐色樓梯。",
-  Tooltip_BuildingMenuObj_White_Industrial_Stairs = "白色工業樓梯。",
-  Tooltip_BuildingMenuObj_White_Motel_Stairs = "白色汽車旅館樓梯。",
-  Tooltip_BuildingMenuObj_Modern_Stairs = "現代樓梯。",
-  Tooltip_BuildingMenuObj_Metal_Stairs = "金屬樓梯。",
-  Tooltip_BuildingMenuObj_Elevator_Stairs = "自動扶梯。",
+  Tooltip_BuildingMenuObj_Simple_Wooden_Stairs = "簡易木制樓梯",
+  Tooltip_BuildingMenuObj_Brown_Stairs = "褐色樓梯",
+  Tooltip_BuildingMenuObj_Dark_Brown_Stairs = "深褐色樓梯",
+  Tooltip_BuildingMenuObj_Yellow_Brown_Stairs = "黃褐色樓梯",
+  Tooltip_BuildingMenuObj_White_Industrial_Stairs = "白色工業樓梯",
+  Tooltip_BuildingMenuObj_White_Motel_Stairs = "白色汽車旅館樓梯",
+  Tooltip_BuildingMenuObj_Modern_Stairs = "現代樓梯",
+  Tooltip_BuildingMenuObj_Metal_Stairs = "金屬樓梯",
+  Tooltip_BuildingMenuObj_Elevator_Stairs = "自動扶梯",
 
   Tooltip_Asphalt_Generic = "適用於建設道路和通道的、光滑又穩固的柏油路。",
   Tooltip_StreetCrack_Overlay_1 = "街道表面的一小道裂縫。當心腳下！ <BR><RGB:1,0.8,0> 旋轉 <RGB:1,1,1><SPACE> 調整大小和高度。",
@@ -1661,7 +1660,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_UStoreIT_Sign = "U-Store It標識",
   Tooltip_BuildingMenuObj_ScarletOak_Sign = "Scarlet Oak Distillery標識",
   Tooltip_BuildingMenuObj_KnoxDistillery_Sign = "KNOX Distillery & Dressed to the 90s標識",
-  Tooltip_BuildingMenuObj_TheWanderingSashimi_Sign = "The Wandering SASHIMI & Start和條紋標識",
+  Tooltip_BuildingMenuObj_TheWanderingSashimi_Sign = "The Wandering SASHIMI & Start和條紋標志",
 
   Tooltip_BuildingMenuObj_Graffiti = "塗鴉",
 
@@ -1670,9 +1669,9 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Car_Lift_Lower = "汽車舉昇機下部",
   Tooltip_BuildingMenuObj_Car_Lift_Middle = "汽車舉昇機中部",
 
-  Tooltip_Posters_Generic = "海報裝飾能給安全屋增添个性。快用你喜歡的圖像和藝術品來裝點你的安全屋吧。D,
+  Tooltip_Posters_Generic = "海報裝飾能給安全屋增添个性。快用你喜歡的圖像和藝術品來裝點你的安全屋吧。"
   Tooltip_Signs_Generic = "便於傳遞扼要信息和標記關鍵地點的通用標識。",
-  Tooltip_Rug_Generic = "給末世藏匿點帶來了温暖和風格舒適多用途的地毯。",
+  Tooltip_Rug_Generic = "風格舒適多用途的地毯，給末世藏匿點帶來了温暖。",
   Tooltip_Grave_Generic = "用來紀念末世中逝去生命的昏暗栖息處。",
   Tooltip_Roadway_Generic = "增強道路美感的多種裝飾品。",
   Tooltip_Garage_Deco_Generic = "个性化車庫的多種裝飾品。",

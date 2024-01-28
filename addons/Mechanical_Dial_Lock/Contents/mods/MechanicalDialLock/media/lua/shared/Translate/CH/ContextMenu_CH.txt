@@ -1,0 +1,8 @@
+ContextMenu_CH = {
+
+  ContextMenu_Open_Safe = "打開保險箱",
+  ContextMenu_Close_Safe = "打開保險箱",
+  ContextMenu_Set_Safe_Code = "設置保險箱密碼",
+  ContextMenu_Reset_Lock = "重置保險箱密碼",
+
+}

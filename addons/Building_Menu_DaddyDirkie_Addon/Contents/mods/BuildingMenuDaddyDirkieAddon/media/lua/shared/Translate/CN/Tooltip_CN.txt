@@ -1,0 +1,73 @@
+Tooltip_CN = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "秘密入口货架",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "秘密入口门",
+
+  Tooltip_SecretEntranceShelf = "便于管理书籍的精妙伪装书架，在安全屋跟秘密入口门组合能创造无缝衔接的秘密通道。",
+  Tooltip_SecretEntranceDoor = "旋转后能开启暗道的巧妙货架，非常适合安静又隐秘地溜走。",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "原木墙",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "原木门框",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "原木窗框",
+  Tooltip_BuildingMenuObj_Twig_Window = "木枝窗",
+  Tooltip_BuildingMenuObj_Log_Pillar = "原木柱",
+  Tooltip_BuildingMenuObj_Log_Crate = "原木箱",
+
+  Tooltip_Log_Wall = "由原木的紧紧堆叠而做成的坚固墙体。",
+  Tooltip_Log_Door_Frame = "由原木粗制而成的门框。",
+  Tooltip_Log_Window_Frame = "耐久的原木窗户。",
+  Tooltip_Log_Pillar = "牢固的竖直支撑。",
+  Tooltip_Log_Crate = "简约又牢固的原木箱子。",
+
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "原木斜坡屋顶1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "原木斜坡屋顶2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "原木斜坡屋顶3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "原木楼梯",
+  Tooltip_Forest_Furvival_Generic = "对荒野求生至关重要。",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "伐木块",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "花式白色双开衣柜",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "花式白色双开玻璃衣柜",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "花式橡木抽屉",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "花式橡木衣柜",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "细木双开衣柜",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "细木双开玻璃衣柜",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "花式深色抽屉",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "花式深色衣柜",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "放置有木桶的夹板",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "放置有小盒的夹板",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "放置有蔬菜篮的夹板",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "网状砌块栅栏",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "网状砌块栅栏转角",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "网状砌块栅栏柱",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "砌块栅栏",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "砌块栅栏转角",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "砌块栅栏柱",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "藤蔓砌块栅栏1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "藤蔓砌块栅栏2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "藤蔓砌块栅栏转角",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "藤蔓砌块栅栏柱",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "木板砌块栅栏",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "木板砌块栅栏转角",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "木板砌块栅栏柱",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "木制栅栏柱",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "木质栅栏",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "木制栅栏转角",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "白色木制栅栏柱",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "白色木制栅栏",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "白色木制栅栏转角",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "白色木制栅栏门",
+
+}

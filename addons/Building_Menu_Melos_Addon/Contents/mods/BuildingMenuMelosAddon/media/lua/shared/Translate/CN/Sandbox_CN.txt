@@ -1,0 +1,11 @@
+Sandbox_CN = {
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider = "_______________ Melos Tiles类别 _______________",
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果",
+
+    Sandbox_BuildingMenu_melosTilesCastleWalls = "开启城堡墙类别",
+    Sandbox_BuildingMenu_melosTilesCastleWalls_tooltip = "开启后添加城堡墙。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
+
+    Sandbox_BuildingMenu_melosTilesBathroomWalls = "开启浴室墙类别",
+    Sandbox_BuildingMenu_melosTilesBathroomWalls_tooltip = "开启后添加浴室墙类别。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！
+
+}
