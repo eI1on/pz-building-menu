@@ -23397,7 +23397,7 @@ end
 
 
 local function addCategoriesToBuildingMenu()
-    if SandboxVars.BuildingMenu.melosTilesCastleStructures then
+    if SandboxVars.BuildingMenu.melosTilesCastleWalls then
         addMelosWallsCastleToMenu()
     end
     if SandboxVars.BuildingMenu.brickWallsSubCategory then

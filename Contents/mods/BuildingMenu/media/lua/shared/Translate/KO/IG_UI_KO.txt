@@ -1,9 +1,11 @@
 IGUI_KO = {
 
     IGUI_BuildingMenu = "건축 메뉴",
+	
     IGUI_BuildingMenuTab_Favorite = "즐겨찾기",
     IGUI_BuildingMenuTab_General = "일반",
     
+	
     IGUI_CraftCategory_Windows = "창문",
     
     IGUI_BuildingMenuCat_Walls = "벽",
@@ -28,6 +30,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Clapboard = "갈색 판자",
     
     IGUI_BuildingMenuSubCat_Walls_White_Panel = "흰색 패널",
+    IGUI_BuildingMenuSubCat_Walls_Wooden_Panel = "나무 패널",
     IGUI_BuildingMenuSubCat_Walls_Old_Wood_Panel = "오래된 나무 패널",
     IGUI_BuildingMenuSubCat_Walls_Red_Barn_Wood = "빨간 헛간 나무",
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "갈색 패널",
@@ -57,6 +60,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_Metal_Walls = "금속 벽",
     IGUI_BuildingMenuSubCat_Walls_Scaffold = "설계 지지대",
     IGUI_BuildingMenuSubCat_Walls_Garage_Walls = "차고 벽",
+    IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "산업용 벽",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "갈색 프레임 유리 벽",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "검은 프레임 유리 벽",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "하수관 벽",
@@ -191,6 +195,5 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Appliances_Laundry = "세탁",
     
     
-
 
 }
