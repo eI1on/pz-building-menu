@@ -233,4 +233,121 @@ Sandbox_CH = {
     Sandbox_BuildingMenu_laundryAppliances = "開啓洗滌器械子類別",
     Sandbox_BuildingMenu_laundryAppliances_tooltip = "開啓後添加洗衣機和烘干機。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
 
+
+
+
+    Sandbox_BuildingMenuRecipes = "建造菜單配方",
+
+    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ 材料 ____________",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+
+    Sandbox_PaintUses = "油漆桶使用次數",
+    Sandbox_PaintUses_tooltip = "每桶油漆的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BlowTorchUses = "丙烷噴燈使用次數",
+    Sandbox_BlowTorchUses_tooltip = "每把丙烷噴燈的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BucketAsphaltMixtureUses = "桶裝瀝靑混合物使用次數",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "每桶瀝靑混合物的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BucketConcreteUses = "桶裝混凝土使用次數",
+    Sandbox_BucketConcreteUses_tooltip = "每桶混凝土的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "12次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "14次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "16次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20次",
+
+
+
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "大墻所需木板數",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "設置建造大墻需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "大墻所需釘子數",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "設置建造大墻需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "小墻所需木板數",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "設置建造小墻需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "小墻所需釘子數",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "設置建造小墻需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "大物件所需木板數",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "設置建造大物件需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "大物件所需釘子數",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "設置建造大物件需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "小物件所需木板數",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "設置建造小物件需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "小物件所需釘子數",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "設置建造小物件需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "玻璃板消耗",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "設置玻璃板的消耗數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "金屬棒消耗",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "設置金屬棒的消耗數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_screwsCount = "螺絲消耗",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "設置螺絲的消耗數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "墻體所需金屬板數",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "設置建造墻體需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "門所需金屬板數",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "設置建造門需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "容器所需金屬板數",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "設置建造容器需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "器械設施所需金屬板數",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "設置建造器械設施需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "屋頂、地板所需金屬板數",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "設置建造屋頂、地板需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_EmptyBox = "",
+    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+
+
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ 技能要求 ____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "大物件所需木工等級",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "建造小物件需要的木工等級。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "小物件所需木工等級",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "建造小物件需要的木工等級。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "每級木工經驗獲取量",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "在不同木工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "每級電工經驗獲取量",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "在不同金工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "每級電工經驗獲取量",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "在不同電工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ 特殊物件配方 ____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用箱子所需木板數",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "設置建造軍用箱子需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "軍用箱子所需釘子數",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "設置建造軍用箱子需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "軍用箱子所需木工等級",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "設置建造軍用箱子需要的木工等級。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+
+
 }
