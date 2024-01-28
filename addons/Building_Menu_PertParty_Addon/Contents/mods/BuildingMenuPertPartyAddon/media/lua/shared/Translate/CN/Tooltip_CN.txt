@@ -36,7 +36,7 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_Ginger_Bread_Door = "姜饼门",
   Tooltip_Ginger_Bread_Door = "甜化出入口的姜饼门，带着冰雪点缀。",
 
-  Tooltip_Ginger_Bread_Window = "不是很牢固，但是很好闻！",
+  Tooltip_Ginger_Bread_Window = "不算牢固，但是好闻！",
 
   Tooltip_Ginger_Bread_Wall = "坚固又甜美的姜饼墙既能给你的安全屋提供基本防护，又能增添节日色彩。",
   Tooltip_BuildingMenuObj_Ginger_Bread_Wall = "姜饼墙",
@@ -58,7 +58,7 @@ Tooltip_CN = {
   Tooltip_Red_Slide_Stairs = "非常适合散发节日气息并从僵尸口中做一个甜美逃脱。",
 
   Tooltip_BuildingMenuObj_Icing = "冰雪",
-  Tooltip_Icing_Detailing = "给你的姜饼构筑物添加一层冰雪气息。这不只是外表工程，也是提升节日情绪用的！",
+  Tooltip_Icing_Detailing = "给你的姜饼构筑物添加一层冰雪气息。这不只是外表工程，也是给提升节日情绪用的！",
 
   Tooltip_BuildingMenuObj_Gingerbread_Tree = "姜饼树",
   Tooltip_BuildingMenuObj_Snowman = "雪人",

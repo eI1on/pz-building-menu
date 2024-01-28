@@ -12,13 +12,13 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "灰色石头墙",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone  = "棕色石头墙",
 
-    IGUI_BuildingMenuSubCat_Walls_Red_Brick   = "红色砖墙",
+    IGUI_BuildingMenuSubCat_Walls_Red_Brick   = "红砖墙",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick   = "旧砖墙",
-    IGUI_BuildingMenuSubCat_Walls_Blue_Brick  = "蓝色砖墙",
-    IGUI_BuildingMenuSubCat_Walls_Grey_Brick  = "灰色砖墙",
+    IGUI_BuildingMenuSubCat_Walls_Blue_Brick  = "蓝砖墙",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Brick  = "灰砖墙",
     IGUI_BuildingMenuSubCat_Walls_Beige_Brick = "米色砖墙",
-    IGUI_BuildingMenuSubCat_Walls_White_Brick = "白色砖墙",
-    IGUI_BuildingMenuSubCat_Walls_Green_Brick = "绿色砖墙",
+    IGUI_BuildingMenuSubCat_Walls_White_Brick = "白砖墙",
+    IGUI_BuildingMenuSubCat_Walls_Green_Brick = "绿砖墙",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "褐色砖墙",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard       = "蓝色隔板墙",

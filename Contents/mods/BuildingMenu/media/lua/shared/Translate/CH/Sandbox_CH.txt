@@ -3,7 +3,8 @@ Sandbox_CH = {
     Sandbox_BuildingMenu_isThumpable = "可破壞建造物",
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> 取消勾選 <RGB:1,1,1><SPACE> 將使建造物免於殭尸毁壞。",
 
-
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
 
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 墻分類 _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
@@ -257,11 +258,11 @@ Sandbox_CH = {
     Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4次",
     Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8次",
     Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "12次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "14次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "16次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26次",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28次",
 
 
 
@@ -331,7 +332,7 @@ Sandbox_CH = {
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "每級木工經驗獲取量",
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "在不同木工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
 
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "每級電工經驗獲取量",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "每級金工經驗獲取量",
     Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "在不同金工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "每級電工經驗獲取量",
