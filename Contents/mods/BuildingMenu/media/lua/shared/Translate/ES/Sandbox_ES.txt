@@ -1,8 +1,8 @@
 Sandbox_ES = {
-	Sandbox_BuildingMenu = "Menï¿½ de construcciï¿½n",
-	Sandbox_BuildingMenu_isThumpable = "Estructuras que se pueden golpear",
-	Sandbox_BuildingMenu_isThumpable_tooltip = "Desactive <ESPACIO><RGB:1,0.8,0> <RGB:1,1,1><ESPACIO> para que las estructuras construidas usando el menï¿½ sean inmunes al daï¿½o de los zombis.",
-
+    Sandbox_BuildingMenu = "Menú de construcción",
+     Sandbox_BuildingMenu_isThumpable = "Estructuras que se pueden golpear",
+     Sandbox_BuildingMenu_isThumpable_tooltip = "Desactive <ESPACIO><RGB:1,0.8,0> <RGB:1,1,1><ESPACIO> para que las estructuras construidas usando el menú sean inmunes al daño de los zombis.",
+	 
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Walls Category _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
 
@@ -209,7 +209,7 @@ Sandbox_ES = {
     Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Enable to add the Generator. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 	Sandbox_BuildingMenu_metalDrums = "Habilitar tambores de metal",
-	Sandbox_BuildingMenu_metalDrums_tooltip = "Habilitar para agregar tambores metï¿½licos en el menï¿½. <LINE><LINE> <RGB:1,0,0> ï¿½REQUIERE REINICIAR EL CLIENTE!",
+     Sandbox_BuildingMenu_metalDrums_tooltip = "Habilitar para agregar tambores metálicos en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
 
 
 
@@ -219,17 +219,17 @@ Sandbox_ES = {
 	Sandbox_BuildingMenu_lightingAppliances = "Enable Lighting Category",
 	Sandbox_BuildingMenu_lightingAppliances_tooltip = "Enable to add Lighting Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
-	Sandbox_BuildingMenu_bathroomAppliances = "Habilitar accesorios de baï¿½o",
-	Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilite agregar lavabos, inodoros y otros objetos relacionados con el baï¿½o en el menï¿½. <LINE><LINE> <RGB:1,0,0> ï¿½REQUIERE REINICIAR EL CLIENTE!",
+	Sandbox_BuildingMenu_bathroomAppliances = "Habilitar accesorios de baño",
+	Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilite agregar lavabos, inodoros y otros objetos relacionados con el baño en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
 
-	Sandbox_BuildingMenu_cookingAppliances = "Habilitar electrodomï¿½sticos de cocina",
-	Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilitar el acceso a estufas, hornos y otros objetos relacionados con la cocina en el menï¿½. <LINE><LINE> <RGB:1,0,0> ï¿½REQUIERE REINICIAR EL CLIENTE!",
+	Sandbox_BuildingMenu_cookingAppliances = "Habilitar electrodomésticos de cocina",
+	Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilitar el acceso a estufas, hornos y otros objetos relacionados con la cocina en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
 
-	Sandbox_BuildingMenu_fridgeAppliances = "Habilitar aparatos de refrigeraciï¿½n",
-	Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Habilitar para incluir refrigeradores y congeladores en el menï¿½. <LINE><LINE> <RGB:1,0,0> ï¿½REQUIERE REINICIAR EL CLIENTE!",
+	Sandbox_BuildingMenu_fridgeAppliances = "Habilitar aparatos de refrigeración",
+	Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Habilitar para incluir refrigeradores y congeladores en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
 
-	Sandbox_BuildingMenu_laundryAppliances = "Habilitar electrodomï¿½sticos de lavanderï¿½a",
-	Sandbox_BuildingMenu_laundryAppliances_tooltip = "Habilitar para agregar lavadoras y secadoras en el menï¿½. <LINE><LINE> <RGB:1,0,0> ï¿½REQUIERE REINICIAR EL CLIENTE!",
+	Sandbox_BuildingMenu_laundryAppliances = "Habilitar electrodomésticos de lavandería",
+	Sandbox_BuildingMenu_laundryAppliances_tooltip = "Habilitar para agregar lavadoras y secadoras en el menú. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
 
 
 

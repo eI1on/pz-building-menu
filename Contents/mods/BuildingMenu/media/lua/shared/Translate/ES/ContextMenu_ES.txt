@@ -1,7 +1,7 @@
 ContextMenu_ES = {
   
-  ContextMenu_BuildingMenu = "Menú de construcción",
+  ContextMenu_BuildingMenu = "MenÃº de construcciÃ³n",
   ContextMenu_RemoveWallDetailing = "Eliminar detalles de la pared",
-  ContextMenu_RemoveTrafficLine = "Eliminar líneas de tráfico",
+  ContextMenu_RemoveTrafficLine = "Eliminar lÃ­neas de trÃ¡fico",
 
 }

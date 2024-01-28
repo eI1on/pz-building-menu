@@ -1,30 +1,30 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-**/AF/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/AR/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/CA/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/CH/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
-**/CN/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
-**/CS/*.txt text working-tree-encoding=cp1250 encoding=utf-8,
-**/DA/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/DE/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/EE/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/EN/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
-**/ES/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/FI/*.txt text working-tree-encoding=windows-1252 encoding=utf-8,
-**/FR/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/HU/*.txt text working-tree-encoding=cp1250 encoding=utf-8,
-**/ID/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
-**/IT/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/JP/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
-**/KO/*.txt text working-tree-encoding=utf-16 encoding=utf-8,
-**/NL/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/NO/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/PL/*.txt text working-tree-encoding=cp1250 encoding=utf-8,
-**/PT/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/PTBR/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-**/RU/*.txt text working-tree-encoding=cp1251 encoding=utf-8,
-**/TH/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
-**/TR/*.txt text working-tree-encoding=cp1254 encoding=utf-8,
-**/UA/*.txt text working-tree-encoding=cp1251 encoding=utf-8
+**/AF/*.txt text working-tree-encoding=cp1252
+**/AR/*.txt text working-tree-encoding=cp1252
+**/CA/*.txt text working-tree-encoding=cp1252
+**/CH/*.txt text working-tree-encoding=utf-8
+**/CN/*.txt text working-tree-encoding=utf-8
+**/CS/*.txt text working-tree-encoding=cp1250
+**/DA/*.txt text working-tree-encoding=cp1252
+**/DE/*.txt text working-tree-encoding=cp1252
+**/EE/*.txt text working-tree-encoding=cp1252
+**/EN/*.txt text working-tree-encoding=utf-8
+**/ES/*.txt text working-tree-encoding=cp1252
+**/FI/*.txt text working-tree-encoding=windows-1252
+**/FR/*.txt text working-tree-encoding=cp1252
+**/HU/*.txt text working-tree-encoding=cp1250
+**/ID/*.txt text working-tree-encoding=utf-8
+**/IT/*.txt text working-tree-encoding=cp1252
+**/JP/*.txt text working-tree-encoding=utf-8
+**/KO/*.txt text working-tree-encoding=utf-16
+**/NL/*.txt text working-tree-encoding=cp1252
+**/NO/*.txt text working-tree-encoding=cp1252
+**/PL/*.txt text working-tree-encoding=cp1250
+**/PT/*.txt text working-tree-encoding=cp1252
+**/PTBR/*.txt text working-tree-encoding=cp1252
+**/RU/*.txt text working-tree-encoding=cp1251
+**/TH/*.txt text working-tree-encoding=utf-8
+**/TR/*.txt text working-tree-encoding=cp1254
+**/UA/*.txt text working-tree-encoding=cp1251
