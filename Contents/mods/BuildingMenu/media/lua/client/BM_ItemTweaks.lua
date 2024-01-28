@@ -15,9 +15,8 @@ local function applyParamToItems(items, paramName, paramValue)
 end
 
 --- Computes the value of a parameter based on selected SandboxVars options.
---- @param optionVar number The key in SandboxVars table to look up the selected option.
+--- @param optionVar number The selected option in SandboxVars table to look up in the mapped table.
 --- @param optionValues table A table mapping option keys to their respective values.
---- @param defaultValue number The default value to use if the selected option is not found in the optionValues table.
 --- @return number The computed parameter value.
 local function computeUseDelta(optionVar, optionValues)
     local selectedOption = tostring(optionVar)
