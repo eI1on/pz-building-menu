@@ -1,13 +1,13 @@
 Items_ES = {
 
-    /* Artículos de vidrio */
-     DisplayName_PanWithGlassShards = "Sartén con fragmentos de vidrio",
-     DisplayName_PanWithGlassPane = "Sartén con panel de vidrio",
-     DisplayName_GlassPane = "Panel de cristal",
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "Pan con fragmentos de vidrio",
+    DisplayName_PanWithGlassPane = "SartÃ©n con panel de vidrio",
+    DisplayName_GlassPane = "Panel de vidrio",
 
-     /*Revistas*/
-     DisplayName_BMMagazineGlass = "Revista: Hornos de cocina de Handyman Corner",
-     DisplayName_BMMagazineCars = "Revista: Ventanas y artesanía de vehículos",
-     DisplayName_BMMagazineSecretEntrances = "Revista: Pasajes secretos mensuales",
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "Hornos de cocina de Handyman Corner",
+    DisplayName_BMMagazineCars = "Ventanas y artesanÃ­a de vehÃ­culos de precisiÃ³n",
+    DisplayName_BMMagazineSecretEntrances = "Pasadizos Secretos Mensual",
 
 }

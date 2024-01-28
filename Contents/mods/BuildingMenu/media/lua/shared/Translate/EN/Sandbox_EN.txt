@@ -4,7 +4,7 @@ Sandbox_EN = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Turn <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> to make structures built using the Building Menu immune to zombie damage.",
     
     Sandbox_BuildingMenu_EmptyBox = "",
-    Sandbox_BuildingMenu_EmptyBox_tooltip = = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "This is only a line separator, checking it has no effect.",
 
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Walls Category _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
@@ -240,7 +240,7 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes = "Building Menu Recipes",
 
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materials ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "This is only a line separator, checking it has no effect.",
 
     Sandbox_PaintUses = "Paint Can Uses",
     Sandbox_PaintUses_tooltip = "Uses per paint can. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
@@ -317,11 +317,11 @@ Sandbox_EN = {
     
 
     Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "This is only a line separator, checking it has no effect.",
 
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Skills ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "This is only a line separator, checking it has no effect.",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Woodworking level for BIG Objects",
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Sets carpentry level needed for BIG Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
@@ -339,7 +339,7 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP gain per electrical level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Special Objects Recipes ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "This is only a line separator, checking it has no effect.",
 
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Wood Material Cost for Military Crate",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Sets planks required for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",

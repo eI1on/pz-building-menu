@@ -1,46 +1,46 @@
 Recipe_ES = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Prepare glass for smelting",
-    Recipe_BMUnprepareGlassShards = "Remove glass from pan",
-    Recipe_BMRemoveGlassPane = "Extract glass pane",
+    Recipe_BMPrepareGlassShards = "Preparar vidrio para fundir.",
+    Recipe_BMUnprepareGlassShards = "Retire el vaso de la sartén",
+    Recipe_BMRemoveGlassPane = "Extraer cristal",
 
     /* Smash Glass Recipes */
-    Recipe_BMSmashGlassJar = "Smash into broken glass",
-    Recipe_BMSmashGlassPane = "Smash into broken glass",
-    Recipe_BMSmashWindshield = "Smash into broken glass",
-    Recipe_BMSmashWindows = "Smash into broken glass",
+    Recipe_BMSmashGlassJar = "Romper contra vidrios rotos",
+    Recipe_BMSmashGlassPane = "Romper contra vidrios rotos",
+    Recipe_BMSmashWindshield = "Romper contra vidrios rotos",
+    Recipe_BMSmashWindows = "Romper contra vidrios rotos",
 
     /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Make Wooden Window",
-    Recipe_BMMakeWindow02 = "Make White Tiled Window",
-    Recipe_BMMakeWindow03 = "Make Tiled Window",
-    Recipe_BMMakeWindow04 = "Make White Window",
-    Recipe_BMMakeWindow05 = "Make Chrome Window",
-    Recipe_BMMakeWindow06 = "Make Slider Window",
+    Recipe_BMMakeWindow01 = "hacer una ventana de madera",
+    Recipe_BMMakeWindow02 = "hacer una ventana con azulejos blancos",
+    Recipe_BMMakeWindow03 = "hacer una ventana con mosaicos",
+    Recipe_BMMakeWindow04 = "hacer ventana blanca",
+    Recipe_BMMakeWindow05 = "Hacer ventana de Chrome",
+    Recipe_BMMakeWindow06 = "Crear ventana deslizante",
 
     /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Disassemble Wooden Window",
-    Recipe_BMDisassembleWindow02 = "Disassemble White Tiled Window",
-    Recipe_BMDisassembleWindow03 = "Disassemble Tiled Window",
-    Recipe_BMDisassembleWindow04 = "Disassemble White Window",
-    Recipe_BMDisassembleWindow05 = "Disassemble Chrome Window",
-    Recipe_BMDisassembleWindow06 = "Disassemble Slider Window",
+    Recipe_BMDisassembleWindow01 = "Desmontar ventana de madera",
+    Recipe_BMDisassembleWindow02 = "Desmontar la ventana de azulejos blancos",
+    Recipe_BMDisassembleWindow03 = "Desmontar la ventana de azulejos",
+    Recipe_BMDisassembleWindow04 = "Desmontar la ventana blanca",
+    Recipe_BMDisassembleWindow05 = "Desmontar la ventana de Chrome",
+    Recipe_BMDisassembleWindow06 = "Desmontar la ventana deslizante",
 
     /* Vehicle: Standard Recipes */
-    Recipe_BMWindshield1 = "Make Standard Windshield",
-    Recipe_BMRearWindshield1 = "Make Standard Rear Windshield",
-    Recipe_BMFrontWindow1 = "Make Standard Front Window",
-    Recipe_BMRearWindow1 = "Make Standard Rear Window",
+    Recipe_BMWindshield1 = "hacer parabrisas estándar",
+    Recipe_BMRearWindshield1 = "Hacer parabrisas trasero estándar",
+    Recipe_BMFrontWindow1 = "Hacer ventana frontal estándar",
+    Recipe_BMRearWindow1 = "Hacer ventana trasera estándar",
 
     /* Vehicle: Heavy-Duty Recipes */
-    Recipe_BMWindshield2 = "Make Heavy-Duty Windshield",
-    Recipe_BMRearWindshield2 = "Make Heavy-Duty Rear Windshield",
-    Recipe_BMFrontWindow2 = "Make Heavy-Duty Front Window",
-    Recipe_BMRearWindow2 = "Make Heavy-Duty Rear Window",
+    Recipe_BMWindshield2 = "Hacer un parabrisas resistente",
+    Recipe_BMRearWindshield2 = "Cómo hacer un parabrisas trasero resistente",
+    Recipe_BMFrontWindow2 = "Haga una ventana frontal resistente",
+    Recipe_BMRearWindow2 = "Haga una ventana trasera resistente",
 
     /* Vehicle: Sport Recipes */
-    Recipe_BMWindshield3 = "Make Sport Windshield",
-    Recipe_BMRearWindshield3 = "Make Sport Rear Windshield",
-    Recipe_BMFrontWindow3 = "Make Sport Front Window",
-    Recipe_BMRearWindow3 = "Make Sport Rear Window",
+    Recipe_BMWindshield3 = "hacer un parabrisas deportivo",
+    Recipe_BMRearWindshield3 = "Hacer parabrisas trasero deportivo",
+    Recipe_BMFrontWindow3 = "Hacer ventana delantera deportiva",
+    Recipe_BMRearWindow3 = "Hacer ventana trasera deportiva",
 }
