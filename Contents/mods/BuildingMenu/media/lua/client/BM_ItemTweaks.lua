@@ -22,9 +22,8 @@ end
 local function computeUseDelta(optionVar, optionValues)
     local selectedOption = tostring(optionVar)
     local uses = optionValues[selectedOption]
-    
-    print("[BM_Tweaks] optionVar:"..optionVar);
-    print("[BM_Tweaks] uses:"..uses);
+    -- print("[BM_Tweaks] optionVar:"..optionVar);
+    -- print("[BM_Tweaks] uses:"..uses);
     return 1 / uses
 end
 
