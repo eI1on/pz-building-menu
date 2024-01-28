@@ -562,7 +562,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Panel_Exterior_Sloped_Small_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
@@ -578,7 +578,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Panel_Exterior_Sloped_Medium_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
@@ -594,7 +594,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Panel_Exterior_Sloped_Big_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
@@ -795,7 +795,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Sloped_Small_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
@@ -811,7 +811,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Sloped_Medium_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
             true,
@@ -827,7 +827,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Sloped_Big_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
             true,
@@ -1048,7 +1048,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Sloped_Small_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
@@ -1067,7 +1067,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Sloped_Medium_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
@@ -1086,7 +1086,7 @@ local function addWoodWallsToMenu()
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Sloped_Big_Wall",
-            "Tooltip_Tan_Panel_Wall",
+            "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
