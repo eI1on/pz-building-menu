@@ -258,11 +258,11 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Uses",
     Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 Uses",
     Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "12 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "14 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "16 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Uses",
 
 
 
