@@ -328,10 +328,6 @@ Sandbox_CH = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "設置建造屋頂、地板需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
 
 
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
-
-
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ 技能要求 ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
 

@@ -4,6 +4,10 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_isThumpable_tooltip = " <SPACE><RGB:1,0.8,0> I-OFF <RGB:1,1,1><SPACE> ang para gawing immune sa pinsala ng zombie ang mga istrukturang binuo gamit ang Menu ng Building.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Kategorya ng Mga Pader _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
@@ -325,10 +329,6 @@ Sandbox_PH = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal para sa ROOFING at FLOORS na Gastos",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa PAGBUBUBONG at SAHANG. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Kasanayan ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",

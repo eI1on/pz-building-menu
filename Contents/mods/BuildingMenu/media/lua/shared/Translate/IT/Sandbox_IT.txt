@@ -4,6 +4,10 @@ Sandbox_IT = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Disattiva <RGB:1,1,1><SPACE> per rendere le strutture costruite utilizzando il menu Edificio immuni ai danni degli zombi.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Questo è solo un separatore di riga, controllarlo non ha alcun effetto.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria Muri _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Questo è solo un separatore di riga, controllarlo non ha alcun effetto.",
 
@@ -325,10 +329,6 @@ Sandbox_IT = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Costo Lamiera per COPERTURE e PAVIMENTI",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Set lamiere necessarie per COPERTURE e PAVIMENTI. <LINE> Si adatta alla dimensione e al tipo dell'oggetto. <LINE><LINE> <RGB:1,0,0> RICHIEDE IL RIAVVIO DEL CLIENT! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Questo è solo un separatore di riga, controllarlo non ha alcun effetto.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Competenze ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Questo è solo un separatore di riga, controllarlo non ha alcun effetto.",

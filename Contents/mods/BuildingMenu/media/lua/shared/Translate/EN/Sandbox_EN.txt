@@ -4,6 +4,10 @@ Sandbox_EN = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Turn <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> to make structures built using the Building Menu immune to zombie damage.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "This is only a line separator, checking it has no effect.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Walls Category _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
 
@@ -325,10 +329,6 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal for ROOFING and FLOORS Cost",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sets sheet metal needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "This is only a line separator, checking it has no effect.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Skills ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "This is only a line separator, checking it has no effect.",

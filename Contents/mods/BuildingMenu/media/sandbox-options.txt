@@ -893,7 +893,7 @@ option BuildingMenuRecipes.EmptyBox1
     type = boolean,
     default = false,
     page = BuildingMenuRecipes,
-    translation = BuildingMenuRecipes_EmptyBox,
+    translation = BuildingMenu_EmptyBox,
 }
 
 option BuildingMenuRecipes.SkillsDivider
@@ -960,7 +960,7 @@ option BuildingMenuRecipes.EmptyBox2
     type = boolean,
     default = false,
     page = BuildingMenuRecipes,
-    translation = BuildingMenuRecipes_EmptyBox,
+    translation = BuildingMenu_EmptyBox,
 }
 
 option BuildingMenuRecipes.SpecialObjectsRecipesDivider

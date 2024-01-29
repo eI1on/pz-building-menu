@@ -4,6 +4,10 @@ Sandbox_DE = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Schalten Sie <SPACE><RGB:1,0.8,0> AUS <RGB:1,1,1><SPACE>, um über das Gebäudemenü errichtete Gebäude immun gegen Zombieschaden zu machen.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Wände Kategorie _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",
 
@@ -325,10 +329,6 @@ Sandbox_DE = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Blech für DÄCHER und BÖDEN Kosten",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Setzt Bleche, die für DÄCHER und BÖDEN benötigt werden. <LINE> Skaliert mit Objektgröße und -typ. <LINE><LINE> <RGB:1,0,0> ERFORDERT EINEN NEUSTART DES CLIENTS! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Fähigkeiten ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",

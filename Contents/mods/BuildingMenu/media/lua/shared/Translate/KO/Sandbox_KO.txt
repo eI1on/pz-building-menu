@@ -3,6 +3,11 @@ Sandbox_KO = {
     Sandbox_BuildingMenu_isThumpable = "치밀 수 있는 구조물",
     Sandbox_BuildingMenu_isThumpable_tooltip = "좀비 데미지에 면역인 구조물을 건축 메뉴를 사용하여 건설하려면 <SPACE><RGB:1,0.8,0> 끄기 <RGB:1,1,1><SPACE>로 설정하세요.",
     
+    
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
+
+
 	Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 벽 카테고리 _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
@@ -324,10 +329,6 @@ Sandbox_KO = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "지붕 및 바닥용 판금 비용",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "ROOFING 및 FLOORS에 필요한 판금을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ 기술 ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",

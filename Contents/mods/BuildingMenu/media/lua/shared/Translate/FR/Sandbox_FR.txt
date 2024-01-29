@@ -4,6 +4,10 @@ Sandbox_FR = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Désactivez <RGB:1,1,1><SPACE> pour rendre les structures construites à l'aide du menu Construction insensibles aux dégâts des zombies.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Catégorie de murs _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
 
@@ -325,10 +329,6 @@ Sandbox_FR = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Tôle pour TOITURE et PLANCHERS Coût",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Définit la tôle nécessaire pour la TOITURE et les PLANCHERS. <LINE> S'adapte à la taille et au type de l'objet. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT ! <RVB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Compétences ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",

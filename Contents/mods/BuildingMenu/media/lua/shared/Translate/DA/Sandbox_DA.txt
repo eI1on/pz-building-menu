@@ -4,6 +4,10 @@ Sandbox_DA = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Slå <SPACE><RGB:1,0.8,0> FRA <RGB:1,1,1><SPACE> for at gøre strukturer bygget ved hjælp af Building Menu immune over for zombieskader.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Dette er kun en linjeseparator, at kontrollere det har ingen effekt.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Væggekategori _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Dette er kun en linjeseparator, at kontrollere det har ingen effekt.",
 
@@ -325,10 +329,6 @@ Sandbox_DA = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Plade til TAG og GULV Omkostning",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sæt metalplader, der er nødvendige til TAG og GULV. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KRÆVER KLIENTGENSTART! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Dette er kun en linjeseparator, at kontrollere det har ingen effekt.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ færdigheder ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Dette er kun en linjeseparator, at kontrollere det har ingen effekt.",

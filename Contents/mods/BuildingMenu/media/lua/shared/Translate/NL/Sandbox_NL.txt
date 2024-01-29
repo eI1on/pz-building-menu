@@ -4,6 +4,10 @@ Sandbox_NL = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Zet <SPACE><RGB:1,0.8,0> UIT <RGB:1,1,1><SPACE> om gebouwen gebouwd met behulp van het Gebouwenmenu immuun te maken voor zombieschade.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "______________ Muren Categorie _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",
 
@@ -325,10 +329,6 @@ Sandbox_NL = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Plaatwerk voor dakbedekking en vloeren Kosten",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sets plaatwerk nodig voor DAKWERK en VLOEREN. <LINE> Schaalt met objectgrootte en -type. <LINE><LINE> <RGB:1,0,0> VEREIST HERSTART VAN DE KLANT! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Vaardigheden ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",

@@ -4,6 +4,10 @@ Sandbox_FI = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Käännä <SPACE><RGB:1,0.8,0> POIS PÄÄLTÄ <RGB:1,1,1><SPACE> tehdäksesi Rakennusvalikkoa käyttämällä rakennetuista rakenteista immuuneja zombievaurioille.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Seinäluokka _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
 
@@ -325,10 +329,6 @@ Sandbox_FI = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Pelti kattoon ja lattioihin Kustannukset",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Katto- ja lattioihin tarvittavat peltisarjat. <LINE> Mittakaava objektin koon ja tyypin mukaan. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKKAAN UUDELLEENKÄYNNISTYSTÄ! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Taidot ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",

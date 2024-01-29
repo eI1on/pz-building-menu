@@ -4,6 +4,10 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Desactiveu <RGB:1,1,1><SPACE> per fer que les estructures construïdes amb el menú Construcció siguin immunes als danys zombis.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Murs Categoria _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
@@ -325,10 +329,6 @@ Sandbox_CA = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Cost de xapa metàl·lica per a COBERTES i SOLS",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Conjunt de xapes necessàries per a COBERTES i SOLS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Habilitats ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",

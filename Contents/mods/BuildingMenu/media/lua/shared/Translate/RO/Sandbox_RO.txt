@@ -1,42 +1,46 @@
 Sandbox_RO = {
-    Sandbox_BuildingMenu = "Meniul de clădire",
+    Sandbox_BuildingMenu = "Meniul de Construcții",
     Sandbox_BuildingMenu_isThumpable = "Structuri Thumpable",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> DEACTIVAȚI <RGB:1,1,1><SPACE> pentru a face structurile construite folosind meniul de construcție imune la daune zombie.",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> DEACTIVAȚI <RGB:1,1,1><SPACE> pentru a face structurile construite folosind meniul de construcție imune la zombie.",
 
 
-    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria ziduri _______________",
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
+
+
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria Ziduri _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_woodWallsSubCategory = "Activați subcategoria pereți din lemn",
+    Sandbox_BuildingMenu_woodWallsSubCategory = "Activați subcategoria Pereți din Lemn",
     Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Permiteți adăugarea structurilor de pereți din lemn. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Activați subcategoria Clapboard Walls",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Activați adăugarea structurilor de pereți din clapetă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Activați subcategoria Pereți din Șindrilă",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Activați adăugarea structurilor de pereți din șindrilă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_stoneWallsSubCategory = "Activați subcategoria Pereți de piatră",
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "Activați subcategoria Pereți de Piatră",
     Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Permiteți adăugarea structurilor de pereți de piatră. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_brickWallsSubCategory = "Activați subcategoria Pereți de cărămidă",
+    Sandbox_BuildingMenu_brickWallsSubCategory = "Activați subcategoria Pereți de Cărămidă",
     Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Activați adăugarea structurilor de pereți de cărămidă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Activați subcategoria Cinderblock Walls",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Activați pentru adăugarea structurilor de pereți din blocuri de cenuşă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Activați subcategoria Pereți din Bolțati",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Activați pentru adăugarea structurilor de pereți din bolțati. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_paintedWallsSubCategory = "Activați subcategoria Pereți pictați",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Activați adăugarea structurilor de pereți pictați. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "Activați subcategoria Pereți Vopsiți",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Activați adăugarea structurilor de pereți vopsiți. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Activați subcategoria Pereți arcuiți",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Activați subcategoria Pereți de Ferestre Arcuiți",
     Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Activați adăugarea structurilor de pereți de ferestre arcuite. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_commercialWallsSubCategory = "Activați subcategoria Pereți comerciali",
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "Activați subcategoria Pereți Comerciali",
     Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Activați adăugarea structurilor de pereți comerciali. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_industrialWallsSubCategory = "Activați subcategoria pereți industriali",
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "Activați subcategoria Pereți Industriali",
     Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Permite adăugarea structurilor de pereți industriali. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
 
-    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Acoperișuri Categoria _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Categoria Acoperișuri _______________",
     Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
     Sandbox_BuildingMenu_roofsCategory = "Activați categoria Acoperișuri",
@@ -44,14 +48,14 @@ Sandbox_RO = {
     
 
 
-    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Categoria uși _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Categoria Uși _______________",
     Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_doorsSubCategory = "Activați categoria uși",
+    Sandbox_BuildingMenu_doorsSubCategory = "Activați categoria Uși",
     Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Permiteți adăugarea ușilor din lemn, joase, panou, metal, sticlă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_garageDoorsSubCategory = "Activați subcategoria uși de garaj",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Activați pentru adăugarea ușilor de garaj cu 3 și 4 plăci. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "Activați subcategoria Uși de Garaj",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Activați pentru adăugarea ușilor de garaj cu 3 și 4 tile-uri. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
 
@@ -63,85 +67,85 @@ Sandbox_RO = {
     
 
 
-    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Categoria Windows ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Categoria Ferestre ______________",
     Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_windowsCategory = "Activați categoria Windows",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Activați pentru a adăuga Windows. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    Sandbox_BuildingMenu_windowsCategory = "Activați categoria Ferestre",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Activați pentru a adăuga ferestre. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
 
-    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Categoria de garduri ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Categoria de Garduri ______________",
     Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_highFencesSubCategory = "Activați subcategoria garduri înalte",
+    Sandbox_BuildingMenu_highFencesSubCategory = "Activați subcategoria Garduri Înalte",
     Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Activați pentru a adăuga garduri înalte. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Activați subcategoria Garduri și balustrade joase",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Activați subcategoria Garduri și Balustrade Joase",
     Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Activați pentru a adăuga garduri și balustrade joase. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_otherFencesSubCategory = "Activați subcategoria Alte garduri",
+    Sandbox_BuildingMenu_otherFencesSubCategory = "Activați subcategoria Alte Garduri",
     Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Permiteți adăugarea altor garduri, cum ar fi barieră Hesco, garduri metalice joase, garduri din cărămidă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
 
-    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Etaje Categoria ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Categoria de Podele ______________",
     Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_floorsCategory = "Activați categoria etaj",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Activați pentru a adăuga etaje. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    Sandbox_BuildingMenu_floorsCategory = "Activați categoria Podele",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Activați pentru a adăuga podele. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
 
-    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Categoria scărilor ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Categoria Scări ______________",
     Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
  
     Sandbox_BuildingMenu_stairsCategory = "Activați categoria Scări",
     Sandbox_BuildingMenu_stairsCategory_tooltip = "Activați pentru a adăuga Scări. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
-    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoria lucrări rutiere _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoria Lucrări Rutiere _____________",
     Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Activați subcategoria Asfalt",
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Activați adăugarea de asfalt. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Activați subcategoria Suprapuneri",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Activați subcategoria Overlays",
     Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Activați pentru a adăuga suprapuneri, cum ar fi Grime și Street Cracks. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Activați subcategoria Suprapuneri marginea trotuarului",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Activați subcategoria Overlays pentru Trotuar",
     Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Activați pentru a adăuga suprapuneri pentru marginea trotuarului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Activați subcategoria Mizerie și iarbă",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Activați subcategoria Mizerie și Iarbă",
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Activați pentru adăugarea plăcilor de murdărie și iarbă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Activați subcategoria Marcaje rutiere pictate",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Activați subcategoria Marcaje Rutiere Vopsite",
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Activați pentru a adăuga marcaje rutiere pictate. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
 
-    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Containere Categoria ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoria de Containere ____________",
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
  
-    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Activați subcategoria contoare de bucătărie",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Activați subcategoria Containere de Bucătărie",
     Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Activați pentru a adăuga blaturi de bucătărie, blaturi superioare. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_commercialCountersSubCategory = "Activați subcategoria contoare comerciale",
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Activați subcategoria Containere Comerciale",
     Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Activați pentru a adăuga restaurante, cafenea, bar, contoare pentru mese. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_cratesSubCategory = "Activați subcategoria Crates",
+    Sandbox_BuildingMenu_cratesSubCategory = "Activați subcategoria Lăzi",
     Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Permiteți adăugarea de lăzi simple, lăzi militare (capacitate de 100), cutii de carton. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_metalContainersSubCategory = "Activați subcategoria Containere metalice",
+    Sandbox_BuildingMenu_metalContainersSubCategory = "Activați subcategoria Containere Metalice",
     Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Permiteți adăugarea de containere metalice, rafturi metalice mari, dulapuri. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_clothesRacksSubCategory = "Activați subcategoria Rafturi pentru haine",
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "Activați subcategoria Rafturi pentru Haine",
     Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Activați pentru a adăuga suporturi pentru haine și manechine. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_trashCansSubCategory = "Activați subcategoria Coșuri de gunoi",
+    Sandbox_BuildingMenu_trashCansSubCategory = "Activați subcategoria Coșuri de Gunoi",
     Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Activați pentru adăugarea coșurilor de gunoi. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_containersOthersSubCategory = "Activați Subcategoria Alte Containere",
+    Sandbox_BuildingMenu_containersOthersSubCategory = "Activați subcategoria Alte Containere",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Activați pentru adăugarea altor subcategorii de containere. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
 
@@ -149,50 +153,50 @@ Sandbox_RO = {
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria Mobilier _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
  
-    Sandbox_BuildingMenu_tablesSubCategory = "Activați Subcategoria Tabele",
+    Sandbox_BuildingMenu_tablesSubCategory = "Activați subcategoria Mese",
     Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Activați pentru adăugarea meselor mici și mari. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_bedsSubCategory = "Activați subcategoria paturi",
+    Sandbox_BuildingMenu_bedsSubCategory = "Activați subcategoria Paturi",
     Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Activați pentru a adăuga paturi simple și mari. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Activați Subcategoria Mobilier pentru scaune",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Activați subcategoria Mobilier de Ședere",
     Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Activați pentru a adăuga bănci, canapele, scaune. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_bookshelvesSubCategory = "Activați subcategoria rafturi",
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Activați subcategoria Rafturi",
     Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Activați pentru a adăuga rafturi de cărți. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Activați subcategoria Dressers",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Activați subcategoria Comode",
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Activați pentru a adăuga dulapuri, sertare și dulapuri. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
 
 
-    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Decoratiuni Categoria ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoria Decoratiuni ____________",
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
  
     Sandbox_BuildingMenu_rugsSubCategory = "Activați subcategoria Covoare",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Activați pentru a adăuga covoare. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Activați subcategoria postere și semne",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Activați subcategoria Postere și Semne",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Activați pentru a adăuga postere și semne. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
     Sandbox_BuildingMenu_graffitiSubCategory = "Activați subcategoria Graffiti",
     Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Activați pentru a adăuga Graffiti. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Activați subcategoria Alte decorațiuni",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Activați subcategoria Alte Decorațiuni",
     Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Permiteți adăugarea altor decorațiuni, cum ar fi blocuri rutiere, cutie poștală, stâlp de barieră, conuri de drum, cutie poștală. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
 
 
-    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoria vegetației ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoria Vegetației ____________",
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_flowerBedsSubCategory = "Activați subcategoria Paturi de flori",
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "Activați subcategoria Paturi de Flori",
     Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Activați pentru adăugarea paturi de flori în categoria vegetație. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Activați subcategoria plante de interior",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Activați subcategoria Plante de Interior",
     Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Activați pentru a adăuga plante de interior, cum ar fi ghivece de flori în categoria vegetație. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Activați subcategoria plante de exterior",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Activați subcategoria Plante de Exterior",
     Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Activați pentru adăugarea plantelor de exterior, cum ar fi containerele de flori de exterior în categoria vegetație. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
     Sandbox_BuildingMenu_landscapingSubCategory = "Activați subcategoria Peisagistica",
@@ -200,56 +204,56 @@ Sandbox_RO = {
    
 
 
-    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoria de supraviețuire _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoria de Supraviețuire _____________",
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_fireplaceSubCategory = "Activați subcategoria Semineu",
+    Sandbox_BuildingMenu_fireplaceSubCategory = "Activați subcategoria Șemineu",
     Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Activați pentru a adăuga șemineu și stâlpi. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
-    Sandbox_BuildingMenu_generatorSubCategory = "Activați subcategoria generator",
+    Sandbox_BuildingMenu_generatorSubCategory = "Activați subcategoria Generator",
     Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Activați pentru adăugarea generatorului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_metalDrums = "Activați Metal Drums",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Activați adăugarea tamburelor metalice. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    Sandbox_BuildingMenu_metalDrums = "Activați subcategoria Butoaie de Metal",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Activați adăugarea butoaielor metalice. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
 
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Electrocasnice Categoria ____________",
     Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenu_lightingAppliances = "Activați categoria de iluminare",
+    Sandbox_BuildingMenu_lightingAppliances = "Activați categoria de Iluminare",
     Sandbox_BuildingMenu_lightingAppliances_tooltip = "Activați pentru a adăuga o categorie de iluminat. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
 
-    Sandbox_BuildingMenu_bathroomAppliances = "Activați subcategoria Corpuri de baie",
+    Sandbox_BuildingMenu_bathroomAppliances = "Activați subcategoria Corpuri de Baie",
     Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Permiteți adăugarea de chiuvete, toalete și alte obiecte legate de baie. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_cookingAppliances = "Activați subcategoria Aparate de bucătărie",
+    Sandbox_BuildingMenu_cookingAppliances = "Activați subcategoria Aparate de Bucătărie",
     Sandbox_BuildingMenu_cookingAppliances_tooltip = "Activați adăugarea aragazelor, cuptoarelor și a altor obiecte legate de gătit. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_fridgeAppliances = "Activați subcategoria Aparate frigorifice",
+    Sandbox_BuildingMenu_fridgeAppliances = "Activați subcategoria Aparate Frigorifice",
     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Activați pentru a adăuga frigidere și congelatoare. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
-    Sandbox_BuildingMenu_laundryAppliances = "Activați subcategoria Aparate de spălătorie",
+    Sandbox_BuildingMenu_laundryAppliances = "Activați subcategoria Aparate de Spălătorie",
     Sandbox_BuildingMenu_laundryAppliances_tooltip = "Activați pentru a adăuga mașini de spălat și uscător. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
     
 
 
 
-    Sandbox_BuildingMenuRecipes = "Construirea rețetelor de meniu",
+    Sandbox_BuildingMenuRecipes = "Meniul de Construcții Rețete",
 
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiale ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_PaintUses = "Utilizări de cutie de vopsea",
+    Sandbox_PaintUses = "Utilizări ale Cutiei de Vopsea",
     Sandbox_PaintUses_tooltip = "Utilizări pe cutie de vopsea. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
 
-    Sandbox_BlowTorchUses = "Utilizări torței",
-    Sandbox_BlowTorchUses_tooltip = "Utilizări per lanternă. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
+    Sandbox_BlowTorchUses = "Utilizări ale Torță cu Propan",
+    Sandbox_BlowTorchUses_tooltip = "Utilizări per torță cu propan. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
 
-    Sandbox_BucketAsphaltMixtureUses = "Găleată cu amestec de asfalt Utilizări",
+    Sandbox_BucketAsphaltMixtureUses = "Utilizări ale Găleată cu Amestec de Asfalt",
     Sandbox_BucketAsphaltMixtureUses_tooltip = "Utilizări per găleată cu amestec de asfalt. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
 
-    Sandbox_BucketConcreteUses = "Găleată cu utilizări de beton",
+    Sandbox_BucketConcreteUses = "Utilizări ale Găleată cu Amestec de Beton",
     Sandbox_BucketConcreteUses_tooltip = "Utilizări per găleată cu beton. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
 
 
@@ -276,88 +280,84 @@ Sandbox_RO = {
     Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 de utilizări",
 
 
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Costul materialului lemnos pentru pereti MARI",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Costul Materialului Lemn pentru pereți MARI",
     Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Aseaza lemnul necesar pentru pereti MARI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Costul materialului cuielor pentru pereti MARI",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Costul Materialului Cuie pentru pereți MARI",
     Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Setează cuiele necesare pentru pereții MARI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Costul materialului lemnos pentru pereți MICI",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Costul Materialului Lemn pentru pereți MICI",
     Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Setează lemnul necesar pentru pereții MICI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Costul Materialului Cuieilor pentru Pereți MICI",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Costul Materialului Cuie pentru Pereți MICI",
     Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Setează cuiele necesare pentru pereții MICI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Costul materialului lemnos pentru obiecte MARI",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Costul Materialului Lemn pentru obiecte MARI",
     Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Setează lemnul necesar pentru obiecte MARI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Costul materialului unghiilor pentru obiecte MARI",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Costul Materialului Cuie pentru obiecte MARI",
     Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Setează cuiele necesare pentru obiecte MARI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Costul materialului lemnos pentru obiecte MICI",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Costul Materialului Lemn pentru obiecte MICI",
     Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Setează lemnul necesar pentru Obiecte MICI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Costul Materialului Cuieilor pentru Obiecte MICI",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Costul Materialului Cuie pentru Obiecte MICI",
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Setează cuiele necesare pentru Obiecte MICI. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
 
-    Sandbox_BuildingMenuRecipes_glassPaneCount = "Costul materialului geamului de sticlă",
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "Costul Materialului Geam de Sticlă",
     Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Setează geamurile de sticlă necesare. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalBarsCount = "Costul materialului barelor metalice",
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "Costul Materialului Barelor Metalice",
     Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Setează barele metalice necesare. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_screwsCount = "Costul materialului șuruburilor",
+    Sandbox_BuildingMenuRecipes_screwsCount = "Costul Materialului Șuruburi",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Setează șuruburile necesare. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Tabla pentru PERETI Cost",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Cost Tablă pentru PERETI",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Setează tablă necesară pentru PEREȚI. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Tablă pentru UȘI Cost",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Cost Tablă pentru UȘI",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Setează tablă necesară pentru UȘI. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Tablă pentru Container Cost",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Cost Tablă pentru Containere",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Seturi de tablă necesară pentru CONTENENERE. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Tablă pentru FIXARE și APARATE Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Setează tablă necesară pentru CORPORARE și APARATE. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Cost Tablă pentru CORPURI DE BAIE si ELECTROCASNICE",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Setează tablă necesară pentru CORPURI DE BAIE si ELECTROCASNICE. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Tabla pentru ACOPERSURI si POSTELE Cost",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Cost Tabla pentru ACOPERSURI si POSTELE",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Seteaza tabla necesara pentru ACOPERISURI si PARDOSELE. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
 
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
-
-
-    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Aptitudini ____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Skills ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Nivel de prelucrare a lemnului pentru obiecte MARI",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Nivel de Tâmplărie pentru obiecte MARI",
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Setează nivelul de tâmplărie necesar pentru obiectele MARI. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Nivel de prelucrare a lemnului pentru obiecte MICI",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Nivel de Tâmplărie pentru obiecte MICI",
     Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Setează nivelul de tâmplărie necesar pentru obiectele MICI. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Câștig XP pentru prelucrarea lemnului pe nivel",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Câștig XP pentru Tâmplărie pe nivel",
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Câștig de XP pe nivel de tâmplărie la construirea obiectelor. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Câștig XP pentru prelucrarea metalelor pe nivel",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Câștig XP pentru Prelucrarea Metalelor pe nivel",
     Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Câștig de XP pe nivel de prelucrare a metalelor la construirea obiectelor. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Câștig XP electric pe nivel",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Câștig XP pentru Electrical pe nivel",
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Câștig de XP pe nivel electric la construirea obiectelor. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
 
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Rețete cu obiecte speciale ____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Rețete pentru Obiecte Speciale ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Costul materialului lemnos pentru lada militară",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Costul Materialului Lemn pentru Lada Militară",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Setează scândurile necesare pentru lăzile militare. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Costul materialului cuielor pentru lada militară",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Costul Materialului Cuie pentru Lada Militară",
     Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Setează cuiele necesare pentru lăzile militare. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Nivel de prelucrare a lemnului pentru lada militară",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Nivel de Tâmplărie pentru Lada Militară",
     Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Setează nivelul de tâmplărie necesar pentru lăzile militare. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
 
 

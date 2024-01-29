@@ -4,6 +4,10 @@ Sandbox_PT = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Desligue <RGB:1,1,1><SPACE> para tornar as estruturas construídas usando o Menu Construção imunes a danos de zumbis.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria Paredes _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
@@ -324,10 +328,6 @@ Sandbox_PT = {
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Custo de chapa metálica para TELHADOS e PISOS",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Define chapas metálicas necessárias para TELHADOS e PISOS. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
-    
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Habilidades ____________",

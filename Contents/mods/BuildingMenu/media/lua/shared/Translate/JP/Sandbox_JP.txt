@@ -4,6 +4,10 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> をオフ <RGB:1,1,1><SPACE> にすると、建物メニューを使用して構築された構造物がゾンビのダメージを受けなくなります。",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 壁カテゴリー _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
@@ -325,10 +329,6 @@ Sandbox_JP = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "屋根および床の板金コスト",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "屋根と床に必要な板金をセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ スキル ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",

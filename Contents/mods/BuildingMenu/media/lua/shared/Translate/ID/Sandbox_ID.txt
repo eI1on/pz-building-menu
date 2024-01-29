@@ -4,6 +4,10 @@ Sandbox_ID = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Matikan <SPACE><RGB:1,0.8,0> MATIKAN <RGB:1,1,1><SPACE> untuk membuat struktur yang dibangun menggunakan Menu Bangunan kebal terhadap kerusakan zombie.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "________________ Kategori Dinding _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
 
@@ -325,10 +329,6 @@ Sandbox_ID = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Lembaran Logam untuk Biaya ATAP dan LANTAI",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Menetapkan lembaran logam yang dibutuhkan untuk ATAP dan LANTAI. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Keterampilan ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",

@@ -4,6 +4,10 @@ Sandbox_HU = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Kapcsold <SPACE><RGB:1,0.8,0> KI <RGB:1,1,1><SPACE> a funkciót, hogy az Épületmenüvel épített szerkezetek immunisak legyenek a zombik által okozott károkkal szemben.",
 
 
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Falak kategória _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
 
@@ -325,10 +329,6 @@ Sandbox_HU = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Fémlemez tetőfedéshez és PADLÓKHOZ Költség",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "TETŐFEDÉShez és PADLÓKHOZ szükséges lemezkészletek. <LINE> Méretek az objektum méretével és típusával. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Készségek ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",

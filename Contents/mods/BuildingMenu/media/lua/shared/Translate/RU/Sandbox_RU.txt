@@ -3,6 +3,10 @@ Sandbox_RU = {
     Sandbox_BuildingMenu_isThumpable = "Разрушаемость построек",
     Sandbox_BuildingMenu_isThumpable_tooltip = "<RGB:1,0.8,0>Отключите <RGB:1,1,1><SPACE> чтобы сделать постройки, сделанные с помощью мода, неуязвимыми для зомби.",
     
+	
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
+
 
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Категория стен _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
@@ -325,10 +329,6 @@ Sandbox_RU = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Листовой металл для КРОВЛИ И ПОЛОВ Стоимость",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Набор листового металла, необходимого для КРОВЛИ и ПОЛОВ. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ТРЕБУЕТСЯ ПЕРЕЗАПУСК КЛИЕНТА! <RGB:1,1,1>",
     
-
-    Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
-
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Навыки ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
