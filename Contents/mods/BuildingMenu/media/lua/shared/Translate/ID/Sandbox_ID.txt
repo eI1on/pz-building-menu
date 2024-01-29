@@ -1,0 +1,364 @@
+Sandbox_ID = {
+    Sandbox_BuildingMenu = "Menu Gedung",
+    Sandbox_BuildingMenu_isThumpable = "Struktur yang Dapat Dihancurkan",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "Matikan <SPACE><RGB:1,0.8,0> MATIKAN <RGB:1,1,1><SPACE> untuk membuat struktur yang dibangun menggunakan Menu Bangunan kebal terhadap kerusakan zombie.",
+
+
+    Sandbox_BuildingMenu_WallsCategoryDivider = "________________ Kategori Dinding _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_woodWallsSubCategory = "Aktifkan Subkategori Dinding Kayu",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding kayu. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Aktifkan Subkategori Dinding Clapboard",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding papan berdinding papan. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "Aktifkan Subkategori Dinding Batu",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding batu. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_brickWallsSubCategory = "Aktifkan Subkategori Dinding Bata",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding bata. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Aktifkan Subkategori Dinding Cinderblock",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Aktifkan untuk menambahkan struktur dinding cinderblock. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "Aktifkan Subkategori Dinding Dicat",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding yang dicat. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Aktifkan Subkategori Dinding Jendela Melengkung",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding jendela melengkung. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "Aktifkan Subkategori Dinding Komersial",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding komersial. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "Aktifkan Subkategori Dinding Industri",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Memungkinkan untuk menambahkan struktur dinding industri. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "________________ Kategori Atap _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_roofsCategory = "Aktifkan Kategori Atap",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Memungkinkan untuk menambahkan struktur atap, seperti sirap, sirap goyang, kaca. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "________________ Kategori Pintu _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_doorsSubCategory = "Aktifkan Kategori Pintu",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Memungkinkan untuk menambahkan pintu Kayu, Rendah, Panel, Logam, Kaca. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "Aktifkan Subkategori Pintu Garasi",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Memungkinkan untuk menambahkan 3 dan 4 Pintu Garasi Ubin. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Kategori Arsitektur Plus _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_architecturePlusCategory = "Aktifkan Kategori Arsitektur Plus",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Memungkinkan untuk menambahkan Trim Pintu, Cetakan Mahkota, Detail Tepi, Cetakan Lantai, dan Panel Dinding. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Kategori Windows ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_windowsCategory = "Aktifkan Kategori Windows",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Aktifkan untuk menambahkan Windows. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Kategori Anggar ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_highFencesSubCategory = "Aktifkan Subkategori Pagar Tinggi",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Aktifkan untuk menambahkan Pagar Tinggi. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Aktifkan Subkategori Pagar dan Pagar Rendah",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Aktifkan untuk menambahkan Pagar dan Pagar Rendah. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_otherFencesSubCategory = "Aktifkan Subkategori Pagar Lainnya",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Memungkinkan untuk menambahkan Pagar lain seperti Hesco Barrier, Pagar Logam Rendah, Pagar Bata. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Kategori Lantai ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_floorsCategory = "Aktifkan Kategori Lantai",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Aktifkan untuk menambahkan Lantai. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Kategori Tangga ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+ 
+    Sandbox_BuildingMenu_stairsCategory = "Aktifkan Kategori Tangga",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Aktifkan untuk menambahkan Tangga. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "______________ Kategori Perbaikan Jalan _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+ 
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Aktifkan Subkategori Aspal",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Memungkinkan untuk menambahkan aspal. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Aktifkan Subkategori Overlay",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Aktifkan untuk menambahkan overlay seperti Grime dan Street Cracks. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Aktifkan Subkategori Hamparan Tepi Trotoar",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Aktifkan untuk menambahkan Hamparan Tepi Trotoar. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Aktifkan Subkategori Kotoran dan Rumput",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Aktifkan untuk menambahkan ubin Kotoran dan Rumput. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Aktifkan Subkategori Marka Jalan yang Dicat",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Aktifkan untuk menambahkan Marka Jalan yang Dicat. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Kategori Kontainer ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+ 
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Aktifkan Subkategori Penghitung Dapur",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Aktifkan untuk menambahkan Penghitung Dapur, Penghitung Atas. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Aktifkan Subkategori Penghitung Komersial",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Aktifkan untuk menambahkan Konter Restoran, Kafe, Bar, Restoran. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_cratesSubCategory = "Aktifkan Subkategori Peti",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Memungkinkan untuk menambahkan Peti sederhana, Peti Militer (kapasitas 100), Kotak Kardus. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_metalContainersSubCategory = "Aktifkan Subkategori Kontainer Logam",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Aktifkan untuk menambahkan Wadah Logam, Rak Logam Besar, Loker. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "Aktifkan Subkategori Rak Pakaian",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Aktifkan untuk menambahkan Rak Pakaian dan Manekin. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_trashCansSubCategory = "Aktifkan Subkategori Tong Sampah",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Aktifkan untuk menambahkan tong sampah. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_containersOthersSubCategory = "Aktifkan Subkategori Kontainer Lainnya",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Aktifkan untuk menambahkan Subkategori Kontainer Lainnya. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+
+
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "______________ Kategori Furnitur _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+ 
+    Sandbox_BuildingMenu_tablesSubCategory = "Aktifkan Subkategori Tabel",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Aktifkan untuk menambahkan Tabel Kecil dan Besar. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_bedsSubCategory = "Aktifkan Subkategori Tempat Tidur",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Memungkinkan untuk menambahkan Tempat Tidur Sederhana dan Besar. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Aktifkan Subkategori Furnitur Tempat Duduk",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Aktifkan untuk menambahkan Bangku, Sofa, Kursi. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Aktifkan Subkategori Rak Buku",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Aktifkan untuk menambahkan Rak Buku. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Aktifkan Subkategori Meja Rias",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Aktifkan untuk menambahkan Meja Rias, Laci, dan Lemari Pakaian. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+
+
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Kategori Dekorasi ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+ 
+    Sandbox_BuildingMenu_rugsSubCategory = "Aktifkan Subkategori Permadani",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Aktifkan untuk menambahkan Karpet. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Aktifkan Subkategori Poster dan Tanda",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktifkan untuk menambahkan Poster dan Tanda. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_graffitiSubCategory = "Aktifkan Subkategori Graffiti",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Aktifkan untuk menambahkan Graffiti. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Aktifkan Subkategori Dekorasi Lainnya",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Aktifkan untuk menambahkan Dekorasi Lainnya, seperti pembatas jalan, kotak surat, tiang pembatas, kerucut jalan, kotak surat. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+
+
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Kategori Vegetasi ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "Aktifkan Subkategori Tempat Tidur Bunga",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Aktifkan untuk menambahkan Hamparan Bunga di Kategori Vegetasi. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Aktifkan Subkategori Tanaman Dalam Ruangan",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Aktifkan untuk menambahkan Tanaman Dalam Ruangan, seperti Pot Bunga di Kategori Vegetasi. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Aktifkan Subkategori Tanaman Luar Ruangan",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Memungkinkan untuk menambahkan Tanaman Luar Ruangan, seperti Wadah Bunga luar ruangan dalam Kategori Vegetasi. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_landscapingSubCategory = "Aktifkan Subkategori Lansekap",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Aktifkan untuk menambahkan Vegetasi Lansekap, seperti Rumput, Pagar, Tanaman Merambat Dinding dalam Kategori Vegetasi. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+
+
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "______________ Kategori Bertahan Hidup _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_fireplaceSubCategory = "Aktifkan Subkategori Perapian",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Aktifkan untuk menambahkan Perapian dan Kusen. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+   
+    Sandbox_BuildingMenu_generatorSubCategory = "Aktifkan Subkategori Generator",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Aktifkan untuk menambahkan Generator. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_metalDrums = "Aktifkan Drum Logam",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Aktifkan untuk menambahkan drum logam. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+
+
+
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Kategori Peralatan ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_lightingAppliances = "Aktifkan Kategori Pencahayaan",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Aktifkan untuk menambahkan Kategori Pencahayaan. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+
+    Sandbox_BuildingMenu_bathroomAppliances = "Aktifkan Subkategori Perlengkapan Kamar Mandi",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Aktifkan untuk menambahkan Wastafel, Toilet, dan objek terkait kamar mandi lainnya. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_cookingAppliances = "Aktifkan Subkategori Peralatan Dapur",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Aktifkan untuk menambahkan Kompor, Oven, dan objek terkait memasak lainnya. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_fridgeAppliances = "Aktifkan Subkategori Peralatan Pendingin",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Aktifkan untuk menambahkan Lemari Es dan Freezer. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+    Sandbox_BuildingMenu_laundryAppliances = "Aktifkan Subkategori Peralatan Binatu",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Aktifkan untuk menambahkan Mesin Cuci dan Pengering. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
+
+
+
+    Sandbox_BuildingMenuRecipes = "Membangun Resep Menu",
+
+    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Bahan ____________",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_PaintUses = "Kegunaan Kaleng Cat",
+    Sandbox_PaintUses_tooltip = "Penggunaan per kaleng cat. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+
+    Sandbox_BlowTorchUses = "Kegunaan Obor Tiup",
+    Sandbox_BlowTorchUses_tooltip = "Penggunaan per obor tiup. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+
+    Sandbox_BucketAsphaltMixtureUses = "Ember dengan Kegunaan Campuran Aspal",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Penggunaan per Bucket dengan Campuran Aspal. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+
+    Sandbox_BucketConcreteUses = "Ember dengan Kegunaan Beton",
+    Sandbox_BucketConcreteUses_tooltip = "Penggunaan per Ember dengan Beton. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Kegunaan",
+
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Kegunaan",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 Kegunaan",
+
+
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Biaya Bahan Kayu untuk Tembok BESAR",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Mengatur kayu yang dibutuhkan untuk Tembok BESAR. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Biaya Bahan Paku untuk Tembok BESAR",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Menetapkan paku yang dibutuhkan untuk Tembok BESAR. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Biaya Bahan Kayu untuk Dinding KECIL",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Set kayu yang dibutuhkan untuk Dinding KECIL. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Biaya Bahan Paku untuk Dinding KECIL",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Set paku yang dibutuhkan untuk Dinding KECIL. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Biaya Bahan Kayu untuk Benda BESAR",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Menetapkan kayu yang dibutuhkan untuk Objek BESAR. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Biaya Bahan Paku untuk Benda BESAR",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Menetapkan paku yang dibutuhkan untuk Objek BESAR. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Biaya Bahan Kayu untuk Benda KECIL",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Mengatur kayu yang dibutuhkan untuk Objek KECIL. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Biaya Bahan Paku untuk Benda KECIL",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Mengatur paku yang dibutuhkan untuk Benda KECIL. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "Biaya Bahan Panel Kaca",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Mengatur panel kaca yang dibutuhkan. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "Biaya Bahan Batangan Logam",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Setel batang logam yang dibutuhkan. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_screwsCount = "Biaya Bahan Sekrup",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Set sekrup yang diperlukan. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Lembaran Logam untuk Biaya DINDING",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Mengatur lembaran logam yang dibutuhkan untuk DINDING. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Lembaran Logam untuk Biaya PINTU",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Menetapkan lembaran logam yang diperlukan untuk PINTU. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Biaya Lembaran Logam untuk KONTAINER",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Menetapkan lembaran logam yang diperlukan untuk WADAH. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Biaya Lembaran Logam untuk PERLENGKAPAN dan PERALATAN",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Menetapkan lembaran logam yang diperlukan untuk PERLENGKAPAN dan PERANGKAT. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Lembaran Logam untuk Biaya ATAP dan LANTAI",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Menetapkan lembaran logam yang dibutuhkan untuk ATAP dan LANTAI. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+
+    Sandbox_BuildingMenuRecipes_EmptyBox = "",
+    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Keterampilan ____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Tingkat pengerjaan kayu untuk Objek BESAR",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Menetapkan tingkat pertukangan yang diperlukan untuk Objek BESAR. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Tingkat pengerjaan kayu untuk Objek KECIL",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Menetapkan tingkat pertukangan yang diperlukan untuk Objek KECIL. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Keuntungan Woodworking XP per Level",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Perolehan XP per level pertukangan saat membangun objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Keuntungan Pengerjaan Logam XP per Level",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Perolehan XP per level pengerjaan logam saat membangun objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Keuntungan XP Listrik per Level",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Perolehan XP per level listrik saat membangun objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Resep Benda Khusus ____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Biaya Bahan Kayu untuk Peti Militer",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Menetapkan papan yang diperlukan untuk Peti Militer. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Biaya Bahan Paku untuk Peti Militer",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Menetapkan paku yang diperlukan untuk Peti Militer. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Tingkat Pengerjaan Kayu untuk Peti Militer",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Menetapkan level pertukangan yang dibutuhkan untuk Peti Militer. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+
+
+}

@@ -1,0 +1,13 @@
+Items_DA = {
+
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "Pan med glasskår",
+    DisplayName_PanWithGlassPane = "Pander med glasrude",
+    DisplayName_GlassPane = "Glasrude",
+
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "Handyman Corners køkkenovne",
+    DisplayName_BMMagazineCars = "Præcisionsvinduer til køretøjer og håndværk",
+    DisplayName_BMMagazineSecretEntrances = "Hemmelige passager månedligt",
+
+}

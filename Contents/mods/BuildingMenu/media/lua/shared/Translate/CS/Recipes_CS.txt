@@ -1,0 +1,46 @@
+Recipe_CS = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Připravte sklo na tavení",
+    Recipe_BMUnprepareGlassShards = "Odstraňte sklo z pánve",
+    Recipe_BMRemoveGlassPane = "Extrahovaná skleněná tabule",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Rozbít do rozbitého skla",
+    Recipe_BMSmashGlassPane = "Rozbít do rozbitého skla",
+    Recipe_BMSmashWindshield = "Rozbít do rozbitého skla",
+    Recipe_BMSmashWindows = "Rozbít do rozbitého skla",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Vyrobte si dřevěné okno",
+    Recipe_BMMakeWindow02 = "Vyrobte okno s bílými dlaždicemi",
+    Recipe_BMMakeWindow03 = "Vytvořte dlaždicové okno",
+    Recipe_BMMakeWindow04 = "Vytvořte bílé okno",
+    Recipe_BMMakeWindow05 = "Vytvořte okno Chrome",
+    Recipe_BMMakeWindow06 = "Vytvořte posuvné okno",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "Demontujte dřevěné okno",
+    Recipe_BMDisassembleWindow02 = "Demontujte okno s bílými dlaždicemi",
+    Recipe_BMDisassembleWindow03 = "Demontujte dlaždicové okno",
+    Recipe_BMDisassembleWindow04 = "Demontujte bílé okno",
+    Recipe_BMDisassembleWindow05 = "Demontujte Chrome Window",
+    Recipe_BMDisassembleWindow06 = "Demontujte posuvné okno",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Vytvořte standardní čelní sklo",
+    Recipe_BMRearWindshield1 = "Vytvořte standardní zadní čelní sklo",
+    Recipe_BMFrontWindow1 = "Vytvořte standardní přední okno",
+    Recipe_BMRearWindow1 = "Vytvořte standardní zadní okno",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Make Heavy-Duty Windshield",
+    Recipe_BMRearWindshield2 = "Vyrobte vysoce odolné zadní čelní sklo",
+    Recipe_BMFrontWindow2 = "Vyrobte vysoce odolné přední okno",
+    Recipe_BMRearWindow2 = "Vyrobte těžké zadní okno",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Vyrobte si sportovní čelní sklo",
+    Recipe_BMRearWindshield3 = "Vyrobte sportovní zadní čelní sklo",
+    Recipe_BMFrontWindow3 = "Vytvořte sportovní přední okno",
+    Recipe_BMRearWindow3 = "Vytvořte sportovní zadní okno",
+}

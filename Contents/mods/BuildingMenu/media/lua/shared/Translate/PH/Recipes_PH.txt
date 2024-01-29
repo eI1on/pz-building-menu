@@ -1,0 +1,46 @@
+Recipe_PH = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Maghanda ng baso para sa pagtunaw",
+    Recipe_BMUnprepareGlassShards = "Alisin ang baso mula sa kawali",
+    Recipe_BMRemoveGlassPane = "I-extract ang glass pane",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Basagin sa basag na salamin",
+    Recipe_BMSmashGlassPane = "Basagin sa basag na salamin",
+    Recipe_BMSmashWindshield = "Basagin sa basag na salamin",
+    Recipe_BMSmashWindows = "Basagin sa basag na salamin",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Gumawa ng Wooden Window",
+    Recipe_BMMakeWindow02 = "Gumawa ng White Tiled Window",
+    Recipe_BMMakeWindow03 = "Gumawa ng Tiled Window",
+    Recipe_BMMakeWindow04 = "Gumawa ng White Window",
+    Recipe_BMMakeWindow05 = "Gumawa ng Chrome Window",
+    Recipe_BMMakeWindow06 = "Gumawa ng Slider Window",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "I-disassemble ang Wooden Window",
+    Recipe_BMDisassembleWindow02 = "I-disassemble ang White Tiled Window",
+    Recipe_BMDisassembleWindow03 = "I-disassemble ang Tiled Window",
+    Recipe_BMDisassembleWindow04 = "I-disassemble ang White Window",
+    Recipe_BMDisassembleWindow05 = "I-disassemble ang Chrome Window",
+    Recipe_BMDisassembleWindow06 = "I-disassemble ang Slider Window",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Gumawa ng Standard Windshield",
+    Recipe_BMRearWindshield1 = "Gumawa ng Standard Rear Windshield",
+    Recipe_BMFrontWindow1 = "Gumawa ng Standard Front Window",
+    Recipe_BMRearWindow1 = "Gumawa ng Standard Rear Window",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Gumawa ng Heavy-Duty Windshield",
+    Recipe_BMRearWindshield2 = "Gumawa ng Heavy-Duty Rear Windshield",
+    Recipe_BMFrontWindow2 = "Gumawa ng Heavy-Duty Front Window",
+    Recipe_BMRearWindow2 = "Gumawa ng Heavy-Duty na Rear Window",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Gumawa ng Sport Windshield",
+    Recipe_BMRearWindshield3 = "Gumawa ng Sport Rear Windshield",
+    Recipe_BMFrontWindow3 = "Gumawa ng Sport Front Window",
+    Recipe_BMRearWindow3 = "Gumawa ng Sport Rear Window",
+}

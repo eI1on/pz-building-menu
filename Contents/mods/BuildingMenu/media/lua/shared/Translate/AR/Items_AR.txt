@@ -1,0 +1,13 @@
+Items_AR = {
+
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "Pan con fragmentos de vidrio",
+    DisplayName_PanWithGlassPane = "Sartén con panel de vidrio",
+    DisplayName_GlassPane = "Panel de vidrio",
+
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "Hornos de cocina de Handyman Corner",
+    DisplayName_BMMagazineCars = "Ventanas y artesanía de vehículos de precisión",
+    DisplayName_BMMagazineSecretEntrances = "Pasadizos Secretos Mensual",
+
+}

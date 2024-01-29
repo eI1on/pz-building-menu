@@ -1,0 +1,13 @@
+Items_RO = {
+
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "Tavă cu cioburi de sticlă",
+    DisplayName_PanWithGlassPane = "Tavă cu geam de sticlă",
+    DisplayName_GlassPane = "Panou de sticlă",
+
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "Cuptoare de Bucătărie Handyman Corner",
+    DisplayName_BMMagazineCars = "Geamuri de precizie pentru vehicule și lucrări de artizanat",
+    DisplayName_BMMagazineSecretEntrances = "Pasaje Secrete Monthly",
+
+}

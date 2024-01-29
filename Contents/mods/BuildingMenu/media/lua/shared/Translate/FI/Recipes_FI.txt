@@ -1,0 +1,46 @@
+Recipe_FI = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Valmistele lasi sulatusta varten",
+    Recipe_BMUnprepareGlassShards = "Poista lasi pannulta",
+    Recipe_BMRemoveGlassPane = "Irrota lasi",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Murskaa lasinsiruiksi",
+    Recipe_BMSmashGlassPane = "Murskaa lasinsiruiksi",
+    Recipe_BMSmashWindshield = "Murskaa lasinsiruiksi",
+    Recipe_BMSmashWindows = "Murskaa lasinsiruiksi",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Tee puinen ikkuna",
+    Recipe_BMMakeWindow02 = "Tee valkoinen kaakeloitu ikkuna",
+    Recipe_BMMakeWindow03 = "Tee kaakeloitu ikkuna",
+    Recipe_BMMakeWindow04 = "Tee valkoinen ikkuna",
+    Recipe_BMMakeWindow05 = "Tee Chrome-ikkuna",
+    Recipe_BMMakeWindow06 = "Tee liukusäädinikkuna",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "Pura puinen ikkuna",
+    Recipe_BMDisassembleWindow02 = "Pura valkoinen laattaikkuna",
+    Recipe_BMDisassembleWindow03 = "Pura kaakeloitu ikkuna",
+    Recipe_BMDisassembleWindow04 = "Pura valkoinen ikkuna",
+    Recipe_BMDisassembleWindow05 = "Pura Chrome-ikkuna",
+    Recipe_BMDisassembleWindow06 = "Pura liukusäädinikkuna",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Valmista tavallinen tuulilasi",
+    Recipe_BMRearWindshield1 = "Valmista tavallinen takatuulilasi",
+    Recipe_BMFrontWindow1 = "Tee tavallinen etuikkuna",
+    Recipe_BMRearWindow1 = "Tee vakiotakaikkuna",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Tee Heavy Duty -tuulilasi",
+    Recipe_BMRearWindshield2 = "Tee Heavy Duty takatuulilasi",
+    Recipe_BMFrontWindow2 = "Tee raskaaseen käyttöön tarkoitettu etuikkuna",
+    Recipe_BMRearWindow2 = "Tee raskaaseen käyttöön tarkoitettu takaikkuna",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Tee Sport-tuulilasi",
+    Recipe_BMRearWindshield3 = "Tee Sport Takatuulilasi",
+    Recipe_BMFrontWindow3 = "Tee Sport-etuikkuna",
+    Recipe_BMRearWindow3 = "Tee Sport-takaikkuna",
+}

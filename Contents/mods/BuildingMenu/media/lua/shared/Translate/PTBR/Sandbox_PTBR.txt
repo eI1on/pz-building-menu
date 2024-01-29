@@ -1,353 +1,364 @@
 Sandbox_PTBR = {
     Sandbox_BuildingMenu = "Building Menu",
-    Sandbox_BuildingMenu_isThumpable = "Estruturas Resistï¿½veis",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "Desative <SPACE><RGB:1,0.8,0> LIGADO <RGB:1,1,1><SPACE> para tornar as estruturas construï¿½das usando o menu imunes a danos de zumbis.",
+    Sandbox_BuildingMenu_isThumpable = "Estruturas Resistíveis",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "Desative <SPACE><RGB:1,0.8,0> LIGADO <RGB:1,1,1><SPACE> para tornar as estruturas construídas usando o menu imunes a danos de zumbis.",
+    
+
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria Paredes _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
+
+    Sandbox_BuildingMenu_woodWallsSubCategory = "Ativar subcategoria Paredes de madeira",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Habilite a adição de estruturas de paredes de madeira. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Ativar subcategoria Paredes de ripa",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de ripas. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "Ativar subcategoria Paredes de Pedra",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Habilite a adição de estruturas de paredes de pedra. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_brickWallsSubCategory = "Ativar subcategoria Paredes de Tijolo",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Habilite a adição de estruturas de paredes de tijolos. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Ativar subcategoria Paredes de blocos de concreto",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de blocos de concreto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "Ativar subcategoria Paredes pintadas",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes pintadas. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Ativar subcategoria Paredes de janelas arqueadas",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de janelas em arco. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "Ativar subcategoria Paredes Comerciais",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Habilite a adição de estruturas de paredes comerciais. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "Ativar subcategoria Paredes Industriais",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Habilite a adição de estruturas de paredes industriais. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Walls Category _______________",
-    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Categoria Telhados _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_woodWallsSubCategory = "Enable Wood Walls Subcategory",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Enable to add wooden walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Enable Clapboard Walls Subcategory",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Enable to add clapboard walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_stoneWallsSubCategory = "Enable Stone Walls Subcategory",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Enable to add stone walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_brickWallsSubCategory = "Enable Brick Walls Subcategory",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Enable to add brick walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Enable Cinderblock Walls Subcategory",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Enable to add cinderblock walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_paintedWallsSubCategory = "Enable Painted Walls Subcategory",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Enable to add painted walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Enable Arched Window Walls Subcategory",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Enable to add arched window walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_commercialWallsSubCategory = "Enable Commercial Walls Subcategory",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Enable to add commercial walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_industrialWallsSubCategory = "Enable Industrial Walls Subcategory",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Enable to add industrial walls structures. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_roofsCategory = "Ativar categoria de telhados",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Habilite a adição de estruturas de telhado, como telhas, telhas, vidro. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Roofs Category _______________",
-    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Categoria de portas _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_roofsCategory = "Enable Roofs Category",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Enable to add roof structures, such as shingles, shake shingles, glass. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_doorsSubCategory = "Ativar categoria de portas",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Habilite a adição de portas de madeira, baixas, painel, metal e vidro. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "Ativar subcategoria de portas de garagem",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Habilite a adição de portas de garagem de 3 e 4 blocos. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Doors Category _______________",
-    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Categoria Arquitetura Plus _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_doorsSubCategory = "Enable Doors Category",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Enable to add Wooden, Low, Panel, Metal, Glass doors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_garageDoorsSubCategory = "Enable Garage Doors Subcategory",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Enable to add 3 and 4 Tile Garage Doors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_architecturePlusCategory = "Habilitar categoria Architecture Plus",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Habilite a adição de guarnições de portas, molduras de coroa, detalhes de bordas, molduras de piso e painéis de parede. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Architecture Plus Category _________",
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Categoria Windows ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_architecturePlusCategory = "Enable Architecture Plus Category",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Enable to add Door Trims, Crown Molding, Edge Detailing, Floor Molding and Wall Panels. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_windowsCategory = "Habilitar categoria do Windows",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Ative para adicionar o Windows. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Windows Category ______________",
-    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Categoria de Esgrima ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_windowsCategory = "Enable Windows Category",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Enable to add Windows. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_highFencesSubCategory = "Ativar subcategoria High Fences",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Ative para adicionar cercas altas. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Ativar subcategoria Cercas baixas e grades",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Ative para adicionar cercas baixas e grades. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+    
+    Sandbox_BuildingMenu_otherFencesSubCategory = "Habilitar subcategoria Outras Cercas",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Habilite a adição de outras cercas, como barreira Hesco, cercas baixas de metal e cercas de tijolos. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Fencing Category ______________",
-    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Categoria Pisos ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_highFencesSubCategory = "Enable High Fences Subcategory",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Enable to add High Fences. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Enable Low fences and Railings Subcategory",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Enable to add Low Fences and Railings. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-    Sandbox_BuildingMenu_otherFencesSubCategory = "Enable Other Fences Subcategory",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Enable to add other Fences such as Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_floorsCategory = "Ativar categoria de piso",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Ative para adicionar pisos. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Floors Category ______________",
-    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_floorsCategory = "Enable Floor Category",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Enable to add Floors. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-
-
-    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Stairs Category ______________",
-    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Categoria Escadas ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
  
-    Sandbox_BuildingMenu_stairsCategory = "Enable Stairs Category",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Enable to add Stairs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_stairsCategory = "Ativar categoria de escadas",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Ative para adicionar escadas. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
-    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Roadwork Category _____________",
-    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoria de obras rodoviárias _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
  
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Enable Asphalt Subcategory",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Enable to add asphalt. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Ativar subcategoria Asfalto",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Ative para adicionar asfalto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Enable Overlays Subcategory",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Enable to add overlays such as Grime and Street Cracks. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Ativar subcategoria de sobreposições",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Ative para adicionar sobreposições como Grime e Street Cracks. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Enable Sidewalk Edge Overlays Subcategory",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Enable to add Sidewalk Edge Overlays. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Ativar subcategoria Sidewalk Edge Overlays",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Ative para adicionar sobreposições de borda de calçada. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Enable Dirt and Grass Subcategory",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Enable to add Dirt and Grass tiles. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Ativar subcategoria Sujeira e Grama",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Ative para adicionar blocos de sujeira e grama. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Enable Painted Road Markings Subcategory",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Enable to add Painted Road Markings. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Ativar subcategoria de marcações rodoviárias pintadas",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Ative para adicionar marcações rodoviárias pintadas. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
 
 
-    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Containers Category ____________",
-    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoria de contêineres ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
  
-    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Enable Kitchen Counters Subcategory",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Enable to add Kitchen Counters, Upper Counters. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Ativar subcategoria de balcões de cozinha",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Habilite para adicionar balcões de cozinha e balcões superiores. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-    Sandbox_BuildingMenu_commercialCountersSubCategory = "Enable Commercial Counters Subcategory",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Enable to add Restaurant, Cafe, Bar, Diner Counters. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Habilitar subcategoria de contadores comerciais",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Habilite para adicionar balcões de restaurantes, cafés, bares e lanchonetes. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-    Sandbox_BuildingMenu_cratesSubCategory = "Enable Crates Subcategory",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Enable to add simple Crates, Military Crates(100 capacity), Cardboard Boxes. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_cratesSubCategory = "Ativar subcategoria de caixas",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Habilite a adição de caixas simples, caixas militares (capacidade 100), caixas de papelão. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_metalContainersSubCategory = "Enable Metal Containers Subcategory",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Enable to add Metal Containers, Large Metal Shelves, Lockers. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_metalContainersSubCategory = "Ativar subcategoria de contêineres metálicos",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Habilite a adição de recipientes de metal, grandes prateleiras de metal e armários. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_clothesRacksSubCategory = "Enable Clothes Racks Subcategory",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Enable to add Clothes Racks and Mannequins. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "Ativar subcategoria de cabideiros",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Habilite para adicionar cabideiros e manequins. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_trashCansSubCategory = "Enable Trash Cans Subcategory",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Enable to add trash cans. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_trashCansSubCategory = "Ativar subcategoria de latas de lixo",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Ative para adicionar latas de lixo. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_containersOthersSubCategory = "Enable Other Containers Subcategory",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Enable to add Other Containers Subcategory. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_containersOthersSubCategory = "Habilitar subcategoria de outros contêineres",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Habilite para adicionar a subcategoria Outros contêineres. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
 
 
-    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Furniture Category _____________",
-    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria Móveis _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
  
-    Sandbox_BuildingMenu_tablesSubCategory = "Enable Tables Subcategory",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Enable to add Small and Large Tables. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_tablesSubCategory = "Habilitar subcategoria de tabelas",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Habilite para adicionar tabelas pequenas e grandes. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-    Sandbox_BuildingMenu_bedsSubCategory = "Enable Beds Subcategory",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Enable to add Simple and Large Beds. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_bedsSubCategory = "Ativar subcategoria de camas",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Habilite para adicionar Camas Simples e Grandes. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Enable Seating Furnitures Subcategory",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Enable to add Benches, Couches, Chairs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Ativar subcategoria Móveis para assentos",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Habilite para adicionar bancos, sofás, cadeiras. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_bookshelvesSubCategory = "Enable Bookshelves Subcategory",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Enable to add Bookshelves. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Ativar subcategoria Estantes",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Ative para adicionar estantes. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Enable Dressers Subcategory",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Enable to add Dressers, Drawers and Wardrobes. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Ativar subcategoria Cômodas",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Habilite para adicionar cômodas, gavetas e guarda-roupas. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
 
 
-    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Decorations Category ____________",
-    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoria Decorações ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
  
-    Sandbox_BuildingMenu_rugsSubCategory = "Enable Rugs Subcategory",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Enable to add Rugs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_rugsSubCategory = "Ativar subcategoria de tapetes",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Ative para adicionar tapetes. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Enable Posters and Signs Subcategory",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Enable to add Posters and Signs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Ativar subcategoria de cartazes e cartazes",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Ative para adicionar pôsteres e placas. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_graffitiSubCategory = "Enable Graffiti Subcategory",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Enable to add Graffiti. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_graffitiSubCategory = "Ativar subcategoria Graffiti",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Ative para adicionar Graffiti. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Enable Other Decorations Subcategory",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Enable to add Other Decorations, such as road blocks, mailbox, barrier post, road cones, mail box. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-
-
-    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Vegetation Category ____________",
-    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_flowerBedsSubCategory = "Enable Flower Beds Subcategory",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Enable to add Flower Beds in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Enable Indoor Plants Subcategory",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Enable to add Indoor Plants, such as Flower Pots in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Enable Outdoor Plants Subcategory",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Enable to add Outdoor Plants, such as outdoor Flower Containers in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-   
-    Sandbox_BuildingMenu_landscapingSubCategory = "Enable Landscaping Subcategory",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Enable to add Landscaping Vegetation, such as Grass, Hedges, Wall Vines in Vegetation Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Ativar subcategoria Outras Decorações",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Ative para adicionar outras decorações, como bloqueios de estradas, caixa de correio, barreira, cones de estrada, caixa de correio. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
 
 
-    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Survival Category _____________",
-    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoria Vegetação ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_fireplaceSubCategory = "Enable Fireplace Subcategory",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Enable to add Fireplace and Jambs. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "Ativar subcategoria de canteiros de flores",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Habilite para adicionar canteiros de flores na categoria Vegetação. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
    
-    Sandbox_BuildingMenu_generatorSubCategory = "Enable Generator Subcategory",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Enable to add the Generator. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-    
-	Sandbox_BuildingMenu_metalDrums = "Ativar Tambores de Metal",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Ative para adicionar tambores de metal no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINï¿½CIO DO CLIENTE!",
-	
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Ativar subcategoria de plantas de interior",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Ative para adicionar plantas de interior, como vasos de flores na categoria Vegetação. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+   
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Ativar subcategoria de plantas ao ar livre",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Habilite a adição de plantas externas, como recipientes de flores externas na categoria Vegetação. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+   
+    Sandbox_BuildingMenu_landscapingSubCategory = "Ativar subcategoria Paisagismo",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Habilite a adição de Vegetação Paisagística, como Grama, Sebes, Trepadeiras na Categoria Vegetação. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+   
 
 
-    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Appliances Category ____________",
-    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoria de Sobrevivência _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenu_lightingAppliances = "Enable Lighting Category",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Enable to add Lighting Category. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
-
-	Sandbox_BuildingMenu_bathroomAppliances = "Ativar Acessï¿½rios de Banheiro",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Ative para adicionar pias, vasos sanitï¿½rios e outros objetos relacionados ao banheiro no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINï¿½CIO DO CLIENTE!",
+    Sandbox_BuildingMenu_fireplaceSubCategory = "Ativar subcategoria Lareira",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Habilite para adicionar Lareira e Jambs. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
+   
+    Sandbox_BuildingMenu_generatorSubCategory = "Ativar subcategoria do gerador",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Habilite para adicionar o Gerador. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
     
-	Sandbox_BuildingMenu_cookingAppliances = "Ativar Eletrodomï¿½sticos de Cozinha",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Ative para acessar fogï¿½es, fornos e outros objetos relacionados ï¿½ cozinha no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINï¿½CIO DO CLIENTE!",
-    
-	Sandbox_BuildingMenu_fridgeAppliances = "Ativar Eletrodomï¿½sticos de Refrigeraï¿½ï¿½o",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Ative para incluir geladeiras e freezers no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINï¿½CIO DO CLIENTE!",
-    
-	Sandbox_BuildingMenu_laundryAppliances = "Ativar Eletrodomï¿½sticos de Lavanderia",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Ative para adicionar mï¿½quinas de lavar e secar no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINï¿½CIO DO CLIENTE!",
-    
+    Sandbox_BuildingMenu_metalDrums = "Ativar Tambores de Metal",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Ative para adicionar tambores de metal no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINÍCIO DO CLIENTE!",
 
 
 
-    Sandbox_BuildingMenuRecipes = "Building Menu Recipes",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Categoria de eletrodomésticos ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materials ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenu_lightingAppliances = "Ativar categoria de iluminação",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Ative para adicionar categoria de iluminação. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE!",
 
-    Sandbox_PaintUses = "Paint Can Uses",
-    Sandbox_PaintUses_tooltip = "Uses per paint can. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BlowTorchUses = "Blow Torch Uses",
-    Sandbox_BlowTorchUses_tooltip = "Uses per blow torch. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BucketAsphaltMixtureUses = "Bucket with Asphalt Mix Uses",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Uses per Bucket with Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BucketConcreteUses = "Bucket with Concrete Uses",
-    Sandbox_BucketConcreteUses_tooltip = "Uses per Bucket with Concrete. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-
-    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "12 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "14 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "16 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20 Uses",
+    Sandbox_BuildingMenu_bathroomAppliances = "Ativar Acessórios de Banheiro",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Ative para adicionar pias, vasos sanitários e outros objetos relacionados ao banheiro no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINÍCIO DO CLIENTE!",
+    
+	Sandbox_BuildingMenu_cookingAppliances = "Ativar Eletrodomésticos de Cozinha",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Ative para acessar fogões, fornos e outros objetos relacionados à cozinha no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINÍCIO DO CLIENTE!",
+    
+	Sandbox_BuildingMenu_fridgeAppliances = "Ativar Eletrodomésticos de Refrigeração",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Ative para incluir geladeiras e freezers no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINÍCIO DO CLIENTE!",
+    
+	Sandbox_BuildingMenu_laundryAppliances = "Ativar Eletrodomésticos de Lavanderia",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Ative para adicionar máquinas de lavar e secar no menu. <LINE><LINE> <RGB:1,0,0> NECESSITA REINÍCIO DO CLIENTE!",
+    
 
 
 
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Wood Material Cost for BIG Walls",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Sets wood needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes = "Construindo receitas de cardápio",
+
+    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiais ____________",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
+
+    Sandbox_PaintUses = "Usos de latas de tinta",
+    Sandbox_PaintUses_tooltip = "Usos por lata de tinta. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
+
+    Sandbox_BlowTorchUses = "Usos do maçarico",
+    Sandbox_BlowTorchUses_tooltip = "Utiliza por maçarico. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
+
+    Sandbox_BucketAsphaltMixtureUses = "Balde com Mistura Asfáltica Utiliza",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Utilizações por balde com mistura asfáltica. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
+
+    Sandbox_BucketConcreteUses = "Balde com usos de concreto",
+    Sandbox_BucketConcreteUses_tooltip = "Usos por balde com concreto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18 usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 usos",
+
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 usos",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 usos",
+
+
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Custo de material de madeira para paredes GRANDES",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Define a madeira necessária para paredes BIG. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Nails Material Cost for BIG Walls",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Sets nails needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Custo de material de pregos para paredes GRANDES",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Define os pregos necessários para paredes GRANDES. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Wood Material Cost for SMALL Walls",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Sets wood needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Custo de material de madeira para paredes PEQUENAS",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Define a madeira necessária para paredes PEQUENAS. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Nails Material Cost for SMALL Walls",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Sets nails needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Custo de material de pregos para paredes PEQUENAS",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Define os pregos necessários para paredes PEQUENAS. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Wood Material Cost for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Sets wood needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Custo de material de madeira para objetos GRANDES",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Define a madeira necessária para objetos GRANDES. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Nails Material Cost for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Sets nails needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Custo de material de unhas para objetos GRANDES",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Define os pregos necessários para objetos GRANDES. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Wood Material Cost for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Sets wood needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Custo de material de madeira para objetos PEQUENOS",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Define a madeira necessária para objetos PEQUENOS. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Nails Material Cost for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Sets nails needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Custo de material de unhas para objetos PEQUENOS",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Define os pregos necessários para objetos PEQUENOS. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
 
-    Sandbox_BuildingMenuRecipes_glassPaneCount = "Glass Pane Material Cost",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Sets glass panes needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "Custo do material do painel de vidro",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Define os painéis de vidro necessários. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalBarsCount = "Metal Bars Material Cost",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Sets metal bars needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "Custo do material das barras de metal",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Define as barras de metal necessárias. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_screwsCount = "Screws Material Cost",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Sets screws needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount = "Custo do material dos parafusos",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Define os parafusos necessários. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Sheet Metal for WALLS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Sets sheet metal needed for WALLS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Custo de chapa metálica para PAREDES",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Define a chapa metálica necessária para PAREDES. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Sheet Metal for DOORS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Sets sheet metal needed for DOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Custo de chapa metálica para PORTAS",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Conjuntos de chapas metálicas necessárias para PORTAS. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Sheet Metal for CONTAINERS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Sets sheet metal needed for CONTAINERS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Custo de chapa metálica para contêineres",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Conjuntos de chapas metálicas necessárias para RECIPIENTES. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Sheet Metal for FIXTURES and APPLIANCES Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Sets sheet metal needed for FIXTURES and APPLIANCES. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Custo de Chapas Metálicas para INSTALAÇÕES e APARELHOS",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Conjuntos de chapas metálicas necessárias para FIXTURES e APARELHOS. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal for ROOFING and FLOORS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sets sheet metal needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Custo de chapa metálica para TELHADOS e PISOS",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Define chapas metálicas necessárias para TELHADOS e PISOS. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
 
-    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Skills ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Habilidades ____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Woodworking level for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Sets carpentry level needed for BIG Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Nível de carpintaria para objetos GRANDES",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Define o nível de carpintaria necessário para objetos GRANDES. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Woodworking level for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Sets carpentry level needed for SMALL Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Nível de marcenaria para objetos PEQUENOS",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Define o nível de carpintaria necessário para objetos PEQUENOS. <LINE> Dimensiona de acordo com o tamanho e tipo do objeto. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Woodworking XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "XP gain per carpentry level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Ganho de XP em Carpintaria por Nível",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Ganho de XP por nível de carpintaria ao construir objetos. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Metalworking XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "XP gain per metalworking level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Ganho de XP Metalurgia por nível",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Ganho de XP por nível de metalurgia ao construir objetos. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Electrical XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP gain per electrical level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Ganho de XP Elétrica por Nível",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Ganho de XP por nível elétrico ao construir objetos. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
 
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Special Objects Recipes ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Receitas de objetos especiais ____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
 
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Wood Material Cost for Military Crate",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Sets planks required for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Custo de material de madeira para caixa militar",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Define as pranchas necessárias para caixas militares. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Nails Material Cost for Military Crate",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Sets nails required for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Custo de material de pregos para caixa militar",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Define os pregos necessários para caixas militares. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Woodworking Level for Military Crate",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Sets carpentry level needed for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Nível de carpintaria para caixa militar",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Define o nível de carpintaria necessário para caixas militares. <LINE><LINE> <RGB:1,0,0> REQUER REINÍCIO DO CLIENTE! <RGB:1,1,1>",
 
 
 }

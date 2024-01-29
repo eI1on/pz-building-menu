@@ -4,7 +4,6 @@ Sandbox_CH = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> 取消勾選 <RGB:1,1,1><SPACE> 將使建造物免於殭尸毁壞。",
 
 
-
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 墻分類 _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
 
@@ -263,6 +262,18 @@ Sandbox_CH = {
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18次",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20次",
 
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80次",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100次",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "大墻所需木板數",

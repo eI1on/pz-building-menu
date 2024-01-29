@@ -1,0 +1,7 @@
+ContextMenu_CA = {
+  
+  ContextMenu_BuildingMenu = "Menú de l'edifici",
+  ContextMenu_RemoveWallDetailing = "Elimina els detalls de la paret",
+  ContextMenu_RemoveTrafficLine = "Elimina la línia de trànsit",
+
+}

@@ -1,0 +1,7 @@
+ContextMenu_DA = {
+  
+  ContextMenu_BuildingMenu = "Bygningsmenu",
+  ContextMenu_RemoveWallDetailing = "Fjern vægdetaljer",
+  ContextMenu_RemoveTrafficLine = "Fjern trafiklinjen",
+
+}

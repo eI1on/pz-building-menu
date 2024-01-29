@@ -1,0 +1,364 @@
+Sandbox_CS = {
+    Sandbox_BuildingMenu = "Nabídka budovy",
+    Sandbox_BuildingMenu_isThumpable = "Thumpable struktury",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Vypněte <RGB:1,1,1><SPACE>, aby byly stavby postavené pomocí nabídky budovy imunní vůči poškození zombie.",
+
+
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Kategorie stěn ________________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_woodWallsSubCategory = "Povolit podkategorii Dřevěné stěny",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Povolit přidání dřevěných konstrukcí stěn. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Povolit podkategorii šindelové stěny",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Povolit přidání konstrukcí šíjových stěn. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "Povolit podkategorii Kamenné zdi",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Povolit přidání struktur kamenných zdí. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_brickWallsSubCategory = "Povolit podkategorii Cihlové zdi",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Povolit přidání konstrukcí zděných zdí. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Povolit podkategorii Cinderblock Walls",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Povolením přidáte struktury stěn ze škvárových tvárnic. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "Povolit podkategorii Malované stěny",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Povolit přidání malovaných struktur stěn. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Povolit podkategorii Obloukové okenní stěny",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Povolit přidání obloukových konstrukcí stěn oken. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "Povolit podkategorii komerčních stěn",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Povolit přidání komerčních konstrukcí stěn. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "Povolit podkategorii průmyslové stěny",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Povolit přidání průmyslových konstrukcí stěn. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Kategorie střech ________________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_roofsCategory = "Povolit kategorii střech",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Umožňuje přidat střešní konstrukce, jako jsou šindele, šindele, sklo. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Kategorie dveří ________________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_doorsSubCategory = "Povolit kategorii dveří",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Umožňuje přidat dřevěné, nízké, panelové, kovové, skleněné dveře. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "Povolit podkategorii Garážová vrata",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Umožňuje přidat 3 a 4 dlaždicová garážová vrata. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Kategorie Architecture Plus _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_architecturePlusCategory = "Povolit kategorii Architecture Plus",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Umožňuje přidat dveřní lišty, korunkové lišty, detaily hran, podlahové lišty a stěnové panely. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Kategorie Windows _______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_windowsCategory = "Povolit kategorii Windows",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Povolit přidání systému Windows. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Kategorie oplocení _______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_highFencesSubCategory = "Povolit podkategorii Vysoké ploty",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Povolením přidáte vysoké ploty. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Povolit podkategorii Nízké ploty a zábradlí",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Povolením přidáte nízké ploty a zábradlí. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_otherFencesSubCategory = "Povolit podkategorii Jiné ploty",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Umožňuje přidat další ploty, jako je bariéra Hesco, nízké kovové ploty, cihlové ploty. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Kategorie podlah _______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_floorsCategory = "Povolit kategorii podlahy",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Aktivujte pro přidání podlaží. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Kategorie schodů _______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+ 
+    Sandbox_BuildingMenu_stairsCategory = "Povolit kategorii schodů",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Aktivujte pro přidání schodů. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Kategorie silničních prací ______________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+ 
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Povolit podkategorii asfaltu",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Povolit přidání asfaltu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Povolit podkategorii překryvů",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Povolením přidáte překryvné vrstvy, jako jsou Grime a Street Cracks. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Povolit podkategorii překrytí okrajů chodníku",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Povolte, chcete-li přidat překrytí okrajů chodníku. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Povolit podkategorii Nečistota a tráva",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Povolením přidáte dlaždice špíny a trávy. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Povolit podkategorii Malované dopravní značení",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Povolit přidání malovaného dopravního značení. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Kategorie kontejnerů ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+ 
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Povolit podkategorii Kuchyňské linky",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Umožňuje přidat kuchyňské linky, horní pulty. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Povolit podkategorii komerčních pultů",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Povolit přidání restaurace, kavárny, baru, jídelního pultu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_cratesSubCategory = "Povolit podkategorii přepravek",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Umožňuje přidávat jednoduché přepravky, vojenské přepravky (kapacita 100), kartonové krabice. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_metalContainersSubCategory = "Povolit podkategorii Kovové nádoby",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Umožňuje přidat kovové kontejnery, velké kovové police, skříňky. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "Povolit podkategorii věšáky na oblečení",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Povolit přidání stojanů na oblečení a figurín. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_trashCansSubCategory = "Povolit podkategorii odpadkové koše",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Povolit přidávání odpadkových košů. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_containersOthersSubCategory = "Povolit podkategorii Další kontejnery",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Povolením přidáte podkategorii Další kontejnery. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+
+
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Kategorie nábytku ______________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+ 
+    Sandbox_BuildingMenu_tablesSubCategory = "Povolit podkategorii tabulky",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Povolit přidání malých a velkých tabulek. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_bedsSubCategory = "Povolit podkategorii postele",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Povolit přidání jednoduchých a velkých postelí. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Povolit podkategorii sedací nábytek",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Povolit přidání laviček, pohovek, židlí. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Povolit podkategorii Knihovny",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Povolit přidání polic. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Povolit podkategorii Dressers",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Povolte přidávat komody, zásuvky a šatní skříně. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+
+
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Kategorie dekorace ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+ 
+    Sandbox_BuildingMenu_rugsSubCategory = "Povolit podkategorii Koberce",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Povolit přidání koberečků. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Povolit podkategorii plakáty a nápisy",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktivujte pro přidávání plakátů a cedulí. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_graffitiSubCategory = "Povolit podkategorii Graffiti",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Povolit přidání graffiti. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Povolit podkategorii Další dekorace",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Povolit přidání dalších dekorací, jako jsou zátarasy, poštovní schránka, závorový sloupek, silniční kužely, poštovní schránka. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+
+
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Kategorie vegetace _____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "Povolit podkategorii květinové záhony",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Povolit přidání květinových záhonů do kategorie Vegetace. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Povolit podkategorii pokojové rostliny",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Povolte přidání pokojových rostlin, jako jsou květináče v kategorii vegetace. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Povolit podkategorii Venkovní rostliny",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Povolte přidání venkovních rostlin, jako jsou venkovní květinové nádoby v kategorii Vegetace. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_landscapingSubCategory = "Povolit podkategorii krajinářství",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Povolte přidání krajinné vegetace, jako je tráva, živé ploty, popínavé rostliny v kategorii vegetace. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+
+
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Kategorie přežití ______________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_fireplaceSubCategory = "Povolit podkategorii krbu",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Povolením přidáte krb a zárubně. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+   
+    Sandbox_BuildingMenu_generatorSubCategory = "Povolit podkategorii generátoru",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Povolením přidáte generátor. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_metalDrums = "Povolit kovové bubny",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Povolit přidání kovových bubnů. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+
+
+
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Kategorie spotřebičů _____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenu_lightingAppliances = "Povolit kategorii osvětlení",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Povolit přidání kategorie osvětlení. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+
+    Sandbox_BuildingMenu_bathroomAppliances = "Povolit podkategorii koupelnových doplňků",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Umožňuje přidat umyvadla, toalety a další objekty související s koupelnou. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_cookingAppliances = "Povolit podkategorii Kuchyňské spotřebiče",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Umožňuje přidat sporáky, trouby a další předměty související s vařením. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_fridgeAppliances = "Povolit podkategorii chladicích spotřebičů",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Povolením lze přidat chladničky a mrazničky. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+    Sandbox_BuildingMenu_laundryAppliances = "Povolit podkategorii Prádelní spotřebiče",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Povolit přidání praček a sušiček. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
+
+
+
+    Sandbox_BuildingMenuRecipes = "Recepty stavebního menu",
+
+    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiály _____________",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_PaintUses = "Použití plechovky barvy",
+    Sandbox_PaintUses_tooltip = "Použití na plechovku s barvou. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+
+    Sandbox_BlowTorchUses = "Použití hořáku",
+    Sandbox_BlowTorchUses_tooltip = "Použití na hořák. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+
+    Sandbox_BucketAsphaltMixtureUses = "Použití kbelík s asfaltovou směsí",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Použití na kbelík s asfaltovou směsí. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+
+    Sandbox_BucketConcreteUses = "Kbelík s konkrétním využitím",
+    Sandbox_BucketConcreteUses_tooltip = "Použití na kbelík s betonem. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Použití",
+
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 použití",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 použití",
+
+
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Náklady na dřevěný materiál pro velké stěny",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Nastaví dřevo potřebné pro BIG Walls. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Náklady na materiál hřebíků pro BIG Walls",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Nastaví hřebíky potřebné pro BIG Walls. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Náklady na dřevěný materiál pro MALÉ stěny",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Nastaví dřevo potřebné pro MALÉ stěny. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Náklady na materiál hřebíků pro MALÉ stěny",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Nastaví hřebíky potřebné pro MALÉ stěny. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Náklady na dřevěný materiál pro VELKÉ předměty",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Nastaví dřevo potřebné pro VELKÉ předměty. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Náklady na materiál hřebíků pro VELKÉ předměty",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Nastaví hřebíky potřebné pro BIG Objects. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Náklady na dřevěný materiál pro MALÉ předměty",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Nastaví dřevo potřebné pro MALÉ předměty. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Náklady na materiál hřebíků pro MALÉ předměty",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Nastaví hřebíky potřebné pro SMALL Objects. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "Cena materiálu skleněné tabule",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Nastaví potřebné skleněné tabule. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "Cena materiálu kovových tyčí",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Nastaví potřebné kovové tyče. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_screwsCount = "Materiálové náklady na šrouby",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Nastaví potřebné šrouby. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Cena plechu pro STĚNY",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Nastaví plech potřebný pro STĚNY. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Plech pro DOORS Cena",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Nastaví plech potřebný pro DVEŘE. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Plech na KONTEJNERY Náklady",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Nastaví plech potřebný pro KONTEJNERY. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Cena plechu pro PŘÍPRAVKY a SPOTŘEBIČE",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Nastaví plech potřebný pro PŘÍPRAVKY a SPOTŘEBIČE. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Plech na STŘECHY a PODLAHY Náklady",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sady plechů potřebné pro STŘECHY a PODLAHY. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+
+    Sandbox_BuildingMenuRecipes_EmptyBox = "",
+    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Dovednosti _____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Úroveň zpracování dřeva pro BIG Objects",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Nastavuje úroveň tesařství potřebnou pro BIG Objects. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Úroveň zpracování dřeva pro MALÉ předměty",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Nastavuje úroveň tesařství potřebnou pro MALÉ objekty. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Zisk XP na zpracování dřeva na úroveň",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Zisk XP za úroveň tesařství při stavbě objektů. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Kovoobráběcí XP Zisk na úroveň",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Zisk XP za úroveň zpracování kovů při stavbě objektů. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Elektrický zisk XP na úroveň",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Zisk XP na elektrickou úroveň při stavbě objektů. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Recepty na speciální předměty _____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Náklady na dřevěný materiál pro vojenskou bednu",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Nastaví prkna potřebná pro vojenské bedny. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Náklady na materiál hřebíků pro vojenskou bednu",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Nastavuje hřebíky potřebné pro vojenské přepravky. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Dřevoobráběcí úroveň pro vojenskou bednu",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Nastavuje úroveň tesařství potřebnou pro vojenské bedny. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+
+
+}

@@ -1,0 +1,46 @@
+Recipe_FR = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Préparer le verre pour la fusion",
+    Recipe_BMUnprepareGlassShards = "Retirer le verre de la poêle",
+    Recipe_BMRemoveGlassPane = "Extraire la vitre",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Écraser du verre brisé",
+    Recipe_BMSmashGlassPane = "Écraser du verre brisé",
+    Recipe_BMSmashWindshield = "Écraser du verre brisé",
+    Recipe_BMSmashWindows = "Écraser du verre brisé",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Fabriquer une fenêtre en bois",
+    Recipe_BMMakeWindow02 = "Créer une fenêtre carrelée blanche",
+    Recipe_BMMakeWindow03 = "Créer une fenêtre carrelée",
+    Recipe_BMMakeWindow04 = "Créer une fenêtre blanche",
+    Recipe_BMMakeWindow05 = "Créer une fenêtre Chrome",
+    Recipe_BMMakeWindow06 = "Créer une fenêtre coulissante",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "Démonter la fenêtre en bois",
+    Recipe_BMDisassembleWindow02 = "Démonter la fenêtre carrelée blanche",
+    Recipe_BMDisassembleWindow03 = "Démonter la fenêtre carrelée",
+    Recipe_BMDisassembleWindow04 = "Démonter la fenêtre blanche",
+    Recipe_BMDisassembleWindow05 = "Démonter la fenêtre Chrome",
+    Recipe_BMDisassembleWindow06 = "Démonter la fenêtre coulissante",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Faire un pare-brise standard",
+    Recipe_BMRearWindshield1 = "Faire un pare-brise arrière standard",
+    Recipe_BMFrontWindow1 = "Créer une fenêtre avant standard",
+    Recipe_BMRearWindow1 = "Faire une lunette arrière standard",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Fabriquer un pare-brise robuste",
+    Recipe_BMRearWindshield2 = "Fabriquer un pare-brise arrière robuste",
+    Recipe_BMFrontWindow2 = "Fabriquer une fenêtre avant robuste",
+    Recipe_BMRearWindow2 = "Fabriquer une lunette arrière robuste",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Fabriquer un pare-brise sport",
+    Recipe_BMRearWindshield3 = "Faire un pare-brise arrière sport",
+    Recipe_BMFrontWindow3 = "Faire du sport une fenêtre avant",
+    Recipe_BMRearWindow3 = "Faire une lunette arrière sport",
+}

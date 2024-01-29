@@ -1,0 +1,46 @@
+Recipe_ID = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Siapkan gelas untuk peleburan",
+    Recipe_BMUnprepareGlassShards = "Keluarkan gelas dari panci",
+    Recipe_BMRemoveGlassPane = "Ekstrak panel kaca",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Hancurkan menjadi pecahan kaca",
+    Recipe_BMSmashGlassPane = "Hancurkan menjadi pecahan kaca",
+    Recipe_BMSmashWindshield = "Hancurkan menjadi pecahan kaca",
+    Recipe_BMSmashWindows = "Hancurkan menjadi pecahan kaca",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Membuat Jendela Kayu",
+    Recipe_BMMakeWindow02 = "Buat Jendela Ubin Putih",
+    Recipe_BMMakeWindow03 = "Membuat Jendela Ubin",
+    Recipe_BMMakeWindow04 = "Buat Jendela Putih",
+    Recipe_BMMakeWindow05 = "Buat Jendela Chrome",
+    Recipe_BMMakeWindow06 = "Buat Jendela Slider",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "Bongkar Jendela Kayu",
+    Recipe_BMDisassembleWindow02 = "Bongkar Jendela Ubin Putih",
+    Recipe_BMDisassembleWindow03 = "Bongkar Jendela Ubin",
+    Recipe_BMDisassembleWindow04 = "Bongkar Jendela Putih",
+    Recipe_BMDisassembleWindow05 = "Bongkar Jendela Chrome",
+    Recipe_BMDisassembleWindow06 = "Bongkar Jendela Slider",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Buat Kaca Depan Standar",
+    Recipe_BMRearWindshield1 = "Bikin Kaca Belakang Standar",
+    Recipe_BMFrontWindow1 = "Jadikan Jendela Depan Standar",
+    Recipe_BMRearWindow1 = "Jadikan Jendela Belakang Standar",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Buat Kaca Depan Tugas Berat",
+    Recipe_BMRearWindshield2 = "Buat Kaca Depan Belakang Tugas Berat",
+    Recipe_BMFrontWindow2 = "Buat Jendela Depan Tugas Berat",
+    Recipe_BMRearWindow2 = "Buat Jendela Belakang Tugas Berat",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Membuat Kaca Depan Olahraga",
+    Recipe_BMRearWindshield3 = "Buat Kaca Depan Belakang Sport",
+    Recipe_BMFrontWindow3 = "Jadikan Jendela Depan Sport",
+    Recipe_BMRearWindow3 = "Bikin Jendela Belakang Sport",
+}

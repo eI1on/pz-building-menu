@@ -1,0 +1,46 @@
+Recipe_DA = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Klargør glas til smeltning",
+    Recipe_BMUnprepareGlassShards = "Fjern glasset fra panden",
+    Recipe_BMRemoveGlassPane = "Udtræk glasruden",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Knus i knust glas",
+    Recipe_BMSmashGlassPane = "Knus i knust glas",
+    Recipe_BMSmashWindshield = "Knus i knust glas",
+    Recipe_BMSmashWindows = "Knus i knust glas",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Lav trævindue",
+    Recipe_BMMakeWindow02 = "Lav hvidt flisebelagt vindue",
+    Recipe_BMMakeWindow03 = "Lav flisebelagt vindue",
+    Recipe_BMMakeWindow04 = "Lav hvidt vindue",
+    Recipe_BMMakeWindow05 = "Lav et Chrome-vindue",
+    Recipe_BMMakeWindow06 = "Lav skydervindue",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "Skil trævindue ad",
+    Recipe_BMDisassembleWindow02 = "Skil Hvidt flisevindue ad",
+    Recipe_BMDisassembleWindow03 = "Skil flisevindue ad",
+    Recipe_BMDisassembleWindow04 = "Skil hvidt vindue ad",
+    Recipe_BMDisassembleWindow05 = "Skil Chrome-vinduet ad",
+    Recipe_BMDisassembleWindow06 = "Skil skydervinduet ad",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Lav standard forrude",
+    Recipe_BMRearWindshield1 = "Lav standard bagrude",
+    Recipe_BMFrontWindow1 = "Lav standard frontvindue",
+    Recipe_BMRearWindow1 = "Lav standard bagrude",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Lav en kraftig forrude",
+    Recipe_BMRearWindshield2 = "Lav Heavy-Duty Bagrude",
+    Recipe_BMFrontWindow2 = "Lav kraftigt forrude",
+    Recipe_BMRearWindow2 = "Lav Heavy-Duty Bagrude",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Lav sportsforrude",
+    Recipe_BMRearWindshield3 = "Lav Sport Bagrude",
+    Recipe_BMFrontWindow3 = "Lav Sport Front Window",
+    Recipe_BMRearWindow3 = "Lav Sport Bagrude",
+}

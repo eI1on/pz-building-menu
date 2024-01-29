@@ -1,0 +1,13 @@
+Items_CS = {
+
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "Pánev se skleněnými střepy",
+    DisplayName_PanWithGlassPane = "Pánev se skleněnou deskou",
+    DisplayName_GlassPane = "Skleněná tabule",
+
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "Kuchyňské pece Handyman Corner",
+    DisplayName_BMMagazineCars = "Přesná automobilová okna a řemeslné zpracování",
+    DisplayName_BMMagazineSecretEntrances = "Měsíčník tajných průchodů",
+
+}

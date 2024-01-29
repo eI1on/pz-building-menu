@@ -1,0 +1,7 @@
+ContextMenu_DE = {
+  
+  ContextMenu_BuildingMenu = "Gebäudemenü",
+  ContextMenu_RemoveWallDetailing = "Wanddetails entfernen",
+  ContextMenu_RemoveTrafficLine = "Verkehrslinie entfernen",
+
+}

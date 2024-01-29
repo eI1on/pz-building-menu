@@ -1,5 +1,7 @@
 ContextMenu_PTBR = {
+  
   ContextMenu_BuildingMenu = "Menu de Construção",
   ContextMenu_RemoveWallDetailing = "Remover Detalhe da Parede",
   ContextMenu_RemoveTrafficLine = "Remover Linha de Tráfego",
+
 }

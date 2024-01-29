@@ -9,7 +9,7 @@ local function applyParamToItems(items, paramName, paramValue)
             item:DoParam(paramName .. " = " .. tostring(paramValue))
             -- print("[BM_Tweaks] itemID:"..itemID.." paramName:" ..paramName .. " paramValue:"..paramValue);
         else            
-            print("[BM_Tweaks] NOT EXISTING itemID:"..itemID.." paramName:" ..paramName .. " paramValue:"..paramValue);
+            print("[BM_Tweaks] INVALID itemID:"..itemID.." paramName:" ..paramName .. " paramValue:"..paramValue);
         end
     end
 end
@@ -37,6 +37,20 @@ local function tweakItems()
         ["7"] = 26,
         ["8"] = 28,
     }
+    local torchOptionValues = {
+        ["1"] = 4,
+        ["2"] = 8,
+        ["3"] = 10,
+        ["4"] = 14,
+        ["5"] = 18,
+        ["6"] = 22,
+        ["7"] = 26,
+        ["8"] = 30,
+        ["9"] = 45,
+        ["10"] = 60,
+        ["11"] = 80,
+        ["12"] = 100,
+    }
 
     local paintUseDelta = computeUseDelta((SandboxVars.BuildingMenuRecipes.paintUses or 10), optionValues)
     local paintItems = {
@@ -48,7 +62,7 @@ local function tweakItems()
     applyParamToItems(paintItems, "UseDelta", paintUseDelta)
 
 
-    local blowTorchUseDelta = computeUseDelta((SandboxVars.BuildingMenuRecipes.blowTorchUses or 10), optionValues)
+    local blowTorchUseDelta = computeUseDelta((SandboxVars.BuildingMenuRecipes.blowTorchUses or 10), torchOptionValues)
     applyParamToItems({"BlowTorch"}, "UseDelta", blowTorchUseDelta)
 
 

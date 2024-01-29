@@ -1,0 +1,7 @@
+ContextMenu_JP = {
+  
+  ContextMenu_BuildingMenu = "建物メニュー",
+  ContextMenu_RemoveWallDetailing = "壁のディテールを削除する",
+  ContextMenu_RemoveTrafficLine = "動線の削除",
+
+}

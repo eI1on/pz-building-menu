@@ -1,0 +1,46 @@
+Recipe_JP = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "製錬用のガラスを準備する",
+    Recipe_BMUnprepareGlassShards = "ガラスを鍋から外します",
+    Recipe_BMRemoveGlassPane = "ガラス板を抽出する",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "割れたガラスに激突",
+    Recipe_BMSmashGlassPane = "割れたガラスに激突",
+    Recipe_BMSmashWindshield = "割れたガラスに激突",
+    Recipe_BMSmashWindows = "割れたガラスに激突",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "木製窓を作る",
+    Recipe_BMMakeWindow02 = "白いタイル張りの窓を作る",
+    Recipe_BMMakeWindow03 = "タイル状のウィンドウを作成する",
+    Recipe_BMMakeWindow04 = "白い窓を作る",
+    Recipe_BMMakeWindow05 = "Chrome ウィンドウを作成する",
+    Recipe_BMMakeWindow06 = "スライダーウィンドウの作成",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "木製窓を分解する",
+    Recipe_BMDisassembleWindow02 = "白いタイル張りの窓を分解する",
+    Recipe_BMDisassembleWindow03 = "タイル張りのウィンドウを分解する",
+    Recipe_BMDisassembleWindow04 = "白い窓を分解する",
+    Recipe_BMDisassembleWindow05 = "Chrome ウィンドウを逆アセンブルする",
+    Recipe_BMDisassembleWindow06 = "スライダーウィンドウを逆アセンブルする",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "標準フロントガラスを作成する",
+    Recipe_BMRearWindshield1 = "リアフロントガラスを標準化",
+    Recipe_BMFrontWindow1 = "フロントウィンドウを標準化する",
+    Recipe_BMRearWindow1 = "リアウィンドウを標準化する",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "頑丈なフロントガラスを作る",
+    Recipe_BMRearWindshield2 = "頑丈なリアフロントガラスを作る",
+    Recipe_BMFrontWindow2 = "頑丈なフロントウィンドウを作る",
+    Recipe_BMRearWindow2 = "頑丈なリアウィンドウを作る",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "スポーツフロントガラスを作る",
+    Recipe_BMRearWindshield3 = "スポーツリアフロントガラスを作る",
+    Recipe_BMFrontWindow3 = "スポーツフロントウィンドウを作る",
+    Recipe_BMRearWindow3 = "スポーツリアウィンドウを作る",
+}

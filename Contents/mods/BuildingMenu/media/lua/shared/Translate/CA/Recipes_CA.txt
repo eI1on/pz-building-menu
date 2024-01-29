@@ -1,0 +1,46 @@
+Recipe_CA = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Prepareu el vidre per a la fosa",
+    Recipe_BMUnprepareGlassShards = "Traieu el vidre de la paella",
+    Recipe_BMRemoveGlassPane = "Extracció de vidre",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Aixafar en vidres trencats",
+    Recipe_BMSmashGlassPane = "Aixafar en vidres trencats",
+    Recipe_BMSmashWindshield = "Aixafar en vidres trencats",
+    Recipe_BMSmashWindows = "Aixafar en vidres trencats",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Fer una finestra de fusta",
+    Recipe_BMMakeWindow02 = "Feu una finestra de rajoles blanques",
+    Recipe_BMMakeWindow03 = "Fer una finestra enrajolat",
+    Recipe_BMMakeWindow04 = "Fer una finestra blanca",
+    Recipe_BMMakeWindow05 = "Feu una finestra de Chrome",
+    Recipe_BMMakeWindow06 = "Crea una finestra lliscant",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "Desmuntar la finestra de fusta",
+    Recipe_BMDisassembleWindow02 = "Desmunteu la finestra de rajoles blanques",
+    Recipe_BMDisassembleWindow03 = "Desmuntar la finestra enrajolada",
+    Recipe_BMDisassembleWindow04 = "Desmunteu la finestra blanca",
+    Recipe_BMDisassembleWindow05 = "Desmunteu la finestra de Chrome",
+    Recipe_BMDisassembleWindow06 = "Desmunteu la finestra lliscant",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Fer un parabrisa estàndard",
+    Recipe_BMRearWindshield1 = "Feu el parabrisa posterior estàndard",
+    Recipe_BMFrontWindow1 = "Fer una finestra frontal estàndard",
+    Recipe_BMRearWindow1 = "Fer la finestra posterior estàndard",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Feu un parabrisa resistent",
+    Recipe_BMRearWindshield2 = "Feu un parabrisa posterior resistent",
+    Recipe_BMFrontWindow2 = "Feu una finestra frontal resistent",
+    Recipe_BMRearWindow2 = "Fer una finestra posterior resistent",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Fer un parabrisa esportiu",
+    Recipe_BMRearWindshield3 = "Fer el parabrisa posterior esportiu",
+    Recipe_BMFrontWindow3 = "Fer una finestra frontal esportiva",
+    Recipe_BMRearWindow3 = "Fer la finestra posterior esportiva",
+}

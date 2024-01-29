@@ -1,0 +1,13 @@
+Items_ID = {
+
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "Pan dengan Pecahan Kaca",
+    DisplayName_PanWithGlassPane = "Pan dengan Panel Kaca",
+    DisplayName_GlassPane = "Panel kaca",
+
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "Tempat Pembakaran Dapur Handyman Corner",
+    DisplayName_BMMagazineCars = "Jendela dan Kerajinan Kendaraan Presisi",
+    DisplayName_BMMagazineSecretEntrances = "Jalan Rahasia Bulanan",
+
+}

@@ -1,0 +1,46 @@
+Recipe_PL = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "Przygotuj szkło do wytapiania",
+    Recipe_BMUnprepareGlassShards = "Zdjąć szkło z patelni",
+    Recipe_BMRemoveGlassPane = "Wyciągnij szybę",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Rozbić się o stłuczone szkło",
+    Recipe_BMSmashGlassPane = "Rozbić się o stłuczone szkło",
+    Recipe_BMSmashWindshield = "Rozbić się o stłuczone szkło",
+    Recipe_BMSmashWindows = "Rozbić się o stłuczone szkło",
+
+    /* Window Recipes */
+    Recipe_BMMakeWindow01 = "Zrób drewniane okno",
+    Recipe_BMMakeWindow02 = "Zrób białe kafelkowe okno",
+    Recipe_BMMakeWindow03 = "Zrób okno kafelkowe",
+    Recipe_BMMakeWindow04 = "Zrób białe okno",
+    Recipe_BMMakeWindow05 = "Utwórz okno Chrome",
+    Recipe_BMMakeWindow06 = "Utwórz okno suwaka",
+
+    /* Window Disassembly Recipes */
+    Recipe_BMDisassembleWindow01 = "Zdemontować drewniane okno",
+    Recipe_BMDisassembleWindow02 = "Zdemontować okno z białymi kafelkami",
+    Recipe_BMDisassembleWindow03 = "Zdemontować okno kafelkowe",
+    Recipe_BMDisassembleWindow04 = "Zdemontuj białe okno",
+    Recipe_BMDisassembleWindow05 = "Zdemontuj okno Chrome",
+    Recipe_BMDisassembleWindow06 = "Zdemontuj okno suwakowe",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Zrób standardową przednią szybę",
+    Recipe_BMRearWindshield1 = "Wykonaj standardową tylną szybę",
+    Recipe_BMFrontWindow1 = "Wykonaj standardowe okno przednie",
+    Recipe_BMRearWindow1 = "Zrób standardowe tylne okno",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Wykonaj wytrzymałą przednią szybę",
+    Recipe_BMRearWindshield2 = "Wykonaj wytrzymałą tylną szybę",
+    Recipe_BMFrontWindow2 = "Wykonaj wytrzymałe okno przednie",
+    Recipe_BMRearWindow2 = "Wykonaj wytrzymałą tylną szybę",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Zrób sportową przednią szybę",
+    Recipe_BMRearWindshield3 = "Zrób sportową tylną szybę",
+    Recipe_BMFrontWindow3 = "Zrób sportowe okno przednie",
+    Recipe_BMRearWindow3 = "Zrób sportowe tylne okno",
+}

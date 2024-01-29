@@ -1,0 +1,13 @@
+Items_JP = {
+
+    /* Glass Items */
+    DisplayName_PanWithGlassShards = "ガラスの破片が入ったパン",
+    DisplayName_PanWithGlassPane = "ガラス板付きパン",
+    DisplayName_GlassPane = "ガラス板",
+
+    /* Magazines */
+    DisplayName_BMMagazineGlass = "ハンディマンコーナーのキッチンキルンズ",
+    DisplayName_BMMagazineCars = "精密車両の窓と工作",
+    DisplayName_BMMagazineSecretEntrances = "秘密の通路 月刊",
+
+}

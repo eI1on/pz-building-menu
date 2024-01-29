@@ -1,0 +1,7 @@
+ContextMenu_RO = {
+  
+  ContextMenu_BuildingMenu = "Meniul de Construcții",
+  ContextMenu_RemoveWallDetailing = "Scoate Elemente Decorative de Perete",
+  ContextMenu_RemoveTrafficLine = "Sterge Linii de Trafic",
+
+}

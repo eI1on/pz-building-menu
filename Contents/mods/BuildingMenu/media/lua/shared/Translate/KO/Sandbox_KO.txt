@@ -117,8 +117,8 @@ Sandbox_KO = {
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "도로 표시 서브카테고리 활성화",
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "도로 표지를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
     
-	
-	
+
+
     Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ 보관함 카테고리 ____________",
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
@@ -142,9 +142,9 @@ Sandbox_KO = {
     
     Sandbox_BuildingMenu_containersOthersSubCategory = "기타 컨테이너 서브카테고리 활성화",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "다른 컨테이너 서브카테고리를 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
-    
-	
-	
+   
+
+
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ 가구 카테고리 _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
@@ -162,9 +162,9 @@ Sandbox_KO = {
     
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "드레서 서브카테고리 활성화",
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "드레서, 서랍, 옷장을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
-    
-	
-	
+   
+
+
     Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ 장식 카테고리 ____________",
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
      
@@ -179,9 +179,9 @@ Sandbox_KO = {
        
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "기타 장식 서브카테고리 활성화",
     Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "도로 블록, 우체통, 바리어 포스트, 도로 콘, 우편함과 같은 기타 장식을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
-    
-    
-    
+   
+
+
     Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ 식물 카테고리 ____________",
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
@@ -195,8 +195,10 @@ Sandbox_KO = {
     Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "야외 식물 카테고리에 야외 꽃 화분과 같은 식물을 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
        
     Sandbox_BuildingMenu_landscapingSubCategory = "조경 서브카테고리 활성화",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "조경 식물, 풀, 헤지, 벽 덩굴 등을 식물 카테고리에 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!"
-    
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "조경 식물, 풀, 헤지, 벽 덩굴 등을 식물 카테고리에 추가합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
+   
+
+
     Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ 생존 카테고리 _____________",
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "이것은 단순한 구분선일 뿐이며 선택해도 영향을 미치지 않습니다.",
     
@@ -228,122 +230,134 @@ Sandbox_KO = {
 	
     Sandbox_BuildingMenu_laundryAppliances = "세탁 가전 제품 활성화",
     Sandbox_BuildingMenu_laundryAppliances_tooltip = "세탁기와 건조기를 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
-
-
-
-
-    Sandbox_BuildingMenuRecipes = "Building Menu Recipes",
-
-    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materials ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_PaintUses = "Paint Can Uses",
-    Sandbox_PaintUses_tooltip = "Uses per paint can. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BlowTorchUses = "Blow Torch Uses",
-    Sandbox_BlowTorchUses_tooltip = "Uses per blow torch. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BucketAsphaltMixtureUses = "Bucket with Asphalt Mix Uses",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Uses per Bucket with Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-    Sandbox_BucketConcreteUses = "Bucket with Concrete Uses",
-    Sandbox_BucketConcreteUses_tooltip = "Uses per Bucket with Concrete. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
-
-
-    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "12 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "14 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "16 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18 Uses",
-    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20 Uses",
+    
 
 
 
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Wood Material Cost for BIG Walls",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Sets wood needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes = "메뉴 레시피 만들기",
+
+    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ 재료 ____________",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
+
+    Sandbox_PaintUses = "페인트 캔 용도",
+    Sandbox_PaintUses_tooltip = "페인트 캔당 사용량. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
+
+    Sandbox_BlowTorchUses = "블로우 토치 용도",
+    Sandbox_BlowTorchUses_tooltip = "타격 토치당 사용합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
+
+    Sandbox_BucketAsphaltMixtureUses = "아스팔트 혼합용 버킷",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "아스팔트 혼합물과 함께 버킷당 사용됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
+
+    Sandbox_BucketConcreteUses = "콘크리트용 버킷",
+    Sandbox_BucketConcreteUses_tooltip = "콘크리트와 함께 버킷당 사용. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8가지 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10가지 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 용도",
+
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8가지 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10가지 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30번의 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45가지 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60번의 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80번의 용도",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100번의 용도",
+
+
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "큰 벽의 목재 재료 비용",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "BIG Walls에 필요한 목재를 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Nails Material Cost for BIG Walls",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Sets nails needed for BIG Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "큰 벽의 손톱 재료 비용",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "BIG Walls에 필요한 못을 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Wood Material Cost for SMALL Walls",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Sets wood needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "작은 벽의 목재 재료 비용",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "작은 벽에 필요한 목재를 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Nails Material Cost for SMALL Walls",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Sets nails needed for SMALL Walls. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "작은 벽의 손톱 재료 비용",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "작은 벽에 필요한 못을 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Wood Material Cost for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Sets wood needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "큰 물체의 목재 재료 비용",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "BIG 개체에 필요한 목재를 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Nails Material Cost for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Sets nails needed for BIG Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "큰 물체의 손톱 재료 비용",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "BIG 개체에 필요한 못을 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Wood Material Cost for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Sets wood needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "작은 물체의 목재 재료 비용",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "작은 개체에 필요한 목재를 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Nails Material Cost for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Sets nails needed for SMALL Objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "작은 물체의 손톱 재료 비용",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "작은 개체에 필요한 못을 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
 
-    Sandbox_BuildingMenuRecipes_glassPaneCount = "Glass Pane Material Cost",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Sets glass panes needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "유리판 재료 비용",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "필요한 유리창을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalBarsCount = "Metal Bars Material Cost",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Sets metal bars needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "금속 막대 재료 비용",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "필요한 금속 막대를 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_screwsCount = "Screws Material Cost",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Sets screws needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount = "나사 재료비",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "필요한 나사를 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Sheet Metal for WALLS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Sets sheet metal needed for WALLS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "벽 비용에 대한 판금",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "WALLS에 필요한 판금을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Sheet Metal for DOORS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Sets sheet metal needed for DOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "DOORS용 판금 비용",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "DOORS에 필요한 판금을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Sheet Metal for CONTAINERS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Sets sheet metal needed for CONTAINERS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "컨테이너용 판금 비용",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "CONTAINERS에 필요한 판금을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Sheet Metal for FIXTURES and APPLIANCES Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Sets sheet metal needed for FIXTURES and APPLIANCES. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "설비 및 가전제품용 판금 비용",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "설비 및 기기에 필요한 판금을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal for ROOFING and FLOORS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sets sheet metal needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "지붕 및 바닥용 판금 비용",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "ROOFING 및 FLOORS에 필요한 판금을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_EmptyBox = "",
-    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_EmptyBox_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
 
 
-    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Skills ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ 기술 ____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
 
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Woodworking level for BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Sets carpentry level needed for BIG Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "큰 물건을 위한 목공 수준",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "BIG Objects에 필요한 목공 수준을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Woodworking level for SMALL Objects",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Sets carpentry level needed for SMALL Objects. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "작은 물체를 위한 목공 수준",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "작은 개체에 필요한 목공 수준을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Woodworking XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "XP gain per carpentry level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "레벨당 목공 XP 획득",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "물건을 만들 때 목공 레벨당 XP를 얻습니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Metalworking XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "XP gain per metalworking level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "레벨당 금속 가공 XP 획득",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "물체를 만들 때 금속 가공 레벨당 XP를 얻습니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Electrical XP Gain per Level",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP gain per electrical level when building objects. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "레벨당 전기 XP 획득",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "물체를 건설할 때 전기 레벨당 XP를 얻습니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
 
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Special Objects Recipes ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "This is only a line separator, checking it has no effect.",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ 특수 개체 조리법 ____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
 
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Wood Material Cost for Military Crate",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Sets planks required for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "군용 상자의 목재 재료 비용",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "군용 상자에 필요한 판자를 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Nails Material Cost for Military Crate",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Sets nails required for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "군용 상자의 못 재료 비용",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "군용 상자에 필요한 못을 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Woodworking Level for Military Crate",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Sets carpentry level needed for Military Crates. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "군용 상자의 목공 수준",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "군용 상자에 필요한 목공 수준을 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
 
 
 }
