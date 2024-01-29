@@ -213,10 +213,12 @@ end
 --- @return number num The rounded number.
 BuildingMenu.round = function(num, numDecimalPlaces)
     if numDecimalPlaces and numDecimalPlaces > 0 then
-        local mult = 10 ^ numDecimalPlaces
-        return math.floor(num * mult + 0.5) / mult
+        local multiplier = 10 ^ numDecimalPlaces
+        return math.floor(num * multiplier + 0.5) / multiplier
     end
-    return math.floor(num + 0.5)
+
+    local roundedNum = math.floor(num + 0.5)
+    return math.max(roundedNum, 1)
 end
 
 --- Gets the display name of a moveable object.
@@ -286,10 +288,9 @@ BuildingMenu.equipToolPrimary = function(object, player, tool)
     local inv = getSpecificPlayer(player):getInventory()
     item = BuildingMenu.getAvailableTool(inv, tool)
     if not item then return end
-    if item then
-        ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), player)
-        object.noNeedHammer = true
-    end
+
+    ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), player)
+    object.noNeedHammer = true
 end
 
 --- Equips a secondary tool for the player.
@@ -397,7 +398,7 @@ BuildingMenu.tooltipCheckForMaterial = function(inv, material, amount, tooltip)
             end
         end
     end
-    tooltip.description = tooltip.description .. BuildingMenu.bhs .. ' ERROR at tooltipCheckForMaterial' .. ' <LINE>';
+    tooltip.description = tooltip.description .. BuildingMenu.bhs .. ' ERROR at tooltipCheckForMaterial: material ' .. material .. ", amount ".. amount .. ' <LINE>';
     return false
 end
 
@@ -540,9 +541,10 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
         end
     end
 
+    tooltip.description = tooltip.description .. BuildingMenu.textCanRotate;
 
     if ISBuildMenu.cheat then
-        tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltip.description .. BuildingMenu.textCanRotate;
+        tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltip.description;
         return tooltip, true
     else
         return tooltip, _canBuildResult

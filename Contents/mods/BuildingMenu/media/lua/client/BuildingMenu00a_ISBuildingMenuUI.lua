@@ -411,17 +411,38 @@ end
 function ISBuildingMenuUI:update()
     local currentTab = self:getActiveTab()
 
-    -- check if the active tab has changed
     if self.lastActiveTab ~= currentTab then
-        self.lastActiveTab = currentTab
-        self.lastSelectedCategoryIndex = nil
-        self.lastSelectedSubCategoryIndex = nil
+        if self.lastActiveTab then
+            self.lastActiveTab.selectedCategoryIndex = self.lastSelectedCategoryIndex;
+            self.lastActiveTab.selectedSubCategoryIndex = self.lastSelectedSubCategoryIndex;
+        end
+
+        self.lastSelectedCategoryIndex = currentTab.selectedCategoryIndex or 1;
+        self.lastSelectedSubCategoryIndex = currentTab.selectedSubCategoryIndex or 1;
+        self.lastActiveTab = currentTab;
 
         -- update categories list for the new tab
         self:updateCategoriesList(currentTab.categories)
 
         if currentTab.tab == getText("IGUI_BuildingMenuTab_Favorite") then
-            self:populateFavoritesTab()
+            self:populateFavoritesTab();
+        end
+
+        currentTab.categoriesList.selected = self.lastSelectedCategoryIndex;
+
+        -- update subcategories list based on the selected category
+        local selectedCategoryItem = currentTab.categoriesList.items[self.lastSelectedCategoryIndex];
+        if selectedCategoryItem then
+            self:updateSubCategoriesList(selectedCategoryItem.item.subCatData);
+            currentTab.subCategoriesList.selected = self.lastSelectedSubCategoryIndex;
+
+            -- update tiles list for the selected subcategory
+            local selectedSubCategoryItem = currentTab.subCategoriesList.items[self.lastSelectedSubCategoryIndex]
+            if selectedSubCategoryItem then
+                self:updateTilesList(selectedSubCategoryItem.item.objectsData);
+            else
+                self:updateTilesList(nil);
+            end
         end
     end
 
@@ -527,7 +548,7 @@ function ISBuildingMenuUI:updateSubCategoriesList(subCatData)
 end
 
 --- Updates the tiles list in the UI.
----@param objectsData table
+---@param objectsData table|nil
 function ISBuildingMenuUI:updateTilesList(objectsData)
     self.tilesList.posToObjectNameTable = {};
     self.tilesList.textureCache = {};

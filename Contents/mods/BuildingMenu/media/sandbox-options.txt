@@ -692,7 +692,7 @@ option BuildingMenuRecipes.paintUses
 option BuildingMenuRecipes.blowTorchUses
 {
     type = enum,
-    numValues = 8,
+    numValues = 12,
     default = 3,
     page = BuildingMenuRecipes,
     translation = BlowTorchUses,

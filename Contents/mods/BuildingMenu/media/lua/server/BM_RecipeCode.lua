@@ -14,3 +14,13 @@ end
 function Recipe.OnGiveXP.BuildingMenu_XPMakeGlass(recipe, ingredients, result, player)
     player:getXp():AddXP(Perks.Cooking, 1);
 end
+
+-- Grant XP on Cooking Glass
+function Recipe.OnGiveXP.BuildingMenu_XPMakeWindshieldCar(recipe, ingredients, result, player)
+    player:getXp():AddXP(Perks.Cooking, 3);
+end
+
+-- Grant XP on Cooking Glass
+function Recipe.OnGiveXP.BuildingMenu_XPMakeWindowCar(recipe, ingredients, result, player)
+    player:getXp():AddXP(Perks.Cooking, 2);
+end
