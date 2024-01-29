@@ -4,7 +4,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_SecretEntranceDoor = "秘密入口門",
 
   Tooltip_SecretEntranceShelf = "便於管理書籍的精妙僞裝書架，在安全屋跟秘密入口門組合能創造無縫銜接的秘密通道。",
-  Tooltip_SecretEntranceDoor = "旋轉後能開啓暗道的巧妙貨架，非常適合安靜又隱秘地溜走。",
+  Tooltip_SecretEntranceDoor = "旋轉後能開啓暗道的巧妙貨架，非常適合隱秘又轻悄悄地溜走。",
 
   Tooltip_BuildingMenuObj_Log_Wall = "原木墻",
   Tooltip_BuildingMenuObj_Log_Door_Frame = "原木門框",
