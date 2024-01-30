@@ -6,7 +6,6 @@ ISFloorOverlay = ISBuildingObject:derive("ISFloorOverlay");
 --************************************************************************--
 function ISFloorOverlay:create(x, y, z, north, sprite)
 	self.sq = getWorld():getCell():getGridSquare(x, y, z);
-	buildUtil.consumeMaterial(self);
 
     local objects = self.sq:getObjects()
     local objectsSize = objects:size()
@@ -25,6 +24,8 @@ function ISFloorOverlay:create(x, y, z, north, sprite)
             if isClient() then object:transmitUpdatedSpriteToServer() end
         end
     end
+
+	buildUtil.consumeMaterial(self);
 
     -- self.sq:disableErosion()
     -- local args = { x = self.sq:getX(), y = self.sq:getY(), z = self.sq:getZ() }
@@ -45,7 +46,7 @@ function ISFloorOverlay:new(sprite, northSprite)
 end
 
 function ISFloorOverlay:isValid(square)
-	if not self:haveMaterial(square) then return false end
+	if not self:haveMaterial(square) then return false; end
 	if square:getZ() > 0 then
 		local below = getCell():getGridSquare(square:getX(), square:getY(), square:getZ() - 1)
 		if below and below:HasStairs() then
@@ -67,4 +68,3 @@ end
 function ISFloorOverlay:render(x, y, z, square)
 	ISBuildingObject.render(self, x, y, z, square)
 end
-

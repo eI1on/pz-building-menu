@@ -16590,14 +16590,13 @@ end
 
 local function addDoorsToMenu()
     local melosDoorObjects = {}
-    local doorSpriteRanges = {
+    local doorOptionsTable = {
         {start = 0, stop = 23, baseName = "melos_tiles_doors_02_"},
-        {start = 48, stop = 79, baseName = "melos_tiles_doors_02_"},
-        {start = 32, stop = 127, baseName = "melos_tiles_doors_01_"}
+        {start = 48, stop = 63, baseName = "melos_tiles_doors_02_"},
     }
-    for _, range in ipairs(doorSpriteRanges) do
-        for i = range.start, range.stop, 4 do
-            local spriteBaseName = range.baseName
+    for _, doorOptions in ipairs(doorOptionsTable) do
+        for i = doorOptions.start, doorOptions.stop, 4 do
+            local spriteBaseName = doorOptions.baseName
             local sprite = spriteBaseName .. i
             local northSprite = spriteBaseName .. (i + 1)
             local openSprite = spriteBaseName .. (i + 2)
@@ -16637,17 +16636,19 @@ local function addDoorsToMenu()
     )
 
     melosDoorObjects = {}
-    doorSpriteRanges = {
-        {start = 40, stop = 47, baseName = "melos_tiles_doors_02_"},
-        {start = 96, stop = 107, baseName = "melos_tiles_doors_02_"},
-        {start = 80, stop = 83, baseName = "melos_tiles_doors_02_"},
-        {start = 0, stop = 47, baseName = "melos_tiles_doors_04_"},
-        {start = 0, stop = 119, baseName = "melos_tiles_doors_03_"},
-        {start = 0, stop = 7, baseName = "melos_tiles_doors_01_"}
+    doorOptionsTable = {
+        {start = 0, stop = 47, baseName = "melos_tiles_doors_04_", recipe = "WoodenSingleGlassDoorRecipe"},
+        {start = 0, stop = 7, baseName = "melos_tiles_doors_01_", recipe = "WoodenDoubleGlassDoorRecipe"},
+        {start = 32, stop = 127, baseName = "melos_tiles_doors_01_", recipe = "WoodenSingleGlassDoorRecipe"},
+        {start = 40, stop = 47, baseName = "melos_tiles_doors_02_", recipe = "WoodenSingleGlassDoorRecipe"},
+        {start = 64, stop = 79, baseName = "melos_tiles_doors_02_", recipe = "WoodenSingleGlassDoorRecipe"},
+        {start = 80, stop = 83, baseName = "melos_tiles_doors_02_", recipe = "WoodenDoubleGlassDoorRecipe"},
+        {start = 96, stop = 107, baseName = "melos_tiles_doors_02_", recipe = "WoodenDoubleGlassDoorRecipe"},
+        {start = 96, stop = 119, baseName = "melos_tiles_doors_03_", recipe = "WoodenDoubleGlassDoorRecipe"},
     }
-    for _, range in ipairs(doorSpriteRanges) do
-        for i = range.start, range.stop, 4 do
-            local spriteBaseName = range.baseName
+    for _, doorOptions in ipairs(doorOptionsTable) do
+        for i = doorOptions.start, doorOptions.stop, 4 do
+            local spriteBaseName = doorOptions.baseName
             local sprite = spriteBaseName .. i
             local northSprite = spriteBaseName .. (i + 1)
             local openSprite = spriteBaseName .. (i + 2)
@@ -16659,7 +16660,7 @@ local function addDoorsToMenu()
                     "",
                     "Tooltip_Wooden_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu[doorOptions.recipe],
                     true,
                     {
                         actionAnim = "Build",
@@ -16688,7 +16689,7 @@ local function addDoorsToMenu()
 
     local melosMetalDoorObjects = {
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Metal_Door",
+            "",
             "Tooltip_Blue_Metal_Door",
             BuildingMenu.onBuildDoor,
             BuildingMenu.MetalDoorRecipe,
@@ -16710,7 +16711,7 @@ local function addDoorsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Metal_Door",
+            "",
             "Tooltip_Blue_Metal_Door",
             BuildingMenu.onBuildDoor,
             BuildingMenu.MetalDoorRecipe,
@@ -16735,7 +16736,7 @@ local function addDoorsToMenu()
             "",
             "Tooltip_Black_2_Pane_Door",
             BuildingMenu.onBuildDoor,
-            BuildingMenu.MetalWindowDoorRecipe,
+            BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
                 actionAnim = "Build",
@@ -16754,7 +16755,7 @@ local function addDoorsToMenu()
             "",
             "Tooltip_Black_2_Pane_Door",
             BuildingMenu.onBuildDoor,
-            BuildingMenu.MetalWindowDoorRecipe,
+            BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
                 actionAnim = "Build",
@@ -16773,7 +16774,7 @@ local function addDoorsToMenu()
             "",
             "Tooltip_Black_2_Pane_Door",
             BuildingMenu.onBuildDoor,
-            BuildingMenu.MetalWindowDoorRecipe,
+            BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
                 actionAnim = "Build",
@@ -16792,7 +16793,7 @@ local function addDoorsToMenu()
             "",
             "Tooltip_Black_2_Pane_Door",
             BuildingMenu.onBuildDoor,
-            BuildingMenu.MetalWindowDoorRecipe,
+            BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
                 actionAnim = "Build",
@@ -18016,7 +18017,7 @@ local function addHighFencesToMenu()
             "",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -18040,7 +18041,7 @@ local function addHighFencesToMenu()
             "",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -18060,7 +18061,7 @@ local function addHighFencesToMenu()
             "",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -18084,7 +18085,7 @@ local function addHighFencesToMenu()
             "",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -18146,7 +18147,7 @@ local function addHighFencesToMenu()
             "",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFencePostRecipe,
+            BuildingMenu.HighWireFencePostRecipe,
             "Make Metal Fences",
             {
                 firstItem = "BlowTorch",

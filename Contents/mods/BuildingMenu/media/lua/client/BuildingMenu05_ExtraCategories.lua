@@ -304,7 +304,7 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Post4_Extension",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -347,7 +347,7 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Post5_Extension",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {

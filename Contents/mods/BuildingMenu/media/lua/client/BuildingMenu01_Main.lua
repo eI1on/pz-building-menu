@@ -473,6 +473,8 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
     local _canBuildResult = true
     local _currentResult = true
 
+    if not objectRecipe then tooltip.description = tooltip.description .. " <LINE>" .. BuildingMenu.bhs .." RECIPE IS NULL"; return tooltip, false; end
+
     if objectRecipe.useConsumable then
         for _, _currentMaterial in pairs(objectRecipe.useConsumable) do
             if _currentMaterial['Consumable'] and _currentMaterial['Amount'] then

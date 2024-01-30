@@ -352,7 +352,7 @@ local function addPertDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Generic_Door",
                     "Tooltip_White_Window_Metal_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",

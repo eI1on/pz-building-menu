@@ -90,7 +90,7 @@ local function addDaddyDirkieDoorsToMenu()
         {start = 68, stop = 71, baseName = "edit_ddd_RUS_Doors_house_01_"},
     }
 
-    daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenWindowDoorRecipe)
+    daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenDoubleGlassDoorRecipe)
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
         getText("IGUI_BuildingMenuCat_Doors"),
@@ -108,7 +108,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -132,7 +132,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -152,7 +152,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFencePostRecipe,
+            BuildingMenu.HighWireFencePostRecipe,
             true,
             {
                 firstItem = "BlowTorch",

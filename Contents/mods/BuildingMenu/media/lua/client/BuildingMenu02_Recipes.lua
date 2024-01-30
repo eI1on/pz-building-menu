@@ -2877,7 +2877,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = smallObjectsWoodCount
+                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
             },
             {
                 Material = "Base.Nails",
@@ -2927,11 +2927,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*1.25)
+                Amount = smallObjectsWoodCount
             },
             {
                 Material = "Base.Nails",
-                Amount = bigObjectsNailsCount
+                Amount = smallObjectsNailsCount
             },
             {
                 Material = "Base.Hinge",
@@ -2951,18 +2951,54 @@ local function initBuildingMenuRecipes()
         }
     }
 
-    BuildingMenu.WoodenWindowDoorRecipe = {
+
+    BuildingMenu.WoodenSingleGlassDoorRecipe = {
         neededTools = {
             "Hammer"
         },
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*1.25)
+                Amount = smallObjectsWoodCount
             },
             {
                 Material = "Base.Nails",
-                Amount = bigObjectsNailsCount
+                Amount = smallObjectsWoodCount
+            },
+            {
+                Material = "Base.GlassPane",
+                Amount = BuildingMenu.round(glassPaneCount*0.5)
+            },
+            {
+                Material = "Base.Hinge",
+                Amount = 2
+            },
+            {
+                Material = "Base.Doorknob",
+                Amount = 1
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+            }
+        }
+    }
+
+    BuildingMenu.WoodenDoubleGlassDoorRecipe = {
+        neededTools = {
+            "Hammer"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = smallObjectsWoodCount
+            },
+            {
+                Material = "Base.Nails",
+                Amount = smallObjectsWoodCount
             },
             {
                 Material = "Base.GlassPane",
@@ -2994,11 +3030,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*1.25)
+                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
             },
             {
                 Material = "Base.Nails",
-                Amount = smallObjectsNailsCount
+                Amount = BuildingMenu.round(smallObjectsNailsCount*0.75)
             },
             {
                 Material = "Base.Hinge",
@@ -3065,6 +3101,55 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.MetalSingleGlassDoorRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = 'Base.SheetMetal',
+                Amount = BuildingMenu.round(sheetMetalCountForDoors*0.5)
+            },
+            {
+                Material = 'Base.MetalBar',
+                Amount = BuildingMenu.round(metalBarsCount*0.5)
+            },
+            {
+                Material = 'Base.GlassPane',
+                Amount = BuildingMenu.round(glassPaneCount*0.5)
+            },
+            {
+                Material = 'Base.Screws',
+                Amount = screwsCount
+            },
+            {
+                Material = "Base.Hinge",
+                Amount = 2
+            },
+            {
+                Material = "Base.Doorknob",
+                Amount = 1
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = 'Base.BlowTorch',
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 4,
+                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+            }
+        }
+    }
 
     BuildingMenu.JailDoorRecipe = {
         neededTools = {
@@ -3108,56 +3193,6 @@ local function initBuildingMenuRecipes()
                 Skill = "MetalWelding",
                 Level = 6,
                 Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
-            }
-        }
-    }
-
-    BuildingMenu.MetalWindowDoorRecipe = {
-        neededTools = {
-            "BlowTorch",
-            "WeldingMask"
-        },
-        neededMaterials = {
-            {
-                Material = 'Base.SheetMetal',
-                Amount = BuildingMenu.round(sheetMetalCountForDoors*0.5)
-            },
-            {
-                Material = 'Base.MetalBar',
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
-            },
-            {
-                Material = 'Base.GlassPane',
-                Amount = glassPaneCount
-            },
-            {
-                Material = 'Base.Screws',
-                Amount = screwsCount
-            },
-            {
-                Material = "Base.Hinge",
-                Amount = 2
-            },
-            {
-                Material = "Base.Doorknob",
-                Amount = 1
-            }
-        },
-        useConsumable = {
-            {
-                Consumable = 'Base.BlowTorch',
-                Amount = 5
-            },
-            {
-                Consumable = "Base.WeldingRods",
-                Amount = BuildingMenu.weldingRodUses(5)
-            }
-        },
-        skills = {
-            {
-                Skill = "MetalWelding",
-                Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
             }
         }
     }
@@ -3225,7 +3260,7 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = 1,
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
                 Xp = BuildingMenu.round(1*carpentryXpPerLevel)
             }
         }
@@ -3261,7 +3296,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
+                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5)
             },
             {
                 Material = "Base.Nails",
@@ -3305,7 +3340,7 @@ local function initBuildingMenuRecipes()
         }
     }
 
-    BuildingMenu.HighMetalFenceRecipe = {
+    BuildingMenu.HighWireFenceRecipe = {
         neededTools = {
             "BlowTorch",
             "WeldingMask"
@@ -3343,7 +3378,7 @@ local function initBuildingMenuRecipes()
         }
     }
 
-    BuildingMenu.HighMetalFencePostRecipe = {
+    BuildingMenu.HighWireFencePostRecipe = {
         neededTools = {
             "BlowTorch",
             "WeldingMask"
@@ -3381,6 +3416,91 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.HighConcreteWireFenceRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.75)
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = 20
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BucketConcreteFull",
+                Amount = 1
+            },
+            {
+                Consumable = "Base.Wire",
+                Amount = 5
+            },
+            {
+                Consumable = 'Base.BlowTorch',
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 5,
+                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.HighConcreteWireFencePostRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = 10
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BucketConcreteFull",
+                Amount = 1
+            },
+            {
+                Consumable = "Base.Wire",
+                Amount = 2
+            },
+            {
+                Consumable = 'Base.BlowTorch',
+                Amount = 3
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(3)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 5,
+                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+            }
+        }
+    }
+
     BuildingMenu.HighWoodenFenceRecipe = {
         neededTools = {
             "Hammer",
@@ -3389,11 +3509,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount*1.25)
+                Amount = BuildingMenu.round(bigWallWoodCount*1.5)
             },
             {
                 Material = "Base.Nails",
-                Amount = BuildingMenu.round(bigWallNailsCount*1.25)
+                Amount = BuildingMenu.round(bigWallNailsCount*1.5)
             }
         },
         useConsumable = {
@@ -5333,7 +5453,7 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = smallObjectsCarpentrySkill,
+                Level = bigObjectsCarpentrySkill,
                 Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
             }
         }
@@ -5360,7 +5480,7 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = smallObjectsCarpentrySkill,
+                Level = bigObjectsCarpentrySkill,
                 Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
             }
         }
@@ -5393,6 +5513,32 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.DoubleBedRecipe = {
+        neededTools = {
+            "Hammer"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = BuildingMenu.round(bigObjectsWoodCount*2)
+            },
+            {
+                Material = "Base.Nails",
+                Amount = BuildingMenu.round(bigObjectsNailsCount*1.5)
+            },
+            {
+                Material = "Base.Mattress",
+                Amount = 2
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill*1.25),
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+            }
+        }
+    }
 
     BuildingMenu.LeatherFurnitureRecipe = {
         neededTools = {
@@ -5495,6 +5641,29 @@ local function initBuildingMenuRecipes()
                 Skill = "Tailoring",
                 Level = 2,
                 Xp = 10
+            }
+        }
+    }
+
+    BuildingMenu.WoodenChairRecipe = {
+        neededTools = {
+            "Hammer"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = smallObjectsWoodCount
+            },
+            {
+                Material = "Base.Nails",
+                Amount = smallObjectsNailsCount
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
             }
         }
     }

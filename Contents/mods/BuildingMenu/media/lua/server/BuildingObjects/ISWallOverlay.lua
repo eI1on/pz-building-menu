@@ -24,7 +24,6 @@ end
 
 function ISWallOverlay:create(x, y, z, north, sprite)
 	self.sq = getWorld():getCell():getGridSquare(x, y, z);
-	buildUtil.consumeMaterial(self);
 
     local objects = self.sq:getObjects()
     local spriteInstance = getSprite(sprite):newInstance()
@@ -43,6 +42,8 @@ function ISWallOverlay:create(x, y, z, north, sprite)
         end
     end
 
+	buildUtil.consumeMaterial(self);
+
     -- self.sq:disableErosion()
     -- local args = { x = self.sq:getX(), y = self.sq:getY(), z = self.sq:getZ() }
     -- sendClientCommand('erosion', 'disableForSquare', args)
@@ -60,6 +61,7 @@ function ISWallOverlay:new(sprite, northSprite)
 end
 
 function ISWallOverlay:isValid(square)
+    if not self:haveMaterial(square) then return false; end
 	if self.needToBeAgainstWall then
         for i=0,square:getObjects():size()-1 do
            local obj = square:getObjects():get(i);
@@ -77,4 +79,3 @@ end
 function ISWallOverlay:render(x, y, z, square)
 	ISBuildingObject.render(self, x, y, z, square)
 end
-

@@ -13733,7 +13733,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_White_Windows_Door",
                     "Tooltip_White_Windows_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13771,7 +13771,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Brown_Window_Door",
                     "Tooltip_Brown_Window_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13842,7 +13842,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Tan_Door",
                     "Tooltip_Tan_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenSingleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13861,7 +13861,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Black_Door",
                     "Tooltip_Black_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenSingleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13899,7 +13899,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Pile_o_Crepe_Blue_Glass_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenSingleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13918,7 +13918,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Pizza_Whirled_Brown_Glass_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13943,7 +13943,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_White_Panel_Door",
                     "Tooltip_White_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenDoorRecipe,
+                    BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13962,7 +13962,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Black_Panel_Door",
                     "Tooltip_Black_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenDoorRecipe,
+                    BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -13981,7 +13981,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Brown_Panel_Door",
                     "Tooltip_Brown_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenDoorRecipe,
+                    BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14144,7 +14144,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_White_Metal_Window_Door",
                     "Tooltip_White_Window_Metal_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.MetalWindowDoorRecipe,
+                    BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
                         firstItem = "BlowTorch",
@@ -14342,7 +14342,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Double_Orange_Kitchen_Metal_Door_Right_Door",
                     "Tooltip_Double_Grey_Metal_Door_Right_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.MetalWindowDoorRecipe,
+                    BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
                         firstItem = "BlowTorch",
@@ -14364,7 +14364,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Double_Orange_Kitchen_Metal_Door_Left_Door",
                     "Tooltip_Double_Grey_Metal_Door_Left_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.MetalWindowDoorRecipe,
+                    BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
                         firstItem = "BlowTorch",
@@ -14392,7 +14392,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Right",
                     "Tooltip_Double_Black_Glass_Door_Right",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14411,7 +14411,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left",
                     "Tooltip_Double_Black_Glass_Door_Left",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14430,7 +14430,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Black_2_Pane_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14449,7 +14449,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door",
                     "Tooltip_Single_Pane_Chestnut_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14468,7 +14468,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Single_Pane_Black_Door",
                     "Tooltip_Single_Pane_Black_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14487,7 +14487,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door",
                     "Tooltip_Brown_Sliding_Glass_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14508,7 +14508,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_White_Sliding_Glass_Door",
                     "Tooltip_White_Sliding_Glass_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14529,7 +14529,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Blue_Fossoil_Glass_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14548,7 +14548,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Red_Gas2Go_Glass_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14567,7 +14567,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Sea_Horse_Glass_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14586,7 +14586,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Spiffos_Glass_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -14639,7 +14639,7 @@ local function addDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Security_Door",
                     "Tooltip_Security_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenWindowDoorRecipe,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -16900,7 +16900,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -16924,7 +16924,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Corner",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -16944,7 +16944,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Post",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFencePostRecipe,
+            BuildingMenu.HighConcreteWireFencePostRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -16964,7 +16964,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Fence_Chain",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -16989,7 +16989,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Fence_Chain_Corner",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17009,7 +17009,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Fence_Chain_Post",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFencePostRecipe,
+            BuildingMenu.HighWireFencePostRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17124,7 +17124,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17149,7 +17149,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence_Corner",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17169,7 +17169,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence_Post",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFencePostRecipe,
+            BuildingMenu.HighWireFencePostRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17189,7 +17189,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Wired_Fence",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17213,7 +17213,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Wired_Fence_Corner",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17233,7 +17233,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Wired_Razor_Fence",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17257,7 +17257,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Wired_Razor_Corner",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighMetalFenceRecipe,
+            BuildingMenu.HighWireFenceRecipe,
             true,
             {
                 firstItem = "BlowTorch",
@@ -17290,7 +17290,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wrought_Iron_Fence_Post",
             "Tooltip_Wrought_Iron_Fence_Post",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17310,7 +17310,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wrought_Iron_Fence",
             "Tooltip_Wrought_Iron_Fence",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17329,7 +17329,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wrought_Iron_Fence_Corner",
             "Tooltip_Wrought_Iron_Fence",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17700,7 +17700,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Metal_Railing_Post",
             "Tooltip_Metal_Railing_Post",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17720,7 +17720,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Metal_Railing",
             "Tooltip_Metal_Railing",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17743,7 +17743,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Metal_Railing_Corner",
             "Tooltip_Metal_Railing_Post",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17763,7 +17763,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Rail_Fence_Post",
             "Tooltip_Mall_Rail_Fence_Post",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17783,7 +17783,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Rail_Fence",
             "Tooltip_Mall_Rail_Fence",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17806,7 +17806,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grey_Rail_Fence_Post",
             "Tooltip_Mall_Rail_Fence_Post",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17826,7 +17826,7 @@ local function addLowAndRailingFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grey_Rail_Fence",
             "Tooltip_Mall_Rail_Fence",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17862,7 +17862,7 @@ local function addOtherFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Metal_Fence_Post",
             "Tooltip_Green_Metal_Fence_Post",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17882,7 +17882,7 @@ local function addOtherFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Metal_Fence",
             "Tooltip_Green_Metal_Fence",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17905,7 +17905,7 @@ local function addOtherFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Metal_Fence_Post",
             "Tooltip_Red_Metal_Fence_Post",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -17925,7 +17925,7 @@ local function addOtherFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Metal_Fence",
             "Tooltip_Red_Metal_Fence",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildMetalWall,
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
@@ -22142,7 +22142,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
 
     local whiteTrafficLines = {
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22164,7 +22164,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22186,7 +22186,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22208,7 +22208,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22230,7 +22230,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22252,7 +22252,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22274,7 +22274,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22296,7 +22296,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22318,7 +22318,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22340,7 +22340,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22362,7 +22362,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22384,7 +22384,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22406,7 +22406,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22428,7 +22428,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22450,7 +22450,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22472,7 +22472,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22494,7 +22494,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22516,7 +22516,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22538,7 +22538,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22560,7 +22560,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22582,7 +22582,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22604,7 +22604,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22626,7 +22626,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22648,7 +22648,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22670,7 +22670,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22692,7 +22692,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22714,7 +22714,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22736,7 +22736,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22758,7 +22758,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22780,7 +22780,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22802,7 +22802,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22824,7 +22824,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22846,7 +22846,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22868,7 +22868,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22890,7 +22890,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22912,7 +22912,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22934,7 +22934,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22956,7 +22956,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -22978,7 +22978,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23000,7 +23000,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23022,7 +23022,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23044,7 +23044,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23066,7 +23066,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23088,7 +23088,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23110,7 +23110,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23132,7 +23132,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23154,7 +23154,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23176,7 +23176,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23198,7 +23198,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23220,7 +23220,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23242,7 +23242,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23264,7 +23264,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23286,7 +23286,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23308,7 +23308,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23330,7 +23330,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23352,7 +23352,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23374,7 +23374,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23396,7 +23396,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23418,7 +23418,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23440,7 +23440,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23462,7 +23462,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23484,7 +23484,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23506,7 +23506,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23528,7 +23528,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23550,7 +23550,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23572,7 +23572,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23594,7 +23594,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23616,7 +23616,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -23638,7 +23638,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_White_Line",
             "Tooltip_Road_Line_Generic",
             BuildingMenu.onBuildFloorOverlay,
             BuildingMenu.PaintWhite,
@@ -28247,7 +28247,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28260,7 +28260,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28273,7 +28273,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28286,7 +28286,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28299,7 +28299,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28312,7 +28312,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28325,7 +28325,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28338,7 +28338,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28354,7 +28354,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28367,7 +28367,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28380,7 +28380,7 @@ local function addTablesToMenu()
                     "",
                     "Tooltip_craft_smallTableDesc",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.LargeFurnitureRecipe,
+                    BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -28986,7 +28986,7 @@ local function addBedsToMenu()
                     "",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildFourTileFurniture,
-                    BuildingMenu.BedRecipe,
+                    BuildingMenu.DoubleBedRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -29008,7 +29008,7 @@ local function addBedsToMenu()
                     "",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildFourTileFurniture,
-                    BuildingMenu.BedRecipe,
+                    BuildingMenu.DoubleBedRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -29030,7 +29030,7 @@ local function addBedsToMenu()
                     "",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildFourTileFurniture,
-                    BuildingMenu.BedRecipe,
+                    BuildingMenu.DoubleBedRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -29052,7 +29052,7 @@ local function addBedsToMenu()
                     "",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildFourTileFurniture,
-                    BuildingMenu.BedRecipe,
+                    BuildingMenu.DoubleBedRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -29074,7 +29074,7 @@ local function addBedsToMenu()
                     "",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildFourTileFurniture,
-                    BuildingMenu.BedRecipe,
+                    BuildingMenu.DoubleBedRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -29096,7 +29096,7 @@ local function addBedsToMenu()
                     "",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildFourTileFurniture,
-                    BuildingMenu.BedRecipe,
+                    BuildingMenu.DoubleBedRecipe,
                     true,
                     {
                         actionAnim = "Build",
@@ -30406,6 +30406,27 @@ local function addSeatingFurnitureToMenu()
                     "",
                     "",
                     BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.WoodenChairRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        canPassThrough = true,
+                        isThumpable = true,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "location_restaurant_bar_01_26",
+                        northSprite = "location_restaurant_bar_01_26",
+                        eastSprite = "location_restaurant_bar_01_26",
+                        southSprite = "location_restaurant_bar_01_26"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "",
+                    BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
@@ -30568,27 +30589,6 @@ local function addSeatingFurnitureToMenu()
                         northSprite = "location_restaurant_spiffos_02_24",
                         eastSprite = "location_restaurant_spiffos_02_27",
                         southSprite = "location_restaurant_spiffos_02_26"
-                    }
-                ),
-                BuildingMenu.createObject(
-                    "",
-                    "",
-                    BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.MetalChairRecipe,
-                    true,
-                    {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
-                        completionSound = "BuildWoodenStructureLarge",
-                        canPassThrough = true,
-                        isThumpable = true,
-                        isCorner = true
-                    },
-                    {
-                        sprite = "furniture_seating_indoor_01_49",
-                        northSprite = "furniture_seating_indoor_01_50",
-                        eastSprite = "furniture_seating_indoor_01_48",
-                        southSprite = "furniture_seating_indoor_01_51"
                     }
                 ),
                 BuildingMenu.createObject(

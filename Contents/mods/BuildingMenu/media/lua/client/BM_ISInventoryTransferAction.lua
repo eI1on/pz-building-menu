@@ -1,14 +1,21 @@
 require "TimedActions/ISInventoryTransferAction"
 
-
+local items = {"Plank", "Log", "LogStacks2", "LogStacks3", "LogStacks4"};
 local function isLogItemTransferRestricted(item, destContainer)
-    local isLog = item:getType() == "Log"
-    local isLogContainer = destContainer:getType() == "logs"
+    local itemType = item:getType();
+    local isLogContainer = destContainer:getType() == "logs";
+    local isRestrictedItem = false;
 
-    -- if the destination is a log container and the item is not a log, restrict
-    if isLogContainer and not isLog then
-        return true
+    -- check if the item type is in the restricted items list
+    for _, restrictedType in ipairs(items) do
+        if itemType == restrictedType then
+            isRestrictedItem = true;
+            break
+        end
     end
+
+    -- restrict transfer if the destination is a log container and the item is in the restricted list
+    if isLogContainer and not isRestrictedItem then return true; end
 
     -- in all other cases, do not restrict
     return false
@@ -19,7 +26,7 @@ function ISInventoryTransferAction.isValid(self)
     if not self.item then return false; end
     if not self.destContainer then return false; end
     if isLogItemTransferRestricted(self.item, self.destContainer) then
-        return false
+        return false;
     end
 
     return originalIsValid(self)
