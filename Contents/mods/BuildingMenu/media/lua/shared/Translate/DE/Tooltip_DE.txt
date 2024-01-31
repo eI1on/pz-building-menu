@@ -1280,7 +1280,7 @@ Tooltip_DE = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Holzvertäfelungssäule aus gebeiztem Holz",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Braune Wandverkleidung",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Braune Wandverkleidungssäule",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Braune Wandverkleidung",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Wandverkleidung aus hellrotem Backstein",

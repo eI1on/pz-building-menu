@@ -1280,7 +1280,7 @@ Tooltip_PL = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Filar z bejcowanej drewnianej paneli",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Brązowe panele ścienne",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Filar z br?zowymi panelami ?ciennymi",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Brązowe panele ścienne Drzwi",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Panele ścienne z jasnoczerwonej cegły",

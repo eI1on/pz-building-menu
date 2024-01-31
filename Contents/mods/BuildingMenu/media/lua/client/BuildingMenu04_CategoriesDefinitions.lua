@@ -16848,29 +16848,29 @@ local function addWindowsPlusToMenu()
                 )
             }
         },
-        {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Jail_Windows"),
-            subCategoryIcon = "location_community_police_01_40",
-            objects = {
-                BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Jail_Window",
-                    "Tooltip_Windows_Jail",
-                    BuildingMenu.onBuildWindowWall,
-                    BuildingMenu.SmallMetalBarWallRecipe,
-                    true,
-                    {
-                        actionAnim = "Build", 
-                        noNeedHammer = false, 
-                        completionSound = "BuildWoodenStructureLarge",
-                        canBeAlwaysPlaced = true,
-                        canPassThrough = false,
-                        canBarricade = true,
-                        isThumpable = true,
-                    },
-                    {sprite = "location_community_police_01_40", northSprite = "location_community_police_01_41"}
-                ),
-            }
-        }
+        -- {
+        --     subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Jail_Windows"),
+        --     subCategoryIcon = "location_community_police_01_40",
+        --     objects = {
+        --         BuildingMenu.createObject(
+        --             "Tooltip_BuildingMenuObj_Jail_Window",
+        --             "Tooltip_Windows_Jail",
+        --             BuildingMenu.onBuildWindowWall,
+        --             BuildingMenu.SmallMetalBarWallRecipe,
+        --             true,
+        --             {
+        --                 actionAnim = "Build", 
+        --                 noNeedHammer = false, 
+        --                 completionSound = "BuildWoodenStructureLarge",
+        --                 canBeAlwaysPlaced = true,
+        --                 canPassThrough = false,
+        --                 canBarricade = true,
+        --                 isThumpable = true,
+        --             },
+        --             {sprite = "location_community_police_01_40", northSprite = "location_community_police_01_41"}
+        --         ),
+        --     }
+        -- }
         -- {
         --     subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Curtains"),
         --     objects = {

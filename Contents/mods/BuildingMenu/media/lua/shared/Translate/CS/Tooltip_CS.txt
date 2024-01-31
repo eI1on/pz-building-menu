@@ -1280,7 +1280,7 @@ Tooltip_CS = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Sloupek z mořeného dřeva",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Hnědé obložení stěn",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Hn?dý Sloup obložení st?n",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Hnědá stěna obložení dveří",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Světle červené cihlové zdi obložení",

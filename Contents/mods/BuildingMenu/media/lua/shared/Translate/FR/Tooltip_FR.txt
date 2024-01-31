@@ -1280,7 +1280,7 @@ Tooltip_FR = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Pilier de lambris en bois teinté",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Lambris muraux marron",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Pilier de lambris mural marron",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Porte de lambris mural marron",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Lambris mural en brique rouge clair",

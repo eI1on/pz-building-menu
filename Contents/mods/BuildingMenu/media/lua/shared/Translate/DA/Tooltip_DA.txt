@@ -1280,7 +1280,7 @@ Tooltip_DA = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Panneleringssøjle i bejdset træ",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Brun vægbeklædning",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Brun vægpanelsøjle",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Brun vægpaneldøråbning",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Vægbeklædning i lys rød mursten",

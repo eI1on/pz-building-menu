@@ -1280,7 +1280,7 @@ Tooltip_PH = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "May bahid na Wood Wood Panneling Pillar",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Brown Wall Panneling",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Brown Wall Panneling Pillar",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Brown Wall Panneling Doorway",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Banayad na Red Brick Wall Panneling",

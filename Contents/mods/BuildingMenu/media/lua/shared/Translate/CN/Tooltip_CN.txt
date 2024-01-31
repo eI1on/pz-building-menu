@@ -1279,7 +1279,7 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "防腐木墙裙面板柱",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "褐色墙面板",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""褐色墙面板柱,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "褐色墙面板柱",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "褐色墙面板门蹬",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "浅红色砖墙面板",

@@ -1280,7 +1280,7 @@ Tooltip_ID = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Pilar Panneling Kayu Kayu Bernoda",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Panel Dinding Coklat",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Pilar Panel Dinding Coklat",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Pintu Panneling Dinding Coklat",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Panel Dinding Bata Merah Muda",

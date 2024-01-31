@@ -1280,7 +1280,7 @@ Tooltip_NL = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Gekleurd hout houten lambrisering pijler",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Bruine wandpanelen",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Bruine wandpanelenpijler",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Deuropening in bruine muurpanelen",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Lichtrode bakstenen muurpanelen",

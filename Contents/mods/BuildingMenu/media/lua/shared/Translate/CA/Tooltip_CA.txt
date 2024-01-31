@@ -1280,7 +1280,7 @@ Tooltip_CA = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Pilar de panells de fusta tenyit",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Revestiment de paret marró",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Pilar de panell de paret marró",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Porta de panell de paret marró",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Panell de paret de maó vermell clar",

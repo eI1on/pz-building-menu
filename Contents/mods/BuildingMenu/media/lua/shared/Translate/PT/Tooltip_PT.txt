@@ -1280,7 +1280,7 @@ Tooltip_PT = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Pilar de painéis de madeira manchada",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Painéis de parede marrons",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Pilar de painel de parede marrom",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Porta com painéis de parede marrom",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Painéis de parede de tijolo vermelho claro",

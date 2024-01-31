@@ -1280,7 +1280,7 @@ Tooltip_AR = {
   Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling_Pillar = "Pilar de paneles de madera teñida",
 
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling = "Paneles de pared marrones",
-  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = ""Brown Wall Panneling Pillar,
+  Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Pillar = "Pilar de pared marrón",
   Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway = "Puerta con paneles de pared marrón",
 
   Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling = "Paneles de pared de ladrillo rojo claro",
