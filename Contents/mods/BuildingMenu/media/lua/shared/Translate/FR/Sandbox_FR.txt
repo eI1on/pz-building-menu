@@ -1,240 +1,240 @@
 Sandbox_FR = {
-    Sandbox_BuildingMenu = "Menu du bâtiment",
-    Sandbox_BuildingMenu_isThumpable = "Structures pouvant être frappées",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Désactivez <RGB:1,1,1><SPACE> pour rendre les structures construites à l'aide du menu Construction insensibles aux dégâts des zombies.",
-
+    Sandbox_BuildingMenu = "Menu de construction",
+    Sandbox_BuildingMenu_isThumpable = "Structures pouvant être fracassée",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "Sélectionner <SPACE><RGB:1,0.8,0> DÉSACTIVÉ <RGB:1,1,1><SPACE> pour rendre les structures construites à l'aide du Menu de construction immunisées contre les dégâts des zombies.",
+    
 
     Sandbox_BuildingMenu_EmptyBox = "",
     Sandbox_BuildingMenu_EmptyBox_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
 
 
-    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Catégorie de murs _______________",
-    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Catégorie Murs _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "Activer la sous-catégorie des murs en bois",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs en bois. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs en bois. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Activer la sous-catégorie des murs à clin",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Activer pour ajouter des structures de murs à clin. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Activer la sous-catégorie des parements",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Permet d'ajouter des structures de parement. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_stoneWallsSubCategory = "Activer la sous-catégorie des murs en pierre",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Activer l'ajout de structures de murs en pierre. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs en pierre. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_brickWallsSubCategory = "Activer la sous-catégorie des murs en briques",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Activer l'ajout de structures de murs en briques. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs en briques. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Activer la sous-catégorie des murs en parpaings",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Activer l'ajout de structures de murs en parpaings. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs en parpaings. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_paintedWallsSubCategory = "Activer la sous-catégorie des murs peints",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs peints. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs peints. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Activer la sous-catégorie des murs de fenêtres cintrés",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Activez l'ajout de structures de murs de fenêtres cintrés. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Activer la sous-catégorie des murs cintrés avec fenêtres",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs cintrés avec fenêtres. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_commercialWallsSubCategory = "Activer la sous-catégorie des murs commerciaux",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs commerciaux. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs commerciaux. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_industrialWallsSubCategory = "Activer la sous-catégorie des murs industriels",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs industriels. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Permet d'ajouter des structures de murs industriels. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 
-    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Catégorie de toits _______________",
-    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Catégorie Toits _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
     Sandbox_BuildingMenu_roofsCategory = "Activer la catégorie Toits",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Permet d'ajouter des structures de toit, telles que des bardeaux, des bardeaux de fente, du verre. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Permet d'ajouter des structures de toit, telles que des bardeaux, des bardeaux fendus, des toits en verre. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 
-    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Catégorie de portes _______________",
-    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Catégorie Portes _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
-    Sandbox_BuildingMenu_doorsSubCategory = "Activer la catégorie de portes",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Permet d'ajouter des portes en bois, basses, à panneaux, en métal et en verre. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_doorsSubCategory = "Activer la catégorie Portes",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Permet d'ajouter des portes en bois, basses, à panneaux, métalliques et en verre. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_garageDoorsSubCategory = "Activer la sous-catégorie des portes de garage",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Permet d'ajouter des portes de garage à 3 et 4 tuiles. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Permet d'ajouter des portes de garage à 3 et 4 cases. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Catégorie Architecture Plus _________",
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "Activer la catégorie Architecture Plus",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Permet d'ajouter des garnitures de porte, des moulures couronnées, des détails de bord, des moulures de sol et des panneaux muraux. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Permet d'ajouter des garnitures de porte, des moulures de couronne, des détails de bord, des moulures de sol et des panneaux muraux. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 
-    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Catégorie de fenêtres ______________",
-    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Catégorie Fenêtres ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
-    Sandbox_BuildingMenu_windowsCategory = "Activer la catégorie Windows",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Activez pour ajouter Windows. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_windowsCategory = "Activer la catégorie Fenêtres",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Permet d'ajouter des fenêtres. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 
-    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Catégorie d'escrime ______________",
-    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Catégorie Clôture ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "Activer la sous-catégorie des clôtures hautes",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Activez pour ajouter des clôtures hautes. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Permet d'ajouter des clôtures hautes. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Activer la sous-catégorie des clôtures basses et des garde-corps",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Activez cette option pour ajouter des clôtures et des garde-corps bas. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Activer la sous-catégorie des clôtures basses et des balustrades",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Permet d'ajouter des clôtures basses et des balustrades. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_otherFencesSubCategory = "Activer d'autres sous-catégories de clôtures",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Permet d'ajouter d'autres clôtures telles que la barrière Hesco, les clôtures à faible teneur en métal, les clôtures en brique. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
-    
-
-
-    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Catégorie de sols ______________",
-    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
-
-    Sandbox_BuildingMenu_floorsCategory = "Activer la catégorie d'étage",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Activez pour ajouter des étages. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_otherFencesSubCategory = "Activer la sous-catégorie autres clôtures",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Permet d'ajouter d'autres clôtures telles que la barrière Hesco, les clôtures basses en métal, les clôtures en brique. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 
-    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Catégorie d'escaliers ______________",
-    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Catégorie Sols ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
+
+    Sandbox_BuildingMenu_floorsCategory = "Activer la catégorie Sols",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Permet d'ajouter des sols. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
+    
+
+
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Catégorie Escaliers ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
  
     Sandbox_BuildingMenu_stairsCategory = "Activer la catégorie Escaliers",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Activez pour ajouter des escaliers. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Permet d'ajouter des escaliers. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
-    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Catégorie de travaux routiers _____________",
-    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Catégorie Travaux routiers _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
  
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Activer la sous-catégorie Asphalte",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Activer pour ajouter de l'asphalte. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Activer la sous-catégorie des asphaltes",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Permet d'ajouter de l'asphalte. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Activer la sous-catégorie des superpositions",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Activez l'ajout de superpositions telles que Grime et Street Cracks. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Permet d'ajouter des superpositions telles que de la crasse et des fissures de rue. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Activer la sous-catégorie des superpositions de bord de trottoir",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Activez pour ajouter des superpositions de bord de trottoir. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Permet d'ajouter des superpositions de bord de trottoir. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Activer la sous-catégorie Saleté et herbe",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Activez pour ajouter des tuiles Dirt et Grass. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Activer la sous-catégorie de la terre et de l'herbe",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Permet d'ajouter de la terre et de l'herbe. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Activer la sous-catégorie des marquages ??routiers peints",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Activer pour ajouter des marquages ??routiers peints. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Activer la sous-catégorie des marquages routiers peints",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Permet d'ajouter des marquages routiers peints. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 
-    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Catégorie de conteneurs ____________",
-    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Catégorie Conteneurs ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
  
     Sandbox_BuildingMenu_kitchenCountersSubCategory = "Activer la sous-catégorie des comptoirs de cuisine",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Activer pour ajouter des comptoirs de cuisine et des comptoirs supérieurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Permet d'ajouter des comptoirs de cuisine et des comptoirs supérieurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_commercialCountersSubCategory = "Activer la sous-catégorie des compteurs commerciaux",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Activer pour ajouter des comptoirs de restaurant, café, bar et dîner. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Activer la sous-catégorie des comptoirs commerciaux",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Permet d'ajouter des comptoirs de restaurant, café, bar et dîner. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_cratesSubCategory = "Activer la sous-catégorie des caisses",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Permet d'ajouter des caisses simples, des caisses militaires (capacité 100), des boîtes en carton. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Permet d'ajouter des caisses simples, des caisses militaires (capacité 100), des boîtes en carton. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
     Sandbox_BuildingMenu_metalContainersSubCategory = "Activer la sous-catégorie des conteneurs métalliques",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Permet d'ajouter des conteneurs métalliques, de grandes étagères métalliques, des casiers. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Permet d'ajouter des conteneurs métalliques, des grandes étagères métalliques, des casiers. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_clothesRacksSubCategory = "Activer la sous-catégorie des portants à vêtements",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Permet d'ajouter des portants à vêtements et des mannequins. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "Activer la sous-catégorie des portes-vêtements",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Permet d'ajouter des portes-vêtements et des mannequins. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
     Sandbox_BuildingMenu_trashCansSubCategory = "Activer la sous-catégorie des poubelles",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Activez pour ajouter des poubelles. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Permet d'ajouter des poubelles. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_containersOthersSubCategory = "Activer la sous-catégorie d'autres conteneurs",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Activez pour ajouter une sous-catégorie Autres conteneurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_containersOthersSubCategory = "Activer la sous-catégorie autres conteneurs",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Permet d'ajouter une sous-catégorie Autres conteneurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
 
 
-    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Catégorie de mobilier _____________",
-    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Catégorie Meubles _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
  
-    Sandbox_BuildingMenu_tablesSubCategory = "Activer la sous-catégorie Tableaux",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Activer pour ajouter des petites et grandes tables. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_tablesSubCategory = "Activer la sous-catégorie des tables",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Permet d'ajouter des petites et grandes tables. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_bedsSubCategory = "Activer la sous-catégorie des lits",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Permet d'ajouter des lits simples et grands. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Permet d'ajouter des lits simples et grands. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Activer la sous-catégorie de sièges",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Activer pour ajouter des bancs, des canapés, des chaises. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Activer la sous-catégorie des sièges",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Permet d'ajouter des bancs, des canapés, des chaises. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_bookshelvesSubCategory = "Activer la sous-catégorie des bibliothèques",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Activez pour ajouter des étagères. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Activer la sous-catégorie des étagères",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Permet d'ajouter des étagères. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Activer la sous-catégorie des commodes",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Permet d'ajouter des commodes, des tiroirs et des armoires. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Permet d'ajouter des commodes, des tiroirs et des armoires. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
 
 
     Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Catégorie Décorations ____________",
-    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
  
-    Sandbox_BuildingMenu_rugsSubCategory = "Activer la sous-catégorie de tapis",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Activez pour ajouter des tapis. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_rugsSubCategory = "Activer la sous-catégorie des tapis",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Permet d'ajouter des tapis. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Activer la sous-catégorie Affiches et panneaux",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Activez pour ajouter des affiches et des panneaux. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Activer la sous-catégorie des affiches et panneaux",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Permet d'ajouter des affiches et des panneaux. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_graffitiSubCategory = "Activer la sous-catégorie Graffiti",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Activez pour ajouter des graffitis. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_graffitiSubCategory = "Activer la sous-catégorie des graffitis",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Permet d'ajouter des graffitis. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Activer la sous-catégorie Autres décorations",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Activez l'ajout d'autres décorations, telles que des barrages routiers, une boîte aux lettres, un poteau de barrière, des cônes routiers, une boîte aux lettres. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Activer la sous-catégorie autres décorations",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Permet d'ajouter d'autres décorations, telles que les barrages routiers, les boîtes aux lettres, les barrières, les cônes routiers. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
 
 
-    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Catégorie de végétation ____________",
-    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Catégorie Végétation ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "Activer la sous-catégorie des parterres de fleurs",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Activer pour ajouter des parterres de fleurs dans la catégorie de végétation. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Permet d'ajouter des parterres de fleurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
     Sandbox_BuildingMenu_indoorPlantsSubCategory = "Activer la sous-catégorie des plantes d'intérieur",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Activez l'ajout de plantes d'intérieur, telles que des pots de fleurs, dans la catégorie Végétation. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Permet d'ajouter des plantes d'intérieur, telles que des pots de fleurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
     Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Activer la sous-catégorie des plantes d'extérieur",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Activez l’ajout de plantes d’extérieur, telles que des conteneurs de fleurs d’extérieur dans la catégorie Végétation. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Permet d’ajouter des plantes d’extérieur, telles que des conteneurs de fleurs d’extérieur. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_landscapingSubCategory = "Activer la sous-catégorie Aménagement paysager",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Activez l'ajout de végétation d'aménagement paysager, telle que l'herbe, les haies et les vignes murales dans la catégorie de végétation. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_landscapingSubCategory = "Activer la sous-catégorie des aménagements paysager",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Permet d'ajouter des aménagements paysager, telle que l'herbe, les haies et les vignes murales. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
 
 
-    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Catégorie de survie _____________",
-    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Catégorie Survie _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
-    Sandbox_BuildingMenu_fireplaceSubCategory = "Activer la sous-catégorie Cheminée",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Activez pour ajouter une cheminée et des montants. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_fireplaceSubCategory = "Activer la sous-catégorie des cheminées",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Permet d'ajouter une cheminée et des montants. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
-    Sandbox_BuildingMenu_generatorSubCategory = "Activer la sous-catégorie du générateur",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Activez pour ajouter le générateur. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_generatorSubCategory = "Activer la sous-catégorie des générateurs",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Permet d'ajouter des générateurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
-    Sandbox_BuildingMenu_metalDrums = "Activer les fûts métalliques",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Activer l'ajout de fûts métalliques. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_metalDrums = "Activer les fûts en métal",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Permet d'ajouter des fûts métalliques. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
 
 
 
-    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Catégorie d'électroménagers ____________",
-    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Catégorie Appareils électroménagers ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
 
-    Sandbox_BuildingMenu_lightingAppliances = "Activer la catégorie d'éclairage",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Activez pour ajouter une catégorie d’éclairage. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_lightingAppliances = "Activer la catégorie éclairage",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Permet d'ajouter la catégorie éclairage. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
 
     Sandbox_BuildingMenu_bathroomAppliances = "Activer la sous-catégorie des appareils de salle de bain",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Permet d'ajouter des lavabos, des toilettes et d'autres objets liés à la salle de bain. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Permet d'ajouter des lavabos, des toilettes et d'autres objets liés à la salle de bain. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_cookingAppliances = "Activer la sous-catégorie des appareils de cuisine",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Permet d'ajouter des cuisinières, des fours et d'autres objets liés à la cuisine. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Permet d'ajouter des cuisinières, des fours et d'autres objets liés à la cuisine. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_fridgeAppliances = "Activer la sous-catégorie des appareils de réfrigération",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Activez pour ajouter des réfrigérateurs et des congélateurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Permet d'ajouter des réfrigérateurs et des congélateurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
     Sandbox_BuildingMenu_laundryAppliances = "Activer la sous-catégorie des appareils de blanchisserie",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Activer pour ajouter des laveuses et des sécheuses. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Permet d'ajouter des laveuses et des sécheuses. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
     
 
 

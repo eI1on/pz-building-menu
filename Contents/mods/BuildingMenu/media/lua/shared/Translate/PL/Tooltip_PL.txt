@@ -1690,10 +1690,15 @@ Tooltip_PL = {
   Tooltip_BuildingMenuObj_Light_Post5 = "Lekki słupek 5",
   Tooltip_BuildingMenuObj_Light_Post5_Extension = "Rozszerzenie Light Post 5",
 
+  Tooltip_BuildingMenuObj_ShowerGlassWall = "Shower Glass Wall",
+
   Tooltip_Fridges = "Funkcjonalna lodówka do przechowywania łatwo psujących się artykułów spożywczych.",
   Tooltip_Oven = "Podstawowy piekarnik do gotowania posiłków i pieczenia.",
   Tooltip_Laundry = "Pralka do czyszczenia odzieży i pościeli.",
   Tooltip_Sink = "Zlew do mycia naczyń i utrzymywania higieny.",
+  Tooltip_Toilet = "A toilet for personal hygiene and restroom needs.",
+  Tooltip_Shower = "A shower for bathing, cleaning, and refreshing oneself.",
+  Tooltip_ShowerWall = "A wall for privacy and splash protection in shower areas.",
   Tooltip_MetalContainer = "Solidny metalowy pojemnik do bezpiecznego przechowywania.",
   Tooltip_Mannequin = "Manekin do eksponowania odzieży i sprzętu.",
   Tooltip_ClothesStand = "Stojak na ubrania, który pomoże uporządkować Twój strój.",

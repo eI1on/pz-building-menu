@@ -1,7 +1,7 @@
 ContextMenu_FR = {
   
-  ContextMenu_BuildingMenu = "Menu du bâtiment",
+  ContextMenu_BuildingMenu = "Menu de construction",
   ContextMenu_RemoveWallDetailing = "Supprimer les détails du mur",
-  ContextMenu_RemoveTrafficLine = "Supprimer la ligne de circulation",
+  ContextMenu_RemoveTrafficLine = "Supprimer les marquages de voirie",
 
 }

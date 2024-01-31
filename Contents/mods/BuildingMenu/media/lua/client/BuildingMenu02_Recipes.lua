@@ -2580,6 +2580,45 @@ local function initBuildingMenuRecipes()
     }
 
 
+    BuildingMenu.BigMetalBarGlassWallRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "Screwdriver",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = 'Base.MetalBar',
+                Amount = metalBarsCount
+            },
+            {
+                Material = 'Base.Screws',
+                Amount = screwsCount
+            },
+            {
+                Material = "Base.GlassPane",
+                Amount = BuildingMenu.round(glassPaneCount*1.5)
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = 'Base.BlowTorch',
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 5,
+                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+            }
+        }
+    }
+
     BuildingMenu.BigMetalBarWallRecipe = {
         neededTools = {
             "BlowTorch",

@@ -1690,10 +1690,15 @@ Tooltip_DE = {
   Tooltip_BuildingMenuObj_Light_Post5 = "Lichtmast 5",
   Tooltip_BuildingMenuObj_Light_Post5_Extension = "Lichtmast 5-Erweiterung",
 
+  Tooltip_BuildingMenuObj_ShowerGlassWall = "Shower Glass Wall",
+
   Tooltip_Fridges = "Ein funktioneller Kühlschrank zur Aufbewahrung verderblicher Lebensmittel.",
   Tooltip_Oven = "Ein einfacher Ofen zum Kochen und Backen.",
   Tooltip_Laundry = "Eine Waschmaschine zum Reinigen von Kleidung und Bettwäsche.",
   Tooltip_Sink = "Ein Waschbecken zum Geschirrspülen und zur Aufrechterhaltung der Hygiene.",
+  Tooltip_Toilet = "A toilet for personal hygiene and restroom needs.",
+  Tooltip_Shower = "A shower for bathing, cleaning, and refreshing oneself.",
+  Tooltip_ShowerWall = "A wall for privacy and splash protection in shower areas.",
   Tooltip_MetalContainer = "Ein stabiler Metallbehälter zur sicheren Aufbewahrung.",
   Tooltip_Mannequin = "Eine Schaufensterpuppe zur Präsentation von Kleidung und Ausrüstung.",
   Tooltip_ClothesStand = "Ein Kleiderständer zum Ordnen Ihrer Kleidung.",

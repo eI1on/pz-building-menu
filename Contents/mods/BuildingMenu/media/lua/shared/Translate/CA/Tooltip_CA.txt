@@ -1690,10 +1690,15 @@ Tooltip_CA = {
   Tooltip_BuildingMenuObj_Light_Post5 = "Post de llum 5",
   Tooltip_BuildingMenuObj_Light_Post5_Extension = "Ampliació Light Post 5",
 
+  Tooltip_BuildingMenuObj_ShowerGlassWall = "Shower Glass Wall",
+
   Tooltip_Fridges = "Una nevera funcional per emmagatzemar aliments peribles.",
   Tooltip_Oven = "Un forn bàsic per cuinar menjars i coure.",
   Tooltip_Laundry = "Una rentadora per netejar roba i llençols.",
   Tooltip_Sink = "Una pica per rentar els plats i mantenir la higiene.",
+  Tooltip_Toilet = "A toilet for personal hygiene and restroom needs.",
+  Tooltip_Shower = "A shower for bathing, cleaning, and refreshing oneself.",
+  Tooltip_ShowerWall = "A wall for privacy and splash protection in shower areas.",
   Tooltip_MetalContainer = "Un contenidor metàl·lic resistent per a un emmagatzematge segur.",
   Tooltip_Mannequin = "Un maniquí per mostrar roba i equipament.",
   Tooltip_ClothesStand = "Un suport de roba per organitzar la teva indumentària.",

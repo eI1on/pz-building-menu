@@ -1690,10 +1690,15 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Light_Post5 = "Фонарный столб 5",
   Tooltip_BuildingMenuObj_Light_Post5_Extension = "Вторая часть фонарного столба 5",
 
+  Tooltip_BuildingMenuObj_ShowerGlassWall = "Shower Glass Wall",
+
   Tooltip_Fridges = "Холодильник для более длительного хранения продуктов. Требует электричества.",
   Tooltip_Oven = "Плита для готовки продуктов.",
   Tooltip_Laundry = "Стиральная машина для стирки белья.",
   Tooltip_Sink = "Раковина для поддержания чистоты.",
+  Tooltip_Toilet = "A toilet for personal hygiene and restroom needs.",
+  Tooltip_Shower = "A shower for bathing, cleaning, and refreshing oneself.",
+  Tooltip_ShowerWall = "A wall for privacy and splash protection in shower areas.",
   Tooltip_MetalContainer = "Крепкий металлический контейнер для надежного хранения личных вещей.",
   Tooltip_Mannequin = "Манекен для демонстрации одежды и брони.",
   Tooltip_ClothesStand = "Вешалка для удобного хранения вашего гардероба.",

@@ -1693,10 +1693,15 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_Light_Post5 = "灯柱5",
   Tooltip_BuildingMenuObj_Light_Post5_Extension = "灯柱5扩充",
 
+  Tooltip_BuildingMenuObj_ShowerGlassWall = "Shower Glass Wall",
+
   Tooltip_Fridges = "可运作的、能保存易腐食物的冰箱。",
   Tooltip_Oven = "提供基本的烹饪和烘烤功能的微波炉。",
   Tooltip_Laundry = "能清理衣物和织物的洗衣机。",
   Tooltip_Sink = "能洗碗和保洁的洗手池。",
+  Tooltip_Toilet = "A toilet for personal hygiene and restroom needs.",
+  Tooltip_Shower = "A shower for bathing, cleaning, and refreshing oneself.",
+  Tooltip_ShowerWall = "A wall for privacy and splash protection in shower areas.",
   Tooltip_MetalContainer = "提供安全存储牢固金属容器。",
   Tooltip_Mannequin = "用来展示衣服和装备的服装模特。",
   Tooltip_ClothesStand = "便于管理服装的衣架。",

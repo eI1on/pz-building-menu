@@ -469,6 +469,7 @@ local function addBathroomAppliancesToMenu()
         },
         {
             buildFunc = BuildingMenu.onBuildSink, 
+            tooltip = "Tooltip_Toilet",
             recipe = BuildingMenu.SinkRecipe, 
             sprites = { 
                 sprite = "fixtures_bathroom_01_1",
@@ -479,6 +480,7 @@ local function addBathroomAppliancesToMenu()
         },
         {
             buildFunc = BuildingMenu.onBuildSink, 
+            tooltip = "Tooltip_Toilet",
             recipe = BuildingMenu.SinkRecipe, 
             sprites = { 
                 sprite = "fixtures_bathroom_01_9",
@@ -489,6 +491,7 @@ local function addBathroomAppliancesToMenu()
         },
         {
             buildFunc = BuildingMenu.onBuildSink, 
+            tooltip = "Tooltip_Toilet",
             recipe = BuildingMenu.SinkRecipe, 
             sprites = { 
                 sprite = "fixtures_bathroom_01_5",
@@ -499,6 +502,7 @@ local function addBathroomAppliancesToMenu()
         },
         {
             buildFunc = BuildingMenu.onBuildSink, 
+            tooltip = "Tooltip_Shower",
             recipe = BuildingMenu.SinkRecipe, 
             sprites = {
                 sprite = "fixtures_bathroom_01_32", 
@@ -507,6 +511,7 @@ local function addBathroomAppliancesToMenu()
         },
         {
             buildFunc = BuildingMenu.onBuildBathtub,
+            tooltip = "Tooltip_Shower",
             recipe = BuildingMenu.BathtubRecipe, 
             sprites = { 
                 sprite = "fixtures_bathroom_01_27",
@@ -517,6 +522,7 @@ local function addBathroomAppliancesToMenu()
         },
         {
             buildFunc = BuildingMenu.onBuildBathtub, 
+            tooltip = "Tooltip_Shower",
             recipe = BuildingMenu.BathtubRecipe, 
             sprites = { 
                 sprite = "fixtures_bathroom_01_55",
@@ -531,6 +537,21 @@ local function addBathroomAppliancesToMenu()
     for _, spec in ipairs(bathroomObjectSpecs) do
         table.insert(bathroomObjects, createBathroomObject(spec))
     end
+    table.insert(bathroomObjects,
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_ShowerGlassWall",
+            "Tooltip_ShowerWall",
+            BuildingMenu.onBuildWindowWall,
+            BuildingMenu.BigMetalBarGlassWallRecipe,
+            true,
+            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            {
+                sprite = "fixtures_bathroom_01_34",
+                northSprite = "fixtures_bathroom_01_35",
+                corner = "fixtures_bathroom_01_36"
+            }
+        )
+    )
 
     BuildingMenu.addObjectsToCategories(
         getText("IGUI_BuildingMenuTab_General"),

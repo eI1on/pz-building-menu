@@ -4,10 +4,10 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenu_isThumpable_tooltip = "Desligue <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> para tornar as estruturas construídas usando o Building Menu imunes a danos de zumbis.",
     
     Sandbox_BuildingMenu_EmptyBox = "",
-    Sandbox_BuildingMenu_EmptyBox_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria de Paredes _______________",
-    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "Ativar subcategoria de Paredes de Madeira",
     Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Habilite para adicionar estruturas de parede de madeira. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -39,7 +39,7 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Categoria de Telhados _______________",
-    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_roofsCategory = "Ativar categoria de Telhados",
     Sandbox_BuildingMenu_roofsCategory_tooltip = "Habilite para adicionar estruturas de telhado, como de madeira, vidro. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -47,7 +47,7 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Categoria de Portas _______________",
-    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_doorsSubCategory = "Ativar categoria de Portas",
     Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Habilite para adicionar estruturas de portas de madeira, painel, metal, vidro. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -58,7 +58,7 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Categoria de Arquitetura Plus _________",
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "Ativar categoria Arquitetura Plus",
     Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Habilite para adicionar estruturas de acabamento de porta, cornija, rodapé e painéis de parede. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -66,7 +66,7 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Categoria de Janelas ______________",
-    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_windowsCategory = "Ativar categoria de Janelas",
     Sandbox_BuildingMenu_windowsCategory_tooltip = "Habilite para adicionar estruturas de janela. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -74,7 +74,7 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Categoria de Cercas ______________",
-    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "Ativar subcategoria de Cercas Altas",
     Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Habilite para adicionar estruturas de cercas altas. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -88,7 +88,7 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Categoria de Pisos ______________",
-    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_floorsCategory = "Ativar categoria de Pisos",
     Sandbox_BuildingMenu_floorsCategory_tooltip = "Habilite para adicionar estruturas de piso. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -96,46 +96,46 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Categoria de Escadas ______________",
-    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
  
     Sandbox_BuildingMenu_stairsCategory = "Ativar categoria de Escadas",
     Sandbox_BuildingMenu_stairsCategory_tooltip = "Habilite para adicionar estruturas de escadas. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
 
     Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoria de Estradas _____________",
-    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Ativar subcategoria de de Asfalto",
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Habilite para adicionar estruturas de Asfalto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Ativar subcategoria de Sobreposiç?es",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Habilite para adicionar estruturas de sobreposiç?es como terra e rachaduras nas ruas. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Ativar subcategoria de Sobreposições",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Habilite para adicionar estruturas de sobreposições como terra e rachaduras nas ruas. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Ativar subcategoria de Sobreposiç?es de Borda da Calçada",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Habilite para adicionar estruturas de sobreposiç?es de borda de calçada. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Ativar subcategoria de Sobreposições de Borda da Calçada",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Habilite para adicionar estruturas de sobreposições de borda de calçada. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Ativar subcategoria de Terra e Grama",
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Habilite para adicionar estruturas de terra e grama. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Ativar subcategoria de Pinturas de Sinalizaç?o",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Habilite para adicionar estruturas de pintura de sinalizaç?o. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Ativar subcategoria de Pinturas de Sinalização",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Habilite para adicionar estruturas de pintura de sinalização. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
 
 
-    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoria de Cont?ineres ____________",
-    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoria de Contêineres ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
  
-    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Ativar subcategoria de Balc?es",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Habilite para adicionar estruturas de Balc?es de cozinha, balc?es suspensos. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Ativar subcategoria de Balcões",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Habilite para adicionar estruturas de Balcões de cozinha, balcões suspensos. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
-    Sandbox_BuildingMenu_commercialCountersSubCategory = "Ativar subcategoria de Balc?o de Restaurante",
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Ativar subcategoria de Balcão de Restaurante",
     Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Habilite para adicionar estruturas de restaurante, café, bar, lanchonete. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
     Sandbox_BuildingMenu_cratesSubCategory = "Ativar subcategoria de Caixotes",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Habilite para adicionar estruturas de caixas simples, caixas militares(capacidade 100), caixas de papel?o. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Habilite para adicionar estruturas de caixas simples, caixas militares(capacidade 100), caixas de papelão. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
-    Sandbox_BuildingMenu_metalContainersSubCategory = "Ativar subcategoria de Cont?ineres de Metal",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Habilite para adicionar estruturas de cont?ineres metálicos, prateleiras, armários. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_metalContainersSubCategory = "Ativar subcategoria de Contêineres de Metal",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Habilite para adicionar estruturas de contêineres metálicos, prateleiras, armários. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
     Sandbox_BuildingMenu_clothesRacksSubCategory = "Ativar subcategoria de Cabideiros",
     Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Habilite para adicionar estruturas de cabideiros e manequins. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -144,12 +144,12 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Habilite para adicionar estruturas de lata de lixo. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
     Sandbox_BuildingMenu_containersOthersSubCategory = "Ativar subcategoria de Outros",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Habilite para adicionar estruturas de outros cont?ineres. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Habilite para adicionar estruturas de outros contêineres. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
 
 
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria de Móveis _____________",
-    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
  
     Sandbox_BuildingMenu_tablesSubCategory = "Ativar subcategoria de Mesas",
     Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Habilite para adicionar estruturas de mesas grandes e pequenas. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -168,8 +168,8 @@ Sandbox_PTBR = {
    
 
 
-    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoria de Decoraç?es ____________",
-    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoria de Decorações ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
  
     Sandbox_BuildingMenu_rugsSubCategory = "Ativar subcategoria de Tapetes",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Habilite para adicionar estruturas de tapetes. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -181,12 +181,12 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Habilite para adicionar estruturas de grafiti. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "Ativar subcategoria de Outros",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Habilite para adicionar estruturas de outras decoraç?es, como bloqueio de estradas, caixas de correio, postes de estacionamento, cones de estrada. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Habilite para adicionar estruturas de outras decorações, como bloqueio de estradas, caixas de correio, postes de estacionamento, cones de estrada. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
 
 
-    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoria de Vegetaç?es ____________",
-    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoria de Vegetações ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "Ativar subcategoria de Canteiro de Flores",
     Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Habilite para adicionar estruturas de canteiro de flores. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -198,12 +198,12 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Habilite para adicionar estruturas de plantas ao ar livre, como recipientes de flores. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
     Sandbox_BuildingMenu_landscapingSubCategory = "Ativar subcategoria de Paisagismo",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Habilite para adicionar estruturas de vegetaç?o paisagística, como grama, cerca viva e trepadeiras. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Habilite para adicionar estruturas de vegetação paisagística, como grama, cerca viva e trepadeiras. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
 
 
-    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoria de Sobreviv?ncia _____________",
-    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoria de Sobrevivência _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenu_fireplaceSubCategory = "Ativar subcategoria de Laleira",
     Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Habilite para adicionar estruturas de lareira e batentes. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -217,16 +217,16 @@ Sandbox_PTBR = {
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Categoria de Eletrodomésticos ____________",
-    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
-    Sandbox_BuildingMenu_lightingAppliances = "Ativar categoria de Iluminaç?o",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Habilite para adicionar estruturas de iluminaç?o. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_lightingAppliances = "Ativar categoria de Iluminação",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Habilite para adicionar estruturas de iluminação. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
 
     Sandbox_BuildingMenu_bathroomAppliances = "Ativar subcategoria de Banheiros",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilite para adicionar estruturas de pias, vasos sanitários e outros objetos relacionados ? banheiros. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilite para adicionar estruturas de pias, vasos sanitários e outros objetos relacionados a banheiros. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
     Sandbox_BuildingMenu_cookingAppliances = "Ativar subcategoria de Culinária",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilite para adicionar estruturas de fog?es, fornos e outros objetos relacionados ? culinária. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilite para adicionar estruturas de fogões, fornos e outros objetos relacionados a culinária. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
     
     Sandbox_BuildingMenu_fridgeAppliances = "Ativar subcategoria de Geladeiras",
     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Habilite para adicionar estruturas de geladeiras e congeladores. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
@@ -240,7 +240,7 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenuRecipes = "Building Menu: Receitas",
 
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiais ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_PaintUses = "Usos de Latas de Tinta",
     Sandbox_PaintUses_tooltip = "Usos por lata de tinta. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
@@ -318,18 +318,18 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Custo de Placas de Metal para PORTAS",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Define as placas de metal nescessárias para portas. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Custo de Placas de Metal para Cont?ineres",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Define as placas de metal nescessárias para cont?ineres. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Custo de Placas de Metal para Contêineres",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Define as placas de metal nescessárias para contêineres. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Custo de Placas de Metal para INSTALAÇ?ES e APARELHOS",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Define as placas de metal nescessárias para instalaç?es e aparelhos. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Custo de Placas de Metal para INSTALAÇÕES e APARELHOS",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Define as placas de metal nescessárias para instalações e aparelhos. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Custo de Placas de Metal para TELHADOS E PISOS",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Define as placas de metal nescessárias telhados e pisos. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Habilidades ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Nível de Carpintaria para objetos GRANDES",
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Define o nível de carpintaria para objetos grandes. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
@@ -347,7 +347,7 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Ganho de XP por nível de elétrica ao construir objetos. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Receitas de Objetos Especiais ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Este é apenas um separador de linhas, n?o tem efeito.",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
 
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Custo de madeira para Caixa Militar",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Define a madeira nescessária para caixa militar. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",

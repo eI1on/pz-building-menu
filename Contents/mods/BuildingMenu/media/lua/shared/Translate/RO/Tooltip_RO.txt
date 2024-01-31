@@ -1690,10 +1690,15 @@ Tooltip_RO = {
   Tooltip_BuildingMenuObj_Light_Post5 = "Stâlp de lumină 5",
   Tooltip_BuildingMenuObj_Light_Post5_Extension = "Light Post 5 Extensie",
 
+  Tooltip_BuildingMenuObj_ShowerGlassWall = "Shower Glass Wall",
+
   Tooltip_Fridges = "Un frigider funcțional pentru depozitarea alimentelor perisabile.",
   Tooltip_Oven = "Un cuptor de bază pentru gătirea meselor și coacerea.",
   Tooltip_Laundry = "O mașină de spălat rufe pentru curățarea hainelor și a lenjeriei.",
   Tooltip_Sink = "O chiuvetă pentru spălarea vaselor și menținerea igienei.",
+  Tooltip_Toilet = "A toilet for personal hygiene and restroom needs.",
+  Tooltip_Shower = "A shower for bathing, cleaning, and refreshing oneself.",
+  Tooltip_ShowerWall = "A wall for privacy and splash protection in shower areas.",
   Tooltip_MetalContainer = "Un recipient metalic robust pentru depozitare în siguranță.",
   Tooltip_Mannequin = "Un manechin pentru expunerea hainelor și echipamentelor.",
   Tooltip_ClothesStand = "Un suport de haine pentru a-ți organiza ținuta.",

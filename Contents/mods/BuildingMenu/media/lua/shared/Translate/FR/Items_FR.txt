@@ -1,13 +1,13 @@
 Items_FR = {
 
     /* Glass Items */
-    DisplayName_PanWithGlassShards = "Casserole avec des éclats de verre",
+    DisplayName_PanWithGlassShards = "Poêle avec des éclats de verre",
     DisplayName_PanWithGlassPane = "Poêle avec vitre",
     DisplayName_GlassPane = "Vitre",
 
     /* Magazines */
-    DisplayName_BMMagazineGlass = "Fours de cuisine du coin du bricoleur",
-    DisplayName_BMMagazineCars = "Fenêtres et fabrication de véhicules de précision",
-    DisplayName_BMMagazineSecretEntrances = "Passages secrets mensuel",
+    DisplayName_BMMagazineGlass = "Le coin du bricoleur: Les fours de cuisine",
+    DisplayName_BMMagazineCars = "Vitrage de précision pour véhicules et leur fabrication",
+    DisplayName_BMMagazineSecretEntrances = "Le mensuel des Passages secrets",
 
 }
