@@ -402,6 +402,300 @@ local function addSimonMDWallsToMenu()
 
 end
 
+
+local function addHighFencesToMenu()
+    local highFences = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_High_Fence_1",
+            "Tooltip_Scrap_High_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.BigScrapHighFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_31",
+                sprite2 = "fencing_Simon_MD_32",
+                northSprite = "fencing_Simon_MD_36",
+                northSprite2 = "fencing_Simon_MD_37",
+                corner = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_High_Fence_Post_1",
+            "Tooltip_Scrap_High_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "fencing_Simon_MD_30", northSprite = "fencing_Simon_MD_38"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_Low_Fence_1",
+            "Tooltip_Scrap_Low_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = false,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_34",
+                sprite2 = "fencing_Simon_MD_35",
+                northSprite = "fencing_Simon_MD_39",
+                northSprite2 = "fencing_Simon_MD_40",
+                corner = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_Low_Fence_Post_1",
+            "Tooltip_Scrap_Low_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                hoppable = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "fencing_Simon_MD_33", northSprite = "fencing_Simon_MD_41"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_High_Fence_2",
+            "Tooltip_Scrap_High_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.BigScrapHighFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_43",
+                sprite2 = "fencing_Simon_MD_44",
+                northSprite = "fencing_Simon_MD_48",
+                northSprite2 = "fencing_Simon_MD_49",
+                corner = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_High_Fence_Post_2",
+            "Tooltip_Scrap_High_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "fencing_Simon_MD_42", northSprite = "fencing_Simon_MD_50"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_Low_Fence_2",
+            "Tooltip_Scrap_Low_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = false,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_46",
+                sprite2 = "fencing_Simon_MD_47",
+                northSprite = "fencing_Simon_MD_51",
+                northSprite2 = "fencing_Simon_MD_52",
+                corner = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_Low_Fence_Post_2",
+            "Tooltip_Scrap_Low_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                hoppable = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            {sprite = "fencing_Simon_MD_45", northSprite = "fencing_Simon_MD_53"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_High_Fence_1_Back",
+            "Tooltip_Scrap_High_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.BigScrapHighFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_54",
+                sprite2 = "fencing_Simon_MD_55",
+                northSprite = "fencing_Simon_MD_58",
+                northSprite2 = "fencing_Simon_MD_59",
+                corner = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_Low_Fence_1_Back",
+            "Tooltip_Scrap_Low_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = false,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_56",
+                sprite2 = "fencing_Simon_MD_57",
+                northSprite = "fencing_Simon_MD_60",
+                northSprite2 = "fencing_Simon_MD_61",
+                corner = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_High_Fence_2_Back",
+            "Tooltip_Scrap_High_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.BigScrapHighFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_62",
+                sprite2 = "fencing_Simon_MD_63",
+                northSprite = "fencing_Simon_MD_66",
+                northSprite2 = "fencing_Simon_MD_67",
+                corner = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Scrap_Low_Fence_2_Back",
+            "Tooltip_Scrap_Low_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.SmallScrapLowFenceRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorch",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = false,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fencing_Simon_MD_64",
+                sprite2 = "fencing_Simon_MD_65",
+                northSprite = "fencing_Simon_MD_68",
+                northSprite2 = "fencing_Simon_MD_69",
+                corner = ""
+            }
+        ),
+    }
+
+    BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_Fencing"),
+        "fencing_Simon_MD_31",
+        getText("IGUI_BuildingMenuSubCat_High_Fences_Scrap"),
+        "fencing_Simon_MD_31",
+        highFences
+    )
+end
+
+
 local function addRoofingToMenu()
     local simonMDCorrugatedRoof = {
         BuildingMenu.createObject(
@@ -657,7 +951,7 @@ local function addRoofingToMenu()
             {sprite = "roofs_Simon_MD_34", northSprite = "roofs_Simon_MD_35"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Pitched",
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Pitched",
             "Tooltip_Roof_Generic",
             BuildingMenu.onBuildSimpleFurniture,
             BuildingMenu.ScrapRoofTileRecipe,
@@ -675,7 +969,7 @@ local function addRoofingToMenu()
             {sprite = "roofs_Simon_MD_14", northSprite = "roofs_Simon_MD_15"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Inner",
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner",
             "Tooltip_Roof_Generic",
             BuildingMenu.onBuildSimpleFurniture,
             BuildingMenu.ScrapRoofTileRecipe,
@@ -693,7 +987,7 @@ local function addRoofingToMenu()
             {sprite = "roofs_Simon_MD_29", northSprite = "roofs_Simon_MD_29"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Outer",
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer",
             "Tooltip_Roof_Generic",
             BuildingMenu.onBuildSimpleFurniture,
             BuildingMenu.ScrapRoofTileRecipe,
@@ -711,7 +1005,7 @@ local function addRoofingToMenu()
             {sprite = "roofs_Simon_MD_38", northSprite = "roofs_Simon_MD_39"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Valley",
+            "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley",
             "Tooltip_Roof_Generic",
             BuildingMenu.onBuildSimpleFurniture,
             BuildingMenu.ScrapRoofTileRecipe,
@@ -867,6 +1161,9 @@ end
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.industrialWallsSubCategory then
         addSimonMDWallsToMenu()
+    end
+    if SandboxVars.BuildingMenu.highFencesSubCategory then
+        addHighFencesToMenu()
     end
     if SandboxVars.BuildingMenu.roofsCategory then
         addRoofingToMenu()

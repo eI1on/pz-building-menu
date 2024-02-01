@@ -18,7 +18,16 @@ function ISWindowObj:isValid(square)
         return false
     end
 
-    if self:getSprite() == "fixtures_windows_01_72" then return true end
+    if self:getSprite() == "fixtures_windows_01_72" or self:getSprite() == "fixtures_windows_01_73" then 
+        for i=1,square:getObjects():size() do
+            local object = square:getObjects():get(i-1);
+            local sprite = object:getTextureName()
+            if sprite and (luautils.stringStarts(sprite, "walls_interior_house_05_") or luautils.stringStarts(sprite, "walls_exterior_house_03_")) and object:getNorth() == self.north then
+                return true;
+            end
+        end
+        return false;
+    end
 
     local sharedSprite = getSprite(self:getSprite())
     if sharedSprite then

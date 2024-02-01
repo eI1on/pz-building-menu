@@ -5,5 +5,6 @@ IGUI_EN = {
     
     IGUI_BuildingMenuSubCat_Walls_Scrap = "Scrap Walls",
     IGUI_BuildingMenuSubCat_Roofing_Scrap = "Scrap Roofs",
+    IGUI_BuildingMenuSubCat_High_Fences_Scrap = "Scrap High Fences",
 
 }

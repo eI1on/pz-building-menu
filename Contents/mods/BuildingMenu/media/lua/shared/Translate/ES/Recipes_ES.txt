@@ -1,46 +1,46 @@
 Recipe_ES = {
-    /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Preparar vidrio para fundir.",
-    Recipe_BMUnprepareGlassShards = "Retire el vaso de la sartén",
-    Recipe_BMRemoveGlassPane = "Extraer cristal",
+    /* Recetas para Fabricar Cristal */
+    Recipe_BMPrepareGlassShards = "Preparar cristal para fundir",
+    Recipe_BMUnprepareGlassShards = "Quitar cristal de la sartén",
+    Recipe_BMRemoveGlassPane = "Extraer panel de cristal",
 
-    /* Smash Glass Recipes */
-    Recipe_BMSmashGlassJar = "Romper contra vidrios rotos",
-    Recipe_BMSmashGlassPane = "Romper contra vidrios rotos",
-    Recipe_BMSmashWindshield = "Romper contra vidrios rotos",
-    Recipe_BMSmashWindows = "Romper contra vidrios rotos",
+    /* Recetas para Romper Cristal */
+    Recipe_BMSmashGlassJar = "Romper en cristal roto",
+    Recipe_BMSmashGlassPane = "Romper en cristal roto",
+    Recipe_BMSmashWindshield = "Romper en cristal roto",
+    Recipe_BMSmashWindows = "Romper en cristal roto",
 
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "hacer una ventana de madera",
-    Recipe_BMMakeWindow02 = "hacer una ventana con azulejos blancos",
-    Recipe_BMMakeWindow03 = "hacer una ventana con mosaicos",
-    Recipe_BMMakeWindow04 = "hacer ventana blanca",
-    Recipe_BMMakeWindow05 = "Hacer ventana de Chrome",
-    Recipe_BMMakeWindow06 = "Crear ventana deslizante",
+    /* Recetas para Ventanas */
+    Recipe_BMMakeWindow01 = "Hacer Ventana de Madera",
+    Recipe_BMMakeWindow02 = "Hacer Ventana con Azulejos Blancos",
+    Recipe_BMMakeWindow03 = "Hacer Ventana con Azulejos",
+    Recipe_BMMakeWindow04 = "Hacer Ventana Blanca",
+    Recipe_BMMakeWindow05 = "Hacer Ventana Cromada",
+    Recipe_BMMakeWindow06 = "Hacer Ventana Corrediza",
 
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Desmontar ventana de madera",
-    Recipe_BMDisassembleWindow02 = "Desmontar la ventana de azulejos blancos",
-    Recipe_BMDisassembleWindow03 = "Desmontar la ventana de azulejos",
-    Recipe_BMDisassembleWindow04 = "Desmontar la ventana blanca",
-    Recipe_BMDisassembleWindow05 = "Desmontar la ventana de Chrome",
-    Recipe_BMDisassembleWindow06 = "Desmontar la ventana deslizante",
+    /* Recetas para Desmontar Ventanas */
+    Recipe_BMDisassembleWindow01 = "Desmontar Ventana de Madera",
+    Recipe_BMDisassembleWindow02 = "Desmontar Ventana con Azulejos Blancos",
+    Recipe_BMDisassembleWindow03 = "Desmontar Ventana con Azulejos",
+    Recipe_BMDisassembleWindow04 = "Desmontar Ventana Blanca",
+    Recipe_BMDisassembleWindow05 = "Desmontar Ventana Cromada",
+    Recipe_BMDisassembleWindow06 = "Desmontar Ventana Corrediza",
 
-    /* Vehicle: Standard Recipes */
-    Recipe_BMWindshield1 = "hacer parabrisas estándar",
-    Recipe_BMRearWindshield1 = "Hacer parabrisas trasero estándar",
-    Recipe_BMFrontWindow1 = "Hacer ventana frontal estándar",
-    Recipe_BMRearWindow1 = "Hacer ventana trasera estándar",
+    /* Recetas para Vehículos: Estándar */
+    Recipe_BMWindshield1 = "Hacer Parabrisas Estándar",
+    Recipe_BMRearWindshield1 = "Hacer Parabrisas Trasero Estándar",
+    Recipe_BMFrontWindow1 = "Hacer Ventana Delantera Estándar",
+    Recipe_BMRearWindow1 = "Hacer Ventana Trasera Estándar",
 
-    /* Vehicle: Heavy-Duty Recipes */
-    Recipe_BMWindshield2 = "Hacer un parabrisas resistente",
-    Recipe_BMRearWindshield2 = "Cómo hacer un parabrisas trasero resistente",
-    Recipe_BMFrontWindow2 = "Haga una ventana frontal resistente",
-    Recipe_BMRearWindow2 = "Haga una ventana trasera resistente",
+    /* Recetas para Vehículos: Resistente */
+    Recipe_BMWindshield2 = "Hacer Parabrisas Resistente",
+    Recipe_BMRearWindshield2 = "Hacer Parabrisas Trasero Resistente",
+    Recipe_BMFrontWindow2 = "Hacer Ventana Delantera Resistente",
+    Recipe_BMRearWindow2 = "Hacer Ventana Trasera Resistente",
 
-    /* Vehicle: Sport Recipes */
-    Recipe_BMWindshield3 = "hacer un parabrisas deportivo",
-    Recipe_BMRearWindshield3 = "Hacer parabrisas trasero deportivo",
-    Recipe_BMFrontWindow3 = "Hacer ventana delantera deportiva",
-    Recipe_BMRearWindow3 = "Hacer ventana trasera deportiva",
+    /* Recetas para Vehículos: Deportivo */
+    Recipe_BMWindshield3 = "Hacer Parabrisas Deportivo",
+    Recipe_BMRearWindshield3 = "Hacer Parabrisas Trasero Deportivo",
+    Recipe_BMFrontWindow3 = "Hacer Ventana Delantera Deportiva",
+    Recipe_BMRearWindow3 = "Hacer Ventana Trasera Deportiva",
 }
