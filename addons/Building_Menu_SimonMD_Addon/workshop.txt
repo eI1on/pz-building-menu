@@ -75,5 +75,5 @@ description=This mod's permissions fall under TIS's policy [url=https://theindie
 description=This mod cannot be modified by anyone else, for anything else, at all, ever. Even if the user disappears, he or she would much rather you didn't touch the fruits of their hard labour.
 description=[/quote]
 description=[url=https://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36479][img] https://i.imgur.com/UJYBoAp.png [/img][/url]
-tags=Build 41;Building;Framework;Interface;Realistic;Textures
+tags=Build 41;Building;Framework;Interface;Realistic;Textures;Multiplayer
 visibility=public

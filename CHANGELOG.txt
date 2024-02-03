@@ -1,0 +1,98 @@
+03 FEB 24
+86e1e7d
+
+Changelog:
+[list]
+Main mod:
+[*] Added info panel in the Building Menu UI
+[*] Added Water Wells (toggleable in sandbox options, default - disabled) + Sandbox option to change Max Water Well Storage Amount (default - 1500)
+[*] Updated FAQ
+SimonMD's addon:
+[*] Added High Scrap Fences, Scrap Double Gates, Scrap Doors, Military Lockers + Recipes
+Dylan's addon:
+[*] Added Barricades (toggleable in sandbox options, default disabled) + Recipes
+DaddyDirkie's addon:
+[*] Organised Doors
+[*] Updated Recipes
+[/list]
+
+31 JAN 24
+Changelog:
+[list]
+[*] polished recipes
+[*] changed recipes for some doors
+[*] fixed exploit with architecture plus objects 
+[*] updated RU/PTBR/FR translations
+[/list]
+
+30 JAN 24
+Hotfix
+
+Changelog:
+[list]
+[*] now the selected list items of category and subcategory lists are saved when changing tabs
+[*] fixed number of materials being 0 when setting a low value in sandbox option
+[*] added planks and stacked logs to the list of accepted items of the log container
+ [/list]
+
+29 JAN 24
+Changelog:
+[list]
+[*] increased Propane Torch sandbox option Uses to 100
+[*] updated CH/CN/ES/KO/JP/PTBR/RU translations
+[*] added AR/CA/CS/DA/DE/FI/FR/HU/ID/IT/NL/PH/PL/PT/RO translations using Poltergeist's tool pz-translate-zx
+[/list]
+
+28 JAN 24
+Changelog:
+[list]
+[*] added Sandbox Option to modify materials, consumables, skill, xp gain per skill
+[*] updated CH/CN translation
+[*] log containers now are exclusive only for Log items to prevent exploits
+[/list]
+
+25 JAN 24
+Changelog:
+[list]
+[*] added Sandbox Options UI fix
+[*] added CH and CN translation, thanks to @iaso2h
+[/list]
+
+23 JAN 24
+Changelog:
+[list]
+[*] added Sandbox option to disable Subcategories/Categories (over 50 options)
+[*] added RU translation, thanks to [url=https://steamcommunity.com/id/birget] Birget[/url]
+[*] added PTBR translation, thanks to [url=https://steamcommunity.com/id/theleoamaral] theleo[/url]
+[*] fixed Crown Molding name
+[/list]
+
+22 JAN 24
+Changelog:
+[list]
+[*] added KO translation, thanks to [url=https://steamcommunity.com/id/123654005621] Pitchyblack[/url]
+[*] added the other 2 directions of the Large fancy bed
+[*] fixed resizing the UI didn't reset the object position table, creating ghost objects in the UI
+[*] fixed the recipe to remove the glass pane from the roasting pan
+[/list]
+
+20 JAN 24
+Changelog:
+[list]
+[*] added  Spanish (ES) translation, thanks to [url=https://steamcommunity.com/id/mr_roddo] Roddo [/url]
+[*] added more rugs variants, large beds, vanilla walls, crates and counters
+[*] fixed issue when trying to Turn On light switches in SP
+[/list]
+
+20 JAN 24
+Changelog:
+[list]
+[*]fixed an issue with the tooltip
+[*]added industrial walls
+[/list]
+
+19 JAN 24
+Changelog:
+[list]
+[*]initial release
+[/list]
