@@ -48,9 +48,9 @@ description=[*] Lighting posts
 description=[/list]
 description=[b] Other [/b]
 description=[list]
-description=[*] Road Markings
+description=[*] Road Markings  ([i] can be removed with a trowel[/i])
 description=[*] Decorations: rugs, posters, graffiti
-description=[*] Vegetation: flower beds, hedges, flower pots
+description=[*] Vegetation: flower beds, hedges, flower pots, wall vines ([i] can be removed with something sharp, like the vanilla ones[/i])
 description=[/list]
 description=
 description=All items are from the vanilla game.
@@ -63,6 +63,12 @@ description= Yes! It has been extensively tested on a MP server!
 description=
 description=[h2] Does it work on existing saves? [/h2]
 description= Absolutely! Enable or disable mid-save without issues.
+description=
+description=[h2] My building isn't recognized as an indoor space. What should I do? [/h2]
+description= For a fix, please watch this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]
+description=
+description=[h2] I'm missing some items in the build menu. How do I find them? [/h2]
+description= To access all available buildables, you'll need to activate them in the Sandbox settings (in SP you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454&searchtext=change+sandbox] Change Sandbox Options (by Star) [/url]), some are disabled by default like metal drums, furniture ...
 description=
 description=[h2] Does it work for all game versions? [/h2]
 description= Only tested and working on the latest game version (v41.78.16).

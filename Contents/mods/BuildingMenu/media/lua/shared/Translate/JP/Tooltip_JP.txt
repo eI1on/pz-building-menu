@@ -1645,6 +1645,10 @@ Tooltip_JP = {
   Tooltip_Fireplace = "A classic fireplace for warmth and cooking. <{RGB:1,0.8,0}><{SPACE}> If you also want the jambs, build them first, otherwise it will overlap the fireplace.",
   Tooltip_BuildingMenuObj_Generator = "Generator",
   Tooltip_BuildingMenuObj_Metal_Drum = "Metal Drum",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Mens Room",
   Tooltip_BuildingMenuObj_Ladies_Room = "Ladies Room",

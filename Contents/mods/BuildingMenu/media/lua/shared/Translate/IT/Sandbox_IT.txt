@@ -216,6 +216,8 @@ Sandbox_IT = {
     Sandbox_BuildingMenu_metalDrums = "Abilita tamburi metallici",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Abilita per aggiungere tamburi di metallo. <LINE><LINE> <RGB:1,0,0> RICHIEDE IL RIAVVIO DEL CLIENT!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Categoria Elettrodomestici ____________",
@@ -351,6 +353,9 @@ Sandbox_IT = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Ricette Oggetti Speciali ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Questo è solo un separatore di riga, controllarlo non ha alcun effetto.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Costo del materiale in legno per la cassa militare",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Imposta le assi necessarie per le casse militari. <LINE><LINE> <RGB:1,0,0> RICHIEDE IL RIAVVIO DEL CLIENT! <RGB:1,1,1>",
     

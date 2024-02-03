@@ -35183,6 +35183,162 @@ local function addGeneratorToMenu()
     )
 end
 
+local function addMetalDrumsToMenu()
+    local metalDrums = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Drum",
+            "Tooltip_Metal_Drum",
+            BuildingMenu.onMetalDrum,
+            BuildingMenu.MetalDrumRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            {sprite = "crafted_01_24"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Drum",
+            "Tooltip_Metal_Drum",
+            BuildingMenu.onMetalDrum,
+            BuildingMenu.MetalDrumRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            {sprite = "building_menu_barrels_02_16"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Drum",
+            "Tooltip_Metal_Drum",
+            BuildingMenu.onMetalDrum,
+            BuildingMenu.MetalDrumRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            {sprite = "crafted_01_28"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Drum",
+            "Tooltip_Metal_Drum",
+            BuildingMenu.onMetalDrum,
+            BuildingMenu.MetalDrumRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            {sprite = "building_menu_barrels_02_0"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Drum",
+            "Tooltip_Metal_Drum",
+            BuildingMenu.onMetalDrum,
+            BuildingMenu.MetalDrumRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            {sprite = "building_menu_barrels_02_4"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Drum",
+            "Tooltip_Metal_Drum",
+            BuildingMenu.onMetalDrum,
+            BuildingMenu.MetalDrumRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            {sprite = "building_menu_barrels_02_8"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Drum",
+            "Tooltip_Metal_Drum",
+            BuildingMenu.onMetalDrum,
+            BuildingMenu.MetalDrumRecipe,
+            true,
+            {
+                firstItem = "BlowTorch",
+                secondItem = "WeldingMask",
+                craftingBank = "BlowTorch",
+                actionAnim = "BlowTorchMid",
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium"
+            },
+            {sprite = "building_menu_barrels_02_12"}
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        getText("IGUI_BuildingMenuTab_General"),
+        getText("IGUI_BuildingMenuCat_Survival"),
+        "fixtures_fireplaces_01_0",
+        getText("IGUI_BuildingMenuSubCat_Survival_Metal_Drums"),
+        "crafted_01_24",
+        metalDrums
+    )
+end
+
+local function addWaterWellToMenu()
+    local well = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Water_Well",
+            "Tooltip_Water_Well",
+            BuildingMenu.onBuildWaterWell,
+            BuildingMenu.WaterWellRecipe,
+            true,
+            {
+                actionAnim = "DigShovel",
+                noNeedHammer = true,
+                craftingBank = "Shoveling",
+                canPassThrough = true,
+                isCorner=  true,
+                completionSound = "BuildFenceCairn",
+                maxTime = 2400
+            },
+            {sprite = "camping_01_16", northSprite = "camping_01_16"}
+        ),
+    }
+
+    BuildingMenu.addObjectsToCategories(
+        getText("IGUI_BuildingMenuTab_General"),
+        getText("IGUI_BuildingMenuCat_Survival"),
+        "fixtures_fireplaces_01_0",
+        getText("IGUI_BuildingMenuSubCat_Survival_Water_Well"),
+        "camping_01_16",
+        well
+    )
+end
+
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.woodWallsSubCategory then
         addWoodWallsToMenu()
@@ -35318,6 +35474,12 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.generatorSubCategory then
         addGeneratorToMenu()
+    end
+    if SandboxVars.BuildingMenu.metalDrums then
+        addMetalDrumsToMenu()
+    end
+    if SandboxVars.BuildingMenu.waterWell then
+        addWaterWellToMenu()
     end
 end
 Events.OnGameStart.Add(addCategoriesToBuildingMenu)

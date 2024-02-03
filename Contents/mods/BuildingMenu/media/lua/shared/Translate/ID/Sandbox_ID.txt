@@ -216,6 +216,8 @@ Sandbox_ID = {
     Sandbox_BuildingMenu_metalDrums = "Aktifkan Drum Logam",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Aktifkan untuk menambahkan drum logam. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Kategori Peralatan ____________",
@@ -351,6 +353,9 @@ Sandbox_ID = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Resep Benda Khusus ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Biaya Bahan Kayu untuk Peti Militer",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Menetapkan papan yang diperlukan untuk Peti Militer. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
     

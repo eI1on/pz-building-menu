@@ -5,5 +5,6 @@ IGUI_CH = {
 
     IGUI_BuildingMenuSubCat_Walls_Scrap = "廢料門",
     IGUI_BuildingMenuSubCat_Roofing_Scrap = "廢料屋頂",
+    IGUI_BuildingMenuSubCat_Scrap_Doors = "Scrap Doors",
 
 }

@@ -216,6 +216,8 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_metalDrums = "Activa els tambors metàl·lics",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Activa per afegir tambors metàl·lics. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Electrodomèstics Categoria ____________",
@@ -351,6 +353,9 @@ Sandbox_CA = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Receptes d'objectes especials ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Cost del material de fusta per a la caixa militar",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Estableix els taulons necessaris per a les caixes militars. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
     

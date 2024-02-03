@@ -1648,6 +1648,10 @@ Tooltip_CH = {
   Tooltip_Fireplace = "用於取暖和烹飪的經典壁爐。 <RGB:1,0.8,0><SPACE> 如果你想加上側壁，請先建造它們，否則側壁會覆蓋掉壁爐。",
   Tooltip_BuildingMenuObj_Generator = "發電機",
   Tooltip_BuildingMenuObj_Metal_Drum = "金屬油桶",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "男厠所",
   Tooltip_BuildingMenuObj_Ladies_Room = "女厠所",

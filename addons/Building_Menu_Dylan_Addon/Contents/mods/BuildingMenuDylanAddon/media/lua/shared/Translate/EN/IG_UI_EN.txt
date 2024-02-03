@@ -7,4 +7,9 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Small_Plant_Containers = "Small Plant Containers",
     IGUI_BuildingMenuSubCat_Garden_Fencing = "Garden Fencing",
     IGUI_BuildingMenuSubCat_Lab_Containers = "Lab Containers",
+
+    IGUI_BuildingMenuCat_Barricades = "Barricades",
+    IGUI_BuildingMenuSubCat_Low_Barricades = "Low Barricades",
+    IGUI_BuildingMenuSubCat_High_Barricades = "High Barricades",
+
 }

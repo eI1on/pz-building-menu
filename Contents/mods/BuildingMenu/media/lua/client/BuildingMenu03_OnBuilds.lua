@@ -594,6 +594,36 @@ BuildingMenu.onBuildDoubleTileFurniture = function( sprites, name, player, objec
     BuildingMenu.buildObject(_doubleTileFurniture, name, player, objectRecipe, objectOptions)
 end
 
+
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
+BuildingMenu.onBuildBarricade = function( sprites, name, player, objectRecipe, objectOptions)
+    local _simpleFurniture = ISSimpleFurniture:new(name, sprites.sprite, sprites.northSprite)
+
+    if sprites.eastSprite then
+        _simpleFurniture:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _simpleFurniture:setSouthSprite(sprites.southSprite)
+    end
+
+    local playerObj = getSpecificPlayer(player)
+    local health = (playerObj:getPerkLevel(Perks.Woodwork) * 100);
+    if playerObj:HasTrait("Handy") then health = health + 250; end
+
+    _simpleFurniture.getHealth = function(self)
+        if isDebugEnabled() then print("[Building Menu] objectOptions.health: ", objectOptions.health, " (_simpleFurniture.health or 2500) + health: ", (_simpleFurniture.health or 2500) + health) end
+        return (_simpleFurniture.health or 2500) + health;
+    end
+
+    BuildingMenu.buildObject(_simpleFurniture, name, player, objectRecipe, objectOptions)
+end
+
+
 ---@param sprites table
 ---@param name string
 ---@param player number
@@ -649,6 +679,17 @@ BuildingMenu.onBuildDoor = function( sprites, name, player, objectRecipe, object
     end
 
     BuildingMenu.buildObject(_door, name, player, objectRecipe, objectOptions)
+end
+
+---@param sprites table
+---@param name string
+---@param player number
+---@param objectRecipe table
+---@param objectOptions table
+BuildingMenu.onDoubleDoor = function( sprites, name, player, objectRecipe, objectOptions)
+    local _doubleDoor = ISDoubleDoor:new(sprites.sprite:sub(1, -2), objectOptions.spriteIndex)
+
+    BuildingMenu.buildObject(_doubleDoor, name, player, objectRecipe, objectOptions)
 end
 
 ---@param sprites table
@@ -756,7 +797,9 @@ end
 ---@param objectRecipe table
 ---@param objectOptions table
 BuildingMenu.onBuildWaterWell = function( sprites, name, player, objectRecipe, objectOptions)
-    local _waterwell = ISWaterWell:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player))
+    local _waterwell = ISWaterWell:new(sprites.sprite, sprites.northSprite, SandboxVars.BuildingMenuRecipes.maxWaterWellStorageAmount or 1500, getSpecificPlayer(player))
+
+    _waterwell.modData['IsWaterWell'] = true
 
     BuildingMenu.buildObject(_waterwell, name, player, objectRecipe, objectOptions)
 end

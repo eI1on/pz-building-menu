@@ -7,4 +7,9 @@ IGUI_CH = {
     IGUI_BuildingMenuSubCat_Small_Plant_Containers = "小植物容器",
     IGUI_BuildingMenuSubCat_Garden_Fencing = "花園柵欄",
     IGUI_BuildingMenuSubCat_Lab_Containers = "實驗室容器",
+
+    IGUI_BuildingMenuCat_Barricades = "Barricades",
+    IGUI_BuildingMenuSubCat_Low_Barricades = "Low Barricades",
+    IGUI_BuildingMenuSubCat_High_Barricades = "High Barricades",
+
 }

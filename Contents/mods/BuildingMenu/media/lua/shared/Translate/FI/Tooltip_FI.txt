@@ -1645,6 +1645,10 @@ Tooltip_FI = {
   Tooltip_Fireplace = "Klassinen takka lämmitykseen ja ruoanlaittoon. <RGB:1,0.8,0><SPACE> Jos haluat myös karmit, rakenna ne ensin, muuten se menee takan päälle.",
   Tooltip_BuildingMenuObj_Generator = "Generaattori",
   Tooltip_BuildingMenuObj_Metal_Drum = "Metallirumpu",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Miesten huone",
   Tooltip_BuildingMenuObj_Ladies_Room = "Naistenhuone",

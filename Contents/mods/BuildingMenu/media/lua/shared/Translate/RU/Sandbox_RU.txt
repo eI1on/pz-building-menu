@@ -216,6 +216,8 @@ Sandbox_RU = {
     Sandbox_BuildingMenu_metalDrums = "Строительство металлических бочек",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Включите, чтобы добавить возможность строить металлические бочки. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ БЫТОВАЯ И САН- ТЕХНИКА ____________",
@@ -351,6 +353,9 @@ Sandbox_RU = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ СПЕЦИАЛЬНЫЕ ОБЪЕКТЫ ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = = "Это просто для отделения строчки, ничего не делает.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Расход древесины для армейских ящиков",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Определяет сколько досок нужно для строительства армейских ящиков. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
     

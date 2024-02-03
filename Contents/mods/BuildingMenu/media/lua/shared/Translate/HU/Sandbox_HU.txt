@@ -216,6 +216,8 @@ Sandbox_HU = {
     Sandbox_BuildingMenu_metalDrums = "Engedélyezze a fémdobokat",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Fémdobok hozzáadásának engedélyezése. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Készülékek kategória _______________",
@@ -351,6 +353,9 @@ Sandbox_HU = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Speciális tárgyak receptjei _______________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Faanyag költsége katonai ládához",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Beállítja a katonai ládákhoz szükséges deszkákat. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES! <RGB:1,1,1>",
     

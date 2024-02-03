@@ -2,5 +2,6 @@ Tooltip_CN = {
     Tooltip_BuildingMenuObj_Small_Plant_Crate = "带花盆的小纸板箱",
     Tooltip_Random_Garden_Stuff = "改善的末世花园的各种园艺物体和供给。",
     Tooltip_Garden_Fencing = "改善室外空间的园艺装饰栅栏。",
+    Tooltip_Barricade = "A defensive barrier constructed from scrap materials.",
 
 }

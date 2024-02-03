@@ -1645,6 +1645,10 @@ Tooltip_PL = {
   Tooltip_Fireplace = "Klasyczny kominek do ogrzewania i gotowania. <RGB:1,0.8,0><SPACE> Jeśli chcesz także ościeżnice, zbuduj je najpierw, w przeciwnym razie będą one zachodzić na kominek.",
   Tooltip_BuildingMenuObj_Generator = "Generator",
   Tooltip_BuildingMenuObj_Metal_Drum = "Metalowy bęben",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Pokój mężczyzn",
   Tooltip_BuildingMenuObj_Ladies_Room = "Pokój damski",

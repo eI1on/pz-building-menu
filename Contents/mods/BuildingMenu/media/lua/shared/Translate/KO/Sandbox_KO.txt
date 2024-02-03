@@ -216,6 +216,8 @@ Sandbox_KO = {
     Sandbox_BuildingMenu_metalDrums = "금속 드럼 활성화",
     Sandbox_BuildingMenu_metalDrums_tooltip = "금속 드럼을 메뉴에 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 클라이언트 재시작이 필요합니다!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ 가구 카테고리 ____________",
@@ -351,6 +353,9 @@ Sandbox_KO = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ 특수 개체 조리법 ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "군용 상자의 목재 재료 비용",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "군용 상자에 필요한 판자를 설정합니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     

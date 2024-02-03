@@ -1,0 +1,5 @@
+UI_EN = {
+
+    UI_BuildingMenuUI = " <CENTRE> <SIZE:medium> This is the Building Menu. <LINE> <LINE> <SIZE:small> <LEFT> Each tab represents a unique Tilepack addon, where the buildables are sorted into Categories and Subcategories. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> When you hover over a buildable item, the tooltip will display the required items for construction. These requirements dynamically update based on the items in your inventory and those on the surrounding floor within a 3x3 grid of your character. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> To simplify your building process, you can add frequently used Buildables with their recipes to the Favourites tab. For a Subcategory to appear in Favorites, make sure its parent Category it's also favourited.",
+
+}

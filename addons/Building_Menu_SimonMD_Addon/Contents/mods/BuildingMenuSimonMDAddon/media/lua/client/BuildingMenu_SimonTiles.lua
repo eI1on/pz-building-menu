@@ -1151,11 +1151,231 @@ local function addGarageDoorsToMenu()
     BuildingMenu.addObjectsToCategories(
         "Simon MDs",
         getText("IGUI_BuildingMenuCat_Doors"),
-        nil,
+        "furniture_Simon_MD_72",
         getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
         "furniture_Simon_MD_72",
         simonMDGarageDoorsObjects
     )
+end
+
+local function addMetalContainersToMenu()
+    local metalContainers = {
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
+            subCategoryIcon = "furniture_Simon_MD_1",
+            objects = {
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Counter_Generic",
+                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.MetalLockerRecipe,
+                    true,
+                    {
+                        firstItem = "BlowTorch",
+                        secondItem = "WeldingMask",
+                        craftingBank = "BlowTorch",
+                        actionAnim = "BlowTorch",
+                        noNeedHammer = true,
+                        completionSound = "BuildMetalStructureMedium",
+                        containerType = "metal_shelves",
+                        canBeAlwaysPlaced = true,
+                        blockAllTheSquare = true,
+                        canBeLockedByPadlock = true
+                    },
+                    {
+                        sprite = "furniture_Simon_MD_1",
+                        northSprite = "furniture_Simon_MD_0",
+                        eastSprite = "furniture_Simon_MD_3",
+                        southSprite = "furniture_Simon_MD_2"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Counter_Generic",
+                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.MetalGlassCounterRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true
+                    },
+                    {
+                        sprite = "furniture_Simon_MD_5",
+                        northSprite = "furniture_Simon_MD_4",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Counter_Generic",
+                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.MetalGlassCounterRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true
+                    },
+                    {
+                        sprite = "furniture_02_Simon_MD_46",
+                        northSprite = "furniture_02_Simon_MD_47",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Counter_Generic",
+                    BuildingMenu.onBuildDoubleMetalShelf,
+                    BuildingMenu.MetalCounterSmallRecipe,
+                    true,
+                    {
+                        firstItem = "BlowTorch",
+                        secondItem = "WeldingMask",
+                        craftingBank = "BlowTorch",
+                        actionAnim = "BlowTorch",
+                        noNeedHammer = true,
+                        completionSound = "BuildMetalStructureMedium",
+                        containerType = "shelves",
+                        isThumpable = true,
+                        isContainer = true,
+                        blockAllTheSquare = false,
+                        needToBeAgainstWall = true,
+                        canBeAlwaysPlaced = false,
+                        renderFloorHelper = true,
+                        buildLow = true
+                    },
+                    {
+                        sprite = "furniture_Simon_MD_12",
+                        sprite2 = "furniture_Simon_MD_11",
+                        northSprite1 = "furniture_Simon_MD_8",
+                        northSprite2 = "furniture_Simon_MD_9"
+                    }
+                ),
+            }
+        },
+    }
+
+    for k, subCatData in pairs(metalContainers) do
+        BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_Containers"),
+        "furniture_Simon_MD_1",
+        subCatData.subcategoryName,
+        subCatData.subCategoryIcon,
+        subCatData.objects
+        )
+    end
+end
+
+local function addDoubleDoorToMenu()
+    local doubleDoors = {
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Double_Door_Gates"),
+            subCategoryIcon = "fixtures_doors_fences_Simon_MD_0",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Double_Scrap_Door_Gate",
+                    "Tooltip_Scrap_Double_Door_Gate",
+                    BuildingMenu.onDoubleDoor,
+                    BuildingMenu.GarageDoorRecipe,
+                    true,
+                    {
+                        firstItem = "BlowTorch",
+                        secondItem = "WeldingMask",
+                        craftingBank = "BlowTorch",
+                        actionAnim = "BlowTorch",
+                        noNeedHammer = true,
+                        canBarricade = false,
+                        ignoreNorth = true,
+                        completionSound = "BuildMetalStructureLargeWiredFence",
+                        spriteIndex = 8
+                    },
+                    {
+                        sprite = "fixtures_doors_fences_Simon_MD_0",
+                    }
+                )
+            }
+        }
+    }
+
+    for k, subCatData in pairs(doubleDoors) do
+        BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_Doors"),
+        "fixtures_doors_fences_Simon_MD_0",
+        subCatData.subcategoryName,
+        subCatData.subCategoryIcon,
+        subCatData.objects
+        )
+    end
+end
+
+local function addDoorsToMenu()
+    local doors =
+    {
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Scrap_Doors"),
+            subCategoryIcon = "fixtures_doors_Simon_MD_20",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Scrap_Door_1",
+                    "Tooltip_Scrap_Door",
+                    BuildingMenu.onBuildDoor,
+                    BuildingMenu.ScrapDoor1Recipe,
+                    true,
+                    {
+                        firstItem = "BlowTorch",
+                        secondItem = "WeldingMask",
+                        craftingBank = "BlowTorch",
+                        actionAnim = "BlowTorch",
+                        noNeedHammer = true,
+                        completionSound = "BuildMetalStructureMedium",
+                        modData = {wallType = "doorframe"}
+                    },
+                    {
+                        sprite = "fixtures_doors_Simon_MD_20",
+                        northSprite = "fixtures_doors_Simon_MD_21",
+                        openSprite = "fixtures_doors_Simon_MD_22",
+                        openNorthSprite = "fixtures_doors_Simon_MD_23"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Scrap_Door_2",
+                    "Tooltip_Scrap_Door",
+                    BuildingMenu.onBuildDoor,
+                    BuildingMenu.ScrapDoor2Recipe,
+                    true,
+                    {
+                        firstItem = "BlowTorch",
+                        secondItem = "WeldingMask",
+                        craftingBank = "BlowTorch",
+                        actionAnim = "BlowTorch",
+                        noNeedHammer = true,
+                        completionSound = "BuildMetalStructureMedium",
+                        modData = {wallType = "doorframe"}
+                    },
+                    {
+                        sprite = "fixtures_doors_Simon_MD_24",
+                        northSprite = "fixtures_doors_Simon_MD_25",
+                        openSprite = "fixtures_doors_Simon_MD_26",
+                        openNorthSprite = "fixtures_doors_Simon_MD_27"
+                    }
+                ),
+            }
+        }
+    }
+
+    for k, subCatData in pairs(doors) do
+        BuildingMenu.addObjectsToCategories(
+        "Simon MDs",
+        getText("IGUI_BuildingMenuCat_Doors"),
+        "fixtures_doors_Simon_MD_20",
+        subCatData.subcategoryName,
+        subCatData.subCategoryIcon,
+        subCatData.objects
+        )
+    end
 end
 
 local function addCategoriesToBuildingMenu()
@@ -1168,8 +1388,15 @@ local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.roofsCategory then
         addRoofingToMenu()
     end
+    if SandboxVars.BuildingMenu.doorsSubCategory then
+        addDoorsToMenu()
+    end
     if SandboxVars.BuildingMenu.garageDoorsSubCategory then
         addGarageDoorsToMenu()
+        addDoubleDoorToMenu()
+    end
+    if SandboxVars.BuildingMenu.metalContainersSubCategory then
+        addMetalContainersToMenu()
     end
     if SandboxVars.BuildingMenu.simonMDSecretEntrances then
         addSimonMDSecretEntrancesToMenu()

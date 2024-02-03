@@ -216,6 +216,8 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_metalDrums = "メタルドラムを有効にする",
     Sandbox_BuildingMenu_metalDrums_tooltip = "金属ドラムを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ 家電カテゴリ ____________",
@@ -351,6 +353,9 @@ Sandbox_JP = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ 特別なオブジェクトのレシピ ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用箱の木材材料費",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "軍事箱に必要な板をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
     

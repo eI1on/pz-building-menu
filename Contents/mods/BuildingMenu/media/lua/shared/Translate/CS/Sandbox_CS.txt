@@ -216,6 +216,8 @@ Sandbox_CS = {
     Sandbox_BuildingMenu_metalDrums = "Povolit kovové bubny",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Povolit přidání kovových bubnů. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Kategorie spotřebičů _____________",
@@ -351,6 +353,9 @@ Sandbox_CS = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Recepty na speciální předměty _____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Náklady na dřevěný materiál pro vojenskou bednu",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Nastaví prkna potřebná pro vojenské bedny. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
     

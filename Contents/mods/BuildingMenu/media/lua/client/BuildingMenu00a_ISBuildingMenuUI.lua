@@ -267,6 +267,7 @@ function ISBuildingMenuUI:createChildren()
         local tabName = tab.tabName;
         newTab.tab = tabName;
         self.panel:addView(tabName, newTab);
+        newTab.infoText = getText("UI_BuildingMenuUI");
         newTab.parent = self;
 
         if tab.categories then

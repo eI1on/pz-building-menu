@@ -216,6 +216,8 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_metalDrums = "Paganahin ang Metal Drums",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Paganahin ang magdagdag ng mga metal drum. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Kategorya ng Appliances ____________",
@@ -351,6 +353,9 @@ Sandbox_PH = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Mga Recipe ng Espesyal na Bagay ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Gastos sa Wood Material para sa Militar Crate",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Nagtatakda ng mga tabla na kinakailangan para sa mga Military Crates. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
     

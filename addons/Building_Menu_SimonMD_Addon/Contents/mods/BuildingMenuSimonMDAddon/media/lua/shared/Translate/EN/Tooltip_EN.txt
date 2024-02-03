@@ -46,4 +46,11 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Corrugated_Metal_Outer = "Corrugated Metal Outer",
   Tooltip_BuildingMenuObj_Corrugated_Metal_Valley = "Corrugated Metal Valley",
 
+  Tooltip_BuildingMenuObj_Double_Scrap_Door_Gate = "Scrap Double Door Gate",
+  Tooltip_BuildingMenuObj_Scrap_Door_1 = "Half-Metal Plank Door",
+  Tooltip_BuildingMenuObj_Scrap_Door_2 = "Reinforced Metal-Plank Door",
+
+  Tooltip_Scrap_Double_Door_Gate = "A wide gate with double doors made from durable scrap, suitable for larger entrances.",
+  Tooltip_Scrap_Door = "A single, solid door crafted from scrap materials.",
+
 }

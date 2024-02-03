@@ -812,10 +812,70 @@ local function addFridgeAppliancesToMenu()
     )
 end
 
+local function addBarricadesToMenu()
+    local function createBarricadeObject(baseName, spriteNumber, recipe)
+        return BuildingMenu.createObject(
+            "",
+            "Tooltip_Barricade",
+            BuildingMenu.onBuildBarricade,
+            BuildingMenu[recipe],
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructrueLarge",
+                canBeAlwaysPlaced = false,
+                blockAllTheSquare = true,
+                canPassThrough = false,
+                maxTime = 500
+            },
+            {
+                sprite = baseName .. spriteNumber,
+                northSprite = baseName .. spriteNumber
+            }
+        )
+    end
+
+    local barricadeObjects = {}
+    local dataLowBarricades = {1, 3, 4, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 30, 31, 33, 34, 35, 41, 44, 51, 52, 53, 54, 55, 56, 57, 59, 60, 61, 62}
+    for _, spriteNumber in ipairs(dataLowBarricades) do
+        table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks01_", spriteNumber, "LowBarricadeRecipe"))
+    end
+    dataLowBarricades = {1, 9, 10, 11, 12, 14, 15, 17, 19, 24, 25, 27, 28, 30, 31, 32, 36, 38, 40, 44, 49, 50, 53, 54, 55, 56, 57, 60, 62}
+    for _, spriteNumber in ipairs(dataLowBarricades) do
+        table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks02_", spriteNumber, "LowBarricadeRecipe"))
+    end
+    BuildingMenu.addObjectsToCategories(
+        "Dylan",
+        getText("IGUI_BuildingMenuCat_Barricades"),
+        "DylansJunkstacks01_0",
+        getText("IGUI_BuildingMenuSubCat_Low_Barricades"),
+        "DylansJunkstacks01_1",
+        barricadeObjects
+    )
+
+    barricadeObjects = {}
+    local dataHighBarricades = {0, 2, 5, 6, 7, 14,25, 26, 28, 29, 32, 36, 37, 38, 39, 40, 42, 43, 45, 46, 47, 48, 49, 50, 58, 63}
+    for _, startNumber in ipairs(dataHighBarricades) do
+        table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks01_", startNumber, "HighBarricadeRecipe"))
+    end
+    dataHighBarricades = {2, 3, 4, 5, 6, 7, 8, 13, 16, 18, 20, 21, 22, 23, 26, 29, 33, 34, 35, 37, 39, 41, 42, 43, 45, 46, 47, 48, 51, 52, 58, 59, 61, 63}
+    for _, startNumber in ipairs(dataHighBarricades) do
+        table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks02_", startNumber, "HighBarricadeRecipe"))
+    end
+    BuildingMenu.addObjectsToCategories(
+        "Dylan",
+        getText("IGUI_BuildingMenuCat_Barricades"),
+        "DylansJunkstacks01_0",
+        getText("IGUI_BuildingMenuSubCat_High_Barricades"),
+        "DylansJunkstacks01_0",
+        barricadeObjects
+    )
+end
+
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.commercialCountersSubCategory then
         addDylanContainersToMenu()
-
     end
     if SandboxVars.BuildingMenu.metalContainersSubCategory then
         addMetalCountersToMenu()
@@ -825,6 +885,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.fridgeAppliances then
         addFridgeAppliancesToMenu()
+    end
+    if SandboxVars.BuildingMenu.dylanBarricades then
+        addBarricadesToMenu()
     end
 end
 Events.OnGameStart.Add(addCategoriesToBuildingMenu)

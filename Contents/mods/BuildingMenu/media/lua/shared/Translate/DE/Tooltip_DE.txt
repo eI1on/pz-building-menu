@@ -1645,6 +1645,10 @@ Tooltip_DE = {
   Tooltip_Fireplace = "Ein klassischer Kamin zum Wärmen und Kochen. <RGB:1,0.8,0><SPACE> Wenn Sie auch die Pfosten möchten, bauen Sie diese zuerst, sonst überlappen sie den Kamin.",
   Tooltip_BuildingMenuObj_Generator = "Generator",
   Tooltip_BuildingMenuObj_Metal_Drum = "Metalltrommel",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Männerzimmer",
   Tooltip_BuildingMenuObj_Ladies_Room = "Damentoilette",

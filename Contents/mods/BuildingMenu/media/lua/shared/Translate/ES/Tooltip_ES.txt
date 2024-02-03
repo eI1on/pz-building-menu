@@ -1645,6 +1645,10 @@ Tooltip_ES = {
   Tooltip_Fireplace = "Una chimenea clásica para calentarse y cocinar. <RGB:1,0.8,0><SPACE> Si también quieres las jambas, constrúyelas primero, de lo contrario se superpondrán a la chimenea.",
   Tooltip_BuildingMenuObj_Generator = "Generador",
   Tooltip_BuildingMenuObj_Metal_Drum = "tambor metálico",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Cuarto de hombres",
   Tooltip_BuildingMenuObj_Ladies_Room = "Cuarto de damas",

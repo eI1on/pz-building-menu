@@ -216,6 +216,8 @@ Sandbox_FI = {
     Sandbox_BuildingMenu_metalDrums = "Ota metallirummut käyttöön",
     Sandbox_BuildingMenu_metalDrums_tooltip = "Salli metallirumpujen lisääminen. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKASKÄYNNISTYSTÄ!",
 
+    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Kodinkoneet ________________",
@@ -351,6 +353,9 @@ Sandbox_FI = {
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Erikoisobjektien reseptit _______________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
 
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Puumateriaalikustannukset sotilaalliseen häkkiin",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Asettaa sotilaslaatikoihin tarvittavat lankut. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKASKÄYNNISTYSTÄ! <RGB:1,1,1>",
     

@@ -1645,6 +1645,10 @@ Tooltip_PT = {
   Tooltip_Fireplace = "Uma lareira clássica para aquecer e cozinhar. <RGB:1,0.8,0><SPACE> Se você também quiser as ombreiras, construa-as primeiro, caso contrário elas se sobreporão à lareira.",
   Tooltip_BuildingMenuObj_Generator = "Gerador",
   Tooltip_BuildingMenuObj_Metal_Drum = "Tambor metálico",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Quarto de homens",
   Tooltip_BuildingMenuObj_Ladies_Room = "Banheiro feminino",

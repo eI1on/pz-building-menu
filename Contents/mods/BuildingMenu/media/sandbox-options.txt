@@ -609,6 +609,14 @@ option BuildingMenu.metalDrums
     translation = BuildingMenu_metalDrums,
 }
 
+option BuildingMenu.waterWell
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_waterWell,
+}
+
 option BuildingMenu.EmptyBox15
 {
     type = boolean,
@@ -969,6 +977,16 @@ option BuildingMenuRecipes.SpecialObjectsRecipesDivider
     default = false,
     page = BuildingMenuRecipes,
     translation = BuildingMenuRecipes_SpecialObjectsRecipesDivider,
+}
+
+option BuildingMenuRecipes.maxWaterWellStorageAmount
+{
+    type = integer,
+    min = 1,
+    default = 1500,
+    max = 9998,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_maxWaterWellStorageAmount,
 }
 
 option BuildingMenuRecipes.plankCountForMilitaryCrate

@@ -1,0 +1,9 @@
+Sandbox_CN = {
+
+    Sandbox_BuildingMenu_DylanCategoryDivider = "_______________ Dylan Specific Categories _______________",
+    Sandbox_BuildingMenu_DylanCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_dylanBarricades = "Enable Barricades Category",
+    Sandbox_BuildingMenu_dylanBarricades_tooltip = "Enable to add barricades. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+
+}

@@ -1645,6 +1645,10 @@ Tooltip_CS = {
   Tooltip_Fireplace = "Klasický krb pro teplo a vaření. <RGB:1,0.8,0><SPACE> Pokud chcete i zárubně, postavte je nejprve, jinak budou překrývat krb.",
   Tooltip_BuildingMenuObj_Generator = "Generátor",
   Tooltip_BuildingMenuObj_Metal_Drum = "Kovový buben",
+  Tooltip_BuildingMenuObj_Water_Well = "Water Well",
+
+  Tooltip_Generator = "Generates power for your structures.",
+  Tooltip_Water_Well = "Provides a steady supply of water.",
 
   Tooltip_BuildingMenuObj_Mens_Room = "Pánské toalety",
   Tooltip_BuildingMenuObj_Ladies_Room = "Dámská toaleta",
