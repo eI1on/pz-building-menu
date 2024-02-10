@@ -20,6 +20,7 @@ IGUI_IT = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Mattone bianco",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Mattone verde",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Mattone marrone",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Assicella blu",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Assicella marrone chiaro",

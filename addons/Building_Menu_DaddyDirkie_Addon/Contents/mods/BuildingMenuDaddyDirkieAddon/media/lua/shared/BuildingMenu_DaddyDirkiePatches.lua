@@ -56,11 +56,12 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     --     BM_Utils.unsetSpriteProperty(props, "windowW");
     -- end
 
-    -- sprites = {
-    --     "edit_ddd_RUS_Forest Survival_01_13",
-    -- }
-    -- for _, sprite in ipairs(sprites) do
-    --     local props = manager:getSprite(sprite):getProperties()
-    --     BM_Utils.unsetSpriteProperty(props, "windowN");
-    -- end
+    sprites = {
+        "edit_ddd_RUS_Forest Survival_01_13",
+        "building_menu_03_ddd_Forest_Survival_13"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        props:UnSet(IsoFlagType.windowN);
+    end
 end)

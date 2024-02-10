@@ -20,7 +20,8 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "하얀 벽돌",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "녹색 벽돌",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "갈색 벽돌",
-    
+        IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
+
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "파란 판자",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "황갈색 판자",
     IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard = "분홍 판자",

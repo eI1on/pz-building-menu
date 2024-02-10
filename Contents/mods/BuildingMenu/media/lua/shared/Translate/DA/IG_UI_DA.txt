@@ -20,6 +20,7 @@ IGUI_DA = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Hvid mursten",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Grøn Mursten",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Brun mursten",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Blå klapbræt",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tan Clapboard",

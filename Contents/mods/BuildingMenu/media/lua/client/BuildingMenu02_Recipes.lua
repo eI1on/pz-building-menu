@@ -1416,6 +1416,40 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.YellowBigWoodWindowWallRecipe = {
+        neededTools = {
+            "Hammer",
+            "Paintbrush"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                Material = "Base.Nails",
+                Amount = bigWallNailsCount
+            },
+            {
+                Material = "Base.GlassPane",
+                Amount = glassPaneCount
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.PaintYellow",
+                Amount = 1
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+            }
+        }
+    }
+
     BuildingMenu.BigWoodWallRecipe = {
         neededTools = {
             "Hammer"
@@ -2918,7 +2952,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount*1.25)
+                Amount = BuildingMenu.round(bigWallWoodCount*1.5)
             },
             {
                 Material = 'Base.SheetMetal',
@@ -2950,13 +2984,13 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "MetalWelding",
-                Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Level = 7,
+                Xp = BuildingMenu.round(7*metalweldingXpPerLevel)
             },
             {
                 Skill = "Woodwork",
-                Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill*1.75),
+                Xp = BuildingMenu.round(1.75*bigObjectsCarpentrySkill*carpentryXpPerLevel)
             }
         }
     }
@@ -3004,8 +3038,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "MetalWelding",
-                Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Level = 6,
+                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
             },
             {
                 Skill = "Woodwork",

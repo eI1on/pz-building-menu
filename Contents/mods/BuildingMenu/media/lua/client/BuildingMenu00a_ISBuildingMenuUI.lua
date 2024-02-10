@@ -119,10 +119,12 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
     local objData = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1]
 
     if objData and objData.canBuild then
+        local playerNum = self.character:getPlayerNum()
         local spritesName = objData.objDef.data.sprites
         local objectName = objData.objDef.name
         local recipe = objData.objDef.data.recipe
         local options = objData.objDef.data.options
+        local onBuild = objData.objDef.data.action
 
         local modifiedOptions = {}
         for k, v in pairs(options) do
@@ -131,9 +133,14 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
         if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
             modifiedOptions.isThumpable = false
         end
-        local onBuild = objData.objDef.data.action
 
-        onBuild(spritesName, objectName, self.character:getPlayerNum(), recipe, modifiedOptions)
+        -- passing the name break the ISMetalDrum and RainCollectorBarrel objects
+        if objData.objDef.data.action == BuildingMenu.onMetalDrum or objData.objDef.data.action == BuildingMenu.onRainCollectorBarrel then
+            objectName = nil -- set objectName to nil for these specific actions
+        end
+
+        local object = onBuild(spritesName, objectName, playerNum);
+        BuildingMenu.buildObject(object, objectName, playerNum, recipe, modifiedOptions);
     end
 end
 

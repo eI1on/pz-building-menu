@@ -20,6 +20,7 @@ IGUI_CH = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "白磚墻",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "綠磚墻",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "褐色磚墻",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard       = "藍色隔板墻",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard        = "棕色隔板墻",

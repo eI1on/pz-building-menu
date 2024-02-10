@@ -20,6 +20,7 @@ IGUI_CS = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Bílá cihla",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Zelená cihla",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Hnědá cihla",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Modrá šindel",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tan Clapboard",

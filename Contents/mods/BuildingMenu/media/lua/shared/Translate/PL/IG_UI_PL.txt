@@ -20,6 +20,7 @@ IGUI_PL = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Biała cegła",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Zielona Cegła",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Brązowa cegła",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Niebieska klapa",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Brązowa klapa",

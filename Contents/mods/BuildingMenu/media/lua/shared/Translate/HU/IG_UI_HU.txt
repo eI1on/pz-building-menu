@@ -20,6 +20,7 @@ IGUI_HU = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Fehér tégla",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Zöld Tégla",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Barna tégla",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Kék deszka",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tan Clapboard",

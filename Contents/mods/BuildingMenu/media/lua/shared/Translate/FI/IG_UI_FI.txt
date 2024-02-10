@@ -20,6 +20,7 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Valkoinen tiili",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Vihreä tiili",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Ruskea tiili",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Sininen limivuorauslauta",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tan Limivuorauslauta",

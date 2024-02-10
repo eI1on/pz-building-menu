@@ -20,6 +20,7 @@ IGUI_DE = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Weißer Ziegelstein",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Grüner Ziegelstein",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Brauner Ziegelstein",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Blaue Schindel",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Hellbraune Schindeln",

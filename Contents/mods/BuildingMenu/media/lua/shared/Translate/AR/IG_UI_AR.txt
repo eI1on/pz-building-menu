@@ -20,6 +20,7 @@ IGUI_AR = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Ladrillo Blanco",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Ladrillo Verde",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Ladrillo marrón",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "tablilla azul",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "tablilla color canela",

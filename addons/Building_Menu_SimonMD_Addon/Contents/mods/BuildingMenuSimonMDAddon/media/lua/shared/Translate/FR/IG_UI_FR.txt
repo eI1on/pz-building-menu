@@ -1,0 +1,11 @@
+IGUI_FR = {
+
+    IGUI_BuildingMenuCat_SimonMD_Others = "Autres",
+    IGUI_BuildingMenuSubCat_SimonMD_Secret_Entrances = "EntrÃ©es secrÃ¨tes",
+    
+    IGUI_BuildingMenuSubCat_Walls_Scrap = "Murs en ferraille",
+    IGUI_BuildingMenuSubCat_Roofing_Scrap = "Toits en ferraille",
+    IGUI_BuildingMenuSubCat_High_Fences_Scrap = "Scrap High Fences",
+    IGUI_BuildingMenuSubCat_Scrap_Doors = "Scrap Doors",
+
+}

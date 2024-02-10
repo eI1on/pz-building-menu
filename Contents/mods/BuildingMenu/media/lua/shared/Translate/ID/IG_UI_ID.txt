@@ -20,6 +20,7 @@ IGUI_ID = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Bata Putih",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Bata Hijau",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Bata Coklat",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Papan Berdinding Biru",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Papan Berdinding Tan",

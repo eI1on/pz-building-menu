@@ -20,6 +20,7 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Witte baksteen",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Groene baksteen",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Bruine baksteen",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Blauwe dakspaan",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Bruine dakspaan",

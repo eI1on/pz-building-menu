@@ -1,0 +1,15 @@
+IGUI_FR = {
+    IGUI_BuildingMenuSubCat_Containers_Block_Trasher = "Barricade",
+
+    IGUI_BuildingMenuCat_Garden_Stuff = "Trucs de jardin",
+    IGUI_BuildingMenuSubCat_Plant_Containers = "Conteneurs Ã  plantes",
+    IGUI_BuildingMenuSubCat_Plant_Shelves = "Ã‰tagÃ¨res pour plantes",
+    IGUI_BuildingMenuSubCat_Small_Plant_Containers = "Petits contenants pour plantes",
+    IGUI_BuildingMenuSubCat_Garden_Fencing = "ClÃ´ture de jardin",
+    IGUI_BuildingMenuSubCat_Lab_Containers = "Conteneurs de laboratoire",
+    
+    IGUI_BuildingMenuCat_Barricades = "Barricades",
+    IGUI_BuildingMenuSubCat_Low_Barricades = "Low Barricades",
+    IGUI_BuildingMenuSubCat_High_Barricades = "High Barricades",
+
+}

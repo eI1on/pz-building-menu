@@ -1,0 +1,11 @@
+Sandbox_FR = {
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider = "_______________ CatÃ©gories spÃ©cifiques Melos Tiles _______________",
+    Sandbox_BuildingMenu_MelosTilesCategoryDivider_tooltip = "Il ne s'agit que d'un sÃ©parateur de ligne, le cocher n'a aucun effet.",
+
+    Sandbox_BuildingMenu_melosTilesCastleWalls = "Activer la catÃ©gorie des murs de chÃ¢teau",
+    Sandbox_BuildingMenu_melosTilesCastleWalls_tooltip = "Permet d'ajouter des structures de chÃ¢teau. <LINE><LINE> <RGB:1,0,0> NÃ‰CESSITE UN REDÃ‰MARRAGE DU JEU COTÃ‰ CLIENT !",
+
+    Sandbox_BuildingMenu_melosTilesBathroomWalls = "Activer la catÃ©gorie des murs de salle de bains",
+    Sandbox_BuildingMenu_melosTilesBathroomWalls_tooltip = "Permet d'ajouter des structures de salle de bains. <LINE><LINE> <RGB:1,0,0> NÃ‰CESSITE UN REDÃ‰MARRAGE DU JEU COTÃ‰ CLIENT !",
+
+}

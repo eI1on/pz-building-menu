@@ -20,6 +20,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Tijolo Branco",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Tijolo Verde",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Tijolo Marrom",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Tábua de Alvenaria Azul",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tábua de Alvenaria Bege",

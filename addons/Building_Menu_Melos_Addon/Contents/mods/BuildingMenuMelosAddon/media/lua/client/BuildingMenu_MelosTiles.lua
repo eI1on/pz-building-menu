@@ -17245,8 +17245,8 @@ local function addWindowsPlusToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_57",
-                northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_58",
+                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_58",
+                northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_57",
                 corner = "melos_tiles_windows_triple_large_dark_red_brick_01_61"
             }
         ),
@@ -17305,8 +17305,8 @@ local function addWindowsPlusToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_78",
-                northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_79",
+                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_79",
+                northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_78",
                 corner = "melos_tiles_windows_triple_large_dark_red_brick_01_87"
             }
         ),
@@ -17570,8 +17570,8 @@ local function addWindowsPlusToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "melos_tiles_windows_triple_large_grey_brick_01_57",
-                northSprite = "melos_tiles_windows_triple_large_grey_brick_01_58",
+                sprite = "melos_tiles_windows_triple_large_grey_brick_01_58",
+                northSprite = "melos_tiles_windows_triple_large_grey_brick_01_57",
                 corner = "melos_tiles_windows_triple_large_grey_brick_01_61"
             }
         ),
@@ -17630,8 +17630,8 @@ local function addWindowsPlusToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "melos_tiles_windows_triple_large_grey_brick_01_78",
-                northSprite = "melos_tiles_windows_triple_large_grey_brick_01_79",
+                sprite = "melos_tiles_windows_triple_large_grey_brick_01_79",
+                northSprite = "melos_tiles_windows_triple_large_grey_brick_01_78",
                 corner = "melos_tiles_windows_triple_large_grey_brick_01_87"
             }
         ),
@@ -17690,7 +17690,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_1_Left",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17703,7 +17703,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_1_Middle",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17716,7 +17716,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_1_Right",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17729,7 +17729,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_2_Left",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17742,7 +17742,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_2_Middle",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17755,7 +17755,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_2_Right",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17768,7 +17768,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_3_Left",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17781,7 +17781,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_3_Middle",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17794,7 +17794,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall_3_Right",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17807,7 +17807,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Wall",
             "Tooltip_Melos_Yellow_Brick_Glass_Wall",
             BuildingMenu.onBuildWindowWall,
-            BuildingMenu.BrownBigWoodWindowWallRecipe,
+            BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
             {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
             {
@@ -17820,7 +17820,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Pillar",
             "Tooltip_Melos_Yellow_Brick_Glass_Pillar",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "Build",
@@ -17842,7 +17842,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Post",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing_Post",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",
@@ -17864,7 +17864,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Railing",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",
@@ -17884,7 +17884,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Railing",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",
@@ -17895,8 +17895,8 @@ local function addWindowsPlusToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_57",
-                northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_58",
+                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_58",
+                northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_57",
                 corner = "melos_tiles_windows_triple_large_yellow_brick_01_61"
             }
         ),
@@ -17904,7 +17904,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Corner",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing_Post",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",
@@ -17924,7 +17924,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Railing",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",
@@ -17944,7 +17944,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Railing",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",
@@ -17955,8 +17955,8 @@ local function addWindowsPlusToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_78",
-                northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_79",
+                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_79",
+                northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_78",
                 corner = "melos_tiles_windows_triple_large_yellow_brick_01_87"
             }
         ),
@@ -17964,7 +17964,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Corner",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing_Post",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",
@@ -17984,7 +17984,7 @@ local function addWindowsPlusToMenu()
             "Tooltip_BuildingMenuObj_Melos_Yellow_Brick_Glass_Post",
             "Tooltip_Melos_Yellow_Brick_Glass_Railing_Post",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BrownSmallWoodWallRecipe,
+            BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
                 actionAnim = "BuildLow",

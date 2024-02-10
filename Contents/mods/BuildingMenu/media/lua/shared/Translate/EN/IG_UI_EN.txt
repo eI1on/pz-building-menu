@@ -20,6 +20,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "White Brick",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Green Brick",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Brown Brick",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Blue Clapboard",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tan Clapboard",

@@ -141,7 +141,7 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(player, context, worldobjec
         BuildingMenu.playerCanPlaster = false
     end
 
-    local option = context:addOptionOnTop(getText("ContextMenu_BuildingMenu"), worldobjects, function()
+    local option = context:insertOptionBefore(getText("ContextMenu_Build"), getText("ContextMenu_BuildingMenu"), worldobjects, function()
         local x = getCore():getScreenWidth()/1.5;
         local y = getCore():getScreenHeight()/7.5;
         ISBuildingMenuUI.openPanel(x, y, playerObj);
@@ -543,6 +543,9 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
         end
     end
 
+
+
+    
     tooltip.description = tooltip.description .. BuildingMenu.textCanRotate;
 
     if ISBuildMenu.cheat then

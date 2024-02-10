@@ -1,19 +1,65 @@
+11 FEB 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Updated PTBR translations
+[*] Added Classic Bricks
+[*] Added Black Low Table
+[*] Building Menu option is now right refore the vanilla carpentry options 
+[/list]
+Melos's addon:
+[list]
+[*] Added FR translations
+[*] Fixed Brick Triple Railings sprites directions 
+[/list]
+DaddyDirkie's addon:
+[list]
+[*] Added FR translations
+[/list]
+Dylan's addon:
+[list]
+[*] Added FR translations
+[/list]
+PertParty's addon:
+[list]
+[*] Added FR translations
+[/list]
+SimonMD's addon:
+[list]
+[*] Added FR translations
+[/list]
+[/list]
+
+
 03 FEB 24
+
+
+Changelog:
 86e1e7d
 
 Changelog:
 [list]
 Main mod:
+[list]
 [*] Added info panel in the Building Menu UI
 [*] Added Water Wells (toggleable in sandbox options, default - disabled) + Sandbox option to change Max Water Well Storage Amount (default - 1500)
 [*] Updated FAQ
+[/list]
 SimonMD's addon:
+[list]
 [*] Added High Scrap Fences, Scrap Double Gates, Scrap Doors, Military Lockers + Recipes
+[/list]
 Dylan's addon:
+[list]
 [*] Added Barricades (toggleable in sandbox options, default disabled) + Recipes
+[/list]
 DaddyDirkie's addon:
+[list]
 [*] Organised Doors
 [*] Updated Recipes
+[/list]
 [/list]
 
 31 JAN 24
