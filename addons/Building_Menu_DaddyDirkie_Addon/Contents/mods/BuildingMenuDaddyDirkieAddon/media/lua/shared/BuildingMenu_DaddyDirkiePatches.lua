@@ -27,41 +27,33 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     }
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "container", "crate", false);
-        BM_Utils.setSpriteProperty(props, "container", "", true);
+        BM_Utils.setSpriteProperty(props, "container", "", false);
+        BM_Utils.setSpriteProperty(props, "container", "crate", true);
         BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "IsMovAble", "", false);
         BM_Utils.setSpriteProperty(props, "PickUpWeight", "100", false);
+        props:CreateKeySet();
     end
 
     -- Not working, idk why.
-    -- sprites = {
-    --     "edit_ddd_RUS_Forest Survival_01_0",
-    -- }
-    -- for _, sprite in ipairs(sprites) do
-    --     local props = manager:getSprite(sprite):getProperties()
-    --     BM_Utils.unsetSpriteProperty(props, IsoFlagType.NoWallLighting);
-    --     BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedFloor); -- tried with both
-    --     BM_Utils.unsetSpriteProperty(props, "NoWallLighting");
-    --     BM_Utils.unsetSpriteProperty(props, "attachedFloor");
-    -- end
-
-    -- sprites = {
-    --     "edit_ddd_RUS_Forest Survival_01_8",
-    -- }
-    -- for _, sprite in ipairs(sprites) do
-    --     local props = manager:getSprite(sprite):getProperties()
-    --     BM_Utils.unsetSpriteProperty(props, "windowW");
-    -- end
+    sprites = {
+        "edit_ddd_RUS_Forest Survival_01_0",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.NoWallLighting);
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedFloor);
+        props:CreateKeySet();
+    end
 
     sprites = {
         "edit_ddd_RUS_Forest Survival_01_13",
-        "building_menu_03_ddd_Forest_Survival_13"
     }
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties()
         props:UnSet(IsoFlagType.windowN);
+        props:CreateKeySet();
     end
 end)

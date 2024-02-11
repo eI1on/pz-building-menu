@@ -10,8 +10,9 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     }
 
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "100", false);
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -29,7 +30,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "MoveType", "Window", false);
         BM_Utils.setSpriteProperty(props, "CustomName", "Large White Window", false);
         BM_Utils.setSpriteProperty(props, "GroupName", "Wooden", false);
-
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -43,6 +44,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         local props = manager:getSprite(sprite):getProperties();
         BM_Utils.unsetSpriteProperty(props, "BlocksPlacement");
         BM_Utils.unsetSpriteProperty(props, IsoFlagType.solidtrans);
+        props:CreateKeySet();
     end
 
     local props = manager:getSprite("fencing_01_96"):getProperties();
@@ -51,6 +53,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false);
     BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
     BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false);
+    props:CreateKeySet();
 
 
     sprites = {
@@ -68,5 +71,6 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "container", "crate", false);
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
     end
 end)

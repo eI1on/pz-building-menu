@@ -35,9 +35,10 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_walls_garage_02_98"
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "WallW", "", false);
         BM_Utils.setSpriteProperty(props, "WallW", "", true);
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -73,9 +74,10 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_walls_garage_02_101"
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "WallN", "", false);
         BM_Utils.setSpriteProperty(props, "WallN", "", true);
+        props:CreateKeySet();
     end
 
 
@@ -98,12 +100,13 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_gardencenter_02_119"
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "100", false);
         BM_Utils.setSpriteProperty(props, "container", "logs", false);
         BM_Utils.setSpriteProperty(props, "container", "", true);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "IsMovAble", "", true);
+        BM_Utils.setSpriteProperty(props, "IsMovAble", "", false);
+        props:CreateKeySet();
     end
 end)

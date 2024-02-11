@@ -2587,7 +2587,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             },
             {
                 sprite = "edit_ddd_RUS_Forest Survival_01_12",
-                northSprite = "building_menu_03_ddd_Forest_Survival_13",
+                northSprite = "edit_ddd_RUS_Forest Survival_01_13",
                 corner = "edit_ddd_RUS_Forest Survival_01_5"
             }
         ),

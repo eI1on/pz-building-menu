@@ -7,8 +7,9 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "DylansRandomFurniture01_9"
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -22,7 +23,8 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "DarthGunStore_15"
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "80", false);
+        props:CreateKeySet();
     end
 end)

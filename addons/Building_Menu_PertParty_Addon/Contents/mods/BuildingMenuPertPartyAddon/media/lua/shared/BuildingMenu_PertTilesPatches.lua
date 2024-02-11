@@ -14,9 +14,10 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     }
 
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "IsoType", "IsoTelevision", false);
         BM_Utils.setSpriteProperty(props, "CustomItem", "Radio.TvMonster", false);
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -25,8 +26,9 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "pert_Christmas_01_4",
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowW);
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -34,8 +36,9 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "pert_Christmas_01_5",
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -43,9 +46,10 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "pert_Christmas_01_12",
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "IsoType", "IsoThumpable", false);
         BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowW);
+        props:CreateKeySet();
     end
 
     sprites = {
@@ -53,9 +57,10 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "pert_Christmas_01_13",
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "IsoType", "IsoThumpable", false);
         BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
+        props:CreateKeySet();
     end
     
     sprites = {
@@ -63,11 +68,12 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "pert_Christmas_01_87",
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "IsoType", "IsoThumpable", false);
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
         BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        props:CreateKeySet();
     end
         
     sprites = {
@@ -94,7 +100,8 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "pert_Christmas_02_15"
     }
     for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
+        local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        props:CreateKeySet();
     end
 end)
