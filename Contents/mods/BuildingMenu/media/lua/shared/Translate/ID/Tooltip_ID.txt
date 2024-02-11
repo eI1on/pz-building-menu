@@ -1100,6 +1100,7 @@ Tooltip_ID = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Kaca Bernada 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Kaca Bernada 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Kaca Bernada 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Kaca Bagian Dalam 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Kaca Bagian Dalam 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Kaca Bagian Dalam 3",

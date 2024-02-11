@@ -1100,6 +1100,7 @@ Tooltip_PH = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Glass pitched 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Glass pitched 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Glass pitched 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Salamin sa loob 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Salamin sa loob 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Salamin sa loob 3",

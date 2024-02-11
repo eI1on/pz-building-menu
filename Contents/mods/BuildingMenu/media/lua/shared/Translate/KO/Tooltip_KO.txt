@@ -1100,6 +1100,7 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "유리 경사 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "유리 경사 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "유리 경사 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "유리 안쪽 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "유리 안쪽 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "유리 안쪽 3",

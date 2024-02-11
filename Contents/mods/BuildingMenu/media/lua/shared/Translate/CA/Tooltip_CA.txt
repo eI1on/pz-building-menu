@@ -1100,6 +1100,7 @@ Tooltip_CA = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Lluita de vidre 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Glass Pitched 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Glass Pitched 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Interior de vidre 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Interior de vidre 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Interior de vidre 3",

@@ -1099,6 +1099,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "玻璃傾斜1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "玻璃傾斜2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "玻璃傾斜3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "玻璃內部1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "玻璃內部2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "玻璃內部3",

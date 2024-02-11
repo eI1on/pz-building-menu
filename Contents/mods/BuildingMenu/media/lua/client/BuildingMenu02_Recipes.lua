@@ -1811,6 +1811,40 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.GreyBigWoodWindowWallRecipe = {
+        neededTools = {
+            "Hammer",
+            "Paintbrush"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                Material = "Base.Nails",
+                Amount = bigWallNailsCount
+            },
+            {
+                Material = "Base.GlassPane",
+                Amount = glassPaneCount
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.PaintGrey",
+                Amount = 1
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+            }
+        }
+    }
+
     BuildingMenu.GreySmallWoodWallRecipe = {
         neededTools = {
             "Hammer",
@@ -5146,6 +5180,53 @@ local function initBuildingMenuRecipes()
             {
                 Consumable = "Base.BucketWaterFull",
                 Amount = 5
+            },
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+            },
+            {
+                Skill = "Farming",
+                Level = 2,
+                Xp = 15
+            }
+        }
+    }
+
+    BuildingMenu.SmallPlantBoxRecipe = {
+        neededTools = {
+            "Shovel",
+            "Hammer"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SheetPaper2",
+                Amount = 15
+            },
+            {
+                Material = "Base.Plank",
+                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5),
+            },
+            {
+                Material = "Base.Nails",
+                Amount = BuildingMenu.round(smallObjectsNailsCount*0.5),
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Glue",
+                Amount = 4
+            },
+            {
+                Consumable = "Base.Dirtbag",
+                Amount = 1
+            },
+            {
+                Consumable = "Base.BucketWaterFull",
+                Amount = 2
             },
         },
         skills = {

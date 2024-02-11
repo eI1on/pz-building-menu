@@ -1100,6 +1100,7 @@ Tooltip_AR = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Vidrio inclinado 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Vidrio inclinado 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Vidrio inclinado 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Vidrio interior 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Vidrio interior 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Vidrio interior 3",

@@ -309,7 +309,7 @@ local function addGardenStuffToMenu()
             "Tooltip_BuildingMenuObj_Small_Plant_Crate",
             "Tooltip_Random_Garden_Stuff",
             BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.PlantCrateRecipe,
+            BuildingMenu.SmallPlantBoxRecipe,
             true,
             {
                 actionAnim = "Build",

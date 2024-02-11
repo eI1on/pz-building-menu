@@ -1100,6 +1100,7 @@ Tooltip_CS = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Sklo nakloněno 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Sklo Pitched 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Sklo nakloněno 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Skleněný vnitřek 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Skleněný vnitřek 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Skleněný vnitřek 3",

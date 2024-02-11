@@ -1100,6 +1100,7 @@ Tooltip_PT = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Vidro Inclinado 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Vidro Inclinado 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Vidro Inclinado 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Vidro Interno 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Vidro Interno 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Vidro Interno 3",

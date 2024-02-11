@@ -5,9 +5,8 @@ Changelog:
 Main mod:
 [list]
 [*] Updated PTBR translations
-[*] Added Classic Bricks
-[*] Added Black Low Table
-[*] Building Menu option is now right refore the vanilla carpentry options 
+[*] Added Classic Bricks and Black Low Table, Half Pitched Glass Roof
+[*] Moved BM option right above the vanilla Carpentry option 
 [/list]
 Melos's addon:
 [list]

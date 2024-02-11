@@ -1099,6 +1099,7 @@ Tooltip_CN = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "玻璃倾斜1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "玻璃倾斜2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "玻璃倾斜3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "玻璃内部1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "玻璃内部2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "玻璃内部3",

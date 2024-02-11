@@ -1100,6 +1100,7 @@ Tooltip_DA = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Glashældning 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Glaspitched 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Glashældning 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Indvendig glas 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Glas indre 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Glas indre 3",

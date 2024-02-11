@@ -1100,6 +1100,7 @@ Tooltip_HU = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Üveghajlásszög 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Üveghajlású 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Üveghajlású 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Üveg belső 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Üveg belső 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Üveg belső 3",

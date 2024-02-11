@@ -1100,6 +1100,7 @@ Tooltip_NL = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Glas gekanteld 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Glas gekanteld 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Geschoten glas 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Glazen binnenkant 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Glazen binnenkant 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Glazen binnenkant 3",

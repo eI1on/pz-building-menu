@@ -1100,6 +1100,7 @@ Tooltip_RO = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Sticlă înclinată 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Sticla Pitched 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Sticla pitched 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Interior din sticlă 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Interior de sticlă 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Interior de sticlă 3",

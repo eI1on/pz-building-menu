@@ -13296,6 +13296,25 @@ local function addRoofingToMenu()
                     {sprite = "roofs_02_34", northSprite = "roofs_02_35"}
                 ),
                 BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Glass_Half_Pitched_3",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.GlassRoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {sprite = "roofs_02_79", northSprite = "roofs_02_78"}
+                ),
+                BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Inner_1",
                     "Tooltip_Roof_Generic",
                     BuildingMenu.onBuildSimpleFurniture,

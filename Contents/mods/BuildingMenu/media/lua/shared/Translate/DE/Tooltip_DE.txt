@@ -1100,6 +1100,7 @@ Tooltip_DE = {
   Tooltip_BuildingMenuObj_Glass_Pitched_1 = "Glasschräge 1",
   Tooltip_BuildingMenuObj_Glass_Pitched_2 = "Glasschräge 2",
   Tooltip_BuildingMenuObj_Glass_Pitched_3 = "Glasaufstellung 3",
+  Tooltip_BuildingMenuObj_Glass_Half_Pitched_3 = "Glass Half Pitched 3",
   Tooltip_BuildingMenuObj_Glass_Inner_1 = "Glas innen 1",
   Tooltip_BuildingMenuObj_Glass_Inner_2 = "Glas innen 2",
   Tooltip_BuildingMenuObj_Glass_Inner_3 = "Glas innen 3",
