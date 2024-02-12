@@ -40,6 +40,8 @@ description=This mod inherits its core from [url=https://steamcommunity.com/shar
 description=
 description=Glass items and methods to create them are sourced from [url=https://steamcommunity.com/id/orcicorn]Orc[/url]'s mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2800412098]Improvised Glass[/url]. Which is [b]incompatible[/b] with this mod, because the windows are already added to the building menu.
 description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2883755057][b] 41.78+ Propane Torch Fix [/b][/url] is redundant because Building Menu already let's you modify the [b]Blow Torch[/b] uses in the Sandbox options.
+description=
 description=[h1] Bug Reports: [/h1]
 description=
 description= Check the known issues list in the [url=https://steamcommunity.com/workshop/filedetails/discussion/3067798182/4132682727127121310/] discussions thread [/url] first!

@@ -81,6 +81,8 @@ description=Glass items and methods to create them are sourced from [url=https:/
 description=
 description=[b]DO NOT USE [/b] mods like [i]More Builds, Lite, Expand, Improvised,[/i] and such. All can and will cause errors along with the Building Menu, some override vanilla files to add buildables (which is the worst thing they could do) that BM needs.
 description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2883755057][b] 41.78+ Propane Torch Fix [/b][/url] is redundant because Building Menu already let's you modify the [b]Blow Torch[/b] uses in the Sandbox options.
+description=
 description=[h1] Bug Reports: [/h1]
 description=
 description= Check the known issues list in the [url=https://steamcommunity.com/workshop/filedetails/discussion/3067798182/4132682727127121310/] discussions thread [/url] first!
