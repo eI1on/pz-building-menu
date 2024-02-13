@@ -148,6 +148,9 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Coșuri de Gunoi",
     IGUI_BuildingMenuSubCat_Containers_Others = "Altele",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Mobilă",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Mese Mici",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Mese Mari",

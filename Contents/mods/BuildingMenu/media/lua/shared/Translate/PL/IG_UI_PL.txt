@@ -148,6 +148,9 @@ IGUI_PL = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Kosze na śmieci",
     IGUI_BuildingMenuSubCat_Containers_Others = "Inni",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Meble",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Małe stoły",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Duże stoły",

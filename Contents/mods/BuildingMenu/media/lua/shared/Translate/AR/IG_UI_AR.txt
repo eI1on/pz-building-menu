@@ -148,6 +148,9 @@ IGUI_AR = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Botes de basura",
     IGUI_BuildingMenuSubCat_Containers_Others = "Otros",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Muebles",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Mesas Pequeñas",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Mesas Grandes",

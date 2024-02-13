@@ -424,6 +424,30 @@ option BuildingMenu.EmptyBox11
     translation = BuildingMenu_EmptyBox,
 }
 
+option BuildingMenu.RecreationalCategoryDivider
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_RecreationalCategoryDivider,
+}
+
+option BuildingMenu.musicSubCategory
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_musicSubCategory,
+}
+
+option BuildingMenu.EmptyBox12
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_EmptyBox,
+}
+
 option BuildingMenu.FurnitureCategoryDivider
 {
     type = boolean,
@@ -472,7 +496,7 @@ option BuildingMenu.dressersAndWardrobesSubCategory
     translation = BuildingMenu_dressersAndWardrobesSubCategory,
 }
 
-option BuildingMenu.EmptyBox12
+option BuildingMenu.EmptyBox13
 {
     type = boolean,
     default = false,
@@ -520,7 +544,7 @@ option BuildingMenu.otherDecorationsSubCategory
     translation = BuildingMenu_otherDecorationsSubCategory,
 }
 
-option BuildingMenu.EmptyBox13
+option BuildingMenu.EmptyBox14
 {
     type = boolean,
     default = false,
@@ -568,7 +592,7 @@ option BuildingMenu.landscapingSubCategory
     translation = BuildingMenu_landscapingSubCategory,
 }
 
-option BuildingMenu.EmptyBox14
+option BuildingMenu.EmptyBox15
 {
     type = boolean,
     default = false,
@@ -617,7 +641,7 @@ option BuildingMenu.waterWell
     translation = BuildingMenu_waterWell,
 }
 
-option BuildingMenu.EmptyBox15
+option BuildingMenu.EmptyBox16
 {
     type = boolean,
     default = false,

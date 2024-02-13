@@ -148,6 +148,9 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Мусорные баки",
     IGUI_BuildingMenuSubCat_Containers_Others = "Прочее",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Мебель",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Маленькие столы",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Большие столы",

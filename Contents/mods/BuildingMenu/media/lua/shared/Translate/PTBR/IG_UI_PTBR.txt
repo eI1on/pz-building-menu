@@ -148,6 +148,9 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Lata de Lixo",
     IGUI_BuildingMenuSubCat_Containers_Others = "Outro",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Móveis",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Mesa Pequena",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Mesa Grande",

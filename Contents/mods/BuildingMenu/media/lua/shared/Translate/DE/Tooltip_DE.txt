@@ -1631,6 +1631,8 @@ Tooltip_DE = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Holzfassregale 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Holzfassregale 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Große Wandregale",
   Tooltip_Dresser = "Eine stabile Holzkommode zur Aufbewahrung von Kleidung und persönlichen Gegenständen.",
 

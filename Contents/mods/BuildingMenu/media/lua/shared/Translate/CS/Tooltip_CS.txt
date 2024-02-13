@@ -1631,6 +1631,8 @@ Tooltip_CS = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Dřevěné sudové police 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Dřevěné sudové police 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Velké nástěnné police",
   Tooltip_Dresser = "Robustní dřevěná komoda pro ukládání oblečení a osobních věcí.",
 

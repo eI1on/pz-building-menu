@@ -148,6 +148,9 @@ IGUI_DE = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Mülleimer",
     IGUI_BuildingMenuSubCat_Containers_Others = "Andere",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Möbel",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Kleine Tische",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Große Tische",

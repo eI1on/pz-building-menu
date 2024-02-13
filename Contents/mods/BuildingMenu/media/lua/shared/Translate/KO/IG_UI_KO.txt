@@ -148,6 +148,9 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "쓰레기통",
     IGUI_BuildingMenuSubCat_Containers_Others = "기타",
     
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "가구",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "작은 탁자",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "큰 탁자",

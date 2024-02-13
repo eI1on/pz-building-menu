@@ -1631,6 +1631,8 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Полки для деревянных бочек",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Полки для деревянных бочек",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Вместительные настенные полки",
   Tooltip_Dresser = "Крепкий деревянный шкаф для хранения одежды.",
 

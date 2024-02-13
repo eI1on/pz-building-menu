@@ -148,6 +148,9 @@ IGUI_HU = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Kukák",
     IGUI_BuildingMenuSubCat_Containers_Others = "Mások",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Bútor",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Kis asztalok",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Nagy asztalok",

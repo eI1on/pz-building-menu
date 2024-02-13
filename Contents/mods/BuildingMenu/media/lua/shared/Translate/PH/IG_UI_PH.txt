@@ -148,6 +148,9 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Basurahan",
     IGUI_BuildingMenuSubCat_Containers_Others = "Ang iba",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Muwebles",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Maliliit na Mesa",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Malaking Mesa",

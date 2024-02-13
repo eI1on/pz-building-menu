@@ -17014,7 +17014,7 @@ local function addWindowsPlusToMenu()
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Modern_Extended1_Windows"),
-        "melos_tiles_windows_06_",
+        "melos_tiles_windows_06_0",
         melosWindows
     )
 

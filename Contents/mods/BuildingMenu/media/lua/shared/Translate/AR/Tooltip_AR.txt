@@ -1631,6 +1631,8 @@ Tooltip_AR = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Estantes de barril de madera 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Estantes de barril de madera 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Estantes de pared grandes",
   Tooltip_Dresser = "Cómoda de madera resistente para guardar ropa y objetos personales.",
 

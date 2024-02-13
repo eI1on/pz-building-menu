@@ -1634,6 +1634,8 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "木制酒架1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "木制酒架2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "大壁挂架",
   Tooltip_Dresser = "用來存放衣服和个人物品的堅固梳妝鏡。",
 

@@ -1631,6 +1631,8 @@ Tooltip_HU = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Fahordós polcok 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Fahordós polcok 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Nagy fali polcok",
   Tooltip_Dresser = "Erős, fából készült komód ruhák és személyes tárgyak tárolására.",
 

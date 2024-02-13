@@ -5056,6 +5056,82 @@ local function initBuildingMenuRecipes()
         }
     }
 
+
+    BuildingMenu.JukeboxRecipe = {
+        neededTools = {
+            "Hammer",
+            "Screwdriver"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = BuildingMenu.round(smallObjectsWoodCount*1.5),
+            },
+            {
+                Material = "Base.Nails",
+                Amount = BuildingMenu.round(smallObjectsNailsCount*1.5),
+            },
+            {
+                Material = "Base.ElectronicsScrap",
+                Amount = 40
+            },
+            {
+                Material = "Radio.ElectricWire",
+                Amount = 10
+            },
+            {
+                Material = "Base.Screws",
+                Amount = 10
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+            },
+            {
+                Skill = "Electricity",
+                Level = 6,
+                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.WesternPianoRecipe = {
+        neededTools = {
+            "Hammer",
+            "Screwdriver"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = BuildingMenu.round(smallObjectsWoodCount*2.5),
+            },
+            {
+                Material = "Base.Nails",
+                Amount = BuildingMenu.round(smallObjectsNailsCount*2.5),
+            },
+            {
+                Material = "Base.Screws",
+                Amount = 10
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = 15
+            },
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = 8,
+                Xp = BuildingMenu.round(8*carpentryXpPerLevel)
+            }
+        }
+    }
+
+    
     BuildingMenu.GraveRecipe = {
         neededTools = {
             "Shovel"

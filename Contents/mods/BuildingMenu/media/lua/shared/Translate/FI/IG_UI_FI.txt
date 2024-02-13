@@ -148,6 +148,9 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Roska-astiat",
     IGUI_BuildingMenuSubCat_Containers_Others = "muut",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Huonekalut",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Pienet pöydät",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Suuret pöydät",

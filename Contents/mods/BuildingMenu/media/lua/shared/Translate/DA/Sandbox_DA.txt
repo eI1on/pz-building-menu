@@ -150,8 +150,16 @@ Sandbox_DA = {
    
 
 
-    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Møbelkategori _____________",
-    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Dette er kun en linjeseparator, at kontrollere det har ingen effekt.",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Recreational Category _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Enable Music Subcategory",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Enable to add jukeboxes, pianos and such. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    
+
+    
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Furniture Category _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
  
     Sandbox_BuildingMenu_tablesSubCategory = "Aktiver underkategori tabeller",
     Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Aktiver for at tilføje små og store borde. <LINE><LINE> <RGB:1,0,0> KRÆVER KLIENTGENSTART!",

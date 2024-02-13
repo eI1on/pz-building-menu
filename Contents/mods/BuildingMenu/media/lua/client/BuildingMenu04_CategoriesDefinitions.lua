@@ -28463,6 +28463,60 @@ local function addContainersOthersToMenu()
     )
 end
 
+local function addMusicObjectsToMenu()
+    local musicObjects = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Generic_Music",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.JukeboxRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isCorner = false
+            },
+            {
+                sprite = "recreational_01_0",
+                northSprite = "recreational_01_1",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Generic_Music",
+            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.WesternPianoRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isCorner = false,
+                needToBeAgainstWall = false,
+                blockAllTheSquare = true,
+                renderFloorHelper = false,
+                canPassThrough = false,
+                canBarricade = false
+            },
+            {
+                sprite = "recreational_01_9",
+                sprite2= "recreational_01_8",
+                northSprite = "recreational_01_12",
+                northSprite2 = "recreational_01_13",
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+    getText("IGUI_BuildingMenuTab_General"),
+    getText("IGUI_BuildingMenuCat_Recreational"),
+    "recreational_01_0",
+    getText("IGUI_BuildingMenuSubCat_Recreational_Music"),
+    "recreational_01_0",
+    musicObjects
+    )
+end
+
 local function addTablesToMenu()
     local tables = {
         {
@@ -29715,7 +29769,7 @@ local function addSeatingFurnitureToMenu()
             objects = {
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29736,7 +29790,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29757,7 +29811,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29778,7 +29832,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29799,7 +29853,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29820,7 +29874,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29841,7 +29895,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29862,7 +29916,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29883,7 +29937,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29904,7 +29958,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29925,7 +29979,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29946,7 +30000,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29967,7 +30021,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -29988,7 +30042,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30009,7 +30063,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30030,7 +30084,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30051,7 +30105,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30072,7 +30126,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30093,7 +30147,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30114,7 +30168,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30135,7 +30189,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30156,7 +30210,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30177,7 +30231,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30198,7 +30252,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30219,7 +30273,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30240,7 +30294,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30261,7 +30315,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30282,7 +30336,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30303,7 +30357,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30324,7 +30378,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30345,7 +30399,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30366,7 +30420,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30387,7 +30441,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30408,7 +30462,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30429,7 +30483,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30450,7 +30504,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30471,7 +30525,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30492,7 +30546,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30513,7 +30567,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30534,7 +30588,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30555,7 +30609,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30576,7 +30630,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30597,7 +30651,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30618,7 +30672,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30639,7 +30693,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.CouchRecipe,
                     true,
@@ -30666,7 +30720,28 @@ local function addSeatingFurnitureToMenu()
             objects = {
                 BuildingMenu.createObject(
                     "",
+                    "Tooltip_craft_woodenChairDesc",
+                    BuildingMenu.onBuildDoubleTileFurniture,
+                    BuildingMenu.LeatherFurnitureRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        canPassThrough = true,
+                        isThumpable = true,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "recreational_01_11",
+                        sprite2 = "recreational_01_10",
+                        northSprite = "recreational_01_14",
+                        northSprite2 = "recreational_01_15"
+                    }
+                ),
+                BuildingMenu.createObject(
                     "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.WoodenChairRecipe,
                     true,
@@ -30687,7 +30762,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
@@ -30708,7 +30783,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
@@ -30729,7 +30804,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
@@ -30750,7 +30825,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
@@ -30771,7 +30846,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
@@ -30792,7 +30867,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
@@ -30813,7 +30888,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.PaddedChairRecipe,
                     true,
@@ -30834,7 +30909,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.MetalChairRecipe,
                     true,
@@ -30855,7 +30930,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.MetalChairRecipe,
                     true,
@@ -30876,7 +30951,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.MetalChairRecipe,
                     true,
@@ -30897,7 +30972,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.MetalChairRecipe,
                     true,
@@ -30918,7 +30993,7 @@ local function addSeatingFurnitureToMenu()
                 ),
                 BuildingMenu.createObject(
                     "",
-                    "",
+                    "Tooltip_craft_woodenChairDesc",
                     BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.MetalChairRecipe,
                     true,
@@ -35694,6 +35769,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.containersOthersSubCategory then
         addContainersOthersToMenu()
+    end
+    if SandboxVars.BuildingMenu.musicSubCategory then
+        addMusicObjectsToMenu()
     end
     if SandboxVars.BuildingMenu.tablesSubCategory then
         addTablesToMenu()

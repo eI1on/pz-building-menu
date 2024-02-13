@@ -1631,6 +1631,8 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "나무 배럴 선반 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "나무 배럴 선반 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "큰 벽 선반",
   Tooltip_Dresser = "옷과 개인 물품을 보관하는 튼튼한 나무 옷장입니다.",
 

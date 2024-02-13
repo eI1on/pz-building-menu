@@ -1631,6 +1631,8 @@ Tooltip_NL = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Houten tonplanken 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Houten vatenplanken 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Grote wandplanken",
   Tooltip_Dresser = "Een stevige houten ladekast voor het opbergen van kleding en persoonlijke spullen.",
 

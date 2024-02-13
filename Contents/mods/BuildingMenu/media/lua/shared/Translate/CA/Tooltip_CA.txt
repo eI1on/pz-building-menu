@@ -1631,6 +1631,8 @@ Tooltip_CA = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Prestatges de barrils de fusta 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Prestatges de barrils de fusta 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Prestatges de paret grans",
   Tooltip_Dresser = "Un tocador de fusta robust per guardar roba i objectes personals.",
 

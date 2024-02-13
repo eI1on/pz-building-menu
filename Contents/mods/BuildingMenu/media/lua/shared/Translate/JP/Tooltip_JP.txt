@@ -1631,6 +1631,8 @@ Tooltip_JP = {
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves1 = "Wooden Barrel Shelves 1",
   Tooltip_BuildingMenuObj_Wooden_Barrel_Shelves2 = "Wooden Barrel Shelves 2",
 
+  Tooltip_Generic_Music = "Brings ambiance and entertainment to any space with melodious tunes.",
+
   Tooltip_BuildingMenuObj_Big_Wall_Shelves = "Big Wall Shelves",
   Tooltip_Dresser = "A sturdy wooden dresser for storing clothing and personal items.",
 

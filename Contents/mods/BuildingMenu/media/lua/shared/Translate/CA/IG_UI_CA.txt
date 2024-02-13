@@ -148,6 +148,9 @@ IGUI_CA = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Papereres",
     IGUI_BuildingMenuSubCat_Containers_Others = "Altres",
 
+    IGUI_BuildingMenuCat_Recreational = "Recreational",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+
     IGUI_BuildingMenuCat_Furniture = "Mobles",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Taules Petites",
     IGUI_BuildingMenuSubCat_Furniture_Large_Tables = "Taules grans",
