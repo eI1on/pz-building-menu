@@ -1619,8 +1619,8 @@ Tooltip_EN = {
   
   Tooltip_BuildingMenuObj_Green_Military_Crate = "Green Military Crate",
   Tooltip_BuildingMenuObj_Grey_Military_Crate = "Grey Military Crate",
-  Tooltip_Green_Military_Crate = "A military green crate, these boxes are often used by the army to store some military supplies, can be stacked.",
-  Tooltip_Grey_Military_Crate = "A military Grey crate, these boxes are often used by the army to store some military supplies, can be stacked.",
+  Tooltip_Green_Military_Crate = "A military green crate, these boxes are often used by the army to store some military supplies, can be stacked. <RGB:1,0.8,0> <SPACE> CAN BE PAINTED <RGB:1,1,1><SPACE>",
+  Tooltip_Grey_Military_Crate = "A military grey crate, these boxes are often used by the army to store some military supplies, can be stacked. <RGB:1,0.8,0> <SPACE> CAN BE PAINTED <RGB:1,1,1><SPACE>",
 
   Tooltip_RecyclingBin = "In the post-apocalypse world, recycling is more important than ever. ",
   
