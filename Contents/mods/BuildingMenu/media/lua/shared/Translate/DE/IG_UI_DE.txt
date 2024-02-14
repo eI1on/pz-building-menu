@@ -64,6 +64,7 @@ IGUI_DE = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Industriewände",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Braunes Rahmenglas",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Schwarzes Rahmenglas",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Kanalwände",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "Zeltwände",
 

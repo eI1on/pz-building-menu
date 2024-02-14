@@ -943,6 +943,12 @@ Tooltip_AR = {
   Tooltip_Black_Frame_Glass_Pillar = "Un pilar de soporte con un elegante acabado de vidrio con marco negro, que añade un toque de elegancia moderna.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Elegante marco de puerta de vidrio con marco negro con un diseño contemporáneo. Permite un acceso y salida elegantes",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Pared de la tienda",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Marco de puerta de tienda",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Marco de ventana de tienda",

@@ -9531,6 +9531,42 @@ local function addCommercialWallsToMenu()
                 )
             }
         },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass"),
+            subCategoryIcon = "walls_commercial_02_0",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall",
+                    "Tooltip_Grey_Frame_Glass_Wall",
+                    BuildingMenu.onBuildWindowWall,
+                    BuildingMenu.GreyBigWoodWindowWallRecipe,
+                    true,
+                    {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+                    {
+                        sprite = "walls_commercial_02_0",
+                        northSprite = "walls_commercial_02_1",
+                        corner = "walls_commercial_02_3"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar",
+                    "Tooltip_Grey_Frame_Glass_Pillar",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.GreySmallWoodWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = {wallType = "pillar"}
+                    },
+                    {sprite = "walls_commercial_02_3", northSprite = "walls_commercial_02_3"}
+                ),
+            }
+        }
     }
 
 

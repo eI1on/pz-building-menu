@@ -943,6 +943,12 @@ Tooltip_RO = {
   Tooltip_Black_Frame_Glass_Pillar = "Un stâlp de susținere cu un finisaj elegant din sticlă neagră, adăugând o notă de eleganță modernă.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Rama ușii din sticlă elegantă, neagră, cu un design contemporan. Permite acces și ieșire elegant",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Perete de cort",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Rama usii cortului",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Rama ferestrei cortului",

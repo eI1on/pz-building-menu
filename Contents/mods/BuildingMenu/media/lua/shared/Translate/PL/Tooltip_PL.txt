@@ -943,6 +943,12 @@ Tooltip_PL = {
   Tooltip_Black_Frame_Glass_Pillar = "Słupek nośny z eleganckim czarnym wykończeniem ze szkła, dodający odrobinę nowoczesnej elegancji.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Elegancka szklana ościeżnica w czarnej ramce o nowoczesnym wyglądzie. Umożliwia stylowy dostęp i wyjście",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Ściana namiotu",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Rama drzwi namiotu",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Rama okna namiotu",

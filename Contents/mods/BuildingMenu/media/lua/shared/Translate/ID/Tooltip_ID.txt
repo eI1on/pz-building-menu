@@ -943,6 +943,12 @@ Tooltip_ID = {
   Tooltip_Black_Frame_Glass_Pillar = "Pilar penyangga dengan finishing kaca bingkai hitam ramping menambah sentuhan elegan modern.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Kusen pintu kaca bingkai hitam ramping dengan desain kontemporer. Memungkinkan akses dan keluar yang bergaya",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Dinding Tenda",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Kusen Pintu Tenda",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Rangka Jendela Tenda",

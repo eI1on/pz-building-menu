@@ -943,6 +943,12 @@ Tooltip_PT = {
   Tooltip_Black_Frame_Glass_Pillar = "Um pilar de suporte com um elegante acabamento em vidro preto, adicionando um toque de elegância moderna.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Moldura de porta de vidro elegante com moldura preta e design contemporâneo. Permite acesso e saída elegantes",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Parede da barraca",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Moldura da porta da barraca",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Moldura da janela da barraca",

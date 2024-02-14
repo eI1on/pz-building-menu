@@ -774,7 +774,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildNaturalFloor = function( sprites, name, player)
+BuildingMenu.onBuildNaturalFloor = function( sprites, name, player, objectRecipe)
     local playerObj = getSpecificPlayer(player)
     local inv = playerObj:getInventory()
     local bag, uses = nil, nil

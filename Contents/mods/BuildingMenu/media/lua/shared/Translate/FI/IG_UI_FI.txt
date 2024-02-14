@@ -64,6 +64,7 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Teollisuuden seinät",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Ruskea kehyslasi",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Musta kehyslasi",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Viemäri seinät",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "Teltan seinät",
 

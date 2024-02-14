@@ -943,6 +943,12 @@ Tooltip_EN = {
   Tooltip_Black_Frame_Glass_Pillar = "A supporting pillar with a sleek black frame glass finish, adding a touch of modern elegance.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Sleek black frame glass door frame with a contemporary design. Allows stylish access and exit",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Tent Wall",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Tent Door Frame",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Tent Window Frame",

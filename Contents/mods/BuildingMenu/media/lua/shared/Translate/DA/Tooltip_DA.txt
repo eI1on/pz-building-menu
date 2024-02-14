@@ -943,6 +943,12 @@ Tooltip_DA = {
   Tooltip_Black_Frame_Glass_Pillar = "En støttesøjle med en slank sort glasafslutning, der tilføjer et strejf af moderne elegance.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Slank sort ramme glasdørramme med et moderne design. Tillader stilfuld adgang og udgang",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Teltvæg",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Telt dørramme",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Telt vinduesramme",

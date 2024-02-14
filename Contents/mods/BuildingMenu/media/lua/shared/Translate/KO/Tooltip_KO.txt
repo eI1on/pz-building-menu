@@ -943,6 +943,12 @@ Tooltip_KO = {
   Tooltip_Black_Frame_Glass_Pillar = "매끄러운 검은 프레임 유리 마감이 있는 지지 기둥으로, 현대적인 우아함을 더합니다.",
   Tooltip_Black_Frame_Glass_Door_Frame = "현대적인 디자인의 매끄러운 검은 프레임 유리 문 프레임. 세련된 출입이 가능합니다.",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "텐트 벽",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "텐트 문 프레임",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "텐트 창문 프레임",

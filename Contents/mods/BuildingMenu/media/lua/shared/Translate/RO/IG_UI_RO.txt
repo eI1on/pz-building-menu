@@ -64,6 +64,7 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Pereți Industriali",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Sticlă cu Rama Maro",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Sticlă cu Rama Neagra",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Pereți de Canalizare",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "Pereții de Cort",
 

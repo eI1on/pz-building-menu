@@ -64,6 +64,7 @@ IGUI_PL = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Ściany Przemysłowe",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Brązowe szkło ramowe",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Szkło z czarną ramką",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Ściany kanalizacyjne",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "Ściany namiotu",
 

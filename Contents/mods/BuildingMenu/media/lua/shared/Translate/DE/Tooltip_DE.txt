@@ -943,6 +943,12 @@ Tooltip_DE = {
   Tooltip_Black_Frame_Glass_Pillar = "Eine tragende Säule mit einer eleganten schwarzen Rahmenglasoberfläche, die einen Hauch moderner Eleganz verleiht.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Schlanker Glastürrahmen mit schwarzem Rahmen und modernem Design. Ermöglicht stilvollen Ein- und Ausstieg",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Zeltwand",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Zelttürrahmen",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Zeltfensterrahmen",

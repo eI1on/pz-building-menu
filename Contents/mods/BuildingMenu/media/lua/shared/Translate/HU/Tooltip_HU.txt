@@ -943,6 +943,12 @@ Tooltip_HU = {
   Tooltip_Black_Frame_Glass_Pillar = "Egy tartóoszlop elegáns fekete kerettel, amely egy csipetnyi modern eleganciát ad hozzá.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Elegáns fekete keretes üveg ajtókeret modern dizájnnal. Stílusos be- és kilépést tesz lehetővé",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Sátorfal",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Sátor ajtókeret",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Sátor ablakkeret",

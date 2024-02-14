@@ -943,6 +943,12 @@ Tooltip_CS = {
   Tooltip_Black_Frame_Glass_Pillar = "Nosný sloup s elegantním černým rámem ze skla, který dodává nádech moderní elegance.",
   Tooltip_Black_Frame_Glass_Door_Frame = "Elegantní černý rám skleněných dveří s moderním designem. Umožňuje stylový přístup a výstup",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "Stěna stanu",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "Rám dveří stanu",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "Rám okna stanu",

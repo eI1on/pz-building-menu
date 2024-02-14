@@ -942,6 +942,12 @@ Tooltip_CN = {
   Tooltip_Black_Frame_Glass_Pillar = "带有雅致的黑框玻璃完成面的支撑柱，增添了几分现代雅致。",
   Tooltip_Black_Frame_Glass_Door_Frame = "带有现代设计的、雅致的黑框玻璃门框，具有个性化的出入口。",
 
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Wall = "Grey Frame Glass Wall",
+  Tooltip_BuildingMenuObj_Grey_Frame_Glass_Pillar = "Grey Frame Glass Pillar",
+
+  Tooltip_Grey_Frame_Glass_Wall = "Sleek grey frame glass wall with a contemporary design. Enhances the atmosphere with a touch of sophistication.",
+  Tooltip_Grey_Frame_Glass_Pillar = "A supporting pillar with a sleek grey frame glass finish, adding a touch of modern elegance.",
+
   Tooltip_BuildingMenuObj_Tent_Wall = "帐篷墙",
   Tooltip_BuildingMenuObj_Tent_Door_Frame = "帐篷门框",
   Tooltip_BuildingMenuObj_Tent_Window_Frame = "帐篷窗框",

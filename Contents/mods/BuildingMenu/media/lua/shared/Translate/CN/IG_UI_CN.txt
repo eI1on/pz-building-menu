@@ -64,6 +64,7 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls  = "工业墙",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "褐色玻璃门",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "黑色玻璃门",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls       = "下水道墙",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls        = "帐篷墙",
 

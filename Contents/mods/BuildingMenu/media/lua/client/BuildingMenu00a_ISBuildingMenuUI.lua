@@ -139,7 +139,7 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
             objectName = nil -- set objectName to nil for these specific actions
         end
 
-        local object = onBuild(spritesName, objectName, playerNum);
+        local object = onBuild(spritesName, objectName, playerNum, recipe);
         BuildingMenu.buildObject(object, objectName, playerNum, recipe, modifiedOptions);
     end
 end
