@@ -1,4 +1,4 @@
-13 FEB 24
+ FEB 24
 
 Changelog:
 [list]
@@ -6,6 +6,7 @@ Main mod:
 [list]
 [*] Added Recreational Category (with Jukeboxes and Piano)
 [*] Military Crates now can be Painted
+[*] Added the rest of Exterior Wooden Panel Walls
 [/list]
 [/list]
 

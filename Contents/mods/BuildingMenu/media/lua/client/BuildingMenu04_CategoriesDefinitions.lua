@@ -376,6 +376,150 @@ local function addWoodWallsToMenu()
             },
             {sprite = "walls_exterior_wooden_01_27", northSprite = "walls_exterior_wooden_01_27"}
         ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_1",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteSmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_24", northSprite = "walls_exterior_roofs_02_37"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_2",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_25", northSprite = "walls_exterior_roofs_02_36"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_3",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_26", northSprite = "walls_exterior_roofs_02_35"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_4",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteSmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_32", northSprite = "walls_exterior_roofs_02_29"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_5",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_33", northSprite = "walls_exterior_roofs_02_28"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_6",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_34", northSprite = "walls_exterior_roofs_02_27"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Sloped_Small_Wall",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteSmallWoodWallRecipe,
+            true,
+            {
+                actionAnim = "BuildLow",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_39", northSprite = "walls_exterior_roofs_02_31"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Sloped_Medium_Wall",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_38", northSprite = "walls_exterior_roofs_02_30"}
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Sloped_Big_Wall",
+            "Tooltip_Wooden_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                actionAnim = "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = {wallType = "wall"}
+            },
+            {sprite = "walls_exterior_roofs_02_40", northSprite = "walls_exterior_roofs_02_41"}
+        )
     }
 
     BuildingMenu.addObjectsToCategories(
