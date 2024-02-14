@@ -4,7 +4,8 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] Added Recreational Category
+[*] Added Recreational Category (with Jukeboxes and Piano)
+[*] Military Crates now can be Painted
 [/list]
 [/list]
 

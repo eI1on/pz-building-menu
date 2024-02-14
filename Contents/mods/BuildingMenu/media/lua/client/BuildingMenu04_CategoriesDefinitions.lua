@@ -16031,6 +16031,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_19", northSprite = "walls_detailing_01_19"}
                 ),
@@ -16065,6 +16066,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_59", northSprite = "walls_detailing_01_59"}
                 ),
@@ -16099,6 +16101,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_3", northSprite = "walls_interior_detailing_01_3"}
                 ),
@@ -16150,6 +16153,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_83", northSprite = "walls_detailing_01_83"}
                 ),
@@ -16184,6 +16188,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_87", northSprite = "walls_detailing_01_87"}
                 ),
@@ -16218,6 +16223,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_35", northSprite = "walls_interior_detailing_01_35"}
                 ),
@@ -16269,6 +16275,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_51", northSprite = "walls_interior_detailing_01_51"}
                 ),
@@ -16320,6 +16327,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_55", northSprite = "walls_interior_detailing_01_55"}
                 ),
@@ -16371,6 +16379,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_commercial_03_63", northSprite = "walls_commercial_03_63"}
                 ),
@@ -16405,6 +16414,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_commercial_03_71", northSprite = "walls_commercial_03_71"}
                 ),
@@ -16439,6 +16449,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_99", northSprite = "walls_interior_detailing_01_99"}
                 ),
@@ -16493,6 +16504,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_commercial_03_47", northSprite = "walls_commercial_03_47"}
                 ),
@@ -16527,6 +16539,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_67", northSprite = "walls_interior_detailing_01_67"}
                 ),
@@ -16578,6 +16591,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_71", northSprite = "walls_interior_detailing_01_71"}
                 ),
@@ -16629,6 +16643,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_commercial_03_31", northSprite = "walls_commercial_03_31"}
                 ),
@@ -16663,6 +16678,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_83", northSprite = "walls_interior_detailing_01_83"}
                 ),
@@ -16697,6 +16713,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_87", northSprite = "walls_interior_detailing_01_87"}
                 ),
@@ -16748,6 +16765,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_commercial_03_23", northSprite = "walls_commercial_03_23"}
                 ),
@@ -16782,6 +16800,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_commercial_03_55", northSprite = "walls_commercial_03_55"}
                 ),
@@ -16819,6 +16838,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {
                         sprite = "walls_interior_detailing_01_119",
@@ -16876,6 +16896,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_commercial_03_15", northSprite = "walls_commercial_03_15"}
                 ),
@@ -16913,6 +16934,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {
                         sprite = "walls_interior_detailing_01_103",
@@ -16973,6 +16995,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {
                         sprite = "walls_interior_detailing_01_115",

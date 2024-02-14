@@ -5,20 +5,21 @@ ISWallOverlay = ISBuildingObject:derive("ISWallOverlay");
 --**
 --************************************************************************--
 local function isRelevantWall(isCorner, object, north)
+    if instanceof(object, "IsoWindow") or object:getProperties():Is(IsoFlagType.solidfloor) then return false; end
+
+    if object:getModData().WindowWall then return true; end
+
     local properties = object:getProperties()
 
-    if object:getModData().WindowWall then return true end
-
     if isCorner then
-        return properties:Is("WallNW") and not instanceof(object, "IsoWindow")
+        return properties:Is(IsoFlagType.WallNW) or properties:Is(IsoFlagType.WallSE);
     end
 
-    if not instanceof(object, "IsoWindow") then
-        return (north and (properties:Is("WallN") or properties:Is("WindowN") or properties:Is("WallNW") or properties:Is("DoorWallN"))) or 
-               (not north and (properties:Is("WallW") or properties:Is("WindowW") or properties:Is("WallNW") or properties:Is("DoorWallW")))
+    if north then
+        return properties:Is(IsoFlagType.WallN) or properties:Is(IsoFlagType.WindowN) or properties:Is(IsoFlagType.WallNW) or properties:Is(IsoFlagType.WallSE) or properties:Is(IsoFlagType.DoorWallN);
     end
 
-    return false
+    return properties:Is(IsoFlagType.WallW) or properties:Is(IsoFlagType.WindowW) or properties:Is(IsoFlagType.WallNW) or properties:Is(IsoFlagType.WallSE) or properties:Is(IsoFlagType.DoorWallW);
 end
 
 
