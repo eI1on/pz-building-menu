@@ -27161,7 +27161,7 @@ local function addCratesToMenu()
             "",
             "Tooltip_Half_Crate",
             BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.SmallCounterRecipe,
             true,
             {
                 actionAnim = "Build",

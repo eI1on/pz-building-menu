@@ -240,4 +240,86 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PickUpWeight", "75", false);
         props:CreateKeySet();
     end
+
+
+    sprites = {
+        "fixtures_railings_01_27",
+        "fixtures_railings_01_35",
+        "fixtures_railings_01_67",
+        "fixtures_railings_01_75",
+        "construction_01_3"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "HitByCar", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "fixtures_railings_01_27",
+        "fixtures_railings_01_24",
+        "fixtures_railings_01_25",
+        "fixtures_railings_01_26",
+        "fixtures_railings_01_34",
+        "fixtures_railings_01_64",
+        "fixtures_railings_01_65",
+        "fixtures_railings_01_66",
+        "fixtures_railings_01_74",
+        "construction_01_0",
+        "construction_01_1"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "HitByCar", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "Nails", false);
+        BM_Utils.setSpriteProperty(props, "CloseSneakBonus", "250", false);
+        BM_Utils.setSpriteProperty(props, "FenceTypeLow", "Wood", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "fixtures_railings_01_31",
+        "fixtures_railings_01_39",
+        "fixtures_railings_01_115",
+        "fixtures_railings_01_119",
+        "industry_railroad_05_43",
+        "industry_bunker_01_27"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "HitByCar", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "MetalBars", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "fixtures_railings_01_28",
+        "fixtures_railings_01_29",
+        "fixtures_railings_01_30",
+        "fixtures_railings_01_36",
+        "fixtures_railings_01_37",
+        "fixtures_railings_01_38",
+        "fixtures_railings_01_112",
+        "fixtures_railings_01_113",
+        "fixtures_railings_01_116",
+        "fixtures_railings_01_117",
+        "industry_railroad_05_40",
+        "industry_railroad_05_41",
+        "industry_bunker_01_24",
+        "industry_bunker_01_25"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "HitByCar", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "MetalBars", false);
+        BM_Utils.setSpriteProperty(props, "CloseSneakBonus", "250", false);
+        BM_Utils.setSpriteProperty(props, "FenceTypeLow", "MetalGate", false);
+        props:CreateKeySet();
+    end
 end)

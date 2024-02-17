@@ -4360,6 +4360,30 @@ local function initBuildingMenuRecipes()
     }
 
 
+    BuildingMenu.SmallCounterRecipe = {
+        neededTools = {
+            "Hammer"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = BuildingMenu.round(bigWallWoodCount*0.5),
+            },
+            {
+                Material = "Base.Nails",
+                Amount = BuildingMenu.round(bigWallNailsCount*0.5),
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+            }
+        }
+    }
+
+
     BuildingMenu.CounterRecipe = {
         neededTools = {
             "Hammer"
