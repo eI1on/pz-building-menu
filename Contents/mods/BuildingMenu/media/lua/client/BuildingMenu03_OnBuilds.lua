@@ -547,6 +547,8 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
+---@deprecated
+---(Deprecated) 
 BuildingMenu.onBuildDoubleClothingRack = function( sprites, name, player)
     local _doubleClothingRack = ISDoubleClothingRack:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
 

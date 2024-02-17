@@ -1,4 +1,25 @@
+ FEB 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Fixed containers that were stacking on top of each other
+[*] Fixed 4 Tile Garage Doors (hopefully)
+[*] Fixed Property Flags for some tiles
+[*] Tree Brances and Twigs now can be placed in Log containers
+[*] Made the Poison Deadly
+[/list]
+DaddyDirkie's addon:
+[list]
+[*] Fixed Log Window Frame Walls (only Twig Windows can be built in them)
+[*] Lowered Log Floor requirements
+[/list]
+[/list]
+
+
 14 FEB 24
+3419d81
 
 Changelog:
 [list]

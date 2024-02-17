@@ -2573,7 +2573,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Log_Window_Frame",
             "Tooltip_Log_Window_Frame",
-            BuildingMenu.onBuildWall,
+            BuildingMenu.onBuildWindowWall,
             BuildingMenu.BigLogWallRecipe,
             true,
             {
@@ -2586,8 +2586,8 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 modData = {wallType = "windowsframe"}
             },
             {
-                sprite = "edit_ddd_RUS_Forest Survival_01_12",
-                northSprite = "edit_ddd_RUS_Forest Survival_01_13",
+                sprite = "building_menu_03_ddd_Forest_Survival_0",
+                northSprite = "building_menu_03_ddd_Forest_Survival_1",
                 corner = "edit_ddd_RUS_Forest Survival_01_5"
             }
         ),
@@ -2799,7 +2799,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             "",
             "Tooltip_Floor_Generic",
             BuildingMenu.onBuildFloor,
-            BuildingMenu.SmallLogWallRecipe,
+            BuildingMenu.LogFloorRecipe,
             true,
             {
                 actionAnim = "BuildLow",

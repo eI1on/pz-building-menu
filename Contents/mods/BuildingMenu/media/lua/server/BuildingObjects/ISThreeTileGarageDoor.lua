@@ -47,23 +47,23 @@ function ISThreeTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell()
     self.sq = cell:getGridSquare(x, y, z)
 
-    if self:partExists(self.sq, index) then return end
+    if self:partExists(self.sq, index) then return; end
 
-    self.javaObject = IsoDoor.new(cell, self.sq, sprite, north)
-    self.javaObject:setHealth(self:getHealth())
-    self.sq:AddSpecialObject(self.javaObject)
+    self.javaObject = IsoDoor.new(cell, self.sq, sprite, north);
+    self.javaObject:setHealth(self:getHealth());
 
     if index == 1 then
-        self.consumedItems = buildUtil.consumeMaterial(self)
+        self.consumedItems = buildUtil.consumeMaterial(self);
     end
 
     for _, item in ipairs(self.consumedItems) do
         if item:getType() == "Doorknob" and item:getKeyId() ~= -1 then
-            self.javaObject:setKeyId(item:getKeyId())
+            self.javaObject:setKeyId(item:getKeyId());
         end
     end
 
-    self.javaObject:transmitCompleteItemToServer()
+    self.sq:AddSpecialObject(self.javaObject);
+    self.javaObject:transmitCompleteItemToServer();
 end
 
 function ISThreeTileGarageDoor:getHealth()

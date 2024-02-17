@@ -56,12 +56,11 @@ function ISFourTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell()
     self.sq = cell:getGridSquare(x, y, z)
 
-    if self:partExists(self.sq, index) then return end
+    if self:partExists(self.sq, index) then return; end
 
     self.javaObject = IsoDoor.new(cell, self.sq, sprite, north)
     self:overrideModData(index);
 	self.javaObject:setHealth(self:getHealth());
-    self.sq:AddSpecialObject(self.javaObject)
 
     if index == 1 then
         self.consumedItems = buildUtil.consumeMaterial(self)

@@ -37,23 +37,29 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         props:CreateKeySet();
     end
 
-    -- Not working, idk why.
-    sprites = {
-        "edit_ddd_RUS_Forest Survival_01_0",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.unsetSpriteProperty(props, IsoFlagType.NoWallLighting);
-        BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedFloor);
-        props:CreateKeySet();
-    end
+    -- -- Not working, idk why.
+    -- sprites = {
+    --     "building_menu_03_ddd_Forest_Survival_1",
+    -- }
+    -- for _, sprite in ipairs(sprites) do
+    --     local props = manager:getSprite(sprite):getProperties()
+    --     BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
+    --     props:CreateKeySet();
+    -- end
+
 
     sprites = {
-        "edit_ddd_RUS_Forest Survival_01_13",
+        "edit_ddd_RUS_Forest Survival_01_16",
+        "edit_ddd_RUS_Forest Survival_01_17",
+        "edit_ddd_RUS_Forest Survival_01_18",
+        "edit_ddd_RUS_Forest Survival_01_19",
+        "edit_ddd_RUS_Forest Survival_01_20",
+        "edit_ddd_RUS_Forest Survival_01_21",
     }
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties()
-        props:UnSet(IsoFlagType.windowN);
+        BM_Utils.setSpriteProperty(props, "RoofGroup", "1", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.ForceAmbient);
         props:CreateKeySet();
     end
 end)

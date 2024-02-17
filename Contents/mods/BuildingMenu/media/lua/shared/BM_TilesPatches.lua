@@ -69,8 +69,175 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PickUpLevel", "4", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
         BM_Utils.setSpriteProperty(props, "container", "crate", false);
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
+    end
+
+
+    sprites = {
+        "location_hospitality_sunstarmotel_02_21",
+        "location_hospitality_sunstarmotel_02_22",
+        "location_hospitality_sunstarmotel_02_23",
+        "location_hospitality_sunstarmotel_02_20",
+        "location_restaurant_pizzawhirled_01_35",
+        "location_restaurant_pizzawhirled_01_37",
+        "location_restaurant_pizzawhirled_01_39",
+        "location_restaurant_pizzawhirled_01_33",
+        "location_restaurant_pizzawhirled_01_34",
+        "location_restaurant_pizzawhirled_01_36",
+        "location_restaurant_pizzawhirled_01_38",
+        "location_restaurant_pizzawhirled_01_32",
+        "location_restaurant_diner_01_27",
+        "location_restaurant_diner_01_29",
+        "location_restaurant_diner_01_31",
+        "location_restaurant_diner_01_25",
+        "location_restaurant_diner_01_26",
+        "location_restaurant_diner_01_28",
+        "location_restaurant_diner_01_30",
+        "location_restaurant_diner_01_24",
+        "location_shop_generic_01_19",
+        "location_shop_generic_01_21",
+        "location_shop_generic_01_23",
+        "location_shop_generic_01_17",
+        "location_shop_generic_01_18",
+        "location_shop_generic_01_20",
+        "location_shop_generic_01_22",
+        "location_shop_generic_01_16",
+        "location_business_bank_01_43",
+        "location_business_bank_01_42",
+        "location_business_bank_01_45",
+        "location_business_bank_01_44",
+        "fixtures_bathroom_02_24",
+        "fixtures_bathroom_02_25"
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "counter", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
+    end
+
+
+    sprites = {
+        "location_farm_accesories_01_8",
+        "location_farm_accesories_01_9",
+        "location_farm_accesories_01_10",
+        "location_farm_accesories_01_11"
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "officedrawers", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "location_community_school_01_4",
+        "location_community_school_01_5",
+        "location_community_school_01_6",
+        "location_community_school_01_7",
+        "location_community_school_01_12",
+        "location_community_school_01_13",
+        "location_community_school_01_14",
+        "location_community_school_01_15"
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "desk", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "trashcontainers_01_32",
+        "trashcontainers_01_33",
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "High", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "bin", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "location_community_medical_01_155",
+        "location_community_medical_01_154",
+        "location_community_medical_01_152",
+        "location_community_medical_01_153",
+        "location_business_bank_01_40",
+        "location_business_bank_01_41"
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "High", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "shelves", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "camping_01_24",
+        "camping_01_25",
+        "camping_01_28",
+        "camping_01_29",
+        "camping_01_34",
+        "camping_01_35",
+        "camping_01_38",
+        "camping_01_39",
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
+        BM_Utils.setSpriteProperty(props, "IsLow", "", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "logs", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "200", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "camping_01_26",
+        "camping_01_27",
+        "camping_01_30",
+        "camping_01_31",
+        "camping_01_32",
+        "camping_01_33",
+        "camping_01_36",
+        "camping_01_37",
+        "camping_01_40",
+        "camping_01_41",
+        "camping_01_42",
+        "camping_01_43",
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
+        BM_Utils.setSpriteProperty(props, "IsLow", "", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "logs", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "200", false);
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "75", false);
         props:CreateKeySet();
     end
 end)

@@ -10,6 +10,7 @@ function BrushToolTilePickerList:onMouseDown(x, y)
                 local tileName = self.posToTileNameTable[r+1][c+1]
                 Clipboard.setClipboard(tileName)
                 print(tileName)
+                BM_Utils.printPropNamesFromSprite(tileName)
             end
         end
     end

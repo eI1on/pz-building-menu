@@ -11,30 +11,48 @@ function ISWindowObj:create(x, y, z, north, sprite)
 end
 
 function ISWindowObj:isValid(square)
-    if not self:haveMaterial(square) then
-        return false
-    end
-    if square:isVehicleIntersecting() then
-        return false
-    end
+    if not self:haveMaterial(square) then return false; end
+    if square:isVehicleIntersecting() then return false; end
 
-    if self:getSprite() == "fixtures_windows_01_72" or self:getSprite() == "fixtures_windows_01_73" then 
-        for i=1,square:getObjects():size() do
-            local object = square:getObjects():get(i-1);
-            local sprite = object:getTextureName()
-            if sprite and (luautils.stringStarts(sprite, "walls_interior_house_05_") or luautils.stringStarts(sprite, "walls_exterior_house_03_")) and object:getNorth() == self.north then
-                return true;
+    local sprite = self:getSprite();
+    local validSprites = {
+        ["fixtures_windows_01_72"] = true,
+        ["fixtures_windows_01_73"] = true,
+        ["edit_ddd_RUS_Forest Survival_01_14"] = true,
+        ["edit_ddd_RUS_Forest Survival_01_15"] = true,
+    };
+
+    if validSprites[sprite] then
+        local prefixCheck = {
+            ["fixtures_windows_01_72"] = { "walls_interior_house_05_", "walls_exterior_house_03_" },
+            ["fixtures_windows_01_73"] = { "walls_interior_house_05_", "walls_exterior_house_03_" },
+            ["edit_ddd_RUS_Forest Survival_01_14"] = { "building_menu_03_ddd_Forest_Survival_0", "building_menu_03_ddd_Forest_Survival_1" },
+            ["edit_ddd_RUS_Forest Survival_01_15"] = { "building_menu_03_ddd_Forest_Survival_0", "building_menu_03_ddd_Forest_Survival_1" },
+        };
+
+        for i = 1, square:getObjects():size() do
+            local object = square:getObjects():get(i - 1);
+            local objectSprite = object:getTextureName();
+            if object.getNorth and type(object.getNorth) == "function" then
+                if objectSprite and object:getNorth() == self.north then
+                    for _, prefix in ipairs(prefixCheck[sprite]) do
+                        if luautils.stringStarts(objectSprite, prefix) then
+                            return true;
+                        end
+                    end
+                end
             end
         end
         return false;
     end
 
-    local sharedSprite = getSprite(self:getSprite())
+    local sharedSprite = getSprite(sprite)
     if sharedSprite then
-        local props = ISMoveableSpriteProps.new(sharedSprite)
-        return props:canPlaceMoveable('bogus', square, nil)
+        local props = ISMoveableSpriteProps.new(sharedSprite);
+        return props:canPlaceMoveable('bogus', square, nil);
     end
 end
+
 
 function ISWindowObj:render(x, y, z, square)
     ISBuildingObject.render(self, x, y, z, square)

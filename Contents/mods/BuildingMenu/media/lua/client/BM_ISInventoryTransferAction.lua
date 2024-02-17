@@ -1,6 +1,6 @@
 require "TimedActions/ISInventoryTransferAction"
 
-local items = {"Plank", "Log", "LogStacks2", "LogStacks3", "LogStacks4"};
+local items = {"TreeBranch", "Twigs", "Plank", "Log", "LogStacks2", "LogStacks3", "LogStacks4"};
 local function isLogItemTransferRestricted(item, destContainer)
     local itemType = item:getType();
     local isLogContainer = destContainer:getType() == "logs";
