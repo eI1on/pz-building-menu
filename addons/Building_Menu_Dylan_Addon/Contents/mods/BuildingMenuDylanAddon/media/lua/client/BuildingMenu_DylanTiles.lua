@@ -56,7 +56,7 @@ local function addDylanContainersToMenu()
         return BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -492,7 +492,7 @@ local function addMetalCountersToMenu()
             {
                 sprite = "DarthGunStore_9",
                 sprite2 = "DarthGunStore_8",
-                northSprite1 = "DarthGunStore_10",
+                northSprite = "DarthGunStore_10",
                 northSprite2 = "DarthGunStore_11"
             }
         ),
@@ -521,7 +521,7 @@ local function addMetalCountersToMenu()
             {
                 sprite = "DarthGunStore_13",
                 sprite2 = "DarthGunStore_12",
-                northSprite1 = "DarthGunStore_14",
+                northSprite = "DarthGunStore_14",
                 northSprite2 = "DarthGunStore_15"
             }
         ),
@@ -605,7 +605,7 @@ local function addMetalCountersToMenu()
             {
                 sprite = "DylansRandomFurniture03_37",
                 sprite2 = "DylansRandomFurniture03_36",
-                northSprite1 = "DylansRandomFurniture03_38",
+                northSprite = "DylansRandomFurniture03_38",
                 northSprite2 = "DylansRandomFurniture03_39"
             }
         ),
@@ -634,7 +634,7 @@ local function addMetalCountersToMenu()
             {
                 sprite = "DylansRandomFurniture03_49",
                 sprite2 = "DylansRandomFurniture03_48",
-                northSprite1 = "DylansRandomFurniture03_50",
+                northSprite = "DylansRandomFurniture03_50",
                 northSprite2 = "DylansRandomFurniture03_51"
             }
         ),
@@ -663,7 +663,7 @@ local function addMetalCountersToMenu()
             {
                 sprite = "DylansRandomFurniture03_45",
                 sprite2 = "DylansRandomFurniture03_44",
-                northSprite1 = "DylansRandomFurniture03_46",
+                northSprite = "DylansRandomFurniture03_46",
                 northSprite2 = "DylansRandomFurniture03_47"
             }
         ),
@@ -692,7 +692,7 @@ local function addMetalCountersToMenu()
             {
                 sprite = "DylansRandomFurniture03_59",
                 sprite2 = "DylansRandomFurniture03_58",
-                northSprite1 = "DylansRandomFurniture03_56",
+                northSprite = "DylansRandomFurniture03_56",
                 northSprite2 = "DylansRandomFurniture03_57"
             }
         ),

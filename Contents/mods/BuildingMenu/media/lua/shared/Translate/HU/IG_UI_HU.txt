@@ -90,6 +90,7 @@ IGUI_HU = {
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 csempe garázskapu",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 csempe garázskapu",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Architecture Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Ajtó kárpitozás",
@@ -97,6 +98,7 @@ IGUI_HU = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Élrészletezés",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Padlóléc",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Fali panelek",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "Ablakok",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Fa",

@@ -5,6 +5,12 @@ end
 ---@class BuildingMenu
 local BuildingMenu = getBuildingMenuInstance()
 
+--- Finds an item in a list by a key-value pair, or creates and adds it if not found.
+--- @param list table The list to search or add the item to.
+--- @param keyName string The key to compare the value against.
+--- @param keyValue any The value to search for in the list items.
+--- @param newItem table The new item to add to the list if the keyValue is not found.
+--- @return table newItem The found or newly added item.
 local function findOrCreateItem(list, keyName, keyValue, newItem)
     for _, item in ipairs(list) do
         if item[keyName] == keyValue then
@@ -15,6 +21,13 @@ local function findOrCreateItem(list, keyName, keyValue, newItem)
     return newItem
 end
 
+--- Adds objects to a specific subcategory under a category in a tab.
+--- @param tabName string The name of the tab to add the objects to.
+--- @param categoryName string The name of the category under the tab.
+--- @param categoryIcon string|nil The icon for the category, can be nil.
+--- @param subcategoryName string The name of the subcategory under the category.
+--- @param subCategoryIcon string|nil The icon for the subcategory, can be nil.
+--- @param objects table The list of objects to add to the subcategory.
 function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon, subcategoryName, subCategoryIcon, objects)
     if not BuildingMenu.Tabs then return end
 
@@ -26,7 +39,10 @@ function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon
     end
 
     local subcategory = findOrCreateItem(category.subcategories, "subcategoryName", subcategoryName, {subcategoryName = subcategoryName, objects = {}})
-    subcategory.subCategoryIcon = subcategory.subCategoryIcon or subCategoryIcon
+
+    if subCategoryIcon ~= nil and subCategoryIcon ~= "" then
+        subcategory.subCategoryIcon = subcategory.subCategoryIcon or subCategoryIcon
+    end
 
     for _, obj in ipairs(objects) do
         table.insert(subcategory.objects, obj)
@@ -34,7 +50,15 @@ function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon
 end
 
 
-
+--- Creates a new object with given properties.
+--- @param name string The name of the object.
+--- @param description string The description of the object.
+--- @param action function The action associated with the object.
+--- @param recipe table The recipe for creating the object.
+--- @param isRecipeKnown boolean|string Whether the recipe is known to the player, or the name of the recipe.
+--- @param options table Additional options for the object.
+--- @param sprites table The sprites associated with the object.
+--- @return table table The created object with the specified properties.
 function BuildingMenu.createObject(name, description, action, recipe, isRecipeKnown, options, sprites)
     return {
         name = getTextOrNull(name) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or sprites.sprite,
@@ -49,7 +73,7 @@ function BuildingMenu.createObject(name, description, action, recipe, isRecipeKn
     }
 end
 
-
+--- Initializes the tabs in the building menu with default tab values.
 BuildingMenu.Tabs = {
     {
         tabName = getText("IGUI_BuildingMenuTab_Favorite"),
@@ -15680,6 +15704,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_28", northSprite = "walls_detailing_01_28"}
                 ),
@@ -15714,6 +15739,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_26", northSprite = "walls_detailing_01_26"}
                 ),
@@ -15748,6 +15774,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_34", northSprite = "walls_detailing_01_34"}
                 ),
@@ -15782,6 +15809,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_39", northSprite = "walls_detailing_01_39"}
                 )
@@ -15839,6 +15867,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_12"}
                 ),
@@ -15890,6 +15919,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_52"}
                 ),
@@ -16018,6 +16048,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_20", northSprite = "walls_detailing_01_20"}
                 ),
@@ -16052,6 +16083,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_7", northSprite = "walls_interior_detailing_01_7"}
                 ),
@@ -16120,6 +16152,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_interior_detailing_01_39", northSprite = "walls_interior_detailing_01_39"}
                 ),
@@ -16171,6 +16204,7 @@ local function addArchitecturePlusToMenu()
                         blockAllTheSquare = false,
                         canPassThrough = true,
                         canBarricade = false,
+                        isCorner = true
                     },
                     {sprite = "walls_detailing_01_90", northSprite = "walls_detailing_01_90"}
                 )
@@ -17203,9 +17237,75 @@ local function addArchitecturePlusToMenu()
                     }
                 )
             }
+        },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation"),
+            subCategoryIcon = "walls_detailing_01_64",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        needToBeAgainstWall = true,
+                    },
+                    {sprite = "walls_detailing_01_64", northSprite = "walls_detailing_01_65"}
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        needToBeAgainstWall = true,
+                    },
+                    {sprite = "walls_detailing_01_68", northSprite = "walls_detailing_01_69"}
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Corner",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        needToBeAgainstWall = false,
+                    },
+                    {sprite = "walls_detailing_01_67", northSprite = "walls_detailing_01_67"}
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Corner",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        needToBeAgainstWall = true,
+                    },
+                    {sprite = "walls_detailing_01_66", northSprite = "walls_detailing_01_66"}
+                ),
+            }
         }
     }
-    
+
     for k, subCatData in pairs(architecturePlus) do
         BuildingMenu.addObjectsToCategories(
         getText("IGUI_BuildingMenuTab_General"),
@@ -17225,7 +17325,7 @@ local function addWindowsPlusToMenu()
             subCategoryIcon = "fixtures_windows_01_72",
             objects = {
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Large_White_Window",
+                    "Tooltip_BuildingMenuObj_Large_White_Windoww",
                     "Tooltip_Windows_Generic",
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
@@ -27046,7 +27146,7 @@ local function addCommercialCountersToMenu()
                     {
                         sprite = "location_shop_generic_01_35",
                         sprite2 = "location_shop_generic_01_34",
-                        northSprite1 = "location_shop_generic_01_32",
+                        northSprite = "location_shop_generic_01_32",
                         northSprite2 = "location_shop_generic_01_33"
                     }
                 ),
@@ -27069,7 +27169,7 @@ local function addCommercialCountersToMenu()
                     {
                         sprite = "location_restaurant_pie_01_51",
                         sprite2 = "location_restaurant_pie_01_50",
-                        northSprite1 = "location_restaurant_pie_01_48",
+                        northSprite = "location_restaurant_pie_01_48",
                         northSprite2 = "location_restaurant_pie_01_49"
                     }
                 ),
@@ -27093,7 +27193,7 @@ local function addCommercialCountersToMenu()
                         sprite = "location_shop_generic_01_83",
                         sprite2 = "location_shop_generic_01_84",
                         sprite3 = "location_shop_generic_01_85",
-                        northSprite1 = "location_shop_generic_01_80",
+                        northSprite = "location_shop_generic_01_80",
                         northSprite2 = "location_shop_generic_01_81",
                         northSprite3 = "location_shop_generic_01_82",
                     }
@@ -27380,7 +27480,7 @@ local function addMetalContainersToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Counter_Generic",
-                    BuildingMenu.onBuildMetalShelf,
+                    BuildingMenu.onBuildWoodenContainer,
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
@@ -27425,7 +27525,7 @@ local function addMetalContainersToMenu()
                     {
                         sprite = "furniture_shelving_01_27",
                         sprite2 = "furniture_shelving_01_26",
-                        northSprite1 = "furniture_shelving_01_24",
+                        northSprite = "furniture_shelving_01_24",
                         northSprite2 = "furniture_shelving_01_25"
                     }
                 ),
@@ -27451,7 +27551,7 @@ local function addMetalContainersToMenu()
                     {
                         sprite = "location_community_medical_01_155",
                         sprite2 = "location_community_medical_01_154",
-                        northSprite1 = "location_community_medical_01_152",
+                        northSprite = "location_community_medical_01_152",
                         northSprite2 = "location_community_medical_01_153"
                     }
                 ),
@@ -27700,7 +27800,7 @@ local function addClothesRacksToMenu()
             {
                 sprite = "location_shop_generic_01_39",
                 sprite2 = "location_shop_generic_01_38",
-                northSprite1 = "location_shop_generic_01_36",
+                northSprite = "location_shop_generic_01_36",
                 northSprite2 = "location_shop_generic_01_37"
             }
         ),
@@ -27726,7 +27826,7 @@ local function addClothesRacksToMenu()
             {
                 sprite = "location_shop_generic_01_51",
                 sprite2 = "location_shop_generic_01_50",
-                northSprite1 = "location_shop_generic_01_48",
+                northSprite = "location_shop_generic_01_48",
                 northSprite2 = "location_shop_generic_01_49"
             }
         ),
@@ -28264,7 +28364,7 @@ local function addTrashCansToMenu()
             {
                 sprite = "trashcontainers_01_11",
                 sprite2 = "trashcontainers_01_10",
-                northSprite1 = "trashcontainers_01_8",
+                northSprite = "trashcontainers_01_8",
                 northSprite2 = "trashcontainers_01_9"
             }
         ),
@@ -28289,7 +28389,7 @@ local function addTrashCansToMenu()
             {
                 sprite = "trashcontainers_01_15",
                 sprite2 = "trashcontainers_01_14",
-                northSprite1 = "trashcontainers_01_12",
+                northSprite = "trashcontainers_01_12",
                 northSprite2 = "trashcontainers_01_13"
             }
         )
@@ -28571,7 +28671,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "camping_01_25",
                 sprite2 = "camping_01_24",
-                northSprite1 = "camping_01_38",
+                northSprite = "camping_01_38",
                 northSprite2 = "camping_01_39"
             }
         ),
@@ -28595,7 +28695,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "camping_01_27",
                 sprite2 = "camping_01_26",
-                northSprite1 = "camping_01_36",
+                northSprite = "camping_01_36",
                 northSprite2 = "camping_01_37"
             }
         ),
@@ -28619,7 +28719,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "camping_01_29",
                 sprite2 = "camping_01_28",
-                northSprite1 = "camping_01_34",
+                northSprite = "camping_01_34",
                 northSprite2 = "camping_01_35"
             }
         ),
@@ -28643,7 +28743,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "camping_01_31",
                 sprite2 = "camping_01_30",
-                northSprite1 = "camping_01_32",
+                northSprite = "camping_01_32",
                 northSprite2 = "camping_01_33"
             }
         ),
@@ -28667,7 +28767,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "camping_01_41",
                 sprite2 = "camping_01_40",
-                northSprite1 = "camping_01_42",
+                northSprite = "camping_01_42",
                 northSprite2 = "camping_01_43"
             }
         ),

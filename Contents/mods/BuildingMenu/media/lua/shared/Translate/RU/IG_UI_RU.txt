@@ -90,6 +90,7 @@ IGUI_RU = {
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Гаражная на 3 клетки",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Гаражная на 4 клетки",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Дополнительный декор",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Наличники",
@@ -97,6 +98,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Декор углов",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Плинтусы",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Настенные панели",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "Окна",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Деревянные",

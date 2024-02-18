@@ -110,7 +110,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildSink = function( sprites, name, player)
+BuildingMenu.onBuildSink = function( sprites, name, player, objectRecipe, objectOptions)
     local _sink = ISSink:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -128,8 +128,8 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildBathtub = function( sprites, name, player)
-    local _bathtub = ISBathtub:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
+BuildingMenu.onBuildBathtub = function( sprites, name, player, objectRecipe, objectOptions)
+    local _bathtub = ISBathtub:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2);
 
     return _bathtub;
 end
@@ -139,7 +139,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildFireplace = function( sprites, name, player)
+BuildingMenu.onBuildFireplace = function( sprites, name, player, objectRecipe, objectOptions)
     local _fireplace = ISStove:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -158,7 +158,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildOven = function( sprites, name, player)
+BuildingMenu.onBuildOven = function( sprites, name, player, objectRecipe, objectOptions)
     local _oven = ISOven:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -176,7 +176,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildStove = function( sprites, name, player)
+BuildingMenu.onBuildStove = function( sprites, name, player, objectRecipe, objectOptions)
     local _stove = ISStove:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -195,7 +195,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildBarbecue = function( sprites, name, player)
+BuildingMenu.onBuildBarbecue = function( sprites, name, player, objectRecipe, objectOptions)
     local _stove = ISBarbecue:new(player, name, sprites.sprite, sprites.northSprite)
 
     return _stove
@@ -206,7 +206,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildGenerator = function( sprites, name, player)
+BuildingMenu.onBuildGenerator = function( sprites, name, player, objectRecipe, objectOptions)
     local _generator = ISGenerator:new(sprites.sprite, sprites.northSprite)
 
     return _generator
@@ -216,7 +216,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildMicrowaveOven = function( sprites, name, player)
+BuildingMenu.onBuildMicrowaveOven = function( sprites, name, player, objectRecipe, objectOptions)
     local _microwaveOven = ISMicrowaveOven:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -234,7 +234,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildSimpleFridge = function( sprites, name, player)
+BuildingMenu.onBuildSimpleFridge = function( sprites, name, player, objectRecipe, objectOptions)
     local _simpleFridge = ISFridge:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -252,8 +252,8 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildLargeFridge = function( sprites, name, player)
-    local _doubleFridge = ISDoubleFridge:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
+BuildingMenu.onBuildLargeFridge = function( sprites, name, player, objectRecipe, objectOptions)
+    local _doubleFridge = ISDoubleFridge:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2);
 
     return _doubleFridge
 end
@@ -262,8 +262,8 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildTripleFridge = function( sprites, name, player)
-    local _tripleFridge = ISTripleFridge:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite1, sprites.northSprite2, sprites.northSprite3)
+BuildingMenu.onBuildTripleFridge = function( sprites, name, player, objectRecipe, objectOptions)
+    local _tripleFridge = ISTripleFridge:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite, sprites.northSprite2, sprites.northSprite3)
 
     return _tripleFridge
 end
@@ -272,8 +272,8 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildPopsicleFridge = function( sprites, name, player)
-    local _popsicleFridge = ISPopsicleFridge:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
+BuildingMenu.onBuildPopsicleFridge = function( sprites, name, player, objectRecipe, objectOptions)
+    local _popsicleFridge = ISPopsicleFridge:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2);
 
     return _popsicleFridge
 end
@@ -282,7 +282,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildCombinationWasherDryer = function( sprites, name, player)
+BuildingMenu.onBuildCombinationWasherDryer = function( sprites, name, player, objectRecipe, objectOptions)
     local _combinationWasherDryer = ISCombinationWasherDryer:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -300,7 +300,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildClothingDryer = function( sprites, name, player)
+BuildingMenu.onBuildClothingDryer = function( sprites, name, player, objectRecipe, objectOptions)
     local _clothingDryer = ISClothingDryer:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -318,7 +318,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildClothingWasher = function( sprites, name, player)
+BuildingMenu.onBuildClothingWasher = function( sprites, name, player, objectRecipe, objectOptions)
     local _clothingWasher = ISClothingWasher:new(player, name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -336,7 +336,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildWashingBin = function( sprites, name, player)
+BuildingMenu.onBuildWashingBin = function( sprites, name, player, objectRecipe, objectOptions)
     local _washingBin = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -354,7 +354,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildMetalCounter = function( sprites, name, player)
+BuildingMenu.onBuildMetalCounter = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalCounter = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -372,7 +372,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onMetalDrum = function( sprites, name, player)
+BuildingMenu.onMetalDrum = function( sprites, name, player, objectRecipe, objectOptions)
 	local _barrel = ISMetalDrum:new(player, sprites.sprite)
 
     return _barrel 
@@ -382,7 +382,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onRainCollectorBarrel = function( sprites, name, player)
+BuildingMenu.onRainCollectorBarrel = function( sprites, name, player, objectRecipe, objectOptions)
 	local _barrel = RainCollectorBarrel:new(player, sprites.sprite, objectOptions.waterMax or 400)
     
     return _barrel 
@@ -392,7 +392,9 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildMetalShelf = function( sprites, name, player)
+---@deprecated
+---(Deprecated) 
+BuildingMenu.onBuildMetalShelf = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalshelf = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -410,8 +412,8 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildDoubleMetalShelf = function( sprites, name, player)
-    local _metalDoubleShelf = ISDoubleMetalShelf:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
+BuildingMenu.onBuildDoubleMetalShelf = function( sprites, name, player, objectRecipe, objectOptions)
+    local _metalDoubleShelf = ISDoubleMetalShelf:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2);
 
     return _metalDoubleShelf
 end
@@ -420,8 +422,8 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildDoubleTileContainer = function( sprites, name, player)
-    local _doubleTileContainer = ISDoubleTileContainer:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
+BuildingMenu.onBuildDoubleTileContainer = function( sprites, name, player, objectRecipe, objectOptions)
+    local _doubleTileContainer = ISDoubleTileContainer:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2);
 
     return _doubleTileContainer
 end
@@ -430,7 +432,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildMannequin = function( sprites, name, player)
+BuildingMenu.onBuildMannequin = function( sprites, name, player, objectRecipe, objectOptions)
     -- TODO: Make the placing of Mannequins 3D ? Now it's possible to place only facing N. It should be changed in ISMannequin file
 
     -- local scriptName = objectOptions.scriptName
@@ -485,7 +487,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildScarecrow = function( sprites, name, player)
+BuildingMenu.onBuildScarecrow = function( sprites, name, player, objectRecipe, objectOptions)
     local _scarecrow = ISScarecrow:new(player, sprites.sprite)
 
     if sprites.northSprite then
@@ -507,7 +509,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildSkeleton = function( sprites, name, player)
+BuildingMenu.onBuildSkeleton = function( sprites, name, player, objectRecipe, objectOptions)
     local _skeleton = ISSkeleton:new(player, sprites.sprite)
 
     if sprites.northSprite then
@@ -529,7 +531,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildClothingRack = function( sprites, name, player)
+BuildingMenu.onBuildClothingRack = function( sprites, name, player, objectRecipe, objectOptions)
     local _clothingRack = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -549,8 +551,8 @@ end
 ---@return ISBuildingObject
 ---@deprecated
 ---(Deprecated) 
-BuildingMenu.onBuildDoubleClothingRack = function( sprites, name, player)
-    local _doubleClothingRack = ISDoubleClothingRack:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite1, sprites.northSprite2);
+BuildingMenu.onBuildDoubleClothingRack = function( sprites, name, player, objectRecipe, objectOptions)
+    local _doubleClothingRack = ISDoubleClothingRack:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2);
 
     return _doubleClothingRack
 end
@@ -559,7 +561,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildDoubleTileFurniture = function( sprites, name, player)
+BuildingMenu.onBuildDoubleTileFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _doubleTileFurniture = ISDoubleTileFurniture:new(name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2)
 
     return _doubleTileFurniture
@@ -570,7 +572,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildBarricade = function( sprites, name, player)
+BuildingMenu.onBuildBarricade = function( sprites, name, player, objectRecipe, objectOptions)
     local _barricade = ISSimpleFurniture:new(name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -598,7 +600,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildWoodenContainer = function( sprites, name, player)
+BuildingMenu.onBuildWoodenContainer = function( sprites, name, player, objectRecipe, objectOptions)
     local _woodenContainer = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -616,7 +618,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildSimpleFurniture = function( sprites, name, player)
+BuildingMenu.onBuildSimpleFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _simpleFurniture = ISSimpleFurniture:new(name, sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -634,7 +636,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildDoor = function( sprites, name, player)
+BuildingMenu.onBuildDoor = function( sprites, name, player, objectRecipe, objectOptions)
     local _door = ISWoodenDoor:new(sprites.sprite, sprites.northSprite, sprites.openSprite, sprites.openNorthSprite)
 
     if sprites.eastSprite then
@@ -652,7 +654,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onDoubleDoor = function( sprites, name, player)
+BuildingMenu.onDoubleDoor = function( sprites, name, player, objectRecipe, objectOptions)
     local _doubleDoor = ISDoubleDoor:new(sprites.sprite:sub(1, -2), objectOptions.spriteIndex)
 
     return _doubleDoor
@@ -662,7 +664,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuild3TileGarageDoor = function( sprites, name, player)
+BuildingMenu.onBuild3TileGarageDoor = function( sprites, name, player, objectRecipe, objectOptions)
     local _garageDoor = ISThreeTileGarageDoor:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite, sprites.northSprite2, sprites.northSprite3)
 
     return _garageDoor
@@ -672,7 +674,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuild4TileGarageDoor = function( sprites, name, player)
+BuildingMenu.onBuild4TileGarageDoor = function( sprites, name, player, objectRecipe, objectOptions)
     local _garageDoor = ISFourTileGarageDoor:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.sprite4, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4)
 
     return _garageDoor
@@ -682,7 +684,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildThreeTileSimpleFurniture = function( sprites, name, player)
+BuildingMenu.onBuildThreeTileSimpleFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _threeTileSimpleFurniture = ISThreeTileSimpleFurniture:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite, sprites.northSprite2, sprites.northSprite3)
 
     return _threeTileSimpleFurniture
@@ -692,7 +694,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildFourTileSimpleFurniture = function( sprites, name, player)
+BuildingMenu.onBuildFourTileSimpleFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _fourTileSimpleFurniture = ISFourTileSimpleFurniture:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.sprite4, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4)
 
     return _fourTileSimpleFurniture
@@ -702,13 +704,13 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildFourTileFurniture = function( sprites, name, player)
+BuildingMenu.onBuildFourTileFurniture = function( sprites, name, player, objectRecipe, objectOptions)
     local _fourTileFurniture = ISFourTileFurniture:new(name, sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.sprite4, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4)
 
     return _fourTileFurniture
 end
 
-BuildingMenu.onBuildDoorFrame = function( sprites, name, player)
+BuildingMenu.onBuildDoorFrame = function( sprites, name, player, objectRecipe, objectOptions)
     local _doorFrame = ISWoodenDoorFrame:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
     return _doorFrame
@@ -718,7 +720,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildWall = function( sprites, name, player)
+BuildingMenu.onBuildWall = function( sprites, name, player, objectRecipe, objectOptions)
     local _wall = ISWoodenWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
     if sprites.eastSprite then
@@ -736,7 +738,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildMetalWall = function( sprites, name, player)
+BuildingMenu.onBuildMetalWall = function( sprites, name, player, objectRecipe, objectOptions)
     local _metalWall = ISMetalWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
     if sprites.eastSprite then
@@ -754,7 +756,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildWaterWell = function( sprites, name, player)
+BuildingMenu.onBuildWaterWell = function( sprites, name, player, objectRecipe, objectOptions)
     local _waterwell = ISWaterWell:new(sprites.sprite, sprites.northSprite, SandboxVars.BuildingMenuRecipes.maxWaterWellStorageAmount or 1500, getSpecificPlayer(player))
 
     _waterwell.modData['IsWaterWell'] = true
@@ -766,7 +768,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildHighMetalFence = function( sprites, name, player)
+BuildingMenu.onBuildHighMetalFence = function( sprites, name, player, objectRecipe, objectOptions)
     local _highMetalFence = ISHighMetalFence:new(sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2)
 
     return _highMetalFence
@@ -776,7 +778,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildNaturalFloor = function( sprites, name, player, objectRecipe)
+BuildingMenu.onBuildNaturalFloor = function( sprites, name, player, objectRecipe, objectOptions)
     local playerObj = getSpecificPlayer(player)
     local inv = playerObj:getInventory()
     local bag, uses = nil, nil
@@ -811,7 +813,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildFloor = function( sprites, name, player)
+BuildingMenu.onBuildFloor = function( sprites, name, player, objectRecipe, objectOptions)
     local _floor = ISWoodenFloor:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -829,7 +831,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildFloorOverlay = function( sprites, name, player)
+BuildingMenu.onBuildFloorOverlay = function( sprites, name, player, objectRecipe, objectOptions)
     local _floorOverlay = ISFloorOverlay:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -847,7 +849,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildWallOverlay = function( sprites, name, player)
+BuildingMenu.onBuildWallOverlay = function( sprites, name, player, objectRecipe, objectOptions)
     local _wallOverlay = ISWallOverlay:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
@@ -865,7 +867,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildStairs = function( sprites, name, player)
+BuildingMenu.onBuildStairs = function( sprites, name, player, objectRecipe, objectOptions)
     local _stairs = ISWoodenStairs:new(sprites.upToLeft01, sprites.upToLeft02, sprites.upToLeft03, sprites.upToRight01, sprites.upToRight02, sprites.upToRight03, sprites.pillar, sprites.pillarNorth)
 
     return _stairs
@@ -875,7 +877,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildWindowWall = function( sprites, name, player)
+BuildingMenu.onBuildWindowWall = function( sprites, name, player, objectRecipe, objectOptions)
     local _windowWall = ISWindowWallObj:new(sprites.sprite, sprites.northSprite, player)
 
     return _windowWall
@@ -885,7 +887,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildWindow = function( sprites, name, player)
+BuildingMenu.onBuildWindow = function( sprites, name, player, objectRecipe, objectOptions)
     local _window = ISWindowObj:new(sprites.sprite, sprites.northSprite, player)
 
     return _window
@@ -895,7 +897,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildLightSource = function( sprites, name, player)
+BuildingMenu.onBuildLightSource = function( sprites, name, player, objectRecipe, objectOptions)
     local _lightSource = ISLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player))
 
     _lightSource.offsetX = 0
@@ -922,7 +924,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildLightPole = function( sprites, name, player)
+BuildingMenu.onBuildLightPole = function( sprites, name, player, objectRecipe, objectOptions)
     local _lightPole = ISLightSource:new(sprites.sprite, sprites.sprite, getSpecificPlayer(player))
 
     _lightPole.offsetX = 0
@@ -949,7 +951,7 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
-BuildingMenu.onBuildOutdoorLight = function( sprites, name, player)
+BuildingMenu.onBuildOutdoorLight = function( sprites, name, player, objectRecipe, objectOptions)
     local _outdoorLight = ISLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player))
 
     _outdoorLight.offsetX = 0

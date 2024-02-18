@@ -1380,6 +1380,10 @@ Tooltip_PTBR = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Terceiro Pilar Inferior de Pedra Marrom",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Terceira porta inferior de pedra marrom",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Grande janela branca",
   Tooltip_Windows_Generic = "Janelas padr?o, oferecendo uma vis?o do mundo p?s-apocal?ptico l? fora.",
 

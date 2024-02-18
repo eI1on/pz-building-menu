@@ -516,7 +516,7 @@ local function addBathroomAppliancesToMenu()
             sprites = { 
                 sprite = "fixtures_bathroom_01_27",
                 sprite2 = "fixtures_bathroom_01_26",
-                northSprite1 = "fixtures_bathroom_01_24",
+                northSprite = "fixtures_bathroom_01_24",
                 northSprite2 = "fixtures_bathroom_01_25"
             }
         },
@@ -527,7 +527,7 @@ local function addBathroomAppliancesToMenu()
             sprites = { 
                 sprite = "fixtures_bathroom_01_55",
                 sprite2 = "fixtures_bathroom_01_54",
-                northSprite1 = "fixtures_bathroom_01_52",
+                northSprite = "fixtures_bathroom_01_52",
                 northSprite2 = "fixtures_bathroom_01_53"
             }
         },
@@ -779,7 +779,7 @@ local function addFridgeAppliancesToMenu()
             {
                 sprite = "appliances_refrigeration_01_19",
                 sprite2 = "appliances_refrigeration_01_18",
-                northSprite1 = "appliances_refrigeration_01_16",
+                northSprite = "appliances_refrigeration_01_16",
                 northSprite2 = "appliances_refrigeration_01_17"
             }
         )
@@ -808,7 +808,7 @@ local function addFridgeAppliancesToMenu()
                 sprite = "location_shop_generic_01_67",
                 sprite2 = "location_shop_generic_01_68",
                 sprite3 = "location_shop_generic_01_69",
-                northSprite1 = "location_shop_generic_01_64",
+                northSprite = "location_shop_generic_01_64",
                 northSprite2 = "location_shop_generic_01_65",
                 northSprite3 = "location_shop_generic_01_66",
             }
@@ -837,7 +837,7 @@ local function addFridgeAppliancesToMenu()
             {
                 sprite = "appliances_refrigeration_01_39",
                 sprite2 = "appliances_refrigeration_01_38",
-                northSprite1 = "appliances_refrigeration_01_20",
+                northSprite = "appliances_refrigeration_01_20",
                 northSprite2 = "appliances_refrigeration_01_21"
             }
         )

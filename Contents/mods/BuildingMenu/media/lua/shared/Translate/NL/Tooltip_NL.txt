@@ -1380,6 +1380,10 @@ Tooltip_NL = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Bruine stenen onderste derde pijler",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Bruine stenen onderste derde deuropening",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Groot wit raam",
   Tooltip_Windows_Generic = "Standaardramen die uitzicht bieden op de post-apocalyptische wereld buiten.",
 

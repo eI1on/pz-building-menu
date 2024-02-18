@@ -9,18 +9,18 @@ ISDoubleMetalShelf = ISBuildingObject:derive("ISDoubleMetalShelf");
 ---Constructor for ISDoubleMetalShelf
 ---@param player IsoPlayer The player object.
 ---@param name string The name of the shelf.
----@param sprite1 string The sprite for the first part of the shelf.
+---@param sprite string The sprite for the first part of the shelf.
 ---@param sprite2 string The sprite for the second part of the shelf.
----@param northSprite1 string The north-facing sprite for the first part.
+---@param northSprite string The north-facing sprite for the first part.
 ---@param northSprite2 string The north-facing sprite for the second part.
 ---@return ISDoubleMetalShelf
-function ISDoubleMetalShelf:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
+function ISDoubleMetalShelf:new(player, name, sprite, sprite2, northSprite, northSprite2)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
-	o:setSprite(sprite1);
-	o:setNorthSprite(northSprite1);
+	o:setSprite(sprite);
+	o:setNorthSprite(northSprite);
 	o.player = player;
 	o.sprite2 = sprite2;
 	o.northSprite2 = northSprite2;

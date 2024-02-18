@@ -90,6 +90,7 @@ IGUI_CS = {
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 dlaždice garážová vrata",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Garážová vrata se 4 dlaždicemi",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Architektura Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Obložení dveří",
@@ -97,6 +98,7 @@ IGUI_CS = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Detailování hran",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Podlahová lišta",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Nástěnné panely",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "Okna",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Dřevěný",

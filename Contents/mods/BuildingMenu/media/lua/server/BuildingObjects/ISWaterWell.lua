@@ -225,22 +225,6 @@ ISWaterWell.OnWaterAmountChange = function(object, prevAmount)
     end
 end
 
-ISWaterWell.OnClientCommand = function(module, command, player, args)
-    if module ~= 'object' then return; end
-
-    if command == 'takeWater' then
-        local gs = getCell():getGridSquare(args.x, args.y, args.z);
-        if gs then
-            for i = 0, gs:getObjects():size() - 1 do
-                local obj = gs:getObjects():get(i);
-                if obj:useWater(args.units) > 0 then
-                    obj:transmitModData();
-                    break
-                end
-            end
-        end
-    end
-end
 
 ISWaterWell.OnObjectAdded = function(object)
     if isClient() then return; end
@@ -269,6 +253,5 @@ Events.EveryTenMinutes.Add(ISWaterWell.checkRain);
 Events.EveryHours.Add(ISWaterWell.checkEveryHours);
 Events.LoadGridsquare.Add(ISWaterWell.LoadGridsquare);
 Events.OnWaterAmountChange.Add(ISWaterWell.OnWaterAmountChange);
-Events.OnClientCommand.Add(ISWaterWell.OnClientCommand);
 Events.OnObjectAdded.Add(ISWaterWell.OnObjectAdded);
 Events.OnDestroyIsoThumpable.Add(ISWaterWell.OnDestroyIsoThumpable);

@@ -1380,6 +1380,10 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Бежевый камень на нижнюю треть стены",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Бежевый камень на нижнюю треть стены",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Большое белое окно",
   Tooltip_Windows_Generic = "Обеспечит отличный вид на апокалипсис.",
 

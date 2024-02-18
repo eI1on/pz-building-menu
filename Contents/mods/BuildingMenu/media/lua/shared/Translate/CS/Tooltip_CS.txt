@@ -1380,6 +1380,10 @@ Tooltip_CS = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Hnědý kámen dolní třetí pilíř",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Hnědý Kámen Dolní Třetí Dveře",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Velké bílé okno",
   Tooltip_Windows_Generic = "Standardní okna, nabízející výhled na postapokalyptický svět venku.",
 

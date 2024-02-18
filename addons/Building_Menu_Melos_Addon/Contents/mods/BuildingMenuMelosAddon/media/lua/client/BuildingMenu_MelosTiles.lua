@@ -18490,7 +18490,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "melos_tiles_gardencenter_02_107",
                 sprite2 = "melos_tiles_gardencenter_02_106",
-                northSprite1 = "melos_tiles_gardencenter_02_104",
+                northSprite = "melos_tiles_gardencenter_02_104",
                 northSprite2 = "melos_tiles_gardencenter_02_105"
             }
         ),
@@ -18514,7 +18514,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "melos_tiles_gardencenter_02_115",
                 sprite2 = "melos_tiles_gardencenter_02_114",
-                northSprite1 = "melos_tiles_gardencenter_02_112",
+                northSprite = "melos_tiles_gardencenter_02_112",
                 northSprite2 = "melos_tiles_gardencenter_02_113"
             }
         ),
@@ -18538,7 +18538,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "melos_tiles_gardencenter_02_119",
                 sprite2 = "melos_tiles_gardencenter_02_118",
-                northSprite1 = "melos_tiles_gardencenter_02_116",
+                northSprite = "melos_tiles_gardencenter_02_116",
                 northSprite2 = "melos_tiles_gardencenter_02_117"
             }
         ),
@@ -18562,7 +18562,7 @@ local function addContainersOthersToMenu()
             {
                 sprite = "melos_tiles_gardencenter_02_111",
                 sprite2 = "melos_tiles_gardencenter_02_110",
-                northSprite1 = "melos_tiles_gardencenter_02_108",
+                northSprite = "melos_tiles_gardencenter_02_108",
                 northSprite2 = "melos_tiles_gardencenter_02_109"
             }
         ),
@@ -19494,7 +19494,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -19673,7 +19673,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -19852,7 +19852,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -20031,7 +20031,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -20210,7 +20210,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -20389,7 +20389,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -20568,7 +20568,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -20747,7 +20747,7 @@ local function addMelosFurnitureSet1ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -20939,7 +20939,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -21118,7 +21118,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -21297,7 +21297,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -21476,7 +21476,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -21655,7 +21655,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -21834,7 +21834,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -22013,7 +22013,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -22192,7 +22192,7 @@ local function addMelosFurnitureSet2ToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -23378,8 +23378,8 @@ local function addMelosFridgesToMenu()
     end
 
     local additionalFridges = {
-        {sprite = "melos_tiles_appliances_01_87", sprite2 = "melos_tiles_appliances_01_86", northSprite1 = "melos_tiles_appliances_01_84", northSprite2 = "melos_tiles_appliances_01_85"},
-        {sprite = "melos_tiles_appliances_01_93", sprite2 = "melos_tiles_appliances_01_92", northSprite1 = "melos_tiles_appliances_01_94", northSprite2 = "melos_tiles_appliances_01_95"},
+        {sprite = "melos_tiles_appliances_01_87", sprite2 = "melos_tiles_appliances_01_86", northSprite = "melos_tiles_appliances_01_84", northSprite2 = "melos_tiles_appliances_01_85"},
+        {sprite = "melos_tiles_appliances_01_93", sprite2 = "melos_tiles_appliances_01_92", northSprite = "melos_tiles_appliances_01_94", northSprite2 = "melos_tiles_appliances_01_95"},
     }
 
     for _, fridgeData in ipairs(additionalFridges) do

@@ -1380,6 +1380,10 @@ Tooltip_DA = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Brun sten nederste tredje søjle",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Brun sten nederste tredje døråbning",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Stort hvidt vindue",
   Tooltip_Windows_Generic = "Standardvinduer med udsigt over den post-apokalyptiske verden udenfor.",
 

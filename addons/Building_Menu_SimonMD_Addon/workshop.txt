@@ -23,13 +23,13 @@ description=[h2] Is it compatible with Multiplayer? [/h2]
 description= Yes! It has been extensively tested on a MP server!
 description=
 description=[h2] Does it work on existing saves? [/h2]
-description= Absolutely! Enable or disable mid-save without issues.
+description= Absolutely! Enable it mid-save without issues. If you disable it you will [b]lose[/b] your Military Crates!
 description=
 description=[h2] My building isn't recognized as an indoor space. What should I do? [/h2]
 description= For a fix, please watch this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]
 description=
 description=[h2] I'm missing some items in the build menu. How do I find them? [/h2]
-description= To access all available buildables, you'll need to activate them in the Sandbox settings (in SP you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454&searchtext=change+sandbox] Change Sandbox Options (by Star) [/url]), some are disabled by default like metal drums, furniture ...
+description= To access all available buildables, you'll need to activate them in the Sandbox settings (in SP you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454&searchtext=change+sandbox] Change Sandbox Options (by Star)[/url]), some are disabled by default like metal drums, furniture ...
 description=
 description=[h2] Does it work for all game versions? [/h2]
 description= Only tested and working on the latest game version (v41.78.16).
@@ -54,7 +54,11 @@ description=[hr][/hr]
 description=[h1] Addons: [/h1]
 description=While the Building Menu mod can run as a standalone, I recommend using it alongside other tilepacks mods for a richer experience ([i] each addon needs the tilepack loaded before[/i])
 description=
-description=Be sure to load the Building Menu Mod before any other of the addons to avoid any hiccups.
+description=Be sure to load Building Menu Mod [b]before[/b] any other addon to avoid any problems.
+description=For server owners, it should look like this (if you want to use all addons):
+description=[quote=][b]Mods=[/b]...;melos_tiles_for_miles_pack;PertsPartyTiles;simonMDsTiles;Diederiks Tile Palooza;DylansTiles;...;BuildingMenu;BuildingMenuMelosTilesAddon;BuildingMenuDaddyDirkieAddon;BuildingMenuPertsPartyTilesAddon;BuildingMenuSimonMDsAddon;BuildingMenuDylanAddon;...[/quote]
+description=[quote=][b]WorkshopItems=[/b]...;2879745353;2837923608;2852704777;2337452747;2599752664;...;3067798182;3137094726;3137091536;3137092605;3137092790;3137091698;...[/quote]
+description=[i]Note: Instead of '...' you can replace them with other ModID's and WorkshopItem ID's. [b]Don't leave them there.[/b][/i]
 description=
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3067798182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_pert_party_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_dylan_preview.png [/img][/url]
 description=

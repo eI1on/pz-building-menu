@@ -90,6 +90,7 @@ IGUI_NL = {
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Garagedeuren met 3 tegels",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 tegels garagedeuren",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Architectuur Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Deurbekleding",
@@ -97,6 +98,7 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Randdetails",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Vloergieten",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Muur panelen",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "ramen",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Houten",

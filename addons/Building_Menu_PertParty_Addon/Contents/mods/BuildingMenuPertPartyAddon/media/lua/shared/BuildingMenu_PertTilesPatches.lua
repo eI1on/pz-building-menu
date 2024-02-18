@@ -104,4 +104,32 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         props:CreateKeySet();
     end
+
+    sprites = {
+        "pert_bar_01_64",
+        "pert_bar_01_72",
+        "pert_bar_01_65",
+        "pert_bar_01_73",
+        "pert_bar_01_66",
+        "pert_bar_01_74",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "GroupName", "Bar Wall", false)
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false)
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false)
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container)
+        BM_Utils.setSpriteProperty(props, "container", "shelves", false)
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "80", false)
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false)
+        BM_Utils.setSpriteProperty(props, "ItemHeight", "40", false)
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false)
+        BM_Utils.setSpriteProperty(props, "Material2", "Nails", false)
+        BM_Utils.setSpriteProperty(props, "MoveType", "WallObject", false)
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "3", false)
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false)
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false)
+        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false)
+        props:CreateKeySet()
+    end
 end)

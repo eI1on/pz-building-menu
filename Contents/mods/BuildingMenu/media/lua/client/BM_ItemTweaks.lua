@@ -7,9 +7,9 @@ local function applyParamToItems(items, paramName, paramValue)
         local item = ScriptManager.instance:getItem(itemID)
         if item then
             item:DoParam(paramName .. " = " .. tostring(paramValue))
-            -- print("[BM_Tweaks] itemID:"..itemID.." paramName:" ..paramName .. " paramValue:"..paramValue);
+            print("[Building Menu Tweaks] itemID:"..itemID.." paramName:" ..paramName .. " paramValue:"..paramValue);
         else            
-            print("[BM_Tweaks] INVALID itemID:"..itemID.." paramName:" ..paramName .. " paramValue:"..paramValue);
+            print("[Building Menu Tweaks] INVALID itemID:"..itemID.." paramName:" ..paramName .. " paramValue:"..paramValue);
         end
     end
 end
@@ -21,8 +21,8 @@ end
 local function computeUseDelta(optionVar, optionValues)
     local selectedOption = tostring(optionVar)
     local uses = optionValues[selectedOption]
-    -- print("[BM_Tweaks] optionVar:"..optionVar);
-    -- print("[BM_Tweaks] uses:"..uses);
+    -- print("[Building Menu Tweaks] optionVar:"..optionVar);
+    -- print("[Building Menu Tweaks] uses:"..uses);
     return 1 / uses
 end
 

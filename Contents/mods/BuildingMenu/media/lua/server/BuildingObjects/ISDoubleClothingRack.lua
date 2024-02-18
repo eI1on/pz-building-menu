@@ -4,13 +4,13 @@ ISDoubleClothingRack = ISBuildingObject:derive("ISDoubleClothingRack");
 --** ISDoubleClothingRack:new
 --**
 --************************************************************************--
-function ISDoubleClothingRack:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
+function ISDoubleClothingRack:new(player, name, sprite, sprite2, northSprite, northSprite2)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
-	o:setSprite(sprite1);
-	o:setNorthSprite(northSprite1);
+	o:setSprite(sprite);
+	o:setNorthSprite(northSprite);
 	o.player = player;
 	o.sprite2 = sprite2;
 	o.northSprite2 = northSprite2;

@@ -756,7 +756,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -764,7 +764,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
-                    isContainer = true,
                 },
                 {
                     sprite = tileSetName .. "_62",
@@ -774,7 +773,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -794,7 +793,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -802,7 +801,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
-                    isContainer = true,
                 },
                 {
                     sprite = tileSetName .. "_29",
@@ -814,7 +812,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -822,7 +820,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
-                    isContainer = true,
                 },
                 {
                     sprite = tileSetName .. "_33",
@@ -834,7 +831,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -842,7 +839,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
-                    isContainer = true,
                 },
                 {
                     sprite = tileSetName .. "_37",
@@ -854,7 +850,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -862,7 +858,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "shelves",
-                    isContainer = true,
                 },
                 {
                     sprite = tileSetName .. "_53",
@@ -874,7 +869,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildDoubleTileFurniture,
+                BuildingMenu.onBuildDoubleTileContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -895,7 +890,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Dresser",
-                BuildingMenu.onBuildDoubleTileFurniture,
+                BuildingMenu.onBuildDoubleTileContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -916,7 +911,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_craft_bookcaseDesc",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -924,9 +919,8 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "shelves",
-                    canBeAlwaysPlaced = true,
                     isContainer = true,
-                    canBeLockedByPadlock = true
+                    canBeLockedByPadlock = false
                 },
                 {
                     sprite = tileSetName .. "_49",
@@ -938,7 +932,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.createObject(
                 "",
                 "Tooltip_craft_bookcaseDesc",
-                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.onBuildWoodenContainer,
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
@@ -946,13 +940,10 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "shelves",
-                    canBeAlwaysPlaced = true,
                     needToBeAgainstWall = true,
                     buildLow = false,
                     blockAllTheSquare = false,
                     isWallLike = true,
-                    isContainer = true,
-                    canBeLockedByPadlock = true
                 },
                 {
                     sprite = tileSetName .. "_56",
@@ -978,7 +969,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -999,7 +990,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -1020,7 +1011,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -1041,7 +1032,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -1062,15 +1053,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Oak_Drawers",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                containerType = "desk",
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_28",
@@ -1082,15 +1072,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                containerType = "wardrobe",
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_33",
@@ -1102,15 +1091,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_41",
@@ -1122,15 +1110,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_34",
@@ -1140,16 +1127,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_67",
@@ -1161,7 +1146,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -1169,8 +1154,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_71",
@@ -1182,7 +1165,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -1190,8 +1173,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_75",
@@ -1203,7 +1184,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
@@ -1211,8 +1192,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
-                isContainer = true,
-                canBeLockedByPadlock = true
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_79",
@@ -1224,15 +1203,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Dark_Drawers",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "desk"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_100",
@@ -1244,15 +1222,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_80",
@@ -1264,15 +1241,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_81",
@@ -1284,15 +1260,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_82",
@@ -1304,15 +1279,14 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
-                canBeLockedByPadlock = true
+                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_89",
@@ -1667,7 +1641,7 @@ local function addKitchenCountersToMenu()
 
     dataCounters = {2, 3, 10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59}
     for _, spriteNumber in ipairs(dataCounters) do
-        table.insert(daddyDirkieCounters, 
+        table.insert(daddyDirkieCounters,
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Counter_Generic",
@@ -1728,7 +1702,7 @@ local function addMetalContainersToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildMetalShelf,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
@@ -1752,7 +1726,7 @@ local function addMetalContainersToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildMetalShelf,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
@@ -1795,7 +1769,7 @@ local function addMetalContainersToMenu()
             {
                 sprite = "industry_dirkea_ddd_01_15",
                 sprite2 = "industry_dirkea_ddd_01_14",
-                northSprite1 = "industry_dirkea_ddd_01_12",
+                northSprite = "industry_dirkea_ddd_01_12",
                 northSprite2 = "industry_dirkea_ddd_01_13"
             }
         ),
@@ -1846,7 +1820,7 @@ local function addMetalContainersToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildMetalShelf,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
@@ -1859,7 +1833,6 @@ local function addMetalContainersToMenu()
                 containerType = "shelves",
                 needToBeAgainstWall = true,
                 renderFloorHelper = true,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = false,
             },
             {
@@ -3109,7 +3082,7 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
             sprites = { 
                 sprite = "furniture_more_ddd_01_3",
                 sprite2 = "furniture_more_ddd_01_2",
-                northSprite1 = "furniture_more_ddd_01_0",
+                northSprite = "furniture_more_ddd_01_0",
                 northSprite2 = "furniture_more_ddd_01_1"
             }
         },
@@ -3119,7 +3092,7 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
             sprites = { 
                 sprite = "furniture_more_ddd_01_7",
                 sprite2 = "furniture_more_ddd_01_6",
-                northSprite1 = "furniture_more_ddd_01_4",
+                northSprite = "furniture_more_ddd_01_4",
                 northSprite2 = "furniture_more_ddd_01_5"
             }
         },

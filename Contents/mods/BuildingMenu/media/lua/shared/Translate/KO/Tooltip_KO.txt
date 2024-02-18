@@ -1381,6 +1381,10 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "갈색 돌 하단 세 번째 기둥",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "갈색 돌 하단 세 번째 현관",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "큰 흰색 창문",
   Tooltip_Windows_Generic = "표준 창문으로, 대재앙 세계의 외부를 볼 수 있습니다.",
 

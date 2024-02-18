@@ -1248,7 +1248,7 @@ local function addMetalContainersToMenu()
                     {
                         sprite = "furniture_Simon_MD_12",
                         sprite2 = "furniture_Simon_MD_11",
-                        northSprite1 = "furniture_Simon_MD_8",
+                        northSprite = "furniture_Simon_MD_8",
                         northSprite2 = "furniture_Simon_MD_9"
                     }
                 ),

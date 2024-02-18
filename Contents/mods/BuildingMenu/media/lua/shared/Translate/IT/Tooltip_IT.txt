@@ -1380,6 +1380,10 @@ Tooltip_IT = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Terzo pilastro inferiore in pietra marrone",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Terza porta inferiore in pietra marrone",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Grande finestra bianca",
   Tooltip_Windows_Generic = "Finestre standard, che offrono una vista del mondo post-apocalittico esterno.",
 

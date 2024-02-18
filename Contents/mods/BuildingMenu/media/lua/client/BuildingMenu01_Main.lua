@@ -543,8 +543,6 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
         end
     end
 
-
-
     
     tooltip.description = tooltip.description .. BuildingMenu.textCanRotate;
 

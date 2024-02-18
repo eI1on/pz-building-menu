@@ -90,6 +90,7 @@ IGUI_FR = {
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Portes de garage 3 cases",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Portes de garage 4 cases",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Architecture Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Garnitures de porte",
@@ -97,6 +98,7 @@ IGUI_FR = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Détails des bords",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Moulure de sol",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Panneaux muraux",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "Fenêtres",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "En bois",

@@ -90,6 +90,7 @@ IGUI_ES = {
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Puertas de Garaje de 3 Azulejos",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Puertas de Garaje de 4 Azulejos",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Arquitectura Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Remates de Puertas",
@@ -97,6 +98,7 @@ IGUI_ES = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Detalles de Borde",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Molduras de Suelo",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Paneles de Pared",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "Ventanas",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Madera",

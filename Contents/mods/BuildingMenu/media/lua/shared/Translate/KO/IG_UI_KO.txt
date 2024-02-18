@@ -90,13 +90,15 @@ IGUI_KO = {
     
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 타일 차고 문",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 타일 차고 문",
-    
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
+
     IGUI_BuildingMenuCat_ArchitecturePlus = "아키텍처 플러스",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "문 트림",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Crown_Molding = "크라운 몰딩",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "가장자리 디테일링",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "바닥 몰딩",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "벽 패널",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "창문",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "나무 창문",

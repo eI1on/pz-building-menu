@@ -90,6 +90,7 @@ IGUI_PH = {
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 Mga Tile na Pintuan ng Garahe",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 na mga Tiles na Pintuan ng Garahe",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Architecture Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Pinto Trims",
@@ -97,6 +98,7 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Pagdetalye ng Edge",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Paghubog sa Sahig",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Mga Panel sa Pader",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "kahoy",

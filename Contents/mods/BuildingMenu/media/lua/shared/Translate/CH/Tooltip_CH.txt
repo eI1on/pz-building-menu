@@ -1379,6 +1379,10 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "褐色石頭墻裙柱",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "褐色石頭墻裙門蹬",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "大白色窗戶",
   Tooltip_Windows_Generic = "能一窺外部末世景象的標準窗戶。",
 

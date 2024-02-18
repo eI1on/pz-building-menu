@@ -2061,7 +2061,7 @@ local function addFridgeAppliancesToMenu()
             {
                 sprite = "pert_re-phoenix_3_47",
                 sprite2 = "pert_re-phoenix_3_46",
-                northSprite1 = "pert_re-phoenix_3_44",
+                northSprite = "pert_re-phoenix_3_44",
                 northSprite2 = "pert_re-phoenix_3_45"
             }
         )

@@ -1380,6 +1380,10 @@ Tooltip_RO = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Al Treilea Stâlp Inferior de Piatră Maro",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "A treia ușă inferioară de Piatră Maro",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Fereastră Mare Albă",
   Tooltip_Windows_Generic = "Ferestre standard, care oferă o vedere asupra lumii post-apocaliptice de afară.",
 

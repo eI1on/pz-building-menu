@@ -9,18 +9,18 @@ ISDoubleTileContainer = ISBuildingObject:derive("ISDoubleTileContainer");
 ---Constructor for ISDoubleTileContainer
 ---@param player IsoPlayer The player object.
 ---@param name string The name of the shelf.
----@param sprite1 string The sprite for the first part of the shelf.
+---@param sprite string The sprite for the first part of the shelf.
 ---@param sprite2 string The sprite for the second part of the shelf.
----@param northSprite1 string The north-facing sprite for the first part.
+---@param northSprite string The north-facing sprite for the first part.
 ---@param northSprite2 string The north-facing sprite for the second part.
 ---@return ISDoubleTileContainer
-function ISDoubleTileContainer:new(player, name, sprite1, sprite2, northSprite1, northSprite2)
+function ISDoubleTileContainer:new(player, name, sprite, sprite2, northSprite, northSprite2)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
-	o:setSprite(sprite1);
-	o:setNorthSprite(northSprite1);
+	o:setSprite(sprite);
+	o:setNorthSprite(northSprite);
 	o.player = player;
 	o.sprite2 = sprite2;
 	o.northSprite2 = northSprite2;
@@ -265,9 +265,10 @@ end
 ---@param square IsoGridSquare The square to check for the first part.
 ---@return boolean
 function ISDoubleTileContainer:isValid(square)
-    if not ISBuildingObject.isValid(self, square) or buildUtil.stairIsBlockingPlacement(square, true) or square:isVehicleIntersecting() then
-        return false
-    end
+    if not square then return false end
+    if buildUtil.stairIsBlockingPlacement(square, true) then return false end
+    if square:isVehicleIntersecting() then return false end
+    if not square:isFreeOrMidair(true) then return false end
 
     local xa, ya, za = self:getSquare2Pos(square, self.north)
     local squareA = getCell():getGridSquare(xa, ya, za)

@@ -1380,6 +1380,10 @@ Tooltip_DE = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Untere dritte Säule aus braunem Stein",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Untere dritte Tür aus braunem Stein",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Großes weißes Fenster",
   Tooltip_Windows_Generic = "Standardfenster, die einen Blick auf die postapokalyptische Welt draußen bieten.",
 

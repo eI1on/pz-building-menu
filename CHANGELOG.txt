@@ -4,16 +4,36 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] Fixed containers that were stacking on top of each other
+[*] Fixed containers that were building on top of each other
 [*] Fixed 4 Tile Garage Doors (hopefully)
 [*] Fixed Property Flags for some tiles
+[*] Added House Foundations in Architecture Plus
 [*] Tree Brances and Twigs now can be placed in Log containers
-[*] Made the Poison Deadly
+[*] Low Fences now can be scraped
+[*] Fixed a bug where water was being collected twice from rain collectors
+[/list]
+Melos's addon:
+[list]
+[*] Fixed Property Flags for some tiles
 [/list]
 DaddyDirkie's addon:
 [list]
 [*] Fixed Log Window Frame Walls (only Twig Windows can be built in them)
 [*] Lowered Log Floor requirements
+[*] Small Lockers and Pallet with Small Crates can be stacked 
+[*] Fixed Property Flags for some tiles
+[/list]
+Dylan's addon:
+[list]
+[*] Fixed Property Flags for some tiles
+[/list]
+PertParty's addon:
+[list]
+[*] Fixed Property Flags for some tiles
+[/list]
+SimonMD's addon:
+[list]
+[*] Fixed Property Flags for some tiles
 [/list]
 [/list]
 

@@ -1380,6 +1380,10 @@ Tooltip_PH = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Kayumangging Bato sa Ikatlong Haligi",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Kayumangging Bato sa Ibang Ikatlong Pintuan",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Malaking White Window",
   Tooltip_Windows_Generic = "Mga karaniwang bintana, na nag-aalok ng tanawin ng post-apocalyptic na mundo sa labas.",
 

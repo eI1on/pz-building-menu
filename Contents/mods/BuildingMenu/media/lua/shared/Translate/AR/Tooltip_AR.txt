@@ -1380,6 +1380,10 @@ Tooltip_AR = {
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Pillar = "Tercer pilar inferior de piedra marrón",
   Tooltip_BuildingMenuObj_Brown_Stone_Lower_Third_Doorway = "Tercera puerta inferior de piedra marrón",
 
+  Tooltip_BuildingMenuObj_Foundation_Edge = "Foundation Edge",
+  Tooltip_BuildingMenuObj_Foundation_Corner = "Foundation Corner",
+  Tooltip_Foundation = "A basic, sturdy base for constructing buildings.",
+
   Tooltip_BuildingMenuObj_Large_White_Window = "Gran ventana blanca",
   Tooltip_Windows_Generic = "Ventanas estándar que ofrecen una vista del mundo postapocalíptico exterior.",
 
