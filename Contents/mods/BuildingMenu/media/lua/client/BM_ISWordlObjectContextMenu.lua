@@ -114,14 +114,16 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
                 local sprite = attached:get(n - 1)
                 if sprite and sprite:getParentSprite() then
                     local spriteName = sprite:getParentSprite():getName()
-                    if hasCuttingTool and isRemovableDetailItem(spriteName, RemovableWallVinesTiles) then
-                        wallVine = worldObj:getSquare()
-                    end
-                    if hasHammerTool and isRemovableDetailItem(spriteName, RemovableWallDetailingTiles) then
-                        wallDetailing = worldObj:getSquare()
-                    end
-                    if hasTrowelTool and isRemovableDetailItem(spriteName, RemovableTrafficLineTiles) then
-                        trafficLine = worldObj:getSquare()
+                    if spriteName then
+                        if hasCuttingTool and isRemovableDetailItem(spriteName, RemovableWallVinesTiles) then
+                            wallVine = worldObj:getSquare()
+                        end
+                        if hasHammerTool and isRemovableDetailItem(spriteName, RemovableWallDetailingTiles) then
+                            wallDetailing = worldObj:getSquare()
+                        end
+                        if hasTrowelTool and isRemovableDetailItem(spriteName, RemovableTrafficLineTiles) then
+                            trafficLine = worldObj:getSquare()
+                        end
                     end
                 end
             end

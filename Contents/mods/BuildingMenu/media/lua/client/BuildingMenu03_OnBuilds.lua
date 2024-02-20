@@ -70,21 +70,19 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         if objectOptions.firstItem then
             item = BuildingMenu.getAvailableTool(inv, objectOptions.firstItem);
             if item and instanceof(item, "InventoryItem") then
-                print(item:getType())
                 objectOptions.firstItem = item:getType()
-            elseif not ISBuildMenu.cheat then
-                print("[Building Menu] ERROR at creating - firstItem - for: ", name)
-                return
+            else
+                print("[Building Menu] ERROR at creating - firstItem - for: ", name);
+                return;
             end
         end
         if objectOptions.secondItem then
             item = BuildingMenu.getAvailableTool(inv, objectOptions.secondItem);
             if item and instanceof(item, "InventoryItem") then
-                print(item:getType())
                 objectOptions.secondItem = item:getType()
-            elseif not ISBuildMenu.cheat then
-                print("[Building Menu] ERROR at creating - secondItem - for: ", name)
-                return
+            else
+                print("[Building Menu] ERROR at creating - secondItem - for: ", name);
+                return;
             end
         end
         if objectOptions.containerType then
@@ -97,8 +95,8 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         if isDebugEnabled() then
             BuildingMenu.debugPrint("[Building Menu Debug] ", name)
             BuildingMenu.debugPrint("[Building Menu Debug] ", objectOptions)
-            BM_Utils.printPropNamesFromSprite(object:getSprite())
-            BM_Utils.printPropNamesFromSprite(object.northSprite)
+            -- BM_Utils.printPropNamesFromSprite(objectOptions.sprites.sprite)
+            -- BM_Utils.printPropNamesFromSprite(objectOptions.sprites.northSprite)
         end
     end
 

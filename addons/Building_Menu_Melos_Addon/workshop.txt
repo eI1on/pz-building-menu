@@ -64,10 +64,6 @@ description=[h1] Addons: [/h1]
 description=While the Building Menu mod can run as a standalone, I recommend using it alongside other tilepacks mods for a richer experience ([i] each addon needs the tilepack loaded before[/i])
 description=
 description=Be sure to load Building Menu Mod [b]before[/b] any other addon to avoid any problems.
-description=For server owners, it should look like this (if you want to use all addons):
-description=[quote=][b]Mods=[/b]...;melos_tiles_for_miles_pack;PertsPartyTiles;simonMDsTiles;Diederiks Tile Palooza;DylansTiles;...;BuildingMenu;BuildingMenuMelosTilesAddon;BuildingMenuDaddyDirkieAddon;BuildingMenuPertsPartyTilesAddon;BuildingMenuSimonMDsAddon;BuildingMenuDylanAddon;...[/quote]
-description=[quote=][b]WorkshopItems=[/b]...;2879745353;2837923608;2852704777;2337452747;2599752664;...;3067798182;3137094726;3137091536;3137092605;3137092790;3137091698;...[/quote]
-description=[i]Note: Instead of '...' you can replace them with other ModID's and WorkshopItem ID's. [b]Don't leave them there.[/b][/i]
 description=
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3067798182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_pert_party_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_simonMD_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_dylan_preview.png [/img][/url]
 description=

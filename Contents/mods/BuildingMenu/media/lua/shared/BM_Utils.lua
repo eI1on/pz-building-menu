@@ -40,7 +40,9 @@ end
 --- Prints property names and flags list for a sprite.
 ---@param sprite string The sprite name.
 function BM_Utils.printPropNamesFromSprite(sprite)
-    local props = IsoSpriteManager.instance:getSprite(sprite):getProperties();
+    local isoSprite = IsoSpriteManager.instance:getSprite(sprite);
+    if not isoSprite then print("[Building Menu] NO Properties for ".. sprite); return; end;
+    local props = isoSprite:getProperties();
     print("[Building Menu] Property Names for ".. sprite .." :", props:getPropertyNames());
     print("[Building Menu] Flags List for ".. sprite .." :", props:getFlagsList());
 end
