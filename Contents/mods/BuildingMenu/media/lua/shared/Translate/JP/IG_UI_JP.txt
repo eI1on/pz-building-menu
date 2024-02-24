@@ -37,6 +37,8 @@ IGUI_JP = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "茶色のパネル",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "ファンシーウッドパネル",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "シンダーブロック ホワイト",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "シンダーブロックブラウン",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "シンダーブロックタン",

@@ -37,6 +37,8 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Panou Maro",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Panou din Lemn de Lux",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Perete din Bolțar Alb",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Perete din Bolțar Maro",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Perete din Bolțar Cafeniu",

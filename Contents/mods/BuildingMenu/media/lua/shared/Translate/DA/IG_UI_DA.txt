@@ -37,6 +37,8 @@ IGUI_DA = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Brunt panel",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Fancy træpanel",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Cinderblock hvid",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Cinderblock Brun",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Cinderblock Tan",

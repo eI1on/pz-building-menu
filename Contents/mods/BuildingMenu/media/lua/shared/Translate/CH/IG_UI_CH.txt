@@ -37,6 +37,8 @@ IGUI_CH = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel      = "褐色面板墻",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "花式木面板墻",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock        = "白色砌塊墻",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock        = "褐色砌塊墻",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock          = "棕色砌塊墻",

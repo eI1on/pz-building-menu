@@ -37,6 +37,8 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Ruskea paneeli",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Hieno puupaneeli",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Cinderblock Valkoinen",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Cinderblock Brown",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Cinderblock Tan",

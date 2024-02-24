@@ -4672,6 +4672,88 @@ end
 local function addCinderblocWallsToMenu()
     local cinderblockWalls = {
         {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles"),
+            subCategoryIcon = "walls_interior_bathroom_01_0",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Bathroom_Medium_Tiles_Wall",
+                    "Tooltip_Bathroom_Medium_Tiles_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.WhiteBigBrickWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = {wallType = "wall"}
+                    },
+                    {
+                        sprite = "walls_interior_bathroom_01_0",
+                        northSprite = "walls_interior_bathroom_01_1",
+                        corner = "walls_interior_bathroom_01_3"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Bathroom_Medium_Tiles_Door_Frame",
+                    "Tooltip_Bathroom_Medium_Tiles_Door_Frame",
+                    BuildingMenu.onBuildDoorFrame,
+                    BuildingMenu.WhiteBigBrickWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        modData = {wallType = "doorframe"}
+                    },
+                    {
+                        sprite = "walls_interior_bathroom_01_10",
+                        northSprite = "walls_interior_bathroom_01_11",
+                        corner = "walls_interior_bathroom_01_3"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Bathroom_Medium_Tiles_Window_Frame",
+                    "Tooltip_Bathroom_Medium_Tiles_Window_Frame",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.WhiteBigBrickWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = {wallType = "windowsframe"}
+                    },
+                    {
+                        sprite = "walls_interior_bathroom_01_8",
+                        northSprite = "walls_interior_bathroom_01_9",
+                        corner = "walls_interior_bathroom_01_3"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Bathroom_Medium_Tiles_Pillar",
+                    "Tooltip_Bathroom_Medium_Tiles_Pillar",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.WhiteSmallBrickWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = {wallType = "pillar"}
+                    },
+                    {sprite = "walls_interior_bathroom_01_3", northSprite = "walls_interior_bathroom_01_3"}
+                )
+            }
+        },
+        {
             subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_White_Cinderblock"),
             subCategoryIcon = "walls_commercial_01_48",
             objects = {
@@ -4751,8 +4833,6 @@ local function addCinderblocWallsToMenu()
                     },
                     {sprite = "walls_commercial_01_51", northSprite = "walls_commercial_01_51"}
                 )
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_White_Cinderblock_Fence", "Tooltip_White_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_01_52", northSprite = "walls_commercial_01_53", corner = "walls_commercial_01_55"}),
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_White_Cinderblock_FencePost", "Tooltip_White_Cinderblock_FencePost",  BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_01_55", northSprite = "walls_commercial_01_55"}),
             }
         },
         {
@@ -30080,7 +30160,49 @@ local function addSeatingFurnitureToMenu()
                         northSprite2 = "furniture_seating_outdoor_01_15"
                     }
                 ),
-        }
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_craft_woodenChairDesc",
+                    BuildingMenu.onBuildThreeTileSimpleFurniture,
+                    BuildingMenu.LargeFurnitureRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                    },
+                    {
+                        sprite= "location_community_church_small_01_48",
+                        sprite2= "location_community_church_small_01_49",
+                        sprite3= "location_community_church_small_01_50",
+                        northSprite= "location_community_church_small_01_51",
+                        northSprite2 = "location_community_church_small_01_52",
+                        northSprite3= "location_community_church_small_01_53",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_craft_woodenChairDesc",
+                    BuildingMenu.onBuildThreeTileSimpleFurniture,
+                    BuildingMenu.LargeFurnitureRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                    },
+                    {
+                        sprite= "location_community_church_small_01_59",
+                        sprite2= "location_community_church_small_01_60",
+                        sprite3= "location_community_church_small_01_61",
+                        northSprite= "location_community_church_small_01_56",
+                        northSprite2 = "location_community_church_small_01_57",
+                        northSprite3= "location_community_church_small_01_58",
+                    }
+                ),
+            }
         },
         {
             subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
@@ -32470,6 +32592,30 @@ local function addPostersAndSignsToMenu()
             subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Posters"),
             subCategoryIcon = "location_community_medical_01_12",
             objects = {
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Posters_Generic",
+                    BuildingMenu.onBuildDoubleTileFurniture,
+                    BuildingMenu.PostersRecipe,
+                    true,
+                    {
+                        actionAnim = "BuildLow",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureSmall",
+                        isCorner = true,
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false
+                    },
+                    {
+                        sprite = "walls_decoration_01_65",
+                        sprite2= "walls_decoration_01_64",
+                        northSprite = "walls_decoration_01_66",
+                        northSprite2 = "walls_decoration_01_67",
+                    }
+                ),
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Posters_Generic",

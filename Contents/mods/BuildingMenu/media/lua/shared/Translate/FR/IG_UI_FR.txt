@@ -37,6 +37,8 @@ IGUI_FR = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Panneau marron",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Panneau de bois fantaisie",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Parpaing blanc",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Parpaing marron",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Parpaing calcaire",

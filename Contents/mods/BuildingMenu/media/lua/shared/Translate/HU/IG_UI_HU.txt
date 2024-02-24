@@ -37,6 +37,8 @@ IGUI_HU = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Barna panel",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Divatos fa panel",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Cinderblock White",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Cinderblock Brown",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Cinderblock Tan",

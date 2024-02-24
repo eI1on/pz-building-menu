@@ -37,6 +37,8 @@ IGUI_PL = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Brązowy panel",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Fantazyjny Panel Drewniany",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Biały blok żużlowy",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Cinderblockowy brąz",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Cinderblockowa opalenizna",

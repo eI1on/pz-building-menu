@@ -322,4 +322,144 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "FenceTypeLow", "MetalGate", false);
         props:CreateKeySet();
     end
+
+
+    sprites = {
+        "floors_interior_tilesandwood_01_40",
+        "floors_interior_tilesandwood_01_41",
+        "floors_interior_tilesandwood_01_42",
+        "floors_interior_tilesandwood_01_43",
+        "floors_interior_tilesandwood_01_44",
+        "floors_interior_tilesandwood_01_45",
+        "floors_interior_tilesandwood_01_46",
+        "floors_interior_tilesandwood_01_47",
+        "floors_interior_tilesandwood_01_48",
+        "floors_interior_tilesandwood_01_49",
+        "floors_interior_tilesandwood_01_50",
+        "floors_interior_tilesandwood_01_51",
+        "floors_interior_tilesandwood_01_52",
+        "industry_railroad_05_45"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "Nails", false);
+        BM_Utils.setSpriteProperty(props, "ScrapSize", "Small", false);
+        props:CreateKeySet();
+    end
+
+    
+    sprites = {
+        "floors_interior_carpet_01_0",
+        "floors_interior_carpet_01_1",
+        "floors_interior_carpet_01_2",
+        "floors_interior_carpet_01_3",
+        "floors_interior_carpet_01_4",
+        "floors_interior_carpet_01_5",
+        "floors_interior_carpet_01_6",
+        "floors_interior_carpet_01_7",
+        "floors_interior_carpet_01_8",
+        "floors_interior_carpet_01_9",
+        "floors_interior_carpet_01_10",
+        "floors_interior_carpet_01_11",
+        "floors_interior_carpet_01_12",
+        "floors_interior_carpet_01_13",
+        "floors_interior_carpet_01_14",
+        "floors_interior_carpet_01_15",
+        "location_shop_greenes_01_32"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Fabric", false);
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Cutter", false);
+        BM_Utils.setSpriteProperty(props, "ScrapSize", "Small", false);
+        props:CreateKeySet();
+    end
+
+    
+    sprites = {
+        "industry_01_37",
+        "industry_01_38",
+        "industry_01_39",
+        "industry_01_12",
+        "industry_01_13",
+        "industry_01_7",
+        "industry_01_6",
+        "industry_railroad_05_22",
+        "industry_railroad_05_23",
+        "industry_railroad_05_38",
+        "industry_railroad_05_39",
+        "fixtures_escalators_01_3",
+        "fixtures_escalators_01_12",
+        "fixtures_escalators_01_4",
+        "fixtures_escalators_01_11",
+        "fixtures_escalators_01_5",
+        "fixtures_escalators_01_13",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "MetalPlates", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "MetalScrap", false);
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Crowbar", false);
+        BM_Utils.setSpriteProperty(props, "ScrapSize", "Small", false);
+        props:CreateKeySet();
+    end
+
+    
+    sprites = {
+        "floors_interior_tilesandwood_01_0",
+        "floors_interior_tilesandwood_01_1",
+        "floors_interior_tilesandwood_01_2",
+        "floors_interior_tilesandwood_01_3",
+        "floors_interior_tilesandwood_01_4",
+        "floors_interior_tilesandwood_01_5",
+        "floors_interior_tilesandwood_01_6",
+        "floors_interior_tilesandwood_01_7",
+        "floors_interior_tilesandwood_01_8",
+        "floors_interior_tilesandwood_01_9",
+        "floors_interior_tilesandwood_01_10",
+        "floors_interior_tilesandwood_01_11",
+        "floors_interior_tilesandwood_01_12",
+        "floors_interior_tilesandwood_01_13",
+        "floors_interior_tilesandwood_01_14",
+        "floors_interior_tilesandwood_01_16",
+        "floors_interior_tilesandwood_01_17",
+        "floors_interior_tilesandwood_01_18",
+        "floors_interior_tilesandwood_01_19",
+        "floors_interior_tilesandwood_01_20",
+        "floors_interior_tilesandwood_01_21",
+        "floors_interior_tilesandwood_01_22",
+        "floors_interior_tilesandwood_01_23",
+        "floors_interior_tilesandwood_01_24",
+        "floors_interior_tilesandwood_01_28",
+        "floors_interior_tilesandwood_01_29",
+        "floors_interior_tilesandwood_01_30",
+        "floors_interior_tilesandwood_01_31",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Ceramic", false);
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, "ScrapSize", "Small", false);
+        props:CreateKeySet();
+    end
+    
+    sprites = {
+        "walls_decoration_01_65",
+        "walls_decoration_01_64",
+        "walls_decoration_01_66",
+        "walls_decoration_01_67",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "CustomName", "Banner", false);
+        props:CreateKeySet();
+    end
 end)

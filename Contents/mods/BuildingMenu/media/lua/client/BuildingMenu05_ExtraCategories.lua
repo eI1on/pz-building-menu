@@ -20,7 +20,7 @@ local function addLightingToMenu()
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
-                isCorner = true
+                canPassThrough = true,
             },
             {
                 sprite = "lighting_indoor_01_1",

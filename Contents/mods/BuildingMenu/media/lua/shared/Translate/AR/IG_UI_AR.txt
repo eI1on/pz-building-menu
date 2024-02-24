@@ -37,6 +37,8 @@ IGUI_AR = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Panel marrón",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Panel de madera de lujo",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Bloque de hormigón blanco",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Bloque de hormigón marrón",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Bronceado de bloque de cemento",

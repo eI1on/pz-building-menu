@@ -71,7 +71,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             item = BuildingMenu.getAvailableTool(inv, objectOptions.firstItem);
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.firstItem = item:getType()
-            else
+            elseif not isDebugEnabled() then
                 print("[Building Menu] ERROR at creating - firstItem - for: ", name);
                 return;
             end
@@ -80,7 +80,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             item = BuildingMenu.getAvailableTool(inv, objectOptions.secondItem);
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.secondItem = item:getType()
-            else
+            elseif not isDebugEnabled() then
                 print("[Building Menu] ERROR at creating - secondItem - for: ", name);
                 return;
             end
@@ -95,9 +95,11 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         if isDebugEnabled() then
             BuildingMenu.debugPrint("[Building Menu Debug] ", name)
             BuildingMenu.debugPrint("[Building Menu Debug] ", objectOptions)
-            -- BM_Utils.printPropNamesFromSprite(objectOptions.sprites.sprite)
-            -- BM_Utils.printPropNamesFromSprite(objectOptions.sprites.northSprite)
-        end
+            if objectOptions and objectOptions["sprites"] then
+                if objectOptions["sprites"]["sprite"] then BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]["sprite"]); end
+                if objectOptions["sprites"]["northSprite"] then BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]["northSprite"]); end
+            end
+        end   
     end
 
     getCell():setDrag(object, player);
@@ -903,7 +905,7 @@ BuildingMenu.onBuildLightSource = function( sprites, name, player, objectRecipe,
 
     _lightSource.fuel = 'Base.Battery'
     _lightSource.baseItem = 'Base.LightBulb'
-    _lightSource.radius = 40
+    _lightSource.radius = 7
 
     _lightSource.modData['IsLighting'] = true
 
@@ -930,7 +932,7 @@ BuildingMenu.onBuildLightPole = function( sprites, name, player, objectRecipe, o
 
     _lightPole.fuel = 'Base.Battery'
     _lightPole.baseItem = 'Base.LightBulb'
-    _lightPole.radius = 20
+    _lightPole.radius = 30
 
     _lightPole.modData['IsLighting'] = true
 

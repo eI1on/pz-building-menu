@@ -1,3 +1,36 @@
+ FEB 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Fixed error when R-Clicking on fireplaces and having a hammer in inventory
+[*] Added bathroom walls, church pews (benches subcategory), decorative banners
+[*] Changed light radius to built light sources from BM to their vanilla value
+[*] Fixed placement with 3 and 4 tile furniture
+[/list]
+Melos's addon:
+[list]
+[*] 
+[/list]
+DaddyDirkie's addon:
+[list]
+[*] 
+[/list]
+Dylan's addon:
+[list]
+[*] 
+[/list]
+PertParty's addon:
+[list]
+[*] 
+[/list]
+SimonMD's addon:
+[list]
+[*] 
+[/list]
+[/list]
+
 18 FEB 24
 824102d
 

@@ -37,6 +37,8 @@ IGUI_CS = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Hnědý panel",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Efektní dřevěný panel",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Cinderblock bílý",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Cinderblock Brown",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Cinderblock Tan",

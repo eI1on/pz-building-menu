@@ -290,7 +290,7 @@ end
 ---Calculates the position of the second part of the shelf.
 ---@param square IsoGridSquare The square of the first part.
 ---@param north boolean Whether the shelf is facing north.
----@return number, number, number The x, y, and z coordinates for the second part.
+---@return number x, number y, number z The x, y, and z coordinates for the second part.
 function ISDoubleTileContainer:getSquare2Pos(square, north)
 	local x = square:getX()
 	local y = square:getY()

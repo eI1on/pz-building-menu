@@ -37,6 +37,8 @@ IGUI_ID = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Panel Coklat",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Panel Kayu Mewah",
 
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Cinderblock Putih",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Blok Cinder Coklat",
     IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Cinderblock Tan",
