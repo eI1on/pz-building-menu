@@ -175,8 +175,75 @@ BuildingMenu.GreyBigStoneWallRecipe = {
     }
 }
 ```
-Note: if you want to change the recipes based to the sandbox options you have to calculate them at **Event.OnInitGlobalModData** because then Sandbox Options are initialized.
+Note: if you want to change recipes based on sandbox options, you must initialize them at **Event.OnInitGlobalModData**, this event is called right after the Sandbox Options are initialized.
 
 
 # Buildables Options  
+
+When creating buildable objects using the BuildingMenu.createObject function, you can specify a set of options that define the behavior and characteristics of these objects in the game.
+
+**actionAnim**: The animation played by the character when building the object.  
+Can be:
+```lua
+"Build", "BuildLow", "BlowTorch", "BlowTorchMid", "DigTrowel", "BlowTorchFloor", "DigShovel", "DestroyFloor", "paint", "VehicleWorkOnTire"
+```   
+
+**blockAllTheSquare**: A **boolean** value, it dictates is the object will occupy the entire tile, preventing other objects from being placed on the same spot.   
+
+**canBarricade**: A **boolean** value that determines whether the object can be barricaded.   
+
+**canPassThrough**: A **boolean** value that allows players to walk through the object, for decorative items or non-collidable structures.   
+
+**canScrap**: A **boolean** indicating if the object can be scrapped or dismantled after being built.   
+
+**completionSound**: The sound effect played upon completing the construction of the object. For example, "BuildWoodenStructureLarge" for large wooden structures.  
+Can be:  
+```lua
+"BuildWoodenStructureLarge", "BuildWoodenStructureSmall", "BuildMetalStructureWallFrame", "BuildMetalStructureMedium", "DropSoilFromGravelBag", "BuildFenceCairn"
+```   
+
+**containerType**: Specifies the type of container the buildable object will be if it will be a container. Different types represent different in-game storage containers, each with its own storage capacity.  
+Can be:
+```lua
+"displaycasebakery", "fridge", "shelves", "smallcrate", "smallbox", "garage_storage", "militarycrate", "filingcabinet", "bin", "locker", "metal_shelves", "militarylocker", "officedrawers", "sidetable", "wardrobe", "counter", "desk", "crate", "logs", "postbox"
+```   
+
+**craftingBank**: Determines the sound when crafting the buildable object   
+Can be:
+```lua
+"BlowTorch", "Shoveling", "SledgehammerHit", "Painting", "ClothesRipping"
+```   
+
+**firstItem**: Indicates the primary tool  
+Can be:
+```lua
+firstItem = "BlowTorch",
+```
+
+**secondItem**: Indicates the secondary tool   
+Can be:
+```lua
+secondItem = "WeldingMask",
+```
+
+**hoppable**: A **boolean** value indicating whether the object (like fences or low walls) is hoppable, **true** allows players and zombies to jump over it.  
+ 
+**isCorner**: A **boolean** value indicating whether the object is meant to be placed at corners.  
+
+**isContainer**: A **boolean** value indicating whether the object is a container or not.  
+
+**isThumpable**: A **boolean** indicating if the object can be destroyed by zombies or players. true allows for the object to be thumped. I recommend that all buildables be thumpable because players can select from the sandbox options whether they can be destroyed or not.   
+
+**modData**: A table containing custom data that can be used to store additional information about the object, such as its type.  
+Can be:
+```lua
+"wall", "doorframe", "windowsframe", "pillar", "doorframe"
+```
+**needToBeAgainstWall**: For objects that must be built adjacent to a wall.   
+
+**noNeedHammer**: A **boolean** value indicating whether the object requires a hammer to be built. Setting this to false means a hammer is needed. Set it to **true** for recipes that have shovels, propane torch, or anything other than hammers as the primary tool.   
+
+**renderFloorHelper**: A **boolean** value indicating that will render a helper wooden floor, useful for objects that are suspended such as roofs, shelves etc...   
+
+
 # Buildables Sprites

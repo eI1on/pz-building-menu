@@ -207,10 +207,10 @@ ISBuildingMenuUI = ISCollapsableWindow:derive("ISBuildingMenuUI");
 
 --- Singleton instance of ISBuildingMenuUI.
 ---@type ISBuildingMenuUI|nil
-ISBuildingMenuUI.instance = nil
-ISBuildingMenuUI.largeFontHeight = getTextManager():getFontHeight(UIFont.Large)
-ISBuildingMenuUI.mediumNewFontHeight = getTextManager():getFontHeight(UIFont.MediumNew)
-ISBuildingMenuUI.smallFontHeight = getTextManager():getFontHeight(UIFont.Small)
+ISBuildingMenuUI.instance = nil;
+ISBuildingMenuUI.largeFontHeight = getTextManager():getFontHeight(UIFont.Large);
+ISBuildingMenuUI.mediumNewFontHeight = getTextManager():getFontHeight(UIFont.MediumNew);
+ISBuildingMenuUI.smallFontHeight = getTextManager():getFontHeight(UIFont.Small);
 ISBuildingMenuUI.upArrow = Keyboard.KEY_UP;
 ISBuildingMenuUI.downArrow = Keyboard.KEY_DOWN;
 
@@ -537,6 +537,8 @@ end
 ---@param categories table
 function ISBuildingMenuUI:updateCategoriesList(categories)
     local currentCategoriesList = self:getActiveCategoriesList();
+    if not currentCategoriesList then return; end
+
     currentCategoriesList:clear();
 
     for _, category in pairs(categories) do
@@ -548,6 +550,8 @@ end
 ---@param subCatData table
 function ISBuildingMenuUI:updateSubCategoriesList(subCatData)
     local currentSubCategoriesList = self:getActiveSubCategoriesList();
+    if not currentSubCategoriesList then return; end
+
     currentSubCategoriesList:clear();
 
     for _, subCategory in pairs(subCatData) do
@@ -589,7 +593,7 @@ end
 function ISBuildingMenuUI:new(x, y, width, height, character)
     local o = ISCollapsableWindow.new(self, x, y, width, height);
     o:setResizable(true);
-    
+
     o.title = getText("IGUI_BuildingMenu");
     o.character = character;
     o.minOpaque = 1; -- in percentage

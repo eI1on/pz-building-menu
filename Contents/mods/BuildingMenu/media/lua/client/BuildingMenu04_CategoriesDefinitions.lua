@@ -27287,7 +27287,7 @@ local function addCommercialCountersToMenu()
                     {
                         actionAnim = "Build",
                         noNeedHammer = false,
-                        completionSound = "BuildWoodenStructrueLarge",
+                        completionSound = "BuildWoodenStructureLarge",
                         containerType = "shelves",
                         isContainer = true,
                         canBeLockedByPadlock = true
@@ -27308,7 +27308,7 @@ local function addCommercialCountersToMenu()
                     {
                         actionAnim = "Build",
                         noNeedHammer = false,
-                        completionSound = "BuildWoodenStructrueLarge",
+                        completionSound = "BuildWoodenStructureLarge",
                         containerType = "shelves",
                         isContainer = true,
                         canBeLockedByPadlock = true

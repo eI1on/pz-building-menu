@@ -6,21 +6,21 @@ ISDoubleFridge = ISBuildingObject:derive("ISDoubleFridge");
 --************************************************************************--
 
 ---Constructor for ISDoubleFridge
----@param player IsoPlayer The player object.
+---@param playerNum number The player number.
 ---@param name string The name of the double fridge.
 ---@param sprite string The sprite for the first part of the double fridge.
 ---@param sprite2 string The sprite for the second part of the double fridge.
 ---@param northSprite string The north-facing sprite for the first part.
 ---@param northSprite2 string The north-facing sprite for the second part.
 ---@return ISDoubleFridge
-function ISDoubleFridge:new(player, name, sprite, sprite2, northSprite, northSprite2)
+function ISDoubleFridge:new(playerNum, name, sprite, sprite2, northSprite, northSprite2)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
 	o:setSprite(sprite);
 	o:setNorthSprite(northSprite);
-	o.player = player;
+	o.player = playerNum;
 	o.sprite2 = sprite2;
 	o.northSprite2 = northSprite2;
 	o.name = name;

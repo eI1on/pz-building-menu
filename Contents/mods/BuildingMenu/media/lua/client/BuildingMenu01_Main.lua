@@ -122,15 +122,15 @@ BuildingMenu.Tools = {
 
 
 --- Function called to fill the world object context menu.
----@param player number
+---@param playerNum number
 ---@param context ISContextMenu
 ---@param worldobjects table
 ---@param test boolean
-BuildingMenu.OnFillWorldObjectContextMenu = function(player, context, worldobjects, test)
+BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldobjects, test)
     if getCore():getGameMode() == "LastStand" then return end
     if test and ISWorldObjectContextMenu.Test then return true end
 
-    local playerObj = getSpecificPlayer(player)
+    local playerObj = getSpecificPlayer(playerNum)
 
     if playerObj:getVehicle() then return end
 
@@ -281,33 +281,33 @@ end
 
 --- Equips a primary tool for the player.
 ---@param object any
----@param player number
+---@param playerNum number
 ---@param tool string
-BuildingMenu.equipToolPrimary = function(object, player, tool)
+BuildingMenu.equipToolPrimary = function(object, playerNum, tool)
     local item = nil
-    local inv = getSpecificPlayer(player):getInventory()
+    local inv = getSpecificPlayer(playerNum):getInventory()
     item = BuildingMenu.getAvailableTool(inv, tool)
     if not item then return end
 
-    ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), player)
+    ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), playerNum)
     object.noNeedHammer = true
 end
 
 --- Equips a secondary tool for the player.
 ---@param object any
----@param player number
+---@param playerNum number
 ---@param tool string
-BuildingMenu.equipToolSecondary = function(object, player, tool)
+BuildingMenu.equipToolSecondary = function(object, playerNum, tool)
     local item = nil
-    local inv = getSpecificPlayer(player):getInventory()
+    local inv = getSpecificPlayer(playerNum):getInventory()
     item = BuildingMenu.getAvailableTool(inv, tool)
     if not item then return end
     if instanceof(item, "Clothing") then
         if not item:isEquipped() then
-            ISInventoryPaneContextMenu.wearItem(item, player)
+            ISInventoryPaneContextMenu.wearItem(item, playerNum)
         end
     else
-        -- ISInventoryPaneContextMenu.equipWeapon(item, false, item:isTwoHandWeapon(), player)
+        -- ISInventoryPaneContextMenu.equipWeapon(item, false, item:isTwoHandWeapon(), playerNum)
     end
 end
 
@@ -328,17 +328,17 @@ function BuildingMenu.GetItemInstance(type)
 end
 
 --- Tooltip check for a specific tool category.
----@param inv ItemContainer
+---@param playerInv ItemContainer
 ---@param tool string
 ---@param tooltip ISToolTip
 ---@return boolean
-BuildingMenu.tooltipCheckForTool = function(inv, tool, tooltip)
+BuildingMenu.tooltipCheckForTool = function(playerInv, tool, tooltip)
     local toolInfo = BuildingMenu.Tools[tool]
     local found = false
 
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
-            local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
+            local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
             if item then
                 tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' <LINE>';
                 found = true;
@@ -349,7 +349,7 @@ BuildingMenu.tooltipCheckForTool = function(inv, tool, tooltip)
 
     if not found and toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
-            local item = inv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
+            local item = playerInv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
             if item then
                 tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' <LINE>'
                 found = true
@@ -367,19 +367,20 @@ end
 
 
 --- Tooltip check for a specific material.
----@param inv InventoryItem
+---@param playerObj IsoPlayer
+---@param playerInv InventoryItem
 ---@param material string
 ---@param amount number
 ---@param tooltip ISToolTip
 ---@return boolean
-BuildingMenu.tooltipCheckForMaterial = function(inv, material, amount, tooltip)
+BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, material, amount, tooltip)
     local type = string.split(material, '\\.')[2]
     local invItemCount = 0
 
-    local groundItems = buildUtil.getMaterialOnGround(getPlayer():getCurrentSquare())
+    local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare())
 
     if amount > 0 then
-        invItemCount = inv:getItemCountFromTypeRecurse(material)
+        invItemCount = playerInv:getItemCountFromTypeRecurse(material)
 
         for groundItemType, groundItemCount in pairs(groundItems) do
             if groundItemType == type and groundItemCount ~= nil then
@@ -403,23 +404,23 @@ BuildingMenu.tooltipCheckForMaterial = function(inv, material, amount, tooltip)
 end
 
 --- Tooltip check for a consumable item.
----@param inv ItemContainer
+---@param playerObj IsoPlayer
+---@param playerInv ItemContainer
 ---@param material string
 ---@param amount number
 ---@param tooltip ISToolTip
 ---@return boolean
-BuildingMenu.tooltipCheckForConsumable = function(inv, material, amount, tooltip)
-    
-    local groundItems = buildUtil.getMaterialOnGround(getPlayer():getCurrentSquare());
+BuildingMenu.tooltipCheckForConsumable = function(playerObj, playerInv, material, amount, tooltip)
+    local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare());
     local groundItemsUses = buildUtil.getMaterialOnGroundUses(groundItems);
-    local invItemUses = inv:getUsesTypeRecurse(material);
+    local invItemUses = playerInv:getUsesTypeRecurse(material);
 
     local isEnough = invItemUses >= amount;
     local text = "";
 
     if material == "Base.BlowTorch" then
-        local blowTorch = inv:getFirstTypeRecurse("Base.BlowTorch");
-        local blowTorchUseLeft = (inv and inv:getUsesTypeRecurse("Base.BlowTorch")) or 0;
+        local blowTorch = playerInv:getFirstTypeRecurse("Base.BlowTorch");
+        local blowTorchUseLeft = (playerInv and playerInv:getUsesTypeRecurse("Base.BlowTorch")) or 0;
 
         if groundItemsUses["Base.BlowTorch"] then
             blowTorchUseLeft = blowTorchUseLeft + groundItemsUses["Base.BlowTorch"];
@@ -479,6 +480,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
         for _, _currentMaterial in pairs(objectRecipe.useConsumable) do
             if _currentMaterial['Consumable'] and _currentMaterial['Amount'] then
                 _currentResult = BuildingMenu.tooltipCheckForConsumable(
+                    playerObj,
                     playerInv,
                     _currentMaterial["Consumable"],
                     _currentMaterial["Amount"],
@@ -498,6 +500,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
         for _, _currentMaterial in pairs(objectRecipe.neededMaterials) do
             if _currentMaterial['Material'] and _currentMaterial['Amount'] then
                 _currentResult = BuildingMenu.tooltipCheckForMaterial(
+                    playerObj,
                     playerInv,
                     _currentMaterial["Material"],
                     _currentMaterial["Amount"],

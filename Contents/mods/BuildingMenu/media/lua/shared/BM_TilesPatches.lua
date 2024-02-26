@@ -28,7 +28,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         BM_Utils.setSpriteProperty(props, "MoveType", "Window", false);
-        BM_Utils.setSpriteProperty(props, "CustomName", "Large White Window", false);
+        BM_Utils.setSpriteProperty(props, "CustomName", "Window", false);
         BM_Utils.setSpriteProperty(props, "GroupName", "Wooden", false);
         props:CreateKeySet();
     end

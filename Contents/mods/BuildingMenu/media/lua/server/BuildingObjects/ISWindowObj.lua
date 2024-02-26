@@ -10,26 +10,27 @@ function ISWindowObj:create(x, y, z, north, sprite)
     self.javaObject:transmitCompleteItemToServer()
 end
 
+local validSprites = {
+    ["fixtures_windows_01_72"] = true,
+    ["fixtures_windows_01_73"] = true,
+    ["edit_ddd_RUS_Forest Survival_01_14"] = true,
+    ["edit_ddd_RUS_Forest Survival_01_15"] = true,
+};
+
+local prefixCheck = {
+    ["fixtures_windows_01_72"] = { "walls_interior_house_05_", "walls_exterior_house_03_" },
+    ["fixtures_windows_01_73"] = { "walls_interior_house_05_", "walls_exterior_house_03_" },
+    ["edit_ddd_RUS_Forest Survival_01_14"] = { "building_menu_03_ddd_Forest_Survival_0", "building_menu_03_ddd_Forest_Survival_1" },
+    ["edit_ddd_RUS_Forest Survival_01_15"] = { "building_menu_03_ddd_Forest_Survival_0", "building_menu_03_ddd_Forest_Survival_1" },
+};
 function ISWindowObj:isValid(square)
     if not self:haveMaterial(square) then return false; end
     if square:isVehicleIntersecting() then return false; end
 
     local sprite = self:getSprite();
-    local validSprites = {
-        ["fixtures_windows_01_72"] = true,
-        ["fixtures_windows_01_73"] = true,
-        ["edit_ddd_RUS_Forest Survival_01_14"] = true,
-        ["edit_ddd_RUS_Forest Survival_01_15"] = true,
-    };
+    if not sprite then return false; end
 
     if validSprites[sprite] then
-        local prefixCheck = {
-            ["fixtures_windows_01_72"] = { "walls_interior_house_05_", "walls_exterior_house_03_" },
-            ["fixtures_windows_01_73"] = { "walls_interior_house_05_", "walls_exterior_house_03_" },
-            ["edit_ddd_RUS_Forest Survival_01_14"] = { "building_menu_03_ddd_Forest_Survival_0", "building_menu_03_ddd_Forest_Survival_1" },
-            ["edit_ddd_RUS_Forest Survival_01_15"] = { "building_menu_03_ddd_Forest_Survival_0", "building_menu_03_ddd_Forest_Survival_1" },
-        };
-
         for i = 1, square:getObjects():size() do
             local object = square:getObjects():get(i - 1);
             local objectSprite = object:getTextureName();
