@@ -11529,7 +11529,302 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {sprite = "roofs_01_20", northSprite = "roofs_01_20"}
-                )
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_1",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_64",
+                        northSprite = "roofs_01_64"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_2",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_65",
+                        northSprite = "roofs_01_65"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_3",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_66",
+                        northSprite = "roofs_01_66"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_1",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_67",
+                        northSprite = "roofs_01_67"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_2",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_68",
+                        northSprite = "roofs_01_68"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_3",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_69",
+                        northSprite = "roofs_01_69"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Pitched_Half",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {sprite = "roofs_01_71", northSprite = "roofs_01_70"}
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Pitched",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_87", 
+                        northSprite = "roofs_01_83",
+                        eastSprite = "roofs_01_84",
+                        southSprite = "roofs_01_80"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Pitched",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_86", 
+                        northSprite = "roofs_01_82",
+                        eastSprite = "roofs_01_85",
+                        southSprite = "roofs_01_81"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Inner",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_128", 
+                        northSprite = "roofs_01_135",
+                        eastSprite = "roofs_01_131",
+                        southSprite = "roofs_01_132"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Inner",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_129", 
+                        northSprite = "roofs_01_134",
+                        eastSprite = "roofs_01_130",
+                        southSprite = "roofs_01_133"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Outer",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_125", 
+                        northSprite = "roofs_01_126",
+                        eastSprite = "roofs_01_123",
+                        southSprite = "roofs_01_121"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Outer",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_01_124", 
+                        northSprite = "roofs_01_127",
+                        eastSprite = "roofs_01_122",
+                        southSprite = "roofs_01_120"
+                    }
+                ),
             }
         },
         {
@@ -11857,7 +12152,302 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {sprite = "roofs_02_20", northSprite = "roofs_02_20"}
-                )
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_1",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_64",
+                        northSprite = "roofs_02_64"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_2",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_65",
+                        northSprite = "roofs_02_65"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_3",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_66",
+                        northSprite = "roofs_02_66"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_1",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_67",
+                        northSprite = "roofs_02_67"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_2",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_68",
+                        northSprite = "roofs_02_68"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_3",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_69",
+                        northSprite = "roofs_02_69"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Pitched_Half",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {sprite = "roofs_02_71", northSprite = "roofs_02_70"}
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Pitched",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_87", 
+                        northSprite = "roofs_02_83",
+                        eastSprite = "roofs_02_84",
+                        southSprite = "roofs_02_80"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Pitched",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_86", 
+                        northSprite = "roofs_02_82",
+                        eastSprite = "roofs_02_85",
+                        southSprite = "roofs_02_81"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Inner",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_120", 
+                        northSprite = "roofs_02_127",
+                        eastSprite = "roofs_02_123",
+                        southSprite = "roofs_02_124"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Inner",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_121", 
+                        northSprite = "roofs_02_126",
+                        eastSprite = "roofs_02_122",
+                        southSprite = "roofs_02_125"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Outer",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_117", 
+                        northSprite = "roofs_02_118",
+                        eastSprite = "roofs_02_115",
+                        southSprite = "roofs_02_113"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Outer",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_02_116", 
+                        northSprite = "roofs_02_119",
+                        eastSprite = "roofs_02_114",
+                        southSprite = "roofs_02_112"
+                    }
+                ),
             }
         },
         {
@@ -13169,7 +13759,302 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {sprite = "roofs_05_53", northSprite = "roofs_05_53"}
-                )
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_1",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_72",
+                        northSprite = "roofs_05_72"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_2",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_73",
+                        northSprite = "roofs_05_73"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_3",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_74",
+                        northSprite = "roofs_05_74"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_1",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_75",
+                        northSprite = "roofs_05_75"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_2",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_76",
+                        northSprite = "roofs_05_76"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_3",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_77",
+                        northSprite = "roofs_05_77"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Pitched_Half",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {sprite = "roofs_05_79", northSprite = "roofs_05_78"}
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Pitched",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_119", 
+                        northSprite = "roofs_05_115",
+                        eastSprite = "roofs_05_116",
+                        southSprite = "roofs_05_112"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Pitched",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_118", 
+                        northSprite = "roofs_05_114",
+                        eastSprite = "roofs_05_117",
+                        southSprite = "roofs_05_113"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Inner",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_168", 
+                        northSprite = "roofs_05_175",
+                        eastSprite = "roofs_05_171",
+                        southSprite = "roofs_05_172"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Inner",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_169", 
+                        northSprite = "roofs_05_174",
+                        eastSprite = "roofs_05_170",
+                        southSprite = "roofs_05_173"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Outer",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_165", 
+                        northSprite = "roofs_05_166",
+                        eastSprite = "roofs_05_163",
+                        southSprite = "roofs_05_161"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Outer",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.RoofTileRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    {
+                        sprite = "roofs_05_164", 
+                        northSprite = "roofs_05_167",
+                        eastSprite = "roofs_05_162",
+                        southSprite = "roofs_05_160"
+                    }
+                ),
             }
         },
         {
@@ -14234,8 +15119,7 @@ local function addRoofingToMenu()
 end
 
 local function addDoorsToMenu()
-    local doors = 
-    {
+    local doors = {
         {
             subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
             subCategoryIcon = "fixtures_doors_01_0",
@@ -14250,6 +15134,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14269,6 +15154,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14288,6 +15174,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14307,6 +15194,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14326,6 +15214,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14341,7 +15230,10 @@ local function addDoorsToMenu()
                     BuildingMenu.onBuildDoor,
                     BuildingMenu.WoodenDoorRecipe,
                     true,
-                    {modData = {wallType = "doorframe"}},
+                    {
+                        canBarricade = true,
+                        modData = {wallType = "doorframe"}
+                    },
                     {
                         sprite = "fixtures_doors_01_28",
                         northSprite = "fixtures_doors_01_29",
@@ -14359,6 +15251,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14378,6 +15271,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14397,6 +15291,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14416,6 +15311,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14435,6 +15331,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14454,6 +15351,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14479,6 +15377,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14498,6 +15397,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14517,6 +15417,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14617,6 +15518,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14639,6 +15541,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14661,6 +15564,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14683,6 +15587,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14705,6 +15610,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14727,6 +15633,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14749,6 +15656,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14771,6 +15679,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14793,6 +15702,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14815,6 +15725,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14837,6 +15748,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14859,6 +15771,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14881,6 +15794,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14903,6 +15817,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14928,6 +15843,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14947,6 +15863,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14966,6 +15883,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -14985,6 +15903,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -15004,6 +15923,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -15065,6 +15985,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -15084,6 +16005,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -15103,6 +16025,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -15122,6 +16045,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -15150,6 +16074,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -15175,6 +16100,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {

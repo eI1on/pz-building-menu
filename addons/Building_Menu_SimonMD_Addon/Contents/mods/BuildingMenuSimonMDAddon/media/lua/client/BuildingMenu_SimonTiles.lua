@@ -1045,6 +1045,7 @@ local function addSimonMDSecretEntrancesToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -1331,6 +1332,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -1353,6 +1355,7 @@ local function addDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {

@@ -36,6 +36,7 @@ local function addPertWallsToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -207,6 +208,7 @@ local function addPertDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -256,6 +258,7 @@ local function addPertDoorsToMenu()
                         actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -358,6 +361,7 @@ local function addPertDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {
@@ -1144,6 +1148,7 @@ local function addChristmasDecorationsToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -1240,6 +1245,7 @@ local function addChristmasDecorationsToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -1305,6 +1311,7 @@ local function addChristmasDecorationsToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -1324,6 +1331,7 @@ local function addChristmasDecorationsToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {

@@ -16614,6 +16614,7 @@ local function addDoorsToMenu()
                         actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
                         modData = {wallType = "doorframe"}
                     },
                     {

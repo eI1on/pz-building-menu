@@ -28,6 +28,7 @@ local function addDaddyDirkieDoorsToMenu()
                             actionAnim = "Build",
                             noNeedHammer = false,
                             completionSound = "BuildWoodenStructureLarge",
+                            canBarricade = true,
                             modData = {wallType = "doorframe"}
                         },
                         sprites
@@ -2464,6 +2465,7 @@ local function addDaddyDirkieOthersToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -2483,6 +2485,7 @@ local function addDaddyDirkieOthersToMenu()
                 actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
+                canBarricade = true,
                 modData = {wallType = "doorframe"}
             },
             {

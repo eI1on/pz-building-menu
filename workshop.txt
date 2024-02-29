@@ -7,7 +7,9 @@ description=[b]Favorite Tab[/b] feature! You can now add both categories and sub
 description=[i] Note that to display a subcategory, its parent category must also be favorited. [/i]
 description=
 description=[h1]Key Features:[/h1]
-description=[b] Easy Access: [/b] Dive straight into the building action! The Building Menu interface lets you select and place buildable objects with ease (console friendly). You can also set the opacity of the interface.
+description=[b] Easy Access: [/b] Dive straight into the building action! The Building Menu interface lets you select and place buildable objects with ease.
+description=
+description=[b]Mod Options Integration: [/b] Toggle the Building Menu with a customizable (using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url]) keybind. You can also set the opacity of the interface [b] using the gear button on the UI [/b].
 description=
 description=[b] Diverse Options: [/b] Whether it's a sturdy wall or a cozy shelter, there's something here for every builder!
 description=
@@ -69,7 +71,7 @@ description=[h2] My building isn't recognized as an indoor space. What should I 
 description= For a fix, please watch this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]
 description=
 description=[h2] I'm missing some items in the build menu. How do I find them? [/h2]
-description= To access all available buildables, you'll need to activate them in the Sandbox settings (in SP you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454&searchtext=change+sandbox] Change Sandbox Options (by Star)[/url]), some are disabled by default like metal drums, furniture ...
+description= To access all available buildables, you'll need to activate them in the Sandbox settings (in SP you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454] Change Sandbox Options (by Star)[/url]), some are disabled by default like metal drums, furniture ...
 description=
 description=[h2] Does it work for all game versions? [/h2]
 description= Only tested and working on the latest game version (v41.78.16).
@@ -113,7 +115,7 @@ description= This mod was crafted with love, I hope it brings joy to your buildi
 description=
 description=[hr][/hr]
 description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/github_banner.png [/img][/url]
-description=[url=https://discord.com/invite/tNzcyyDCkH][img] https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner1.png [/img][/url]
+description=[url=https://discord.gg/A59MaZ2D][img] https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner1.png [/img][/url]
 description=
 description=[h1] Don't forget to rate and favorite! [/h1]
 description=[img] https://imgur.com/eZp8dXD.png [/img]
