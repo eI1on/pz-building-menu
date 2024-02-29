@@ -4,8 +4,9 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] Added keybind to toggle the Building Menu UI, you can change it with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url] (default key is "/" slash)
-[*] New additions: bathroom walls, church pews, decorative banners.
+[*] Added keybind to toggle the Building Menu UI, you can change it with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url] (default key is "/" slash, option can be found [url=https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_keybindings.png] here [/url])
+[*] Added keys to switch between categories/tabs
+[*] New additions: bathroom walls, church pews, decorative banners, more half roofs variations
 [*] Changed light radius to built light sources from BM to their vanilla value
 [*] Doors now can be barricaded 
 [*] Fixes

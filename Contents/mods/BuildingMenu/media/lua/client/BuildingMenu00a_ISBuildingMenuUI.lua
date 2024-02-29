@@ -211,8 +211,11 @@ ISBuildingMenuUI.instance = nil;
 ISBuildingMenuUI.largeFontHeight = getTextManager():getFontHeight(UIFont.Large);
 ISBuildingMenuUI.mediumNewFontHeight = getTextManager():getFontHeight(UIFont.MediumNew);
 ISBuildingMenuUI.smallFontHeight = getTextManager():getFontHeight(UIFont.Small);
-ISBuildingMenuUI.upArrow = Keyboard.KEY_UP;
-ISBuildingMenuUI.downArrow = Keyboard.KEY_DOWN;
+ISBuildingMenuUI.bottomInfoHeight = ISBuildingMenuUI.smallFontHeight * 2
+ISBuildingMenuUI.leftTab = Keyboard.KEY_LEFT;
+ISBuildingMenuUI.rightTab = Keyboard.KEY_RIGHT;
+ISBuildingMenuUI.upArrowCategory = Keyboard.KEY_UP;
+ISBuildingMenuUI.downArrowCategory = Keyboard.KEY_DOWN;
 
 --- Opens the Building Menu UI panel.
 ---@param x number
@@ -251,7 +254,7 @@ function ISBuildingMenuUI:createChildren()
     self.gearButton:setVisible(true);
 
 
-    self.panel = ISTabPanel:new(0, th, self.width, self.height-th-rh);
+    self.panel = ISTabPanel:new(0, th, self.width, self.height-th-rh-ISBuildingMenuUI.bottomInfoHeight);
     self.panel:initialise();
     self.panel:setAnchorRight(true)
     self.panel:setAnchorBottom(true)
@@ -302,7 +305,7 @@ function ISBuildingMenuUI:createChildren()
     end
     self.panel:activateView(getText("IGUI_BuildingMenuTab_General"));
 
-    self.tilesList = BuildingMenuTilePickerList:new(self.width/2, self.panel.tabHeight + th, self.width/2, self:getHeight() - th - rh - self.panel.tabHeight, self.character, self);
+    self.tilesList = BuildingMenuTilePickerList:new(self.width/2, self.panel.tabHeight + th, self.width/2, self:getHeight() - th - rh - self.panel.tabHeight - ISBuildingMenuUI.bottomInfoHeight, self.character, self);
     self.tilesList.anchorBottom = true;
     self.tilesList:initialise();
     self.tilesList:instantiate();
@@ -312,6 +315,9 @@ function ISBuildingMenuUI:createChildren()
 
     self:onMinOpaqueChange(minOpaqueVal);
     self:onMaxOpaqueChange(maxOpaqueVal);
+
+    self.keysRichText = ISRichTextLayout:new(self.width)
+	self.keysRichText:setMargins(5, 0, 5, 0)
 end
 
 --- Changes the maximum opacity of the UI.
@@ -413,7 +419,28 @@ end
 
 function ISBuildingMenuUI:render()
     ISCollapsableWindow.render(self);
-    if self.isCollapsed then return end
+    if self.isCollapsed then return; end
+
+    local rh = self.resizable and self:resizeWidgetHeight() or 0;
+    self:drawRectBorder(0, 0, self:getWidth(), self:getHeight(), self.borderColor.a, self.borderColor.r,self.borderColor.g,self.borderColor.b);
+    self.javaObject:DrawTextureScaledColor(nil, 0, self:getHeight() - rh - ISBuildingMenuUI.bottomInfoHeight, self:getWidth(), 1, self.borderColor.r, self.borderColor.g,self.borderColor.b,self.borderColor.a);
+
+    local text = self.bottomInfoText;
+
+    local noteX = 0;
+    local noteWidth = self.width;
+    if noteWidth ~= self.keysRichText.width then
+        self.keysRichText:setWidth(noteWidth);
+        self.keysRichText.textDirty = true;
+    end
+    if text ~= self.keysText then
+        self.keysText = text;
+        self.keysRichText:setText(" <CENTRE> " .. text);
+        self.keysRichText.textDirty = true;
+    end
+    local noteY = self:getHeight() - rh - ISBuildingMenuUI.bottomInfoHeight;
+    noteY = noteY + (ISBuildingMenuUI.bottomInfoHeight - self.keysRichText.height) / 2;
+    self.keysRichText:render(noteX, noteY, self);
 end
 
 function ISBuildingMenuUI:update()
@@ -575,6 +602,18 @@ function ISBuildingMenuUI:close()
 end
 
 
+function ISBuildingMenuUI:toggleBuildingMenuUI(playerObj)
+    local ui = ISBuildingMenuUI.instance;
+    if ui and ui:getIsVisible() then
+        ui:close();
+    else
+        local x = getCore():getScreenWidth()/1.5;
+        local y = getCore():getScreenHeight()/7.5;
+        self.openPanel(x, y, playerObj);
+    end
+end
+
+
 function ISBuildingMenuUI:onResize()
     ISUIElement.onResize(self);
     self.tilesList:setWidth(self.width/2);
@@ -582,6 +621,65 @@ function ISBuildingMenuUI:onResize()
     self.tilesList.posToObjectNameTable = {};
 end
 
+function ISBuildingMenuUI:isKeyConsumed(key)
+    return key == Keyboard.KEY_ESCAPE or
+            key == getCore():getKey("BuildingMenu") or
+            key == ISCraftingUI.upArrowCategory or
+            key == ISCraftingUI.downArrowCategory or
+            key == ISCraftingUI.leftTab or
+            key == ISCraftingUI.rightTab
+end
+
+function ISBuildingMenuUI.onKeyPressed(key)
+    local ui = ISBuildingMenuUI.instance;
+    if not ui then return; end
+    if not ui.panel or not ui.panel.activeView then return; end
+    local playerObj = ui.character;
+
+    if key == Keyboard.KEY_ESCAPE then
+        ISBuildingMenuUI:toggleBuildingMenuUI(playerObj);
+        return;
+    end
+
+    local categoriesList = ui.panel.activeView.view.categoriesList;
+    if key == ISBuildingMenuUI.upArrowCategory then
+        categoriesList.selected = categoriesList.selected - 1;
+        if categoriesList.selected <= 0 then
+            categoriesList.selected = categoriesList.count;
+        end
+    elseif key == ISBuildingMenuUI.downArrowCategory then
+        categoriesList.selected = categoriesList.selected + 1;
+        if categoriesList.selected > categoriesList.count then
+            categoriesList.selected = 1;
+        end
+    end
+
+    local viewIndex = ui.panel:getActiveViewIndex()
+    local oldViewIndex = viewIndex
+    if key == ISBuildingMenuUI.leftTab then
+        if viewIndex == 1 then
+            viewIndex = #ui.panel.viewList
+        else
+            viewIndex = viewIndex - 1
+        end
+    elseif key == ISBuildingMenuUI.rightTab then
+        if viewIndex == #ui.panel.viewList then
+            viewIndex = 1
+        else
+            viewIndex = viewIndex + 1
+        end
+    end
+
+    if key == Keyboard.KEY_F then
+        ui.panel.activeView.view:addToFavorite(true, "categoriesList");
+    end
+
+    if oldViewIndex ~= viewIndex then
+        ui.panel:activateView(ui.panel.viewList[viewIndex].name)
+    end
+    ui.panel.activeView.view.categoriesList:ensureVisible(ui.panel.activeView.view.categoriesList.selected)
+end
+Events.OnKeyPressed.Add(ISBuildingMenuUI.onKeyPressed);
 
 --- Constructor for ISBuildingMenuUI.
 ---@param x number
@@ -603,6 +701,10 @@ function ISBuildingMenuUI:new(x, y, width, height, character)
     o.lastActiveTab = nil;
     o.lastSelectedCategoryIndex = nil;
     o.lastSelectedSubCategoryIndex = nil;
+
+    o.bottomInfoText = getText("IGUI_BuildingMenuUI_Controls",
+        getKeyName(ISBuildingMenuUI.upArrowCategory), getKeyName(ISBuildingMenuUI.downArrowCategory),
+        getKeyName(ISBuildingMenuUI.leftTab), getKeyName(ISBuildingMenuUI.rightTab));
 
     return o;
 end

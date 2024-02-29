@@ -2,6 +2,8 @@ IGUI_EN = {
 
     IGUI_BuildingMenu = "Building Menu",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Change Category     %3/%4 = Change Tabs     F = Favorite Category    ESC = Close",
+
     IGUI_BuildingMenuTab_Favorite = "Favorite",
     IGUI_BuildingMenuTab_General = "General",
 

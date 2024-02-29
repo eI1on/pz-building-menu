@@ -9,7 +9,7 @@ description=
 description=[h1]Key Features:[/h1]
 description=[b] Easy Access: [/b] Dive straight into the building action! The Building Menu interface lets you select and place buildable objects with ease.
 description=
-description=[b]Mod Options Integration: [/b] Toggle the Building Menu with a customizable (using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url]) keybind. You can also set the opacity of the interface [b] using the gear button on the UI [/b].
+description=[b]Mod Options Integration: [/b] Toggle the Building Menu with a customizable (using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url]) keybind, option can be found [url=https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_keybindings.png] here [/url]. You can also set the opacity of the interface [b] using the gear button on the UI [/b].
 description=
 description=[b] Diverse Options: [/b] Whether it's a sturdy wall or a cozy shelter, there's something here for every builder!
 description=
