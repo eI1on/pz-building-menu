@@ -19785,7 +19785,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_0", northSprite = "floors_interior_carpet_01_0"}
@@ -19798,7 +19798,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_1", northSprite = "floors_interior_carpet_01_1"}
@@ -19811,7 +19811,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_2", northSprite = "floors_interior_carpet_01_2"}
@@ -19824,7 +19824,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_3", northSprite = "floors_interior_carpet_01_3"}
@@ -19837,7 +19837,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_4", northSprite = "floors_interior_carpet_01_4"}
@@ -19850,7 +19850,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_5", northSprite = "floors_interior_carpet_01_5"}
@@ -19863,7 +19863,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_6", northSprite = "floors_interior_carpet_01_6"}
@@ -19876,7 +19876,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_7", northSprite = "floors_interior_carpet_01_7"}
@@ -19889,7 +19889,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_8", northSprite = "floors_interior_carpet_01_8"}
@@ -19902,7 +19902,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "location_shop_greenes_01_32", northSprite = "location_shop_greenes_01_33"}
@@ -19915,7 +19915,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_9", northSprite = "floors_interior_carpet_01_9"}
@@ -19928,7 +19928,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_10", northSprite = "floors_interior_carpet_01_10"}
@@ -19941,7 +19941,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_11", northSprite = "floors_interior_carpet_01_11"}
@@ -19954,7 +19954,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_12", northSprite = "floors_interior_carpet_01_12"}
@@ -19967,7 +19967,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_13", northSprite = "floors_interior_carpet_01_13"}
@@ -19980,7 +19980,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_14", northSprite = "floors_interior_carpet_01_14"}
@@ -19993,7 +19993,7 @@ local function addFloorsToMenu()
                     true,
                     {
                         actionAnim = "BuildLow",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {sprite = "floors_interior_carpet_01_15", northSprite = "floors_interior_carpet_01_15"}
