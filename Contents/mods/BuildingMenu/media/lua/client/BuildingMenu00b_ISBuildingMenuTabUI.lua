@@ -40,6 +40,7 @@ function ISBuildingMenuTabUI:create()
     self.categoriesList.font = UIFont.MediumNew;
     self.categoriesList.doDrawItem = self.doDrawListItem;
     self.categoriesList.onMouseDown = self.onMouseDown_List;
+    self.categoriesList.joypadParent = self;
     self.categoriesList.drawBorder = true;
     self:addChild(self.categoriesList);
 
@@ -57,6 +58,7 @@ function ISBuildingMenuTabUI:create()
     self.subCategoriesList.font = UIFont.NewSmall;
     self.subCategoriesList.doDrawItem = self.doDrawListItem;
     self.subCategoriesList.onMouseDown = self.onMouseDown_List;
+    self.subCategoriesList.joypadParent = self;
     self.subCategoriesList.drawBorder = true;
     self:addChild(self.subCategoriesList);
 end

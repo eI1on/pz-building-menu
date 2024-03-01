@@ -1,4 +1,4 @@
-require "ISUI/ISCollapsableWindow"
+require "ISUI/ISCollapsableWindowJoypad"
 
 if not getBuildingMenuInstance then
     require("BuildingMenu01_Main")
@@ -64,27 +64,67 @@ end
 ---@param maxCols number
 ---@param maxRows number
 function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
-    local mouseX, mouseY = self:getMouseX(), self:getMouseY()
-    local panelY = self:getY() - self:getYScroll() - self.parent:titleBarHeight() - self.parent.panel.tabHeight
-    if mouseY < panelY or mouseY > panelY + self:getHeight() or mouseX < 0 or mouseX > self:getWidth() then  self:clearStencilRect(); return  end
-
-    local c = math.floor(mouseX / TILE_WIDTH)
-    local r = math.floor(mouseY / TILE_HEIGHT)
-
-    if c >= 0 and r >= 0 and r < maxRows and c < maxCols and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
-        local selectedObject = self.posToObjectNameTable[r + 1][c + 1];
-        self.tooltip, selectedObject.canBuild = BuildingMenu.canBuildObject(self.character, self.tooltip, selectedObject.objDef.data.recipe);
-
-        local borderColor = selectedObject.canBuild and { 0.6, 0, 1, 0 } or { 0.6, 1, 0, 0 }
-        self:drawRectBorder(c * TILE_WIDTH, r * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, unpack(borderColor))
-        self.tooltip:addToUIManager();
-        self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
-        self.tooltip.description = selectedObject.objDef.description .. " <RGB:1,0,0> " .. self.tooltip.description;
-        self.tooltip:setVisible(true);
+    if self.parent.drawJoypadFocus and self.parent.tilesListHasFocus then
+        local selectedObject = self:getSelectedObject(maxCols, maxRows);
+        if selectedObject then
+            self:updateTooltipContent(selectedObject);
+            local tileCenterX, tileCenterY = self:getTileCenterPosition(self.selectedTileCol, self.selectedTileRow);
+            self.tooltip.followMouse = false;
+            self.tooltip:setX(self:getAbsoluteX() + tileCenterX);
+            self.tooltip:setY(self:getAbsoluteY() + tileCenterY + self:getYScroll());
+            local borderColor = selectedObject.canBuild and { 0.6, 0, 1, 0 } or { 0.6, 1, 0, 0 };
+            self:drawRectBorder((self.selectedTileCol - 1) * TILE_WIDTH, (self.selectedTileRow - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, unpack(borderColor));
+            self:displayTooltip();
+        else
+            self:hideTooltip();
+        end
+    elseif self.parent.drawJoypadFocus and not self.parent.tilesListHasFocus then
+        self:hideTooltip();
     else
-        self.tooltip:setVisible(false);
-        self.tooltip:removeFromUIManager()
+        local mouseX, mouseY = self:getMouseX(), self:getMouseY();
+        local panelY = self:getY() - self:getYScroll() - self.parent:titleBarHeight() - self.parent.panel.tabHeight;
+        if mouseY < panelY or mouseY > panelY + self:getHeight() or mouseX < 0 or mouseX > self:getWidth() then  self:clearStencilRect(); return  end
+
+        local c = math.floor(mouseX / TILE_WIDTH);
+        local r = math.floor(mouseY / TILE_HEIGHT);
+
+        if c >= 0 and r >= 0 and r < maxRows and c < maxCols and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
+            local selectedObject = self.posToObjectNameTable[r + 1][c + 1];
+            self:updateTooltipContent(selectedObject);
+            local borderColor = selectedObject.canBuild and { 0.6, 0, 1, 0 } or { 0.6, 1, 0, 0 };
+            self:drawRectBorder(c * TILE_WIDTH, r * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, unpack(borderColor));
+            self:displayTooltip();
+        else
+            self:hideTooltip();
+        end
     end
+end
+
+function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
+    if self.selectedTileRow > 0 and self.selectedTileCol > 0 and self.selectedTileRow <= maxRows and self.selectedTileCol <= maxCols then
+        return self.posToObjectNameTable[self.selectedTileRow] and self.posToObjectNameTable[self.selectedTileRow][self.selectedTileCol];
+    end
+    return nil;
+end
+
+function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
+    self.tooltip, selectedObject.canBuild = BuildingMenu.canBuildObject(self.character, self.tooltip, selectedObject.objDef.data.recipe);
+    self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
+    self.tooltip.description = selectedObject.objDef.description .. " <RGB:1,0,0> " .. self.tooltip.description;
+end
+
+function BuildingMenuTilePickerList:getTileCenterPosition(col, row)
+    return (col - 0.5) * TILE_WIDTH, (row - 0.5) * TILE_HEIGHT;
+end
+
+function BuildingMenuTilePickerList:displayTooltip()
+    self.tooltip:addToUIManager();
+    self.tooltip:setVisible(true);
+end
+
+function BuildingMenuTilePickerList:hideTooltip()
+    self.tooltip:setVisible(false);
+    self.tooltip:removeFromUIManager();
 end
 
 --- Finds the next object in the tile picker list.
@@ -94,10 +134,10 @@ function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
     if not self.subCatData then return nil end
     for _, objectDef in pairs(self.subCatData) do
         if objectDef.data and objectDef.data.sprites and not objectsBuffer[objectDef.data.sprites.sprite] then
-            return objectDef
+            return objectDef;
         end
     end
-    return nil
+    return nil;
 end
 
 
@@ -105,8 +145,8 @@ end
 ---@param del number
 ---@return boolean
 function BuildingMenuTilePickerList:onMouseWheel(del)
-    self:setYScroll(self:getYScroll() - del * 128)
-    return true
+    self:setYScroll(self:getYScroll() - del * 128);
+    return true;
 end
 
 
@@ -114,34 +154,72 @@ end
 ---@param x number
 ---@param y number
 function BuildingMenuTilePickerList:onMouseDown(x, y)
-    local c = math.floor(x / 64)
-    local r = math.floor(y / 128)
-    local objData = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1]
+    local c = math.floor(x / 64);
+    local r = math.floor(y / 128);
+    local objData = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
 
     if objData and objData.canBuild then
-        local playerNum = self.character:getPlayerNum()
-        local spritesName = objData.objDef.data.sprites
-        local objectName = objData.objDef.name
-        local recipe = objData.objDef.data.recipe
-        local options = objData.objDef.data.options
-        local onBuild = objData.objDef.data.action
+        local playerNum = self.character:getPlayerNum();
+        local spritesName = objData.objDef.data.sprites;
+        local objectName = objData.objDef.name;
+        local recipe = objData.objDef.data.recipe;
+        local options = objData.objDef.data.options;
+        local onBuild = objData.objDef.data.action;
 
-        local modifiedOptions = {}
+        local modifiedOptions = {};
         for k, v in pairs(options) do
-            modifiedOptions[k] = v
+            modifiedOptions[k] = v;
         end
         if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
-            modifiedOptions.isThumpable = false
+            modifiedOptions.isThumpable = false;
         end
 
         -- passing the name break the ISMetalDrum and RainCollectorBarrel objects
         if objData.objDef.data.action == BuildingMenu.onMetalDrum or objData.objDef.data.action == BuildingMenu.onRainCollectorBarrel then
-            objectName = nil -- set objectName to nil for these specific actions
+            objectName = nil; -- set objectName to nil for these specific actions
         end
 
         local object = onBuild(spritesName, objectName, playerNum, recipe, modifiedOptions);
         BuildingMenu.buildObject(object, objectName, playerNum, recipe, modifiedOptions);
     end
+end
+
+--- Handles joypad down events on the tile picker list.
+---@param button Joypad
+function BuildingMenuTilePickerList:onJoypadDown(button)
+    if button == Joypad.AButton then
+        local selectedObject = self:getSelectedObjectFromJoypad();
+        if selectedObject and selectedObject.canBuild then
+            local playerNum = self.character:getPlayerNum();
+            local spritesName = selectedObject.objDef.data.sprites;
+            local objectName = selectedObject.objDef.name;
+            local recipe = selectedObject.objDef.data.recipe;
+            local options = selectedObject.objDef.data.options;
+            local onBuild = selectedObject.objDef.data.action;
+
+            local modifiedOptions = {};
+            for k, v in pairs(options) do
+                modifiedOptions[k] = v;
+            end
+            if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
+                modifiedOptions.isThumpable = false;
+            end
+
+            if onBuild == BuildingMenu.onMetalDrum or onBuild == BuildingMenu.onRainCollectorBarrel then
+                objectName = nil; -- set objectName to nil for these specific actions
+            end
+
+            local object = onBuild(spritesName, objectName, playerNum, recipe, modifiedOptions);
+            BuildingMenu.buildObject(object, objectName, playerNum, recipe, modifiedOptions);
+            if JoypadState.players[self.parent.playerNum+1] then
+                setJoypadFocus(self.parent.playerNum, nil)
+            end
+        end
+    end
+end
+
+function BuildingMenuTilePickerList:getSelectedObjectFromJoypad()
+    return self.posToObjectNameTable[self.selectedTileRow] and self.posToObjectNameTable[self.selectedTileRow][self.selectedTileCol];
 end
 
 --- Handles mouse up events on the tile picker list.
@@ -170,6 +248,9 @@ end
 function BuildingMenuTilePickerList:createChildren()
     ISPanel.createChildren(self);
 
+    self.selectedTileRow = 1;
+    self.selectedTileCol = 1;
+
     self.tooltip = ISToolTip:new();
     self.tooltip:initialise();
     self.tooltip:addToUIManager();
@@ -178,6 +259,67 @@ function BuildingMenuTilePickerList:createChildren()
     self.tooltip:setVisible(false);
 end
 
+
+function BuildingMenuTilePickerList:onJoypadDirUp()
+    if self.selectedTileRow > 1 then
+        local newRow = self.selectedTileRow - 1;
+        -- check if the new position has an object
+        if self.posToObjectNameTable[newRow] and self.posToObjectNameTable[newRow][self.selectedTileCol] then
+            self.selectedTileRow = newRow;
+        end
+    end
+    self:ensureVisible(self.selectedTileRow, self.selectedTileCol);
+end
+
+function BuildingMenuTilePickerList:onJoypadDirDown()
+    local maxCols = math.floor(self:getWidth() / TILE_WIDTH);
+    local maxRows = math.ceil(#(self.subCatData or {}) / maxCols);
+    if self.selectedTileRow < maxRows then
+        local newRow = self.selectedTileRow + 1;
+        -- check if the new position has an object
+        if self.posToObjectNameTable[newRow] and self.posToObjectNameTable[newRow][self.selectedTileCol] then
+            self.selectedTileRow = newRow;
+        end
+    end
+    self:ensureVisible(self.selectedTileRow, self.selectedTileCol);
+end
+
+function BuildingMenuTilePickerList:onJoypadDirLeft()
+    if self.selectedTileCol > 1 then
+        local newCol = self.selectedTileCol - 1;
+        -- check if the new position has an object
+        if self.posToObjectNameTable[self.selectedTileRow] and self.posToObjectNameTable[self.selectedTileRow][newCol] then
+            self.selectedTileCol = newCol;
+        end
+    else
+        self.parent.subCategoriesListHasFocus = true;
+        self.parent.tilesListHasFocus = false;
+    end
+end
+
+function BuildingMenuTilePickerList:onJoypadDirRight()
+    local maxCols = math.floor(self:getWidth() / TILE_WIDTH)
+    if self.selectedTileCol < maxCols then
+        local newCol = self.selectedTileCol + 1
+        -- check if the new position has an object
+        if self.posToObjectNameTable[self.selectedTileRow] and self.posToObjectNameTable[self.selectedTileRow][newCol] then
+            self.selectedTileCol = newCol;
+        end
+    end
+end
+
+function BuildingMenuTilePickerList:ensureVisible(row, col)
+    local tileTop = (row - 1) * TILE_HEIGHT;
+    local tileBottom = row * TILE_HEIGHT;
+
+    if tileTop == 0 or tileBottom == 0 then self:setYScroll(0); end
+
+    if tileTop < self:getYScroll() then
+        self:setYScroll(-tileTop);
+    elseif tileBottom > self:getYScroll() + self:getHeight() then
+        self:setYScroll(-(tileBottom - self:getHeight()));
+    end
+end
 
 --- Constructor for BuildingMenuTilePickerList.
 ---@param x number
@@ -198,45 +340,70 @@ function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
     o.message = nil;
     o.overwriteIsThumpable = false;
     o.parent = parent;
-    return o
+    return o;
 end
 
 
----@class ISBuildingMenuUI: ISCollapsableWindow
-ISBuildingMenuUI = ISCollapsableWindow:derive("ISBuildingMenuUI");
+---@class ISBuildingMenuUI: ISCollapsableWindowJoypad
+ISBuildingMenuUI = ISCollapsableWindowJoypad:derive("ISBuildingMenuUI");
 
 --- Singleton instance of ISBuildingMenuUI.
 ---@type ISBuildingMenuUI|nil
-ISBuildingMenuUI.instance = nil;
-ISBuildingMenuUI.largeFontHeight = getTextManager():getFontHeight(UIFont.Large);
-ISBuildingMenuUI.mediumNewFontHeight = getTextManager():getFontHeight(UIFont.MediumNew);
-ISBuildingMenuUI.smallFontHeight = getTextManager():getFontHeight(UIFont.Small);
-ISBuildingMenuUI.bottomInfoHeight = ISBuildingMenuUI.smallFontHeight * 2
-ISBuildingMenuUI.leftTab = Keyboard.KEY_LEFT;
-ISBuildingMenuUI.rightTab = Keyboard.KEY_RIGHT;
-ISBuildingMenuUI.upArrowCategory = Keyboard.KEY_UP;
-ISBuildingMenuUI.downArrowCategory = Keyboard.KEY_DOWN;
+ISBuildingMenuUI.instance               = nil;
+ISBuildingMenuUI.largeFontHeight        = getTextManager():getFontHeight(UIFont.Large);
+ISBuildingMenuUI.mediumNewFontHeight    = getTextManager():getFontHeight(UIFont.MediumNew);
+ISBuildingMenuUI.smallFontHeight        = getTextManager():getFontHeight(UIFont.Small);
+ISBuildingMenuUI.bottomInfoHeight       = ISBuildingMenuUI.smallFontHeight * 2
+ISBuildingMenuUI.leftTab                = Keyboard.KEY_LEFT;
+ISBuildingMenuUI.rightTab               = Keyboard.KEY_RIGHT;
+ISBuildingMenuUI.upArrowCategory        = Keyboard.KEY_UP;
+ISBuildingMenuUI.downArrowCategory      = Keyboard.KEY_DOWN;
+ISBuildingMenuUI.players                = {};
 
 --- Opens the Building Menu UI panel.
----@param x number
----@param y number
 ---@param playerObj IsoPlayer
-function ISBuildingMenuUI.openPanel(x, y, playerObj)
-    if y < 0 then y = 0 end
-    if ISBuildingMenuUI.instance == nil then
-        local window = ISBuildingMenuUI:new(x, y, 570, 400, playerObj);
+function ISBuildingMenuUI.openPanel(playerObj)
+    local BMUI = ISBuildingMenuUI.instance
+    if not BMUI then
+        local window = ISBuildingMenuUI:new(0, 0, 570, 400, playerObj);
         window:initialise();
         window:addToUIManager();
         ISBuildingMenuUI.instance = window;
+        if JoypadState.players[window.playerNum+1] then
+            setJoypadFocus(window.playerNum, window);
+        end;
+    else
+        local playerNum = playerObj:getPlayerNum();
+        if JoypadState.players[playerNum+1] then
+            setJoypadFocus(playerNum, BMUI);
+        end
     end
 end
 
+function ISBuildingMenuUI:close()
+    ISBuildingMenuUI.instance = nil;
+    self:setVisible(false);
+    self:removeFromUIManager();
+    if JoypadState.players[self.playerNum+1] then
+		setJoypadFocus(self.playerNum, nil)
+	end
+end
+
+
+function ISBuildingMenuUI:toggleBuildingMenuUI(playerObj)
+    local ui = self.instance;
+    if ui and ui:getIsVisible() then
+        ui:close();
+    else
+        self.openPanel(playerObj);
+    end
+end
 
 local minOpaqueVal = 0;
 local maxOpaqueVal = 0.5;
 --- Creates child elements for the Building Menu UI.
 function ISBuildingMenuUI:createChildren()
-    ISCollapsableWindow.createChildren(self)
+    ISCollapsableWindowJoypad.createChildren(self)
     local th = self:titleBarHeight();
     local rh = self.resizable and self:resizeWidgetHeight() or 0;
 
@@ -413,20 +580,70 @@ end
 
 
 function ISBuildingMenuUI:initialise()
-    ISCollapsableWindow.initialise(self);
+    ISCollapsableWindowJoypad.initialise(self);
 end
 
 
 function ISBuildingMenuUI:render()
-    ISCollapsableWindow.render(self);
+    ISCollapsableWindowJoypad.render(self)
     if self.isCollapsed then return; end
 
     local rh = self.resizable and self:resizeWidgetHeight() or 0;
-    self:drawRectBorder(0, 0, self:getWidth(), self:getHeight(), self.borderColor.a, self.borderColor.r,self.borderColor.g,self.borderColor.b);
-    self.javaObject:DrawTextureScaledColor(nil, 0, self:getHeight() - rh - ISBuildingMenuUI.bottomInfoHeight, self:getWidth(), 1, self.borderColor.r, self.borderColor.g,self.borderColor.b,self.borderColor.a);
+    local bottomY = self:getHeight() - rh - ISBuildingMenuUI.bottomInfoHeight;
+    local textY = bottomY + (ISBuildingMenuUI.bottomInfoHeight - ISBuildingMenuUI.smallFontHeight) / 2;
+    local buttonY = bottomY + (ISBuildingMenuUI.bottomInfoHeight - 20) / 2;
 
+    self:drawRectBorder(0, 0, self:getWidth(), self:getHeight(), self.borderColor.a, self.borderColor.r, self.borderColor.g, self.borderColor.b);
+    self.javaObject:DrawTextureScaledColor(nil, 0, bottomY, self:getWidth(), 1, self.borderColor.r, self.borderColor.g, self.borderColor.b, self.borderColor.a);
+
+    if self.drawJoypadFocus then
+        local labels, icons = self:getJoypadFocusLabelsAndIcons();
+        local totalWidth = self:calculateTotalWidth(labels, 20, 8);
+        local left = (self.width - totalWidth) / 2;
+
+        for i, label in ipairs(labels) do
+            self:drawTextureScaled(icons[i], left, buttonY, 20, 20, 1, 1, 1, 1);
+            self:drawText(label, left + 20 + 8, textY, 1, 1, 1, 1, UIFont.Small);
+            left = left + 20 + 8 + getTextManager():MeasureStringX(UIFont.Small, label) + 32;
+        end
+        self:highlightFocusedUI();
+    else
+        self:drawBottomInfoText(bottomY);
+    end
+
+end
+
+function ISBuildingMenuUI:getJoypadFocusLabelsAndIcons()
+    local labels, icons = {}, {}
+    local labelMove = self.uiHasFocus and self.LabelStopMove or self.LabelMove;
+    if self.tilesListHasFocus then
+        table.insert(labels, labelMove);
+        table.insert(icons, Joypad.Texture.XButton);
+        table.insert(labels, self.LabelBuild);
+        table.insert(icons, Joypad.Texture.AButton);
+        table.insert(labels, self.LabelClose);
+        table.insert(icons, Joypad.Texture.BButton);
+    else
+        table.insert(labels, labelMove);
+        table.insert(icons, Joypad.Texture.XButton)
+        table.insert(labels, self.LabelFavorite);
+        table.insert(icons, Joypad.Texture.YButton);
+        table.insert(labels, self.LabelClose);
+        table.insert(icons, Joypad.Texture.BButton);
+    end
+    return labels, icons;
+end
+
+function ISBuildingMenuUI:calculateTotalWidth(labels, buttonSize, buttonSpace)
+    local totalWidth = 0;
+    for _, label in ipairs(labels) do
+        totalWidth = totalWidth + buttonSize + buttonSpace + getTextManager():MeasureStringX(UIFont.Small, label) + 32;
+    end
+    return totalWidth - 32;
+end
+
+function ISBuildingMenuUI:drawBottomInfoText(bottomY)
     local text = self.bottomInfoText;
-
     local noteX = 0;
     local noteWidth = self.width;
     if noteWidth ~= self.keysRichText.width then
@@ -438,10 +655,30 @@ function ISBuildingMenuUI:render()
         self.keysRichText:setText(" <CENTRE> " .. text);
         self.keysRichText.textDirty = true;
     end
-    local noteY = self:getHeight() - rh - ISBuildingMenuUI.bottomInfoHeight;
-    noteY = noteY + (ISBuildingMenuUI.bottomInfoHeight - self.keysRichText.height) / 2;
+    local noteY = bottomY + (ISBuildingMenuUI.bottomInfoHeight - self.keysRichText.height) / 2;
     self.keysRichText:render(noteX, noteY, self);
 end
+
+function ISBuildingMenuUI:highlightFocusedUI()
+    local focusedUI = self.categoriesListHasFocus and self:getActiveCategoriesList() or self.subCategoriesListHasFocus and self:getActiveSubCategoriesList();
+    if focusedUI then
+        local dx, dy = 0, self:titleBarHeight();
+        local parent = focusedUI.parent;
+        while parent ~= self do
+            dx = dx + parent:getX();
+            dy = dy + parent:getY();
+            parent = parent.parent;
+        end
+        self:drawRectBorder(focusedUI:getX(), dy + focusedUI:getY(), focusedUI:getWidth(), focusedUI:getHeight(), 0.4, 0.2, 1.0, 1.0);
+        self:drawRectBorder(focusedUI:getX()+1, dy + focusedUI:getY()+1, focusedUI:getWidth()-2, focusedUI:getHeight()-2, 0.4, 0.2, 1.0, 1.0);
+    end
+    if self.tilesListHasFocus and self.tilesList then
+        local ui = self.tilesList;
+        self:drawRectBorder(ui:getX(), ui:getY(), ui:getWidth(), ui:getHeight(), 0.4, 0.2, 1.0, 1.0);
+        self:drawRectBorder(ui:getX()+1, ui:getY()+1, ui:getWidth()-2, ui:getHeight()-2, 0.4, 0.2, 1.0, 1.0);
+    end
+end
+
 
 function ISBuildingMenuUI:update()
     local currentTab = self:getActiveTab()
@@ -594,26 +831,6 @@ function ISBuildingMenuUI:updateTilesList(objectsData)
     self.tilesList.subCatData = objectsData;
 end
 
-
-function ISBuildingMenuUI:close()
-    ISBuildingMenuUI.instance = nil;
-    self:setVisible(false);
-    self:removeFromUIManager();
-end
-
-
-function ISBuildingMenuUI:toggleBuildingMenuUI(playerObj)
-    local ui = ISBuildingMenuUI.instance;
-    if ui and ui:getIsVisible() then
-        ui:close();
-    else
-        local x = getCore():getScreenWidth()/1.5;
-        local y = getCore():getScreenHeight()/7.5;
-        self.openPanel(x, y, playerObj);
-    end
-end
-
-
 function ISBuildingMenuUI:onResize()
     ISUIElement.onResize(self);
     self.tilesList:setWidth(self.width/2);
@@ -624,10 +841,10 @@ end
 function ISBuildingMenuUI:isKeyConsumed(key)
     return key == Keyboard.KEY_ESCAPE or
             key == getCore():getKey("BuildingMenu") or
-            key == ISCraftingUI.upArrowCategory or
-            key == ISCraftingUI.downArrowCategory or
-            key == ISCraftingUI.leftTab or
-            key == ISCraftingUI.rightTab
+            key == ISBuildingMenuUI.upArrowCategory or
+            key == ISBuildingMenuUI.downArrowCategory or
+            key == ISBuildingMenuUI.leftTab or
+            key == ISBuildingMenuUI.rightTab
 end
 
 function ISBuildingMenuUI.onKeyPressed(key)
@@ -689,22 +906,188 @@ Events.OnKeyPressed.Add(ISBuildingMenuUI.onKeyPressed);
 ---@param character IsoPlayer
 ---@return ISBuildingMenuUI
 function ISBuildingMenuUI:new(x, y, width, height, character)
-    local o = ISCollapsableWindow.new(self, x, y, width, height);
+    local o = {};
+    if x == 0 and y == 0 then
+        x = (getCore():getScreenWidth() / 2) + (width / 2);
+        y = (getCore():getScreenHeight() / 2) - (height / 2);
+    end
+    o = ISCollapsableWindowJoypad.new(self, x, y, width, height);
     o:setResizable(true);
 
-    o.title = getText("IGUI_BuildingMenu");
-    o.character = character;
-    o.minOpaque = 1; -- in percentage
-    o.maxOpaque = 1; -- in percentage
-    o.minimumWidth = 570;
-    o.minimumHeight = 400;
-    o.lastActiveTab = nil;
-    o.lastSelectedCategoryIndex = nil;
-    o.lastSelectedSubCategoryIndex = nil;
+    o.title                             = getText("IGUI_BuildingMenu");
+    o.character                         = character;
+    o.playerNum                         = character and character:getPlayerNum() or -1;
+    o.minOpaque                         = 1; -- in percentage
+    o.maxOpaque                         = 1; -- in percentage
+    o.minimumWidth                      = 570;
+    o.minimumHeight                     = 400;
+    o.fgBar                             = {r=0, g=0.6, b=0, a=0.7 };
 
-    o.bottomInfoText = getText("IGUI_BuildingMenuUI_Controls",
-        getKeyName(ISBuildingMenuUI.upArrowCategory), getKeyName(ISBuildingMenuUI.downArrowCategory),
-        getKeyName(ISBuildingMenuUI.leftTab), getKeyName(ISBuildingMenuUI.rightTab));
+    o.lastActiveTab                     = nil;
+    o.lastSelectedCategoryIndex         = nil;
+    o.lastSelectedSubCategoryIndex      = nil;
+    o.selectedIndex                     = {};
+
+    o.categoriesListHasFocus            = true;
+    o.uiHasFocus                        = false;
+    o.joypadMoveSpeed   	            = 20;
+
+    o.LabelDash                         = "-";
+    o.LabelDashWidth                    = getTextManager():MeasureStringX(UIFont.Small, o.LabelDash);
+    o.LabelMove                         = getText("IGUI_BuildingMenuUI_Move_UI");
+    o.LabelStopMove                     = getText("IGUI_BuildingMenuUI_Stop_Move_UI");
+    o.LabelBuild                        = getText("IGUI_BuildingMenuUI_Build");
+    o.LabelFavorite                     = getText("IGUI_BuildingMenuUI_Favorite");
+    o.LabelClose                        = getText("IGUI_BuildingMenuUI_Close");
+
+    o.LabelTabLeft                      = getText("IGUI_BuildingMenuUI_Tab_Left");
+    o.LabelTabRight                     = getText("IGUI_BuildingMenuUI_Tab_Right");
+
+    o.LabelListLeft                     = getText("IGUI_BuildingMenuUI_List_Left");
+    o.LabelListRight                    = getText("IGUI_BuildingMenuUI_List_Right");
+    o.LabelListUp                       = getText("IGUI_BuildingMenuUI_List_Up");
+    o.LabelListDown                     = getText("IGUI_BuildingMenuUI_List_Down");
+
+    o.bottomInfoText                    = getText("IGUI_BuildingMenuUI_Controls",
+                                        getKeyName(ISBuildingMenuUI.upArrowCategory), getKeyName(ISBuildingMenuUI.downArrowCategory),
+                                        getKeyName(ISBuildingMenuUI.leftTab), getKeyName(ISBuildingMenuUI.rightTab));
 
     return o;
+end
+
+
+function ISBuildingMenuUI:setVisible(bVisible)
+    self.javaObject:setVisible(bVisible);
+    self.javaObject:setEnabled(bVisible)
+
+    if not bVisible then -- save the selected index
+        self.selectedIndex = {};
+        for i,v in ipairs(self.tabs) do
+            self.selectedIndex[v.tab] = v.categoriesList.selected;
+        end
+    end
+    if bVisible then
+        self:refresh();
+    end
+    if bVisible then
+        for i,v in ipairs(self.tabs) do
+            if self.selectedIndex[v.tab] then
+                v.categoriesList.selected = self.selectedIndex[v.tab];
+            end
+        end
+    end
+
+    local categoriesListBox = self:getActiveCategoriesList();
+    if categoriesListBox then 
+        categoriesListBox:ensureVisible(categoriesListBox.selected); 
+    end
+    local subCategoriesListBox = self:getActiveSubCategoriesList();
+    if subCategoriesListBox then  
+        subCategoriesListBox:ensureVisible(subCategoriesListBox.selected); 
+    end
+end
+
+function ISBuildingMenuUI:onLoseJoypadFocus()
+    self.drawJoypadFocus = false;
+end
+
+function ISBuildingMenuUI:onGainJoypadFocus(joypadData)
+    self.drawJoypadFocus = true;
+end
+
+function ISBuildingMenuUI:onJoypadDown(button)
+    local ui = ISBuildingMenuUI.instance;
+    if not ui then return; end
+    if not ui.panel or not ui.panel.activeView then return; end
+    local playerObj = ui.character;
+    if button == Joypad.XButton then
+        ui.uiHasFocus = not ui.uiHasFocus;
+    end
+    if button == Joypad.AButton then
+        ui.tilesList:onJoypadDown(button);
+    end
+    if button == Joypad.BButton then
+        self:toggleBuildingMenuUI(playerObj);
+    end
+    if button == Joypad.YButton then
+        if self.categoriesListHasFocus == true then
+            self.panel.activeView.view:addToFavorite(true, "categoriesList");
+        elseif self.subCategoriesListHasFocus == true then
+            self.panel.activeView.view:addToFavorite(true, "subCategoriesList");
+        end
+    end
+    if button == Joypad.LBumper or button == Joypad.RBumper then
+        local viewIndex = self.panel:getActiveViewIndex()
+        if button == Joypad.LBumper then
+            if viewIndex == 1 then
+                viewIndex = #self.panel.viewList
+            else
+                viewIndex = viewIndex - 1
+            end
+        elseif button == Joypad.RBumper then
+            if viewIndex == #self.panel.viewList then
+                viewIndex = 1
+            else
+                viewIndex = viewIndex + 1
+            end
+        end
+        self.panel:activateView(self.panel.viewList[viewIndex].name);
+        local categoriesListBox = self:getActiveCategoriesList();
+        if categoriesListBox then 
+            categoriesListBox:ensureVisible(categoriesListBox.selected); 
+        end
+        local subCategoriesListBox = self:getActiveSubCategoriesList();
+        if subCategoriesListBox then  
+            subCategoriesListBox:ensureVisible(subCategoriesListBox.selected);
+        end
+    end
+end
+
+function ISBuildingMenuUI:onJoypadDirUp()
+    if self.uiHasFocus then
+        self:setY(self:getY() - self.joypadMoveSpeed);
+    elseif self.categoriesListHasFocus then
+        self:getActiveCategoriesList():onJoypadDirUp();
+    elseif self.subCategoriesListHasFocus then
+        self:getActiveSubCategoriesList():onJoypadDirUp();
+    elseif self.tilesList then
+        self.tilesList:onJoypadDirUp();
+    end
+end
+
+function ISBuildingMenuUI:onJoypadDirDown()
+    if self.uiHasFocus then
+        self:setY(self:getY() + self.joypadMoveSpeed);
+    elseif self.categoriesListHasFocus then
+        self:getActiveCategoriesList():onJoypadDirDown();
+    elseif self.subCategoriesListHasFocus then
+        self:getActiveSubCategoriesList():onJoypadDirDown();
+    elseif self.tilesList then
+        self.tilesList:onJoypadDirDown();
+    end
+end
+
+function ISBuildingMenuUI:onJoypadDirLeft()
+    if self.uiHasFocus then
+        self:setX(self:getX() - self.joypadMoveSpeed);
+    elseif self.tilesListHasFocus then
+        self.tilesList:onJoypadDirLeft();
+    elseif self.subCategoriesListHasFocus then
+        self.subCategoriesListHasFocus = false;
+        self.categoriesListHasFocus = true;
+    end
+end
+
+function ISBuildingMenuUI:onJoypadDirRight()
+    if self.uiHasFocus then
+        self:setX(self:getX() + self.joypadMoveSpeed);
+    elseif self.categoriesListHasFocus and self:getActiveSubCategoriesList():getIsVisible() then
+        self.categoriesListHasFocus = false;
+        self.subCategoriesListHasFocus = true;
+    elseif self.subCategoriesListHasFocus and self.tilesList:getIsVisible() then
+        self.subCategoriesListHasFocus = false;
+        self.tilesListHasFocus = true;
+    elseif self.tilesListHasFocus then
+        self.tilesList:onJoypadDirRight();
+    end
 end

@@ -142,9 +142,7 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldob
     end
 
     local option = context:insertOptionBefore(getText("ContextMenu_Build"), getText("ContextMenu_BuildingMenu"), worldobjects, function()
-        local x = getCore():getScreenWidth()/1.5;
-        local y = getCore():getScreenHeight()/7.5;
-        ISBuildingMenuUI.openPanel(x, y, playerObj);
+        ISBuildingMenuUI.openPanel(playerObj);
     end)
     option.iconTexture = getTexture("media/ui/building_menu.png");
 
