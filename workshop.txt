@@ -86,6 +86,8 @@ description=[b]DO NOT USE [/b] mods like [i]More Builds, Lite, Expand, Improvise
 description=
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2883755057][b] 41.78+ Propane Torch Fix [/b][/url] is redundant because Building Menu already let's you modify the [b]Blow Torch[/b] uses in the Sandbox options.
 description=
+description=[b] Wallpapers and More Paint Colors [/b] because it overwrites some vanilla tiles
+description=
 description=[h1] Bug Reports: [/h1]
 description=
 description= Check the known issues list in the [url=https://steamcommunity.com/workshop/filedetails/discussion/3067798182/4132682727127121310/] discussions thread [/url] first!

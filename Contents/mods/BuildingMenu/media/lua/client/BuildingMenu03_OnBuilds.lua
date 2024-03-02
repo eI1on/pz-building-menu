@@ -10,7 +10,8 @@ local BuildingMenu = getBuildingMenuInstance()
 local exclusions = {
     health = true,
     firstItem = true,
-    secondItem = true
+    secondItem = true,
+    noNeedHammer = true
 }
 
 --- Builds an object.
@@ -45,8 +46,11 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         end
     end
 
-    local neededTools = objectRecipe.neededTools
+    local neededTools = objectRecipe.neededTools;
+    local needHammer = false;
     if neededTools then
+        if  neededTools[1] == "Hammer" then needHammer = true; end
+
         BuildingMenu.equipToolPrimary(object, player, neededTools[1]);
         if neededTools[2] then
             BuildingMenu.equipToolSecondary(object, player, neededTools[2]);
@@ -63,6 +67,8 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
                 else
                     object[option] = value;
                 end
+            elseif option == "noNeedHammer" then
+                object[option] = not needHammer;
             end
         end
         local inv = getSpecificPlayer(player):getInventory()
@@ -71,7 +77,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             item = BuildingMenu.getAvailableTool(inv, objectOptions.firstItem);
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.firstItem = item:getType()
-            elseif not isDebugEnabled() then
+            elseif not ISBuildMenu.cheat then
                 print("[Building Menu] ERROR at creating - firstItem - for: ", name);
                 return;
             end
@@ -80,7 +86,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             item = BuildingMenu.getAvailableTool(inv, objectOptions.secondItem);
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.secondItem = item:getType()
-            elseif not isDebugEnabled() then
+            elseif not ISBuildMenu.cheat then
                 print("[Building Menu] ERROR at creating - secondItem - for: ", name);
                 return;
             end
@@ -388,25 +394,6 @@ BuildingMenu.onRainCollectorBarrel = function( sprites, name, player, objectReci
     return _barrel 
 end
 
----@param sprites table
----@param name string
----@param player number
----@return ISBuildingObject
----@deprecated
----(Deprecated) 
-BuildingMenu.onBuildMetalShelf = function( sprites, name, player, objectRecipe, objectOptions)
-    local _metalshelf = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
-
-    if sprites.eastSprite then
-        _metalshelf:setEastSprite(sprites.eastSprite);
-    end
-
-    if sprites.southSprite then
-        _metalshelf:setSouthSprite(sprites.southSprite);
-    end
-
-    return _metalshelf
-end
 
 ---@param sprites table
 ---@param name string
@@ -545,17 +532,6 @@ BuildingMenu.onBuildClothingRack = function( sprites, name, player, objectRecipe
     return _clothingRack
 end
 
----@param sprites table
----@param name string
----@param player number
----@return ISBuildingObject
----@deprecated
----(Deprecated) 
-BuildingMenu.onBuildDoubleClothingRack = function( sprites, name, player, objectRecipe, objectOptions)
-    local _doubleClothingRack = ISDoubleClothingRack:new(player, name, sprites.sprite, sprites.sprite2, sprites.northSprite, sprites.northSprite2);
-
-    return _doubleClothingRack
-end
 
 ---@param sprites table
 ---@param name string

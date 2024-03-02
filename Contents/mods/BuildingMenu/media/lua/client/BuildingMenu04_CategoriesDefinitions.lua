@@ -35043,7 +35043,7 @@ local function addOtherDecorationsToMenu()
                     true,
                     {
                         actionAnim = "Build",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,
@@ -35065,7 +35065,7 @@ local function addOtherDecorationsToMenu()
                     true,
                     {
                         actionAnim = "Build",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,
@@ -35087,7 +35087,7 @@ local function addOtherDecorationsToMenu()
                     true,
                     {
                         actionAnim = "Build",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,
@@ -35109,7 +35109,7 @@ local function addOtherDecorationsToMenu()
                     true,
                     {
                         actionAnim = "Build",
-                        noNeedHammer = false,
+                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,

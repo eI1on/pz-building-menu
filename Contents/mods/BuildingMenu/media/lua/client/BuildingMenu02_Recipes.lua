@@ -3304,9 +3304,9 @@ local function initBuildingMenuRecipes()
 
     BuildingMenu.ScrapDoor2Recipe = {
         neededTools = {
-            "Hammer",
             "BlowTorch",
-            "WeldingMask"
+            "WeldingMask",
+            "Hammer"
         },
         neededMaterials = {
             {
