@@ -3,8 +3,8 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_SecretEntranceShelf = "Secret Entrance Shelf",
   Tooltip_BuildingMenuObj_SecretEntranceDoor = "Secret Entrance Door",
   
-  Tooltip_SecretEntranceShelf = "A cunningly disguised shelf that keeps your books organized. Pair it with the Secret Entrance Door to create a seamless hidden passage within your safehouse.",
-  Tooltip_SecretEntranceDoor = "A cleverly designed shelf that swings open to reveal a hidden passage. Perfect for a quick and stealthy getaway.",
+  Tooltip_SecretEntranceShelf = "A CONTAINER-style shelf that blends in perfectly. Cannot be opened, but works well alongside Secret Doors for a hidden passageway.",
+  Tooltip_SecretEntranceDoor = "A disguised door designed to fit within a DOORFRAME, revealing a hidden passage when opened. Ideal for secure and discreet access.",
 
   Tooltip_BuildingMenuObj_Log_Wall = "Log Wall",
   Tooltip_BuildingMenuObj_Log_Door_Frame = "Log Door Frame",

@@ -1,3 +1,29 @@
+ MAR 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] 
+[/list]
+DaddyDirkie's addon:
+[list]
+[*] Changed tooltip for secret entrances/doors 
+[/list]
+[/list]
+
+02 MAR 24
+7197ee4
+Hotfix
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Fixed case where admins could not build when Build Cheat was active
+[/list]
+[/list]
+
 01 MAR 24
 055ae61
 
