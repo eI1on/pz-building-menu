@@ -77,6 +77,7 @@ description= This mod was crafted with love, I hope it brings joy to your buildi
 description=
 description=[hr][/hr]
 description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/github_banner.png [/img][/url]
+description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/kofi_bg_tag_white.png [/img][/url]
 description=[url=https://discord.com/invite/tNzcyyDCkH][img] https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner1.png [/img][/url]
 description=
 description=[h1] Don't forget to rate and favorite! [/h1]
