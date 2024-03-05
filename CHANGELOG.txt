@@ -4,11 +4,15 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] 
+[*] Fixed floor objects materials when dissasembles
+[/list]
+Melos's addon:
+[list]
+[*] Fixed Metal folding chairs couldn't be moved
 [/list]
 DaddyDirkie's addon:
 [list]
-[*] Changed tooltip for secret entrances/doors 
+[*] Changed tooltip for secret entrances/doors to better explain what they do
 [/list]
 [/list]
 

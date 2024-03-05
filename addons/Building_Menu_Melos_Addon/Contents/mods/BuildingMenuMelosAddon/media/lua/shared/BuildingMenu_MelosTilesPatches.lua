@@ -109,4 +109,25 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "IsMovAble", "", false);
         props:CreateKeySet();
     end
+
+    
+    sprites = {
+        "melos_tiles_furniture_seating_01_48",
+        "melos_tiles_furniture_seating_01_49",
+        "melos_tiles_furniture_seating_01_50",
+        "melos_tiles_furniture_seating_01_51",
+        "melos_tiles_furniture_seating_01_56",
+        "melos_tiles_furniture_seating_01_57",
+        "melos_tiles_furniture_seating_01_58",
+        "melos_tiles_furniture_seating_01_59",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "MetalBars", "", false);
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        props:CreateKeySet();
+    end
 end)

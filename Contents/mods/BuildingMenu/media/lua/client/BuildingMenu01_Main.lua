@@ -4,7 +4,7 @@ local getText = getText
 local pairs = pairs
 ---@type function
 local ipairs = ipairs
----@type function
+---@class PerkFactory
 local PerkFactory = PerkFactory
 ---@type function
 local getSpecificPlayer = getSpecificPlayer
