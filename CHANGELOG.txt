@@ -1,3 +1,15 @@
+ MAR 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Added Alternative Materials and Support for different types of materials from other mods (i.e. Improvised Glass, Soul's Building Time, Snake's Mod Pack)
+[*] Fixed Architecture Plus > Foundation creating an invisible wall
+[/list]
+[/list]
+
+
 5 MAR 24
 a8c2d84
 

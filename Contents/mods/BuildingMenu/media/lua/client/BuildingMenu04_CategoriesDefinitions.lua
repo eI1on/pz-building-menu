@@ -18259,7 +18259,9 @@ local function addArchitecturePlusToMenu()
                         noNeedHammer = true,
                         craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
-                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
                     },
                     {sprite = "walls_detailing_01_64", northSprite = "walls_detailing_01_65"}
                 ),
@@ -18274,7 +18276,9 @@ local function addArchitecturePlusToMenu()
                         noNeedHammer = true,
                         craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
-                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
                     },
                     {sprite = "walls_detailing_01_68", northSprite = "walls_detailing_01_69"}
                 ),
@@ -18289,7 +18293,9 @@ local function addArchitecturePlusToMenu()
                         noNeedHammer = true,
                         craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
-                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
                     },
                     {sprite = "walls_detailing_01_67", northSprite = "walls_detailing_01_67"}
                 ),
@@ -18304,7 +18310,9 @@ local function addArchitecturePlusToMenu()
                         noNeedHammer = true,
                         craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
-                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
                     },
                     {sprite = "walls_detailing_01_66", northSprite = "walls_detailing_01_66"}
                 ),

@@ -4,23 +4,22 @@ title=Building Menu
 description=Ready to take your building experience up a notch? This mod adds an interface where you'll be able to find all the buildable objects you need to create and customize buildings, making your post-apocalyptic life a little more homey.
 description=
 description=[h1]Key Features:[/h1]
-description=[b] Easy Access: [/b] Dive straight into the building action! The Building Menu interface lets you select and place buildable objects with ease.
+description=[b] Easy Access: [/b] Dive straight into the building action! The Building Menu interface lets you select and place buildable objects with ease (console friendly).
 description=
-description=[b]Mod Options Integration: [/b] Toggle the Building Menu with a customizable (using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url]) keybind, option can be found [url=https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_keybindings.png] here [/url]. You can also set the opacity of the interface [b] using the gear button on the UI [/b].
+description=[b] Mod Options Integration: [/b] Access the Building Interface using a customizable keybind (adjustable via [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url]), option can be found [url=https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_keybindings.png] here [/url]. Interface opacity adjustments are made through the UI's [b] gear [/b] button.
 description=
-description=[b] Diverse Options: [/b] Whether it's a sturdy wall or a cozy shelter, there's something here for every builder!
+description=[b] Indestructible Buildables: [/b] The option to build indestructible objects, you can activate it from [b]Sandbox-Options[/b] (server admins can toggle it from the UI settings).
+description=[i]Note: Only newly built objects after enabling the option will have this function.[/i]
 description=
-description=[b] Non-thumpable objects: [/b] The option to build indestructible objects, you can activate it from [b]Sandbox-Options[/b] (server admins can toggle it from the UI settings).
-description=
-description=[b] Interaction Updates: Wall vines [/b] crafted from the Building Menu can be cut with something sharp, similar to the vanilla ones. Architecture Plus category items that are [b] wall decorations [/b] can be removed with a hammer, and [b] road markings [/b] can be erased using a trowel.
+description=[b] Interaction Updates: Wall vines [/b] crafted from the Building Menu can be cut with sharp tools, similar to the vanilla ones. Architecture Plus category items that are [b] wall decorations [/b] can be removed with a hammer, and [b] road markings [/b] can be erased using a trowel.
 description=
 description=[hr][/hr]
 description=[h1]Over 1500 buildable objects:[/h1]
 description=[b] Carpentry [/b]
 description=[list]
-description=[*] Various wall types (Stone, Brick, Clapboard, Wood Panel, Cinderblock, Commercial, Metal)
+description=[*] Diverse wall constructions (Stone, Brick, Clapboard, Wood Panel, Cinderblock, Commercial, Metal)
 description=[*] Windows, Wooden and Glass Doors
-description=[*] Stairs
+description=[*] Staircases
 description=[*] Decorative elements for walls ([i] can be removed with a hammer[/i])
 description=[*] Fences
 description=[*] Floors
@@ -42,7 +41,7 @@ description=[b] Electrical [/b]
 description=[list]
 description=[*] Clothes washing and drying machines
 description=[*] Lighting posts
-description=[*] Jukeboxes (for those fine tunes from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2997342681] Lifestyle [/url])
+description=[*] Jukeboxes (for those fine tunes from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2997342681]Lifestyle[/url])
 description=[/list]
 description=[b] Other [/b]
 description=[list]
@@ -63,10 +62,10 @@ description=[h2] Does it work on existing saves? [/h2]
 description= Absolutely! Enable it mid-save without issues. If you disable it you will [b]lose[/b] your Military Crates!
 description=
 description=[h2] My building isn't recognized as an indoor space. What should I do? [/h2]
-description= For a fix, please watch this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]
+description= For a solution, please refer to this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]
 description=
 description=[h2] I'm missing some items in the build menu. How do I find them? [/h2]
-description= To access all available buildables, you'll need to activate them in the Sandbox settings (in SP you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454] Change Sandbox Options (by Star)[/url]), some are disabled by default like metal drums, furniture ...
+description= To access all available buildables, you'll need to activate them in the Sandbox settings (in single-player you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454] Change Sandbox Options (by Star)[/url]), as some are initially disabled, such as metal drums, furniture, etc.
 description=
 description=[h2] Does it work for all game versions? [/h2]
 description= Only tested and working on the latest game version (v41.78.16).
@@ -79,7 +78,7 @@ description=Glass items and methods to create them are sourced from [url=https:/
 description=
 description=[b]DO NOT USE [/b] mods like [i]More Builds, Lite, Expand, Improvised,[/i] and such. All can and will cause errors along with the Building Menu, some override vanilla files to add buildables (which is the worst thing they could do) that BM needs.
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2883755057][b] 41.78+ Propane Torch Fix [/b][/url] is redundant because Building Menu already let's you modify the [b]Blow Torch[/b] uses in the Sandbox options.
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2883755057][b] 41.78+ Propane Torch Fix [/b][/url] is unnecessary because Building Menu already let's you modify the [b]Blow Torch[/b] usage in the Sandbox options.
 description=
 description=[h1] Bug Reports: [/h1]
 description=

@@ -121,6 +121,19 @@ BuildingMenu.Tools = {
 }
 
 
+--- Definitions of materials used in the building menu.
+---@type table<string, table>
+BuildingMenu.Materials = {}
+BuildingMenu.Materials = {
+    GlassPane = {
+        "Base.GlassPane",
+        "ImprovisedGlass.GlassPane",
+        "filcher.SFGlassPanel",
+        "Base.SmallGlassPanel"
+    },
+}
+
+
 --- Function called to fill the world object context menu.
 ---@param playerNum number
 ---@param context ISContextMenu
@@ -366,192 +379,239 @@ end
 
 --- Tooltip check for a specific material.
 ---@param playerObj IsoPlayer
----@param playerInv InventoryItem
----@param material string
----@param amount number
+---@param playerInv ItemContainer
+---@param currentMaterialGroup table
 ---@param tooltip ISToolTip
----@return boolean
-BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, material, amount, tooltip)
-    local type = string.split(material, '\\.')[2]
-    local invItemCount = 0
+---@return boolean, table
+BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, currentMaterialGroup, tooltip)
+    local materialFound = false;
+    local materialsBuffer = {};
+    local materialCountsInfo = {};
 
-    local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare())
+    local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare());
+    local groundItemCountMap = {};
 
-    if amount > 0 then
-        invItemCount = playerInv:getItemCountFromTypeRecurse(material)
-
-        for groundItemType, groundItemCount in pairs(groundItems) do
-            if groundItemType == type and groundItemCount ~= nil then
-                invItemCount = invItemCount + #groundItemCount
-            end
-        end
-
-        local item = BuildingMenu.GetItemInstance(material);
-        if item then
-            if invItemCount < amount then
-                tooltip.description = tooltip.description .. BuildingMenu.bhs .. item:getName() .. ' ' .. invItemCount .. '/' .. amount .. ' <LINE>';
-                return false
-            else
-                tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' ' .. invItemCount .. '/' .. amount .. ' <LINE>';
-                return true
-            end
-        end
+    -- Prepare ground item counts
+    for groundItemType, itemsOnGround in pairs(groundItems) do
+        groundItemCountMap[groundItemType] = #itemsOnGround;
     end
-    tooltip.description = tooltip.description .. BuildingMenu.bhs .. ' ERROR at tooltipCheckForMaterial: material ' .. material .. ", amount ".. amount .. ' <LINE>';
-    return false
+
+    -- Iterate over each material group
+    for groupIndex, matGroup in pairs(currentMaterialGroup) do
+        local materials = type(matGroup.Material) == "table" and matGroup.Material or { matGroup.Material };
+        local totalAmountNeeded = matGroup.Amount;
+        local totalFoundCount = 0;
+        local materialDetails = {};
+        local firstMaterialName = nil;
+
+        -- Iterate over each material within the group
+        for _, material in pairs(materials) do
+            local invItemCount = playerInv:getItemCountFromTypeRecurse(material);
+            local groundCount = groundItemCountMap[material] or 0;
+            local totalMaterialCount = invItemCount + groundCount;
+
+            totalFoundCount = totalFoundCount + totalMaterialCount;
+
+            -- Store individual material count details
+            if totalMaterialCount > 0 then
+                materialDetails[material] = totalMaterialCount;
+                if not firstMaterialName then
+                    firstMaterialName = material;
+                end
+            end
+        end
+
+        -- Check if total found count meets the requirement
+        materialFound = totalFoundCount >= totalAmountNeeded;
+        local color = materialFound and BuildingMenu.ghs or BuildingMenu.bhs;
+
+        if not firstMaterialName then firstMaterialName = materials[1]; end
+
+        -- Prepare display text for the first material as a representative
+        local representativeMaterial = BuildingMenu.GetItemInstance(firstMaterialName):getName(); -- Directly accessing the first element
+        local itemText = color .. representativeMaterial .. ' ' .. totalFoundCount .. '/' .. totalAmountNeeded;
+
+        -- Store count details for use in building process
+        materialCountsInfo[groupIndex] = {
+            AmountNeeded = totalAmountNeeded,
+            MaterialDetails = materialDetails
+        };
+
+        -- Append to the materials buffer
+        if groupIndex > 1 then
+            table.insert(materialsBuffer, " <LINE> " .. color .. getText("ContextMenu_or") .. " ");
+        end
+        table.insert(materialsBuffer, itemText);
+    end
+
+    -- Concatenate buffer to form materials text and update tooltip
+    local materialsText = table.concat(materialsBuffer);
+    tooltip.description = tooltip.description .. materialsText .. ' <LINE>';
+
+    return materialFound, materialCountsInfo;
 end
+
 
 --- Tooltip check for a consumable item.
 ---@param playerObj IsoPlayer
 ---@param playerInv ItemContainer
----@param material string
----@param amount number
+---@param currentConsumableGroup table
 ---@param tooltip ISToolTip
----@return boolean
-BuildingMenu.tooltipCheckForConsumable = function(playerObj, playerInv, material, amount, tooltip)
+---@return boolean, number
+BuildingMenu.tooltipCheckForConsumable = function(playerObj, playerInv, currentConsumableGroup, tooltip)
+    local consumableFound = false;
+    local consumablesBuffer = {};
+    local consumableFoundIndex = 1;
+
     local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare());
     local groundItemsUses = buildUtil.getMaterialOnGroundUses(groundItems);
-    local invItemUses = playerInv:getUsesTypeRecurse(material);
 
-    local isEnough = invItemUses >= amount;
-    local text = "";
+    for i, con in ipairs(currentConsumableGroup) do
+        local consumable = con.Consumable;
+        local amount = con.Amount;
+        local invItemUses = playerInv:getUsesTypeRecurse(consumable);
 
-    if material == "Base.BlowTorch" then
-        local blowTorch = playerInv:getFirstTypeRecurse("Base.BlowTorch");
-        local blowTorchUseLeft = (playerInv and playerInv:getUsesTypeRecurse("Base.BlowTorch")) or 0;
-
-        if groundItemsUses["Base.BlowTorch"] then
-            blowTorchUseLeft = blowTorchUseLeft + groundItemsUses["Base.BlowTorch"];
-            local maxUses = 0;
-            local blowTorchGround = nil;
-            for _, item2 in ipairs(groundItemsUses["Base.BlowTorch"]) do
-                if item2:getDrainableUsesInt() > maxUses then
-                    blowTorchGround = item2;
-                    maxUses = item2:getDrainableUsesInt();
-                end
+        if groundItemsUses[consumable] then
+            for _, item in ipairs(groundItemsUses[consumable]) do
+                invItemUses = invItemUses + item:getDrainableUsesInt();
             end
-            blowTorch = blowTorch or blowTorchGround;
         end
 
-        text = getItemNameFromFullType("Base.BlowTorch") .. " " ..
-               getText("ContextMenu_Uses") .. " " .. blowTorchUseLeft .. "/" .. amount .. " <LINE> ";
-        isEnough = blowTorchUseLeft >= amount;
-    elseif material == "Base.WeldingRods" then
-        -- local rodUse = BuildingMenu.weldingRodUses(amount)
-        local rodUse = amount;
+        local isEnough = invItemUses >= amount
+        local itemName = getItemNameFromFullType(consumable)
+        local color = isEnough and BuildingMenu.ghs or BuildingMenu.bhs
 
-        local weldingRods = 0;
-        weldingRods = invItemUses + (groundItemsUses["Base.WeldingRods"] or 0);
-        text = getItemNameFromFullType("Base.WeldingRods") .. " " ..
-                    getText("ContextMenu_Uses") .. " " .. weldingRods .. "/" .. rodUse .. " <LINE> ";
-        isEnough = weldingRods >= rodUse;
-    else
-        if groundItemsUses[material] then
-            invItemUses = invItemUses + groundItemsUses[material];
+        if not consumableFound and isEnough then
+            consumableFound = true;
+            consumableFoundIndex = i;
         end
-        
-        text = getItemNameFromFullType(material) .. " " ..
-                    getText("ContextMenu_Uses") .. " " .. invItemUses .. "/" .. amount .. " <LINE> ";
-        isEnough = invItemUses >= amount;
+
+        local consumableText = color .. itemName .. ' ' .. getText("ContextMenu_Uses") .. " " .. invItemUses .. "/" .. amount;
+        if i > 1 then
+            table.insert(consumablesBuffer, " <LINE> " .. color .. getText("ContextMenu_or") .. " ");
+        end
+        table.insert(consumablesBuffer, consumableText);
     end
 
-    tooltip.description = tooltip.description .. (isEnough and BuildingMenu.ghs or BuildingMenu.bhs) .. text;
-    return isEnough;
+    local consumablesText = table.concat(consumablesBuffer);
+
+    if consumablesText ~= "" then
+        tooltip.description = tooltip.description .. consumablesText .. ' <LINE>';
+    else
+        tooltip.description = tooltip.description .. BuildingMenu.bhs .. ' ERROR: No consumables found. <LINE>';
+    end
+
+    return consumableFound, consumableFoundIndex;
 end
+
+local function adaptRecipeGroupToNewFormat(materialOrGroup)
+    if materialOrGroup.Material or materialOrGroup.Consumable then
+        return {materialOrGroup};
+    elseif type(materialOrGroup[1]) == "table" and (materialOrGroup[1].Material or materialOrGroup[1].Consumable)then
+        return materialOrGroup;
+    end
+end
+
 
 --- Checks if the player can build a specific object.
 ---@param playerObj IsoPlayer
 ---@param tooltip ISToolTip
 ---@param objectRecipe table
----@return ISToolTip, boolean
+---@return ISToolTip, boolean, table, table
 BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
-    local playerInv = playerObj:getInventory()
+    local playerInv = playerObj:getInventory();
 
     tooltip.description = BuildingMenu.textTooltipHeader;
 
-    local _canBuildResult = true
-    local _currentResult = true
+    local canBuildResult = true;
+    local currentResult = true;
+    local consumablesFoundIndexMatrix = {};
+    local materialFoundIndexMatrix = {};
 
-    if not objectRecipe then tooltip.description = tooltip.description .. " <LINE>" .. BuildingMenu.bhs .." RECIPE IS NULL"; return tooltip, false; end
+    if not objectRecipe then
+        tooltip.description = tooltip.description .. " <LINE>" .. BuildingMenu.bhs .." RECIPE IS NULL";
+        return tooltip, false, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
+    end
 
     if objectRecipe.useConsumable then
-        for _, _currentMaterial in pairs(objectRecipe.useConsumable) do
-            if _currentMaterial['Consumable'] and _currentMaterial['Amount'] then
-                _currentResult = BuildingMenu.tooltipCheckForConsumable(
-                    playerObj,
-                    playerInv,
-                    _currentMaterial["Consumable"],
-                    _currentMaterial["Amount"],
-                    tooltip
-                )
-            else
-                _canBuildResult = false
-            end
+        local consumableCountsInfo = 0;
+        for i, currentConsumableGroup in ipairs(objectRecipe.useConsumable) do
+            local adaptedConsumableGroup = adaptRecipeGroupToNewFormat(currentConsumableGroup);
+            currentResult, consumableCountsInfo = BuildingMenu.tooltipCheckForConsumable(
+                playerObj,
+                playerInv,
+                adaptedConsumableGroup,
+                tooltip
+            );
+            consumablesFoundIndexMatrix[i] = consumableCountsInfo;
 
-            if not _currentResult then
-                _canBuildResult = false
+            -- if isDebugEnabled() then print("====================================="); end
+            -- BuildingMenu.debugPrint("[Building Menu Debug] consumablesFoundIndexMatrix ",consumablesFoundIndexMatrix);
+
+            if not currentResult then
+                canBuildResult = false;
             end
         end
     end
 
     if objectRecipe.neededMaterials then
-        for _, _currentMaterial in pairs(objectRecipe.neededMaterials) do
-            if _currentMaterial['Material'] and _currentMaterial['Amount'] then
-                _currentResult = BuildingMenu.tooltipCheckForMaterial(
-                    playerObj,
-                    playerInv,
-                    _currentMaterial["Material"],
-                    _currentMaterial["Amount"],
-                    tooltip
-                )
-            else
-                _canBuildResult = false
-            end
+        local materialCountsInfo = {};
+        for i, currentMaterialGroup in ipairs(objectRecipe.neededMaterials) do
+            local adaptedMaterialGroup = adaptRecipeGroupToNewFormat(currentMaterialGroup);
+            currentResult, materialCountsInfo = BuildingMenu.tooltipCheckForMaterial(
+                playerObj,
+                playerInv,
+                adaptedMaterialGroup,
+                tooltip
+            );
+            materialFoundIndexMatrix[i] = materialCountsInfo;
 
-            if not _currentResult then
-                _canBuildResult = false
+            -- BuildingMenu.debugPrint("[Building Menu Debug] materialFoundIndexMatrix ",materialFoundIndexMatrix);
+            -- if isDebugEnabled() then print("====================================="); end
+
+            if not currentResult then
+                canBuildResult = false;
             end
         end
     end
 
-    tooltip.description = tooltip.description .. " <LINE>"
+    tooltip.description = tooltip.description .. " <LINE>";
 
     if objectRecipe.neededTools then
         for _, _currentTool in pairs(objectRecipe.neededTools) do
-            _currentResult = BuildingMenu.tooltipCheckForTool(
+            currentResult = BuildingMenu.tooltipCheckForTool(
                 playerInv,
                 _currentTool,
                 tooltip
             )
 
-            if not _currentResult then
-                _canBuildResult = false
+            if not currentResult then
+                canBuildResult = false;
             end
         end
     end
 
-    tooltip.description = tooltip.description .. " <LINE>"
+    tooltip.description = tooltip.description .. " <LINE>";
 
     local playerSkills = BuildingMenu.getPlayerSkills(playerObj)
     if objectRecipe.skills then
         for _, skill in pairs(objectRecipe.skills) do
             if playerSkills[skill.Skill] < skill.Level then
-                tooltip.description = tooltip.description .. BuildingMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
-                _canBuildResult = false
+                tooltip.description = tooltip.description .. BuildingMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                canBuildResult = false;
             else
-                tooltip.description = tooltip.description .. BuildingMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>"
+                tooltip.description = tooltip.description .. BuildingMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
             end
         end
     end
 
-    
     tooltip.description = tooltip.description .. BuildingMenu.textCanRotate;
 
     if ISBuildMenu.cheat then
         tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltip.description;
-        return tooltip, true
+        return tooltip, true, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
     else
-        return tooltip, _canBuildResult
+        return tooltip, canBuildResult, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
     end
 end
 

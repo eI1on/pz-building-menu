@@ -1367,7 +1367,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -1431,7 +1431,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -1541,7 +1541,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -1826,7 +1826,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -2053,7 +2053,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -2117,7 +2117,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -2255,7 +2255,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -2366,7 +2366,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -2486,7 +2486,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallNailsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -2630,21 +2630,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount*1.5)
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -2669,17 +2669,17 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -2705,17 +2705,17 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.5)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 4
             },
             {
@@ -2741,21 +2741,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForWalls
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -2780,21 +2780,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.5)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 4
             },
             {
@@ -2820,15 +2820,15 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForRoofingAndFloors
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.5)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
         },
@@ -2855,15 +2855,15 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigWallWoodCount*0.75)
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.5)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
             {
@@ -2873,7 +2873,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 4
             },
             {
@@ -2909,15 +2909,15 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallWallWoodCount*0.75)
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForWalls*0.25)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.25)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
             {
@@ -2927,7 +2927,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 2
             },
             {
@@ -2963,15 +2963,15 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigWallWoodCount*1.5)
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForWalls
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             },
             {
@@ -2981,7 +2981,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 6
             },
             {
@@ -3017,15 +3017,15 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallWallWoodCount*1.25)
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.5)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.75)
             },
             {
@@ -3035,7 +3035,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 3
             },
             {
@@ -3091,7 +3091,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount*0.5)
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount*1.5)
             },
             {
@@ -3154,7 +3154,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount*0.5)
             },
             {
@@ -3189,7 +3189,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             },
             {
@@ -3254,11 +3254,11 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForDoors*0.75) 
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.5)
             },
             {
@@ -3266,7 +3266,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsNailsCount*0.75)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
             {
@@ -3280,7 +3280,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -3314,11 +3314,11 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForDoors*1.25)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
@@ -3326,7 +3326,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsNailsCount*0.75)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
             {
@@ -3340,7 +3340,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -3369,15 +3369,15 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForDoors
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.75)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.75)
             },
             {
@@ -3391,7 +3391,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -3415,19 +3415,19 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForDoors
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.75)
             },
             {
-                Material = 'Base.GlassPane',
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount*0.5)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.75)
             },
             {
@@ -3441,7 +3441,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -3465,15 +3465,15 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForDoors*0.5)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*2)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*1.5)
             },
             {
@@ -3487,7 +3487,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -3511,15 +3511,15 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForDoors*2)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             },
             {
@@ -3533,7 +3533,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 10
             },
             {
@@ -3634,7 +3634,7 @@ local function initBuildingMenuRecipes()
                 Amount = 5
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = glassPaneCount
             }
         },
@@ -3668,7 +3668,7 @@ local function initBuildingMenuRecipes()
                 Amount = 5
             },
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -3706,7 +3706,7 @@ local function initBuildingMenuRecipes()
                 Amount = 2
             },
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 3
             },
             {
@@ -3748,7 +3748,7 @@ local function initBuildingMenuRecipes()
                 Amount = 5
             },
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -3791,7 +3791,7 @@ local function initBuildingMenuRecipes()
                 Amount = 2
             },
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 3
             },
             {
@@ -3967,21 +3967,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*0.5)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 3
             },
             {
@@ -4083,21 +4083,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = 10
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*2)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*1.5)
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 10
             },
             {
@@ -4122,17 +4122,17 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForRoofingAndFloors
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             },
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 2
             },
             {
@@ -4513,21 +4513,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.GlassPane',
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount*2)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -4552,21 +4552,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForContainers*1.25)
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForContainers*1.75)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -4592,21 +4592,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForContainers
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = sheetMetalCountForContainers
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -4635,7 +4635,7 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForContainers
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = sheetMetalCountForContainers
             },
             {
@@ -4649,7 +4649,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -4674,7 +4674,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount*2)
             },
             {
@@ -4682,7 +4682,7 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForContainers
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = sheetMetalCountForContainers
             },
             {
@@ -4696,7 +4696,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -4722,21 +4722,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForContainers*0.75)
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForContainers*0.75)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 3
             },
             {
@@ -4761,25 +4761,25 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.Garbagebag',
+                Material = "Base.Garbagebag",
                 Amount = 2
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForContainers*1.25)
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForContainers*2)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -4804,25 +4804,25 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.Garbagebag',
+                Material = "Base.Garbagebag",
                 Amount = 1
             },
             {
-                Material = 'Base.SheetMetal',
+                Material = "Base.SheetMetal",
                 Amount = sheetMetalCountForContainers
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = sheetMetalCountForContainers
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*0.5)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 3
             },
             {
@@ -4847,7 +4847,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.Stone',
+                Material = "Base.Stone",
                 Amount = 20
             }
         },
@@ -4887,19 +4887,19 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsNailsCount*1.5),
             },
             {
-                Material = 'Base.BucketEmpty',
+                Material = "Base.BucketEmpty",
                 Amount = 1
             },
             {
-                Material = 'Base.MetalPipe',
+                Material = "Base.MetalPipe",
                 Amount = 1
             },
             {
-                Material = 'Base.Rope',
+                Material = "Base.Rope",
                 Amount = 5
             },
             {
-                Material = 'Base.Stone',
+                Material = "Base.Stone",
                 Amount = 30
             }
         },
@@ -4925,7 +4925,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.RippedSheets',
+                Material = "Base.RippedSheets",
                 Amount = 5
             },
         },
@@ -5391,7 +5391,7 @@ local function initBuildingMenuRecipes()
                 Amount = 10
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*1.25)
             },
             {
@@ -5409,7 +5409,7 @@ local function initBuildingMenuRecipes()
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5448,13 +5448,13 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.25)
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.25)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5488,13 +5488,13 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
             },
             {
-                Material = 'Base.SmallSheetMetal',
+                Material = "Base.SmallSheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 10
             },
             {
@@ -5524,17 +5524,17 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.5)
             },
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5564,7 +5564,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.5)
             },
             {
-                Material = 'Base.ElectronicsScrap',
+                Material = "Base.ElectronicsScrap",
                 Amount = 30
             },
             {
@@ -5572,13 +5572,13 @@ local function initBuildingMenuRecipes()
                 Amount = 4
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5613,7 +5613,7 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForFixturesAndAppliances
             },
             {
-                Material = 'Base.ElectronicsScrap',
+                Material = "Base.ElectronicsScrap",
                 Amount = 30
             },
             {
@@ -5621,13 +5621,13 @@ local function initBuildingMenuRecipes()
                 Amount = 4
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5663,7 +5663,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
             },
             {
-                Material = 'Base.ElectronicsScrap',
+                Material = "Base.ElectronicsScrap",
                 Amount = 30
             },
             {
@@ -5671,13 +5671,13 @@ local function initBuildingMenuRecipes()
                 Amount = 4
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5708,7 +5708,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {
@@ -5716,7 +5716,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
             },
             {
-                Material = 'Base.ElectronicsScrap',
+                Material = "Base.ElectronicsScrap",
                 Amount = 30
             },
             {
@@ -5724,13 +5724,13 @@ local function initBuildingMenuRecipes()
                 Amount = 4
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5761,7 +5761,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*1.75)
             },
             {
@@ -5769,13 +5769,13 @@ local function initBuildingMenuRecipes()
                 Amount = 4
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5801,17 +5801,17 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*1.75)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5837,17 +5837,17 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*2.25)
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5873,21 +5873,21 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = BuildingMenu.round(metalBarsCount*1.25)
             },
             {
-                Material = 'Base.RippedSheets',
+                Material = "Base.RippedSheets",
                 Amount = 30
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = screwsCount
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -5920,13 +5920,13 @@ local function initBuildingMenuRecipes()
                 Amount = 10
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 10
             },
             {
@@ -5968,13 +5968,13 @@ local function initBuildingMenuRecipes()
                 Amount = 12
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {
@@ -6052,7 +6052,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigObjectsWoodCount*1.25)
             },
             {
-                Material = "Base.GlassPane",
+                Material = BuildingMenu.Materials.GlassPane,
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {
@@ -6260,7 +6260,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = 'Base.MetalBar',
+                Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
@@ -6272,13 +6272,13 @@ local function initBuildingMenuRecipes()
                 Amount = 10
             },
             {
-                Material = 'Base.Screws',
+                Material = "Base.Screws",
                 Amount = BuildingMenu.round(screwsCount*2)
             }
         },
         useConsumable = {
             {
-                Consumable = 'Base.BlowTorch',
+                Consumable = "Base.BlowTorch",
                 Amount = 5
             },
             {

@@ -101,6 +101,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         if isDebugEnabled() then
             BuildingMenu.debugPrint("[Building Menu Debug] ", name)
             BuildingMenu.debugPrint("[Building Menu Debug] ", objectOptions)
+            BuildingMenu.debugPrint("[Building Menu Debug] ", objectRecipe)
             if objectOptions and objectOptions["sprites"] then
                 if objectOptions["sprites"]["sprite"] then BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]["sprite"]); end
                 if objectOptions["sprites"]["northSprite"] then BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]["northSprite"]); end

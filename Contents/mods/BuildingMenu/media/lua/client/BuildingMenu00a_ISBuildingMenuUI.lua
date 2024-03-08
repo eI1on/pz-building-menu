@@ -108,7 +108,7 @@ function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
 end
 
 function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
-    self.tooltip, selectedObject.canBuild = BuildingMenu.canBuildObject(self.character, self.tooltip, selectedObject.objDef.data.recipe);
+    self.tooltip, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix = BuildingMenu.canBuildObject(self.character, self.tooltip, selectedObject.objDef.data.recipe);
     self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
     self.tooltip.description = selectedObject.objDef.description .. " <RGB:1,0,0> " .. self.tooltip.description;
 end
@@ -150,39 +150,97 @@ function BuildingMenuTilePickerList:onMouseWheel(del)
 end
 
 
+local function adaptRecipeGroupToNewFormat(materialOrGroup)
+    if materialOrGroup.Material or materialOrGroup.Consumable then
+        return {materialOrGroup};
+    elseif type(materialOrGroup[1]) == "table" and (materialOrGroup[1].Material or materialOrGroup[1].Consumable)then
+        return materialOrGroup;
+    end
+end
+
+
+function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, recipe, options)
+    local playerNum = self.character:getPlayerNum();
+    local spritesName = objData.objDef.data.sprites;
+    local objectName = objData.objDef.name;
+    local recipe = objData.objDef.data.recipe;
+    local options = objData.objDef.data.options;
+    local onBuild = objData.objDef.data.action;
+
+
+    local modifiedOptions = {}
+    for k, v in pairs(options) do
+        modifiedOptions[k] = v
+    end
+    if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
+        modifiedOptions.isThumpable = false;
+    end
+
+
+    local modifiedRecipe = {
+        neededTools = recipe.neededTools,
+        neededMaterials = {},
+        useConsumable = {},
+        skills = recipe.skills
+    };
+
+    local consumablesFoundIndexMatrix = objData.consumablesFoundIndexMatrix;
+
+    local materialInfoMatrix = objData.materialFoundIndexMatrix
+
+    -- Iterate over each material group's found materials and amounts
+    for groupIndex, groupInfo in ipairs(materialInfoMatrix) do
+        local totalAmountNeeded = groupInfo[1].AmountNeeded;
+        local materialDetails = groupInfo[1].MaterialDetails;
+        local amountCollected = 0;
+
+        -- Iterate over the materials within the group and adjust the amount based on the found counts
+        for material, foundCount in pairs(materialDetails) do
+            if amountCollected < totalAmountNeeded then
+                local amountToUse = math.min(foundCount, totalAmountNeeded - amountCollected);
+                table.insert(modifiedRecipe.neededMaterials, { Material = material, Amount = amountToUse });
+                amountCollected = amountCollected + amountToUse;
+            end
+        end
+    end
+
+    if consumablesFoundIndexMatrix and recipe.useConsumable then
+        modifiedRecipe.useConsumable = {};
+        for i, currentConsumableGroup in ipairs(recipe.useConsumable) do
+            local adaptedConsumableGroup = adaptRecipeGroupToNewFormat(currentConsumableGroup);
+            local foundIndex = consumablesFoundIndexMatrix[i];
+            table.insert(modifiedRecipe.useConsumable, adaptedConsumableGroup[foundIndex]);
+        end
+    end
+
+    -- passing the name break the ISMetalDrum and RainCollectorBarrel objects
+    if onBuild == BuildingMenu.onMetalDrum or onBuild == BuildingMenu.onRainCollectorBarrel then
+        objectName = nil; -- set objectName to nil for these specific actions
+    end
+
+    local object = onBuild(spritesName, objectName, playerNum, modifiedRecipe, modifiedOptions);
+    BuildingMenu.buildObject(object, objectName, playerNum, modifiedRecipe, modifiedOptions);
+end
+
+
 --- Handles mouse down events on the tile picker list.
 ---@param x number
 ---@param y number
 function BuildingMenuTilePickerList:onMouseDown(x, y)
     local c = math.floor(x / 64);
     local r = math.floor(y / 128);
-    local objData = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
+    local selectedObject = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
 
-    if objData and objData.canBuild then
+    if selectedObject and selectedObject.canBuild then
         local playerNum = self.character:getPlayerNum();
-        local spritesName = objData.objDef.data.sprites;
-        local objectName = objData.objDef.name;
-        local recipe = objData.objDef.data.recipe;
-        local options = objData.objDef.data.options;
-        local onBuild = objData.objDef.data.action;
+        local recipe = selectedObject.objDef.data.recipe;
+        local options = selectedObject.objDef.data.options;
+        local onBuild = selectedObject.objDef.data.action;
 
-        local modifiedOptions = {};
-        for k, v in pairs(options) do
-            modifiedOptions[k] = v;
-        end
-        if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
-            modifiedOptions.isThumpable = false;
-        end
-
-        -- passing the name break the ISMetalDrum and RainCollectorBarrel objects
-        if objData.objDef.data.action == BuildingMenu.onMetalDrum or objData.objDef.data.action == BuildingMenu.onRainCollectorBarrel then
-            objectName = nil; -- set objectName to nil for these specific actions
-        end
-
-        local object = onBuild(spritesName, objectName, playerNum, recipe, modifiedOptions);
-        BuildingMenu.buildObject(object, objectName, playerNum, recipe, modifiedOptions);
+        self:processBuild(selectedObject, playerNum, onBuild, recipe, options)
     end
 end
+
 
 --- Handles joypad down events on the tile picker list.
 ---@param button Joypad
@@ -191,32 +249,19 @@ function BuildingMenuTilePickerList:onJoypadDown(button)
         local selectedObject = self:getSelectedObjectFromJoypad();
         if selectedObject and selectedObject.canBuild then
             local playerNum = self.character:getPlayerNum();
-            local spritesName = selectedObject.objDef.data.sprites;
-            local objectName = selectedObject.objDef.name;
             local recipe = selectedObject.objDef.data.recipe;
             local options = selectedObject.objDef.data.options;
             local onBuild = selectedObject.objDef.data.action;
 
-            local modifiedOptions = {};
-            for k, v in pairs(options) do
-                modifiedOptions[k] = v;
-            end
-            if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
-                modifiedOptions.isThumpable = false;
-            end
+            self:processBuild(selectedObject, playerNum, onBuild, recipe, options)
 
-            if onBuild == BuildingMenu.onMetalDrum or onBuild == BuildingMenu.onRainCollectorBarrel then
-                objectName = nil; -- set objectName to nil for these specific actions
-            end
-
-            local object = onBuild(spritesName, objectName, playerNum, recipe, modifiedOptions);
-            BuildingMenu.buildObject(object, objectName, playerNum, recipe, modifiedOptions);
             if JoypadState.players[self.parent.playerNum+1] then
                 setJoypadFocus(self.parent.playerNum, nil)
             end
         end
     end
 end
+
 
 function BuildingMenuTilePickerList:getSelectedObjectFromJoypad()
     return self.posToObjectNameTable[self.selectedTileRow] and self.posToObjectNameTable[self.selectedTileRow][self.selectedTileCol];

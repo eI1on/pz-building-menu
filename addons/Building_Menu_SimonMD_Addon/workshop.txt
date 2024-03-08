@@ -26,10 +26,10 @@ description=[h2] Does it work on existing saves? [/h2]
 description= Absolutely! Enable it mid-save without issues. If you disable it you will [b]lose[/b] your Military Crates!
 description=
 description=[h2] My building isn't recognized as an indoor space. What should I do? [/h2]
-description= For a fix, please watch this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]
+description= For a solution, please refer to this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]
 description=
 description=[h2] I'm missing some items in the build menu. How do I find them? [/h2]
-description= To access all available buildables, you'll need to activate them in the Sandbox settings (in SP you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454&searchtext=change+sandbox] Change Sandbox Options (by Star)[/url]), some are disabled by default like metal drums, furniture ...
+description= To access all available buildables, you'll need to activate them in the Sandbox settings (in single-player you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454] Change Sandbox Options (by Star)[/url]), as some are initially disabled, such as metal drums, furniture, etc.
 description=
 description=[h2] Does it work for all game versions? [/h2]
 description= Only tested and working on the latest game version (v41.78.16).
