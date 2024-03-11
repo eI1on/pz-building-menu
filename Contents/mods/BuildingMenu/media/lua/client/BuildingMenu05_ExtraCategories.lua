@@ -1,7 +1,6 @@
-require("BuildingMenu04_CategoriesDefinitions")
-
 ---@class BuildingMenu
-local BuildingMenu = getBuildingMenuInstance()
+local BuildingMenu = require("BuildingMenu01_Main")
+require("BuildingMenu04_CategoriesDefinitions")
 
 
 local function addLightingToMenu()

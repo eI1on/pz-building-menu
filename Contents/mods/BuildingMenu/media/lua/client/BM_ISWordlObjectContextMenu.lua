@@ -4,7 +4,7 @@ local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
 local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
 
 ---@class BuildingMenu
-local BuildingMenu = getBuildingMenuInstance()
+local BuildingMenu = require("BuildingMenu01_Main")
 
 --- Checks if the wall item is removable based on its sprite name and a list of patterns.
 ---@param spriteName string

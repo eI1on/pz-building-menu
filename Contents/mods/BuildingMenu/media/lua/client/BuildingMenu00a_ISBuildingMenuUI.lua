@@ -1,8 +1,5 @@
-require "ISUI/ISCollapsableWindowJoypad"
+require ("ISUI/ISCollapsableWindowJoypad")
 
-if not getBuildingMenuInstance then
-    require("BuildingMenu01_Main")
-end
 
 ---@type function
 local getText = getText
@@ -12,7 +9,7 @@ local getTexture = getTexture
 local pairs = pairs
 
 ---@class BuildingMenu
-local BuildingMenu = getBuildingMenuInstance()
+local BuildingMenu = require("BuildingMenu01_Main")
 
 
 --- Class representing the tile picker list in the Building Menu.
@@ -150,15 +147,6 @@ function BuildingMenuTilePickerList:onMouseWheel(del)
 end
 
 
-local function adaptRecipeGroupToNewFormat(materialOrGroup)
-    if materialOrGroup.Material or materialOrGroup.Consumable then
-        return {materialOrGroup};
-    elseif type(materialOrGroup[1]) == "table" and (materialOrGroup[1].Material or materialOrGroup[1].Consumable)then
-        return materialOrGroup;
-    end
-end
-
-
 function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, recipe, options)
     local playerNum = self.character:getPlayerNum();
     local spritesName = objData.objDef.data.sprites;
@@ -168,9 +156,9 @@ function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, re
     local onBuild = objData.objDef.data.action;
 
 
-    local modifiedOptions = {}
+    local modifiedOptions = {};
     for k, v in pairs(options) do
-        modifiedOptions[k] = v
+        modifiedOptions[k] = v;
     end
     if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
         modifiedOptions.isThumpable = false;
@@ -184,34 +172,66 @@ function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, re
         skills = recipe.skills
     };
 
-    local consumablesFoundIndexMatrix = objData.consumablesFoundIndexMatrix;
 
-    local materialInfoMatrix = objData.materialFoundIndexMatrix
+    local function clearTable(t)
+        for k in pairs(t) do
+            t[k] = nil;
+        end
+    end
 
-    -- Iterate over each material group's found materials and amounts
-    for groupIndex, groupInfo in ipairs(materialInfoMatrix) do
-        local totalAmountNeeded = groupInfo[1].AmountNeeded;
-        local materialDetails = groupInfo[1].MaterialDetails;
-        local amountCollected = 0;
 
-        -- Iterate over the materials within the group and adjust the amount based on the found counts
-        for material, foundCount in pairs(materialDetails) do
-            if amountCollected < totalAmountNeeded then
-                local amountToUse = math.min(foundCount, totalAmountNeeded - amountCollected);
-                table.insert(modifiedRecipe.neededMaterials, { Material = material, Amount = amountToUse });
-                amountCollected = amountCollected + amountToUse;
+    -- BuildingMenu.debugPrint("[Building Menu Debug] objData.materialFoundIndexMatrix ", objData.materialFoundIndexMatrix);
+    -- BuildingMenu.debugPrint("[Building Menu Debug] objData.consumablesFoundIndexMatrix ", objData.consumablesFoundIndexMatrix);
+
+
+    -- Helper function to process Material Groups or Consumable Groups
+    local function processItems(itemGroupInfo, targetList, groupType)
+        -- Iterate over each group's found items and amounts
+
+        for i, groupInfo in pairs(itemGroupInfo) do
+
+            -- Go through each Alternative Items within a group
+            for j, itemDetails in pairs(groupInfo) do
+                local totalNeeded = groupInfo[j].AmountNeeded;
+                local totalCollected = 0;
+                local tempItems = {};  -- Temporary list to hold items for the current alternative group
+
+                for item, count in pairs(itemDetails[groupType .. "Details"]) do
+
+                    -- Only use this item if we still need more and haven't used a full alternative
+                    local amountToUse = math.min(count, totalNeeded - totalCollected);
+
+                    if ISBuildMenu.cheat then amountToUse = totalNeeded; end
+
+                    if amountToUse > 0 then
+                        -- Add to the temporary list instead of inserting directly into the targetList
+                        table.insert(tempItems, { [groupType] = item, Amount = amountToUse });
+                        totalCollected = totalCollected + amountToUse;
+                    end
+
+                    -- If we've collected enough with this item, don't check further within this alternative group
+                    if totalCollected >= totalNeeded then break; end
+                end
+                -- If we've collected enough with this alternative group, don't check further groups
+                if totalCollected >= totalNeeded then
+                    for _, item in ipairs(tempItems) do
+                        table.insert(targetList, item);
+                    end
+                    break;
+                end
+            end
+
+            -- If no items were added from any alternative group (including 0 items groups), we proceed to the next group
+            if #targetList == 0 then
+                clearTable(targetList);  -- clearing targetList before checking the next group
             end
         end
     end
 
-    if consumablesFoundIndexMatrix and recipe.useConsumable then
-        modifiedRecipe.useConsumable = {};
-        for i, currentConsumableGroup in ipairs(recipe.useConsumable) do
-            local adaptedConsumableGroup = adaptRecipeGroupToNewFormat(currentConsumableGroup);
-            local foundIndex = consumablesFoundIndexMatrix[i];
-            table.insert(modifiedRecipe.useConsumable, adaptedConsumableGroup[foundIndex]);
-        end
-    end
+    -- Process Material Groups and Consumable Groups
+    processItems(objData.materialFoundIndexMatrix, modifiedRecipe.neededMaterials, 'Material')
+    processItems(objData.consumablesFoundIndexMatrix, modifiedRecipe.useConsumable, 'Consumable')
+
 
     -- passing the name break the ISMetalDrum and RainCollectorBarrel objects
     if onBuild == BuildingMenu.onMetalDrum or onBuild == BuildingMenu.onRainCollectorBarrel then

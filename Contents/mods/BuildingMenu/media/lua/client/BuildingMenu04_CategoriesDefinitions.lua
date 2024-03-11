@@ -1,9 +1,6 @@
-if not getBuildingMenuInstance then
-    require("BuildingMenu01_Main")
-end
-
 ---@class BuildingMenu
-local BuildingMenu = getBuildingMenuInstance()
+local BuildingMenu = require("BuildingMenu01_Main")
+
 
 --- Finds an item in a list by a key-value pair, or creates and adds it if not found.
 --- @param list table The list to search or add the item to.
@@ -18473,7 +18470,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_01_50",
@@ -18499,7 +18497,8 @@ local function addHighFencesToMenu()
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
-                isCorner = true
+                isCorner = true,
+                hoppable = false
             },
             {sprite = "fencing_01_52", northSprite = "fencing_01_52"}
         ),
@@ -18519,7 +18518,8 @@ local function addHighFencesToMenu()
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
-                isCorner = true
+                isCorner = true,
+                hoppable = false
             },
             {sprite = "fencing_01_53", northSprite = "fencing_01_53"}
         ),
@@ -18806,8 +18806,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false,
             },
             {
                 sprite = "fencing_01_90",
@@ -18832,7 +18832,8 @@ local function addHighFencesToMenu()
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
-                isCorner = true
+                isCorner = true,
+                hoppable = false
             },
             {sprite = "fencing_01_92", northSprite = "fencing_01_92"}
         )

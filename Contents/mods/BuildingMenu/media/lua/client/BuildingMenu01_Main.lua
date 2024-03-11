@@ -16,7 +16,7 @@ local getItemNameFromFullType = getItemNameFromFullType
 
 --- BuildingMenu namespace.
 ---@class BuildingMenu
-BuildingMenu = {}
+local BuildingMenu = {}
 
 ---@type boolean
 BuildingMenu.playerCanPlaster = false
@@ -81,7 +81,7 @@ BuildingMenu.Tools = {
     },
     Saw = {
         types = {
-            'Base.Saw', 
+            'Base.Saw',
             'Base.GardenSaw',
             'ToolsOfTheTrade.Backsaw', -- Tools of the Trade
             'ToolsOfTheTrade.RyobaSaw', -- Tools of the Trade
@@ -123,8 +123,8 @@ BuildingMenu.Tools = {
 
 --- Definitions of materials used in the building menu.
 ---@type table<string, table>
-BuildingMenu.Materials = {}
-BuildingMenu.Materials = {
+BuildingMenu.ItemsAlternatives = {};
+BuildingMenu.ItemsAlternatives = {
     GlassPane = {
         "Base.GlassPane",
         "ImprovisedGlass.GlassPane",
@@ -132,6 +132,37 @@ BuildingMenu.Materials = {
         "Base.SmallGlassPanel"
     },
 }
+
+
+BuildingMenu.GroupsAlternatives = {};
+BuildingMenu.GroupsAlternatives = {
+    Nails = {
+        {
+            Item = "Base.Nails",
+            Multiplier = 1,
+        },
+        {
+            Item = "TW.LargeBolt",
+            Multiplier = 0.75,
+        }
+    },
+    Rope = {
+        {
+            Item = "Base.Rope",
+            Multiplier = 1,
+        },
+        {
+            Item = "Base.SheetRope",
+            Multiplier = 1,
+        }
+    },
+    GlassPanes = {
+        {
+            Item = BuildingMenu.ItemsAlternatives.GlassPane,
+            Multiplier = 1,
+        },
+    }
+};
 
 
 --- Function called to fill the world object context menu.
@@ -377,78 +408,92 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool, tooltip)
 end
 
 
---- Tooltip check for a specific material.
----@param playerObj IsoPlayer
----@param playerInv ItemContainer
----@param currentMaterialGroup table
----@param tooltip ISToolTip
----@return boolean, table
-BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, currentMaterialGroup, tooltip)
-    local materialFound = false;
-    local materialsBuffer = {};
-    local materialCountsInfo = {};
-
+local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, tooltip, groupType)
+    local groupItemFound = false;
+    local itemBuffer = {};
+    local itemInfo = {};
     local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare());
     local groundItemCountMap = {};
-
+    
     -- Prepare ground item counts
-    for groundItemType, itemsOnGround in pairs(groundItems) do
-        groundItemCountMap[groundItemType] = #itemsOnGround;
+    if groupType == "Consumable" then
+        groundItemCountMap = buildUtil.getMaterialOnGroundUses(groundItems);
+    else
+        for groundItemType, itemsOnGround in pairs(groundItems) do
+            groundItemCountMap[groundItemType] = #itemsOnGround;
+        end
     end
 
-    -- Iterate over each material group
-    for groupIndex, matGroup in pairs(currentMaterialGroup) do
-        local materials = type(matGroup.Material) == "table" and matGroup.Material or { matGroup.Material };
-        local totalAmountNeeded = matGroup.Amount;
+    -- Iterate over each alternative Material/Consumable group
+    for altGroupIndex, altGroup in pairs(currentItemGroup) do
+        local items = type(altGroup[groupType]) == "table" and altGroup[groupType] or {altGroup[groupType]};
+        local totalAmountNeeded = altGroup.Amount;
         local totalFoundCount = 0;
-        local materialDetails = {};
-        local firstMaterialName = nil;
+        local itemDetails = {};
+        local firstItemInstance = nil;
 
-        -- Iterate over each material within the group
-        for _, material in pairs(materials) do
-            local invItemCount = playerInv:getItemCountFromTypeRecurse(material);
-            local groundCount = groundItemCountMap[material] or 0;
-            local totalMaterialCount = invItemCount + groundCount;
+        -- Iterate over each material Full Type within the alternative Material/Consumable group
+        for _, itemFullType in pairs(items) do
+            local item = BuildingMenu.GetItemInstance(itemFullType);
+            if item then
+                local itemCount = 0;
+                if groupType == "Consumable" then
+                    itemCount = playerInv:getUsesTypeRecurse(itemFullType);
+                    if groundItemCountMap[itemFullType] then
+                        for _, groundItem in ipairs(groundItemCountMap[itemFullType]) do
+                            itemCount = itemCount + groundItem:getDrainableUsesInt();
+                        end
+                    end
+                else
+                    itemCount = playerInv:getItemCountFromTypeRecurse(itemFullType) + (groundItemCountMap[itemFullType] or 0);
+                end
 
-            totalFoundCount = totalFoundCount + totalMaterialCount;
-
-            -- Store individual material count details
-            if totalMaterialCount > 0 then
-                materialDetails[material] = totalMaterialCount;
-                if not firstMaterialName then
-                    firstMaterialName = material;
+                totalFoundCount = totalFoundCount + itemCount;
+                if itemCount >= 0 then
+                    itemDetails[itemFullType] = itemCount;
+                    if not firstItemInstance then
+                        firstItemInstance = item;
+                    end
                 end
             end
         end
 
-        -- Check if total found count meets the requirement
-        materialFound = totalFoundCount >= totalAmountNeeded;
-        local color = materialFound and BuildingMenu.ghs or BuildingMenu.bhs;
+        local itemFound = totalFoundCount >= totalAmountNeeded;
+        local color = itemFound and BuildingMenu.ghs or BuildingMenu.bhs;
+        groupItemFound = groupItemFound or itemFound;
 
-        if not firstMaterialName then firstMaterialName = materials[1]; end
-
-        -- Prepare display text for the first material as a representative
-        local representativeMaterial = BuildingMenu.GetItemInstance(firstMaterialName):getName(); -- Directly accessing the first element
-        local itemText = color .. representativeMaterial .. ' ' .. totalFoundCount .. '/' .. totalAmountNeeded;
-
-        -- Store count details for use in building process
-        materialCountsInfo[groupIndex] = {
-            AmountNeeded = totalAmountNeeded,
-            MaterialDetails = materialDetails
-        };
-
-        -- Append to the materials buffer
-        if groupIndex > 1 then
-            table.insert(materialsBuffer, " <LINE> " .. color .. getText("ContextMenu_or") .. " ");
+        if not firstItemInstance then
+            firstItemInstance = BuildingMenu.GetItemInstance(items[1]);
         end
-        table.insert(materialsBuffer, itemText);
+
+        if firstItemInstance then
+            local itemText = color .. firstItemInstance:getName() .. ' ' .. (groupType == "Consumable" and getText("ContextMenu_Uses") .. " " or "") .. totalFoundCount .. '/' .. totalAmountNeeded;
+            itemInfo[altGroupIndex] = {
+                AmountNeeded = totalAmountNeeded,
+                [groupType .. "Details"] = itemDetails
+            };
+
+            if altGroupIndex > 1 then
+                table.insert(itemBuffer, " <LINE> " .. color .. getText("ContextMenu_or") .. " ");
+            end
+            table.insert(itemBuffer, itemText);
+        end
     end
 
-    -- Concatenate buffer to form materials text and update tooltip
-    local materialsText = table.concat(materialsBuffer);
-    tooltip.description = tooltip.description .. materialsText .. ' <LINE>';
+    local itemText = table.concat(itemBuffer);
+    tooltip.description = tooltip.description .. itemText .. ' <LINE>';
+    return groupItemFound, itemInfo;
+end
 
-    return materialFound, materialCountsInfo;
+
+--- Tooltip check for a specific material.
+---@param playerObj IsoPlayer
+---@param playerInv ItemContainer
+---@param currentMaterialsGroup table
+---@param tooltip ISToolTip
+---@return boolean, table
+BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, currentMaterialsGroup, tooltip)
+    return tooltipCheckForItem(playerObj, playerInv, currentMaterialsGroup, tooltip, "Material")
 end
 
 
@@ -457,52 +502,11 @@ end
 ---@param playerInv ItemContainer
 ---@param currentConsumableGroup table
 ---@param tooltip ISToolTip
----@return boolean, number
+---@return boolean, table
 BuildingMenu.tooltipCheckForConsumable = function(playerObj, playerInv, currentConsumableGroup, tooltip)
-    local consumableFound = false;
-    local consumablesBuffer = {};
-    local consumableFoundIndex = 1;
-
-    local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare());
-    local groundItemsUses = buildUtil.getMaterialOnGroundUses(groundItems);
-
-    for i, con in ipairs(currentConsumableGroup) do
-        local consumable = con.Consumable;
-        local amount = con.Amount;
-        local invItemUses = playerInv:getUsesTypeRecurse(consumable);
-
-        if groundItemsUses[consumable] then
-            for _, item in ipairs(groundItemsUses[consumable]) do
-                invItemUses = invItemUses + item:getDrainableUsesInt();
-            end
-        end
-
-        local isEnough = invItemUses >= amount
-        local itemName = getItemNameFromFullType(consumable)
-        local color = isEnough and BuildingMenu.ghs or BuildingMenu.bhs
-
-        if not consumableFound and isEnough then
-            consumableFound = true;
-            consumableFoundIndex = i;
-        end
-
-        local consumableText = color .. itemName .. ' ' .. getText("ContextMenu_Uses") .. " " .. invItemUses .. "/" .. amount;
-        if i > 1 then
-            table.insert(consumablesBuffer, " <LINE> " .. color .. getText("ContextMenu_or") .. " ");
-        end
-        table.insert(consumablesBuffer, consumableText);
-    end
-
-    local consumablesText = table.concat(consumablesBuffer);
-
-    if consumablesText ~= "" then
-        tooltip.description = tooltip.description .. consumablesText .. ' <LINE>';
-    else
-        tooltip.description = tooltip.description .. BuildingMenu.bhs .. ' ERROR: No consumables found. <LINE>';
-    end
-
-    return consumableFound, consumableFoundIndex;
+    return tooltipCheckForItem(playerObj, playerInv, currentConsumableGroup, tooltip, "Consumable")
 end
+
 
 local function adaptRecipeGroupToNewFormat(materialOrGroup)
     if materialOrGroup.Material or materialOrGroup.Consumable then
@@ -534,19 +538,16 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
     end
 
     if objectRecipe.useConsumable then
-        local consumableCountsInfo = 0;
+        local consumablesGroupInfo = {};
         for i, currentConsumableGroup in ipairs(objectRecipe.useConsumable) do
             local adaptedConsumableGroup = adaptRecipeGroupToNewFormat(currentConsumableGroup);
-            currentResult, consumableCountsInfo = BuildingMenu.tooltipCheckForConsumable(
+            currentResult, consumablesGroupInfo = BuildingMenu.tooltipCheckForConsumable(
                 playerObj,
                 playerInv,
                 adaptedConsumableGroup,
                 tooltip
             );
-            consumablesFoundIndexMatrix[i] = consumableCountsInfo;
-
-            -- if isDebugEnabled() then print("====================================="); end
-            -- BuildingMenu.debugPrint("[Building Menu Debug] consumablesFoundIndexMatrix ",consumablesFoundIndexMatrix);
+            consumablesFoundIndexMatrix[i] = consumablesGroupInfo;
 
             if not currentResult then
                 canBuildResult = false;
@@ -555,19 +556,16 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
     end
 
     if objectRecipe.neededMaterials then
-        local materialCountsInfo = {};
-        for i, currentMaterialGroup in ipairs(objectRecipe.neededMaterials) do
-            local adaptedMaterialGroup = adaptRecipeGroupToNewFormat(currentMaterialGroup);
-            currentResult, materialCountsInfo = BuildingMenu.tooltipCheckForMaterial(
+        local materialsGroupInfo = {};
+        for i, materialsGroup in ipairs(objectRecipe.neededMaterials) do
+            local adaptedMaterialsGroup = adaptRecipeGroupToNewFormat(materialsGroup);
+            currentResult, materialsGroupInfo = BuildingMenu.tooltipCheckForMaterial(
                 playerObj,
                 playerInv,
-                adaptedMaterialGroup,
+                adaptedMaterialsGroup,
                 tooltip
             );
-            materialFoundIndexMatrix[i] = materialCountsInfo;
-
-            -- BuildingMenu.debugPrint("[Building Menu Debug] materialFoundIndexMatrix ",materialFoundIndexMatrix);
-            -- if isDebugEnabled() then print("====================================="); end
+            materialFoundIndexMatrix[i] = materialsGroupInfo;
 
             if not currentResult then
                 canBuildResult = false;
@@ -607,6 +605,9 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
 
     tooltip.description = tooltip.description .. BuildingMenu.textCanRotate;
 
+    -- BuildingMenu.debugPrint("[Building Menu DEBUG] materialFoundIndexMatrix ", materialFoundIndexMatrix);
+    -- BuildingMenu.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
+
     if ISBuildMenu.cheat then
         tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltip.description;
         return tooltip, true, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
@@ -617,6 +618,4 @@ end
 
 --- Returns the BuildingMenu instance.
 ---@return BuildingMenu
-function getBuildingMenuInstance()
-    return BuildingMenu
-end
+return BuildingMenu

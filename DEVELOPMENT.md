@@ -136,7 +136,7 @@ Each recipe is defined as a Lua table with specific fields that outline the requ
 
 neededTools: A list of tool names required to build the object. Tools are keys from the BuildingMenu.Tools table, such as "Hammer" or "Paintbrush". Full table can be found [BuildingMenu.Tools](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L42-L121).
 
-neededMaterials: An array of materials required for the construction. Each material entry is a table specifying the material's in-game item Full Type (Material) and the quantity needed (Amount).  
+neededMaterials: An array of materials required for the construction. Each material entry is a table specifying the material's in-game item Full Type (Material) and the quantity needed (Amount). Alternative groups: Groups of items where one or a combination can fulfill the requirement, e.g., a group containing "Base.Nails" and "Base.Screws", and another group with "TW.LargeBolt" (seen with an "or" in front). Within this group, "Base.Nails" and "Base.Screws" can be combined to meet the requirement, or "TW.LargeBolt" can be used as an alternative to the entire first group.  
 
 useConsumable: An array similar to neededMaterials, but for consumable items that will be used up in the construction process.  
 
@@ -150,14 +150,20 @@ BuildingMenu.GreyBigStoneWallRecipe = {
         "Hammer", 
         "Paintbrush"
     },
-    neededMaterials = {
-        {
+    neededMaterials = { -- Contains Groups of Materials
+        { -- Material that is required and have no alternatives
             Material = "Base.Plank", 
             Amount = bigWallWoodCount
         },
-        {
-            Material = "Base.Nails", 
-            Amount = bigWallNailsCount
+        { -- Alternative groups
+            {
+                Material = { "Base.Nails", "Base.Screws" }, -- Within this group these items can be combined to meet the requirement
+                Amount = bigWallNailsCount
+            },
+            {
+                Material = "TW.LargeBolt", -- This can be used as an alternative to the entire first alternative group. (seen with an "or" in front)
+                Amount = bigWallNailsCount
+            }
         }
     },
     useConsumable = {

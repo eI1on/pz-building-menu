@@ -1,10 +1,7 @@
-if not getBuildingMenuInstance then
-    require("BuildingMenu01_Main")
-end
 require("BM_Utils")
 
 ---@class BuildingMenu
-local BuildingMenu = getBuildingMenuInstance()
+local BuildingMenu = require("BuildingMenu01_Main")
 
 ---@type table<string, boolean>
 local exclusions = {
@@ -24,7 +21,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
     end
     object.player = player;
 
-    if not objectRecipe then return end
+    if not objectRecipe then return; end
 
     local modData = object.modData; -- cache modData reference.
 
@@ -78,7 +75,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.firstItem = item:getType()
             elseif not ISBuildMenu.cheat then
-                print("[Building Menu] ERROR at creating - firstItem - for: ", name);
+                print("[Building Menu] ERROR at creating - firstItem - for: ", name, " objectOptions.firstItem: ", objectOptions.firstItem);
                 return;
             end
         end
@@ -87,7 +84,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.secondItem = item:getType()
             elseif not ISBuildMenu.cheat then
-                print("[Building Menu] ERROR at creating - secondItem - for: ", name);
+                print("[Building Menu] ERROR at creating - secondItem - for: ", name, " objectOptions.secondItem: ", objectOptions.secondItem);
                 return;
             end
         end
@@ -106,7 +103,7 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
                 if objectOptions["sprites"]["sprite"] then BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]["sprite"]); end
                 if objectOptions["sprites"]["northSprite"] then BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]["northSprite"]); end
             end
-        end   
+        end
     end
 
     getCell():setDrag(object, player);

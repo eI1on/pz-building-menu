@@ -201,7 +201,6 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
                 if isSafe and not safe then
                     safeSpriteName = textureName;
                     safe = worldObj;
-                    print("safeSpriteName ", safeSpriteName)
                     break
                 end
             end
@@ -217,7 +216,6 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
 
             -- Determine if the safe is open or closed using the sprite name
             local isSafeOpen = MechanicalDialLock.isSafeOpen(safeSpriteName)
-            print("isSafeOpen ", isSafeOpen)
             if safe:canBeLockByPadlock() then
                 -- Set Safe Code option
                 context:addOptionOnTop(getText("ContextMenu_Set_Safe_Code"), worldobjects, function()
@@ -246,96 +244,3 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
     end
 end
 Events.OnFillWorldObjectContextMenu.Add(onFillWorldObjectContextMenu)
-
-
-
-
-local function addSafesToBuildingMenu()
-    local safes = {
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.MetalLockerRecipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true,
-                health = 1000,
-            },
-            {
-                sprite = "building_menu_dylan_safes_2",
-                northSprite = "building_menu_dylan_safes_3",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.MetalLockerRecipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true,
-                health = 1000,
-            },
-            {
-                sprite = "building_menu_dylan_safes_6",
-                northSprite = "building_menu_dylan_safes_7",
-            }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.MetalLockerRecipe,
-            true,
-            {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
-                noNeedHammer = true,
-                completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true,
-                health = 1000,
-            },
-            {
-                sprite = "building_menu_dylan_safes_10",
-                northSprite = "building_menu_dylan_safes_11",
-            }
-        ),
-    }
-
-    BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
-        "",
-        getText("IGUI_BuildingMenuSubCat_Containers_Safes"),
-        "building_menu_dylan_safes_0",
-        safes
-    )
-end
-
-local function addCategoriesToBuildingMenu()
-    if getActivatedMods():contains("BuildingMenu") then
-        addSafesToBuildingMenu()
-    end
-end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
