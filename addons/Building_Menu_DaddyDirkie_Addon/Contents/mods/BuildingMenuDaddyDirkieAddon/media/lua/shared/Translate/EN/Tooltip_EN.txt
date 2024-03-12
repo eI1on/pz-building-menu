@@ -70,4 +70,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "White Wooden Fence Corner",
   Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "White Wooden Fence Gate",
 
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Green Small Locker",
+  Tooltip_BuildingMenuObj_White_Small_Locker = "White Small Locker",
+
 }

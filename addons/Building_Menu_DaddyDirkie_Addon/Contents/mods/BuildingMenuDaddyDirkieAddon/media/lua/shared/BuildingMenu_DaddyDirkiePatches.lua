@@ -133,8 +133,6 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     }
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "GroupName", "Locker", false)
-        BM_Utils.setSpriteProperty(props, "CustomName", "Small", false)
         BM_Utils.setSpriteProperty(props, "IsLow", "", false)
         BM_Utils.setSpriteProperty(props, "IsTable", "", false)
         BM_Utils.setSpriteProperty(props, "IsStackable", "", false)

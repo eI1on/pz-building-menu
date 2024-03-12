@@ -65,9 +65,14 @@ BuildingMenu.Tools = {
             'ToolsOfTheTrade.CoreHammer', --Tools of the Trade
             'ToolsOfTheTrade.RailroadHammer', --Tools of the Trade
             'ToolsOfTheTrade.RebarHammer', --Tools of the Trade
+            'ToolsOfTheTrade.DefilerSledgehammer', --Tools of the Trade
+            'ToolsOfTheTrade.DespoilerSledgehammer', --Tools of the Trade
             'SWeapons.SalvagedSledgehammer', -- Scrap Weapons
+            'SWeapons.GearMace', -- Scrap Weapons
+            'SWeapons.HugeScrapPickaxe', -- Scrap Weapons
             'MWPWeapons.roughneckgorillasledgehammer',-- [Reworked] MWPWeapons
             'AuthenticZClothing.AuthenticTagillaSledgehammer', -- Authentic Z
+            'KWP.StoneSledgehammer', --- Kwin's Melee Weapon Pack
         },
         tags = {'Sledgehammer'}
     },
@@ -76,7 +81,11 @@ BuildingMenu.Tools = {
         tags = {}
     },
     Screwdriver = {
-        types = {'Base.Screwdriver'},
+        types = {
+            'Base.Screwdriver',
+            'ToolsOfTheTrade.Multitool', --Tools of the Trade
+            'ToolsOfTheTrade.SpiffArmyKnife', --Tools of the Trade
+        },
         tags = {'Screwdriver'}
     },
     Saw = {
@@ -89,7 +98,11 @@ BuildingMenu.Tools = {
         tags = {'Saw'}
     },
     HandShovel = {
-        types = {'farming.HandShovel'},
+        types = {
+            'farming.HandShovel',
+            'SOMW.SharpTrowel',
+            'ToolsOfTheTrade.Adze', --Tools of the Trade
+        },
         tags = {'DigPlow'}
     },
     Shovel = {
@@ -161,6 +174,10 @@ BuildingMenu.GroupsAlternatives = {
             Item = BuildingMenu.ItemsAlternatives.GlassPane,
             Multiplier = 1,
         },
+        {
+            Item = "Base.BigGlassPanel",
+            Multiplier = 0.5,
+        }
     }
 };
 

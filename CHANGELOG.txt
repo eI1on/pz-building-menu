@@ -1,4 +1,4 @@
- MAR 24
+12 MAR 24
 
 Changelog:
 [list]
@@ -6,6 +6,10 @@ Main mod:
 [list]
 [*] Added Alternative Materials and Support for different types of materials from other mods (i.e. Improvised Glass, Soul's Building Time, Snake's Mod Pack)
 [*] Fixed Architecture Plus > Foundation creating an invisible wall
+[/list]
+DaddyDirkie's addon:
+[list]
+[*] Fixed Small Lockers name
 [/list]
 [/list]
 
