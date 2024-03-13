@@ -1,11 +1,25 @@
-# Building Menu Addons Development Guide
-
+# Development Guidelines for Building Menu Addons 
 End-users can ignore this document. 
-This document is intended for modders who wish to expand the Building Menu mod by adding new buildable structures.
+This document is currently a work in progress and presents practical guidelines for modders who wish to expand the Building Menu mod by adding new buildable structures.
+<br>
+<br>
+<br>
+
+Table of Contents
+=================
+
+  * [Development Guidelines for Building Menu Addons ](#development-guidelines-for-building-menu-addons)
+  * [Creating Buildable Objects](#creating-buildableobjects)
+  * [Inserting Objects into Categories](#inserting-objects-into-categories)
+  * [Integrating with Sandbox Options](#integrating-with-sandbox-options)
+  * [Recipes](#recipes)
+    * [Creating new Recipes](#creating-new-recipes)
+  * [Buildables Options](#buildables-options)
+  * [Buildables Sprites](#buildables-sprites)  
+<br>
 
 # Creating Buildable Objects
-
-
+<br>
 To add new buildable objects into the menu, you'll need to create them using the provided Lua function. Each object requires a set of parameters that define its characteristics and behavior in the game.
 
 Here's the function signature and a brief description of each parameter (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L38-L50)):
@@ -25,6 +39,8 @@ function BuildingMenu.createObject(name, description, action, recipe, isRecipeKn
     }
 end
 ```
+<br>
+
 Example of Object Integration
 ```lua
 local exampleObject = BuildingMenu.createObject(
@@ -47,25 +63,30 @@ local exampleObject = BuildingMenu.createObject(
     }
 )
 ```
-name: Display name of the object, it needs to be a key that will be used to retrieve the localized text string from the translation file. Please use the **Tooltip_BuildingMenuObj_Object_Name** convention, in a Tooltip_ file. If not provided, it defaults to the Movable Name or Sprite Name.  
+<br>
 
-description: A brief description of the object, displayed on the tooltip. Defaults to an empty string if not provided.  
+**name**: Display name of the object, it needs to be a key that will be used to retrieve the localized text string from the translation file. Please use the **Tooltip_BuildingMenuObj_Object_Name** convention, in a 'Tooltip_' file.  
+*Note:* If not provided, it defaults to the *Movable Name* or *Sprite Name*.  
 
-action: Action performed to create the object type. This is where objects get their IsoObject type. The whole list is in [BuildingMenu03_OnBuilds.lua](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu03_OnBuilds.lua)  
+**description**: A brief description of the object, displayed on the tooltip.  
+*Note:* Defaults to an empty string if not provided.  
 
-recipe: Crafting recipe for the object, you can use predefined recipes for consistency. Or you can create your own. Whole list 
-[BuildingMenu02_Recipes](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu02_Recipes.lua). Additionally see the Recipes section to define new recipes.  
+**action**: Action performed to create the object type. This is where objects get their IsoObject type. The whole list is in [BuildingMenu03_OnBuilds.lua](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu03_OnBuilds.lua).  
 
-isRecipeKnown: Determines whether the recipe is known to the player (can be true or string with the recipe, i.e. "Make Metal Fences") or false and will never be buildable  
+**recipe**: Crafting recipe for the object, you can use predefined recipes for consistency. Or you can create your own. Whole list 
+[BuildingMenu02_Recipes](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu02_Recipes.lua). Additionally see the "[Recipes](#recipes)" section to define new recipes.  
 
-options: Additional options for the object. See Section Options  
+**isRecipeKnown**: Determines whether the recipe is known to the player (can be true or string with the recipe, i.e. "Make Metal Fences") or false and will never be buildable.  
 
-sprites: The visual representation of the object in the game. See Section Sprites  
+**options**: Additional options for the object. See Section [Buildables Options](#buildables-options)  
 
+**sprites**: The visual representation of the object in the game. See Section [Buildables Sprites](#buildables-sprites)  
+<br>
+<br>
 # Inserting Objects into Categories
 
 
-Once your objects are defined, you need to insert them into the Building Menu under the appropriate categories using the addObjectsToCategories function.
+Once your objects are defined, you need to insert them into the Building Menu under the appropriate categories using the ```addObjectsToCategories``` function (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L18-L34)).
 
 
 ```lua
@@ -88,19 +109,22 @@ function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon
 end
 ```
 
-tabName: The name of the tab under which the category falls.  
+**tabName**: The name of the tab under which the category falls. Please use the **IGUI_BuildingMenuTab_** convention, in a 'IGUI_' file.  
 
-categoryName: The name of the category.  
+**categoryName**: The name of the category. Please use the **IGUI_BuildingMenuCat_** convention, in a 'IGUI_' file.   
 
-categoryIcon: The icon representing the category (optional). If it is a new category, it is mandatory, otherwise the players will not be able to favorite it.  
+**categoryIcon**: The icon representing the category (optional). If it is a new category, it is *mandatory*, otherwise the players will not be able to favorite it.  
 
-subcategoryName: The name of the subcategory.  
+**subcategoryName**: The name of the subcategory. Please use the **IGUI_BuildingMenuSubCat_** convention, in a 'IGUI_' file.    
 
-subCategoryIcon: The icon representing the subcategory (optional). If it is a new subcategory, it is mandatory, otherwise the players will not be able to favorite it.  
+**subCategoryIcon**: The icon representing the subcategory (optional). If it is a new subcategory, it is *mandatory*, otherwise the players will not be able to favorite it.  
 
-objects: The list of objects to add to the subcategory (table of objects created with the BuildingMenu.createObject function).  
+**objects**: The table of objects to add to the subcategory (table of objects created with the ```BuildingMenu.createObject``` function).  
 
 Example of usage: [BuildingMenu05_ExtraCategories.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu05_ExtraCategories.lua#L1066-L1073)
+
+<br>
+<br>
 
 #  Integrating with Sandbox Options
 
@@ -118,7 +142,6 @@ local function addCategoriesToBuildingMenu()
     end
 end
 Events.OnGameStart.Add(addCategoriesToBuildingMenu)
-
 ```
 
 In this example, new categories for wood walls and clapboard walls are added to the Building Menu based on the corresponding sandbox settings.
@@ -126,21 +149,27 @@ Example of usage [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/e
 For the whole list with the Sandbox-options refer to [sandbox-options.txt](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/sandbox-options.txt)
 
 
-
-#  Creating new Recipes
+# Recipes
+## Creating new Recipes
 
 The code snippets provided below demonstrates how to initialize new recipes within the mod's framework.
 
 **Recipe Structure**  
+<br>
 Each recipe is defined as a Lua table with specific fields that outline the requirements for constructing an object. These fields include:
 
-neededTools: A list of tool names required to build the object. Tools are keys from the BuildingMenu.Tools table, such as "Hammer" or "Paintbrush". Full table can be found [BuildingMenu.Tools](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L42-L121).
+**neededTools**: A list of tool names required to build the object. Tools are keys from the ```BuildingMenu.Tools``` table, such as "*Hammer*" or "*Paintbrush*". Full table can be found [BuildingMenu.Tools](https://github.com/eI1on/pz-building-menu/blob/c37d0dd961c9d63fc1beb6f88f42708314be5fe4/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L42-L134).
 
-neededMaterials: An array of materials required for the construction. Each material entry is a table specifying the material's in-game item Full Type (Material) and the quantity needed (Amount). Alternative groups: Groups of items where one or a combination can fulfill the requirement, e.g., a group containing "Base.Nails" and "Base.Screws", and another group with "TW.LargeBolt" (seen with an "or" in front). Within this group, "Base.Nails" and "Base.Screws" can be combined to meet the requirement, or "TW.LargeBolt" can be used as an alternative to the entire first group.  
+**neededMaterials**: An array of materials required for the construction. Each material entry is a table specifying the material's in-game item Full Type (Material) and the quantity needed (Amount). 
 
-useConsumable: An array similar to neededMaterials, but for consumable items that will be used up in the construction process.  
+* **Items Alternatives**: Group of Item Types (material or consumable) which can be combined to fullfill the Material/Consumable Group, e.g. the [The Glass Pane](https://github.com/eI1on/pz-building-menu/blob/c37d0dd961c9d63fc1beb6f88f42708314be5fe4/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L140-L147) item requirement now recognizes various types of glass from mods like Improvised Glass, Soul's Building Time and Snake's Mod Pack which can be combined to meet the requirement.
 
-skills: Defines the skill requirements for constructing the object. Each entry is a table specifying the skill name (Skill), the minimum level required (Level), and the experience points awarded upon successful construction (Xp).  
+* **Groups Alternative**: Groups of Materials/Consumables where one group can be used as an alternative to the entire first group to fulfill the requirement, e.g., in the [Nails](https://github.com/eI1on/pz-building-menu/blob/c37d0dd961c9d63fc1beb6f88f42708314be5fe4/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L152-L161) requirement group, you can now use "TW.LargeBolt" as an alternative to "Base.Nails", with a conversion multiplier of 0.75 (you can build an object that has as requirement 8 Nails or 6 Large Bolts, for Wells you can build them with 1 Rope or 1 Sheet Rope).  
+ 
+
+**useConsumable**: An array similar to neededMaterials, but for consumable items that will be used up in the construction process.  
+
+**skills**: Defines the skill requirements for constructing the object. Each entry is a table specifying the skill name (Skill), the minimum level required (Level), and the experience points awarded upon successful construction (Xp).  
 
 **Example**  
 Here's an example of defining and integrating a new recipe for a "Grey Big Stone Wall":
@@ -155,15 +184,28 @@ BuildingMenu.GreyBigStoneWallRecipe = {
             Material = "Base.Plank", 
             Amount = bigWallWoodCount
         },
-        { -- Alternative groups
+
+        { -- Alternative Groups
             {
-                Material = { "Base.Nails", "Base.Screws" }, -- Within this group these items can be combined to meet the requirement
+                Material = { "Base.Nails", "Base.Screws" }, -- Alternative Items: Within this group these items can be combined to meet the requirement
                 Amount = bigWallNailsCount
             },
             {
-                Material = "TW.LargeBolt", -- This can be used as an alternative to the entire first alternative group. (seen with an "or" in front)
+                Material = "TW.LargeBolt", -- This can be used as an alternative to the entire first alternative group. (seen with an "or" in front in the tooltip)
                 Amount = bigWallNailsCount
             }
+        },
+        { -- Alternative Groups: Same as above
+            generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+        },
+
+        {
+            Material = { "Base.GlassPane", "ImprovisedGlass.GlassPane", "filcher.SFGlassPanel", "Base.SmallGlassPanel" }, -- Alternative Items
+            Amount = 1
+        },
+        { -- Alternative Items: Same as above
+            Material = BuildingMenu.ItemsAlternatives.GlassPane,
+            Amount = glassPaneCount
         }
     },
     useConsumable = {
@@ -181,75 +223,84 @@ BuildingMenu.GreyBigStoneWallRecipe = {
     }
 }
 ```
-Note: if you want to change recipes based on sandbox options, you must initialize them at **Event.OnInitGlobalModData**, this event is called right after the Sandbox Options are initialized.
+*Note: If you want to change recipes based on sandbox options, you must initialize them at **Event.OnInitGlobalModData**, this event is called right after the Sandbox Options are initialized.*
 
 
 # Buildables Options  
 
 When creating buildable objects using the BuildingMenu.createObject function, you can specify a set of options that define the behavior and characteristics of these objects in the game.
+<br>
+## Option Keys:
 
-**actionAnim**: The animation played by the character when building the object.  
-Can be:
+Name | Type | Description
+--- | --- | ---
+actionAnim | string | The animation played by the character when building the object | 
+blockAllTheSquare | boolean | It dictates if the object will occupy the entire tile, preventing other objects from being placed on the same spot | 
+canBarricade | boolean | Determines whether the object can be barricaded | 
+canPassThrough | boolean | Allows players to walk through the object, for decorative items or non-collidable structures | 
+canScrap | boolean | Indicates if the object can be scrapped or dismantled after being built | 
+completionSound | string | The sound effect played upon completing the construction of the object. For example, "BuildWoodenStructureLarge" for large wooden structures | 
+containerType | boolean | Specifies the type of container the buildable object will be if it will be a container. Different types represent different in-game storage containers, each with its own storage capacity | 
+craftingBank | string | Determines the sound when crafting the buildable object | 
+firstItem | string | Indicates the primary tool | 
+secondItem | string | Indicates the secondary tool |
+hoppable | boolean | Value indicating whether the object (like fences or low walls) is hoppable, **true** allows players and zombies to jump over it. | 
+isCorner | boolean | Value indicating whether the object is meant to be placed at corners| 
+isContainer | boolean | Value indicating whether the object is a container or not | 
+isThumpable | boolean | Value indicating if the object can be destroyed by zombies or players. **true** allows for the object to be thumped. I recommend that all buildables be thumpable because players can select from the sandbox options whether they can be destroyed or not | 
+modData | table | A table containing custom data that can be used to store additional information about the object, such as its type | 
+needToBeAgainstWall | boolean | For objects that must be built adjacent to a wall | 
+noNeedHammer | boolean | Value indicating whether the object requires a hammer to be built. Setting this to **false** means a hammer is needed. Set it to **true** for recipes that have shovels, propane torch, or anything other than hammers as the primary tool. | 
+renderFloorHelper | boolean | Value indicating that will render a helper wooden floor, useful for objects that are suspended such as roofs, shelves etc... |  
+## Option Values:
+
+<br>
+
+**actionAnim**:
 ```lua
 "Build", "BuildLow", "BlowTorch", "BlowTorchMid", "DigTrowel", "BlowTorchFloor", "DigShovel", "DestroyFloor", "paint", "VehicleWorkOnTire"
 ```   
 
-**blockAllTheSquare**: A **boolean** value, it dictates is the object will occupy the entire tile, preventing other objects from being placed on the same spot.   
+<br>
 
-**canBarricade**: A **boolean** value that determines whether the object can be barricaded.   
-
-**canPassThrough**: A **boolean** value that allows players to walk through the object, for decorative items or non-collidable structures.   
-
-**canScrap**: A **boolean** indicating if the object can be scrapped or dismantled after being built.   
-
-**completionSound**: The sound effect played upon completing the construction of the object. For example, "BuildWoodenStructureLarge" for large wooden structures.  
-Can be:  
+**completionSound**:
 ```lua
 "BuildWoodenStructureLarge", "BuildWoodenStructureSmall", "BuildMetalStructureWallFrame", "BuildMetalStructureMedium", "DropSoilFromGravelBag", "BuildFenceCairn"
-```   
+```  
 
-**containerType**: Specifies the type of container the buildable object will be if it will be a container. Different types represent different in-game storage containers, each with its own storage capacity.  
-Can be:
+<br>
+
+**containerType**:
 ```lua
 "displaycasebakery", "fridge", "shelves", "smallcrate", "smallbox", "garage_storage", "militarycrate", "filingcabinet", "bin", "locker", "metal_shelves", "militarylocker", "officedrawers", "sidetable", "wardrobe", "counter", "desk", "crate", "logs", "postbox"
 ```   
 
-**craftingBank**: Determines the sound when crafting the buildable object   
-Can be:
+<br>
+
+**craftingBank**:
 ```lua
 "BlowTorch", "Shoveling", "SledgehammerHit", "Painting", "ClothesRipping"
 ```   
 
-**firstItem**: Indicates the primary tool  
-Can be:
+<br>
+
+**firstItem**:
 ```lua
 firstItem = "BlowTorch",
 ```
 
-**secondItem**: Indicates the secondary tool   
-Can be:
+<br>
+
+**secondItem**:
 ```lua
 secondItem = "WeldingMask",
 ```
 
-**hoppable**: A **boolean** value indicating whether the object (like fences or low walls) is hoppable, **true** allows players and zombies to jump over it.  
- 
-**isCorner**: A **boolean** value indicating whether the object is meant to be placed at corners.  
+<br>
 
-**isContainer**: A **boolean** value indicating whether the object is a container or not.  
-
-**isThumpable**: A **boolean** indicating if the object can be destroyed by zombies or players. true allows for the object to be thumped. I recommend that all buildables be thumpable because players can select from the sandbox options whether they can be destroyed or not.   
-
-**modData**: A table containing custom data that can be used to store additional information about the object, such as its type.  
-Can be:
+**modData**:
 ```lua
 "wall", "doorframe", "windowsframe", "pillar", "doorframe"
 ```
-**needToBeAgainstWall**: For objects that must be built adjacent to a wall.   
-
-**noNeedHammer**: A **boolean** value indicating whether the object requires a hammer to be built. Setting this to false means a hammer is needed. Set it to **true** for recipes that have shovels, propane torch, or anything other than hammers as the primary tool.   
-
-**renderFloorHelper**: A **boolean** value indicating that will render a helper wooden floor, useful for objects that are suspended such as roofs, shelves etc...   
-
 
 # Buildables Sprites

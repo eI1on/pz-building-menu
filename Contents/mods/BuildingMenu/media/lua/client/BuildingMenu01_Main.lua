@@ -209,7 +209,7 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldob
 
 end
 Events.OnFillWorldObjectContextMenu.Add(BuildingMenu.OnFillWorldObjectContextMenu)
-Events.OnGameBoot.Add(function() print("[Building Menu] ver:MAR_02_2024") end)
+Events.OnGameBoot.Add(function() print("[Building Menu] ver:MAR_12_2024") end)
 
 --- Gets the player's skills.
 ---@param playerObj IsoPlayer
