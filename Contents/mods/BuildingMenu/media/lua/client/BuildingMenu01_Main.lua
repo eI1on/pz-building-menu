@@ -16,22 +16,22 @@ local getItemNameFromFullType = getItemNameFromFullType
 
 --- BuildingMenu namespace.
 ---@class BuildingMenu
-local BuildingMenu = {}
+local BuildingMenu = {};
 
 ---@type boolean
-BuildingMenu.playerCanPlaster = false
+BuildingMenu.playerCanPlaster = false;
 
 ---@type string
-BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip_craft_Needs') .. ': <LINE> '
+BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip_craft_Needs') .. ': <LINE> ';
 
 ---@type string
-BuildingMenu.textCanRotate = '<LINE> <RGB:1,1,1>' .. getText('Tooltip_craft_pressToRotate', Keyboard.getKeyName(getCore():getKey('Rotate building')))
+BuildingMenu.textCanRotate = getText("Tooltip_craft_pressToRotate", Keyboard.getKeyName(getCore():getKey("Rotate building")));
 
 ---@type string
-BuildingMenu.ghs = " <RGB:" .. getCore():getGoodHighlitedColor():getR() .. "," .. getCore():getGoodHighlitedColor():getG() .. "," .. getCore():getGoodHighlitedColor():getB() .. "> "
+BuildingMenu.ghs = " <RGB:" .. getCore():getGoodHighlitedColor():getR() .. "," .. getCore():getGoodHighlitedColor():getG() .. "," .. getCore():getGoodHighlitedColor():getB() .. "> ";
 
 ---@type string
-BuildingMenu.bhs = " <RGB:" .. getCore():getBadHighlitedColor():getR() .. "," .. getCore():getBadHighlitedColor():getG() .. "," .. getCore():getBadHighlitedColor():getB() .. "> "
+BuildingMenu.bhs = " <RGB:" .. getCore():getBadHighlitedColor():getR() .. "," .. getCore():getBadHighlitedColor():getG() .. "," .. getCore():getBadHighlitedColor():getB() .. "> ";
 
 
 -- Tags: Screwdriver, CutPlant, DigPlow (eg: HandFork), Sledgehammer, ChopTree (eg: Axe), ClearAshes (eg: Broom), TakeDirt (eg: Shovel), Crowbar, Hammer, RemoveBarricade (eg: Claw Hammer)
@@ -389,19 +389,19 @@ end
 --- Tooltip check for a specific tool category.
 ---@param playerInv ItemContainer
 ---@param tool string
----@param tooltip ISToolTip
----@return boolean
-BuildingMenu.tooltipCheckForTool = function(playerInv, tool, tooltip)
-    local toolInfo = BuildingMenu.Tools[tool]
-    local found = false
+---@return string, boolean
+BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
+    local toolInfo = BuildingMenu.Tools[tool];
+    local found = false;
+    local itemText = "";
 
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
             local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
             if item then
-                tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' <LINE>';
+                itemText = BuildingMenu.ghs .. item:getName() .. ' <LINE>';
                 found = true;
-                break
+                break;
             end
         end
     end
@@ -410,22 +410,22 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool, tooltip)
         for _, tag in ipairs(toolInfo.tags) do
             local item = playerInv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
             if item then
-                tooltip.description = tooltip.description .. BuildingMenu.ghs .. item:getName() .. ' <LINE>'
-                found = true
-                break
+                itemText = BuildingMenu.ghs .. item:getName() .. ' <LINE>';
+                found = true;
+                break;
             end
         end
     end
 
     if not found then
-        tooltip.description = tooltip.description .. BuildingMenu.bhs .. ((toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool) .. ' <LINE>'
-        return false
+        itemText = BuildingMenu.bhs .. ((toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool) .. ' <LINE>'
+        return itemText, false
     end
-    return true
+    return itemText, true
 end
 
 
-local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, tooltip, groupType)
+local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, tooltipDescription, groupType)
     local groupItemFound = false;
     local itemBuffer = {};
     local itemInfo = {};
@@ -498,8 +498,8 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
     end
 
     local itemText = table.concat(itemBuffer);
-    tooltip.description = tooltip.description .. itemText .. ' <LINE>';
-    return groupItemFound, itemInfo;
+    tooltipDescription = itemText .. ' <LINE>';
+    return tooltipDescription, groupItemFound, itemInfo;
 end
 
 
@@ -507,10 +507,10 @@ end
 ---@param playerObj IsoPlayer
 ---@param playerInv ItemContainer
 ---@param currentMaterialsGroup table
----@param tooltip ISToolTip
----@return boolean, table
-BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, currentMaterialsGroup, tooltip)
-    return tooltipCheckForItem(playerObj, playerInv, currentMaterialsGroup, tooltip, "Material")
+---@param tooltipDescription string
+---@return string, boolean, table
+BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, currentMaterialsGroup, tooltipDescription)
+    return tooltipCheckForItem(playerObj, playerInv, currentMaterialsGroup, tooltipDescription, "Material")
 end
 
 
@@ -518,10 +518,10 @@ end
 ---@param playerObj IsoPlayer
 ---@param playerInv ItemContainer
 ---@param currentConsumableGroup table
----@param tooltip ISToolTip
----@return boolean, table
-BuildingMenu.tooltipCheckForConsumable = function(playerObj, playerInv, currentConsumableGroup, tooltip)
-    return tooltipCheckForItem(playerObj, playerInv, currentConsumableGroup, tooltip, "Consumable")
+---@param tooltipDescription string
+---@return string, boolean, table
+BuildingMenu.tooltipCheckForConsumable = function(playerObj, playerInv, currentConsumableGroup, tooltipDescription)
+    return tooltipCheckForItem(playerObj, playerInv, currentConsumableGroup, tooltipDescription, "Consumable")
 end
 
 
@@ -536,13 +536,13 @@ end
 
 --- Checks if the player can build a specific object.
 ---@param playerObj IsoPlayer
----@param tooltip ISToolTip
+---@param tooltipDescription string
 ---@param objectRecipe table
----@return ISToolTip, boolean, table, table
-BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
+---@return string, boolean, table, table
+BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectRecipe)
     local playerInv = playerObj:getInventory();
 
-    tooltip.description = BuildingMenu.textTooltipHeader;
+    tooltipDescription = BuildingMenu.textTooltipHeader;
 
     local canBuildResult = true;
     local currentResult = true;
@@ -550,21 +550,23 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
     local materialFoundIndexMatrix = {};
 
     if not objectRecipe then
-        tooltip.description = tooltip.description .. " <LINE>" .. BuildingMenu.bhs .." RECIPE IS NULL";
-        return tooltip, false, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
+        tooltipDescription = tooltipDescription .. " <LINE>" .. BuildingMenu.bhs .." RECIPE IS NULL";
+        return tooltipDescription, false, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
     end
 
     if objectRecipe.useConsumable then
         local consumablesGroupInfo = {};
+        local consumableTooltipDescription = "";
         for i, currentConsumableGroup in ipairs(objectRecipe.useConsumable) do
             local adaptedConsumableGroup = adaptRecipeGroupToNewFormat(currentConsumableGroup);
-            currentResult, consumablesGroupInfo = BuildingMenu.tooltipCheckForConsumable(
+            consumableTooltipDescription, currentResult, consumablesGroupInfo = BuildingMenu.tooltipCheckForConsumable(
                 playerObj,
                 playerInv,
                 adaptedConsumableGroup,
-                tooltip
+                tooltipDescription
             );
             consumablesFoundIndexMatrix[i] = consumablesGroupInfo;
+            tooltipDescription = tooltipDescription .. consumableTooltipDescription;
 
             if not currentResult then
                 canBuildResult = false;
@@ -574,15 +576,17 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
 
     if objectRecipe.neededMaterials then
         local materialsGroupInfo = {};
+        local materialTooltipDescription = "";
         for i, materialsGroup in ipairs(objectRecipe.neededMaterials) do
             local adaptedMaterialsGroup = adaptRecipeGroupToNewFormat(materialsGroup);
-            currentResult, materialsGroupInfo = BuildingMenu.tooltipCheckForMaterial(
+            materialTooltipDescription, currentResult, materialsGroupInfo = BuildingMenu.tooltipCheckForMaterial(
                 playerObj,
                 playerInv,
                 adaptedMaterialsGroup,
-                tooltip
+                tooltipDescription
             );
             materialFoundIndexMatrix[i] = materialsGroupInfo;
+            tooltipDescription = tooltipDescription .. materialTooltipDescription;
 
             if not currentResult then
                 canBuildResult = false;
@@ -590,15 +594,16 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
         end
     end
 
-    tooltip.description = tooltip.description .. " <LINE>";
+    tooltipDescription = tooltipDescription .. " <LINE>";
 
     if objectRecipe.neededTools then
+        local toolsTooltipDescription = "";
         for _, _currentTool in pairs(objectRecipe.neededTools) do
-            currentResult = BuildingMenu.tooltipCheckForTool(
+            toolsTooltipDescription, currentResult = BuildingMenu.tooltipCheckForTool(
                 playerInv,
-                _currentTool,
-                tooltip
-            )
+                _currentTool
+            );
+            tooltipDescription = tooltipDescription .. toolsTooltipDescription;
 
             if not currentResult then
                 canBuildResult = false;
@@ -606,31 +611,32 @@ BuildingMenu.canBuildObject = function(playerObj, tooltip, objectRecipe)
         end
     end
 
-    tooltip.description = tooltip.description .. " <LINE>";
+    tooltipDescription = tooltipDescription .. " <LINE>";
 
     local playerSkills = BuildingMenu.getPlayerSkills(playerObj)
     if objectRecipe.skills then
+        local skillsTooltipDescription = "";
         for _, skill in pairs(objectRecipe.skills) do
             if playerSkills[skill.Skill] < skill.Level then
-                tooltip.description = tooltip.description .. BuildingMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                skillsTooltipDescription = BuildingMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
                 canBuildResult = false;
             else
-                tooltip.description = tooltip.description .. BuildingMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                skillsTooltipDescription = BuildingMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
             end
+            tooltipDescription = tooltipDescription .. skillsTooltipDescription;
         end
     end
 
-    tooltip.description = tooltip.description .. BuildingMenu.textCanRotate;
 
     -- BuildingMenu.debugPrint("[Building Menu DEBUG] materialFoundIndexMatrix ", materialFoundIndexMatrix);
     -- BuildingMenu.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
 
     if ISBuildMenu.cheat then
-        tooltip.description = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltip.description;
-        return tooltip, true, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
-    else
-        return tooltip, canBuildResult, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
+        tooltipDescription = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltipDescription;
+        canBuildResult = true;
     end
+
+    return tooltipDescription, canBuildResult, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
 end
 
 --- Returns the BuildingMenu instance.

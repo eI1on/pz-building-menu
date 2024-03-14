@@ -105,9 +105,11 @@ function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
 end
 
 function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
-    self.tooltip, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix = BuildingMenu.canBuildObject(self.character, self.tooltip, selectedObject.objDef.data.recipe);
+    local tooltipDescription = "";
+    tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix = BuildingMenu.canBuildObject(self.character, tooltipDescription, selectedObject.objDef.data.recipe);
     self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
-    self.tooltip.description = selectedObject.objDef.description .. " <RGB:1,0,0> " .. self.tooltip.description;
+    self.tooltip.description = selectedObject.objDef.description .. " <RGB:1,0,0> " .. tooltipDescription;
+    self.tooltip.footNote = BuildingMenu.textCanRotate;
 end
 
 function BuildingMenuTilePickerList:getTileCenterPosition(col, row)

@@ -438,7 +438,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         props:CreateKeySet();
     end
 
-    
+
     sprites = {
         "floors_interior_tilesandwood_01_0",
         "floors_interior_tilesandwood_01_1",
@@ -468,17 +468,19 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "floors_interior_tilesandwood_01_29",
         "floors_interior_tilesandwood_01_30",
         "floors_interior_tilesandwood_01_31",
+        "location_restaurant_spiffos_01_39"
     }
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
-        BM_Utils.setSpriteProperty(props, "Material", "Ceramic", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "Nails", false);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "ScrapSize", "Small", false);
         props:CreateKeySet();
     end
-    
+
     sprites = {
         "walls_decoration_01_65",
         "walls_decoration_01_64",

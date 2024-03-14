@@ -22,7 +22,7 @@ Table of Contents
 <br>
 To add new buildable objects into the menu, you'll need to create them using the provided Lua function. Each object requires a set of parameters that define its characteristics and behavior in the game.
 
-Here's the function signature and a brief description of each parameter (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L38-L50)):
+Here's the function signature and a brief description of each parameter (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L50-L71)):
 
 ```lua
 function BuildingMenu.createObject(name, description, action, recipe, isRecipeKnown, options, sprites)
@@ -86,7 +86,7 @@ local exampleObject = BuildingMenu.createObject(
 # Inserting Objects into Categories
 
 
-Once your objects are defined, you need to insert them into the Building Menu under the appropriate categories using the ```addObjectsToCategories``` function (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L18-L34)).
+Once your objects are defined, you need to insert them into the Building Menu under the appropriate categories using the ```addObjectsToCategories``` function (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L21-L47)).
 
 
 ```lua
@@ -121,7 +121,7 @@ end
 
 **objects**: The table of objects to add to the subcategory (table of objects created with the ```BuildingMenu.createObject``` function).  
 
-Example of usage: [BuildingMenu05_ExtraCategories.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu05_ExtraCategories.lua#L1066-L1073)
+Example of usage: [BuildingMenu05_ExtraCategories.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu05_ExtraCategories.lua#L970-L987)
 
 <br>
 <br>
@@ -145,7 +145,7 @@ Events.OnGameStart.Add(addCategoriesToBuildingMenu)
 ```
 
 In this example, new categories for wood walls and clapboard walls are added to the Building Menu based on the corresponding sandbox settings.
-Example of usage [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/2797ac20eb03e65ad8b7ddc1d45a263614fcdcc2/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L35186-L35323)  
+Example of usage [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L37079-L37225)  
 For the whole list with the Sandbox-options refer to [sandbox-options.txt](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/sandbox-options.txt)
 
 
@@ -158,18 +158,18 @@ The code snippets provided below demonstrates how to initialize new recipes with
 <br>
 Each recipe is defined as a Lua table with specific fields that outline the requirements for constructing an object. These fields include:
 
-**neededTools**: A list of tool names required to build the object. Tools are keys from the ```BuildingMenu.Tools``` table, such as "*Hammer*" or "*Paintbrush*". Full table can be found [BuildingMenu.Tools](https://github.com/eI1on/pz-building-menu/blob/c37d0dd961c9d63fc1beb6f88f42708314be5fe4/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L42-L134).
+**neededTools**: A list of tool names required to build the object. Tools are keys from the ```BuildingMenu.Tools``` table, such as "*Hammer*" or "*Paintbrush*". Full table can be found [BuildingMenu.Tools](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L39-L134).
 
 **neededMaterials**: An array of materials required for the construction. Each material entry is a table specifying the material's in-game item Full Type (Material) and the quantity needed (Amount). 
 
-* **Items Alternatives**: Group of Item Types (material or consumable) which can be combined to fullfill the Material/Consumable Group, e.g. the [The Glass Pane](https://github.com/eI1on/pz-building-menu/blob/c37d0dd961c9d63fc1beb6f88f42708314be5fe4/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L140-L147) item requirement now recognizes various types of glass from mods like Improvised Glass, Soul's Building Time and Snake's Mod Pack which can be combined to meet the requirement.
+* **Items Alternatives**: Group of Item Types (Material/Consumable) which can be combined to fullfill the Material/Consumable Group, e.g. the [Glass Pane](https://github.com/eI1on/pz-building-menu/blob/c37d0dd961c9d63fc1beb6f88f42708314be5fe4/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L140-L147) item requirement now recognizes various types of glass from mods like Improvised Glass, Soul's Building Time and Snake's Mod Pack which can be combined to meet the requirement.
 
-* **Groups Alternative**: Groups of Materials/Consumables where one group can be used as an alternative to the entire first group to fulfill the requirement, e.g., in the [Nails](https://github.com/eI1on/pz-building-menu/blob/c37d0dd961c9d63fc1beb6f88f42708314be5fe4/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L152-L161) requirement group, you can now use "TW.LargeBolt" as an alternative to "Base.Nails", with a conversion multiplier of 0.75 (you can build an object that has as requirement 8 Nails or 6 Large Bolts, for Wells you can build them with 1 Rope or 1 Sheet Rope).  
+* **Groups Alternative**: Groups of Materials/Consumables where one group can be used as an alternative to the entire first group(or the other groups) to fulfill the requirement, e.g., in the [Nails](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu01_Main.lua#L152-L161) requirement group, you can now use "TW.LargeBolt" as an alternative to "Base.Nails", with a conversion multiplier of 0.75 (you can build an object that has as requirement 8 Nails or 6 Large Bolts, for Wells you can build them with 1 Rope or 1 Sheet Rope).  
  
 
-**useConsumable**: An array similar to neededMaterials, but for consumable items that will be used up in the construction process.  
+**useConsumable**: An array similar to neededMaterials, but for consumable items that will be used up in the construction process, also supports Alternative Items and Groups.  
 
-**skills**: Defines the skill requirements for constructing the object. Each entry is a table specifying the skill name (Skill), the minimum level required (Level), and the experience points awarded upon successful construction (Xp).  
+**skills**: Defines the skill requirements for constructing the object. Each entry is a table specifying the skill name (Skill), whole list can be found [PerkFacotry.Perks](https://projectzomboid.com/modding/zombie/characters/skills/PerkFactory.Perks.html), the minimum level required (Level), and the experience points awarded upon successful construction (Xp).  
 
 **Example**  
 Here's an example of defining and integrating a new recipe for a "Grey Big Stone Wall":
@@ -199,8 +199,8 @@ BuildingMenu.GreyBigStoneWallRecipe = {
             generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
         },
 
-        {
-            Material = { "Base.GlassPane", "ImprovisedGlass.GlassPane", "filcher.SFGlassPanel", "Base.SmallGlassPanel" }, -- Alternative Items
+        { -- Alternative Items
+            Material = { "Base.GlassPane", "ImprovisedGlass.GlassPane", "filcher.SFGlassPanel", "Base.SmallGlassPanel" },
             Amount = 1
         },
         { -- Alternative Items: Same as above
@@ -228,9 +228,9 @@ BuildingMenu.GreyBigStoneWallRecipe = {
 
 # Buildables Options  
 
-When creating buildable objects using the BuildingMenu.createObject function, you can specify a set of options that define the behavior and characteristics of these objects in the game.
+When creating buildable objects using the ```BuildingMenu.createObject``` function, you can specify a set of options that define the behavior and characteristics of these objects in the game.
 <br>
-## Option Keys:
+## Option Keys
 
 Name | Type | Description
 --- | --- | ---
@@ -252,7 +252,7 @@ modData | table | A table containing custom data that can be used to store addit
 needToBeAgainstWall | boolean | For objects that must be built adjacent to a wall | 
 noNeedHammer | boolean | Value indicating whether the object requires a hammer to be built. Setting this to **false** means a hammer is needed. Set it to **true** for recipes that have shovels, propane torch, or anything other than hammers as the primary tool. | 
 renderFloorHelper | boolean | Value indicating that will render a helper wooden floor, useful for objects that are suspended such as roofs, shelves etc... |  
-## Option Values:
+## Option Values
 
 <br>
 
