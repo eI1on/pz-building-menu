@@ -1219,6 +1219,9 @@ Tooltip_RO = {
   Tooltip_BuildingMenuObj_Security_Door = "Ușă de securitate",
   Tooltip_Security_Door = "O ușă extrem de sigură, cu un cod secret, care îi ține pe strigoii care ghicesc și supraviețuitorii în siguranță.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
+
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "Ușă de garaj 3 gresie albă",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "Ușă de garaj verde cu 3 gresie",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "3 gresie ușă de garaj gri",

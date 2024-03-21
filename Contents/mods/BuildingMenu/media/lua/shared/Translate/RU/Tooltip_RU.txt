@@ -1219,6 +1219,9 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Security_Door = "Защищенная дверь",
   Tooltip_Security_Door = "Дверь с высоким классом защиты.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
+
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "Белая гаражная дверь",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "Зелёная гаражная дверь",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "Серая гаражная дверь",

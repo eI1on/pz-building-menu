@@ -15931,48 +15931,6 @@ local function addDoorsToMenu()
                     }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door",
-                    "Tooltip_Brown_Sliding_Glass_Door",
-                    BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
-                    true,
-                    {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
-                        dontNeedFrame = true,
-                        canBarricade = false,
-                        completionSound = "BuildWoodenStructureLarge",
-                        modData = {wallType = "doorframe"}
-                    },
-                    {
-                        sprite = "fixtures_doors_01_108",
-                        northSprite = "fixtures_doors_01_109",
-                        openSprite = "fixtures_doors_01_110",
-                        openNorthSprite = "fixtures_doors_01_111"
-                    }
-                ),
-                BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Sliding_Glass_Door",
-                    "Tooltip_White_Sliding_Glass_Door",
-                    BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
-                    true,
-                    {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
-                        dontNeedFrame = true,
-                        canBarricade = false,
-                        completionSound = "BuildWoodenStructureLarge",
-                        modData = {wallType = "doorframe"}
-                    },
-                    {
-                        sprite = "fixtures_doors_01_116",
-                        northSprite = "fixtures_doors_01_117",
-                        openSprite = "fixtures_doors_01_118",
-                        openNorthSprite = "fixtures_doors_01_119"
-                    }
-                ),
-                BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Blue_Fossoil_Glass_Door",
                     "Tooltip_Black_2_Pane_Door",
                     BuildingMenu.onBuildDoor,
@@ -16109,8 +16067,93 @@ local function addDoorsToMenu()
                 )
             }
         },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Sliding_Doors"),
+            subCategoryIcon = "fixtures_doors_01_106",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall",
+                    "Tooltip_Black_Frame_Glass_Wall",
+                    BuildingMenu.onBuildWindowWall,
+                    BuildingMenu.BrownBigWoodWindowWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build", 
+                        noNeedHammer = false, 
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = true,
+                        modData = {wallType = "wall"}
+                    },
+                    {
+                        sprite = "fixtures_doors_01_106",
+                        northSprite = "fixtures_doors_01_107"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door",
+                    "Tooltip_Brown_Sliding_Glass_Door",
+                    BuildingMenu.onBuildDoor,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        dontNeedFrame = true,
+                        canBarricade = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        modData = {wallType = "doorframe"}
+                    },
+                    {
+                        sprite = "fixtures_doors_01_108",
+                        northSprite = "fixtures_doors_01_109",
+                        openSprite = "fixtures_doors_01_110",
+                        openNorthSprite = "fixtures_doors_01_111"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall",
+                    "Tooltip_Black_Frame_Glass_Wall",
+                    BuildingMenu.onBuildWindowWall,
+                    BuildingMenu.WhiteBigWoodWindowWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build", 
+                        noNeedHammer = false, 
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = true,
+                        modData = {wallType = "wall"}
+                    },
+                    {
+                        sprite = "fixtures_doors_01_114",
+                        northSprite = "fixtures_doors_01_115"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_White_Sliding_Glass_Door",
+                    "Tooltip_White_Sliding_Glass_Door",
+                    BuildingMenu.onBuildDoor,
+                    BuildingMenu.WoodenDoubleGlassDoorRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        dontNeedFrame = true,
+                        canBarricade = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        modData = {wallType = "doorframe"}
+                    },
+                    {
+                        sprite = "fixtures_doors_01_116",
+                        northSprite = "fixtures_doors_01_117",
+                        openSprite = "fixtures_doors_01_118",
+                        openNorthSprite = "fixtures_doors_01_119"
+                    }
+                ),
+            }
+        },
     }
-    
 
     for k, subCatData in pairs(doors) do
         BuildingMenu.addObjectsToCategories(

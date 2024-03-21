@@ -90,6 +90,8 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Glazen deuren",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Beveiligingsdeuren",
 
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Garagedeuren met 3 tegels",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 tegels garagedeuren",
     IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",

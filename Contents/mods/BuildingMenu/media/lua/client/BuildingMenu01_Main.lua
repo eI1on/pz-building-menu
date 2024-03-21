@@ -34,6 +34,10 @@ BuildingMenu.ghs = " <RGB:" .. getCore():getGoodHighlitedColor():getR() .. "," .
 BuildingMenu.bhs = " <RGB:" .. getCore():getBadHighlitedColor():getR() .. "," .. getCore():getBadHighlitedColor():getG() .. "," .. getCore():getBadHighlitedColor():getB() .. "> ";
 
 
+BuildingMenu.icon_scale = 1;
+BuildingMenu.show_item_icons = true;
+
+
 -- Tags: Screwdriver, CutPlant, DigPlow (eg: HandFork), Sledgehammer, ChopTree (eg: Axe), ClearAshes (eg: Broom), TakeDirt (eg: Shovel), Crowbar, Hammer, RemoveBarricade (eg: Claw Hammer)
 
 --- Definitions of tools used in the building menu.
@@ -372,19 +376,38 @@ end
 
 
 ---@param type string
----@return InventoryItem
+---@return InventoryItem|nil
 function BuildingMenu.GetItemInstance(type)
     if not BuildingMenu.ItemInstances then BuildingMenu.ItemInstances = {}; end
     local item = BuildingMenu.ItemInstances[type];
     if not item then
         item = InventoryItemFactory.CreateItem(type);
         if item then
-            BuildingMenu.ItemInstances[type] = item;
-            BuildingMenu.ItemInstances[item:getFullType()] = item;
+            -- Cache both the item instance and its texture name for quick access later.
+            local texName = item:getTexture():getName();
+            local texNameOnly = texName:match("([^/\\]+)%.png$") or texName:match("([^/\\]+)$") or texName;
+            BuildingMenu.ItemInstances[type] = { item = item, textureName = texNameOnly };
+            BuildingMenu.ItemInstances[item:getFullType()] = { item = item, textureName = texNameOnly };
         end
     end
-    return item
+    return item and item.item or nil;
 end
+
+
+---@param item InventoryItem
+---@return string|nil
+function BuildingMenu.GetTextureFromInventoryItem(item)
+    if not item then return nil; end
+    local cacheEntry = BuildingMenu.ItemInstances[item:getFullType()];
+    if cacheEntry then
+        return cacheEntry.textureName;
+    else
+        -- If for some reason the item wasn't cached, we fall back to extracting the texture name.
+        local texName = item:getTexture():getName();
+        return texName:match("([^/\\]+)%.png$") or texName:match("([^/\\]+)$") or texName;
+    end
+end
+
 
 --- Tooltip check for a specific tool category.
 ---@param playerInv ItemContainer
@@ -395,11 +418,21 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     local found = false;
     local itemText = "";
 
+    -- Attempt to get an instance of the tool to display its texture.
+    -- Outside of the found check to ensure it runs regardless of item presence.
+    local itemInstance = BuildingMenu.GetItemInstance(toolInfo.types and toolInfo.types[1]);
+    if itemInstance then
+        local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(itemInstance);
+        if texNameOnly and BuildingMenu.show_item_icons then
+            itemText = "<IMAGE:" .. texNameOnly .."," .. 20*BuildingMenu.icon_scale .. "," .. 20*BuildingMenu.icon_scale .. ">";
+        end
+    end
+
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
             local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
             if item then
-                itemText = BuildingMenu.ghs .. item:getName() .. ' <LINE>';
+                itemText = itemText .. BuildingMenu.ghs .. item:getName() .. ' <LINE>';
                 found = true;
                 break;
             end
@@ -410,7 +443,7 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
         for _, tag in ipairs(toolInfo.tags) do
             local item = playerInv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
             if item then
-                itemText = BuildingMenu.ghs .. item:getName() .. ' <LINE>';
+                itemText = itemText .. BuildingMenu.ghs .. item:getName() .. ' <LINE>';
                 found = true;
                 break;
             end
@@ -418,8 +451,9 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     end
 
     if not found then
-        itemText = BuildingMenu.bhs .. ((toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool) .. ' <LINE>'
-        return itemText, false
+        local defaultItemName = (toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool;
+        itemText = itemText .. BuildingMenu.bhs .. defaultItemName .. ' <LINE>';
+        return itemText, false;
     end
     return itemText, true
 end
@@ -431,7 +465,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
     local itemInfo = {};
     local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare());
     local groundItemCountMap = {};
-    
+
     -- Prepare ground item counts
     if groupType == "Consumable" then
         groundItemCountMap = buildUtil.getMaterialOnGroundUses(groundItems);
@@ -484,6 +518,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
         end
 
         if firstItemInstance then
+
             local itemText = color .. firstItemInstance:getName() .. ' ' .. (groupType == "Consumable" and getText("ContextMenu_Uses") .. " " or "") .. totalFoundCount .. '/' .. totalAmountNeeded;
             itemInfo[altGroupIndex] = {
                 AmountNeeded = totalAmountNeeded,
@@ -491,8 +526,14 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
             };
 
             if altGroupIndex > 1 then
-                table.insert(itemBuffer, " <LINE> " .. color .. getText("ContextMenu_or") .. " ");
+                table.insert(itemBuffer, " <LINE> <SETX:10> " .. color .. getText("ContextMenu_or") .. " ");
             end
+
+            local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(firstItemInstance);
+            if texNameOnly and BuildingMenu.show_item_icons then
+                table.insert(itemBuffer, "<IMAGE:" .. texNameOnly .."," .. 20*BuildingMenu.icon_scale .. "," .. 20*BuildingMenu.icon_scale .. ">");
+            end
+
             table.insert(itemBuffer, itemText);
         end
     end

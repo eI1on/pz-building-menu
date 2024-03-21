@@ -1220,6 +1220,9 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Security_Door = "보안 문",
   Tooltip_Security_Door = "비밀 코드가 있는 매우 안전한 문으로, 좀비를 속이고 생존자를 안전하게 보호합니다.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
+
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "3 타일 하얀 차고 문",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "3 타일 녹색 차고 문",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door = "3 타일 회색 차고 문",

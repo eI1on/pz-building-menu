@@ -1218,6 +1218,9 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Security_Door = "安保門",
   Tooltip_Security_Door = "帶有密碼鎖的極其安全的安保門，私密安全兩不誤。",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
+
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "3格白色車庫門",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "3格綠色車庫門",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "3格灰色車庫門",

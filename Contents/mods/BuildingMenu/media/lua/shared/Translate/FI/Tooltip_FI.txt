@@ -1219,6 +1219,9 @@ Tooltip_FI = {
   Tooltip_BuildingMenuObj_Security_Door = "Turvaovi",
   Tooltip_Security_Door = "Erittäin turvallinen ovi salaisella koodilla, joka pitää epäkuolleet arvaamassa ja selviytyjät turvassa.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
+
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "3 laatta Valkoinen autotallin ovi",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "3 laatta vihreä autotallin ovi",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "3 laatta Harmaa autotallin ovi",

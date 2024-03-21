@@ -286,14 +286,14 @@ renderFloorHelper | boolean | Value indicating that will render a helper wooden 
 
 **firstItem**:
 ```lua
-firstItem = "BlowTorch",
+"BlowTorch",
 ```
 
 <br>
 
 **secondItem**:
 ```lua
-secondItem = "WeldingMask",
+"WeldingMask",
 ```
 
 <br>

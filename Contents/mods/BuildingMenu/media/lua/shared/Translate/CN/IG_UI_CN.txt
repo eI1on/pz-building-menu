@@ -90,6 +90,8 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors    = "玻璃门",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "安保门",
 
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3格车库门",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4格车库门",
     IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",

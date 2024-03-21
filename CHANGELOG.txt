@@ -1,3 +1,18 @@
+21 MAR 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Improved tooltip generation for better performance
+[*] Added item icons in tooltips, including toggle and scale adjustments (via Mod Options)
+[*] Fixed ThreeTileSimpleFurniture throwing errors when trying to build them
+[*] Added bugs to fix later
+[*] Reorganized Sliding Doors into a separate subcategory and added Side Walls for them 
+[/list]
+[/list]
+
+
 12 MAR 24
 c37d0dd
 

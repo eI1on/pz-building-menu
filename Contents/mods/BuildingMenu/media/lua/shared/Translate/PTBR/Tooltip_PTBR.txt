@@ -1219,6 +1219,9 @@ Tooltip_PTBR = {
   Tooltip_BuildingMenuObj_Security_Door = "Porta de seguran?a",
   Tooltip_Security_Door = "Uma porta altamente segura com um c?digo secreto, mantendo os mortos-vivos e os sobreviventes seguros.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
+
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "Porta de garagem branca de 3 azulejos",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "Porta de garagem verde de 3 azulejos",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "Porta de garagem cinza de 3 azulejos",

@@ -90,6 +90,8 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Mga Pintuang Salamin",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Mga Pinto ng Seguridad",
 
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 Mga Tile na Pintuan ng Garahe",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 na mga Tiles na Pintuan ng Garahe",
     IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",

@@ -90,6 +90,8 @@ IGUI_CA = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Portes de vidre",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Portes de seguretat",
 
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Portes de garatge de 3 rajoles",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Portes de garatge de 4 rajoles",
     IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",

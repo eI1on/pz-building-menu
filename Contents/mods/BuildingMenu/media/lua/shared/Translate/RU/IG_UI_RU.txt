@@ -90,6 +90,8 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Стеклянные",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Дверь охраны",
 
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Гаражная на 3 клетки",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Гаражная на 4 клетки",
     IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",

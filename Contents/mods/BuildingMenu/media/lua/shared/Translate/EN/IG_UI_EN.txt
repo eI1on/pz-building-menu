@@ -4,6 +4,12 @@ IGUI_EN = {
 
     IGUI_BuildingMenuUI_Controls = "%1/%2 = Change Category     %3/%4 = Change Tabs     F = Favorite Category    ESC = Close",
 
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Display Item Icons",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Toggle to display or hide item icons within the tooltip.",
+    IGUI_BuildingMenuUI_IconScale = "Item Icon Size",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Adjusts the size of the item icons displayed in tooltips. <BR> A scale of '1' maintains the icon's original size (20 pixels), while '2' doubles it.",
+
     IGUI_BuildingMenuUI_Move_UI = "Move Window",
     IGUI_BuildingMenuUI_Stop_Move_UI = "Stop Moving Window",
     IGUI_BuildingMenuUI_Build = "Build",
@@ -106,6 +112,8 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Jail Doors",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Glass Doors",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Security Doors",
+    
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 Tiles Garage Doors",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 Tiles Garage Doors",

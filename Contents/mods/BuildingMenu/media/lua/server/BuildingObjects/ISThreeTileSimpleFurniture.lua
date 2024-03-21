@@ -270,6 +270,15 @@ function ISThreeTileSimpleFurniture:getSquare2Pos(square, north)
 end
 
 
+---Return the square for the second part of the furniture.
+---@param square IsoGridSquare The square of the main part.
+---@param north boolean Whether the furniture is facing north.
+---@return IsoGridSquare square Square for the second part of the furniture.
+function ISThreeTileSimpleFurniture:getSquare2(square, north)
+	local x, y, z = self:getSquare2Pos(square, north)
+	return getCell():getGridSquare(x, y, z)
+end
+
 ---Calculates the position of the third part of the furniture.
 ---@param square IsoGridSquare The square of the main part.
 ---@param north boolean Whether the furniture is facing north.

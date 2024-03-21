@@ -1354,6 +1354,41 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    
+    BuildingMenu.WhiteBigWoodWindowWallRecipe = {
+        neededTools = {
+            "Hammer",
+            "Paintbrush"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+            },
+            {
+                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Amount = glassPaneCount
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.PaintWhite",
+                Amount = 1
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+            }
+        }
+    }
+
+
     BuildingMenu.BrownSmallWoodWallRecipe = {
         neededTools = {
             "Hammer",

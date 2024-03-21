@@ -1242,8 +1242,6 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left = "Double Black Glass Door Left",
   Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door = "Single Pane Chestnut Door",
   Tooltip_BuildingMenuObj_Single_Pane_Black_Door = "Single Pane Black Door",
-  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "Brown Sliding Glass Door",
-  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "White Sliding Glass Door",
   Tooltip_BuildingMenuObj_Blue_Fossoil_Glass_Door = "Blue Fossoil Glass Door",
   Tooltip_BuildingMenuObj_Red_Gas2Go_Glass_Door = "Red Gas 2 Go Glass Door",
   Tooltip_BuildingMenuObj_Sea_Horse_Glass_Door = "Sea Horse Glass Door",
@@ -1259,6 +1257,11 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Security_Door = "Security Door",
   Tooltip_Security_Door = "A highly secure door with a secret code, keeping the undead guessing and survivors safe.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "Brown Sliding Glass Door",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "White Sliding Glass Door",
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
+  
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "3 Tiles White Garage Door",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "3 Tiles Green Garage Door",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "3 Tiles Gray Garage Door",

@@ -1,3 +1,5 @@
+---@class BuildingMenu
+local BuildingMenu = require("BuildingMenu01_Main")
 local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
 local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
 

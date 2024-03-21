@@ -90,6 +90,8 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Lasi Ovet",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Turvaovet",
 
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 laatta autotallin ovet",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4 laatta autotallin ovet",
     IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
