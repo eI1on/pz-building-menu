@@ -1,7 +1,7 @@
 Recipe_CH = {
     /* Make Glass Recipes */
     Recipe_BMPrepareGlassShards   = "預備玻璃用於融化",
-    Recipe_BMUnprepareGlassShards = "從烤盤中移除玻璃",
+    Recipe_BMUnprepareGlassShards = "BM 從烤盤中移除玻璃",
     Recipe_BMRemoveGlassPane      = "提取玻璃板",
 
     /* Smash Glass Recipes */
@@ -9,22 +9,6 @@ Recipe_CH = {
     Recipe_BMSmashGlassPane  = "砸碎玻璃",
     Recipe_BMSmashWindshield = "砸碎玻璃",
     Recipe_BMSmashWindows    = "砸碎玻璃",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "制作木制窗戶",
-    Recipe_BMMakeWindow02 = "制作白瓦窗戶",
-    Recipe_BMMakeWindow03 = "制作瓦片窗戶",
-    Recipe_BMMakeWindow04 = "制作白色窗戶",
-    Recipe_BMMakeWindow05 = "制作鉻合金窗戶",
-    Recipe_BMMakeWindow06 = "制作滑動窗戶",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "拆卸木制窗戶",
-    Recipe_BMDisassembleWindow02 = "拆卸白瓦窗戶",
-    Recipe_BMDisassembleWindow03 = "拆卸瓦片窗戶",
-    Recipe_BMDisassembleWindow04 = "拆卸白色窗戶",
-    Recipe_BMDisassembleWindow05 = "拆卸鉻合金窗戶",
-    Recipe_BMDisassembleWindow06 = "拆卸滑動窗戶",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1     = "制作標準型攩風玻璃",

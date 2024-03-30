@@ -1,30 +1,14 @@
 Recipe_JP = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "製錬用のガラスを準備する",
-    Recipe_BMUnprepareGlassShards = "ガラスを鍋から外します",
-    Recipe_BMRemoveGlassPane = "ガラス板を抽出する",
+    Recipe_BMPrepareGlassShards = "BM 製錬用のガラスを準備する",
+    Recipe_BMUnprepareGlassShards = "BM ガラスを鍋から外します",
+    Recipe_BMRemoveGlassPane = "BM ガラス板を抽出する",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "割れたガラスに激突",
     Recipe_BMSmashGlassPane = "割れたガラスに激突",
     Recipe_BMSmashWindshield = "割れたガラスに激突",
     Recipe_BMSmashWindows = "割れたガラスに激突",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "木製窓を作る",
-    Recipe_BMMakeWindow02 = "白いタイル張りの窓を作る",
-    Recipe_BMMakeWindow03 = "タイル状のウィンドウを作成する",
-    Recipe_BMMakeWindow04 = "白い窓を作る",
-    Recipe_BMMakeWindow05 = "Chrome ウィンドウを作成する",
-    Recipe_BMMakeWindow06 = "スライダーウィンドウの作成",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "木製窓を分解する",
-    Recipe_BMDisassembleWindow02 = "白いタイル張りの窓を分解する",
-    Recipe_BMDisassembleWindow03 = "タイル張りのウィンドウを分解する",
-    Recipe_BMDisassembleWindow04 = "白い窓を分解する",
-    Recipe_BMDisassembleWindow05 = "Chrome ウィンドウを逆アセンブルする",
-    Recipe_BMDisassembleWindow06 = "スライダーウィンドウを逆アセンブルする",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "標準フロントガラスを作成する",

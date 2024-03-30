@@ -1,30 +1,14 @@
 Recipe_NL = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Bereid glas voor op het smelten",
-    Recipe_BMUnprepareGlassShards = "Haal het glas uit de pan",
-    Recipe_BMRemoveGlassPane = "Glasruit eruit halen",
+    Recipe_BMPrepareGlassShards = "BM Bereid glas voor op het smelten",
+    Recipe_BMUnprepareGlassShards = "BM Haal het glas uit de pan",
+    Recipe_BMRemoveGlassPane = "BM Glasruit eruit halen",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "In gebroken glas slaan",
     Recipe_BMSmashGlassPane = "In gebroken glas slaan",
     Recipe_BMSmashWindshield = "In gebroken glas slaan",
     Recipe_BMSmashWindows = "In gebroken glas slaan",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Houten raam maken",
-    Recipe_BMMakeWindow02 = "Maak een wit betegeld raam",
-    Recipe_BMMakeWindow03 = "Maak een betegeld raam",
-    Recipe_BMMakeWindow04 = "Maak een wit venster",
-    Recipe_BMMakeWindow05 = "Chrome-venster maken",
-    Recipe_BMMakeWindow06 = "Maak een schuifvenster",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Houten raam demonteren",
-    Recipe_BMDisassembleWindow02 = "Demonteer het witte betegelde raam",
-    Recipe_BMDisassembleWindow03 = "Demonteer het betegelde raam",
-    Recipe_BMDisassembleWindow04 = "Demonteer het witte venster",
-    Recipe_BMDisassembleWindow05 = "Demonteer het Chromen raam",
-    Recipe_BMDisassembleWindow06 = "Demonteer het schuifvenster",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Maak een standaard voorruit",

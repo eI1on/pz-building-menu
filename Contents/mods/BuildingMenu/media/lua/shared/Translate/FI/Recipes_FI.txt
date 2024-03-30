@@ -1,30 +1,14 @@
 Recipe_FI = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Valmistele lasi sulatusta varten",
-    Recipe_BMUnprepareGlassShards = "Poista lasi pannulta",
-    Recipe_BMRemoveGlassPane = "Irrota lasi",
+    Recipe_BMPrepareGlassShards = "BM Valmistele lasi sulatusta varten",
+    Recipe_BMUnprepareGlassShards = "BM Poista lasi pannulta",
+    Recipe_BMRemoveGlassPane = "BM Irrota lasi",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Murskaa lasinsiruiksi",
     Recipe_BMSmashGlassPane = "Murskaa lasinsiruiksi",
     Recipe_BMSmashWindshield = "Murskaa lasinsiruiksi",
     Recipe_BMSmashWindows = "Murskaa lasinsiruiksi",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Tee puinen ikkuna",
-    Recipe_BMMakeWindow02 = "Tee valkoinen kaakeloitu ikkuna",
-    Recipe_BMMakeWindow03 = "Tee kaakeloitu ikkuna",
-    Recipe_BMMakeWindow04 = "Tee valkoinen ikkuna",
-    Recipe_BMMakeWindow05 = "Tee Chrome-ikkuna",
-    Recipe_BMMakeWindow06 = "Tee liukusäädinikkuna",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Pura puinen ikkuna",
-    Recipe_BMDisassembleWindow02 = "Pura valkoinen laattaikkuna",
-    Recipe_BMDisassembleWindow03 = "Pura kaakeloitu ikkuna",
-    Recipe_BMDisassembleWindow04 = "Pura valkoinen ikkuna",
-    Recipe_BMDisassembleWindow05 = "Pura Chrome-ikkuna",
-    Recipe_BMDisassembleWindow06 = "Pura liukusäädinikkuna",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Valmista tavallinen tuulilasi",

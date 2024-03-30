@@ -1,4 +1,21 @@
+ MAR 24
+
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] UI now saves the previous position and size
+[*] Added BM tag in front of glass making recipes to better distinguish duplicate recipes from other mods
+[*] Fixed glitched sandbox options when using Change Sandbox Options by 菜喵球BIBI
+[*] Fixed an issue where the empty favorite star incorrectly appeared on subcategory items when hovering over the tiles list
+[*] Fixed issue with High Fences that were Non Thumpable (only for newly built fences)
+[*] Removed redundant translation strings
+[/list]
+[/list]
+
 21 MAR 24
+79a32aa
 
 Changelog:
 [list]

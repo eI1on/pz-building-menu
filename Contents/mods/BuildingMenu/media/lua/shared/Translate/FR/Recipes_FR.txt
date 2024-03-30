@@ -1,30 +1,14 @@
 Recipe_FR = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Préparer le verre pour la fusion",
-    Recipe_BMUnprepareGlassShards = "Retirer le verre de la poêle",
-    Recipe_BMRemoveGlassPane = "Extraire la vitre",
+    Recipe_BMPrepareGlassShards = "BM Préparer le verre pour la fusion",
+    Recipe_BMUnprepareGlassShards = "BM Retirer le verre de la poêle",
+    Recipe_BMRemoveGlassPane = "BM Extraire la vitre",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Écraser pour en faire du verre brisé",
     Recipe_BMSmashGlassPane = "Écraser pour en faire du verre brisé",
     Recipe_BMSmashWindshield = "Écraser pour en faire du verre brisé",
     Recipe_BMSmashWindows = "Écraser pour en faire du verre brisé",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Fabriquer une fenêtre en bois",
-    Recipe_BMMakeWindow02 = "Fabriquer une fenêtre blanche à petits carreaux",
-    Recipe_BMMakeWindow03 = "Fabriquer une fenêtre à petits carreaux",
-    Recipe_BMMakeWindow04 = "Fabriquer une fenêtre blanche",
-    Recipe_BMMakeWindow05 = "Fabriquer une fenêtre chromée",
-    Recipe_BMMakeWindow06 = "Fabriquer une fenêtre coulissante",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Démonter la fenêtre en bois",
-    Recipe_BMDisassembleWindow02 = "Démonter la fenêtre blanche à petits carreaux",
-    Recipe_BMDisassembleWindow03 = "Démonter la fenêtre à petits carreaux",
-    Recipe_BMDisassembleWindow04 = "Démonter la fenêtre blanche",
-    Recipe_BMDisassembleWindow05 = "Démonter la fenêtre chromée",
-    Recipe_BMDisassembleWindow06 = "Démonter la fenêtre coulissante",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Fabriquer un pare-brise standard",

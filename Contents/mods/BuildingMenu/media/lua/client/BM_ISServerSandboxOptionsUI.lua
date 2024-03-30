@@ -1,19 +1,27 @@
-if not isClient() then return print("WARN: Sandbox UIPatch available only for multiplayer.") end
+-- if not isClient() then return print("WARN: Sandbox UIPatch available only for multiplayer."); end
 
----https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454
 local function ForcedSetY(self, y)
-	self.y = y;
-	if self.javaObject ~= nil then
-		self.javaObject:setY(y);
-	end
+    self.y = y;
+    if self.javaObject ~= nil then
+        self.javaObject:setY(y);
+    end
 end
 
-local old_createPanel = ISServerSandboxOptionsUI.createPanel
-local function new_createPanel(self, ...)
-	local old_setY = ISUIElement.setY
-	ISUIElement.setY = ForcedSetY
-	local status, panel = pcall(old_createPanel, self, ...)
-	ISUIElement.setY = old_setY
-	return panel
+local function overrideCreatePanel(UIObject)
+    local old_createPanel = UIObject.createPanel;
+    UIObject.createPanel = function(self, ...)
+        local old_setY = ISUIElement.setY;
+        ISUIElement.setY = ForcedSetY;
+        local status, panel = pcall(old_createPanel, self, ...);
+        ISUIElement.setY = old_setY;
+        assert(status, "[Building Menu Tweaks] Error while creating panel: " .. tostring(panel));
+        return panel;
+    end
 end
-ISServerSandboxOptionsUI.createPanel = new_createPanel
+
+Events.OnGameStart.Add(function ()
+    overrideCreatePanel(ISServerSandboxOptionsUI);
+    if ISServerSandboxOptionsUIover then
+        overrideCreatePanel(ISServerSandboxOptionsUIover);
+    end
+end)

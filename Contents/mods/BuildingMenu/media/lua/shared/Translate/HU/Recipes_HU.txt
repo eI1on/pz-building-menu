@@ -1,30 +1,14 @@
 Recipe_HU = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Készítse elő az üveget olvasztáshoz",
-    Recipe_BMUnprepareGlassShards = "Vegye ki az üveget a serpenyőből",
-    Recipe_BMRemoveGlassPane = "Szedje ki az üvegtáblát",
+    Recipe_BMPrepareGlassShards = "BM Készítse elő az üveget olvasztáshoz",
+    Recipe_BMUnprepareGlassShards = "BM Vegye ki az üveget a serpenyőből",
+    Recipe_BMRemoveGlassPane = "BM Szedje ki az üvegtáblát",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Törjük össze törött üveggel",
     Recipe_BMSmashGlassPane = "Törjük össze törött üveggel",
     Recipe_BMSmashWindshield = "Törjük össze törött üveggel",
     Recipe_BMSmashWindows = "Törjük össze törött üveggel",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Készítsen fából készült ablakot",
-    Recipe_BMMakeWindow02 = "Készítsen fehér csempézett ablakot",
-    Recipe_BMMakeWindow03 = "Készítsen csempézett ablakot",
-    Recipe_BMMakeWindow04 = "Készítsen fehér ablakot",
-    Recipe_BMMakeWindow05 = "Készítsen Chrome ablakot",
-    Recipe_BMMakeWindow06 = "Csúszka ablak létrehozása",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Szerelje szét a fa ablakot",
-    Recipe_BMDisassembleWindow02 = "Szerelje szét a fehér csempézett ablakot",
-    Recipe_BMDisassembleWindow03 = "Szerelje szét a csempézett ablakot",
-    Recipe_BMDisassembleWindow04 = "Szerelje szét a fehér ablakot",
-    Recipe_BMDisassembleWindow05 = "Szerelje szét a Chrome ablakot",
-    Recipe_BMDisassembleWindow06 = "Szerelje szét a csúszó ablakot",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Készítsen szabványos szélvédőt",

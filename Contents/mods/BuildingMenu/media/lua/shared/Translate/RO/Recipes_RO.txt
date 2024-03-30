@@ -1,30 +1,14 @@
 Recipe_RO = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Pregătiți Sticla pentru Topire",
-    Recipe_BMUnprepareGlassShards = "Scoateți Sticla din Tigaie",
-    Recipe_BMRemoveGlassPane = "Extrage Geamul de Sticlă",
+    Recipe_BMPrepareGlassShards = "BM Pregătiți Sticla pentru Topire",
+    Recipe_BMUnprepareGlassShards = "BM Scoateți Sticla din Tigaie",
+    Recipe_BMRemoveGlassPane = "BM Extrage Geamul de Sticlă",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Zdrobiți în Sticlă Spartă",
     Recipe_BMSmashGlassPane = "Zdrobiți în Sticlă Spartă",
     Recipe_BMSmashWindshield = "Zdrobiți în Sticlă Spartă",
     Recipe_BMSmashWindows = "Zdrobiți în Sticlă Spartă",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Faceți Fereastră din Lemn",
-    Recipe_BMMakeWindow02 = "Faceți Fereastră cu Gresie Albă",
-    Recipe_BMMakeWindow03 = "Faceți Fereastră cu Gresie",
-    Recipe_BMMakeWindow04 = "Faceți Fereastră Albă",
-    Recipe_BMMakeWindow05 = "Faceți Fereastră Chrome",
-    Recipe_BMMakeWindow06 = "Faceți Fereastră Slider",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Dezasamblați Fereastră din Lemn",
-    Recipe_BMDisassembleWindow02 = "Dezasamblați Fereastră cu Gresie Albă",
-    Recipe_BMDisassembleWindow03 = "Dezasamblați Fereastră cu Gresie",
-    Recipe_BMDisassembleWindow04 = "Dezasamblați Fereastră Albă",
-    Recipe_BMDisassembleWindow05 = "Dezasamblați Fereastră Chrome",
-    Recipe_BMDisassembleWindow06 = "Dezasamblați Fereastră Glisantă",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Faceți Parbriz Standard",

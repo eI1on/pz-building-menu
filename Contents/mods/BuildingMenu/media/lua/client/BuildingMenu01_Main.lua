@@ -27,12 +27,20 @@ BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip
 ---@type string
 BuildingMenu.textCanRotate = getText("Tooltip_craft_pressToRotate", Keyboard.getKeyName(getCore():getKey("Rotate building")));
 
----@type string
-BuildingMenu.ghs = " <RGB:" .. getCore():getGoodHighlitedColor():getR() .. "," .. getCore():getGoodHighlitedColor():getG() .. "," .. getCore():getGoodHighlitedColor():getB() .. "> ";
+local goodHighlightedColor = getCore():getGoodHighlitedColor();
+local badHighlightedColor = getCore():getBadHighlitedColor();
 
 ---@type string
-BuildingMenu.bhs = " <RGB:" .. getCore():getBadHighlitedColor():getR() .. "," .. getCore():getBadHighlitedColor():getG() .. "," .. getCore():getBadHighlitedColor():getB() .. "> ";
+BuildingMenu.ghsString = string.format("<RGB:%.4f,%.4f,%.4f>", goodHighlightedColor:getR(), goodHighlightedColor:getG(), goodHighlightedColor:getB());
 
+---@type string
+BuildingMenu.bhsString = string.format("<RGB:%.4f,%.4f,%.4f>", badHighlightedColor:getR(), badHighlightedColor:getG(), badHighlightedColor:getB());
+
+---@type table
+BuildingMenu.ghsTable = {goodHighlightedColor:getR(), goodHighlightedColor:getG(), goodHighlightedColor:getB()};
+
+---@type table
+BuildingMenu.bhsTable = {badHighlightedColor:getR(), badHighlightedColor:getG(), badHighlightedColor:getB()};
 
 BuildingMenu.icon_scale = 1;
 BuildingMenu.show_item_icons = true;
@@ -107,7 +115,7 @@ BuildingMenu.Tools = {
             'SOMW.SharpTrowel',
             'ToolsOfTheTrade.Adze', --Tools of the Trade
         },
-        tags = {'DigPlow'}
+        tags = {} --'DigPlow' > this includes shovels
     },
     Shovel = {
         types = {
@@ -192,18 +200,18 @@ BuildingMenu.GroupsAlternatives = {
 ---@param worldobjects table
 ---@param test boolean
 BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldobjects, test)
-    if getCore():getGameMode() == "LastStand" then return end
-    if test and ISWorldObjectContextMenu.Test then return true end
+    if getCore():getGameMode() == "LastStand" then return; end
+    if test and ISWorldObjectContextMenu.Test then return true; end
 
-    local playerObj = getSpecificPlayer(playerNum)
+    local playerObj = getSpecificPlayer(playerNum);
 
-    if playerObj:getVehicle() then return end
+    if playerObj:getVehicle() then return; end
 
 
     if BuildingMenu.getPlayerSkills(playerObj)["Woodwork"] > 7 or ISBuildMenu.cheat then
-        BuildingMenu.playerCanPlaster = true
+        BuildingMenu.playerCanPlaster = true;
     else
-        BuildingMenu.playerCanPlaster = false
+        BuildingMenu.playerCanPlaster = false;
     end
 
     local option = context:insertOptionBefore(getText("ContextMenu_Build"), getText("ContextMenu_BuildingMenu"), worldobjects, function()
@@ -213,19 +221,21 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldob
 
 end
 Events.OnFillWorldObjectContextMenu.Add(BuildingMenu.OnFillWorldObjectContextMenu)
-Events.OnGameBoot.Add(function() print("[Building Menu] ver:MAR_12_2024") end)
+Events.OnGameBoot.Add(function()
+    print("[Building Menu] ver:MAR_30_2024");
+end)
 
 --- Gets the player's skills.
 ---@param playerObj IsoPlayer
 ---@return table<string, number>
 BuildingMenu.getPlayerSkills = function(playerObj)
-    local skills = {}
-    local perks = PerkFactory.PerkList
+    local skills = {};
+    local perks = PerkFactory.PerkList;
     for i = 0, perks:size() - 1 do
-        local perkID = perks:get(i):getId()
-        skills[perkID] = playerObj:getPerkLevel(perks:get(i))
+        local perkID = perks:get(i):getId();
+        skills[perkID] = playerObj:getPerkLevel(perks:get(i));
     end
-    return skills
+    return skills;
 end
 
 --- Utility function for debug printing.
@@ -235,14 +245,14 @@ BuildingMenu.debugPrint = function(prefix, data)
     if type(data) == "table" then
         for key, value in pairs(data) do
             if type(value) == "table" then
-                print(prefix .. key .. ":")
-                BuildingMenu.debugPrint(prefix .. "\t", value)
+                print(prefix .. key .. ":");
+                BuildingMenu.debugPrint(prefix .. "\t", value);
             else
-                print(prefix .. key .. ": " .. tostring(value))
+                print(prefix .. key .. ": " .. tostring(value));
             end
         end
     else
-        print(prefix .. tostring(data))
+        print(prefix .. tostring(data));
     end
 end
 
@@ -251,7 +261,7 @@ end
 ---@param item InventoryItem
 ---@return boolean
 BuildingMenu.predicateNotBroken = function(item)
-    return not item:isBroken()
+    return not item:isBroken();
 end
 
 --- Predicate function to check if an item has a specific tag.
@@ -259,14 +269,14 @@ end
 ---@param tag string
 ---@return boolean
 BuildingMenu.predicateHasTag = function(item, tag)
-    return not item:isBroken() and item:hasTag(tag)
+    return not item:isBroken() and item:hasTag(tag);
 end
 
 --- Calculates the uses of a welding rod.
 ---@param torchUses number
 ---@return number
 BuildingMenu.weldingRodUses = function(torchUses)
-    return math.floor((torchUses + 0.1) / 2)
+    return math.floor((torchUses + 0.1) / 2);
 end
 
 --- Rounds a number to a specified number of decimal places.
@@ -276,49 +286,49 @@ end
 --- @return number num The rounded number.
 BuildingMenu.round = function(num, numDecimalPlaces)
     if numDecimalPlaces and numDecimalPlaces > 0 then
-        local multiplier = 10 ^ numDecimalPlaces
-        return math.floor(num * multiplier + 0.5) / multiplier
+        local multiplier = 10 ^ numDecimalPlaces;
+        return math.floor(num * multiplier + 0.5) / multiplier;
     end
 
-    local roundedNum = math.floor(num + 0.5)
-    return math.max(roundedNum, 1)
+    local roundedNum = math.floor(num + 0.5);
+    return math.max(roundedNum, 1);
 end
 
 --- Gets the display name of a moveable object.
 ---@param sprite string
 ---@return string|nil
 BuildingMenu.getMoveableDisplayName = function(sprite)
-    local props = getSprite(sprite):getProperties()
+    local props = getSprite(sprite):getProperties();
     if props:Is('CustomName') then
-        local name = props:Val('CustomName')
+        local name = props:Val('CustomName');
         if props:Is('GroupName') then
-            name = props:Val('GroupName') .. ' ' .. name
+            name = props:Val('GroupName') .. ' ' .. name;
         end
-        return Translator.getMoveableDisplayName(name)
+        return Translator.getMoveableDisplayName(name);
     end
-    return nil
+    return nil;
 end
 
 --- Checks if the player has a tool to build.
 ---@param inv ItemContainer
 ---@return boolean
 BuildingMenu.haveAToolToBuild = function(inv)
-    local toolInfo = BuildingMenu.Tools['Hammer']
+    local toolInfo = BuildingMenu.Tools['Hammer'];
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
             if inv:containsTypeEvalRecurse(type, BuildingMenu.predicateNotBroken) then
-                return true
+                return true;
             end
         end
     end
     if toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
             if inv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end) then
-                return true
+                return true;
             end
         end
     end
-    return false
+    return false;
 end
 
 --- Gets the available tool from the inventory.
@@ -326,20 +336,20 @@ end
 ---@param tool string
 ---@return InventoryItem|nil
 BuildingMenu.getAvailableTool = function(inv, tool)
-    local toolInfo = BuildingMenu.Tools[tool]
+    local toolInfo = BuildingMenu.Tools[tool];
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
-            local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
-            if item then return item end
+            local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken);
+            if item then return item; end
         end
     end
     if toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
-            local item = inv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
-            if item then return item end
+            local item = inv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end );
+            if item then return item; end
         end
     end
-    return nil
+    return nil;
 end
 
 --- Equips a primary tool for the player.
@@ -347,13 +357,13 @@ end
 ---@param playerNum number
 ---@param tool string
 BuildingMenu.equipToolPrimary = function(object, playerNum, tool)
-    local item = nil
-    local inv = getSpecificPlayer(playerNum):getInventory()
-    item = BuildingMenu.getAvailableTool(inv, tool)
-    if not item then return end
+    local item = nil;
+    local inv = getSpecificPlayer(playerNum):getInventory();
+    item = BuildingMenu.getAvailableTool(inv, tool);
+    if not item then return; end
 
-    ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), playerNum)
-    object.noNeedHammer = true
+    ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), playerNum);
+    object.noNeedHammer = true;
 end
 
 --- Equips a secondary tool for the player.
@@ -361,13 +371,13 @@ end
 ---@param playerNum number
 ---@param tool string
 BuildingMenu.equipToolSecondary = function(object, playerNum, tool)
-    local item = nil
-    local inv = getSpecificPlayer(playerNum):getInventory()
-    item = BuildingMenu.getAvailableTool(inv, tool)
-    if not item then return end
+    local item = nil;
+    local inv = getSpecificPlayer(playerNum):getInventory();
+    item = BuildingMenu.getAvailableTool(inv, tool);
+    if not item then return; end
     if instanceof(item, "Clothing") then
         if not item:isEquipped() then
-            ISInventoryPaneContextMenu.wearItem(item, playerNum)
+            ISInventoryPaneContextMenu.wearItem(item, playerNum);
         end
     else
         -- ISInventoryPaneContextMenu.equipWeapon(item, false, item:isTwoHandWeapon(), playerNum)
@@ -417,22 +427,14 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     local toolInfo = BuildingMenu.Tools[tool];
     local found = false;
     local itemText = "";
-
-    -- Attempt to get an instance of the tool to display its texture.
-    -- Outside of the found check to ensure it runs regardless of item presence.
-    local itemInstance = BuildingMenu.GetItemInstance(toolInfo.types and toolInfo.types[1]);
-    if itemInstance then
-        local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(itemInstance);
-        if texNameOnly and BuildingMenu.show_item_icons then
-            itemText = "<IMAGE:" .. texNameOnly .."," .. 20*BuildingMenu.icon_scale .. "," .. 20*BuildingMenu.icon_scale .. ">";
-        end
-    end
+    local itemInstance = nil;
 
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
-            local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken)
+            local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken);
             if item then
-                itemText = itemText .. BuildingMenu.ghs .. item:getName() .. ' <LINE>';
+                itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
+                itemInstance = item;
                 found = true;
                 break;
             end
@@ -441,21 +443,33 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
 
     if not found and toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
-            local item = playerInv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end )
+            local item = playerInv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end );
             if item then
-                itemText = itemText .. BuildingMenu.ghs .. item:getName() .. ' <LINE>';
+                itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
+                itemInstance = item;
                 found = true;
                 break;
             end
         end
     end
 
+    if not itemInstance then
+        itemInstance = BuildingMenu.GetItemInstance(toolInfo.types and toolInfo.types[1]);
+    end
+
+    if itemInstance then
+        local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(itemInstance);
+        if texNameOnly and BuildingMenu.show_item_icons then
+            itemText = "<IMAGE:" .. texNameOnly .."," .. 20*BuildingMenu.icon_scale .. "," .. 20*BuildingMenu.icon_scale .. ">" .. itemText;
+        end
+    end
+
     if not found then
         local defaultItemName = (toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool;
-        itemText = itemText .. BuildingMenu.bhs .. defaultItemName .. ' <LINE>';
+        itemText = itemText .. BuildingMenu.bhsString .. defaultItemName .. ' <LINE>';
         return itemText, false;
     end
-    return itemText, true
+    return itemText, true;
 end
 
 
@@ -500,17 +514,17 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
                 end
 
                 totalFoundCount = totalFoundCount + itemCount;
+                if itemCount > 0 and not firstItemInstance then
+                    firstItemInstance = item;
+                end
                 if itemCount >= 0 then
                     itemDetails[itemFullType] = itemCount;
-                    if not firstItemInstance then
-                        firstItemInstance = item;
-                    end
                 end
             end
         end
 
         local itemFound = totalFoundCount >= totalAmountNeeded;
-        local color = itemFound and BuildingMenu.ghs or BuildingMenu.bhs;
+        local color = itemFound and BuildingMenu.ghsString or BuildingMenu.bhsString;
         groupItemFound = groupItemFound or itemFound;
 
         if not firstItemInstance then
@@ -591,7 +605,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     local materialFoundIndexMatrix = {};
 
     if not objectRecipe then
-        tooltipDescription = tooltipDescription .. " <LINE>" .. BuildingMenu.bhs .." RECIPE IS NULL";
+        tooltipDescription = tooltipDescription .. " <LINE>" .. BuildingMenu.bhsString .." RECIPE IS NULL";
         return tooltipDescription, false, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
     end
 
@@ -659,10 +673,10 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
         local skillsTooltipDescription = "";
         for _, skill in pairs(objectRecipe.skills) do
             if playerSkills[skill.Skill] < skill.Level then
-                skillsTooltipDescription = BuildingMenu.bhs .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                skillsTooltipDescription = BuildingMenu.bhsString .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
                 canBuildResult = false;
             else
-                skillsTooltipDescription = BuildingMenu.ghs .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                skillsTooltipDescription = BuildingMenu.ghsString .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
             end
             tooltipDescription = tooltipDescription .. skillsTooltipDescription;
         end

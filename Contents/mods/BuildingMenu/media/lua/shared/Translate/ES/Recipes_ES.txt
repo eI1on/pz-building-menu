@@ -1,30 +1,14 @@
 Recipe_ES = {
     /* Recetas para Fabricar Cristal */
-    Recipe_BMPrepareGlassShards = "Preparar cristal para fundir",
-    Recipe_BMUnprepareGlassShards = "Quitar cristal de la sartén",
-    Recipe_BMRemoveGlassPane = "Extraer panel de cristal",
+    Recipe_BMPrepareGlassShards = "BM Preparar cristal para fundir",
+    Recipe_BMUnprepareGlassShards = "BM Quitar cristal de la sartén",
+    Recipe_BMRemoveGlassPane = "BM Extraer panel de cristal",
 
     /* Recetas para Romper Cristal */
     Recipe_BMSmashGlassJar = "Romper en cristal roto",
     Recipe_BMSmashGlassPane = "Romper en cristal roto",
     Recipe_BMSmashWindshield = "Romper en cristal roto",
     Recipe_BMSmashWindows = "Romper en cristal roto",
-
-    /* Recetas para Ventanas */
-    Recipe_BMMakeWindow01 = "Hacer Ventana de Madera",
-    Recipe_BMMakeWindow02 = "Hacer Ventana con Azulejos Blancos",
-    Recipe_BMMakeWindow03 = "Hacer Ventana con Azulejos",
-    Recipe_BMMakeWindow04 = "Hacer Ventana Blanca",
-    Recipe_BMMakeWindow05 = "Hacer Ventana Cromada",
-    Recipe_BMMakeWindow06 = "Hacer Ventana Corrediza",
-
-    /* Recetas para Desmontar Ventanas */
-    Recipe_BMDisassembleWindow01 = "Desmontar Ventana de Madera",
-    Recipe_BMDisassembleWindow02 = "Desmontar Ventana con Azulejos Blancos",
-    Recipe_BMDisassembleWindow03 = "Desmontar Ventana con Azulejos",
-    Recipe_BMDisassembleWindow04 = "Desmontar Ventana Blanca",
-    Recipe_BMDisassembleWindow05 = "Desmontar Ventana Cromada",
-    Recipe_BMDisassembleWindow06 = "Desmontar Ventana Corrediza",
 
     /* Recetas para Vehículos: Estándar */
     Recipe_BMWindshield1 = "Hacer Parabrisas Estándar",

@@ -1,30 +1,14 @@
 Recipe_IT = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Preparare il vetro per la fusione",
-    Recipe_BMUnprepareGlassShards = "Rimuovere il vetro dalla padella",
-    Recipe_BMRemoveGlassPane = "Estrarre il vetro",
+    Recipe_BMPrepareGlassShards = "BM Preparare il vetro per la fusione",
+    Recipe_BMUnprepareGlassShards = "BM Rimuovere il vetro dalla padella",
+    Recipe_BMRemoveGlassPane = "BM Estrarre il vetro",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Distruggi il vetro rotto",
     Recipe_BMSmashGlassPane = "Distruggi il vetro rotto",
     Recipe_BMSmashWindshield = "Distruggi il vetro rotto",
     Recipe_BMSmashWindows = "Distruggi il vetro rotto",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Realizza una finestra in legno",
-    Recipe_BMMakeWindow02 = "Crea una finestra piastrellata bianca",
-    Recipe_BMMakeWindow03 = "Crea una finestra piastrellata",
-    Recipe_BMMakeWindow04 = "Crea finestra bianca",
-    Recipe_BMMakeWindow05 = "Crea finestra Chrome",
-    Recipe_BMMakeWindow06 = "Crea finestra scorrevole",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Smontare la finestra in legno",
-    Recipe_BMDisassembleWindow02 = "Smontare la finestra piastrellata bianca",
-    Recipe_BMDisassembleWindow03 = "Smontare la finestra piastrellata",
-    Recipe_BMDisassembleWindow04 = "Smontare la finestra bianca",
-    Recipe_BMDisassembleWindow05 = "Smontare la finestra di Chrome",
-    Recipe_BMDisassembleWindow06 = "Smontare la finestra di scorrimento",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Realizza parabrezza standard",

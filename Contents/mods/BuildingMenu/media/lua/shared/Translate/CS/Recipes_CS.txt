@@ -1,30 +1,14 @@
 Recipe_CS = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Připravte sklo na tavení",
-    Recipe_BMUnprepareGlassShards = "Odstraňte sklo z pánve",
-    Recipe_BMRemoveGlassPane = "Extrahovaná skleněná tabule",
+    Recipe_BMPrepareGlassShards = "BM Připravte sklo na tavení",
+    Recipe_BMUnprepareGlassShards = "BM Odstraňte sklo z pánve",
+    Recipe_BMRemoveGlassPane = "BM Extrahovaná skleněná tabule",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Rozbít do rozbitého skla",
     Recipe_BMSmashGlassPane = "Rozbít do rozbitého skla",
     Recipe_BMSmashWindshield = "Rozbít do rozbitého skla",
     Recipe_BMSmashWindows = "Rozbít do rozbitého skla",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Vyrobte si dřevěné okno",
-    Recipe_BMMakeWindow02 = "Vyrobte okno s bílými dlaždicemi",
-    Recipe_BMMakeWindow03 = "Vytvořte dlaždicové okno",
-    Recipe_BMMakeWindow04 = "Vytvořte bílé okno",
-    Recipe_BMMakeWindow05 = "Vytvořte okno Chrome",
-    Recipe_BMMakeWindow06 = "Vytvořte posuvné okno",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Demontujte dřevěné okno",
-    Recipe_BMDisassembleWindow02 = "Demontujte okno s bílými dlaždicemi",
-    Recipe_BMDisassembleWindow03 = "Demontujte dlaždicové okno",
-    Recipe_BMDisassembleWindow04 = "Demontujte bílé okno",
-    Recipe_BMDisassembleWindow05 = "Demontujte Chrome Window",
-    Recipe_BMDisassembleWindow06 = "Demontujte posuvné okno",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Vytvořte standardní čelní sklo",

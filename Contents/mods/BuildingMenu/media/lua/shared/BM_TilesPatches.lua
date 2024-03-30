@@ -493,4 +493,19 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "CustomName", "Banner", false);
         props:CreateKeySet();
     end
+
+    sprites = {
+        "fencing_01_10",
+        "fencing_01_11",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.WallW);
+        BM_Utils.unsetSpriteProperty(props, "HitByCar");
+        BM_Utils.setSpriteProperty(props, "WallWTrans", "", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.WallWTrans);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.transparentW);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.NoWallLighting);
+        props:CreateKeySet();
+    end
 end)

@@ -69,8 +69,8 @@ function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
             self.tooltip.followMouse = false;
             self.tooltip:setX(self:getAbsoluteX() + tileCenterX);
             self.tooltip:setY(self:getAbsoluteY() + tileCenterY + self:getYScroll());
-            local borderColor = selectedObject.canBuild and { 0.6, 0, 1, 0 } or { 0.6, 1, 0, 0 };
-            self:drawRectBorder((self.selectedTileCol - 1) * TILE_WIDTH, (self.selectedTileRow - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, unpack(borderColor));
+            local borderColor = selectedObject.canBuild and BuildingMenu.ghsTable or BuildingMenu.bhsTable;
+            self:drawRectBorder((self.selectedTileCol - 1) * TILE_WIDTH, (self.selectedTileRow - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 0.6, unpack(borderColor));
             self:displayTooltip();
         else
             self:hideTooltip();
@@ -88,8 +88,8 @@ function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
         if c >= 0 and r >= 0 and r < maxRows and c < maxCols and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
             local selectedObject = self.posToObjectNameTable[r + 1][c + 1];
             self:updateTooltipContent(selectedObject);
-            local borderColor = selectedObject.canBuild and { 0.6, 0, 1, 0 } or { 0.6, 1, 0, 0 };
-            self:drawRectBorder(c * TILE_WIDTH, r * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, unpack(borderColor));
+            local borderColor = selectedObject.canBuild and BuildingMenu.ghsTable or BuildingMenu.bhsTable;
+            self:drawRectBorder(c * TILE_WIDTH, r * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 0.6, unpack(borderColor));
             self:displayTooltip();
         else
             self:hideTooltip();
@@ -397,16 +397,16 @@ end
 ---@param parent any
 ---@return BuildingMenuTilePickerList class
 function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
-    local o = ISPanel.new(self, x, y, w, h)
-    o.backgroundColor.a = 0.25;
-    o.subCatData = nil;
-    o.character = character;
-    o.posToObjectNameTable = {};
-    o.textureCache = {};
-    o.tooltip = nil;
-    o.message = nil;
-    o.overwriteIsThumpable = false;
-    o.parent = parent;
+    local o                  = ISPanel.new(self, x, y, w, h)
+    o.backgroundColor.a      = 0.25;
+    o.subCatData             = nil;
+    o.character              = character;
+    o.posToObjectNameTable   = {};
+    o.textureCache           = {};
+    o.tooltip                = nil;
+    o.message                = nil;
+    o.overwriteIsThumpable   = false;
+    o.parent                 = parent;
     return o;
 end
 
@@ -430,9 +430,25 @@ ISBuildingMenuUI.players                = {};
 --- Opens the Building Menu UI panel.
 ---@param playerObj IsoPlayer
 function ISBuildingMenuUI.openPanel(playerObj)
-    local BMUI = ISBuildingMenuUI.instance
+    local modData = playerObj:getModData();
+    local savedPosition = modData.BMUIPosition;
+    local width, height, x, y;
+
+    if savedPosition then
+        width = savedPosition.width;
+        height = savedPosition.height;
+        x = savedPosition.x;
+        y = savedPosition.y;
+    else
+        width = 570;
+        height = 400;
+        x = (getCore():getScreenWidth() / 2) + (width / 2);
+        y = (getCore():getScreenHeight() / 2) - (height / 2);
+    end
+
+    local BMUI = ISBuildingMenuUI.instance;
     if not BMUI then
-        local window = ISBuildingMenuUI:new(0, 0, 570, 400, playerObj);
+        local window = ISBuildingMenuUI:new(x, y, width, height, playerObj);
         window:initialise();
         window:addToUIManager();
         ISBuildingMenuUI.instance = window;
@@ -448,6 +464,9 @@ function ISBuildingMenuUI.openPanel(playerObj)
 end
 
 function ISBuildingMenuUI:close()
+    local modData = self.character:getModData();
+    modData.BMUIPosition = {x = self:getX(), y = self:getY(), width = self:getWidth(), height = self:getHeight()};
+
     ISBuildingMenuUI.instance = nil;
     self:setVisible(false);
     self:removeFromUIManager();
@@ -974,10 +993,6 @@ Events.OnKeyPressed.Add(ISBuildingMenuUI.onKeyPressed);
 ---@return ISBuildingMenuUI
 function ISBuildingMenuUI:new(x, y, width, height, character)
     local o = {};
-    if x == 0 and y == 0 then
-        x = (getCore():getScreenWidth() / 2) + (width / 2);
-        y = (getCore():getScreenHeight() / 2) - (height / 2);
-    end
     o = ISCollapsableWindowJoypad.new(self, x, y, width, height);
     o:setResizable(true);
 

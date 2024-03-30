@@ -94,7 +94,7 @@ function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
         isFavorite = favorites.subcategories[item.item.icon]
     end
 
-    if item.index == self.mouseoverselected and not self:isMouseOverScrollBar() and not self.parent.parent.tilesList:isMouseOver() then
+    if item.index == self.mouseoverselected and not self:isMouseOverScrollBar() and not self.parent.parent.tilesList:isMouseOver() and self:getMouseX() <= self:getWidth() then
         if self:getMouseX() >= buildingMenuTab:getFavoriteX(self.listType) then
             favoriteStar = isFavorite and buildingMenuTab.favCheckedTex or buildingMenuTab.favNotCheckedTex
             favoriteAlpha = 0.9
@@ -188,18 +188,18 @@ end
 ---@param buildingMenuUI ISBuildingMenuUI
 ---@return ISBuildingMenuTabUI
 function ISBuildingMenuTabUI:new(x, y, width, height, buildingMenuUI)
-    local o = ISPanelJoypad:new(x, y, width, height)
-    setmetatable(o, self)
-    self.__index = self
-    o.buildingMenuUI = buildingMenuUI
-    o.character = buildingMenuUI.character
-    o.tab = nil
-    o.categories = {}
-    o.favoriteStar = getTexture("media/ui/FavoriteStar.png");
-    o.favCheckedTex = getTexture("media/ui/FavoriteStarChecked.png");
-    o.favNotCheckedTex = getTexture("media/ui/FavoriteStarUnchecked.png");
-    o.favPadX = 10;
-    o.favWidth = o.favoriteStar and o.favoriteStar:getWidth() or 13
-    o:noBackground()
-    return o
+    local o = ISPanelJoypad:new(x, y, width, height);
+    setmetatable(o, self);
+    self.__index = self;
+    o.buildingMenuUI        = buildingMenuUI;
+    o.character             = buildingMenuUI.character;
+    o.tab                   = nil;
+    o.categories            = {};
+    o.favoriteStar          = getTexture("media/ui/FavoriteStar.png");
+    o.favCheckedTex         = getTexture("media/ui/FavoriteStarChecked.png");
+    o.favNotCheckedTex      = getTexture("media/ui/FavoriteStarUnchecked.png");
+    o.favPadX               = 10;
+    o.favWidth              = o.favoriteStar and o.favoriteStar:getWidth() or 13;
+    o:noBackground();
+    return o;
 end

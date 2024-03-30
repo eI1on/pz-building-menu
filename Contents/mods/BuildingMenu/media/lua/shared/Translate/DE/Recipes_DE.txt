@@ -1,30 +1,14 @@
 Recipe_DE = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Glas zum Schmelzen vorbereiten",
-    Recipe_BMUnprepareGlassShards = "Glas aus der Pfanne nehmen",
-    Recipe_BMRemoveGlassPane = "Glasscheibe herausziehen",
+    Recipe_BMPrepareGlassShards = "BM Glas zum Schmelzen vorbereiten",
+    Recipe_BMUnprepareGlassShards = "BM Glas aus der Pfanne nehmen",
+    Recipe_BMRemoveGlassPane = "BM Glasscheibe herausziehen",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "In Glasscherben zerschlagen",
     Recipe_BMSmashGlassPane = "In Glasscherben zerschlagen",
     Recipe_BMSmashWindshield = "In Glasscherben zerschlagen",
     Recipe_BMSmashWindows = "In Glasscherben zerschlagen",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Machen Sie ein Holzfenster",
-    Recipe_BMMakeWindow02 = "Machen Sie ein weiß gekacheltes Fenster",
-    Recipe_BMMakeWindow03 = "Machen Sie ein gekacheltes Fenster",
-    Recipe_BMMakeWindow04 = "Machen Sie ein weißes Fenster",
-    Recipe_BMMakeWindow05 = "Erstellen Sie ein Chrome-Fenster",
-    Recipe_BMMakeWindow06 = "Schiebefenster erstellen",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Holzfenster demontieren",
-    Recipe_BMDisassembleWindow02 = "Zerlegen Sie das weiß gekachelte Fenster",
-    Recipe_BMDisassembleWindow03 = "Kachelfenster demontieren",
-    Recipe_BMDisassembleWindow04 = "Weißes Fenster demontieren",
-    Recipe_BMDisassembleWindow05 = "Zerlegen Sie das Chrome-Fenster",
-    Recipe_BMDisassembleWindow06 = "Schiebefenster demontieren",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Machen Sie eine Standard-Windschutzscheibe",

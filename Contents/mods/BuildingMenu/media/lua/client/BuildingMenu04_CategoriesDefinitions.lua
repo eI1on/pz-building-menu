@@ -18580,8 +18580,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_01_58",
@@ -18642,8 +18642,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_01_10",
@@ -18681,8 +18681,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_01_72",
@@ -18740,8 +18740,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_01_66",
@@ -18805,8 +18805,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_01_82",
@@ -18850,7 +18850,7 @@ local function addHighFencesToMenu()
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
-                hoppable = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_01_90",

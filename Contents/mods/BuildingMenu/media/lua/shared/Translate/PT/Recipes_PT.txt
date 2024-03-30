@@ -1,30 +1,14 @@
 Recipe_PT = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Prepare o vidro para fundir",
-    Recipe_BMUnprepareGlassShards = "Retire o vidro da panela",
-    Recipe_BMRemoveGlassPane = "Extrair painel de vidro",
+    Recipe_BMPrepareGlassShards = "BM Prepare o vidro para fundir",
+    Recipe_BMUnprepareGlassShards = "BM Retire o vidro da panela",
+    Recipe_BMRemoveGlassPane = "BM Extrair painel de vidro",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Quebrar vidro quebrado",
     Recipe_BMSmashGlassPane = "Quebrar vidro quebrado",
     Recipe_BMSmashWindshield = "Quebrar vidro quebrado",
     Recipe_BMSmashWindows = "Quebrar vidro quebrado",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Faça janela de madeira",
-    Recipe_BMMakeWindow02 = "Faça uma janela com azulejos brancos",
-    Recipe_BMMakeWindow03 = "Faça uma janela de azulejos",
-    Recipe_BMMakeWindow04 = "Faça uma janela branca",
-    Recipe_BMMakeWindow05 = "Criar janela do Chrome",
-    Recipe_BMMakeWindow06 = "Criar janela deslizante",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Desmontar janela de madeira",
-    Recipe_BMDisassembleWindow02 = "Desmonte a janela de azulejos brancos",
-    Recipe_BMDisassembleWindow03 = "Desmontar janela de azulejos",
-    Recipe_BMDisassembleWindow04 = "Desmonte a janela branca",
-    Recipe_BMDisassembleWindow05 = "Desmontar janela do Chrome",
-    Recipe_BMDisassembleWindow06 = "Desmontar janela deslizante",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Faça um pára-brisa padrão",

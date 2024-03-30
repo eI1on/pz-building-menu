@@ -1,30 +1,14 @@
 Recipe_PH = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Maghanda ng baso para sa pagtunaw",
-    Recipe_BMUnprepareGlassShards = "Alisin ang baso mula sa kawali",
-    Recipe_BMRemoveGlassPane = "I-extract ang glass pane",
+    Recipe_BMPrepareGlassShards = "BM Maghanda ng baso para sa pagtunaw",
+    Recipe_BMUnprepareGlassShards = "BM Alisin ang baso mula sa kawali",
+    Recipe_BMRemoveGlassPane = "BM I-extract ang glass pane",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Basagin sa basag na salamin",
     Recipe_BMSmashGlassPane = "Basagin sa basag na salamin",
     Recipe_BMSmashWindshield = "Basagin sa basag na salamin",
     Recipe_BMSmashWindows = "Basagin sa basag na salamin",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Gumawa ng Wooden Window",
-    Recipe_BMMakeWindow02 = "Gumawa ng White Tiled Window",
-    Recipe_BMMakeWindow03 = "Gumawa ng Tiled Window",
-    Recipe_BMMakeWindow04 = "Gumawa ng White Window",
-    Recipe_BMMakeWindow05 = "Gumawa ng Chrome Window",
-    Recipe_BMMakeWindow06 = "Gumawa ng Slider Window",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "I-disassemble ang Wooden Window",
-    Recipe_BMDisassembleWindow02 = "I-disassemble ang White Tiled Window",
-    Recipe_BMDisassembleWindow03 = "I-disassemble ang Tiled Window",
-    Recipe_BMDisassembleWindow04 = "I-disassemble ang White Window",
-    Recipe_BMDisassembleWindow05 = "I-disassemble ang Chrome Window",
-    Recipe_BMDisassembleWindow06 = "I-disassemble ang Slider Window",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Gumawa ng Standard Windshield",

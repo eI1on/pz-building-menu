@@ -1,30 +1,14 @@
 Recipe_EN = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "Prepare glass for smelting",
-    Recipe_BMUnprepareGlassShards = "Remove glass from pan",
-    Recipe_BMRemoveGlassPane = "Extract glass pane",
+    Recipe_BMPrepareGlassShards = "BM Prepare glass for smelting",
+    Recipe_BMUnprepareGlassShards = "BM Remove glass from pan",
+    Recipe_BMRemoveGlassPane = "BM Extract glass pane",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Smash into broken glass",
     Recipe_BMSmashGlassPane = "Smash into broken glass",
     Recipe_BMSmashWindshield = "Smash into broken glass",
     Recipe_BMSmashWindows = "Smash into broken glass",
-
-    /* Window Recipes */
-    Recipe_BMMakeWindow01 = "Make Wooden Window",
-    Recipe_BMMakeWindow02 = "Make White Tiled Window",
-    Recipe_BMMakeWindow03 = "Make Tiled Window",
-    Recipe_BMMakeWindow04 = "Make White Window",
-    Recipe_BMMakeWindow05 = "Make Chrome Window",
-    Recipe_BMMakeWindow06 = "Make Slider Window",
-
-    /* Window Disassembly Recipes */
-    Recipe_BMDisassembleWindow01 = "Disassemble Wooden Window",
-    Recipe_BMDisassembleWindow02 = "Disassemble White Tiled Window",
-    Recipe_BMDisassembleWindow03 = "Disassemble Tiled Window",
-    Recipe_BMDisassembleWindow04 = "Disassemble White Window",
-    Recipe_BMDisassembleWindow05 = "Disassemble Chrome Window",
-    Recipe_BMDisassembleWindow06 = "Disassemble Slider Window",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Make Standard Windshield",

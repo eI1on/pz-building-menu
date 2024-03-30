@@ -18026,8 +18026,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "melos_tiles_fencing_02_50",
@@ -18070,8 +18070,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                hoppable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "melos_tiles_fencing_02_58",

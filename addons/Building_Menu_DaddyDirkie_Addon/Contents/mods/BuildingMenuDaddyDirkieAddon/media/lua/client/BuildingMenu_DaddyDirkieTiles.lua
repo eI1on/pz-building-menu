@@ -159,7 +159,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_ddd_01_10",
@@ -220,7 +221,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_ddd_01_18",
@@ -275,7 +277,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_ddd_01_34",
@@ -296,7 +299,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_ddd_01_39",
@@ -351,7 +355,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_ddd_01_26",
@@ -1970,7 +1975,7 @@ local function addCratesToMenu()
             {sprite = "furniture_storage_ddd_01_4", northSprite = "furniture_storage_ddd_01_4"}
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
@@ -2004,7 +2009,7 @@ local function addCratesToMenu()
             {sprite = "furniture_storage_ddd_01_9", northSprite = "furniture_storage_ddd_01_9"}
         ),
         BuildingMenu.createObject(
-            "",
+            "Tooltip_BuildingMenuObj_Pallet_White_Small_Locker",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,

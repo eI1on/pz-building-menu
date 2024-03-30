@@ -418,7 +418,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_Simon_MD_31",
@@ -508,7 +509,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_Simon_MD_43",
@@ -598,7 +600,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_Simon_MD_54",
@@ -647,7 +650,8 @@ local function addHighFencesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
-                blockAllTheSquare = false
+                blockAllTheSquare = false,
+                hoppable = false
             },
             {
                 sprite = "fencing_Simon_MD_62",
