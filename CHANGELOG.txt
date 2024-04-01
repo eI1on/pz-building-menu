@@ -1,5 +1,17 @@
- MAR 24
+1 APR 24
 
+Hotfix
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Removed redundant code from fixing High Fences which now made them see-through
+[/list]
+[/list]
+
+30 MAR 24
+4c52cad
 
 Changelog:
 [list]
