@@ -19,7 +19,7 @@ local function overrideCreatePanel(UIObject)
     end
 end
 
-Events.OnGameStart.Add(function ()
+Events.OnGameStart.Add(function()
     overrideCreatePanel(ISServerSandboxOptionsUI);
     if ISServerSandboxOptionsUIover then
         overrideCreatePanel(ISServerSandboxOptionsUIover);

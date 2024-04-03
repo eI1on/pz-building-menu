@@ -1,15 +1,15 @@
 require 'TimedActions/ISBaseTimedAction'
 
 ---@class ISToggleLight : ISBaseTimedAction
-ISToggleLight = ISBaseTimedAction:derive('ISToggleLight')
+ISToggleLight = ISBaseTimedAction:derive('ISToggleLight');
 
 --- Checks if the light source can be toggled.
 ---@return boolean
 function ISToggleLight:isValid()
   if self.lightSource:getSquare():haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier) or self.lightSource:isLightSourceOn() then
-    return true
+    return true;
   end
-  return false
+  return false;
 end
 
 function ISToggleLight:start()
@@ -19,19 +19,19 @@ function ISToggleLight:update()
 end
 
 function ISToggleLight:stop()
-  ISBaseTimedAction.stop(self)
+  ISBaseTimedAction.stop(self);
 end
 
 function ISToggleLight:perform()
   if isClient() then
-    local sq = self.lightSource:getSquare()
-    local args = {x = sq:getX(), y = sq:getY(), z = sq:getZ()}
-    sendClientCommand(self.character, 'object', 'toggleElectricLight', args)
+    local sq = self.lightSource:getSquare();
+    local args = { x = sq:getX(), y = sq:getY(), z = sq:getZ() };
+    sendClientCommand(self.character, 'object', 'toggleElectricLight', args);
   else
-    BM_Commands.addPole(self.lightSource:getSquare())
-    self.lightSource:toggleLightSource(not self.lightSource:isLightSourceOn())
+    BM_Commands.addPole(self.lightSource:getSquare());
+    self.lightSource:toggleLightSource(not self.lightSource:isLightSourceOn());
   end
-  ISBaseTimedAction.perform(self)
+  ISBaseTimedAction.perform(self);
 end
 
 --- Constructor for the ISToggleLight class.
@@ -40,10 +40,10 @@ end
 ---@param time integer
 ---@return ISToggleLight
 function ISToggleLight:new(character, lightSource, time)
-  local o = ISBaseTimedAction.new(self, character)
-  o.stopOnWalk = true
-  o.stopOnRun = true
-  o.maxTime = time
-  o.lightSource = lightSource
+  local o = ISBaseTimedAction.new(self, character);
+  o.stopOnWalk = true;
+  o.stopOnRun = true;
+  o.maxTime = time;
+  o.lightSource = lightSource;
   return o
 end

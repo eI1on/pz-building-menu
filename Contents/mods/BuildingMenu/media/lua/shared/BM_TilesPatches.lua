@@ -378,7 +378,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         props:CreateKeySet();
     end
 
-    
+
     sprites = {
         "floors_interior_carpet_01_0",
         "floors_interior_carpet_01_1",
@@ -407,7 +407,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         props:CreateKeySet();
     end
 
-    
+
     sprites = {
         "industry_01_37",
         "industry_01_38",

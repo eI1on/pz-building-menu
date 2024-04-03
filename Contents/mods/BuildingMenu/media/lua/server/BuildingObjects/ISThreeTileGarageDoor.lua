@@ -236,8 +236,8 @@ function ISThreeTileGarageDoor:partExists(square, index)
         local object = objects:get(i - 1)
         if
             IsoDoor.getGarageDoorIndex(object) == index and object:getNorth() == self.north and not object:IsOpen() and
-                object:getSprite():getName() == spriteName
-         then
+            object:getSprite():getName() == spriteName
+        then
             return true
         end
     end

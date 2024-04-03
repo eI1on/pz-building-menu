@@ -110,9 +110,9 @@ end
 
 function ISHighMetalFence:isValid(square)
     -- initial quick checks
-    if square:isVehicleIntersecting() or not self:haveMaterial(square) or 
-       not square:hasFloor(self.north) or 
-       (not self:partExists(square, 1) and not square:isFreeOrMidair(false)) then
+    if square:isVehicleIntersecting() or not self:haveMaterial(square) or
+        not square:hasFloor(self.north) or
+        (not self:partExists(square, 1) and not square:isFreeOrMidair(false)) then
         return false
     end
 
@@ -126,19 +126,19 @@ function ISHighMetalFence:isValid(square)
                 local properties = sprite:getProperties()
                 local spriteGrid = sprite:getSpriteGrid()
                 if (properties:Is(IsoFlagType.collideN) and self.north) or
-                   (properties:Is(IsoFlagType.collideW) and not self.north) or
-                   (spriteGrid and ((self.north and spriteGrid:getSpriteGridPosY(sprite) > 0) or
-                                    (not self.north and spriteGrid:getSpriteGridPosX(sprite) > 0))) then
+                    (properties:Is(IsoFlagType.collideW) and not self.north) or
+                    (spriteGrid and ((self.north and spriteGrid:getSpriteGridPosY(sprite) > 0) or
+                        (not self.north and spriteGrid:getSpriteGridPosX(sprite) > 0))) then
                     return false
                 end
             end
 
-            if instanceof(object, "IsoThumpable") and object:getNorth() == self.north and 
-               not object:isCorner() and not object:isFloor() and not object:isBlockAllTheSquare() then
+            if instanceof(object, "IsoThumpable") and object:getNorth() == self.north and
+                not object:isCorner() and not object:isFloor() and not object:isBlockAllTheSquare() then
                 return false
             end
 
-            if (instanceof(object, "IsoWindow") or instanceof(object, "IsoDoor")) and 
+            if (instanceof(object, "IsoWindow") or instanceof(object, "IsoDoor")) and
                 object:getNorth() == self.north then
                 return false
             end
@@ -155,8 +155,8 @@ function ISHighMetalFence:isValid(square)
     -- check adjacent square
     local xa, ya = self:getSquare2Pos(square, self.north)
     local squareA = getCell():getGridSquare(xa, ya, square:getZ())
-    if not squareA or not squareA:hasFloor(self.north) or 
-       (not self:partExists(squareA, 1) and not squareA:isFreeOrMidair(false)) then
+    if not squareA or not squareA:hasFloor(self.north) or
+        (not self:partExists(squareA, 1) and not squareA:isFreeOrMidair(false)) then
         return false
     end
 
@@ -168,7 +168,6 @@ function ISHighMetalFence:isValid(square)
 
     return true
 end
-
 
 function ISHighMetalFence:getSquare2Pos(square, north)
     local x = square:getX()

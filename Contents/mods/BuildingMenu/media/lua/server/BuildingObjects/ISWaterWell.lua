@@ -35,7 +35,7 @@ function ISWaterWell:create(x, y, z, north, sprite)
     self.javaObject:transmitCompleteItemToServer();
 end
 
-function ISWaterWell:new( sprite, northSprite, waterMax, player)
+function ISWaterWell:new(sprite, northSprite, waterMax, player)
     local o = {};
     setmetatable(o, self);
     self.__index = self;
@@ -72,29 +72,28 @@ function ISWaterWell:isValid(square)
     end
     if not ISWaterWell.shovelledFloorCanDig(square) then return false; end
     if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-	if not ISBuildingObject.isValid(self, square) then return false; end
-	if not buildUtil.canBePlace(self, square) then return false; end
+    if not ISBuildingObject.isValid(self, square) then return false; end
+    if not buildUtil.canBePlace(self, square) then return false; end
     return true;
 end
 
 function ISWaterWell.shovelledFloorCanDig(square)
-	if (not square) or (not square:getFloor()) then return false; end
-	if square:isInARoom() then return false; end
-	local floor = square:getFloor();
-	local sprites = floor:getModData() and floor:getModData().shovelledSprites;
-	if sprites then
-		for i=1,#sprites do
-			local sprite = sprites[i];
-			if luautils.stringStarts(sprite, "floors_exterior_natural") or luautils.stringStarts(sprite, "blends_natural_01") then
-				return true;
-			end
-		end
-		return false;
-	else
-		return true;
-	end
+    if (not square) or (not square:getFloor()) then return false; end
+    if square:isInARoom() then return false; end
+    local floor = square:getFloor();
+    local sprites = floor:getModData() and floor:getModData().shovelledSprites;
+    if sprites then
+        for i = 1, #sprites do
+            local sprite = sprites[i];
+            if luautils.stringStarts(sprite, "floors_exterior_natural") or luautils.stringStarts(sprite, "blends_natural_01") then
+                return true;
+            end
+        end
+        return false;
+    else
+        return true;
+    end
 end
-
 
 function ISWaterWell:render(x, y, z, square)
     ISBuildingObject.render(self, x, y, z, square);
@@ -130,7 +129,10 @@ function ISWaterWell.checkRain()
                     vB.waterAmount = math.min(vB.waterMax, vB.waterAmount + rainIntensity)
                     local obj = ISWaterWell.findObject(square)
                     if obj then
-                        noise('added rain to WaterWell at ' .. vB.x .. ',' .. vB.y .. ',' .. vB.z .. ' waterAmount=' .. vB.waterAmount .. ' rainIntensity=' .. rainIntensity);
+                        noise('added rain to WaterWell at ' ..
+                        vB.x ..
+                        ',' ..
+                        vB.y .. ',' .. vB.z .. ' waterAmount=' .. vB.waterAmount .. ' rainIntensity=' .. rainIntensity);
                         obj:setWaterAmount(vB.waterAmount);
                         obj:transmitModData();
                     end
@@ -150,7 +152,8 @@ function ISWaterWell.checkEveryHours()
                 vB.waterAmount = math.min(vB.waterMax, vB.waterAmount + ZombRand(1, 5))
                 local obj = ISWaterWell.findObject(square)
                 if obj then
-                    noise('added water to WaterWell at ' .. vB.x .. ',' .. vB.y .. ',' .. vB.z .. ' waterAmount=' .. vB.waterAmount);
+                    noise('added water to WaterWell at ' ..
+                    vB.x .. ',' .. vB.y .. ',' .. vB.z .. ' waterAmount=' .. vB.waterAmount);
                     obj:setWaterAmount(vB.waterAmount);
                     obj:transmitModData();
                 end
@@ -203,7 +206,8 @@ function ISWaterWell.loadRainWaterWell(WaterWellObject)
             square:getModData()['alwaysTakeWater'] = nil;
         end
         table.insert(ISWaterWell.WaterWells, WaterWell)
-        noise('new WaterWell created ' .. WaterWell.x .. ',' .. WaterWell.y .. ' with ' .. WaterWell.waterAmount .. ' water');
+        noise('new WaterWell created ' ..
+        WaterWell.x .. ',' .. WaterWell.y .. ' with ' .. WaterWell.waterAmount .. ' water');
     else
         noise('found existed WaterWell ' .. WaterWell.x .. ',' .. WaterWell.y .. ' with ' .. WaterWell.waterAmount);
         WaterWellObject:setWaterAmount(WaterWell.waterAmount);

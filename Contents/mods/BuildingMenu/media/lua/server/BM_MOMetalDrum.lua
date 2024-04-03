@@ -1,7 +1,7 @@
 if isClient() then return end
 
 local function genTable()
-	local ret = {[0] = {}, {}, {}, {}}
+	local ret = { [0] = {}, {}, {}, {} }
 	for i = 24, 27 do
 		ret["crafted_01_" .. i] = ret[i - 24]
 	end
@@ -39,7 +39,7 @@ MapObjects = fakeMapObjects
 
 local needle = "server/Map/MapObjects/MOMetalDrum.lua"
 for i = 0, getLoadedLuaCount() - 1 do
-	if getLoadedLua(i):sub(-#needle) == needle then
+	if getLoadedLua(i):sub(- #needle) == needle then
 		reloadLuaFile(getLoadedLua(i))
 		break
 	end

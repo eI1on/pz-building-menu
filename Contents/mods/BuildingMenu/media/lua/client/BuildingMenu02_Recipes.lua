@@ -1,5 +1,5 @@
 ---@class BuildingMenu
-local BuildingMenu = require("BuildingMenu01_Main")
+local BuildingMenu = require("BuildingMenu01_Main");
 
 
 -- Helper function to apply multipliers and create material entries
@@ -7,7 +7,8 @@ local function generateGroupAlternatives(groupAlternativesTable, baseCount, grou
     local newGroupAlternativesTable = {};
 
     for _, itemTable in pairs(groupAlternativesTable) do
-        table.insert(newGroupAlternativesTable, {[groupType] = itemTable.Item, Amount = BuildingMenu.round(baseCount * itemTable.Multiplier)});
+        table.insert(newGroupAlternativesTable,
+            { [groupType] = itemTable.Item, Amount = BuildingMenu.round(baseCount * itemTable.Multiplier) });
     end
 
     -- BuildingMenu.debugPrint("[Building Menu DEBUG] newGroupAlternativesTable ", newGroupAlternativesTable);
@@ -16,43 +17,44 @@ end
 
 
 local function initBuildingMenuRecipes()
-    local bigWallWoodCount = SandboxVars.BuildingMenuRecipes.bigWallWoodCount or 6
-    local bigWallNailsCount = SandboxVars.BuildingMenuRecipes.bigWallNailsCount or 8
+    local bigWallWoodCount = SandboxVars.BuildingMenuRecipes.bigWallWoodCount or 6;
+    local bigWallNailsCount = SandboxVars.BuildingMenuRecipes.bigWallNailsCount or 8;
 
-    local smallWallWoodCount = SandboxVars.BuildingMenuRecipes.smallWallWoodCount or 3
-    local smallWallNailsCount = SandboxVars.BuildingMenuRecipes.smallWallNailsCount or 4
-
-
-    local bigObjectsWoodCount = SandboxVars.BuildingMenuRecipes.bigObjectsWoodCount or 6
-    local bigObjectsNailsCount = SandboxVars.BuildingMenuRecipes.bigObjectsNailsCount or 10
-
-    local smallObjectsWoodCount = SandboxVars.BuildingMenuRecipes.smallObjectsWoodCount or 4
-    local smallObjectsNailsCount = SandboxVars.BuildingMenuRecipes.smallObjectsNailsCount or 6
+    local smallWallWoodCount = SandboxVars.BuildingMenuRecipes.smallWallWoodCount or 3;
+    local smallWallNailsCount = SandboxVars.BuildingMenuRecipes.smallWallNailsCount or 4;
 
 
-    local glassPaneCount = SandboxVars.BuildingMenuRecipes.glassPaneCount or 2
+    local bigObjectsWoodCount = SandboxVars.BuildingMenuRecipes.bigObjectsWoodCount or 6;
+    local bigObjectsNailsCount = SandboxVars.BuildingMenuRecipes.bigObjectsNailsCount or 10;
 
-    local metalBarsCount = SandboxVars.BuildingMenuRecipes.metalBarsCount or 4
-
-    local screwsCount = SandboxVars.BuildingMenuRecipes.screwsCount or 10
-
-    local sheetMetalCountForWalls = SandboxVars.BuildingMenuRecipes.sheetMetalCountForWalls or 5
-    local sheetMetalCountForDoors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4
-    local sheetMetalCountForContainers = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4
-    local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes.sheetMetalCountForFixturesAndAppliances or 4
-    local sheetMetalCountForRoofingAndFloors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors or 1
+    local smallObjectsWoodCount = SandboxVars.BuildingMenuRecipes.smallObjectsWoodCount or 4;
+    local smallObjectsNailsCount = SandboxVars.BuildingMenuRecipes.smallObjectsNailsCount or 6;
 
 
-    local bigObjectsCarpentrySkill = SandboxVars.BuildingMenuRecipes.bigObjectsCarpentrySkill or 5
-    local smallObjectsCarpentrySkill = SandboxVars.BuildingMenuRecipes.smallObjectsCarpentrySkill or 4
-    local carpentryXpPerLevel = SandboxVars.BuildingMenuRecipes.carpentryXpPerLevel or 2.5
-    local metalweldingXpPerLevel = SandboxVars.BuildingMenuRecipes.metalweldingXpPerLevel or 3.5
-    local electricalXpPerLevel = SandboxVars.BuildingMenuRecipes.electricalXpPerLevel or 5.0
+    local glassPaneCount = SandboxVars.BuildingMenuRecipes.glassPaneCount or 2;
+
+    local metalBarsCount = SandboxVars.BuildingMenuRecipes.metalBarsCount or 4;
+
+    local screwsCount = SandboxVars.BuildingMenuRecipes.screwsCount or 10;
+
+    local sheetMetalCountForWalls = SandboxVars.BuildingMenuRecipes.sheetMetalCountForWalls or 5;
+    local sheetMetalCountForDoors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
+    local sheetMetalCountForContainers = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
+    local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes
+    .sheetMetalCountForFixturesAndAppliances or 4;
+    local sheetMetalCountForRoofingAndFloors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors or 1;
 
 
-    local plankCountForMilitaryCrate = SandboxVars.BuildingMenuRecipes.plankCountForMilitaryCrate or 15
-    local nailsCountForMilitaryCrate = SandboxVars.BuildingMenuRecipes.nailsCountForMilitaryCrate or 10
-    local militaryCrateCarpentrySkill = SandboxVars.BuildingMenuRecipes.militaryCrateCarpentrySkill or 9
+    local bigObjectsCarpentrySkill = SandboxVars.BuildingMenuRecipes.bigObjectsCarpentrySkill or 5;
+    local smallObjectsCarpentrySkill = SandboxVars.BuildingMenuRecipes.smallObjectsCarpentrySkill or 4;
+    local carpentryXpPerLevel = SandboxVars.BuildingMenuRecipes.carpentryXpPerLevel or 2.5;
+    local metalweldingXpPerLevel = SandboxVars.BuildingMenuRecipes.metalweldingXpPerLevel or 3.5;
+    local electricalXpPerLevel = SandboxVars.BuildingMenuRecipes.electricalXpPerLevel or 5.0;
+
+
+    local plankCountForMilitaryCrate = SandboxVars.BuildingMenuRecipes.plankCountForMilitaryCrate or 15;
+    local nailsCountForMilitaryCrate = SandboxVars.BuildingMenuRecipes.nailsCountForMilitaryCrate or 10;
+    local militaryCrateCarpentrySkill = SandboxVars.BuildingMenuRecipes.militaryCrateCarpentrySkill or 9;
 
 
     BuildingMenu.GreyBigStoneWallRecipe = {
@@ -79,7 +81,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -108,7 +110,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -143,7 +145,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -176,7 +178,7 @@ local function initBuildingMenuRecipes()
             {
                 Consumable = "Base.PaintGreen",
                 Amount = 1
-            },        
+            },
             {
                 Consumable = "Base.Thread",
                 Amount = 5
@@ -186,7 +188,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -226,7 +228,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -259,7 +261,7 @@ local function initBuildingMenuRecipes()
             {
                 Consumable = "Base.PaintYellow",
                 Amount = 1
-            },        
+            },
             {
                 Consumable = "Base.Thread",
                 Amount = 5
@@ -269,7 +271,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -307,7 +309,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -340,7 +342,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -369,7 +371,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -398,7 +400,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -428,7 +430,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -457,7 +459,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -486,7 +488,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -515,7 +517,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -544,7 +546,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -573,7 +575,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -606,7 +608,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -639,7 +641,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -668,7 +670,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -697,7 +699,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -726,7 +728,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -755,7 +757,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -784,7 +786,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -813,7 +815,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -842,7 +844,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -871,7 +873,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -900,7 +902,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -929,7 +931,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -962,7 +964,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -995,7 +997,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1024,7 +1026,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1053,7 +1055,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1082,7 +1084,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1111,7 +1113,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1140,7 +1142,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1169,7 +1171,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1198,7 +1200,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1227,7 +1229,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1257,7 +1259,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1286,7 +1288,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1316,7 +1318,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1349,12 +1351,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
 
-    
+
     BuildingMenu.WhiteBigWoodWindowWallRecipe = {
         neededTools = {
             "Hammer",
@@ -1383,7 +1385,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1413,7 +1415,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1446,7 +1448,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1468,7 +1470,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1490,7 +1492,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1519,7 +1521,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1552,7 +1554,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1581,7 +1583,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1610,7 +1612,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1639,7 +1641,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1673,7 +1675,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1707,7 +1709,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1737,7 +1739,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1766,7 +1768,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1795,7 +1797,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1828,7 +1830,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1857,7 +1859,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1887,7 +1889,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1917,7 +1919,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1951,7 +1953,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -1985,7 +1987,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2015,7 +2017,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2048,7 +2050,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2077,7 +2079,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2110,7 +2112,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2143,7 +2145,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2177,7 +2179,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2211,7 +2213,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2248,7 +2250,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2282,7 +2284,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2319,7 +2321,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2360,7 +2362,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2398,7 +2400,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2436,7 +2438,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2477,7 +2479,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2514,7 +2516,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2548,7 +2550,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2582,7 +2584,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2605,7 +2607,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPane,
-                Amount = BuildingMenu.round(glassPaneCount*1.5)
+                Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
         },
         useConsumable = {
@@ -2622,7 +2624,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -2657,7 +2659,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -2672,11 +2674,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
+                Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
         },
         useConsumable = {
@@ -2693,7 +2695,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -2733,7 +2735,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -2747,15 +2749,15 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
+                Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
         },
         useConsumable = {
@@ -2772,7 +2774,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -2791,18 +2793,18 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
+                Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
         },
         skills = {
             {
                 Skill = "MetalWelding",
                 Level = 2,
-                Xp = BuildingMenu.round(2*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             },
         }
     }
@@ -2818,22 +2820,23 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount*0.75)
+                Amount = BuildingMenu.round(bigWallWoodCount * 0.75)
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
+                Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigWallNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigWallNailsCount * 0.75), "Material")
             },
         },
         useConsumable = {
@@ -2850,12 +2853,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2871,22 +2874,23 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallWallWoodCount*0.75)
+                Amount = BuildingMenu.round(smallWallWoodCount * 0.75)
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.25)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.25)
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.25)
+                Amount = BuildingMenu.round(metalBarsCount * 0.25)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallWallNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallWallNailsCount * 0.75), "Material")
             },
         },
         useConsumable = {
@@ -2903,12 +2907,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 2,
-                Xp = BuildingMenu.round(2*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2924,7 +2928,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount*1.5)
+                Amount = BuildingMenu.round(bigWallWoodCount * 1.5)
             },
             {
                 Material = "Base.SheetMetal",
@@ -2956,12 +2960,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 7,
-                Xp = BuildingMenu.round(7*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(7 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(bigObjectsCarpentrySkill*1.75),
-                Xp = BuildingMenu.round(1.75*bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill * 1.75),
+                Xp = BuildingMenu.round(1.75 * bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -2977,19 +2981,19 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallWallWoodCount*1.25)
+                Amount = BuildingMenu.round(smallWallWoodCount * 1.25)
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
+                Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.75)
+                Amount = BuildingMenu.round(screwsCount * 0.75)
             },
             {
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
@@ -3009,12 +3013,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 6,
-                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3027,17 +3031,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3049,21 +3054,22 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5)
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPane,
-                Amount = BuildingMenu.round(glassPaneCount*1.5)
+                Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3093,7 +3099,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3113,7 +3119,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPane,
-                Amount = BuildingMenu.round(glassPaneCount*0.5)
+                Amount = BuildingMenu.round(glassPaneCount * 0.5)
             },
             {
                 Material = "Base.Hinge",
@@ -3128,7 +3134,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3162,7 +3168,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3175,10 +3181,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
                 Material = "Base.Hinge",
@@ -3193,7 +3200,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3207,22 +3214,23 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForDoors*0.75) 
+                Amount = BuildingMenu.round(sheetMetalCountForDoors * 0.75)
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
+                Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
             {
                 Material = "Base.Hinge",
@@ -3247,12 +3255,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "MetalWelding",
                 Level = 2,
-                Xp = BuildingMenu.round(2*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3270,18 +3278,19 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForDoors*1.25)
+                Amount = BuildingMenu.round(sheetMetalCountForDoors * 1.25)
             },
             {
                 Material = "Base.MetalBar",
                 Amount = metalBarsCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
             {
                 Material = "Base.Hinge",
@@ -3306,12 +3315,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3328,11 +3337,11 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.75)
+                Amount = BuildingMenu.round(metalBarsCount * 0.75)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.75)
+                Amount = BuildingMenu.round(screwsCount * 0.75)
             },
             {
                 Material = "Base.Hinge",
@@ -3357,7 +3366,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3374,15 +3383,15 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.75)
+                Amount = BuildingMenu.round(metalBarsCount * 0.75)
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPane,
-                Amount = BuildingMenu.round(glassPaneCount*0.5)
+                Amount = BuildingMenu.round(glassPaneCount * 0.5)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.75)
+                Amount = BuildingMenu.round(screwsCount * 0.75)
             },
             {
                 Material = "Base.Hinge",
@@ -3407,7 +3416,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3420,15 +3429,15 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForDoors*0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForDoors * 0.5)
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*2)
+                Amount = BuildingMenu.round(metalBarsCount * 2)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*1.5)
+                Amount = BuildingMenu.round(screwsCount * 1.5)
             },
             {
                 Material = "Base.Hinge",
@@ -3453,7 +3462,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 6,
-                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3466,7 +3475,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForDoors*2)
+                Amount = BuildingMenu.round(sheetMetalCountForDoors * 2)
             },
             {
                 Material = "Base.MetalBar",
@@ -3474,7 +3483,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             },
             {
                 Material = "Base.Hinge",
@@ -3499,7 +3508,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 6,
-                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3511,17 +3520,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(1*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(1 * carpentryXpPerLevel)
             }
         }
     }
@@ -3533,17 +3543,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.75),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.75),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3555,17 +3566,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3578,7 +3590,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount*0.75)
+                Amount = BuildingMenu.round(bigWallWoodCount * 0.75)
             },
             {
                 Material = "Base.Screws",
@@ -3593,7 +3605,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3606,7 +3618,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.75)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.75)
             },
             {
                 Material = "Base.ScrapMetal",
@@ -3631,7 +3643,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3644,7 +3656,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
                 Material = "Base.ScrapMetal",
@@ -3669,7 +3681,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3682,7 +3694,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.75)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.75)
             },
             {
                 Material = "Base.ScrapMetal",
@@ -3711,7 +3723,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3725,7 +3737,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
                 Material = "Base.ScrapMetal",
@@ -3754,7 +3766,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3783,7 +3795,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3811,8 +3823,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(bigObjectsCarpentrySkill*0.75),
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill * 0.75),
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3825,10 +3837,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount*1.5)
+                Amount = BuildingMenu.round(bigWallWoodCount * 1.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigWallNailsCount*1.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigWallNailsCount * 1.5), "Material")
             },
         },
         useConsumable = {
@@ -3845,7 +3858,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3858,10 +3871,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallWallWoodCount*1.25)
+                Amount = BuildingMenu.round(smallWallWoodCount * 1.25)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigWallNailsCount*1.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigWallNailsCount * 1.5), "Material")
             },
         },
         useConsumable = {
@@ -3877,8 +3891,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(bigObjectsCarpentrySkill*0.75),
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill * 0.75),
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3899,8 +3913,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.75),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.75),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3914,15 +3928,15 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls*0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*0.5)
+                Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
         },
         useConsumable = {
@@ -3939,7 +3953,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3968,8 +3982,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -3981,17 +3995,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5),
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsWoodCount*0.25), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsWoodCount * 0.25), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4004,17 +4019,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*2.25),
+                Amount = BuildingMenu.round(bigObjectsWoodCount * 2.25),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigObjectsNailsCount*1.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigObjectsNailsCount * 1.5), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(bigObjectsCarpentrySkill*1.25),
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill * 1.25),
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4032,11 +4048,11 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*2)
+                Amount = BuildingMenu.round(metalBarsCount * 2)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*1.5)
+                Amount = BuildingMenu.round(screwsCount * 1.5)
             },
         },
         useConsumable = {
@@ -4053,7 +4069,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 6,
-                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4071,7 +4087,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             },
         },
         useConsumable = {
@@ -4088,7 +4104,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 2,
-                Xp = BuildingMenu.round(2*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4106,8 +4122,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4125,8 +4141,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4144,8 +4160,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4163,8 +4179,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4182,8 +4198,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4221,8 +4237,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4240,8 +4256,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4259,8 +4275,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4278,8 +4294,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4297,8 +4313,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.25),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4311,17 +4327,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount*0.5),
+                Amount = BuildingMenu.round(bigWallWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigWallNailsCount*0.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigWallNailsCount * 0.5), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4344,7 +4361,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4367,7 +4384,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4390,7 +4407,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4415,8 +4432,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4439,7 +4456,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = militaryCrateCarpentrySkill,
-                Xp = BuildingMenu.round(militaryCrateCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(militaryCrateCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4453,7 +4470,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPane,
-                Amount = BuildingMenu.round(glassPaneCount*2)
+                Amount = BuildingMenu.round(glassPaneCount * 2)
             },
             {
                 Material = "Base.MetalBar",
@@ -4478,7 +4495,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4492,11 +4509,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForContainers*1.25)
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 1.25)
             },
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForContainers*1.75)
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 1.75)
             },
             {
                 Material = "Base.Screws",
@@ -4517,7 +4534,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4540,7 +4557,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             }
         },
         useConsumable = {
@@ -4557,7 +4574,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4600,7 +4617,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4614,7 +4631,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPane,
-                Amount = BuildingMenu.round(glassPaneCount*2)
+                Amount = BuildingMenu.round(glassPaneCount * 2)
             },
             {
                 Material = "Base.SheetMetal",
@@ -4647,7 +4664,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 5,
-                Xp = BuildingMenu.round(5*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4662,15 +4679,15 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForContainers*0.75)
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 0.75)
             },
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForContainers*0.75)
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 0.75)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             }
         },
         useConsumable = {
@@ -4687,7 +4704,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 2,
-                Xp = BuildingMenu.round(2*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4705,11 +4722,11 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForContainers*1.25)
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 1.25)
             },
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForContainers*2)
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 2)
             },
             {
                 Material = "Base.Screws",
@@ -4730,7 +4747,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4756,7 +4773,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.5)
             }
         },
         useConsumable = {
@@ -4773,7 +4790,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -4799,8 +4816,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4822,7 +4839,8 @@ local function initBuildingMenuRecipes()
                 Amount = 2,
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*1.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 1.5), "Material")
             },
             {
                 Material = "Base.BucketEmpty",
@@ -4850,7 +4868,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4888,17 +4906,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5),
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4922,17 +4941,18 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*1.25),
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 1.25),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*1.25), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 1.25), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4954,7 +4974,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -4981,7 +5001,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Electricity",
                 Level = 4,
-                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
             }
         }
     }
@@ -4995,10 +5015,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*1.5),
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 1.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*1.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 1.5), "Material")
             },
             {
                 Material = "Base.ElectronicsScrap",
@@ -5017,12 +5038,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Electricity",
                 Level = 6,
-                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
             }
         }
     }
@@ -5036,10 +5057,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*2.5),
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 2.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*2.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 2.5), "Material")
             },
             {
                 Material = "Base.Screws",
@@ -5054,12 +5076,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = 8,
-                Xp = BuildingMenu.round(8*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(8 * carpentryXpPerLevel)
             }
         }
     }
 
-    
+
     BuildingMenu.GraveRecipe = {
         neededTools = {
             "Shovel"
@@ -5077,8 +5099,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -5169,10 +5191,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*1.25),
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 1.25),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
         useConsumable = {
@@ -5189,7 +5212,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Farming",
@@ -5211,10 +5234,11 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.5),
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
         useConsumable = {
@@ -5235,7 +5259,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Farming",
@@ -5300,7 +5324,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Electricity",
                 Level = 4,
-                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
             }
         }
     }
@@ -5322,7 +5346,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*1.25)
+                Amount = BuildingMenu.round(metalBarsCount * 1.25)
             },
             {
                 Material = "Base.ScrapMetal",
@@ -5351,12 +5375,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Electricity",
                 Level = 4,
-                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
             },
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5375,11 +5399,11 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.25)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 1.25)
             },
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.25)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 1.25)
             }
         },
         useConsumable = {
@@ -5396,7 +5420,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5415,11 +5439,11 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 2)
             },
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 2)
             }
         },
         useConsumable = {
@@ -5436,7 +5460,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 6,
-                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5451,7 +5475,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.5)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 1.5)
             },
             {
                 Material = "Base.MetalBar",
@@ -5459,7 +5483,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5476,7 +5500,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             },
         }
     }
@@ -5491,7 +5515,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.5)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 1.5)
             },
             {
                 Material = "Base.ElectronicsScrap",
@@ -5503,7 +5527,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5520,12 +5544,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 4,
-                Xp = BuildingMenu.round(4*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Electricity",
                 Level = 3,
-                Xp = BuildingMenu.round(3*electricalXpPerLevel)
+                Xp = BuildingMenu.round(3 * electricalXpPerLevel)
             },
         }
     }
@@ -5552,7 +5576,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5569,12 +5593,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Electricity",
                 Level = 3,
-                Xp = BuildingMenu.round(3*electricalXpPerLevel)
+                Xp = BuildingMenu.round(3 * electricalXpPerLevel)
             },
         }
     }
@@ -5590,7 +5614,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 2)
             },
             {
                 Material = "Base.ElectronicsScrap",
@@ -5602,7 +5626,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5619,12 +5643,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 6,
-                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Electricity",
                 Level = 4,
-                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
             },
         }
     }
@@ -5643,7 +5667,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*2)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 2)
             },
             {
                 Material = "Base.ElectronicsScrap",
@@ -5655,7 +5679,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5672,12 +5696,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 6,
-                Xp = BuildingMenu.round(6*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Electricity",
                 Level = 4,
-                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
             },
         }
     }
@@ -5692,7 +5716,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*1.75)
+                Amount = BuildingMenu.round(metalBarsCount * 1.75)
             },
             {
                 Material = "Base.Sheet",
@@ -5717,7 +5741,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5732,7 +5756,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*1.75)
+                Amount = BuildingMenu.round(metalBarsCount * 1.75)
             },
             {
                 Material = "Base.Screws",
@@ -5753,7 +5777,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5768,11 +5792,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*2.25)
+                Amount = BuildingMenu.round(metalBarsCount * 2.25)
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5789,7 +5813,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5804,7 +5828,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount*1.25)
+                Amount = BuildingMenu.round(metalBarsCount * 1.25)
             },
             {
                 Material = "Base.RippedSheets",
@@ -5829,7 +5853,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5851,7 +5875,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5868,7 +5892,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 7,
-                Xp = BuildingMenu.round(7*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(7 * metalweldingXpPerLevel)
             }
         }
     }
@@ -5883,7 +5907,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances*1.25)
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 1.25)
             },
             {
                 Material = "Base.ElectronicsScrap",
@@ -5899,7 +5923,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -5916,12 +5940,12 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Electricity",
                 Level = 4,
-                Xp = BuildingMenu.round(4*electricalXpPerLevel)
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
             }
         }
     }
@@ -5942,8 +5966,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.5),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -5955,7 +5979,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*1.25)
+                Amount = BuildingMenu.round(bigObjectsWoodCount * 1.25)
             },
             {
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
@@ -5965,7 +5989,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -5977,7 +6001,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*1.25)
+                Amount = BuildingMenu.round(bigObjectsWoodCount * 1.25)
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPane,
@@ -5991,7 +6015,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -6003,7 +6027,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*1.5)
+                Amount = BuildingMenu.round(bigObjectsWoodCount * 1.5)
             },
             {
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
@@ -6017,7 +6041,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = bigObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -6029,10 +6053,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*2)
+                Amount = BuildingMenu.round(bigObjectsWoodCount * 2)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigObjectsNailsCount*1.5), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigObjectsNailsCount * 1.5), "Material")
             },
             {
                 Material = "Base.Mattress",
@@ -6042,8 +6067,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(bigObjectsCarpentrySkill*1.25),
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill * 1.25),
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -6055,7 +6080,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*1.5)
+                Amount = BuildingMenu.round(bigObjectsWoodCount * 1.5)
             },
             {
                 Material = "Base.LeatherStrips",
@@ -6068,8 +6093,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(bigObjectsCarpentrySkill*1.25),
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill * 1.25),
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -6082,7 +6107,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigObjectsWoodCount*1.5)
+                Amount = BuildingMenu.round(bigObjectsWoodCount * 1.5)
             },
             {
                 Material = "Base.RippedSheets",
@@ -6101,8 +6126,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(bigObjectsCarpentrySkill*1.25),
-                Xp = BuildingMenu.round(bigObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(bigObjectsCarpentrySkill * 1.25),
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -6140,7 +6165,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -6167,7 +6192,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -6186,7 +6211,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForRoofingAndFloors*3)
+                Amount = BuildingMenu.round(sheetMetalCountForRoofingAndFloors * 3)
             },
             {
                 Material = "Base.RippedSheets",
@@ -6194,7 +6219,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount*2)
+                Amount = BuildingMenu.round(screwsCount * 2)
             }
         },
         useConsumable = {
@@ -6211,7 +6236,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "MetalWelding",
                 Level = 3,
-                Xp = BuildingMenu.round(3*metalweldingXpPerLevel)
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
             }
         }
     }
@@ -6224,17 +6249,18 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Log",
-                Amount = BuildingMenu.round(bigWallWoodCount*0.625)
+                Amount = BuildingMenu.round(bigWallWoodCount * 0.625)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigWallNailsCount*0.625), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigWallNailsCount * 0.625), "Material")
             },
         },
         skills = {
             {
                 Skill = "Woodwork",
                 Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -6246,7 +6272,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Log",
-                Amount = BuildingMenu.round(smallWallWoodCount*0.625)
+                Amount = BuildingMenu.round(smallWallWoodCount * 0.625)
             },
             {
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
@@ -6255,8 +6281,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.75),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.75),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
@@ -6279,7 +6305,7 @@ local function initBuildingMenuRecipes()
             {
                 Skill = "Woodwork",
                 Level = 1,
-                Xp = BuildingMenu.round(1*carpentryXpPerLevel)
+                Xp = BuildingMenu.round(1 * carpentryXpPerLevel)
             }
         }
     }
@@ -6292,10 +6318,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Log",
-                Amount = BuildingMenu.round(smallObjectsWoodCount*0.75)
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(smallObjectsNailsCount*0.75), "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
                 Material = "Base.Twigs",
@@ -6305,13 +6332,13 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "Woodwork",
-                Level = BuildingMenu.round(smallObjectsCarpentrySkill*0.75),
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill*carpentryXpPerLevel)
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.75),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
             }
         }
     }
 end
 
 Events.OnInitGlobalModData.Add(function()
-	initBuildingMenuRecipes()
+    initBuildingMenuRecipes()
 end)

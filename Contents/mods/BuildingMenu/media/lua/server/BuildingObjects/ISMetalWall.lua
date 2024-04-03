@@ -1,4 +1,4 @@
-require'BM_Utils'
+require 'BM_Utils'
 
 ISMetalWall = ISBuildingObject:derive("ISMetalWall");
 
@@ -13,19 +13,19 @@ function ISMetalWall:create(x, y, z, north, sprite)
 	buildUtil.setInfo(self.javaObject, self);
 	buildUtil.consumeMaterial(self);
 	if not self.health then
-        self.javaObject:setMaxHealth(self:getHealth());
-    else
-        self.javaObject:setMaxHealth(self.health);
-    end
-    self.javaObject:setHealth(self.javaObject:getMaxHealth());
-    self.javaObject:setName(self.name);
-	
-	self.javaObject:setBreakSound("BreakObject");
-	
-    self.sq:AddSpecialObject(self.javaObject, self:getObjectIndex());
-    self.sq:RecalcAllWithNeighbours(true);
+		self.javaObject:setMaxHealth(self:getHealth());
+	else
+		self.javaObject:setMaxHealth(self.health);
+	end
+	self.javaObject:setHealth(self.javaObject:getMaxHealth());
+	self.javaObject:setName(self.name);
 
- 	buildUtil.checkCorner(x,y,z,north,self, self.javaObject);
+	self.javaObject:setBreakSound("BreakObject");
+
+	self.sq:AddSpecialObject(self.javaObject, self:getObjectIndex());
+	self.sq:RecalcAllWithNeighbours(true);
+
+	buildUtil.checkCorner(x, y, z, north, self, self.javaObject);
 
 	self.javaObject:transmitCompleteItemToServer();
 end
@@ -46,27 +46,27 @@ end
 
 -- return the health of the new wall, it's 400 + 60 per metalwelding lvl + 100 for handy trait
 function ISMetalWall:getHealth()
-    return 400 + BM_Utils.getMetalHealth(self);
+	return 400 + BM_Utils.getMetalHealth(self);
 end
 
 function ISMetalWall:isValid(square)
 	if not self:haveMaterial(square) then return false end
 
---	if not buildUtil.canBePlace(self, square) then return false end
+	--	if not buildUtil.canBePlace(self, square) then return false end
 	if isClient() and SafeHouse.isSafeHouse(square, getSpecificPlayer(self.player):getUsername(), true) then
 		return false;
 	end
 
 	if square:isVehicleIntersecting() then return false end
 
-	for i=1,square:getObjects():size() do
-		local object = square:getObjects():get(i-1);
+	for i = 1, square:getObjects():size() do
+		local object = square:getObjects():get(i - 1);
 		local sprite = object:getSprite()
 		if (sprite and ((sprite:getProperties():Is(IsoFlagType.collideN) and self.north) or
 				(sprite:getProperties():Is(IsoFlagType.collideW) and not self.north))) or
-				((instanceof(object, "IsoThumpable") and (object:getNorth() == self.north)) and not object:isCorner() and not object:isFloor() and not object:isBlockAllTheSquare()) or
-				(instanceof(object, "IsoWindow") and object:getNorth() == self.north) or
-				(instanceof(object, "IsoDoor") and object:getNorth() == self.north) then
+			((instanceof(object, "IsoThumpable") and (object:getNorth() == self.north)) and not object:isCorner() and not object:isFloor() and not object:isBlockAllTheSquare()) or
+			(instanceof(object, "IsoWindow") and object:getNorth() == self.north) or
+			(instanceof(object, "IsoDoor") and object:getNorth() == self.north) then
 			return false;
 		end
 
@@ -85,11 +85,11 @@ function ISMetalWall:isValid(square)
 		end
 	end
 
-    if buildUtil.stairIsBlockingPlacement( square, true, (self.nSprite==4 or self.nSprite==2) ) then return false; end
+	if buildUtil.stairIsBlockingPlacement(square, true, (self.nSprite == 4 or self.nSprite == 2)) then return false; end
 
-    -- if we don't have floor we gonna check if there's a stairs under it, in this case we allow the build
+	-- if we don't have floor we gonna check if there's a stairs under it, in this case we allow the build
 	if not square:hasFloor(self.north) then
-		local belowSQ = getCell():getGridSquare(square:getX(), square:getY(), square:getZ()-1)
+		local belowSQ = getCell():getGridSquare(square:getX(), square:getY(), square:getZ() - 1)
 		if belowSQ then
 			if self.north and not belowSQ:HasStairsWest() then return false; end
 			if not self.north and not belowSQ:HasStairsNorth() then return false; end
@@ -104,8 +104,8 @@ function ISMetalWall:render(x, y, z, square)
 end
 
 function ISMetalWall:getObjectIndex()
-	for i = self.sq:getObjects():size(),1,-1 do
-		local object = self.sq:getObjects():get(i-1)
+	for i = self.sq:getObjects():size(), 1, -1 do
+		local object = self.sq:getObjects():get(i - 1)
 		local props = object:getProperties()
 		if props and props:Is(IsoFlagType.solidfloor) then
 			return i

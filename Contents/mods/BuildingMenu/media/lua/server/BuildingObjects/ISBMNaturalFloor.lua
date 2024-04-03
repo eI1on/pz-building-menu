@@ -6,12 +6,12 @@ ISBMNaturalFloor = ISBuildingObject:derive("ISBMNaturalFloor");
 --************************************************************************--
 
 function ISBMNaturalFloor:create(x, y, z, north, sprite)
-    self.sq = getWorld():getCell():getGridSquare(x, y, z)
-    if not self.sq then return end
-    local floor = self.sq:getFloor()
-    if not floor then return end
-    self.javaObject = self.sq:addFloor(sprite)
-    if not self.javaObject then return end
+	self.sq = getWorld():getCell():getGridSquare(x, y, z)
+	if not self.sq then return end
+	local floor = self.sq:getFloor()
+	if not floor then return end
+	self.javaObject = self.sq:addFloor(sprite)
+	if not self.javaObject then return end
 	if self.item then
 		local playerInv = self.character:getInventory()
 		for i = 1, self.uses do
@@ -25,11 +25,10 @@ function ISBMNaturalFloor:create(x, y, z, north, sprite)
 			self.item = playerInv:getFirstTypeRecurse(self.item:getFullType())
 		end
 	end
-    local playerNum = self.character:getPlayerNum()
-    getPlayerInventory(playerNum):refreshBackpacks()
-    getPlayerLoot(playerNum):refreshBackpacks()
+	local playerNum = self.character:getPlayerNum()
+	getPlayerInventory(playerNum):refreshBackpacks()
+	getPlayerLoot(playerNum):refreshBackpacks()
 end
-
 
 function ISBMNaturalFloor:new(sprite, northSprite, item, uses, character)
 	local o = {};
@@ -41,9 +40,9 @@ function ISBMNaturalFloor:new(sprite, northSprite, item, uses, character)
 	o.item = item;
 	o.uses = uses;
 	o.itemType = item and item:getFullType() or "none";
-    o.character = character;
-    o.noNeedHammer = true;
-    o.actionAnim = CharacterActionAnims.Pour;
+	o.character = character;
+	o.noNeedHammer = true;
+	o.actionAnim = CharacterActionAnims.Pour;
 	o.floorType = o:getFloorType(item);
 	o.craftingBank = "DropSoilFromDirtBag";
 	if o.floorType == "gravel" then
@@ -95,11 +94,11 @@ function ISBMNaturalFloor:getFloorType(item)
 	if not item then
 		return "none";
 	end
-	if item:getFullType()=="Base.Gravelbag" then
+	if item:getFullType() == "Base.Gravelbag" then
 		return "gravel";
-	elseif item:getFullType()=="Base.Dirtbag" then
+	elseif item:getFullType() == "Base.Dirtbag" then
 		return "dirt";
-	elseif item:getFullType()=="Base.Sandbag" then
+	elseif item:getFullType() == "Base.Sandbag" then
 		return "sand";
 	end
 	return "none";
@@ -114,8 +113,8 @@ function ISBMNaturalFloor.getFloorSpriteNames(square)
 			table.insert(sprites, sprite:getName())
 			local attached = floor:getAttachedAnimSprite()
 			if attached then
-				for i=1,attached:size() do
-					sprite = attached:get(i-1):getParentSprite()
+				for i = 1, attached:size() do
+					sprite = attached:get(i - 1):getParentSprite()
 					if sprite and sprite:getName() then
 						table.insert(sprites, sprite:getName())
 					end

@@ -18,9 +18,9 @@ ISThreeTileSimpleFurniture = ISBuildingObject:derive('ISThreeTileSimpleFurniture
 --  / \y-1/
 -- / x \ / > sprite or northSprite
 -- \ y / \
---  \ /x+1\  > northSprite2 
---    \ y / \ 
---     \ /x+2\  > northSprite3 
+--  \ /x+1\  > northSprite2
+--    \ y / \
+--     \ /x+2\  > northSprite3
 --       \ y /
 --        \ /
 
@@ -53,7 +53,6 @@ function ISThreeTileSimpleFurniture:new(sprite, sprite2, sprite3, northSprite, n
     return o
 end
 
-
 ---Creates and places the furniture in the game world.
 ---@param x number X-coordinate in the world.
 ---@param y number Y-coordinate in the world.
@@ -80,7 +79,6 @@ function ISThreeTileSimpleFurniture:create(x, y, z, north, sprite)
     buildUtil.consumeMaterial(self);
 end
 
-
 function ISThreeTileSimpleFurniture:addFurniturePart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell();
     self.sq = cell:getGridSquare(x, y, z);
@@ -91,24 +89,22 @@ function ISThreeTileSimpleFurniture:addFurniturePart(x, y, z, north, sprite, ind
     -- create the furniture part and set its properties
     self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
     buildUtil.setInfo(self.javaObject, self);
-	self.javaObject:setMaxHealth(self:getHealth());
-	self.javaObject:setHealth(self.javaObject:getMaxHealth());
+    self.javaObject:setMaxHealth(self:getHealth());
+    self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
     self.sq:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
 
-
 function ISThreeTileSimpleFurniture:walkTo(x, y, z)
-	local playerObj = getSpecificPlayer(self.player)
-	local square = getCell():getGridSquare(x, y, z)
-	local square2 = self:getSquare2(square, self.north)
-	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
-		return luautils.walkAdj(playerObj, square)
-	end
-	return luautils.walkAdj(playerObj, square2)
+    local playerObj = getSpecificPlayer(self.player)
+    local square = getCell():getGridSquare(x, y, z)
+    local square2 = self:getSquare2(square, self.north)
+    if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
+        return luautils.walkAdj(playerObj, square)
+    end
+    return luautils.walkAdj(playerObj, square2)
 end
-
 
 local function removeItemFromSquare(square)
     for i = 1, square:getSpecialObjects():size() do
@@ -135,11 +131,9 @@ function ISThreeTileSimpleFurniture:removeFromGround(square)
     end
 end
 
-
 function ISThreeTileSimpleFurniture:getHealth()
     return 300 + buildUtil.getWoodHealth(self);
 end
-
 
 function ISThreeTileSimpleFurniture:render(x, y, z, square)
     local spriteName = self:getSprite()
@@ -179,7 +173,6 @@ function ISThreeTileSimpleFurniture:render(x, y, z, square)
     self:renderPart(spriteAName, xa, ya, za, spriteAFree)
     self:renderPart(spriteBName, xb, yb, zb, spriteBFree)
 end
-
 
 ---Renders a part of the furniture.
 ---@param spriteName string The name of the sprite to render.
@@ -262,21 +255,20 @@ function ISThreeTileSimpleFurniture:getSquare2Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 1
+        x = x + 1
     else
-      y = y - 1
+        y = y - 1
     end
     return x, y, z
 end
-
 
 ---Return the square for the second part of the furniture.
 ---@param square IsoGridSquare The square of the main part.
 ---@param north boolean Whether the furniture is facing north.
 ---@return IsoGridSquare square Square for the second part of the furniture.
 function ISThreeTileSimpleFurniture:getSquare2(square, north)
-	local x, y, z = self:getSquare2Pos(square, north)
-	return getCell():getGridSquare(x, y, z)
+    local x, y, z = self:getSquare2Pos(square, north)
+    return getCell():getGridSquare(x, y, z)
 end
 
 ---Calculates the position of the third part of the furniture.
@@ -289,13 +281,12 @@ function ISThreeTileSimpleFurniture:getSquare3Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 2
+        x = x + 2
     else
-      y = y - 2
+        y = y - 2
     end
     return x, y, z
 end
-
 
 ---Checks if a part of the furniture already exists on a given square.
 ---@param square IsoGridSquare The square to check.

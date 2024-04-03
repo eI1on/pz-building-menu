@@ -16,7 +16,8 @@ function ISPaintAction:perform()
     local currentSpriteName = currentIsoSprite:getName();
     local newSpriteName = spriteMap[currentSpriteName];
 
-    if isDebugEnabled() then print("[Building Menu DEBUG] currentSpriteName: ", currentSpriteName, " newSpriteName:", newSpriteName); end
+    if isDebugEnabled() then print("[Building Menu DEBUG] currentSpriteName: ", currentSpriteName, " newSpriteName:",
+            newSpriteName); end
 
     if newSpriteName then
         self.thumpable:setSpriteFromName(newSpriteName);

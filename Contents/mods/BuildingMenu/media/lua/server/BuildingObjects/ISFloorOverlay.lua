@@ -7,31 +7,30 @@ ISFloorOverlay = ISBuildingObject:derive("ISFloorOverlay");
 function ISFloorOverlay:create(x, y, z, north, sprite)
 	self.sq = getWorld():getCell():getGridSquare(x, y, z);
 
-    local objects = self.sq:getObjects()
-    local objectsSize = objects:size()
-    local spriteInstance = getSprite(sprite):newInstance()
+	local objects = self.sq:getObjects()
+	local objectsSize = objects:size()
+	local spriteInstance = getSprite(sprite):newInstance()
 
-    for i = 0, objectsSize - 1 do
-        local object = objects:get(i)
-        local properties = object:getProperties()
-        if (properties and properties:Is(IsoFlagType.solidfloor)) or object:isFloor() then
-            local attachedAnimSprite = object:getAttachedAnimSprite()
-            if attachedAnimSprite == nil then
-                attachedAnimSprite = ArrayList:new()
-                object:setAttachedAnimSprite(attachedAnimSprite)
-            end
-            attachedAnimSprite:add(spriteInstance)
-            if isClient() then object:transmitUpdatedSpriteToServer() end
-        end
-    end
+	for i = 0, objectsSize - 1 do
+		local object = objects:get(i)
+		local properties = object:getProperties()
+		if (properties and properties:Is(IsoFlagType.solidfloor)) or object:isFloor() then
+			local attachedAnimSprite = object:getAttachedAnimSprite()
+			if attachedAnimSprite == nil then
+				attachedAnimSprite = ArrayList:new()
+				object:setAttachedAnimSprite(attachedAnimSprite)
+			end
+			attachedAnimSprite:add(spriteInstance)
+			if isClient() then object:transmitUpdatedSpriteToServer() end
+		end
+	end
 
 	buildUtil.consumeMaterial(self);
 
-    -- self.sq:disableErosion()
-    -- local args = { x = self.sq:getX(), y = self.sq:getY(), z = self.sq:getZ() }
-    -- sendClientCommand('erosion', 'disableForSquare', args)
+	-- self.sq:disableErosion()
+	-- local args = { x = self.sq:getX(), y = self.sq:getY(), z = self.sq:getZ() }
+	-- sendClientCommand('erosion', 'disableForSquare', args)
 end
-
 
 function ISFloorOverlay:new(sprite, northSprite)
 	local o = {};
@@ -56,10 +55,10 @@ function ISFloorOverlay:isValid(square)
 	for i = 0, square:getObjects():size() - 1 do
 		local item = square:getObjects():get(i);
 		if (item:getTextureName() and luautils.stringStarts(item:getTextureName(), "vegetation_farming")) or
-				(item:getSpriteName() and luautils.stringStarts(item:getSpriteName(), "vegetation_farming")) 
-				-- or not (item:getProperties() and item:getProperties():Is(IsoFlagType.solidfloor)) 
-					then
-						return false;
+			(item:getSpriteName() and luautils.stringStarts(item:getSpriteName(), "vegetation_farming"))
+		-- or not (item:getProperties() and item:getProperties():Is(IsoFlagType.solidfloor))
+		then
+			return false;
 		end
 	end
 	return square:connectedWithFloor();

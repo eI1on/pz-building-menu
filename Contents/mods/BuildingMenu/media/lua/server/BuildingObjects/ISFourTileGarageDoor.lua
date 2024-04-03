@@ -4,7 +4,8 @@ ISFourTileGarageDoor = ISBuildingObject:derive('ISFourTileGarageDoor')
 --** ISFourTileGarageDoor:new
 --**
 --************************************************************************--
-function ISFourTileGarageDoor:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
+function ISFourTileGarageDoor:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3,
+                                  northSprite4)
     local o = {}
     setmetatable(o, self)
     self.__index = self
@@ -20,9 +21,9 @@ function ISFourTileGarageDoor:new(sprite, sprite2, sprite3, sprite4, northSprite
     o.northSprite2 = northSprite2
     o.northSprite3 = northSprite3
     o.northSprite4 = northSprite4
-    
+
     o.consumedItems = {}
-	o.isDoor = true;
+    o.isDoor = true;
     o.isWallLike = true;
     o.thumpDmg = 5
     o.name = 'Big Garage Door'
@@ -39,11 +40,11 @@ function ISFourTileGarageDoor:create(x, y, z, north, sprite)
     local spriteAName = self.sprite2
     local spriteBName = self.sprite3
     local spriteCName = self.sprite4
-  
+
     if self.north then
-      spriteAName = self.northSprite2
-      spriteBName = self.northSprite3
-      spriteCName = self.northSprite4
+        spriteAName = self.northSprite2
+        spriteBName = self.northSprite3
+        spriteCName = self.northSprite4
     end
 
     self:addDoorPart(x, y, z, north, sprite, 1)
@@ -60,20 +61,20 @@ function ISFourTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
 
     self.javaObject = IsoDoor.new(cell, self.sq, sprite, north)
     self:overrideModData(index);
-	self.javaObject:setHealth(self:getHealth());
+    self.javaObject:setHealth(self:getHealth());
 
     if index == 1 then
         self.consumedItems = buildUtil.consumeMaterial(self)
     end
-  
+
     for _, item in ipairs(self.consumedItems) do
-      if item:getType() == 'Doorknob' and item:getKeyId() ~= -1 then
-        self.javaObject:setKeyId(item:getKeyId())
-      end
+        if item:getType() == 'Doorknob' and item:getKeyId() ~= -1 then
+            self.javaObject:setKeyId(item:getKeyId())
+        end
     end
 
-	self.sq:AddSpecialObject(self.javaObject);
-	self.javaObject:transmitCompleteItemToServer();
+    self.sq:AddSpecialObject(self.javaObject);
+    self.javaObject:transmitCompleteItemToServer();
 end
 
 function ISFourTileGarageDoor:getHealth()
@@ -151,15 +152,15 @@ function ISFourTileGarageDoor:render(x, y, z, square)
         spriteName = self:getSprite()
         local sprite = IsoSprite.new()
         sprite:LoadFramesNoDirPageSimple(spriteName)
-    
+
         local spriteFree = ISBuildingObject.isValid(self, square)
         if buildUtil.stairIsBlockingPlacement(square, true, self.north) then
-          spriteFree = false
+            spriteFree = false
         end
         if spriteFree then
-          sprite:RenderGhostTile(x, y, z)
+            sprite:RenderGhostTile(x, y, z)
         else
-          sprite:RenderGhostTileRed(x, y, z)
+            sprite:RenderGhostTileRed(x, y, z)
         end
     end
 
@@ -254,41 +255,39 @@ function ISFourTileGarageDoor:render(x, y, z, square)
     end
 end
 
-
 function ISFourTileGarageDoor:overrideModData(spriteIndex)
-	local modData = self.javaObject:getModData();
-	local modData2 = copyTable(modData);
-	for k,v in pairs(modData2) do
-		if luautils.stringStarts(k, "need:") then
-			local itemFullType = luautils.split(k, ":")[2];
-			local count = tonumber(v);
-			if itemFullType == "Base.Doorknob" then
-				if spriteIndex == 2 or spriteIndex == 3 then
-					modData[k] = "1";
-				else
-					modData[k] = nil;
-				end
-			elseif itemFullType == "Base.Hinge" then
-				if spriteIndex == 1 or spriteIndex == 4 then
-					modData[k] = tostring(math.floor(count / 2 + 0.01));
-				else
-					modData[k] = nil;
-				end
-			else
-				local count2 = math.floor(count / 4 + 0.01);
-				if (count % 4 ~= 0) and (spriteIndex <= count % 4) then
-					count2 = count2 + 1;
-				end
-				if count2 == 0 then
-					modData[k] = nil;
-				else
-					modData[k] = tostring(count2);
-				end
-			end
-		end
-	end
+    local modData = self.javaObject:getModData();
+    local modData2 = copyTable(modData);
+    for k, v in pairs(modData2) do
+        if luautils.stringStarts(k, "need:") then
+            local itemFullType = luautils.split(k, ":")[2];
+            local count = tonumber(v);
+            if itemFullType == "Base.Doorknob" then
+                if spriteIndex == 2 or spriteIndex == 3 then
+                    modData[k] = "1";
+                else
+                    modData[k] = nil;
+                end
+            elseif itemFullType == "Base.Hinge" then
+                if spriteIndex == 1 or spriteIndex == 4 then
+                    modData[k] = tostring(math.floor(count / 2 + 0.01));
+                else
+                    modData[k] = nil;
+                end
+            else
+                local count2 = math.floor(count / 4 + 0.01);
+                if (count % 4 ~= 0) and (spriteIndex <= count % 4) then
+                    count2 = count2 + 1;
+                end
+                if count2 == 0 then
+                    modData[k] = nil;
+                else
+                    modData[k] = tostring(count2);
+                end
+            end
+        end
+    end
 end
-
 
 function ISFourTileGarageDoor:getSquare2Pos(square, north)
     local x = square:getX()
@@ -296,9 +295,9 @@ function ISFourTileGarageDoor:getSquare2Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 1
+        x = x + 1
     else
-      y = y - 1
+        y = y - 1
     end
     return x, y, z
 end
@@ -309,9 +308,9 @@ function ISFourTileGarageDoor:getSquare3Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 2
+        x = x + 2
     else
-      y = y - 2
+        y = y - 2
     end
     return x, y, z
 end
@@ -322,9 +321,9 @@ function ISFourTileGarageDoor:getSquare4Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 3
+        x = x + 3
     else
-      y = y - 3
+        y = y - 3
     end
     return x, y, z
 end
@@ -334,10 +333,10 @@ function ISFourTileGarageDoor:partExists(square, index)
     local objects = square:getSpecialObjects()
 
     for i = 1, objects:size() do
-      local object = objects:get(i - 1)
-      if IsoDoor.getGarageDoorIndex(object) == index and object:getNorth() == self.north and not object:IsOpen() and object:getSprite():getName() == spriteName then
-        return true
-      end
+        local object = objects:get(i - 1)
+        if IsoDoor.getGarageDoorIndex(object) == index and object:getNorth() == self.north and not object:IsOpen() and object:getSprite():getName() == spriteName then
+            return true
+        end
     end
     return false
 end

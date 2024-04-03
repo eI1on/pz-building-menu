@@ -93,13 +93,13 @@ function ISDoubleMetalShelf:setInfo(square, north, sprite)
 
 	thumpable:createContainersFromSpriteProperties()
 
-	for i=1,thumpable:getContainerCount() do
-		thumpable:getContainerByIndex(i-1):setExplored(true)
+	for i = 1, thumpable:getContainerCount() do
+		thumpable:getContainerByIndex(i - 1):setExplored(true)
 	end
 
 	thumpable:setMaxHealth(self:getHealth());
 	thumpable:setHealth(thumpable:getMaxHealth())
-	
+
 	thumpable:setBreakSound("BreakObject");
 	square:AddSpecialObject(thumpable);
 	thumpable:transmitCompleteItemToServer();
@@ -147,48 +147,48 @@ end
 ---@param z number The z-coordinate (floor level).
 ---@param square IsoGridSquare The square where the shelf will be placed.
 function ISDoubleMetalShelf:render(x, y, z, square)
-    -- prepare the rendering for the first part of the shelf
-    local spriteName = self:getSprite();
-    if not self.RENDER_SPRITE then
-        self.RENDER_SPRITE = IsoSprite.new();
-    end
-    if self.RENDER_SPRITE_NAME ~= spriteName then
-        self.RENDER_SPRITE:LoadFramesNoDirPageSimple(spriteName);
-        self.RENDER_SPRITE_NAME = spriteName;
-    end
+	-- prepare the rendering for the first part of the shelf
+	local spriteName = self:getSprite();
+	if not self.RENDER_SPRITE then
+		self.RENDER_SPRITE = IsoSprite.new();
+	end
+	if self.RENDER_SPRITE_NAME ~= spriteName then
+		self.RENDER_SPRITE:LoadFramesNoDirPageSimple(spriteName);
+		self.RENDER_SPRITE_NAME = spriteName;
+	end
 
-    -- check validity for the first part of the shelf
-    local canPlaceFirstPart = self:checkSingleTileValidity(square);
+	-- check validity for the first part of the shelf
+	local canPlaceFirstPart = self:checkSingleTileValidity(square);
 
-    -- render the first part with appropriate color
-    if canPlaceFirstPart then
-        self.RENDER_SPRITE:RenderGhostTile(x, y, z);
-    else
-        self.RENDER_SPRITE:RenderGhostTileRed(x, y, z);
-    end
+	-- render the first part with appropriate color
+	if canPlaceFirstPart then
+		self.RENDER_SPRITE:RenderGhostTile(x, y, z);
+	else
+		self.RENDER_SPRITE:RenderGhostTileRed(x, y, z);
+	end
 
-    -- determine the position and sprite for the second part
-    local xa, ya, za = self:getSquare2Pos(square, self.north)
-    local spriteAName = self.north and self.northSprite2 or self.sprite2
-    local squareA = getCell():getGridSquare(xa, ya, za)
+	-- determine the position and sprite for the second part
+	local xa, ya, za = self:getSquare2Pos(square, self.north)
+	local spriteAName = self.north and self.northSprite2 or self.sprite2
+	local squareA = getCell():getGridSquare(xa, ya, za)
 
-    -- initialize and load the second part sprite
-    if not self.RENDER_SPRITE_A then
-        self.RENDER_SPRITE_A = IsoSprite.new()
-    end
-    self.RENDER_SPRITE_A:LoadFramesNoDirPageSimple(spriteAName)
+	-- initialize and load the second part sprite
+	if not self.RENDER_SPRITE_A then
+		self.RENDER_SPRITE_A = IsoSprite.new()
+	end
+	self.RENDER_SPRITE_A:LoadFramesNoDirPageSimple(spriteAName)
 
-    -- check validity for the second part of the shelf
-    local canPlaceSecondPart = self:checkSingleTileValidity(squareA)
-	
-    -- render the second part with appropriate color
-    if canPlaceSecondPart then
-        self.RENDER_SPRITE_A:RenderGhostTile(xa, ya, za)
-    else
-        self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za)
-    end
+	-- check validity for the second part of the shelf
+	local canPlaceSecondPart = self:checkSingleTileValidity(squareA)
 
-    -- optionally draw a floor helper for each part
+	-- render the second part with appropriate color
+	if canPlaceSecondPart then
+		self.RENDER_SPRITE_A:RenderGhostTile(xa, ya, za)
+	else
+		self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za)
+	end
+
+	-- optionally draw a floor helper for each part
 	if self.renderFloorHelper then
 		if not self.RENDER_SPRITE_FLOOR then
 			self.RENDER_SPRITE_FLOOR = IsoSprite.new()
@@ -217,12 +217,12 @@ local function checkSquare(squareToCheck, selfIsLow, selfIsHigh)
 				if objectProps and objectProps:Is(IsoFlagType.container) then
 					local objectIsLow = objectProps:Is("IsLow");
 					local objectIsHigh = objectProps:Is("IsHigh");
-	
+
 					-- if both objects are low or both are high, prevent placement
 					if (selfIsLow and objectIsLow) or (selfIsHigh and objectIsHigh) then
 						canPlace = false;
 					end
-	
+
 					-- if one object is low and the other is high, allow placement
 					if (selfIsLow and objectIsHigh) or (selfIsHigh and objectIsLow) then
 						--- this case is allowed, do nothing
@@ -241,14 +241,14 @@ end
 ---@param square IsoGridSquare The square to check.
 ---@return boolean
 function ISDoubleMetalShelf:checkSingleTileValidity(square)
-    if not square then return false end
-    if buildUtil.stairIsBlockingPlacement(square, true) then return false end
-    if square:isVehicleIntersecting() then return false end
-    if not square:isFreeOrMidair(true) then return false end
+	if not square then return false end
+	if buildUtil.stairIsBlockingPlacement(square, true) then return false end
+	if square:isVehicleIntersecting() then return false end
+	if not square:isFreeOrMidair(true) then return false end
 
-    local sharedSprite = getSprite(self:getSprite())
-    local selfProps = sharedSprite:getProperties()
-    local selfIsLow, selfIsHigh = selfProps:Is("IsLow"), selfProps:Is("IsHigh");
+	local sharedSprite = getSprite(self:getSprite())
+	local selfProps = sharedSprite:getProperties()
+	local selfIsLow, selfIsHigh = selfProps:Is("IsLow"), selfProps:Is("IsHigh");
 
 	return checkSquare(square, selfIsLow, selfIsHigh);
 end
@@ -257,21 +257,21 @@ end
 ---@param square IsoGridSquare The square to check for the first part.
 ---@return boolean
 function ISDoubleMetalShelf:isValid(square)
-    if not ISBuildingObject.isValid(self, square) or buildUtil.stairIsBlockingPlacement(square, true) or square:isVehicleIntersecting() then
-        return false
-    end
+	if not ISBuildingObject.isValid(self, square) or buildUtil.stairIsBlockingPlacement(square, true) or square:isVehicleIntersecting() then
+		return false
+	end
 
-    local xa, ya, za = self:getSquare2Pos(square, self.north)
-    local squareA = getCell():getGridSquare(xa, ya, za)
+	local xa, ya, za = self:getSquare2Pos(square, self.north)
+	local squareA = getCell():getGridSquare(xa, ya, za)
 
-    if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) or squareA:isVehicleIntersecting() then
-        return false
-    end
+	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) or squareA:isVehicleIntersecting() then
+		return false
+	end
 
-    local sharedSprite = getSprite(self:getSprite())
-    local selfProps = sharedSprite:getProperties()
-    local selfIsLow = selfProps:Is("IsLow")
-    local selfIsHigh = selfProps:Is("IsHigh")
+	local sharedSprite = getSprite(self:getSprite())
+	local selfProps = sharedSprite:getProperties()
+	local selfIsLow = selfProps:Is("IsLow")
+	local selfIsHigh = selfProps:Is("IsHigh")
 
 	return checkSquare(square, selfIsLow, selfIsHigh) and checkSquare(squareA, selfIsLow, selfIsHigh)
 end

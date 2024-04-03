@@ -13,9 +13,9 @@ function ISMannequin:create(x, y, z, north, sprite)
   self.javaObject:setMovedThumpable(true)
 
   self.javaObject:createContainersFromSpriteProperties()
-	for i=1,self.javaObject:getContainerCount() do
-		self.javaObject:getContainerByIndex(i-1):setExplored(true)
-	end
+  for i = 1, self.javaObject:getContainerCount() do
+    self.javaObject:getContainerByIndex(i - 1):setExplored(true)
+  end
 
   buildUtil.consumeMaterial(self);
   self.sq:AddSpecialObject(self.javaObject)
@@ -47,7 +47,7 @@ function ISMannequin:new(player, sprite)
   o.stopOnWalk = false
   o.stopOnRun = false
   o.blockAllTheSquare = false;
-	o.canBeAlwaysPlaced = true;
+  o.canBeAlwaysPlaced = true;
   o.maxTime = 800
   return o
 end

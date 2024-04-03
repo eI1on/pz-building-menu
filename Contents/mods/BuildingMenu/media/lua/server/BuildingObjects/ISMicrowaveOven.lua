@@ -37,7 +37,7 @@ function ISMicrowaveOven:new(player, name, sprite, northSprite)
   o.stopOnWalk = true
   o.stopOnRun = true
   o.blockAllTheSquare = false;
-	o.canBeAlwaysPlaced = false;
+  o.canBeAlwaysPlaced = false;
   o.maxTime = 250
   return o
 end

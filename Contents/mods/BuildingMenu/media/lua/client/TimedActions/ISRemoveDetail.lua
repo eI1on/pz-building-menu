@@ -2,7 +2,7 @@ require 'BuildingMenu01_Main'
 require "TimedActions/ISBaseTimedAction"
 
 local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
+local RemovableTrafficLineTiles = require 'BM_ValidTrafficLineTiles'
 
 ISRemoveDetail = ISBaseTimedAction:derive("ISRemoveDetail")
 
@@ -10,7 +10,7 @@ ISRemoveDetail = ISBaseTimedAction:derive("ISRemoveDetail")
 ---@return boolean true if valid, false otherwise.
 function ISRemoveDetail:isValid()
 	if self.removeType and not self:getRemovableObject(self.square) then
-		return false
+		return false;
 	end
 	return (self.weapon and self.weapon:getCondition() > 0) or not self.weapon;
 end
@@ -19,50 +19,46 @@ end
 ---@return boolean true to start the action, false otherwise.
 function ISRemoveDetail:waitToStart()
 	if self.removeType then
-		local object = self:getRemovableObject(self.square)
+		local object = self:getRemovableObject(self.square);
 		if object then
-			self.character:faceThisObject(object)
+			self.character:faceThisObject(object);
 		end
 	else
-		self.character:faceLocation(self.square:getX(), self.square:getY())
+		self.character:faceLocation(self.square:getX(), self.square:getY());
 	end
-	return self.character:shouldBeTurning()
+	return self.character:shouldBeTurning();
 end
 
 function ISRemoveDetail:update()
 	if self.removeType then
-		local object = self:getRemovableObject(self.square)
-		if object then self.character:faceThisObject(object) end
+		local object = self:getRemovableObject(self.square);
+		if object then self.character:faceThisObject(object); end
 	else
-		self.character:faceLocation(self.square:getX(), self.square:getY())
+		self.character:faceLocation(self.square:getX(), self.square:getY());
 	end
 
-	self.spriteFrame = self.character:getSpriteDef():getFrame()
+	self.spriteFrame = self.character:getSpriteDef():getFrame();
 
-    self.character:setMetabolicTarget(Metabolics.HeavyWork);
+	self.character:setMetabolicTarget(Metabolics.HeavyWork);
 end
 
 function ISRemoveDetail:start()
-    self.weapon = self.character:getPrimaryHandItem()
+	self.weapon = self.character:getPrimaryHandItem();
 	if self.removeType == "wallDetailing" then
-
-		self:setActionAnim("RemoveBushAxe")
+		self:setActionAnim("RemoveBushAxe");
 		self.sound = self.character:playSound(self.weapon:getDoorHitSound());
-
 	elseif self.removeType == "trafficLine" then
-
 		self:setActionAnim(ISFarmingMenu.getShovelAnim(self.weapon));
 		self.sound = self.character:playSound("DigFurrowWithTrowel");
-
 	end
-	addSound(self.character, self.character:getX(), self.character:getY(), self.character:getZ(), 20, 10)
+	addSound(self.character, self.character:getX(), self.character:getY(), self.character:getZ(), 20, 10);
 end
 
 function ISRemoveDetail:stop()
 	if self.sound and self.sound ~= 0 then
-        self.character:getEmitter():stopOrTriggerSound(self.sound)
-    end
-    ISBaseTimedAction.stop(self)
+		self.character:getEmitter():stopOrTriggerSound(self.sound);
+	end
+	ISBaseTimedAction.stop(self);
 end
 
 -- Handles animation events.
@@ -75,9 +71,9 @@ end
 ---@param square IsoGridSquare The square to search for the object.
 ---@return IsoObject object, number i The object and its index, or nil if not found.
 function ISRemoveDetail:getRemovableObject(square)
-	if not square then return nil end
+	if not square then return nil; end
 	for i = 1, square:getObjects():size() do
-        local o = square:getObjects():get(i - 1);
+		local o = square:getObjects():get(i - 1);
 		local attached = o:getAttachedAnimSprite();
 		if attached then
 			for n = 1, attached:size() do
@@ -92,31 +88,32 @@ function ISRemoveDetail:getRemovableObject(square)
 				end
 			end
 		end
-    end
+	end
 	return nil;
 end
 
 function ISRemoveDetail:perform()
-    if self.sound and self.sound ~= 0 then
-        self.character:getEmitter():stopOrTriggerSound(self.sound)
-    end
+	if self.sound and self.sound ~= 0 then
+		self.character:getEmitter():stopOrTriggerSound(self.sound);
+	end
 
-	local sq = self.square
-	local args = { x = sq:getX(), y = sq:getY(), z = sq:getZ(), removeType = self.removeType }
+	local sq = self.square;
+	local args = { x = sq:getX(), y = sq:getY(), z = sq:getZ(), removeType = self.removeType };
 
-	sendClientCommand(self.character, 'object', 'removeDetailing', args)
-    ISBaseTimedAction.perform(self)
+	sendClientCommand(self.character, 'object', 'removeDetailing', args);
+	ISBaseTimedAction.perform(self);
 end
 
 function ISRemoveDetail:useEndurance()
 	if self.weapon and self.weapon:isUseEndurance() then
-		local use = self.weapon:getWeight() * self.weapon:getFatigueMod(self.character) * self.character:getFatigueMod() * self.weapon:getEnduranceMod() * 0.1
-		local useChargeDelta = 1.0
-		use = use * useChargeDelta * 0.041
+		local use = self.weapon:getWeight() * self.weapon:getFatigueMod(self.character) * self.character:getFatigueMod() *
+		self.weapon:getEnduranceMod() * 0.1;
+		local useChargeDelta = 1.0;
+		use = use * useChargeDelta * 0.041;
 		if self.weapon:isTwoHandWeapon() and self.character:getSecondaryHandItem() ~= self.weapon then
-			use = use + self.weapon:getWeight() / 1.5 / 10 / 20
+			use = use + self.weapon:getWeight() / 1.5 / 10 / 20;
 		end
-		self.character:getStats():setEndurance(self.character:getStats():getEndurance() - use)
+		self.character:getStats():setEndurance(self.character:getStats():getEndurance() - use);
 	end
 end
 
@@ -143,8 +140,8 @@ function ISRemoveDetail:new(character, square, removeType)
 	else
 		o.removableTable = nil;
 	end
-    if character:isTimedActionInstant() then
-        o.maxTime = 1;
-    end
-	return o
+	if character:isTimedActionInstant() then
+		o.maxTime = 1;
+	end
+	return o;
 end

@@ -26,4 +26,3 @@ function ISRemovePlantCursor:getRemovableObject(square)
     end
     return originalGetRemovableObject(self, square)
 end
-

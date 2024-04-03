@@ -1,5 +1,5 @@
 CustomBarrelTiles = {
-    { prefix = "building_menu_barrels_02_"},
+    { prefix = "building_menu_barrels_02_" },
 }
 
 Events.OnLoadedTileDefinitions.Add(function()
@@ -20,4 +20,4 @@ Events.OnLoadedTileDefinitions.Add(function()
     end
 end)
 
-return {CustomBarrelTiles}
+return { CustomBarrelTiles }

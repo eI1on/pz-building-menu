@@ -1,12 +1,12 @@
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main")
 local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require'BM_ValidTrafficLineTiles'
+local RemovableTrafficLineTiles = require 'BM_ValidTrafficLineTiles'
 
 ISRemoveDetailCursor = ISBuildingObject:derive("ISRemoveDetailCursor")
 
 local function predicateHasTag(item, tag)
-    return not item:isBroken() and item:hasTag(tag);
+	return not item:isBroken() and item:hasTag(tag);
 end
 
 -- Create a new instance of ISRemoveDetailCursor.
@@ -71,7 +71,7 @@ end
 function ISRemoveDetailCursor:getRemovableObject(square)
 	if not square then return nil end
 	for i = 1, square:getObjects():size() do
-        local o = square:getObjects():get(i - 1);
+		local o = square:getObjects():get(i - 1);
 		local attached = o:getAttachedAnimSprite();
 		if attached then
 			for n = 1, attached:size() do
@@ -86,7 +86,7 @@ function ISRemoveDetailCursor:getRemovableObject(square)
 				end
 			end
 		end
-    end
+	end
 	return nil;
 end
 
@@ -126,5 +126,3 @@ function ISRemoveDetailCursor:new(character, removeType)
 	end
 	return o
 end
-
-

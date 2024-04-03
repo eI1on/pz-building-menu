@@ -21,9 +21,9 @@ ISFourTileSimpleFurniture = ISBuildingObject:derive("ISFourTileSimpleFurniture")
 --  / \y-1/
 -- / x \ / > sprite or northSprite
 -- \ y / \
---  \ /x+1\  > northSprite2 
---    \ y / \ 
---     \ /x+2\  > northSprite3 
+--  \ /x+1\  > northSprite2
+--    \ y / \
+--     \ /x+2\  > northSprite3
 --       \ y / \
 --        \ /x+3\ > northSprite4
 --          \ y /
@@ -39,7 +39,8 @@ ISFourTileSimpleFurniture = ISBuildingObject:derive("ISFourTileSimpleFurniture")
 ---@param northSprite3 string North-facing sprite for the third tile.
 ---@param northSprite4 string North-facing sprite for the fourth tile.
 ---@return ISFourTileSimpleFurniture
-function ISFourTileSimpleFurniture:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
+function ISFourTileSimpleFurniture:new(sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3,
+                                       northSprite4)
     local o = {};
     setmetatable(o, self);
     self.__index = self;
@@ -91,7 +92,6 @@ function ISFourTileSimpleFurniture:create(x, y, z, north, sprite)
     buildUtil.consumeMaterial(self);
 end
 
-
 ---Adds a furniture part to the world.
 ---@param x number X-coordinate in the world.
 ---@param y number Y-coordinate in the world.
@@ -109,8 +109,8 @@ function ISFourTileSimpleFurniture:addFurniturePart(x, y, z, north, sprite, inde
     -- create the furniture part and set its properties
     self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
     buildUtil.setInfo(self.javaObject, self);
-	self.javaObject:setMaxHealth(self:getHealth());
-	self.javaObject:setHealth(self.javaObject:getMaxHealth());
+    self.javaObject:setMaxHealth(self:getHealth());
+    self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
     self.sq:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
@@ -121,7 +121,6 @@ end
 function ISFourTileSimpleFurniture:getHealth()
     return 400 + buildUtil.getWoodHealth(self);
 end
-
 
 ---Renders the furniture object in the world.
 ---@param x number X-coordinate in the world.
@@ -248,7 +247,6 @@ function ISFourTileSimpleFurniture:isValid(square)
     return true
 end
 
-
 ---Calculates the position of the second part of the furniture.
 ---@param square IsoGridSquare The square of the main part.
 ---@param north boolean Whether the furniture is facing north.
@@ -259,9 +257,9 @@ function ISFourTileSimpleFurniture:getSquare2Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 1
+        x = x + 1
     else
-      y = y - 1
+        y = y - 1
     end
     return x, y, z
 end
@@ -276,9 +274,9 @@ function ISFourTileSimpleFurniture:getSquare3Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 2
+        x = x + 2
     else
-      y = y - 2
+        y = y - 2
     end
     return x, y, z
 end
@@ -293,9 +291,9 @@ function ISFourTileSimpleFurniture:getSquare4Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 3
+        x = x + 3
     else
-      y = y - 3
+        y = y - 3
     end
     return x, y, z
 end

@@ -41,23 +41,25 @@ end
 ---@param sprite string The sprite name.
 function BM_Utils.printPropNamesFromSprite(sprite)
     local isoSprite = IsoSpriteManager.instance:getSprite(sprite);
-    if not isoSprite then print("[Building Menu] NO Properties for ".. sprite); return; end;
+    if not isoSprite then
+        print("[Building Menu] NO Properties for " .. sprite); return;
+    end;
     local props = isoSprite:getProperties();
-    print("[Building Menu] Property Names for ".. sprite .." :", props:getPropertyNames());
-    print("[Building Menu] Flags List for ".. sprite .." :", props:getFlagsList());
+    print("[Building Menu] Property Names for " .. sprite .. " :", props:getPropertyNames());
+    print("[Building Menu] Flags List for " .. sprite .. " :", props:getFlagsList());
 end
 
 --- Calculates the health of metal buildings based on Metalwelding perk.
 ---@param ISItem ISBuildingObject
 ---@return number
 function BM_Utils.getMetalHealth(ISItem)
-	if not ISItem or not ISItem.player then
-		return 100;
-	end
-	local playerObj = getSpecificPlayer(ISItem.player)
-	local health = (playerObj:getPerkLevel(Perks.MetalWelding) * 60);
-	if playerObj:HasTrait("Handy") then
-		health = health + 100;
-	end
-	return health;
+    if not ISItem or not ISItem.player then
+        return 100;
+    end
+    local playerObj = getSpecificPlayer(ISItem.player)
+    local health = (playerObj:getPerkLevel(Perks.MetalWelding) * 60);
+    if playerObj:HasTrait("Handy") then
+        health = health + 100;
+    end
+    return health;
 end

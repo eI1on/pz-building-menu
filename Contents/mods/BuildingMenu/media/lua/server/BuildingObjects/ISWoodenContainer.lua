@@ -5,47 +5,47 @@ ISWoodenContainer = ISBuildingObject:derive("ISWoodenContainer");
 --**
 --************************************************************************--
 function ISWoodenContainer:create(x, y, z, north, sprite)
-	local cell = getWorld():getCell();
-	self.sq = cell:getGridSquare(x, y, z);
+    local cell = getWorld():getCell();
+    self.sq = cell:getGridSquare(x, y, z);
 
-	self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
-	buildUtil.setInfo(self.javaObject, self);
-	buildUtil.consumeMaterial(self);
+    self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+    buildUtil.setInfo(self.javaObject, self);
+    buildUtil.consumeMaterial(self);
 
-	self.javaObject:setMaxHealth(self:getHealth());
-	self.javaObject:setHealth(self.javaObject:getMaxHealth());
+    self.javaObject:setMaxHealth(self:getHealth());
+    self.javaObject:setHealth(self.javaObject:getMaxHealth());
 
-	self.javaObject:setBreakSound("BreakObject");
+    self.javaObject:setBreakSound("BreakObject");
 
-	local sharedSprite = getSprite(self:getSprite())
-	if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
-		local props = ISMoveableSpriteProps.new(sharedSprite)
-		self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq))
-	end
+    local sharedSprite = getSprite(self:getSprite())
+    if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
+        local props = ISMoveableSpriteProps.new(sharedSprite)
+        self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq))
+    end
 
     self.sq:AddSpecialObject(self.javaObject);
-	self.javaObject:transmitCompleteItemToServer();
+    self.javaObject:transmitCompleteItemToServer();
 end
 
 function ISWoodenContainer:new(sprite, northSprite)
-	local o = {};
-	setmetatable(o, self);
-	self.__index = self;
-	o:init();
-	o:setSprite(sprite);
-	o:setNorthSprite(northSprite);
-	o.isContainer = true;
-	o.blockAllTheSquare = true;
-	o.name = "Wooden Crate";
-	o.dismantable = true;
-	o.canBeAlwaysPlaced = true;
+    local o = {};
+    setmetatable(o, self);
+    self.__index = self;
+    o:init();
+    o:setSprite(sprite);
+    o:setNorthSprite(northSprite);
+    o.isContainer = true;
+    o.blockAllTheSquare = true;
+    o.name = "Wooden Crate";
+    o.dismantable = true;
+    o.canBeAlwaysPlaced = true;
     o.canBeLockedByPadlock = true;
-	o.buildLow = true;
-	return o;
+    o.buildLow = true;
+    return o;
 end
 
 function ISWoodenContainer:getHealth()
-	return 200 + buildUtil.getWoodHealth(self);
+    return 200 + buildUtil.getWoodHealth(self);
 end
 
 function ISWoodenContainer:isValid(square)
@@ -60,8 +60,8 @@ function ISWoodenContainer:isValid(square)
     end
 
     local selfProps = getSprite(self:getSprite()):getProperties();
-	local selfIsLow = selfProps:Is("IsLow");
-	local selfIsHigh = selfProps:Is("IsHigh");
+    local selfIsLow = selfProps:Is("IsLow");
+    local selfIsHigh = selfProps:Is("IsHigh");
     local canPlace = true;
 
     if square then
@@ -83,7 +83,7 @@ function ISWoodenContainer:isValid(square)
                 if (selfIsLow and objectIsHigh) or (selfIsHigh and objectIsLow) then
                     --- this case is allowed, do nothing
                 else
-					--- any other case, prevent placement
+                    --- any other case, prevent placement
                     canPlace = false;
                 end
             end
@@ -92,9 +92,9 @@ function ISWoodenContainer:isValid(square)
 
     if not canPlace then return false; end
 
-	return ISBuildingObject.isValid(self, square);
+    return ISBuildingObject.isValid(self, square);
 end
 
 function ISWoodenContainer:render(x, y, z, square)
-	ISBuildingObject.render(self, x, y, z, square);
+    ISBuildingObject.render(self, x, y, z, square);
 end

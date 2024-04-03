@@ -2,7 +2,7 @@ ISBarbecue = ISBuildingObject:derive('ISBarbecue')
 
 function ISBarbecue:create(x, y, z, north, sprite)
     local cell = getWorld():getCell()
-    
+
     self.sq = cell:getGridSquare(x, y, z)
     self.javaObject = IsoBarbecue.new(getCell(), self.sq, getSprite(sprite))
     self.javaObject:setMovedThumpable(true)
@@ -47,6 +47,6 @@ function ISBarbecue:new(player, name, sprite, northSprite)
     o.stopOnWalk = true
     o.stopOnRun = true
     o.maxTime = 500
-    
+
     return o
 end

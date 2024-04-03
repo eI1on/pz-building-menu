@@ -1,5 +1,5 @@
 ---@type function
-local getText = getText 
+local getText = getText
 ---@type function
 local pairs = pairs
 ---@type function
@@ -25,22 +25,25 @@ BuildingMenu.playerCanPlaster = false;
 BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip_craft_Needs') .. ': <LINE> ';
 
 ---@type string
-BuildingMenu.textCanRotate = getText("Tooltip_craft_pressToRotate", Keyboard.getKeyName(getCore():getKey("Rotate building")));
+BuildingMenu.textCanRotate = getText("Tooltip_craft_pressToRotate",
+    Keyboard.getKeyName(getCore():getKey("Rotate building")));
 
 local goodHighlightedColor = getCore():getGoodHighlitedColor();
 local badHighlightedColor = getCore():getBadHighlitedColor();
 
 ---@type string
-BuildingMenu.ghsString = string.format("<RGB:%.4f,%.4f,%.4f>", goodHighlightedColor:getR(), goodHighlightedColor:getG(), goodHighlightedColor:getB());
+BuildingMenu.ghsString = string.format("<RGB:%.4f,%.4f,%.4f>", goodHighlightedColor:getR(), goodHighlightedColor:getG(),
+    goodHighlightedColor:getB());
 
 ---@type string
-BuildingMenu.bhsString = string.format("<RGB:%.4f,%.4f,%.4f>", badHighlightedColor:getR(), badHighlightedColor:getG(), badHighlightedColor:getB());
+BuildingMenu.bhsString = string.format("<RGB:%.4f,%.4f,%.4f>", badHighlightedColor:getR(), badHighlightedColor:getG(),
+    badHighlightedColor:getB());
 
 ---@type table
-BuildingMenu.ghsTable = {goodHighlightedColor:getR(), goodHighlightedColor:getG(), goodHighlightedColor:getB()};
+BuildingMenu.ghsTable = { goodHighlightedColor:getR(), goodHighlightedColor:getG(), goodHighlightedColor:getB() };
 
 ---@type table
-BuildingMenu.bhsTable = {badHighlightedColor:getR(), badHighlightedColor:getG(), badHighlightedColor:getB()};
+BuildingMenu.bhsTable = { badHighlightedColor:getR(), badHighlightedColor:getG(), badHighlightedColor:getB() };
 
 BuildingMenu.icon_scale = 1;
 BuildingMenu.show_item_icons = true;
@@ -58,56 +61,56 @@ BuildingMenu.Tools = {
             'Base.HammerStone',
             'Base.BallPeenHammer',
             'Base.ClubHammer',
-            'ToolsOfTheTrade.BrickHammer', --Tools of the Trade
-            'ToolsOfTheTrade.StubbyHammer', --Tools of the Trade
-            'MWPWeapons.oxnailhammer', -- [Reworked] MWPWeapons
-            'MWPWeapons.fatmaxbrickhammer', -- [Reworked] MWPWeapons
+            'ToolsOfTheTrade.BrickHammer',     --Tools of the Trade
+            'ToolsOfTheTrade.StubbyHammer',    --Tools of the Trade
+            'MWPWeapons.oxnailhammer',         -- [Reworked] MWPWeapons
+            'MWPWeapons.fatmaxbrickhammer',    -- [Reworked] MWPWeapons
             'MWPWeapons.m48tacticalwarhammer', -- [Reworked] MWPWeapons
         },
-        tags = {'Hammer'}
+        tags = { 'Hammer' }
     },
     Sledgehammer = {
         types = {
             'Base.Sledgehammer',
             'Base.Sledgehammer2',
-            'ToolsOfTheTrade.PoliceBreachingHammer', --Tools of the Trade
-            'ToolsOfTheTrade.RailwaySpikeHammer', --Tools of the Trade
-            'ToolsOfTheTrade.WarHammer', --Tools of the Trade
-            'ToolsOfTheTrade.IndustrialBreachingHammer', --Tools of the Trade
-            'ToolsOfTheTrade.CoreHammer', --Tools of the Trade
-            'ToolsOfTheTrade.RailroadHammer', --Tools of the Trade
-            'ToolsOfTheTrade.RebarHammer', --Tools of the Trade
-            'ToolsOfTheTrade.DefilerSledgehammer', --Tools of the Trade
-            'ToolsOfTheTrade.DespoilerSledgehammer', --Tools of the Trade
-            'SWeapons.SalvagedSledgehammer', -- Scrap Weapons
-            'SWeapons.GearMace', -- Scrap Weapons
-            'SWeapons.HugeScrapPickaxe', -- Scrap Weapons
-            'MWPWeapons.roughneckgorillasledgehammer',-- [Reworked] MWPWeapons
+            'ToolsOfTheTrade.PoliceBreachingHammer',           --Tools of the Trade
+            'ToolsOfTheTrade.RailwaySpikeHammer',              --Tools of the Trade
+            'ToolsOfTheTrade.WarHammer',                       --Tools of the Trade
+            'ToolsOfTheTrade.IndustrialBreachingHammer',       --Tools of the Trade
+            'ToolsOfTheTrade.CoreHammer',                      --Tools of the Trade
+            'ToolsOfTheTrade.RailroadHammer',                  --Tools of the Trade
+            'ToolsOfTheTrade.RebarHammer',                     --Tools of the Trade
+            'ToolsOfTheTrade.DefilerSledgehammer',             --Tools of the Trade
+            'ToolsOfTheTrade.DespoilerSledgehammer',           --Tools of the Trade
+            'SWeapons.SalvagedSledgehammer',                   -- Scrap Weapons
+            'SWeapons.GearMace',                               -- Scrap Weapons
+            'SWeapons.HugeScrapPickaxe',                       -- Scrap Weapons
+            'MWPWeapons.roughneckgorillasledgehammer',         -- [Reworked] MWPWeapons
             'AuthenticZClothing.AuthenticTagillaSledgehammer', -- Authentic Z
-            'KWP.StoneSledgehammer', --- Kwin's Melee Weapon Pack
+            'KWP.StoneSledgehammer',                           -- Kwin's Melee Weapon Pack
         },
-        tags = {'Sledgehammer'}
+        tags = { 'Sledgehammer' }
     },
     Paintbrush = {
-        types = {'Base.Paintbrush'},
+        types = { 'Base.Paintbrush' },
         tags = {}
     },
     Screwdriver = {
         types = {
             'Base.Screwdriver',
-            'ToolsOfTheTrade.Multitool', --Tools of the Trade
+            'ToolsOfTheTrade.Multitool',      --Tools of the Trade
             'ToolsOfTheTrade.SpiffArmyKnife', --Tools of the Trade
         },
-        tags = {'Screwdriver'}
+        tags = { 'Screwdriver' }
     },
     Saw = {
         types = {
             'Base.Saw',
             'Base.GardenSaw',
-            'ToolsOfTheTrade.Backsaw', -- Tools of the Trade
+            'ToolsOfTheTrade.Backsaw',  -- Tools of the Trade
             'ToolsOfTheTrade.RyobaSaw', -- Tools of the Trade
         },
-        tags = {'Saw'}
+        tags = { 'Saw' }
     },
     HandShovel = {
         types = {
@@ -115,33 +118,33 @@ BuildingMenu.Tools = {
             'SOMW.SharpTrowel',
             'ToolsOfTheTrade.Adze', --Tools of the Trade
         },
-        tags = {} --'DigPlow' > this includes shovels
+        tags = {}                   --'DigPlow' > this includes shovels
     },
     Shovel = {
         types = {
             'Base.Shovel',
-            'SOMW.EntrenchingShovel', --SOMW
+            'SOMW.EntrenchingShovel',            --SOMW
             'MWPWeapons.sptesnaztacticalshovel', -- [Reworked] MWPWeapons
-            'ToolsOfTheTrade.TrenchShovel' -- Tools of the Trade
+            'ToolsOfTheTrade.TrenchShovel'       -- Tools of the Trade
         },
-        tags = {'TakeDirt'}
+        tags = { 'TakeDirt' }
     },
     BlowTorch = {
-        types = {'Base.BlowTorch'},
+        types = { 'Base.BlowTorch' },
         tags = {}
     },
     WeldingMask = {
         types = {
             'Base.WeldingMask',
             'AuthenticZClothing.Hat_TagillaMask2', -- Authentic Z
-            'AuthenticZClothing.Hat_TagillaMask', -- Authentic Z
-            'Base.Hat_WelderMask2' -- Scrap Armor
+            'AuthenticZClothing.Hat_TagillaMask',  -- Authentic Z
+            'Base.Hat_WelderMask2'                 -- Scrap Armor
         },
-        tags = {'WeldingMask'}
+        tags = { 'WeldingMask' }
     },
     Needle = {
-        types = {'Base.Needle'},
-        tags = {'SewingNeedle'}
+        types = { 'Base.Needle' },
+        tags = { 'SewingNeedle' }
     }
 }
 
@@ -214,16 +217,14 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldob
         BuildingMenu.playerCanPlaster = false;
     end
 
-    local option = context:insertOptionBefore(getText("ContextMenu_Build"), getText("ContextMenu_BuildingMenu"), worldobjects, function()
+    local option = context:insertOptionBefore(getText("ContextMenu_Build"), getText("ContextMenu_BuildingMenu"),
+        worldobjects, function()
         ISBuildingMenuUI.openPanel(playerObj);
     end)
     option.iconTexture = getTexture("media/ui/building_menu.png");
-
 end
 Events.OnFillWorldObjectContextMenu.Add(BuildingMenu.OnFillWorldObjectContextMenu)
-Events.OnGameBoot.Add(function()
-    print("[Building Menu] ver:MAR_30_2024");
-end)
+
 
 --- Gets the player's skills.
 ---@param playerObj IsoPlayer
@@ -345,7 +346,8 @@ BuildingMenu.getAvailableTool = function(inv, tool)
     end
     if toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
-            local item = inv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end );
+            local item = inv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
+                function(item) return true end);
             if item then return item; end
         end
     end
@@ -403,7 +405,6 @@ function BuildingMenu.GetItemInstance(type)
     return item and item.item or nil;
 end
 
-
 ---@param item InventoryItem
 ---@return string|nil
 function BuildingMenu.GetTextureFromInventoryItem(item)
@@ -417,7 +418,6 @@ function BuildingMenu.GetTextureFromInventoryItem(item)
         return texName:match("([^/\\]+)%.png$") or texName:match("([^/\\]+)$") or texName;
     end
 end
-
 
 --- Tooltip check for a specific tool category.
 ---@param playerInv ItemContainer
@@ -443,7 +443,8 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
 
     if not found and toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
-            local item = playerInv:getBestEvalRecurse( function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end );
+            local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
+                function(item) return true end);
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
                 itemInstance = item;
@@ -460,12 +461,14 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     if itemInstance then
         local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(itemInstance);
         if texNameOnly and BuildingMenu.show_item_icons then
-            itemText = "<IMAGE:" .. texNameOnly .."," .. 20*BuildingMenu.icon_scale .. "," .. 20*BuildingMenu.icon_scale .. ">" .. itemText;
+            itemText = "<IMAGE:" ..
+            texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">" .. itemText;
         end
     end
 
     if not found then
-        local defaultItemName = (toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or tool;
+        local defaultItemName = (toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or
+        tool;
         itemText = itemText .. BuildingMenu.bhsString .. defaultItemName .. ' <LINE>';
         return itemText, false;
     end
@@ -491,7 +494,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
 
     -- Iterate over each alternative Material/Consumable group
     for altGroupIndex, altGroup in pairs(currentItemGroup) do
-        local items = type(altGroup[groupType]) == "table" and altGroup[groupType] or {altGroup[groupType]};
+        local items = type(altGroup[groupType]) == "table" and altGroup[groupType] or { altGroup[groupType] };
         local totalAmountNeeded = altGroup.Amount;
         local totalFoundCount = 0;
         local itemDetails = {};
@@ -510,7 +513,8 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
                         end
                     end
                 else
-                    itemCount = playerInv:getItemCountFromTypeRecurse(itemFullType) + (groundItemCountMap[itemFullType] or 0);
+                    itemCount = playerInv:getItemCountFromTypeRecurse(itemFullType) +
+                    (groundItemCountMap[itemFullType] or 0);
                 end
 
                 totalFoundCount = totalFoundCount + itemCount;
@@ -532,8 +536,11 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
         end
 
         if firstItemInstance then
-
-            local itemText = color .. firstItemInstance:getName() .. ' ' .. (groupType == "Consumable" and getText("ContextMenu_Uses") .. " " or "") .. totalFoundCount .. '/' .. totalAmountNeeded;
+            local itemText = color ..
+            firstItemInstance:getName() ..
+            ' ' ..
+            (groupType == "Consumable" and getText("ContextMenu_Uses") .. " " or "") ..
+            totalFoundCount .. '/' .. totalAmountNeeded;
             itemInfo[altGroupIndex] = {
                 AmountNeeded = totalAmountNeeded,
                 [groupType .. "Details"] = itemDetails
@@ -545,7 +552,9 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
 
             local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(firstItemInstance);
             if texNameOnly and BuildingMenu.show_item_icons then
-                table.insert(itemBuffer, "<IMAGE:" .. texNameOnly .."," .. 20*BuildingMenu.icon_scale .. "," .. 20*BuildingMenu.icon_scale .. ">");
+                table.insert(itemBuffer,
+                    "<IMAGE:" ..
+                    texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">");
             end
 
             table.insert(itemBuffer, itemText);
@@ -565,7 +574,7 @@ end
 ---@param tooltipDescription string
 ---@return string, boolean, table
 BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, currentMaterialsGroup, tooltipDescription)
-    return tooltipCheckForItem(playerObj, playerInv, currentMaterialsGroup, tooltipDescription, "Material")
+    return tooltipCheckForItem(playerObj, playerInv, currentMaterialsGroup, tooltipDescription, "Material");
 end
 
 
@@ -576,14 +585,14 @@ end
 ---@param tooltipDescription string
 ---@return string, boolean, table
 BuildingMenu.tooltipCheckForConsumable = function(playerObj, playerInv, currentConsumableGroup, tooltipDescription)
-    return tooltipCheckForItem(playerObj, playerInv, currentConsumableGroup, tooltipDescription, "Consumable")
+    return tooltipCheckForItem(playerObj, playerInv, currentConsumableGroup, tooltipDescription, "Consumable");
 end
 
 
 local function adaptRecipeGroupToNewFormat(materialOrGroup)
     if materialOrGroup.Material or materialOrGroup.Consumable then
-        return {materialOrGroup};
-    elseif type(materialOrGroup[1]) == "table" and (materialOrGroup[1].Material or materialOrGroup[1].Consumable)then
+        return { materialOrGroup };
+    elseif type(materialOrGroup[1]) == "table" and (materialOrGroup[1].Material or materialOrGroup[1].Consumable) then
         return materialOrGroup;
     end
 end
@@ -605,7 +614,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     local materialFoundIndexMatrix = {};
 
     if not objectRecipe then
-        tooltipDescription = tooltipDescription .. " <LINE>" .. BuildingMenu.bhsString .." RECIPE IS NULL";
+        tooltipDescription = tooltipDescription .. " <LINE>" .. BuildingMenu.bhsString .. " RECIPE IS NULL";
         return tooltipDescription, false, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
     end
 
@@ -668,15 +677,19 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
 
     tooltipDescription = tooltipDescription .. " <LINE>";
 
-    local playerSkills = BuildingMenu.getPlayerSkills(playerObj)
+    local playerSkills = BuildingMenu.getPlayerSkills(playerObj);
     if objectRecipe.skills then
         local skillsTooltipDescription = "";
         for _, skill in pairs(objectRecipe.skills) do
             if playerSkills[skill.Skill] < skill.Level then
-                skillsTooltipDescription = BuildingMenu.bhsString .. getText("IGUI_perks_" .. skill.Skill)  .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                skillsTooltipDescription = BuildingMenu.bhsString ..
+                getText("IGUI_perks_" .. skill.Skill) ..
+                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
                 canBuildResult = false;
             else
-                skillsTooltipDescription = BuildingMenu.ghsString .. getText("IGUI_perks_" .. skill.Skill) .. " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                skillsTooltipDescription = BuildingMenu.ghsString ..
+                getText("IGUI_perks_" .. skill.Skill) ..
+                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
             end
             tooltipDescription = tooltipDescription .. skillsTooltipDescription;
         end

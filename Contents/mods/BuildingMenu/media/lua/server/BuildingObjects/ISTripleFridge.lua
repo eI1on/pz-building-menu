@@ -24,7 +24,6 @@ function ISTripleFridge:new(sprite, sprite2, sprite3, northSprite, northSprite2,
     return o
 end
 
-
 function ISTripleFridge:create(x, y, z, north, sprite)
     local cell = getWorld():getCell()
     local square = cell:getGridSquare(x, y, z)
@@ -34,8 +33,8 @@ function ISTripleFridge:create(x, y, z, north, sprite)
     local spriteBName = self.sprite3
 
     if self.north then
-      spriteAName = self.northSprite2
-      spriteBName = self.northSprite3
+        spriteAName = self.northSprite2
+        spriteBName = self.northSprite3
     end
 
     buildUtil.consumeMaterial(self)
@@ -45,7 +44,6 @@ function ISTripleFridge:create(x, y, z, north, sprite)
     self:addFurniturePart(xb, yb, z, north, spriteBName, 3)
 end
 
-
 function ISTripleFridge:addFurniturePart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell()
     self.sq = cell:getGridSquare(x, y, z)
@@ -53,32 +51,30 @@ function ISTripleFridge:addFurniturePart(x, y, z, north, sprite, index)
     if self:partExists(self.sq, index) then return end
 
     self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
-	buildUtil.setInfo(self.javaObject, self);
+    buildUtil.setInfo(self.javaObject, self);
 
-	self.javaObject:createContainersFromSpriteProperties()
+    self.javaObject:createContainersFromSpriteProperties()
 
-	for i=1, self.javaObject:getContainerCount() do
-		self.javaObject:getContainerByIndex(i-1):setExplored(true)
-	end
+    for i = 1, self.javaObject:getContainerCount() do
+        self.javaObject:getContainerByIndex(i - 1):setExplored(true)
+    end
 
-	self.javaObject:setMaxHealth(self:getHealth());
-	self.javaObject:setHealth(self.javaObject:getMaxHealth());
+    self.javaObject:setMaxHealth(self:getHealth());
+    self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
-	self.sq:AddSpecialObject(self.javaObject);
-	self.javaObject:transmitCompleteItemToServer();
+    self.sq:AddSpecialObject(self.javaObject);
+    self.javaObject:transmitCompleteItemToServer();
 end
-
 
 function ISTripleFridge:walkTo(x, y, z)
-	local playerObj = getSpecificPlayer(self.player)
-	local square = getCell():getGridSquare(x, y, z)
-	local square2 = self:getSquare2(square, self.north)
-	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
-		return luautils.walkAdj(playerObj, square)
-	end
-	return luautils.walkAdj(playerObj, square2)
+    local playerObj = getSpecificPlayer(self.player)
+    local square = getCell():getGridSquare(x, y, z)
+    local square2 = self:getSquare2(square, self.north)
+    if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
+        return luautils.walkAdj(playerObj, square)
+    end
+    return luautils.walkAdj(playerObj, square2)
 end
-
 
 local function removeItemFromSquare(square)
     for i = 1, square:getSpecialObjects():size() do
@@ -105,11 +101,9 @@ function ISTripleFridge:removeFromGround(square)
     end
 end
 
-
 function ISTripleFridge:getHealth()
     return 200 + buildUtil.getWoodHealth(self);
 end
-
 
 function ISTripleFridge:render(x, y, z, square)
     local spriteName
@@ -117,15 +111,15 @@ function ISTripleFridge:render(x, y, z, square)
         spriteName = self:getSprite()
         local sprite = IsoSprite.new()
         sprite:LoadFramesNoDirPageSimple(spriteName)
-    
+
         local spriteFree = ISBuildingObject.isValid(self, square)
         if buildUtil.stairIsBlockingPlacement(square, true, self.north) then
-          spriteFree = false
+            spriteFree = false
         end
         if spriteFree then
-          sprite:RenderGhostTile(x, y, z)
+            sprite:RenderGhostTile(x, y, z)
         else
-          sprite:RenderGhostTileRed(x, y, z)
+            sprite:RenderGhostTileRed(x, y, z)
         end
     end
 
@@ -193,7 +187,6 @@ function ISTripleFridge:render(x, y, z, square)
     end
 end
 
-
 function ISTripleFridge:isValid(square)
     if not self:haveMaterial(square) then
         return false
@@ -247,20 +240,18 @@ function ISTripleFridge:isValid(square)
     return true
 end
 
-
 function ISTripleFridge:getSquare2Pos(square, north)
     local x = square:getX()
     local y = square:getY()
     local z = square:getZ()
 
     if north then
-      x = x + 1
+        x = x + 1
     else
-      y = y - 1
+        y = y - 1
     end
     return x, y, z
 end
-
 
 function ISTripleFridge:getSquare3Pos(square, north)
     local x = square:getX()
@@ -268,22 +259,21 @@ function ISTripleFridge:getSquare3Pos(square, north)
     local z = square:getZ()
 
     if north then
-      x = x + 2
+        x = x + 2
     else
-      y = y - 2
+        y = y - 2
     end
     return x, y, z
 end
-
 
 function ISTripleFridge:partExists(square, index)
     local spriteName = self.north and self["northSprite" .. index] or self["sprite" .. index]
     local objects = square:getObjects()
     for i = 1, objects:size() do
-      local object = objects:get(i - 1)
-      if object:getSprite():getName() == spriteName then
-        return true
-      end
+        local object = objects:get(i - 1)
+        if object:getSprite():getName() == spriteName then
+            return true
+        end
     end
     return false
 end

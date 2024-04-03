@@ -11,7 +11,6 @@ function ISGenerator:create(x, y, z, north, sprite)
     buildUtil.consumeMaterial(self)
 end
 
-
 function ISGenerator:isValid(square)
     if not ISBuildingObject.isValid(self, square) then
         return false
@@ -20,11 +19,9 @@ function ISGenerator:isValid(square)
     return true
 end
 
-
 function ISGenerator:render(x, y, z, square)
     ISBuildingObject.render(self, x, y, z, square)
 end
-
 
 function ISGenerator:new(sprite, northSprite, perk)
     local o = {}

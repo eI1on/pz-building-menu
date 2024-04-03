@@ -19,7 +19,7 @@ ISFourTileFurniture = ISBuildingObject:derive("ISFourTileFurniture");
 -- /x-1\ / x \ /x+1\    sprite3       sprite/northSprite     northSprite3
 -- \y+1/ \ y / \y-1/
 --  \ / x \ /x+1\ /            sprite2             northSprite2
---    \y+1/ \ y / 
+--    \y+1/ \ y /
 --     \ /   \ /
 
 ---Constructor for ISFourTileFurniture.
@@ -33,13 +33,14 @@ ISFourTileFurniture = ISBuildingObject:derive("ISFourTileFurniture");
 ---@param northSprite3 string North-facing sprite for the third tile.
 ---@param northSprite4 string North-facing sprite for the fourth tile.
 ---@return ISFourTileFurniture
-function ISFourTileFurniture:new(name, sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3, northSprite4)
-	local o = {};
-	setmetatable(o, self);
-	self.__index = self;
+function ISFourTileFurniture:new(name, sprite, sprite2, sprite3, sprite4, northSprite, northSprite2, northSprite3,
+                                 northSprite4)
+    local o = {};
+    setmetatable(o, self);
+    self.__index = self;
 
-	o:init();
-	o:setSprite(sprite);
+    o:init();
+    o:setSprite(sprite);
 
     o.sprite2 = sprite2;
     o.sprite3 = sprite3;
@@ -50,13 +51,13 @@ function ISFourTileFurniture:new(name, sprite, sprite2, sprite3, sprite4, northS
     o.northSprite3 = northSprite3;
     o.northSprite4 = northSprite4;
 
-	o.name = name;
-	o.canBarricade = false;
-	o.dismantable = true;
-	o.blockAllTheSquare = true;
-	o.canBeAlwaysPlaced = true;
-	o.buildLow = true;
-	return o;
+    o.name = name;
+    o.canBarricade = false;
+    o.dismantable = true;
+    o.blockAllTheSquare = true;
+    o.canBeAlwaysPlaced = true;
+    o.buildLow = true;
+    return o;
 end
 
 ---Creates and places the furniture in the game world.
@@ -88,7 +89,6 @@ function ISFourTileFurniture:create(x, y, z, north, sprite)
     buildUtil.consumeMaterial(self);
 end
 
-
 ---Adds a furniture part to the world.
 ---@param x number X-coordinate in the world.
 ---@param y number Y-coordinate in the world.
@@ -106,13 +106,12 @@ function ISFourTileFurniture:addFurniturePart(x, y, z, north, sprite, index)
     -- create the furniture part and set its properties
     self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
     buildUtil.setInfo(self.javaObject, self);
-	self.javaObject:setMaxHealth(self:getHealth());
-	self.javaObject:setHealth(self.javaObject:getMaxHealth());
+    self.javaObject:setMaxHealth(self:getHealth());
+    self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
     self.sq:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
-
 
 ---Determines the walk-to square for interaction.
 ---@param x number X-coordinate in the world.
@@ -120,15 +119,14 @@ end
 ---@param z number Z-coordinate (floor level).
 ---@return boolean
 function ISFourTileFurniture:walkTo(x, y, z)
-	local playerObj = getSpecificPlayer(self.player)
-	local square = getCell():getGridSquare(x, y, z)
-	local square2 = self:getSquare2(square, self.north)
-	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
-		return luautils.walkAdj(playerObj, square)
-	end
-	return luautils.walkAdj(playerObj, square2)
+    local playerObj = getSpecificPlayer(self.player)
+    local square = getCell():getGridSquare(x, y, z)
+    local square2 = self:getSquare2(square, self.north)
+    if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
+        return luautils.walkAdj(playerObj, square)
+    end
+    return luautils.walkAdj(playerObj, square2)
 end
-
 
 ---Removes the furniture part from the ground.
 ---@param square IsoGridSquare The square from which to remove the furniture.
@@ -158,7 +156,6 @@ function ISFourTileFurniture:removeFromGround(square)
         removeItemFromSquare(squareA)
     end
 end
-
 
 ---Calculates the health of the furniture based on certain conditions. Currently it's 400 + 100 per carpentry lvl
 ---@return number
@@ -291,7 +288,6 @@ function ISFourTileFurniture:isValid(square)
     return true
 end
 
-
 ---Calculates the position of the second part of the furniture.
 ---@param square IsoGridSquare The square of the main part.
 ---@param north boolean Whether the furniture is facing north.
@@ -336,12 +332,10 @@ function ISFourTileFurniture:getSquare4Pos(square, north)
     return x, y, square:getZ()
 end
 
-
 function ISFourTileFurniture:getSquare2(square, north)
-	local x, y, z = self:getSquare2Pos(square, north)
-	return getCell():getGridSquare(x, y, z)
+    local x, y, z = self:getSquare2Pos(square, north)
+    return getCell():getGridSquare(x, y, z)
 end
-
 
 ---Checks if a part of the furniture already exists on a given square.
 ---@param square IsoGridSquare The square to check.

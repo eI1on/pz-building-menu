@@ -37,7 +37,7 @@ function ISOven:new(player, name, sprite, northSprite)
   o.stopOnWalk = true;
   o.stopOnRun = true;
   o.blockAllTheSquare = true;
-	o.canBeAlwaysPlaced = true;
+  o.canBeAlwaysPlaced = true;
   o.maxTime = 500;
   return o
 end

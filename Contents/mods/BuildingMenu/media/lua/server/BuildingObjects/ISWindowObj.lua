@@ -54,7 +54,6 @@ function ISWindowObj:isValid(square)
     end
 end
 
-
 function ISWindowObj:render(x, y, z, square)
     ISBuildingObject.render(self, x, y, z, square)
 end

@@ -148,12 +148,12 @@ end
 function ISBathtub:isValid(square)
 	if not ISBuildingObject.isValid(self, square) then
 		return false
-    end
-    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+	end
+	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
 	if square:isVehicleIntersecting() then return false end
 	local xa, ya, za = self:getSquare2Pos(square, self.north)
 	local squareA = getCell():getGridSquare(xa, ya, za)
-	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement( squareA, true ) then
+	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) then
 		return false
 	end
 	if squareA:isVehicleIntersecting() then return false end
@@ -176,4 +176,3 @@ function ISBathtub:getSquare2(square, north)
 	local x, y, z = self:getSquare2Pos(square, north)
 	return getCell():getGridSquare(x, y, z)
 end
-
