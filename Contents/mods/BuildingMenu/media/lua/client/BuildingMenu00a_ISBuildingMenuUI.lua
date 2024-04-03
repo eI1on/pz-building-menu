@@ -1,6 +1,4 @@
 require ("ISUI/ISCollapsableWindowJoypad")
-require ("OptionScreens/MainOptions");
-
 
 ---@type function
 local getText = getText
@@ -167,21 +165,6 @@ function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, re
         modifiedOptions.isThumpable = false;
     end
 
-
-    local modData = self.character:getModData();
-
-    local songNames = {
-        "cartoon_construction_sound",
-        "retro_game_coin_sound",
-        "rubber_duck_sound",
-        "twinkle_effect_sound"
-    };
-
-    -- select a random song from the list if quietPlease is not true in modData
-    if not modData.quietPlease then
-        local songIndex = ZombRand(1, #songNames + 1);
-        modifiedOptions.completionSound = songNames[songIndex];
-    end
 
     local modifiedRecipe = {
         neededTools = recipe.neededTools,
@@ -427,74 +410,6 @@ function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
 end
 
 
---- JOKE BEGIN
-local BMSoundManager = {
-    initialized = false,
-    soundEmitter = FMODSoundEmitter.new(),
-    currentSound = nil,
-    originalSoundVolume = getSoundManager():getSoundVolume(),
-};
-
-function BMSoundManager.init()
-    if BMSoundManager.initialized then return; end
-    Events.OnTick.Add(BMSoundManager.update);
-    BMSoundManager.initialized = true;
-
-    local applyOptions = MainOptions.apply;
-    function MainOptions:apply(closeAfter)
-        applyOptions(self, closeAfter);
-        BMSoundManager.syncVolume();
-    end
-end
-Events.OnCreatePlayer.Add(BMSoundManager.init);
-
-function BMSoundManager.syncVolume()
-    local soundManager = getSoundManager();
-    BMSoundManager.soundEmitter:setVolumeAll(soundManager:getSoundVolume());
-    BMSoundManager.originalSoundVolume = soundManager:getSoundVolume();
-end
-
-function BMSoundManager.update()
-    BMSoundManager.soundEmitter:tick()
-    if not BMSoundManager.soundEmitter:isPlaying(BMSoundManager.currentSound) then
-        BMSoundManager.restoreVolume();
-    end
-end
-
-function BMSoundManager.playSound(file)
-    if BMSoundManager.currentSound then
-        if BMSoundManager.soundEmitter:isPlaying(BMSoundManager.currentSound) then
-            BMSoundManager.soundEmitter:stopSoundLocal(BMSoundManager.currentSound);
-        end
-    end
-    BMSoundManager.currentSound = BMSoundManager.soundEmitter:playSoundImpl(file, false, nil);
-end
-
-function BMSoundManager.stop()
-    if BMSoundManager.currentSound then
-        BMSoundManager.soundEmitter:stopSoundLocal(BMSoundManager.currentSound);
-        BMSoundManager.currentSound = nil;
-    end
-end
-
-function BMSoundManager.setVolume(value)
-    local soundManager = getSoundManager();
-    if not BMSoundManager.soundVolume then
-        BMSoundManager.soundVolume = soundManager:getSoundVolume();
-    end
-    soundManager:setSoundVolume(value);
-end
-
-function BMSoundManager.restoreVolume()
-    local soundManager = getSoundManager();
-    if BMSoundManager.soundVolume then
-        soundManager:setSoundVolume(BMSoundManager.originalSoundVolume);
-        BMSoundManager.soundVolume = nil;
-    end
-end
---- JOKE END
-
-
 ---@class ISBuildingMenuUI: ISCollapsableWindowJoypad
 ISBuildingMenuUI = ISCollapsableWindowJoypad:derive("ISBuildingMenuUI");
 
@@ -514,13 +429,6 @@ ISBuildingMenuUI.players                = {};
 --- Opens the Building Menu UI panel.
 ---@param playerObj IsoPlayer
 function ISBuildingMenuUI.openPanel(playerObj)
-    local modData = playerObj:getModData();
-
-    if not modData.quietPlease then
-        BMSoundManager.playSound("construction_vehicles_song");
-        BMSoundManager.setVolume(getSoundManager():getSoundVolume());
-    end
-
     local modData = playerObj:getModData();
     local savedPosition = modData.BMUIPosition;
     local width, height, x, y;
@@ -555,9 +463,6 @@ function ISBuildingMenuUI.openPanel(playerObj)
 end
 
 function ISBuildingMenuUI:close()
-    BMSoundManager.stop();
-    BMSoundManager.restoreVolume();
-
     local modData = self.character:getModData();
     modData.BMUIPosition = {x = self:getX(), y = self:getY(), width = self:getWidth(), height = self:getHeight()};
 
@@ -699,14 +604,6 @@ function ISBuildingMenuUI:onGearButtonClick()
         context:setOptionChecked(option, self.tilesList.overwriteIsThumpable)
     end
 
-    local modData = self.character:getModData();
-    local optionMusic = context:addOption("Quiet, Please!", self, function(self)
-        modData.quietPlease = not modData.quietPlease;
-        if isDebugEnabled() then
-            BuildingMenu.debugPrint("[Building Menu Debug] quietPlease ", modData.quietPlease);
-        end
-    end);
-    context:setOptionChecked(optionMusic, modData.quietPlease or false);
 
     local minOpaqueOption = context:addOption(getText("UI_chat_context_opaque_min"), ISBuildingMenuUI.instance);
     local minOpaqueSubMenu = context:getNew(context);
