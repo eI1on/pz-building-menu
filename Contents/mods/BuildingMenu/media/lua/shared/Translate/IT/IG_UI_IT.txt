@@ -2,6 +2,29 @@ IGUI_IT = {
 
     IGUI_BuildingMenu = "Menù di costruzione",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Cambia categoria %3/%4 = Cambia schede F = Categoria preferita ESC = Chiudi",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Visualizza le icone degli elementi",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Attiva/disattiva per visualizzare o nascondere le icone degli elementi nella descrizione comando.",
+    IGUI_BuildingMenuUI_IconScale = "Dimensioni dell'icona dell'articolo",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Regola la dimensione delle icone degli elementi visualizzate nei suggerimenti. <BR> Una scala di '1' mantiene la dimensione originale dell'icona (20 pixel), mentre '2' la raddoppia.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Sposta finestra",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Smetti di spostare la finestra",
+    IGUI_BuildingMenuUI_Build = "Costruire",
+    IGUI_BuildingMenuUI_Favorite = "Preferito",
+    IGUI_BuildingMenuUI_Close = "Vicino",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Scheda a sinistra",
+    IGUI_BuildingMenuUI_Tab_Right = "Scheda a destra",
+    
+    IGUI_BuildingMenuUI_List_Left = "Elenco a sinistra",
+    IGUI_BuildingMenuUI_List_Right = "Elenco giusto",
+    IGUI_BuildingMenuUI_List_Up = "Elenca",
+    IGUI_BuildingMenuUI_List_Down = "Elencare",
+
+
     IGUI_BuildingMenuTab_Favorite = "Preferito",
     IGUI_BuildingMenuTab_General = "Generale",
 
@@ -89,7 +112,7 @@ IGUI_IT = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Porte della prigione",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Porte in vetro",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Porte di sicurezza",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Porte da garage a 3 piastrelle",
@@ -103,7 +126,7 @@ IGUI_IT = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Modanatura del pavimento",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Pannelli murali",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "finestre",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Di legno",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Tende",

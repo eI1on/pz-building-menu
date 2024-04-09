@@ -1,0 +1,30 @@
+Recipe_NO = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "BM Klargjør glass for smelting",
+    Recipe_BMUnprepareGlassShards = "BM Fjern glasset fra pannen",
+    Recipe_BMRemoveGlassPane = "BM Ekstrakt glassrute",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "Knus i knust glass",
+    Recipe_BMSmashGlassPane = "Knus i knust glass",
+    Recipe_BMSmashWindshield = "Knus i knust glass",
+    Recipe_BMSmashWindows = "Knus i knust glass",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "Lag standard frontrute",
+    Recipe_BMRearWindshield1 = "Lag standard bakrute",
+    Recipe_BMFrontWindow1 = "Lag standard frontvindu",
+    Recipe_BMRearWindow1 = "Lag standard bakvindu",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "Lag kraftig frontrute",
+    Recipe_BMRearWindshield2 = "Lag Heavy-Duty bakrute",
+    Recipe_BMFrontWindow2 = "Lag et kraftig frontvindu",
+    Recipe_BMRearWindow2 = "Lag Heavy-Duty bakvindu",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "Lag Sports Windshield",
+    Recipe_BMRearWindshield3 = "Lag Sport bak frontrute",
+    Recipe_BMFrontWindow3 = "Lag Sport Front Window",
+    Recipe_BMRearWindow3 = "Lag Sport bakvindu",
+}

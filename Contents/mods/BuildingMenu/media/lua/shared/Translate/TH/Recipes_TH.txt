@@ -1,0 +1,30 @@
+Recipe_TH = {
+    /* Make Glass Recipes */
+    Recipe_BMPrepareGlassShards = "BM เตรียมแก้วสำหรับการหลอม",
+    Recipe_BMUnprepareGlassShards = "BM นำแก้วออกจากกระทะ",
+    Recipe_BMRemoveGlassPane = "บานกระจก BM Extract",
+
+    /* Smash Glass Recipes */
+    Recipe_BMSmashGlassJar = "ทุบกระจกแตกเลย",
+    Recipe_BMSmashGlassPane = "ทุบกระจกแตกเลย",
+    Recipe_BMSmashWindshield = "ทุบกระจกแตกเลย",
+    Recipe_BMSmashWindows = "ทุบกระจกแตกเลย",
+
+    /* Vehicle: Standard Recipes */
+    Recipe_BMWindshield1 = "ทำกระจกบังลมมาตรฐาน",
+    Recipe_BMRearWindshield1 = "ทำกระจกบังลมหลังแบบมาตรฐาน",
+    Recipe_BMFrontWindow1 = "ทำหน้าต่างหน้ามาตรฐาน",
+    Recipe_BMRearWindow1 = "ทำให้หน้าต่างด้านหลังมาตรฐาน",
+
+    /* Vehicle: Heavy-Duty Recipes */
+    Recipe_BMWindshield2 = "สร้างกระจกหน้ารถสำหรับงานหนัก",
+    Recipe_BMRearWindshield2 = "สร้างกระจกบังลมด้านหลังสำหรับงานหนัก",
+    Recipe_BMFrontWindow2 = "ทำหน้าต่างด้านหน้าแบบ Heavy-Duty",
+    Recipe_BMRearWindow2 = "ทำให้หน้าต่างด้านหลังสำหรับงานหนัก",
+
+    /* Vehicle: Sport Recipes */
+    Recipe_BMWindshield3 = "ทำกระจกบังลมแบบสปอร์ต",
+    Recipe_BMRearWindshield3 = "ทำกระจกบังลมหลังแบบสปอร์ต",
+    Recipe_BMFrontWindow3 = "ทำกระจกหน้าแบบสปอร์ต",
+    Recipe_BMRearWindow3 = "ทำกระจกหลังแบบสปอร์ต",
+}

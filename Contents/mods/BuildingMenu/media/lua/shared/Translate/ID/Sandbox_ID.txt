@@ -148,8 +148,16 @@ Sandbox_ID = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Aktifkan Subkategori Kontainer Lainnya",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Aktifkan untuk menambahkan Subkategori Kontainer Lainnya. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "______________ Kategori Rekreasi _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Aktifkan Subkategori Musik",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Aktifkan untuk menambahkan jukebox, piano, dan semacamnya. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "______________ Kategori Furnitur _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
  

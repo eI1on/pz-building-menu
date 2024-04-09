@@ -1,0 +1,5 @@
+UI_DA = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Dette er Bygningsmenuen. <LINE> <LINE> <SIZE:small> <LEFT> Hver fane repræsenterer en unik Tilepack-tilføjelse, hvor de buildables er sorteret i kategorier og underkategorier. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Når du holder markøren over et byggebart emne, viser værktøjstippet de nødvendige elementer til konstruktionen. Disse krav opdateres dynamisk baseret på elementerne i din beholdning og dem på den omkringliggende etage inden for et 3x3-gitter af din karakter. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> For at forenkle din byggeproces kan du tilføje ofte brugte Buildables med deres opskrifter til fanen Favoritter. For at en underkategori skal vises i favoritter, skal du sørge for, at dens overordnede kategori, den også er foretrukken.",
+    UI_optionscreen_binding_BuildingMenu = "Skift Building Menu UI",
+}

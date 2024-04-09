@@ -2,6 +2,29 @@ IGUI_DA = {
 
     IGUI_BuildingMenu = "Bygningsmenu",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Skift kategori %3/%4 = Skift faner F = Favoritkategori ESC = Luk",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Vis elementikoner",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Skift for at vise eller skjule elementikoner i værktøjstippet.",
+    IGUI_BuildingMenuUI_IconScale = "Vareikonstørrelse",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Justerer størrelsen på elementikonerne, der vises i værktøjstip. <BR> En skala på '1' bevarer ikonets originale størrelse (20 pixels), mens '2' fordobler den.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Flyt vindue",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Stop med at flytte vinduet",
+    IGUI_BuildingMenuUI_Build = "Byg",
+    IGUI_BuildingMenuUI_Favorite = "Favorit",
+    IGUI_BuildingMenuUI_Close = "Tæt",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Fane til venstre",
+    IGUI_BuildingMenuUI_Tab_Right = "Fane til højre",
+    
+    IGUI_BuildingMenuUI_List_Left = "Liste til venstre",
+    IGUI_BuildingMenuUI_List_Right = "Liste højre",
+    IGUI_BuildingMenuUI_List_Up = "Liste op",
+    IGUI_BuildingMenuUI_List_Down = "Liste ned",
+
+
     IGUI_BuildingMenuTab_Favorite = "Favorit",
     IGUI_BuildingMenuTab_General = "Generel",
 
@@ -89,7 +112,7 @@ IGUI_DA = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Fængselsdøre",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Glasdøre",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Sikkerhedsdøre",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 fliser garageporte",
@@ -103,7 +126,7 @@ IGUI_DA = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Gulvstøbning",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Vægpaneler",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Træ",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Gardiner",

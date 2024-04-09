@@ -2,9 +2,11 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenu = "Building Menu",
     Sandbox_BuildingMenu_isThumpable = "Estruturas Destrutíveis",
     Sandbox_BuildingMenu_isThumpable_tooltip = "Desligue <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> para tornar as estruturas construídas usando o Building Menu imunes a danos de zumbis.",
-    
+
+
     Sandbox_BuildingMenu_EmptyBox = "",
     Sandbox_BuildingMenu_EmptyBox_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
+
 
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria de Paredes _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
@@ -146,8 +148,16 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Ativar subcategoria de Outros",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Habilite para adicionar estruturas de outros contêineres. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Categoria Recreativa _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Este é apenas um separador de linhas, verificando se não tem efeito.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Ativar subcategoria de música",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Ative para adicionar jukeboxes, pianos e outros. <LINE><LINE> <RGB:1,0,0> EXIGE REINÍCIO DO CLIENTE!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria de Móveis _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Este é apenas um separador de linhas, não tem efeito.",
  

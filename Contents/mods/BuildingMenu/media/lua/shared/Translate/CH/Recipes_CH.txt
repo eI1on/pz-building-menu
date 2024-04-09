@@ -1,30 +1,30 @@
 Recipe_CH = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards   = "預備玻璃用於融化",
+    Recipe_BMPrepareGlassShards = "預備玻璃用於融化",
     Recipe_BMUnprepareGlassShards = "BM 從烤盤中移除玻璃",
-    Recipe_BMRemoveGlassPane      = "提取玻璃板",
+    Recipe_BMRemoveGlassPane = "提取玻璃板",
 
     /* Smash Glass Recipes */
-    Recipe_BMSmashGlassJar   = "砸碎玻璃",
-    Recipe_BMSmashGlassPane  = "砸碎玻璃",
+    Recipe_BMSmashGlassJar = "砸碎玻璃",
+    Recipe_BMSmashGlassPane = "砸碎玻璃",
     Recipe_BMSmashWindshield = "砸碎玻璃",
-    Recipe_BMSmashWindows    = "砸碎玻璃",
+    Recipe_BMSmashWindows = "砸碎玻璃",
 
     /* Vehicle: Standard Recipes */
-    Recipe_BMWindshield1     = "制作標準型攩風玻璃",
+    Recipe_BMWindshield1 = "制作標準型攩風玻璃",
     Recipe_BMRearWindshield1 = "制作標準型攩風玻璃",
-    Recipe_BMFrontWindow1    = "制作標準型車前窗",
-    Recipe_BMRearWindow1     = "制作標準型車後窗",
+    Recipe_BMFrontWindow1 = "制作標準型車前窗",
+    Recipe_BMRearWindow1 = "制作標準型車後窗",
 
     /* Vehicle: Heavy-Duty Recipes */
-    Recipe_BMWindshield2     = "制作商用型攩風玻璃",
+    Recipe_BMWindshield2 = "制作商用型攩風玻璃",
     Recipe_BMRearWindshield2 = "制作商用型攩風玻璃",
-    Recipe_BMFrontWindow2    = "制作商用型前窗戶",
-    Recipe_BMRearWindow2     = "制作商用型後窗戶",
+    Recipe_BMFrontWindow2 = "制作商用型前窗戶",
+    Recipe_BMRearWindow2 = "制作商用型後窗戶",
 
     /* Vehicle: Sport Recipes */
-    Recipe_BMWindshield3     = "制作性能型攩風玻璃",
+    Recipe_BMWindshield3 = "制作性能型攩風玻璃",
     Recipe_BMRearWindshield3 = "制作性能型攩風玻璃",
-    Recipe_BMFrontWindow3    = "制作性能型前窗戶",
-    Recipe_BMRearWindow3     = "制作性能型後窗戶",
+    Recipe_BMFrontWindow3 = "制作性能型前窗戶",
+    Recipe_BMRearWindow3 = "制作性能型後窗戶",
 }

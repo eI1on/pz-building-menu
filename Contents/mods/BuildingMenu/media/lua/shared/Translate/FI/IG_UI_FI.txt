@@ -2,6 +2,29 @@ IGUI_FI = {
 
     IGUI_BuildingMenu = "Rakennusvalikko",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Muuta luokkaa %3/%4 = Muuta välilehtiä F = Suosikkiluokka ESC = Sulje",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Näytä kohteen kuvakkeet",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Näytä tai piilota kohdekuvakkeet työkaluvihjeessä.",
+    IGUI_BuildingMenuUI_IconScale = "Kohteen kuvakkeen koko",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Säätää työkaluvihjeissä näytettävien kohdekuvakkeiden kokoa. <BR> Asteikko "1" säilyttää kuvakkeen alkuperäisen koon (20 pikseliä), kun taas "2" kaksinkertaistaa sen.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Siirrä ikkunaa",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Pysäytä ikkunan siirto",
+    IGUI_BuildingMenuUI_Build = "Rakentaa",
+    IGUI_BuildingMenuUI_Favorite = "Suosikki",
+    IGUI_BuildingMenuUI_Close = "kiinni",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Välilehti vasen",
+    IGUI_BuildingMenuUI_Tab_Right = "Oikea välilehti",
+    
+    IGUI_BuildingMenuUI_List_Left = "Lista vasemmalla",
+    IGUI_BuildingMenuUI_List_Right = "Lista oikealle",
+    IGUI_BuildingMenuUI_List_Up = "Lista ylös",
+    IGUI_BuildingMenuUI_List_Down = "Listata",
+
+
     IGUI_BuildingMenuTab_Favorite = "Suosikki",
     IGUI_BuildingMenuTab_General = "Kenraali",
 
@@ -89,7 +112,7 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Vankilan ovet",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Lasi Ovet",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Turvaovet",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 laatta autotallin ovet",
@@ -103,7 +126,7 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Lattiavalu",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Seinäpaneelit",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Puinen",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Verhot",

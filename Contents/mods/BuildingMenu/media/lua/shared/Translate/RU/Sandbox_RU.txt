@@ -2,12 +2,12 @@ Sandbox_RU = {
     Sandbox_BuildingMenu = "Меню строительства",
     Sandbox_BuildingMenu_isThumpable = "Разрушаемость построек",
     Sandbox_BuildingMenu_isThumpable_tooltip = "<RGB:1,0.8,0>Отключите <RGB:1,1,1><SPACE> чтобы сделать постройки, сделанные с помощью мода, неуязвимыми для зомби.",
-	
-	
-	Sandbox_BuildingMenu_EmptyBox = "",
-    Sandbox_BuildingMenu_EmptyBox_tooltip = = "Это просто для отделения строчки, ничего не делает.",
-    
-	
+
+
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Это просто для отделения строчки, ничего не делает.",
+
+
     Sandbox_BuildingMenu_WallsCategoryDivider = "_______________СТЕНЫ _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
 
@@ -148,8 +148,16 @@ Sandbox_RU = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Другие контейнеры",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Включите, чтобы добавить возможность создавать прочие контейнеры. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Рекреационная категория _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Включить подкатегорию «Музыка»",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Разрешите добавлять музыкальные автоматы, пианино и т.п. <LINE><LINE> <RGB:1,0,0> ТРЕБУЕТСЯ ПЕРЕЗАПУСК КЛИЕНТА!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ МЕБЕЛЬ _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
  
@@ -226,25 +234,25 @@ Sandbox_RU = {
     Sandbox_BuildingMenu_lightingAppliances = "Освещение",
     Sandbox_BuildingMenu_lightingAppliances_tooltip = "Включите, чтобы добавить возможность строить осветительные приборы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
 
-	Sandbox_BuildingMenu_bathroomAppliances = "Сантехника",
+    Sandbox_BuildingMenu_bathroomAppliances = "Сантехника",
     Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Включите, чтобы добавить возможность строить сантехнику. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
     
-	Sandbox_BuildingMenu_cookingAppliances = "Кухонные приборы",
+    Sandbox_BuildingMenu_cookingAppliances = "Кухонные приборы",
     Sandbox_BuildingMenu_cookingAppliances_tooltip = "Включите, чтобы добавить возможность строить плиты. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
     
-	Sandbox_BuildingMenu_fridgeAppliances = "Холодильники",
+    Sandbox_BuildingMenu_fridgeAppliances = "Холодильники",
     Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Включите, чтобы добавить возможность строить холодильники. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
     
-	Sandbox_BuildingMenu_laundryAppliances = "Стиральные и сушильные машины",
+    Sandbox_BuildingMenu_laundryAppliances = "Стиральные и сушильные машины",
     Sandbox_BuildingMenu_laundryAppliances_tooltip = "Включите, чтобы добавить возможность строить стиральные/сушильные машины. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
-
+    
 
 
 
     Sandbox_BuildingMenuRecipes = "Крафт для меню строительства",
 
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ МАТЕРИАЛЫ ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
 
     Sandbox_PaintUses = "Емкость банки краски",
     Sandbox_PaintUses_tooltip = "Определяет сколько раз можно использовать одно ведро краски. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
@@ -333,7 +341,7 @@ Sandbox_RU = {
     
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ НАВЫКИ ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Уровень строительства для больших объектов",
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Определяет уровень строительства, необходимый для создания больших объектов. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
@@ -351,7 +359,7 @@ Sandbox_RU = {
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Увеличение навыка электроники за создание объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ СПЕЦИАЛЬНЫЕ ОБЪЕКТЫ ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
 
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",

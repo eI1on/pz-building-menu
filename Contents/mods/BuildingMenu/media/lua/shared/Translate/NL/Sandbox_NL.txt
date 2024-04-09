@@ -148,8 +148,16 @@ Sandbox_NL = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Schakel de subcategorie Andere containers in",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Schakel in om de subcategorie Andere containers toe te voegen. <LINE><LINE> <RGB:1,0,0> VEREIST HERSTART VAN DE KLANT!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "____________ Recreatieve categorie _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Schakel Muzieksubcategorie in",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Schakel het toevoegen van jukeboxen, piano's en dergelijke in. <LINE><LINE> <RGB:1,0,0> VEREIST HERSTART VAN DE KLANT!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "____________ Meubelcategorie _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",
  

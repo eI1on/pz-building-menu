@@ -148,8 +148,16 @@ Sandbox_FI = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Ota Muut säilöt -alaluokka käyttöön",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Ota käyttöön muiden säilöjen aliluokan lisääminen. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKKAAN UUDELLEENKÄYNNISTYSTÄ!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Vapaa-ajan luokka _________________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Ota Musiikin alaluokka käyttöön",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Salli jukeboksien, pianojen ja vastaavien lisääminen. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKASKÄYNNISTYSTÄ UUDELLEEN!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Huonekaluluokka _________________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
  

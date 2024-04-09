@@ -1,4 +1,5 @@
 Tooltip_CH = {
+    
   Tooltip_BMMagazineSecretEntrances = "通過翻轉來發現你的秘密逃脫口。建造指示位於Daddy Dirkie和SimonMDs的面板之下。",
   Tooltip_BMMagazineGlass = "……你遲早會發現這本書有多實用",
   Tooltip_AsphaltMixturePowder = "用來建造道路。需要一桶水。",
@@ -14,7 +15,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_4 = "灰色石頭外墻4",
   Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_5 = "灰色石頭外墻5",
   Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_6 = "灰色石頭外墻6",
-  Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Sloped_Small_Wall  = "灰色石頭斜坡外墻（小）",
+  Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Sloped_Small_Wall = "灰色石頭斜坡外墻（小）",
   Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Sloped_Medium_Wall = "灰色石頭斜坡外墻（中）",
   Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Sloped_Big_Wall = "灰色石頭斜坡外墻（大）",
   Tooltip_Grey_Stone_Wall = "由復古的灰色石頭建造而成的堅固墻體，能提供出色的防御。",
@@ -727,7 +728,7 @@ Tooltip_CH = {
   Tooltip_Green_Diamonds_Door_Frame = "塗有獨特綠寶石圖案的門框",
   Tooltip_Green_Diamonds_Window_Frame = "塗有獨特綠寶石圖案的窗框",
   Tooltip_Green_Diamonds_Pillar = "塗有獨特綠寶石圖案的柱子",
-
+  
   Tooltip_BuildingMenuObj_White_Wall = "白色墻",
   Tooltip_BuildingMenuObj_White_Door_Frame = "白色門框",
   Tooltip_BuildingMenuObj_White_Window_Frame = "白色窗框",
@@ -783,7 +784,7 @@ Tooltip_CH = {
   Tooltip_Diner_Pillar = "另一種塗有餐廳主題圖案的柱子。",
 
 
-
+  
   Tooltip_BuildingMenuObj_Spiffos_Red1_Wall = "斯皮福餐廳紅色1墻",
   Tooltip_BuildingMenuObj_Spiffos_Red1_Door_Frame = "斯皮福餐廳紅色1門框",
   Tooltip_BuildingMenuObj_Spiffos_Red1_Window_Frame1 = "斯皮福餐廳紅色1窗框1",
@@ -938,7 +939,7 @@ Tooltip_CH = {
   Tooltip_Brown_Frame_Glass_Wall = "帶有現代設計的、雅致的褐框玻璃墻，自然采光良好。",
   Tooltip_Brown_Frame_Glass_Pillar = "帶有雅致的褐框玻璃完成面的支撐柱，增添了幾分世態炎涼。",
   Tooltip_Brown_Frame_Glass_Door_Frame = "帶有現代設計的、雅致的褐框玻璃門框，具有个性化的出入口。",
-
+  
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Wall1 = "黑框玻璃墻1",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Wall2 = "黑框玻璃墻2",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Wall3 = "黑框玻璃墻3",
@@ -950,7 +951,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence_Post =  "黑框玻璃柵欄柱",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence =  "黑框玻璃柵欄",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence_Corner =  "黑框玻璃柵欄轉角",
-
+  
   Tooltip_Black_Frame_Glass_Wall = "具有現代主義設計的、綫條分明的黑框玻璃墻，增強了建築環境的復雜性。",
   Tooltip_Black_Frame_Glass_Pillar = "帶有雅致的黑框玻璃完成面的支撐柱，增添了幾分現代雅致。",
   Tooltip_Black_Frame_Glass_Door_Frame = "帶有現代設計的、雅致的黑框玻璃門框，具有个性化的出入口。",
@@ -1012,6 +1013,20 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Inner = "黑色木瓦露臺內部",
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Outer = "黑色木瓦露臺外部",
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Valley = "黑色木瓦露臺转角",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_1 = "黑瓦半谷外 1 號飯店",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_2 = "黑木瓦半谷外 2 號飯店",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_3 = "黑木瓦半谷外 3 號飯店",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_1 = "黑木瓦半谷內 1 號",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_2 = "黑木瓦半谷內 2 號",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_3 = "黑木瓦半谷內 3 號",
+  Tooltip_BuildingMenuObj_Black_Shingles_Pitched_Half = "半坡黑色木瓦",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Pitched = "黑色木瓦下半部傾斜",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Pitched = "黑色木瓦上半部傾斜",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Inner = "下半谷內黑瓦",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Inner = "黑色木瓦上半谷內",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Outer = "下半谷外黑木瓦",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Outer = "黑色木瓦上半部山谷外",
+
 
   Tooltip_BuildingMenuObj_Brown_Shingles = "褐色木瓦平頂",
   Tooltip_BuildingMenuObj_Brown_Shingles_Pitched_1 = "褐色木瓦傾斜1",
@@ -1030,6 +1045,19 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Inner = "褐色木瓦露臺內部",
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Outer = "褐色木瓦露臺外部",
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Valley = "褐色木瓦露臺转角",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_1 = "棕色木瓦半谷外 1 號",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_2 = "棕色木瓦半谷外 2 號飯店",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_3 = "棕色木瓦半谷外 3 號飯店",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_1 = "棕色木瓦半谷內 1 號",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_2 = "棕色木瓦半谷內 2 號",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_3 = "棕色木瓦半谷內 3 號",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Pitched_Half = "棕色木瓦半傾斜",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Pitched = "棕色木瓦下半部傾斜",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Pitched = "棕色木瓦上半部傾斜",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Inner = "下半谷內棕色木瓦",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Inner = "棕色木瓦上半谷內",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Outer = "下半谷外棕色木瓦",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Outer = "棕色木瓦上半谷外",
 
   Tooltip_BuildingMenuObj_Light_Brown_Shingles = "淺褐色木瓦平頂",
   Tooltip_BuildingMenuObj_Light_Brown_Shingles_Pitched_1 = "淺褐色木瓦傾斜1",
@@ -1102,6 +1130,19 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Inner = "灰色木瓦露臺內部",
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Outer = "灰色木瓦露臺外部",
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Valley = "灰色木瓦露臺转角",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_1 = "灰瓦半谷外 1 號飯店",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_2 = "灰瓦半谷外 2 號飯店",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_3 = "灰瓦半谷外 3 號飯店",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_1 = "灰木瓦半谷內 1 號",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_2 = "灰色木瓦半谷內 2 號",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_3 = "灰瓦半谷內 3 號飯店",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Pitched_Half = "半坡灰色木瓦",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Pitched = "灰色木瓦下半部傾斜",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Pitched = "灰色木瓦上半部傾斜",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Inner = "灰色木瓦下半谷內",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Inner = "灰色木瓦上半谷內",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Outer = "下半谷外灰色木瓦",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Outer = "灰色木瓦上半部山谷外",
 
   Tooltip_Roof_Generic = "提供保護的標準屋頂，遮雨又攩雪，堅固又可靠。",
 
@@ -1201,8 +1242,6 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left = "雙開黑色玻璃門（左）",
   Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door = "單開慄木面板門",
   Tooltip_BuildingMenuObj_Single_Pane_Black_Door = "單開黑色面板門",
-  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "褐色滑動玻璃門",
-  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "白色滑動玻璃門",
   Tooltip_BuildingMenuObj_Blue_Fossoil_Glass_Door = "藍色化石公司玻璃門",
   Tooltip_BuildingMenuObj_Red_Gas2Go_Glass_Door = "紅色Gas 2 Go玻璃門",
   Tooltip_BuildingMenuObj_Sea_Horse_Glass_Door = "Sea Horse玻璃門",
@@ -1218,9 +1257,11 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Security_Door = "安保門",
   Tooltip_Security_Door = "帶有密碼鎖的極其安全的安保門，私密安全兩不誤。",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "褐色滑動玻璃門",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "白色滑動玻璃門",
   Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
   Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
-
+  
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "3格白色車庫門",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "3格綠色車庫門",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "3格灰色車庫門",
@@ -1274,13 +1315,13 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_White_Crown_Molding = "白色頂部綫腳",
   Tooltip_BuildingMenuObj_White_Crown_Molding_Pillar = "白色頂部綫腳柱",
 
-  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim = "灰色乙烯基頂部綫腳",
-  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar = "灰色乙烯基頂部綫腳柱",
+  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim = "灰色乙烯基綫腳",
+  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar = "灰色乙烯基綫腳柱",
 
   Tooltip_BuildingMenuObj_Black_Vinyl_Trim = "黑色乙烯基頂部綫腳",
   Tooltip_BuildingMenuObj_Black_Vinyl_Trim_Pillar = "黑色乙烯基頂部綫腳柱",
 
-  Tooltip_BuildingMenuObj_Brown_Tile_Trim = "褐色乙烯基頂部綫腳",
+  Tooltip_BuildingMenuObj_Brown_Tile_Trim = "褐色地板綫腳",
   Tooltip_BuildingMenuObj_Brown_Tile_Trim_Pillar = "褐色乙烯基頂部綫腳柱",
 
   Tooltip_Edge_Detailing = "提供精美的邊緣細節裝飾來提高建築物美學。",
@@ -1407,7 +1448,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence = "鏈式刀片刺網柵欄",
   Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Corner = "鏈式刀片刺網柵欄轉角",
   Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Post = "鏈式刀片刺網柵欄柱",
-
+  
   Tooltip_BuildingMenuObj_Fence_Chain = "鏈式柵欄",
   Tooltip_BuildingMenuObj_Fence_Chain_Corner = "鏈式柵欄轉角",
   Tooltip_BuildingMenuObj_Fence_Chain_Post = "鏈式柵欄柱",
@@ -1432,7 +1473,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Wrought_Iron_Fence_Post = "鍛鐵柵欄柱",
   Tooltip_BuildingMenuObj_Wrought_Iron_Fence = "鍛鐵柵欄",
   Tooltip_BuildingMenuObj_Wrought_Iron_Fence_Corner = "鍛鐵柵欄轉角",
-
+  
   Tooltip_BuildingMenuObj_White_Picket_Fence_Post = "白色方樁柵欄柱",
   Tooltip_BuildingMenuObj_White_Picket_Fence = "白色方樁柵欄",
   Tooltip_BuildingMenuObj_White_Picket_Fence_Corner = "白色方樁柵欄轉角",
@@ -1450,7 +1491,7 @@ Tooltip_CH = {
   Tooltip_White_Picket_Fence = "白色方樁柵欄柱，給末世庇護所帶來了一份郊區魅力。",
   Tooltip_Grey_Wood_Fence_Post = "灰色木柵欄柱，好的東西總是韜光斂迹。",
   Tooltip_Grey_Wood_Fence_Fence = "簡約的灰色木柵欄，旣融於環境卻又能提供可靠的安全防護。",
-
+  
   Tooltip_Light_Brown_Wood_Fence_Post = "淺褐色木柵欄柱，在末世裏有點不同很重要。",
   Tooltip_Light_Brown_Wood_Fence = "淺褐色木柵欄，舉於亂世，帶來風格和安全。",
   Tooltip_Plain_Wooden_Fence_Post = "簡明的木制柵欄，迎合喜愛實用勝於奢華的生存者。",
@@ -1462,18 +1503,18 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Wooden_Railing_Tall_Post = "木制欄杆高柱",
   Tooltip_BuildingMenuObj_Wooden_Railing_with_Tall_Post = "木制欄杆高柱",
   Tooltip_BuildingMenuObj_Wooden_Railing = "木制欄杆",
-  Tooltip_BuildingMenuObj_Wooden_Railing_轉角 = "木制欄杆轉角",
+  Tooltip_BuildingMenuObj_Wooden_Railing_Corner = "木欄桿角",
   Tooltip_BuildingMenuObj_White_Wooden_Railing_Post = "白色木制欄杆柱",
   Tooltip_BuildingMenuObj_White_Wooden_Railing_Tall_Post = "白色木制欄杆高柱",
   Tooltip_BuildingMenuObj_White_Wooden_Railing_with_Tall_Post = "白色木制欄杆高柱",
   Tooltip_BuildingMenuObj_White_Wooden_Railing = "白色木制欄杆",
-  Tooltip_BuildingMenuObj_White_Wooden_Railing_轉角 = "白色木制欄杆轉角",
+  Tooltip_BuildingMenuObj_White_Wooden_Railing_Corner = "白色木欄桿角",
   Tooltip_BuildingMenuObj_Wood_and_Metal_Railing_Post = "木制金屬欄杆柱",
   Tooltip_BuildingMenuObj_Wood_and_Metal_Railing = "木制金屬欄杆",
-  Tooltip_BuildingMenuObj_Wood_and_Metal_Railing_轉角 = "木制金屬欄杆轉角",
+  Tooltip_BuildingMenuObj_Wood_and_Metal_Railing_Corner = "木質和金屬欄桿角",
   Tooltip_BuildingMenuObj_Metal_Railing_Post = "金屬欄杆柱",
   Tooltip_BuildingMenuObj_Metal_Railing = "金屬欄杆",
-  Tooltip_BuildingMenuObj_Metal_Railing_轉角 = "金屬欄杆轉角",
+  Tooltip_BuildingMenuObj_Metal_Railing_Corner = "金屬欄桿角",
   Tooltip_BuildingMenuObj_White_Rail_Fence_Post = "白色欄杆柵欄柱",
   Tooltip_BuildingMenuObj_White_Rail_Fence = "白色欄杆柵欄",
   Tooltip_BuildingMenuObj_Grey_Rail_Fence_Post = "灰色欄杆柵欄柱",
@@ -1482,18 +1523,14 @@ Tooltip_CH = {
   Tooltip_Wooden_Railing_Tall_Post = "木制欄杆高柱，末世之下尺寸越大越安全。",
   Tooltip_Wooden_Railing_with_Tall_Post = "實用的木制欄杆高柱，不算最好看的但是架不住好用啊。",
   Tooltip_Wooden_Railing = "基本的木制欄杆，設計上更注重功能而不是樣式。",
-  Tooltip_Wooden_Railing_Corner = "基本的木制欄杆，設計上更注重功能而不是樣式。",
   Tooltip_White_Wooden_Railing_Post = "功能強大的白色欄杆柱，專注於實用而非外觀。",
   Tooltip_White_Wooden_Railing_Tall_Post = "白色木制高欄杆柱，末世之下尺寸越大越安全。",
   Tooltip_White_Wooden_Railing_with_Tall_Post = "不是最吸引人的，但也能作用體現明顯。",
   Tooltip_White_Wooden_Railing = "觀感不討喜但功能強大的白色木制欄杆。",
-  Tooltip_White_Wooden_Railing_Corner = "觀感不討喜但功能強大的白色木制欄杆。",
   Tooltip_Wood_and_Metal_Railing_Post = "結合了木頭和金屬的功能強大的欄杆柱，強調實用性。",
   Tooltip_Wood_and_Metal_Railing = "結合了木頭和金屬的功能強大的欄杆柱，獻給珍視實用優於外觀的人們。",
-  Tooltip_Wood_and_Metal_Railing_Corner = "結合了木頭和金屬的功能強大的欄杆柱，獻給珍視實用優於外觀的人們。",
   Tooltip_Metal_Railing_Post = "不帶裝飾的金屬欄杆柱，靠實用而不是外觀脫穎而出。",
   Tooltip_Metal_Railing = "實利主義者的金屬欄杆，急需之時憑可靠性為人所知而非外表。",
-  Tooltip_Metal_Railing_Corner = "實利主義者的金屬欄杆，急需之時憑可靠性為人所知而非外表。",
   Tooltip_Beige_Rail_Fence_Post = "從當地商場再利用的欄杆柱，末日之下又有新的用途。",
   Tooltip_Beige_Rail_Fence_Railing = "從當地商場再利用的欄杆，危急時刻提供堅固的防護能力。",
   Tooltip_Mall_Rail_Fence_Post = "從當地商場再利用的欄杆柱",
@@ -1650,18 +1687,18 @@ Tooltip_CH = {
 
   Tooltip_Half_Crate = "尺寸減半，但容量不減的箱子。",
   Tooltip_Grocery_Box = "搜刮干凈蔬菜店後，你會用這些空箱子來存放東西。",
-
+  
   Tooltip_Big_Cardboard_Box = "一只大紙箱，請把正面朝上。",
   Tooltip_Small_Cardboard_Box = "存放雜物的紙箱。",
   Tooltip_Broken_Cardboard_Box = "歷盡滄桑的紙板箱。",
-
+  
   Tooltip_BuildingMenuObj_Green_Military_Crate = "軍用綠色箱子",
   Tooltip_BuildingMenuObj_Grey_Military_Crate = "軍用灰色箱子",
   Tooltip_Green_Military_Crate = "被軍隊常用來存放軍用物資的軍用綠色箱子，可以堆疊。",
   Tooltip_Grey_Military_Crate = "被軍隊常用來存放軍用物資的軍用灰色箱子，可以堆疊。",
 
   Tooltip_RecyclingBin = "在末世裏，回收比什麽都重要。",
-
+  
   Tooltip_Pallet_of_Bricks = "用來藏匿東西的一堆舊磚頭。",
   Tooltip_Dog_House = "殭尸把狗子喫了，所以現在它的屋子用來放東西了。",
   Tooltip_Outhouse_Box = "至少你知道沒人會在裏面翻看你的東西了。",
@@ -1700,7 +1737,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_White_Fancy_FireplaceJamb_Sides_North = "白色花式側壁北+鏡像",
   Tooltip_BuildingMenuObj_White_Fancy_FireplaceJamb_Sides_West = "白色花式側壁西+鏡像",
   Tooltip_BuildingMenuObj_White_Fancy_FireplaceJamb_Middle = "白色側壁中",
-
+  
 
   Tooltip_Fireplace = "用於取暖和烹飪的經典壁爐。 <RGB:1,0.8,0><SPACE> 如果你想加上側壁，請先建造它們，否則側壁會覆蓋掉壁爐。",
   Tooltip_BuildingMenuObj_Generator = "發電機",
@@ -1730,7 +1767,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Car_Lift_Lower = "汽車舉昇機下部",
   Tooltip_BuildingMenuObj_Car_Lift_Middle = "汽車舉昇機中部",
 
-  Tooltip_Posters_Generic = "海報裝飾能給安全屋增添个性。快用你喜歡的圖像和藝術品來裝點你的安全屋吧。"
+  Tooltip_Posters_Generic = "海報裝飾能給安全屋增添个性。快用你喜歡的圖像和藝術品來裝點你的安全屋吧。",
   Tooltip_Signs_Generic = "便於傳遞扼要信息和標記關鍵地點的通用標識。",
   Tooltip_Rug_Generic = "風格舒適多用途的地毯，給末世藏匿點帶來了温暖。",
   Tooltip_Grave_Generic = "用來紀念末世中逝去生命的昏暗栖息處。",

@@ -148,8 +148,16 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "他のコンテナのサブカテゴリを有効にする",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "その他のコンテナのサブカテゴリを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ レクリエーションカテゴリー _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "音楽サブカテゴリを有効にする",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "ジュークボックスやピアノなどを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ 家具カテゴリー _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
  

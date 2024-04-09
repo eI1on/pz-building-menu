@@ -2,6 +2,29 @@ IGUI_HU = {
 
     IGUI_BuildingMenu = "Épület menü",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Kategória módosítása %3/%4 = Lapok módosítása F = Kedvenc kategória ESC = Bezárás",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Elem ikonok megjelenítése",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Váltás az elemikonok megjelenítéséhez vagy elrejtéséhez az eszköztippen belül.",
+    IGUI_BuildingMenuUI_IconScale = "Elem Ikon mérete",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Beállítja az elemleírásokban megjelenő elemikonok méretét. <BR> Az 1-es lépték megőrzi az ikon eredeti méretét (20 képpont), míg a 2-es megduplázza azt.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Ablak áthelyezése",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Az ablak mozgatásának leállítása",
+    IGUI_BuildingMenuUI_Build = "Épít",
+    IGUI_BuildingMenuUI_Favorite = "Kedvenc",
+    IGUI_BuildingMenuUI_Close = "Bezárás",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Bal oldali lap",
+    IGUI_BuildingMenuUI_Tab_Right = "Jobb oldali lap",
+    
+    IGUI_BuildingMenuUI_List_Left = "Lista balra",
+    IGUI_BuildingMenuUI_List_Right = "Lista jobbra",
+    IGUI_BuildingMenuUI_List_Up = "Lista fel",
+    IGUI_BuildingMenuUI_List_Down = "Listázd",
+
+
     IGUI_BuildingMenuTab_Favorite = "Kedvenc",
     IGUI_BuildingMenuTab_General = "Tábornok",
 
@@ -89,7 +112,7 @@ IGUI_HU = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Jail Doors",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Üveg ajtók",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Biztonsági ajtók",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 csempe garázskapu",
@@ -103,7 +126,7 @@ IGUI_HU = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Padlóléc",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Fali panelek",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Ablakok",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Fa",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Függönyök",

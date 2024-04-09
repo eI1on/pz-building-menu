@@ -1,0 +1,5 @@
+UI_CN = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> 這是建築選單。 <LINE> <LINE> <SIZE:small> <LEFT> 每個選項卡代表一個獨特的Tilepack 插件，其中可建構內容被分類為類別和子類別。 <LINE> <LINE> <IMAGE:media/ui/building_menu.png> 當您將滑鼠懸停在可建置項目上時，工具提示將顯示建置所需的專案.這些要求根據您的庫存中的物品以及角色 3x3 網格內周圍地板上的物品動態更新。 <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> 為了簡化您的建造過程，您可以將常用的Buildables 及其配方加入「收藏夾”選項卡中。若要讓子類別出現在收藏夾中，請確保其父類別也被收藏。",
+    UI_optionscreen_binding_BuildingMenu = "切換建置選單 UI",
+}

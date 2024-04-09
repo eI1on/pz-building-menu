@@ -2,6 +2,29 @@ IGUI_ES = {
 
     IGUI_BuildingMenu = "Menú de Construcción",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Cambiar categoría %3/%4 = Cambiar pestañas F = Categoría favorita ESC = Cerrar",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Mostrar iconos de elementos",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Alternar para mostrar u ocultar iconos de elementos dentro de la información sobre herramientas.",
+    IGUI_BuildingMenuUI_IconScale = "Tamaño del icono del artículo",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Ajusta el tamaño de los iconos de elementos que se muestran en la información sobre herramientas. <BR> Una escala de '1' mantiene el tamaño original del icono (20 píxeles), mientras que '2' lo duplica.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Mover ventana",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Dejar de mover la ventana",
+    IGUI_BuildingMenuUI_Build = "Construir",
+    IGUI_BuildingMenuUI_Favorite = "Favorito",
+    IGUI_BuildingMenuUI_Close = "Cerca",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Pestaña izquierda",
+    IGUI_BuildingMenuUI_Tab_Right = "Pestaña derecha",
+    
+    IGUI_BuildingMenuUI_List_Left = "Lista izquierda",
+    IGUI_BuildingMenuUI_List_Right = "Lista derecha",
+    IGUI_BuildingMenuUI_List_Up = "Enumerar",
+    IGUI_BuildingMenuUI_List_Down = "Lista abajo",
+
+
     IGUI_BuildingMenuTab_Favorite = "Favoritos",
     IGUI_BuildingMenuTab_General = "General",
 
@@ -24,7 +47,7 @@ IGUI_ES = {
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Revestimiento Azul",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Revestimiento Bronceado",
-    IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard = "Revestimiento Rosa",
+    IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard = "Revestimiento Rosa"
     IGUI_BuildingMenuSubCat_Walls_Turquoise_Clapboard = "Revestimiento Turquesa",
     IGUI_BuildingMenuSubCat_Walls_White_Wide_Clapboard = "Revestimiento Blanco Amplio",
     IGUI_BuildingMenuSubCat_Walls_White_Clapboard = "Revestimiento Blanco",
@@ -80,7 +103,7 @@ IGUI_ES = {
     IGUI_BuildingMenuSubCat_Roofing_Brown_Shakes_Roofs = "Techos de Sacudidas Marrones",
     IGUI_BuildingMenuSubCat_Roofing_Glass_Roofs = "Techos de Vidrio",
     IGUI_BuildingMenuSubCat_Roofing_Tent_Roofs = "Techos de Tienda",
-
+    
     IGUI_BuildingMenuCat_Doors = "Puertas",
     IGUI_BuildingMenuSubCat_Doors_Wooden_Doors = "Puertas de Madera",
     IGUI_BuildingMenuSubCat_Doors_Low_Doors = "Puertas Bajas",
@@ -89,7 +112,7 @@ IGUI_ES = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Puertas de Cárcel",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Puertas de Vidrio",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Puertas de Seguridad",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Puertas de Garaje de 3 Azulejos",
@@ -103,7 +126,7 @@ IGUI_ES = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Molduras de Suelo",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Paneles de Pared",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Ventanas",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Madera",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Cortinas",

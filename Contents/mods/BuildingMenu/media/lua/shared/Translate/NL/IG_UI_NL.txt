@@ -2,6 +2,29 @@ IGUI_NL = {
 
     IGUI_BuildingMenu = "Bouwmenu",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Categorie wijzigen %3/%4 = Tabbladen wijzigen F = Favoriete categorie ESC = Sluiten",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Itempictogrammen weergeven",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Schakel tussen het weergeven of verbergen van itempictogrammen binnen de knopinfo.",
+    IGUI_BuildingMenuUI_IconScale = "Grootte van itempictogram",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Past de grootte aan van de itempictogrammen die in tooltips worden weergegeven. <BR> Een schaal van '1' behoudt de oorspronkelijke grootte van het pictogram (20 pixels), terwijl '2' deze verdubbelt.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Venster verplaatsen",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Stop met bewegend raam",
+    IGUI_BuildingMenuUI_Build = "Bouwen",
+    IGUI_BuildingMenuUI_Favorite = "Favoriet",
+    IGUI_BuildingMenuUI_Close = "Dichtbij",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Tabblad links",
+    IGUI_BuildingMenuUI_Tab_Right = "Tab rechts",
+    
+    IGUI_BuildingMenuUI_List_Left = "Lijst links",
+    IGUI_BuildingMenuUI_List_Right = "Lijst goed",
+    IGUI_BuildingMenuUI_List_Up = "Opsommen",
+    IGUI_BuildingMenuUI_List_Down = "Lijst omlaag",
+
+
     IGUI_BuildingMenuTab_Favorite = "Favoriet",
     IGUI_BuildingMenuTab_General = "Algemeen",
 
@@ -89,7 +112,7 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Gevangenisdeuren",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Glazen deuren",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Beveiligingsdeuren",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Garagedeuren met 3 tegels",
@@ -103,7 +126,7 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Vloergieten",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Muur panelen",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "ramen",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Houten",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Gordijnen",

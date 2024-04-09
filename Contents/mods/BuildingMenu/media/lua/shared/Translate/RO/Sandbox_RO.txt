@@ -148,8 +148,16 @@ Sandbox_RO = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Activați subcategoria Alte Containere",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Activați pentru adăugarea altor subcategorii de containere. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Categoria recreativă _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Activați Subcategoria Muzică",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Activați pentru a adăuga tonomat, piane și altele. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria Mobilier _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Acesta este doar un separator de linii, activarea acestuia nu are efect.",
  

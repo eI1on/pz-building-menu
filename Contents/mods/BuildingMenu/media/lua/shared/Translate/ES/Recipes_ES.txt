@@ -1,28 +1,28 @@
 Recipe_ES = {
-    /* Recetas para Fabricar Cristal */
+    /* Make Glass Recipes */
     Recipe_BMPrepareGlassShards = "BM Preparar cristal para fundir",
     Recipe_BMUnprepareGlassShards = "BM Quitar cristal de la sartén",
     Recipe_BMRemoveGlassPane = "BM Extraer panel de cristal",
 
-    /* Recetas para Romper Cristal */
+    /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Romper en cristal roto",
     Recipe_BMSmashGlassPane = "Romper en cristal roto",
     Recipe_BMSmashWindshield = "Romper en cristal roto",
     Recipe_BMSmashWindows = "Romper en cristal roto",
 
-    /* Recetas para Vehículos: Estándar */
+    /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Hacer Parabrisas Estándar",
     Recipe_BMRearWindshield1 = "Hacer Parabrisas Trasero Estándar",
     Recipe_BMFrontWindow1 = "Hacer Ventana Delantera Estándar",
     Recipe_BMRearWindow1 = "Hacer Ventana Trasera Estándar",
 
-    /* Recetas para Vehículos: Resistente */
+    /* Vehicle: Heavy-Duty Recipes */
     Recipe_BMWindshield2 = "Hacer Parabrisas Resistente",
     Recipe_BMRearWindshield2 = "Hacer Parabrisas Trasero Resistente",
     Recipe_BMFrontWindow2 = "Hacer Ventana Delantera Resistente",
     Recipe_BMRearWindow2 = "Hacer Ventana Trasera Resistente",
 
-    /* Recetas para Vehículos: Deportivo */
+    /* Vehicle: Sport Recipes */
     Recipe_BMWindshield3 = "Hacer Parabrisas Deportivo",
     Recipe_BMRearWindshield3 = "Hacer Parabrisas Trasero Deportivo",
     Recipe_BMFrontWindow3 = "Hacer Ventana Delantera Deportiva",

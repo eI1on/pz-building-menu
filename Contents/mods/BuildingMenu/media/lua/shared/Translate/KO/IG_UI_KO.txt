@@ -1,17 +1,40 @@
 IGUI_KO = {
 
     IGUI_BuildingMenu = "건축 메뉴",
-	
+
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = 카테고리 변경 %3/%4 = 탭 변경 F = 즐겨찾는 카테고리 ESC = 닫기",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "표시 항목 아이콘",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "도구 설명 내에서 항목 아이콘을 표시하거나 숨기려면 전환합니다.",
+    IGUI_BuildingMenuUI_IconScale = "항목 아이콘 크기",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "툴팁에 표시되는 항목 아이콘의 크기를 조정합니다. <BR> '1' 배율은 아이콘의 원래 크기(20픽셀)를 유지하고 '2'는 두 배로 늘립니다.",
+
+    IGUI_BuildingMenuUI_Move_UI = "창 이동",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "이동 창 중지",
+    IGUI_BuildingMenuUI_Build = "짓다",
+    IGUI_BuildingMenuUI_Favorite = "가장 좋아하는",
+    IGUI_BuildingMenuUI_Close = "닫다",
+
+    IGUI_BuildingMenuUI_Tab_Left = "탭 왼쪽",
+    IGUI_BuildingMenuUI_Tab_Right = "탭 오른쪽",
+    
+    IGUI_BuildingMenuUI_List_Left = "왼쪽 목록",
+    IGUI_BuildingMenuUI_List_Right = "목록 오른쪽",
+    IGUI_BuildingMenuUI_List_Up = "목록업",
+    IGUI_BuildingMenuUI_List_Down = "목록 아래로",
+
+
     IGUI_BuildingMenuTab_Favorite = "즐겨찾기",
     IGUI_BuildingMenuTab_General = "일반",
-    
-	
+
+
     IGUI_CraftCategory_Windows = "창문",
-    
+
     IGUI_BuildingMenuCat_Walls = "벽",
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "회색 돌",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "황갈색 돌",
-    
+
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "빨간 벽돌",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "낡은 벽돌",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "파란 벽돌",
@@ -20,11 +43,11 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "하얀 벽돌",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "녹색 벽돌",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "갈색 벽돌",
-        IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "파란 판자",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "황갈색 판자",
-    IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard = "분홍 판자",
+    IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard = "분홍 판자"
     IGUI_BuildingMenuSubCat_Walls_Turquoise_Clapboard = "청록색 판자",
     IGUI_BuildingMenuSubCat_Walls_White_Wide_Clapboard = "흰색 와이드 판자",
     IGUI_BuildingMenuSubCat_Walls_White_Clapboard = "흰색 판자",
@@ -36,7 +59,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_Red_Barn_Wood = "빨간 헛간 나무",
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "갈색 패널",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "화려한 나무 패널",
-    
+
     IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
 
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "흰색 시멘트 블록",
@@ -45,7 +68,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_Dark_Grey_Cinderblock = "진회색 시멘트 블록",
     IGUI_BuildingMenuSubCat_Walls_Light_Grey_Cinderblock = "연회색 시멘트 블록",
     IGUI_BuildingMenuSubCat_Walls_School_Cinderblock_Walls = "학교 시멘트 블록 벽",
-    
+
     IGUI_BuildingMenuSubCat_Walls_Painted_Blue = "파란색으로 칠한 벽",
     IGUI_BuildingMenuSubCat_Walls_Painted_Green = "초록색으로 칠한 벽",
     IGUI_BuildingMenuSubCat_Walls_Painted_Purple = "보라색으로 칠한 벽",
@@ -53,7 +76,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_Painted_Other_Colours = "기타 색상으로 칠한 벽",
     IGUI_BuildingMenuSubCat_Walls_Interior_Arched_Windows = "내부 아치형 창문 벽",
     IGUI_BuildingMenuSubCat_Walls_Exterior_Arched_Windows = "외부 아치형 창문 벽",
-    
+
     IGUI_BuildingMenuSubCat_Walls_PileoCrepe = "Pile o Crepe  벽",
     IGUI_BuildingMenuSubCat_Walls_Diner_Walls = "Diner 벽",
     IGUI_BuildingMenuSubCat_Walls_Spiffos_Walls = "Spiffos 벽",
@@ -69,7 +92,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "하수관 벽",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "텐트 벽",
-    
+
     IGUI_BuildingMenuCat_Roofing = "지붕",
     IGUI_BuildingMenuSubCat_Roofing_Black_Roofs = "검은 지붕",
     IGUI_BuildingMenuSubCat_Roofing_Brown_Shingles_Roofs = "갈색 슬레이트 지붕",
@@ -103,19 +126,19 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "바닥 몰딩",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "벽 패널",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "창문",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "나무 창문",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "커튼",
     
     IGUI_BuildingMenuSubCat_Windows_Jail_Windows = "감옥 창문",
-    
+
     IGUI_BuildingMenuCat_Fencing = "울타리",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "높은 울타리",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "낮은 울타리",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "난간",
     IGUI_BuildingMenuSubCat_Fencing_Other = "기타",
-    
+
     IGUI_BuildingMenuCat_Floors = "바닥",
     IGUI_BuildingMenuSubCat_Floors_Wooden = "나무 바닥",
     IGUI_BuildingMenuSubCat_Floors_Carpets = "카펫",
@@ -125,11 +148,11 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Floors_Tile_Diagonal = "대각선 타일 바닥",
     IGUI_BuildingMenuSubCat_Floors_Tile_Smooth = "매끄러운 타일 바닥",
     IGUI_BuildingMenuSubCat_Floors_Tile_Exterior = "외부용 타일 바닥",
-    
+
     IGUI_BuildingMenuCat_Stairs = "계단",
     IGUI_BuildingMenuSubCat_Stairs_Wooden = "나무 계단",
     IGUI_BuildingMenuSubCat_Stairs_Metal = "금속 계단",
-    
+
     IGUI_BuildingMenuCat_Road_Work = "도로 공사",
     IGUI_BuildingMenuSubCat_Road_Work_Asphalt = "아스팔트 도로",
     IGUI_BuildingMenuSubCat_Road_Work_Dirt = "흙 도로",
@@ -138,7 +161,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Road_Work_Sidewalk_Edge = "인도 가장자리",
     IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line = "흰색 선으로 그린 도로",
     IGUI_BuildingMenuSubCat_Road_Work_Painted_Yellow_Line = "노란색 선으로 그린 도로",
-    
+
     IGUI_BuildingMenuCat_Containers = "컨테이너",
     IGUI_BuildingMenuSubCat_Containers_Residential = "주택",
     IGUI_BuildingMenuSubCat_Containers_Restaurant = "레스토랑",
@@ -154,7 +177,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Containers_Clothing = "의류",
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "쓰레기통",
     IGUI_BuildingMenuSubCat_Containers_Others = "기타",
-    
+
     IGUI_BuildingMenuCat_Recreational = "Recreational",
     IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
 
@@ -169,7 +192,7 @@ IGUI_KO = {
     
     IGUI_BuildingMenuSubCat_Furniture_Bookshelves = "책장",
     IGUI_BuildingMenuSubCat_Furniture_Dressers = "옷장",
-    
+
     IGUI_BuildingMenuCat_Decorations = "장식",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "벽난로",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "양탄자",
@@ -180,31 +203,30 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_Decorations_Garage = "차고 장식",
     IGUI_BuildingMenuSubCat_Decorations_Industrial = "산업 장식",
     IGUI_BuildingMenuSubCat_Decorations_Graves = "묘지",
-    
+
     IGUI_BuildingMenuCat_Vegetation = "식물",
     IGUI_BuildingMenuSubCat_Vegetation_Flower_Beds = "꽃밭",
     IGUI_BuildingMenuSubCat_Vegetation_Grass = "잔디",
     IGUI_BuildingMenuSubCat_Vegetation_Hedges = "낙엽수",
     IGUI_BuildingMenuSubCat_Vegetation_Vines = "벽덩이",
     IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor = "실내 식물",
-    
+
     IGUI_BuildingMenuCat_Survival = "생존",
     IGUI_BuildingMenuSubCat_Survival_Fireplace = "벽난로",
     IGUI_BuildingMenuSubCat_Survival_Generator = "발전기",
     IGUI_BuildingMenuSubCat_Survival_Water_Well = "우물",
     IGUI_BuildingMenuSubCat_Survival_Metal_Drums = "금속 드럼",
-    
+
     IGUI_BuildingMenuCat_Lighting = "조명",
     IGUI_BuildingMenuSubCat_Lighting_Indoor = "실내",
     IGUI_BuildingMenuSubCat_Lighting_Outdoor = "실외",
     IGUI_BuildingMenuSubCat_Lighting_Light_Posts = "가로등",
-    
+
     IGUI_BuildingMenuCat_Appliances = "가전제품",
     IGUI_BuildingMenuSubCat_Appliances_Bathroom = "욕실",
     IGUI_BuildingMenuSubCat_Appliances_Cooking = "주방",
     IGUI_BuildingMenuSubCat_Appliances_Fridges = "냉장고",
     IGUI_BuildingMenuSubCat_Appliances_Laundry = "세탁",
-    
-    
+
 
 }

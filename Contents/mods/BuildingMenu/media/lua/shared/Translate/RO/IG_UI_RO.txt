@@ -2,6 +2,29 @@ IGUI_RO = {
 
     IGUI_BuildingMenu = "Meniul de Construcții",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Modificați categoria %3/%4 = Schimbați filele F = Categoria favorită ESC = Închideți",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Afișează pictogramele articolului",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Comutați pentru a afișa sau ascunde pictogramele articolului în balonul cu instrumente.",
+    IGUI_BuildingMenuUI_IconScale = "Dimensiunea pictogramei articolului",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Ajustează dimensiunea pictogramelor articolului afișate în sfaturi cu instrumente. <BR> O scară de „1” menține dimensiunea originală a pictogramei (20 de pixeli), în timp ce „2” o dublează.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Mutați fereastra",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Opriți Mutarea Ferestrei",
+    IGUI_BuildingMenuUI_Build = "Construieste",
+    IGUI_BuildingMenuUI_Favorite = "Favorit",
+    IGUI_BuildingMenuUI_Close = "Închide",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Tab Stânga",
+    IGUI_BuildingMenuUI_Tab_Right = "Tab Dreapta",
+    
+    IGUI_BuildingMenuUI_List_Left = "Listă stânga",
+    IGUI_BuildingMenuUI_List_Right = "Listă dreapta",
+    IGUI_BuildingMenuUI_List_Up = "Listă Sus",
+    IGUI_BuildingMenuUI_List_Down = "Lista Jos",
+
+
     IGUI_BuildingMenuTab_Favorite = "Favorite",
     IGUI_BuildingMenuTab_General = "General",
 
@@ -24,7 +47,7 @@ IGUI_RO = {
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Șindrilă Albastră",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Șindrilă Cafenie",
-    IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard = "Șindrilă Roz",
+    IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard = "Șindrilă Roz"
     IGUI_BuildingMenuSubCat_Walls_Turquoise_Clapboard = "Șindrilă Turcoaz",
     IGUI_BuildingMenuSubCat_Walls_White_Wide_Clapboard = "Șindrilă Lată Albă",
     IGUI_BuildingMenuSubCat_Walls_White_Clapboard = "Șindrilă Albă",
@@ -89,7 +112,7 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Uși de Închisoare",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Uși de Sticla",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Uși de Securitate",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Ușă de Garaj de 3 Tile-uri",
@@ -103,7 +126,7 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Ornamente pentru Podea",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Panouri de Perete",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Ferestre",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "De lemn",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Perdele",

@@ -2,6 +2,29 @@ IGUI_PL = {
 
     IGUI_BuildingMenu = "Menu budynku",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Zmień kategorię %3/%4 = Zmień karty F = Ulubiona kategoria ESC = Zamknij",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Wyświetl ikony elementów",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Przełącz, aby wyświetlić lub ukryć ikony elementów w podpowiedzi.",
+    IGUI_BuildingMenuUI_IconScale = "Rozmiar ikony elementu",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Dostosowuje rozmiar ikon przedmiotów wyświetlanych w etykietach narzędzi. <BR> Skala „1” zachowuje oryginalny rozmiar ikony (20 pikseli), a „2” podwaja go.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Przesuń okno",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Zatrzymaj ruchome okno",
+    IGUI_BuildingMenuUI_Build = "Zbudować",
+    IGUI_BuildingMenuUI_Favorite = "Ulubiony",
+    IGUI_BuildingMenuUI_Close = "Zamknąć",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Zakładka w lewo",
+    IGUI_BuildingMenuUI_Tab_Right = "Zakładka Prawo",
+    
+    IGUI_BuildingMenuUI_List_Left = "Lista po lewej stronie",
+    IGUI_BuildingMenuUI_List_Right = "Lista właściwa",
+    IGUI_BuildingMenuUI_List_Up = "Lista w górę",
+    IGUI_BuildingMenuUI_List_Down = "Lista w dół",
+
+
     IGUI_BuildingMenuTab_Favorite = "Ulubiony",
     IGUI_BuildingMenuTab_General = "Ogólny",
 
@@ -89,7 +112,7 @@ IGUI_PL = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Drzwi więzienia",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Szklane drzwi",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Drzwi bezpieczeństwa",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Bramy garażowe z 3 płytkami",
@@ -103,7 +126,7 @@ IGUI_PL = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Formowanie podłogi",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Panele ścienne",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Okna",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Drewniany",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Zasłony",

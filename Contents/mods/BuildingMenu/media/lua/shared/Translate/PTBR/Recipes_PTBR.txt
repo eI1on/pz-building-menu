@@ -1,28 +1,28 @@
 Recipe_PTBR = {
-    /* Receitas para Produção de Vidro */
+    /* Make Glass Recipes */
     Recipe_BMPrepareGlassShards = "BM Preparar vidro para fusão",
     Recipe_BMUnprepareGlassShards = "BM Remover vidro da Assadeira",
     Recipe_BMRemoveGlassPane = "BM Extrair painel de vidro",
 
-    /* Receitas para Quebra de Vidro */
+    /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Quebrar em vidro quebrado",
     Recipe_BMSmashGlassPane = "Quebrar em vidro quebrado",
     Recipe_BMSmashWindshield = "Quebrar em vidro quebrado",
     Recipe_BMSmashWindows = "Quebrar em vidro quebrado",
 
-    /* Receitas para Veículos: Popular */
+    /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Fazer Para-brisa Popular",
     Recipe_BMRearWindshield1 = "Fazer Para-brisa Traseiro Popular",
     Recipe_BMFrontWindow1 = "Fazer Janela Dianteira Popular",
     Recipe_BMRearWindow1 = "Fazer Janela Traseira Popular",
 
-    /* Receitas para Veículos: Pesado */
+    /* Vehicle: Heavy-Duty Recipes */
     Recipe_BMWindshield2 = "Fazer Para-brisa Pesado",
     Recipe_BMRearWindshield2 = "Fazer Para-brisa Traseiro Pesado",
     Recipe_BMFrontWindow2 = "Fazer Janela Dianteira Pesado",
     Recipe_BMRearWindow2 = "Fazer Janela Traseira Pesado",
 
-    /* Receitas para Veículos: Esportivo */
+    /* Vehicle: Sport Recipes */
     Recipe_BMWindshield3 = "Fazer Para-brisa Esportivo",
     Recipe_BMRearWindshield3 = "Fazer Para-brisa Traseiro Esportivo",
     Recipe_BMFrontWindow3 = "Fazer Janela Dianteira Esportiva",

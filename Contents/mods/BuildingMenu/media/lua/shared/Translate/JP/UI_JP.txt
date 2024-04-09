@@ -1,0 +1,5 @@
+UI_JP = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> これは建物メニューです。 <LINE> <LINE> <SIZE:small> <LEFT> 各タブは固有のタイルパック アドオンを表しており、ビルド可能アイテムはカテゴリとサブカテゴリに分類されています。 <LINE> <LINE> <IMAGE:media/ui/building_menu.png> 構築可能なアイテムの上にマウスを置くと、ツールチップに構築に必要なアイテムが表示されます。これらの要件は、インベントリ内のアイテムと、キャラクターの 3x3 グリッド内の周囲のフロアにあるアイテムに基づいて動的に更新されます。 <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> 構築プロセスを簡素化するために、頻繁に使用する Buildable とそのレシピを [お気に入り] タブに追加できます。サブカテゴリをお気に入りに表示するには、その親カテゴリもお気に入りになっていることを確認してください。",
+    UI_optionscreen_binding_BuildingMenu = "構築メニュー UI の切り替え",
+}

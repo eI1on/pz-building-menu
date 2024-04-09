@@ -1,0 +1,5 @@
+UI_NO = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Dette er bygningsmenyen. <LINE> <LINE> <SIZE:small> <LEFT> Hver fane representerer et unikt Tilepack-tillegg, der de byggbare elementene er sortert i kategorier og underkategorier. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Når du holder markøren over et byggbart element, vil verktøytipset vise de nødvendige elementene for konstruksjon. Disse kravene oppdateres dynamisk basert på varene i inventaret ditt og de på gulvet rundt innenfor et 3x3 rutenett av karakteren din. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> For å forenkle byggeprosessen din, kan du legge til ofte brukte Buildables med deres oppskrifter i Favoritter-fanen. For at en underkategori skal vises i favoritter, må du sørge for at dens overordnede kategori også er favoritt.",
+    UI_optionscreen_binding_BuildingMenu = "Slå av/på Building Menu UI",
+}

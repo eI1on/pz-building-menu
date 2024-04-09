@@ -148,8 +148,16 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Paganahin ang Iba Pang Subcategory na Container",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Paganahin ang magdagdag ng Iba Pang Subcategory na Container. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Kategorya ng Libangan _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Paganahin ang Subcategory ng Musika",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Paganahin ang magdagdag ng mga jukebox, piano at iba pa. <LINE><LINE> <RGB:1,0,0> KINAKAILANGAN NG CLIENT RESTART!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Kategorya ng Muwebles _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
  

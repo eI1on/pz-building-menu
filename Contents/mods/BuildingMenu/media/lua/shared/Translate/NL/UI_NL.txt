@@ -1,0 +1,5 @@
+UI_NL = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Dit is het gebouwenmenu. <LINE> <LINE> <SIZE:small> <LEFT> Elk tabblad vertegenwoordigt een unieke Tilepack-add-on, waarbij de buildables zijn gesorteerd in categorieën en subcategorieën. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Wanneer je de muisaanwijzer op een bouwbaar item plaatst, worden in de tooltip de benodigde items voor de constructie weergegeven. Deze vereisten worden dynamisch bijgewerkt op basis van de items in je inventaris en die op de omliggende verdieping binnen een 3x3 raster van je personage. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Om uw bouwproces te vereenvoudigen, kunt u veelgebruikte Buildables met hun recepten toevoegen aan het tabblad Favorieten. Om een ??subcategorie in Favorieten te laten verschijnen, moet u ervoor zorgen dat de bovenliggende categorie ervan ook favoriet is.",
+    UI_optionscreen_binding_BuildingMenu = "Schakel de gebruikersinterface van het gebouwmenu in of uit",
+}

@@ -148,8 +148,16 @@ Sandbox_DE = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Aktivieren Sie die Unterkategorie „Andere Container“.",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Aktivieren Sie diese Option, um die Unterkategorie „Andere Container“ hinzuzufügen. <LINE><LINE> <RGB:1,0,0> ERFORDERT EINEN NEUSTART DES CLIENTS!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Freizeitkategorie _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Aktivieren Sie die Unterkategorie „Musik“.",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Aktivieren Sie diese Option, um Jukeboxen, Klaviere usw. hinzuzufügen. <LINE><LINE> <RGB:1,0,0> ERFORDERT EINEN NEUSTART DES CLIENTS!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Möbelkategorie _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",
  

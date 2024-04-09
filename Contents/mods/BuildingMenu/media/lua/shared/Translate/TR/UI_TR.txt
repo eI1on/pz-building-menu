@@ -1,0 +1,5 @@
+UI_TR = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Bu Bina Menüsü'dür. <LINE> <LINE> <SIZE:small> <LEFT> Her sekme, oluşturulabilir öğelerin Kategoriler ve Alt Kategoriler halinde sıralandığı benzersiz bir Tilepack eklentisini temsil eder. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Fareyle parçalarla yapılan bir öğenin üzerine geldiğinizde, araç ipucu inşaat için gerekli öğeleri gösterecektir. Bu gereksinimler, envanterinizdeki öğelere ve karakterinizin 3x3'lük ızgarasındaki çevre kattaki öğelere göre dinamik olarak güncellenir. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> İnşa sürecinizi basitleştirmek için, sık kullandığınız Oluşturulabilir Öğeleri tarifleriyle birlikte Favoriler sekmesine ekleyebilirsiniz. Bir Alt Kategorinin Favoriler'de görünmesi için, üst Kategorisinin de favorilere eklendiğinden emin olun.",
+    UI_optionscreen_binding_BuildingMenu = "Bina Menüsü Arayüzünü Değiştir",
+}

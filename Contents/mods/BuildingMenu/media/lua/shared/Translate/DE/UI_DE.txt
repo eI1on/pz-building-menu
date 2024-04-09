@@ -1,0 +1,5 @@
+UI_DE = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Dies ist das Gebäudemenü. <LINE> <LINE> <SIZE:small> <LEFT> Jede Registerkarte stellt ein einzigartiges Tilepack-Addon dar, in dem die Buildables in Kategorien und Unterkategorien sortiert sind. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Wenn Sie mit der Maus über ein baubares Element fahren, zeigt der Tooltip die für den Bau erforderlichen Elemente an. Diese Anforderungen werden dynamisch aktualisiert, basierend auf den Gegenständen in Ihrem Inventar und denen auf der umgebenden Etage innerhalb eines 3x3-Rasters Ihres Charakters. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Um Ihren Bauprozess zu vereinfachen, können Sie häufig verwendete Buildables mit ihren Rezepten zur Registerkarte „Favoriten“ hinzufügen. Damit eine Unterkategorie in den Favoriten angezeigt wird, stellen Sie sicher, dass ihre übergeordnete Kategorie ebenfalls zu den Favoriten gehört.",
+    UI_optionscreen_binding_BuildingMenu = "Schalten Sie die Benutzeroberfläche des Gebäudemenüs um",
+}

@@ -2,6 +2,29 @@ IGUI_JP = {
 
     IGUI_BuildingMenu = "建物メニュー",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = カテゴリの変更 %3/%4 = タブの変更 F = お気に入りのカテゴリ ESC = 閉じる",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "表示項目アイコン",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "ツールチップ内の項目アイコンの表示と非表示を切り替えます。",
+    IGUI_BuildingMenuUI_IconScale = "アイテムアイコンのサイズ",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "ツールチップに表示されるアイテムアイコンのサイズを調整します。 <BR> スケール「1」はアイコンの元のサイズ (20 ピクセル) を維持し、「2」はアイコンのサイズを 2 倍にします。",
+
+    IGUI_BuildingMenuUI_Move_UI = "ウィンドウの移動",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "ウィンドウの移動を停止",
+    IGUI_BuildingMenuUI_Build = "建てる",
+    IGUI_BuildingMenuUI_Favorite = "お気に入り",
+    IGUI_BuildingMenuUI_Close = "近い",
+
+    IGUI_BuildingMenuUI_Tab_Left = "左タブ",
+    IGUI_BuildingMenuUI_Tab_Right = "右タブ",
+    
+    IGUI_BuildingMenuUI_List_Left = "リスト左",
+    IGUI_BuildingMenuUI_List_Right = "右リスト",
+    IGUI_BuildingMenuUI_List_Up = "リストアップする",
+    IGUI_BuildingMenuUI_List_Down = "リストダウン",
+
+
     IGUI_BuildingMenuTab_Favorite = "お気に入り",
     IGUI_BuildingMenuTab_General = "一般的な",
 
@@ -89,7 +112,7 @@ IGUI_JP = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "刑務所のドア",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "ガラスドア",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "セキュリティドア",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 タイルのガレージドア",
@@ -103,7 +126,7 @@ IGUI_JP = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "フロアモールディング",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "壁パネル",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "ウィンドウズ",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "木製",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "カーテン",

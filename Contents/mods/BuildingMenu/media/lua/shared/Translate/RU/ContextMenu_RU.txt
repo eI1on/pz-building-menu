@@ -4,5 +4,4 @@ ContextMenu_RU = {
   ContextMenu_RemoveWallDetailing = "Удалить декор стены",
   ContextMenu_RemoveTrafficLine = "Удалить разметку",
 
-
 }

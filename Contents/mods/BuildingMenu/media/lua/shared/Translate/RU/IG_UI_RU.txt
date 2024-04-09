@@ -2,6 +2,29 @@ IGUI_RU = {
 
     IGUI_BuildingMenu = "Меню строительства",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Изменить категорию %3/%4 = Изменить вкладки F = Избранная категория ESC = Закрыть",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Отображение значков элементов",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Переключите, чтобы отобразить или скрыть значки элементов во всплывающей подсказке.",
+    IGUI_BuildingMenuUI_IconScale = "Размер значка элемента",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Регулирует размер значков элементов, отображаемых во всплывающих подсказках. <BR> Масштаб "1" сохраняет исходный размер значка (20 пикселей), а "2" увеличивает его вдвое.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Переместить окно",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Остановить перемещение окна",
+    IGUI_BuildingMenuUI_Build = "Строить",
+    IGUI_BuildingMenuUI_Favorite = "Любимый",
+    IGUI_BuildingMenuUI_Close = "Закрывать",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Вкладка слева",
+    IGUI_BuildingMenuUI_Tab_Right = "Вкладка справа",
+    
+    IGUI_BuildingMenuUI_List_Left = "Список слева",
+    IGUI_BuildingMenuUI_List_Right = "Список справа",
+    IGUI_BuildingMenuUI_List_Up = "Список вверх",
+    IGUI_BuildingMenuUI_List_Down = "Список вниз",
+
+
     IGUI_BuildingMenuTab_Favorite = "Избранное",
     IGUI_BuildingMenuTab_General = "Основное",
 
@@ -89,7 +112,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Тюремные",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Стеклянные",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Дверь охраны",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Гаражная на 3 клетки",
@@ -103,7 +126,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Плинтусы",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Настенные панели",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Окна",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Деревянные",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Шторы",

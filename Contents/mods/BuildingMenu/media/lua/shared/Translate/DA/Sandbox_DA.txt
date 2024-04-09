@@ -148,7 +148,7 @@ Sandbox_DA = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Aktiver underkategorien Andre containere",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Aktiver for at tilføje andre containere underkategori. <LINE><LINE> <RGB:1,0,0> KRÆVER KLIENTGENSTART!",
    
-
+   
 
     Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Recreational Category _____________",
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",

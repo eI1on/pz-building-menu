@@ -3,12 +3,12 @@ Sandbox_ES = {
     Sandbox_BuildingMenu_isThumpable = "Estructuras que se pueden golpear",
     Sandbox_BuildingMenu_isThumpable_tooltip = "Desactive <SPACE><RGB:1,0.8,0> <RGB:1,1,1><SPACE> para que las estructuras construidas usando el menú sean inmunes al da?o de los zombis.",
 
-	
-	Sandbox_BuildingMenu_EmptyBox = "",
-    Sandbox_BuildingMenu_EmptyBox_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
-	
 
-	Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoría de Paredes _______________",
+    Sandbox_BuildingMenu_EmptyBox = "",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
+
+
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoría de Paredes _______________",
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "Habilitar Subcategoría de Paredes de Madera",
@@ -37,18 +37,18 @@ Sandbox_ES = {
     
     Sandbox_BuildingMenu_industrialWallsSubCategory = "Habilitar Subcategoría de Paredes Industriales",
     Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Habilitar para agregar estructuras de paredes industriales. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
-	
+    
 
 
-	Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Categoría de Techos _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Categoría de Techos _______________",
     Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_roofsCategory = "Habilitar Categoría de Techos",
     Sandbox_BuildingMenu_roofsCategory_tooltip = "Habilitar para agregar estructuras de techos, como tejas, tejas de madera, vidrio. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
-	
+    
 
 
-	Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Categoría de Puertas _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Categoría de Puertas _______________",
     Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_doorsSubCategory = "Habilitar Categoría de Puertas",
@@ -56,26 +56,26 @@ Sandbox_ES = {
     
     Sandbox_BuildingMenu_garageDoorsSubCategory = "Habilitar Subcategoría de Puertas de Garaje",
     Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Habilitar para agregar Puertas de Garaje de 3 y 4 baldosas. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
-	
+    
 
 
-	Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Categoría de Arquitectura Plus _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Categoría de Arquitectura Plus _________",
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "Habilitar Categoría de Arquitectura Plus",
     Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Habilitar para agregar Molduras de Puertas, Molduras de Techo, Detalles de Bordes, Molduras de Piso y Paneles de Pared. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
-	
+    
 
 
-	Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Categoría de Ventanas ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Categoría de Ventanas ______________",
     Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_windowsCategory = "Habilitar Categoría de Ventanas",
     Sandbox_BuildingMenu_windowsCategory_tooltip = "Habilitar para agregar ventanas. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
-	
+    
 
 
-	Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Categoría de Cercas ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Categoría de Cercas ______________",
     Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "Habilitar Subcategoría de Cercas Altas",
@@ -86,25 +86,25 @@ Sandbox_ES = {
     
     Sandbox_BuildingMenu_otherFencesSubCategory = "Habilitar Subcategoría de Otras Cercas",
     Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Habilitar para agregar otras cercas como barreras Hesco, cercas de metal bajo, cercas de ladrillo. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
-	
+    
 
 
-	Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Categoría de Pisos ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Categoría de Pisos ______________",
     Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_floorsCategory = "Habilitar Categoría de Pisos",
     Sandbox_BuildingMenu_floorsCategory_tooltip = "Habilitar para agregar pisos. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
+    
 
 
-
- 	Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Categoría de Escaleras ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Categoría de Escaleras ______________",
     Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
  
     Sandbox_BuildingMenu_stairsCategory = "Habilitar Categoría de Escaleras",
     Sandbox_BuildingMenu_stairsCategory_tooltip = "Habilitar para agregar escaleras. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
-	
-	
-	Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoría de Trabajos de Calle _____________",
+    
+
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoría de Trabajos de Calle _____________",
     Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Habilitar Subcategoría de Asfalto",
@@ -121,10 +121,10 @@ Sandbox_ES = {
     
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Habilitar Subcategoría de Marcas de Calles Pintadas",
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Habilitar para agregar marcas de calles pintadas. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
+    
 
 
-
-	Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoría de Contenedores ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoría de Contenedores ____________",
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
  
     Sandbox_BuildingMenu_kitchenCountersSubCategory = "Habilitar Subcategoría de Mostradores de Cocina",
@@ -147,10 +147,18 @@ Sandbox_ES = {
    
     Sandbox_BuildingMenu_containersOthersSubCategory = "Habilitar Otra Subcategoría de Contenedores",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Habilitar para agregar otra subcategoría de contenedores. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
+   
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Categoría recreativa _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Esto es sólo un separador de línea, comprobarlo no tiene ningún efecto.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Habilitar subcategoría de música",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Habilite para agregar máquinas de discos, pianos y demás. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+    
 
-
-	Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoría de Muebles _____________",
+    
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoría de Muebles _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
  
     Sandbox_BuildingMenu_tablesSubCategory = "Habilitar Subcategoría de Mesas",
@@ -167,10 +175,10 @@ Sandbox_ES = {
    
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Habilitar Subcategoría de Tocadores y Armarios",
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Habilitar para agregar tocadores, cajones y armarios. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
+   
 
 
-
-	Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoría de Decoraciones ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoría de Decoraciones ____________",
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
  
     Sandbox_BuildingMenu_rugsSubCategory = "Habilitar Subcategoría de Alfombras",
@@ -184,10 +192,10 @@ Sandbox_ES = {
    
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "Habilitar Subcategoría de Otras Decoraciones",
     Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Habilitar para agregar otras decoraciones, como bloques de carretera, buzones, postes de barrera, conos de carretera, buzones. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
+   
 
 
-
-	Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoría de Vegetación ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoría de Vegetación ____________",
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "Habilitar Subcategoría de Parterres de Flores",
@@ -201,10 +209,10 @@ Sandbox_ES = {
    
     Sandbox_BuildingMenu_landscapingSubCategory = "Habilitar Subcategoría de Paisajismo",
     Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Habilitar para agregar vegetación de paisajismo, como césped, setos, enredaderas de pared en la Categoría de Vegetación. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
+   
 
 
-
-	Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoría de Supervivencia _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoría de Supervivencia _____________",
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_fireplaceSubCategory = "Habilitar Subcategoría de Chimenea",
@@ -220,7 +228,7 @@ Sandbox_ES = {
     Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
 
 
-	Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Categoría de Electrodomésticos ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Categoría de Electrodomésticos ____________",
     Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Esto es solo un separador de línea, marcarlo no tiene ningún efecto.",
 
     Sandbox_BuildingMenu_lightingAppliances = "Habilitar Categoría de Iluminación",
@@ -237,13 +245,13 @@ Sandbox_ES = {
     
     Sandbox_BuildingMenu_laundryAppliances = "Habilitar Subcategoría de Electrodomésticos de Lavandería",
     Sandbox_BuildingMenu_laundryAppliances_tooltip = "Habilitar para agregar Lavadoras y Secadoras. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE!",
+    
 
 
 
+    Sandbox_BuildingMenuRecipes = "Recetas del Menú de Construcción",
 
-	Sandbox_BuildingMenuRecipes = "Recetas del Menú de Construcción",
-	
-	Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiales ____________",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiales ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Este es solo un separador de líneas, comprobando que no tiene efecto.",
 
     Sandbox_PaintUses = "Usos de la Lata de Pintura",
@@ -259,7 +267,7 @@ Sandbox_ES = {
     Sandbox_BucketConcreteUses_tooltip = "Usos por Cubo con Concreto. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE! <RGB:1,1,1>",
 
 
-	Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Usos",
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Usos",
     Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 Usos",
     Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 Usos",
     Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 Usos",
@@ -282,7 +290,7 @@ Sandbox_ES = {
     Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 Usos",
 
 
-	Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Costo de Madera para Paredes GRANDES",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Costo de Madera para Paredes GRANDES",
     Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Establece la madera necesaria para Paredes GRANDES. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Costo de Clavos para Paredes GRANDES",
@@ -305,7 +313,7 @@ Sandbox_ES = {
     
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Costo de Clavos para Objetos PEQUE?OS",
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Establece los clavos necesarios para Objetos PEQUE?OS. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE! <RGB:1,1,1>",
-
+    
 
     Sandbox_BuildingMenuRecipes_glassPaneCount = "Costo de Paneles de Vidrio",
     Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Establece los paneles de vidrio necesarios. <LINE> Escala con el tama?o y tipo del objeto. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE! <RGB:1,1,1>",
@@ -330,7 +338,7 @@ Sandbox_ES = {
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Chapa de Metal para TEJADOS y SUELOS",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Establece la chapa de metal necesaria para TEJADOS y SUELOS. <LINE> Escala con el tama?o y tipo del objeto. <LINE><LINE> <RGB:1,0,0> REQUIERE REINICIO DEL CLIENTE! <RGB:1,1,1>",
-        
+    
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Habilidades ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Esto es solo un separador de línea, verificar que no tenga efecto.",

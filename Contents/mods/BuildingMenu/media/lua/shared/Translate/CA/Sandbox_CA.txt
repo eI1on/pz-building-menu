@@ -148,8 +148,16 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Activa la subcategoria Altres contenidors",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Activa per afegir la subcategoria Altres contenidors. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Categoria recreativa _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Activa la subcategoria de música",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Habilita per afegir jukeboxes, pianos, etc. <LINE><LINE> <RGB:1,0,0> REQUEREIX EL REINICIAR DEL CLIENT!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria de mobles _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
  

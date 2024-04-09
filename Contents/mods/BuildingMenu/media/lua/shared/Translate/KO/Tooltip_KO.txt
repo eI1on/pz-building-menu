@@ -1,5 +1,5 @@
 Tooltip_KO = {
-
+    
   Tooltip_BMMagazineSecretEntrances = "비밀 통로를 찾기 위해 뒤적여보세요. 건축 메뉴의 Daddy Dirkie 및 SimonMDs 탭 아래에 건축 지침이 있습니다.",
   Tooltip_BMMagazineGlass = "...적어도 그들이 당신을 유용하게 사용했으면 좋겠어요",
   Tooltip_AsphaltMixturePowder = "도로 건설에 사용됩니다. 물 양동이가 필요합니다.",
@@ -450,7 +450,7 @@ Tooltip_KO = {
   Tooltip_Tan_Cinderblock_Door_Frame = "황갈색 시멘트 블록 벽 내에 있는 문 프레임으로 기능과 스타일을 모두 제공합니다.",
   Tooltip_Tan_Cinderblock_Window_Frame = "태양빛과 시야를 조절하기 위한 세련된 황갈색 시멘트 블록 창문 프레임.",
   Tooltip_Tan_Cinderblock_Fence = "개인 스타일에 맞는 황갈색 시멘트 블록 울타리로 심지어 아포칼립스 속에서도 어울립니다.",
-  Tooltip_Tan_Cinderblock_FencePost = "선택한 스타일을 반영하기 위한 황갈색 시멘트 블록 포스트."
+  Tooltip_Tan_Cinderblock_FencePost = "선택한 스타일을 반영하기 위한 황갈색 시멘트 블록 포스트.",
 
   Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Wall = "진회색 시멘트 블록 벽",
   Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Door_Frame = "진회색 시멘트 블록 문 프레임",
@@ -499,7 +499,6 @@ Tooltip_KO = {
   Tooltip_Blue_Window_Frame = "고요한 파란색으로 도색된 창문 프레임 섹션입니다.",
   Tooltip_Blue_Pillar = "고요한 파란색으로 도색된 기둥입니다.",
 
-
   Tooltip_BuildingMenuObj_White_Panel_Door = "흰색 패널 문",
   Tooltip_BuildingMenuObj_Black_Panel_Door = "검은색 패널 문",
   Tooltip_BuildingMenuObj_Brown_Panel_Door = "갈색 패널 문",
@@ -540,7 +539,7 @@ Tooltip_KO = {
   Tooltip_Pale_Blue_Wall = "섬세한 연한 푸른 색으로 도장이 칠된 벽.",
   Tooltip_Pale_Blue_Door_Frame = "섬세한 연한 푸른 색으로 도장이 칠된 문 프레임.",
   Tooltip_Pale_Blue_Window_Frame = "섬세한 연한 푸른 색으로 도장이 칠된 창문 프레임 섹션.",
-  Tooltip_Pale_Blue_Pillar = "섬세한 연한 푸른 색으로 도장이 칠된 기둥."
+  Tooltip_Pale_Blue_Pillar = "섬세한 연한 푸른 색으로 도장이 칠된 기둥.",
 
   Tooltip_BuildingMenuObj_Green_Wall = "초록색 벽",
   Tooltip_BuildingMenuObj_Green_Door_Frame = "초록색 문 프레임",
@@ -589,7 +588,7 @@ Tooltip_KO = {
   Tooltip_Strawberry_Wall = "밝은 딸기 색으로 도장이 칠된 벽.",
   Tooltip_Strawberry_Door_Frame = "밝은 딸기 색으로 도장이 칠된 문 프레임.",
   Tooltip_Strawberry_Window_Frame = "밝은 딸기 색으로 도장이 칠된 창문 프레임 섹션.",
-  Tooltip_Strawberry_Pillar = "밝은 딸기 색으로 도장이 칠된 기둥."
+  Tooltip_Strawberry_Pillar = "밝은 딸기 색으로 도장이 칠된 기둥.",
 
   Tooltip_BuildingMenuObj_Berry_Red_Wall = "산딸기 붉은색 벽",
   Tooltip_BuildingMenuObj_Berry_Red_Door_Frame = "산딸기 붉은색 문 프레임",
@@ -638,7 +637,7 @@ Tooltip_KO = {
   Tooltip_Tan_Stripes_Wall = "세련된 진한 갈색 줄무늬 패턴이 있는 벽.",
   Tooltip_Tan_Stripes_Door_Frame = "세련된 진한 갈색 줄무늬 패턴이 있는 문 프레임.",
   Tooltip_Tan_Stripes_Window_Frame = "세련된 진한 갈색 줄무늬 패턴이 있는 창문 프레임 섹션.",
-  Tooltip_Tan_Stripes_Pillar = "세련된 진한 갈색 줄무늬 패턴이 있는 기둥."
+  Tooltip_Tan_Stripes_Pillar = "세련된 진한 갈색 줄무늬 패턴이 있는 기둥.",
 
   Tooltip_BuildingMenuObj_Off_Tan_Wall = "오프 탠 벽",
   Tooltip_BuildingMenuObj_Off_Tan_Door_Frame = "오프 탠 문 프레임",
@@ -679,6 +678,7 @@ Tooltip_KO = {
   Tooltip_Purple_Window_Frame = "월광같은 보랏빛으로 도장이 칠된 창문 프레임 섹션.",
   Tooltip_Purple_Pillar = "월광같은 보랏빛으로 도장이 칠된 기둥.",
 
+
   Tooltip_BuildingMenuObj_Light_Purple_Wall = "연한 보랏빛 벽",
   Tooltip_BuildingMenuObj_Light_Purple_Door_Frame = "연한 보랏빛 문 프레임",
   Tooltip_BuildingMenuObj_Light_Purple_Window_Frame = "연한 보랏빛 창문 프레임",
@@ -687,7 +687,7 @@ Tooltip_KO = {
   Tooltip_Light_Purple_Wall = "부드러운 연한 보랏빛으로 도장이 칠된 벽.",
   Tooltip_Light_Purple_Door_Frame = "부드러운 연한 보랏빛으로 도장이 칠된 문 프레임.",
   Tooltip_Light_Purple_Window_Frame = "부드러운 연한 보랏빛으로 도장이 칠된 창문 프레임 섹션.",
-  Tooltip_Light_Purple_Pillar = "부드러운 연한 보랏빛으로 도장이 칠된 기둥."
+  Tooltip_Light_Purple_Pillar = "부드러운 연한 보랏빛으로 도장이 칠된 기둥.",
 
   Tooltip_BuildingMenuObj_Purple_Stripes_Wall = "보라색 스트라이프 벽",
   Tooltip_BuildingMenuObj_Purple_Stripes_Door_Frame = "보라색 스트라이프 문 프레임",
@@ -728,7 +728,7 @@ Tooltip_KO = {
   Tooltip_Green_Diamonds_Door_Frame = "독특한 초록 다이아몬드 패턴이 있는 문 프레임.",
   Tooltip_Green_Diamonds_Window_Frame = "독특한 초록 다이아몬드 패턴이 있는 창문 프레임 섹션.",
   Tooltip_Green_Diamonds_Pillar = "독특한 초록 다이아몬드 패턴이 있는 기둥.",
-
+  
   Tooltip_BuildingMenuObj_White_Wall = "하얀 벽",
   Tooltip_BuildingMenuObj_White_Door_Frame = "하얀 문 프레임",
   Tooltip_BuildingMenuObj_White_Window_Frame = "하얀 창문 프레임",
@@ -784,7 +784,7 @@ Tooltip_KO = {
   Tooltip_Diner_Pillar = "다이너 테마 패턴이 있는 기둥.",
 
 
-
+  
   Tooltip_BuildingMenuObj_Spiffos_Red1_Wall = "스피포스 붉은색 1 벽",
   Tooltip_BuildingMenuObj_Spiffos_Red1_Door_Frame = "스피포스 붉은색 1 문 프레임",
   Tooltip_BuildingMenuObj_Spiffos_Red1_Window_Frame1 = "스피포스 붉은색 1 창문 1",
@@ -872,7 +872,7 @@ Tooltip_KO = {
   Tooltip_Jail_Wall = "안전한 격리를 위한 견고한 감옥 벽.",
   Tooltip_Jail_Door_Frame = "감옥을 위한 강화된 문 프레임.",
   Tooltip_Jail_Pillar = "추가적인 안정성을 위한 지지적인 감옥 기둥.",
-  Tooltip_Jail_Door = "투명한 감옥 문으로 격리 가능.",
+  Tooltip_Jail_Door = "투명한 감옥 문으로 격리 가능."
 
   Tooltip_BuildingMenuObj_Jail_Door = "감옥 문",
   Tooltip_BuildingMenuObj_Jail_Window = "감옥 창문",
@@ -939,7 +939,7 @@ Tooltip_KO = {
   Tooltip_Brown_Frame_Glass_Wall = "모던한 디자인의 우아한 갈색 프레임 유리 벽. 자연광이 풍부하게 통과할 수 있습니다.",
   Tooltip_Brown_Frame_Glass_Pillar = "우아한 갈색 프레임 유리 마감이 있는 지지 기둥으로 세련미를 더합니다.",
   Tooltip_Brown_Frame_Glass_Door_Frame = "모던한 디자인의 우아한 갈색 프레임 유리 문 프레임. 스타일리시한 입퇴장이 가능합니다.",
-
+  
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Wall1 = "검은 프레임 유리 벽 1",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Wall2 = "검은 프레임 유리 벽 2",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Wall3 = "검은 프레임 유리 벽 3",
@@ -948,10 +948,10 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Door_Frame1 = "검은 프레임 유리 문 프레임 1",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Door_Frame2 = "검은 프레임 유리 문 프레임 2",
   Tooltip_BuildingMenuObj_Black_Frame_Glass_Door_Frame3 = "검은 프레임 유리 문 프레임 3",
-  Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence_Post = "검은 프레임 유리 울타리 기둥",
-  Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence = "검은 프레임 유리 울타리",
-  Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence_Corner = "검은 프레임 유리 울타리 코너",
-
+  Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence_Post =  "검은 프레임 유리 울타리 기둥",
+  Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence =  "검은 프레임 유리 울타리",
+  Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence_Corner =  "검은 프레임 유리 울타리 코너",
+  
   Tooltip_Black_Frame_Glass_Wall = "현대적인 디자인의 매끄러운 검은 프레임 유리 벽. 세련미의 터치로 분위기를 높입니다.",
   Tooltip_Black_Frame_Glass_Pillar = "매끄러운 검은 프레임 유리 마감이 있는 지지 기둥으로, 현대적인 우아함을 더합니다.",
   Tooltip_Black_Frame_Glass_Door_Frame = "현대적인 디자인의 매끄러운 검은 프레임 유리 문 프레임. 세련된 출입이 가능합니다.",
@@ -1013,6 +1013,20 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Inner = "검은 패티오 슁글(Shingle) 안쪽",
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Outer = "검은 패티오 슁글(Shingle) 바깥쪽",
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Valley = "검은 패티오 슁글(Shingle) 골",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_1 = "블랙싱글 하프밸리 아우터 1",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_2 = "블랙싱글 하프밸리 아우터 2",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_3 = "블랙싱글 하프밸리 아우터 3",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_1 = "블랙슁글 하프밸리 내부 1",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_2 = "블랙슁글스 하프밸리 내부 2",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_3 = "블랙슁글스 하프밸리 내부 3",
+  Tooltip_BuildingMenuObj_Black_Shingles_Pitched_Half = "검은색 지붕널 피치 하프",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Pitched = "검은색 지붕널 아래쪽 절반 피치",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Pitched = "블랙 슁글 탑 하프 피치",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Inner = "블랙 슁글 로워 하프 밸리 내부",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Inner = "블랙 슁글 탑 하프 밸리 내부",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Outer = "블랙 지붕널 하부 하프 밸리 외부",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Outer = "블랙 슁글 탑 하프 밸리 아우터",
+
 
   Tooltip_BuildingMenuObj_Brown_Shingles = "갈색 슁글(Shingle)",
   Tooltip_BuildingMenuObj_Brown_Shingles_Pitched_1 = "갈색 슁글(Shingle) 경사 1",
@@ -1031,6 +1045,19 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Inner = "갈색 패티오 슁글(Shingle) 안쪽",
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Outer = "갈색 패티오 슁글(Shingle) 바깥쪽",
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Valley = "갈색 패티오 슁글(Shingle) 골",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_1 = "브라운싱글 하프밸리 아우터 1",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_2 = "브라운싱글 하프밸리 아우터 2",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_3 = "브라운싱글 하프밸리 아우터 3",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_1 = "브라운싱글 하프밸리 내부 1",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_2 = "브라운슁글스 하프밸리 내부 2",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_3 = "브라운싱글스 하프밸리 내부 3",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Pitched_Half = "갈색 지붕널 피치 하프",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Pitched = "갈색 지붕널 아래쪽 절반 피치",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Pitched = "갈색 지붕널 상단 절반 피치",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Inner = "브라운 지붕널 하부 하프 밸리 내부",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Inner = "브라운 슁글 탑 하프 밸리 내부",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Outer = "갈색 지붕널 하부 계곡 외부",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Outer = "브라운 지붕널 탑 하프 밸리 외부",
 
   Tooltip_BuildingMenuObj_Light_Brown_Shingles = "라이트 갈색 슁글(Shingle)",
   Tooltip_BuildingMenuObj_Light_Brown_Shingles_Pitched_1 = "라이트 갈색 슁글(Shingle) 경사 1",
@@ -1103,6 +1130,19 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Inner = "회색 패티오 슁글(Shingle) 안쪽",
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Outer = "회색 패티오 슁글(Shingle) 바깥쪽",
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Valley = "회색 패티오 슁글(Shingle) 골",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_1 = "그레이싱글 하프밸리 아우터 1",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_2 = "그레이싱글 하프밸리 아우터 2",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_3 = "그레이싱글 하프밸리 아우터 3",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_1 = "그레이싱글 하프밸리 내부 1",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_2 = "그레이싱글 하프밸리 내부 2",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_3 = "그레이싱글 하프밸리 내부 3",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Pitched_Half = "회색 지붕널 피치 하프",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Pitched = "회색 지붕널 아래쪽 절반 피치",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Pitched = "회색 지붕널 상단 절반 피치",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Inner = "그레이 지붕널 하부 하프 밸리 내부",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Inner = "그레이 슁글 탑 하프 밸리 내부",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Outer = "회색 지붕널 하부 계곡 외부",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Outer = "회색 지붕널 상단 하프 밸리 외부",
 
   Tooltip_Roof_Generic = "기본 지붕 섹션으로, 날씨로부터 보호해줍니다. 견고하고 신뢰성 있으며 비와 눈으로부터 안전을 보장합니다.",
 
@@ -1153,7 +1193,6 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Tan_Door = "프레임이 필요한 베이지 나무 문.",
   Tooltip_BuildingMenuObj_Black_Door = "프레임이 필요한 검정 나무 문.",
   Tooltip_BuildingMenuObj_Blue_Door = "색상의 강조를 위한 파란색 나무 문.",
-
   Tooltip_Generic_Door = "기본 나무 문.",
   Tooltip_White_Door = "보통의 흰색 나무 문.",
   Tooltip_White_Windows_Door = "전망을 위한 창문이 있는 흰색 나무 문.",
@@ -1203,8 +1242,6 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left = "더블 검은색 유리 문 왼쪽",
   Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door = "싱글 판 체스트넛 문",
   Tooltip_BuildingMenuObj_Single_Pane_Black_Door = "싱글 판 검은 문",
-  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "갈색 슬라이딩 유리 문",
-  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "하얀색 슬라이딩 유리 문",
   Tooltip_BuildingMenuObj_Blue_Fossoil_Glass_Door = "파란 포소일 유리 문",
   Tooltip_BuildingMenuObj_Red_Gas2Go_Glass_Door = "빨간 Gas 2 Go 유리 문",
   Tooltip_BuildingMenuObj_Sea_Horse_Glass_Door = "시호스 유리 문",
@@ -1220,12 +1257,14 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Security_Door = "보안 문",
   Tooltip_Security_Door = "비밀 코드가 있는 매우 안전한 문으로, 좀비를 속이고 생존자를 안전하게 보호합니다.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "갈색 슬라이딩 유리 문",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "하얀색 슬라이딩 유리 문",
   Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
   Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
-
+  
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "3 타일 하얀 차고 문",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "3 타일 녹색 차고 문",
-  Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door = "3 타일 회색 차고 문",
+  Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "3 타일 회색 차고 문",
   Tooltip_BuildingMenuObj_3_Tiles_Rolling_Garage_Door = "3 타일 롤링 차고 문",
   Tooltip_BuildingMenuObj_3_Tiles_Red_Window_Garage_Door = "3 타일 빨간 창문 차고 문",
   Tooltip_BuildingMenuObj_3_Tiles_Rolling_Window_Garage_Door = "3 타일 롤링 윈도우 차고 문",
@@ -1297,7 +1336,7 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Grey_Stone_Curved_Archway = "회색 스톤 커브드 아치웨이",
 
   Tooltip_Floor_Molding = "안전한 피난처에 세련미를 더하는 장식적인 바닥 몰딩.",
-  Tooltip_Wall_Panels = "주변을 더욱 빛내기 위한 장식적인 벽 패널."
+  Tooltip_Wall_Panels = "주변을 더욱 빛내기 위한 장식적인 벽 패널.",
 
 
 
@@ -1356,7 +1395,7 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Tan_Brick_Lower_Third = "황갈색 벽 하부 세 번째",
   Tooltip_BuildingMenuObj_Tan_Brick_Lower_Third_Pillar = "황갈색 벽 하부 세 번째 필라",
   Tooltip_BuildingMenuObj_Tan_Brick_Arched_Window_Frame = "황갈색 벽 아치 창문 프레임",
-  Tooltip_Tan_Brick_Window_Frame = "자연광을 허용하기 위한 창문이 있는 황갈색 벽."
+  Tooltip_Tan_Brick_Window_Frame = "자연광을 허용하기 위한 창문이 있는 황갈색 벽.",
 
   Tooltip_BuildingMenuObj_Painted_White_Lower_Third = "흰색으로 도색된 하단 세 번째",
   Tooltip_BuildingMenuObj_Painted_White_Lower_Third_Pillar = "흰색으로 도색된 하단 세 번째 기둥",
@@ -1404,12 +1443,12 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Large_White_Window = "큰 흰색 창문",
   Tooltip_Windows_Generic = "표준 창문으로, 대재앙 세계의 외부를 볼 수 있습니다.",
 
-  Tooltip_High_Metal_Fence_Generic = "높은 금속 울타리, 끊임없는 좀비 위협에 대한 최대 보안을 제공합니다."
+  Tooltip_High_Metal_Fence_Generic = "높은 금속 울타리, 끊임없는 좀비 위협에 대한 최대 보안을 제공합니다.",
 
   Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence = "체인링크와 예단 와이어 울타리",
   Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Corner = "체인링크와 예단 와이어 울타리 코너",
   Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Post = "체인링크와 예단 와이어 울타리 포스트",
-
+  
   Tooltip_BuildingMenuObj_Fence_Chain = "체인 울타리",
   Tooltip_BuildingMenuObj_Fence_Chain_Corner = "체인 울타리 코너",
   Tooltip_BuildingMenuObj_Fence_Chain_Post = "체인 울타리 포스트",
@@ -1434,7 +1473,7 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Wrought_Iron_Fence_Post = "고풍스러운 철 울타리 기둥",
   Tooltip_BuildingMenuObj_Wrought_Iron_Fence = "고풍스러운 철 울타리",
   Tooltip_BuildingMenuObj_Wrought_Iron_Fence_Corner = "고풍스러운 철 울타리 모퉁이",
-
+  
   Tooltip_BuildingMenuObj_White_Picket_Fence_Post = "흰색 말뚝 울타리 기둥",
   Tooltip_BuildingMenuObj_White_Picket_Fence = "흰색 말뚝 울타리",
   Tooltip_BuildingMenuObj_White_Picket_Fence_Corner = "흰색 말뚝 울타리 모퉁이",
@@ -1452,13 +1491,13 @@ Tooltip_KO = {
   Tooltip_White_Picket_Fence = "고전적인 흰색 말뚝 울타리, 여러분의 아포칼립스 피난처에 교외적인 매력을 가져다 줍니다.",
   Tooltip_Grey_Wood_Fence_Post = "검소한 외관의 회색 나무 울타리 기둥, 효과적인 목적을 위해 만들어졌습니다.",
   Tooltip_Grey_Wood_Fence_Fence = "간단한 회색 나무 울타리, 풍경 속에 녹아들며 안전을 제공합니다.",
-
+  
   Tooltip_Light_Brown_Wood_Fence_Post = "연한 갈색 나무 울타리 기둥, 아포칼립스 속에서도 독창성이 중요합니다.",
   Tooltip_Light_Brown_Wood_Fence = "연한 갈색 나무 울타리, 혼돈 속에서 강조되는 스타일과 안전을 제공합니다.",
   Tooltip_Plain_Wooden_Fence_Post = "간단한 나무 울타리, 생존자들을 위한 실용적인 선택입니다.",
   Tooltip_Plain_Wooden_Fence = "간단하고 실용적인 나무 울타리, 단순함과 기능성을 중시하는 이들을 위한 것입니다.",
   Tooltip_White_Farm_Fence_Post = "흰색 농장 울타리 기둥, 도시 아포칼립스 속에서 농촌의 매력을 제공합니다.",
-  Tooltip_White_Farm_Fence = "흰색 농장 울타리, 아포칼립스 세계 속에서 단순했던 시절을 떠올리게 합니다."
+  Tooltip_White_Farm_Fence = "흰색 농장 울타리, 아포칼립스 세계 속에서 단순했던 시절을 떠올리게 합니다.",
 
   Tooltip_BuildingMenuObj_Wooden_Railing_Post = "나무 난간 기둥",
   Tooltip_BuildingMenuObj_Wooden_Railing_Tall_Post = "키 큰 나무 난간 기둥",
@@ -1540,6 +1579,7 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_Rusty_Mesh_Grate = "녹슨 그물 격자",
   Tooltip_BuildingMenuObj_Steel_Bars_Floor = "강철 바",
   Tooltip_BuildingMenuObj_Grey_Industrial_Floor = "회색 산업 바닥",
+  Tooltip_BuildingMenuObj_Green_Industrial_Floor = "녹색산업층",
   Tooltip_BuildingMenuObj_Brown_Railroad_Metal_Panel = "갈색 철도 금속 판",
   Tooltip_BuildingMenuObj_Grey_Railroad_Metal_Panel = "회색 철도 금속 판",
   Tooltip_BuildingMenuObj_Wide_Plank = "와이드 플랭크",
@@ -1647,18 +1687,18 @@ Tooltip_KO = {
 
   Tooltip_Half_Crate = "절반 크기의 상자로 전체 양을 담을 수 있습니다. 원한다면 최대 4개까지 쌓을 수 있습니다.",
   Tooltip_Grocery_Box = "식료품점을 비우고 나면 물건을 저장하기 위한 빈 상자가 많아집니다.",
-
+  
   Tooltip_Big_Cardboard_Box = "큰 골판지 상자입니다. 항상 올바른 쪽을 유지하세요.",
   Tooltip_Small_Cardboard_Box = "물건을 넣을 골판지 상자입니다. 아쉽게도 더 이상 이사 업체가 없습니다.",
   Tooltip_Broken_Cardboard_Box = "이 골판지 상자는 더 나은 날을 못 봤습니다.",
-
+  
   Tooltip_BuildingMenuObj_Green_Military_Crate = "녹색 군용 상자",
   Tooltip_BuildingMenuObj_Grey_Military_Crate = "회색 군용 상자",
   Tooltip_Green_Military_Crate = "군용 녹색 상자로, 이러한 상자는 종종 군대에서 군수품을 저장하는 데 사용되며 쌓을 수 있습니다.",
   Tooltip_Grey_Military_Crate = "군용 회색 상자로, 이러한 상자는 종종 군대에서 군수품을 저장하는 데 사용되며 쌓을 수 있습니다.",
 
   Tooltip_RecyclingBin = "대재앙 세계에서는 재활용이 더 중요합니다.",
-
+  
   Tooltip_Pallet_of_Bricks = "물건을 숨기기 위한 깔끔하게 쌓인 벽돌",
   Tooltip_Dog_House = "좀비들이 로버를 먹었으니 이제 그의 집을 보관용으로 사용하세요.",
   Tooltip_Outhouse_Box = "적어도 여기서는 누구도 당신의 물건을 찾지 않을 것입니다.",
@@ -1697,7 +1737,7 @@ Tooltip_KO = {
   Tooltip_BuildingMenuObj_White_Fancy_FireplaceJamb_Sides_North = "흰색 화려한 문틀 측면 북쪽 + 거울",
   Tooltip_BuildingMenuObj_White_Fancy_FireplaceJamb_Sides_West = "흰색 화려한 문틀 측면 서쪽 + 거울",
   Tooltip_BuildingMenuObj_White_Fancy_FireplaceJamb_Middle = "흰색 화려한 문틀 중앙",
-
+  
 
   Tooltip_Fireplace = "따뜻함과 요리를 위한 클래식한 벽난로입니다. <RGB:1,0.8,0><SPACE> 만약 문틀도 원한다면 먼저 건설하세요. 그렇지 않으면 벽난로와 겹칠 것입니다.",
   Tooltip_BuildingMenuObj_Generator = "발전기",

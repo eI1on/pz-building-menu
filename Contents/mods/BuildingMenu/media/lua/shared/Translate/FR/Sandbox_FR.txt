@@ -2,7 +2,7 @@ Sandbox_FR = {
     Sandbox_BuildingMenu = "Menu de construction",
     Sandbox_BuildingMenu_isThumpable = "Structures pouvant être fracassée",
     Sandbox_BuildingMenu_isThumpable_tooltip = "Sélectionner <SPACE><RGB:1,0.8,0> DÉSACTIVÉ <RGB:1,1,1><SPACE> pour rendre les structures construites à l'aide du Menu de construction immunisées contre les dégâts des zombies.",
-    
+
 
     Sandbox_BuildingMenu_EmptyBox = "",
     Sandbox_BuildingMenu_EmptyBox_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
@@ -148,8 +148,16 @@ Sandbox_FR = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Activer la sous-catégorie autres conteneurs",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Permet d'ajouter une sous-catégorie Autres conteneurs. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU JEU COTÉ CLIENT !",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Catégorie récréative _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Activer la sous-catégorie Musique",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Permet d'ajouter des juke-box, des pianos, etc. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT !",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Catégorie Meubles _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, le cocher n'a aucun effet.",
  

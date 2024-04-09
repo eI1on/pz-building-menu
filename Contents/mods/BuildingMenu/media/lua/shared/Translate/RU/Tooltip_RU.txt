@@ -798,7 +798,7 @@ Tooltip_RU = {
   Tooltip_Spiffos_Red1_Window_Frame3 = "Оконный проём в фирменном стиле Спиффо.",
   Tooltip_Spiffos_Red1_Pillar = "Наружный угол в фирменном стиле Спиффо.",
 
-	Tooltip_BuildingMenuObj_Spiffos_Red2_Wall = "Стена Spiffos Red 2",
+  Tooltip_BuildingMenuObj_Spiffos_Red2_Wall = "Стена Spiffos Red 2",
   Tooltip_BuildingMenuObj_Spiffos_Red2_Door_Frame = "Дверной проём Spiffos Red 2",
   Tooltip_BuildingMenuObj_Spiffos_Red2_Window_Frame1 = "Окно Spiffos Red 2 - 1",
   Tooltip_BuildingMenuObj_Spiffos_Red2_Window_Frame2 = "Окно Spiffos Red 2 - 2",
@@ -1013,6 +1013,20 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Inner = "Черная черепица",
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Outer = "Черная черепица",
   Tooltip_BuildingMenuObj_Black_Patio_Shingles_Valley = "Черная черепица",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_1 = "Черная черепица Half Valley Outer 1",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_2 = "Черная черепица Half Valley Outer 2",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_3 = "Черная черепица Half Valley Outer 3",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_1 = "Черная черепица Half Valley Inner 1",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_2 = "Черная черепица Half Valley Inner 2",
+  Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Inner_3 = "Черная черепица Half Valley Inner 3",
+  Tooltip_BuildingMenuObj_Black_Shingles_Pitched_Half = "Черная черепица, разбитая наполовину",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Pitched = "Черная черепица нижняя полускатная",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Pitched = "Черная черепица с полускатной верхней частью",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Inner = "Черная черепица Нижняя половина долины Внутренняя",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Inner = "Черная черепица Верхняя половина долины Внутренняя",
+  Tooltip_BuildingMenuObj_Black_Shingles_Lower_Half_Valley_Outer = "Черная черепица Нижняя часть Half Valley Наружная часть",
+  Tooltip_BuildingMenuObj_Black_Shingles_Top_Half_Valley_Outer = "Черная черепица Верхняя часть Half Valley Наружная часть",
+
 
   Tooltip_BuildingMenuObj_Brown_Shingles = "Коричневая черепица",
   Tooltip_BuildingMenuObj_Brown_Shingles_Pitched_1 = "Коричневая черепица 1",
@@ -1031,6 +1045,19 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Inner = "Коричневая черепица",
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Outer = "Коричневая черепица",
   Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Valley = "Коричневая черепица",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_1 = "Коричневая черепица Half Valley Outer 1",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_2 = "Коричневая черепица Half Valley Outer 2",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_3 = "Коричневая черепица Half Valley Outer 3",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_1 = "Коричневая черепица Half Valley Inner 1",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_2 = "Коричневая черепица Half Valley Inner 2",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Inner_3 = "Коричневая черепица Half Valley Inner 3",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Pitched_Half = "Коричневая черепица, срезанная наполовину",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Pitched = "Коричневая черепица с нижним полускатом",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Pitched = "Коричневая черепица с полускатной верхней частью",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Inner = "Коричневая черепица Нижняя половина долины Внутренняя",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Inner = "Коричневая черепица Верхняя половина долины Внутренняя",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Lower_Half_Valley_Outer = "Коричневая черепица Нижняя часть Half Valley Наружная часть",
+  Tooltip_BuildingMenuObj_Brown_Shingles_Top_Half_Valley_Outer = "Коричневая черепица Верхняя часть Half Valley Наружная часть",
 
   Tooltip_BuildingMenuObj_Light_Brown_Shingles = "Светло-коричневая кровля",
   Tooltip_BuildingMenuObj_Light_Brown_Shingles_Pitched_1 = "Светло-коричневая кровля 1",
@@ -1103,6 +1130,19 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Inner = "Серая черепица",
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Outer = "Серая черепица",
   Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Valley = "Серая черепица",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_1 = "Серая черепица Half Valley Outer 1",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_2 = "Серая черепица Half Valley Outer 2",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_3 = "Серая черепица Half Valley Outer 3",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_1 = "Серая черепица Half Valley Inner 1",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_2 = "Серая черепица Half Valley Inner 2",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Inner_3 = "Серая черепица Half Valley Inner 3",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Pitched_Half = "Серая черепица, срезанная наполовину",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Pitched = "Серая черепица, нижняя полускатная",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Pitched = "Серая черепица с полускатной верхней частью",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Inner = "Серая черепица Нижняя половина долины Внутренняя",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Inner = "Серая черепица Верхняя половина долины Внутренняя",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Lower_Half_Valley_Outer = "Серая черепица Нижняя часть Half Valley Наружная часть",
+  Tooltip_BuildingMenuObj_Grey_Shingles_Top_Half_Valley_Outer = "Серая черепица Top Half Valley Outer",
 
   Tooltip_Roof_Generic = "Стандартная крыша для защиты от непогоды.",
 
@@ -1202,8 +1242,6 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Double_Black_Glass_Door_Left = "Двойная черная стеклянная дверь",
   Tooltip_BuildingMenuObj_Single_Pane_Chestnut_Door = "Коричневая стеклянная дверь",
   Tooltip_BuildingMenuObj_Single_Pane_Black_Door = "Черная стеклянная дверь",
-  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "Коричневая раздвижная дверь",
-  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "Белая раздвижная дверь",
   Tooltip_BuildingMenuObj_Blue_Fossoil_Glass_Door = "Синяя стеклянная дверь",
   Tooltip_BuildingMenuObj_Red_Gas2Go_Glass_Door = "Красная стеклянная дверь",
   Tooltip_BuildingMenuObj_Sea_Horse_Glass_Door = "Темно-красная стеклянная дверь",
@@ -1219,9 +1257,11 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_Security_Door = "Защищенная дверь",
   Tooltip_Security_Door = "Дверь с высоким классом защиты.",
 
+  Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door = "Коричневая раздвижная дверь",
+  Tooltip_BuildingMenuObj_White_Sliding_Glass_Door = "Белая раздвижная дверь",
   Tooltip_BuildingMenuObj_Brown_Sliding_Glass_Door_Side_Wall = "Brown Sliding Glass Door Side Wall",
   Tooltip_BuildingMenuObj_White_Sliding_Glass_Door_Side_Wall = "White Sliding Glass Door Side Wall",
-
+  
   Tooltip_BuildingMenuObj_3_Tiles_White_Garage_Door = "Белая гаражная дверь",
   Tooltip_BuildingMenuObj_3_Tiles_Green_Garage_Door = "Зелёная гаражная дверь",
   Tooltip_BuildingMenuObj_3_Tiles_Gray_Garage_Door =  "Серая гаражная дверь",
@@ -1249,7 +1289,7 @@ Tooltip_RU = {
 
   Tooltip_Door_Trim = "Наличник для обрамления ваших дверных проемов.",
 
-  Tooltip_BuildingMenuObj_White_Door_Trim = "Белый наличник",
+  Tooltip_BuildingMenuObj_White_Door_Trim = "Белый потолочный плинтус",
   Tooltip_BuildingMenuObj_White_Door_Frame_1 = "Белый двойной дверной проём 1",
   Tooltip_BuildingMenuObj_White_Door_Frame_2 = "Белый двойной дверной проём 2",
 
@@ -1275,13 +1315,13 @@ Tooltip_RU = {
   Tooltip_BuildingMenuObj_White_Crown_Molding = "Белый потолочный плинтус с орнаментом",
   Tooltip_BuildingMenuObj_White_Crown_Molding_Pillar = "Угол белого потолочного плинтуса",
 
-  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim = "Серый виниловый плинтус",
-  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar = "Угол серого винилового плинтуса",
+  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim = "Серый пластиковый плинтус",
+  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar = "Угол серого пластикового плинтуса",
 
   Tooltip_BuildingMenuObj_Black_Vinyl_Trim = "Черный виниловый плинтус",
   Tooltip_BuildingMenuObj_Black_Vinyl_Trim_Pillar = "Угол черного винилового плинтуса",
 
-  Tooltip_BuildingMenuObj_Brown_Tile_Trim = "Коричневый виниловый плинтус",
+  Tooltip_BuildingMenuObj_Brown_Tile_Trim = "Коричневый плинтус из плитки",
   Tooltip_BuildingMenuObj_Brown_Tile_Trim_Pillar = "Угол коричневого винилового плинтуса",
 
   Tooltip_Edge_Detailing = "Украшения углов.",

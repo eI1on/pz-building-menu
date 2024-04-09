@@ -148,8 +148,16 @@ Sandbox_AR = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Habilitar la subcategoría de otros contenedores",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Habilite para agregar la subcategoría Otros contenedores. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Categoría recreativa _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Esto es sólo un separador de línea, comprobarlo no tiene ningún efecto.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Habilitar subcategoría de música",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Habilite para agregar máquinas de discos, pianos y demás. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoría de muebles _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Esto es sólo un separador de línea, verificarlo no tiene ningún efecto.",
  

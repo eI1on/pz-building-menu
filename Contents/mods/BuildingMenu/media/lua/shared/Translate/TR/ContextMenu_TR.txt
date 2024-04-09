@@ -1,0 +1,7 @@
+ContextMenu_TR = {
+  
+  ContextMenu_BuildingMenu = "Bina Menüsü",
+  ContextMenu_RemoveWallDetailing = "Duvar Detaylarını Kaldır",
+  ContextMenu_RemoveTrafficLine = "Trafik Çizgisini Kaldır",
+
+}

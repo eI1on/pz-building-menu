@@ -1,0 +1,5 @@
+UI_PL = {
+
+    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> To jest menu budowania. <LINE> <LINE> <SIZE:small> <LEFT> Każda zakładka reprezentuje unikalny dodatek Tilepack, w którym elementy do zbudowania są posortowane według kategorii i podkategorii. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Kiedy najedziesz kursorem na element do zbudowania, w podpowiedzi pojawią się elementy wymagane do budowy. Wymagania te aktualizują się dynamicznie w oparciu o przedmioty w twoim ekwipunku i te na otaczającym je piętrze w siatce 3x3 twojej postaci. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Aby uprościć proces budowania, możesz dodać często używane elementy do budowania wraz z ich przepisami do karty Ulubione. Aby podkategoria pojawiła się w Ulubionych, upewnij się, że jej kategoria nadrzędna również jest w ulubionych.",
+    UI_optionscreen_binding_BuildingMenu = "Przełącz interfejs menu budowania",
+}

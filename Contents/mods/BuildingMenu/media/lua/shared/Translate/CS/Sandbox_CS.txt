@@ -2,7 +2,7 @@ Sandbox_CS = {
     Sandbox_BuildingMenu = "Nabídka budovy",
     Sandbox_BuildingMenu_isThumpable = "Thumpable struktury",
     Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Vypněte <RGB:1,1,1><SPACE>, aby byly stavby postavené pomocí nabídky budovy imunní vůči poškození zombie.",
-    
+
 
     Sandbox_BuildingMenu_EmptyBox = "",
     Sandbox_BuildingMenu_EmptyBox_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
@@ -148,8 +148,16 @@ Sandbox_CS = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Povolit podkategorii Další kontejnery",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Povolením přidáte podkategorii Další kontejnery. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Rekreační kategorie ______________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Povolit podkategorii hudby",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Umožňuje přidat jukeboxy, klavíry a podobně. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Kategorie nábytku ______________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
  
@@ -330,7 +338,7 @@ Sandbox_CS = {
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Plech na STŘECHY a PODLAHY Náklady",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sady plechů potřebné pro STŘECHY a PODLAHY. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
-
+    
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Dovednosti _____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",

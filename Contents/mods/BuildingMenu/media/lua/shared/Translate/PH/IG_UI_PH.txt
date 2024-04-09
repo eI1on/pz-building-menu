@@ -2,6 +2,29 @@ IGUI_PH = {
 
     IGUI_BuildingMenu = "Menu ng Building",
 
+    IGUI_BuildingMenuUI_Controls = "%1/%2 = Baguhin ang Kategorya %3/%4 = Baguhin ang Mga Tab F = Paboritong Kategorya ESC = Isara",
+
+
+    IGUI_BuildingMenuUI_ShowItemIcons = "Ipakita ang Mga Icon ng Item",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "I-toggle upang ipakita o itago ang mga icon ng item sa loob ng tooltip.",
+    IGUI_BuildingMenuUI_IconScale = "Laki ng Icon ng Item",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Inaayos ang laki ng mga icon ng item na ipinapakita sa mga tooltip. <BR> Ang isang sukat na '1' ay nagpapanatili sa orihinal na laki ng icon (20 pixels), habang ang '2' ay nagdodoble nito.",
+
+    IGUI_BuildingMenuUI_Move_UI = "Ilipat ang Window",
+    IGUI_BuildingMenuUI_Stop_Move_UI = "Itigil ang Paglipat ng Bintana",
+    IGUI_BuildingMenuUI_Build = "Bumuo",
+    IGUI_BuildingMenuUI_Favorite = "Paborito",
+    IGUI_BuildingMenuUI_Close = "Isara",
+
+    IGUI_BuildingMenuUI_Tab_Left = "Tab sa Kaliwa",
+    IGUI_BuildingMenuUI_Tab_Right = "Tab sa Kanan",
+    
+    IGUI_BuildingMenuUI_List_Left = "Listahan sa Kaliwa",
+    IGUI_BuildingMenuUI_List_Right = "Ilista sa Kanan",
+    IGUI_BuildingMenuUI_List_Up = "Ilista",
+    IGUI_BuildingMenuUI_List_Down = "Ilista",
+
+
     IGUI_BuildingMenuTab_Favorite = "Paborito",
     IGUI_BuildingMenuTab_General = "Heneral",
 
@@ -89,7 +112,7 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Mga Pinto ng Kulungan",
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Mga Pintuang Salamin",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Mga Pinto ng Seguridad",
-
+    
     IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3 Mga Tile na Pintuan ng Garahe",
@@ -103,7 +126,7 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Paghubog sa Sahig",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Mga Panel sa Pader",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    
+
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "kahoy",
     IGUI_BuildingMenuSubCat_Windows_Curtains = "Mga kurtina",

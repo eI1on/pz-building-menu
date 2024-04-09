@@ -148,8 +148,16 @@ Sandbox_HU = {
     Sandbox_BuildingMenu_containersOthersSubCategory = "Egyéb tárolók alkategória engedélyezése",
     Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Engedélyezze az Egyéb tárolók alkategória hozzáadását. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES!",
    
+   
 
+    Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Rekreációs kategória _____________",
+    Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
+ 
+    Sandbox_BuildingMenu_musicSubCategory = "Zene alkategória engedélyezése",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Lehetővé teszi zenegépek, zongorák és hasonlók hozzáadását. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES!",
+    
 
+    
     Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Bútor kategória _____________",
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
  
