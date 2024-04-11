@@ -35359,26 +35359,6 @@ local function addFlowerBedsToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            { sprite = "vegetation_ornamental_01_17", northSprite = "vegetation_ornamental_01_17" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "Tooltip_Flower_Beds_Generic",
-            BuildingMenu.onBuildSimpleFurniture,
-            BuildingMenu.FlowerBedRecipe,
-            true,
-            {
-                actionAnim = "DigShovel",
-                noNeedHammer = true,
-                craftingBank = "Shoveling",
-                completionSound = "DropSoilFromGravelBag",
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
             { sprite = "vegetation_ornamental_01_16", northSprite = "vegetation_ornamental_01_32" }
         ),
         BuildingMenu.createObject(

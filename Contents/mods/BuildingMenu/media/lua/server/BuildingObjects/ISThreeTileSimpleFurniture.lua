@@ -297,7 +297,7 @@ function ISThreeTileSimpleFurniture:partExists(square, index)
     for i = 0, objects:size() - 1 do
         local object = objects:get(i)
         local sprite = object:getSprite()
-        if object and sprite then
+        if object and sprite and instanceof(object, "IsoThumpable") then
             local spriteName = sprite:getName()
             local expectedSpriteName = self:getSpriteNameForPart(index, object:getNorth())
             if spriteName == expectedSpriteName then

@@ -1337,7 +1337,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -1371,7 +1371,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -1434,7 +1434,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -1540,7 +1540,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -1816,7 +1816,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -2036,7 +2036,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -2098,7 +2098,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -2232,7 +2232,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -2340,7 +2340,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -2457,7 +2457,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -2606,7 +2606,7 @@ local function initBuildingMenuRecipes()
                 Amount = screwsCount
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
         },
@@ -3057,7 +3057,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5)
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {
@@ -3118,7 +3118,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsWoodCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 0.5)
             },
             {
@@ -3152,7 +3152,7 @@ local function initBuildingMenuRecipes()
                 generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsWoodCount, "Material")
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             },
             {
@@ -3386,7 +3386,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(metalBarsCount * 0.75)
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 0.5)
             },
             {
@@ -3597,7 +3597,7 @@ local function initBuildingMenuRecipes()
                 Amount = 5
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = glassPaneCount
             }
         },
@@ -4469,7 +4469,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 2)
             },
             {
@@ -4630,7 +4630,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 2)
             },
             {
@@ -4851,7 +4851,7 @@ local function initBuildingMenuRecipes()
                 Amount = 1
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Rope, 1, "Material")
+                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Ropes, 1, "Material")
             },
             {
                 Material = "Base.Stone",
@@ -5662,7 +5662,7 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {
@@ -6004,7 +6004,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigObjectsWoodCount * 1.25)
             },
             {
-                Material = BuildingMenu.ItemsAlternatives.GlassPane,
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {

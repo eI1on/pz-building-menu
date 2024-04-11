@@ -204,7 +204,7 @@ BuildingMenu.GreyBigStoneWallRecipe = {
             Amount = 1
         },
         { -- Alternative Items: Same as above
-            Material = BuildingMenu.ItemsAlternatives.GlassPane,
+            Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
             Amount = glassPaneCount
         }
     },

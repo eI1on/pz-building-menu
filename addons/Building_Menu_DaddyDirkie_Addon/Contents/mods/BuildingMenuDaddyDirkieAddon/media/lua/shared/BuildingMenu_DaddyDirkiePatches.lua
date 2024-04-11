@@ -30,10 +30,11 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "container", "", false);
         BM_Utils.setSpriteProperty(props, "container", "crate", true);
         BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "IsMovAble", "", false);
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "100", false);
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false)
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false)
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false)
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false)
+        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false)
         props:CreateKeySet();
     end
 
@@ -163,4 +164,35 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false)
         props:CreateKeySet()
     end
+
+
+    sprites = {
+        "edit_ddd_RUS_furniture_storage_03_89",
+        "edit_ddd_RUS_furniture_storage_03_88",
+        "edit_ddd_RUS_furniture_storage_03_91",
+        "edit_ddd_RUS_furniture_storage_03_90",
+        "edit_ddd_RUS_furniture_storage_03_41",
+        "edit_ddd_RUS_furniture_storage_03_40",
+        "edit_ddd_RUS_furniture_storage_03_43",
+        "edit_ddd_RUS_furniture_storage_03_42"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false)
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false)
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false)
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "25", false)
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false)
+        BM_Utils.setSpriteProperty(props, "Material2", "Nails", false)
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false)
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false)
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false)
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false)
+        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false)
+        BM_Utils.setSpriteProperty(props, "ScrapSize", "Large", false)
+        BM_Utils.setSpriteProperty(props, "Surface", "15", false)
+        BM_Utils.setSpriteProperty(props, "Container", "wardrobe", false)
+        props:CreateKeySet()
+    end
+
 end)

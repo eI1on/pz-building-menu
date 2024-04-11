@@ -113,7 +113,15 @@ function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
     tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix =
         BuildingMenu.canBuildObject(self.character, tooltipDescription, selectedObject.objDef.data.recipe);
     self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
-    self.tooltip.description = selectedObject.objDef.description .. " <RGB:1,0,0> " .. tooltipDescription;
+
+    local isThumpableStr = "";
+    if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
+        if self.overwriteIsThumpable then
+            isThumpableStr = " <BR> " .. BuildingMenu.bhsString .." INDESTRUCTIBLE ";
+        end
+    end
+
+    self.tooltip.description = selectedObject.objDef.description .. isThumpableStr .. " <RGB:1,0,0> " .. tooltipDescription;
     self.tooltip.footNote = BuildingMenu.textCanRotate;
 end
 
@@ -165,7 +173,7 @@ function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, re
         modifiedOptions[k] = v;
     end
     if self.overwriteIsThumpable or not SandboxVars.BuildingMenu.isThumpable then
-        modifiedOptions.isThumpable = false;
+        modifiedOptions.isThumpable = not self.overwriteIsThumpable;
     end
 
 
@@ -401,7 +409,7 @@ function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
     o.textureCache         = {};
     o.tooltip              = nil;
     o.message              = nil;
-    o.overwriteIsThumpable = false;
+    o.overwriteIsThumpable = SandboxVars.BuildingMenu.isThumpable ~= nil and not SandboxVars.BuildingMenu.isThumpable or false;
     o.parent               = parent;
     return o;
 end
@@ -592,7 +600,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     local context = ISContextMenu.get(0, self:getAbsoluteX() + self:getWidth(),
         self:getAbsoluteY() + self.gearButton:getY());
 
-    if isDebugEnabled() or (isClient() and (getAccessLevel() == "admin")) then
+    if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
         local option = context:addOption("Not Thumpable", self, function(self)
             self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable;
             if isDebugEnabled() then

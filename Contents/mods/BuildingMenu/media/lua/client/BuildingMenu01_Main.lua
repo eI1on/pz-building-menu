@@ -153,11 +153,16 @@ BuildingMenu.Tools = {
 ---@type table<string, table>
 BuildingMenu.ItemsAlternatives = {};
 BuildingMenu.ItemsAlternatives = {
-    GlassPane = {
+    GlassPaneSmall = {
         "Base.GlassPane",
         "ImprovisedGlass.GlassPane",
         "filcher.SFGlassPanel",
-        "Base.SmallGlassPanel"
+        "Base.SmallGlassPanel",
+        "damnCraft.GlassPaneSmall",
+    },
+    GlassPaneBig = {
+        "Base.BigGlassPanel",
+        "damnCraft.GlassPaneLarge",
     },
 }
 
@@ -174,7 +179,7 @@ BuildingMenu.GroupsAlternatives = {
             Multiplier = 0.75,
         }
     },
-    Rope = {
+    Ropes = {
         {
             Item = "Base.Rope",
             Multiplier = 1,
@@ -186,11 +191,11 @@ BuildingMenu.GroupsAlternatives = {
     },
     GlassPanes = {
         {
-            Item = BuildingMenu.ItemsAlternatives.GlassPane,
+            Item = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
             Multiplier = 1,
         },
         {
-            Item = "Base.BigGlassPanel",
+            Item = BuildingMenu.ItemsAlternatives.GlassPaneBig,
             Multiplier = 0.5,
         }
     }

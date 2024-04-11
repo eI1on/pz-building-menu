@@ -106,7 +106,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "container", "", true);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "IsMovAble", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         props:CreateKeySet();
     end
 
@@ -129,5 +129,39 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         props:CreateKeySet();
+    end
+
+
+    local function setSpriteProperties(baseSpriteName, startNumbers, offsets)
+        for _, startNumber in ipairs(startNumbers) do
+            for i, offset in ipairs(offsets) do
+                local spriteName = baseSpriteName .. tostring(startNumber + (i - 1));
+                local sprite = manager:getSprite(spriteName);
+                if sprite then
+                    local props = sprite:getProperties();
+                    BM_Utils.setSpriteProperty(props, offset[1], offset[2], false);
+                    props:CreateKeySet();
+                end
+            end
+        end
+    end
+
+    local offsets = {
+        {"Noffset", "1"},
+        {"Woffset", "-1"},
+        {"Noffset", "1"},
+        {"Woffset", "-1"}
+    };
+
+    -- for Rustic Windows
+    local startNumbers = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120};
+    setSpriteProperties("melos_tiles_windows_03_", startNumbers, offsets);
+
+    startNumbers[#startNumbers] = nil; -- remove the last element for the next sets, as they only go to 112
+
+    local startNumbers = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112};
+    -- for Modern Extended 1 and Modern Extended 2
+    for _, suffix in ipairs({"", "a", "b", "c"}) do
+        setSpriteProperties("melos_tiles_windows_06" .. suffix .. "_", startNumbers, offsets);
     end
 end)
