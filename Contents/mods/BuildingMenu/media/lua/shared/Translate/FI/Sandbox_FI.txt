@@ -324,6 +324,12 @@ Sandbox_FI = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Ruuvien materiaalikustannukset",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Tarvittavat ruuvit. <LINE> Mittakaava objektin koon ja tyypin mukaan. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKASKÄYNNISTYSTÄ! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Metalliromu aitoja varten Kustannukset",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Asettelee aidoissa tarvittavaa metalliromua. <LINE> Mittakaava objektin koon ja tyypin mukaan. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKASKÄYNNISTYSTÄ UUDELLEEN! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Metalliromu SÄHKÖKOHTEISIIN Kustannukset",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Asettelee metalliromua, jota tarvitaan sähkötavaroihin. <LINE> Mittakaava objektin koon ja tyypin mukaan. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKASKÄYNNISTYSTÄ UUDELLEEN! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Metallilevyt SEINÄJÄ kustannukset",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Seinään tarvittavat peltisarjat. <LINE> Mittakaava objektin koon ja tyypin mukaan. <LINE><LINE> <RGB:1,0,0> VAATII ASIAKASKÄYNNISTYSTÄ! <RGB:1,1,1>",
     

@@ -324,6 +324,12 @@ Sandbox_CS = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Materiálové náklady na šrouby",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Nastaví potřebné šrouby. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Kovový šrot za cenu FENCES",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Nastaví kovový šrot potřebný pro ploty. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Náklady na kovový šrot na ELEKTRICKÉ PŘEDMĚTY",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Nastaví kovový šrot potřebný na elektro věci. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Cena plechu pro STĚNY",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Nastaví plech potřebný pro STĚNY. <LINE> Měřítko s velikostí a typem objektu. <LINE><LINE> <RGB:1,0,0> VYŽADUJE RESTART KLIENTA! <RGB:1,1,1>",
     

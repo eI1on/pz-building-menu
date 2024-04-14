@@ -324,6 +324,12 @@ Sandbox_ID = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Biaya Bahan Sekrup",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Set sekrup yang diperlukan. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Scrap Metal untuk Biaya PAGAR",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Set besi tua yang dibutuhkan untuk pagar. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Biaya Scrap Metal untuk BARANG LISTRIK",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Set besi tua yang dibutuhkan untuk peralatan listrik. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Lembaran Logam untuk Biaya DINDING",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Mengatur lembaran logam yang dibutuhkan untuk DINDING. <LINE> Skala dengan ukuran dan jenis objek. <LINE><LINE> <RGB:1,0,0> MEMERLUKAN KLIEN MEMULAI ULANG! <RGB:1,1,1>",
     

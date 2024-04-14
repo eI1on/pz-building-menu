@@ -324,6 +324,12 @@ Sandbox_AR = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Costo del material de los tornillos",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Fija los tornillos necesarios. <LINE> Escala con el tamaño y tipo de objeto. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Costo de chatarra para cercas",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Conjuntos de chatarra necesaria para vallas. <LINE> Se escala con el tamaño y tipo de objeto. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Costo de chatarra para ARTÍCULOS ELÉCTRICOS",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Conjuntos de chatarra necesaria para elementos eléctricos. <LINE> Se escala con el tamaño y tipo de objeto. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Costo de chapa para PAREDES",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Conjuntos de chapa necesarios para PAREDES. <LINE> Escala con el tamaño y tipo de objeto. <LINE><LINE> <RGB:1,0,0> ¡REQUIERE REINICIAR EL CLIENTE! <RGB:1,1,1>",
     

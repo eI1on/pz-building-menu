@@ -324,6 +324,12 @@ Sandbox_IT = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Costo del materiale delle viti",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Imposta le viti necessarie. <LINE> Si adatta alla dimensione e al tipo dell'oggetto. <LINE><LINE> <RGB:1,0,0> RICHIEDE IL RIAVVIO DEL CLIENT! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Costo rottami metallici per recinzioni",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Imposta i rottami metallici necessari per le recinzioni. <LINE> Si adatta alla dimensione e al tipo dell'oggetto. <LINE><LINE> <RGB:1,0,0> RICHIEDE IL RIAVVIO DEL CLIENT! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Costo rottami metallici per ARTICOLI ELETTRICI",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Imposta i rottami metallici necessari per le cose elettriche. <LINE> Si adatta alla dimensione e al tipo dell'oggetto. <LINE><LINE> <RGB:1,0,0> RICHIEDE IL RIAVVIO DEL CLIENT! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Costo Lamiera per PARETI",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Imposta la lamiera necessaria per PARETI. <LINE> Si adatta alla dimensione e al tipo dell'oggetto. <LINE><LINE> <RGB:1,0,0> RICHIEDE IL RIAVVIO DEL CLIENT! <RGB:1,1,1>",
     

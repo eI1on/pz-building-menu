@@ -324,6 +324,12 @@ Sandbox_JP = {
     Sandbox_BuildingMenuRecipes_screwsCount = "ネジ材料費",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "必要なネジを固定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "フェンス用金属スクラップの費用",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "フェンスに必要な金属くずをセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "電気製品用金属スクラップの費用",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "電気関係に必要な金属くずをセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "壁用板金コスト",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "WALLSに必要なシートメタルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
     

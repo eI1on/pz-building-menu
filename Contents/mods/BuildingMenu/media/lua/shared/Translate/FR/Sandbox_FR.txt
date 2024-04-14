@@ -324,6 +324,12 @@ Sandbox_FR = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Coût du matériau des vis",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Définit les vis nécessaires. <LINE> S'adapte à la taille et au type de l'objet. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT ! <RVB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Coût de la ferraille pour les clôtures",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Définit la ferraille nécessaire pour les clôtures. <LINE> S'adapte à la taille et au type de l'objet. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT ! <RVB :1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Coût de la ferraille pour les ARTICLES ÉLECTRIQUES",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Définit la ferraille nécessaire aux objets électriques. <LINE> S'adapte à la taille et au type de l'objet. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT ! <RVB :1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Coût de la tôle pour les MURS",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Définit la tôle nécessaire pour les MURS. <LINE> S'adapte à la taille et au type de l'objet. <LINE><LINE> <RGB:1,0,0> NÉCESSITE UN REDÉMARRAGE DU CLIENT ! <RVB:1,1,1>",
     

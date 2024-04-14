@@ -324,6 +324,12 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Screws Material Cost",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Sets screws needed. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Scrap Metal for FENCES Cost",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Sets scrap metal needed for fences. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Scrap Metal for ELECTRICAL ITEMS Cost",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Sets scrap metal needed for electrical things. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Sheet Metal for WALLS Cost",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Sets sheet metal needed for WALLS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART! <RGB:1,1,1>",
     

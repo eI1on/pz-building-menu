@@ -324,6 +324,12 @@ Sandbox_UA = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Вартість матеріалу гвинтів",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Потрібні встановлені гвинти. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Металобрухт для ПАРКАНІВ Вартість",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Комплекти металобрухту для парканів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Металобрухт для ЕЛЕКТРОТЕХНІКИ Вартість",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Набори металобрухту для електротехніки. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Листовий метал для СТІН Вартість",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Комплекти листового металу необхідні для СТІН. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
     

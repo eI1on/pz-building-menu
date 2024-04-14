@@ -37,11 +37,13 @@ local function initBuildingMenuRecipes()
 
     local screwsCount = SandboxVars.BuildingMenuRecipes.screwsCount or 10;
 
+    local scrapMetalCountForFences = SandboxVars.BuildingMenuRecipes.scrapMetalCountForFences or 20;
+    local scrapMetalCountForElectrical = SandboxVars.BuildingMenuRecipes.scrapMetalCountForElectrical or 10;
+
     local sheetMetalCountForWalls = SandboxVars.BuildingMenuRecipes.sheetMetalCountForWalls or 5;
     local sheetMetalCountForDoors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
     local sheetMetalCountForContainers = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
-    local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes
-    .sheetMetalCountForFixturesAndAppliances or 4;
+    local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes.sheetMetalCountForFixturesAndAppliances or 4;
     local sheetMetalCountForRoofingAndFloors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors or 1;
 
 
@@ -3622,7 +3624,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = 20
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 1)
             }
         },
         useConsumable = {
@@ -3660,7 +3662,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = 10
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.5)
             }
         },
         useConsumable = {
@@ -3698,7 +3700,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = 20
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 1)
             }
         },
         useConsumable = {
@@ -3741,7 +3743,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = 10
+                Amount =  BuildingMenu.round(scrapMetalCountForFences * 0.5)
             }
         },
         useConsumable = {
@@ -5069,7 +5071,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = 15
+                Amount =  BuildingMenu.round(scrapMetalCountForElectrical * 1.5)
             },
         },
         skills = {
@@ -5309,7 +5311,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = 10
+                Amount = BuildingMenu.round(scrapMetalCountForElectrical * 1)
             },
             {
                 Material = "Base.LightBulb",
@@ -5350,7 +5352,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = 10
+                Amount =  BuildingMenu.round(scrapMetalCountForElectrical * 1)
             },
             {
                 Material = "Base.LightBulb",

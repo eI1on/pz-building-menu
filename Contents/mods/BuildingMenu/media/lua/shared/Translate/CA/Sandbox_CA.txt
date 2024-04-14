@@ -324,6 +324,12 @@ Sandbox_CA = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Cost del material dels cargols",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Fixa els cargols necessaris. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Cost de ferralla per TANQUES",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Conjunta de ferralla necessària per a les tanques. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> REQUEREIX EL REINICIAR DEL CLIENT! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Cost de ferralla per a ELÈCTRICS",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Conjunta de ferralla necessària per a coses elèctriques. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> REQUEREIX EL REINICIAR DEL CLIENT! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Cost de xapa per PARETS",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Conjunt de xapa necessària per a PARETS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
     

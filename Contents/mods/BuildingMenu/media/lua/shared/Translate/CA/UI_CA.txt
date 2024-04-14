@@ -1,4 +1,4 @@
-UI_EN = {
+UI_CA = {
 
     UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Aquest és el menú de construcció. <LINE> <LINE> <SIZE:small> <LEFT> Cada pestanya representa un complement Tilepack únic, on els elements construïbles s'ordenen en Categories i Subcategories. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Quan passeu el cursor per sobre d'un element construïble, la informació sobre eines mostrarà els elements necessaris per a la construcció. Aquests requisits s'actualitzen dinàmicament en funció dels articles del teu inventari i dels del pis circumdant dins d'una quadrícula de 3x3 del teu personatge. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Per simplificar el vostre procés de construcció, podeu afegir els Buildables d'ús freqüent amb les seves receptes a la pestanya Preferits. Perquè una subcategoria aparegui als Preferits, assegureu-vos que la seva categoria principal també sigui com a preferida.",
     UI_optionscreen_binding_BuildingMenu = "Commuta la interfície d'usuari del menú de creació",

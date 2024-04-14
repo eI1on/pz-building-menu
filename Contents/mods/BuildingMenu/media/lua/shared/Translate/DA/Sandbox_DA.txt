@@ -324,6 +324,12 @@ Sandbox_DA = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Skruer Materialeomkostninger",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Sæt skruer påkrævet. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KRÆVER KLIENTGENSTART! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Metalskrot til HEGN Omkostninger",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Sætter metalskrot, der skal bruges til hegn. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KRÆVER KLIENTGENSTART! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Metalskrot til ELEKTRISKE ARTIKLER Omkostninger",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Sætter metalskrot til elektriske ting. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KRÆVER KLIENTGENSTART! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Metalplade til VÆGGE Pris",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Sæt metalplader, der er nødvendige til VÆGGE. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KRÆVER KLIENTGENSTART! <RGB:1,1,1>",
     

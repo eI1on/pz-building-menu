@@ -324,6 +324,12 @@ Sandbox_PH = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Gastusin ng Materyal ng mga Turnilyo",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Nagtatakda ng mga turnilyo na kailangan. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Scrap Metal para sa Gastos ng FENCES",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Nagtatakda ng scrap metal na kailangan para sa mga bakod. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> KINAKAILANGAN NG CLIENT RESTART! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Scrap Metal para sa ELECTRICAL ITEMS Gastos",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Nagtatakda ng scrap metal na kailangan para sa mga de-koryenteng bagay. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> KINAKAILANGAN NG CLIENT RESTART! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Sheet Metal para sa WALLS na Gastos",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa MGA PADER. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
     

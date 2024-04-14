@@ -324,6 +324,12 @@ Sandbox_PL = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Koszt materiału śrub",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Ustawia potrzebne śruby. <LINE> Skaluje się w zależności od rozmiaru i typu obiektu. <LINE><LINE> <RGB:1,0,0> WYMAGA PONOWNEGO URUCHOMIENIA KLIENTA! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Złom na koszt ogrodzeń",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Skupuje złom potrzebny do ogrodzeń. <LINE> Skaluje się w zależności od rozmiaru i typu obiektu. <LINE><LINE> <RGB:1,0,0> WYMAGA PONOWNEGO URUCHOMIENIA KLIENTA! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Koszt złomu na ELEMENTY ELEKTRYCZNE",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Skupuje złom potrzebny do rzeczy elektrycznych. <LINE> Skaluje się w zależności od rozmiaru i typu obiektu. <LINE><LINE> <RGB:1,0,0> WYMAGA PONOWNEGO URUCHOMIENIA KLIENTA! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Koszt blachy na ŚCIany",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Ustawia blachę potrzebną do ŚCIAN. <LINE> Skaluje się w zależności od rozmiaru i typu obiektu. <LINE><LINE> <RGB:1,0,0> WYMAGA PONOWNEGO URUCHOMIENIA KLIENTA! <RGB:1,1,1>",
     

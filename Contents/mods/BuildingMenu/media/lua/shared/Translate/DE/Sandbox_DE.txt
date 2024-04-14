@@ -324,6 +324,12 @@ Sandbox_DE = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Schraubenmaterialkosten",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Stellt die benötigten Schrauben ein. <LINE> Skaliert mit Objektgröße und -typ. <LINE><LINE> <RGB:1,0,0> ERFORDERT EINEN NEUSTART DES CLIENTS! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Kosten für Altmetall für ZÄUNE",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Legt den für Zäune benötigten Metallschrott fest. <LINE> Skaliert mit Objektgröße und -typ. <LINE><LINE> <RGB:1,0,0> ERFORDERT EINEN NEUSTART DES CLIENTS! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Kosten für Altmetall für Elektroartikel",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Setzt Altmetall, das für Elektrogeräte benötigt wird. <LINE> Skaliert mit Objektgröße und -typ. <LINE><LINE> <RGB:1,0,0> ERFORDERT EINEN NEUSTART DES CLIENTS! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Blech für WÄNDE Kosten",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Legt die für WÄNDE benötigten Bleche fest. <LINE> Skaliert mit Objektgröße und -typ. <LINE><LINE> <RGB:1,0,0> ERFORDERT EINEN NEUSTART DES CLIENTS! <RGB:1,1,1>",
     

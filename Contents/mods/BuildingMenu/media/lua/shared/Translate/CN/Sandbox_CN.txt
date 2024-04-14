@@ -324,6 +324,12 @@ Sandbox_CN = {
     Sandbox_BuildingMenuRecipes_screwsCount = "螺丝消耗",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "设置螺丝的消耗数量。 <LINE> 按物件大小和类别缩放。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！ <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "栅栏成本废金属",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "设置围栏所需的废金属。 <LINE> 根据对象大小和类型进行缩放。 <LINE><LINE> <RGB:1,0,0> 需要客户端重新启动！ <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "电子产品废金属成本",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "设置电器所需的废金属。 <LINE> 根据对象大小和类型进行缩放。 <LINE><LINE> <RGB:1,0,0> 需要客户端重新启动！ <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "墙体所需金属板数",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "设置建造墙体需要的金属板数量。 <LINE> 按物件大小和类别缩放。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！ <RGB:1,1,1>",
     

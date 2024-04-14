@@ -324,6 +324,12 @@ Sandbox_RO = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Costul Materialului Șuruburi",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Setează șuruburile necesare. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Fier vechi pentru GARDURI Cost",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Setează fier vechi necesare pentru garduri. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Fier vechi pentru ARTICOLE ELECTRICE Cost",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Setează fier vechi necesare pentru lucruri electrice. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Cost Tablă pentru PERETI",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Setează tablă necesară pentru PEREȚI. <LINE> Scalează cu dimensiunea și tipul obiectului. <LINE><LINE> <RGB:1,0,0> NECESITA REPORNIREA CLIENTULUI! <RGB:1,1,1>",
     

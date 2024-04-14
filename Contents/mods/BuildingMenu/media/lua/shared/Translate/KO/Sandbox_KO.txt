@@ -324,6 +324,12 @@ Sandbox_KO = {
     Sandbox_BuildingMenuRecipes_screwsCount = "나사 재료비",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "필요한 나사를 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "울타리용 고철 비용",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "울타리에 필요한 고철을 설정합니다. <LINE> 객체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "전기제품용 고철 비용",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "전기용품에 필요한 고철을 설정합니다. <LINE> 객체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "벽 비용에 대한 판금",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "WALLS에 필요한 판금을 설정합니다. <LINE> 개체 크기 및 유형에 따라 크기가 조정됩니다. <LINE><LINE> <RGB:1,0,0> 클라이언트를 다시 시작해야 합니다! <RGB:1,1,1>",
     

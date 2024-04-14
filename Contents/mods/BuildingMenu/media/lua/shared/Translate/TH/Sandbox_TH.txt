@@ -324,6 +324,12 @@ Sandbox_TH = {
     Sandbox_BuildingMenuRecipes_screwsCount = "ต้นทุนวัสดุสกรู",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "ชุดสกรูที่จำเป็น <LINE> ปรับขนาดตามขนาดและประเภทของวัตถุ <LINE><LINE> <RGB:1,0,0> ต้องรีสตาร์ทไคลเอ็นต์! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "เศษโลหะสำหรับต้นทุนรั้ว",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "เซ็ตเศษโลหะที่จำเป็นสำหรับรั้ว <LINE> ปรับขนาดตามขนาดและประเภทของวัตถุ <LINE><LINE> <RGB:1,0,0> ต้องรีสตาร์ทไคลเอ็นต์! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "เศษโลหะสำหรับรายการไฟฟ้าต้นทุน",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "เซ็ตเศษโลหะที่จำเป็นสำหรับอุปกรณ์ไฟฟ้า <LINE> ปรับขนาดตามขนาดและประเภทของวัตถุ <LINE><LINE> <RGB:1,0,0> ต้องรีสตาร์ทไคลเอ็นต์! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "แผ่นโลหะสำหรับผนังต้นทุน",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "กำหนดแผ่นโลหะที่จำเป็นสำหรับผนัง <LINE> ปรับขนาดตามขนาดและประเภทของวัตถุ <LINE><LINE> <RGB:1,0,0> ต้องรีสตาร์ทไคลเอ็นต์! <RGB:1,1,1>",
     

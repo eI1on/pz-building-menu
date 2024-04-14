@@ -869,6 +869,28 @@ option BuildingMenuRecipes.screwsCount
 }
 
 
+option BuildingMenuRecipes.scrapMetalCountForFences
+{
+    type = integer,
+    min = 1,
+    default = 20,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_scrapMetalCountForFences,
+}
+
+
+option BuildingMenuRecipes.scrapMetalCountForElectrical
+{
+    type = integer,
+    min = 1,
+    default = 10,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_scrapMetalCountForElectrical,
+}
+
+
 
 option BuildingMenuRecipes.sheetMetalCountForWalls
 {

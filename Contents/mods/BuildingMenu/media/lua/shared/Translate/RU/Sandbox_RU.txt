@@ -324,6 +324,12 @@ Sandbox_RU = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Расход болтов",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Определяет сколько болтов нужно для строительства. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Металлолом для ЗАБОРОВ Стоимость",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Наборы металлолома, необходимого для заборов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ТРЕБУЕТСЯ ПЕРЕЗАПУСК КЛИЕНТА! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Металлолом для ЭЛЕКТРОПУНКТОВ Стоимость",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Наборы металлолома, необходимого для электроприборов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ТРЕБУЕТСЯ ПЕРЕЗАПУСК КЛИЕНТА! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Расход листов металла для стен",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Определяет сколько листов металла нужно для строительства стен. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
     

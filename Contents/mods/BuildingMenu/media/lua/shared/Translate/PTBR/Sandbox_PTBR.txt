@@ -324,6 +324,12 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Custo de Parafusos",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Define os parafusos nescessários. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Custo de sucata para cercas",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Define sucata necessária para cercas. <LINE> Dimensiona de acordo com o tamanho e o tipo do objeto. <LINE><LINE> <RGB:1,0,0> EXIGE REINÍCIO DO CLIENTE! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Custo de sucata para ITENS ELÉTRICOS",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Define sucata necessária para coisas elétricas. <LINE> Dimensiona de acordo com o tamanho e o tipo do objeto. <LINE><LINE> <RGB:1,0,0> EXIGE REINÍCIO DO CLIENTE! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Custo de Placas de Metal para PAREDES",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Define as placas de metal nescessárias para paredes. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
     

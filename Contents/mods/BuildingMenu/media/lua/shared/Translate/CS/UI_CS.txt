@@ -1,4 +1,4 @@
-UI_EN = {
+UI_CS = {
 
     UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Toto je nabídka budovy. <LINE> <LINE> <SIZE:small> <LEFT> Každá karta představuje jedinečný doplněk Tilepack, kde jsou sestavitelné položky seřazeny do kategorií a podkategorií. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Když najedete na sestavitelnou položku, nápověda zobrazí položky požadované pro stavbu. Tyto požadavky se dynamicky aktualizují na základě položek ve vašem inventáři a na okolní podlaze v mřížce 3x3 vaší postavy. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Chcete-li zjednodušit proces vytváření, můžete na kartu Oblíbené přidat často používané sestavitelné součásti s jejich recepty. Aby se podkategorie objevila v Oblíbených, ujistěte se, že její nadřazená kategorie je také oblíbená.",
     UI_optionscreen_binding_BuildingMenu = "Přepnout uživatelské rozhraní nabídky budovy",

@@ -6,6 +6,8 @@ Changelog:
 Main mod:
 [list]
 [*] Added support for that DAMN Library glass panes
+[*] Added sandbox option to change scrap metal count
+[*] Updated translations using Poltergeist's pz-translator
 [*] Fixed not being able to place sheets on doors with windows (will work only for newly built doors)
 [*] Added a new line to indicate if buildables are INDESTRUCTIBLE
 [*] Adjusted the logic for thumpable behavior:

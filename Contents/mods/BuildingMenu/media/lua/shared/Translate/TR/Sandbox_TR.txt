@@ -324,6 +324,12 @@ Sandbox_TR = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Vida Malzeme Maliyeti",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Gerekli vidaları ayarlar. <LINE> Nesne boyutuna ve türüne göre ölçeklenir. <LINE><LINE> <RGB:1,0,0> İSTEMCİNİN YENİDEN BAŞLATMASINI GEREKTİRİR! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "ÇİT Maliyeti için Hurda Metal",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Çitler için gerekli olan hurda metali ayarlar. <LINE> Nesne boyutuna ve türüne göre ölçeklenir. <LINE><LINE> <RGB:1,0,0> İSTEMCİNİN YENİDEN BAŞLATMASINI GEREKTİRİR! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "ELEKTRİK EŞYALARI için Hurda Metal Maliyeti",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Elektrikli eşyalar için gerekli olan hurda metalleri ayarlar. <LINE> Nesne boyutuna ve türüne göre ölçeklenir. <LINE><LINE> <RGB:1,0,0> İSTEMCİNİN YENİDEN BAŞLATMASINI GEREKTİRİR! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "DUVARLAR İÇİN Sac Metal Maliyeti",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "DUVARLAR için gerekli sacları ayarlar. <LINE> Nesne boyutuna ve türüne göre ölçeklenir. <LINE><LINE> <RGB:1,0,0> İSTEMCİNİN YENİDEN BAŞLATMASINI GEREKTİRİR! <RGB:1,1,1>",
     

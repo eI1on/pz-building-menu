@@ -324,6 +324,12 @@ Sandbox_HU = {
     Sandbox_BuildingMenuRecipes_screwsCount = "Csavarok anyagköltsége",
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Beállítja a szükséges csavarokat. <LINE> Méretek az objektum méretével és típusával. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Fémhulladék a kerítésekhez költség",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Beállítja a kerítésekhez szükséges fémhulladékot. <LINE> Méretek az objektum méretével és típusával. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Fémhulladék ELEKTROMOS TERMÉKEKHEZ Költség",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Beállítja az elektromos dolgokhoz szükséges fémhulladékot. <LINE> Méretek az objektum méretével és típusával. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES! <RGB:1,1,1>",
+    
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Fémlemez a falakhoz költség",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "A FALOKHOZ szükséges fémlemezeket beállítja. <LINE> Méretek az objektum méretével és típusával. <LINE><LINE> <RGB:1,0,0> AZ ÜGYFÉL ÚJRAINDÍTÁSA SZÜKSÉGES! <RGB:1,1,1>",
     
