@@ -18359,6 +18359,272 @@ local function addArchitecturePlusToMenu()
                     { sprite = "walls_detailing_01_66", northSprite = "walls_detailing_01_66" }
                 ),
             }
+        },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents"),
+            subCategoryIcon = "roofs_accents_01_21",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Slope_Trim_Accent_1_North_West_Side",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_11", northSprite = "roofs_accents_01_0" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Slope_Trim_Accent_2_North_West_Side",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_10", northSprite = "roofs_accents_01_1" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Slope_Trim_Accent_1_South_East_Side",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_8", northSprite = "roofs_accents_01_3" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Slope_Trim_Accent_2_South_East_Side",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_9", northSprite = "roofs_accents_01_2" }
+                ),
+
+
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Slope_Trim_Accent_Big_Bottom",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_28", northSprite = "roofs_accents_01_6" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Slope_Trim_Accent_Big_Middle",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_29", northSprite = "roofs_accents_01_5" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Slope_Trim_Accent_Big_Top",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_30", northSprite = "roofs_accents_01_4" }
+                ),
+
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Fascia_Accent_Top",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_21", northSprite = "roofs_accents_01_44" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Fascia_Accent_Top_Corner_Slope",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_20", northSprite = "roofs_accents_01_46" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Fascia_Accent_Top_Corner",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_47", northSprite = "roofs_accents_01_47" }
+                ),
+
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Fascia_Accent_Bottom",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_18", northSprite = "roofs_accents_01_17" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Fascia_Accent_Bottom_Corner",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_16", northSprite = "roofs_accents_01_19" }
+                ),
+                
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Eave_Trim_Bottom",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_13", northSprite = "roofs_accents_01_37" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Eave_Trim_Middle",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_14", northSprite = "roofs_accents_01_36" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Eave_Trim_Top",
+                    "Tooltip_Roof_Accent",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        actionAnim = "DigTrowel",
+                        noNeedHammer = true,
+                        craftingBank = "Shoveling",
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "roofs_accents_01_12", northSprite = "roofs_accents_01_38" }
+                ),
+            }
         }
     }
 

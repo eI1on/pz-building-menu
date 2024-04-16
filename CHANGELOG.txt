@@ -6,25 +6,25 @@ Changelog:
 Main mod:
 [list]
 [*] Added support for that DAMN Library glass panes
-[*] Added sandbox option to change scrap metal count
-[*] Updated translations using Poltergeist's pz-translator
-[*] Fixed not being able to place sheets on doors with windows (will work only for newly built doors)
+[*] Added sandbox option to modify Scrap Metal count
+[*] Added new subcategory in Architecture Plus: Roof Accents
 [*] Added a new line to indicate if buildables are INDESTRUCTIBLE
+[*] Fixed issue with placing sheets on doors with windows (applies only to newly built doors)
+[*] Updated translations using Poltergeist's pz-translator
 [*] Adjusted the logic for thumpable behavior:
 [list]
-[*] SP Access: The "Non Thumpable" option is available in gear settings if "Thumpable Structures" is disabled or in Debug mode
-[*] MP Access: The "Non Thumpable" option is available in gear settings if "Thumpable Structures" is disabled or in Debug mode or you are an Admin
-[*] Default Behavior: With "Thumpable Structures" disabled, when opening BM it defaults to enabled "Non Thumpable" in both SP and MP (adjustable in the gear settings)
-[*] Admin Defaults: Admins will always see "Non Thumpable" options regardless of Sandbox Options, defaults to enabled "Non Thumpable" if "Thumpable Structures" option is enabled (adjustable in the gear settings)
+[*] SP Access: "Non Thumpable" option available in the gear settings if "Thumpable Structures" Sandbox Option is disabled or in Debug mode.
+[*] MP Access:  Admins have persistent access to "Non Thumpable" settings regardless of the Sandbox option, enabled by default when "Thumpable Structures" is active
+[*] Default Behavior: "Non Thumpable" is enabled by default with "Thumpable Structures" disabled (adjustable in the gear settings)
 [/list]
 [/list]
 Melos's addon:
 [list]
-[*] Fixed Rustic Windows, Modern Extended 1 and Modern Extended 2 tiles properties
+[*] Corrected properties for Rustic Windows, Modern Extended 1, and Modern Extended 2 tiles
 [/list]
 DaddyDirkie's addon:
 [list]
-[*] Fixed some Wardrobes tile properties
+[*] Corrected properties for some Wardrobes tiles.
 [/list]
 [/list]
 
