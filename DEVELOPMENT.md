@@ -8,15 +8,17 @@ This document is currently a work in progress and presents practical guidelines 
 Table of Contents
 =================
 
-  * [Development Guidelines for Building Menu Addons ](#development-guidelines-for-building-menu-addons)
-  * [Creating Buildable Objects](#creating-buildableobjects)
-  * [Inserting Objects into Categories](#inserting-objects-into-categories)
-  * [Integrating with Sandbox Options](#integrating-with-sandbox-options)
-  * [Recipes](#recipes)
-    * [Creating new Recipes](#creating-new-recipes)
-  * [Buildables Options](#buildables-options)
-  * [Buildables Sprites](#buildables-sprites)  
-<br>
+- [Development Guidelines for Building Menu Addons](#development-guidelines-for-building-menu-addons)
+- [Table of Contents](#table-of-contents)
+- [Creating Buildable Objects](#creating-buildable-objects)
+- [Inserting Objects into Categories](#inserting-objects-into-categories)
+- [Integrating with Sandbox Options](#integrating-with-sandbox-options)
+- [Recipes](#recipes)
+  - [Creating new Recipes](#creating-new-recipes)
+- [Buildables Options](#buildables-options)
+  - [Option Keys](#option-keys)
+  - [Option Values](#option-values)
+- [Buildables Sprites](#buildables-sprites)
 
 # Creating Buildable Objects
 <br>
@@ -196,7 +198,7 @@ BuildingMenu.GreyBigStoneWallRecipe = {
             }
         },
         { -- Alternative Groups: Same as above
-            generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+            BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
         },
 
         { -- Alternative Items

@@ -70,7 +70,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -99,7 +99,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -134,7 +134,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -173,7 +173,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -217,7 +217,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -256,7 +256,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -294,7 +294,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -327,7 +327,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -360,7 +360,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -389,7 +389,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -419,7 +419,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -448,7 +448,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -477,7 +477,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -506,7 +506,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -535,7 +535,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -564,7 +564,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -593,7 +593,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -626,7 +626,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -659,7 +659,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -688,7 +688,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -717,7 +717,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -746,7 +746,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -775,7 +775,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -804,7 +804,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -833,7 +833,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -862,7 +862,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -891,7 +891,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -920,7 +920,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -949,7 +949,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -982,7 +982,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1015,7 +1015,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1044,7 +1044,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1073,7 +1073,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1102,7 +1102,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1131,7 +1131,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1160,7 +1160,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1189,7 +1189,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1218,7 +1218,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1248,7 +1248,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1277,7 +1277,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1307,7 +1307,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1336,7 +1336,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -1370,7 +1370,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -1404,7 +1404,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1433,7 +1433,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -1465,7 +1465,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         skills = {
@@ -1487,7 +1487,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         skills = {
@@ -1510,7 +1510,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1539,7 +1539,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -1572,7 +1572,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1601,7 +1601,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1630,7 +1630,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1660,7 +1660,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1694,7 +1694,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1728,7 +1728,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1757,7 +1757,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1786,7 +1786,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1815,7 +1815,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -1848,7 +1848,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1878,7 +1878,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1908,7 +1908,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -1938,7 +1938,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -1972,7 +1972,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -2006,7 +2006,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -2035,7 +2035,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -2068,7 +2068,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -2097,7 +2097,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -2130,7 +2130,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -2164,7 +2164,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -2198,7 +2198,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -2231,7 +2231,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -2269,7 +2269,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -2302,7 +2302,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -2339,7 +2339,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -2381,7 +2381,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -2419,7 +2419,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -2456,7 +2456,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -2497,7 +2497,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -2535,7 +2535,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -2569,7 +2569,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -2837,7 +2837,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(screwsCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(bigWallNailsCount * 0.75), "Material")
             },
         },
@@ -2891,7 +2891,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(screwsCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallWallNailsCount * 0.75), "Material")
             },
         },
@@ -2945,7 +2945,7 @@ local function initBuildingMenuRecipes()
                 Amount = screwsCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -2998,7 +2998,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(screwsCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -3036,7 +3036,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
@@ -3063,7 +3063,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
@@ -3086,7 +3086,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
             },
             {
                 Material = "Base.Hinge",
@@ -3117,7 +3117,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsWoodCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsWoodCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -3151,7 +3151,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsWoodCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsWoodCount, "Material")
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -3186,7 +3186,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
@@ -3227,7 +3227,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(metalBarsCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
@@ -3287,7 +3287,7 @@ local function initBuildingMenuRecipes()
                 Amount = metalBarsCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
@@ -3525,7 +3525,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
@@ -3548,7 +3548,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
@@ -3571,7 +3571,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
@@ -3784,7 +3784,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -3813,7 +3813,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -3842,7 +3842,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigWallWoodCount * 1.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(bigWallNailsCount * 1.5), "Material")
             },
         },
@@ -3876,7 +3876,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallWallWoodCount * 1.25)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(bigWallNailsCount * 1.5), "Material")
             },
         },
@@ -3909,7 +3909,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         skills = {
@@ -4000,7 +4000,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsWoodCount * 0.25), "Material")
             },
         },
@@ -4024,7 +4024,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigObjectsWoodCount * 2.25),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(bigObjectsNailsCount * 1.5), "Material")
             },
         },
@@ -4332,7 +4332,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigWallWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(bigWallNailsCount * 0.5), "Material")
             },
         },
@@ -4356,7 +4356,7 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
         skills = {
@@ -4379,7 +4379,7 @@ local function initBuildingMenuRecipes()
                 Amount = 15
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 15, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 15, "Material")
             },
         },
         skills = {
@@ -4402,7 +4402,7 @@ local function initBuildingMenuRecipes()
                 Amount = 20
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 20, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 20, "Material")
             },
         },
         skills = {
@@ -4451,7 +4451,7 @@ local function initBuildingMenuRecipes()
                 Amount = plankCountForMilitaryCrate
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, nailsCountForMilitaryCrate, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, nailsCountForMilitaryCrate, "Material")
             },
         },
         skills = {
@@ -4841,7 +4841,7 @@ local function initBuildingMenuRecipes()
                 Amount = 2,
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 1.5), "Material")
             },
             {
@@ -4853,7 +4853,7 @@ local function initBuildingMenuRecipes()
                 Amount = 1
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Ropes, 1, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Ropes, 1, "Material")
             },
             {
                 Material = "Base.Stone",
@@ -4911,7 +4911,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
@@ -4946,7 +4946,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 1.25),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 1.25), "Material")
             },
         },
@@ -4969,7 +4969,7 @@ local function initBuildingMenuRecipes()
                 Amount = 10
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 1, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 1, "Material")
             },
         },
         skills = {
@@ -5020,7 +5020,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 1.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 1.5), "Material")
             },
             {
@@ -5062,7 +5062,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 2.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 2.5), "Material")
             },
             {
@@ -5196,7 +5196,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 1.25),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
         },
@@ -5239,7 +5239,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.5),
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
             },
         },
@@ -5962,7 +5962,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
             },
         },
         skills = {
@@ -5984,7 +5984,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigObjectsWoodCount * 1.25)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
             },
         },
         skills = {
@@ -6010,7 +6010,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
             },
         },
         skills = {
@@ -6032,7 +6032,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigObjectsWoodCount * 1.5)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
             },
             {
                 Material = "Base.Mattress",
@@ -6058,7 +6058,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigObjectsWoodCount * 2)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(bigObjectsNailsCount * 1.5), "Material")
             },
             {
@@ -6089,7 +6089,7 @@ local function initBuildingMenuRecipes()
                 Amount = 20
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
             },
         },
         skills = {
@@ -6116,7 +6116,7 @@ local function initBuildingMenuRecipes()
                 Amount = 20
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigObjectsNailsCount, "Material")
             },
         },
         useConsumable = {
@@ -6154,7 +6154,7 @@ local function initBuildingMenuRecipes()
                 Amount = 10
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
             }
         },
         useConsumable = {
@@ -6187,7 +6187,7 @@ local function initBuildingMenuRecipes()
                 Amount = smallObjectsWoodCount
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallObjectsNailsCount, "Material")
             }
         },
         skills = {
@@ -6254,7 +6254,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigWallWoodCount * 0.625)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(bigWallNailsCount * 0.625), "Material")
             },
         },
@@ -6277,7 +6277,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallWallWoodCount * 0.625)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
         skills = {
@@ -6300,7 +6300,7 @@ local function initBuildingMenuRecipes()
                 Amount = 2
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 2, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 2, "Material")
             },
         },
         skills = {
@@ -6323,7 +6323,7 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(smallObjectsWoodCount * 0.75)
             },
             {
-                generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
                     BuildingMenu.round(smallObjectsNailsCount * 0.75), "Material")
             },
             {
