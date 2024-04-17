@@ -126,6 +126,7 @@ IGUI_DA = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Gulvstøbning",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Vægpaneler",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Tag accenter",
 
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Træ",

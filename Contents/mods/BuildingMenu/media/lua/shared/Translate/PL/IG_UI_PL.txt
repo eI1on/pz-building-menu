@@ -126,6 +126,7 @@ IGUI_PL = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Formowanie podłogi",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Panele ścienne",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Akcenty dachowe",
 
     IGUI_BuildingMenuCat_Windows = "Okna",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Drewniany",

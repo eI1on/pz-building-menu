@@ -126,6 +126,7 @@ IGUI_UA = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Молдинг для підлоги",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Стінові панелі",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "фундамент",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Акценти на даху",
 
     IGUI_BuildingMenuCat_Windows = "вікна",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Дерев'яний",

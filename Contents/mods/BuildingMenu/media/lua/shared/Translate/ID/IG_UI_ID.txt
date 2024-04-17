@@ -126,6 +126,7 @@ IGUI_ID = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Cetakan Lantai",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Panel-panel dinding",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Aksen Atap",
 
     IGUI_BuildingMenuCat_Windows = "jendela",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Kayu",

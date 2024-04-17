@@ -126,6 +126,7 @@ IGUI_JP = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "フロアモールディング",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "壁パネル",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "屋根のアクセント",
 
     IGUI_BuildingMenuCat_Windows = "ウィンドウズ",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "木製",

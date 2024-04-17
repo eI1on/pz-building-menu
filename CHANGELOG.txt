@@ -1,4 +1,4 @@
- APR 24
+17 APR 24
 
 
 Changelog:
@@ -6,21 +6,22 @@ Changelog:
 Main mod:
 [list]
 [*] Added support for that DAMN Library glass panes
-[*] Added sandbox option to modify Scrap Metal count
+[*] Added Sandbox Option to modify Scrap Metal count
 [*] Added new subcategory in Architecture Plus: Roof Accents
+[*] Added Pale Green Painted Walls
 [*] Added a new line to indicate if buildables are INDESTRUCTIBLE
-[*] Fixed issue with placing sheets on doors with windows (applies only to newly built doors)
+[*] Fixed issue with placing sheets on Doors with Windows (applies only to newly built doors)
 [*] Updated translations using Poltergeist's pz-translator
 [*] Adjusted the logic for thumpable behavior:
 [list]
-[*] SP Access: "Non Thumpable" option available in the gear settings if "Thumpable Structures" Sandbox Option is disabled or in Debug mode.
+[*] SP Access: "Non Thumpable" option available in the gear settings if "Thumpable Structures" Sandbox Option is [b]disabled[/b] or in Debug mode
 [*] MP Access:  Admins have persistent access to "Non Thumpable" settings regardless of the Sandbox option, enabled by default when "Thumpable Structures" is active
-[*] Default Behavior: "Non Thumpable" is enabled by default with "Thumpable Structures" disabled (adjustable in the gear settings)
+[*] Default Behavior: "Non Thumpable" is enabled by default with "Thumpable Structures" [b]disabled[/b] (adjustable in the gear settings)
 [/list]
 [/list]
 Melos's addon:
 [list]
-[*] Corrected properties for Rustic Windows, Modern Extended 1, and Modern Extended 2 tiles
+[*] Corrected properties for Rustic Windows, Modern Extended 1 and Modern Extended 2 tiles
 [/list]
 DaddyDirkie's addon:
 [list]

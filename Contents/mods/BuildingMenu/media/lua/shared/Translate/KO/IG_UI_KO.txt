@@ -126,6 +126,7 @@ IGUI_KO = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "바닥 몰딩",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "벽 패널",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "지붕 악센트",
 
     IGUI_BuildingMenuCat_Windows = "창문",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "나무 창문",

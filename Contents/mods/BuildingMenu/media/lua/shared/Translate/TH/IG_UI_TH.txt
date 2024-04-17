@@ -126,6 +126,7 @@ IGUI_TH = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "การปั้นพื้น",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "แผ่นผนัง",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "พื้นฐาน",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "สำเนียงหลังคา",
 
     IGUI_BuildingMenuCat_Windows = "หน้าต่าง",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "ทำด้วยไม้",

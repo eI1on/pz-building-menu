@@ -126,6 +126,7 @@ IGUI_HU = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Padlóléc",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Fali panelek",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Tető hangsúlyok",
 
     IGUI_BuildingMenuCat_Windows = "Ablakok",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Fa",

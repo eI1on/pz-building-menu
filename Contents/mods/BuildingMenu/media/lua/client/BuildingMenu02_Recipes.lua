@@ -3,7 +3,7 @@ local BuildingMenu = require("BuildingMenu01_Main");
 
 
 -- Helper function to apply multipliers and create material entries
-local function generateGroupAlternatives(groupAlternativesTable, baseCount, groupType)
+function BuildingMenu.generateGroupAlternatives(groupAlternativesTable, baseCount, groupType)
     local newGroupAlternativesTable = {};
 
     for _, itemTable in pairs(groupAlternativesTable) do

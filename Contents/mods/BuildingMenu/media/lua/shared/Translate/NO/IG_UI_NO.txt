@@ -126,6 +126,7 @@ IGUI_NO = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Gulvlister",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Veggpaneler",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Fundament",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Takaksenter",
 
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Tre",

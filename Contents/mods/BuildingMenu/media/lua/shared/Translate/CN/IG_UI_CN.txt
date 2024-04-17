@@ -126,6 +126,7 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "地板线脚",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "墙面板",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "基础",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "屋顶装饰",
 
     IGUI_BuildingMenuCat_Windows = "窗",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "木",

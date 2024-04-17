@@ -126,6 +126,7 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Vloergieten",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Muur panelen",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Dakaccenten",
 
     IGUI_BuildingMenuCat_Windows = "ramen",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Houten",

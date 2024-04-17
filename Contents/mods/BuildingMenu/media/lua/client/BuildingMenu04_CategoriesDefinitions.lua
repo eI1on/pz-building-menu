@@ -6104,6 +6104,82 @@ local function addPaintedWallsToMenu()
                         modData = { wallType = "pillar" }
                     },
                     { sprite = "walls_interior_house_01_23", northSprite = "walls_interior_house_01_23" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Pale_Green_Wall",
+                    "Tooltip_Pale_Green_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.GreenBigWoodWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        sprite = "walls_interior_house_04_32",
+                        northSprite = "walls_interior_house_04_33",
+                        corner = "walls_interior_house_04_35"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Pale_Green_Door_Frame",
+                    "Tooltip_Pale_Green_Door_Frame",
+                    BuildingMenu.onBuildDoorFrame,
+                    BuildingMenu.GreenBigWoodWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        modData = { wallType = "doorframe" }
+                    },
+                    {
+                        sprite = "walls_interior_house_04_42",
+                        northSprite = "walls_interior_house_04_43",
+                        corner = "walls_interior_house_04_35"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Pale_Green_Window_Frame",
+                    "Tooltip_Pale_Green_Window_Frame",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.GreenBigWoodWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "walls_interior_house_04_40",
+                        northSprite = "walls_interior_house_04_41",
+                        corner = "walls_interior_house_04_35"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Pale_Green_Pillar",
+                    "Tooltip_Pale_Green_Pillar",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.GreenSmallWoodWallRecipe,
+                    true,
+                    {
+                        actionAnim = "Build",
+                        noNeedHammer = false,
+                        completionSound = "BuildWoodenStructureLarge",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = { wallType = "pillar" }
+                    },
+                    { sprite = "walls_interior_house_04_35", northSprite = "walls_interior_house_04_35" }
                 )
             }
         },

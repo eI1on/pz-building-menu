@@ -15,6 +15,8 @@ local exclusions = {
 ---@param object any
 ---@param name string|nil
 ---@param player number
+---@param objectRecipe table
+---@param objectOptions table
 function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOptions)
     if name then
         object.name = name;

@@ -126,6 +126,7 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Paghubog sa Sahig",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Mga Panel sa Pader",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Mga Accent sa Bubong",
 
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "kahoy",

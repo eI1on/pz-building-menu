@@ -126,6 +126,7 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Lattiavalu",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Seinäpaneelit",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Katon korostukset",
 
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Puinen",

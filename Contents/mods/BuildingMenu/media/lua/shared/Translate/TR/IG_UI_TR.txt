@@ -126,6 +126,7 @@ IGUI_TR = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Zemin Kalıplama",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Duvar panelleri",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Temel",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Çatı Vurguları",
 
     IGUI_BuildingMenuCat_Windows = "pencereler",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Ahşap",

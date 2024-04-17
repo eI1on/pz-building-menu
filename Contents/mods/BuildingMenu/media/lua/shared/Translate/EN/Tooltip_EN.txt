@@ -571,6 +571,16 @@ Tooltip_EN = {
   Tooltip_Fern_Green_Window_Frame = "A window frame section painted in a vibrant fern green shade.",
   Tooltip_Fern_Green_Pillar = "A pillar painted in a vibrant fern green shade.",
 
+  Tooltip_BuildingMenuObj_Pale_Green_Wall = "Pale Green Wall",
+  Tooltip_BuildingMenuObj_Pale_Green_Door_Frame = "Pale Green Door Frame",
+  Tooltip_BuildingMenuObj_Pale_Green_Window_Frame = "Pale Green Window Frame",
+  Tooltip_BuildingMenuObj_Pale_Green_Pillar = "Pale Green Pillar",
+  Tooltip_BuildingMenuObj_Pale_Green_Arched_Window_Frame = "Pale Green Arched Window Frame",
+  Tooltip_Pale_Green_Wall = "A wall painted in a vibrant Pale green shade.",
+  Tooltip_Pale_Green_Door_Frame = "A door frame painted in a pale green shade.",
+  Tooltip_Pale_Green_Window_Frame = "A window frame section painted in a pale green shade.",
+  Tooltip_Pale_Green_Pillar = "A pillar painted in a pale green shade.",
+
   Tooltip_BuildingMenuObj_Grey_Stripes_Wall = "Grey Stripes Wall",
   Tooltip_BuildingMenuObj_Grey_Stripes_Door_Frame = "Grey Stripes Door Frame",
   Tooltip_BuildingMenuObj_Grey_Stripes_Window_Frame = "Grey Stripes Window Frame",

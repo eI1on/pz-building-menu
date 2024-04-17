@@ -126,6 +126,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Плинтусы",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Настенные панели",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Акценты на крыше",
 
     IGUI_BuildingMenuCat_Windows = "Окна",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Деревянные",
