@@ -50,7 +50,6 @@ local function addExtraNoisesNewburbsFlagsToMenu()
     )
 end
 
-
 local function addDoorsToMenu()
     local extraNoiseDoorObjects = {}
     local doorOptionsTable = {
@@ -1084,6 +1083,145 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
     )
 end
 
+local function addWindowsPlusToMenu()
+    local windows = {
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Wooden_Windows"),
+            subCategoryIcon = "en_newburbs_windows_01_0",
+            objects = {
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_0", northSprite = "en_newburbs_windows_01_4" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_8", northSprite = "en_newburbs_windows_01_12" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_16", northSprite = "en_newburbs_windows_01_22" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_17", northSprite = "en_newburbs_windows_01_21" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_18", northSprite = "en_newburbs_windows_01_20" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_19", northSprite = "en_newburbs_windows_01_23" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_48", northSprite = "en_newburbs_windows_01_54" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_49", northSprite = "en_newburbs_windows_01_53" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_50", northSprite = "en_newburbs_windows_01_52" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_51", northSprite = "en_newburbs_windows_01_55" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_80", northSprite = "en_newburbs_windows_01_86" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_81", northSprite = "en_newburbs_windows_01_85" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "en_newburbs_windows_01_82", northSprite = "en_newburbs_windows_01_84" }
+                ),
+            }
+        },
+    }
+
+    for k, subCatData in pairs(windows) do
+        BuildingMenu.addObjectsToCategories(
+            "ExtraNoise's Newburbs",
+            getText("IGUI_BuildingMenuCat_Windows"),
+            "en_newburbs_windows_01_0",
+            subCatData.subcategoryName,
+            subCatData.subCategoryIcon,
+            subCatData.objects
+        )
+    end
+end
+
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.paintedWallsSubCategory then
         addExtraNoisesNewburbsColouredWallsToMenu()
@@ -1099,6 +1237,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.postersAndSignsSubCategory then
         addExtraNoisesNewburbsFlagsToMenu()
+    end
+    if SandboxVars.BuildingMenu.windowsCategory then
+        addWindowsPlusToMenu()
     end
 end
 Events.OnGameStart.Add(addCategoriesToBuildingMenu)
