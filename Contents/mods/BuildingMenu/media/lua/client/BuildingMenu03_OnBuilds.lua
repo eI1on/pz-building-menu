@@ -120,6 +120,31 @@ end
 ---@param name string
 ---@param player number
 ---@return ISBuildingObject
+BuildingMenu.onBuildSpecialObject = function(sprites, name, player, objectRecipe, objectOptions)
+    local _specialObj = ISBrushToolTileCursor:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(player));
+
+    _specialObj.isTileCursor = false;
+    _specialObj.spriteName = sprites.sprite;
+    _specialObj.noNeedHammer = false;
+    _specialObj.skipBuildAction = false;
+    _specialObj.skipWalk2 = false;
+    _specialObj.canBeAlwaysPlaced = false;
+
+    if sprites.eastSprite then
+        _specialObj:setEastSprite(sprites.eastSprite);
+    end
+
+    if sprites.southSprite then
+        _specialObj:setSouthSprite(sprites.southSprite);
+    end
+
+    return _specialObj;
+end
+
+---@param sprites table
+---@param name string
+---@param player number
+---@return ISBuildingObject
 BuildingMenu.onBuildSink = function(sprites, name, player, objectRecipe, objectOptions)
     local _sink = ISSink:new(player, name, sprites.sprite, sprites.northSprite)
 
@@ -809,7 +834,14 @@ end
 ---@param player number
 ---@return ISBuildingObject
 BuildingMenu.onBuildFloor = function(sprites, name, player, objectRecipe, objectOptions)
-    local _floor = ISWoodenFloor:new(sprites.sprite, sprites.northSprite)
+    local _floor = nil
+
+    if ISBuildingMenuUI.instance and ISBuildingMenuUI.instance.floorIsRoof then
+        print("ISBuildingMenuUI.instance.floorIsRoof ", ISBuildingMenuUI.instance.floorIsRoof)
+        _floor = ISWoodenRoof:new(sprites.sprite, sprites.northSprite);
+    else
+        _floor = ISWoodenFloor:new(sprites.sprite, sprites.northSprite);
+    end
 
     if sprites.eastSprite then
         _floor:setEastSprite(sprites.eastSprite)

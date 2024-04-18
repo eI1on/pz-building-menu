@@ -305,14 +305,18 @@ end
 ---@return string|nil
 BuildingMenu.getMoveableDisplayName = function(sprite)
     local props = getSprite(sprite):getProperties();
-    if props:Is('CustomName') then
-        local name = props:Val('CustomName');
-        if props:Is('GroupName') then
-            name = props:Val('GroupName') .. ' ' .. name;
-        end
-        return Translator.getMoveableDisplayName(name);
+    local hasCustomName = props:Is('CustomName');
+    local hasGroupName = props:Is('GroupName');
+    if not hasCustomName and not hasGroupName then return nil; end
+    local name = "";
+    if hasGroupName then
+        name = props:Val('GroupName');
     end
-    return nil;
+    if hasCustomName then
+        if name ~= "" then name = name .. " ";end
+        name = name .. props:Val('CustomName');
+    end
+    return Translator.getMoveableDisplayName(name);
 end
 
 --- Checks if the player has a tool to build.
@@ -392,37 +396,84 @@ BuildingMenu.equipToolSecondary = function(object, playerNum, tool)
 end
 
 
----@param type string
----@return InventoryItem|nil
-function BuildingMenu.GetItemInstance(type)
-    if not BuildingMenu.ItemInstances then BuildingMenu.ItemInstances = {}; end
-    local item = BuildingMenu.ItemInstances[type];
+---@param id int
+---@param icons ArrayList
+local function loadTex(id, icons)
+    if id >= 0 and id < icons:size() then
+        return getTexture("Item_" .. tostring(icons:get(id)))
+    end
+    return nil
+end
+
+
+---@param item Item
+---@return Texture|nil
+function BuildingMenu.getTexFromItem(item)
     if not item then
-        item = InventoryItemFactory.CreateItem(type);
+        BuildingMenu.debugPrint("[Building Menu] ", "Warning: Attempted to get texture name from a nil item.");
+        return nil;
+    end
+	local texture = item:getNormalTexture();
+	if not texture then
+		local obj = item:InstanceItem(nil);
+		if obj then
+			local icons = item:getIconsForTexture();
+			if icons and icons:size() > 0 then
+				texture = loadTex(obj:getVisual():getBaseTexture(), icons) or loadTex(obj:getVisual():getTextureChoice(), icons);
+			else
+				texture = obj:getTexture();
+			end
+		end
+	end
+    return texture;
+end
+
+
+---@param item Item
+---@return string|nil
+function BuildingMenu.getTexNameFromItem(item)
+    local texture = BuildingMenu.getTexFromItem(item);
+    if texture then
+        return texture:getName();
+    else
+        BuildingMenu.debugPrint("[Building Menu] ", "Warning: Texture not found for item " .. item:getFullName());
+        return nil;
+    end
+end
+
+
+---@param itemFullType string
+---@return Item|nil
+function BuildingMenu.getItemInstance(itemFullType)
+    BuildingMenu.ItemInstances = BuildingMenu.ItemInstances or {};
+    local item = BuildingMenu.ItemInstances[itemFullType];
+
+    if not item then
+        item = getScriptManager():FindItem(itemFullType);
         if item then
             -- Cache both the item instance and its texture name for quick access later.
-            local texName = item:getTexture():getName();
-            local texNameOnly = texName:match("([^/\\]+)%.png$") or texName:match("([^/\\]+)$") or texName;
-            BuildingMenu.ItemInstances[type] = { item = item, textureName = texNameOnly };
-            BuildingMenu.ItemInstances[item:getFullType()] = { item = item, textureName = texNameOnly };
+            local texNameOnly = BuildingMenu.getTexNameFromItem(item);
+            BuildingMenu.ItemInstances[itemFullType] = { item = item, textureName = texNameOnly };
         end
     end
     return item and item.item or nil;
 end
 
----@param item InventoryItem
+
+---@param item Item
 ---@return string|nil
-function BuildingMenu.GetTextureFromInventoryItem(item)
+function BuildingMenu.getTextureFromItem(item)
     if not item then return nil; end
-    local cacheEntry = BuildingMenu.ItemInstances[item:getFullType()];
+    local cacheEntry = BuildingMenu.ItemInstances[item:getFullName()];
     if cacheEntry then
         return cacheEntry.textureName;
-    else
-        -- If for some reason the item wasn't cached, we fall back to extracting the texture name.
-        local texName = item:getTexture():getName();
-        return texName:match("([^/\\]+)%.png$") or texName:match("([^/\\]+)$") or texName;
     end
+     -- If for some reason the item wasn't cached, we fall back to extracting the texture name.
+    local texNameOnly = BuildingMenu.getTexNameFromItem(item)
+    BuildingMenu.ItemInstances[item:getFullName()] = { item = item, textureName = texNameOnly }
+    return texNameOnly
 end
+
 
 --- Tooltip check for a specific tool category.
 ---@param playerInv ItemContainer
@@ -436,6 +487,7 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
 
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
+            ---@type InventoryItem
             local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken);
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
@@ -448,8 +500,7 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
 
     if not found and toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
-            local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
-                function(item) return true end);
+            local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end);
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
                 itemInstance = item;
@@ -460,15 +511,18 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     end
 
     if not itemInstance then
-        itemInstance = BuildingMenu.GetItemInstance(toolInfo.types and toolInfo.types[1]);
+        itemInstance = BuildingMenu.getItemInstance(toolInfo.types and toolInfo.types[1]);
     end
 
     if itemInstance then
-        local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(itemInstance);
+        if instanceof(itemInstance, 'InventoryItem') then
+            itemInstance = BuildingMenu.getItemInstance(itemInstance:getFullType());
+        end
+        local texNameOnly = BuildingMenu.getTextureFromItem(itemInstance);
         if texNameOnly and BuildingMenu.show_item_icons then
             itemText = "<IMAGE:" ..
             texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">" .. itemText;
-        end
+        end 
     end
 
     if not found then
@@ -507,7 +561,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
 
         -- Iterate over each material Full Type within the alternative Material/Consumable group
         for _, itemFullType in pairs(items) do
-            local item = BuildingMenu.GetItemInstance(itemFullType);
+            local item = BuildingMenu.getItemInstance(itemFullType);
             if item then
                 local itemCount = 0;
                 if groupType == "Consumable" then
@@ -537,12 +591,15 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
         groupItemFound = groupItemFound or itemFound;
 
         if not firstItemInstance then
-            firstItemInstance = BuildingMenu.GetItemInstance(items[1]);
+            firstItemInstance = BuildingMenu.getItemInstance(items[1]);
         end
 
         if firstItemInstance then
+            if instanceof(firstItemInstance, 'InventoryItem') then
+                firstItemInstance = BuildingMenu.getItemInstance(firstItemInstance:getFullType());
+            end
             local itemText = color ..
-            firstItemInstance:getName() ..
+            firstItemInstance:getDisplayName() ..
             ' ' ..
             (groupType == "Consumable" and getText("ContextMenu_Uses") .. " " or "") ..
             totalFoundCount .. '/' .. totalAmountNeeded;
@@ -555,11 +612,12 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
                 table.insert(itemBuffer, " <LINE> <SETX:10> " .. color .. getText("ContextMenu_or") .. " ");
             end
 
-            local texNameOnly = BuildingMenu.GetTextureFromInventoryItem(firstItemInstance);
+            local texNameOnly = BuildingMenu.getTextureFromItem(firstItemInstance);
             if texNameOnly and BuildingMenu.show_item_icons then
                 table.insert(itemBuffer,
                     "<IMAGE:" ..
-                    texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">");
+                    texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">"
+                );
             end
 
             table.insert(itemBuffer, itemText);
@@ -700,7 +758,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
         end
     end
 
-
+    -- BuildingMenu.debugPrint("[Building Menu DEBUG] BuildingMenu.ItemInstances ", BuildingMenu.ItemInstances);
     -- BuildingMenu.debugPrint("[Building Menu DEBUG] materialFoundIndexMatrix ", materialFoundIndexMatrix);
     -- BuildingMenu.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
 

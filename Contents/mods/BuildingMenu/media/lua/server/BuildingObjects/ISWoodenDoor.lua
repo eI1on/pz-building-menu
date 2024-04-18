@@ -27,8 +27,8 @@ function ISWoodenDoor:create(x, y, z, north, sprite)
 	end
 
 	self.javaObject = IsoDoor.new(cell, self.sq, sprite, north, self);
-	local isoOpenSprite = IsoSprite.new();
-	isoOpenSprite:LoadFramesNoDirPageSimple(openSprite);
+	local isoOpenSprite = getSprite(openSprite);
+	isoOpenSprite:setName(openSprite);
 	self.javaObject:setOpenSprite(isoOpenSprite);
 
 	-- self.javaObject = IsoThumpable.new(cell, self.sq, sprite, openSprite, north, self);

@@ -1,3 +1,32 @@
+ APR 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3225244443] Build Roof [/url] by [url=https://steamcommunity.com/profiles/76561198329871201] Tchernobill [/url]. When active you will have an option in the gear options to change if the Floors can be Ceilings.
+[*] Fixed issue with the icons of modded items in the tooltip
+[*] Fixed issue with doors not having the Open Sprite
+[*] Fixed issue with rendering Tiles in the UI with multiple addons
+[*] Improved getting the names from Moveable objects
+[*] Added bugs to fix later
+[/list]
+[/list]
+
+
+17 APR 24
+bf9f58c
+Hotfix
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Fixed issue with recipes being rendered NULL
+[/list]
+[/list]
+
+
 17 APR 24
 6e4ec7c
 

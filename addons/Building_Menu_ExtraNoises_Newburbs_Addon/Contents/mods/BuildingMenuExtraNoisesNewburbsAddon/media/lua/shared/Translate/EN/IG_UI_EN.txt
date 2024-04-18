@@ -1,0 +1,32 @@
+IGUI_EN = {
+
+    IGUI_BuildingMenuCat_ExtraNoiseNewburbs_Others = "Others",
+    IGUI_BuildingMenuSubCat_ExtraNoiseNewburbs_Others_Flags = "Flags",
+
+    IGUI_BuildingMenuSubCat_Walls_Painted_White = "Painted White",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Pink = "Painted Pink",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Tan = "Painted Tan",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Pale_Silver = "Painted Pale Silver",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Smoke = "Painted Smoke",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Morning_Blue = "Painted Morning Blue",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Rhythm = "Painted Rhythm",
+
+    IGUI_BuildingMenuSubCat_Walls_Painted_Cream = "Painted Cream",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Black = "Painted Black",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Cinereous = "Painted Cinereous",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Grey_Asparagus = "Painted Grey Asparagus",
+
+    IGUI_BuildingMenuSubCat_Walls_Painted_Granite_Grey = "Painted Granite Grey",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Granite_Grey_Dark = "Painted Granite Grey Dark",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Spanish_Grey = "Painted Spanish Grey",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Grullo = "Painted Grullo",
+
+    IGUI_BuildingMenuSubCat_Walls_Light_Grey_Clapboard = "Light Grey Clapboard",
+    IGUI_BuildingMenuSubCat_Walls_Eggshell_Clapboard = "Eggshell Clapboard",
+    IGUI_BuildingMenuSubCat_Walls_Warm_Grey_Clapboard = "Warm Grey Clapboard",
+    IGUI_BuildingMenuSubCat_Walls_Red_Clapboard = "Red Clapboard",
+    IGUI_BuildingMenuSubCat_Walls_Orange_Clapboard = "Orange Clapboard",
+    IGUI_BuildingMenuSubCat_Walls_RedBrown_Clapboard = "Red Brown Clapboard",
+    IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tan Clapboard",
+
+}   

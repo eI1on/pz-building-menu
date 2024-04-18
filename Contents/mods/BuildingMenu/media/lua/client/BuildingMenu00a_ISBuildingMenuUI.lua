@@ -19,7 +19,7 @@ local TILE_WIDTH, TILE_HEIGHT = 64, 128
 
 function BuildingMenuTilePickerList:render()
     ISPanel.render(self);
-
+    self:clearStencilRect();
     self:setStencilRect(0, 0, self:getWidth(), self:getHeight());
 
     local objectsBuffer = {};
@@ -612,6 +612,16 @@ function ISBuildingMenuUI:onGearButtonClick()
     end
 
 
+    local isBuildRoofActive = getActivatedMods():contains("BuildRoof")
+    if isBuildRoofActive then
+        local option = context:addOption("Floor is Ceiling", self, function(self)
+            self.floorIsRoof = not self.floorIsRoof;
+            BuildingMenu.debugPrint("[Building Menu Debug] self.floorIsRoof: ", self.floorIsRoof);
+        end);
+        context:setOptionChecked(option, self.floorIsRoof);
+    end
+
+
     local minOpaqueOption = context:addOption(getText("UI_chat_context_opaque_min"), ISBuildingMenuUI.instance);
     local minOpaqueSubMenu = context:getNew(context);
     context:addSubMenu(minOpaqueOption, minOpaqueSubMenu);
@@ -1048,6 +1058,7 @@ function ISBuildingMenuUI:new(x, y, width, height, character)
         getKeyName(ISBuildingMenuUI.upArrowCategory), getKeyName(ISBuildingMenuUI.downArrowCategory),
         getKeyName(ISBuildingMenuUI.leftTab), getKeyName(ISBuildingMenuUI.rightTab));
 
+    o.floorIsRoof = false;
     return o;
 end
 
