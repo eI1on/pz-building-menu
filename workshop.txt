@@ -4,8 +4,6 @@ title=Building Menu
 description=Ready to take your building experience up a notch? This mod adds an interface where you'll be able to find all the buildable objects you need to create and customize buildings, making your post-apocalyptic life a little more homey.
 description=
 description=[h1]Key Features:[/h1]
-description=[b] Easy Access: [/b] Dive straight into the building action! The Building Menu interface lets you select and place buildable objects with ease (console friendly).
-description=
 description=[b] Mod Options Integration: [/b] Access the Building Interface using a customizable keybind (adjustable via [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url]), option can be found [url=https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_keybindings.png] here [/url]. Interface opacity adjustments are made through the UI's [b] gear [/b] button.
 description=
 description=[b] Indestructible Buildables: [/b] The option to build indestructible objects, you can activate it from [b]Sandbox-Options[/b] (server admins can toggle it from the UI settings).
@@ -94,7 +92,7 @@ description=While the Building Menu mod can run as a standalone, I recommend usi
 description=
 description=Be sure to load Building Menu Mod [b]before[/b] any other addon to avoid any problems.
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_pert_party_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_simonMD_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_dylan_preview.png [/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_pert_party_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_simonMD_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_dylan_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3225710182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_extras_noises_preview.png [/img][/url]
 description=
 description=
 description=[hr][/hr]
