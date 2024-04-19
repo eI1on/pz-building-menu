@@ -66,6 +66,7 @@ end
 local function onKeyPressed(keynum)
     if not MainScreen.instance or not MainScreen.instance.inGame or MainScreen.instance:getIsVisible() then return; end
     local playerObj = getSpecificPlayer(0);
+    if not playerObj then return; end
     if playerObj:getVehicle() then return; end
 
     if playerObj ~= nil then

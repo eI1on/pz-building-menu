@@ -20,7 +20,7 @@ local TILE_WIDTH, TILE_HEIGHT = 64, 128
 function BuildingMenuTilePickerList:render()
     ISPanel.render(self);
     self:clearStencilRect();
-    self:setStencilRect(0, 0, self:getWidth(), self:getHeight());
+    self:setStencilRect(1, 1, self:getWidth(), self:getHeight());
 
     local objectsBuffer = {};
     local maxCols = math.floor(self:getWidth() / TILE_WIDTH);

@@ -4,6 +4,8 @@ local getText = getText
 local pairs = pairs
 ---@type function
 local ipairs = ipairs
+---@type function
+local getTexture = getTexture
 ---@class PerkFactory
 local PerkFactory = PerkFactory
 ---@type function
