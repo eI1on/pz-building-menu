@@ -436,7 +436,11 @@ end
 function BuildingMenu.getTexNameFromItem(item)
     local texture = BuildingMenu.getTexFromItem(item);
     if texture then
-        return texture:getName();
+        local textureName = texture:getName();
+        -- extract just the name from a path if it contains directory separators
+        local nameOnly = textureName:match("([^\\/]*)$");
+        print("Extracted texture name: ", nameOnly);
+        return nameOnly;
     else
         BuildingMenu.debugPrint("[Building Menu] ", "Warning: Texture not found for item " .. item:getFullName());
         return nil;
@@ -618,7 +622,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
             if texNameOnly and BuildingMenu.show_item_icons then
                 table.insert(itemBuffer,
                     "<IMAGE:" ..
-                    texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">"
+                    texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. "> "
                 );
             end
 
