@@ -439,7 +439,6 @@ function BuildingMenu.getTexNameFromItem(item)
         local textureName = texture:getName();
         -- extract just the name from a path if it contains directory separators
         local nameOnly = textureName:match("([^\\/]*)$");
-        print("Extracted texture name: ", nameOnly);
         return nameOnly;
     else
         BuildingMenu.debugPrint("[Building Menu] ", "Warning: Texture not found for item " .. item:getFullName());

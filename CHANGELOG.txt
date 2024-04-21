@@ -1,4 +1,16 @@
+21 APR 24
+
+Changelog:
+[list]
+ExtraNoise's Newburbs Tiles addon:
+[list]
+[*] Fixed issue with unpassable Doorframes (only newly build ones whill not have this problem)
+[/list]
+[/list]
+
+
 19 APR 24
+c6971e7
 Hotfix
 
 Changelog:

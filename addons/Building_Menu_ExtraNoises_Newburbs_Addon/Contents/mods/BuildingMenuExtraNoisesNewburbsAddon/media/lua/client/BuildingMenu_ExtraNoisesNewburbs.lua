@@ -265,21 +265,26 @@ end
 
 local function addExtraNoisesNewburbsColouredWallsToMenu()
     local function createWallObject(tooltipObj, tooltip, buildFunction, recipe, modDataWallType, spriteIndices)
+        local options = {
+            actionAnim = "Build",
+            noNeedHammer = false,
+            completionSound = "BuildWoodenStructureLarge",
+            modData = { wallType = modDataWallType }
+        }
+
+        if modDataWallType ~= "doorframe" then
+            options.isThumpable = nil;
+            options.canBarricade = true;
+            options.hoppable = modDataWallType == "windowsframe";
+        end
+
         return BuildingMenu.createObject(
             tooltipObj,
             tooltip,
             buildFunction,
             recipe,
             true,
-            {
-                actionAnim = "Build",
-                noNeedHammer = false,
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = modDataWallType ~= "wall",
-                hoppable = modDataWallType == "windowsframe",
-                modData = { wallType = modDataWallType }
-            },
+            options,
             {
                 sprite = spriteIndices.baseSprite .. spriteIndices.sprite,
                 northSprite = spriteIndices.baseSprite .. spriteIndices.northSprite,
@@ -651,23 +656,33 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
     local function createClapboardWallObjects(color, texturePrefix, wallObjects)
         local walls = {}
         for _, obj in ipairs(wallObjects) do
+            local options = {
+                actionAnim = obj.actionAnim or "Build",
+                noNeedHammer = false,
+                completionSound = "BuildWoodenStructureLarge",
+                modData = { wallType = (obj.wallType and string.lower(obj.wallType)) or "wall" }
+            }
+
+            if obj.wallType == "doorframe" then
+            elseif obj.wallType == "windowsframe" then
+                options.isThumpable = obj.isThumpable ~= false
+                options.canBarricade = obj.canBarricade == true
+                options.hoppable = obj.hoppable == true
+            elseif obj.wallType == "pillar" then
+                options.isCorner = obj.isCorner == true
+                options.canPassThrough = obj.canPassThrough == true
+            else
+                options.isThumpable = obj.isThumpable ~= false
+                options.canBarricade = obj.canBarricade ~= false
+            end
+
             table.insert(walls, BuildingMenu.createObject(
                 "Tooltip_BuildingMenuObj_" .. color .. "_" .. obj.type,
                 "Tooltip_" .. color .. "_" .. obj.type,
                 obj.buildFunction or BuildingMenu.onBuildWall,
                 obj.recipe,
                 true,
-                {
-                    actionAnim = obj.actionAnim or "Build",
-                    noNeedHammer = false,
-                    completionSound = "BuildWoodenStructureLarge",
-                    isThumpable = obj.isThumpable ~= false,
-                    canBarricade = obj.canBarricade == true,
-                    hoppable = obj.hoppable == true,
-                    canPassThrough = obj.canPassThrough == true,
-                    isCorner = obj.isCorner == true,
-                    modData = { wallType = (obj.wallType and string.lower(obj.wallType)) or "wall" }
-                },
+                options,
                 {
                     sprite = texturePrefix .. "_" .. obj.sprite,
                     northSprite = texturePrefix .. "_" .. obj.northSprite,
