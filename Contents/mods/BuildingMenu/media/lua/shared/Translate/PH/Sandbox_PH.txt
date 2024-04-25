@@ -1,7 +1,8 @@
 Sandbox_PH = {
+
     Sandbox_BuildingMenu = "Menu ng Building",
     Sandbox_BuildingMenu_isThumpable = "Mga Nabubulok na Istraktura",
-    Sandbox_BuildingMenu_isThumpable_tooltip = " <SPACE><RGB:1,0.8,0> I-OFF <RGB:1,1,1><SPACE> ang para gawing immune sa pinsala ng zombie ang mga istrukturang binuo gamit ang Menu ng Building.",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "I-OFF ang <SPACE><RGB:1,0.8,0> <RGB:1,1,1><SPACE> para gumawa ng mga istruktura gamit ang Building Menu immune sa pinsala ng zombie.",
 
 
     Sandbox_BuildingMenu_EmptyBox = "",
@@ -12,39 +13,39 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "Paganahin ang Wood Walls Subcategory",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang kahoy na dingding. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang kahoy na dingding. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_clapboardWallsSubCategory = "Paganahin ang Clapboard Walls Subcategory",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "I-enable ang pagdaragdag ng mga istruktura ng clapboard walls. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "I-enable ang pagdaragdag ng mga istruktura ng clapboard walls. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_stoneWallsSubCategory = "Paganahin ang Stone Walls Subcategory",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Paganahin upang magdagdag ng mga istraktura ng pader na bato. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang pader ng bato. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_brickWallsSubCategory = "Paganahin ang Brick Walls Subcategory",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang brick wall. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang brick wall. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Paganahin ang Cinderblock Walls Subcategory",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Paganahin upang magdagdag ng mga istruktura ng cinderblock na pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istruktura ng cinderblock na pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_paintedWallsSubCategory = "Paganahin ang Painted Walls Subcategory",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Paganahin upang magdagdag ng mga pininturahan na mga istraktura ng pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Paganahin upang magdagdag ng mga pininturahan na mga istraktura ng pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Paganahin ang Arched Window Walls Subcategory",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang may arko sa dingding ng bintana. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang may arko sa dingding ng bintana. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
-    Sandbox_BuildingMenu_commercialWallsSubCategory = "Paganahin ang Commercial Walls Subcategory",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang pangkomersyal na pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "I-enable ang Commercial Walls Subcategory",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang pangkomersyal na pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_industrialWallsSubCategory = "Paganahin ang Industrial Walls Subcategory",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang pang-industriya na pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Paganahin ang magdagdag ng mga istrukturang pang-industriya na pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
-    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Kategorya ng Mga Bubong _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Kategorya ng Bubong _______________",
     Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_roofsCategory = "Paganahin ang Kategorya ng Mga Bubong",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Paganahin upang magdagdag ng mga istruktura ng bubong, tulad ng mga shingle, shake shingle, salamin. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Paganahin upang magdagdag ng mga istruktura ng bubong, tulad ng mga shingle, shake shingle, salamin. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -52,10 +53,10 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_doorsSubCategory = "Paganahin ang Kategorya ng Mga Pintuan",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Paganahin upang magdagdag ng Wooden, Low, Panel, Metal, Glass na mga pinto. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Paganahin upang magdagdag ng Wooden, Low, Panel, Metal, Glass na mga pinto. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_garageDoorsSubCategory = "Paganahin ang Garage Doors Subcategory",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Paganahin ang magdagdag ng 3 at 4 na Tile Garage Doors. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Paganahin ang magdagdag ng 3 at 4 na Tile Garage Doors. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -63,7 +64,7 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "I-enable ang Architecture Plus Category",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Paganahin ang magdagdag ng Mga Pinto ng Pinto, Paghuhulma ng Korona, Pagdetalye ng Gilid, Paghuhulma ng Sahig at Mga Panel sa Pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Paganahin ang magdagdag ng Mga Pinto ng Pinto, Paghuhulma ng Korona, Pagdetalye ng Gilid, Paghuhulma ng Sahig at Mga Panel sa Pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -71,7 +72,7 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_windowsCategory = "Paganahin ang Windows Category",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Paganahin upang magdagdag ng Windows. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Paganahin upang magdagdag ng Windows. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -79,13 +80,13 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "Paganahin ang High Fences Subcategory",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Paganahin ang magdagdag ng Mataas na Bakod. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Paganahin ang magdagdag ng Mataas na Bakod. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Paganahin ang Subcategory na Mababang bakod at Railings",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Paganahin ang magdagdag ng Mababang Bakod at Rehas. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Paganahin ang magdagdag ng Mababang Bakod at Rehas. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_otherFencesSubCategory = "Paganahin ang Iba Pang Bakod na Subcategory",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Paganahin ang magdagdag ng iba pang Bakod gaya ng Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Paganahin ang magdagdag ng iba pang Bakod gaya ng Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -93,7 +94,7 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_floorsCategory = "I-enable ang Floor Category",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Paganahin ang magdagdag ng Mga Sahig. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Paganahin upang magdagdag ng Mga Sahig. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -101,26 +102,26 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
  
     Sandbox_BuildingMenu_stairsCategory = "Paganahin ang Kategorya ng Hagdan",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Paganahin ang magdagdag ng Hagdanan. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Paganahin upang magdagdag ng Hagdanan. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
     Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Kategorya ng Roadwork _____________",
     Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Paganahin ang Asphalt Subcategory",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Paganahin ang magdagdag ng aspalto. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Paganahin ang magdagdag ng aspalto. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Paganahin ang Overlays Subcategory",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Paganahin ang magdagdag ng mga overlay gaya ng Grime at Street Cracks. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "I-enable ang Overlays Subcategory",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Paganahin ang magdagdag ng mga overlay gaya ng Grime at Street Cracks. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "I-enable ang Sidewalk Edge Overlays Subcategory",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Paganahin ang magdagdag ng mga Sidewalk Edge Overlay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Overlay sa Sidewalk Edge. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Paganahin ang Dirt and Grass Subcategory",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Paganahin upang magdagdag ng mga tile ng Dirt at Grass. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Paganahin upang magdagdag ng mga tile ng Dirt at Grass. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Paganahin ang Painted Road Markings Subcategory",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Pininturang Marka ng Daan. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Pininturang Marka ng Daan. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -128,25 +129,25 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
  
     Sandbox_BuildingMenu_kitchenCountersSubCategory = "I-enable ang Kitchen Counter Subcategory",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Counter sa Kusina, Mga Upper Counter. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Counter sa Kusina, Mga Upper Counter. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_commercialCountersSubCategory = "Paganahin ang Subcategory ng Mga Komersyal na Counter",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Paganahin ang magdagdag ng Restaurant, Cafe, Bar, Diner Counter. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Paganahin ang magdagdag ng Restaurant, Cafe, Bar, Diner Counter. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_cratesSubCategory = "Paganahin ang Crates Subcategory",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Paganahin ang magdagdag ng simpleng Crates, Military Crates(100 capacity), Cardboard Boxes. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Paganahin ang magdagdag ng simpleng Crates, Military Crates(100 capacity), Cardboard Boxes. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_metalContainersSubCategory = "Paganahin ang Subcategory ng Mga Metal Container",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Paganahin ang magdagdag ng mga Metal Container, Malaking Metal Shelves, Locker. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Metal Container, Malaking Metal Shelves, Locker. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_clothesRacksSubCategory = "Paganahin ang Clothes Racks Subcategory",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Paganahin ang magdagdag ng mga Clothes Racks at Mannequin. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Paganahin ang magdagdag ng mga Clothes Rack at Mannequin. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_trashCansSubCategory = "Paganahin ang Subcategory ng Trash Cans",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Paganahin ang magdagdag ng mga basurahan. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Paganahin ang magdagdag ng mga basurahan. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_containersOthersSubCategory = "Paganahin ang Iba Pang Subcategory na Container",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Paganahin ang magdagdag ng Iba Pang Subcategory na Container. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Paganahin na magdagdag ng Iba Pang Subcategory na Container. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
    
 
@@ -154,7 +155,7 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
  
     Sandbox_BuildingMenu_musicSubCategory = "Paganahin ang Subcategory ng Musika",
-    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Paganahin ang magdagdag ng mga jukebox, piano at iba pa. <LINE><LINE> <RGB:1,0,0> KINAKAILANGAN NG CLIENT RESTART!",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Paganahin ang magdagdag ng mga jukebox, piano at iba pa. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
     
@@ -162,19 +163,19 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
  
     Sandbox_BuildingMenu_tablesSubCategory = "Paganahin ang Tables Subcategory",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Paganahin upang magdagdag ng Maliit at Malaking Talahanayan. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Paganahin upang magdagdag ng Maliit at Malaking Talahanayan. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_bedsSubCategory = "Paganahin ang Beds Subcategory",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Paganahin upang magdagdag ng Simple at Malaking Kama. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Paganahin upang magdagdag ng Simple at Malaking Kama. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Paganahin ang Subcategory ng Mga Muwebles sa Pag-upo",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Paganahin upang magdagdag ng mga Bench, Couches, Chairs. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Paganahin upang magdagdag ng mga Bench, Couches, Chairs. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
-    Sandbox_BuildingMenu_bookshelvesSubCategory = "Paganahin ang Subcategory ng Bookshelves",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Paganahin ang pagdaragdag ng mga Bookshelf. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Paganahin ang Subcategory ng Bookshelf",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Istante. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Paganahin ang Dressers Subcategory",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Paganahin ang magdagdag ng mga Dresser, Drawers at Wardrobe. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Paganahin ang magdagdag ng mga Dresser, Drawers at Wardrobe. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
 
 
@@ -182,16 +183,16 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
  
     Sandbox_BuildingMenu_rugsSubCategory = "Paganahin ang Rugs Subcategory",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Paganahin ang magdagdag ng Rugs. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Paganahin ang magdagdag ng Rugs. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Paganahin ang Subcategory ng Mga Poster at Palatandaan",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Paganahin ang magdagdag ng mga Poster at Mga Palatandaan. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Paganahin upang magdagdag ng mga Poster at Mga Palatandaan. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_graffitiSubCategory = "Paganahin ang Graffiti Subcategory",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Paganahin upang magdagdag ng Graffiti. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Paganahin upang magdagdag ng Graffiti. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "Paganahin ang Iba Pang Dekorasyon na Subcategory",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Paganahin upang magdagdag ng Iba pang mga Dekorasyon, tulad ng mga road block, mailbox, barrier post, road cone, mail box. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Paganahin upang magdagdag ng Iba pang mga Dekorasyon, tulad ng mga road block, mailbox, barrier post, road cone, mail box. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
 
 
@@ -199,16 +200,16 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "Paganahin ang Flower Beds Subcategory",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Flower Bed sa Kategorya ng Vegetation. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Flower Bed sa Kategorya ng Vegetation. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
-    Sandbox_BuildingMenu_indoorPlantsSubCategory = "I-enable ang Subcategory ng Indoor Plants",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "I-enable ang pagdaragdag ng mga Panloob na Halaman, gaya ng mga Flower Pot sa Kategorya ng Vegetation. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Paganahin ang Subcategory ng Mga Halamang Panloob",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "I-enable ang pagdaragdag ng mga Panloob na Halaman, gaya ng mga Flower Pot sa Kategorya ng Vegetation. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Paganahin ang Subcategory ng Mga Panlabas na Halaman",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Paganahin ang magdagdag ng mga Panlabas na Halaman, tulad ng mga panlabas na Lalagyan ng Bulaklak sa Kategorya ng Vegetation. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "I-enable ang pagdaragdag ng Mga Panlabas na Halaman, gaya ng mga panlabas na Lalagyan ng Bulaklak sa Kategorya ng Vegetation. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_landscapingSubCategory = "Paganahin ang Landscaping Subcategory",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Paganahin upang magdagdag ng Landscaping Vegetation, tulad ng Grass, Hedges, Wall Vines sa Vegetation Category. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Paganahin upang magdagdag ng Landscaping Vegetation, tulad ng Grass, Hedges, Wall Vines sa Vegetation Category. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
 
 
@@ -216,35 +217,35 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_fireplaceSubCategory = "Paganahin ang Fireplace Subcategory",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Paganahin upang magdagdag ng Fireplace at Jambs. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Paganahin upang magdagdag ng Fireplace at Jambs. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
     Sandbox_BuildingMenu_generatorSubCategory = "Paganahin ang Generator Subcategory",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Paganahin upang idagdag ang Generator. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Paganahin upang idagdag ang Generator. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_metalDrums = "Paganahin ang Metal Drums",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Paganahin ang magdagdag ng mga metal drum. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Paganahin ang magdagdag ng mga metal drum. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
 
-    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
-    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_waterWell = "Paganahin ang Water Wells",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Paganahin ang magdagdag ng mga balon ng tubig. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Kategorya ng Appliances ____________",
     Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenu_lightingAppliances = "Paganahin ang Kategorya ng Pag-iilaw",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Paganahin upang magdagdag ng Kategorya ng Pag-iilaw. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Paganahin upang magdagdag ng Kategorya ng Pag-iilaw. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
 
     Sandbox_BuildingMenu_bathroomAppliances = "Paganahin ang Subcategory ng Mga Kagamitan sa Banyo",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Paganahin ang magdagdag ng mga Lababo, Banyo at iba pang mga bagay na nauugnay sa banyo. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Paganahin upang magdagdag ng mga lababo, banyo at iba pang mga bagay na nauugnay sa banyo. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_cookingAppliances = "Paganahin ang Subcategory ng Mga Appliances sa Kusina",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Paganahin ang magdagdag ng Mga Kalan, Oven at iba pang mga bagay na nauugnay sa pagluluto. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Paganahin ang magdagdag ng Mga Kalan, Oven at iba pang mga bagay na nauugnay sa pagluluto. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_fridgeAppliances = "Paganahin ang Refrigeration Appliances Subcategory",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Paganahin ang magdagdag ng Mga Refrigerator at Mga Freezer. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Paganahin ang magdagdag ng Mga Refrigerator at Mga Freezer. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
     Sandbox_BuildingMenu_laundryAppliances = "Paganahin ang Subcategory ng Mga Kasangkapan sa Paglalaba",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Paganahin ang magdagdag ng mga Washer at Dryer. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT!",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Paganahin ang magdagdag ng mga Washer at Dryer. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
     
 
 
@@ -254,17 +255,17 @@ Sandbox_PH = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Mga Materyales ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
-    Sandbox_PaintUses = "Mga Gamit ng Paint Can",
-    Sandbox_PaintUses_tooltip = "Mga gamit sa bawat lata ng pintura. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_PaintUses = "Mga Gamit ng Pintura",
+    Sandbox_PaintUses_tooltip = "Mga gamit sa bawat lata ng pintura. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
 
     Sandbox_BlowTorchUses = "Gumagamit ng Blow Torch",
-    Sandbox_BlowTorchUses_tooltip = "Gumagamit sa bawat suntok na sulo. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BlowTorchUses_tooltip = "Gumagamit sa bawat suntok na sulo. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
 
     Sandbox_BucketAsphaltMixtureUses = "Bucket na may Asphalt Mix Uses",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Mga gamit sa bawat Bucket na may Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Mga gamit sa bawat Bucket na may Asphalt Mixture. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
 
     Sandbox_BucketConcreteUses = "Balde na may mga Konkretong Gamit",
-    Sandbox_BucketConcreteUses_tooltip = "Mga gamit sa bawat Balde na may Kongkreto. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BucketConcreteUses_tooltip = "Mga gamit sa bawat Balde na may Kongkreto. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
 
 
     Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Mga gamit",
@@ -291,93 +292,93 @@ Sandbox_PH = {
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Gastos ng Materyal na Kahoy para sa MALAKING Pader",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALAKING Pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALAKING Pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Gastos ng Materyal na Pako para sa MALAKING Pader",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa MALAKING Pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa BIG Walls. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Gastos ng Materyal na Kahoy para sa MALIIT na Pader",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALIIT na Pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALIIT na Pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Gastos ng Materyal na Pako para sa MALIIT na Pader",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa MALIIT na Pader. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa MALIIT na Pader. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Gastos ng Materyal na Kahoy para sa MALAKING Bagay",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALAKING Bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALAKING Bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Gastos ng Materyal na Pako para sa MALAKING Bagay",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa MALAKING Bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Gastos ng Materyal ng Kuko para sa MALAKING Bagay",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa MALAKING Bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Gastos ng Materyal na Kahoy para sa MALIIT na Bagay",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALIIT na Bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Nagtatakda ng kahoy na kailangan para sa MALIIT na Bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Gastos ng Materyal na Pako para sa MALIIT na Bagay",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa MALIIT na Bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Nagtatakda ng mga pako na kailangan para sa MALIIT na Bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_glassPaneCount = "Gastos ng Materyal na Glass Pane",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Nagtatakda ng mga glass pane na kailangan. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Nagtatakda ng mga glass pane na kailangan. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalBarsCount = "Metal Bars Material Cost",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Nagtatakda ng mga metal bar na kailangan. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Nagtatakda ng mga metal bar na kailangan. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_screwsCount = "Gastusin ng Materyal ng mga Turnilyo",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Nagtatakda ng mga turnilyo na kailangan. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Nagtatakda ng mga turnilyo na kailangan. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Scrap Metal para sa Gastos ng FENCES",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Nagtatakda ng scrap metal na kailangan para sa mga bakod. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> KINAKAILANGAN NG CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Nagtatakda ng scrap metal na kailangan para sa mga bakod. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Scrap Metal para sa ELECTRICAL ITEMS Gastos",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Nagtatakda ng scrap metal na kailangan para sa mga de-koryenteng bagay. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> KINAKAILANGAN NG CLIENT RESTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Nagtatakda ng scrap metal na kailangan para sa mga de-koryenteng bagay. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Sheet Metal para sa WALLS na Gastos",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa MGA PADER. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa MGA PADER. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Sheet Metal para sa DOORS Cost",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa MGA PINTO. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa MGA PINTO. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Sheet Metal para sa CONTAINERS Gastos",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa mga CONTAINER. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa mga CONTAINER. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Sheet Metal para sa FIXTURES at APPLIANCES Gastos",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Nagtatakda ng sheet metal na kailangan para sa FIXTURES at APPLIANCES. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Nagtatakda ng sheet metal na kailangan para sa FIXTURES at APPLIANCES. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal para sa ROOFING at FLOORS na Gastos",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa PAGBUBUBONG at SAHANG. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal para sa ROOFING at FLOORS Gastos",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Nagtatakda ng sheet na metal na kailangan para sa PAGBUBONG at SAHANG. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Kasanayan ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Woodworking level para sa BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Nagtatakda ng antas ng karpinterya na kailangan para sa MALAKING Bagay. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Nagtatakda ng antas ng karpinterya na kailangan para sa MALAKING Bagay. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Woodworking level para sa MALIIT na Bagay",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Nagtatakda ng antas ng karpinterya na kailangan para sa MALIIT na Bagay. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Itinatakda ang antas ng karpinterya na kailangan para sa MALIIT na Bagay. <LINE> Mga kaliskis na may sukat at uri ng bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Woodworking XP Gain bawat Level",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "XP gain sa bawat antas ng karpinterya kapag nagtatayo ng mga bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "XP gain sa bawat antas ng karpintero kapag nagtatayo ng mga bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Metalworking XP Gain bawat Level",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "XP gain sa bawat metalworking level kapag gumagawa ng mga bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "XP gain sa bawat antas ng metalworking kapag gumagawa ng mga bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Electrical XP Gain bawat Level",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP gain sa bawat electrical level kapag gumagawa ng mga bagay. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP gain sa bawat electrical level kapag gumagawa ng mga bagay. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Mga Recipe ng Espesyal na Bagay ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Isa lang itong line separator, walang epekto ang pagsuri nito.",
 
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Pinakamataas na Halaga ng Imbakan ng Balon ng Tubig",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Gaano karaming tubig ang hawak ng isang Well.",
     
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Gastos sa Wood Material para sa Militar Crate",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Nagtatakda ng mga tabla na kinakailangan para sa mga Military Crates. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Nagtatakda ng mga tabla na kinakailangan para sa mga Military Crates. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Gastos ng Materyal na Pako para sa Militar Crate",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Nagtatakda ng mga pako na kinakailangan para sa Militar Crates. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Nagtatakda ng mga pako na kinakailangan para sa mga Military Crates. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Woodworking Level para sa Militar Crate",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Nagtatakda ng antas ng pagkakarpinterya na kailangan para sa mga Military Crates. <LINE><LINE> <RGB:1,0,0> nangangailangan ng muling pagsisimula ng CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Itinatakda ang antas ng karpintero na kailangan para sa mga Military Crates. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
 
 
 }

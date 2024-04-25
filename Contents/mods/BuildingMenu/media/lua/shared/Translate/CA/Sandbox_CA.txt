@@ -1,7 +1,8 @@
 Sandbox_CA = {
+
     Sandbox_BuildingMenu = "Menú de l'edifici",
     Sandbox_BuildingMenu_isThumpable = "Estructures abatibles",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> Desactiveu <RGB:1,1,1><SPACE> per fer que les estructures construïdes amb el menú Construcció siguin immunes als danys zombis.",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "Desactiveu <SPACE><RGB:1,0.8,0> DESACTIVAT <RGB:1,1,1><SPACE> per crear estructures construïdes amb el menú Construcció immune als danys zombis.",
 
 
     Sandbox_BuildingMenu_EmptyBox = "",
@@ -12,31 +13,31 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "Habilita la subcategoria de parets de fusta",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Permet afegir estructures de parets de fusta. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Permet afegir estructures de parets de fusta. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_clapboardWallsSubCategory = "Activa la subcategoria de parets de tauleta",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de tablilla. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de tablilla. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_stoneWallsSubCategory = "Activa la subcategoria Murs de pedra",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Permet afegir estructures de parets de pedra. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Permet afegir estructures de parets de pedra. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_brickWallsSubCategory = "Activa la subcategoria Murs de maó",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de maó. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de maó. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Activa la subcategoria Cinderblock Walls",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de blocs de formigó. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de blocs de formigó. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_paintedWallsSubCategory = "Activa la subcategoria Murs pintats",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Habilita per afegir estructures de parets pintades. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Habilita per afegir estructures de parets pintades. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Activa la subcategoria Parets de finestres arquejades",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de finestres arquejades. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Habilita per afegir estructures de parets de finestres arquejades. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_commercialWallsSubCategory = "Activa la subcategoria Murs comercials",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Habilita per afegir estructures de parets comercials. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Habilita per afegir estructures de parets comercials. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_industrialWallsSubCategory = "Habilita la subcategoria Murs industrials",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Permet afegir estructures de murs industrials. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Permet afegir estructures de murs industrials. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -44,7 +45,7 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_roofsCategory = "Activa la categoria Sostres",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Permet afegir estructures de sostre, com ara teules, teules sacsejades, vidre. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Permet afegir estructures de sostre, com ara teules, teules sacsejades, vidre. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -52,10 +53,10 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_doorsSubCategory = "Activa la categoria Portes",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Habilita per afegir portes de fusta, baixes, panells, metall i vidre. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Habilita per afegir portes de fusta, baixes, panells, metall i vidre. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_garageDoorsSubCategory = "Habilita la subcategoria de portes de garatge",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Habilita per afegir portes de garatge de 3 i 4 rajoles. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Habilita per afegir portes de garatge de 3 i 4 rajoles. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -63,7 +64,7 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "Activa la categoria Architecture Plus",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Habiliteu per afegir guarnicions de portes, motllures de corona, detalls de vora, motllures del sòl i panells de paret. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Habiliteu per afegir guarnicions de portes, motllures de corona, detalls de vora, motllures del sòl i panells de paret. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -71,7 +72,7 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_windowsCategory = "Activa la categoria de Windows",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Habilita per afegir Windows. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Habilita per afegir Windows. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -79,13 +80,13 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "Activa la subcategoria Tanques altes",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Activa per afegir tanques altes. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Activa per afegir tanques altes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Activa la subcategoria Tanques i baranes baixes",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Habilita per afegir tanques i baranes baixes. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Activa per afegir tanques i baranes baixes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_otherFencesSubCategory = "Activa la subcategoria Altres tanques",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Habiliteu per afegir altres tanques com ara barrera Hesco, tanques de metall baixes, tanques de maó. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Habiliteu per afegir altres tanques com ara barrera Hesco, tanques de metall baixes, tanques de maó. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -93,7 +94,7 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_floorsCategory = "Activa la categoria Pis",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Activa per afegir pisos. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Activa per afegir pisos. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -101,26 +102,26 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
  
     Sandbox_BuildingMenu_stairsCategory = "Activa la categoria Escales",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Activa per afegir escales. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Activa per afegir escales. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
     Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoria d'obra _____________",
     Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Activa la subcategoria d'asfalt",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Habilita per afegir asfalt. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Activa per afegir asfalt. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Activa la subcategoria de superposicions",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Activa per afegir superposicions com ara Grime i Street Cracks. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Activa per afegir superposicions com ara Grime i Street Cracks. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Activa la subcategoria de superposicions de vorera",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Activa per afegir superposicions de vorera. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Activa per afegir superposicions de vorera. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Activa la subcategoria de terra i herba",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Activa per afegir rajoles de terra i herba. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Activa per afegir rajoles de terra i herba. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Activa la subcategoria de les marques vials pintades",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Activa per afegir marques vials pintades. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Activa per afegir marques vials pintades. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -128,25 +129,25 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
  
     Sandbox_BuildingMenu_kitchenCountersSubCategory = "Habilita la subcategoria de taulells de cuina",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Habilita per afegir taulells de cuina, taulells superiors. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Activa per afegir taulells de cuina, taulells superiors. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_commercialCountersSubCategory = "Activa la subcategoria de comptadors comercials",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Habilita per afegir taulells de restaurant, cafeteria, bar i menjador. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Habilita per afegir taulells de restaurant, cafeteria, bar i menjador. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_cratesSubCategory = "Activa la subcategoria Crates",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Habilita per afegir caixes senzilles, caixes militars (capacitat de 100), caixes de cartró. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Habilita per afegir caixes senzilles, caixes militars (capacitat de 100), caixes de cartró. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_metalContainersSubCategory = "Activa la subcategoria de contenidors metàl·lics",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Habilita per afegir contenidors metàl·lics, prestatgeries metàl·liques grans, armariets. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Activa per afegir contenidors metàl·lics, prestatgeries metàl·liques grans, armariets. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_clothesRacksSubCategory = "Habilita la subcategoria Bastidors de roba",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Activa per afegir penjadores i maniquís. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Activa per afegir penjadors i maniquís. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_trashCansSubCategory = "Activa la subcategoria Papereres",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Activa per afegir papereres. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Activa per afegir papereres. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_containersOthersSubCategory = "Activa la subcategoria Altres contenidors",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Activa per afegir la subcategoria Altres contenidors. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Activa per afegir la subcategoria d'altres contenidors. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
    
 
@@ -154,7 +155,7 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
  
     Sandbox_BuildingMenu_musicSubCategory = "Activa la subcategoria de música",
-    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Habilita per afegir jukeboxes, pianos, etc. <LINE><LINE> <RGB:1,0,0> REQUEREIX EL REINICIAR DEL CLIENT!",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Habilita per afegir jukeboxes, pianos, etc. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
     
@@ -162,19 +163,19 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
  
     Sandbox_BuildingMenu_tablesSubCategory = "Activa la subcategoria de taules",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Habilita per afegir taules petites i grans. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Habilita per afegir taules petites i grans. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_bedsSubCategory = "Activa la subcategoria de llits",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Activa per afegir llits simples i grans. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Activa per afegir llits simples i grans. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Activa la subcategoria Mobles de seient",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Activa per afegir bancs, sofàs i cadires. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Activa per afegir bancs, sofàs i cadires. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_bookshelvesSubCategory = "Activa la subcategoria Prestatges",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Activa per afegir prestatgeries. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Activa per afegir prestatgeries. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Activa la subcategoria Dressers",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Habiliteu per afegir aparadors, calaixos i armaris. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Habiliteu per afegir aparadors, calaixos i armaris. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
 
 
@@ -182,16 +183,16 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
  
     Sandbox_BuildingMenu_rugsSubCategory = "Activa la subcategoria de catifes",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Activa per afegir catifes. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Activa per afegir catifes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Activa la subcategoria Cartells i rètols",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Activa per afegir pòsters i rètols. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Activa per afegir pòsters i rètols. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_graffitiSubCategory = "Activa la subcategoria Graffiti",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Activa per afegir Graffiti. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Activa per afegir Graffiti. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "Activa la subcategoria Altres decoracions",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Habiliteu per afegir altres decoracions, com ara blocs de carreteres, bústia de correu, pal de barrera, cons de carretera, bústia de correu. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Habiliteu per afegir altres decoracions, com ara blocs de carreteres, bústia, pal de barrera, cons de carretera, bústia de correu. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
 
 
@@ -199,16 +200,16 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "Activa la subcategoria de parterres",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Activa per afegir parterres a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Activa per afegir parterres a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_indoorPlantsSubCategory = "Habilita la subcategoria de plantes d'interior",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Habiliteu per afegir plantes d'interior, com ara tests a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Habiliteu per afegir plantes d'interior, com ara tests a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Activa la subcategoria Plantes d'exterior",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Habiliteu per afegir plantes d'exterior, com ara contenidors de flors a l'aire lliure a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Habiliteu per afegir plantes d'exterior, com ara contenidors de flors d'exterior a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_landscapingSubCategory = "Activa la subcategoria de paisatgisme",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Habiliteu per afegir vegetació paisatgística, com ara herba, bardisses, vinyes de paret a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Habiliteu per afegir vegetació paisatgística, com ara herba, bardisses, vinyes de paret a la categoria de vegetació. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
 
 
@@ -216,35 +217,35 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_fireplaceSubCategory = "Activa la subcategoria Xemeneia",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Activa per afegir llar de foc i brancals. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Activa per afegir llar de foc i brancals. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
     Sandbox_BuildingMenu_generatorSubCategory = "Activa la subcategoria del generador",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Habilita per afegir el generador. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Habilita per afegir el generador. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_metalDrums = "Activa els tambors metàl·lics",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Activa per afegir tambors metàl·lics. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Activa per afegir tambors metàl·lics. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
 
-    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
-    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_waterWell = "Habilita els pous d'aigua",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Habilita per afegir pous d'aigua. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Electrodomèstics Categoria ____________",
     Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenu_lightingAppliances = "Activa la categoria d'il·luminació",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Activa per afegir una categoria d'il·luminació. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Activa per afegir una categoria d'il·luminació. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
 
     Sandbox_BuildingMenu_bathroomAppliances = "Activa la subcategoria d'accessoris de bany",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilita per afegir piques, lavabos i altres objectes relacionats amb el bany. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Habilita per afegir piques, lavabos i altres objectes relacionats amb el bany. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_cookingAppliances = "Activa la subcategoria Electrodomèstics de cuina",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Activa per afegir estufes, forns i altres objectes relacionats amb la cuina. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Habilita per afegir estufes, forns i altres objectes relacionats amb la cuina. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
     Sandbox_BuildingMenu_fridgeAppliances = "Activa la subcategoria d'aparells de refrigeració",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Activa per afegir frigorífics i congeladors. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Activa per afegir frigorífics i congeladors. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
-    Sandbox_BuildingMenu_laundryAppliances = "Activa la subcategoria d'aparells de bugaderia",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Activa per afegir rentadores i assecadores. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT!",
+    Sandbox_BuildingMenu_laundryAppliances = "Activa la subcategoria d'electrodomèstics de bugaderia",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Activa per afegir rentadores i assecadores. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
     
 
 
@@ -255,16 +256,16 @@ Sandbox_CA = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_PaintUses = "Usos de la llauna de pintura",
-    Sandbox_PaintUses_tooltip = "Usos per llauna de pintura. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_PaintUses_tooltip = "Usos per llauna de pintura. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
 
     Sandbox_BlowTorchUses = "Usos de la torxa",
-    Sandbox_BlowTorchUses_tooltip = "Usos per soplete. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BlowTorchUses_tooltip = "Usos per soplete. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
 
     Sandbox_BucketAsphaltMixtureUses = "Cubell amb mescla d'asfalt Usos",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Usos per galleda amb mescla asfàltica. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Usos per galleda amb mescla d'asfalt. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
 
     Sandbox_BucketConcreteUses = "Cubeta amb usos de formigó",
-    Sandbox_BucketConcreteUses_tooltip = "Usos per galleda amb formigó. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BucketConcreteUses_tooltip = "Usos per galleda amb formigó. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
 
 
     Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Usos",
@@ -291,93 +292,93 @@ Sandbox_CA = {
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Cost del material de fusta per a parets GRANS",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Estableix la fusta necessària per a BIG Walls. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Estableix la fusta necessària per a BIG Walls. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Cost del material de les ungles per a parets GRANS",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Col·loca els claus necessaris per a BIG Walls. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Col·loca els claus necessaris per a BIG Walls. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Cost del material de fusta per a parets PETITES",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Estableix la fusta necessària per a les parets PETITES. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Estableix la fusta necessària per a les parets PETITES. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Cost del material de les ungles per a parets PETITES",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Col·loca els claus necessaris per a les parets PETITES. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Col·loca els claus necessaris per a les parets PETITES. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Cost del material de fusta per a objectes GRANS",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Estableix la fusta necessària per a objectes GRANS. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Estableix la fusta necessària per a objectes GRANS. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Cost del material de les ungles per a objectes GRANS",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Col·loca les ungles necessàries per a objectes GRANS. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Col·loca les ungles necessàries per a objectes GRANS. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Cost del material de fusta per a objectes PETITS",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Estableix la fusta necessària per a objectes PETITS. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Estableix la fusta necessària per a objectes PETITS. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Cost del material de les ungles per a objectes PETITS",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Col·loca les ungles necessàries per a objectes PETITS. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Col·loca les ungles necessàries per a objectes PETITS. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_glassPaneCount = "Cost del material de vidre",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Col·loca els vidres necessaris. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Col·loca els vidres necessaris. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalBarsCount = "Cost del material de les barres metàl·liques",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Estableix les barres metàl·liques necessàries. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Estableix les barres metàl·liques necessàries. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_screwsCount = "Cost del material dels cargols",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Fixa els cargols necessaris. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Fixa els cargols necessaris. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Cost de ferralla per TANQUES",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Conjunta de ferralla necessària per a les tanques. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> REQUEREIX EL REINICIAR DEL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Conjunta de ferralla necessària per a les tanques. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Cost de ferralla per a ELÈCTRICS",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Conjunta de ferralla necessària per a coses elèctriques. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> REQUEREIX EL REINICIAR DEL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Conjunta de ferralla necessària per a coses elèctriques. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Cost de xapa per PARETS",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Conjunt de xapa necessària per a PARETS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Conjunt de xapa necessària per a PARETS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Cost de xapa per a PORTES",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Conjunt de xapa necessària per a PORTES. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Conjunt de xapa necessària per a PORTES. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Cost de xapa per a CONTENIDORS",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Conjunt de xapa necessària per als CONTENIDORS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Conjunt de xapa necessària per als CONTENIDORS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Cost de xapa metàl·lica per a LLOCS I ELECTRODOMESTICS",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Conjunt de xapa necessària per a LLOCS I ELECTRODOMESTICS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Conjunt de xapa necessària per a LLOCS I ELECTRODOMESTICS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Cost de xapa metàl·lica per a COBERTES i SOLS",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Conjunt de xapes necessàries per a COBERTES i SOLS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Conjunt de xapes necessàries per a COBERTES i SOLS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Habilitats ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Nivell de fusteria per a objectes GRANS",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Estableix el nivell de fusteria necessari per a objectes GRANS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Estableix el nivell de fusteria necessari per a objectes GRANS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Nivell de fusteria per a objectes PETITS",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Estableix el nivell de fusteria necessari per a objectes PETITS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Estableix el nivell de fusteria necessari per a objectes PETITS. <LINE> Escala amb la mida i el tipus d'objecte. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Guany d'EXP per a la fusteria per nivell",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Guany de XP per nivell de fusteria quan es construeixen objectes. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Guany de XP per nivell de fusteria quan es construeixen objectes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Guany d'XP de treball del metall per nivell",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Guany d'XP per nivell de metall quan es construeixen objectes. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Guany d'XP per nivell de metall quan es construeixen objectes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Guany de XP elèctric per nivell",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Guany de XP per nivell elèctric quan es construeixen objectes. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Guany de XP per nivell elèctric quan es construeixen objectes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Receptes d'objectes especials ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
 
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Quantitat màxima d'emmagatzematge del pou d'aigua",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Quanta aigua aguanta un pou.",
     
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Cost del material de fusta per a la caixa militar",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Estableix els taulons necessaris per a les caixes militars. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Estableix les taules necessàries per a les caixes militars. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Cost del material de les ungles per a la caixa militar",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Col·loca els claus necessaris per a les caixes militars. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Col·loca els claus necessaris per a les caixes militars. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Nivell de fusteria per a caixes militars",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Estableix el nivell de fusteria necessari per a les caixes militars. <LINE><LINE> <RGB:1,0,0> CAL REINICIAR EL CLIENT! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Estableix el nivell de fusteria necessari per a les caixes militars. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
 
 
 }

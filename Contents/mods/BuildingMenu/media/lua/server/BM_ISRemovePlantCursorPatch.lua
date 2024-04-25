@@ -1,6 +1,7 @@
 require("BuildingObjects/ISRemovePlantCursor")
 
-local RemovableWallVinesTiles = require 'BM_ValidWallVineTiles'
+local WallVinesTiles = require 'BM_ValidWallVineTiles'
+local removableWallVinesTiles = WallVinesTiles.getTiles()
 
 local originalGetRemovableObject = ISRemovePlantCursor.getRemovableObject
 
@@ -14,7 +15,7 @@ function ISRemovePlantCursor:getRemovableObject(square)
                     local sprite = attached:get(n - 1)
                     if sprite and sprite:getParentSprite() and sprite:getParentSprite():getName() then
                         local spriteName = sprite:getParentSprite():getName()
-                        for _, pattern in ipairs(RemovableWallVinesTiles) do
+                        for _, pattern in ipairs(removableWallVinesTiles) do
                             if luautils.stringStarts(spriteName, pattern) then
                                 return o
                             end

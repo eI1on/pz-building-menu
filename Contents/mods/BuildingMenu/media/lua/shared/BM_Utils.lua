@@ -1,5 +1,24 @@
 ---@class BM_Utils
-BM_Utils = BM_Utils or {}
+local BM_Utils = {};
+
+
+--- Utility function for debug printing.
+---@param prefix string
+---@param data any
+function BM_Utils.debugPrint(prefix, data)
+    if type(data) == "table" then
+        for key, value in pairs(data) do
+            if type(value) == "table" then
+                print(prefix .. key .. ":");
+                BM_Utils.debugPrint(prefix .. "\t", value);
+            else
+                print(prefix .. key .. ": " .. tostring(value));
+            end
+        end
+    else
+        print(prefix .. tostring(data));
+    end
+end
 
 --- Sets a sprite property.
 ---@param props PropertyContainer The properties object of the sprite.
@@ -63,3 +82,6 @@ function BM_Utils.getMetalHealth(ISItem)
     end
     return health;
 end
+
+
+return BM_Utils

@@ -1,7 +1,8 @@
 Sandbox_JP = {
+
     Sandbox_BuildingMenu = "建物メニュー",
     Sandbox_BuildingMenu_isThumpable = "サムパブル構造物",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> をオフ <RGB:1,1,1><SPACE> にすると、建物メニューを使用して構築された構造物がゾンビのダメージを受けなくなります。",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "建物メニューを使用して構造物を構築するには、<SPACE><RGB:1,0.8,0> をオフ <RGB:1,1,1><SPACE> にしますゾンビのダメージを受けない。",
 
 
     Sandbox_BuildingMenu_EmptyBox = "",
@@ -12,31 +13,31 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "木の壁サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "木製の壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "木製の壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_clapboardWallsSubCategory = "下見板壁サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "下見板壁構造の追加を有効にします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "下見板壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_stoneWallsSubCategory = "石垣サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "石垣構造物を追加できるようになります。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "石垣構造物を追加できるようになります。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_brickWallsSubCategory = "レンガ壁サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "レンガ壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "レンガ壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_cinderblockWallsSubCategory = "コンクリートブロック壁のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "コンクリートブロック壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "コンクリートブロック壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_paintedWallsSubCategory = "塗装壁サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "塗装された壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "塗装された壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_archedWindowWallsSubCategory = "アーチ型窓壁サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "アーチ型の窓壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "アーチ型の窓壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_commercialWallsSubCategory = "商業用壁のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "市販の壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "市販の壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_industrialWallsSubCategory = "インダストリアルウォールサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "工業用の壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "工業用の壁構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -44,7 +45,7 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_roofsCategory = "屋根カテゴリを有効にする",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "屋根板、振れ屋根、ガラスなどの屋根構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "屋根板、振れ屋根、ガラスなどの屋根構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -52,10 +53,10 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_doorsSubCategory = "ドアカテゴリを有効にする",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "木製ドア、ロードア、パネルドア、金属ドア、ガラスドアの追加が可能です。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "木製ドア、ロードア、パネルドア、金属ドア、ガラスドアの追加が可能です。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_garageDoorsSubCategory = "ガレージドアのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "3 つおよび 4 つのタイル ガレージ ドアを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "3 つおよび 4 つのタイル ガレージ ドアを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -63,7 +64,7 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "アーキテクチャ プラス カテゴリを有効にする",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "ドアトリム、クラウンモールディング、エッジディテール、フロアモールディング、壁パネルを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "ドアトリム、クラウンモールディング、エッジディテール、フロアモールディング、壁パネルを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -71,21 +72,21 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_windowsCategory = "Windows カテゴリを有効にする",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Windows の追加を有効にします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Windows の追加を有効にします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
-    Sandbox_BuildingMenu_FencingCategoryDivider = "_______________ フェンシングカテゴリー _______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ フェンシング部門 ______________",
     Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "高いフェンスのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "ハイフェンスの追加を有効にします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "ハイフェンスの追加を有効にします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "低いフェンスと手すりのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "低いフェンスと手すりを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "低いフェンスと手すりを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_otherFencesSubCategory = "その他のフェンスのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "ヘスコバリア、ローメタルフェンス、レンガフェンスなどの他のフェンスを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "ヘスコバリア、ローメタルフェンス、レンガフェンスなどの他のフェンスを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -93,7 +94,7 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_floorsCategory = "フロアカテゴリーを有効にする",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "フロアを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "フロアを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -101,26 +102,26 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
  
     Sandbox_BuildingMenu_stairsCategory = "階段カテゴリを有効にする",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "階段を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "階段を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
     Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ 道路工事カテゴリー _____________",
     Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "アスファルトサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "アスファルトを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "アスファルトを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "オーバーレイのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Grime や Street Cracks などのオーバーレイを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Grime や Street Cracks などのオーバーレイを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "歩道エッジオーバーレイのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "歩道エッジ オーバーレイの追加を有効にします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "歩道エッジ オーバーレイのサブカテゴリを有効にする",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "歩道エッジ オーバーレイの追加を有効にします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "土と草のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "土タイルと草タイルを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "土タイルと草タイルを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "塗装された道路標示を有効にするサブカテゴリ",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "ペイントされた道路標示を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "ペイントされた道路標示を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -128,25 +129,25 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
  
     Sandbox_BuildingMenu_kitchenCountersSubCategory = "キッチンカウンターのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "キッチンカウンター、アッパーカウンターの追加が可能になります。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "キッチンカウンター、アッパーカウンターの追加が可能になります。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_commercialCountersSubCategory = "コマーシャルカウンターサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "レストラン、カフェ、バー、ダイナーカウンターを追加可能にします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "レストラン、カフェ、バー、ダイナーカウンターを追加可能にします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_cratesSubCategory = "クレートのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "シンプルな木箱、軍用木箱（容量100個）、段ボール箱を追加できるようになります。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "シンプルな木箱、軍用木箱（容量100個）、段ボール箱を追加できるようになります。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_metalContainersSubCategory = "金属コンテナのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "金属コンテナ、大型金属棚、ロッカーを追加可能にします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "金属コンテナ、大型金属棚、ロッカーを追加可能にします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_clothesRacksSubCategory = "衣類ラックのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "洋服ラックとマネキンを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "洋服ラックとマネキンを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_trashCansSubCategory = "ゴミ箱サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "ゴミ箱を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "ゴミ箱を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_containersOthersSubCategory = "他のコンテナのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "その他のコンテナのサブカテゴリを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "その他のコンテナのサブカテゴリを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
    
 
@@ -154,7 +155,7 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
  
     Sandbox_BuildingMenu_musicSubCategory = "音楽サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_musicSubCategory_tooltip = "ジュークボックスやピアノなどを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "ジュークボックスやピアノなどを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
     
@@ -162,19 +163,19 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
  
     Sandbox_BuildingMenu_tablesSubCategory = "テーブルのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "大小のテーブルを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "大小のテーブルを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_bedsSubCategory = "ベッドサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "シンプルベッドとラージベッドを追加可能にします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "シンプルベッドとラージベッドを追加可能にします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_seatingFurnitureSubCategory = "座席用家具のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "ベンチ、ソファ、椅子を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "ベンチ、ソファ、椅子を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_bookshelvesSubCategory = "本棚サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "本棚を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "本棚を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "ドレッサーサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "ドレッサー、引き出し、ワードローブを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "ドレッサー、引き出し、ワードローブを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
 
 
@@ -182,16 +183,16 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
  
     Sandbox_BuildingMenu_rugsSubCategory = "ラグのサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "ラグを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "ラグを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "ポスターと看板のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "ポスターや看板を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "ポスターや看板を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_graffitiSubCategory = "落書きサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "落書きを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "落書きを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "他の装飾サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "道路ブロック、メールボックス、バリアポスト、ロードコーン、メールボックスなどの他の装飾を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "道路ブロック、メールボックス、バリアポスト、ロードコーン、メールボックスなどの他の装飾を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
 
 
@@ -199,16 +200,16 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "花壇サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "植生カテゴリに花壇を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "植生カテゴリに花壇を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_indoorPlantsSubCategory = "屋内植物のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "植生カテゴリに植木鉢などの屋内植物を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "植生カテゴリに植木鉢などの屋内植物を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_outdoorPlantsSubCategory = "屋外植物のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "屋外の花コンテナなどの屋外植物を植生カテゴリに追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "屋外の花コンテナなどの屋外植物を植生カテゴリに追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_landscapingSubCategory = "造園サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "植生カテゴリに草、生垣、壁蔓などの造園植生を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "植生カテゴリに草、生垣、壁蔓などの造園植生を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
 
 
@@ -216,35 +217,35 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_fireplaceSubCategory = "暖炉サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "暖炉と側柱を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "暖炉と側柱を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
     Sandbox_BuildingMenu_generatorSubCategory = "ジェネレータサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "ジェネレーターを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "ジェネレーターを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_metalDrums = "メタルドラムを有効にする",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "金属ドラムを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "金属ドラムを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
 
-    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
-    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_waterWell = "井戸を有効にする",
+    Sandbox_BuildingMenu_waterWell_tooltip = "井戸を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ 家電カテゴリ ____________",
     Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenu_lightingAppliances = "照明カテゴリを有効にする",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "照明カテゴリを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "照明カテゴリを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
 
     Sandbox_BuildingMenu_bathroomAppliances = "バスルーム設備サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "シンク、トイレ、その他のバスルーム関連のオブジェクトを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "シンク、トイレ、その他のバスルーム関連のオブジェクトを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_cookingAppliances = "キッチン家電サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "ストーブ、オーブン、その他の調理関連オブジェクトを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "ストーブ、オーブン、その他の調理関連オブジェクトを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_fridgeAppliances = "冷凍機器サブカテゴリを有効にする",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "冷蔵庫と冷凍庫を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "冷蔵庫と冷凍庫を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
     Sandbox_BuildingMenu_laundryAppliances = "ランドリー家電のサブカテゴリを有効にする",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "洗濯機と乾燥機を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "洗濯機と乾燥機を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
     
 
 
@@ -255,16 +256,16 @@ Sandbox_JP = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_PaintUses = "ペイント缶の用途",
-    Sandbox_PaintUses_tooltip = "塗料缶ごとに使用します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_PaintUses_tooltip = "塗料缶ごとに使用します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
 
     Sandbox_BlowTorchUses = "ブロートーチの用途",
-    Sandbox_BlowTorchUses_tooltip = "ブロートーチごとに使用します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BlowTorchUses_tooltip = "ブロートーチごとに使用します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
 
     Sandbox_BucketAsphaltMixtureUses = "アスファルト混合物入りバケツの用途",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "アスファルト混合物を入れたバケツごとに使用します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "アスファルト混合物を入れたバケツごとに使用します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
 
     Sandbox_BucketConcreteUses = "コンクリート用バケツ",
-    Sandbox_BucketConcreteUses_tooltip = "コンクリート入りバケツごとに使用します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BucketConcreteUses_tooltip = "コンクリート入りバケツごとに使用します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
 
 
     Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 用途",
@@ -291,93 +292,93 @@ Sandbox_JP = {
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "BIGウォールの木材材料費",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "BIG Wallに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "BIG Wallに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigWallNailsCount = "BIGウォールの釘材料費",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "BIGウォールに必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "BIGウォールに必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallWoodCount = "小さな壁の木材の材料費",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "SMALL Wallに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "SMALL Wallに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallNailsCount = "小さな壁の釘材料費",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "小さな壁に必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "小さな壁に必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "大きなオブジェクトの木材の材料費",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "BIGオブジェクトに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "BIGオブジェクトに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "大きなオブジェクトの釘の材料費",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "BIGオブジェクトに必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "BIGオブジェクトに必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "小型オブジェクトの木材材料費",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "SMALL Objectに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "SMALL Objectに必要な木材をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "釘 小さな物の材料費",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "小さなオブジェクトに必要な釘を設定します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "小さなオブジェクトに必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_glassPaneCount = "ガラス板材料費",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "必要なガラス板を設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "必要なガラス板を設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalBarsCount = "金属棒材料費",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "必要な金属棒をセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "必要な金属棒をセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_screwsCount = "ネジ材料費",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "必要なネジを固定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "必要なネジを固定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "フェンス用金属スクラップの費用",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "フェンスに必要な金属くずをセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "フェンスに必要な金属くずをセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "電気製品用金属スクラップの費用",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "電気関係に必要な金属くずをセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "電気関係に必要な金属くずをセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "壁用板金コスト",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "WALLSに必要なシートメタルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "WALLSに必要なシートメタルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "ドア用板金コスト",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "DOORSに必要な板金をセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "DOORSに必要な板金をセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "コンテナ用板金コスト",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "CONTAINERS に必要なシート メタルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "CONTAINERS に必要なシート メタルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "設備および器具の板金コスト",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "FIXTURESとAPPLIANCESに必要な板金を設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "FIXTURESとAPPLIANCESに必要な板金を設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "屋根および床の板金コスト",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "屋根と床に必要な板金をセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "屋根と床に必要な板金をセットします。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ スキル ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "大きなオブジェクトの木工レベル",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "BIG オブジェクトに必要な大工レベルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "BIG オブジェクトに必要な大工レベルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "小さなオブジェクトの木工レベル",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "小さなオブジェクトに必要な大工レベルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "小さなオブジェクトに必要な大工レベルを設定します。 <LINE> オブジェクトのサイズとタイプに応じて拡大縮小します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "レベルごとの木工 XP 獲得",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "オブジェクトを構築するときに大工レベルごとに XP が増加します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "オブジェクトを構築するときに大工レベルごとに XP が増加します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "レベルごとの金属加工 XP の獲得",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "オブジェクトの構築時に金属加工レベルごとに XP が増加します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "オブジェクトを構築するときに金属加工レベルごとに XP が増加します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "レベルごとの電気 XP の獲得",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "オブジェクトを構築する際の電気レベルごとの XP の獲得。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "レベルごとの電気 XP 獲得量",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "オブジェクトを構築する際の電気レベルごとの XP の獲得。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ 特別なオブジェクトのレシピ ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "最大井戸貯留量",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "井戸にはどれくらいの水が溜まるのか。",
     
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用箱の木材材料費",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "軍事箱に必要な板をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用木箱の木材コスト",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "軍事箱に必要な板をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "軍用箱の釘材料費",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "ミリタリークレートに必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "ミリタリークレートに必要な釘をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "軍用木箱の木工レベル",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "軍事箱に必要な大工レベルを設定します。 <LINE><LINE> <RGB:1,0,0> クライアントの再起動が必要です。 <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "軍事箱に必要な大工レベルを設定します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
 
 
 }

@@ -4,9 +4,6 @@ require("BuildingMenu04_CategoriesDefinitions")
 
 
 local function addSafesToBuildingMenu()
-    local BuildingMenu = require("BuildingMenu01_Main")
-    require("BuildingMenu04_CategoriesDefinitions")
-
     local safes = {
         BuildingMenu.createObject(
             "",

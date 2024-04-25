@@ -1,7 +1,7 @@
 if isClient() then return end
 require 'MetalDrum/SMetalDrumGlobalObject'
 
-local customBarrelTiles = unpack(require 'BM_ValidDrums')
+local customBarrelTiles = require'BM_ValidDrums'
 local spriteCache = {}
 
 local function genSprites(spriteName)

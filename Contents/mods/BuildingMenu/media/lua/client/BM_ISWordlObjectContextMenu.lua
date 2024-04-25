@@ -1,7 +1,11 @@
-require 'BuildingMenu01_Main'
-local RemovableWallVinesTiles = require 'BM_ValidWallVineTiles'
-local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require 'BM_ValidTrafficLineTiles'
+local WallVinesTiles = require 'BM_ValidWallVineTiles'
+local removableWallVinesTiles = WallVinesTiles.getTiles()
+
+local WallDetailingTiles = require 'BM_ValidWallDetailingTiles'
+local removableWallDetailingTiles = WallDetailingTiles.getTiles()
+
+local TrafficLineTiles = require 'BM_ValidTrafficLineTiles'
+local removableTrafficLineTiles = TrafficLineTiles.getTiles()
 
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
@@ -112,13 +116,13 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
                 if sprite and sprite:getParentSprite() then
                     local spriteName = sprite:getParentSprite():getName();
                     if spriteName then
-                        if hasCuttingTool and isRemovableDetailItem(spriteName, RemovableWallVinesTiles) then
+                        if hasCuttingTool and isRemovableDetailItem(spriteName, removableWallVinesTiles) then
                             wallVine = worldObj:getSquare();
                         end
-                        if hasHammerTool and isRemovableDetailItem(spriteName, RemovableWallDetailingTiles) then
+                        if hasHammerTool and isRemovableDetailItem(spriteName, removableWallDetailingTiles) then
                             wallDetailing = worldObj:getSquare();
                         end
-                        if hasTrowelTool and isRemovableDetailItem(spriteName, RemovableTrafficLineTiles) then
+                        if hasTrowelTool and isRemovableDetailItem(spriteName, removableTrafficLineTiles) then
                             trafficLine = worldObj:getSquare();
                         end
                     end

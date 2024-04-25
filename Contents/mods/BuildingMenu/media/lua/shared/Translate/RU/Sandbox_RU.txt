@@ -1,152 +1,153 @@
 Sandbox_RU = {
-    Sandbox_BuildingMenu = "Меню строительства",
-    Sandbox_BuildingMenu_isThumpable = "Разрушаемость построек",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "<RGB:1,0.8,0>Отключите <RGB:1,1,1><SPACE> чтобы сделать постройки, сделанные с помощью мода, неуязвимыми для зомби.",
+
+    Sandbox_BuildingMenu = "Меню зданий",
+    Sandbox_BuildingMenu_isThumpable = "Подвижные конструкции",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "Отключите <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE>, чтобы строить конструкции с помощью меню строительства. неуязвим к урону зомби.",
 
 
     Sandbox_BuildingMenu_EmptyBox = "",
-    Sandbox_BuildingMenu_EmptyBox_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
 
-    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________СТЕНЫ _______________",
-    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Категория стен _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_woodWallsSubCategory = "Деревянные стены",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить деревянные стены. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_woodWallsSubCategory = "Включить подкатегорию «Деревянные стены»",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Включите возможность добавления деревянных конструкций стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Стены с сайдингом",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить стены, покрытые сайдингом. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "Включить подкатегорию «Стены, обшитые обшивкой»",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Включите, чтобы добавить конструкции стен, обшитых обшивкой. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_stoneWallsSubCategory = "Стены из камня",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить каменные стены. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "Включить подкатегорию «Каменные стены»",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Включите возможность добавления каменных стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_brickWallsSubCategory = "Стены из кирпича",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить стены из кирпича. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_brickWallsSubCategory = "Включить подкатегорию «Кирпичные стены»",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Включите возможность добавления конструкций кирпичных стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Стены из шлакоблока",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить стены из шлакоблока. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Включить подкатегорию «Стены из шлакоблоков»",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Включите, чтобы добавить конструкции стен из шлакоблоков. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_paintedWallsSubCategory = "Окрашенные стены",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить окрашенные стены. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "Включить подкатегорию «Окрашенные стены»",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Включите возможность добавления окрашенных стеновых конструкций. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Арки для окон",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить арки для больших окон. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Включить подкатегорию «Стены с арочными окнами»",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Включите возможность добавления конструкций стен с арочными окнами. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_commercialWallsSubCategory = "Стены коммерческих зданий",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить стены коммерческих зданий. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "Включить подкатегорию коммерческих стен",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Включите возможность добавления конструкций коммерческих стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_industrialWallsSubCategory = "Стены промышленных зданий",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Включите, чтобы добавить возможность строить стены промышленных зданий. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-    
-
-
-    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ КРЫШИ _______________",
-    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
-
-    Sandbox_BuildingMenu_roofsCategory = "Строительство крыш",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Включите, чтобы добавить возможность строить элементы крыш. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "Включить подкатегорию «Промышленные стены»",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Включите добавление конструкций промышленных стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
 
-    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ ДВЕРИ _______________",
-    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Категория крыш _______________",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_doorsSubCategory = "Строительство дверей",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Включите, чтобы добавить возможность строить двери. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-    
-    Sandbox_BuildingMenu_garageDoorsSubCategory = "Строительство гаражных дверей",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Включите, чтобы добавить возможность строить гаражные двери на 3 или 4 клетки. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_roofsCategory = "Включить категорию «Крыши»",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Позволяет добавлять конструкции крыши, такие как черепица, черепица, стекло. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
 
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ ДЕКОР СТЕН _________",
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Категория дверей _______________",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_architecturePlusCategory = "Строительство декоративных элементов",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Включите, чтобы добавить возможность строить плинтуса, наличники и прочие декоративные элементы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_doorsSubCategory = "Включить категорию дверей",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Возможность добавления деревянных, низких, панельных, металлических, стеклянных дверей. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+    
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "Включить подкатегорию гаражных ворот",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Включите, чтобы добавить 3-х и 4-х плиточные гаражные ворота. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
 
-    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ ОКНА ______________",
-    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ Категория «Архитектура Плюс» _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_windowsCategory = "Строительство окон",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Включите, чтобы добавить возможность создавать окна. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_architecturePlusCategory = "Включить категорию «Архитектура плюс»",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Включите возможность добавления дверных накладок, карниза, детализации кромок, карниза пола и стеновых панелей. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
 
-    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ ЗАБОРЫ ______________",
-    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Категория окон ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_highFencesSubCategory = "Высокие заборы",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Включите, чтобы добавить возможность строить высокие заборы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-    
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Ограды и перила",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Включите, чтобы добавить возможность строить ограды и перила. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-    
-    Sandbox_BuildingMenu_otherFencesSubCategory = "Остальные заборы",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Включите, чтобы добавить возможность строить прочие заборы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_windowsCategory = "Включить категорию Windows",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Включите, чтобы добавить Windows. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
 
-    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ ПОЛЫ ______________",
-    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Категория фехтования ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_floorsCategory = "Строительство полов",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Включите, чтобы добавить возможность строить полы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_highFencesSubCategory = "Включить подкатегорию «Высокие заборы»",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Включите, чтобы добавить высокие заборы. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+    
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Включить подкатегорию «Низкие заборы и перила»",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Включите, чтобы добавить низкие заборы и перила. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+    
+    Sandbox_BuildingMenu_otherFencesSubCategory = "Включить подкатегорию «Другие заборы»",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Включите возможность добавления других заборов, таких как барьер Hesco, низкие металлические заборы, кирпичные заборы. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
 
-    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ ЛЕСТНИЦЫ ______________",
-    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Категория этажей ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
+
+    Sandbox_BuildingMenu_floorsCategory = "Включить категорию этажа",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Включите, чтобы добавить этажи. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+    
+
+
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Категория лестниц ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
  
-    Sandbox_BuildingMenu_stairsCategory = "Строительство лестниц",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Включите, чтобы добавить возможность строить лестницы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_stairsCategory = "Включить категорию лестниц",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Включите, чтобы добавить лестницу. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
-    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ ДОРОЖНЫЕ РАБОТЫ _____________",
-    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Категория дорожных работ _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
  
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Асфальт",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Включите, чтобы добавить возможность строить асфальт. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Включить подкатегорию асфальта",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Включите, чтобы добавить асфальт. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Ямы и грязь",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Включите, чтобы добавить возможность создавать ямы и грязь на дорогах. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Включить подкатегорию наложений",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Включите, чтобы добавлять наложения, такие как грязь и уличные трещины. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Поребрики",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Включите, чтобы добавить возможность создавать поребрики и бордюры. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Включить подкатегорию «Наложение краев тротуара»",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Включите, чтобы добавить наложения кромок тротуара. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Земля и трава",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Включите, чтобы добавить возможность создавать землю и траву. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Включить подкатегорию «Грязь и трава»",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Включите, чтобы добавить плитки грязи и травы. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Дорожная разметка",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Включите, чтобы добавить возможность создавать дорожную разметку. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Включить подкатегорию «Нарисованная дорожная разметка»",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Включите, чтобы добавить нарисованную дорожную разметку. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
 
-    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ КОНТЕЙНЕРЫ ____________",
-    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Категория контейнеров ____________",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
  
-    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Кухонные шкафы",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Включите, чтобы добавить возможность создавать кухонные шкафы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "Включить подкатегорию «Кухонные счетчики»",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Включите, чтобы добавить кухонные стойки, верхние стойки. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_commercialCountersSubCategory = "Шкафы из коммерческих зданий",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Включите, чтобы добавить возможность создавать прилавки и стойки из кафе, ресторанов и прочих заведений. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "Включить подкатегорию коммерческих счетчиков",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Включите добавление стоек ресторана, кафе, бара, закусочной. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_cratesSubCategory = "Ящики",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Включите, чтобы добавить возможность строить simple ящики, армейские ящики(вместительность 100), картонные коробки. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_cratesSubCategory = "Включить подкатегорию ящиков",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Включите возможность добавления простых ящиков, военных ящиков (вместимостью 100 шт.), картонных коробок. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_metalContainersSubCategory = "Металлические контейнеры",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Включите, чтобы добавить возможность строить металлические контейнеры, металлические полки и шкафчики. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_metalContainersSubCategory = "Включить подкатегорию металлических контейнеров",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Включите возможность добавления металлических контейнеров, больших металлических полок, шкафчиков. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_clothesRacksSubCategory = "Вешалки и манекены",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Включите, чтобы добавить возможность создавать вешалки и манекены. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "Включить подкатегорию вешалок для одежды",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Включите возможность добавления вешалок для одежды и манекенов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_trashCansSubCategory = "Мусорные баки",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Включите, чтобы добавить возможность создавать мусорные баки. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_trashCansSubCategory = "Включить подкатегорию мусорных баков",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Включите, чтобы добавлять мусорные баки. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_containersOthersSubCategory = "Другие контейнеры",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Включите, чтобы добавить возможность создавать прочие контейнеры. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_containersOthersSubCategory = "Включить подкатегорию «Другие контейнеры»",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Включите, чтобы добавить подкатегорию «Другие контейнеры». <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
    
 
@@ -154,230 +155,230 @@ Sandbox_RU = {
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
  
     Sandbox_BuildingMenu_musicSubCategory = "Включить подкатегорию «Музыка»",
-    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Разрешите добавлять музыкальные автоматы, пианино и т.п. <LINE><LINE> <RGB:1,0,0> ТРЕБУЕТСЯ ПЕРЕЗАПУСК КЛИЕНТА!",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Разрешите добавлять музыкальные автоматы, пианино и т.п. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
     
-    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ МЕБЕЛЬ _____________",
-    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Категория мебели _____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
  
-    Sandbox_BuildingMenu_tablesSubCategory = "Столы",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Включите, чтобы добавить возможность строить большие и маленькие столы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_tablesSubCategory = "Включить подкатегорию таблиц",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Включите возможность добавления маленьких и больших таблиц. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_bedsSubCategory = "Кровати",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Включите, чтобы добавить возможность строить одно- и двуспальные кровати. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_bedsSubCategory = "Включить подкатегорию «Кровати»",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Включите возможность добавления простых и больших кроватей. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Диваны и кресла",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Включите, чтобы добавить возможность строить скамейки, диваны, кресла. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Включить подкатегорию «Мебель для сидения»",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Включите возможность добавления скамеек, диванов, стульев. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_bookshelvesSubCategory = "Книжные шкафы",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Включите, чтобы добавить возможность строить книжные шкафы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "Включить подкатегорию «Книжные полки»",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Включите, чтобы добавить книжные полки. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Шкафы и комоды",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Включите, чтобы добавить возможность строить комоды, платяные шкафы и тумбы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Включить подкатегорию комодов",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Включите возможность добавления комодов, ящиков и шкафов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
 
 
-    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ ДЕКОР ____________",
-    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Категория украшений ____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
  
-    Sandbox_BuildingMenu_rugsSubCategory = "Ковры",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Включите, чтобы добавить возможность создавать ковры. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_rugsSubCategory = "Включить подкатегорию «Коврики»",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Включите, чтобы добавить коврики. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Постеры и вывески",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Включите, чтобы добавить возможность создавать постеры и вывески. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "Включить подкатегорию «Плакаты и знаки»",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Включите, чтобы добавлять плакаты и знаки. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_graffitiSubCategory = "Граффити",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Включите, чтобы добавить возможность создавать граффити. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_graffitiSubCategory = "Включить подкатегорию граффити",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Включите, чтобы добавить граффити. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Другой декор",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Включите, чтобы добавить возможность создавать другой декор. (Почтовые ящики, шлагбаумы, дорожные ограждения и т.д.). <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-   
-
-
-    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ РАСТИТЕЛЬНОСТЬ ____________",
-    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
-
-    Sandbox_BuildingMenu_flowerBedsSubCategory = "Клумбы",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Включите, чтобы добавить возможность создавать клумбы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-   
-    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Комнатные растения",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Включите, чтобы добавить возможность создавать комнатные растения. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-   
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Уличные растения",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Включите, чтобы добавить возможность создавать  уличные растения. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
-   
-    Sandbox_BuildingMenu_landscapingSubCategory = "Прочие растения",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Включите, чтобы добавить возможность создавать траву, лозы и прочую растительность. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "Включить подкатегорию «Другие украшения»",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Включите этот параметр, чтобы добавить другие украшения, такие как дорожные блоки, почтовый ящик, шлагбаум, дорожные конусы, почтовый ящик. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
 
 
-    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ ДЛЯ ВЫЖИВАНИЯ _____________",
-    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Категория растительности ____________",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_fireplaceSubCategory = "Строительство каминов",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Включите, чтобы добавить возможность строить камины. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "Включить подкатегорию «Цветочные клумбы»",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Включите возможность добавления клумб в категорию «Растительность». <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
-    Sandbox_BuildingMenu_generatorSubCategory = "Строительство генератора",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Включите, чтобы добавить возможность создавать генератор. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "Включить подкатегорию «Комнатные растения»",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Включите возможность добавления комнатных растений, таких как цветочные горшки, в категорию «Растительность». <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+   
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Включить подкатегорию «Уличные растения»",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Включите возможность добавления уличных растений, таких как уличные контейнеры для цветов, в категории «Растительность». <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+   
+    Sandbox_BuildingMenu_landscapingSubCategory = "Включить подкатегорию ландшафтного дизайна",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Включите возможность добавления ландшафтной растительности, такой как трава, живая изгородь, настенная лоза, в категорию «Растительность». <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+   
+
+
+    Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Категория выживания _____________",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
+
+    Sandbox_BuildingMenu_fireplaceSubCategory = "Включить подкатегорию камина",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Включите, чтобы добавить камин и косяки. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+   
+    Sandbox_BuildingMenu_generatorSubCategory = "Включить подкатегорию генератора",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Включите, чтобы добавить генератор. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_metalDrums = "Строительство металлических бочек",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Включите, чтобы добавить возможность строить металлические бочки. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
+    Sandbox_BuildingMenu_metalDrums = "Включить металлические барабаны",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Включите возможность добавления металлических барабанов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
 
-    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
-    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_waterWell = "Включить водяные скважины",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Включите возможность добавления водяных скважин. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
 
 
-    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ БЫТОВАЯ И САН- ТЕХНИКА ____________",
-    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Категория бытовой техники ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenu_lightingAppliances = "Освещение",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Включите, чтобы добавить возможность строить осветительные приборы. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры!",
+    Sandbox_BuildingMenu_lightingAppliances = "Включить категорию освещения",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Включите, чтобы добавить категорию освещения. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
 
-    Sandbox_BuildingMenu_bathroomAppliances = "Сантехника",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Включите, чтобы добавить возможность строить сантехнику. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
+    Sandbox_BuildingMenu_bathroomAppliances = "Включить подкатегорию сантехники",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Включите возможность добавления раковин, туалетов и других объектов, связанных с ванной комнатой. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_cookingAppliances = "Кухонные приборы",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Включите, чтобы добавить возможность строить плиты. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
+    Sandbox_BuildingMenu_cookingAppliances = "Включить подкатегорию кухонной техники",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Включите, чтобы добавлять печи, духовки и другие объекты, связанные с приготовлением пищи. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_fridgeAppliances = "Холодильники",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Включите, чтобы добавить возможность строить холодильники. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
+    Sandbox_BuildingMenu_fridgeAppliances = "Включить подкатегорию «Холодильное оборудование»",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Включите, чтобы добавить холодильники и морозильники. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
-    Sandbox_BuildingMenu_laundryAppliances = "Стиральные и сушильные машины",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Включите, чтобы добавить возможность строить стиральные/сушильные машины. <LINE><LINE> <RGB:1,0,0> Требуется перезапуск игры!",
-    
-
-
-
-    Sandbox_BuildingMenuRecipes = "Крафт для меню строительства",
-
-    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ МАТЕРИАЛЫ ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
-
-    Sandbox_PaintUses = "Емкость банки краски",
-    Sandbox_PaintUses_tooltip = "Определяет сколько раз можно использовать одно ведро краски. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-
-    Sandbox_BlowTorchUses = "Емкость пропановой горелки",
-    Sandbox_BlowTorchUses_tooltip = "Определяет сколько раз можно использовать полную пропановую горелку. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-
-    Sandbox_BucketAsphaltMixtureUses = "Емкость ведра асфальта",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Определяет сколько раз можно использовать одно ведро асфальта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-
-    Sandbox_BucketConcreteUses = "Емкость ведра цемента",
-    Sandbox_BucketConcreteUses_tooltip = "Определяет сколько раз можно использовать одно ведро цемента. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-
-
-    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 использования",
-    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 использований",
-    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 использований",
-    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "12 использований",
-    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "14 использований",
-    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "16 использований",
-    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "18 использований",
-    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "20 использований",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 использований",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 использований",
-
-
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Расход древесины для больших стен",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Определяет сколько досок нужно для больших стен. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Расход гвоздей для больших стен",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Определяет сколько гвоздей нужно для больших стен. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Расход древесины для невысоких стен",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Определяет сколько досок нужно для невысоких стен. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Расход гвоздей для невысоких стен",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Определяет сколько гвоздей нужно для невысоких стен. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Расход древесины для больших объектов",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Определяет сколько досок нужно для больших объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Расход гвоздей для больших объектов",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Определяет сколько гвоздей нужно для больших объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Расход древесины для небольших объектов",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Определяет сколько досок нужно для небольших объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
-    
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Расход гвоздей для небольших объектов",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Определяет сколько гвоздей нужно для небольших объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenu_laundryAppliances = "Включить подкатегорию «Стиральная техника»",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Включите, чтобы добавить стиральные и сушильные машины. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
     
 
-    Sandbox_BuildingMenuRecipes_glassPaneCount = "Расход стеклянных панелей",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Определяет сколько гвоздей нужно для строительства. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes = "Рецепты меню построения",
+
+    Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Материалы ____________",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
+
+    Sandbox_PaintUses = "Краска может использовать",
+    Sandbox_PaintUses_tooltip = "Расход на банку краски. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+
+    Sandbox_BlowTorchUses = "Использование паяльной лампы",
+    Sandbox_BlowTorchUses_tooltip = "Расход на одну паяльную лампу. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+
+    Sandbox_BucketAsphaltMixtureUses = "Использование ковша с асфальтовой смесью",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Расход на ведро с асфальтовой смесью. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+
+    Sandbox_BucketConcreteUses = "Ведро для конкретного применения",
+    Sandbox_BucketConcreteUses_tooltip = "Расход на ведро с бетоном. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+
+
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 варианта использования",
+    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 вариантов использования",
+    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 вариантов использования",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 вариантов использования",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18 вариантов использования",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 варианта использования",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 вариантов использования",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 вариантов использования",
+
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 варианта использования",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 вариантов использования",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 вариантов использования",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 вариантов использования",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 вариантов использования",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 варианта использования",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 вариантов использования",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 применений",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 применений",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 применений",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 применений",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 применений",
+
+
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Стоимость древесного материала для БОЛЬШИХ стен",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Устанавливает древесину, необходимую для БОЛЬШИХ стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalBarsCount = "Расход металлических прутов",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Определяет сколько металлических прутов нужно для строительства. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Стоимость материала гвоздей для БОЛЬШИХ стен",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Набор гвоздей, необходимых для БОЛЬШИХ стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_screwsCount = "Расход болтов",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Определяет сколько болтов нужно для строительства. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Стоимость древесного материала для МАЛЕНЬКИХ стен",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Набор древесины, необходимой для МАЛЕНЬКИХ стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Стоимость материала гвоздей для МАЛЕНЬКИХ стен",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Набор гвоздей, необходимых для МАЛЕНЬКИХ стен. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Стоимость древесного материала для БОЛЬШИХ объектов",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Устанавливает древесину, необходимую для БОЛЬШИХ объектов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Стоимость материала гвоздей для БОЛЬШИХ объектов",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Устанавливает гвозди, необходимые для БОЛЬШИХ объектов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Стоимость древесного материала для МАЛЕНЬКИХ объектов",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Устанавливает древесину, необходимую для МАЛЕНЬКИХ объектов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Стоимость материала гвоздей для МАЛЕНЬКИХ объектов",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Устанавливает гвозди, необходимые для МАЛЕНЬКИХ объектов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "Стоимость материала стеклянной панели",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Устанавливает необходимые стеклянные панели. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "Стоимость материала металлических стержней",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Устанавливает необходимые металлические стержни. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
+    
+    Sandbox_BuildingMenuRecipes_screwsCount = "Стоимость материала винтов",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Набор необходимых винтов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Металлолом для ЗАБОРОВ Стоимость",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Наборы металлолома, необходимого для заборов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ТРЕБУЕТСЯ ПЕРЕЗАПУСК КЛИЕНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Наборы металлолома, необходимого для заборов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Металлолом для ЭЛЕКТРОПУНКТОВ Стоимость",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Наборы металлолома, необходимого для электроприборов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ТРЕБУЕТСЯ ПЕРЕЗАПУСК КЛИЕНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Наборы металлолома, необходимого для электроприборов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Расход листов металла для стен",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Определяет сколько листов металла нужно для строительства стен. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Листовой металл для СТЕН Стоимость",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Набор листового металла, необходимого для СТЕН. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Расход листов металла для дверей",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Определяет сколько листов металла нужно для строительства дверей. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Листовой металл для ДВЕРЕЙ Стоимость",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Набор листового металла, необходимого для ДВЕРЕЙ. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Расход листов металла для контейнеров",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Определяет сколько листов металла нужно для строительства контейнеров. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Листовой металл для КОНТЕЙНЕРОВ Стоимость",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Набор листового металла, необходимого для КОНТЕЙНЕРОВ. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Расход листов металла для бытовой и сан- техники",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Определяет сколько листов металла нужно для строительства сантехники и бытовой техники. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Листовой металл для СВЕТИЛЬНИКОВ и ПРИБОРОВ Стоимость",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Наборы листового металла, необходимого для СВЕТИЛЬНИКОВ и ПРИБОРОВ. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Расход листов металла для крыш и полов",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Определяет сколько листов металла нужно для строительства крыш и полов. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Листовой металл для КРОВЛИ И ПОЛОВ Стоимость",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Набор листового металла, необходимого для КРОВЛИ и ПОЛОВ. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
 
-    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ НАВЫКИ ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Навыки ____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Уровень строительства для больших объектов",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Определяет уровень строительства, необходимый для создания больших объектов. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Уровень деревообработки для БОЛЬШИХ объектов",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Устанавливает уровень столярных работ, необходимый для БОЛЬШИХ объектов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Уровень строительства для небольших объектов",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Определяет уровень строительства, необходимый для создания небольших объектов. <LINE> Изменяется пропорционально размеру и типу объекта. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Уровень деревообработки для МАЛЕНЬКИХ предметов",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Устанавливает уровень столярных работ, необходимый для МАЛЕНЬКИХ объектов. <LINE> Масштабируется в зависимости от размера и типа объекта. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Очки навыка строительства за создание объектов",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Увеличение навыка строительства за создание объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Прирост опыта в деревообработке за уровень",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Прирост опыта за каждый уровень столярного дела при строительстве объектов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Очки навыка газосварки за создание объектов",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Увеличение навыка газосварки за создание объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Прирост опыта в металлообработке за уровень",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Прирост опыта за уровень металлообработки при строительстве объектов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Очки навыка электроники за создание объектов",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Увеличение навыка электроники за создание объектов. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Прирост электрического опыта за уровень",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Прирост опыта за каждый электрический уровень при строительстве объектов. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
 
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ СПЕЦИАЛЬНЫЕ ОБЪЕКТЫ ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Это просто для отделения строчки, ничего не делает.",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Рецепты особых предметов ____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Максимальный объем хранения водяной скважины",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Сколько воды вмещает колодец.",
     
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Расход древесины для армейских ящиков",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Определяет сколько досок нужно для строительства армейских ящиков. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Стоимость древесного материала для военного ящика",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Устанавливает доски, необходимые для военных ящиков. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Расход гвоздей для армейских ящиков",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Определяет сколько гвоздей нужно для строительства армейских ящиков. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Стоимость материала гвоздей для военного ящика",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Набор гвоздей, необходимых для военных ящиков. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Уровень строительства для армейских ящиков",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Определяет уровень строительства, необходимый для создания армейских ящиков. <LINE><LINE> <RGB:1,0,0> Требует перезагрузки игры! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Уровень деревообработки для военного ящика",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Устанавливает уровень столярного дела, необходимый для военных ящиков. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
 
 
 }

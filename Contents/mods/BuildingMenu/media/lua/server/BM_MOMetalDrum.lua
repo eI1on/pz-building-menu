@@ -46,7 +46,7 @@ for i = 0, getLoadedLuaCount() - 1 do
 end
 MapObjects = oldMapObjects
 
-local customBarrelTiles = unpack(require 'BM_ValidDrums')
+local customBarrelTiles = require'BM_ValidDrums'
 local function setupForColour(prefix, begin)
 	for i = begin, begin + 3 do
 		local params = onNew[i % 4]

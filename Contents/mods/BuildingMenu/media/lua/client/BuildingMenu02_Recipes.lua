@@ -1,3 +1,5 @@
+local BM_Utils = require("BM_Utils");
+
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
 
@@ -11,7 +13,7 @@ function BuildingMenu.generateGroupAlternatives(groupAlternativesTable, baseCoun
             { [groupType] = itemTable.Item, Amount = BuildingMenu.round(baseCount * itemTable.Multiplier) });
     end
 
-    -- BuildingMenu.debugPrint("[Building Menu DEBUG] newGroupAlternativesTable ", newGroupAlternativesTable);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] newGroupAlternativesTable ", newGroupAlternativesTable);
     return unpack(newGroupAlternativesTable);
 end
 

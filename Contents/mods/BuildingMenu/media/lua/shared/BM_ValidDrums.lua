@@ -20,4 +20,4 @@ Events.OnLoadedTileDefinitions.Add(function()
     end
 end)
 
-return { CustomBarrelTiles }
+return CustomBarrelTiles

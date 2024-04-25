@@ -1,7 +1,11 @@
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main")
-local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require 'BM_ValidTrafficLineTiles'
+
+local WallDetailingTiles = require 'BM_ValidWallDetailingTiles'
+local removableWallDetailingTiles = WallDetailingTiles.getTiles()
+
+local TrafficLineTiles = require 'BM_ValidTrafficLineTiles'
+local removableTrafficLineTiles = TrafficLineTiles.getTiles()
 
 ISRemoveDetailCursor = ISBuildingObject:derive("ISRemoveDetailCursor")
 
@@ -118,9 +122,9 @@ function ISRemoveDetailCursor:new(character, removeType)
 	o.isYButtonResetCursor = true;
 	o.removeType = removeType;
 	if removeType == "wallDetailing" then
-		o.removableTable = RemovableWallDetailingTiles;
+		o.removableTable = removableWallDetailingTiles;
 	elseif removeType == "trafficLine" then
-		o.removableTable = RemovableTrafficLineTiles;
+		o.removableTable = removableTrafficLineTiles;
 	else
 		o.removableTable = nil;
 	end

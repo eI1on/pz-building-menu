@@ -1,8 +1,11 @@
 require 'BuildingMenu01_Main'
 require "TimedActions/ISBaseTimedAction"
 
-local RemovableWallDetailingTiles = require 'BM_ValidWallDetailingTiles'
-local RemovableTrafficLineTiles = require 'BM_ValidTrafficLineTiles'
+local WallDetailingTiles = require 'BM_ValidWallDetailingTiles'
+local removableWallDetailingTiles = WallDetailingTiles.getTiles()
+
+local TrafficLineTiles = require 'BM_ValidTrafficLineTiles'
+local removableTrafficLineTiles = TrafficLineTiles.getTiles()
 
 ISRemoveDetail = ISBaseTimedAction:derive("ISRemoveDetail")
 
@@ -134,9 +137,9 @@ function ISRemoveDetail:new(character, square, removeType)
 	o.spriteFrame = 0;
 	o.removeType = removeType;
 	if removeType == "wallDetailing" then
-		o.removableTable = RemovableWallDetailingTiles;
+		o.removableTable = removableWallDetailingTiles;
 	elseif removeType == "trafficLine" then
-		o.removableTable = RemovableTrafficLineTiles;
+		o.removableTable = removableTrafficLineTiles;
 	else
 		o.removableTable = nil;
 	end

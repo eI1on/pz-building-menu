@@ -1,4 +1,4 @@
-require('BM_Utils')
+local BM_Utils = require('BM_Utils')
 
 Events.OnLoadedTileDefinitions.Add(function(manager)
     local sprites = {

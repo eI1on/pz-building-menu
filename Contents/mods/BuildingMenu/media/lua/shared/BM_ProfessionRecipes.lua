@@ -1,6 +1,6 @@
 -- On Player Load, check their professions and if it matches
 -- one we're expecting, add some free recipes to their character
-function BMAddRecipesToExistingPlayers(id, player)
+local function BMAddRecipesToExistingPlayers(id, player)
     local profession = player:getDescriptor():getProfession();
 
     -- Adjust Engineers with Glass Smelting by Default

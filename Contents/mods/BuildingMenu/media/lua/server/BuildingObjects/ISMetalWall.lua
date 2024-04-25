@@ -1,4 +1,4 @@
-require 'BM_Utils'
+local BM_Utils = require("BM_Utils");
 
 ISMetalWall = ISBuildingObject:derive("ISMetalWall");
 

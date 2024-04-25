@@ -1,4 +1,5 @@
 Sandbox_UA = {
+
     Sandbox_BuildingMenu = "Меню будівлі",
     Sandbox_BuildingMenu_isThumpable = "Грубі конструкції",
     Sandbox_BuildingMenu_isThumpable_tooltip = "Вимкніть <SPACE><RGB:1,0.8,0> <RGB:1,1,1><SPACE>, щоб будувати конструкції за допомогою меню «Будування» імунітет до пошкоджень зомбі.",
@@ -12,31 +13,31 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "Увімкнути підкатегорію «Дерев’яні стіни».",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Дозволяє додати дерев'яні конструкції стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Дозволяє додати дерев'яні конструкції стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_clapboardWallsSubCategory = "Увімкнути підкатегорію Clapboard Walls",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Дозволити додавати конструкції стін з вагонки. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Дозволити додавати конструкції стін з вагонки. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_stoneWallsSubCategory = "Увімкнути підкатегорію Stone Walls",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Дозволити додавати конструкції кам'яних стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Увімкнути додавання кам'яних стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_brickWallsSubCategory = "Увімкнути підкатегорію «Цегляні стіни».",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Дозволяє додавати конструкції цегляних стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Дозволяє додавати конструкції цегляних стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Увімкнути підкатегорію «Шлакоблочні стіни».",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Дозволити додавати конструкції стін із шлакоблоку. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Дозволити додавати конструкції стін із шлакоблоку. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_paintedWallsSubCategory = "Увімкнути підкатегорію «Пофарбовані стіни».",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Дозволити додавати пофарбовані конструкції стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Дозволити додавати пофарбовані конструкції стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Увімкнути підкатегорію Arched Window Walls",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Дозволяє додати арочні віконні конструкції стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Дозволяє додати арочні віконні конструкції стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_commercialWallsSubCategory = "Увімкнути підкатегорію Commercial Walls",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Дозволити додавати комерційні стінові конструкції. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Дозволити додавати комерційні стінові конструкції. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_industrialWallsSubCategory = "Увімкнути підкатегорію «Промислові стіни».",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Дозволити додавати промислові конструкції стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Дозволити додавати промислові конструкції стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -44,7 +45,7 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_roofsCategory = "Увімкнути категорію "Дахи".",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Увімкнути додавання конструкцій даху, таких як гонт, гонт, скло. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Увімкнути додавання конструкцій даху, таких як гонт, гонт, скло. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -52,10 +53,10 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_doorsSubCategory = "Увімкнути категорію «Двері».",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Дозволяє додавати дерев'яні, низькі, панельні, металеві, скляні двері. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Дозволяє додавати дерев'яні, низькі, панельні, металеві, скляні двері. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_garageDoorsSubCategory = "Увімкнути підкатегорію «Гаражні ворота».",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Увімкніть додавання 3-х і 4-х плиткових гаражних дверей. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Увімкніть додавання 3-х і 4-х плиткових гаражних дверей. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -63,7 +64,7 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "Увімкнути категорію «Архітектура плюс».",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Увімкніть додавання дверних накладок, накладок на корону, деталей по краях, накладок для підлоги та стінових панелей. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Увімкніть додавання дверних накладок, накладок на корону, деталей по краях, накладок для підлоги та стінових панелей. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -71,7 +72,7 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_windowsCategory = "Увімкнути категорію Windows",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Увімкніть, щоб додати Windows. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Увімкніть, щоб додати Windows. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -79,13 +80,13 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "Увімкнути підкатегорію «Високі паркани».",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Увімкнути додавання високих парканів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Увімкніть додавати високі паркани. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Увімкнути підкатегорію «Низькі паркани та перила».",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Увімкніть додавання низьких огорож і перил. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Увімкніть додавання низьких огорож і перил. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_otherFencesSubCategory = "Увімкнути підкатегорію «Інші огорожі».",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Увімкніть додавати інші огорожі, такі як Hesco Barrier, низькі металеві огорожі, цегляні огорожі. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Увімкніть додавати інші огорожі, такі як Hesco Barrier, низькі металеві огорожі, цегляні огорожі. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -93,7 +94,7 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_floorsCategory = "Увімкнути категорію поверху",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Увімкнути додавання поверхів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Увімкнути додавання поверхів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -101,26 +102,26 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
  
     Sandbox_BuildingMenu_stairsCategory = "Увімкнути категорію «Сходи».",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Увімкніть, щоб додати сходи. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Увімкніть, щоб додати сходи. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
     Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Категорія дорожніх робіт _____________",
     Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Увімкнути підкатегорію «Асфальт».",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Дозволити додати асфальт. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Дозволити додати асфальт. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Увімкнути підкатегорію Overlays",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Увімкніть додавання накладень, таких як Grime і Street Cracks. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Увімкніть додавання накладень, таких як Grime і Street Cracks. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Увімкнути підкатегорію Sidewalk Edge Overlays",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Увімкніть, щоб додати накладення країв тротуару. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Увімкніть, щоб додати накладення країв тротуару. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Увімкнути підкатегорію «Бруд і трава».",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Увімкніть додавання плиток бруду та трави. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Увімкніть, щоб додати плитки бруду та трави. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Увімкнути підкатегорію «Намальована дорожня розмітка».",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Увімкнути додавання намальованої дорожньої розмітки. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Увімкнути додавання намальованої дорожньої розмітки. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -128,25 +129,25 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
  
     Sandbox_BuildingMenu_kitchenCountersSubCategory = "Увімкнути підкатегорію кухонних прилавків",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Увімкнути додавання кухонних прилавків, верхніх прилавків. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Увімкнути додавання кухонних прилавків, верхніх прилавків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_commercialCountersSubCategory = "Увімкнути підкатегорію комерційних лічильників",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Увімкніть додавати стійки ресторану, кафе, бару, закусочної. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Увімкніть додавати стійки ресторану, кафе, бару, закусочної. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_cratesSubCategory = "Увімкнути підкатегорію ящиків",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Дозволяє додавати прості ящики, військові ящики (місткістю 100), картонні коробки. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Дозволяє додавати прості ящики, військові ящики (місткістю 100), картонні коробки. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_metalContainersSubCategory = "Увімкнути підкатегорію «Металеві контейнери».",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Дозволяє додавати металеві контейнери, великі металеві полиці, шафки. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Дозволяє додавати металеві контейнери, великі металеві полиці, шафки. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_clothesRacksSubCategory = "Увімкнути підкатегорію «Стійки для одягу».",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Дозволити додавати вішалки для одягу та манекени. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Дозволити додавати вішалки для одягу та манекени. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
-    Sandbox_BuildingMenu_trashCansSubCategory = "Увімкнути підкатегорію сміттєвих баків",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Увімкнути додавання сміттєвих баків. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_trashCansSubCategory = "Увімкнути підкатегорію «Сміттєві баки».",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Увімкнути додавання сміттєвих баків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_containersOthersSubCategory = "Увімкнути підкатегорію «Інші контейнери».",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Увімкнути додавання підкатегорії «Інші контейнери». <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Увімкнути додавання підкатегорії «Інші контейнери». <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
    
 
@@ -154,7 +155,7 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
  
     Sandbox_BuildingMenu_musicSubCategory = "Увімкнути підкатегорію «Музика».",
-    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Дозволити додавати музичні автомати, піаніно тощо. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Дозволяє додавати музичні автомати, піаніно тощо. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
     
@@ -162,19 +163,19 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
  
     Sandbox_BuildingMenu_tablesSubCategory = "Увімкнути підкатегорію Таблиці",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Увімкніть додавання малих і великих таблиць. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Увімкніть додавання малих і великих таблиць. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_bedsSubCategory = "Увімкнути підкатегорію «Ліжка».",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Увімкніть додавання простих і великих ліжок. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Увімкніть додавання простих і великих ліжок. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Увімкнути підкатегорію «Меблі для сидіння».",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Дозволити додавати лавки, дивани, стільці. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Дозволити додавати лави, дивани, стільці. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_bookshelvesSubCategory = "Увімкнути підкатегорію «Книжкові полиці».",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Увімкнути додавання книжкових полиць. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Увімкнути додавання книжкових полиць. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Увімкнути підкатегорію «Комоди».",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Увімкніть додавання комодів, ящиків і гардеробів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Увімкніть додавання комодів, ящиків і гардеробів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
 
 
@@ -182,16 +183,16 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
  
     Sandbox_BuildingMenu_rugsSubCategory = "Увімкнути підкатегорію «Килими».",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Увімкнути додавання килимків. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Увімкнути додавання килимків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Увімкнути підкатегорію «Плакати та вивіски».",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Дозволити додавати плакати та вивіски. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Дозволити додавати плакати та вивіски. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_graffitiSubCategory = "Увімкнути підкатегорію Graffiti",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Увімкніть додавати графіті. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Увімкніть додавати графіті. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "Увімкнути підкатегорію «Інші прикраси».",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Увімкніть додавати інші прикраси, наприклад дорожні блоки, поштову скриньку, шлагбаум, дорожні конуси, поштову скриньку. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Увімкніть для додавання інших прикрас, таких як дорожні блоки, поштова скринька, шлагбаум, дорожні конуси, поштова скринька. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
 
 
@@ -199,16 +200,16 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "Увімкнути підкатегорію «Клумби».",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Увімкніть додавання клумб у категорію рослинності. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Увімкніть додавання клумб у категорію рослинності. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_indoorPlantsSubCategory = "Увімкнути підкатегорію «Кімнатні рослини».",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Увімкніть додавання кімнатних рослин, наприклад квіткових горщиків, у категорію рослинності. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Увімкніть додавання кімнатних рослин, наприклад квіткових горщиків, у категорію рослинності. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Увімкнути підкатегорію «Рослини на відкритому повітрі».",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Увімкніть додавання вуличних рослин, таких як зовнішні квіткові контейнери в категорію рослинності. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Увімкніть додавання вуличних рослин, таких як зовнішні квіткові контейнери в категорію рослинності. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_landscapingSubCategory = "Увімкнути підкатегорію «Ландшафтний дизайн».",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Увімкніть додавати ландшафтну рослинність, таку як трава, живоплоти, лози в категорію рослинності. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Увімкніть додавати ландшафтну рослинність, таку як трава, живоплоти, виноградні лози в категорію рослинності. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
 
 
@@ -216,35 +217,35 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_fireplaceSubCategory = "Увімкнути підкатегорію Fireplace",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Увімкніть, щоб додати камін і косяки. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Увімкніть, щоб додати камін і косяки. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
     Sandbox_BuildingMenu_generatorSubCategory = "Увімкнути підкатегорію генератора",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Увімкніть, щоб додати генератор. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Увімкніть, щоб додати генератор. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_metalDrums = "Увімкнути металеві барабани",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Дозволити додавати металеві барабани. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Дозволити додавати металеві барабани. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
 
     Sandbox_BuildingMenu_waterWell = "Увімкнути водні колодязі",
-    Sandbox_BuildingMenu_waterWell_tooltip = "Увімкнути додавання колодязів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Увімкнути додавання колодязів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Категорія техніки ____________",
     Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenu_lightingAppliances = "Увімкнути категорію освітлення",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Увімкніть, щоб додати категорію освітлення. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Увімкніть, щоб додати категорію освітлення. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
 
     Sandbox_BuildingMenu_bathroomAppliances = "Увімкнути підкатегорію сантехніки",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Дозволяє додавати раковини, унітази та інші об’єкти, пов’язані з ванною кімнатою. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Дозволяє додавати раковини, унітази та інші об’єкти, пов’язані з ванною кімнатою. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_cookingAppliances = "Увімкнути підкатегорію кухонної техніки",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Дозволяє додавати плити, духовки та інші об’єкти, пов’язані з приготуванням їжі. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Дозволяє додавати плити, духовки та інші об’єкти, пов’язані з приготуванням їжі. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_fridgeAppliances = "Увімкнути підкатегорію «Холодильне обладнання».",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Увімкнути додавання холодильників і морозильних камер. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Увімкнути додавання холодильників і морозильних камер. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
     Sandbox_BuildingMenu_laundryAppliances = "Увімкнути підкатегорію «Прилади для прання».",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Увімкнути додавання пральних і сушильних машин. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА!",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Увімкнути додавання пральних і сушильних машин. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
     
 
 
@@ -255,16 +256,16 @@ Sandbox_UA = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_PaintUses = "Використання фарби",
-    Sandbox_PaintUses_tooltip = "Використовується на банку фарби. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_PaintUses_tooltip = "Використовується на банку фарби. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
 
     Sandbox_BlowTorchUses = "Використання паяльної лампи",
-    Sandbox_BlowTorchUses_tooltip = "Використовується на паяльну лампу. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BlowTorchUses_tooltip = "Використовується на паяльну лампу. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
 
     Sandbox_BucketAsphaltMixtureUses = "Використання ковша з асфальтобетонною сумішшю",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Витрати на відро з асфальтобетонною сумішшю. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Витрати на відро з асфальтобетонною сумішшю. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
 
     Sandbox_BucketConcreteUses = "Відро з бетоном",
-    Sandbox_BucketConcreteUses_tooltip = "Використовується на відро з бетоном. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BucketConcreteUses_tooltip = "Використовується на відро з бетоном. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
 
 
     Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 Використання",
@@ -291,78 +292,78 @@ Sandbox_UA = {
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Вартість деревини для великих стін",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Комплекти дерева, необхідні для BIG Walls. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Комплекти дерева, необхідні для BIG Walls. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Цвяхи Вартість матеріалу для великих стін",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Набори цвяхів, необхідні для BIG Walls. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Вартість матеріалу цвяхів для великих стін",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Набори цвяхів, необхідні для BIG Walls. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Вартість деревини для невеликих стін",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Комплекти дерева, необхідні для МАЛІХ стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Набори дерева, необхідні для МАЛІХ стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Вартість матеріалу для цвяхів для невеликих стін",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Набори цвяхів необхідні для МАЛІХ стін. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Набори цвяхів необхідні для МАЛІХ стін. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Вартість деревини для великих об'єктів",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Встановлює деревину, необхідну для ВЕЛИКИХ об'єктів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Встановлює деревину, необхідну для ВЕЛИКИХ об'єктів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Цвяхи Вартість матеріалу для ВЕЛИКИХ об'єктів",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Набір цвяхів, необхідних для ВЕЛИКИХ об'єктів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Набір цвяхів, необхідних для ВЕЛИКИХ об'єктів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Вартість деревини для МАЛІХ об'єктів",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Встановлює деревину, необхідну для МАЛИХ об'єктів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Встановлює деревину, необхідну для МАЛИХ об'єктів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Вартість матеріалу для цвяхів для невеликих предметів",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Набір цвяхів, необхідних для МАЛИХ ОБ'ЄКТІВ. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Набір цвяхів, необхідних для МАЛИХ ОБ'ЄКТІВ. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_glassPaneCount = "Вартість матеріалу скляної панелі",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Потрібні комплекти скла. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Потрібні комплекти скла. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalBarsCount = "Вартість матеріалу металевих прутів",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Необхідні комплекти металевих прутів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Необхідні комплекти металевих прутів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_screwsCount = "Вартість матеріалу гвинтів",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Потрібні встановлені гвинти. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Потрібні встановлені гвинти. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Металобрухт для ПАРКАНІВ Вартість",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Комплекти металобрухту для парканів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Металобрухт для ЗАБОРОВ Вартість",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Комплекти металобрухту для парканів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Металобрухт для ЕЛЕКТРОТЕХНІКИ Вартість",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Набори металобрухту для електротехніки. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Набори металобрухту для електротехніки. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Листовий метал для СТІН Вартість",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Комплекти листового металу необхідні для СТІН. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Комплекти листового металу необхідні для СТІН. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Листовий метал для ДВЕРЕЙ Вартість",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Комплекти листового металу необхідні для ДВЕРЕЙ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Комплекти листового металу необхідні для ДВЕРЕЙ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Листовий метал для ТАРИ Вартість",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Комплекти листового металу необхідні для КОНТЕЙНЕРОВ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Комплекти листового металу необхідні для КОНТЕЙНЕРОВ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Листовий метал для СВІТЛІННЯ та ТЕХНІКИ Вартість",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Комплекти листового металу, необхідні для СВІТЛІНЬ і ТЕХНІКИ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Комплекти листового металу, необхідні для СВІТЛІНЬ та ТЕХНІКИ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Листовий метал для ПОКРІВЛІ та ПІДЛОГІ Вартість",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Комплекти листового металу необхідні для ПОКРІВЛІ та ПІДЛОГИ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Комплекти листового металу необхідні для ПОКРІВЛІ та ПІДЛОГИ. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Навички ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Деревообробний рівень для BIG Objects",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Встановлює рівень столяра, необхідний для ВЕЛИКИХ об’єктів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Встановлює рівень столяра, необхідний для ВЕЛИКИХ об’єктів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Деревообробний рівень для МАЛІХ ОБ'ЄКТІВ",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Встановлює рівень теслярства, необхідний для МАЛИХ об’єктів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Встановлює рівень теслярства, необхідний для МАЛИХ об’єктів. <LINE> Масштабує розмір і тип об’єкта. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Приріст досвіду деревообробки за рівень",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Отримання досвіду за рівень столяра під час будівництва об’єктів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Отримання досвіду за рівень столяра під час будівництва об’єктів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Приріст досвіду металообробки за рівень",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Отримання досвіду за рівень металообробки під час будівництва об’єктів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Отримання досвіду за рівень металообробки під час будівництва об’єктів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Приріст електричного досвіду за рівень",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Приріст XP за електричний рівень під час будівництва об’єктів. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Приріст XP за електричний рівень під час будівництва об’єктів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Рецепти спеціальних об’єктів ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
@@ -371,13 +372,13 @@ Sandbox_UA = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Скільки води містить колодязь.",
     
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Вартість деревини для військового ящика",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Набір дощок, необхідних для військових ящиків. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Набір дощок, необхідних для військових ящиків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Вартість матеріалу цвяхів для військового ящика",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Набір цвяхів, необхідних для військових ящиків. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Набір цвяхів, необхідних для військових ящиків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Деревообробний рівень для військового ящика",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Встановлює рівень столяра, необхідний для військових ящиків. <LINE><LINE> <RGB:1,0,0> ПОТРІБНО ПЕРЕЗАПУСКИ КЛІЄНТА! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Встановлює рівень столяра, необхідний для військових ящиків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
 
 
 }

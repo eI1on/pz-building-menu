@@ -1,152 +1,153 @@
 Sandbox_CH = {
-    Sandbox_BuildingMenu = "建造菜單",
-    Sandbox_BuildingMenu_isThumpable = "可破壞建造物",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0> 取消勾選 <RGB:1,1,1><SPACE> 將使建造物免於殭尸毁壞。",
+
+    Sandbox_BuildingMenu = "建築選單",
+    Sandbox_BuildingMenu_isThumpable = "可敲擊結構",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "關閉 <SPACE><RGB:1,0.8,0> <RGB:1,1,1><SPACE> 以使用「建築」選單建構結構免疫殭屍傷害。",
 
 
     Sandbox_BuildingMenu_EmptyBox = "",
-    Sandbox_BuildingMenu_EmptyBox_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_EmptyBox_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
 
-    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 墻分類 _______________",
-    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ 牆壁類別 _______________",
+    Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_woodWallsSubCategory = "開啓木墻子類別",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "開啓後添加木墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_woodWallsSubCategory = "啟用木牆子類別",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "能夠添加木牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_clapboardWallsSubCategory = "開啓隔板墻子類別",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "開啓後添加隔板墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory = "啟用隔板牆子類別",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "允許添加隔板牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_stoneWallsSubCategory = "開啓石墻子類別",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "開啓後添加石墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_stoneWallsSubCategory = "啟用石牆子類別",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "能夠添加石牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_brickWallsSubCategory = "開啓磚墻子類別",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "開啓後添加磚墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_brickWallsSubCategory = "啟用磚牆子類別",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "能夠添加磚牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "開啓砌塊墻子類別",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "開啓後添加砌塊構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory = "啟用 Cinderblock 牆子類別",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "能夠添加煤渣磚牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_paintedWallsSubCategory = "開啓粉刷墻子類別",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "開啓後添加粉刷墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_paintedWallsSubCategory = "啟用彩繪牆子類別",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "能夠添加彩繪牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "開啓拱墻子類別",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "開啓後添加拱墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory = "啟用拱形窗牆子類別",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "允許添加拱形窗牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_commercialWallsSubCategory = "開啓商業墻子類別",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "開啓後添加商業墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_commercialWallsSubCategory = "啟用商業牆子類別",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "能夠添加商業牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_industrialWallsSubCategory = "開啓工業墻子類別",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "開啓後添加工業墻構造。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_industrialWallsSubCategory = "啟用工業牆子類別",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "能夠添加工業牆結構。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
     Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ 屋頂類別 _______________",
-    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_roofsCategory = "開啓屋頂類別",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "開啓後添加屋頂構造，比如：木瓦屋頂、簡瓦屋頂、玻璃屋頂。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_roofsCategory = "啟用屋頂類別",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "能夠添加屋頂結構，例如木瓦、搖木瓦、玻璃。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
     Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ 門類別 _______________",
-    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_doorsSubCategory = "開啓門類別",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "開啓後添加木門、矮門、面板門、金屬門、玻璃門。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_doorsSubCategory = "啟用門類別",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "能夠添加木門、低門、面板門、金屬門、玻璃門。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_garageDoorsSubCategory = "開啓車庫門子類別",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "開啓後添加3格、4格車庫門。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
-    
-
-
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ 更多建築構造類別 _________",
-    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
-
-    Sandbox_BuildingMenu_architecturePlusCategory = "開啓更多建築構造類別",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "開啓後添加門飾邊、頂部綫腳、邊緣裝飾、地板綫腳和墻面板。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_garageDoorsSubCategory = "啟用車庫門子類別",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "能夠添加 3 個和 4 個瓷磚車庫門。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
-    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ 窗類別 ______________",
-    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "_________ 建築加類別 _________",
+    Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_windowsCategory = "開啓窗類別",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "開啓後添加窗戶。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_architecturePlusCategory = "啟用架構加類別",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "能夠添加門飾、皇冠造型、邊緣細節、地板造型和牆板。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
-    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ 柵欄類別 ______________",
-    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Windows 類別 ______________",
+    Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_highFencesSubCategory = "開啓高柵欄子類別",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "開啓後添加高柵欄。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
-    
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "開啓矮柵欄和欄杆子類別",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "開啓後添加矮柵欄和欄杆。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
-    
-    Sandbox_BuildingMenu_otherFencesSubCategory = "開啓其它柵欄子類別",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "開啓後添加其它柵欄比如：艾斯科防爆墻、低金屬柵欄、磚砌柵欄。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_windowsCategory = "啟用Windows類別",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "啟用新增 Windows。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
-    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ 地板類別 ______________",
-    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_FencingCategoryDivider = "______________ 擊劍分類 ______________",
+    Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_floorsCategory = "開啓地板類別",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "開啓後添加地板。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_highFencesSubCategory = "啟用高圍欄子類別",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "啟用添加高圍欄。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
+    
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "啟用低圍欄和欄桿子類別",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "啟用新增低柵欄和欄桿。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
+    
+    Sandbox_BuildingMenu_otherFencesSubCategory = "啟用其他圍籬子類別",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "能夠添加其他圍欄，例如 Hesco 屏障、低金屬圍欄、磚圍欄。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
-    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ 樓梯類別 ______________",
-    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ 樓層類別 ______________",
+    Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
+
+    Sandbox_BuildingMenu_floorsCategory = "啟用樓層類別",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "啟用新增樓層。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
+    
+
+
+    Sandbox_BuildingMenu_StairsCategoryDivider = "______________ 樓梯分類 ______________",
+    Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
  
-    Sandbox_BuildingMenu_stairsCategory = "開啓樓梯類別",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "開啓後添加樓梯。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_stairsCategory = "啟用樓梯類別",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "啟用新增樓梯。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
-    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ 道路工程類別 _____________",
-    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ 道路施工類別 _____________",
+    Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
  
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "開啓柏油路子類別",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "開啓後添加柏油路。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "啟用瀝青子類別",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "啟用添加瀝青。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "開啓道路覆蓋子類別",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "開啓後添加覆蓋，比如：塵垢和街道裂痕。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "啟用疊加子類別",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "啟用添加疊加層，例如污垢和街道裂縫。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "開啓人行道路緣石覆蓋子類別",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "開啓後添加人行道路緣石覆蓋。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "啟用人行道邊緣覆蓋子類別",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "啟用添加人行道邊緣覆蓋。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "開啓泥土和草地子類別",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "開啓後添加泥土和草地地塊。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "啟用泥土和草子類別",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "啟用添加泥土和草塊。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "開啓道路標綫子類別",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "開啓後添加道路標綫。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "啟用繪製道路標記子類別",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "啟用添加彩繪道路標記。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
     Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ 容器類別 ____________",
-    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
  
-    Sandbox_BuildingMenu_kitchenCountersSubCategory = "廚房匱臺子類別",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "開啓後添加廚房匱臺、壁匱。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory = "啟用廚房檯面子類別",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "能夠添加廚房流理台、上流理台。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_commercialCountersSubCategory = "開啓商業匱臺子類別",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "開啓後添加飯點、自助餐廳、酒吧、餐廳匱臺。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_commercialCountersSubCategory = "啟用商業櫃檯子類別",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "能夠添加餐廳、咖啡館、酒吧、晚餐櫃檯。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_cratesSubCategory = "開啓箱子類別",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "開啓後添加簡易箱子、軍用箱子（100容量）、紙板箱。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_cratesSubCategory = "啟用板條箱類別",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "能夠添加簡單的板條箱、軍用板條箱（100 個容量）、紙板箱。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_metalContainersSubCategory = "開啓金屬容器子類別",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "開啓後添加金屬容器、大金屬架、儲物匱。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_metalContainersSubCategory = "啟用金屬容器子類別",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "能夠添加金屬容器、大型金屬架、儲物櫃。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_clothesRacksSubCategory = "開啓衣架子類別",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "開啓後添加衣架和服裝模特。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_clothesRacksSubCategory = "啟用衣架子類別",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "啟用添加衣架和人體模型。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_trashCansSubCategory = "開啓垃圾桶子類別",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "開啓後添加垃圾桶。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_trashCansSubCategory = "啟用垃圾桶子類別",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "啟用添加垃圾桶。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_containersOthersSubCategory = "開啓其它容器子類別",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "開啓後添加其它容器子類別。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_containersOthersSubCategory = "啟用其他容器子類別",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "啟用新增其他容器子類別。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
    
 
@@ -154,230 +155,230 @@ Sandbox_CH = {
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
  
     Sandbox_BuildingMenu_musicSubCategory = "啟用音樂子類別",
-    Sandbox_BuildingMenu_musicSubCategory_tooltip = "能夠增加點唱機、鋼琴等。 <LINE><LINE> <RGB:1,0,0> 需要客戶端重新啟動！",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "能夠增加點唱機、鋼琴等。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
     
-    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ 家具類別 _____________",
-    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________家具類別_____________",
+    Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
  
-    Sandbox_BuildingMenu_tablesSubCategory = "開啓桌子子類別",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "開啓後添加大小桌子。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_tablesSubCategory = "啟用表子類別",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "啟用新增小表和大表。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_bedsSubCategory = "開啓牀子類別",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "開啓後添加單人牀和大牀。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_bedsSubCategory = "啟用床位子類別",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "能夠添加簡單床和大床。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "開啓座椅家具子類別",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "開啓後添加長椅、沙發和椅子。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory = "啟用座椅家具子類別",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "能夠添加長椅、沙發、椅子。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_bookshelvesSubCategory = "開啓書架子類別",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "開啓後添加書架。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_bookshelvesSubCategory = "啟用書架子類別",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "啟用添加書架。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "開啓梳妝臺子類別",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "開啓後添加化妝臺、抽屉和衣匱。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "啟用梳妝台子類別",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "能夠添加梳妝台、抽屜和衣櫃。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
 
 
-    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ 裝飾選項 ____________",
-    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________裝飾品類別____________",
+    Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
  
-    Sandbox_BuildingMenu_rugsSubCategory = "開啓地毯子類別",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "開啓後添加地毯。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_rugsSubCategory = "啟用地毯子類別",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "啟用添加地毯。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_postersAndSignsSubCategory = "開啓海報和標記子類別",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "開啓後添加海報和標記。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory = "啟用海報和標誌子類別",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "啟用添加海報和標誌。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_graffitiSubCategory = "開啓塗鴉子類別",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "開啓後添加塗鴉。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_graffitiSubCategory = "啟用塗鴉子類別",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "啟用添加塗鴉。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_otherDecorationsSubCategory = "開啓其它裝飾子類別",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "開啓後添加其它裝飾，比如：路障、郵件箱、柵欄柱和路錐。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory = "啟用其他裝飾子類別",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "可以添加其他裝飾，例如路障、郵箱、路障柱、路錐、郵箱。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
 
 
     Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ 植被類別 ____________",
-    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_flowerBedsSubCategory = "開啓花圃子類別",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "開啓後添加花圃子類別。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_flowerBedsSubCategory = "啟用花壇類別",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "啟用在植被類別中新增花壇。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_indoorPlantsSubCategory = "開啓室內盆栽子類別",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "開啓後添加室內盆栽子類別。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory = "啟用室內植物子類別",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "可以在植被類別中添加室內植物，例如花盆。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "開啓戶外植物子類別",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "開啓後添加戶外植物、花盆。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory = "啟用室外植物子類別",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "可以添加室外植物，例如植被類別中的室外花盆。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_landscapingSubCategory = "開啓街景子類別",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "開啓後添加街景植被，比如草地、樹籬和藤蔓。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_landscapingSubCategory = "啟用景觀美化子類別",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "可以在植被類別中添加景觀植被，例如草、樹籬、牆藤。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
 
 
     Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ 生存類別 _____________",
-    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_fireplaceSubCategory = "開啓壁爐子類別",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "開啓後添加壁爐和側壁。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_fireplaceSubCategory = "啟用壁爐子類別",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "啟用添加壁爐和門框。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
-    Sandbox_BuildingMenu_generatorSubCategory = "開啓發電機子類別",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "開啓後添加發電機。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_generatorSubCategory = "啟用生成器子類別",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "啟用新增生成器。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_metalDrums = "開啓金屬油桶",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "開啓後添加金屬油桶。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_metalDrums = "啟用金屬鼓",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "啟用添加金屬桶。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
 
-    Sandbox_BuildingMenu_waterWell = "Enable Water Wells",
-    Sandbox_BuildingMenu_waterWell_tooltip = "Enable to add water wells. <LINE><LINE> <RGB:1,0,0> REQUIRES CLIENT RESTART!",
+    Sandbox_BuildingMenu_waterWell = "啟用水井",
+    Sandbox_BuildingMenu_waterWell_tooltip = "啟用添加水井。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
 
 
-    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ 器械類別 ____________",
-    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ 電器類別 ____________",
+    Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenu_lightingAppliances = "開啓照明類別",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "開啓後添加照明類別。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_lightingAppliances = "啟用照明類別",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "啟用新增照明類別。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
 
-    Sandbox_BuildingMenu_bathroomAppliances = "開啓洗浴設施子類別",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "開啓後添加洗手池、馬桶和其它洗浴相關設施。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_bathroomAppliances = "啟用浴室裝置子類別",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "能夠添加水槽、廁所和其他與浴室相關的物品。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_cookingAppliances = "開啓廚房器械子類別",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "開啓後添加烤爐、微波爐和其它烹飪相關器械。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_cookingAppliances = "啟用廚房用具子類別",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "能夠添加爐子、烤箱和其他與烹飪相關的物品。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_fridgeAppliances = "開啓冷凍器械子類別",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "開啓後添加冰箱和冷凍匱。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_fridgeAppliances = "啟用冷氣器具子類別",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "啟用添加冰箱和冰櫃。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
-    Sandbox_BuildingMenu_laundryAppliances = "開啓洗滌器械子類別",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "開啓後添加洗衣機和烘干機。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！",
+    Sandbox_BuildingMenu_laundryAppliances = "啟用洗衣設備子類別",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "啟用添加洗衣機和烘乾機。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
     
 
 
 
-    Sandbox_BuildingMenuRecipes = "建造菜單配方",
+    Sandbox_BuildingMenuRecipes = "建立菜單食譜",
 
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ 材料 ____________",
-    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_PaintUses = "油漆桶使用次數",
-    Sandbox_PaintUses_tooltip = "每桶油漆的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_PaintUses = "油漆罐用途",
+    Sandbox_PaintUses_tooltip = "每個油漆罐的使用次數。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
 
-    Sandbox_BlowTorchUses = "丙烷噴燈使用次數",
-    Sandbox_BlowTorchUses_tooltip = "每把丙烷噴燈的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BlowTorchUses = "噴燈用途",
+    Sandbox_BlowTorchUses_tooltip = "每個噴燈的用途。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
 
-    Sandbox_BucketAsphaltMixtureUses = "桶裝瀝靑混合物使用次數",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "每桶瀝靑混合物的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BucketAsphaltMixtureUses = "瀝青混合料鏟鬥用途",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "每桶可用於瀝青混合料。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
 
-    Sandbox_BucketConcreteUses = "桶裝混凝土使用次數",
-    Sandbox_BucketConcreteUses_tooltip = "每桶混凝土的使用次數。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
-
-
-    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26次",
-    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28次",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80次",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100次",
+    Sandbox_BucketConcreteUses = "具有具體用途的鏟鬥",
+    Sandbox_BucketConcreteUses_tooltip = "每個桶可用於混凝土。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
 
 
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "大墻所需木板數",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "設置建造大墻需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option3 = "10 種用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option4 = "14 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option5 = "18 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 用途",
+
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 種用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 種用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 種用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 種用途",
+    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 次使用",
+
+
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount = "大牆的木質材料成本",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "設置大牆所需的木材。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "大墻所需釘子數",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "設置建造大墻需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount = "大牆的釘子材料成本",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "設置大牆所需的釘子。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "小墻所需木板數",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "設置建造小墻需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount = "小牆的木質材料成本",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "設置小牆所需的木材。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "小墻所需釘子數",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "設置建造小墻需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount = "小牆的釘子材料成本",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "設置小牆所需的釘子。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "大物件所需木板數",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "設置建造大物件需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "大物體的木質材料成本",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "設定大物體所需的木材。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "大物件所需釘子數",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "設置建造大物件需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "大物體的釘子材料成本",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "設置大物體所需的釘子。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "小物件所需木板數",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "設置建造小物件需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "小物體的木質材料成本",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "設定小物體所需的木材。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "小物件所需釘子數",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "設置建造小物件需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "小物體的釘子材料成本",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "設定小物體所需的釘子。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
 
-    Sandbox_BuildingMenuRecipes_glassPaneCount = "玻璃板消耗",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "設置玻璃板的消耗數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount = "玻璃板材料成本",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "設定所需的玻璃板。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalBarsCount = "金屬棒消耗",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "設置金屬棒的消耗數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount = "金屬棒材料成本",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "設定所需的金屬條。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_screwsCount = "螺絲消耗",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "設置螺絲的消耗數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount = "螺絲材料成本",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "固定所需的螺絲。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "柵欄成本廢金屬",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "設置圍欄所需的廢金屬。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 需要客戶端重新啟動！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "設置圍欄所需的廢金屬。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "電子產品廢金屬成本",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "設定電器所需的廢金屬。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 需要客戶端重新啟動！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "設定電器所需的廢金屬。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "墻體所需金屬板數",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "設置建造墻體需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "牆壁成本鈑金",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "設定牆壁所需的鈑金。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "門所需金屬板數",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "設置建造門需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "DOORS 成本鈑金",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "設定 DOORS 所需的鈑金。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "容器所需金屬板數",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "設置建造容器需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "貨櫃金屬板材成本",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "設定容器所需的鈑金。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "器械設施所需金屬板數",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "設置建造器械設施需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "固定裝置和電器的鈑金成本",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "設定固定裝置和電器所需的鈑金。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "屋頂、地板所需金屬板數",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "設置建造屋頂、地板需要的金屬板數量。 <LINE> 按物件大小和類別縮放。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "屋頂和地板金屬板材成本",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "設置屋頂和地板所需的鈑金。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
 
-    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ 技能要求 ____________",
-    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ 技能____________",
+    Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "大物件所需木工等級",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "建造小物件需要的木工等級。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "大物體的木工水平",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "設定大物件所需的木工等級。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "小物件所需木工等級",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "建造小物件需要的木工等級。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "小物體的木工水平儀",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "設定小物體所需的木工等級。 <LINE> 根據物件大小和類型進行縮放。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "每級木工經驗獲取量",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "在不同木工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "每級木工 XP 增益",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "建造物體時，每個木工等級都會獲得經驗值。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "每級金工經驗獲取量",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "在不同金工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "每級金屬加工 XP 增益",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "建造物體時，每個金屬加工等級都會獲得 XP 增益。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "每級電工經驗獲取量",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "在不同電工等級下建造物件的經驗獲取量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "每級電氣 XP 增益",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "建造物體時每個電平的 XP 增益。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
 
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ 特殊物件配方 ____________",
-    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "這只是一條分割綫，勾選它沒有任何效果。",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ 特殊物品食譜 ____________",
+    Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "這只是一個行分隔符，檢查它沒有任何作用。",
 
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
-    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "最大水井蓄水量",
+    Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "一口井能容納多少水。",
     
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用箱子所需木板數",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "設置建造軍用箱子需要的木板數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用板條箱的木質材料成本",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "設置軍用板條箱所需的木板。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "軍用箱子所需釘子數",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "設置建造軍用箱子需要的釘子數量。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "軍用板條箱的釘子材料成本",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "設置軍用板條箱所需的釘子。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "軍用箱子所需木工等級",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "設置建造軍用箱子需要的木工等級。 <LINE><LINE> <RGB:1,0,0> 需要重啓客戶端！ <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "軍用板條箱木工水平儀",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "設定軍用板條箱所需的木工等級。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
 
 
 }

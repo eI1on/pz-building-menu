@@ -7,6 +7,7 @@ local getTexture = getTexture
 ---@type function
 local pairs = pairs
 
+local BM_Utils = require("BM_Utils")
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
 
@@ -44,15 +45,13 @@ function BuildingMenuTilePickerList:render()
                     end
 
                     if texture then
-                        self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH,
-                            TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
+                        self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
                     end
                 end
             end
         end
     end
     self:setScrollHeight(maxRows * TILE_HEIGHT);
-
     self:updateTooltip(maxCols, maxRows);
     self:clearStencilRect();
 end
@@ -192,8 +191,8 @@ function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, re
     end
 
 
-    -- BuildingMenu.debugPrint("[Building Menu Debug] objData.materialFoundIndexMatrix ", objData.materialFoundIndexMatrix);
-    -- BuildingMenu.debugPrint("[Building Menu Debug] objData.consumablesFoundIndexMatrix ", objData.consumablesFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu Debug] objData.materialFoundIndexMatrix ", objData.materialFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu Debug] objData.consumablesFoundIndexMatrix ", objData.consumablesFoundIndexMatrix);
 
 
     -- Helper function to process Material Groups or Consumable Groups
@@ -402,7 +401,7 @@ end
 ---@return BuildingMenuTilePickerList class
 function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
     local o                = ISPanel.new(self, x, y, w, h)
-    o.backgroundColor.a    = 0.25;
+    o.backgroundColor.a    = 0;
     o.subCatData           = nil;
     o.character            = character;
     o.posToObjectNameTable = {};
@@ -604,7 +603,7 @@ function ISBuildingMenuUI:onGearButtonClick()
         local option = context:addOption("Not Thumpable", self, function(self)
             self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable;
             if isDebugEnabled() then
-                BuildingMenu.debugPrint("[Building Menu Debug] self.tilesList.overwriteIsThumpable: ",
+                BM_Utils.debugPrint("[Building Menu Debug] self.tilesList.overwriteIsThumpable: ",
                     self.tilesList.overwriteIsThumpable);
             end
         end);
@@ -616,7 +615,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isBuildRoofActive then
         local option = context:addOption("Floor is Ceiling", self, function(self)
             self.floorIsRoof = not self.floorIsRoof;
-            BuildingMenu.debugPrint("[Building Menu Debug] self.floorIsRoof: ", self.floorIsRoof);
+            BM_Utils.debugPrint("[Building Menu Debug] self.floorIsRoof: ", self.floorIsRoof);
         end);
         context:setOptionChecked(option, self.floorIsRoof);
     end

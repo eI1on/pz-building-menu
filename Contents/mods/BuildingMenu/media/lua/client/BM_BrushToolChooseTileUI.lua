@@ -1,4 +1,5 @@
 require "DebugUIs/BrushTool/BrushToolChooseTileUI"
+local BM_Utils = require("BM_Utils")
 
 local originalOnMouseDown = BrushToolTilePickerList.onMouseDown
 function BrushToolTilePickerList:onMouseDown(x, y)

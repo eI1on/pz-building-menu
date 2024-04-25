@@ -16,6 +16,8 @@ local getSprite = getSprite
 local getItemNameFromFullType = getItemNameFromFullType
 ---@type function
 
+local BM_Utils = require("BM_Utils")
+
 --- BuildingMenu namespace.
 ---@class BuildingMenu
 local BuildingMenu = {};
@@ -246,24 +248,6 @@ BuildingMenu.getPlayerSkills = function(playerObj)
     return skills;
 end
 
---- Utility function for debug printing.
----@param prefix string
----@param data any
-BuildingMenu.debugPrint = function(prefix, data)
-    if type(data) == "table" then
-        for key, value in pairs(data) do
-            if type(value) == "table" then
-                print(prefix .. key .. ":");
-                BuildingMenu.debugPrint(prefix .. "\t", value);
-            else
-                print(prefix .. key .. ": " .. tostring(value));
-            end
-        end
-    else
-        print(prefix .. tostring(data));
-    end
-end
-
 
 --- Predicate function to check if an item is not broken.
 ---@param item InventoryItem
@@ -412,7 +396,7 @@ end
 ---@return Texture|nil
 function BuildingMenu.getTexFromItem(item)
     if not item then
-        BuildingMenu.debugPrint("[Building Menu] ", "Warning: Attempted to get texture name from a nil item.");
+        BM_Utils.debugPrint("[Building Menu] ", "Warning: Attempted to get texture name from a nil item.");
         return nil;
     end
 	local texture = item:getNormalTexture();
@@ -441,7 +425,7 @@ function BuildingMenu.getTexNameFromItem(item)
         local nameOnly = textureName:match("([^\\/]*)$");
         return nameOnly;
     else
-        BuildingMenu.debugPrint("[Building Menu] ", "Warning: Texture not found for item " .. item:getFullName());
+        BM_Utils.debugPrint("[Building Menu] ", "Warning: Texture not found for item " .. item:getFullName());
         return nil;
     end
 end
@@ -763,9 +747,9 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
         end
     end
 
-    -- BuildingMenu.debugPrint("[Building Menu DEBUG] BuildingMenu.ItemInstances ", BuildingMenu.ItemInstances);
-    -- BuildingMenu.debugPrint("[Building Menu DEBUG] materialFoundIndexMatrix ", materialFoundIndexMatrix);
-    -- BuildingMenu.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] BuildingMenu.ItemInstances ", BuildingMenu.ItemInstances);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] materialFoundIndexMatrix ", materialFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
 
     if ISBuildMenu.cheat then
         tooltipDescription = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltipDescription;

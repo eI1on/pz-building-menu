@@ -1,8 +1,10 @@
 require("TimedActions/ISRemoveBush")
 
+local WallVinesTiles = require ('BM_ValidWallVineTiles')
 --- @type table<string>
 -- Load a list of valid patterns for removable wall vine tiles from an external module.
-local RemovableWallVinesTiles = require 'BM_ValidWallVineTiles'
+local removableWallVinesTiles = WallVinesTiles.getTiles()
+
 
 -- Store the original ISRemoveBush.getWallVineObject function for later use.
 local originalGetWallVineObject = ISRemoveBush.getWallVineObject;
@@ -21,7 +23,7 @@ function ISRemoveBush:getWallVineObject(square)
                 local sprite = attached:get(n - 1);
                 if sprite and sprite:getParentSprite() and sprite:getParentSprite():getName() then
                     local spriteName = sprite:getParentSprite():getName();
-                    for _, pattern in ipairs(RemovableWallVinesTiles) do
+                    for _, pattern in ipairs(removableWallVinesTiles) do
                         if luautils.stringStarts(spriteName, pattern) then
                             return object, n - 1;
                         end

@@ -1,4 +1,5 @@
 Sandbox_NO = {
+
     Sandbox_BuildingMenu = "Byggmeny",
     Sandbox_BuildingMenu_isThumpable = "Dumpbare strukturer",
     Sandbox_BuildingMenu_isThumpable_tooltip = "Slå <SPACE><RGB:1,0.8,0> AV <RGB:1,1,1><SPACE> for å lage strukturer bygget ved hjelp av bygningsmenyen immun mot zombieskader.",
@@ -12,31 +13,31 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_woodWallsSubCategory = "Aktiver underkategori for trevegger",
-    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Gjør det mulig å legge til treveggstrukturer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Gjør det mulig å legge til treveggstrukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_clapboardWallsSubCategory = "Aktiver underkategorien Clapboard Walls",
-    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Gjør det mulig å legge til klaffevegger. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Gjør det mulig å legge til klaffevegger strukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_stoneWallsSubCategory = "Aktiver underkategori for steinmurer",
-    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Gjør det mulig å legge til steinmurstrukturer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Gjør det mulig å legge til steinmurstrukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_brickWallsSubCategory = "Aktiver underkategori for murvegger",
-    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Aktiver å legge til murvegger strukturer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Aktiver å legge til murvegger strukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Aktiver Cinderblock Walls Subcategory",
-    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Gjør det mulig å legge til veggstrukturer av cinderblock. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Gjør det mulig å legge til veggstrukturer for cinderblock. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_paintedWallsSubCategory = "Aktiver underkategori for malte vegger",
-    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Gjør det mulig å legge til malte veggstrukturer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Gjør det mulig å legge til malte veggstrukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Aktiver underkategori for buede vindusvegger",
-    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Aktiver for å legge til buede vindusvegger strukturer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Aktiver for å legge til buede vindusvegger strukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_commercialWallsSubCategory = "Aktiver underkategori for kommersielle vegger",
-    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Gjør det mulig å legge til kommersielle veggstrukturer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Gjør det mulig å legge til kommersielle veggstrukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_industrialWallsSubCategory = "Aktiver industrivegger underkategori",
-    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Gjør det mulig å legge til industrielle veggstrukturer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Gjør det mulig å legge til industrielle veggstrukturer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -44,7 +45,7 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_roofsCategory = "Aktiver takkategori",
-    Sandbox_BuildingMenu_roofsCategory_tooltip = "Gjør det mulig å legge til takkonstruksjoner, for eksempel helvetesild, risteshingel, glass. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_roofsCategory_tooltip = "Gjør det mulig å legge til takkonstruksjoner, for eksempel helvetesild, risteshingel, glass. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -52,10 +53,10 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_doorsSubCategory = "Aktiver dørkategori",
-    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Aktiver for å legge til dører av tre, lav, panel, metall, glass. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Aktiver for å legge til dører av tre, lav, panel, metall, glass. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_garageDoorsSubCategory = "Aktiver underkategori for garasjedører",
-    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Aktiver for å legge til 3 og 4 flislagt garasjeporter. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Aktiver for å legge til 3 og 4 flislagt garasjeporter. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -63,7 +64,7 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_architecturePlusCategory = "Aktiver Architecture Plus Category",
-    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Aktiver å legge til dørlister, kronelister, kantdetaljer, gulvlister og veggpaneler. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Aktiver å legge til dørlister, kronelister, kantdetaljer, gulvlister og veggpaneler. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -71,7 +72,7 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_windowsCategory = "Aktiver Windows-kategori",
-    Sandbox_BuildingMenu_windowsCategory_tooltip = "Aktiver for å legge til Windows. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_windowsCategory_tooltip = "Aktiver for å legge til Windows. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -79,13 +80,13 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_highFencesSubCategory = "Aktiver underkategori for høye gjerder",
-    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Aktiver for å legge til høye gjerder. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Aktiver for å legge til høye gjerder. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Aktiver underkategori for lave gjerder og rekkverk",
-    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Aktiver for å legge til lave gjerder og rekkverk. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Aktiver for å legge til lave gjerder og rekkverk. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_otherFencesSubCategory = "Aktiver underkategori for andre gjerder",
-    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Aktiver for å legge til andre gjerder som Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Aktiver for å legge til andre gjerder som Hesco Barrier, Low Metal Fences, Brick Fences. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -93,7 +94,7 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_floorsCategory = "Aktiver etasjekategori",
-    Sandbox_BuildingMenu_floorsCategory_tooltip = "Aktiver for å legge til etasjer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_floorsCategory_tooltip = "Aktiver for å legge til etasjer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -101,26 +102,26 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
  
     Sandbox_BuildingMenu_stairsCategory = "Aktiver trappekategori",
-    Sandbox_BuildingMenu_stairsCategory_tooltip = "Aktiver for å legge til trapper. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_stairsCategory_tooltip = "Aktiver for å legge til trapper. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
     Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Veiarbeidskategori _____________",
     Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
  
     Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Aktiver Asfalt underkategori",
-    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Aktiver for å legge til asfalt. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Aktiver for å legge til asfalt. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Aktiver underkategori for overlegg",
-    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Aktiver for å legge til overlegg som Grime og Street Cracks. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Aktiver for å legge til overlegg som Grime og Street Cracks. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Aktiver Sidewalk Edge Overlays underkategori",
-    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Aktiver for å legge til Sidewalk Edge Overlays. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Aktiver for å legge til Sidewalk Edge Overlays. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Aktiver underkategori for skitt og gress",
-    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Aktiver for å legge til smuss- og gressfliser. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Aktiver for å legge til smuss- og gressfliser. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Aktiver underkategori for malte veimerker",
-    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Aktiver for å legge til malte veimerker. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Aktiver for å legge til malte veimerker. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -128,25 +129,25 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
  
     Sandbox_BuildingMenu_kitchenCountersSubCategory = "Aktiver underkategori for kjøkkenbenker",
-    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Aktiver for å legge til kjøkkenbenker, øvre benkedisker. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Aktiver for å legge til kjøkkenbenker, øvre benkedisker. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_commercialCountersSubCategory = "Aktiver underkategori for kommersielle tellere",
-    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Aktiver for å legge til restauranter, kaféer, barer og spisesteder. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Aktiver for å legge til restauranter, kaféer, barer og spisesteder. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_cratesSubCategory = "Aktiver underkategori for kasser",
-    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Gjør det mulig å legge til enkle kasser, militære kasser (kapasitet på 100), pappesker. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Gjør det mulig å legge til enkle kasser, militære kasser (kapasitet på 100), pappesker. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_metalContainersSubCategory = "Aktiver underkategori for metallbeholdere",
-    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Gjør det mulig å legge til metallbeholdere, store metallhyller, skap. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Gjør det mulig å legge til metallbeholdere, store metallhyller, skap. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_clothesRacksSubCategory = "Aktiver underkategori for klesstativ",
-    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Aktiver for å legge til klesstativer og mannequins. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Aktiver for å legge til klesstativer og mannequins. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_trashCansSubCategory = "Aktiver underkategori for søppelbøtte",
-    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Aktiver for å legge til søppeldunker. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Aktiver for å legge til søppeldunker. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_containersOthersSubCategory = "Aktiver underkategori for andre beholdere",
-    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Aktiver for å legge til underkategori for andre beholdere. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Aktiver for å legge til underkategori for andre beholdere. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
    
 
@@ -154,7 +155,7 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
  
     Sandbox_BuildingMenu_musicSubCategory = "Aktiver underkategori for musikk",
-    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Aktiver for å legge til jukebokser, pianoer og slikt. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_musicSubCategory_tooltip = "Aktiver for å legge til jukebokser, pianoer og slikt. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
     
@@ -162,19 +163,19 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
  
     Sandbox_BuildingMenu_tablesSubCategory = "Aktiver underkategori tabeller",
-    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Aktiver for å legge til små og store tabeller. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Aktiver for å legge til små og store tabeller. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_bedsSubCategory = "Aktiver senger underkategori",
-    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Aktiver for å legge til enkle og store senger. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Aktiver for å legge til enkle og store senger. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Aktiver underkategori for sittemøbler",
-    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Aktiver for å legge til benker, sofaer, stoler. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Aktiver for å legge til benker, sofaer, stoler. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_bookshelvesSubCategory = "Aktiver underkategori for bokhyller",
-    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Aktiver for å legge til bokhyller. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Aktiver for å legge til bokhyller. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Aktiver underkategori for kommoder",
-    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Aktiver for å legge til kommoder, skuffer og garderober. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Aktiver for å legge til kommoder, skuffer og garderober. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
 
 
@@ -182,16 +183,16 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
  
     Sandbox_BuildingMenu_rugsSubCategory = "Aktiver Rugs Subcategory",
-    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Aktiver for å legge til tepper. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Aktiver for å legge til tepper. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Aktiver underkategori for plakater og skilt",
-    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktiver for å legge til plakater og skilt. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktiver for å legge til plakater og skilt. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_graffitiSubCategory = "Aktiver Graffiti-underkategori",
-    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Aktiver for å legge til graffiti. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Aktiver for å legge til graffiti. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_otherDecorationsSubCategory = "Aktiver underkategori for andre dekorasjoner",
-    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Aktiver for å legge til andre dekorasjoner, for eksempel veisperringer, postkasse, bomstolpe, veikjegler, postkasse. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Aktiver for å legge til andre dekorasjoner, for eksempel veisperringer, postkasse, bomstolpe, veikjegler, postkasse. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
 
 
@@ -199,16 +200,16 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_flowerBedsSubCategory = "Aktiver underkategori for blomsterbed",
-    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Aktiver for å legge til blomsterbed i vegetasjonskategori. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Aktiver for å legge til blomsterbed i vegetasjonskategori. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_indoorPlantsSubCategory = "Aktiver underkategori for innendørs planter",
-    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Aktiver for å legge til innendørs planter, for eksempel blomsterpotter i vegetasjonskategori. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Aktiver for å legge til innendørs planter, for eksempel blomsterpotter i vegetasjonskategori. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Aktiver underkategori for utendørsplanter",
-    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Aktiver for å legge til utendørsplanter, for eksempel utendørs blomsterbeholdere i vegetasjonskategori. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Aktiver for å legge til utendørsplanter, for eksempel utendørs blomsterbeholdere i vegetasjonskategori. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_landscapingSubCategory = "Aktiver underkategori for landskapsforming",
-    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Aktiver for å legge til landskapsvegetasjon, for eksempel gress, hekker, veggranker i vegetasjonskategorien. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Aktiver for å legge til landskapsvegetasjon, for eksempel gress, hekker, veggranker i vegetasjonskategorien. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
 
 
@@ -216,35 +217,35 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_fireplaceSubCategory = "Aktiver underkategori for peis",
-    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Aktiver for å legge til Peis og Jambs. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Aktiver for å legge til Peis og Jambs. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
     Sandbox_BuildingMenu_generatorSubCategory = "Aktiver Generator Subcategory",
-    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Aktiver for å legge til generatoren. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Aktiver for å legge til generatoren. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_metalDrums = "Aktiver Metal Trommer",
-    Sandbox_BuildingMenu_metalDrums_tooltip = "Aktiver for å legge til metalltrommer. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_metalDrums_tooltip = "Aktiver for å legge til metalltrommer. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
 
     Sandbox_BuildingMenu_waterWell = "Aktiver vannbrønner",
-    Sandbox_BuildingMenu_waterWell_tooltip = "Aktiver for å legge til vannbrønner. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_waterWell_tooltip = "Aktiver for å legge til vannbrønner. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
 
 
     Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Apparatkategori ____________",
     Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenu_lightingAppliances = "Aktiver belysningskategori",
-    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Aktiver for å legge til belysningskategori. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_lightingAppliances_tooltip = "Aktiver for å legge til belysningskategori. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
 
     Sandbox_BuildingMenu_bathroomAppliances = "Aktiver underkategori for baderomsinnredning",
-    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Aktiver for å legge til vasker, toaletter og andre baderomsrelaterte objekter. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Aktiver for å legge til vasker, toaletter og andre baderomsrelaterte objekter. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_cookingAppliances = "Aktiver underkategori for kjøkkenapparater",
-    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Aktiver for å legge til komfyrer, ovner og andre matlagingsrelaterte gjenstander. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_cookingAppliances_tooltip = "Aktiver for å legge til komfyrer, ovner og andre matlagingsrelaterte gjenstander. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_fridgeAppliances = "Aktiver underkategori for kjøleapparater",
-    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Aktiver for å legge til kjøleskap og frysere. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Aktiver for å legge til kjøleskap og frysere. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
     Sandbox_BuildingMenu_laundryAppliances = "Aktiver underkategori for vaskeutstyr",
-    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Aktiver for å legge til vaskemaskiner og tørketromler. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART!",
+    Sandbox_BuildingMenu_laundryAppliances_tooltip = "Aktiver for å legge til vaskemaskiner og tørketromler. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
     
 
 
@@ -255,16 +256,16 @@ Sandbox_NO = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_PaintUses = "Bruk av malingsboks",
-    Sandbox_PaintUses_tooltip = "Bruker per malingsboks. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_PaintUses_tooltip = "Bruker per malingsboks. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
 
     Sandbox_BlowTorchUses = "Blow Torch Bruker",
-    Sandbox_BlowTorchUses_tooltip = "Bruker per blåselykt. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BlowTorchUses_tooltip = "Bruker per blåselykt. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
 
     Sandbox_BucketAsphaltMixtureUses = "Bøtte med asfaltblanding",
-    Sandbox_BucketAsphaltMixtureUses_tooltip = "Bruks per bøtte med asfaltblanding. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BucketAsphaltMixtureUses_tooltip = "Bruks per bøtte med asfaltblanding. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
 
     Sandbox_BucketConcreteUses = "Bøtte med betongbruk",
-    Sandbox_BucketConcreteUses_tooltip = "Bruker per bøtte med betong. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BucketConcreteUses_tooltip = "Bruker per bøtte med betong. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
 
 
     Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 bruksområder",
@@ -291,78 +292,78 @@ Sandbox_NO = {
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Trematerialekostnad for STORE vegger",
-    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Setter tre som trengs for STORE vegger. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Setter tre som trengs for STORE vegger. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Spiker Materialkostnad for STORE vegger",
-    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Setter spiker som trengs for BIG Walls. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Setter spiker som trengs for BIG Walls. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Trematerialekostnad for SMÅ vegger",
-    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Setter tre som trengs for SMÅ vegger. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Setter tre som trengs for SMÅ vegger. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Spiker Materialkostnad for SMÅ vegger",
-    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Setter spiker som trengs for SMÅ vegger. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Setter spiker som trengs for SMÅ vegger. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Trematerialekostnad for STORE gjenstander",
-    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Setter tre som trengs for STORE objekter. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Setter tre som trengs for STORE objekter. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Spiker Materialkostnad for STORE objekter",
-    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Setter spiker som trengs for STORE objekter. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Setter spiker som trengs for STORE objekter. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Trematerialekostnad for SMÅ gjenstander",
-    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Setter tre som trengs for SMÅ gjenstander. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Setter tre som trengs for SMÅ gjenstander. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Spiker Materialkostnad for SMÅ gjenstander",
-    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Setter spiker som trengs for SMÅ gjenstander. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Setter spiker som trengs for SMÅ gjenstander. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_glassPaneCount = "Materialkostnad for glassrute",
-    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Setter glassruter nødvendig. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Setter glassruter som trengs. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalBarsCount = "Metallstenger Materialkostnad",
-    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Setter metallstenger som trengs. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Setter metallstenger som trengs. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_screwsCount = "Skruer Materialkostnad",
-    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Stilleskruer som trengs. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Stilleskruer som trengs. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Skrapmetall for GJERDER Kostnad",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Setter skrapmetall som trengs for gjerder. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Setter skrapmetall som trengs for gjerder. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Metallskrap for ELEKTRISKE ARTIKLER Kostnad",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Setter skrapmetall som trengs for elektriske ting. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Setter skrapmetall som trengs for elektriske ting. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Plate til VEGGER Kostnad",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Setter metallplater som trengs for VEGGER. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Setter metallplater som trengs for VEGGER. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Plate til DØRER Kostnad",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Setter metallplater som trengs for DØRER. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Setter metallplater som trengs for DØRER. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Platemetall for BEHOLDERE Kostnad",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Setter metallplater som trengs for CONTAINERE. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Setter metallplater som trengs for CONTAINERE. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Platemetall for INSTRUKTUR OG APPARATUR Kostnad",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Setter metallplater som trengs for INSTRUKTURER og APPARATER. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Setter metallplater som trengs for INSTRUKTURER og APPARATER. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Plate til TAK OG GULV Kostnad",
-    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Setter platemetall som trengs for TAK og GULV. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Setter platemetall som trengs for TAK og GULV. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Ferdigheter ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
 
     Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Trebearbeidingsnivå for STORE objekter",
-    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Angir snekkernivå som er nødvendig for STORE objekter. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Angir snekkernivå som er nødvendig for STORE objekter. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Trebearbeidingsnivå for SMÅ gjenstander",
-    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Angir snekkernivå som er nødvendig for SMÅ gjenstander. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Angir snekkernivå som er nødvendig for SMÅ gjenstander. <LINE> Skalerer med objektstørrelse og -type. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Trebearbeiding XP-gevinst per nivå",
-    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "XP gevinst per snekkernivå ved bygging av objekter. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "XP gevinst per snekkernivå ved bygging av objekter. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Metallbearbeiding XP-gevinst per nivå",
-    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "XP-gevinst per metallbearbeidingsnivå når du bygger gjenstander. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "XP-gevinst per metallbearbeidingsnivå når du bygger gjenstander. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Elektrisk XP-gevinst per nivå",
-    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP-forsterkning per elektrisk nivå ved bygging av objekter. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "XP-forsterkning per elektrisk nivå ved bygging av objekter. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
 
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Oppskrifter på spesielle gjenstander ____________",
     Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Dette er bare en linjeskiller, det har ingen effekt å sjekke det.",
@@ -371,13 +372,13 @@ Sandbox_NO = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Hvor mye vann en Well hold.",
     
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Trematerialekostnad for militærkasse",
-    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Setter planker som kreves for militære kasser. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Setter planker som kreves for militære kasser. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Spikermaterialekostnad for militærkasse",
-    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Setter spiker som kreves for militære kasser. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Setter spiker som kreves for militære kasser. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Trebearbeidingsnivå for militærkasse",
-    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Angir snekkernivå som er nødvendig for militære kasser. <LINE><LINE> <RGB:1,0,0> KREVER KLIENT OMSTART! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Angir snekkernivå som er nødvendig for militære kasser. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
 
 
 }

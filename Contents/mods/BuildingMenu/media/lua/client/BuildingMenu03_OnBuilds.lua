@@ -1,4 +1,4 @@
-require("BM_Utils")
+local BM_Utils = require("BM_Utils");
 
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
@@ -101,9 +101,9 @@ function BuildingMenu.buildObject(object, name, player, objectRecipe, objectOpti
         end
 
         if isDebugEnabled() then
-            BuildingMenu.debugPrint("[Building Menu Debug] ", name);
-            BuildingMenu.debugPrint("[Building Menu Debug] ", objectOptions);
-            BuildingMenu.debugPrint("[Building Menu Debug] ", objectRecipe);
+            BM_Utils.debugPrint("[Building Menu DEBUG] ", name);
+            BM_Utils.debugPrint("[Building Menu DEBUG] ", objectOptions);
+            BM_Utils.debugPrint("[Building Menu DEBUG] ", objectRecipe);
             if objectOptions and objectOptions["sprites"] then
                 if objectOptions["sprites"]["sprite"] then BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]
                     ["sprite"]); end
@@ -484,7 +484,7 @@ BuildingMenu.onBuildMannequin = function(sprites, name, player, objectRecipe, ob
     --     BuildingMenu.buildObject(mo, nil, mo.player)
     --     -- getCell():setDrag(mo, mo.player);
     -- else
-    --     BuildingMenu.debugPrint("[BuildingMenu] ", "Mannequin script now found!!!")
+    --     BM_Utils.debugPrint("[BuildingMenu] ", "Mannequin script now found!!!")
     --     return
     -- end
 
