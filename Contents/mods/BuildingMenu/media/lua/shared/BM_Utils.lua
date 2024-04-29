@@ -15,8 +15,10 @@ function BM_Utils.debugPrint(prefix, data)
                 print(prefix .. key .. ": " .. tostring(value));
             end
         end
-    else
+    elseif data ~= nil then
         print(prefix .. tostring(data));
+    else
+        print(prefix);
     end
 end
 

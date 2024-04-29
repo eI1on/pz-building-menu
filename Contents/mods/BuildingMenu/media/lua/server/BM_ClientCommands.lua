@@ -1,24 +1,25 @@
 if isClient() then return; end
+local BM_Utils = require("BM_Utils");
 
-local WallVinesTiles = require 'BM_ValidWallVineTiles'
-local removableWallVinesTiles = WallVinesTiles.getTiles()
+local WallVinesTiles = require 'BM_ValidWallVineTiles';
+local removableWallVinesTiles = WallVinesTiles.getTiles();
 
-local WallDetailingTiles = require 'BM_ValidWallDetailingTiles'
-local removableWallDetailingTiles = WallDetailingTiles.getTiles()
+local WallDetailingTiles = require 'BM_ValidWallDetailingTiles';
+local removableWallDetailingTiles = WallDetailingTiles.getTiles();
 
-local TrafficLineTiles = require 'BM_ValidTrafficLineTiles'
-local removableTrafficLineTiles = TrafficLineTiles.getTiles()
+local TrafficLineTiles = require 'BM_ValidTrafficLineTiles';
+local removableTrafficLineTiles = TrafficLineTiles.getTiles();
 
 
-BM_Commands = {}
-BM_Commands.object = {}
-BM_Commands.Lightpoles = {}
+BM_Commands = {};
+BM_Commands.object = {};
+BM_Commands.Lightpoles = {};
 
 
 BM_Commands.wantNoise = getDebug()
 local noise = function(msg)
 	if (BM_Commands.wantNoise) then
-		print('ClientCommand: ' .. msg)
+		BM_Utils.debugPrint("[Building Menu DEBUG] SERVER COMMANDS: ", msg);
 	end
 end
 
@@ -242,7 +243,7 @@ BM_Commands.OnClientCommand = function(module, command, player, args)
 		for k, v in pairs(args) do
 			argStr = argStr .. ' ' .. k .. '=' .. tostring(v)
 		end
-		noise('received ' .. module .. ' ' .. command .. ' ' .. tostring(player) .. argStr)
+		noise(' received ' .. module .. ' ' .. command .. ' ' .. tostring(player) .. argStr)
 		BM_Commands[module][command](player, args)
 	end
 end
@@ -252,59 +253,59 @@ Events.OnClientCommand.Add(BM_Commands.OnClientCommand)
 --- FIX FOR 
 --- Issue: Cannot read field "ID" because `closedSprite` is null, preventing chunks from saving.
 
-local function loadGridsquare(sq)
-    if not sq then return; end
-    if isClient() then return; end
+-- local function loadGridsquare(sq)
+--     if not sq then return; end
+--     if isClient() then return; end
 
-	for i=0, sq:getObjects():size()-1 do
-		local isoObject = sq:getObjects():get(i);
-		if isoObject and instanceof(isoObject, "IsoDoor") then
-			local x, y, z = sq:getX(), sq:getY(), sq:getZ();
-			local isoSprite = isoObject:getSprite();
-			local openIsoSprite = isoObject:getOpenSprite();
+-- 	for i=0, sq:getObjects():size()-1 do
+-- 		local isoObject = sq:getObjects():get(i);
+-- 		if isoObject and instanceof(isoObject, "IsoDoor") then
+-- 			local x, y, z = sq:getX(), sq:getY(), sq:getZ();
+-- 			local isoSprite = isoObject:getSprite();
+-- 			local openIsoSprite = isoObject:getOpenSprite();
 
-			local isoSpriteName = isoSprite and isoSprite:getName() or nil;
-			local openIsoSpriteName = openIsoSprite and openIsoSprite:getName() or nil;
+-- 			local isoSpriteName = isoSprite and isoSprite:getName() or nil;
+-- 			local openIsoSpriteName = openIsoSprite and openIsoSprite:getName() or nil;
 
-            if not isoSpriteName then
-                print(string.format("[Building Menu DEBUG] Reverting missing Closed Sprite at coords: (%d, %d, %d)", x, y, z));
-            end
-            if not openIsoSpriteName then
-                print(string.format("[Building Menu DEBUG] Reverting missing Opened Sprite at coords: (%d, %d, %d)", x, y, z));
-            end
+--             if not isoSpriteName then
+--                 print(string.format("[Building Menu DEBUG] Reverting missing Closed Sprite at coords: (%d, %d, %d)", x, y, z));
+--             end
+--             if not openIsoSpriteName then
+--                 print(string.format("[Building Menu DEBUG] Reverting missing Opened Sprite at coords: (%d, %d, %d)", x, y, z));
+--             end
 
-			if isoSpriteName and not openIsoSpriteName then
-				local baseName, number = string.match(isoSpriteName, "(.-)(%d+)$");
-				if baseName and number then
-					number = tonumber(number) + 2;
-					openIsoSpriteName = baseName .. number;
-					local newOpenSprite = getSprite(openIsoSpriteName);
-					if newOpenSprite then
-						newOpenSprite:setName(openIsoSpriteName);
-                        isoObject:setOpenSprite(newOpenSprite);
-                        print(string.format("[Building Menu DEBUG] Set new open sprite '%s' at coords: (%d, %d, %d)", openIsoSpriteName, x, y, z));
-                        isoObject:transmitUpdatedSpriteToClients();
-                    else
-                        print(string.format("[Building Menu ERROR] Failed to retrieve sprite for '%s' at coords: (%d, %d, %d)", openIsoSpriteName, x, y, z));
-                    end
-				end
-			elseif openIsoSpriteName and not isoSpriteName then
-				local baseName, number = string.match(openIsoSpriteName, "(.-)(%d+)$");
-				if baseName and number then
-					number = tonumber(number) - 2;
-					isoSpriteName = baseName .. number;
-					local newClosedSprite = getSprite(isoSpriteName);
-					if newClosedSprite then
-						newClosedSprite:setName(isoSpriteName);
-                        isoObject:setSprite(newClosedSprite);
-                        print(string.format("[Building Menu DEBUG] Set new closed sprite '%s' at coords: (%d, %d, %d)", isoSpriteName, x, y, z));
-                        isoObject:transmitUpdatedSpriteToClients();
-                    else
-                        print(string.format("[Building Menu ERROR] Failed to retrieve sprite for '%s' at coords: (%d, %d, %d)", isoSpriteName, x, y, z));
-                    end
-				end
-			end
-		end
-	end
-end
-Events.LoadGridsquare.Add(loadGridsquare);
+-- 			if isoSpriteName and not openIsoSpriteName then
+-- 				local baseName, number = string.match(isoSpriteName, "(.-)(%d+)$");
+-- 				if baseName and number then
+-- 					number = tonumber(number) + 2;
+-- 					openIsoSpriteName = baseName .. number;
+-- 					local newOpenSprite = getSprite(openIsoSpriteName);
+-- 					if newOpenSprite then
+-- 						newOpenSprite:setName(openIsoSpriteName);
+--                         isoObject:setOpenSprite(newOpenSprite);
+--                         print(string.format("[Building Menu DEBUG] Set new open sprite '%s' at coords: (%d, %d, %d)", openIsoSpriteName, x, y, z));
+--                         isoObject:transmitUpdatedSpriteToClients();
+--                     else
+--                         print(string.format("[Building Menu ERROR] Failed to retrieve sprite for '%s' at coords: (%d, %d, %d)", openIsoSpriteName, x, y, z));
+--                     end
+-- 				end
+-- 			elseif openIsoSpriteName and not isoSpriteName then
+-- 				local baseName, number = string.match(openIsoSpriteName, "(.-)(%d+)$");
+-- 				if baseName and number then
+-- 					number = tonumber(number) - 2;
+-- 					isoSpriteName = baseName .. number;
+-- 					local newClosedSprite = getSprite(isoSpriteName);
+-- 					if newClosedSprite then
+-- 						newClosedSprite:setName(isoSpriteName);
+--                         isoObject:setSprite(newClosedSprite);
+--                         print(string.format("[Building Menu DEBUG] Set new closed sprite '%s' at coords: (%d, %d, %d)", isoSpriteName, x, y, z));
+--                         isoObject:transmitUpdatedSpriteToClients();
+--                     else
+--                         print(string.format("[Building Menu ERROR] Failed to retrieve sprite for '%s' at coords: (%d, %d, %d)", isoSpriteName, x, y, z));
+--                     end
+-- 				end
+-- 			end
+-- 		end
+-- 	end
+-- end
+-- Events.LoadGridsquare.Add(loadGridsquare);

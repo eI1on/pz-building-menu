@@ -112,8 +112,8 @@ end
 --- Draws a number on the screen.
 ---@param number number The number to draw.
 ---@param color string The color of the number.
----@param x number The X-coordinate.
----@param y number The Y-coordinate.
+---@param x number The x coordinate.
+---@param y number The y coordinate.
 function ISMechanicalDialLock:drawNumber(number, color, x, y)
     local r, g, b = 1, 1, 1
     if color == 'grey' then
@@ -176,8 +176,8 @@ end
 
 
 --- Handles mouse movement.
----@param dx number The change in X-coordinate.
----@param dy number The change in Y-coordinate.
+---@param dx number The change in x coordinate.
+---@param dy number The change in y coordinate.
 function ISMechanicalDialLock:onMouseMove(dx, dy)
     if self.mouseDown then
         local newAngle = self:getMouseAngle()
@@ -186,16 +186,16 @@ function ISMechanicalDialLock:onMouseMove(dx, dy)
 end
 
 --- Handles mouse button press.
----@param x number The X-coordinate of the mouse.
----@param y number The Y-coordinate of the mouse.
+---@param x number The x coordinate of the mouse.
+---@param y number The y coordinate of the mouse.
 function ISMechanicalDialLock:onMouseDown(x, y)
     self.mouseDown = true;
     self.lastAngle = self:getMouseAngle();
 end
 
 --- Handles mouse button release.
----@param x number The X-coordinate of the mouse.
----@param y number The Y-coordinate of the mouse.
+---@param x number The x coordinate of the mouse.
+---@param y number The y coordinate of the mouse.
 function ISMechanicalDialLock:onMouseUp(x, y)
     self.mouseDown = false;
 end
@@ -318,8 +318,8 @@ function ISMechanicalDialLock:close()
 end
 
 --- Creates a new instance of ISMechanicalDialLock.
----@param x number The X-coordinate of the panel.
----@param y number The Y-coordinate of the panel.
+---@param x number The x coordinate of the panel.
+---@param y number The y coordinate of the panel.
 ---@param width number The width of the panel.
 ---@param height number The height of the panel.
 ---@param target any The target of the panel.

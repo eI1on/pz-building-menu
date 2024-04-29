@@ -276,19 +276,10 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Uses",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Uses",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Uses",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Uses",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 Uses",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Wood Material Cost for BIG Walls",

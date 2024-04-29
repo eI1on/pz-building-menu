@@ -99,6 +99,9 @@ function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
     end
 end
 
+---@param maxCols number
+---@param maxRows number
+---@return table|nil
 function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
     if self.selectedTileRow > 0 and self.selectedTileCol > 0 and self.selectedTileRow <= maxRows and self.selectedTileCol <= maxCols then
         return self.posToObjectNameTable[self.selectedTileRow] and
@@ -107,23 +110,72 @@ function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
     return nil;
 end
 
+local spriteCache = {};
+
+---@param selectedObject table
 function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
     local tooltipDescription = "";
     tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix =
         BuildingMenu.canBuildObject(self.character, tooltipDescription, selectedObject.objDef.data.recipe);
     self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
 
-    local isThumpableStr = "";
-    if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
-        if self.overwriteIsThumpable then
-            isThumpableStr = " <BR> " .. BuildingMenu.bhsString .." INDESTRUCTIBLE ";
+    local function processSprite(sprite)
+        if not sprite or spriteCache[sprite] then
+            return spriteCache[sprite] or {};
+        end
+
+        local containerDetails = {};
+        local cell = getWorld():getCell();
+        local square = self.character:getCurrentSquare();
+        local isoObject = IsoObject.new(cell, square, sprite);
+        isoObject:createContainersFromSpriteProperties();
+
+        for i = 1, isoObject:getContainerCount() do
+            local itemContainer = isoObject:getContainerByIndex(i-1);
+            local containerCapacity = itemContainer:getEffectiveCapacity(self.character) or 0;
+            local containerType = itemContainer:getType();
+            local containerTitle = getTextOrNull("IGUI_ContainerTitle_" .. containerType) or containerType;
+
+            table.insert(containerDetails, string.format("%s: %d", containerTitle, containerCapacity));
+        end
+
+        spriteCache[sprite] = containerDetails;
+        return containerDetails;
+    end
+
+    local containerInfo = {};
+    local partNames = {"Tooltip_BuildingObject_Main_Part", "Tooltip_BuildingObject_Secondary_Part", "Tooltip_BuildingObject_Tertiary_Part", "Tooltip_BuildingObject_Quaternary_Part"};
+    for i, spriteKey in ipairs({"sprite", "sprite2", "sprite3", "sprite4"}) do
+        local sprite = selectedObject.objDef.data.sprites[spriteKey];
+        if sprite then
+            local props = getSprite(sprite):getProperties();
+            if props:Is("container") or props:Is("Freezer") then
+                local partName = partNames[i] or "Tooltip_BuildingObject_Extra_Part";
+                local details = processSprite(sprite);
+                if #details > 0 then
+                    table.insert(containerInfo, getText(partName) .. ": " .. table.concat(details, " | "));
+                end
+            end
         end
     end
 
-    self.tooltip.description = selectedObject.objDef.description .. isThumpableStr .. " <RGB:1,0,0> " .. tooltipDescription;
+    local containerStr = #containerInfo > 0 and (table.concat(containerInfo, " <LINE> ") .. " <LINE>") or "";
+
+    local isThumpableStr = "";
+    if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
+        if self.overwriteIsThumpable then
+            isThumpableStr = " <LINE> " .. BuildingMenu.bhsString .. " INDESTRUCTIBLE ";
+        end
+    end
+
+    self.tooltip.description = string.format("%s <LINE> <RGB:1,1,1> %s %s %s", selectedObject.objDef.description, containerStr, isThumpableStr, tooltipDescription);
     self.tooltip.footNote = BuildingMenu.textCanRotate;
 end
 
+
+
+---@param col number
+---@param row number
 function BuildingMenuTilePickerList:getTileCenterPosition(col, row)
     return (col - 0.5) * TILE_WIDTH, (row - 0.5) * TILE_HEIGHT;
 end
@@ -159,7 +211,8 @@ function BuildingMenuTilePickerList:onMouseWheel(del)
     return true;
 end
 
-function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, recipe, options)
+---@param objData table
+function BuildingMenuTilePickerList:processBuild(objData)
     local playerNum = self.character:getPlayerNum();
     local spritesName = objData.objDef.data.sprites;
     local objectName = objData.objDef.name;
@@ -191,14 +244,13 @@ function BuildingMenuTilePickerList:processBuild(objData, playerNum, onBuild, re
     end
 
 
-    -- BM_Utils.debugPrint("[Building Menu Debug] objData.materialFoundIndexMatrix ", objData.materialFoundIndexMatrix);
-    -- BM_Utils.debugPrint("[Building Menu Debug] objData.consumablesFoundIndexMatrix ", objData.consumablesFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.materialFoundIndexMatrix ", objData.materialFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.consumablesFoundIndexMatrix ", objData.consumablesFoundIndexMatrix);
 
 
     -- Helper function to process Material Groups or Consumable Groups
     local function processItems(itemGroupInfo, targetList, groupType)
         -- Iterate over each group's found items and amounts
-
         for i, groupInfo in pairs(itemGroupInfo) do
             -- Go through each Alternative Items within a group
             for j, itemDetails in pairs(groupInfo) do
@@ -260,12 +312,7 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
     local selectedObject = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
 
     if selectedObject and selectedObject.canBuild then
-        local playerNum = self.character:getPlayerNum();
-        local recipe = selectedObject.objDef.data.recipe;
-        local options = selectedObject.objDef.data.options;
-        local onBuild = selectedObject.objDef.data.action;
-
-        self:processBuild(selectedObject, playerNum, onBuild, recipe, options);
+        self:processBuild(selectedObject);
     end
 end
 
@@ -275,12 +322,7 @@ function BuildingMenuTilePickerList:onJoypadDown(button)
     if button == Joypad.AButton then
         local selectedObject = self:getSelectedObjectFromJoypad();
         if selectedObject and selectedObject.canBuild then
-            local playerNum = self.character:getPlayerNum();
-            local recipe = selectedObject.objDef.data.recipe;
-            local options = selectedObject.objDef.data.options;
-            local onBuild = selectedObject.objDef.data.action;
-
-            self:processBuild(selectedObject, playerNum, onBuild, recipe, options);
+            self:processBuild(selectedObject);
 
             if JoypadState.players[self.parent.playerNum + 1] then
                 setJoypadFocus(self.parent.playerNum, nil);
@@ -576,8 +618,8 @@ function ISBuildingMenuUI:createChildren()
     self.keysRichText:setMargins(5, 0, 5, 0);
 end
 
---- Changes the maximum opacity of the UI.
----@class target ISBuildingMenuUI
+--- Changes the minimum opacity of the UI.
+---@param target ISBuildingMenuUI
 ---@param value number
 ISBuildingMenuUI.onMinOpaqueChange = function(target, value)
     target.minOpaque = logTo01(value);
@@ -586,7 +628,7 @@ ISBuildingMenuUI.onMinOpaqueChange = function(target, value)
 end
 
 --- Changes the maximum opacity of the UI.
----@class target ISBuildingMenuUI
+---@param target ISBuildingMenuUI
 ---@param value number
 ISBuildingMenuUI.onMaxOpaqueChange = function(target, value)
     target.maxOpaque = logTo01(value);
@@ -603,8 +645,7 @@ function ISBuildingMenuUI:onGearButtonClick()
         local option = context:addOption("Not Thumpable", self, function(self)
             self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable;
             if isDebugEnabled() then
-                BM_Utils.debugPrint("[Building Menu Debug] self.tilesList.overwriteIsThumpable: ",
-                    self.tilesList.overwriteIsThumpable);
+                BM_Utils.debugPrint("[Building Menu DEBUG] self.tilesList.overwriteIsThumpable: ", self.tilesList.overwriteIsThumpable);
             end
         end);
         context:setOptionChecked(option, self.tilesList.overwriteIsThumpable);
@@ -615,7 +656,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isBuildRoofActive then
         local option = context:addOption("Floor is Ceiling", self, function(self)
             self.floorIsRoof = not self.floorIsRoof;
-            BM_Utils.debugPrint("[Building Menu Debug] self.floorIsRoof: ", self.floorIsRoof);
+            BM_Utils.debugPrint("[Building Menu DEBUG] self.floorIsRoof: ", self.floorIsRoof);
         end);
         context:setOptionChecked(option, self.floorIsRoof);
     end
@@ -716,6 +757,8 @@ function ISBuildingMenuUI:render()
     end
 end
 
+---@return table labels 
+---@return table icons 
 function ISBuildingMenuUI:getJoypadFocusLabelsAndIcons()
     local labels, icons = {}, {};
     local labelMove = self.uiHasFocus and self.LabelStopMove or self.LabelMove;

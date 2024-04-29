@@ -14,7 +14,7 @@ local function overrideCreatePanel(UIObject)
         ISUIElement.setY = ForcedSetY;
         local status, panel = pcall(old_createPanel, self, ...);
         ISUIElement.setY = old_setY;
-        assert(status, "[Building Menu Tweaks] Error while creating panel: " .. tostring(panel));
+        assert(status, "[Building Menu TWEAKS] Error while creating panel: " .. tostring(panel));
         return panel;
     end
 end

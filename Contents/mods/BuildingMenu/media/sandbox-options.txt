@@ -728,7 +728,7 @@ option BuildingMenuRecipes.blowTorchUses
     default = 3,
     page = BuildingMenuRecipes,
     translation = BlowTorchUses,
-    valueTranslation = BuildingMenuRecipes_blowTorchDeltaUses,
+    valueTranslation = BuildingMenuRecipes_deltaUses,
 }
 
 option BuildingMenuRecipes.bucketAsphaltMixtureUses

@@ -1,26 +1,23 @@
+---@diagnostic disable: param-type-mismatch
+---@class ISPopsicleFridge: ISBuildingObject
 ISPopsicleFridge = ISBuildingObject:derive("ISPopsicleFridge");
 
---************************************************************************--
---** ISPopsicleFridge:new
---**
---************************************************************************--
-
 ---Constructor for ISPopsicleFridge
----@param player IsoPlayer The player object.
----@param name string The name of the popsicle fridge.
----@param sprite string The sprite for the first part of the popsicle fridge.
----@param sprite2 string The sprite for the second part of the popsicle fridge.
----@param northSprite string The north-facing sprite for the first part.
----@param northSprite2 string The north-facing sprite for the second part.
----@return ISPopsicleFridge
-function ISPopsicleFridge:new(player, name, sprite, sprite2, northSprite, northSprite2)
+---@param playerNum integer The player index who is building the object
+---@param name string The name of the popsicle fridge
+---@param sprite string The sprite for the first part of the popsicle fridge
+---@param sprite2 string The sprite for the second part of the popsicle fridge
+---@param northSprite string The north-facing sprite for the first part
+---@param northSprite2 string The north-facing sprite for the second part
+---@return ISPopsicleFridge ISBuildingObject instance
+function ISPopsicleFridge:new(playerNum, name, sprite, sprite2, northSprite, northSprite2)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
 	o:setSprite(sprite);
 	o:setNorthSprite(northSprite);
-	o.player = player;
+	o.player = playerNum;
 	o.sprite2 = sprite2;
 	o.northSprite2 = northSprite2;
 	o.name = name;
@@ -32,16 +29,16 @@ function ISPopsicleFridge:new(player, name, sprite, sprite2, northSprite, northS
 	return o;
 end
 
----Creates the popsicle fridge and places it in the world.
----@param x number The x-coordinate in the world.
----@param y number The y-coordinate in the world.
----@param z number The z-coordinate (floor level).
----@param north boolean Whether the popsicle fridge is facing north.
----@param sprite string The sprite to use for this object.
+---Creates the popsicle fridge and places it in the world
+---@param x integer The x coordinate in the world
+---@param y integer The y coordinate in the world
+---@param z integer The z coordinate (floor level)
+---@param north boolean Whether the popsicle fridge is facing north
+---@param sprite string The sprite to use for this object
 function ISPopsicleFridge:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
-	self:setInfo(self.sq, north, sprite);
+	self:createPart(self.sq, north, sprite);
 
 	-- name of our 2 sprites needed for the rest of the furniture
 	local spriteAName = self.northSprite2;
@@ -59,62 +56,62 @@ function ISPopsicleFridge:create(x, y, z, north, sprite)
 	end
 	local squareA = cell:getGridSquare(xa, ya, z);
 
-	local oldModData = self.modData
-	self.modData = {}
-	self:setInfo(squareA, north, spriteAName);
+	local oldModData = self.modData;
+	self.modData = {};
+	self:createPart(squareA, north, spriteAName);
 
-	self.modData = oldModData
+	self.modData = oldModData;
 	buildUtil.consumeMaterial(self);
 end
 
----Determines which square the player should walk to in order to interact with the popsicle fridge.
----@param x number The x-coordinate in the world.
----@param y number The y-coordinate in the world.
----@param z number The z-coordinate (floor level).
+---Determines which square the player should walk to in order to build the popsicle fridge
+---@param x integer The x coordinate in the world
+---@param y integer The y coordinate in the world
+---@param z integer The z coordinate (floor level)
 ---@return boolean
 function ISPopsicleFridge:walkTo(x, y, z)
-	local playerObj = getSpecificPlayer(self.player)
-	local square = getCell():getGridSquare(x, y, z)
-	local square2 = self:getSquare2(square, self.north)
+	local playerObj = getSpecificPlayer(self.player);
+	local square = getCell():getGridSquare(x, y, z);
+	local square2 = self:getSquare2(square, self.north);
 	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
-		return luautils.walkAdj(playerObj, square)
+		return luautils.walkAdj(playerObj, square);
 	end
-	return luautils.walkAdj(playerObj, square2)
+	return luautils.walkAdj(playerObj, square2);
 end
 
----Sets information for the popsicle fridge object.
----@param square IsoGridSquare The square where the popsicle fridge will be placed.
----@param north boolean Whether the popsicle fridge is facing north.
----@param sprite string The sprite to use for this part of the popsicle fridge.
-function ISPopsicleFridge:setInfo(square, north, sprite)
+---Sets information for the popsicle fridge object
+---@param square IsoGridSquare The square where the popsicle fridge will be placed
+---@param north boolean Whether the popsicle fridge is facing north
+---@param sprite string The sprite to use for this part of the popsicle fridge
+function ISPopsicleFridge:createPart(square, north, sprite)
 	-- add furniture to our ground
 	local thumpable = IsoThumpable.new(getCell(), square, sprite, north, self);
 	-- name of the item for the tooltip
 	buildUtil.setInfo(thumpable, self);
 
-	thumpable:createContainersFromSpriteProperties()
+	thumpable:createContainersFromSpriteProperties();
 
 	for i = 1, thumpable:getContainerCount() do
-		thumpable:getContainerByIndex(i - 1):setExplored(true)
+		thumpable:getContainerByIndex(i - 1):setExplored(true);
 	end
 
 	-- the furniture have 200 base health + 100 per carpentry lvl
 	thumpable:setMaxHealth(self:getHealth());
-	thumpable:setHealth(thumpable:getMaxHealth())
+	thumpable:setHealth(thumpable:getMaxHealth());
 	-- the sound that will be played when our furniture will be broken
 	thumpable:setBreakSound("BreakObject");
 	square:AddSpecialObject(thumpable);
 	thumpable:transmitCompleteItemToServer();
 end
 
----Removes the popsicle fridge object from the ground.
----@param square IsoGridSquare The square from which to remove the popsicle fridge.
+---Removes the popsicle fridge object from the ground
+---@param square IsoGridSquare The square from which to remove the popsicle fridge
 function ISPopsicleFridge:removeFromGround(square)
 	for i = 0, square:getSpecialObjects():size() do
 		local thump = square:getSpecialObjects():get(i);
 		if instanceof(thump, "IsoThumpable") then
 			square:transmitRemoveItemFromSquare(thump);
-			break
+			break;
 		end
 	end
 
@@ -132,22 +129,22 @@ function ISPopsicleFridge:removeFromGround(square)
 		local thump = square:getSpecialObjects():get(i);
 		if instanceof(thump, "IsoThumpable") then
 			square:transmitRemoveItemFromSquare(thump);
-			break
+			break;
 		end
 	end
 end
 
----Calculates the health of the popsicle fridge based on certain conditions.
----@return number
+---Calculates the health of the popsicle fridge based on certain conditions
+---@return integer health
 function ISPopsicleFridge:getHealth()
 	return 200 + buildUtil.getWoodHealth(self);
 end
 
----Renders the popsicle fridge object in the world, showing a ghost image before placement.
----@param x number The x-coordinate in the world.
----@param y number The y-coordinate in the world.
----@param z number The z-coordinate (floor level).
----@param square IsoGridSquare The square where the popsicle fridge will be placed.
+---Renders the popsicle fridge object in the world, showing a ghost tile before placement
+---@param x integer The x coordinate in the world
+---@param y integer The y coordinate in the world
+---@param z integer The z coordinate (floor level)
+---@param square IsoGridSquare The square where the popsicle fridge will be placed
 function ISPopsicleFridge:render(x, y, z, square)
 	-- prepare the rendering for the first part of the popsicle fridge
 	local spriteName = self:getSprite();
@@ -170,37 +167,37 @@ function ISPopsicleFridge:render(x, y, z, square)
 	end
 
 	-- determine the position and sprite for the second part
-	local xa, ya, za = self:getSquare2Pos(square, self.north)
-	local spriteAName = self.north and self.northSprite2 or self.sprite2
-	local squareA = getCell():getGridSquare(xa, ya, za)
+	local xa, ya, za = self:getSquare2Pos(square, self.north);
+	local spriteAName = self.north and self.northSprite2 or self.sprite2;
+	local squareA = getCell():getGridSquare(xa, ya, za);
 
 	-- initialize and load the second part sprite
 	if not self.RENDER_SPRITE_A then
-		self.RENDER_SPRITE_A = IsoSprite.new()
+		self.RENDER_SPRITE_A = IsoSprite.new();
 	end
-	self.RENDER_SPRITE_A:LoadFramesNoDirPageSimple(spriteAName)
+	self.RENDER_SPRITE_A:LoadFramesNoDirPageSimple(spriteAName);
 
 	-- check validity for the second part of the popsicle fridge
-	local canPlaceSecondPart = self:checkSingleTileValidity(squareA)
+	local canPlaceSecondPart = self:checkSingleTileValidity(squareA);
 
 	-- render the second part with appropriate color
 	if canPlaceSecondPart then
-		self.RENDER_SPRITE_A:RenderGhostTile(xa, ya, za)
+		self.RENDER_SPRITE_A:RenderGhostTile(xa, ya, za);
 	else
-		self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za)
+		self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za);
 	end
 
 	-- optionally draw a floor helper for each part
 	if self.renderFloorHelper then
 		if not self.RENDER_SPRITE_FLOOR then
-			self.RENDER_SPRITE_FLOOR = IsoSprite.new()
-			self.RENDER_SPRITE_FLOOR:LoadFramesNoDirPageSimple('carpentry_02_56')
+			self.RENDER_SPRITE_FLOOR = IsoSprite.new();
+			self.RENDER_SPRITE_FLOOR:LoadFramesNoDirPageSimple('carpentry_02_56');
 		end
 		self.RENDER_SPRITE_FLOOR:RenderGhostTile(x, y, z);
 
 		if not self.RENDER_SPRITE_FLOOR_A then
-			self.RENDER_SPRITE_FLOOR_A = IsoSprite.new()
-			self.RENDER_SPRITE_FLOOR_A:LoadFramesNoDirPageSimple('carpentry_02_56')
+			self.RENDER_SPRITE_FLOOR_A = IsoSprite.new();
+			self.RENDER_SPRITE_FLOOR_A:LoadFramesNoDirPageSimple('carpentry_02_56');
 		end
 		self.RENDER_SPRITE_FLOOR_A:RenderGhostTile(xa, ya, za);
 	end
@@ -239,67 +236,67 @@ local function checkSquare(squareToCheck, selfIsLow, selfIsHigh)
 	return canPlace;
 end
 
----Checks if a single tile is valid for popsicle fridge placement.
----@param square IsoGridSquare The square to check.
----@return boolean
+---Checks if a single tile is valid for popsicle fridge placement
+---@param square IsoGridSquare The square to check
+---@return boolean validity
 function ISPopsicleFridge:checkSingleTileValidity(square)
-	if not square then return false end
-	if buildUtil.stairIsBlockingPlacement(square, true) then return false end
-	if square:isVehicleIntersecting() then return false end
-	if not square:isFreeOrMidair(true) then return false end
+	if not square then return false; end
+	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
+	if square:isVehicleIntersecting() then return false; end
+	if not square:isFreeOrMidair(true) then return false; end
 
-	local sharedSprite = getSprite(self:getSprite())
-	local selfProps = sharedSprite:getProperties()
+	local sharedSprite = getSprite(self:getSprite());
+	local selfProps = sharedSprite:getProperties();
 	local selfIsLow, selfIsHigh = selfProps:Is("IsLow"), selfProps:Is("IsHigh");
 
 	return checkSquare(square, selfIsLow, selfIsHigh);
 end
 
----Checks if the popsicle fridge placement is valid considering both parts.
----@param square IsoGridSquare The square to check for the first part.
----@return boolean
+---Checks if the popsicle fridge placement is valid considering both parts
+---@param square IsoGridSquare The square to check for the first part
+---@return boolean validity
 function ISPopsicleFridge:isValid(square)
-	if not square then return false end
-	if buildUtil.stairIsBlockingPlacement(square, true) then return false end
-	if square:isVehicleIntersecting() then return false end
-	if not square:isFreeOrMidair(true) then return false end
+	if not square then return false; end
+	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
+	if square:isVehicleIntersecting() then return false; end
+	if not square:isFreeOrMidair(true) then return false; end
 
-	local xa, ya, za = self:getSquare2Pos(square, self.north)
-	local squareA = getCell():getGridSquare(xa, ya, za)
+	local xa, ya, za = self:getSquare2Pos(square, self.north);
+	local squareA = getCell():getGridSquare(xa, ya, za);
 
 	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) or squareA:isVehicleIntersecting() then
-		return false
+		return false;
 	end
 
 	local sharedSprite = getSprite(self:getSprite());
 	local selfProps = sharedSprite:getProperties();
 
-	local selfIsLow = selfProps:Is("IsLow")
-	local selfIsHigh = selfProps:Is("IsHigh")
+	local selfIsLow = selfProps:Is("IsLow");
+	local selfIsHigh = selfProps:Is("IsHigh");
 
-	return checkSquare(square, selfIsLow, selfIsHigh) and checkSquare(squareA, selfIsLow, selfIsHigh)
+	return checkSquare(square, selfIsLow, selfIsHigh) and checkSquare(squareA, selfIsLow, selfIsHigh);
 end
 
----Calculates the position of the second part of the popsicle fridge.
----@param square IsoGridSquare The square of the first part.
----@param north boolean Whether the popsicle fridge is facing north.
----@return number x, number y, number z The x, y, and z coordinates for the second part.
+---Calculates the position of the second part of the popsicle fridge
+---@param square IsoGridSquare The square of the first part
+---@param north boolean Whether the popsicle fridge is facing north
+---@return integer x, integer y, integer z The x, y, and z coordinates for the second part
 function ISPopsicleFridge:getSquare2Pos(square, north)
-	local x = square:getX()
-	local y = square:getY()
+	local x = square:getX();
+	local y = square:getY();
 	if north then
-		y = y - 1
+		y = y - 1;
 	else
-		x = x - 1
+		x = x - 1;
 	end
-	return x, y, square:getZ()
+	return x, y, square:getZ();
 end
 
----Retrieves the square for the second part of the popsicle fridge.
----@param square IsoGridSquare The square of the first part.
----@param north boolean Whether the popsicle fridge is facing north.
----@return IsoGridSquare
+---Retrieves the square for the second part of the popsicle fridge
+---@param square IsoGridSquare The square of the first part
+---@param north boolean Whether the popsicle fridge is facing north
+---@return IsoGridSquare square
 function ISPopsicleFridge:getSquare2(square, north)
-	local x, y, z = self:getSquare2Pos(square, north)
-	return getCell():getGridSquare(x, y, z)
+	local x, y, z = self:getSquare2Pos(square, north);
+	return getCell():getGridSquare(x, y, z);
 end

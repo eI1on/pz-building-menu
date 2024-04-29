@@ -26,7 +26,7 @@ local BuildingMenu = {};
 BuildingMenu.playerCanPlaster = false;
 
 ---@type string
-BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <LINE> <LINE>' .. getText('Tooltip_craft_Needs') .. ': <LINE> ';
+BuildingMenu.textTooltipHeader = '<RGB:1,1,1> <BR>' .. getText('Tooltip_craft_Needs') .. ': <LINE> ';
 
 ---@type string
 BuildingMenu.textCanRotate = getText("Tooltip_craft_pressToRotate",
@@ -710,14 +710,14 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
         end
     end
 
-    tooltipDescription = tooltipDescription .. " <LINE>";
+    tooltipDescription = tooltipDescription .. " <LINE> ";
 
     if objectRecipe.neededTools then
         local toolsTooltipDescription = "";
-        for _, _currentTool in pairs(objectRecipe.neededTools) do
+        for _, currentTool in pairs(objectRecipe.neededTools) do
             toolsTooltipDescription, currentResult = BuildingMenu.tooltipCheckForTool(
                 playerInv,
-                _currentTool
+                currentTool
             );
             tooltipDescription = tooltipDescription .. toolsTooltipDescription;
 
@@ -727,7 +727,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
         end
     end
 
-    tooltipDescription = tooltipDescription .. " <LINE>";
+    tooltipDescription = tooltipDescription .. " <LINE> ";
 
     local playerSkills = BuildingMenu.getPlayerSkills(playerObj);
     if objectRecipe.skills then
@@ -736,12 +736,12 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
             if playerSkills[skill.Skill] < skill.Level then
                 skillsTooltipDescription = BuildingMenu.bhsString ..
                 getText("IGUI_perks_" .. skill.Skill) ..
-                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE> ";
                 canBuildResult = false;
             else
                 skillsTooltipDescription = BuildingMenu.ghsString ..
                 getText("IGUI_perks_" .. skill.Skill) ..
-                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE>";
+                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE> ";
             end
             tooltipDescription = tooltipDescription .. skillsTooltipDescription;
         end
@@ -752,7 +752,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     -- BM_Utils.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
 
     if ISBuildMenu.cheat then
-        tooltipDescription = "<LINE> <LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltipDescription;
+        tooltipDescription = "<LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltipDescription;
         canBuildResult = true;
     end
 

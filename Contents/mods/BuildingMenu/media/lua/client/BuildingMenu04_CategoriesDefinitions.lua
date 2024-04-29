@@ -35278,9 +35278,7 @@ local function addOtherDecorationsToMenu()
                     },
                     {
                         sprite = "construction_01_9",
-                        northSprite = "construction_01_8",
-                        eastSprite = "construction_01_8",
-                        southSprite = "construction_01_9"
+                        northSprite = "construction_01_8"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -36492,7 +36490,7 @@ local function addLandscapingToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Hedges_Generic",
-                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.onBuildSpecialObject,
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {

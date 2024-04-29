@@ -1,42 +1,66 @@
-ISClothingDryer = ISBuildingObject:derive('ISClothingDryer')
+--- @class ISClothingDryer : ISBuildingObject
+ISClothingDryer = ISBuildingObject:derive('ISClothingDryer');
 
+--- Creates a new clothing dryer object at a given position
+--- @param x integer The x coordinate of the dryer
+--- @param y integer The y coordinate of the dryer
+--- @param z integer The z coordinate of the dryer
+--- @param north boolean The orientation of the dryer
+--- @param sprite string The sprite used to visually represent the dryer
 function ISClothingDryer:create(x, y, z, north, sprite)
-  local cell = getWorld():getCell()
-  self.sq = cell:getGridSquare(x, y, z)
-  self.javaObject = IsoClothingDryer.new(getCell(), self.sq, getSprite(sprite))
-  self.javaObject:setMovedThumpable(true)
-  self.javaObject:createContainersFromSpriteProperties()
-  buildUtil.consumeMaterial(self);
-  self.sq:AddSpecialObject(self.javaObject)
-  self.javaObject:transmitCompleteItemToServer()
-end
+  local cell = getWorld():getCell();
+  self.sq = cell:getGridSquare(x, y, z);
 
+  self.javaObject = IsoClothingDryer.new(cell, self.sq, getSprite(sprite));
+  self.javaObject:setMovedThumpable(true);
+  self.javaObject:createContainersFromSpriteProperties();
+
+  buildUtil.consumeMaterial(self);
+
+  self.sq:AddSpecialObject(self.javaObject);
+  self.javaObject:transmitCompleteItemToServer();
+end;
+
+--- Checks if the placement of the dryer is valid on the given square
+--- @param square IsoGridSquare The square where the dryer is to be placed
+--- @return boolean validity True if the dryer can be placed, false otherwise
 function ISClothingDryer:isValid(square)
   if not ISBuildingObject.isValid(self, square) then
-    return false
+    return false;
   end
-  return true
-end
+  return true;
+end;
 
+--- Renders a ghost tile of the clothing dryer, delegates to the superclass
+--- @param x integer The x coordinate to render
+--- @param y integer The y coordinate to render
+--- @param z integer The z coordinate to render
+--- @param square IsoGridSquare The square associated with the object
 function ISClothingDryer:render(x, y, z, square)
-  ISBuildingObject.render(self, x, y, z, square)
-end
+  ISBuildingObject.render(self, x, y, z, square);
+end;
 
-function ISClothingDryer:new(player, name, sprite, northSprite)
-  local o = {}
-  setmetatable(o, self)
-  self.__index = self
-  o:init()
-  o:setSprite(sprite)
-  o:setNorthSprite(northSprite)
+--- Initializes a new instance of ISClothingDryer
+--- @param playerNum integer The player index building the dryer
+--- @param name string The name of the dryer
+--- @param sprite string The primary sprite for the object
+--- @param northSprite string The sprite for the object when facing north
+--- @return ISClothingDryer dryer The instance of the dryer object
+function ISClothingDryer:new(playerNum, name, sprite, northSprite)
+  local o = {};
+  setmetatable(o, self);
+  self.__index = self;
+  o:init();
+  o:setSprite(sprite);
+  o:setNorthSprite(northSprite);
   o.canBarricade = false;
-  o.player = player
-  o.dismantable = true
-  o.name = name
-  o.stopOnWalk = true
-  o.stopOnRun = true
+  o.player = playerNum;
+  o.dismantable = true;
+  o.name = name;
+  o.stopOnWalk = true;
+  o.stopOnRun = true;
   o.blockAllTheSquare = true;
   o.canBeAlwaysPlaced = true;
-  o.maxTime = 500
-  return o
-end
+  o.maxTime = 500;
+  return o;
+end;

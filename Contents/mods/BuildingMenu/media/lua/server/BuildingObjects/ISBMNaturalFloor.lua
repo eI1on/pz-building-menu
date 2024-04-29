@@ -1,36 +1,51 @@
+---@class ISBMNaturalFloor : ISBuildingObject
 ISBMNaturalFloor = ISBuildingObject:derive("ISBMNaturalFloor");
 
---************************************************************************--
---** ISBMNaturalFloor:new
---**
---************************************************************************--
-
+--- Creates a new floor object at the specified location. If the prerequisites are not met (e.g., no existing floor), the function returns early
+---@param x integer The x coordinate of the square
+---@param y integer The y coordinate of the square
+---@param z integer The z coordinate (floor level)
+---@param north boolean If the object is aligned to the north
+---@param sprite string The sprite to use for the floor
 function ISBMNaturalFloor:create(x, y, z, north, sprite)
-	self.sq = getWorld():getCell():getGridSquare(x, y, z)
-	if not self.sq then return end
-	local floor = self.sq:getFloor()
-	if not floor then return end
-	self.javaObject = self.sq:addFloor(sprite)
-	if not self.javaObject then return end
+	local cell = getWorld():getCell();
+
+	self.sq = cell:getGridSquare(x, y, z);
+	if not self.sq then return; end
+
+	local floor = self.sq:getFloor();
+	if not floor then return; end
+
+	self.javaObject = self.sq:addFloor(sprite);
+	if not self.javaObject then return; end
+
 	if self.item then
-		local playerInv = self.character:getInventory()
+		local playerInv = self.playerObj:getInventory();
 		for i = 1, self.uses do
 			if playerInv:containsRecursive(self.item) then
-				self.item:Use()
+				self.item:Use();
 			else
-				break
+				break;
 			end
 		end
 		if not playerInv:containsRecursive(self.item) then
-			self.item = playerInv:getFirstTypeRecurse(self.item:getFullType())
+			self.item = playerInv:getFirstTypeRecurse(self.item:getFullType());
 		end
 	end
-	local playerNum = self.character:getPlayerNum()
-	getPlayerInventory(playerNum):refreshBackpacks()
-	getPlayerLoot(playerNum):refreshBackpacks()
+
+	local playerNum = self.playerObj:getPlayerNum();
+	getPlayerInventory(playerNum):refreshBackpacks();
+	getPlayerLoot(playerNum):refreshBackpacks();
 end
 
-function ISBMNaturalFloor:new(sprite, northSprite, item, uses, character)
+--- Constructor for the ISBMNaturalFloor class
+---@param sprite string The primary sprite for the object
+---@param northSprite string The sprite used when the object is aligned north
+---@param item InventoryItem The item required to create this object
+---@param uses integer The integer of items used when creating this object
+---@param playerObj IsoPlayer The playerObj creating the object
+---@return ISBMNaturalFloor ISBuildingObject instance
+function ISBMNaturalFloor:new(sprite, northSprite, item, uses, playerObj)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
@@ -40,7 +55,7 @@ function ISBMNaturalFloor:new(sprite, northSprite, item, uses, character)
 	o.item = item;
 	o.uses = uses;
 	o.itemType = item and item:getFullType() or "none";
-	o.character = character;
+	o.playerObj = playerObj;
 	o.noNeedHammer = true;
 	o.actionAnim = CharacterActionAnims.Pour;
 	o.floorType = o:getFloorType(item);
@@ -53,47 +68,49 @@ function ISBMNaturalFloor:new(sprite, northSprite, item, uses, character)
 	return o;
 end
 
+--- Checks if the placement of a floor is valid
+---@param square IsoGridSquare The square to check for validity
+---@return boolean validity Whether the floor can be placed
 function ISBMNaturalFloor:isValid(square)
 	if ISBuildMenu.cheat then return true; end
-	local playerInv = self.character:getInventory()
+	local playerInv = self.playerObj:getInventory();
+
 	if CFarmingSystem.instance:getLuaObjectOnSquare(square) then
-		return false
+		return false;
 	end
+
 	if square and square:getProperties() then
 		local props = square:getProperties();
 		if props:Is(IsoFlagType.water) then
 			return false;
 		end
 	end
+
 	if self.item ~= nil and square ~= nil and square:getFloor() ~= nil then
 		if playerInv:containsRecursive(self.item) then
-			return true
+			return true;
 		else
-			self.item = playerInv:getFirstTypeRecurse(self.itemType)
-			return self.item ~= nil
+			self.item = playerInv:getFirstTypeRecurse(self.itemType);
+			return self.item ~= nil;
 		end
 	end
-	return false
+	return false;
 end
 
+--- Renders a ghost tile of the ISBMNaturalFloor, delegates to the superclass
+---@param x integer The x coordinate to render
+---@param y integer The y coordinate to render
+---@param z integer The z coordinate (floor level) to render
+---@param square IsoGridSquare The square where the object will be rendered
 function ISBMNaturalFloor:render(x, y, z, square)
 	ISBuildingObject.render(self, x, y, z, square);
 end
 
-function ISBMNaturalFloor:walkTo(x, y, z)
-	if ISBuildingObject.walkTo(self, x, y, z) then
-		if self.item then
-			ISWorldObjectContextMenu.transferIfNeeded(self.character, self.item)
-		end
-		return true
-	end
-	return false
-end
-
+--- Determines the floor type based on the item used to create the floor
+---@param item InventoryItem The item used to create the floor
+---@return string type The type of floor (gravel, dirt, sand, or none)
 function ISBMNaturalFloor:getFloorType(item)
-	if not item then
-		return "none";
-	end
+	if not item then return "none"; end
 	if item:getFullType() == "Base.Gravelbag" then
 		return "gravel";
 	elseif item:getFullType() == "Base.Dirtbag" then
@@ -104,23 +121,26 @@ function ISBMNaturalFloor:getFloorType(item)
 	return "none";
 end
 
+--- Utility function to get all the sprite names for a floor tile
+---@param square IsoGridSquare The square to check
+---@return table<string> sprites List of sprite names for the floor tile
 function ISBMNaturalFloor.getFloorSpriteNames(square)
-	local sprites = {}
-	local floor = square:getFloor()
+	local sprites = {};
+	local floor = square:getFloor();
 	if floor then
-		local sprite = floor:getSprite()
+		local sprite = floor:getSprite();
 		if sprite and sprite:getName() then
-			table.insert(sprites, sprite:getName())
-			local attached = floor:getAttachedAnimSprite()
+			table.insert(sprites, sprite:getName());
+			local attached = floor:getAttachedAnimSprite();
 			if attached then
 				for i = 1, attached:size() do
-					sprite = attached:get(i - 1):getParentSprite()
+					sprite = attached:get(i - 1):getParentSprite();
 					if sprite and sprite:getName() then
-						table.insert(sprites, sprite:getName())
+						table.insert(sprites, sprite:getName());
 					end
 				end
 			end
 		end
 	end
-	return sprites
+	return sprites;
 end

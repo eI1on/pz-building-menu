@@ -195,4 +195,26 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         props:CreateKeySet()
     end
 
+
+    sprites = {
+        "d_furniture_kitchen_01_0",
+        "d_furniture_kitchen_01_1",
+        "d_furniture_kitchen_01_2",
+        "d_furniture_kitchen_01_3",
+        "d_furniture_kitchen_01_4",
+        "d_furniture_kitchen_01_5",
+        "d_furniture_kitchen_01_6",
+        "d_furniture_kitchen_01_7",
+        "d_furniture_kitchen_01_112",
+        "d_furniture_kitchen_01_113",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "High", false)
+        BM_Utils.setSpriteProperty(props, "container", "overhead", false)
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.solidtrans)
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedW)
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedN)
+        props:CreateKeySet()
+    end
 end)

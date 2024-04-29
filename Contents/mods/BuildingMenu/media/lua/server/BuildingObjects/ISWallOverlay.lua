@@ -1,9 +1,11 @@
+---@class ISWallOverlay : ISBuildingObject
 ISWallOverlay = ISBuildingObject:derive("ISWallOverlay");
 
---************************************************************************--
---** ISWallOverlay:new
---**
---************************************************************************--
+--- Determines if a given object is a relevant wall for placing the overlay
+--- @param isCorner boolean Indicates if the overlay is for a corner
+--- @param object IsoObject The object to check
+--- @param north boolean Indicates if the overlay faces north
+--- @return boolean isRelevant True if the object is a relevant wall, false otherwise
 local function isRelevantWall(isCorner, object, north)
     if instanceof(object, "IsoWindow") or object:getProperties():Is(IsoFlagType.solidfloor) then return false; end
 
@@ -25,22 +27,28 @@ local function isRelevantWall(isCorner, object, north)
 end
 
 
+--- Creates and places the wall overlay in the game world
+--- @param x integer x coordinate in the world
+--- @param y integer y coordinate in the world
+--- @param z integer z coordinate (floor level)
+--- @param north boolean Indicates if the overlay faces north
+--- @param sprite string The sprite to use for this overlay
 function ISWallOverlay:create(x, y, z, north, sprite)
     self.sq = getWorld():getCell():getGridSquare(x, y, z);
 
-    local objects = self.sq:getObjects()
-    local spriteInstance = getSprite(sprite):newInstance()
+    local objects = self.sq:getObjects();
+    local spriteInstance = getSprite(sprite):newInstance();
 
     for i = 0, objects:size() - 1 do
-        local object = objects:get(i)
+        local object = objects:get(i);
         if isRelevantWall(self.isCorner, object, north) then
-            local attachedAnimSprite = object:getAttachedAnimSprite()
+            local attachedAnimSprite = object:getAttachedAnimSprite();
             if attachedAnimSprite == nil then
-                attachedAnimSprite = ArrayList:new()
-                object:setAttachedAnimSprite(attachedAnimSprite)
+                attachedAnimSprite = ArrayList:new();
+                object:setAttachedAnimSprite(attachedAnimSprite);
             end
-            attachedAnimSprite:add(spriteInstance)
-            if isClient() then object:transmitUpdatedSpriteToServer() end
+            attachedAnimSprite:add(spriteInstance);
+            if isClient() then object:transmitUpdatedSpriteToServer(); end
             break;
         end
     end
@@ -52,6 +60,10 @@ function ISWallOverlay:create(x, y, z, north, sprite)
     -- sendClientCommand('erosion', 'disableForSquare', args)
 end
 
+--- Constructor for creating a new wall overlay instance
+--- @param sprite string Main sprite for the overlay
+--- @param northSprite string North-facing sprite
+--- @return ISWallOverlay ISBuildingObject instance
 function ISWallOverlay:new(sprite, northSprite)
     local o = {};
     setmetatable(o, self);
@@ -62,6 +74,9 @@ function ISWallOverlay:new(sprite, northSprite)
     return o;
 end
 
+--- Validates if the placement of the wall overlay is permissible
+--- @param square IsoGridSquare The square to validate
+--- @return boolean validity True if placement is valid, false otherwise
 function ISWallOverlay:isValid(square)
     if not self:haveMaterial(square) then return false; end
     if self.needToBeAgainstWall then
@@ -78,6 +93,11 @@ function ISWallOverlay:isValid(square)
     return true;
 end
 
+--- Renders a ghost tile of the wall overlay for placement preview
+--- @param x integer x coordinate in the world
+--- @param y integer y coordinate in the world
+--- @param z integer z coordinate (floor level)
+--- @param square IsoGridSquare The square where the overlay will be placed
 function ISWallOverlay:render(x, y, z, square)
-    ISBuildingObject.render(self, x, y, z, square)
+    ISBuildingObject.render(self, x, y, z, square);
 end

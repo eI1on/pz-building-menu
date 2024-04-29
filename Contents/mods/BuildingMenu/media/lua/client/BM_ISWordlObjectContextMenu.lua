@@ -12,7 +12,7 @@ local BuildingMenu = require("BuildingMenu01_Main");
 
 --- Checks if the wall item is removable based on its sprite name and a list of patterns.
 ---@param spriteName string
----@param patterns table
+---@param patterns table<string>
 ---@return boolean
 local function isRemovableDetailItem(spriteName, patterns)
     for _, pattern in ipairs(patterns) do
@@ -60,7 +60,7 @@ function BuildingMenu.doRemoveTrafficLine(playerObj, square, trafficLine)
 end
 
 --- Triggers when removing wall detailing.
----@param worldobjects table
+---@param worldobjects table<integer, IsoObject>
 ---@param square IsoGridSquare
 ---@param wallDetailing IsoObject|nil
 ---@param player integer
@@ -71,7 +71,7 @@ function BuildingMenu.onRemoveWallDetailing(worldobjects, square, wallDetailing,
 end
 
 --- Triggers when removing traffic lines.
----@param worldobjects table
+---@param worldobjects table<integer, IsoObject>
 ---@param square IsoGridSquare
 ---@param trafficLine IsoObject|nil
 ---@param player integer
@@ -94,7 +94,7 @@ end
 --- Handles the creation of context menu options for world objects.
 ---@param player integer
 ---@param context ISContextMenu
----@param worldobjects table
+---@param worldobjects table<integer, IsoObject>
 ---@param test boolean
 local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
     if test and ISWorldObjectContextMenu.Test then return true; end
@@ -102,8 +102,7 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
 
     local playerObj = getSpecificPlayer(player);
     local playerInv = playerObj:getInventory();
-    local hasCuttingTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item,
-            "CutPlant") end);
+    local hasCuttingTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "CutPlant") end);
     local hasHammerTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "Hammer") end);
     local hasTrowelTool = playerInv:getFirstTypeRecurse("farming.HandShovel");
     local thump, wallVine, wallDetailing, trafficLine, safe = nil, nil, nil, nil, nil;
