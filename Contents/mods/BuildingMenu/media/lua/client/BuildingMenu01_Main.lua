@@ -18,7 +18,7 @@ local getItemNameFromFullType = getItemNameFromFullType
 
 local BM_Utils = require("BM_Utils")
 
---- BuildingMenu namespace.
+--- BuildingMenu namespace
 ---@class BuildingMenu
 local BuildingMenu = {};
 
@@ -55,7 +55,7 @@ BuildingMenu.show_item_icons = true;
 
 -- Tags: Screwdriver, CutPlant, DigPlow (eg: HandFork), Sledgehammer, ChopTree (eg: Axe), ClearAshes (eg: Broom), TakeDirt (eg: Shovel), Crowbar, Hammer, RemoveBarricade (eg: Claw Hammer)
 
---- Definitions of tools used in the building menu.
+--- Definitions of tools used in the building menu
 ---@type table<string, table>
 BuildingMenu.Tools = {}
 BuildingMenu.Tools = {
@@ -153,7 +153,7 @@ BuildingMenu.Tools = {
 }
 
 
---- Definitions of materials used in the building menu.
+--- Definitions of materials used in the building menu
 ---@type table<string, table>
 BuildingMenu.ItemsAlternatives = {};
 BuildingMenu.ItemsAlternatives = {
@@ -206,7 +206,7 @@ BuildingMenu.GroupsAlternatives = {
 };
 
 
---- Function called to fill the world object context menu.
+--- Function called to fill the world object context menu
 ---@param playerNum number
 ---@param context ISContextMenu
 ---@param worldobjects table
@@ -228,14 +228,14 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldob
 
     local option = context:insertOptionBefore(getText("ContextMenu_Build"), getText("ContextMenu_BuildingMenu"),
         worldobjects, function()
-        ISBuildingMenuUI.openPanel(playerObj);
-    end)
+            ISBuildingMenuUI.openPanel(playerObj);
+        end)
     option.iconTexture = getTexture("media/ui/building_menu.png");
 end
 Events.OnFillWorldObjectContextMenu.Add(BuildingMenu.OnFillWorldObjectContextMenu)
 
 
---- Gets the player's skills.
+--- Gets the player's skills
 ---@param playerObj IsoPlayer
 ---@return table<string, number>
 BuildingMenu.getPlayerSkills = function(playerObj)
@@ -249,14 +249,14 @@ BuildingMenu.getPlayerSkills = function(playerObj)
 end
 
 
---- Predicate function to check if an item is not broken.
+--- Predicate function to check if an item is not broken
 ---@param item InventoryItem
 ---@return boolean
 BuildingMenu.predicateNotBroken = function(item)
     return not item:isBroken();
 end
 
---- Predicate function to check if an item has a specific tag.
+--- Predicate function to check if an item has a specific tag
 ---@param item InventoryItem
 ---@param tag string
 ---@return boolean
@@ -264,18 +264,18 @@ BuildingMenu.predicateHasTag = function(item, tag)
     return not item:isBroken() and item:hasTag(tag);
 end
 
---- Calculates the uses of a welding rod.
+--- Calculates the uses of a welding rod
 ---@param torchUses number
 ---@return number
 BuildingMenu.weldingRodUses = function(torchUses)
     return math.floor((torchUses + 0.1) / 2);
 end
 
---- Rounds a number to a specified number of decimal places.
---- If `numDecimalPlaces` is not provided or less than 1, the number is rounded to the nearest integer.
---- @param num number The number to round.
---- @param numDecimalPlaces number|nil The number of decimal places to round to. Optional; if nil or less than 1, rounds to the nearest integer.
---- @return number num The rounded number.
+--- Rounds a number to a specified number of decimal places
+--- If `numDecimalPlaces` is not provided or less than 1, the number is rounded to the nearest integer
+--- @param num number The number to round
+--- @param numDecimalPlaces number|nil The number of decimal places to round to. Optional; if nil or less than 1, rounds to the nearest integer
+--- @return number num The rounded number
 BuildingMenu.round = function(num, numDecimalPlaces)
     if numDecimalPlaces and numDecimalPlaces > 0 then
         local multiplier = 10 ^ numDecimalPlaces;
@@ -286,7 +286,7 @@ BuildingMenu.round = function(num, numDecimalPlaces)
     return math.max(roundedNum, 1);
 end
 
---- Gets the display name of a moveable object.
+--- Gets the display name of a moveable object
 ---@param sprite string
 ---@return string|nil
 BuildingMenu.getMoveableDisplayName = function(sprite)
@@ -299,13 +299,13 @@ BuildingMenu.getMoveableDisplayName = function(sprite)
         name = props:Val('GroupName');
     end
     if hasCustomName then
-        if name ~= "" then name = name .. " ";end
+        if name ~= "" then name = name .. " "; end
         name = name .. props:Val('CustomName');
     end
     return Translator.getMoveableDisplayName(name);
 end
 
---- Checks if the player has a tool to build.
+--- Checks if the player has a tool to build
 ---@param inv ItemContainer
 ---@return boolean
 BuildingMenu.haveAToolToBuild = function(inv)
@@ -327,7 +327,7 @@ BuildingMenu.haveAToolToBuild = function(inv)
     return false;
 end
 
---- Gets the available tool from the inventory.
+--- Gets the available tool from the inventory
 ---@param inv ItemContainer
 ---@param tool string
 ---@return InventoryItem|nil
@@ -349,7 +349,7 @@ BuildingMenu.getAvailableTool = function(inv, tool)
     return nil;
 end
 
---- Equips a primary tool for the player.
+--- Equips a primary tool for the player
 ---@param object any
 ---@param playerNum number
 ---@param tool string
@@ -359,11 +359,18 @@ BuildingMenu.equipToolPrimary = function(object, playerNum, tool)
     item = BuildingMenu.getAvailableTool(inv, tool);
     if not item then return; end
 
-    ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), playerNum);
+    if instanceof(item, "Clothing") then
+        if not item:isEquipped() then
+            ISInventoryPaneContextMenu.wearItem(item, playerNum);
+        end
+    else
+        ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), playerNum);
+    end
+
     object.noNeedHammer = true;
 end
 
---- Equips a secondary tool for the player.
+--- Equips a secondary tool for the player
 ---@param object any
 ---@param playerNum number
 ---@param tool string
@@ -372,6 +379,7 @@ BuildingMenu.equipToolSecondary = function(object, playerNum, tool)
     local inv = getSpecificPlayer(playerNum):getInventory();
     item = BuildingMenu.getAvailableTool(inv, tool);
     if not item then return; end
+
     if instanceof(item, "Clothing") then
         if not item:isEquipped() then
             ISInventoryPaneContextMenu.wearItem(item, playerNum);
@@ -384,11 +392,12 @@ end
 
 ---@param id int
 ---@param icons ArrayList
+---@return Texture|nil texture
 local function loadTex(id, icons)
     if id >= 0 and id < icons:size() then
-        return getTexture("Item_" .. tostring(icons:get(id)))
+        return getTexture("Item_" .. tostring(icons:get(id)));
     end
-    return nil
+    return nil;
 end
 
 
@@ -396,24 +405,24 @@ end
 ---@return Texture|nil
 function BuildingMenu.getTexFromItem(item)
     if not item then
-        BM_Utils.debugPrint("[Building Menu] ", "Warning: Attempted to get texture name from a nil item.");
+        print("[Building Menu ERROR] ", "Warning: Attempted to get texture name from a nil item.");
         return nil;
     end
-	local texture = item:getNormalTexture();
-	if not texture then
-		local obj = item:InstanceItem(nil);
-		if obj then
-			local icons = item:getIconsForTexture();
-			if icons and icons:size() > 0 then
-				texture = loadTex(obj:getVisual():getBaseTexture(), icons) or loadTex(obj:getVisual():getTextureChoice(), icons);
-			else
-				texture = obj:getTexture();
-			end
-		end
-	end
+    local texture = item:getNormalTexture();
+    if not texture then
+        local obj = item:InstanceItem(nil);
+        if obj then
+            local icons = item:getIconsForTexture();
+            if icons and icons:size() > 0 then
+                texture = loadTex(obj:getVisual():getBaseTexture(), icons) or
+                loadTex(obj:getVisual():getTextureChoice(), icons);
+            else
+                texture = obj:getTexture();
+            end
+        end
+    end
     return texture;
 end
-
 
 ---@param item Item
 ---@return string|nil
@@ -425,11 +434,10 @@ function BuildingMenu.getTexNameFromItem(item)
         local nameOnly = textureName:match("([^\\/]*)$");
         return nameOnly;
     else
-        BM_Utils.debugPrint("[Building Menu] ", "Warning: Texture not found for item " .. item:getFullName());
+        print("[Building Menu ERROR] ", "Warning: Texture not found for item " .. item:getFullName());
         return nil;
     end
 end
-
 
 ---@param itemFullType string
 ---@return Item|nil
@@ -448,7 +456,6 @@ function BuildingMenu.getItemInstance(itemFullType)
     return item and item.item or nil;
 end
 
-
 ---@param item Item
 ---@return string|nil
 function BuildingMenu.getTextureFromItem(item)
@@ -457,22 +464,23 @@ function BuildingMenu.getTextureFromItem(item)
     if cacheEntry then
         return cacheEntry.textureName;
     end
-     -- If for some reason the item wasn't cached, we fall back to extracting the texture name.
+    -- If for some reason the item wasn't cached, we fall back to extracting the texture name
     local texNameOnly = BuildingMenu.getTexNameFromItem(item)
     BuildingMenu.ItemInstances[item:getFullName()] = { item = item, textureName = texNameOnly }
     return texNameOnly
 end
 
-
---- Tooltip check for a specific tool category.
+--- Tooltip check for a specific tool category
 ---@param playerInv ItemContainer
 ---@param tool string
----@return string, boolean
+---@return string, boolean, InventoryItem
 BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     local toolInfo = BuildingMenu.Tools[tool];
     local found = false;
     local itemText = "";
     local itemInstance = nil;
+    local currentInvItemTool = nil;
+    ---@cast currentInvItemTool InventoryItem
 
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
@@ -481,6 +489,7 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
                 itemInstance = item;
+                currentInvItemTool = item;
                 found = true;
                 break;
             end
@@ -489,10 +498,12 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
 
     if not found and toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
-            local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end, function(item) return true end);
+            local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
+                function(item) return true end);
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
                 itemInstance = item;
+                currentInvItemTool = item;
                 found = true;
                 break;
             end
@@ -510,17 +521,18 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
         local texNameOnly = BuildingMenu.getTextureFromItem(itemInstance);
         if texNameOnly and BuildingMenu.show_item_icons then
             itemText = "<IMAGE:" ..
-            texNameOnly .. "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">" .. itemText;
-        end 
+                texNameOnly ..
+                "," .. 20 * BuildingMenu.icon_scale .. "," .. 20 * BuildingMenu.icon_scale .. ">" .. itemText;
+        end
     end
 
     if not found then
         local defaultItemName = (toolInfo.types and toolInfo.types[1] and getItemNameFromFullType(toolInfo.types[1])) or
-        tool;
+            tool;
         itemText = itemText .. BuildingMenu.bhsString .. defaultItemName .. ' <LINE>';
-        return itemText, false;
+        return itemText, false, currentInvItemTool;
     end
-    return itemText, true;
+    return itemText, true, currentInvItemTool;
 end
 
 
@@ -562,7 +574,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
                     end
                 else
                     itemCount = playerInv:getItemCountFromTypeRecurse(itemFullType) +
-                    (groundItemCountMap[itemFullType] or 0);
+                        (groundItemCountMap[itemFullType] or 0);
                 end
 
                 totalFoundCount = totalFoundCount + itemCount;
@@ -587,11 +599,13 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
             if instanceof(firstItemInstance, 'InventoryItem') then
                 firstItemInstance = BuildingMenu.getItemInstance(firstItemInstance:getFullType());
             end
+---@diagnostic disable-next-line: cast-local-type
+            if totalFoundCount > 1000 then totalFoundCount = "Infinite"; end
             local itemText = color ..
-            firstItemInstance:getDisplayName() ..
-            ' ' ..
-            (groupType == "Consumable" and getText("ContextMenu_Uses") .. " " or "") ..
-            totalFoundCount .. '/' .. totalAmountNeeded;
+                firstItemInstance:getDisplayName() ..
+                ' ' ..
+                (groupType == "Consumable" and getText("ContextMenu_Uses") .. " " or "") ..
+                totalFoundCount .. '/' .. totalAmountNeeded;
             itemInfo[altGroupIndex] = {
                 AmountNeeded = totalAmountNeeded,
                 [groupType .. "Details"] = itemDetails
@@ -650,11 +664,11 @@ local function adaptRecipeGroupToNewFormat(materialOrGroup)
 end
 
 
---- Checks if the player can build a specific object.
+--- Checks if the player can build a specific object. TOOPTIMIZE: optimize BuildingMenu.canBuildObject
 ---@param playerObj IsoPlayer
 ---@param tooltipDescription string
 ---@param objectRecipe table
----@return string, boolean, table, table
+---@return string, boolean, table, table, table
 BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectRecipe)
     local playerInv = playerObj:getInventory();
 
@@ -664,10 +678,11 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     local currentResult = true;
     local consumablesFoundIndexMatrix = {};
     local materialFoundIndexMatrix = {};
+    local toolFoundIndexMatrix = {};
 
     if not objectRecipe then
         tooltipDescription = tooltipDescription .. " <LINE>" .. BuildingMenu.bhsString .. " RECIPE IS NULL";
-        return tooltipDescription, false, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
+        return tooltipDescription, false, materialFoundIndexMatrix, consumablesFoundIndexMatrix, toolFoundIndexMatrix;
     end
 
     if objectRecipe.useConsumable then
@@ -713,12 +728,14 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     tooltipDescription = tooltipDescription .. " <LINE> ";
 
     if objectRecipe.neededTools then
+        local currentInvItemTool = nil;
         local toolsTooltipDescription = "";
-        for _, currentTool in pairs(objectRecipe.neededTools) do
-            toolsTooltipDescription, currentResult = BuildingMenu.tooltipCheckForTool(
+        for i, currentTool in ipairs(objectRecipe.neededTools) do
+            toolsTooltipDescription, currentResult, currentInvItemTool = BuildingMenu.tooltipCheckForTool(
                 playerInv,
                 currentTool
             );
+            toolFoundIndexMatrix[i] = { toolType = currentTool, invItem = currentInvItemTool };
             tooltipDescription = tooltipDescription .. toolsTooltipDescription;
 
             if not currentResult then
@@ -735,13 +752,13 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
         for _, skill in pairs(objectRecipe.skills) do
             if playerSkills[skill.Skill] < skill.Level then
                 skillsTooltipDescription = BuildingMenu.bhsString ..
-                getText("IGUI_perks_" .. skill.Skill) ..
-                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE> ";
+                    getText("IGUI_perks_" .. skill.Skill) ..
+                    " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE> ";
                 canBuildResult = false;
             else
                 skillsTooltipDescription = BuildingMenu.ghsString ..
-                getText("IGUI_perks_" .. skill.Skill) ..
-                " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE> ";
+                    getText("IGUI_perks_" .. skill.Skill) ..
+                    " " .. playerSkills[skill.Skill] .. "/" .. skill.Level .. " <LINE> ";
             end
             tooltipDescription = tooltipDescription .. skillsTooltipDescription;
         end
@@ -750,15 +767,17 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     -- BM_Utils.debugPrint("[Building Menu DEBUG] BuildingMenu.ItemInstances ", BuildingMenu.ItemInstances);
     -- BM_Utils.debugPrint("[Building Menu DEBUG] materialFoundIndexMatrix ", materialFoundIndexMatrix);
     -- BM_Utils.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] toolFoundIndexMatrix ", toolFoundIndexMatrix);
 
     if ISBuildMenu.cheat then
         tooltipDescription = "<LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltipDescription;
         canBuildResult = true;
     end
 
-    return tooltipDescription, canBuildResult, materialFoundIndexMatrix, consumablesFoundIndexMatrix;
+    return tooltipDescription, canBuildResult, materialFoundIndexMatrix, consumablesFoundIndexMatrix,
+        toolFoundIndexMatrix;
 end
 
---- Returns the BuildingMenu instance.
+--- Returns the BuildingMenu instance
 ---@return BuildingMenu
 return BuildingMenu

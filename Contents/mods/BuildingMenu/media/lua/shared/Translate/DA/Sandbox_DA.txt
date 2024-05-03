@@ -255,6 +255,9 @@ Sandbox_DA = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materialer ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Dette er kun en linjeseparator, at kontrollere det har ingen effekt.",
 
+    Sandbox_UsePaint = "Brug maling i opskrifter",
+    Sandbox_UsePaint_tooltip = "Deaktiver for at fjerne maling fra opskrifter, dem med maling som den eneste ingrediens forbliver. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Brug af malingsdåser",
     Sandbox_PaintUses_tooltip = "Bruger pr. malingsdåse. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_DA = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 anvendelser",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 anvendelser",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 anvendelser",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Anvendelser",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 anvendelser",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 anvendelser",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 anvendelser",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Anvendelser",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 anvendelser",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Uendelige anvendelser",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Træmaterialeomkostninger til STORE vægge",

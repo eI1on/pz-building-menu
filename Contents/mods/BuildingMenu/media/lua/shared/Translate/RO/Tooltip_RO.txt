@@ -4,6 +4,12 @@ Tooltip_RO = {
   Tooltip_BMMagazineGlass = "... măcar ar trebui să te găsească la îndemână",
   Tooltip_AsphaltMixturePowder = "Folosit pentru a construi drumuri. Necesită o găleată cu apă.",
 
+  Tooltip_BuildingObject_Main_Part = "Parte principală",
+  Tooltip_BuildingObject_Secondary_Part = "Partea secundară",
+  Tooltip_BuildingObject_Tertiary_Part = "Partea tertiara",
+  Tooltip_BuildingObject_Quaternary_Part = "Partea cuaternară",
+  Tooltip_BuildingObject_Extra_Part = "Parte suplimentară",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Zid de Pitră Gri",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Rama usii din piatra gri",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Cadru de fereastră din Pitră Gri",

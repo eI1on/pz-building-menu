@@ -54,7 +54,7 @@ function ISFridge:new(playerNum, name, sprite, northSprite)
 	o.dismantable = true;
 	o.canBeAlwaysPlaced = true;
 	o.canBeLockedByPadlock = true;
-	o.buildLow = false;
+	o.buildMid = true;
 	return o;
 end
 
@@ -68,15 +68,25 @@ end
 --- @param square IsoGridSquare The square to check
 --- @return boolean validity True if the fridge can be placed, false otherwise
 function ISFridge:isValid(square)
-	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-	if not self:haveMaterial(square) then return false; end
-
-	local sharedSprite = getSprite(self:getSprite());
-	if square and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
-		local props = ISMoveableSpriteProps.new(sharedSprite);
-		return props:canPlaceMoveable("bogus", square, nil);
-	end
-	return ISBuildingObject.isValid(self, square);
+    if not square then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+	if self.needToBeAgainstWall then
+        for i=0,square:getObjects():size()-1 do
+           local obj = square:getObjects():get(i);
+           if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
+               return true;
+           end
+        end
+        return false;
+    else
+		local sharedSprite = getSprite(self:getSprite());
+		if square and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
+			local props = ISMoveableSpriteProps.new(sharedSprite);
+			return props:canPlaceMoveable("bogus", square, nil);
+		end
+		if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+    end
+    return true;
 end
 
 --- Renders the fridge as a ghost tile at the specified location

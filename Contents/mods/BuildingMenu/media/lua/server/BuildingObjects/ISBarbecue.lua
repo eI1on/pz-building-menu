@@ -49,7 +49,20 @@ end
 --- @param square IsoGridSquare The square to check for validity
 --- @return boolean validity true if the square is valid, false otherwise
 function ISBarbecue:isValid(square)
-    return ISBuildingObject.isValid(self, square);
+    if not square then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+	if self.needToBeAgainstWall then
+        for i=0,square:getObjects():size()-1 do
+           local obj = square:getObjects():get(i);
+           if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
+               return true;
+           end
+        end
+        return false;
+    else
+        if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+    end
+    return true;
 end
 
 --- Renders a ghost tile of the barbecue for placement preview

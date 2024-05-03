@@ -4,6 +4,12 @@ Tooltip_NL = {
   Tooltip_BMMagazineGlass = "...ze zouden je tenminste handig moeten vinden",
   Tooltip_AsphaltMixturePowder = "Gebruikt om wegen aan te leggen. Vereist een emmer water.",
 
+  Tooltip_BuildingObject_Main_Part = "Grootste deel",
+  Tooltip_BuildingObject_Secondary_Part = "Secundair deel",
+  Tooltip_BuildingObject_Tertiary_Part = "Tertiair deel",
+  Tooltip_BuildingObject_Quaternary_Part = "Kwartair deel",
+  Tooltip_BuildingObject_Extra_Part = "Extra onderdeel",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Grijze stenen muur",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Grijze stenen deurkozijn",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Grijze stenen raamkozijn",

@@ -88,6 +88,7 @@ function ISTripleFridge:walkTo(x, y, z)
     local playerObj = getSpecificPlayer(self.player);
     local square = getCell():getGridSquare(x, y, z);
     local square2 = self:getSquare2(square, self.north);
+---@diagnostic disable-next-line: param-type-mismatch
     if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
         return luautils.walkAdj(playerObj, square);
     end
@@ -113,6 +114,7 @@ function ISTripleFridge:removeFromGround(square)
     };
 
     for _, pos in ipairs(positions) do
+---@diagnostic disable-next-line: param-type-mismatch
         local xa, ya = unpack(pos);
         local squareA = getCell():getGridSquare(xa, ya, square:getZ());
         removeItemFromSquare(squareA);
@@ -165,12 +167,14 @@ function ISTripleFridge:render(x, y, z, square)
 
     local squareA = getCell():getGridSquare(xa, ya, z);
     if squareA == nil and getWorld():isValidSquare(xa, ya, z) then
+---@diagnostic disable-next-line: param-type-mismatch
         squareA = IsoGridSquare.new(getCell(), nil, xa, ya, z);
         getCell():ConnectNewSquare(squareA, false);
     end
 
     local squareB = getCell():getGridSquare(xb, yb, z);
     if squareB == nil and getWorld():isValidSquare(xb, yb, z) then
+---@diagnostic disable-next-line: param-type-mismatch
         squareB = IsoGridSquare.new(getCell(), nil, xb, yb, z);
         getCell():ConnectNewSquare(squareB, false);
     end
@@ -306,7 +310,9 @@ end
 --- @param index number The index of the fridge part (1, 2, or 3)
 --- @return boolean exists True if part exists, false otherwise
 function ISTripleFridge:partExists(square, index)
-    local spriteName = self.north and self["northSprite" .. index] or self["sprite" .. index];
+    local spriteIndex = index;
+    if spriteIndex == 1 then spriteIndex = ""; end
+    local spriteName = self.north and self["northSprite" .. spriteIndex] or self["sprite" .. spriteIndex];
     local objects = square:getObjects();
     for i = 1, objects:size() do
         local object = objects:get(i - 1);

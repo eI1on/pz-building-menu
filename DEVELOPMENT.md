@@ -19,6 +19,7 @@ Table of Contents
   - [Option Keys](#option-keys)
   - [Option Values](#option-values)
 - [Buildables Sprites](#buildables-sprites)
+  - [Sprites Definition](#sprites-definition)
 
 # Creating Buildable Objects
 <br>
@@ -234,33 +235,62 @@ When creating buildable objects using the ```BuildingMenu.createObject``` functi
 <br>
 ## Option Keys
 
-Name | Type | Description
---- | --- | ---
-actionAnim | string | The animation played by the character when building the object | 
-blockAllTheSquare | boolean | It dictates if the object will occupy the entire tile, preventing other objects from being placed on the same spot | 
-canBarricade | boolean | Determines whether the object can be barricaded | 
-canPassThrough | boolean | Allows players to walk through the object, for decorative items or non-collidable structures | 
-canScrap | boolean | Indicates if the object can be scrapped or dismantled after being built | 
-completionSound | string | The sound effect played upon completing the construction of the object. For example, "BuildWoodenStructureLarge" for large wooden structures | 
-containerType | boolean | Specifies the type of container the buildable object will be if it will be a container. Different types represent different in-game storage containers, each with its own storage capacity | 
-craftingBank | string | Determines the sound when crafting the buildable object | 
-firstItem | string | Indicates the primary tool | 
-secondItem | string | Indicates the secondary tool |
-hoppable | boolean | Value indicating whether the object (like fences or low walls) is hoppable, **true** allows players and zombies to jump over it. | 
-isCorner | boolean | Value indicating whether the object is meant to be placed at corners| 
-isContainer | boolean | Value indicating whether the object is a container or not | 
-isThumpable | boolean | Value indicating if the object can be destroyed by zombies or players. **true** allows for the object to be thumped. I recommend that all buildables be thumpable because players can select from the sandbox options whether they can be destroyed or not | 
-modData | table | A table containing custom data that can be used to store additional information about the object, such as its type | 
-needToBeAgainstWall | boolean | For objects that must be built adjacent to a wall | 
-noNeedHammer | boolean | Value indicating whether the object requires a hammer to be built. Setting this to **false** means a hammer is needed. Set it to **true** for recipes that have shovels, propane torch, or anything other than hammers as the primary tool. | 
-renderFloorHelper | boolean | Value indicating that will render a helper wooden floor, useful for objects that are suspended such as roofs, shelves etc... |  
+Name | Type | Default Value | Description
+--- | --- | --- | ---
+actionAnim | string | auto | (DEPRECATED) Animation the character performs when constructing the object.  Handled automatically based on the current tool used. But if specified it will overwrite the automatically selected animation. | 
+blockAllTheSquare | boolean | false |  If set to true, the object occupies the entire tile, preventing other objects from being placed in the same spot. | 
+buildHigh | boolean | false |  Indicates if the object is built at a higher height, like walls or tall fences. Used to choose the animation. If specified it will overwrite the automatic selection. |
+buildMid | boolean | false |  Indicates if the object is built at a middle height, like low walls fences, or counters. Used to choose the animation. If specified it will overwrite the automatic selection. |
+buildLow | boolean | false |  Indicates if the object is built at a lower height, like floors. Used to choose the animation. If specified it will overwrite the automatic selection. |
+capacity | integer | auto |  Defines the storage capacity if the object is a container; defaults to the type-specific capacity if not specified. |
+canBarricade | boolean | false |  Specifies whether the object can be barricaded. | 
+canBeAlwaysPlaced | boolean | false |  Allows the object to be placed under any circumstances, ignoring typical placement restrictions. | 
+canBeLockedByPadlock | boolean | false |  Specifies whether the object can be locked with a padlock. | 
+canPassThrough | boolean | false |  Determines if characters can walk through the object, for decorative or non-collidable structures. | 
+canBePlastered | boolean | false |  Determines if the object can be plastered, applicable to walls. | 
+canScrap | boolean | false |  Indicates if the object can be dismantled or scrapped after construction. | 
+completionSound | string | none |  Sound effect played upon the successful construction of the object, e.g., "BuildWoodenStructureLarge". | 
+containerType | string | auto |  Specifies the type of container the buildable object will be if it will be a container. Different types represent different in-game storage containers, each with its own storage capacity. If not specified and the tile has container properties it will be created them. | 
+craftingBank | string | auto |  (DEPRECATED) Handled automatically based on tool used. Sound effect played during the construction of the object. But if specified it will overwrite the automatically selected sound effects. | 
+crossSpeed | double | 1.0 | Determines the speed at which characters can cross the object, with 1.0 representing normal speed. | 
+dismantable | boolean | false |  Determines if the object can be dismantled after construction. | 
+equipBothHandItem | InventoryItem | auto |  (DEPRECATED) Handled automatically, if the tool is two handed will be equipped on both hands. |
+firstItem | string | auto |  (DEPRECATED) Handled automatically based on the first tool in the recipe. Primary tool required for the construction. | 
+floor | boolean | false |  Indicates if the object is a floor structure. | 
+secondItem | string | auto |  (DEPRECATED) Handled automatically based on the second tool in the recipe. Secondary tool required for the construction. |
+hoppable | boolean | false |  Indicates if the object can be jumped over, such as fences or low walls. **true** allows players and zombies to jump over it. | 
+isCorner | boolean | false |  Specifies if the object is designed to be placed at corners. | 
+isContainer | boolean | false |  Indicates if the object functions as a container. | 
+isDoor | boolean | false |  Specifies if the object is a door. | 
+isDoorFrame | boolean | false |  Indicates if the object is a door frame. |
+isThumpable | boolean | true |  Value indicating if the object can be destroyed by zombies or players. **true** allows for the object to be thumped. I recommend that all buildables to be thumpable because players can select from the sandbox options whether they can be destroyed or not. | 
+isWallLike | boolean | false |  Indicates if the object functions as a wall. | 
+maxTime | integer | 200 |  Maximum time required to build the object, measured in game units. | 
+modData | table | nil |  Custom data storage for additional information about the object. | 
+name | string | string |  Name of the buildable object. Taken from the initialization of the BuildingMenu object. | 
+needToBeAgainstWall | boolean | false |  Specifies if the object must be placed adjacent to an existing wall. | 
+noNeedHammer | boolean | true |  Value indicating whether the object requires a hammer to be built. Setting this to **false** means a hammer is needed. Set it to **true** for recipes that have shovels, propane torch, or anything other than hammers as the primary tool. | 
+player | integer | 0 | Index of the player constructing the object. | 
+renderFloorHelper | boolean | false |  Value indicating that will render a helper wooden floor, useful for objects that are suspended such as roofs, shelves etc... | 
+skipBuildAction | boolean | false |  Skips the build action for instant builds. |
+stopOnWalk | boolean | false |  Interrupts the building process if the player starts walking. | 
+stopOnRun | boolean | false |  Interrupts the building process if the player starts running. | 
+thumpDmg | integer | 8 |  Specifies the amount of damage that zombies can inflict on the structure when attacking it. | 
 ## Option Values
 
 <br>
 
 **actionAnim**:
 ```lua
-"Build", "BuildLow", "BlowTorch", "BlowTorchMid", "DigTrowel", "BlowTorchFloor", "DigShovel", "DestroyFloor", "paint", "VehicleWorkOnTire"
+    ["Hammer"] = {"Build", "BuildLow"},
+    ["Sledgehammer"] = {"DestroyFloor", "Destroy"},
+    ["Paintbrush"] = {"paint"},
+    ["Screwdriver"] = {"Disassemble", "Craft", "VehicleWorkOnTire"},
+    ["Saw"] = {"SawLog"},
+    ["HandShovel"] = {"DigTrowel"},
+    ["Shovel"] = {"DigShovel"},
+    ["BlowTorch"] = {"BlowTorch","BlowTorchFloor","BlowTorchMid",},
+    ["Needle"] = {"Disassemble", "Craft"},
 ```   
 
 <br>
@@ -281,22 +311,17 @@ renderFloorHelper | boolean | Value indicating that will render a helper wooden 
 
 **craftingBank**:
 ```lua
-"BlowTorch", "Shoveling", "SledgehammerHit", "Painting", "ClothesRipping"
+    ["Hammer"] = {default = "Hammering", wood = "Hammering"},
+    ["Sledgehammer"] = "Dismantle",
+    ["Paintbrush"] = "Painting",
+    ["Screwdriver"] = {default = "ScrewingWood", wood = "ScrewingWood", metal = "ScrewingMetal"},
+    ["Saw"] = "Sawing",
+    ["HandShovel"] = "DigFurrowWithTrowel",
+    ["Shovel"] = "DigFurrowWithShovel",
+    ["BlowTorch"] = "BlowTorch",
+    ["WeldingMask"] = "BlowTorch",
+    ["Needle"] = "ClothesRipping",
 ```   
-
-<br>
-
-**firstItem**:
-```lua
-"BlowTorch",
-```
-
-<br>
-
-**secondItem**:
-```lua
-"WeldingMask",
-```
 
 <br>
 
@@ -306,3 +331,539 @@ renderFloorHelper | boolean | Value indicating that will render a helper wooden 
 ```
 
 # Buildables Sprites
+
+## Sprites Definition
+
+Each buildable object in the game can have multiple sprites associated with it to handle its appearance from different angles or states.
+
+**Example of Sprite Usage**:  
+
+BuildingMenu.onBuildSink:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildBathtub:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = ""
+}
+```  
+
+BuildingMenu.onBuildFireplace:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildOven:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildStove:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildBarbecue:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildGenerator:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildMicrowaveOven:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildSimpleFridge:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildLargeFridge:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = ""
+}
+```  
+
+BuildingMenu.onBuildTripleFridge:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    sprite3 = "",
+    northSprite = "",
+    northSprite2 = "",
+    northSprite3 = ""
+}
+```  
+
+BuildingMenu.onBuildPopsicleFridge:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = ""
+}
+```  
+
+BuildingMenu.onBuildCombinationWasherDryer:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildClothingDryer:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildClothingWasher:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildWashingBin:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+(DEPRECATED) BuildingMenu.onBuildMetalCounter:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = ""
+}
+```  
+
+BuildingMenu.onRainCollectorBarrel:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildDoubleMetalShelf:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = ""
+}
+```  
+
+BuildingMenu.onBuildDoubleTileContainer:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = ""
+}
+```  
+
+BuildingMenu.onBuildMannequin:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildScarecrow:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildSkeleton:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildClothingRack:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildDoubleTileFurniture:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = ""
+}
+```  
+
+BuildingMenu.onBuildBarricade:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildWoodenContainer:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildSimpleFurniture:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onDoubleDoor:  
+```lua
+--- it needs 'spriteIndex'
+sprites =   {
+    sprite = "fixtures_doors_fences_Simon_MD_0",
+}
+```  
+
+BuildingMenu.onBuild3TileGarageDoor:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    sprite3 = "",
+    northSprite = "",
+    northSprite2 = "",
+    northSprite3 = ""
+}
+```  
+
+BuildingMenu.onBuild4TileGarageDoor:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    sprite3 = "",
+    sprite4 = "",
+    northSprite = "",
+    northSprite2 = "",
+    northSprite3 = "",
+    northSprite4 = ""
+}
+```  
+
+BuildingMenu.onBuildThreeTileSimpleFurniture:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    sprite3 = "",
+    northSprite = "",
+    northSprite2 = "",
+    northSprite3 = ""
+}
+```  
+
+BuildingMenu.onBuildFourTileSimpleFurniture:  
+```lua
+- Sprite positions
+-                        / \
+-                       / x \ > sprite4
+-                     / \y-3/
+-          sprite3 < / x \ /
+-                  / \y-2/
+-       sprite2 < / x \ /
+-               / \y-1/
+-  sprite or > / x \ /
+- northSprite  \ y / \
+-               \ /x+1\
+-  northSprite2 < \ y / \
+-                  \ /x+2\
+-     northSprite3 < \ y / \
+-                     \ /x+3\ 
+-                       \ y / > northSprite4
+-                        \ /
+  
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    sprite3 = "",
+    sprite4 = "",
+    northSprite = "",
+    northSprite2 = "",
+    northSprite3 = "",
+    northSprite4 = ""
+}
+```  
+
+BuildingMenu.onBuildFourTileFurniture:  
+```lua
+- Sprite positions
+-     / \   / \
+-    /x-1\ / x \              sprite4             northSprite4
+-  / \ y / \y-1/ \
+- /x-1\ / x \ /x+1\    sprite3       sprite/northSprite     northSprite3
+- \y+1/ \ y / \y-1/
+-  \ / x \ /x+1\ /            sprite2             northSprite2
+-    \y+1/ \ y /
+-     \ /   \ /
+
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    sprite3 = "",
+    sprite4 = "",
+    northSprite = "",
+    northSprite2 = "",
+    northSprite3 = "",
+    northSprite4 = ""
+}
+```  
+
+BuildingMenu.onBuildDoorFrame:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    corner = ""
+}
+```  
+
+BuildingMenu.onBuildWall:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    corner = ""
+}
+```  
+
+BuildingMenu.onBuildMetalWall:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    corner = ""
+}
+```  
+
+BuildingMenu.onBuildWaterWell:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = ""
+}
+```  
+
+BuildingMenu.onBuildHighMetalFence:  
+```lua
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    northSprite = "",
+    northSprite2 = "",
+    corner = ""
+}
+```  
+
+BuildingMenu.onBuildNaturalFloor:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildFloor:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildFloorOverlay:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildWallOverlay:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = ""
+}
+```  
+
+BuildingMenu.onBuildStairs:  
+```lua
+sprites =   {
+    sprite = "",
+    upToLeft01 = "",
+    upToLeft02 = "",
+    upToLeft03 = "",
+    upToRight01 = "",
+    upToRight02 = "",
+    upToRight03 = "",
+    pillar = "",
+    pillarNorth = ""
+}
+```  
+
+BuildingMenu.onBuildWindowWall:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    corner = ""
+}
+```  
+
+BuildingMenu.onBuildWindow:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = ""
+}
+```  
+
+BuildingMenu.onBuildLightSource:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildLightPole:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  
+
+BuildingMenu.onBuildOutdoorLight:  
+```lua
+sprites =   {
+    sprite = "",
+    northSprite = "",
+    eastSprite = "",
+    southSprite = ""
+}
+```  

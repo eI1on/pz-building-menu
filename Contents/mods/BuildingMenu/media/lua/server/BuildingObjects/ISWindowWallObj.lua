@@ -12,14 +12,15 @@ function ISWindowWallObj:create(x, y, z, north, sprite)
 	self.sq = cell:getGridSquare(x, y, z)
 
 	self.javaObject = IsoWindow.new(getCell(), self.sq, getSprite(sprite), north)
-	buildUtil.consumeMaterial(self)
 	self.javaObject:getModData().WindowWall = true;
-	self.sq:AddSpecialObject(self.javaObject)
 
 	if self.corner then
 		buildUtil.checkCorner(x, y, z, north, self, self.javaObject);
 	end
 
+	buildUtil.consumeMaterial(self);
+
+	self.sq:AddSpecialObject(self.javaObject);
 	self.javaObject:transmitCompleteItemToServer()
 end
 
@@ -76,7 +77,7 @@ function ISWindowWallObj:isValid(square)
 	if buildUtil.stairIsBlockingPlacement(square, true, (self.nSprite == 4 or self.nSprite == 2)) then return false; end
 
 	if not square:hasFloor(self.north) then
-		local belowSquare = getCell():getGridSquare(square:getX(), square:getY(), square:getZ() - 1)
+		local belowSquare = getCell():getGridSquare(square:getX(), square:getY(), square:getZ() - 1);
 		if belowSquare then
 			if self.north and not belowSquare:HasStairsWest() then return false; end
 			if not self.north and not belowSquare:HasStairsNorth() then return false; end
@@ -96,10 +97,10 @@ function ISWindowWallObj:isValid(square)
 			return false;
 		end
 
-		local spriteGrid = sprite and sprite:getSpriteGrid()
+		local spriteGrid = sprite and sprite:getSpriteGrid();
 		if spriteGrid then
-			local gridX = spriteGrid:getSpriteGridPosX(sprite)
-			local gridY = spriteGrid:getSpriteGridPosY(sprite)
+			local gridX = spriteGrid:getSpriteGridPosX(sprite);
+			local gridY = spriteGrid:getSpriteGridPosY(sprite);
 			if self.north and gridY > 0 then
 				return false;
 			end

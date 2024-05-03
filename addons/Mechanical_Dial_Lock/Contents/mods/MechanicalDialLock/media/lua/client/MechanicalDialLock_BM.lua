@@ -12,10 +12,6 @@ local function addSafesToBuildingMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "locker",
@@ -35,10 +31,6 @@ local function addSafesToBuildingMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "locker",
@@ -58,10 +50,6 @@ local function addSafesToBuildingMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "locker",

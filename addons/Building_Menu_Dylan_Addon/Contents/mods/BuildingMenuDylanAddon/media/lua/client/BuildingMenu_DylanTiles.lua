@@ -12,7 +12,6 @@ local function addDylanContainersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 containerType = "counter",
@@ -59,7 +58,6 @@ local function addDylanContainersToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 containerType = "shelves",
@@ -101,7 +99,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 containerType = "smallbox",
@@ -118,7 +115,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.CardboardBoxRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 containerType = "smallbox",
@@ -138,7 +134,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.CardboardBoxRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 containerType = "smallbox",
@@ -170,9 +165,7 @@ local function addGardenStuffToMenu()
             recipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = true,
                 canPassThrough = false,
@@ -221,9 +214,7 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = true,
                 canPassThrough = false,
@@ -239,9 +230,7 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = true,
                 canPassThrough = false,
@@ -257,7 +246,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -278,7 +266,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -311,7 +298,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.SmallPlantBoxRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = true,
                 completionSound = "BuildWoodenStructureLarge",
                 blockAllTheSquare = false,
@@ -348,7 +334,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -367,7 +352,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -385,7 +369,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -404,7 +387,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -436,10 +418,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructrueMedium",
                 containerType = "locker",
@@ -473,10 +451,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
@@ -486,7 +460,6 @@ local function addMetalCountersToMenu()
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = true,
-                buildLow = true
             },
             {
                 sprite = "DarthGunStore_9",
@@ -502,10 +475,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
@@ -514,8 +483,7 @@ local function addMetalCountersToMenu()
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
-                renderFloorHelper = true,
-                buildLow = true
+                renderFloorHelper = true
             },
             {
                 sprite = "DarthGunStore_13",
@@ -531,10 +499,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "toolcabinet",
@@ -553,10 +517,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "toolcabinet",
@@ -586,10 +546,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "counter",
@@ -598,8 +554,7 @@ local function addMetalCountersToMenu()
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
-                renderFloorHelper = false,
-                buildLow = true
+                renderFloorHelper = false
             },
             {
                 sprite = "DylansRandomFurniture03_37",
@@ -615,10 +570,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "counter",
@@ -627,8 +578,7 @@ local function addMetalCountersToMenu()
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
-                renderFloorHelper = false,
-                buildLow = true
+                renderFloorHelper = false
             },
             {
                 sprite = "DylansRandomFurniture03_49",
@@ -644,10 +594,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "counter",
@@ -656,8 +602,7 @@ local function addMetalCountersToMenu()
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
-                renderFloorHelper = false,
-                buildLow = true
+                renderFloorHelper = false
             },
             {
                 sprite = "DylansRandomFurniture03_45",
@@ -673,10 +618,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "counter",
@@ -685,8 +626,7 @@ local function addMetalCountersToMenu()
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
-                renderFloorHelper = false,
-                buildLow = true
+                renderFloorHelper = false
             },
             {
                 sprite = "DylansRandomFurniture03_59",
@@ -702,10 +642,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "counter",
@@ -726,10 +662,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
@@ -748,10 +680,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
@@ -783,13 +711,8 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.FridgeRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructrueMedium",
-                buildLow = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 containerType = "fridge",
@@ -820,7 +743,6 @@ local function addBarricadesToMenu()
             BuildingMenu[recipe],
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 canBeAlwaysPlaced = false,

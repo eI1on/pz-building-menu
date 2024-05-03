@@ -255,6 +255,9 @@ Sandbox_NL = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materialen ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",
 
+    Sandbox_UsePaint = "Gebruik verf in recepten",
+    Sandbox_UsePaint_tooltip = "Schakel dit uit om verf uit recepten te verwijderen. Recepten met verf als enige ingrediënt blijven behouden. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Verfblikgebruik",
     Sandbox_PaintUses_tooltip = "Gebruik per verfblik. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_NL = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 toepassingen",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 toepassingen",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 toepassingen",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Gebruik",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 toepassingen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 toepassingen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Gebruik",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 toepassingen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 toepassingen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 toepassingen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Oneindig gebruik",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Houtmateriaalkosten voor GROTE muren",

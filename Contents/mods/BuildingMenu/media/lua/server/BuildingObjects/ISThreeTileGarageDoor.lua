@@ -95,55 +95,55 @@ end
 --- @return boolean validity Returns true if the door can be placed, otherwise false
 function ISThreeTileGarageDoor:isValid(square)
     if not self:haveMaterial(square) then
-        return false
+        return false;
     end
     if not square:hasFloor(self.north) then
-        return false
+        return false;
     end
     if not self:partExists(square, 1) and not square:isFreeOrMidair(false) then
-        return false
+        return false;
     end
     if square:isVehicleIntersecting() then
-        return false
+        return false;
     end
 
-    local xa, ya = self:getSquare2Pos(square, self.north)
-    local xb, yb = self:getSquare3Pos(square, self.north)
-    local squareA = getCell():getGridSquare(xa, ya, square:getZ())
-    local squareB = getCell():getGridSquare(xb, yb, square:getZ())
+    local xa, ya = self:getSquare2Pos(square, self.north);
+    local xb, yb = self:getSquare3Pos(square, self.north);
+    local squareA = getCell():getGridSquare(xa, ya, square:getZ());
+    local squareB = getCell():getGridSquare(xb, yb, square:getZ());
 
     if (not squareA) or (not squareB) then
-        return false
+        return false;
     end
 
-    local existsA = self:partExists(squareA, 2)
-    local existsB = self:partExists(squareB, 3)
+    local existsA = self:partExists(squareA, 2);
+    local existsB = self:partExists(squareB, 3);
 
     if not existsA and not buildUtil.canBePlace(self, squareA) then
-        return false
+        return false;
     end
     if not existsB and not buildUtil.canBePlace(self, squareB) then
-        return false
+        return false;
     end
 
     if squareA:isSomethingTo(square) then
-        return false
+        return false;
     end
     if squareB:isSomethingTo(squareA) then
-        return false
+        return false;
     end
 
     if buildUtil.stairIsBlockingPlacement(square, true, self.north) then
-        return false
+        return false;
     end
     if buildUtil.stairIsBlockingPlacement(squareA, true, self.north) then
-        return false
+        return false;
     end
     if buildUtil.stairIsBlockingPlacement(squareB, true, self.north) then
-        return false
+        return false;
     end
 
-    return true
+    return true;
 end
 
 --- Renders a ghost tile of the garage door for placement preview
@@ -270,7 +270,9 @@ end
 --- @param index number The index of the door part (1, 2, or 3)
 --- @return boolean exists True if part exists, false otherwise
 function ISThreeTileGarageDoor:partExists(square, index)
-    local spriteName = self.north and self["northSprite" .. index] or self["sprite" .. index];
+    local spriteIndex = index;
+    if spriteIndex == 1 then spriteIndex = ""; end
+    local spriteName = self.north and self["northSprite" .. spriteIndex] or self["sprite" .. spriteIndex];
     local objects = square:getSpecialObjects();
     for i = 1, objects:size() do
         local object = objects:get(i - 1);

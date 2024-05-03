@@ -12,7 +12,7 @@ function ISFloorOverlay:new(sprite, northSprite)
     o:init();
     o:setSprite(sprite);
     o:setNorthSprite(northSprite);
-    o.buildLow = true;
+    o.buildMid = true;
     o.floor = true;
     return o;
 end
@@ -51,8 +51,8 @@ end
 function ISFloorOverlay:isValid(square)
     if not self:haveMaterial(square) then return false; end
     if square:getZ() > 0 then
-        local below = getCell():getGridSquare(square:getX(), square:getY(), square:getZ() - 1);
-        if below and below:HasStairs() then return false; end
+        local belowSquare = getCell():getGridSquare(square:getX(), square:getY(), square:getZ() - 1);
+        if belowSquare and belowSquare:HasStairs() then return false; end
     end
     for i = 0, square:getObjects():size() - 1 do
         local item = square:getObjects():get(i);

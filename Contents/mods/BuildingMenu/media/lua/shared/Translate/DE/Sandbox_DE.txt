@@ -255,6 +255,9 @@ Sandbox_DE = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materialien ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",
 
+    Sandbox_UsePaint = "Verwenden Sie Farbe in Rezepten",
+    Sandbox_UsePaint_tooltip = "Deaktivieren Sie das Entfernen von Farbe aus Rezepten. Rezepte mit Farbe als einziger Zutat bleiben bestehen. <LINE><LINE> <RGB:1,0,0> Beenden und erneut eingeben, speichern, um die Änderungen zu übernehmen! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Verwendungsmöglichkeiten für Farbdosen",
     Sandbox_PaintUses_tooltip = "Verwendungsmöglichkeiten pro Farbdose. <LINE><LINE> <RGB:1,0,0> Beenden und erneut eingeben, speichern, um die Änderungen zu übernehmen! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_DE = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Verwendungsmöglichkeiten",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Verwendungsmöglichkeiten",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Verwendungsmöglichkeiten",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Anwendungen",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Verwendungsmöglichkeiten",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 Anwendungen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Verwendungsmöglichkeiten",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Anwendungen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Anwendungen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 Anwendungen",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Unendliche Einsatzmöglichkeiten",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Holzmaterialkosten für große Wände",

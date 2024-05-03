@@ -65,6 +65,7 @@ function ISWindowObj:isValid(square)
         local props = ISMoveableSpriteProps.new(sharedSprite);
         return props:canPlaceMoveable('bogus', square, nil);
     end
+    return false;
 end
 
 --- Renders a ghost tile of the window for placement preview

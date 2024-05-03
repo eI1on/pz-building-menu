@@ -116,6 +116,7 @@ function ISThreeTileSimpleFurniture:walkTo(x, y, z)
     local square = getCell():getGridSquare(x, y, z);
     local square2 = self:getSquare2(square, self.north);
 
+---@diagnostic disable-next-line: param-type-mismatch
     if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
         return luautils.walkAdj(playerObj, square);
     end
@@ -142,6 +143,7 @@ function ISThreeTileSimpleFurniture:removeFromGround(square)
     };
 
     for _, pos in ipairs(positions) do
+---@diagnostic disable-next-line: param-type-mismatch
         local xa, ya = unpack(pos);
         local squareA = getCell():getGridSquare(xa, ya, square:getZ());
         removeItemFromSquare(squareA);
@@ -312,6 +314,12 @@ function ISThreeTileSimpleFurniture:getSquare3Pos(square, north)
     return x, y, z;
 end
 
+local function safeCallMethod(object, methodName, ...)
+    if type(object[methodName]) == "function" then
+        return object[methodName](object, ...);
+    end
+end
+
 ---Checks if a part of the furniture already exists on a given square
 ---@param square IsoGridSquare The square to check
 ---@param index integer The index of the part to check for
@@ -321,9 +329,10 @@ function ISThreeTileSimpleFurniture:partExists(square, index)
     for i = 0, objects:size() - 1 do
         local object = objects:get(i);
         local sprite = object:getSprite();
-        if object and sprite and instanceof(object, "IsoThumpable") then
+        if object and sprite then
             local spriteName = sprite:getName();
-            local expectedSpriteName = self:getSpriteNameForPart(index, object:getNorth());
+            local isObjectNorth = safeCallMethod(object, "getNorth");
+            local expectedSpriteName = self:getSpriteNameForPart(index, isObjectNorth);
             if spriteName == expectedSpriteName then
                 return true;
             end
@@ -337,6 +346,7 @@ end
 ---@param north boolean The orientation of the part
 ---@return string spriteName The sprite name
 function ISThreeTileSimpleFurniture:getSpriteNameForPart(index, north)
+    if index == 1 or index == nil then index = ""; end
     if north then
         return self["northSprite" .. index];
     else

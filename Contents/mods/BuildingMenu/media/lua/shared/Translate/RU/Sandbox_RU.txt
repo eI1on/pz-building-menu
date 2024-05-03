@@ -255,6 +255,9 @@ Sandbox_RU = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Материалы ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Это всего лишь разделитель строк, его проверка не имеет никакого эффекта.",
 
+    Sandbox_UsePaint = "Используйте краску в рецептах",
+    Sandbox_UsePaint_tooltip = "Отключите удаление краски из рецептов, рецепты, в которых краска является единственным ингредиентом, останутся. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Краска может использовать",
     Sandbox_PaintUses_tooltip = "Расход на банку краски. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_RU = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 варианта использования",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 вариантов использования",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 вариантов использования",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 варианта использования",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 вариантов использования",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 вариантов использования",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 вариантов использования",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 вариантов использования",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 варианта использования",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 вариантов использования",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 применений",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 применений",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 применений",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 применений",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 применений",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 применений",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 применений",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 применений",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 применений",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Бесконечное использование",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Стоимость древесного материала для БОЛЬШИХ стен",

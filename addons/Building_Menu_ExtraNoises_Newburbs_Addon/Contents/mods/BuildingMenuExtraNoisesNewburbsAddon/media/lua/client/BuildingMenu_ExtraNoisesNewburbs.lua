@@ -12,10 +12,6 @@ local function addExtraNoisesNewburbsFlagsToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureWallFrame",
                 renderFloorHelper = false,
@@ -72,7 +68,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
@@ -105,7 +100,6 @@ local function addDoorsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -124,7 +118,6 @@ local function addDoorsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -143,7 +136,6 @@ local function addDoorsToMenu()
             BuildingMenu.WoodenDoubleGlassDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 dontNeedFrame = true,
                 canBarricade = false,
@@ -186,10 +178,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -216,10 +204,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -266,7 +250,6 @@ end
 local function addExtraNoisesNewburbsColouredWallsToMenu()
     local function createWallObject(tooltipObj, tooltip, buildFunction, recipe, modDataWallType, spriteIndices)
         local options = {
-            actionAnim = "Build",
             noNeedHammer = false,
             completionSound = "BuildWoodenStructureLarge",
             modData = { wallType = modDataWallType }
@@ -1110,7 +1093,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_0", northSprite = "en_newburbs_windows_01_4" }
                 ),
                 BuildingMenu.createObject(
@@ -1119,7 +1102,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_8", northSprite = "en_newburbs_windows_01_12" }
                 ),
                 BuildingMenu.createObject(
@@ -1128,7 +1111,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_16", northSprite = "en_newburbs_windows_01_22" }
                 ),
                 BuildingMenu.createObject(
@@ -1137,7 +1120,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_17", northSprite = "en_newburbs_windows_01_21" }
                 ),
                 BuildingMenu.createObject(
@@ -1146,7 +1129,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_18", northSprite = "en_newburbs_windows_01_20" }
                 ),
                 BuildingMenu.createObject(
@@ -1155,7 +1138,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_19", northSprite = "en_newburbs_windows_01_23" }
                 ),
                 BuildingMenu.createObject(
@@ -1164,7 +1147,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_48", northSprite = "en_newburbs_windows_01_54" }
                 ),
                 BuildingMenu.createObject(
@@ -1173,7 +1156,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_49", northSprite = "en_newburbs_windows_01_53" }
                 ),
                 BuildingMenu.createObject(
@@ -1182,7 +1165,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_50", northSprite = "en_newburbs_windows_01_52" }
                 ),
                 BuildingMenu.createObject(
@@ -1191,7 +1174,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_51", northSprite = "en_newburbs_windows_01_55" }
                 ),
                 BuildingMenu.createObject(
@@ -1200,7 +1183,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_80", northSprite = "en_newburbs_windows_01_86" }
                 ),
                 BuildingMenu.createObject(
@@ -1209,7 +1192,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_81", northSprite = "en_newburbs_windows_01_85" }
                 ),
                 BuildingMenu.createObject(
@@ -1218,7 +1201,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "en_newburbs_windows_01_82", northSprite = "en_newburbs_windows_01_84" }
                 ),
             }

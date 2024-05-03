@@ -255,6 +255,9 @@ Sandbox_TH = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ วัสดุ ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "นี่เป็นเพียงตัวคั่นบรรทัดเท่านั้น การตรวจสอบว่าไม่มีผลใดๆ",
 
+    Sandbox_UsePaint = "ใช้สีในสูตรอาหาร",
+    Sandbox_UsePaint_tooltip = "ปิดใช้การลบสีออกจากสูตรอาหาร โดยจะเหลือสีที่ใช้สีเป็นส่วนผสมเพียงอย่างเดียว <LINE><LINE> <RGB:1,0,0> ออกและบันทึกต่อเพื่อใช้การเปลี่ยนแปลง! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "การใช้กระป๋องสี",
     Sandbox_PaintUses_tooltip = "การใช้งานต่อกระป๋องสี <LINE><LINE> <RGB:1,0,0> ออกและบันทึกต่อเพื่อใช้การเปลี่ยนแปลง! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_TH = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 การใช้งาน",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 การใช้งาน",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 การใช้งาน",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 การใช้งาน",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "ใช้งานได้ 100 ครั้ง",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 การใช้งาน",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 การใช้งาน",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 การใช้งาน",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "ใช้งานได้ 100 ครั้ง",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "การใช้งานที่ไม่มีที่สิ้นสุด",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "ค่าวัสดุไม้สำหรับกำแพงใหญ่",

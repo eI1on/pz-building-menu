@@ -57,7 +57,7 @@ function ISFourTileFurniture:new(name, sprite, sprite2, sprite3, sprite4, northS
     o.dismantable = true;
     o.blockAllTheSquare = true;
     o.canBeAlwaysPlaced = true;
-    o.buildLow = true;
+    o.buildMid = true;
     return o;
 end
 
@@ -106,10 +106,12 @@ function ISFourTileFurniture:createPart(x, y, z, north, sprite, index)
 
     -- create the furniture part and set its properties
     self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
-    buildUtil.setInfo(self.javaObject, self);
     self.javaObject:setMaxHealth(self:getHealth());
     self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
+
+    buildUtil.setInfo(self.javaObject, self);
+
     self.sq:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
@@ -176,21 +178,10 @@ function ISFourTileFurniture:render(x, y, z, square)
     local spriteCName = self.sprite4;
 
     if self.north then
+        spriteName = self.northSprite;
         spriteAName = self.northSprite2;
         spriteBName = self.northSprite3;
         spriteCName = self.northSprite4;
-    end
-
-    -- initial checks for the primary square
-    local spriteFree = self:checkSingleTileValidity(square);
-
-    -- render primary part
-    local sprite = IsoSprite.new();
-    sprite:LoadFramesNoDirPageSimple(spriteName);
-    if spriteFree then
-        sprite:RenderGhostTile(x, y, z);
-    else
-        sprite:RenderGhostTileRed(x, y, z);
     end
 
     -- positions for the additional tiles
@@ -199,16 +190,52 @@ function ISFourTileFurniture:render(x, y, z, square)
     local xc, yc, zc = self:getSquare4Pos(square, self.north);
 
     -- squares for the additional tiles
-    local squareA = getCell():getGridSquare(xa, ya, za);
-    local squareB = getCell():getGridSquare(xb, yb, zb);
-    local squareC = getCell():getGridSquare(xc, yc, zc);
+    local squareA = getCell():getGridSquare(xa, ya, za)
+    if squareA == nil and getWorld():isValidSquare(xa, ya, za) then
+        squareA = IsoGridSquare.new(getCell(), nil, xa, ya, za);
+        getCell():ConnectNewSquare(squareA, false);
+    end
+
+    local squareB = getCell():getGridSquare(xb, yb, zb)
+    if squareB == nil and getWorld():isValidSquare(xb, yb, zb) then
+        squareB = IsoGridSquare.new(getCell(), nil, xb, yb, zb);
+        getCell():ConnectNewSquare(squareB, false);
+    end
+
+    local squareC = getCell():getGridSquare(xc, yc, zc)
+    if squareC == nil and getWorld():isValidSquare(xc, yc, zc) then
+        squareC = IsoGridSquare.new(getCell(), nil, xc, yc, zc);
+        getCell():ConnectNewSquare(squareC, false);
+    end
+
+    -- initial checks for the primary square
+    local spriteFree = true;
+    if not self:partExists(square, 1) and not self:checkSingleTileValidity(square) then
+        spriteFree = false;
+    end
 
     -- check validity for additional squares
-    local spriteAFree = self:checkSingleTileValidity(squareA);
-    local spriteBFree = self:checkSingleTileValidity(squareB);
-    local spriteCFree = self:checkSingleTileValidity(squareC);
+    local spriteAFree = true;
+    if not self:partExists(squareA, 2) and not self:checkSingleTileValidity(squareA) then
+        spriteAFree = false;
+    end
 
-    -- render additional parts
+    local spriteBFree = true;
+    if not self:partExists(squareB, 3) and not self:checkSingleTileValidity(squareB) then
+        spriteBFree = false;
+    end
+
+    local spriteCFree = true;
+    if not self:partExists(squareC, 4) and not self:checkSingleTileValidity(squareC) then
+        spriteCFree = false;
+    end
+
+    if square:isSomethingTo(squareC) then spriteFree = false; spriteCFree = false; end
+    if square:isSomethingTo(squareA) then spriteFree = false; spriteAFree = false; end
+    if squareA:isSomethingTo(squareB) then spriteAFree = false; spriteBFree = false; end
+    if squareB:isSomethingTo(squareC) then spriteBFree = false; spriteCFree = false; end
+
+    self:renderPart(spriteName, x, y, z, spriteFree);
     self:renderPart(spriteAName, xa, ya, za, spriteAFree);
     self:renderPart(spriteBName, xb, yb, zb, spriteBFree);
     self:renderPart(spriteCName, xc, yc, zc, spriteCFree);
@@ -235,10 +262,9 @@ end
 ---@return boolean validity
 function ISFourTileFurniture:checkSingleTileValidity(square)
     if not square then return false; end
-    if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-    if square:isVehicleIntersecting() then return false; end
-    -- check if the square is free or midair
-    if not square:isFreeOrMidair(true) then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+	if not square:isFreeOrMidair(true) then return false; end
 
     -- if all checks passed, return true
     return true;
@@ -248,13 +274,6 @@ end
 ---@param square IsoGridSquare The square to check for the main part
 ---@return boolean validity
 function ISFourTileFurniture:isValid(square)
-    if not square then return false; end
-
-    -- basic checks for the primary square
-    if not self:haveMaterial(square) or not square:hasFloor(self.north) then
-        return false;
-    end
-
     -- check the primary square (part 1)
     if not self:partExists(square, 1) and not self:checkSingleTileValidity(square) then
         return false;
@@ -269,18 +288,29 @@ function ISFourTileFurniture:isValid(square)
     local squareB = getCell():getGridSquare(xb, yb, square:getZ());
     local squareC = getCell():getGridSquare(xc, yc, square:getZ());
 
-    if (not squareA) or (not squareB) or (not squareC) then
-        return false;
-    end
+    if (not squareA) or (not squareB) or (not squareC) then return false; end
 
-    if squareA:isSomethingTo(square) then return false; end
-    if squareB:isSomethingTo(squareA) then return false; end
-    if squareC:isSomethingTo(squareB) then return false; end
+    if square:isSomethingTo(squareC) then return false; end
+    if square:isSomethingTo(squareA) then return false; end
+    if squareA:isSomethingTo(squareB) then return false; end
+    if squareB:isSomethingTo(squareC) then return false; end
+
 
     -- check validity for additional squares
-    local spriteAFree = self:checkSingleTileValidity(squareA);
-    local spriteBFree = self:checkSingleTileValidity(squareB);
-    local spriteCFree = self:checkSingleTileValidity(squareC);
+    local spriteAFree = true;
+    if not self:partExists(square, 2) and not self:checkSingleTileValidity(squareA) then
+        spriteAFree = false;
+    end
+
+    local spriteBFree = true;
+    if not self:partExists(square, 3) and not self:checkSingleTileValidity(squareB) then
+        spriteBFree = false;
+    end
+
+    local spriteCFree = true;
+    if not self:partExists(square, 4) and not self:checkSingleTileValidity(squareC) then
+        spriteCFree = false;
+    end
 
     if not spriteAFree or not spriteBFree or not spriteCFree then
         return false;
@@ -340,6 +370,12 @@ function ISFourTileFurniture:getSquare2(square, north)
     return getCell():getGridSquare(x, y, z);
 end
 
+local function safeCallMethod(object, methodName, ...)
+    if type(object[methodName]) == "function" then
+        return object[methodName](object, ...);
+    end
+end
+
 ---Checks if a part of the furniture already exists on a given square
 ---@param square IsoGridSquare The square to check
 ---@param index integer The index of the part to check for
@@ -351,7 +387,8 @@ function ISFourTileFurniture:partExists(square, index)
         local sprite = object:getSprite();
         if object and sprite then
             local spriteName = sprite:getName();
-            local expectedSpriteName = self:getSpriteNameForPart(index, object:getNorth());
+            local isObjectNorth = safeCallMethod(object, "getNorth");
+            local expectedSpriteName = self:getSpriteNameForPart(index, isObjectNorth);
             if spriteName == expectedSpriteName then
                 return true;
             end
@@ -365,6 +402,7 @@ end
 ---@param north boolean The orientation of the part
 ---@return string spriteName The sprite name
 function ISFourTileFurniture:getSpriteNameForPart(index, north)
+    if index == 1 or index == nil then index = ""; end
     if north then
         return self["northSprite" .. index];
     else

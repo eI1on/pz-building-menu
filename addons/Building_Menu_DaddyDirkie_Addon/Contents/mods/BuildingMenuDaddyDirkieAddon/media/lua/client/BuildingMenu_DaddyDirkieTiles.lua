@@ -24,7 +24,6 @@ local function addDaddyDirkieDoorsToMenu()
                         recipe,
                         true,
                         {
-                            actionAnim = "Build",
                             noNeedHammer = false,
                             completionSound = "BuildWoodenStructureLarge",
                             canBarricade = true,
@@ -152,10 +151,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -177,10 +172,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -197,10 +188,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -217,7 +204,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -239,7 +225,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
@@ -256,7 +241,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFencePostRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
@@ -273,7 +257,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -295,7 +278,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -317,7 +299,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
@@ -334,7 +315,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFencePostRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
@@ -351,7 +331,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -373,7 +352,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
@@ -390,7 +368,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFencePostRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
@@ -421,7 +398,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -438,7 +414,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -458,7 +433,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -478,7 +452,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -495,7 +468,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
@@ -516,7 +488,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
@@ -537,7 +508,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -554,7 +524,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -574,7 +543,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -594,7 +562,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -611,7 +578,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
@@ -632,7 +598,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
@@ -669,7 +634,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
@@ -687,7 +651,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
@@ -705,7 +668,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
@@ -727,7 +689,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
@@ -749,7 +710,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
@@ -765,7 +725,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
@@ -782,7 +741,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
@@ -802,7 +760,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
@@ -821,7 +778,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
@@ -840,7 +796,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "cabinet",
@@ -859,7 +814,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "shelves",
@@ -878,7 +832,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "wardrobe",
@@ -899,7 +852,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "wardrobe",
@@ -920,7 +872,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "shelves",
@@ -941,12 +892,11 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     containerType = "shelves",
                     needToBeAgainstWall = true,
-                    buildLow = false,
+                    buildHigh = true,
                     blockAllTheSquare = false,
                     isWallLike = true,
                 },
@@ -978,7 +928,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -999,7 +948,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -1020,7 +968,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -1041,7 +988,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -1062,7 +1008,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "desk",
@@ -1081,7 +1026,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -1100,7 +1044,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "wardrobe"
@@ -1119,7 +1062,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "wardrobe"
@@ -1136,7 +1078,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "wardrobe"
@@ -1155,7 +1096,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -1174,7 +1114,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -1193,7 +1132,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -1212,7 +1150,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "desk"
@@ -1231,7 +1168,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "wardrobe"
@@ -1250,7 +1186,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "wardrobe"
@@ -1269,7 +1204,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "wardrobe"
@@ -1288,7 +1222,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 container = "wardrobe"
@@ -1320,7 +1253,6 @@ local function addDaddyDirkieCouchesToMenu()
             BuildingMenu.CouchRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -1551,7 +1483,6 @@ local function addKitchenCountersToMenu()
                 BuildingMenu.CounterRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     isThumpable = true
@@ -1574,7 +1505,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -1596,7 +1526,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -1631,7 +1560,6 @@ local function addKitchenCountersToMenu()
                 BuildingMenu.CounterRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     isThumpable = true
@@ -1654,7 +1582,6 @@ local function addKitchenCountersToMenu()
                 BuildingMenu.CounterRecipe,
                 true,
                 {
-                    actionAnim = "Build",
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     isThumpable = true
@@ -1687,10 +1614,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "toolcabinet",
@@ -1711,10 +1634,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
@@ -1735,10 +1654,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
@@ -1759,17 +1674,13 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterBigRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isContainer = true,
                 containerType = "shelves",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
-                buildLow = false
+                buildHigh = true,
             },
             {
                 sprite = "industry_dirkea_ddd_01_15",
@@ -1785,10 +1696,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "toolcabinet",
@@ -1807,10 +1714,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "toolcabinet",
@@ -1829,10 +1732,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "shelves",
@@ -1852,10 +1751,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "toolcabinet",
@@ -1876,10 +1771,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "toolcabinet",
@@ -1913,7 +1804,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -1930,7 +1820,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -1947,7 +1836,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -1964,7 +1852,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "locker",
@@ -1981,7 +1868,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "locker",
@@ -1998,7 +1884,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "locker",
@@ -2015,7 +1900,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "locker",
@@ -2032,7 +1916,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2049,7 +1932,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2066,7 +1948,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2083,7 +1964,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2100,7 +1980,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2117,7 +1996,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2134,7 +2012,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2151,7 +2028,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2168,7 +2044,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2185,7 +2060,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2202,7 +2076,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2219,7 +2092,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2236,7 +2108,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2253,7 +2124,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
@@ -2283,7 +2153,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
@@ -2309,7 +2178,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
@@ -2355,10 +2223,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
@@ -2382,10 +2246,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
@@ -2422,7 +2282,6 @@ local function addDaddyDirkieOthersToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             "Build Secret Entrance",
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -2444,7 +2303,6 @@ local function addDaddyDirkieOthersToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             "Build Secret Entrance",
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -2466,7 +2324,6 @@ local function addDaddyDirkieOthersToMenu()
             BuildingMenu.WoodenDoorRecipe,
             "Build Secret Entrance",
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
@@ -2486,7 +2343,6 @@ local function addDaddyDirkieOthersToMenu()
             BuildingMenu.WoodenDoorRecipe,
             "Build Secret Entrance",
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
@@ -2519,7 +2375,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2539,7 +2394,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2557,7 +2411,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2577,8 +2430,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.onBuildWindow,
             BuildingMenu.WindowRecipe,
             true,
-            {
-                actionAnim = "Build", 
+            { 
                 noNeedHammer = false, 
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
@@ -2595,7 +2447,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -2615,7 +2466,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -2635,7 +2485,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "militarycrate",
@@ -2655,13 +2504,11 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
                 canBeAlwaysPlaced = true,
                 needToBeAgainstWall = true,
-                buildLow = false,
                 blockAllTheSquare = false,
                 isWallLike = true,
                 isContainer = true,
@@ -2681,7 +2528,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -2694,7 +2540,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -2709,7 +2554,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -2728,7 +2572,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -2747,7 +2590,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -2766,7 +2608,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall"
             },
@@ -2782,7 +2623,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.LogFloorRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall"
             },
@@ -2798,7 +2638,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
@@ -2822,7 +2661,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
@@ -2846,7 +2684,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BedRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -2864,7 +2701,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BedRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -2884,7 +2720,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.PrimitveBedRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -2902,7 +2737,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.PrimitveBedRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -2920,7 +2754,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.PrimitveBedRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -2939,7 +2772,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
@@ -2949,28 +2781,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 northSprite = "edit_ddd_RUS_Forest Survival_01_56"
             }
         ),
-
-        -- Rain Barrel Collectors are hardcoded and I can't insert new ones without overwriting the whole file
-
-        -- BuildingMenu.createObject(
-        --     "",
-        --     "Tooltip_Generic",
-        --     BuildingMenu.onRainCollectorBarrel,
-        --     BuildingMenu.SmallLogWallRecipe,
-        --     true,
-        --     {
-        --         actionAnim = "Build",
-        --         noNeedHammer = false,
-        --         completionSound = "BuildWoodenStructureLarge",
-        --         needToBeAgainstWall = false,
-        --         blockAllTheSquare = true,
-        --         renderFloorHelper = false,
-        --         canPassThrough = false,
-        --         canBarricade = false,
-        --         waterMax = 600
-        --     },
-        --     {sprite = "edit_ddd_RUS_Forest Survival_01_64", northSprite = "edit_ddd_RUS_Forest Survival_01_64"}
-        -- ),
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
@@ -2991,10 +2801,6 @@ local function addDaddyDirkieCraftedStoveToMenu()
             BuildingMenu.StoveRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true
@@ -3013,10 +2819,6 @@ local function addDaddyDirkieCraftedStoveToMenu()
             BuildingMenu.StoveRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true
@@ -3050,13 +2852,9 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
             spec.recipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true
+                buildMid = true,
             },
             spec.sprites
         )

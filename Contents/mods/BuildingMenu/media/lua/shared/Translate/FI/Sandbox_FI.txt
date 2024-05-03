@@ -255,6 +255,9 @@ Sandbox_FI = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiaalit ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
 
+    Sandbox_UsePaint = "Käytä Paintia resepteissä",
+    Sandbox_UsePaint_tooltip = "Poista maalin poistaminen käytöstä resepteistä, sillä ne, joissa maali on ainoa ainesosa, säilyvät. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Maalipurkin käyttötarkoitukset",
     Sandbox_PaintUses_tooltip = "Käyttömäärä maalipurkkia kohden. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_FI = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Käyttötarkoituksia",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Käyttötarkoituksia",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Käyttötarkoituksia",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 käyttötapoja",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Käyttötarkoituksia",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 käyttötapoja",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Käyttötarkoituksia",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Käyttötarkoituksia",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Käyttötarkoituksia",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Käyttötarkoituksia",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Käyttöä",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Käyttötarkoituksia",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Käyttöä",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Käyttöä",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 käyttökertaa",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Käyttötarkoituksia",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Käyttöä",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Käyttöä",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 käyttökertaa",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Infinite Uses",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Isojen seinien puumateriaalikustannukset",

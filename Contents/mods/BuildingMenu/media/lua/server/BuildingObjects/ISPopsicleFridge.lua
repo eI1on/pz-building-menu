@@ -25,7 +25,7 @@ function ISPopsicleFridge:new(playerNum, name, sprite, sprite2, northSprite, nor
 	o.dismantable = true;
 	o.blockAllTheSquare = true;
 	o.canBeAlwaysPlaced = true;
-	o.buildLow = true;
+	o.buildMid = true;
 	return o;
 end
 
@@ -187,7 +187,7 @@ function ISPopsicleFridge:render(x, y, z, square)
 		self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za);
 	end
 
-	-- optionally draw a floor helper for each part
+	-- optionally render a floor helper for each part
 	if self.renderFloorHelper then
 		if not self.RENDER_SPRITE_FLOOR then
 			self.RENDER_SPRITE_FLOOR = IsoSprite.new();

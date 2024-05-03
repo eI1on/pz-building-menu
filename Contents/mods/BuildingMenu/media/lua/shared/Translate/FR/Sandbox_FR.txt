@@ -255,6 +255,9 @@ Sandbox_FR = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Matériaux ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Il ne s'agit que d'un séparateur de ligne, sa vérification n'a aucun effet.",
 
+    Sandbox_UsePaint = "Utiliser de la peinture dans les recettes",
+    Sandbox_UsePaint_tooltip = "Désactivez la suppression de la peinture des recettes, celles contenant de la peinture comme seul ingrédient resteront. <LINE><LINE> <RGB:1,0,0> QUITTER ET RÉENTREZ ENREGISTRER POUR APPLIQUER LES MODIFICATIONS ! <RVB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Utilisations des pots de peinture",
     Sandbox_PaintUses_tooltip = "Utilisations par pot de peinture. <LINE><LINE> <RGB:1,0,0> QUITTER ET RÉENTREZ ENREGISTRER POUR APPLIQUER LES MODIFICATIONS ! <RVB :1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_FR = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 utilisations",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 utilisations",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 utilisations",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 utilisations",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 utilisations",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 utilisations",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 utilisations",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 utilisations",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 utilisations",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Utilisations infinies",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Coût du bois pour les grands murs",

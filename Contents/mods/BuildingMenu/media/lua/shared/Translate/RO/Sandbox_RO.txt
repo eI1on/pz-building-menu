@@ -255,6 +255,9 @@ Sandbox_RO = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiale ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Acesta este doar un separator de linii, verificarea acestuia nu are efect.",
 
+    Sandbox_UsePaint = "Utilizați vopsea în rețete",
+    Sandbox_UsePaint_tooltip = "Dezactivați eliminarea vopselei din rețete, cei cu vopsea ca singur ingredient vor rămâne. <LINE><LINE> <RGB:1,0,0> IEȘIȚI ȘI REINTRAȚI SALVAȚI PENTRU A APLICA MODIFICĂRILE! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Utilizări de cutie de vopsea",
     Sandbox_PaintUses_tooltip = "Utilizări pe cutie de vopsea. <LINE><LINE> <RGB:1,0,0> IEȘIȚI ȘI REINTRAȚI SALVAȚI PENTRU A APLICA MODIFICĂRILE! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_RO = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Utilizări",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Utilizări",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Utilizări",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 de utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 de utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 de utilizări",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 de utilizări",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Utilizări",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 de utilizări",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 de utilizări",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 de utilizări",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Utilizări infinite",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Costul materialului lemnos pentru pereti MARI",

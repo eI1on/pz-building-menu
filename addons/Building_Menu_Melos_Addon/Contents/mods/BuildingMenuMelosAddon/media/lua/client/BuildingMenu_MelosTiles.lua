@@ -11,7 +11,7 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_castle_01_0",
                 northSprite = "melos_tiles_castle_01_1",
@@ -24,7 +24,7 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_castle_01_2",
                 northSprite = "melos_tiles_castle_01_2",
@@ -38,7 +38,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -60,7 +59,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -79,7 +77,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -98,7 +95,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -117,7 +113,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -139,7 +134,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -158,7 +152,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -177,7 +170,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -196,7 +188,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -216,7 +207,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -236,7 +226,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -254,7 +243,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -272,7 +260,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -293,7 +280,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -314,7 +300,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -335,7 +320,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -356,7 +340,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -377,7 +360,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -398,7 +380,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -419,7 +400,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -440,7 +420,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -457,7 +436,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -474,7 +452,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -494,7 +471,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -514,7 +490,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -534,7 +509,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -554,7 +528,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -571,7 +544,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -588,7 +560,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -607,7 +578,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
@@ -626,7 +596,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -644,7 +613,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -662,7 +630,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -680,7 +647,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -698,7 +664,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -716,7 +681,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -734,7 +698,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -754,7 +717,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -774,7 +736,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -794,7 +755,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -814,7 +774,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -834,7 +793,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -854,7 +812,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -874,7 +831,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -907,7 +863,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -927,7 +882,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -947,7 +901,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -965,7 +918,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -983,7 +935,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -1001,7 +952,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -1019,7 +969,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1040,7 +989,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1061,7 +1009,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1082,7 +1029,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1103,7 +1049,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1124,7 +1069,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1145,7 +1089,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1166,7 +1109,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1187,7 +1129,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1208,7 +1149,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -1225,7 +1165,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -1242,7 +1181,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1262,7 +1200,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -1279,7 +1216,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1295,7 +1231,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1311,7 +1246,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1327,7 +1261,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1343,7 +1276,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1359,7 +1291,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1375,7 +1306,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1391,7 +1321,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1407,7 +1336,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1434,7 +1362,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1454,7 +1381,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1474,7 +1400,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -1492,7 +1417,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -1510,7 +1434,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -1528,7 +1451,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -1546,7 +1468,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1567,7 +1488,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1588,7 +1508,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1609,7 +1528,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1630,7 +1548,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1651,7 +1568,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1672,7 +1588,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1693,7 +1608,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1714,7 +1628,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1735,7 +1648,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -1752,7 +1664,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -1769,7 +1680,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1789,7 +1699,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -1806,7 +1715,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1822,7 +1730,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1838,7 +1745,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1854,7 +1760,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1870,7 +1775,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1886,7 +1790,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1902,7 +1805,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -1918,7 +1820,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1934,7 +1835,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1961,7 +1861,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -1981,7 +1880,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2001,7 +1899,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2019,7 +1916,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2037,7 +1933,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2055,7 +1950,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2073,7 +1967,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2094,7 +1987,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2115,7 +2007,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2136,7 +2027,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2157,7 +2047,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2178,7 +2067,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2199,7 +2087,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2220,7 +2107,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2241,7 +2127,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2262,7 +2147,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -2279,7 +2163,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -2296,7 +2179,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2316,7 +2198,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -2333,7 +2214,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2349,7 +2229,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2365,7 +2244,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2381,7 +2259,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2397,7 +2274,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2413,7 +2289,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2429,7 +2304,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2445,7 +2319,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2461,7 +2334,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2488,7 +2360,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2508,7 +2379,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2528,7 +2398,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2546,7 +2415,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2564,7 +2432,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2582,7 +2449,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -2600,7 +2466,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2621,7 +2486,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2642,7 +2506,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2663,7 +2526,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2684,7 +2546,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2705,7 +2566,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2726,7 +2586,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2747,7 +2606,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2768,7 +2626,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2789,7 +2646,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -2806,7 +2662,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -2823,7 +2678,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2843,7 +2697,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -2860,7 +2713,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2876,7 +2728,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2892,7 +2743,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2908,7 +2758,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2924,7 +2773,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2940,7 +2788,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2956,7 +2803,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -2972,7 +2818,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -2988,7 +2833,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3015,7 +2859,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3035,7 +2878,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3055,7 +2897,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3073,7 +2914,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3091,7 +2931,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3109,7 +2948,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3127,7 +2965,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3148,7 +2985,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3169,7 +3005,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3190,7 +3025,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3211,7 +3045,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3232,7 +3065,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3253,7 +3085,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3274,7 +3105,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3295,7 +3125,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3316,7 +3145,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -3333,7 +3161,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -3350,7 +3177,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -3370,7 +3196,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -3387,7 +3212,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -3403,7 +3227,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3419,7 +3242,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3435,7 +3257,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -3451,7 +3272,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3467,7 +3287,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3483,7 +3302,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -3499,7 +3317,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3515,7 +3332,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3542,7 +3358,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3562,7 +3377,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3582,7 +3396,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3600,7 +3413,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3618,7 +3430,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3636,7 +3447,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -3654,7 +3464,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3675,7 +3484,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3696,7 +3504,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3717,7 +3524,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3738,7 +3544,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3759,7 +3564,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3780,7 +3584,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3801,7 +3604,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3822,7 +3624,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3843,7 +3644,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -3860,7 +3660,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -3877,7 +3676,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -3897,7 +3695,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -3914,7 +3711,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -3930,7 +3726,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3946,7 +3741,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3962,7 +3756,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -3978,7 +3771,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -3994,7 +3786,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4010,7 +3801,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -4026,7 +3816,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4042,7 +3831,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4069,7 +3857,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4089,7 +3876,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4109,7 +3895,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4127,7 +3912,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4145,7 +3929,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4163,7 +3946,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4181,7 +3963,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4202,7 +3983,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4223,7 +4003,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4244,7 +4023,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4265,7 +4043,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4286,7 +4063,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4307,7 +4083,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4328,7 +4103,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4349,7 +4123,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4370,7 +4143,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -4387,7 +4159,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -4404,7 +4175,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -4424,7 +4194,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -4441,7 +4210,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -4457,7 +4225,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4473,7 +4240,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4489,7 +4255,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -4505,7 +4270,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4521,7 +4285,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4537,7 +4300,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -4553,7 +4315,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4569,7 +4330,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4596,7 +4356,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4616,7 +4375,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4636,7 +4394,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4654,7 +4411,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4672,7 +4428,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4690,7 +4445,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -4708,7 +4462,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4729,7 +4482,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4750,7 +4502,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4771,7 +4522,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4792,7 +4542,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4813,7 +4562,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4834,7 +4582,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4855,7 +4602,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4876,7 +4622,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -4897,7 +4642,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -4914,7 +4658,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -4931,7 +4674,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -4951,7 +4693,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -4968,7 +4709,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -4984,7 +4724,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5000,7 +4739,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5016,7 +4754,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -5032,7 +4769,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5048,7 +4784,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5064,7 +4799,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -5080,7 +4814,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5096,7 +4829,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5123,7 +4855,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5143,7 +4874,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5163,7 +4893,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5181,7 +4910,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5199,7 +4927,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5217,7 +4944,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5235,7 +4961,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5256,7 +4981,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5277,7 +5001,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5298,7 +5021,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5319,7 +5041,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5340,7 +5061,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5361,7 +5081,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5382,7 +5101,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5403,7 +5121,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5424,7 +5141,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -5441,7 +5157,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -5458,7 +5173,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -5478,7 +5192,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -5495,7 +5208,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -5511,7 +5223,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5527,7 +5238,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5543,7 +5253,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -5559,7 +5268,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5575,7 +5283,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5591,7 +5298,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -5607,7 +5313,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5623,7 +5328,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5650,7 +5354,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5670,7 +5373,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5690,7 +5392,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5708,7 +5409,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5726,7 +5426,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5744,7 +5443,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -5762,7 +5460,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5783,7 +5480,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5804,7 +5500,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5825,7 +5520,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5846,7 +5540,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5867,7 +5560,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5888,7 +5580,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5909,7 +5600,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5930,7 +5620,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -5951,7 +5640,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -5968,7 +5656,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -5985,7 +5672,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6005,7 +5691,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -6022,7 +5707,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6038,7 +5722,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6054,7 +5737,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6070,7 +5752,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6086,7 +5767,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6102,7 +5782,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6118,7 +5797,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6134,7 +5812,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6150,7 +5827,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6179,7 +5855,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6199,7 +5874,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6219,7 +5893,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6237,7 +5910,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6255,7 +5927,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6273,7 +5944,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6291,7 +5961,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6312,7 +5981,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6333,7 +6001,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6354,7 +6021,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6375,7 +6041,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6396,7 +6061,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6417,7 +6081,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6438,7 +6101,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6459,7 +6121,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6480,7 +6141,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -6500,7 +6160,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -6520,7 +6179,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6540,7 +6198,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -6560,7 +6217,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6579,7 +6235,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6598,7 +6253,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6617,7 +6271,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6636,7 +6289,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6655,7 +6307,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6674,7 +6325,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -6693,7 +6343,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6712,7 +6361,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6742,7 +6390,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6762,7 +6409,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6782,7 +6428,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6800,7 +6445,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6818,7 +6462,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6836,7 +6479,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -6854,7 +6496,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6875,7 +6516,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6896,7 +6536,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6917,7 +6556,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6938,7 +6576,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6959,7 +6596,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -6980,7 +6616,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7001,7 +6636,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7022,7 +6656,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7043,7 +6676,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -7063,7 +6695,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -7083,7 +6714,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7103,7 +6733,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -7123,7 +6752,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7142,7 +6770,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7161,7 +6788,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7180,7 +6806,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7199,7 +6824,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7218,7 +6842,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7237,7 +6860,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7256,7 +6878,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7275,7 +6896,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7305,7 +6925,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7325,7 +6944,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7345,7 +6963,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7363,7 +6980,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7381,7 +6997,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7399,7 +7014,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7417,7 +7031,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7438,7 +7051,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7459,7 +7071,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7480,7 +7091,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7501,7 +7111,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7522,7 +7131,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7543,7 +7151,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7564,7 +7171,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7585,7 +7191,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7606,7 +7211,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -7626,7 +7230,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -7646,7 +7249,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7666,7 +7268,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -7686,7 +7287,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7705,7 +7305,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7724,7 +7323,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7743,7 +7341,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7762,7 +7359,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7781,7 +7377,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7800,7 +7395,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -7819,7 +7413,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7838,7 +7431,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7868,7 +7460,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7888,7 +7479,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -7908,7 +7498,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7926,7 +7515,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7944,7 +7532,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7962,7 +7549,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -7980,7 +7566,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8001,7 +7586,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8022,7 +7606,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8043,7 +7626,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8064,7 +7646,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8085,7 +7666,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8106,7 +7686,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8127,7 +7706,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8148,7 +7726,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8169,7 +7746,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -8189,7 +7765,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -8209,7 +7784,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8229,7 +7803,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -8249,7 +7822,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8268,7 +7840,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8287,7 +7858,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8306,7 +7876,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8325,7 +7894,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8344,7 +7912,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8363,7 +7930,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8382,7 +7948,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8401,7 +7966,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8431,7 +7995,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8451,7 +8014,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8471,7 +8033,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -8489,7 +8050,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -8507,7 +8067,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -8525,7 +8084,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -8543,7 +8101,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8564,7 +8121,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8585,7 +8141,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8606,7 +8161,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8627,7 +8181,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8648,7 +8201,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8669,7 +8221,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8690,7 +8241,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8711,7 +8261,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8732,7 +8281,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -8752,7 +8300,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -8772,7 +8319,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8792,7 +8338,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -8812,7 +8357,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8831,7 +8375,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8850,7 +8393,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8869,7 +8411,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8888,7 +8429,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8907,7 +8447,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8926,7 +8465,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -8945,7 +8483,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8964,7 +8501,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -8994,7 +8530,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9014,7 +8549,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9034,7 +8568,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9052,7 +8585,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9070,7 +8602,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9088,7 +8619,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9106,7 +8636,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9127,7 +8656,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9148,7 +8676,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9169,7 +8696,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9190,7 +8716,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9211,7 +8736,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9232,7 +8756,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9253,7 +8776,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9274,7 +8796,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9295,7 +8816,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -9315,7 +8835,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -9335,7 +8854,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -9355,7 +8873,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -9375,7 +8892,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -9394,7 +8910,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9413,7 +8928,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9432,7 +8946,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -9451,7 +8964,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9470,7 +8982,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9489,7 +9000,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -9508,7 +9018,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9527,7 +9036,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9557,7 +9065,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9577,7 +9084,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9597,7 +9103,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9615,7 +9120,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9633,7 +9137,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9651,7 +9154,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -9669,7 +9171,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9690,7 +9191,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9711,7 +9211,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9732,7 +9231,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9753,7 +9251,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9774,7 +9271,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9795,7 +9291,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9816,7 +9311,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9837,7 +9331,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9858,7 +9351,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -9878,7 +9370,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -9898,7 +9389,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -9918,7 +9408,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -9938,7 +9427,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -9957,7 +9445,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9976,7 +9463,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -9995,7 +9481,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -10014,7 +9499,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10033,7 +9517,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10052,7 +9535,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -10071,7 +9553,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10090,7 +9571,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10120,7 +9600,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10140,7 +9619,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10160,7 +9638,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10178,7 +9655,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10196,7 +9672,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10214,7 +9689,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10232,7 +9706,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10253,7 +9726,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10274,7 +9746,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10295,7 +9766,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10316,7 +9786,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10337,7 +9806,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10358,7 +9826,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10379,7 +9846,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10400,7 +9866,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10421,7 +9886,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -10441,7 +9905,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -10461,7 +9924,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -10481,7 +9943,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -10501,7 +9962,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -10520,7 +9980,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10539,7 +9998,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10558,7 +10016,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -10577,7 +10034,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10596,7 +10052,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10615,7 +10070,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -10634,7 +10088,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10653,7 +10106,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10683,7 +10135,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10703,7 +10154,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10723,7 +10173,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10741,7 +10190,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10759,7 +10207,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10777,7 +10224,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -10795,7 +10241,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10816,7 +10261,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10837,7 +10281,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10858,7 +10301,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10879,7 +10321,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10900,7 +10341,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10921,7 +10361,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10942,7 +10381,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10963,7 +10401,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -10984,7 +10421,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -11004,7 +10440,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -11024,7 +10459,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11044,7 +10478,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -11064,7 +10497,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11083,7 +10515,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11102,7 +10533,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11121,7 +10551,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11140,7 +10569,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11159,7 +10587,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11178,7 +10605,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11197,7 +10623,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11216,7 +10641,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11246,7 +10670,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11266,7 +10689,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11286,7 +10708,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11304,7 +10725,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11322,7 +10742,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11340,7 +10759,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11358,7 +10776,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11379,7 +10796,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11400,7 +10816,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11421,7 +10836,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11442,7 +10856,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11463,7 +10876,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11484,7 +10896,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11505,7 +10916,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11526,7 +10936,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11547,7 +10956,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -11567,7 +10975,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -11587,7 +10994,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11607,7 +11013,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -11627,7 +11032,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11646,7 +11050,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11665,7 +11068,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11684,7 +11086,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11703,7 +11104,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11722,7 +11122,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11741,7 +11140,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -11760,7 +11158,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11779,7 +11176,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11809,7 +11205,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11829,7 +11224,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11849,7 +11243,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11867,7 +11260,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11885,7 +11277,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11903,7 +11294,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -11921,7 +11311,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11942,7 +11331,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11963,7 +11351,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -11984,7 +11371,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12005,7 +11391,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12026,7 +11411,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12047,7 +11431,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12068,7 +11451,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12089,7 +11471,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12110,7 +11491,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -12130,7 +11510,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -12150,7 +11529,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12170,7 +11548,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -12190,7 +11567,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12209,7 +11585,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12228,7 +11603,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12247,7 +11621,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12266,7 +11639,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12285,7 +11657,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12304,7 +11675,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12323,7 +11693,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12342,7 +11711,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12374,7 +11742,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12394,7 +11761,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12414,7 +11780,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -12432,7 +11797,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -12450,7 +11814,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -12468,7 +11831,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -12486,7 +11848,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12507,7 +11868,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12528,7 +11888,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12549,7 +11908,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12570,7 +11928,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12591,7 +11948,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12612,7 +11968,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12633,7 +11988,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12654,7 +12008,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12675,7 +12028,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -12692,7 +12044,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -12709,7 +12060,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12729,7 +12079,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -12746,7 +12095,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12762,7 +12110,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12778,7 +12125,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12794,7 +12140,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12810,7 +12155,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12826,7 +12170,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12842,7 +12185,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -12858,7 +12200,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12874,7 +12215,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12901,7 +12241,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12921,7 +12260,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -12941,7 +12279,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -12959,7 +12296,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -12977,7 +12313,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -12995,7 +12330,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -13013,7 +12347,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13034,7 +12367,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13055,7 +12387,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13076,7 +12407,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13097,7 +12427,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13118,7 +12447,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13139,7 +12467,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13160,7 +12487,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13181,7 +12507,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13202,7 +12527,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -13219,7 +12543,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -13236,7 +12559,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13256,7 +12578,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -13273,7 +12594,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13289,7 +12609,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13305,7 +12624,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13321,7 +12639,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13337,7 +12654,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13353,7 +12669,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13369,7 +12684,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13385,7 +12699,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13401,7 +12714,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13429,7 +12741,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13449,7 +12760,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13469,7 +12779,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -13487,7 +12796,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -13505,7 +12813,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -13523,7 +12830,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -13541,7 +12847,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13562,7 +12867,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13583,7 +12887,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13604,7 +12907,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13625,7 +12927,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13646,7 +12947,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13667,7 +12967,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13688,7 +12987,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13709,7 +13007,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13730,7 +13027,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -13747,7 +13043,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -13764,7 +13059,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13784,7 +13078,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -13801,7 +13094,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13817,7 +13109,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13833,7 +13124,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13849,7 +13139,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13865,7 +13154,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13881,7 +13169,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13897,7 +13184,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -13913,7 +13199,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13929,7 +13214,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13956,7 +13240,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13976,7 +13259,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -13996,7 +13278,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14014,7 +13295,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14032,7 +13312,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14050,7 +13329,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14068,7 +13346,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14089,7 +13366,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14110,7 +13386,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14131,7 +13406,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14152,7 +13426,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14173,7 +13446,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14194,7 +13466,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14215,7 +13486,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14236,7 +13506,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14257,7 +13526,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -14274,7 +13542,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -14291,7 +13558,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14311,7 +13577,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -14328,7 +13593,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14344,7 +13608,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14360,7 +13623,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14376,7 +13638,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14392,7 +13653,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14408,7 +13668,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14424,7 +13683,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14440,7 +13698,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14456,7 +13713,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14483,7 +13739,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14503,7 +13758,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14523,7 +13777,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14541,7 +13794,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14559,7 +13811,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14577,7 +13828,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -14595,7 +13845,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14616,7 +13865,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14637,7 +13885,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14658,7 +13905,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14679,7 +13925,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14700,7 +13945,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14721,7 +13965,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14742,7 +13985,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14763,7 +14005,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14784,7 +14025,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -14801,7 +14041,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -14818,7 +14057,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14838,7 +14076,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -14855,7 +14092,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14871,7 +14107,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14887,7 +14122,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14903,7 +14137,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14919,7 +14152,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14935,7 +14167,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14951,7 +14182,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -14967,7 +14197,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -14983,7 +14212,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15010,7 +14238,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15030,7 +14257,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15050,7 +14276,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15068,7 +14293,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15086,7 +14310,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15104,7 +14327,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15122,7 +14344,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15143,7 +14364,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15164,7 +14384,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15185,7 +14404,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15206,7 +14424,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15227,7 +14444,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15248,7 +14464,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15269,7 +14484,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15290,7 +14504,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15311,7 +14524,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -15328,7 +14540,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -15345,7 +14556,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -15365,7 +14575,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -15382,7 +14591,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -15398,7 +14606,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15414,7 +14621,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15430,7 +14636,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -15446,7 +14651,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15462,7 +14666,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15478,7 +14681,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -15494,7 +14696,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15510,7 +14711,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15538,7 +14738,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15558,7 +14757,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15578,7 +14776,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15596,7 +14793,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15614,7 +14810,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15632,7 +14827,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -15650,7 +14844,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15671,7 +14864,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15692,7 +14884,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15713,7 +14904,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15734,7 +14924,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15755,7 +14944,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15776,7 +14964,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15797,7 +14984,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15818,7 +15004,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15839,7 +15024,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -15856,7 +15040,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -15873,7 +15056,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -15893,7 +15075,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -15910,7 +15091,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -15926,7 +15106,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15942,7 +15121,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15958,7 +15136,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -15974,7 +15151,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -15990,7 +15166,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16006,7 +15181,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -16022,7 +15196,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16038,7 +15211,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16066,7 +15238,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16086,7 +15257,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16106,7 +15276,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16124,7 +15293,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16142,7 +15310,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16160,7 +15327,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16178,7 +15344,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16199,7 +15364,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16220,7 +15384,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16241,7 +15404,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16262,7 +15424,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16283,7 +15444,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16304,7 +15464,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16325,7 +15484,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16346,7 +15504,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16367,7 +15524,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -16384,7 +15540,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -16401,7 +15556,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -16421,7 +15575,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -16438,7 +15591,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -16454,7 +15606,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16470,7 +15621,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16486,7 +15636,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -16502,7 +15651,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16518,7 +15666,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16534,7 +15681,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -16550,7 +15696,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16566,7 +15711,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -16609,7 +15753,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
@@ -16662,7 +15805,6 @@ local function addDoorsToMenu()
                     BuildingMenu[doorOptions.recipe],
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = {wallType = "doorframe"}
@@ -16694,10 +15836,6 @@ local function addDoorsToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 modData = {wallType = "doorframe"}
@@ -16716,10 +15854,6 @@ local function addDoorsToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 modData = {wallType = "doorframe"}
@@ -16738,7 +15872,6 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16757,7 +15890,6 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16776,7 +15908,6 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16795,7 +15926,6 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
@@ -16834,10 +15964,6 @@ local function addDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -16864,10 +15990,6 @@ local function addDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -16926,7 +16048,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.WindowRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -17041,7 +16162,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_0",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_5",
@@ -17054,7 +16175,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_1",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_4",
@@ -17067,7 +16188,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_2",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_3",
@@ -17080,7 +16201,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_32",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_37",
@@ -17093,7 +16214,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_33",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_36",
@@ -17106,7 +16227,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_34",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_35",
@@ -17119,7 +16240,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_64",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_69",
@@ -17132,7 +16253,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_65",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_68",
@@ -17145,7 +16266,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_66",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_67",
@@ -17158,7 +16279,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_98",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_99",
@@ -17172,7 +16293,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -17194,7 +16314,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17216,7 +16335,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17236,7 +16354,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17256,7 +16373,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17276,7 +16392,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17296,7 +16411,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17316,7 +16430,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17336,7 +16449,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17366,7 +16478,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_0",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_5",
@@ -17379,7 +16491,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_1",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_4",
@@ -17392,7 +16504,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_2",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_3",
@@ -17405,7 +16517,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_32",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_37",
@@ -17418,7 +16530,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_33",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_36",
@@ -17431,7 +16543,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_34",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_35",
@@ -17444,7 +16556,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_64",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_69",
@@ -17457,7 +16569,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_65",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_68",
@@ -17470,7 +16582,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_66",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_67",
@@ -17483,7 +16595,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_98",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_99",
@@ -17497,7 +16609,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -17519,7 +16630,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17541,7 +16651,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17561,7 +16670,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17581,7 +16689,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17601,7 +16708,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17621,7 +16727,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17641,7 +16746,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17661,7 +16765,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17691,7 +16794,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_0",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_5",
@@ -17704,7 +16807,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_1",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_4",
@@ -17717,7 +16820,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_2",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_3",
@@ -17730,7 +16833,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_32",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_37",
@@ -17743,7 +16846,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_33",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_36",
@@ -17756,7 +16859,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_34",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_35",
@@ -17769,7 +16872,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_64",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_69",
@@ -17782,7 +16885,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_65",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_68",
@@ -17795,7 +16898,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_66",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_67",
@@ -17808,7 +16911,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            {actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge"},
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_98",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_99",
@@ -17822,7 +16925,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -17844,7 +16946,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17866,7 +16967,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17886,7 +16986,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17906,7 +17005,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17926,7 +17024,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17946,7 +17043,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
@@ -17966,7 +17062,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -17986,7 +17081,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
@@ -18019,10 +17113,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -18043,10 +17133,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -18063,10 +17149,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -18087,10 +17169,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -18107,10 +17185,6 @@ local function addHighFencesToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 modData = {wallType = "doorframe"}
@@ -18129,10 +17203,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigMetalWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 modData = {wallType = "doorframe"}
@@ -18149,10 +17219,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFencePostRecipe,
             "Make Metal Fences",
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -18169,10 +17235,6 @@ local function addHighFencesToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 dontNeedFrame = true,
@@ -18219,7 +17281,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -18257,7 +17318,6 @@ local function addMelosStairsToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
@@ -18304,10 +17364,6 @@ local function addMelosStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
@@ -18331,10 +17387,6 @@ local function addMelosStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
@@ -18371,7 +17423,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -18426,10 +17477,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "metal_shelves",
@@ -18476,7 +17523,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
@@ -18500,7 +17546,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
@@ -18524,7 +17569,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
@@ -18548,7 +17592,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
@@ -18588,7 +17631,6 @@ local function addMelosSmallTablesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -18621,7 +17663,6 @@ local function createDoubleTileFurnitureObject(tooltip, recipe, sprite, sprite2,
         recipe,
         true,
         {
-            actionAnim = "Build",
             noNeedHammer = false,
             completionSound = "BuildWoodenStructureLarge"
         },
@@ -18802,7 +17843,6 @@ local function addMelosLargeBedsToMenu()
             BuildingMenu.BedRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
@@ -18886,7 +17926,6 @@ local function addMelosCouchesToMenu()
             recipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19159,7 +18198,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19178,7 +18216,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19197,7 +18234,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19218,7 +18254,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19239,7 +18274,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19260,7 +18294,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19281,7 +18314,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19302,7 +18334,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19323,7 +18354,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.MetalChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19344,7 +18374,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.MetalChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19365,7 +18394,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.MetalChairRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
@@ -19399,7 +18427,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19418,7 +18445,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19437,7 +18463,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -19458,7 +18483,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19477,7 +18501,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19497,7 +18520,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -19519,7 +18541,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19537,7 +18558,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19555,7 +18575,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -19578,7 +18597,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19597,7 +18615,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19616,7 +18633,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -19637,7 +18653,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19656,7 +18671,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19676,7 +18690,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -19698,7 +18711,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19716,7 +18728,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19734,7 +18745,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -19757,7 +18767,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19776,7 +18785,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19795,7 +18803,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -19816,7 +18823,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19835,7 +18841,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19855,7 +18860,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -19877,7 +18881,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19895,7 +18898,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -19913,7 +18915,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -19936,7 +18937,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19955,7 +18955,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -19974,7 +18973,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -19995,7 +18993,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20014,7 +19011,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20034,7 +19030,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -20056,7 +19051,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20074,7 +19068,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20092,7 +19085,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -20115,7 +19107,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20134,7 +19125,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20153,7 +19143,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -20174,7 +19163,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20193,7 +19181,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20213,7 +19200,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -20235,7 +19221,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20253,7 +19238,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20271,7 +19255,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -20294,7 +19277,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20313,7 +19295,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20332,7 +19313,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -20353,7 +19333,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20372,7 +19351,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20392,7 +19370,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -20414,7 +19391,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20432,7 +19408,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20450,7 +19425,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -20473,7 +19447,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20492,7 +19465,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20511,7 +19483,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -20532,7 +19503,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20551,7 +19521,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20571,7 +19540,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -20593,7 +19561,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20611,7 +19578,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20629,7 +19595,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -20652,7 +19617,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20671,7 +19635,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20690,7 +19653,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -20711,7 +19673,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20730,7 +19691,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20750,7 +19710,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -20772,7 +19731,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20790,7 +19748,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20808,7 +19765,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -20844,7 +19800,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20863,7 +19818,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20882,7 +19836,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -20903,7 +19856,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -20922,7 +19874,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20942,7 +19893,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -20964,7 +19914,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -20982,7 +19931,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21000,7 +19948,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -21023,7 +19970,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21042,7 +19988,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21061,7 +20006,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -21082,7 +20026,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21101,7 +20044,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21121,7 +20063,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -21143,7 +20084,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21161,7 +20101,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21179,7 +20118,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -21202,7 +20140,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21221,7 +20158,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21240,7 +20176,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -21261,7 +20196,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21280,7 +20214,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21300,7 +20233,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -21322,7 +20254,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21340,7 +20271,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21358,7 +20288,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -21381,7 +20310,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21400,7 +20328,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21419,7 +20346,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -21440,7 +20366,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21459,7 +20384,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21479,7 +20403,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -21501,7 +20424,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21519,7 +20441,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21537,7 +20458,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -21560,7 +20480,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21579,7 +20498,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21598,7 +20516,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -21619,7 +20536,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21638,7 +20554,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21658,7 +20573,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -21680,7 +20594,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21698,7 +20611,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21716,7 +20628,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -21739,7 +20650,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21758,7 +20668,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21777,7 +20686,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -21798,7 +20706,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21817,7 +20724,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21837,7 +20743,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -21859,7 +20764,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21877,7 +20781,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -21895,7 +20798,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -21918,7 +20820,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21937,7 +20838,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21956,7 +20856,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -21977,7 +20876,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -21996,7 +20894,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -22016,7 +20913,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -22038,7 +20934,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -22056,7 +20951,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -22074,7 +20968,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -22097,7 +20990,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -22116,7 +21008,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -22135,7 +21026,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
@@ -22156,7 +21046,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
@@ -22175,7 +21064,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -22195,7 +21083,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
@@ -22217,7 +21104,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -22235,7 +21121,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
@@ -22253,7 +21138,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
@@ -22289,9 +21173,7 @@ local function addMelosFlowersToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22339,9 +21221,7 @@ local function addMelosPlantersToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 renderFloorHelper = true,
                 blockAllTheSquare = false,
@@ -22393,9 +21273,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22417,9 +21295,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22441,9 +21317,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22465,9 +21339,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22489,9 +21361,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22509,9 +21379,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22529,9 +21397,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22549,9 +21415,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22569,9 +21433,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22589,9 +21451,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22609,9 +21469,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22629,9 +21487,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22649,9 +21505,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22669,9 +21523,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22689,9 +21541,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22709,9 +21559,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22729,9 +21577,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22749,9 +21595,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22769,9 +21613,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22789,9 +21631,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22809,9 +21649,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22829,9 +21667,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22849,9 +21685,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22869,9 +21703,7 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22906,9 +21738,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22926,9 +21756,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22946,9 +21774,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22967,9 +21793,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22987,9 +21811,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23007,9 +21829,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23028,9 +21848,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23048,9 +21866,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23068,9 +21884,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23089,9 +21903,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23109,9 +21921,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23129,9 +21939,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23150,9 +21958,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23170,9 +21976,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23190,9 +21994,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23211,9 +22013,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23231,9 +22031,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23251,9 +22049,7 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23289,13 +22085,9 @@ local function addMelosCookingObjsToMenu()
             BuildingMenu.OvenRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false
             },
@@ -23339,13 +22131,9 @@ local function addMelosFridgesToMenu()
             recipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 containerType = "fridge",

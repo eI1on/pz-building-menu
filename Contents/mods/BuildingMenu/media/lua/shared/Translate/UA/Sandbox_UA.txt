@@ -255,6 +255,9 @@ Sandbox_UA = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Матеріали ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
+    Sandbox_UsePaint = "Використовуйте Paint у рецептах",
+    Sandbox_UsePaint_tooltip = "Вимкніть функцію видалення фарби з рецептів, ті, у яких фарба є єдиним інгредієнтом, залишаться. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Використання фарби",
     Sandbox_PaintUses_tooltip = "Використовується на банку фарби. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_UA = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Використання",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Використання",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Використання",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Використання",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 використань",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Використання",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Використання",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Використання",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 використань",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Безмежне використання",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Вартість деревини для великих стін",

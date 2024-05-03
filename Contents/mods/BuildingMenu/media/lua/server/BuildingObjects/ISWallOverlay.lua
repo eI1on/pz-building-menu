@@ -1,3 +1,4 @@
+---@diagnostic disable: param-type-mismatch
 ---@class ISWallOverlay : ISBuildingObject
 ISWallOverlay = ISBuildingObject:derive("ISWallOverlay");
 

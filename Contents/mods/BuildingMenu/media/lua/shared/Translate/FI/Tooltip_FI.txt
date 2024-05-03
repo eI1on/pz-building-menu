@@ -4,6 +4,12 @@ Tooltip_FI = {
   Tooltip_BMMagazineGlass = "...heidän pitäisi ainakin löytää sinut käteväksi",
   Tooltip_AsphaltMixturePowder = "Käytetään teiden rakentamiseen. Vaatii ämpärin vettä.",
 
+  Tooltip_BuildingObject_Main_Part = "Pääosa",
+  Tooltip_BuildingObject_Secondary_Part = "Toissijainen osa",
+  Tooltip_BuildingObject_Tertiary_Part = "Kolmannen asteen osa",
+  Tooltip_BuildingObject_Quaternary_Part = "Kvaternaariosa",
+  Tooltip_BuildingObject_Extra_Part = "Lisäosa",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Harmaa kiviseinä",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Harmaa kivinen ovenkarmi",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Harmaa kivinen ikkunakehys",

@@ -255,6 +255,9 @@ Sandbox_TR = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Malzemeler ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Bu yalnızca bir satır ayırıcıdır, kontrol edilmesinin hiçbir etkisi yoktur.",
 
+    Sandbox_UsePaint = "Tariflerde Boya Kullanın",
+    Sandbox_UsePaint_tooltip = "Tariflerden boyayı çıkarmayı devre dışı bırakın; tek içerik olarak boya olanlar kalacaktır. <LINE><LINE> <RGB:1,0,0> ÇIKIN VE YENİDEN GİRİN DEĞİŞİKLİKLERİ UYGULAMAK İÇİN KAYDET! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Boya Kutusunun Kullanım Alanları",
     Sandbox_PaintUses_tooltip = "Boya kutusu başına kullanım sayısı. <LINE><LINE> <RGB:1,0,0> ÇIKIN VE YENİDEN GİRİN DEĞİŞİKLİKLERİ UYGULAMAK İÇİN KAYDET! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_TR = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Kullanım",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Kullanım",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Kullanımlar",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Kullanımlar",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Kullanım",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 Kullanım",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Kullanımlar",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Kullanım",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Kullanım",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 Kullanım",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Sonsuz Kullanımlar",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "BÜYÜK Duvarlar İçin Ahşap Malzeme Maliyeti",

@@ -13,11 +13,12 @@ local exclusions = {
 
 --- Builds an object
 ---@param object any
+---@param spritesName string|nil
 ---@param name string|nil
 ---@param playerNum number
 ---@param objectRecipe table
 ---@param objectOptions table
-function BuildingMenu.buildObject(object, name, playerNum, objectRecipe, objectOptions)
+function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRecipe, objectOptions)
     if name then
         object.name = name;
     end
@@ -26,6 +27,8 @@ function BuildingMenu.buildObject(object, name, playerNum, objectRecipe, objectO
     if not objectRecipe then return; end
 
     local modData = object.modData; -- cache modData reference.
+
+    modData.isBuiltObject = true;
 
     if objectRecipe.neededMaterials then
         for _, material in pairs(objectRecipe.neededMaterials) do
@@ -76,7 +79,9 @@ function BuildingMenu.buildObject(object, name, playerNum, objectRecipe, objectO
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.firstItem = item:getType()
             elseif not ISBuildMenu.cheat then
-                BM_Utils.debugPrint("[Building Menu ERROR] ", string.format("At selecting - firstItem - for: %s  objectOptions.firstItem: %s", name or "", objectOptions.firstItem or ""));
+                print("[Building Menu ERROR] ",
+                    string.format("At selecting - firstItem - for: %s  objectOptions.firstItem: %s", name or "",
+                        objectOptions.firstItem or ""));
                 return;
             end
         end
@@ -85,33 +90,37 @@ function BuildingMenu.buildObject(object, name, playerNum, objectRecipe, objectO
             if item and instanceof(item, "InventoryItem") then
                 objectOptions.secondItem = item:getType();
             elseif not ISBuildMenu.cheat then
-                BM_Utils.debugPrint("[Building Menu ERROR] ", string.format("At selecting - secondItem - for: %s  objectOptions.secondItem: %s", name or "", objectOptions.secondItem or ""));
+                print("[Building Menu ERROR] ",
+                    string.format("At selecting - secondItem - for: %s  objectOptions.secondItem: %s", name or "",
+                        objectOptions.secondItem or ""));
                 return;
             end
         end
         if objectOptions.containerType then
             object.getHealth = function(self)
                 local health = 200 + buildUtil.getWoodHealth(self);
-                if isDebugEnabled() then
-                    BM_Utils.debugPrint("[Building Menu DEBUG] ", string.format("objectOptions.health: %s  buildUtil.getWoodHealth(self): %s", objectOptions.health or 0, health or 0));
-                end
+                BM_Utils.debugPrint("[Building Menu DEBUG] ",
+                    string.format("objectOptions.health: %s  buildUtil.getWoodHealth(self): %s",
+                        objectOptions.health or 0, health or 0));
                 return objectOptions.health or health;
             end
         end
 
-        if isDebugEnabled() then
-            BM_Utils.debugPrint("[Building Menu DEBUG] ", name);
-            BM_Utils.debugPrint("[Building Menu DEBUG] ", objectOptions);
-            BM_Utils.debugPrint("[Building Menu DEBUG] ", objectRecipe);
-            if objectOptions and objectOptions["sprites"] then
-                if objectOptions["sprites"]["sprite"] then
-                    BM_Utils.printPropNamesFromSprite(objectOptions["sprites"]
-                        ["sprite"]);
-                end
-                if objectOptions["sprites"]["northSprite"] then
-                    BM_Utils.printPropNamesFromSprite(objectOptions
-                        ["sprites"]["northSprite"]);
-                end
+        BM_Utils.debugPrint("[Building Menu DEBUG] ", name);
+        BM_Utils.debugPrint("[Building Menu DEBUG] ", objectOptions);
+        BM_Utils.debugPrint("[Building Menu DEBUG] ", objectRecipe);
+        if spritesName then
+            if spritesName["sprite"] then
+                BM_Utils.printPropNamesFromSprite(spritesName["sprite"]);
+            end
+            if spritesName["sprite1"] then
+                BM_Utils.printPropNamesFromSprite(spritesName["sprite1"]);
+            end
+            if spritesName["northSprite"] then
+                BM_Utils.printPropNamesFromSprite(spritesName["northSprite"]);
+            end
+            if spritesName["northSprite1"] then
+                BM_Utils.printPropNamesFromSprite(spritesName["northSprite1"]);
             end
         end
     end

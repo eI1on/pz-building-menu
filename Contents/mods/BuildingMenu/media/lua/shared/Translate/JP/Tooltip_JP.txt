@@ -4,6 +4,12 @@ Tooltip_JP = {
   Tooltip_BMMagazineGlass = "...they should at least find you handy",
   Tooltip_AsphaltMixturePowder = "Used to build roads. Requires a bucket of water.",
 
+  Tooltip_BuildingObject_Main_Part = "主要部分",
+  Tooltip_BuildingObject_Secondary_Part = "二次パート",
+  Tooltip_BuildingObject_Tertiary_Part = "三次パート",
+  Tooltip_BuildingObject_Quaternary_Part = "第四部",
+  Tooltip_BuildingObject_Extra_Part = "番外編",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Grey Stone Wall",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Grey Stone Door Frame",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Grey Stone Window Frame",

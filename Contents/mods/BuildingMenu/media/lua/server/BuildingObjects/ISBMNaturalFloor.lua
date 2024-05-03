@@ -42,8 +42,8 @@ end
 ---@param sprite string The primary sprite for the object
 ---@param northSprite string The sprite used when the object is aligned north
 ---@param item InventoryItem The item required to create this object
----@param uses integer The integer of items used when creating this object
----@param playerObj IsoPlayer The playerObj creating the object
+---@param uses integer How many uses are used from the item when creating this object
+---@param playerObj IsoPlayer The player instance creating the object
 ---@return ISBMNaturalFloor ISBuildingObject instance
 function ISBMNaturalFloor:new(sprite, northSprite, item, uses, playerObj)
 	local o = {};
@@ -108,7 +108,7 @@ end
 
 --- Determines the floor type based on the item used to create the floor
 ---@param item InventoryItem The item used to create the floor
----@return string type The type of floor (gravel, dirt, sand, or none)
+---@return string type The type of floor ("gravel", "dirt", "sand", or "none")
 function ISBMNaturalFloor:getFloorType(item)
 	if not item then return "none"; end
 	if item:getFullType() == "Base.Gravelbag" then

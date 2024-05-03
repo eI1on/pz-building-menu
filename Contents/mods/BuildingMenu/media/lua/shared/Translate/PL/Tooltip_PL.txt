@@ -4,6 +4,12 @@ Tooltip_PL = {
   Tooltip_BMMagazineGlass = "...powinni przynajmniej znaleźć cię pod ręką",
   Tooltip_AsphaltMixturePowder = "Wykorzystywany do budowy dróg. Wymaga wiadra z wodą.",
 
+  Tooltip_BuildingObject_Main_Part = "Głównym elementem",
+  Tooltip_BuildingObject_Secondary_Part = "Część wtórna",
+  Tooltip_BuildingObject_Tertiary_Part = "Część trzeciorzędna",
+  Tooltip_BuildingObject_Quaternary_Part = "Część czwartorzędowa",
+  Tooltip_BuildingObject_Extra_Part = "Dodatkowa część",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Szary kamienny mur",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Rama drzwi z szarego kamienia",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Szara kamienna rama okienna",

@@ -11,7 +11,7 @@ function ISMicrowaveOven:create(x, y, z, north, sprite)
   local cell = getWorld():getCell();
   self.sq = cell:getGridSquare(x, y, z);
 
-  self.javaObject = IsoStove.new(getCell(), self.sq, getSprite(sprite));
+  self.javaObject = IsoStove.new(cell, self.sq, getSprite(sprite));
   self.javaObject:setMovedThumpable(true);
   self.javaObject:createContainersFromSpriteProperties();
 
@@ -30,6 +30,7 @@ function ISMicrowaveOven:isValid(square)
 end
 
 --- Renders a ghost tile of the microwave oven for placement preview
+--- TODO: Snap the object to counter/table faces
 --- @param x integer x coordinate in the world
 --- @param y integer y coordinate in the world
 --- @param z integer z coordinate (floor level)

@@ -12,7 +12,7 @@ local BM_Utils = require("BM_Utils")
 local BuildingMenu = require("BuildingMenu01_Main");
 
 
---- Class representing the tile picker list in the Building Menu.
+--- Class representing the tile picker list in the Building Menu
 ---@class BuildingMenuTilePickerList: ISPanel
 BuildingMenuTilePickerList = ISPanel:derive("BuildingMenuTilePickerList")
 
@@ -56,7 +56,7 @@ function BuildingMenuTilePickerList:render()
     self:clearStencilRect();
 end
 
---- Updates the tooltip for the tile picker list. TODO: optimize BuildingMenu.canBuildObject
+--- Updates the tooltip for the tile picker list
 ---@param maxCols number
 ---@param maxRows number
 function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
@@ -115,9 +115,9 @@ local spriteCache = {};
 ---@param selectedObject table
 function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
     local tooltipDescription = "";
-    tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix =
+    tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix, selectedObject.toolFoundIndexMatrix =
         BuildingMenu.canBuildObject(self.character, tooltipDescription, selectedObject.objDef.data.recipe);
-    self.tooltip:setName(BuildingMenu.getMoveableDisplayName(selectedObject.objDef.name) or selectedObject.objDef.name);
+    self.tooltip:setName(selectedObject.objDef.displayName or selectedObject.objDef.data.nameID);
 
     local function processSprite(sprite)
         if not sprite or spriteCache[sprite] then
@@ -190,7 +190,7 @@ function BuildingMenuTilePickerList:hideTooltip()
     self.tooltip:removeFromUIManager();
 end
 
---- Finds the next object in the tile picker list.
+--- Finds the next object in the tile picker list
 ---@param objectsBuffer table
 ---@return table|nil
 function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
@@ -203,7 +203,7 @@ function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
     return nil;
 end
 
---- Handles mouse wheel events for the tile picker list.
+--- Handles mouse wheel events for the tile picker list
 ---@param del number
 ---@return boolean
 function BuildingMenuTilePickerList:onMouseWheel(del)
@@ -215,7 +215,7 @@ end
 function BuildingMenuTilePickerList:processBuild(objData)
     local playerNum = self.character:getPlayerNum();
     local spritesName = objData.objDef.data.sprites;
-    local objectName = objData.objDef.name;
+    local objectName = objData.objDef.data.nameID or objData.objDef.displayName;
     local recipe = objData.objDef.data.recipe;
     local options = objData.objDef.data.options;
     local onBuild = objData.objDef.data.action;
@@ -246,6 +246,7 @@ function BuildingMenuTilePickerList:processBuild(objData)
 
     -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.materialFoundIndexMatrix ", objData.materialFoundIndexMatrix);
     -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.consumablesFoundIndexMatrix ", objData.consumablesFoundIndexMatrix);
+    -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.toolFoundIndexMatrix ", objData.toolFoundIndexMatrix);
 
 
     -- Helper function to process Material Groups or Consumable Groups
@@ -300,10 +301,11 @@ function BuildingMenuTilePickerList:processBuild(objData)
     end
 
     local object = onBuild(spritesName, objectName, playerNum, modifiedRecipe, modifiedOptions);
-    BuildingMenu.buildObject(object, objectName, playerNum, modifiedRecipe, modifiedOptions);
+    object.usedTools = objData.toolFoundIndexMatrix;
+    BuildingMenu.buildObject(object, spritesName, objectName, playerNum, modifiedRecipe, modifiedOptions);
 end
 
---- Handles mouse down events on the tile picker list.
+--- Handles mouse down events on the tile picker list
 ---@param x number
 ---@param y number
 function BuildingMenuTilePickerList:onMouseDown(x, y)
@@ -316,7 +318,7 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
     end
 end
 
---- Handles joypad down events on the tile picker list.
+--- Handles joypad down events on the tile picker list
 ---@param button Joypad
 function BuildingMenuTilePickerList:onJoypadDown(button)
     if button == Joypad.AButton then
@@ -336,7 +338,7 @@ function BuildingMenuTilePickerList:getSelectedObjectFromJoypad()
         self.posToObjectNameTable[self.selectedTileRow][self.selectedTileCol];
 end
 
---- Handles mouse up events on the tile picker list.
+--- Handles mouse up events on the tile picker list
 ---@param x number
 ---@param y number
 function BuildingMenuTilePickerList:onMouseUp(x, y)
@@ -347,7 +349,7 @@ function BuildingMenuTilePickerList:onMouseUp(x, y)
     end
 end
 
---- Handles mouse movement outside the tile picker list.
+--- Handles mouse movement outside the tile picker list
 ---@param dx number
 ---@param dy number
 function BuildingMenuTilePickerList:onMouseMoveOutside(dx, dy)
@@ -433,7 +435,7 @@ function BuildingMenuTilePickerList:ensureVisible(row, col)
     end
 end
 
---- Constructor for BuildingMenuTilePickerList.
+--- Constructor for BuildingMenuTilePickerList
 ---@param x number
 ---@param y number
 ---@param w number
@@ -458,7 +460,7 @@ end
 ---@class ISBuildingMenuUI: ISCollapsableWindowJoypad
 ISBuildingMenuUI                     = ISCollapsableWindowJoypad:derive("ISBuildingMenuUI");
 
---- Singleton instance of ISBuildingMenuUI.
+--- Singleton instance of ISBuildingMenuUI
 ---@type ISBuildingMenuUI|nil
 ISBuildingMenuUI.instance            = nil;
 ISBuildingMenuUI.largeFontHeight     = getTextManager():getFontHeight(UIFont.Large);
@@ -471,7 +473,7 @@ ISBuildingMenuUI.upArrowCategory     = Keyboard.KEY_UP;
 ISBuildingMenuUI.downArrowCategory   = Keyboard.KEY_DOWN;
 ISBuildingMenuUI.players             = {};
 
---- Opens the Building Menu UI panel.
+--- Opens the Building Menu UI panel
 ---@param playerObj IsoPlayer
 function ISBuildingMenuUI.openPanel(playerObj)
     local modData = playerObj:getModData();
@@ -528,9 +530,17 @@ function ISBuildingMenuUI:toggleBuildingMenuUI(playerObj)
     end
 end
 
+
+Events.OnPlayerDeath.Add(function (playerObj)
+    local ui = ISBuildingMenuUI.instance;
+    if ui and ui:getIsVisible() then
+        ui:close();
+    end
+end)
+
 local minOpaqueVal = 0;
 local maxOpaqueVal = 0.5;
---- Creates child elements for the Building Menu UI.
+--- Creates child elements for the Building Menu UI
 function ISBuildingMenuUI:createChildren()
     ISCollapsableWindowJoypad.createChildren(self)
     local th = self:titleBarHeight();
@@ -618,7 +628,7 @@ function ISBuildingMenuUI:createChildren()
     self.keysRichText:setMargins(5, 0, 5, 0);
 end
 
---- Changes the minimum opacity of the UI.
+--- Changes the minimum opacity of the UI
 ---@param target ISBuildingMenuUI
 ---@param value number
 ISBuildingMenuUI.onMinOpaqueChange = function(target, value)
@@ -627,7 +637,7 @@ ISBuildingMenuUI.onMinOpaqueChange = function(target, value)
     minOpaqueVal = value;
 end
 
---- Changes the maximum opacity of the UI.
+--- Changes the maximum opacity of the UI
 ---@param target ISBuildingMenuUI
 ---@param value number
 ISBuildingMenuUI.onMaxOpaqueChange = function(target, value)
@@ -636,7 +646,7 @@ ISBuildingMenuUI.onMaxOpaqueChange = function(target, value)
     maxOpaqueVal = value;
 end
 
---- Handles the gear button click in the Building Menu UI.
+--- Handles the gear button click in the Building Menu UI
 function ISBuildingMenuUI:onGearButtonClick()
     local context = ISContextMenu.get(0, self:getAbsoluteX() + self:getWidth(),
         self:getAbsoluteY() + self.gearButton:getY());
@@ -644,9 +654,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
         local option = context:addOption("Not Thumpable", self, function(self)
             self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable;
-            if isDebugEnabled() then
-                BM_Utils.debugPrint("[Building Menu DEBUG] self.tilesList.overwriteIsThumpable: ", self.tilesList.overwriteIsThumpable);
-            end
+            BM_Utils.debugPrint("[Building Menu DEBUG] self.tilesList.overwriteIsThumpable: ", self.tilesList.overwriteIsThumpable);
         end);
         context:setOptionChecked(option, self.tilesList.overwriteIsThumpable);
     end
@@ -694,13 +702,13 @@ function ISBuildingMenuUI:onGearButtonClick()
     end
 end
 
---- Retrieves the currently active tab in the UI.
+--- Retrieves the currently active tab in the UI
 ---@return ISBuildingMenuTabUI
 function ISBuildingMenuUI:getActiveTab()
     return self.panel.activeView.view;
 end
 
---- Retrieves the favorite tab in the UI.
+--- Retrieves the favorite tab in the UI
 ---@return ISBuildingMenuTabUI|nil
 function ISBuildingMenuUI:getFavoriteTab()
     for _, tab in pairs(self.tabs) do
@@ -711,13 +719,13 @@ function ISBuildingMenuUI:getFavoriteTab()
     return nil;
 end
 
---- Retrieves the active categories list in the UI.
+--- Retrieves the active categories list in the UI
 ---@return ISUIElement|nil
 function ISBuildingMenuUI:getActiveCategoriesList()
     return self.panel.activeView.view.categoriesList;
 end
 
---- Retrieves the active subcategories list in the UI.
+--- Retrieves the active subcategories list in the UI
 ---@return ISUIElement|nil
 function ISBuildingMenuUI:getActiveSubCategoriesList()
     return self.panel.activeView.view.subCategoriesList;
@@ -896,7 +904,7 @@ function ISBuildingMenuUI:update()
     end
 end
 
---- Populates the favorites tab in the Building Menu UI.
+--- Populates the favorites tab in the Building Menu UI
 function ISBuildingMenuUI:populateFavoritesTab()
     local modData = self.character:getModData();
     local favorites = modData.favorites or { categories = {}, subcategories = {} };
@@ -925,7 +933,7 @@ function ISBuildingMenuUI:populateFavoritesTab()
     end
 end
 
---- Updates the subcategories list for the favorite tab.
+--- Updates the subcategories list for the favorite tab
 ---@param favoriteTab ISBuildingMenuTabUI
 function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
     local modData = self.character:getModData();
@@ -946,7 +954,7 @@ function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
     end
 end
 
---- Updates the categories list in the UI.
+--- Updates the categories list in the UI
 ---@param categories table
 function ISBuildingMenuUI:updateCategoriesList(categories)
     local currentCategoriesList = self:getActiveCategoriesList();
@@ -960,7 +968,7 @@ function ISBuildingMenuUI:updateCategoriesList(categories)
     end
 end
 
---- Updates the subcategories list in the UI.
+--- Updates the subcategories list in the UI
 ---@param subCatData table
 function ISBuildingMenuUI:updateSubCategoriesList(subCatData)
     local currentSubCategoriesList = self:getActiveSubCategoriesList();
@@ -974,7 +982,7 @@ function ISBuildingMenuUI:updateSubCategoriesList(subCatData)
     end
 end
 
---- Updates the tiles list in the UI.
+--- Updates the tiles list in the UI
 ---@param objectsData table|nil
 function ISBuildingMenuUI:updateTilesList(objectsData)
     self.tilesList.posToObjectNameTable = {};
@@ -1050,7 +1058,7 @@ end
 
 Events.OnKeyPressed.Add(ISBuildingMenuUI.onKeyPressed);
 
---- Constructor for ISBuildingMenuUI.
+--- Constructor for ISBuildingMenuUI
 ---@param x number
 ---@param y number
 ---@param width number

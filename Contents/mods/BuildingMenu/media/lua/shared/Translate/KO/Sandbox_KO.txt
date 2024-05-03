@@ -255,6 +255,9 @@ Sandbox_KO = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ 재료 ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "이는 줄 구분 기호일 뿐이므로 확인하면 아무런 효과가 없습니다.",
 
+    Sandbox_UsePaint = "레시피에 페인트 사용",
+    Sandbox_UsePaint_tooltip = "레시피에서 페인트를 제거하려면 비활성화하세요. 페인트만 재료로 사용하는 레시피는 그대로 유지됩니다. <LINE><LINE> <RGB:1,0,0> 종료하고 다시 입력하여 변경 사항을 적용하세요! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "페인트 캔 용도",
     Sandbox_PaintUses_tooltip = "페인트 캔당 사용량. <LINE><LINE> <RGB:1,0,0> 종료하고 다시 입력하여 변경 사항을 적용하세요! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_KO = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 용도",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 용도",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 용도",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8가지 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10가지 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30번의 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60번의 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80번의 용도",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100번의 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60번의 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80번의 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100번의 용도",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "무한한 용도",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "큰 벽의 목재 재료 비용",

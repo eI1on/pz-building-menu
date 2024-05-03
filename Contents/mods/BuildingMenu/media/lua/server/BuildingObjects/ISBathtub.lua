@@ -24,8 +24,8 @@ function ISBathtub:new(playerNum, name, sprite, sprite2, northSprite, northSprit
     o.dismantable = true;
     o.blockAllTheSquare = true;
     o.canBeAlwaysPlaced = true;
-    o.buildLow = false;
-    return o
+    o.buildMid = false;
+    return o;
 end
 
 --- Creates a bathtub at the specified location
@@ -115,55 +115,70 @@ end
 --- @param z integer The z coordinate where to render
 --- @param square IsoGridSquare The square where the rendering takes place
 function ISBathtub:render(x, y, z, square)
-    ISBuildingObject.render(self, x, y, z, square)
-    local spriteAName = self.northSprite2;
-    local spriteAFree = true;
+    local spriteName = self:getSprite();
+    local spriteAName = self.sprite2; 
     local xa, ya, za = self:getSquare2Pos(square, self.north);
 
-    if not self.north then
-        spriteAName = self.sprite2;
+    if self.north then
+        spriteAName = self.northSprite2;
     end
+
+    local spriteFree = true;
+    if not self:checkSingleTileValidity(square) then spriteFree = false; end
 
     local squareA = getCell():getGridSquare(xa, ya, za);
-    if not self.canBeAlwaysPlaced and (not squareA or not squareA:isFreeOrMidair(true)) then
-        spriteAFree = false;
-    end
+    local spriteAFree = true;
+    if not self:checkSingleTileValidity(square) then spriteAFree = false; end
 
-    if squareA and squareA:isVehicleIntersecting() then
-        spriteAFree = false;
-    end
+    if square:isSomethingTo(squareA) then spriteAFree = false; spriteFree = false; end
 
-    local spriteA = IsoSprite.new();
-    spriteA:LoadFramesNoDirPageSimple(spriteAName);
-    if spriteAFree then
-        spriteA:RenderGhostTile(xa, ya, za);
+    self:renderPart(spriteName, x, y, z, spriteFree);
+    self:renderPart(spriteAName, xa, ya, za, spriteAFree);
+end
+
+
+---Renders a ghost tile part of the furniture
+---@param spriteName string The name of the sprite to render
+---@param x integer x coordinate in the world
+---@param y integer y coordinate in the world
+---@param z integer z coordinate (floor level)
+---@param isFree boolean Whether the tile is free to place the part
+function ISBathtub:renderPart(spriteName, x, y, z, isFree)
+    local sprite = IsoSprite.new();
+    sprite:LoadFramesNoDirPageSimple(spriteName);
+    if isFree then
+        sprite:RenderGhostTile(x, y, z);
     else
-        spriteA:RenderGhostTileRed(xa, ya, za);
+        sprite:RenderGhostTileRed(x, y, z);
     end
 end
+
 
 --- Determines if the placement of the bathtub is valid
 --- @param square IsoGridSquare The square to check for validity
 --- @return boolean validity True if placement is valid, false otherwise
 function ISBathtub:isValid(square)
-    if not ISBuildingObject.isValid(self, square) then
-        return false;
-    end
-	if square:isVehicleIntersecting() then
-        return false;
-    end
-    if buildUtil.stairIsBlockingPlacement(square, true) then
-        return false;
-    end
+    if not self:checkSingleTileValidity(square) then return false; end
 
     local xa, ya, za = self:getSquare2Pos(square, self.north);
     local squareA = getCell():getGridSquare(xa, ya, za);
-    if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) then
-        return false;
-    end
-    if squareA:isVehicleIntersecting() then
-        return false;
-    end
+
+    if not self:checkSingleTileValidity(square) then return false; end
+    if square:isSomethingTo(squareA) then return false; end
+
+    return true;
+end
+
+---Checks if a single tile is valid for furniture placement
+---@param square IsoGridSquare The square to check
+---@return boolean validity
+function ISBathtub:checkSingleTileValidity(square)
+    if not square then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+	if not square:isFreeOrMidair(true) then return false; end
+
+    -- if all checks passed, return true
     return true;
 end
 

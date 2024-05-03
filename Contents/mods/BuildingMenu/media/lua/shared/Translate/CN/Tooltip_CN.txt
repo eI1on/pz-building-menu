@@ -4,6 +4,12 @@ Tooltip_CN = {
   Tooltip_BMMagazineGlass = "……你迟早会发现这本书有多实用",
   Tooltip_AsphaltMixturePowder = "用来建造道路。需要一桶水。",
 
+  Tooltip_BuildingObject_Main_Part = "主要部分",
+  Tooltip_BuildingObject_Secondary_Part = "次要部分",
+  Tooltip_BuildingObject_Tertiary_Part = "第三部分",
+  Tooltip_BuildingObject_Quaternary_Part = "第四部分",
+  Tooltip_BuildingObject_Extra_Part = "额外部分",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "灰色石头墙",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "灰色石头门框",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "灰色石头窗框",

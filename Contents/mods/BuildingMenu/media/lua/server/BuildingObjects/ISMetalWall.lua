@@ -19,7 +19,6 @@ function ISMetalWall:create(x, y, z, north, sprite)
     self.javaObject:setName(self.name);
     self.javaObject:setBreakSound("BreakObject");
 
-
     buildUtil.setInfo(self.javaObject, self);
     buildUtil.consumeMaterial(self);
 

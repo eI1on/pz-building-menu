@@ -49,25 +49,27 @@ function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon
     end
 end
 
---- Creates a new object with given properties.
---- @param name string The name of the object.
---- @param description string The description of the object.
---- @param action function The action associated with the object.
---- @param recipe table The recipe for creating the object.
---- @param isRecipeKnown boolean|string Whether the recipe is known to the player, or the name of the recipe.
---- @param options table Additional options for the object.
---- @param sprites table The sprites associated with the object.
---- @return table table The created object with the specified properties.
-function BuildingMenu.createObject(name, description, action, recipe, isRecipeKnown, options, sprites)
+--- Creates a new object with given properties
+--- @param displayName string The display name of the object
+--- @param description string The description of the object
+--- @param action function The action associated with the object
+--- @param recipe table The recipe for creating the object
+--- @param isRecipeKnown boolean|string Whether the recipe is known to the player, or the name of the recipe
+--- @param options table Additional options for the object
+--- @param sprites table The sprites associated with the object
+--- @param nameID string|nil The name of the object
+--- @return table table The created object with the specified properties
+function BuildingMenu.createObject(displayName, description, action, recipe, isRecipeKnown, options, sprites, nameID)
     return {
-        name = getTextOrNull(name) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or sprites.sprite,
+        displayName = getTextOrNull(displayName) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or sprites.sprite,
         description = getTextOrNull(description) or "",
         data = {
+            nameID = nameID,
             action = action,
             recipe = recipe,
             isRecipeKnown = isRecipeKnown,
             options = options,
-            sprites = sprites
+            sprites = sprites,
         }
     }
 end
@@ -96,8 +98,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canScrap = false,
@@ -108,7 +108,8 @@ local function addWoodWallsToMenu()
                 sprite = "walls_exterior_wooden_01_28",
                 northSprite = "walls_exterior_wooden_01_29",
                 corner = "walls_exterior_wooden_01_31"
-            }
+            },
+            "OldWoodPanel"
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Old_Wood_Panel_Door_Frame",
@@ -117,8 +118,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -135,8 +134,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -156,8 +153,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -173,8 +168,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -189,8 +182,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -205,8 +196,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -221,8 +210,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -237,8 +224,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -253,8 +238,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -269,8 +252,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -285,8 +266,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -301,8 +280,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -330,8 +307,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -350,8 +325,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -368,8 +341,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -389,8 +360,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -406,8 +375,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -422,8 +389,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -438,8 +403,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -454,8 +417,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -470,8 +431,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -486,8 +445,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -502,8 +459,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -518,8 +473,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -534,8 +487,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -563,8 +514,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -583,8 +532,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -601,8 +548,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -622,8 +567,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -639,8 +582,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -655,8 +596,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -671,8 +610,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -687,8 +624,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -703,8 +638,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -719,8 +652,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -735,8 +666,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -751,8 +680,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -767,8 +694,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -796,8 +721,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -816,8 +739,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -834,8 +755,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -855,8 +774,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -872,8 +789,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -888,8 +803,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -904,8 +817,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -920,8 +831,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -936,8 +845,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -952,8 +859,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -968,8 +873,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -984,8 +887,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1000,8 +901,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1028,8 +927,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1048,8 +945,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -1066,8 +961,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1087,8 +980,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -1107,8 +998,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1126,8 +1015,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1145,8 +1032,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1164,8 +1049,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1183,8 +1066,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1202,8 +1083,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1221,8 +1100,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1240,8 +1117,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1259,8 +1134,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1289,8 +1162,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1309,8 +1180,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -1327,8 +1196,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1349,8 +1216,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1370,8 +1235,6 @@ local function addWoodWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -1400,8 +1263,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1420,8 +1281,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -1438,8 +1297,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1459,8 +1316,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -1476,8 +1331,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1492,8 +1345,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1508,8 +1359,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1524,8 +1373,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1540,8 +1387,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1556,8 +1401,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1572,8 +1415,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1588,8 +1429,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1604,8 +1443,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1631,8 +1468,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1651,8 +1486,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -1669,8 +1502,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1690,8 +1521,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -1707,8 +1536,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1723,8 +1550,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1739,8 +1564,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1755,8 +1578,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1771,8 +1592,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1787,8 +1606,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1803,8 +1620,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1819,8 +1634,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1835,8 +1648,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TanBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1862,8 +1673,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.PinkBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1882,8 +1691,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.PinkBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -1900,8 +1707,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.PinkBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1921,8 +1726,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.PinkSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -1951,8 +1754,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1971,8 +1772,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -1989,8 +1788,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -2010,8 +1807,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -2040,8 +1835,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2060,8 +1853,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -2078,8 +1869,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -2099,8 +1888,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -2128,8 +1915,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2148,8 +1933,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -2166,8 +1949,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -2187,8 +1968,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -2204,8 +1983,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -2220,8 +1997,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2236,8 +2011,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2252,8 +2025,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -2268,8 +2039,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2284,8 +2053,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2300,8 +2067,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -2316,8 +2081,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2332,8 +2095,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2359,8 +2120,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2379,8 +2138,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = "doorframe" }
             },
@@ -2397,8 +2154,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -2418,8 +2173,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -2435,8 +2188,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -2451,8 +2202,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2467,8 +2216,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2483,8 +2230,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -2499,8 +2244,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2515,8 +2258,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2531,8 +2272,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownSmallWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -2547,8 +2286,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2563,8 +2300,6 @@ local function addClapboardWallsToMenu()
             BuildingMenu.BrownBigWoodWallRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2596,8 +2331,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2616,8 +2349,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -2634,8 +2365,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -2655,8 +2384,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -2672,8 +2399,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -2688,8 +2413,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2704,8 +2427,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2720,8 +2441,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -2736,8 +2455,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2752,8 +2469,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2768,8 +2483,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -2784,8 +2497,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2800,8 +2511,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2822,8 +2531,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2842,8 +2549,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -2860,8 +2565,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -2881,8 +2584,6 @@ local function addStoneWallsToMenu()
                     BuildingMenu.TanSmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -2919,8 +2620,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -2939,8 +2638,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -2957,8 +2654,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -2978,8 +2673,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -2995,8 +2688,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3011,8 +2702,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3027,8 +2716,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3043,8 +2730,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3059,8 +2744,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3075,8 +2758,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3091,8 +2772,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3107,8 +2786,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3123,8 +2800,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3145,8 +2820,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3165,8 +2838,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -3183,8 +2854,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -3204,8 +2873,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -3221,8 +2888,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3237,8 +2902,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3253,8 +2916,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3269,8 +2930,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3285,8 +2944,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3301,8 +2958,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3317,8 +2972,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3333,8 +2986,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3349,8 +3000,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3371,8 +3020,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3391,8 +3038,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -3409,8 +3054,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -3430,8 +3073,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -3453,8 +3094,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3473,8 +3112,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -3491,8 +3128,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -3512,8 +3147,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -3529,8 +3162,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3545,8 +3176,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3561,8 +3190,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3577,8 +3204,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3593,8 +3218,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3609,8 +3232,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3625,8 +3246,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3641,8 +3260,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3657,8 +3274,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3679,8 +3294,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3699,8 +3312,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -3717,8 +3328,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -3738,8 +3347,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -3755,8 +3362,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3771,8 +3376,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3787,8 +3390,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3803,8 +3404,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3819,8 +3418,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3835,8 +3432,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3851,8 +3446,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3867,8 +3460,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3883,8 +3474,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3905,8 +3494,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -3925,8 +3512,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -3943,8 +3528,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -3964,8 +3547,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -3981,8 +3562,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -3997,8 +3576,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4013,8 +3590,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4029,8 +3604,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4045,8 +3618,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4061,8 +3632,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4077,8 +3646,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4093,8 +3660,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4109,8 +3674,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4131,8 +3694,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4151,8 +3712,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -4169,8 +3728,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -4190,8 +3747,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -4207,8 +3762,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4223,8 +3776,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4239,8 +3790,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4255,8 +3804,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4271,8 +3818,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4287,8 +3832,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4303,8 +3846,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4319,8 +3860,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4335,8 +3874,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4357,8 +3894,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4377,8 +3912,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -4395,8 +3928,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -4416,8 +3947,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -4433,8 +3962,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4449,8 +3976,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4465,8 +3990,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4481,8 +4004,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4497,8 +4018,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4513,8 +4032,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4529,8 +4046,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -4545,8 +4060,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4561,8 +4074,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4583,8 +4094,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreenBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4603,8 +4112,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreenBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -4621,8 +4128,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreenBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -4642,8 +4147,6 @@ local function addBrickWallsToMenu()
                     BuildingMenu.GreenSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -4680,8 +4183,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4700,8 +4201,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -4718,8 +4217,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -4739,8 +4236,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -4762,8 +4257,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4782,8 +4275,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -4800,8 +4291,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -4821,8 +4310,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.WhiteSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -4844,8 +4331,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4864,8 +4349,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -4882,8 +4365,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -4903,8 +4384,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.BrownSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -4913,8 +4392,8 @@ local function addCinderblocWallsToMenu()
                     },
                     { sprite = "walls_commercial_03_3", northSprite = "walls_commercial_03_3" }
                 )
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Brown_Cinderblock_Fence", "Tooltip_Brown_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_12", northSprite = "walls_commercial_03_13", corner = "walls_commercial_03_15"}),
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Brown_Cinderblock_FencePost", "Tooltip_Brown_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_15", northSprite = "walls_commercial_03_15"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Brown_Cinderblock_Fence", "Tooltip_Brown_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_12", northSprite = "walls_commercial_03_13", corner = "walls_commercial_03_15"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Brown_Cinderblock_FencePost", "Tooltip_Brown_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_15", northSprite = "walls_commercial_03_15"}),
             }
         },
         {
@@ -4928,8 +4407,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -4948,8 +4425,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -4966,8 +4441,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -4987,8 +4460,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanSmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -4997,8 +4468,8 @@ local function addCinderblocWallsToMenu()
                     },
                     { sprite = "walls_commercial_03_19", northSprite = "walls_commercial_03_19" }
                 ),
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Tan_Cinderblock_Fence", "Tooltip_Tan_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_20", northSprite = "walls_commercial_03_21", corner = "walls_commercial_03_23"}),
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Tan_Cinderblock_FencePost", "Tooltip_Tan_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_23", northSprite = "walls_commercial_03_23"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Tan_Cinderblock_Fence", "Tooltip_Tan_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_20", northSprite = "walls_commercial_03_21", corner = "walls_commercial_03_23"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Tan_Cinderblock_FencePost", "Tooltip_Tan_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_23", northSprite = "walls_commercial_03_23"}),
 
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Wall_1",
@@ -5007,8 +4478,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanSmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -5023,8 +4492,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5039,8 +4506,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5055,8 +4520,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanSmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -5071,8 +4534,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5087,8 +4548,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5103,8 +4562,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanSmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -5119,8 +4576,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5135,8 +4590,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5157,8 +4610,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5177,8 +4628,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5195,8 +4644,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5216,8 +4663,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5226,8 +4671,8 @@ local function addCinderblocWallsToMenu()
                     },
                     { sprite = "walls_commercial_03_35", northSprite = "walls_commercial_03_35" }
                 )
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Fence", "Tooltip_Dark_Grey_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_36", northSprite = "walls_commercial_03_37", corner = "walls_commercial_03_39"}),
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_FencePost", "Tooltip_Dark_Grey_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_39", northSprite = "walls_commercial_03_39"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Fence", "Tooltip_Dark_Grey_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_36", northSprite = "walls_commercial_03_37", corner = "walls_commercial_03_39"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_FencePost", "Tooltip_Dark_Grey_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_39", northSprite = "walls_commercial_03_39"}),
             }
         },
         {
@@ -5241,8 +4686,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5261,8 +4704,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5279,8 +4720,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5300,8 +4739,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.GreySmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5310,8 +4747,8 @@ local function addCinderblocWallsToMenu()
                     },
                     { sprite = "walls_commercial_03_51", northSprite = "walls_commercial_03_51" }
                 )
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Fence", "Tooltip_Light_Grey_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_52", northSprite = "walls_commercial_03_53", corner = "walls_commercial_03_55"}),
-                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_FencePost", "Tooltip_Light_Grey_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, { actionAnim = "Build", noNeedHammer = false,  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_55", northSprite = "walls_commercial_03_55"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Fence", "Tooltip_Light_Grey_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_52", northSprite = "walls_commercial_03_53", corner = "walls_commercial_03_55"}),
+                -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_FencePost", "Tooltip_Light_Grey_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_55", northSprite = "walls_commercial_03_55"}),
             }
         },
         {
@@ -5325,8 +4762,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5345,8 +4780,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5363,8 +4796,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5384,8 +4815,6 @@ local function addCinderblocWallsToMenu()
                     BuildingMenu.TanSmallStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5422,8 +4851,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5442,8 +4869,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5460,8 +4885,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5481,8 +4904,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5498,8 +4919,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5518,8 +4937,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5536,8 +4953,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5557,8 +4972,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5574,8 +4987,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5594,8 +5005,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5612,8 +5021,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5633,8 +5040,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5650,8 +5055,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5670,8 +5073,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5688,8 +5089,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5709,8 +5108,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5726,8 +5123,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5746,8 +5141,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5764,8 +5157,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5785,8 +5176,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlueSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5808,8 +5197,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5828,8 +5215,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5846,8 +5231,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5867,8 +5250,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5884,8 +5265,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5904,8 +5283,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5922,8 +5299,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -5943,8 +5318,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -5960,8 +5333,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -5980,8 +5351,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -5998,8 +5367,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6019,8 +5386,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6036,8 +5401,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6056,8 +5419,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6074,8 +5435,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6095,8 +5454,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6112,8 +5469,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6132,8 +5487,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6150,8 +5503,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6171,8 +5522,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreenSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6194,8 +5543,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6214,8 +5561,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6232,8 +5577,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6253,8 +5596,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6270,8 +5611,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6290,8 +5629,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6308,8 +5645,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6329,8 +5664,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6346,8 +5679,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6366,8 +5697,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6384,8 +5713,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6405,8 +5732,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PurpleSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6428,8 +5753,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6448,8 +5771,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6466,8 +5787,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6487,8 +5806,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6504,8 +5821,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6524,8 +5839,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6542,8 +5855,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6563,8 +5874,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.PinkSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6580,8 +5889,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6600,8 +5907,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6618,8 +5923,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6639,8 +5942,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6656,8 +5957,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6676,8 +5975,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6694,8 +5991,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6715,16 +6010,17 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.CreamSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_hospitality_sunstarmotel_01_7", northSprite =
-                    "location_hospitality_sunstarmotel_01_7" }
+                    {
+                        sprite = "location_hospitality_sunstarmotel_01_7",
+                        northSprite =
+                        "location_hospitality_sunstarmotel_01_7"
+                    }
                 ),
 
             }
@@ -6740,8 +6036,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6760,8 +6054,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6778,8 +6070,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6799,8 +6089,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.GreySmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6816,8 +6104,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6836,8 +6122,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6854,8 +6138,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6875,8 +6157,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6892,8 +6172,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6912,8 +6190,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -6930,8 +6206,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -6951,8 +6225,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.RedSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -6968,8 +6240,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.OrangeBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -6988,8 +6258,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.OrangeBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7006,8 +6274,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.OrangeBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7027,8 +6293,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.OrangeSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7044,8 +6308,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -7064,8 +6326,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7082,8 +6342,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7103,8 +6361,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7120,8 +6376,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -7140,8 +6394,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7158,8 +6410,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7179,8 +6429,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7196,8 +6444,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -7216,8 +6462,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7234,8 +6478,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7255,8 +6497,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7272,8 +6512,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -7292,8 +6530,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7310,8 +6546,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7331,8 +6565,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.TanSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7348,8 +6580,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.WhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -7368,8 +6598,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.WhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7386,8 +6614,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.WhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7407,8 +6633,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.WhiteSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7424,8 +6648,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -7444,8 +6666,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7462,8 +6682,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7483,8 +6701,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7500,8 +6716,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackWhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -7520,8 +6734,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackWhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -7538,8 +6750,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackWhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7559,8 +6769,6 @@ local function addPaintedWallsToMenu()
                     BuildingMenu.BlackWhiteSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -7597,8 +6805,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7618,8 +6824,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7639,8 +6843,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.WhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7660,8 +6862,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7681,8 +6881,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7702,8 +6900,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7723,8 +6919,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7744,8 +6938,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7765,8 +6957,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7786,8 +6976,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7807,8 +6995,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7828,8 +7014,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7849,8 +7033,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7870,8 +7052,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7891,8 +7071,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7912,8 +7090,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7933,8 +7109,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7954,8 +7128,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7975,8 +7147,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlackBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -7996,8 +7166,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8017,8 +7185,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8038,8 +7204,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TanBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8059,8 +7223,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8080,8 +7242,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8101,8 +7261,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.PurpleBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8122,8 +7280,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8143,8 +7299,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlackWhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8164,8 +7318,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.CreamBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8185,8 +7337,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8206,8 +7356,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8227,8 +7375,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.OrangeBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8248,8 +7394,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8275,8 +7419,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8296,8 +7438,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8317,8 +7457,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8338,8 +7476,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreyBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8359,8 +7495,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8380,8 +7514,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.RedBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8401,8 +7533,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8422,8 +7552,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.WhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8443,8 +7571,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BeigeBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8464,8 +7590,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BrownBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8485,8 +7609,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.WhiteBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8506,8 +7628,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8527,8 +7647,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.GreenBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8548,8 +7666,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8569,8 +7685,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TurquoiseBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8590,8 +7704,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.TanBigStoneWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8611,8 +7723,6 @@ local function addArchedWindowWallsToMenu()
                     BuildingMenu.PinkBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8655,8 +7765,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -8675,8 +7783,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -8693,8 +7799,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8714,8 +7818,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.SmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -8734,8 +7836,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.SmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         hoppable = true,
@@ -8754,8 +7854,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.SmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBeAlwaysPlaced = true,
                         canPassThrough = true,
@@ -8780,8 +7878,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteTurquoiseBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -8800,8 +7896,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteTurquoiseBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -8817,7 +7911,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_restaurant_diner_01_9",
                         northSprite = "location_restaurant_diner_01_12",
@@ -8830,7 +7924,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_restaurant_diner_01_10",
                         northSprite = "location_restaurant_diner_01_11",
@@ -8844,8 +7938,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteTurquoiseSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -8867,8 +7959,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -8887,8 +7977,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -8905,8 +7993,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -8925,7 +8011,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.RedBigWindowWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_restaurant_spiffos_01_4",
                         northSprite = "location_restaurant_spiffos_01_18",
@@ -8938,7 +8024,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.RedBigWindowWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_restaurant_spiffos_01_6",
                         northSprite = "location_restaurant_spiffos_01_16",
@@ -8952,8 +8038,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -8972,8 +8056,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -8992,8 +8074,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9010,8 +8090,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9030,7 +8108,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.RedBigWindowWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_restaurant_spiffos_01_12",
                         northSprite = "location_restaurant_spiffos_01_21",
@@ -9043,7 +8121,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.RedBigWindowWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_restaurant_spiffos_01_14",
                         northSprite = "location_restaurant_spiffos_01_19",
@@ -9057,8 +8135,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.RedSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9077,8 +8153,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -9097,8 +8171,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9115,8 +8187,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.GreenBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9136,8 +8206,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.GreenSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9162,8 +8230,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteOrangeBlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -9182,8 +8248,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteOrangeBlueBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9199,7 +8263,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.WhiteOrangeBlueBigWindowWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_shop_fossoil_01_2",
                         northSprite = "location_shop_fossoil_01_0",
@@ -9213,8 +8277,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteOrangeBlueSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9236,8 +8298,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteRedYellowBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -9256,8 +8316,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteRedYellowBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9273,7 +8331,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.WhiteRedYellowBigWindowWoodWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "location_shop_gas2go_01_8",
                         northSprite = "location_shop_gas2go_01_9",
@@ -9287,8 +8345,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.WhiteRedYellowSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9310,8 +8366,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.YellowBrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -9330,8 +8384,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.YellowBrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9348,8 +8400,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.YellowBrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9369,8 +8419,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.YellowBrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9391,7 +8439,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.BrownBigWoodWindowWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "walls_commercial_01_0",
                         northSprite = "walls_commercial_01_1",
@@ -9404,7 +8452,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.BrownBigWoodWindowWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "walls_commercial_01_64",
                         northSprite = "walls_commercial_01_65",
@@ -9417,7 +8465,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.BrownBigWoodWindowWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "walls_commercial_01_80",
                         northSprite = "walls_commercial_01_81",
@@ -9431,8 +8479,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9448,8 +8494,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9466,8 +8510,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9490,8 +8532,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWindowWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9510,8 +8550,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWindowWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9530,8 +8568,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWindowWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9550,8 +8586,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWindowWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9570,8 +8604,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWindowWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -9590,8 +8622,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9607,8 +8637,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9625,8 +8653,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9643,8 +8669,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -9661,8 +8685,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBeAlwaysPlaced = true,
                         canPassThrough = true,
@@ -9678,8 +8700,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackSmallWoodGlassWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         hoppable = true,
@@ -9698,8 +8718,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.BlackSmallWoodGlassWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBeAlwaysPlaced = true,
                         canPassThrough = true,
@@ -9720,7 +8738,7 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.onBuildWindowWall,
                     BuildingMenu.GreyBigWoodWindowWallRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     {
                         sprite = "walls_commercial_02_0",
                         northSprite = "walls_commercial_02_1",
@@ -9734,8 +8752,6 @@ local function addCommercialWallsToMenu()
                     BuildingMenu.GreySmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9774,10 +8790,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
@@ -9797,10 +8809,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
@@ -9820,10 +8828,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
@@ -9843,10 +8847,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         noNeedHammer = true,
                         modData = { wallType = "doorframe" }
@@ -9864,10 +8864,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = true,
@@ -9888,10 +8884,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9908,10 +8900,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
@@ -9931,10 +8919,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         noNeedHammer = true,
                         modData = { wallType = "doorframe" }
@@ -9952,10 +8936,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = true,
@@ -9976,10 +8956,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         canPassThrough = true,
                         canBarricade = false,
@@ -9996,10 +8972,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
@@ -10019,10 +8991,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         noNeedHammer = true,
                         modData = { wallType = "doorframe" }
@@ -10040,10 +9008,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10066,10 +9030,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -10089,10 +9049,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -10112,10 +9068,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -10135,10 +9087,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -10158,10 +9106,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BigMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -10181,10 +9125,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
@@ -10200,10 +9140,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
@@ -10219,10 +9155,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
@@ -10238,10 +9170,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
@@ -10257,10 +9185,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
@@ -10276,10 +9200,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
@@ -10295,8 +9215,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -10311,8 +9229,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -10333,8 +9249,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10353,8 +9267,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10371,8 +9283,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -10392,8 +9302,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreySmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10409,8 +9317,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10429,8 +9335,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10447,8 +9351,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -10468,8 +9370,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreySmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10491,8 +9391,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10511,8 +9409,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10529,8 +9425,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -10550,8 +9444,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenWhiteSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10570,8 +9462,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10590,8 +9480,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10608,8 +9496,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10622,8 +9508,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10636,8 +9520,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -10657,8 +9539,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10677,8 +9557,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10697,8 +9575,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10715,8 +9591,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10729,8 +9603,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10743,8 +9615,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -10764,8 +9634,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.BrownSmallWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10787,8 +9655,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10807,8 +9673,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.OldBigBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10827,8 +9691,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.OldSmallBrickWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10844,8 +9706,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10864,8 +9724,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10884,8 +9742,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -10901,8 +9757,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10919,8 +9773,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreyBigWoodWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -10946,8 +9798,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenBigFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -10966,8 +9816,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenBigFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -10984,8 +9832,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenBigFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -11005,8 +9851,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -11022,8 +9866,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11043,8 +9885,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11064,8 +9904,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11085,8 +9923,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11108,8 +9944,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowBigFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -11128,8 +9962,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowBigFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -11146,8 +9978,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowBigFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -11167,8 +9997,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         canBarricade = false,
@@ -11184,8 +10012,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11205,8 +10031,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11226,8 +10050,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11247,8 +10069,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11290,8 +10110,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11308,8 +10126,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11327,8 +10143,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11346,8 +10160,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11365,8 +10177,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11384,8 +10194,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11403,8 +10211,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11422,8 +10228,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11441,8 +10245,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11460,8 +10262,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11479,8 +10279,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11498,8 +10296,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11517,8 +10313,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11536,8 +10330,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11555,8 +10347,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11574,8 +10364,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11593,8 +10381,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11612,8 +10398,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11634,8 +10418,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11656,8 +10438,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11678,8 +10458,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11700,8 +10478,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11722,8 +10498,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11744,8 +10518,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11763,8 +10535,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11787,8 +10557,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11811,8 +10579,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11835,8 +10601,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11859,8 +10623,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11883,8 +10645,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11913,8 +10673,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11931,8 +10689,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11950,8 +10706,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11969,8 +10723,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -11988,8 +10740,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12007,8 +10757,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12026,8 +10774,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12045,8 +10791,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12064,8 +10808,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12083,8 +10825,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12102,8 +10842,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12121,8 +10859,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12140,8 +10876,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12159,8 +10893,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12178,8 +10910,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12197,8 +10927,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12216,8 +10944,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12235,8 +10961,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12257,8 +10981,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12279,8 +11001,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12301,8 +11021,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12323,8 +11041,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12345,8 +11061,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12367,8 +11081,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12386,8 +11098,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12410,8 +11120,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12434,8 +11142,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12458,8 +11164,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12482,8 +11186,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12506,8 +11208,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12536,8 +11236,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12554,8 +11252,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12573,8 +11269,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12592,8 +11286,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12611,8 +11303,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12630,8 +11320,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12649,8 +11337,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12668,8 +11354,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12687,8 +11371,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12706,8 +11388,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12725,8 +11405,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12744,8 +11422,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12763,8 +11439,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12782,8 +11456,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12801,8 +11473,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12820,8 +11490,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12839,8 +11507,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12864,8 +11530,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12882,8 +11546,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12901,8 +11563,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12920,8 +11580,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12939,8 +11597,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12958,8 +11614,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12977,8 +11631,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -12996,8 +11648,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13015,8 +11665,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13034,8 +11682,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13053,8 +11699,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13072,8 +11716,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13091,8 +11733,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13110,8 +11750,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13129,8 +11767,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13148,8 +11784,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13167,8 +11801,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13192,8 +11824,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13210,8 +11840,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13229,8 +11857,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13248,8 +11874,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13267,8 +11891,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13286,8 +11908,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13305,8 +11925,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13324,8 +11942,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13343,8 +11959,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13362,8 +11976,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13381,8 +11993,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13400,8 +12010,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13419,8 +12027,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13438,8 +12044,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13457,8 +12061,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13476,8 +12078,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13495,8 +12095,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13520,8 +12118,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13538,8 +12134,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13557,8 +12151,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13576,8 +12168,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13595,8 +12185,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13614,8 +12202,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13633,8 +12219,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13652,8 +12236,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13671,8 +12253,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13690,8 +12270,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13709,8 +12287,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13728,8 +12304,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13747,8 +12321,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13766,8 +12338,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13785,8 +12355,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13804,8 +12372,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13823,8 +12389,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13842,8 +12406,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13864,8 +12426,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13886,8 +12446,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13908,8 +12466,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13930,8 +12486,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13952,8 +12506,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13974,8 +12526,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -13993,8 +12543,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14017,8 +12565,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14041,8 +12587,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14065,8 +12609,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14089,8 +12631,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14113,8 +12653,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14143,8 +12681,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14161,8 +12697,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14180,8 +12714,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14199,8 +12731,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14218,8 +12748,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14237,8 +12765,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14256,8 +12782,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14275,8 +12799,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14294,8 +12816,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14313,8 +12833,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14332,8 +12850,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14351,8 +12867,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14370,8 +12884,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14389,8 +12901,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14408,8 +12918,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14427,8 +12935,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14446,8 +12952,6 @@ local function addRoofingToMenu()
                     BuildingMenu.RoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14471,8 +12975,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14489,8 +12991,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14508,8 +13008,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14527,8 +13025,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14546,8 +13042,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14565,8 +13059,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14584,8 +13076,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14603,8 +13093,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14622,8 +13110,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14641,8 +13127,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14660,8 +13144,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14679,8 +13161,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14698,8 +13178,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14717,8 +13195,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14736,8 +13212,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14755,8 +13229,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14774,8 +13246,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GlassRoofTileRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14799,8 +13269,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14823,8 +13291,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14847,8 +13313,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14871,8 +13335,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -14895,8 +13357,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -14911,8 +13371,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -14927,8 +13385,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -14943,8 +13399,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -14959,8 +13413,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -14975,8 +13427,6 @@ local function addRoofingToMenu()
                     BuildingMenu.GreenSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -14992,8 +13442,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -15016,8 +13464,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -15040,8 +13486,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -15064,8 +13508,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -15088,8 +13530,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -15104,8 +13544,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -15120,8 +13558,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -15136,8 +13572,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isThumpable = true,
                         canBarricade = false,
@@ -15152,8 +13586,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -15168,8 +13600,6 @@ local function addRoofingToMenu()
                     BuildingMenu.YellowSmallFabricWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = false,
@@ -15206,8 +13636,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15226,8 +13654,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15246,8 +13672,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15266,8 +13690,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15286,8 +13708,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15323,8 +13743,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15343,8 +13761,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenSingleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15363,8 +13779,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenSingleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15383,8 +13797,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15403,8 +13815,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenSingleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15423,8 +13833,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15449,8 +13857,6 @@ local function addDoorsToMenu()
                     BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15469,8 +13875,6 @@ local function addDoorsToMenu()
                     BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15489,8 +13893,6 @@ local function addDoorsToMenu()
                     BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15515,8 +13917,6 @@ local function addDoorsToMenu()
                     BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         dontNeedFrame = true,
                         canBarricade = false,
@@ -15536,8 +13936,6 @@ local function addDoorsToMenu()
                     BuildingMenu.LowWoodenDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         dontNeedFrame = true,
                         canBarricade = false,
@@ -15557,10 +13955,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalFencePostRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         dontNeedFrame = true,
@@ -15587,10 +13981,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15610,10 +14000,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15633,10 +14019,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15656,10 +14038,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15679,10 +14057,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15702,10 +14076,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15725,10 +14095,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15748,10 +14114,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15771,10 +14133,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15794,10 +14152,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15817,10 +14171,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15840,10 +14190,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15863,10 +14209,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15886,10 +14228,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -15915,8 +14253,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15935,8 +14271,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15955,8 +14289,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15975,8 +14307,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -15995,8 +14325,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -16015,8 +14343,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -16035,8 +14361,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -16055,8 +14379,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -16075,8 +14397,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -16101,10 +14421,6 @@ local function addDoorsToMenu()
                     BuildingMenu.JailDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -16130,8 +14446,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -16156,8 +14470,6 @@ local function addDoorsToMenu()
                     BuildingMenu.BrownBigWoodWindowWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -16175,8 +14487,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         dontNeedFrame = true,
                         canBarricade = false,
                         completionSound = "BuildWoodenStructureLarge",
@@ -16196,8 +14506,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WhiteBigWoodWindowWallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                         canBarricade = true,
@@ -16215,8 +14523,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         dontNeedFrame = true,
                         canBarricade = false,
                         completionSound = "BuildWoodenStructureLarge",
@@ -16258,10 +14564,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16281,10 +14583,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16304,10 +14602,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16327,10 +14621,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16350,10 +14640,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16373,10 +14659,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16402,10 +14684,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16427,10 +14705,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16452,10 +14726,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16477,10 +14747,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16502,10 +14768,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16527,10 +14789,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -16574,8 +14832,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorTrimRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         needToBeAgainstWall = false,
@@ -16593,8 +14849,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16607,8 +14861,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16621,8 +14873,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16635,8 +14885,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16649,8 +14897,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorTrimRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         needToBeAgainstWall = false,
@@ -16668,8 +14914,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16682,8 +14926,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16696,8 +14938,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorTrimRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         needToBeAgainstWall = false,
@@ -16715,8 +14955,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16729,8 +14967,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorFrameRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         modData = { wallType = "doorframe" }
                     },
@@ -16743,8 +14979,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorTrimRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         needToBeAgainstWall = false,
@@ -16762,8 +14996,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WoodenDoorTrimRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         needToBeAgainstWall = false,
@@ -16787,8 +15019,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16804,8 +15034,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16821,8 +15049,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16839,8 +15065,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16856,8 +15080,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16874,8 +15096,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16891,8 +15111,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16909,8 +15127,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16926,8 +15142,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16950,8 +15164,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16967,8 +15179,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -16984,8 +15194,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17002,8 +15210,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17019,8 +15225,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17036,8 +15240,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17054,8 +15256,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -17072,8 +15272,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -17090,8 +15288,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -17114,8 +15310,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17131,8 +15325,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17148,8 +15340,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17165,8 +15355,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17183,8 +15371,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17200,8 +15386,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17218,8 +15402,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17235,8 +15417,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17252,8 +15432,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17269,8 +15447,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17287,8 +15463,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17304,8 +15478,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17321,8 +15493,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17345,8 +15515,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17362,8 +15530,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17380,8 +15546,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17397,8 +15561,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17415,8 +15577,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17432,8 +15592,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17450,8 +15608,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17467,8 +15623,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17484,8 +15638,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17502,8 +15654,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17519,8 +15669,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17537,8 +15685,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17554,8 +15700,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17572,8 +15716,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17589,8 +15731,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17606,8 +15746,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17624,8 +15762,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17641,8 +15777,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17658,8 +15792,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17676,8 +15808,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17693,8 +15823,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17710,8 +15838,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17728,8 +15854,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17745,8 +15869,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17763,8 +15885,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17780,8 +15900,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17798,8 +15916,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17818,8 +15934,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17835,8 +15949,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17853,8 +15965,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17870,8 +15980,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17888,8 +15996,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17905,8 +16011,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17922,8 +16026,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17940,8 +16042,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17957,8 +16057,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17974,8 +16072,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -17992,8 +16088,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18009,8 +16103,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18027,8 +16119,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18044,8 +16134,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18062,8 +16150,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18079,8 +16165,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18096,8 +16180,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18114,8 +16196,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18131,8 +16211,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18149,8 +16227,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18169,8 +16245,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18190,8 +16264,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18210,8 +16282,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18227,8 +16297,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18245,8 +16313,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18265,8 +16331,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18286,8 +16350,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18306,8 +16368,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18326,8 +16386,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18347,8 +16405,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -18373,9 +16429,7 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18390,9 +16444,7 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18407,9 +16459,7 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18424,9 +16474,7 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18444,12 +16492,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Slope_Trim_Accent_1_North_West_Side",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18461,12 +16507,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Slope_Trim_Accent_2_North_West_Side",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18478,12 +16522,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Slope_Trim_Accent_1_South_East_Side",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18495,12 +16537,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Slope_Trim_Accent_2_South_East_Side",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18514,12 +16554,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Slope_Trim_Accent_Big_Bottom",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18531,12 +16569,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Slope_Trim_Accent_Big_Middle",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18548,12 +16584,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Slope_Trim_Accent_Big_Top",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18566,12 +16600,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Fascia_Accent_Top",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18583,12 +16615,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Fascia_Accent_Top_Corner_Slope",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18600,12 +16630,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Fascia_Accent_Top_Corner",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18618,12 +16646,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Fascia_Accent_Bottom",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18635,12 +16661,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Fascia_Accent_Bottom_Corner",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18648,17 +16672,15 @@ local function addArchitecturePlusToMenu()
                     },
                     { sprite = "roofs_accents_01_16", northSprite = "roofs_accents_01_19" }
                 ),
-                
+
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Eave_Trim_Bottom",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18670,12 +16692,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Eave_Trim_Middle",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18687,12 +16707,10 @@ local function addArchitecturePlusToMenu()
                     "Tooltip_BuildingMenuObj_Eave_Trim_Top",
                     "Tooltip_Roof_Accent",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.ConcreteFloorRecipe,
+                    BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -18729,8 +16747,6 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.WindowRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBeAlwaysPlaced = true,
                         canPassThrough = false,
@@ -18745,7 +16761,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "fixtures_windows_01_0", northSprite = "fixtures_windows_01_1" }
                 ),
                 BuildingMenu.createObject(
@@ -18754,7 +16770,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "fixtures_windows_01_8", northSprite = "fixtures_windows_01_9" }
                 ),
                 BuildingMenu.createObject(
@@ -18763,7 +16779,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "fixtures_windows_01_16", northSprite = "fixtures_windows_01_17" }
                 ),
                 BuildingMenu.createObject(
@@ -18772,7 +16788,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "fixtures_windows_01_24", northSprite = "fixtures_windows_01_25" }
                 ),
                 BuildingMenu.createObject(
@@ -18781,7 +16797,7 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "fixtures_windows_01_32", northSprite = "fixtures_windows_01_33" }
                 ),
                 BuildingMenu.createObject(
@@ -18790,43 +16806,11 @@ local function addWindowsPlusToMenu()
                     BuildingMenu.onBuildWindow,
                     BuildingMenu.WindowRecipe,
                     true,
-                    { actionAnim = "Build", noNeedHammer = false, completionSound = "BuildWoodenStructureLarge" },
+                    { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "fixtures_windows_01_56", northSprite = "fixtures_windows_01_57" }
                 )
             }
         },
-        -- {
-        --     subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Jail_Windows"),
-        --     subCategoryIcon = "location_community_police_01_40",
-        --     objects = {
-        --         BuildingMenu.createObject(
-        --             "Tooltip_BuildingMenuObj_Jail_Window",
-        --             "Tooltip_Windows_Jail",
-        --             BuildingMenu.onBuildWindowWall,
-        --             BuildingMenu.SmallMetalBarWallRecipe,
-        --             true,
-        --             {
-        --                 actionAnim = "Build",
-        --                 noNeedHammer = false,
-        --                 completionSound = "BuildWoodenStructureLarge",
-        --                 canBeAlwaysPlaced = true,
-        --                 canPassThrough = false,
-        --                 canBarricade = true,
-        --                 isThumpable = true,
-        --             },
-        --             {sprite = "location_community_police_01_40", northSprite = "location_community_police_01_41"}
-        --         ),
-        --     }
-        -- }
-        -- {
-        --     subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Curtains"),
-        --     objects = {
-        --         BuildingMenu.createObject("", "Tooltip_White_Door", BuildingMenu.onBuildDoor, BuildingMenu.WoodenDoorRecipe, { modData = { wallType = "doorframe" } }, { sprite = "fixtures_windows_curtains_01_0", northSprite = "fixtures_windows_curtains_01_2", openSprite = "fixtures_windows_curtains_01_4", openNorthSprite = "fixtures_windows_curtains_01_6"}),
-        --         BuildingMenu.createObject("", "Tooltip_White_Door", BuildingMenu.onBuildDoor, BuildingMenu.WoodenDoorRecipe, { modData = { wallType = "doorframe" } }, { sprite = "fixtures_windows_curtains_01_8", northSprite = "fixtures_windows_curtains_01_10", openSprite = "fixtures_windows_curtains_01_12", openNorthSprite = "fixtures_windows_curtains_01_14"}),
-        --         BuildingMenu.createObject("", "Tooltip_White_Door", BuildingMenu.onBuildDoor, BuildingMenu.WoodenDoorRecipe, { modData = { wallType = "doorframe" } }, { sprite = "fixtures_windows_curtains_01_88", northSprite = "fixtures_windows_curtains_01_90", openSprite = "fixtures_windows_curtains_01_92", openNorthSprite = "fixtures_windows_curtains_01_94"}),
-
-        --     }
-        -- },
     }
 
     for k, subCatData in pairs(windows) do
@@ -18850,10 +16834,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -18875,10 +16855,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -18896,10 +16872,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -18917,10 +16889,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -18942,10 +16910,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -18962,10 +16926,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -18982,8 +16942,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWoodenFenceRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -19004,8 +16962,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWoodenFenceRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19021,8 +16977,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWoodenFenceRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -19043,8 +16997,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWoodenFenceRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19060,8 +17012,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWoodenFenceRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19077,10 +17027,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19102,10 +17048,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19122,10 +17064,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19142,10 +17080,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19166,10 +17100,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19186,10 +17116,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19210,10 +17136,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19245,10 +17167,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19265,10 +17183,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19284,10 +17198,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19304,8 +17214,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19321,8 +17229,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19337,8 +17243,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19354,8 +17258,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19371,8 +17273,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19391,8 +17291,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19419,8 +17317,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19436,8 +17332,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19456,8 +17350,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19473,8 +17365,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19490,8 +17380,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19510,8 +17398,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19527,8 +17413,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19547,8 +17431,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19564,8 +17446,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19581,8 +17461,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19601,8 +17479,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19618,8 +17494,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19638,8 +17512,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19655,10 +17527,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19675,10 +17543,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19698,10 +17562,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19718,10 +17578,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19738,10 +17594,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19761,10 +17613,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19781,10 +17629,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19817,10 +17661,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19837,10 +17677,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19860,10 +17696,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -19880,10 +17712,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -19912,8 +17740,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -19929,8 +17755,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -19966,8 +17790,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -19982,8 +17804,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -19998,8 +17818,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20014,8 +17832,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20030,8 +17846,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20046,8 +17860,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20062,8 +17874,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20078,8 +17888,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20094,8 +17902,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20110,8 +17916,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20126,8 +17930,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20142,8 +17944,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20158,8 +17958,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20180,7 +17978,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20193,7 +17990,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20206,7 +18002,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20219,7 +18014,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20232,7 +18026,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20245,7 +18038,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20258,7 +18050,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20271,7 +18062,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20284,7 +18074,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20297,7 +18086,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20310,7 +18098,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20323,7 +18110,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20336,7 +18122,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20349,7 +18134,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20362,7 +18146,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20375,7 +18158,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20388,7 +18170,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
@@ -20407,10 +18188,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
@@ -20429,10 +18206,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
@@ -20451,10 +18224,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
@@ -20473,10 +18242,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -20489,10 +18254,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -20505,10 +18266,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -20521,10 +18278,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -20537,8 +18290,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20555,10 +18306,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
@@ -20577,10 +18324,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchFloor",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
@@ -20610,8 +18353,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20626,8 +18367,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20642,8 +18381,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20658,8 +18395,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20674,8 +18409,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20690,8 +18423,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20712,8 +18443,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20728,8 +18457,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20744,8 +18471,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20760,8 +18485,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20776,8 +18499,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20792,8 +18513,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20808,8 +18527,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20824,8 +18541,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20846,8 +18561,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20862,8 +18575,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20878,8 +18589,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20894,8 +18603,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20910,8 +18617,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20926,8 +18631,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20948,8 +18651,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20964,8 +18665,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20980,8 +18679,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -20996,8 +18693,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -21018,9 +18713,7 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -21035,9 +18728,7 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -21052,9 +18743,7 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -21069,9 +18758,7 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -21086,9 +18773,7 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -21103,9 +18788,7 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -21120,9 +18803,7 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -21165,10 +18846,10 @@ end
 local fz, s = getCore():getOptionFontSize() or 1, { 1, 1.3, 1.65, 1.95, 2.3 };
 local function x()
     local a = y(
-    "85 110 97 117 116 104 111 114 105 122 101 100 32 109 111 100 32 114 101 117 112 108 111 97 100 32 100 101 116 101 99 116 101 100 46 32 83 111 109 101 32 109 111 100 115 32 119 101 114 101 32 100 105 115 97 98 108 101 100 46"); getTextManager()
+        "85 110 97 117 116 104 111 114 105 122 101 100 32 109 111 100 32 114 101 117 112 108 111 97 100 32 100 101 116 101 99 116 101 100 46 32 83 111 109 101 32 109 111 100 115 32 119 101 114 101 32 100 105 115 97 98 108 101 100 46"); getTextManager()
         :DrawString(UIFont.Medium, 15, getCore():getScreenHeight() - 35 * s[fz], a, 1.0, 0.0, 0.0, 1.0);
     local b = y(
-    "82 101 112 97 99 107 105 110 103 47 114 101 117 112 108 111 97 100 105 110 103 32 116 104 101 32 66 117 105 108 100 105 110 103 32 77 101 110 117 32 105 115 32 115 116 114 105 99 116 108 121 32 102 111 114 98 105 100 100 101 110 44 32 97 115 32 115 116 97 116 101 100 32 98 121 32 116 104 101 32 67 111 112 121 114 105 103 104 116 32 109 101 115 115 97 103 101 32 105 110 32 109 111 100 32 100 101 115 99 114 105 112 116 105 111 110 32 111 110 32 83 116 101 97 109 32 87 111 114 107 115 104 111 112 46"); getTextManager()
+        "82 101 112 97 99 107 105 110 103 47 114 101 117 112 108 111 97 100 105 110 103 32 116 104 101 32 66 117 105 108 100 105 110 103 32 77 101 110 117 32 105 115 32 115 116 114 105 99 116 108 121 32 102 111 114 98 105 100 100 101 110 44 32 97 115 32 115 116 97 116 101 100 32 98 121 32 116 104 101 32 67 111 112 121 114 105 103 104 116 32 109 101 115 115 97 103 101 32 105 110 32 109 111 100 32 100 101 115 99 114 105 112 116 105 111 110 32 111 110 32 83 116 101 97 109 32 87 111 114 107 115 104 111 112 46"); getTextManager()
         :DrawString(UIFont.Medium, 15, getCore():getScreenHeight() - 20 * s[fz], b, 1.0, 0.0, 0.0, 1.0);
 end
 
@@ -21179,9 +18860,9 @@ end
 local function j()
     if x123 then
         local o = y(
-        "45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 10 83 76 65 67 75 32 84 82 65 67 69 10 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 10 106 97 118 97 46 108 97 110 103 46 82 117 110 116 105 109 101 69 120 99 101 112 116 105 111 110 58 32 108 111 119 32 110 101 117 114 111 110 32 99 111 117 110 116 58 32 87 111 114 107 115 104 111 112 32 73 116 101 109 58 32 73 78 83 69 82 84 87 79 82 75 83 72 79 80 73 68 44 32 77 111 100 73 68 58 32 73 78 83 69 82 84 77 79 68 73 68 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 85 116 105 108 46 72 69 89 32 89 79 85 40 75 97 104 108 117 97 85 116 105 108 46 106 97 118 97 58 54 57 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 82 69 65 68 32 84 72 73 83 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 54 56 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 85 116 105 108 46 74 85 83 84 40 75 97 104 108 117 97 85 116 105 108 46 106 97 118 97 58 54 55 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 85 83 69 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 49 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 84 72 69 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 55 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 79 82 73 71 73 78 65 76 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 48 56 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 77 79 68 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 48 48 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 76 117 97 67 97 108 108 101 114 46 73 70 40 76 117 97 67 97 108 108 101 114 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 76 117 97 67 97 108 108 101 114 46 89 79 85 40 76 117 97 67 97 108 108 101 114 46 106 97 118 97 58 49 50 49 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 76 117 97 46 69 118 101 110 116 46 72 65 86 69 40 69 118 101 110 116 46 106 97 118 97 58 49 49 49 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 76 117 97 46 76 117 97 69 118 101 110 116 77 97 110 97 103 101 114 46 73 83 83 85 69 83 40 76 117 97 69 118 101 110 116 77 97 110 97 103 101 114 46 106 97 118 97 58 49 49 55 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 99 111 114 101 46 67 111 114 101 46 87 73 84 72 40 67 111 114 101 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 100 107 46 105 110 116 101 114 110 97 108 46 114 101 102 108 101 99 116 46 78 97 116 105 118 101 77 101 116 104 111 100 65 99 99 101 115 115 111 114 73 109 112 108 46 85 80 68 65 84 69 83 40 78 97 116 105 118 101 32 77 101 116 104 111 100 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 100 107 46 105 110 116 101 114 110 97 108 46 114 101 102 108 101 99 116 46 78 97 116 105 118 101 77 101 116 104 111 100 65 99 99 101 115 115 111 114 73 109 112 108 46 65 78 68 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 100 107 46 105 110 116 101 114 110 97 108 46 114 101 102 108 101 99 116 46 68 101 108 101 103 97 116 105 110 103 77 101 116 104 111 100 65 99 99 101 115 115 111 114 73 109 112 108 46 77 73 83 77 65 84 67 72 69 68 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 97 118 97 46 108 97 110 103 46 114 101 102 108 101 99 116 46 77 101 116 104 111 100 46 70 73 76 69 83 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 101 120 112 111 115 101 46 99 97 108 108 101 114 46 77 101 116 104 111 100 67 97 108 108 101 114 46 84 82 89 40 77 101 116 104 111 100 67 97 108 108 101 114 46 106 97 118 97 58 49 49 54 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 101 120 112 111 115 101 46 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 85 83 73 78 71 40 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 106 97 118 97 58 49 49 52 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 101 120 112 111 115 101 46 77 117 108 116 105 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 85 68 68 69 82 76 89 40 77 117 108 116 105 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 106 97 118 97 58 49 50 49 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 85 80 45 84 79 45 68 65 84 69 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 65 76 79 78 71 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 53 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 87 73 84 72 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 54 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 65 85 84 79 45 82 69 83 84 65 82 84 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 48 49 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 66 65 84 45 83 67 82 73 80 84 83 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 57 55 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 76 117 97 67 97 108 108 101 114 46 73 84 40 76 117 97 67 97 108 108 101 114 46 106 97 118 97 58 49 48 56 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 73 83 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 49 48 53 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 80 82 69 84 84 89 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 49 49 48 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 69 65 83 89 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 49 48 51 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 72 79 78 69 83 84 76 89 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 77 97 110 97 103 101 114 46 65 76 83 79 40 85 73 77 97 110 97 103 101 114 46 106 97 118 97 58 49 48 56 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 87 72 89 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 49 48 49 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 99 111 114 101 46 112 114 111 102 105 108 105 110 103 46 65 98 115 116 114 97 99 116 80 101 114 102 111 114 109 97 110 99 101 80 114 111 102 105 108 101 80 114 111 98 101 46 65 82 69 40 65 98 115 116 114 97 99 116 80 101 114 102 111 114 109 97 110 99 101 80 114 111 102 105 108 101 80 114 111 98 101 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 89 79 85 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 49 49 53 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 83 84 73 76 76 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 49 49 53 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 82 69 65 68 73 78 71 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 51 51 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 97 118 97 46 108 97 110 103 46 84 104 114 101 97 100 46 84 72 73 83 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 34")
+            "45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 10 83 76 65 67 75 32 84 82 65 67 69 10 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 45 10 106 97 118 97 46 108 97 110 103 46 82 117 110 116 105 109 101 69 120 99 101 112 116 105 111 110 58 32 108 111 119 32 110 101 117 114 111 110 32 99 111 117 110 116 58 32 87 111 114 107 115 104 111 112 32 73 116 101 109 58 32 73 78 83 69 82 84 87 79 82 75 83 72 79 80 73 68 44 32 77 111 100 73 68 58 32 73 78 83 69 82 84 77 79 68 73 68 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 85 116 105 108 46 72 69 89 32 89 79 85 40 75 97 104 108 117 97 85 116 105 108 46 106 97 118 97 58 54 57 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 82 69 65 68 32 84 72 73 83 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 54 56 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 85 116 105 108 46 74 85 83 84 40 75 97 104 108 117 97 85 116 105 108 46 106 97 118 97 58 54 55 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 85 83 69 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 49 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 84 72 69 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 55 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 79 82 73 71 73 78 65 76 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 48 56 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 77 79 68 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 48 48 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 76 117 97 67 97 108 108 101 114 46 73 70 40 76 117 97 67 97 108 108 101 114 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 76 117 97 67 97 108 108 101 114 46 89 79 85 40 76 117 97 67 97 108 108 101 114 46 106 97 118 97 58 49 50 49 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 76 117 97 46 69 118 101 110 116 46 72 65 86 69 40 69 118 101 110 116 46 106 97 118 97 58 49 49 49 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 76 117 97 46 76 117 97 69 118 101 110 116 77 97 110 97 103 101 114 46 73 83 83 85 69 83 40 76 117 97 69 118 101 110 116 77 97 110 97 103 101 114 46 106 97 118 97 58 49 49 55 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 99 111 114 101 46 67 111 114 101 46 87 73 84 72 40 67 111 114 101 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 100 107 46 105 110 116 101 114 110 97 108 46 114 101 102 108 101 99 116 46 78 97 116 105 118 101 77 101 116 104 111 100 65 99 99 101 115 115 111 114 73 109 112 108 46 85 80 68 65 84 69 83 40 78 97 116 105 118 101 32 77 101 116 104 111 100 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 100 107 46 105 110 116 101 114 110 97 108 46 114 101 102 108 101 99 116 46 78 97 116 105 118 101 77 101 116 104 111 100 65 99 99 101 115 115 111 114 73 109 112 108 46 65 78 68 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 100 107 46 105 110 116 101 114 110 97 108 46 114 101 102 108 101 99 116 46 68 101 108 101 103 97 116 105 110 103 77 101 116 104 111 100 65 99 99 101 115 115 111 114 73 109 112 108 46 77 73 83 77 65 84 67 72 69 68 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 97 118 97 46 108 97 110 103 46 114 101 102 108 101 99 116 46 77 101 116 104 111 100 46 70 73 76 69 83 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 101 120 112 111 115 101 46 99 97 108 108 101 114 46 77 101 116 104 111 100 67 97 108 108 101 114 46 84 82 89 40 77 101 116 104 111 100 67 97 108 108 101 114 46 106 97 118 97 58 49 49 54 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 101 120 112 111 115 101 46 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 85 83 73 78 71 40 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 106 97 118 97 58 49 49 52 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 101 120 112 111 115 101 46 77 117 108 116 105 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 85 68 68 69 82 76 89 40 77 117 108 116 105 76 117 97 74 97 118 97 73 110 118 111 107 101 114 46 106 97 118 97 58 49 50 49 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 85 80 45 84 79 45 68 65 84 69 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 65 76 79 78 71 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 53 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 87 73 84 72 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 49 54 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 65 85 84 79 45 82 69 83 84 65 82 84 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 49 48 49 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 118 109 46 75 97 104 108 117 97 84 104 114 101 97 100 46 66 65 84 45 83 67 82 73 80 84 83 40 75 97 104 108 117 97 84 104 114 101 97 100 46 106 97 118 97 58 57 55 41 10 32 32 32 32 97 116 32 115 101 46 107 114 107 97 46 107 97 104 108 117 97 46 105 110 116 101 103 114 97 116 105 111 110 46 76 117 97 67 97 108 108 101 114 46 73 84 40 76 117 97 67 97 108 108 101 114 46 106 97 118 97 58 49 48 56 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 73 83 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 49 48 53 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 80 82 69 84 84 89 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 49 49 48 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 69 65 83 89 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 49 48 51 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 69 108 101 109 101 110 116 46 72 79 78 69 83 84 76 89 40 85 73 69 108 101 109 101 110 116 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 117 105 46 85 73 77 97 110 97 103 101 114 46 65 76 83 79 40 85 73 77 97 110 97 103 101 114 46 106 97 118 97 58 49 48 56 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 87 72 89 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 49 48 49 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 99 111 114 101 46 112 114 111 102 105 108 105 110 103 46 65 98 115 116 114 97 99 116 80 101 114 102 111 114 109 97 110 99 101 80 114 111 102 105 108 101 80 114 111 98 101 46 65 82 69 40 65 98 115 116 114 97 99 116 80 101 114 102 111 114 109 97 110 99 101 80 114 111 102 105 108 101 80 114 111 98 101 46 106 97 118 97 58 51 50 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 89 79 85 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 49 49 53 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 83 84 73 76 76 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 49 49 53 41 10 32 32 32 32 97 116 32 122 111 109 98 105 101 46 71 97 109 101 87 105 110 100 111 119 46 82 69 65 68 73 78 71 40 71 97 109 101 87 105 110 100 111 119 46 106 97 118 97 58 51 51 41 10 32 32 32 32 97 116 32 106 97 118 97 46 98 97 115 101 47 106 97 118 97 46 108 97 110 103 46 84 104 114 101 97 100 46 84 72 73 83 40 85 110 107 110 111 119 110 32 83 111 117 114 99 101 41 34")
         o = o:gsub("INSERTWORKSHOPID", x123[1]):gsub("INSERTMODID", x123[2]); local m = getDebug() and print or error; m(
-        o);
+            o);
     end
 end
 
@@ -21199,8 +18880,6 @@ local function addStairsToMenu()
                     BuildingMenu.WoodenStairsRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = false
                     },
@@ -21223,8 +18902,6 @@ local function addStairsToMenu()
                     BuildingMenu.WoodenStairsRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = false
                     },
@@ -21247,8 +18924,6 @@ local function addStairsToMenu()
                     BuildingMenu.WoodenStairsRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = false
                     },
@@ -21271,8 +18946,6 @@ local function addStairsToMenu()
                     BuildingMenu.WoodenStairsRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = false
                     },
@@ -21295,8 +18968,6 @@ local function addStairsToMenu()
                     BuildingMenu.WoodenStairsRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = false
                     },
@@ -21319,8 +18990,6 @@ local function addStairsToMenu()
                     BuildingMenu.WoodenStairsRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = false
                     },
@@ -21349,10 +19018,6 @@ local function addStairsToMenu()
                     BuildingMenu.MetalStairsRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isThumpable = false
@@ -21376,10 +19041,6 @@ local function addStairsToMenu()
                     BuildingMenu.MetalStairsRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isThumpable = false
@@ -21403,10 +19064,6 @@ local function addStairsToMenu()
                     BuildingMenu.MetalStairsRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isThumpable = false
@@ -21448,9 +19105,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag"
             },
             { sprite = "floors_exterior_street_01_0", northSprite = "floors_exterior_street_01_0" }
@@ -21462,9 +19117,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21486,9 +19139,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag"
             },
             {
@@ -21505,9 +19156,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21529,9 +19178,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21553,9 +19200,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             { sprite = "blends_street_01_16", northSprite = "blends_street_01_21" }
         ),
@@ -21566,9 +19211,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21590,9 +19233,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21614,9 +19255,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             {
                 sprite = "blends_street_01_48",
@@ -21632,9 +19271,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21656,9 +19293,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21680,9 +19315,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             { sprite = "blends_street_01_0", northSprite = "blends_street_01_5" }
         ),
@@ -21693,9 +19326,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21717,9 +19348,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21741,9 +19370,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             {
                 sprite = "blends_street_01_64",
@@ -21759,9 +19386,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21783,9 +19408,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             {
                 sprite = "blends_street_01_80",
@@ -21801,9 +19424,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21825,9 +19446,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             {
                 sprite = "blends_street_01_96",
@@ -21843,9 +19462,7 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21882,9 +19499,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21904,9 +19519,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21926,9 +19539,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21948,9 +19559,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21970,9 +19579,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21992,9 +19599,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22014,9 +19619,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22036,9 +19639,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22058,9 +19659,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22079,9 +19678,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22100,9 +19697,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22121,9 +19716,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22142,9 +19735,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22163,9 +19754,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22184,9 +19773,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22205,9 +19792,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22226,9 +19811,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22247,9 +19830,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22268,9 +19849,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22289,9 +19868,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22310,9 +19887,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22331,9 +19906,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22352,9 +19925,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22373,9 +19944,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22394,9 +19963,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22415,9 +19982,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22436,9 +20001,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22457,9 +20020,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22478,9 +20039,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22499,9 +20058,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22520,9 +20077,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22541,9 +20096,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22562,9 +20115,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22583,9 +20134,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22604,9 +20153,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22625,9 +20172,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22646,9 +20191,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22667,9 +20210,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22688,9 +20229,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22709,9 +20248,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                actionAnim = "DestroyFloor",
                 noNeedHammer = true,
-                craftingBank = "SledgehammerHit",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22743,9 +20280,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22766,9 +20301,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22789,9 +20322,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22812,9 +20343,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22835,9 +20364,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22858,9 +20385,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22881,9 +20406,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22904,9 +20427,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22927,9 +20448,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22950,9 +20469,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22973,9 +20490,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22996,9 +20511,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23019,9 +20532,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23042,9 +20553,7 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23079,9 +20588,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23102,9 +20609,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23125,9 +20630,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23150,9 +20653,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23173,9 +20674,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23196,9 +20695,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23219,9 +20716,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23242,9 +20737,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23265,9 +20758,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23288,9 +20779,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23311,9 +20800,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23334,9 +20821,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23357,9 +20842,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23380,9 +20863,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23403,9 +20884,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23426,9 +20905,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23449,9 +20926,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23472,9 +20947,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23495,9 +20968,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23518,9 +20989,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23541,9 +21010,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23564,9 +21031,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23587,9 +21052,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23610,9 +21073,7 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                actionAnim = "DigTrowel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -23649,9 +21110,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             { sprite = "blends_natural_01_64", northSprite = "blends_natural_01_64" }
         ),
@@ -23662,9 +21121,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23686,9 +21143,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             { sprite = "blends_natural_01_16", northSprite = "blends_natural_01_16" }
         ),
@@ -23699,9 +21154,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23723,9 +21176,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23747,9 +21198,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             { sprite = "blends_natural_01_32", northSprite = "blends_natural_01_32" }
         ),
@@ -23760,9 +21209,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23784,9 +21231,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23808,9 +21253,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling"
             },
             { sprite = "blends_natural_01_48", northSprite = "blends_natural_01_48" }
         ),
@@ -23821,9 +21264,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23845,9 +21286,7 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23882,9 +21321,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23906,9 +21343,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23930,9 +21365,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23949,9 +21382,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23973,9 +21404,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23997,9 +21426,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24014,112 +21441,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 southSprite = "street_trafficlines_01_38"
             }
         ),
-        -- fanta street markings
-        --     BuildingMenu.createObject(
-        --         "Tooltip_BuildingMenuObj_White_Markings",
-        --         "Tooltip_Road_Line_Generic",
-        --         BuildingMenu.onBuildFloorOverlay,
-        --         BuildingMenu.PaintWhite,
-        --         true,
-        --         {
-        --             actionAnim = "paint",
-        --             noNeedHammer = true,
-        --             craftingBank = "Painting",
-        --             needToBeAgainstWall = false,
-        --             blockAllTheSquare = false,
-        --             canPassThrough = true,
-        --             canBarricade = false,
-        --             isThumpable = true,
-        --             isCorner = true
-        --         },
-        --         {sprite = "fanta_street_markings_01_0", northSprite = "fanta_street_markings_01_1"}
-        --     ),
-        --     BuildingMenu.createObject(
-        --         "Tooltip_BuildingMenuObj_White_Markings",
-        --         "Tooltip_Road_Line_Generic",
-        --         BuildingMenu.onBuildFloorOverlay,
-        --         BuildingMenu.PaintWhite,
-        --         true,
-        --         {
-        --             actionAnim = "paint",
-        --             noNeedHammer = true,
-        --             craftingBank = "Painting",
-        --             needToBeAgainstWall = false,
-        --             blockAllTheSquare = false,
-        --             canPassThrough = true,
-        --             canBarricade = false,
-        --             isThumpable = true,
-        --             isCorner = true
-        --         },
-        --         {sprite = "fanta_street_markings_01_8", northSprite = "fanta_street_markings_01_9"}
-        --     ),
-        --     BuildingMenu.createObject(
-        --         "Tooltip_BuildingMenuObj_White_Markings",
-        --         "Tooltip_Road_Line_Generic",
-        --         BuildingMenu.onBuildFloorOverlay,
-        --         BuildingMenu.PaintWhite,
-        --         true,
-        --         {
-        --             actionAnim = "paint",
-        --             noNeedHammer = true,
-        --             craftingBank = "Painting",
-        --             needToBeAgainstWall = false,
-        --             blockAllTheSquare = false,
-        --             canPassThrough = true,
-        --             canBarricade = false,
-        --             isThumpable = true,
-        --             isCorner = true
-        --         },
-        --         {
-        --             sprite = "fanta_street_markings_01_48",
-        --             northSprite = "fanta_street_markings_01_49",
-        --             eastSprite = "fanta_street_markings_01_51",
-        --             southSprite = "fanta_street_markings_01_50"
-        --         }
-        --     ),
-        --     BuildingMenu.createObject(
-        --         "Tooltip_BuildingMenuObj_White_Markings",
-        --         "Tooltip_Road_Line_Generic",
-        --         BuildingMenu.onBuildFloorOverlay,
-        --         BuildingMenu.PaintWhite,
-        --         true,
-        --         {
-        --             actionAnim = "paint",
-        --             noNeedHammer = true,
-        --             craftingBank = "Painting",
-        --             needToBeAgainstWall = false,
-        --             blockAllTheSquare = false,
-        --             canPassThrough = true,
-        --             canBarricade = false,
-        --             isThumpable = true,
-        --             isCorner = true
-        --         },
-        --         {sprite = "fanta_street_markings_01_57", northSprite = "fanta_street_markings_01_56"}
-        --     ),
-        --     BuildingMenu.createObject(
-        --         "Tooltip_BuildingMenuObj_White_Markings",
-        --         "Tooltip_Road_Line_Generic",
-        --         BuildingMenu.onBuildDoubleTileFurniture,
-        --         BuildingMenu.PaintWhite,
-        --         true,
-        --         {
-        --             actionAnim = "paint",
-        --             noNeedHammer = true,
-        --             craftingBank = "Painting",
-        --             needToBeAgainstWall = false,
-        --             blockAllTheSquare = false,
-        --             canPassThrough = true,
-        --             canBarricade = false,
-        --             isThumpable = true,
-        --             isCorner = true
-        --         },
-        --         {
-        --             sprite = "fanta_street_markings_01_42",
-        --             sprite2 = "fanta_street_markings_01_43",
-        --             northSprite = "fanta_street_markings_01_40",
-        --             northSprite2 = "fanta_street_markings_01_41"
-        --         }
-        --     )
     }
 
     BuildingMenu.addObjectsToCategories(
@@ -24139,9 +21460,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24161,9 +21480,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24183,9 +21500,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24205,9 +21520,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24227,9 +21540,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24249,9 +21560,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24271,9 +21580,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24293,9 +21600,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24315,9 +21620,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24337,9 +21640,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24359,9 +21660,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24381,9 +21680,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24403,9 +21700,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24425,9 +21720,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24447,9 +21740,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24469,9 +21760,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24491,9 +21780,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24513,9 +21800,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24535,9 +21820,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24557,9 +21840,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24579,9 +21860,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24601,9 +21880,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24623,9 +21900,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24645,9 +21920,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24667,9 +21940,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24689,9 +21960,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24711,9 +21980,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24733,9 +22000,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24755,9 +22020,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24777,9 +22040,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24799,9 +22060,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24821,9 +22080,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24843,9 +22100,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24865,9 +22120,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24887,9 +22140,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24909,9 +22160,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24931,9 +22180,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24953,9 +22200,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24975,9 +22220,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24997,9 +22240,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25019,9 +22260,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25041,9 +22280,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25063,9 +22300,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25085,9 +22320,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25107,9 +22340,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25129,9 +22360,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25151,9 +22380,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25173,9 +22400,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25195,9 +22420,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25217,9 +22440,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25239,9 +22460,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25261,9 +22480,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25283,9 +22500,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25305,9 +22520,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25327,9 +22540,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25349,9 +22560,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25371,9 +22580,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25393,9 +22600,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25415,9 +22620,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25437,9 +22640,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25459,9 +22660,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25481,9 +22680,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25503,9 +22700,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25525,9 +22720,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25547,9 +22740,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25569,9 +22760,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25591,9 +22780,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25613,9 +22800,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25635,9 +22820,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25668,9 +22851,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25692,9 +22873,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25709,112 +22888,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 southSprite = "street_trafficlines_01_31"
             }
         ),
-        -- fanta street markings
-        -- BuildingMenu.createObject(
-        --     "Tooltip_BuildingMenuObj_Yellow_Markings",
-        --     "Tooltip_Road_Line_Generic",
-        --     BuildingMenu.onBuildFloorOverlay,
-        --     BuildingMenu.PaintYellow,
-        --     true,
-        --     {
-        --         actionAnim = "paint",
-        --         noNeedHammer = true,
-        --         craftingBank = "Painting",
-        --         needToBeAgainstWall = false,
-        --         blockAllTheSquare = false,
-        --         canPassThrough = true,
-        --         canBarricade = false,
-        --         isThumpable = true,
-        --         isCorner = true
-        --     },
-        --     {sprite = "fanta_street_markings_01_2", northSprite = "fanta_street_markings_01_3"}
-        -- ),
-        -- BuildingMenu.createObject(
-        --     "Tooltip_BuildingMenuObj_Yellow_Markings",
-        --     "Tooltip_Road_Line_Generic",
-        --     BuildingMenu.onBuildFloorOverlay,
-        --     BuildingMenu.PaintYellow,
-        --     true,
-        --     {
-        --         actionAnim = "paint",
-        --         noNeedHammer = true,
-        --         craftingBank = "Painting",
-        --         needToBeAgainstWall = false,
-        --         blockAllTheSquare = false,
-        --         canPassThrough = true,
-        --         canBarricade = false,
-        --         isThumpable = true,
-        --         isCorner = true
-        --     },
-        --     {sprite = "fanta_street_markings_01_10", northSprite = "fanta_street_markings_01_11"}
-        -- ),
-        -- BuildingMenu.createObject(
-        --     "Tooltip_BuildingMenuObj_Yellow_Markings",
-        --     "Tooltip_Road_Line_Generic",
-        --     BuildingMenu.onBuildFloorOverlay,
-        --     BuildingMenu.PaintYellow,
-        --     true,
-        --     {
-        --         actionAnim = "paint",
-        --         noNeedHammer = true,
-        --         craftingBank = "Painting",
-        --         needToBeAgainstWall = false,
-        --         blockAllTheSquare = false,
-        --         canPassThrough = true,
-        --         canBarricade = false,
-        --         isThumpable = true,
-        --         isCorner = true
-        --     },
-        --     {
-        --         sprite = "fanta_street_markings_01_52",
-        --         northSprite = "fanta_street_markings_01_53",
-        --         eastSprite = "fanta_street_markings_01_55",
-        --         southSprite = "fanta_street_markings_01_54"
-        --     }
-        -- ),
-        -- BuildingMenu.createObject(
-        --     "Tooltip_BuildingMenuObj_Yellow_Markings",
-        --     "Tooltip_Road_Line_Generic",
-        --     BuildingMenu.onBuildFloorOverlay,
-        --     BuildingMenu.PaintYellow,
-        --     true,
-        --     {
-        --         actionAnim = "paint",
-        --         noNeedHammer = true,
-        --         craftingBank = "Painting",
-        --         needToBeAgainstWall = false,
-        --         blockAllTheSquare = false,
-        --         canPassThrough = true,
-        --         canBarricade = false,
-        --         isThumpable = true,
-        --         isCorner = true
-        --     },
-        --     {sprite = "fanta_street_markings_01_59", northSprite = "fanta_street_markings_01_58"}
-        -- ),
-        -- BuildingMenu.createObject(
-        --     "Tooltip_BuildingMenuObj_Yellow_Markings",
-        --     "Tooltip_Road_Line_Generic",
-        --     BuildingMenu.onBuildDoubleTileFurniture,
-        --     BuildingMenu.PaintYellow,
-        --     true,
-        --     {
-        --         actionAnim = "paint",
-        --         noNeedHammer = true,
-        --         craftingBank = "Painting",
-        --         needToBeAgainstWall = false,
-        --         blockAllTheSquare = false,
-        --         canPassThrough = true,
-        --         canBarricade = false,
-        --         isThumpable = true,
-        --         isCorner = true
-        --     },
-        --     {
-        --         sprite = "fanta_street_markings_01_46",
-        --         sprite2 = "fanta_street_markings_01_47",
-        --         northSprite = "fanta_street_markings_01_44",
-        --         northSprite2 = "fanta_street_markings_01_45"
-        --     }
-        -- )
     }
 
     BuildingMenu.addObjectsToCategories(
@@ -25834,9 +22907,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25856,9 +22927,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25878,9 +22947,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25900,9 +22967,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25922,9 +22987,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25944,9 +23007,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25966,9 +23027,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25988,9 +23047,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26010,9 +23067,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26032,9 +23087,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26054,9 +23107,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26076,9 +23127,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26098,9 +23147,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26120,9 +23167,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26142,9 +23187,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26164,9 +23207,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26186,9 +23227,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26208,9 +23247,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26230,9 +23267,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26252,9 +23287,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26274,9 +23307,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26296,9 +23327,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26318,9 +23347,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26340,9 +23367,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26362,9 +23387,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26384,9 +23407,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26406,9 +23427,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26428,9 +23447,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26450,9 +23467,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26472,9 +23487,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26494,9 +23507,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26516,9 +23527,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26538,9 +23547,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26560,9 +23567,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26582,9 +23587,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26604,9 +23607,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26626,9 +23627,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26648,9 +23647,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26670,9 +23667,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26692,9 +23687,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26714,9 +23707,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26736,9 +23727,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26758,9 +23747,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26780,9 +23767,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26802,9 +23787,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26824,9 +23807,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26846,9 +23827,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26868,9 +23847,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26890,9 +23867,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26912,9 +23887,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26934,9 +23907,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26956,9 +23927,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -26978,9 +23947,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27000,9 +23967,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27022,9 +23987,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27044,9 +24007,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27066,9 +24027,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27088,9 +24047,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27110,9 +24067,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27132,9 +24087,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27154,9 +24107,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27176,9 +24127,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27198,9 +24147,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27220,9 +24167,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27242,9 +24187,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27264,9 +24207,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27286,9 +24227,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27308,9 +24247,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27330,9 +24267,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -27365,8 +24300,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27384,8 +24317,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27403,8 +24334,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27422,8 +24351,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27441,8 +24368,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27460,8 +24385,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27479,8 +24402,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27498,8 +24419,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27517,8 +24436,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27536,8 +24453,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27555,8 +24470,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27574,8 +24487,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27593,8 +24504,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27612,8 +24521,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27631,8 +24538,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27650,8 +24555,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27669,8 +24572,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27688,8 +24589,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -27719,8 +24618,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -27734,8 +24631,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -27774,8 +24669,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27793,8 +24686,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27812,8 +24703,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27831,8 +24720,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27850,8 +24737,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27869,8 +24754,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27888,8 +24771,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27907,8 +24788,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27926,8 +24805,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27945,8 +24822,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27964,8 +24839,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -27981,8 +24854,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28000,8 +24871,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28019,8 +24888,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28038,8 +24905,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28057,8 +24922,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28076,8 +24939,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28095,8 +24956,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28114,8 +24973,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28133,8 +24990,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28152,8 +25007,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28171,8 +25024,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28185,8 +25036,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28199,8 +25048,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28213,8 +25060,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28227,8 +25072,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28241,8 +25084,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28261,8 +25102,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28280,8 +25119,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28299,8 +25136,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28318,8 +25153,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28343,8 +25176,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28362,8 +25193,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28381,8 +25210,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28400,8 +25227,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28419,8 +25244,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28438,8 +25261,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28457,8 +25278,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28476,8 +25295,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28495,8 +25312,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28514,8 +25329,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.MetalGlassCounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28533,8 +25346,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.MetalGlassCounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -28552,8 +25363,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         containerType = "displaycasebakery",
                         renderFloorHelper = false,
@@ -28575,8 +25384,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         containerType = "displaycasebakery",
                         renderFloorHelper = false,
@@ -28598,10 +25405,8 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
-                        buildLow = true,
+                        buildHigh = true,
                         canBeAlwaysPlaced = true,
                         renderFloorHelper = false,
                         containerType = "fridge",
@@ -28623,8 +25428,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         containerType = "shelves",
                         isContainer = true,
@@ -28644,8 +25447,6 @@ local function addCommercialCountersToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         containerType = "shelves",
                         isContainer = true,
@@ -28682,8 +25483,6 @@ local function addCratesToMenu()
             BuildingMenu.SmallCounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "smallcrate",
                 canBeAlwaysPlaced = true,
@@ -28699,8 +25498,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "smallcrate",
                 canBeAlwaysPlaced = true,
@@ -28716,8 +25513,6 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "smallbox",
                 canBeAlwaysPlaced = true,
@@ -28733,8 +25528,6 @@ local function addCratesToMenu()
             BuildingMenu.CardboardBoxRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "garage_storage",
                 canBeAlwaysPlaced = true,
@@ -28750,8 +25543,6 @@ local function addCratesToMenu()
             BuildingMenu.CardboardBoxRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "smallbox",
                 canBeAlwaysPlaced = true,
@@ -28767,8 +25558,6 @@ local function addCratesToMenu()
             BuildingMenu.MilitaryCrateRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "militarycrate",
                 canBeAlwaysPlaced = true,
@@ -28787,8 +25576,6 @@ local function addCratesToMenu()
             BuildingMenu.MilitaryCrateRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "militarycrate",
                 canBeAlwaysPlaced = true,
@@ -28824,10 +25611,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "filingcabinet",
@@ -28849,10 +25632,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "filingcabinet",
@@ -28880,10 +25659,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "bin",
@@ -28902,10 +25677,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "shelves",
@@ -28928,17 +25699,13 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterBigRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isContainer = true,
                         containerType = "shelves",
                         canBeAlwaysPlaced = false,
                         renderFloorHelper = false,
-                        buildLow = false
+                        buildHigh = true,
                     },
                     {
                         sprite = "furniture_shelving_01_27",
@@ -28954,17 +25721,13 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterBigRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isContainer = true,
                         containerType = "shelves",
                         canBeAlwaysPlaced = false,
                         renderFloorHelper = false,
-                        buildLow = false
+                        buildHigh = true,
                     },
                     {
                         sprite = "location_community_medical_01_155",
@@ -28986,10 +25749,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isContainer = true,
@@ -29008,10 +25767,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterBigRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "locker",
@@ -29033,10 +25788,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "metal_shelves",
@@ -29058,10 +25809,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "militarylocker",
@@ -29083,10 +25830,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "locker",
@@ -29108,10 +25851,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "locker",
@@ -29151,8 +25890,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall"
             },
             { sprite = "location_shop_mall_01_64", northSprite = "location_shop_mall_01_64" }
@@ -29164,8 +25901,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall"
             },
             { sprite = "location_shop_mall_01_72", northSprite = "location_shop_mall_01_72" }
@@ -29177,13 +25912,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.ClothingRackRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
@@ -29203,13 +25934,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.DoubleClothingRackRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
@@ -29229,13 +25956,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.DoubleClothingRackRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
@@ -29255,13 +25978,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
@@ -29281,13 +26000,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29306,13 +26021,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29331,13 +26042,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29356,13 +26063,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29381,13 +26084,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29406,13 +26105,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29431,13 +26126,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29456,13 +26147,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29481,13 +26168,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29506,13 +26189,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29531,13 +26210,9 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
@@ -29569,10 +26244,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29590,10 +26261,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29611,10 +26278,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29632,10 +26295,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29653,10 +26312,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29674,10 +26329,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29695,10 +26346,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29716,10 +26363,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29742,10 +26385,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
@@ -29768,16 +26407,12 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
-                buildLow = true
+                buildMid = true,
             },
             {
                 sprite = "trashcontainers_01_11",
@@ -29793,16 +26428,12 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 containerType = "bin",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
-                buildLow = true
+                buildMid = true,
             },
             {
                 sprite = "trashcontainers_01_15",
@@ -29831,8 +26462,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "officedrawers",
                 canBeAlwaysPlaced = true,
@@ -29853,8 +26482,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "sidetable",
                 isContainer = true
@@ -29873,8 +26500,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true
@@ -29893,8 +26518,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "counter",
                 canBeAlwaysPlaced = true,
@@ -29910,8 +26533,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "counter",
                 canBeAlwaysPlaced = true,
@@ -29927,8 +26548,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "desk",
                 isContainer = true
@@ -29947,8 +26566,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "desk",
                 isContainer = true
@@ -29967,8 +26584,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
                 canBeAlwaysPlaced = true,
@@ -29986,8 +26601,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
                 canBeAlwaysPlaced = true,
@@ -30005,8 +26618,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "crate",
                 canBeAlwaysPlaced = true,
@@ -30024,13 +26635,9 @@ local function addContainersOthersToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
@@ -30050,13 +26657,9 @@ local function addContainersOthersToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                buildLow = true,
+                buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
@@ -30073,11 +26676,9 @@ local function addContainersOthersToMenu()
             "Tooltip_BuildingMenuObj_Logs",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildDoubleTileContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.LogContainerRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
                 renderFloorHelper = false,
@@ -30097,11 +26698,9 @@ local function addContainersOthersToMenu()
             "Tooltip_BuildingMenuObj_Logs",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildDoubleTileContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.LogContainerRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
                 renderFloorHelper = false,
@@ -30121,11 +26720,9 @@ local function addContainersOthersToMenu()
             "Tooltip_BuildingMenuObj_Logs",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildDoubleTileContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.LogContainerRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
                 renderFloorHelper = false,
@@ -30145,11 +26742,9 @@ local function addContainersOthersToMenu()
             "Tooltip_BuildingMenuObj_Logs",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildDoubleTileContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.LogContainerRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
                 renderFloorHelper = false,
@@ -30169,11 +26764,9 @@ local function addContainersOthersToMenu()
             "Tooltip_BuildingMenuObj_Logs",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildDoubleTileContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.LogContainerRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "logs",
                 renderFloorHelper = false,
@@ -30209,8 +26802,6 @@ local function addMusicObjectsToMenu()
             BuildingMenu.JukeboxRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = false
             },
@@ -30226,8 +26817,6 @@ local function addMusicObjectsToMenu()
             BuildingMenu.WesternPianoRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = false,
                 needToBeAgainstWall = false,
@@ -30267,8 +26856,6 @@ local function addTablesToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         containerType = "officedrawers",
                         isContainer = true
@@ -30285,8 +26872,6 @@ local function addTablesToMenu()
                     BuildingMenu.CounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         containerType = "officedrawers",
                         isContainer = true
@@ -30303,8 +26888,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_low_01_16", northSprite = "furniture_tables_low_01_17" }
@@ -30316,8 +26899,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_high_01_13", northSprite = "furniture_tables_high_01_12" }
@@ -30329,8 +26910,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_high_01_21", northSprite = "furniture_tables_high_01_22" }
@@ -30342,8 +26921,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_high_01_4", northSprite = "furniture_tables_high_01_5" }
@@ -30355,8 +26932,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_low_01_2", northSprite = "furniture_tables_low_01_3" }
@@ -30368,8 +26943,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_high_01_7", northSprite = "furniture_tables_high_01_7" }
@@ -30381,8 +26954,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_high_01_6", northSprite = "furniture_tables_high_01_6" }
@@ -30394,8 +26965,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30410,8 +26979,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_high_01_15", northSprite = "furniture_tables_high_01_15" }
@@ -30423,8 +26990,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_high_01_16", northSprite = "furniture_tables_high_01_16" }
@@ -30436,8 +27001,6 @@ local function addTablesToMenu()
                     BuildingMenu.SmallFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     { sprite = "furniture_tables_low_01_21", northSprite = "furniture_tables_low_01_20" }
@@ -30455,8 +27018,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30473,8 +27034,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30491,8 +27050,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30509,8 +27066,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30527,8 +27082,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30545,8 +27098,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30563,8 +27114,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30581,8 +27130,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30599,8 +27146,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30617,8 +27162,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30635,8 +27178,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30653,8 +27194,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30671,8 +27210,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30689,8 +27226,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30763,8 +27298,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30781,8 +27314,6 @@ local function addTablesToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30820,8 +27351,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30838,8 +27367,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30856,8 +27383,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30874,8 +27399,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30892,8 +27415,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30910,8 +27431,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30928,8 +27447,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30946,8 +27463,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30964,8 +27479,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -30982,8 +27495,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31000,8 +27511,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31018,8 +27527,6 @@ local function addBedsToMenu()
                     BuildingMenu.BedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31042,8 +27549,6 @@ local function addBedsToMenu()
                     BuildingMenu.DoubleBedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31064,8 +27569,6 @@ local function addBedsToMenu()
                     BuildingMenu.DoubleBedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31086,8 +27589,6 @@ local function addBedsToMenu()
                     BuildingMenu.DoubleBedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31108,8 +27609,6 @@ local function addBedsToMenu()
                     BuildingMenu.DoubleBedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31130,8 +27629,6 @@ local function addBedsToMenu()
                     BuildingMenu.DoubleBedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31152,8 +27649,6 @@ local function addBedsToMenu()
                     BuildingMenu.DoubleBedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -31195,8 +27690,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31216,8 +27709,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31232,8 +27723,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31253,8 +27742,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31274,8 +27761,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31295,8 +27780,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31316,8 +27799,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31337,8 +27818,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31358,8 +27837,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31379,8 +27856,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31400,8 +27875,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31421,8 +27894,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31442,8 +27913,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31463,8 +27932,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31484,8 +27951,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31505,8 +27970,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                     },
@@ -31526,8 +27989,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true,
                     },
@@ -31553,8 +28014,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31574,8 +28033,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31595,8 +28052,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31616,8 +28071,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31637,8 +28090,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31658,8 +28109,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31679,8 +28128,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31700,8 +28147,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31721,8 +28166,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31742,8 +28185,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31763,8 +28204,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31784,8 +28223,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31805,8 +28242,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31826,8 +28261,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31847,8 +28280,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31868,8 +28299,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31889,8 +28318,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31910,8 +28337,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31931,8 +28356,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31952,8 +28375,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31973,8 +28394,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -31994,8 +28413,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32015,8 +28432,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32036,8 +28451,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32057,8 +28470,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32078,8 +28489,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32099,8 +28508,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32120,8 +28527,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32141,8 +28546,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32162,8 +28565,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32183,8 +28584,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32204,8 +28603,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32225,8 +28622,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32246,8 +28641,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32267,8 +28660,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32288,8 +28679,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32309,8 +28698,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32330,8 +28717,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32351,8 +28736,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32372,8 +28755,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32393,8 +28774,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32414,8 +28793,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32435,8 +28812,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32456,8 +28831,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32477,8 +28850,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.CouchRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32504,8 +28875,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.LeatherFurnitureRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32525,8 +28894,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.WoodenChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32546,8 +28913,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32567,8 +28932,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32588,8 +28951,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32609,8 +28970,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32630,8 +28989,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32651,8 +29008,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32672,8 +29027,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.PaddedChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32693,8 +29046,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.MetalChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32714,8 +29065,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.MetalChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32735,8 +29084,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.MetalChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32756,8 +29103,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.MetalChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32777,8 +29122,6 @@ local function addSeatingFurnitureToMenu()
                     BuildingMenu.MetalChairRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canPassThrough = true,
                         isThumpable = true,
@@ -32815,8 +29158,6 @@ local function addBookshelvesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
                 canBeAlwaysPlaced = true,
@@ -32837,8 +29178,6 @@ local function addBookshelvesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
                 canBeAlwaysPlaced = true,
@@ -32859,8 +29198,6 @@ local function addBookshelvesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
                 canBeAlwaysPlaced = true,
@@ -32879,8 +29216,6 @@ local function addBookshelvesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "shelves",
                 canBeAlwaysPlaced = true,
@@ -32912,8 +29247,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isContainer = true,
                 canBeLockedByPadlock = true
@@ -32932,8 +29265,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isContainer = true,
                 canBeLockedByPadlock = true
@@ -32952,8 +29283,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isContainer = true,
                 canBeLockedByPadlock = true
@@ -32972,8 +29301,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -32993,8 +29320,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33014,8 +29339,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isContainer = true,
                 canBeLockedByPadlock = true
@@ -33034,8 +29357,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33055,8 +29376,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33076,8 +29395,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isContainer = true,
                 canBeLockedByPadlock = true
@@ -33096,8 +29413,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33117,8 +29432,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33138,8 +29451,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isContainer = true,
                 canBeLockedByPadlock = true
@@ -33158,8 +29469,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33179,8 +29488,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33200,8 +29507,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isContainer = true,
                 canBeLockedByPadlock = true
@@ -33220,8 +29525,6 @@ local function addDressersAndWardrobesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "wardrobe",
                 isContainer = true,
@@ -33255,9 +29558,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33279,9 +29580,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33303,9 +29602,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33327,9 +29624,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33349,9 +29644,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33373,9 +29666,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33397,9 +29688,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33421,9 +29710,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33443,9 +29730,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33467,9 +29752,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33491,9 +29774,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33515,9 +29796,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33537,9 +29816,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33561,9 +29838,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33585,9 +29860,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33609,9 +29882,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33631,9 +29902,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33655,9 +29924,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33679,9 +29946,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33703,9 +29968,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33727,9 +29990,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33751,9 +30012,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33775,9 +30034,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33799,9 +30056,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33823,9 +30078,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33847,9 +30100,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33871,9 +30122,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33895,9 +30144,7 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                actionAnim = "VehicleWorkOnTire",
                 noNeedHammer = true,
-                craftingBank = "ClothesRipping",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -33937,8 +30184,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -33961,8 +30206,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -33982,8 +30225,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34003,8 +30244,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34024,8 +30263,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34045,8 +30282,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34066,8 +30301,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34087,8 +30320,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34108,8 +30339,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34126,8 +30355,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34144,8 +30371,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34162,8 +30387,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34180,8 +30403,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34198,8 +30419,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34216,8 +30435,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34234,8 +30451,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34252,8 +30467,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34270,8 +30483,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34288,8 +30499,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34306,8 +30515,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34327,8 +30534,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34348,8 +30553,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34366,8 +30569,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34384,8 +30585,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34402,8 +30601,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.PostersRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34426,8 +30623,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -34444,8 +30639,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge"
                     },
                     {
@@ -34462,8 +30655,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34480,8 +30671,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34498,8 +30687,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.ClockRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
@@ -34519,8 +30706,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34543,8 +30728,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34567,8 +30750,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34591,8 +30772,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34617,8 +30796,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SpiffoStatueRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34645,8 +30822,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34673,8 +30848,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34701,8 +30874,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34727,8 +30898,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34753,8 +30922,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34779,8 +30946,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34807,8 +30972,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34835,8 +30998,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34863,8 +31024,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34891,8 +31050,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34919,8 +31076,6 @@ local function addPostersAndSignsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true,
                         needToBeAgainstWall = true,
@@ -34965,9 +31120,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -34983,9 +31136,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -35001,9 +31152,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -35019,9 +31168,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -35037,9 +31184,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -35055,9 +31200,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintOrange,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -35081,9 +31224,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintPurple,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -35107,9 +31248,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintGreen,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -35133,9 +31272,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -35159,9 +31296,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintPurple,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -35185,9 +31320,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintOrange,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -35211,9 +31344,7 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                actionAnim = "paint",
                 noNeedHammer = true,
-                craftingBank = "Painting",
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -35254,8 +31385,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true
                     },
@@ -35271,8 +31400,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "Build",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true
                     },
@@ -35288,10 +31415,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
@@ -35309,10 +31432,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "postbox",
@@ -35335,10 +31454,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorchMid",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "postbox",
@@ -35361,8 +31476,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true
                     },
@@ -35380,8 +31493,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true
                     },
@@ -35399,8 +31510,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true
                     },
@@ -35422,8 +31531,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.SignRecipe,
                     true,
                     {
-                        actionAnim = "BuildLow",
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall",
                         isCorner = true
                     },
@@ -35451,7 +31558,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
@@ -35473,7 +31579,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
@@ -35495,7 +31600,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
@@ -35517,7 +31621,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
@@ -35545,9 +31648,7 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
                         canBeAlwaysPlaced = true,
@@ -35566,9 +31667,7 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
                         canBeAlwaysPlaced = true,
@@ -35587,9 +31686,7 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
                         canBeAlwaysPlaced = true,
@@ -35608,9 +31705,7 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
                         canBeAlwaysPlaced = true,
@@ -35629,9 +31724,7 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
                         canBeAlwaysPlaced = true,
@@ -35668,9 +31761,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35688,9 +31779,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35708,9 +31797,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35728,9 +31815,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35748,9 +31833,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35768,9 +31851,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35788,9 +31869,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35808,9 +31887,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35828,9 +31905,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35848,9 +31923,7 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -35882,9 +31955,7 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -35899,9 +31970,7 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -35916,9 +31985,7 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -35933,9 +32000,7 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -35950,9 +32015,7 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -35967,9 +32030,7 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -35984,9 +32045,7 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -36020,9 +32079,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36046,9 +32103,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36072,9 +32127,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36098,9 +32151,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36124,9 +32175,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36150,9 +32199,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36176,9 +32223,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36202,9 +32247,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36228,9 +32271,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36254,9 +32295,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36280,9 +32319,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36306,9 +32343,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36332,9 +32367,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36358,9 +32391,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36384,9 +32415,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36410,9 +32439,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36436,9 +32463,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36462,9 +32487,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        actionAnim = "DigTrowel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36494,9 +32517,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36516,9 +32537,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36543,9 +32562,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36565,9 +32582,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -36598,9 +32613,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36618,9 +32631,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36638,9 +32649,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36659,9 +32668,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36679,9 +32686,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36699,9 +32704,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36720,9 +32723,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36740,9 +32741,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36760,9 +32759,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36781,9 +32778,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36801,9 +32796,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36821,9 +32814,7 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        actionAnim = "DigShovel",
                         noNeedHammer = true,
-                        craftingBank = "Shoveling",
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -36860,8 +32851,6 @@ local function addFireplaceToMenu()
             BuildingMenu.FireplaceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 canPassThrough = true,
                 isCorner = true,
                 modData = {
@@ -36879,8 +32868,6 @@ local function addFireplaceToMenu()
             BuildingMenu.FireplaceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 canPassThrough = true,
                 isCorner = true,
                 completionSound = "BuildWoodenStructureSmall"
@@ -36894,8 +32881,6 @@ local function addFireplaceToMenu()
             BuildingMenu.FireplaceRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 canPassThrough = true,
                 isCorner = true,
                 completionSound = "BuildWoodenStructureSmall"
@@ -36909,8 +32894,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "BuildLow",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true,
                 needToBeAgainstWall = true,
@@ -36935,8 +32918,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -36953,8 +32934,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -36971,8 +32950,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -36989,8 +32966,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37007,8 +32982,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37025,8 +32998,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37045,8 +33016,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37063,8 +33032,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37081,8 +33048,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37101,8 +33066,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37119,8 +33082,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37137,8 +33098,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37157,8 +33116,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37175,8 +33132,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37193,8 +33148,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37211,8 +33164,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37229,8 +33180,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37247,8 +33196,6 @@ local function addFireplaceToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                actionAnim = "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -37279,10 +33226,6 @@ local function addGeneratorToMenu()
             BuildingMenu.GeneratorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37309,10 +33252,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37325,10 +33264,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37341,10 +33276,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37357,10 +33288,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37373,10 +33300,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37389,10 +33312,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37405,10 +33324,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorchMid",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -37434,9 +33349,7 @@ local function addWaterWellToMenu()
             BuildingMenu.WaterWellRecipe,
             true,
             {
-                actionAnim = "DigShovel",
                 noNeedHammer = true,
-                craftingBank = "Shoveling",
                 canPassThrough = true,
                 isCorner = true,
                 completionSound = "BuildFenceCairn",

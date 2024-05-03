@@ -10,7 +10,7 @@ local removableTrafficLineTiles = TrafficLineTiles.getTiles()
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
 
---- Checks if the wall item is removable based on its sprite name and a list of patterns.
+--- Checks if the wall item is removable based on its sprite name and a list of patterns
 ---@param spriteName string
 ---@param patterns table<string>
 ---@return boolean
@@ -23,7 +23,7 @@ local function isRemovableDetailItem(spriteName, patterns)
     return false;
 end
 
---- Handles the removal of wall detailing.
+--- Handles the removal of wall detailing
 ---@param playerObj IsoPlayer
 ---@param square IsoGridSquare
 ---@param wallDetailing string
@@ -41,7 +41,7 @@ function BuildingMenu.doRemoveWallDetailing(playerObj, square, wallDetailing)
     ISTimedActionQueue.add(ISRemoveDetail:new(playerObj, square, wallDetailing));
 end
 
---- Handles the removal of traffic lines.
+--- Handles the removal of traffic lines
 ---@param playerObj IsoPlayer
 ---@param square IsoGridSquare
 ---@param trafficLine string
@@ -59,7 +59,7 @@ function BuildingMenu.doRemoveTrafficLine(playerObj, square, trafficLine)
     ISTimedActionQueue.add(ISRemoveDetail:new(playerObj, square, trafficLine));
 end
 
---- Triggers when removing wall detailing.
+--- Triggers when removing wall detailing
 ---@param worldobjects table<integer, IsoObject>
 ---@param square IsoGridSquare
 ---@param wallDetailing IsoObject|nil
@@ -70,7 +70,7 @@ function BuildingMenu.onRemoveWallDetailing(worldobjects, square, wallDetailing,
     getCell():setDrag(bo, player);
 end
 
---- Triggers when removing traffic lines.
+--- Triggers when removing traffic lines
 ---@param worldobjects table<integer, IsoObject>
 ---@param square IsoGridSquare
 ---@param trafficLine IsoObject|nil
@@ -81,7 +81,7 @@ function BuildingMenu.onRemoveTrafficLine(worldobjects, square, trafficLine, pla
     getCell():setDrag(bo, player);
 end
 
---- Toggles the light of a thumpable object.
+--- Toggles the light of a thumpable object
 ---@param lightSource IsoThumpable
 ---@param player integer
 function BuildingMenu.onToggleThumpableLight(lightSource, player)
@@ -91,7 +91,7 @@ function BuildingMenu.onToggleThumpableLight(lightSource, player)
     end
 end
 
---- Handles the creation of context menu options for world objects.
+--- Handles the creation of context menu options for world objects
 ---@param player integer
 ---@param context ISContextMenu
 ---@param worldobjects table<integer, IsoObject>
@@ -141,9 +141,9 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
     if not playerObj:getVehicle() and not test then
         if thump then
             if thump:isLightSourceOn() then
-                context:addOption(getText 'ContextMenu_Turn_Off', thump, BuildingMenu.onToggleThumpableLight, player);
+                context:addOption(getText('ContextMenu_Turn_Off'), thump, BuildingMenu.onToggleThumpableLight, player);
             elseif thump:getSquare():haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier) then
-                context:addOption(getText 'ContextMenu_Turn_On', thump, BuildingMenu.onToggleThumpableLight, player);
+                context:addOption(getText('ContextMenu_Turn_On'), thump, BuildingMenu.onToggleThumpableLight, player);
             end
         end
         if wallVine then

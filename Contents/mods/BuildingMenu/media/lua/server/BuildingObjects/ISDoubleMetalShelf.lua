@@ -24,8 +24,8 @@ function ISDoubleMetalShelf:new(playerNum, name, sprite, sprite2, northSprite, n
 	o.canBarricade = false;
 	o.dismantable = true;
 	o.blockAllTheSquare = true;
-	o.canBeAlwaysPlaced = true;
-	o.buildLow = true;
+	o.canBeAlwaysPlaced = false;
+	o.buildMid = false;
 	return o;
 end
 
@@ -87,7 +87,7 @@ end
 function ISDoubleMetalShelf:createPart(square, north, sprite)
 	local thumpable = IsoThumpable.new(getCell(), square, sprite, not north, self);
 	thumpable:setMaxHealth(self:getHealth());
-	thumpable:setHealth(thumpable:getMaxHealth())
+	thumpable:setHealth(thumpable:getMaxHealth());
 	thumpable:setBreakSound("BreakObject");
 
 	thumpable:createContainersFromSpriteProperties();
@@ -183,7 +183,7 @@ function ISDoubleMetalShelf:render(x, y, z, square)
 		self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za);
 	end
 
-	-- optionally draw a floor helper for each part
+	-- optionally render a floor helper for each part
 	if self.renderFloorHelper then
 		if not self.RENDER_SPRITE_FLOOR then
 			self.RENDER_SPRITE_FLOOR = IsoSprite.new();
@@ -237,8 +237,8 @@ end
 ---@return boolean validity
 function ISDoubleMetalShelf:checkSingleTileValidity(square)
 	if not square then return false; end
-	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-	if square:isVehicleIntersecting() then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
 	if not square:isFreeOrMidair(true) then return false; end
 
 	local sharedSprite = getSprite(self:getSprite());
@@ -252,16 +252,17 @@ end
 ---@param square IsoGridSquare The square to check for the first part
 ---@return boolean validity
 function ISDoubleMetalShelf:isValid(square)
-	if not ISBuildingObject.isValid(self, square) or buildUtil.stairIsBlockingPlacement(square, true) or square:isVehicleIntersecting() then
-		return false;
-	end
+	if not square then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+	if not square:isFreeOrMidair(true) then return false; end
 
 	local xa, ya, za = self:getSquare2Pos(square, self.north);
 	local squareA = getCell():getGridSquare(xa, ya, za);
 
-	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) or squareA:isVehicleIntersecting() then
-		return false;
-	end
+	if not ISBuildingObject.isValid(self, squareA) then return false; end
+    if buildUtil.stairIsBlockingPlacement( squareA, true ) then return false; end
+	if not squareA:isFreeOrMidair(true) then return false; end
 
 	local sharedSprite = getSprite(self:getSprite());
 	local selfProps = sharedSprite:getProperties();

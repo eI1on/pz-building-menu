@@ -36,6 +36,7 @@ function ISSink:isValid(square)
 end
 
 --- Renders a ghost tile of the sink for placement preview
+--- TODO: Snap the object to counter/table faces
 --- @param x integer x coordinate in the world
 --- @param y integer y coordinate in the world
 --- @param z integer z coordinate (floor level)

@@ -4,6 +4,12 @@ Tooltip_CS = {
   Tooltip_BMMagazineGlass = "...měli by tě najít alespoň po ruce",
   Tooltip_AsphaltMixturePowder = "Používá se ke stavbě silnic. Vyžaduje kbelík vody.",
 
+  Tooltip_BuildingObject_Main_Part = "Hlavní část",
+  Tooltip_BuildingObject_Secondary_Part = "Sekundární část",
+  Tooltip_BuildingObject_Tertiary_Part = "Terciární část",
+  Tooltip_BuildingObject_Quaternary_Part = "Kvartérní část",
+  Tooltip_BuildingObject_Extra_Part = "Extra díl",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Šedá kamenná zeď",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Rám dveří z šedého kamene",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Šedý kamenný okenní rám",

@@ -4,6 +4,12 @@ Tooltip_PH = {
   Tooltip_BMMagazineGlass = "...dapat na mahanap ka nila kahit papaano",
   Tooltip_AsphaltMixturePowder = "Ginamit sa paggawa ng mga kalsada. Nangangailangan ng isang balde ng tubig.",
 
+  Tooltip_BuildingObject_Main_Part = "Pangunahing Bahagi",
+  Tooltip_BuildingObject_Secondary_Part = "Pangalawang Bahagi",
+  Tooltip_BuildingObject_Tertiary_Part = "Tersiyaryong Bahagi",
+  Tooltip_BuildingObject_Quaternary_Part = "Quaternary Part",
+  Tooltip_BuildingObject_Extra_Part = "Dagdag na Bahagi",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Gray Stone Wall",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Gray Stone Frame ng Pinto",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Gray Stone Frame ng Bintana",

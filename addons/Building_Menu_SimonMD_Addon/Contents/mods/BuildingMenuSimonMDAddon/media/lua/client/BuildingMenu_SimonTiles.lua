@@ -12,10 +12,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -35,10 +31,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -58,10 +50,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -81,10 +69,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -104,10 +88,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -127,10 +107,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -150,10 +126,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -173,10 +145,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
@@ -196,10 +164,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 modData = {wallType = "doorframe"}
@@ -217,10 +181,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 modData = {wallType = "doorframe"}
@@ -238,10 +198,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 modData = {wallType = "doorframe"}
@@ -259,10 +215,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 modData = {wallType = "doorframe"}
@@ -280,10 +232,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 isThumpable = true,
@@ -304,10 +252,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 isThumpable = true,
@@ -328,10 +272,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 isThumpable = true,
@@ -352,10 +292,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.BigScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 isThumpable = true,
@@ -376,10 +312,6 @@ local function addSimonMDWallsToMenu()
             BuildingMenu.SmallScrapWallRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 completionSound = "BuildMetalStructureWallFrame",
                 noNeedHammer = true,
                 canPassThrough = true,
@@ -411,10 +343,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -436,10 +364,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -456,10 +380,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -481,10 +401,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -502,10 +418,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -527,10 +439,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -547,10 +455,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -572,10 +476,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
@@ -593,10 +493,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -618,10 +514,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -643,10 +535,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -668,10 +556,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
@@ -708,7 +592,6 @@ local function addRoofingToMenu()
             BuildingMenu.MetalFloorRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 needToBeAgainstWall = false,
@@ -726,7 +609,6 @@ local function addRoofingToMenu()
             BuildingMenu.MetalFloorRecipe,
             true,
             {
-                actionAnim = "BuildLow",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 needToBeAgainstWall = false,
@@ -744,7 +626,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -762,7 +643,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -780,7 +660,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -798,7 +677,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -816,7 +694,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -834,7 +711,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -852,7 +728,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -870,7 +745,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -888,7 +762,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -906,7 +779,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -924,7 +796,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -942,7 +813,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -960,7 +830,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -978,7 +847,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -996,7 +864,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -1014,7 +881,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
@@ -1045,7 +911,6 @@ local function addSimonMDSecretEntrancesToMenu()
             BuildingMenu.WoodenDoorRecipe,
             "Build Secret Entrance",
             {
-                actionAnim = "Build",
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
@@ -1087,10 +952,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -1117,10 +978,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                firstItem = "BlowTorch",
-                secondItem = "WeldingMask",
-                craftingBank = "BlowTorch",
-                actionAnim = "BlowTorch",
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
@@ -1175,10 +1032,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "metal_shelves",
@@ -1200,7 +1053,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalGlassCounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
@@ -1217,7 +1069,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalGlassCounterRecipe,
                     true,
                     {
-                        actionAnim = "Build",
                         noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
@@ -1234,10 +1085,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         containerType = "shelves",
@@ -1247,7 +1094,7 @@ local function addMetalContainersToMenu()
                         needToBeAgainstWall = true,
                         canBeAlwaysPlaced = false,
                         renderFloorHelper = true,
-                        buildLow = true
+                        buildHigh = true,
                     },
                     {
                         sprite = "furniture_Simon_MD_12",
@@ -1285,10 +1132,6 @@ local function addDoubleDoorToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         canBarricade = false,
                         ignoreNorth = true,
@@ -1329,10 +1172,6 @@ local function addDoorsToMenu()
                     BuildingMenu.ScrapDoor1Recipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
@@ -1352,10 +1191,6 @@ local function addDoorsToMenu()
                     BuildingMenu.ScrapDoor2Recipe,
                     true,
                     {
-                        firstItem = "BlowTorch",
-                        secondItem = "WeldingMask",
-                        craftingBank = "BlowTorch",
-                        actionAnim = "BlowTorch",
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,

@@ -255,6 +255,9 @@ Sandbox_CN = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ 材料 ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "这只是一个行分隔符，检查它没有任何作用。",
 
+    Sandbox_UsePaint = "在食谱中使用油漆",
+    Sandbox_UsePaint_tooltip = "禁止从配方中去除油漆，那些以油漆为唯一成分的将保留。 <LINE><LINE> <RGB:1,0,0> 退出并重新输入保存以应用更改！ <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "油漆罐用途",
     Sandbox_PaintUses_tooltip = "每个油漆罐的使用次数。 <LINE><LINE> <RGB:1,0,0> 退出并重新输入保存以应用更改！ <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_CN = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 用途",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 用途",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 用途",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 种用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 种用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 种用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 种用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 次使用",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 种用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 种用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 种用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "无限用途",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "大墙的木质材料成本",

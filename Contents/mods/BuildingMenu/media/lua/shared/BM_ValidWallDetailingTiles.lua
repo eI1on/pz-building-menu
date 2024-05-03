@@ -18,7 +18,7 @@ setmetatable(M, {
     end,
     __newindex = function(t, k, v)
         if not RemovableWallDetailingTiles[k] and not methods[k] then
-            BM_Utils.debugPrint("[Building Menu ERROR] ", "[RemovableWallDetailingTiles] Adding new keys is not allowed. Use the addTile method: " .. tostring(k) .. " " .. tostring(v));
+            print("[Building Menu ERROR] ", "[RemovableWallDetailingTiles] Adding new keys is not allowed. Use the addTile method: " .. tostring(k) .. " " .. tostring(v));
         else
             RemovableWallDetailingTiles[k] = v;
         end
@@ -37,7 +37,7 @@ methods.addTile = function(tile)
             table.insert(RemovableWallDetailingTiles, v);
         end
     else
-        BM_Utils.debugPrint("[Building Menu ERROR] ", "[RemovableWallDetailingTiles] INVALID type. String or table expected: " .. tostring(tile));
+        print("[Building Menu ERROR] ", "[RemovableWallDetailingTiles] INVALID type. String or table expected: " .. tostring(tile));
     end
 end
 

@@ -255,6 +255,9 @@ Sandbox_JP = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ 材料 ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
 
+    Sandbox_UsePaint = "レシピでペイントを使用する",
+    Sandbox_UsePaint_tooltip = "レシピから塗料を削除できないようにしました。塗料のみが材料として残ったものは残ります。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "ペイント缶の用途",
     Sandbox_PaintUses_tooltip = "塗料缶ごとに使用します。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_JP = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 用途",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 の用途",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 用途",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8つの用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 の用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 の用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 の用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 の用途",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 回の使用",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100回の使用",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 の用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 用途",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100回の使用",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "無限の用途",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "BIGウォールの木材材料費",

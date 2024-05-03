@@ -4,6 +4,12 @@ Tooltip_DE = {
   Tooltip_BMMagazineGlass = "...sie sollten dich zumindest praktisch finden",
   Tooltip_AsphaltMixturePowder = "Wird zum Straßenbau verwendet. Benötigt einen Eimer Wasser.",
 
+  Tooltip_BuildingObject_Main_Part = "Hauptteil",
+  Tooltip_BuildingObject_Secondary_Part = "Sekundärteil",
+  Tooltip_BuildingObject_Tertiary_Part = "Tertiärer Teil",
+  Tooltip_BuildingObject_Quaternary_Part = "Quartärer Teil",
+  Tooltip_BuildingObject_Extra_Part = "Zusätzlicher Teil",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Graue Steinmauer",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Türrahmen aus grauem Stein",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Fensterrahmen aus grauem Stein",

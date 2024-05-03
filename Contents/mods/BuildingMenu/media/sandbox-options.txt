@@ -711,10 +711,18 @@ option BuildingMenuRecipes.MaterialsDivider
 }
 
 
+option BuildingMenuRecipes.usePaint
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenuRecipes,
+    translation = UsePaint,
+}
+
 option BuildingMenuRecipes.paintUses
 {
     type = enum,
-    numValues = 8,
+    numValues = 13,
     default = 3,
     page = BuildingMenuRecipes,
     translation = PaintUses,
@@ -724,7 +732,7 @@ option BuildingMenuRecipes.paintUses
 option BuildingMenuRecipes.blowTorchUses
 {
     type = enum,
-    numValues = 12,
+    numValues = 13,
     default = 3,
     page = BuildingMenuRecipes,
     translation = BlowTorchUses,
@@ -734,7 +742,7 @@ option BuildingMenuRecipes.blowTorchUses
 option BuildingMenuRecipes.bucketAsphaltMixtureUses
 {
     type = enum,
-    numValues = 8,
+    numValues = 13,
     default = 3,
     page = BuildingMenuRecipes,
     translation = BucketAsphaltMixtureUses,
@@ -744,7 +752,7 @@ option BuildingMenuRecipes.bucketAsphaltMixtureUses
 option BuildingMenuRecipes.bucketConcreteUses
 {
     type = enum,
-    numValues = 8,
+    numValues = 13,
     default = 3,
     page = BuildingMenuRecipes,
     translation = BucketConcreteUses,

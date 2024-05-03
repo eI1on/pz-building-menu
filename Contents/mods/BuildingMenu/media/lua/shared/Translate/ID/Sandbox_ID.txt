@@ -255,6 +255,9 @@ Sandbox_ID = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Bahan ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
 
+    Sandbox_UsePaint = "Gunakan Cat dalam Resep",
+    Sandbox_UsePaint_tooltip = "Nonaktifkan untuk menghilangkan cat dari resep, resep yang hanya menggunakan cat sebagai bahannya akan tetap ada. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Kegunaan Kaleng Cat",
     Sandbox_PaintUses_tooltip = "Penggunaan per kaleng cat. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_ID = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Kegunaan",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Kegunaan",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Kegunaan",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Kegunaan",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 Kegunaan",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Kegunaan Tak Terbatas",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Biaya Bahan Kayu untuk Tembok BESAR",

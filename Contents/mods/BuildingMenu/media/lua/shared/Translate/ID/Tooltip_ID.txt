@@ -4,6 +4,12 @@ Tooltip_ID = {
   Tooltip_BMMagazineGlass = "...setidaknya mereka akan menganggapmu berguna",
   Tooltip_AsphaltMixturePowder = "Digunakan untuk membangun jalan. Membutuhkan seember air.",
 
+  Tooltip_BuildingObject_Main_Part = "Bagian utama",
+  Tooltip_BuildingObject_Secondary_Part = "Bagian Sekunder",
+  Tooltip_BuildingObject_Tertiary_Part = "Bagian Tersier",
+  Tooltip_BuildingObject_Quaternary_Part = "Bagian Kuarter",
+  Tooltip_BuildingObject_Extra_Part = "Bagian Tambahan",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Dinding Batu Abu-abu",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Kusen Pintu Batu Abu Abu",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Bingkai Jendela Batu Abu Abu",

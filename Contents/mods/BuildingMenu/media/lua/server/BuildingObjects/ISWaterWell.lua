@@ -6,7 +6,7 @@ ISWaterWell = ISBuildingObject:derive('ISWaterWell')
 --- List of all water wells created.
 ISWaterWell.WaterWells = {}
 
---- Debug flag to control output of debug information.
+--- Debug flag to control output of debug information
 ISWaterWell.wantNoise = getDebug()
 local noise = function(msg)
     if (ISWaterWell.wantNoise) then 

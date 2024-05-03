@@ -25,10 +25,20 @@ end;
 --- @param square IsoGridSquare The square where the washer-dryer is to be placed
 --- @return boolean validity True if the washer-dryer can be placed, false otherwise
 function ISCombinationWasherDryer:isValid(square)
-  if not ISBuildingObject.isValid(self, square) then
-    return false;
-  end;
-  return true;
+  if not square then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+	if self.needToBeAgainstWall then
+        for i=0,square:getObjects():size()-1 do
+           local obj = square:getObjects():get(i);
+           if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
+               return true;
+           end
+        end
+        return false;
+    else
+        if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+    end
+    return true;
 end;
 
 --- Renders the combination washer-dryer object in the world

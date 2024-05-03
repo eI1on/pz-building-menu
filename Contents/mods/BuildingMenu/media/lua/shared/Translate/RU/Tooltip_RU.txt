@@ -4,6 +4,12 @@ Tooltip_RU = {
   Tooltip_BMMagazineGlass = "Обучает созданию стеклянных панелей для строительства окон.",
   Tooltip_AsphaltMixturePowder = "Используется для строительства дорог. Необходимо ведро с водой.",
 
+  Tooltip_BuildingObject_Main_Part = "Главная часть",
+  Tooltip_BuildingObject_Secondary_Part = "Вторичная часть",
+  Tooltip_BuildingObject_Tertiary_Part = "Третичная часть",
+  Tooltip_BuildingObject_Quaternary_Part = "Четвертичная часть",
+  Tooltip_BuildingObject_Extra_Part = "Дополнительная часть",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Серая каменная стена",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Серый каменный дверной проём",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Серый каменный оконный проём",

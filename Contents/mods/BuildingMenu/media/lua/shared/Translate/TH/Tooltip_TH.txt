@@ -4,6 +4,12 @@ Tooltip_TH = {
   Tooltip_BMMagazineGlass = "...อย่างน้อยพวกเขาก็ควรจะพบว่าคุณสะดวก",
   Tooltip_AsphaltMixturePowder = "ใช้ในการสร้างถนน ต้องใช้ถังน้ำ",
 
+  Tooltip_BuildingObject_Main_Part = "ส่วนสำคัญ",
+  Tooltip_BuildingObject_Secondary_Part = "ส่วนรอง",
+  Tooltip_BuildingObject_Tertiary_Part = "ส่วนระดับอุดมศึกษา",
+  Tooltip_BuildingObject_Quaternary_Part = "ส่วนควอเตอร์นารี",
+  Tooltip_BuildingObject_Extra_Part = "ส่วนเสริม",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "กำแพงหินสีเทา",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "วงกบประตูหินสีเทา",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "กรอบหน้าต่างหินสีเทา",

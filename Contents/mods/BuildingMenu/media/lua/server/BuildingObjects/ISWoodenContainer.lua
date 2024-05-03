@@ -18,8 +18,8 @@ function ISWoodenContainer:create(x, y, z, north, sprite)
 
     local sharedSprite = getSprite(self:getSprite())
     if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
-        local props = ISMoveableSpriteProps.new(sharedSprite)
-        self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq))
+        local props = ISMoveableSpriteProps.new(sharedSprite);
+        self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq));
     end
 
     buildUtil.setInfo(self.javaObject, self);
@@ -46,7 +46,7 @@ function ISWoodenContainer:new(sprite, northSprite)
     o.dismantable = true;
     o.canBeAlwaysPlaced = true;
     o.canBeLockedByPadlock = true;
-    o.buildLow = true;
+    o.buildMid = false;
     return o;
 end
 
@@ -64,7 +64,7 @@ function ISWoodenContainer:isValid(square)
     if not self:haveMaterial(square) then return false; end
 
 
-    local sharedSprite = getSprite(self:getSprite())
+    local sharedSprite = getSprite(self:getSprite());
     if sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
         local props = ISMoveableSpriteProps.new(sharedSprite);
         return props:canPlaceMoveable("amongus", square, nil);

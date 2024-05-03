@@ -255,6 +255,9 @@ Sandbox_HU = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Anyagok ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
 
+    Sandbox_UsePaint = "Használja a festéket a receptekben",
+    Sandbox_UsePaint_tooltip = "Tiltsa le a festék eltávolítását a receptekből, azok megmaradnak, amelyekben a festék az egyetlen összetevő. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Festékdobozok felhasználása",
     Sandbox_PaintUses_tooltip = "Felhasználás festékdobozonként. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_HU = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Felhasználás",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Felhasználás",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Felhasználás",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Felhasználások",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 Felhasználás",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 felhasználás",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Felhasználások",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Felhasználás",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Felhasználás",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 felhasználás",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Végtelen felhasználás",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "NAGY falak faanyagköltsége",

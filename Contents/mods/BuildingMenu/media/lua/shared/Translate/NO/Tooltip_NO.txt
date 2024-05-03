@@ -4,6 +4,12 @@ Tooltip_NO = {
   Tooltip_BMMagazineGlass = "...de burde i det minste finne deg nyttig",
   Tooltip_AsphaltMixturePowder = "Brukes til å bygge veier. Krever en bøtte med vann.",
 
+  Tooltip_BuildingObject_Main_Part = "Hoveddel",
+  Tooltip_BuildingObject_Secondary_Part = "Sekundær del",
+  Tooltip_BuildingObject_Tertiary_Part = "Tertiær del",
+  Tooltip_BuildingObject_Quaternary_Part = "Kvartær del",
+  Tooltip_BuildingObject_Extra_Part = "Ekstra del",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Grå steinmur",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Dørramme i gråstein",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Vindusramme i gråstein",

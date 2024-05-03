@@ -1,0 +1,30 @@
+module Base
+{
+	sound ScrewingWood
+	{
+		category = Item,
+		maxInstancesPerEmitter = 1,	
+		clip { file = media/sound/ScrewingWood.ogg, volume = 0.50, }
+	}
+
+    sound ScrewingMetal
+	{
+		category = Item,
+		maxInstancesPerEmitter = 1,	
+		clip { file = media/sound/ScrewingMetal.ogg, volume = 0.50, }
+	}
+	
+    sound HammeringMetal
+	{
+		category = Item,
+		maxInstancesPerEmitter = 1,	
+		clip { file = media/sound/HammeringMetal.ogg, volume = 0.50, }
+	}
+	
+    sound Sewing
+	{
+		category = Item,
+		maxInstancesPerEmitter = 1,	
+		clip { file = media/sound/Sewing.ogg, volume = 0.50, }
+	}
+}

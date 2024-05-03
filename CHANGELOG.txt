@@ -1,3 +1,19 @@
+ MAY 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Added dynamic Building Animations which adapt according to the tool used, the height of the object to be built and sounds that match the materials used. For more immersion :)
+[*] Fixed vanilla animation for hammering nails into planks when building tall and low structures
+[*] Added informations about the Containers Capacity of the objects to the tooltip
+[*] Added sandbox option to remove paint from recipes, those with paint as the only ingredient will remain
+[*] Added another option for Uses of consumables to be Infinite
+[*] Corrected Sandbox Options tooltips to accurately reflect that users need to reenter their save/world for changes to take effect
+[*] General optimizations
+[/list]
+[/list]
+
 21 APR 24
 c6971e7
 

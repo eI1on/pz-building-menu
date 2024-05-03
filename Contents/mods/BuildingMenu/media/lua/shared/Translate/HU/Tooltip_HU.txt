@@ -4,6 +4,12 @@ Tooltip_HU = {
   Tooltip_BMMagazineGlass = "...legalább hasznosnak kell találniuk",
   Tooltip_AsphaltMixturePowder = "Utak építésére használják. Egy vödör vizet igényel.",
 
+  Tooltip_BuildingObject_Main_Part = "Fő rész",
+  Tooltip_BuildingObject_Secondary_Part = "Másodlagos rész",
+  Tooltip_BuildingObject_Tertiary_Part = "Harmadfokú rész",
+  Tooltip_BuildingObject_Quaternary_Part = "Negyedidőszaki rész",
+  Tooltip_BuildingObject_Extra_Part = "Extra rész",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Szürke kőfal",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Szürke kő ajtókeret",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Szürke kő ablakkeret",

@@ -4,6 +4,12 @@ Tooltip_UA = {
   Tooltip_BMMagazineGlass = "...вони повинні принаймні знайти вас під рукою",
   Tooltip_AsphaltMixturePowder = "Використовується для будівництва доріг. Потрібно відро води.",
 
+  Tooltip_BuildingObject_Main_Part = "Головна частина",
+  Tooltip_BuildingObject_Secondary_Part = "Другорядна частина",
+  Tooltip_BuildingObject_Tertiary_Part = "Третинна частина",
+  Tooltip_BuildingObject_Quaternary_Part = "Четвертинна частина",
+  Tooltip_BuildingObject_Extra_Part = "Додаткова частина",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Сірий кам'яна стіна",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Сірий кам'яний дверний каркас",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Сірий камінь віконної рами",

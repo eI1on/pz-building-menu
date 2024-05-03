@@ -4,6 +4,12 @@ Tooltip_PT = {
   Tooltip_BMMagazineGlass = "...eles deveriam pelo menos achar você útil",
   Tooltip_AsphaltMixturePowder = "Usado para construir estradas. Requer um balde de água.",
 
+  Tooltip_BuildingObject_Main_Part = "Parte principal",
+  Tooltip_BuildingObject_Secondary_Part = "Parte Secundária",
+  Tooltip_BuildingObject_Tertiary_Part = "Parte Terciária",
+  Tooltip_BuildingObject_Quaternary_Part = "Parte Quaternária",
+  Tooltip_BuildingObject_Extra_Part = "Parte Extra",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Parede de pedra cinza",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Moldura de porta de pedra cinza",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Moldura de janela de pedra cinza",

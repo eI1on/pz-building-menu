@@ -255,6 +255,9 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materials ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "This is only a line separator, checking it has no effect.",
 
+    Sandbox_UsePaint = "Use Paint in Recipes",
+    Sandbox_UsePaint_tooltip = "Disable to remove paint from recipes, those with paint as the only ingredient will remain. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Paint Can Uses",
     Sandbox_PaintUses_tooltip = "Uses per paint can. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1>",
 
@@ -280,6 +283,7 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 Uses",
     Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 Uses",
     Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 Uses",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Infinite Uses",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Wood Material Cost for BIG Walls",

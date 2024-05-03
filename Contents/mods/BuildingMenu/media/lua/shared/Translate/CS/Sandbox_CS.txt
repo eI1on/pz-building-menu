@@ -255,6 +255,9 @@ Sandbox_CS = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiály _____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Toto je pouze oddělovač řádků, jeho kontrola nemá žádný účinek.",
 
+    Sandbox_UsePaint = "Použijte Malování v receptech",
+    Sandbox_UsePaint_tooltip = "Zakázat odstranění barvy z receptů, ty s barvou jako jedinou přísadou zůstanou. <LINE><LINE> <RGB:1,0,0> ODEJÍTE A ZNOVU ZADEJTE ULOŽIT, ABYSTE POUŽILI ZMĚNY! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Použití plechovky barvy",
     Sandbox_PaintUses_tooltip = "Použití na plechovku s barvou. <LINE><LINE> <RGB:1,0,0> ODEJÍTE A ZNOVU ZADEJTE ULOŽIT, ABYSTE POUŽILI ZMĚNY! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_CS = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Použití",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Použití",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Použití",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 použití",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 použití",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Nekonečné použití",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Náklady na dřevěný materiál pro velké stěny",

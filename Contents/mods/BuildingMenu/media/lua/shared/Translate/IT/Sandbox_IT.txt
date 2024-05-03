@@ -255,6 +255,9 @@ Sandbox_IT = {
     Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiali ____________",
     Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Questo è solo un separatore di riga, controllarlo non ha alcun effetto.",
 
+    Sandbox_UsePaint = "Usa Paint nelle ricette",
+    Sandbox_UsePaint_tooltip = "Disabilita la rimozione della vernice dalle ricette, rimarranno quelle che hanno la vernice come unico ingrediente. <LINE><LINE> <RGB:1,0,0> ESCI E RIENTRO SALVA PER APPLICARE LE MODIFICHE! <RGB:1,1,1><LINE>",
+
     Sandbox_PaintUses = "Usi della lattina di vernice",
     Sandbox_PaintUses_tooltip = "Usi per barattolo di vernice. <LINE><LINE> <RGB:1,0,0> ESCI E RIENTRO SALVA PER APPLICARE LE MODIFICHE! <RGB:1,1,1>",
 
@@ -276,19 +279,11 @@ Sandbox_IT = {
     Sandbox_BuildingMenuRecipes_deltaUses_option6 = "22 Usi",
     Sandbox_BuildingMenuRecipes_deltaUses_option7 = "26 Usi",
     Sandbox_BuildingMenuRecipes_deltaUses_option8 = "28 Usi",
-
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option1 = "4 Usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option2 = "8 Usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option3 = "10 usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option4 = "14 Usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option5 = "18 Usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option6 = "22 Usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option7 = "26 Usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option8 = "30 usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option9 = "45 Usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option10 = "60 usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option11 = "80 usi",
-    Sandbox_BuildingMenuRecipes_blowTorchDeltaUses_option12 = "100 usi",
+    Sandbox_BuildingMenuRecipes_deltaUses_option9 = "45 Usi",
+    Sandbox_BuildingMenuRecipes_deltaUses_option10 = "60 usi",
+    Sandbox_BuildingMenuRecipes_deltaUses_option11 = "80 usi",
+    Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 usi",
+    Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Usi infiniti",
 
 
     Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Costo del materiale in legno per pareti GRANDI",

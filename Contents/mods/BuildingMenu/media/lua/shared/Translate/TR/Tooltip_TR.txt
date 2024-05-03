@@ -4,6 +4,12 @@ Tooltip_TR = {
   Tooltip_BMMagazineGlass = "...en azından seni kullanışlı bulmalılar",
   Tooltip_AsphaltMixturePowder = "Yol yapımında kullanılır. Bir kova su gerektirir.",
 
+  Tooltip_BuildingObject_Main_Part = "Ana bölüm",
+  Tooltip_BuildingObject_Secondary_Part = "İkincil Bölüm",
+  Tooltip_BuildingObject_Tertiary_Part = "Üçüncül Bölüm",
+  Tooltip_BuildingObject_Quaternary_Part = "Kuaterner Kısım",
+  Tooltip_BuildingObject_Extra_Part = "Ekstra Parça",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Gri Taş Duvar",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Gri Taş Kapı Kasası",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Gri Taş Pencere Çerçevesi",

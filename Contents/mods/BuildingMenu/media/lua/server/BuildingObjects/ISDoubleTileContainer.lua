@@ -25,14 +25,14 @@ function ISDoubleTileContainer:new(playerNum, name, sprite, sprite2, northSprite
 	o.dismantable = true;
 	o.blockAllTheSquare = true;
 	o.canBeAlwaysPlaced = true;
-	o.buildLow = true;
+	o.buildMid = false;
 	return o;
 end
 
 ---Creates the shelf and places it in the world
----@param x number The x coordinate in the world
----@param y number The y coordinate in the world
----@param z number The z coordinate (floor level)
+---@param x integer The x coordinate in the world
+---@param y integer The y coordinate in the world
+---@param z integer The z coordinate (floor level)
 ---@param north boolean Whether the shelf is facing north
 ---@param sprite string The sprite to use for this object
 function ISDoubleTileContainer:create(x, y, z, north, sprite)
@@ -65,9 +65,9 @@ function ISDoubleTileContainer:create(x, y, z, north, sprite)
 end
 
 ---Determines which square the player should walk to in order to interact with the shelf
----@param x number The x coordinate in the world
----@param y number The y coordinate in the world
----@param z number The z coordinate (floor level)
+---@param x integer The x coordinate in the world
+---@param y integer The y coordinate in the world
+---@param z integer The z coordinate (floor level)
 ---@return boolean
 function ISDoubleTileContainer:walkTo(x, y, z)
 	local playerObj = getSpecificPlayer(self.player);
@@ -140,15 +140,15 @@ function ISDoubleTileContainer:removeFromGround(square)
 end
 
 ---Calculates the health of the shelf based on certain conditions
----@return number health
+---@return integer health
 function ISDoubleTileContainer:getHealth()
 	return 300 + buildUtil.getWoodHealth(self);
 end
 
 --- Renders a ghost tile of the shelf for placement preview
----@param x number The x coordinate in the world
----@param y number The y coordinate in the world
----@param z number The z coordinate (floor level)
+---@param x integer The x coordinate in the world
+---@param y integer The y coordinate in the world
+---@param z integer The z coordinate (floor level)
 ---@param square IsoGridSquare The square where the shelf will be placed
 function ISDoubleTileContainer:render(x, y, z, square)
 	-- prepare the rendering for the first part of the shelf
@@ -192,7 +192,7 @@ function ISDoubleTileContainer:render(x, y, z, square)
 		self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za);
 	end
 
-	-- optionally draw a floor helper for each part
+	-- optionally render a floor helper for each part
 	if self.renderFloorHelper then
 		if not self.RENDER_SPRITE_FLOOR then
 			self.RENDER_SPRITE_FLOOR = IsoSprite.new();
@@ -246,8 +246,8 @@ end
 ---@return boolean validity
 function ISDoubleTileContainer:checkSingleTileValidity(square)
 	if not square then return false; end
-	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-	if square:isVehicleIntersecting() then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
 	if not square:isFreeOrMidair(true) then return false; end
 
 	local sharedSprite = getSprite(self:getSprite());
@@ -262,8 +262,8 @@ end
 ---@return boolean validity
 function ISDoubleTileContainer:isValid(square)
 	if not square then return false; end
-	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-	if square:isVehicleIntersecting() then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
 	if not square:isFreeOrMidair(true) then return false; end
 
 	local xa, ya, za = self:getSquare2Pos(square, self.north);
@@ -285,7 +285,7 @@ end
 ---Calculates the position of the second part of the shelf
 ---@param square IsoGridSquare The square of the first part
 ---@param north boolean Whether the shelf is facing north
----@return number x, number y, number z The x, y, and z coordinates for the second part
+---@return integer x, integer y, integer z The x, y, and z coordinates for the second part
 function ISDoubleTileContainer:getSquare2Pos(square, north)
 	local x = square:getX();
 	local y = square:getY();

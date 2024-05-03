@@ -24,7 +24,7 @@ function ISDoubleFridge:new(playerNum, name, sprite, sprite2, northSprite, north
 	o.dismantable = true;
 	o.blockAllTheSquare = true;
 	o.canBeAlwaysPlaced = true;
-	o.buildLow = false;
+	o.buildMid = false;
 	return o;
 end
 
@@ -69,6 +69,7 @@ function ISDoubleFridge:walkTo(x, y, z)
 	local playerObj = getSpecificPlayer(self.player);
 	local square = getCell():getGridSquare(x, y, z);
 	local square2 = self:getSquare2(square, self.north);
+---@diagnostic disable-next-line: param-type-mismatch
 	if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
 		return luautils.walkAdj(playerObj, square);
 	end
@@ -94,6 +95,7 @@ function ISDoubleFridge:createPart(square, north, sprite)
 	thumpable:setHealth(thumpable:getMaxHealth());
 
 	local sharedSprite = getSprite(self:getSprite());
+---@diagnostic disable-next-line: param-type-mismatch
 	if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
 		local props = ISMoveableSpriteProps.new(sharedSprite);
 		self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq));
@@ -187,7 +189,7 @@ function ISDoubleFridge:render(x, y, z, square)
 		self.RENDER_SPRITE_A:RenderGhostTileRed(xa, ya, za);
 	end
 
-	-- optionally draw a floor helper for each part
+	-- optionally render a floor helper for each part
 	if self.renderFloorHelper then
 		if not self.RENDER_SPRITE_FLOOR then
 			self.RENDER_SPRITE_FLOOR = IsoSprite.new();
@@ -247,6 +249,7 @@ function ISDoubleFridge:checkSingleTileValidity(square)
 
 	local sharedSprite = getSprite(self:getSprite());
 	local selfProps = sharedSprite:getProperties();
+---@diagnostic disable-next-line: param-type-mismatch
 	local selfIsLow, selfIsHigh = selfProps:Is("IsLow"), selfProps:Is("IsHigh");
 
 	return checkSquare(square, selfIsLow, selfIsHigh);
@@ -256,22 +259,24 @@ end
 ---@param square IsoGridSquare The square to check for the first part
 ---@return boolean validity
 function ISDoubleFridge:isValid(square)
-	if not square then return false; end
-	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-	if square:isVehicleIntersecting() then return false; end
+    if not square then return false; end
+	if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
 	if not square:isFreeOrMidair(true) then return false; end
 
 	local xa, ya, za = self:getSquare2Pos(square, self.north);
 	local squareA = getCell():getGridSquare(xa, ya, za);
 
-	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) or squareA:isVehicleIntersecting() then
+	if not squareA or not squareA:isFreeOrMidair(true) or buildUtil.stairIsBlockingPlacement(squareA, true) or not ISBuildingObject.isValid(self, squareA) then
 		return false;
 	end
 
 	local sharedSprite = getSprite(self:getSprite());
 	local selfProps = sharedSprite:getProperties();
 
+---@diagnostic disable-next-line: param-type-mismatch
 	local selfIsLow = selfProps:Is("IsLow");
+---@diagnostic disable-next-line: param-type-mismatch
 	local selfIsHigh = selfProps:Is("IsHigh");
 
 	return checkSquare(square, selfIsLow, selfIsHigh) and checkSquare(squareA, selfIsLow, selfIsHigh);

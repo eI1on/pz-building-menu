@@ -3,11 +3,11 @@ require "ISUI/ISPanel"
 ---@type function
 local getTexture = getTexture;
 
---- Class representing a tab in the Building Menu UI.
+--- Class representing a tab in the Building Menu UI
 ---@class ISBuildingMenuTabUI: ISPanelJoypad
 ISBuildingMenuTabUI = ISPanelJoypad:derive("ISBuildingMenuTabUI");
 
---- Singleton instance of ISBuildingMenuTabUI.
+--- Singleton instance of ISBuildingMenuTabUI
 ---@type ISBuildingMenuTabUI|nil
 ISBuildingMenuTabUI.instance = nil;
 ---@type number
@@ -23,7 +23,7 @@ function ISBuildingMenuTabUI:initialise()
     self:create();
 end
 
---- Creates the UI components for the tab.
+--- Creates the UI components for the tab
 function ISBuildingMenuTabUI:create()
     self.categoriesList = ISScrollingListBox:new(0, 0, self.width / 4, self.height);
     self.categoriesList.anchorBottom = true;
@@ -62,7 +62,7 @@ function ISBuildingMenuTabUI:create()
     self:addChild(self.subCategoriesList);
 end
 
---- Draws a list item in the tab.
+--- Draws a list item in the tab
 ---@param y number
 ---@param item table
 ---@param alt boolean
@@ -116,7 +116,7 @@ function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
     return y + self.itemheight;
 end
 
---- Gets the favorite icon X position in the list.
+--- Gets the favorite icon X position in the list
 ---@param listType string
 ---@return number
 function ISBuildingMenuTabUI:getFavoriteX(listType)
@@ -124,7 +124,7 @@ function ISBuildingMenuTabUI:getFavoriteX(listType)
     return self[listType]:getWidth() - scrollBarWid - self.favPadX - self.favWidth - self.favPadX;
 end
 
---- Checks if the mouse is over the favorite icon.
+--- Checks if the mouse is over the favorite icon
 ---@param x number
 ---@param listType string
 ---@return boolean
@@ -132,7 +132,7 @@ function ISBuildingMenuTabUI:isMouseOverFavorite(x, listType)
     return (x >= self:getFavoriteX(listType)) and not self[listType]:isMouseOverScrollBar();
 end
 
---- Handles the mouse down event on the list.
+--- Handles the mouse down event on the list
 ---@param x number
 ---@param y number
 function ISBuildingMenuTabUI:onMouseDown_List(x, y)
@@ -154,7 +154,7 @@ function ISBuildingMenuTabUI:update()
     self.subCategoriesList:setX(self.categoriesList:getRight());
 end
 
---- Adds or removes an item from favorites.
+--- Adds or removes an item from favorites
 ---@param fromKeyboard boolean
 ---@param listType string
 function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
@@ -180,7 +180,7 @@ function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
     end
 end
 
---- Constructor for ISBuildingMenuTabUI.
+--- Constructor for ISBuildingMenuTabUI
 ---@param x number
 ---@param y number
 ---@param width number

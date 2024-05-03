@@ -4,6 +4,12 @@ Tooltip_KO = {
   Tooltip_BMMagazineGlass = "...적어도 그들이 당신을 유용하게 사용했으면 좋겠어요",
   Tooltip_AsphaltMixturePowder = "도로 건설에 사용됩니다. 물 양동이가 필요합니다.",
 
+  Tooltip_BuildingObject_Main_Part = "주요 부분",
+  Tooltip_BuildingObject_Secondary_Part = "보조 부품",
+  Tooltip_BuildingObject_Tertiary_Part = "3차 부품",
+  Tooltip_BuildingObject_Quaternary_Part = "4차 부분",
+  Tooltip_BuildingObject_Extra_Part = "추가 부품",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "회색 석벽",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "회색 석문틀",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "회색 석창문틀",

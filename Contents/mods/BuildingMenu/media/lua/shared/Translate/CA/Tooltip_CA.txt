@@ -4,6 +4,12 @@ Tooltip_CA = {
   Tooltip_BMMagazineGlass = "...almenys haurien de trobar-te a mà",
   Tooltip_AsphaltMixturePowder = "S'utilitza per construir carreteres. Requereix una galleda d'aigua.",
 
+  Tooltip_BuildingObject_Main_Part = "Part principal",
+  Tooltip_BuildingObject_Secondary_Part = "Part secundària",
+  Tooltip_BuildingObject_Tertiary_Part = "Part terciària",
+  Tooltip_BuildingObject_Quaternary_Part = "Part quaternària",
+  Tooltip_BuildingObject_Extra_Part = "Part extra",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Mur de pedra grisa",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Marc de la porta de pedra grisa",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Marc de la finestra de pedra grisa",

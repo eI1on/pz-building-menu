@@ -4,6 +4,12 @@ Tooltip_IT = {
   Tooltip_BMMagazineGlass = "...dovrebbero almeno trovarti a portata di mano",
   Tooltip_AsphaltMixturePowder = "Utilizzato per costruire strade. Richiede un secchio d'acqua.",
 
+  Tooltip_BuildingObject_Main_Part = "Parte principale",
+  Tooltip_BuildingObject_Secondary_Part = "Parte Secondaria",
+  Tooltip_BuildingObject_Tertiary_Part = "Parte Terziaria",
+  Tooltip_BuildingObject_Quaternary_Part = "Parte Quaternaria",
+  Tooltip_BuildingObject_Extra_Part = "Parte aggiuntiva",
+
   Tooltip_BuildingMenuObj_Grey_Stone_Wall = "Muro di pietra grigia",
   Tooltip_BuildingMenuObj_Grey_Stone_Door_Frame = "Cornice per porta in pietra grigia",
   Tooltip_BuildingMenuObj_Grey_Stone_Window_Frame = "Cornice per finestra in pietra grigia",
