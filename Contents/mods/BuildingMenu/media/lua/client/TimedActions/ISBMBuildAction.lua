@@ -1,4 +1,4 @@
-require "TimedActions/ISBaseTimedAction"
+require "BuildingObjects/TimedActions/ISBuildAction"
 local BM_Utils = require("BM_Utils");
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
@@ -18,7 +18,8 @@ ISBMBuildAction.toolAudioMappings = {
     ["Shovel"] = "DigFurrowWithShovel",
     ["BlowTorch"] = "BlowTorch",
     ["WeldingMask"] = "BlowTorch",
-    ["Needle"] = "Sewing"
+    ["Needle"] = "Sewing",
+    ["Wrench"] = "RepairWithWrench"
 };
 
 --- List of appropriate animations based on tool type
@@ -32,7 +33,8 @@ ISBMBuildAction.appropriateAnimations = {
     ["HandShovel"] = {"DigTrowel", "DigTrowel", "DigTrowel"},
     ["Shovel"] = {"DigShovel", "DigShovel", "DigShovel"},
     ["BlowTorch"] = {"BlowTorch", "BlowTorchMid", "BlowTorchFloor"},
-    ["Needle"] = {"Craft", "Craft", "Craft"}
+    ["Needle"] = {"Craft", "Craft", "Craft"},
+    ["Wrench"] = {"Craft", "Craft", "VehicleTrailer"}
 };
 
 --- Initializes animation and tools map for the action
@@ -194,24 +196,20 @@ function ISBMBuildAction:initializeAnimationFlags()
         local objProps = objSprite:getProperties();
         if objProps then
             -- determine animation flags based on sprite properties
-            self.isAnimHigh = self.item.buildHigh or self:isHighObject(objProps);
-            self.isAnimMid = self.item.buildMid or self:isMidObject(objProps);
-            self.isAnimLow = self.item.buildLow or self.item.floor or self:isLowObject(objProps);
+            self.isAnimHigh = self:isHighObject(objProps);
+            self.isAnimMid = self:isMidObject(objProps);
+            self.isAnimLow = self:isLowObject(objProps);
 
             -- check for surface-specific height properties which can override other flags
             self:adjustAnimationFlagsByHeight(objSprite);
 
-            if self.isAnimLow == true then
-                self.isAnimHigh = false; self.isAnimMid = false;
-            elseif self.isAnimMid == true then
-                self.isAnimHigh = false; self.isAnimLow = false;
-            elseif self.isAnimHigh == true then
-                self.isAnimMid = false; self.isAnimLow = false;
+            if self.isAnimLow or self.item.buildLow or self.item.floor then
+                self.isAnimLow = true; self.isAnimHigh = false; self.isAnimMid = false;
+            elseif self.isAnimMid or self.item.buildMid then
+                self.isAnimMid = true; self.isAnimHigh = false; self.isAnimLow = false;
+            elseif self.isAnimHigh or self.item.buildHigh then
+                self.isAnimHigh = true; self.isAnimMid = false; self.isAnimLow = false;
             end
-
-            print("isAnimLow ", self.isAnimLow)
-            print("isAnimMid ", self.isAnimMid)
-            print("isAnimHigh ", self.isAnimHigh)
         end
     end
 end

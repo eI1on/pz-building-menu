@@ -2,12 +2,12 @@
 local BuildingMenu = require("BuildingMenu01_Main")
 
 
---- Finds an item in a list by a key-value pair, or creates and adds it if not found.
---- @param list table The list to search or add the item to.
---- @param keyName string The key to compare the value against.
---- @param keyValue any The value to search for in the list items.
---- @param newItem table The new item to add to the list if the keyValue is not found.
---- @return table newItem The found or newly added item.
+--- Finds an item in a list by a key-value pair, or creates and adds it if not found
+--- @param list table The list to search or add the item to
+--- @param keyName string The key to compare the value against
+--- @param keyValue any The value to search for in the list items
+--- @param newItem table The new item to add to the list if the keyValue is not found
+--- @return table newItem The found or newly added item
 local function findOrCreateItem(list, keyName, keyValue, newItem)
     for _, item in ipairs(list) do
         if item[keyName] == keyValue then
@@ -18,13 +18,13 @@ local function findOrCreateItem(list, keyName, keyValue, newItem)
     return newItem
 end
 
---- Adds objects to a specific subcategory under a category in a tab.
---- @param tabName string The name of the tab to add the objects to.
---- @param categoryName string The name of the category under the tab.
---- @param categoryIcon string|nil The icon for the category, can be nil.
---- @param subcategoryName string The name of the subcategory under the category.
---- @param subCategoryIcon string|nil The icon for the subcategory, can be nil.
---- @param objects table The list of objects to add to the subcategory.
+--- Adds objects to a specific subcategory under a category in a tab
+--- @param tabName string The name of the tab to add the objects to
+--- @param categoryName string The name of the category under the tab
+--- @param categoryIcon string|nil The icon for the category, can be nil
+--- @param subcategoryName string The name of the subcategory under the category
+--- @param subCategoryIcon string|nil The icon for the subcategory, can be nil
+--- @param objects table The list of objects to add to the subcategory
 function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon, subcategoryName, subCategoryIcon,
                                              objects)
     if not BuildingMenu.Tabs then return end
@@ -57,7 +57,7 @@ end
 --- @param isRecipeKnown boolean|string Whether the recipe is known to the player, or the name of the recipe
 --- @param options table Additional options for the object
 --- @param sprites table The sprites associated with the object
---- @param nameID string|nil The name of the object
+--- @param nameID string|nil The name of the object, used in recipes
 --- @return table table The created object with the specified properties
 function BuildingMenu.createObject(displayName, description, action, recipe, isRecipeKnown, options, sprites, nameID)
     return {
@@ -74,7 +74,7 @@ function BuildingMenu.createObject(displayName, description, action, recipe, isR
     }
 end
 
---- Initializes the tabs in the building menu with default tab values.
+--- Initializes the tabs in the building menu with default tab values
 BuildingMenu.Tabs = {
     {
         tabName = getText("IGUI_BuildingMenuTab_Favorite"),

@@ -1,5 +1,4 @@
 require("BuildingObjects/ISBuildingObject")
-require("TimedActions/ISBMBuildAction")
 
 --- Original onJoypadPressButton method from ISBuildingObject
 --- @type fun(self:ISBuildingObject, joypadIndex:integer, joypadData:any, button:integer)

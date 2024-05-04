@@ -149,6 +149,13 @@ BuildingMenu.Tools = {
     Needle = {
         types = { 'Base.Needle' },
         tags = { 'SewingNeedle' }
+    },
+    Wrench = {
+        types = { 
+            'Base.PipeWrench',
+            'Base.Wrench'
+        },
+        tags = {}
     }
 }
 
