@@ -1,18 +1,14 @@
 version=1
-id=3137092790
-title=Building Menu - Simon MDs Tiles Addon
-description=Ready to take your building experience up a notch? This is an add-on for the Building Menu that adds buildable objects from Simon MDs Tilepack.
+id=
+title=Building Menu - Greenhouse Addon
+description=Ready to take your building experience up a notch? This is an add-on for the Building Menu that adds buildable objects from Greenhouse.
 description=
 description=
 description=[hr][/hr]
 description=
-description=[h1]Over 50 buildable objects:[/h1]
+description=[h1]Over 30 buildable objects:[/h1]
 description=[b] Carpentry & Metalworking[/b]
 description=[list]
-description=[*] Scrap walls
-description=[*] Corrugated metal roofing
-description=[*] Doors, 3 and 4 Tile Garage Doors
-description=[*] [b]Secret Entrances[/b]
 description=[*] [i] and much more [/i]
 description=[/list]
 description=
@@ -51,13 +47,6 @@ description=[*][url=https://steamcommunity.com/workshop/filedetails/discussion/3
 description=[/list]
 description=
 description=[hr][/hr]
-description=[h1] Addons: [/h1]
-description=While the Building Menu mod can run as a standalone, I recommend using it alongside other tilepacks mods for a richer experience ([i] each addon needs the tilepack loaded before[/i])
-description=
-description=Be sure to load Building Menu Mod [b]before[/b] any other addon to avoid any problems.
-description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3067798182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_pert_party_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_dylan_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3225710182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/bm_extras_noises_preview.png [/img][/url]
-description=
 description=
 description=[hr][/hr]
 description=[h2] Thank You & Stay Safe: [/h2]

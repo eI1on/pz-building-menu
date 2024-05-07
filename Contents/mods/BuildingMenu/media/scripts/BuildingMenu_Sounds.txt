@@ -27,4 +27,25 @@ module Base
 		maxInstancesPerEmitter = 1,	
 		clip { file = media/sound/Sewing.ogg, volume = 0.50, }
 	}
+	
+    sound ScissorsDefault
+	{
+		category = Item,
+		maxInstancesPerEmitter = 1,	
+		clip { file = media/sound/ScissorsDefault.ogg, volume = 0.50, }
+	}
+	
+    sound ScissorsPaper
+	{
+		category = Item,
+		maxInstancesPerEmitter = 1,	
+		clip { file = media/sound/ScissorsPaper.ogg, volume = 0.50, }
+	}
+	
+    sound ScissorsCloth
+	{
+		category = Item,
+		maxInstancesPerEmitter = 1,	
+		clip { file = media/sound/ScissorsCloth.ogg, volume = 0.50, }
+	}
 }

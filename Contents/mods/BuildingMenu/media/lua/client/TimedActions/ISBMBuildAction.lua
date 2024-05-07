@@ -19,7 +19,9 @@ ISBMBuildAction.toolAudioMappings = {
     ["BlowTorch"] = "BlowTorch",
     ["WeldingMask"] = "BlowTorch",
     ["Needle"] = "Sewing",
-    ["Wrench"] = "RepairWithWrench"
+    ["Wrench"] = "RepairWithWrench",
+    ["Scissors"] = {default = "ScissorsDefault", paper = "ScissorsPaper", cloth = "ScissorsCloth"},
+    ["BareHands"] = {default = "BuildingGeneric", gravel = "DropSoilFromGravelBag", sand = "DropSoilFromSandBag", dirt = "DropSoilFromDirtBag"},
 };
 
 --- List of appropriate animations based on tool type
@@ -34,7 +36,9 @@ ISBMBuildAction.appropriateAnimations = {
     ["Shovel"] = {"DigShovel", "DigShovel", "DigShovel"},
     ["BlowTorch"] = {"BlowTorch", "BlowTorchMid", "BlowTorchFloor"},
     ["Needle"] = {"Craft", "Craft", "Craft"},
-    ["Wrench"] = {"Craft", "Craft", "VehicleTrailer"}
+    ["Wrench"] = {"Craft", "Craft", "VehicleTrailer"},
+    ["Scissors"] = {"Craft", "Craft", "Craft"},
+    ["BareHands"] = {"Pour", "Pour", "Pour"},
 };
 
 --- Initializes animation and tools map for the action
@@ -91,7 +95,7 @@ function ISBMBuildAction:new(character, item, x, y, z, north, spriteName, time)
     o.toolSoundsPointers = {};
 
     o.animationAndToolsMap = {};
-    o.hasWood, o.hasMetal = false, false;
+    o.hasWood, o.hasMetal, o.hasPaper, o.hasCloth, o.hasSand, o.hasGravel = false, false, false, false, false, false;
     o.isAnimHigh, o.isAnimMid, o.isAnimLow = false, false, false;
 
     return o;
@@ -99,12 +103,33 @@ end
 
 function ISBMBuildAction:getSound(toolType)
     local soundEntry = self.toolAudioMappings[toolType];
-    if type(soundEntry) == "table" then
-        return (self.hasMetal and soundEntry.metal) or (self.hasWood and soundEntry.wood) or soundEntry.default;
+    if soundEntry then
+        if type(soundEntry) == "table" then
+            local sound = soundEntry.default or "BuildingGeneric";
+            if self.hasMetal and soundEntry.metal then
+                sound = soundEntry.metal;
+            elseif self.hasWood and soundEntry.wood then
+                sound = soundEntry.wood;
+            elseif self.hasPaper and soundEntry.paper then
+                sound = soundEntry.paper;
+            elseif self.hasCloth and soundEntry.cloth then
+                sound = soundEntry.cloth;
+            elseif self.hasSand and soundEntry.sand then
+                sound = soundEntry.sand;
+            elseif self.hasGravel and soundEntry.gravel then
+                sound = soundEntry.gravel;
+            elseif self.hasDirt and soundEntry.dirt then
+                sound = soundEntry.dirt;
+            end
+            return sound;
+        else
+            return soundEntry;
+        end
     else
-        return soundEntry;
+        return "BuildingGeneric";
     end
 end
+
 
 --- Item types for wood categorization
 --- @type table<string, boolean>
@@ -124,17 +149,66 @@ local woodItemTypes = {
     ["Log"] = true
 };
 
+--- Item types for paper categorization
+--- @type table<string, boolean>
+local paperItemTypes = {
+    ["ToiletPaper"] = true,
+    ["SheetPaper2"] = true,
+    ["Newspaper"] = true,
+};
+
+--- Item types for cloth categorization
+--- @type table<string, boolean>
+local clothItemTypes = {
+    ["RippedSheets"] = true,
+    ["RippedSheetsDirty"] = true,
+    ["DenimStrips"] = true,
+    ["DenimStripsDirty"] = true,
+    ["LeatherStrips"] = true,
+    ["LeatherStripsDirty"] = true,
+};
+
+
+--- Item types for sand categorization
+--- @type table<string, boolean>
+local sandItemTypes = {
+    ["Gravelbag"] = true,
+};
+
+--- Item types for gravel categorization
+--- @type table<string, boolean>
+local gravelItemTypes = {
+    ["Sandbag"] = true,
+};
+
+--- Item types for dirt categorization
+--- @type table<string, boolean>
+local dirtItemTypes = {
+    ["Dirtbag"] = true,
+};
+
 function ISBMBuildAction:checkForMaterials()
     local modData = self.item.modData;
-    local hasWood, hasMetal = false, false;
+    local hasWood, hasMetal, hasPaper, hasCloth, hasGravel, hasSand, hasDirt = false, false, false, false, false, false, false;
     for index, _ in pairs(modData) do
         local itemType = self:extractItemType(index);
         if itemType then
             hasWood = hasWood or woodItemTypes[itemType];
             hasMetal = hasMetal or metalItemTypes[itemType];
+            hasPaper = hasPaper or paperItemTypes[itemType];
+            hasCloth = hasCloth or clothItemTypes[itemType];
+            hasGravel = hasGravel or gravelItemTypes[itemType];
+            hasSand = hasSand or sandItemTypes[itemType];
+            hasDirt = hasDirt or dirtItemTypes[itemType];
         end
     end
-    return hasWood, hasMetal;
+    self.hasWood = hasWood;
+    self.hasMetal = hasMetal;
+    self.hasPaper = hasPaper;
+    self.hasCloth = hasCloth;
+    self.hasGravel = hasGravel;
+    self.hasSand = hasSand;
+    self.hasDirt = hasDirt;
 end
 
 function ISBMBuildAction:extractItemType(dataIndex)
@@ -147,7 +221,7 @@ end
 
 --- Starts the building action, initializing materials checks and tools
 function ISBMBuildAction:start()
-    self.hasWood, self.hasMetal = self:checkForMaterials();
+    self:checkForMaterials();
 
     local tools = {};
     for i, tool in ipairs(self.item.usedTools) do
@@ -171,15 +245,20 @@ function ISBMBuildAction:start()
             );
         end
     end
+    if #tools == 0 then
+        table.insert(
+            tools,
+                {
+                    toolType = "BareHands",
+                    sound = self:getSound("BareHands"),
+                    invItem = InventoryItemFactory.CreateItem("Base.Dirtbag");
+                }
+            );
+    end
     self.tools = tools;
-
     self.toolSoundsPointers = {};
     for i = 1, #self.tools do
         table.insert(self.toolSoundsPointers, 0);
-    end
-
-    if #self.tools == 0 then
-        print("No valid tools available for construction.");
     end
 
     self:initializeAnimationFlags();
@@ -304,7 +383,6 @@ end
 function ISBMBuildAction:manageToolAnimationsAndSounds()
     local currentToolInfo = self.tools[self.currentTool];
     local currentSoundPointer = self.toolSoundsPointers[self.currentTool];
-
     if currentToolInfo and currentToolInfo.invItem and not currentToolInfo.invItem:IsClothing() then
         local isPlaying = currentSoundPointer ~= 0 and self.character:getEmitter():isPlaying(currentSoundPointer);
 

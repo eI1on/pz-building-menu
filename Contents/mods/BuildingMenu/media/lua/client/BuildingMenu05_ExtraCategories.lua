@@ -8,22 +8,43 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Switch",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.SwitchRecipe,
             true,
             {
                 noNeedHammer = true,
-                renderFloorHelper = false,
+                renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
                 canPassThrough = true,
             },
             {
-                sprite = "lighting_indoor_01_1",
-                northSprite = "lighting_indoor_01_0",
-                eastSprite = "lighting_indoor_01_2",
-                southSprite = "lighting_indoor_01_3"
+                sprite = "building_menu_lighting_25",
+                northSprite = "building_menu_lighting_24",
+                eastSprite = "building_menu_lighting_26",
+                southSprite = "building_menu_lighting_27"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Switch",
+            "Tooltip_Lighting",
+            BuildingMenu.onBuildGeneratorPoweredLight,
+            BuildingMenu.SwitchRecipe,
+            true,
+            {
+                noNeedHammer = true,
+                renderFloorHelper = true,
+                needToBeAgainstWall = true,
+                blockAllTheSquare = false,
+                canBeAlwaysPlaced = false,
+                canPassThrough = true,
+            },
+            {
+                sprite = "building_menu_lighting_29",
+                northSprite = "building_menu_lighting_28",
+                eastSprite = "building_menu_lighting_30",
+                southSprite = "building_menu_lighting_31"
             }
         )
     }
@@ -32,7 +53,7 @@ local function addLightingToMenu()
         getText("IGUI_BuildingMenuCat_Lighting"),
         "lighting_outdoor_01_49",
         getText("IGUI_BuildingMenuSubCat_Lighting_Indoor"),
-        "lighting_indoor_01_1",
+        "building_menu_lighting_29",
         lighting
     )
 
@@ -41,12 +62,12 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.SwitchRecipe,
             true,
             {
                 noNeedHammer = true,
-                renderFloorHelper = false,
+                renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
@@ -62,12 +83,12 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.SwitchRecipe,
             true,
             {
                 noNeedHammer = true,
-                renderFloorHelper = false,
+                renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
@@ -83,12 +104,12 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.SwitchRecipe,
             true,
             {
                 noNeedHammer = true,
-                renderFloorHelper = false,
+                renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
@@ -104,12 +125,12 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.SwitchRecipe,
             true,
             {
                 noNeedHammer = true,
-                renderFloorHelper = false,
+                renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
@@ -125,12 +146,12 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.SwitchRecipe,
             true,
             {
                 noNeedHammer = true,
-                renderFloorHelper = false,
+                renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
@@ -146,12 +167,12 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.SwitchRecipe,
             true,
             {
                 noNeedHammer = true,
-                renderFloorHelper = false,
+                renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
@@ -179,91 +200,100 @@ local function addLightingToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightSource,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                needToBeAgainstWall = true,
+                needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
                 isCorner = true
             },
             {
-                sprite = "lighting_outdoor_01_49",
-                northSprite = "lighting_outdoor_01_48",
-                eastSprite = "lighting_outdoor_01_50",
-                southSprite = "lighting_outdoor_01_51"
+                sprite = "building_menu_lighting_4",
+                northSprite = "building_menu_lighting_5",
+                eastSprite = "building_menu_lighting_6",
+                southSprite = "building_menu_lighting_7"
             }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Post1",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightPole,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                needToBeAgainstWall = true,
+                needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
                 isCorner = true
             },
-            { sprite = "lighting_outdoor_01_0" }
+            {
+                sprite = "building_menu_lighting_0",
+                northSprite = "building_menu_lighting_0", 
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Post2",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightPole,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                needToBeAgainstWall = true,
+                needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
                 isCorner = true
             },
-            { sprite = "lighting_outdoor_01_1" }
+            {
+                sprite = "building_menu_lighting_1",
+                northSprite = "building_menu_lighting_1", 
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Post3",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightPole,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                needToBeAgainstWall = true,
+                needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = false,
                 isCorner = true
             },
-            { sprite = "lighting_outdoor_01_2" }
+            {
+                sprite = "building_menu_lighting_2",
+                northSprite = "building_menu_lighting_2",
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Post4",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightPole,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                needToBeAgainstWall = true,
+                needToBeAgainstWall = false,
                 blockAllTheSquare = false,
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 isCorner = true
             },
             {
-                sprite = "lighting_outdoor_01_9",
-                northSprite = "lighting_outdoor_01_10",
-                eastSprite = "lighting_outdoor_01_11",
-                southSprite = "lighting_outdoor_01_8"
+                sprite = "building_menu_lighting_9",
+                northSprite = "building_menu_lighting_10",
+                eastSprite = "building_menu_lighting_11",
+                southSprite = "building_menu_lighting_8"
             }
         ),
         BuildingMenu.createObject(
@@ -275,30 +305,33 @@ local function addLightingToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "lighting_outdoor_01_16", northSprite = "lighting_outdoor_01_16" }
+            { 
+                sprite = "building_menu_lighting_16",
+                northSprite = "building_menu_lighting_16"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Post5",
             "Tooltip_Lighting",
-            BuildingMenu.onBuildLightPole,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                needToBeAgainstWall = true,
+                needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canBeAlwaysPlaced = true,
                 isCorner = true
             },
             {
-                sprite = "lighting_outdoor_01_18",
-                northSprite = "lighting_outdoor_01_19"
+                sprite = "building_menu_lighting_19",
+                northSprite = "building_menu_lighting_18"
             }
         ),
         BuildingMenu.createObject(
@@ -310,12 +343,12 @@ local function addLightingToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "lighting_outdoor_01_17", northSprite = "lighting_outdoor_01_17" }
+            { sprite = "building_menu_lighting_17", northSprite = "building_menu_lighting_17" }
         ),
     }
     BuildingMenu.addObjectsToCategories(

@@ -1,0 +1,7 @@
+IGUI_EN = {
+
+    IGUI_BuildingMenuSubCat_Walls_Green_Frame_Glass = "Green Frame Glass",
+    IGUI_BuildingMenuSubCat_Roofing_White_Roofs = "White Roofs",
+    IGUI_BuildingMenuSubCat_Roofing_Brown_Roofs = "Brown Roofs",
+
+}

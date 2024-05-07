@@ -297,7 +297,21 @@ thumpDmg | integer | 8 |  Specifies the amount of damage that zombies can inflic
 
 **completionSound**:
 ```lua
-"BuildWoodenStructureLarge", "BuildWoodenStructureSmall", "BuildMetalStructureWallFrame", "BuildMetalStructureMedium", "DropSoilFromGravelBag", "BuildFenceCairn"
+--- Wood
+"BuildWoodenStructureLarge", "BuildWoodenStructureMedium", "BuildWoodenStructureSmall"
+
+--- Metal
+---     Walls
+"BuildMetalStructureWallFrame", "BuildMetalStructureMedium", "BuildMetalStructureSmall"
+---     Big Fences
+"BuildMetalStructureLargeWiredFence", "BuildMetalStructureLargePoleFence"
+---     Small Fences
+"BuildMetalStructureSmallWiredFence", "BuildMetalStructureSmallPoleFence"
+---     Other Small Metal Things
+"BuildMetalStructureSmallScrap", 
+
+--- Others
+"BuildFenceGravelbag", "BuildFenceCairn", "BuildFenceSandbag"
 ```  
 
 <br>
@@ -838,7 +852,7 @@ sprites =   {
 }
 ```  
 
-BuildingMenu.onBuildLightSource:  
+BuildingMenu.onBuildGeneratorPoweredLight:  
 ```lua
 sprites =   {
     sprite = "",
@@ -848,17 +862,7 @@ sprites =   {
 }
 ```  
 
-BuildingMenu.onBuildLightPole:  
-```lua
-sprites =   {
-    sprite = "",
-    northSprite = "",
-    eastSprite = "",
-    southSprite = ""
-}
-```  
-
-BuildingMenu.onBuildOutdoorLight:  
+BuildingMenu.onBuildBatteryPoweredLight:  
 ```lua
 sprites =   {
     sprite = "",

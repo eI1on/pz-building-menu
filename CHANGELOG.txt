@@ -1,4 +1,16 @@
+ MAY 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Added icon to Turn Off and Turn On context options
+[*] Changed that Light Posts and Outdoor Lamps built with BM to use generator power (only newly built ones). Outdoor lamps can still be fitted with a battery
+[/list]
+[/list]
+
 04 MAY 24
+46a4282
 Hotfix
 
 Changelog:

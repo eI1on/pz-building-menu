@@ -1744,7 +1744,7 @@ local function addChristmasDecorationsToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting_Christmas",
-            BuildingMenu.onBuildLightPole,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {
@@ -1762,7 +1762,7 @@ local function addChristmasDecorationsToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Lighting_Christmas",
-            BuildingMenu.onBuildLightPole,
+            BuildingMenu.onBuildGeneratorPoweredLight,
             BuildingMenu.LightPostRecipe,
             true,
             {

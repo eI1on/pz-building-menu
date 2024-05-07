@@ -927,88 +927,47 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildWindow = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _window = ISWindowObj:new(sprites.sprite, sprites.northSprite, playerNum)
+    local _window = ISWindowObj:new(sprites.sprite, sprites.northSprite, playerNum);
 
-    return _window
+    return _window;
 end
 
 ---@param sprites table
 ---@param name string
 ---@param playerNum number
 ---@return ISBuildingObject
-BuildingMenu.onBuildLightSource = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _lightSource = ISLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(playerNum))
-
-    _lightSource.offsetX = 0
-    _lightSource.offsetY = 0
-
-    _lightSource.fuel = 'Base.Battery'
-    _lightSource.baseItem = 'Base.LightBulb'
-    _lightSource.radius = 7
-
-    _lightSource.modData['IsLighting'] = true
+BuildingMenu.onBuildGeneratorPoweredLight = function(sprites, name, playerNum, objectRecipe, objectOptions)
+    local _genPoweredLightSource = ISBMLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(playerNum));
+    _genPoweredLightSource.offsetX = 0;
+    _genPoweredLightSource.offsetY = 0;
 
     if sprites.eastSprite then
-        _lightSource:setEastSprite(sprites.eastSprite)
+        _genPoweredLightSource:setEastSprite(sprites.eastSprite);
     end
 
     if sprites.southSprite then
-        _lightSource:setSouthSprite(sprites.southSprite)
+        _genPoweredLightSource:setSouthSprite(sprites.southSprite);
     end
 
-    return _lightSource
+    return _genPoweredLightSource;
 end
 
 ---@param sprites table
 ---@param name string
 ---@param playerNum number
 ---@return ISBuildingObject
-BuildingMenu.onBuildLightPole = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _lightPole = ISLightSource:new(sprites.sprite, sprites.sprite, getSpecificPlayer(playerNum))
-
-    _lightPole.offsetX = 0
-    _lightPole.offsetY = 0
-
-    _lightPole.fuel = 'Base.Battery'
-    _lightPole.baseItem = 'Base.LightBulb'
-    _lightPole.radius = 30
-
-    _lightPole.modData['IsLighting'] = true
+BuildingMenu.onBuildBatteryPoweredLight = function(sprites, name, playerNum, objectRecipe, objectOptions)
+    local _batteryPoweredLightSource = ISBMLightSource:new(sprites.sprite, sprites.sprite, getSpecificPlayer(playerNum));
+    _batteryPoweredLightSource.offsetX = 0;
+    _batteryPoweredLightSource.offsetY = 0;
 
     if sprites.eastSprite then
-        _lightPole:setEastSprite(sprites.eastSprite)
+        _batteryPoweredLightSource:setEastSprite(sprites.eastSprite);
     end
 
     if sprites.southSprite then
-        _lightPole:setSouthSprite(sprites.southSprite)
+        _batteryPoweredLightSource:setSouthSprite(sprites.southSprite);
     end
 
-    return _lightPole
-end
-
----@param sprites table
----@param name string
----@param playerNum number
----@return ISBuildingObject
-BuildingMenu.onBuildOutdoorLight = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _outdoorLight = ISLightSource:new(sprites.sprite, sprites.northSprite, getSpecificPlayer(playerNum))
-
-    _outdoorLight.offsetX = 0
-    _outdoorLight.offsetY = 0
-
-    _outdoorLight.fuel = 'Base.Battery'
-    _outdoorLight.baseItem = 'Base.LightBulb'
-    _outdoorLight.radius = 20
-
-    _outdoorLight.modData['IsLighting'] = true
-
-    if sprites.eastSprite then
-        _outdoorLight:setEastSprite(sprites.eastSprite)
-    end
-
-    if sprites.southSprite then
-        _outdoorLight:setSouthSprite(sprites.southSprite)
-    end
-
-    return _outdoorLight
+    return _batteryPoweredLightSource;
 end

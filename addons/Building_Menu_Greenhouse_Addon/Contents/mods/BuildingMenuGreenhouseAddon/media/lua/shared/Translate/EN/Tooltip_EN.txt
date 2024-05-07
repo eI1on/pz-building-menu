@@ -1,0 +1,32 @@
+Tooltip_EN = {
+
+  Tooltip_BuildingMenuObj_Wooden_Low_Fence = "Wooden Low Fence",
+  Tooltip_BuildingMenuObj_Wooden_Low_Fence_Corner = "Wooden Low Fence Corner",
+  Tooltip_BuildingMenuObj_Wooden_Low_Fence_Pillar = "Wooden Low Fence Pillar",
+
+  Tooltip_BuildingMenuObj_White_Low_Fence  = "White Low Fence",
+  Tooltip_BuildingMenuObj_White_Low_Fence_Corner = "White Low Fence Corner",
+  Tooltip_BuildingMenuObj_White_Low_Fence_Pillar = "White Low Fence Pillar",
+
+  Tooltip_BuildingMenuObj_Green_Low_Fence  = "Green Low Fence Corner",
+  Tooltip_BuildingMenuObj_Green_Low_Fence_Corner = "Green Low Fence Corner",
+  Tooltip_BuildingMenuObj_Green_Low_Fence_Pillar = "Green Low Fence Pillar",
+
+  Tooltip_BuildingMenuObj_Brown_Low_Fence  = "Brown Low Fence Corner",
+  Tooltip_BuildingMenuObj_Brown_Low_Fence_Corner  = "Brown Low Fence Corner",
+  Tooltip_BuildingMenuObj_Brown_Low_Fence_Pillar = "Brown Low Fence Pillar",
+
+  Tooltip_Low_Fence = "A classic small fence, bringing a touch of suburban charm to your post-apocalyptic greenhouse.",
+
+  Tooltip_BuildingMenuObj_Wooden_Low_Fence = "Wooden Low Fence",
+
+  Tooltip_BuildingMenuObj_Wooden_Curb = "Wooden Curb",
+  Tooltip_BuildingMenuObj_Wooden_Curb_Corner = "Wooden Curb Corner",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Curb = "White Wooden Curb",
+  Tooltip_BuildingMenuObj_White_Wooden_Curb_Corner = "White Wooden Curb",
+
+  Tooltip_BuildingMenuObj_Narrow_Wooden_Curb = "Narrow Wooden Curb",
+  Tooltip_BuildingMenuObj_Narrow_Curb_Corner = "Narrow Wooden Curb Corner",
+
+}

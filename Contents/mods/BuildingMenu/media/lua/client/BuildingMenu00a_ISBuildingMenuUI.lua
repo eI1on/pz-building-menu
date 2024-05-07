@@ -164,11 +164,18 @@ function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
     local isThumpableStr = "";
     if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
         if self.overwriteIsThumpable then
-            isThumpableStr = " <LINE> " .. BuildingMenu.bhsString .. " INDESTRUCTIBLE ";
+            local onBuild = selectedObject.objDef.data.action;
+            if onBuild == BuildingMenu.onBuildDoor or onBuild == BuildingMenu.onDoubleDoor or onBuild == BuildingMenu.onBuild3TileGarageDoor or onBuild == BuildingMenu.onBuild4TileGarageDoor then
+            else
+                isThumpableStr = " <LINE> " .. BuildingMenu.bhsString .. " INDESTRUCTIBLE ";
+            end
         end
     end
 
-    self.tooltip.description = string.format("%s <LINE> <RGB:1,1,1> %s %s %s", selectedObject.objDef.description, containerStr, isThumpableStr, tooltipDescription);
+    local description = selectedObject.objDef.description;
+    local lineSeparator = description ~= "" and " <LINE> " or "";
+    self.tooltip.description = string.format("%s %s <RGB:1,1,1> %s %s %s", description, lineSeparator, containerStr, isThumpableStr, tooltipDescription);
+
     self.tooltip.footNote = BuildingMenu.textCanRotate;
 end
 

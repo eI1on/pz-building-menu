@@ -156,6 +156,15 @@ BuildingMenu.Tools = {
             'Base.Wrench'
         },
         tags = {}
+    },
+    Scissors = {
+        types = {
+            'Base.Scissors',
+            'ToolsOfTheTrade.BandageScissors',
+            'ToolsOfTheTrade.SpiffArmyKnife',
+            'ToolsOfTheTrade.Multitool'
+        },
+        tags = {'Scissors'}
     }
 }
 

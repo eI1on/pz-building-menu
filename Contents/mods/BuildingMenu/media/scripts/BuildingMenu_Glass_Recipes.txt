@@ -79,4 +79,18 @@ module Base
         Sound: RemoveBrokenGlass,
         Category: Windows,
     }
+
+
+    recipe Make Sugar
+    {
+        EmptyJar,
+        JarLid,
+
+        Result:Base.Sugar=1,
+        Time:100.0,
+        NeedToBeLearn: False,
+        OnCreate:Recipe.OnCreate.MakeSugar,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
 }
