@@ -1,117 +1,20 @@
 version=1
 id=3067798182
 title=Building Menu
-description=Ready to take your building experience up a notch? This mod adds an interface where you'll be able to find all the buildable objects you need to create and customize buildings, making your post-apocalyptic life a little more homey.
-description=
-description=[h1]Key Features:[/h1]
-description=[b] Mod Options Integration: [/b] Access the Building Interface using a customizable keybind (adjustable via [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url]), option can be found [url=https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_keybindings.png] here [/url]. Interface opacity adjustments are made through the UI's [b] gear [/b] button.
-description=
-description=[b] Indestructible Buildables: [/b] The option to build indestructible objects, you can activate it from [b]Sandbox-Options[/b] (server admins can toggle it from the UI settings).
-description=[i]Note: Only newly built objects after enabling the option will have this function.[/i]
-description=
-description=[b] Interaction Updates: Wall vines [/b] crafted from the Building Menu can be cut with sharp tools, similar to the vanilla ones. Architecture Plus category items that are [b] wall decorations [/b] can be removed with a hammer, and [b] road markings [/b] can be erased using a trowel.
-description=
-description=[hr][/hr]
-description=[h1]Over 1500 buildable objects:[/h1]
-description=[b] Carpentry [/b]
-description=[list]
-description=[*] Diverse wall constructions (Stone, Brick, Clapboard, Wood Panel, Cinderblock, Commercial, Metal)
-description=[*] Windows and Glass Doors
-description=[*] Staircases
-description=[*] Decorative elements for walls ([i] can be removed with a hammer[/i])
-description=[*] Fences
-description=[*] Floors
-description=[*] Furniture
-description=[*] Kitchen counters, Military Crates ([i]can be painted[/i])
-description=[*] [i] and much more [/i]
-description=[/list]
-description=[b] Metalworking [/b]
-description=[list]
-description=[*] Cooking Appliances
-description=[*] Metal Containers, Lockers
-description=[*] Metal Doors, 3 and 4 Tile Garage Doors
-description=[*] Wire Fences
-description=[*] Clothes Racks
-description=[*] Sinks, toilets, bathtubs, and showers
-description=[*] Mannequins, scarecrows and skeletons
-description=[/list]
-description=[b] Electrical [/b]
-description=[list]
-description=[*] Clothes washing and drying machines
-description=[*] Lighting posts
-description=[*] Jukeboxes (for those fine tunes from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2997342681]Lifestyle[/url])
-description=[/list]
-description=[b] Other [/b]
-description=[list]
-description=[*] Road Markings  ([i] can be removed with a trowel[/i])
-description=[*] Decorations: rugs, posters, graffiti
-description=[*] Vegetation: flower beds, hedges, flower pots, wall vines ([i] can be removed with something sharp, like the vanilla ones[/i])
-description=[/list]
-description=
-description=All items are from the vanilla game.
-description=
-description=[hr][/hr]
-description=[h1] Frequently Asked Question: [/h1]
-description=
-description=[h2] Is it compatible with Multiplayer? [/h2]
-description= Yes! It has been extensively tested on a MP server!
-description=
-description=[h2] Does it work on existing saves? [/h2]
-description= Absolutely! Enable it mid-save without issues. If you disable it you will [b]lose[/b] your Military Crates!
-description=
-description=[h2] My building isn't recognized as an indoor space. What should I do? [/h2]
-description= For a solution, please refer to this [url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] video [/url]. And I suggest to use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3202305691] Fix Inside Player Building [/url] by [url=https://steamcommunity.com/profiles/76561198329871201] Tchernobill [/url]
-description=
-description=[h2] I'm missing some items in the build menu. How do I find them? [/h2]
-description= To access all available buildables, you'll need to activate them in the Sandbox settings (in single-player you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894296454] Change Sandbox Options (by Star)[/url]), as some are initially disabled, such as metal drums, furniture, etc.
-description=
-description=[h2] Does it work for all game versions? [/h2]
-description= Only tested and working on the latest game version (v41.78.16).
-description=
-description=[hr][/hr]
-description=[h1] Incompatibilities: [/h1]
-description=This mod inherits its core from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=515555911]More Builds[/url] by Project Sky. My mod revises object building methods and is [b]incompatible[/b] with More Builds.
-description=
-description=Glass items and methods to create them are sourced from [url=https://steamcommunity.com/id/orcicorn]Orc[/url]'s mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2800412098]Improvised Glass[/url]. Which is [b]incompatible[/b] with this mod, because the windows are already added to the building menu.
-description=
-description=[b]DO NOT USE [/b] mods like [i]More Builds, Lite, Expand, Improvised,[/i] and such. All can and will cause errors along with the Building Menu, some override vanilla files to add buildables (which is the worst thing they could do) that BM needs.
-description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2883755057][b] 41.78+ Propane Torch Fix [/b][/url] is unnecessary because Building Menu already let's you modify the [b]Blow Torch[/b] usage in the Sandbox options.
-description=
-description=[h1] Bug Reports: [/h1]
-description=
-description= Check the known issues list in the [url=https://steamcommunity.com/workshop/filedetails/discussion/3067798182/4132682727127121310/] discussions thread [/url] first!
-description=[list]
-description=[*][url=https://github.com/eI1on/pz-building-menu/issues]GitHub[/url]
-description=[*][url=https://steamcommunity.com/workshop/filedetails/discussion/3067798182/4132682727127121310/]Bug Reports[/url]
-description=[/list]
-description=
-description=[hr][/hr]
-description=[h1] Addons: [/h1]
-description=While the Building Menu mod can run as a standalone, I recommend using it alongside other tilepacks mods for a richer experience ([i]each addon needs the tilepack loaded before[/i]).
-description=
-description=Be sure to load Building Menu Mod [b]before[/b] any other addon to avoid any problems.
-description=
+description=[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_1.png [/img]
+description=[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_2.png [/img]
+description=[url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] [img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_3.png [/img] [/url]
+description=[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_4.png [/img]
+description=[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_5.png [/img]
+description=[quote=] [b] Windows [/b]: C:\Users\%USERNAME%\Zomboid\console.txt [/quote]
+description=[quote=] [b] Mac/Linux [/b]: $User$\Zomboid\console.txt [/quote]
+description=Open an issue and upload this file here: [url=https://github.com/eI1on/pz-building-menu/issues]GitHub[/url].
+description=[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_6.png [/img]
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_pert_party_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_simonMD_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_dylan_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3225710182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_extras_noises_preview.png [/img][/url]
-description=
-description=
-description=[hr][/hr]
-description=[h2] Thank You & Stay Safe: [/h2]
-description=
-description= Special thanks to [url=https://steamcommunity.com/id/Chuckleberry_Finn]Chuck[/url] for the fantastic poster artwork.
-description=
-description= Big shoutout to the Dawn of the Dead community for their invaluable support and bug-hunting assistance.
-description= You can find me on their [url=https://discord.gg/dawnpz] Discord [/url] server.
-description=
-description= This mod was crafted with love, I hope it brings joy to your building adventures. And always remember - watch out for those zombies!
-description=
-description=[hr][/hr]
-description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/github_banner.png [/img][/url]
-description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_9_Kofi.png [/img][/url]
-description=[url=https://discord.gg/asA9BuAasd][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_8.png [/img][/url]
-description=
-description=[h1] Don't forget to rate and favorite! [/h1]
+description=[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_7.png [/img]
+description=[url=https://discord.gg/asA9BuAasd] [img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_8.png [/img] [/url]
 description=[img] https://imgur.com/eZp8dXD.png [/img]
+description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/github_banner.png [/img][/url][url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_9_Kofi.png [/img][/url]
 description=[quote=author]
 description=This mod's permissions fall under TIS's policy [url=https://theindiestone.com/forums/index.php?/topic/2530-mod-permissions/] On Lockdown [/url]
 description=This mod cannot be modified by anyone else, for anything else, at all, ever. Even if the user disappears, he or she would much rather you didn't touch the fruits of their hard labour.

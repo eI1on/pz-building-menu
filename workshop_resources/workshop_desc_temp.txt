@@ -1,20 +1,24 @@
 
 
-[img] https://imgur.com/0DWMJ1J.png [/img]
-[img] https://imgur.com/VgYQdJG.png [/img]
-[url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] [img] https://imgur.com/lsO9owA.png [/img] [/url]
-[img] https://imgur.com/Uf9ed60.png [/img]
-[img] https://imgur.com/y03Skqw.png [/img]
+[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_1.png [/img]
+[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_2.png [/img]
+[url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] [img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_3.png [/img] [/url]
+[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_4.png [/img]
+[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_5.png [/img]
 [quote=] [b] Windows [/b]: C:\Users\%USERNAME%\Zomboid\console.txt [/quote]
 [quote=] [b] Mac/Linux [/b]: $User$\Zomboid\console.txt [/quote]
-Upload this file in [url=https://github.com/eI1on/pz-building-menu/issues]GitHub[/url].
-[img] https://imgur.com/sBtzMQe.png [/img]
+Open an issue and upload this file here: [url=https://github.com/eI1on/pz-building-menu/issues]GitHub[/url].
+[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_6.png [/img]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092605][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_pert_party_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_simonMD_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_dylan_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3225710182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_extras_noises_preview.png [/img][/url]
-[img] https://imgur.com/2Wk2ldd.png [/img]
-[url=https://discord.gg/asA9BuAasd] [img] https://imgur.com/Bm8BMci.png [/img] [/url]
+[img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_7.png [/img]
+[url=https://discord.gg/asA9BuAasd] [img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_8.png [/img] [/url]
 [img] https://imgur.com/eZp8dXD.png [/img]
-[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/github_banner.png [/img][/url][url=https://ko-fi.com/ely0n][img] https://imgur.com/5Nhv5Hy.png [/img][/url]
-
+[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/github_banner.png [/img][/url][url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_9_Kofi.png [/img][/url]
+[quote=author]
+This mod's permissions fall under TIS's policy [url=https://theindiestone.com/forums/index.php?/topic/2530-mod-permissions/] On Lockdown [/url]
+This mod cannot be modified by anyone else, for anything else, at all, ever. Even if the user disappears, he or she would much rather you didn't touch the fruits of their hard labour.
+[/quote]
+[url=https://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36479][img] https://i.imgur.com/UJYBoAp.png [/img][/url]
 
 
 [img] .png [/img]
