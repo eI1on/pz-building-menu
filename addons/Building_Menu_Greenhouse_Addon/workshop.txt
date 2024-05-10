@@ -56,9 +56,9 @@ description=
 description= This mod was crafted with love, I hope it brings joy to your building adventures. And always remember - watch out for those zombies!
 description=
 description=[hr][/hr]
-description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/github_banner.png [/img][/url]
-description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/images/kofi_bg_tag_white.png [/img][/url]
-description=[url=https://discord.gg/asA9BuAasd][img] https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner1.png [/img][/url]
+description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/github_banner.png [/img][/url]
+description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_9_Kofi.png [/img][/url]
+description=[url=https://discord.gg/asA9BuAasd][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_8.png [/img][/url]
 description=
 description=[h1] Don't forget to rate and favorite! [/h1]
 description=[img] https://imgur.com/eZp8dXD.png [/img]
