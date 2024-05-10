@@ -1,0 +1,52 @@
+[h2] Incompatible mods [/h2]
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=1969456967
+https://steamcommunity.com/sharedfiles/filedetails/?id=515555911
+https://steamcommunity.com/sharedfiles/filedetails/?id=2866791728
+https://steamcommunity.com/sharedfiles/filedetails/?id=1832608432
+https://steamcommunity.com/sharedfiles/filedetails/?id=2790397567
+
+[h2] Compatible mods [/h2]
+
+[h3] Tools Compatibility: [/h3]
+The Building Menu tools dictionary now include a wide range of items from popular mods like "Tools of the Trade," "[Reworked] MWPWeapons," "Authentic Z," and "Kwin's Melee Weapon Pack." This means tools like hammers, sledgehammers, screwdrivers, and more from these mods can now be utilized within the BM.
+
+Full list:
+[list]
+[*]Tools of the Trade:
+[list]
+	[*][b]Hammers[/b]: Brick Hammer, Stubby Hammer,  
+	[*][b]Sledgehammers[/b]: Core Hammer, Industrial Breaching Hammer, Police Breaching Hammer, Railroad Hammer, Railway Spike Hammer, Rebar Hammer, Defiler Sledgehammer, Despoiler Sledgehammer
+	[*][b]Saw[/b]: Back Saw, Ryoba Saw
+	[*][b]Shovel[/b]: Trench Shovel
+	[*][b]Trowel[/b]: Adze
+	[*][b]Screwdriver[/b]: Multitool, Spiff Army Knife	
+[/list]
+[*]Madax's Weapon Pack:
+[list]
+	[*][b]Hammers[/b]: M48 Tactical Warhammer, OX Nail Hammer
+	[*][b]Sledgehammers[/b]: Fatmax Brick Hammer, Rough Neck Gorilla Sledgehammer
+	[*][b]Shovel[/b]: Sptesnaz Tactical Shovel
+[/list]
+[*]Scrap Weapons (new version):
+[list]
+	[*][b]Sledgehammers[/b]: Salvaged Sledgehammer, Gear Mace, Huge Scrap Pickaxe
+[/list]
+[*]Scrap Armor (new version):
+[list]
+	[*][b]Welding Mask[/b]: Scrap Cat Welding Mask
+[/list]
+[*]Kwin's Melee Weapon Pack:
+[list]
+	[*][b]Sledgehammers[/b]: Stone Sledgehammer
+[/list]
+[*]SOMW:
+[list]
+	[*][b]Shovel[/b]: Entrenching Shovel
+	[*][b]Trowel[/b]: Sharp Trowel
+[/list]
+[*]AuthenticZ:
+[list]
+	[*][b]Welding Mask[/b]: Tagilla Mask
+[/list]
+[list]
