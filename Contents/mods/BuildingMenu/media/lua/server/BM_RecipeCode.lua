@@ -24,7 +24,3 @@ end
 function Recipe.OnGiveXP.BuildingMenu_XPMakeWindowCar(recipe, ingredients, result, player)
     player:getXp():AddXP(Perks.Cooking, 2);
 end
-
-function Recipe.OnCreate.MakeSugar(items, result, player)
-    result:setHungChange(-1);
-end

@@ -789,6 +789,51 @@ local function addFridgeAppliancesToMenu()
         )
     )
 
+    table.insert(fridgesObjects,
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Fridges",
+            BuildingMenu.onBuildSimpleFridge,
+            BuildingMenu.TrailerFridgeRecipe,
+            true,
+            {
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildHigh = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                containerType = "fridge",
+                dismantable = true
+            },
+            {
+                sprite = "location_trailer_02_17",
+                northSprite = "location_trailer_02_16",
+            }
+        )
+    )
+    
+    table.insert(fridgesObjects,
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Fridges",
+            BuildingMenu.onBuildSimpleFridge,
+            BuildingMenu.TrailerFridgeRecipe,
+            true,
+            {
+                noNeedHammer = true,
+                completionSound = "BuildMetalStructureMedium",
+                buildHigh = true,
+                canBeAlwaysPlaced = true,
+                renderFloorHelper = false,
+                containerType = "fridge",
+                dismantable = true
+            },
+            {
+                sprite = "location_trailer_02_11",
+                northSprite = "location_trailer_02_10",
+            }
+        )
+    )
     BuildingMenu.addObjectsToCategories(
         getText("IGUI_BuildingMenuTab_General"),
         getText("IGUI_BuildingMenuCat_Appliances"),

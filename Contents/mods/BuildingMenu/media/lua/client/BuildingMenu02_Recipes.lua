@@ -5580,6 +5580,71 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    
+    BuildingMenu.TrailerFridgeRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+            "Hammer",
+            "Saw",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = 2
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 5,
+                    "Material")
+            },
+            {
+                Material = "Base.SheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances)
+            },
+            {
+                Material = "Base.ElectronicsScrap",
+                Amount = 20
+            },
+            {
+                Material = "Radio.ElectricWire",
+                Amount = 4
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+            },
+            {
+                Skill = "MetalWelding",
+                Level = 3,
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
+            },
+            {
+                Skill = "Electricity",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * electricalXpPerLevel)
+            },
+        }
+    }
+
+
     BuildingMenu.WashingMachineRecipe = {
         neededTools = {
             "BlowTorch",

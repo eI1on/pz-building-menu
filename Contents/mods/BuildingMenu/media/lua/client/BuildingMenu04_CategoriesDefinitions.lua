@@ -24666,6 +24666,23 @@ local function addKitchenCountersToMenu()
                 southSprite = "location_hospitality_sunstarmotel_02_20"
             }
         ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Counter_Generic",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true
+            },
+            {
+                sprite = "location_trailer_02_19",
+                northSprite = "location_trailer_02_18",
+                eastSprite = "location_trailer_02_21",
+                southSprite = "location_trailer_02_20"
+            }
+        ),
     }
     BuildingMenu.addObjectsToCategories(
         getText("IGUI_BuildingMenuTab_General"),
