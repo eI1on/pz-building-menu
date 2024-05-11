@@ -60,7 +60,7 @@ description=While the Building Menu mod can run as a standalone, I recommend usi
 description=
 description=Be sure to load Building Menu Mod [b]before[/b] any other addon to avoid any problems.
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3067798182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_simonMD_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_dylan_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3225710182][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_extras_noises_preview.png [/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3067798182][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/bm_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137094726][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/bm_melos_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137092790][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/bm_simonMD_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091536][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/bm_ddd_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137091698][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/bm_dylan_preview.png [/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3225710182][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/bm_extras_noises_preview.png [/img][/url]
 description=
 description=
 description=[hr][/hr]
@@ -71,9 +71,9 @@ description=
 description= This mod was crafted with love, I hope it brings joy to your building adventures. And always remember - watch out for those zombies!
 description=
 description=[hr][/hr]
-description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/github_banner.png [/img][/url]
-description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_9_Kofi.png [/img][/url]
-description=[url=https://discord.gg/asA9BuAasd][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_8.png [/img][/url]
+description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/workshop_images/Workshop_Desc_Github_Banner.png [/img][/url]
+description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/workshop_images/Workshop_Desc_Kofi.png [/img][/url]
+description=[url=https://discord.gg/asA9BuAasd][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/workshop_images/Workshop_Desc_PZ_Modding_Disc.png [/img][/url]
 description=
 description=[h1] Don't forget to rate and favorite! [/h1]
 description=[img] https://imgur.com/eZp8dXD.png [/img]

@@ -619,7 +619,7 @@ local function addGreenhouseWallsToMenu()
 
     local blackWalls = {
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Wall_1",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -633,7 +633,7 @@ local function addGreenhouseWallsToMenu()
             { sprite = "roof_walls_greenhouse_01_48", northSprite = "roof_walls_greenhouse_01_61" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Wall_2",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -647,7 +647,7 @@ local function addGreenhouseWallsToMenu()
             { sprite = "roof_walls_greenhouse_01_49", northSprite = "roof_walls_greenhouse_01_60" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Wall_3",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -661,7 +661,7 @@ local function addGreenhouseWallsToMenu()
             { sprite = "roof_walls_greenhouse_01_50", northSprite = "roof_walls_greenhouse_01_59" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Wall_4",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackSmallWoodWallRecipe,
@@ -675,7 +675,7 @@ local function addGreenhouseWallsToMenu()
             { sprite = "roof_walls_greenhouse_01_56", northSprite = "roof_walls_greenhouse_01_53" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Wall_5",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -689,7 +689,7 @@ local function addGreenhouseWallsToMenu()
             { sprite = "roof_walls_greenhouse_01_57", northSprite = "roof_walls_greenhouse_01_52" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Wall_6",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -703,7 +703,7 @@ local function addGreenhouseWallsToMenu()
             { sprite = "roof_walls_greenhouse_01_58", northSprite = "roof_walls_greenhouse_01_51" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Sloped_Medium_Wall",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -717,7 +717,7 @@ local function addGreenhouseWallsToMenu()
             { sprite = "roof_walls_greenhouse_01_63", northSprite = "roof_walls_greenhouse_01_54" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Black_Wood_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Black_Frame_Glass_Exterior_Sloped_Big_Wall",
             "Tooltip_Black_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,

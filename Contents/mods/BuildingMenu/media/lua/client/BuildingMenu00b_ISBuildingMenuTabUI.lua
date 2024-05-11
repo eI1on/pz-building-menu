@@ -169,7 +169,7 @@ function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
     modData.favorites = modData.favorites or { categories = {}, subcategories = {} };
 
     local favoritesDict = listType == "categoriesList" and modData.favorites.categories or
-    modData.favorites.subcategories;
+        modData.favorites.subcategories;
     favoritesDict[itemIcon] = not favoritesDict[itemIcon];
 
     if self.buildingMenuUI then

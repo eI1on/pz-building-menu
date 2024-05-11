@@ -234,7 +234,7 @@ local function addLightingToMenu()
             },
             {
                 sprite = "building_menu_lighting_0",
-                northSprite = "building_menu_lighting_0", 
+                northSprite = "building_menu_lighting_0",
             }
         ),
         BuildingMenu.createObject(
@@ -253,7 +253,7 @@ local function addLightingToMenu()
             },
             {
                 sprite = "building_menu_lighting_1",
-                northSprite = "building_menu_lighting_1", 
+                northSprite = "building_menu_lighting_1",
             }
         ),
         BuildingMenu.createObject(
@@ -310,7 +310,7 @@ local function addLightingToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { 
+            {
                 sprite = "building_menu_lighting_16",
                 northSprite = "building_menu_lighting_16"
             }

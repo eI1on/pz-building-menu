@@ -1139,7 +1139,7 @@ local function addDoubleDoorToMenu()
                         spriteIndex = 8
                     },
                     {
-                        sprite = "fixtures_doors_fences_Simon_MD_0",
+                        sprite = "fixtures_doors_fences_Simon_MD_8",
                     }
                 )
             }

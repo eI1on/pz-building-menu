@@ -60,9 +60,20 @@ end
 --- @param nameID string|nil The name of the object, used in recipes
 --- @return table table The created object with the specified properties
 function BuildingMenu.createObject(displayName, description, action, recipe, isRecipeKnown, options, sprites, nameID)
+    -- if nameID is not provided, generate one based on displayName or fallbacks
+    if not nameID then
+        -- strip the prefix from displayName if present, else use the sprite name or moveable display name
+        local defaultNameID = displayName:match("^Tooltip_BuildingMenuObj_(.+)$") or nil;
+        nameID = defaultNameID or BuildingMenu.getMoveableDisplayName(sprites.sprite) or sprites.sprite;
+    end
+
+    local finalDisplayName = getTextOrNull(displayName) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or
+    sprites.sprite;
+    local finalDescription = getTextOrNull(description) or "";
+
     return {
-        displayName = getTextOrNull(displayName) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or sprites.sprite,
-        description = getTextOrNull(description) or "",
+        displayName = finalDisplayName,
+        description = finalDescription,
         data = {
             nameID = nameID,
             action = action,
@@ -108,8 +119,7 @@ local function addWoodWallsToMenu()
                 sprite = "walls_exterior_wooden_01_28",
                 northSprite = "walls_exterior_wooden_01_29",
                 corner = "walls_exterior_wooden_01_31"
-            },
-            "OldWoodPanel"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Old_Wood_Panel_Door_Frame",
@@ -14804,6 +14814,63 @@ local function addGarageDoorsToMenu()
                     }
                 )
             }
+        },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Double_Door_Gates"),
+            subCategoryIcon = "fixtures_doors_fences_01_72",
+            objects = {
+                BuildingMenu.createObject(
+                    "ContextMenu_Double_Metal_Door",
+                    "Tooltip_Double_Door_Gates",
+                    BuildingMenu.onDoubleDoor,
+                    BuildingMenu.WireDoubleDoorGatesRecipe,
+                    true,
+                    {
+                        noNeedHammer = true,
+                        canBarricade = false,
+                        ignoreNorth = true,
+                        completionSound = "BuildMetalStructureLargeWiredFence",
+                        spriteIndex = 72
+                    },
+                    {
+                        sprite = "fixtures_doors_fences_01_72",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "ContextMenu_BigMetalDoubleDoor",
+                    "Tooltip_Double_Door_Gates",
+                    BuildingMenu.onDoubleDoor,
+                    BuildingMenu.PoleDoubleDoorGatesRecipe,
+                    true,
+                    {
+                        noNeedHammer = true,
+                        canBarricade = false,
+                        ignoreNorth = true,
+                        completionSound = "BuildMetalStructureLargeWiredFence",
+                        spriteIndex = 88
+                    },
+                    {
+                        sprite = "fixtures_doors_fences_01_88",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "ContextMenu_BigMetalDoubleDoor",
+                    "Tooltip_Double_Door_Gates",
+                    BuildingMenu.onDoubleDoor,
+                    BuildingMenu.BlackPoleDoubleDoorGatesRecipe,
+                    true,
+                    {
+                        noNeedHammer = true,
+                        canBarricade = false,
+                        ignoreNorth = true,
+                        completionSound = "BuildMetalStructureLargeWiredFence",
+                        spriteIndex = 40
+                    },
+                    {
+                        sprite = "fixtures_doors_fences_01_40",
+                    }
+                ),
+            }
         }
     }
 
@@ -14811,7 +14878,7 @@ local function addGarageDoorsToMenu()
         BuildingMenu.addObjectsToCategories(
             getText("IGUI_BuildingMenuTab_General"),
             getText("IGUI_BuildingMenuCat_Doors"),
-            "fixtures_doors_01_0",
+            "",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
             subCatData.objects

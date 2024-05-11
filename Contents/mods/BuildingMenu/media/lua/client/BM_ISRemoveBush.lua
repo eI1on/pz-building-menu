@@ -1,6 +1,6 @@
 require("TimedActions/ISRemoveBush")
 
-local WallVinesTiles = require ('BM_ValidWallVineTiles')
+local WallVinesTiles = require('BM_ValidWallVineTiles')
 --- @type table<string>
 -- Load a list of valid patterns for removable wall vine tiles from an external module.
 local removableWallVinesTiles = WallVinesTiles.getTiles()

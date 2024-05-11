@@ -1,6 +1,0 @@
- MAR 24
-
-Changelog:
-[list]
-[*] Fixed open and closed Safe states
-[/list]

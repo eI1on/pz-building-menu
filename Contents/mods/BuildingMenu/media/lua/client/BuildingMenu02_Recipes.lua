@@ -62,7 +62,8 @@ local function initBuildingMenuRecipes()
     local sheetMetalCountForWalls = SandboxVars.BuildingMenuRecipes.sheetMetalCountForWalls or 5;
     local sheetMetalCountForDoors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
     local sheetMetalCountForContainers = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
-    local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes.sheetMetalCountForFixturesAndAppliances or 4;
+    local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes
+    .sheetMetalCountForFixturesAndAppliances or 4;
     local sheetMetalCountForRoofingAndFloors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors or 1;
 
 
@@ -88,7 +89,8 @@ local function initBuildingMenuRecipes()
                 Amount = bigWallWoodCount
             },
             {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
+                    "Material")
             },
         },
         skills = {
@@ -99,8 +101,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreyBigStoneWallRecipe,{
-        {type = "Base.PaintGrey", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreyBigStoneWallRecipe, {
+        { type = "Base.PaintGrey", amount = 1 },
     })
 
     BuildingMenu.GreySmallStoneWallRecipe = {
@@ -125,8 +127,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreySmallStoneWallRecipe,{
-        {type = "Base.PaintGrey", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreySmallStoneWallRecipe, {
+        { type = "Base.PaintGrey", amount = 1 },
     })
 
 
@@ -162,8 +164,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigFabricWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigFabricWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
     BuildingMenu.GreenSmallFabricWallRecipe = {
@@ -204,8 +206,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenSmallFabricWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenSmallFabricWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
 
@@ -241,8 +243,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBigFabricWallRecipe,{
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBigFabricWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
 
@@ -284,8 +286,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowSmallFabricWallRecipe,{
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowSmallFabricWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
 
@@ -311,9 +313,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TanBigStoneWallRecipe,{
-        {type = "Base.PaintLightBrown", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TanBigStoneWallRecipe, {
+        { type = "Base.PaintLightBrown", amount = 1 },
+        { type = "Base.PaintWhite",      amount = 1 },
     })
 
     BuildingMenu.TanSmallStoneWallRecipe = {
@@ -338,9 +340,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TanSmallStoneWallRecipe,{
-        {type = "Base.PaintLightBrown", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TanSmallStoneWallRecipe, {
+        { type = "Base.PaintLightBrown", amount = 1 },
+        { type = "Base.PaintWhite",      amount = 1 },
     })
 
     BuildingMenu.RedBigBrickWallRecipe = {
@@ -365,8 +367,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBigBrickWallRecipe,{
-        {type = "Base.PaintRed", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBigBrickWallRecipe, {
+        { type = "Base.PaintRed", amount = 1 },
     })
 
     BuildingMenu.RedSmallBrickWallRecipe = {
@@ -391,8 +393,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.RedSmallBrickWallRecipe,{
-        {type = "Base.PaintRed", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.RedSmallBrickWallRecipe, {
+        { type = "Base.PaintRed", amount = 1 },
     })
 
 
@@ -418,8 +420,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.OldBigBrickWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.OldBigBrickWallRecipe, {
+        { type = "Base.PaintBrown", amount = 1 },
     })
 
     BuildingMenu.OldSmallBrickWallRecipe = {
@@ -444,8 +446,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.OldSmallBrickWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.OldSmallBrickWallRecipe, {
+        { type = "Base.PaintBrown", amount = 1 },
     })
 
     BuildingMenu.OrangeBigBrickWallRecipe = {
@@ -470,8 +472,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeBigBrickWallRecipe,{
-        {type = "Base.PaintOrange", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeBigBrickWallRecipe, {
+        { type = "Base.PaintOrange", amount = 1 },
     })
 
     BuildingMenu.OrangeSmallBrickWallRecipe = {
@@ -496,8 +498,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeSmallBrickWallRecipe,{
-        {type = "Base.PaintOrange", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeSmallBrickWallRecipe, {
+        { type = "Base.PaintOrange", amount = 1 },
     })
 
     BuildingMenu.BlueBigBrickWallRecipe = {
@@ -522,8 +524,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueBigBrickWallRecipe,{
-        {type = "Base.PaintBlue", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueBigBrickWallRecipe, {
+        { type = "Base.PaintBlue", amount = 1 },
     })
 
     BuildingMenu.BlueSmallBrickWallRecipe = {
@@ -548,8 +550,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueSmallBrickWallRecipe,{
-        {type = "Base.PaintBlue", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueSmallBrickWallRecipe, {
+        { type = "Base.PaintBlue", amount = 1 },
     })
 
     BuildingMenu.BeigeBigBrickWallRecipe = {
@@ -574,9 +576,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BeigeBigBrickWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BeigeBigBrickWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
     BuildingMenu.BeigeSmallBrickWallRecipe = {
@@ -601,9 +603,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BeigeSmallBrickWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BeigeSmallBrickWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
     BuildingMenu.WhiteBigBrickWallRecipe = {
@@ -628,8 +630,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteBigBrickWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteBigBrickWallRecipe, {
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
     BuildingMenu.WhiteSmallBrickWallRecipe = {
@@ -654,8 +656,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteSmallBrickWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteSmallBrickWallRecipe, {
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
     BuildingMenu.PurpleBigBrickWallRecipe = {
@@ -680,8 +682,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleBigBrickWallRecipe,{
-        {type = "Base.PaintPurple", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleBigBrickWallRecipe, {
+        { type = "Base.PaintPurple", amount = 1 },
     })
 
     BuildingMenu.PurpleSmallBrickWallRecipe = {
@@ -706,8 +708,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleSmallBrickWallRecipe,{
-        {type = "Base.PaintPurple", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleSmallBrickWallRecipe, {
+        { type = "Base.PaintPurple", amount = 1 },
     })
 
     BuildingMenu.GreenBigBrickWallRecipe = {
@@ -732,8 +734,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigBrickWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigBrickWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
     BuildingMenu.GreenSmallBrickWallRecipe = {
@@ -758,8 +760,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenSmallBrickWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenSmallBrickWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
     BuildingMenu.BrownBigBrickWallRecipe = {
@@ -784,8 +786,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownBigBrickWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownBigBrickWallRecipe, {
+        { type = "Base.PaintBrown", amount = 1 },
     })
 
     BuildingMenu.BrownSmallBrickWallRecipe = {
@@ -810,8 +812,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownSmallBrickWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownSmallBrickWallRecipe, {
+        { type = "Base.PaintBrown", amount = 1 },
     })
 
     BuildingMenu.BlueBigWoodWallRecipe = {
@@ -836,8 +838,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueBigWoodWallRecipe,{
-        {type = "Base.PaintBlue", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueBigWoodWallRecipe, {
+        { type = "Base.PaintBlue", amount = 1 },
     })
 
     BuildingMenu.BlueSmallWoodWallRecipe = {
@@ -862,8 +864,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueSmallWoodWallRecipe,{
-        {type = "Base.PaintBlue", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlueSmallWoodWallRecipe, {
+        { type = "Base.PaintBlue", amount = 1 },
     })
 
     BuildingMenu.TanBigWoodWallRecipe = {
@@ -888,9 +890,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TanBigWoodWallRecipe,{
-        {type = "Base.PaintLightBrown", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TanBigWoodWallRecipe, {
+        { type = "Base.PaintLightBrown", amount = 1 },
+        { type = "Base.PaintWhite",      amount = 1 },
     })
 
     BuildingMenu.TanSmallWoodWallRecipe = {
@@ -915,9 +917,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TanSmallWoodWallRecipe,{
-        {type = "Base.PaintLightBrown", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TanSmallWoodWallRecipe, {
+        { type = "Base.PaintLightBrown", amount = 1 },
+        { type = "Base.PaintWhite",      amount = 1 },
     })
 
     BuildingMenu.PinkBigWoodWallRecipe = {
@@ -942,8 +944,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.PinkBigWoodWallRecipe,{
-        {type = "Base.PaintPink", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PinkBigWoodWallRecipe, {
+        { type = "Base.PaintPink", amount = 1 },
     })
 
     BuildingMenu.PinkSmallWoodWallRecipe = {
@@ -968,8 +970,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.PinkSmallWoodWallRecipe,{
-        {type = "Base.PaintPink", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PinkSmallWoodWallRecipe, {
+        { type = "Base.PaintPink", amount = 1 },
     })
 
     BuildingMenu.TurquoiseBigWoodWallRecipe = {
@@ -994,8 +996,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseBigWoodWallRecipe,{
-        {type = "Base.PaintTurquoise", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseBigWoodWallRecipe, {
+        { type = "Base.PaintTurquoise", amount = 1 },
     })
 
     BuildingMenu.TurquoiseSmallWoodWallRecipe = {
@@ -1020,8 +1022,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseSmallWoodWallRecipe,{
-        {type = "Base.PaintTurquoise", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseSmallWoodWallRecipe, {
+        { type = "Base.PaintTurquoise", amount = 1 },
     })
 
     BuildingMenu.TurquoiseBigBrickWallRecipe = {
@@ -1046,8 +1048,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseBigBrickWallRecipe,{
-        {type = "Base.PaintTurquoise", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseBigBrickWallRecipe, {
+        { type = "Base.PaintTurquoise", amount = 1 },
     })
 
     BuildingMenu.TurquoiseSmallBrickWallRecipe = {
@@ -1072,8 +1074,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseSmallBrickWallRecipe,{
-        {type = "Base.PaintTurquoise", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.TurquoiseSmallBrickWallRecipe, {
+        { type = "Base.PaintTurquoise", amount = 1 },
     })
 
     BuildingMenu.WhiteBigWoodWallRecipe = {
@@ -1098,8 +1100,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteBigWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteBigWoodWallRecipe, {
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
     BuildingMenu.WhiteSmallWoodWallRecipe = {
@@ -1124,8 +1126,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteSmallWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteSmallWoodWallRecipe, {
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -1151,8 +1153,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBigWoodWallRecipe,{
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBigWoodWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
     BuildingMenu.YellowSmallWoodWallRecipe = {
@@ -1177,8 +1179,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowSmallWoodWallRecipe,{
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowSmallWoodWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
 
@@ -1204,8 +1206,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownBigWoodWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownBigWoodWallRecipe, {
+        { type = "Base.PaintBrown", amount = 1 },
     })
 
     BuildingMenu.BrownBigWoodWindowWallRecipe = {
@@ -1234,8 +1236,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownBigWoodWindowWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownBigWoodWindowWallRecipe, {
+        { type = "Base.PaintBrown", amount = 1 },
     })
 
 
@@ -1262,8 +1264,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigWoodWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigWoodWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
     BuildingMenu.GreenBigWoodWindowWallRecipe = {
@@ -1292,8 +1294,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigWoodWindowWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigWoodWindowWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
     BuildingMenu.WhiteBigWoodWindowWallRecipe = {
@@ -1322,8 +1324,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteBigWoodWindowWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteBigWoodWindowWallRecipe, {
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -1349,8 +1351,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownSmallWoodWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BrownSmallWoodWallRecipe, {
+        { type = "Base.PaintBrown", amount = 1 },
     })
 
     BuildingMenu.YellowBigWoodWindowWallRecipe = {
@@ -1379,8 +1381,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBigWoodWindowWallRecipe,{
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBigWoodWindowWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
     BuildingMenu.BigWoodWallRecipe = {
@@ -1451,8 +1453,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBigWoodWallRecipe,{
-        {type = "Base.PaintRed", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBigWoodWallRecipe, {
+        { type = "Base.PaintRed", amount = 1 },
     })
 
     BuildingMenu.RedBigWindowWoodWallRecipe = {
@@ -1481,8 +1483,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBigWindowWoodWallRecipe,{
-        {type = "Base.PaintRed", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBigWindowWoodWallRecipe, {
+        { type = "Base.PaintRed", amount = 1 },
     })
 
     BuildingMenu.RedSmallWoodWallRecipe = {
@@ -1507,8 +1509,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.RedSmallWoodWallRecipe,{
-        {type = "Base.PaintRed", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.RedSmallWoodWallRecipe, {
+        { type = "Base.PaintRed", amount = 1 },
     })
 
     BuildingMenu.GreenBigWoodWallRecipe = {
@@ -1533,8 +1535,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigWoodWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenBigWoodWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
     BuildingMenu.GreenSmallWoodWallRecipe = {
@@ -1559,8 +1561,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenSmallWoodWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenSmallWoodWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
     })
 
 
@@ -1586,9 +1588,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenWhiteBigWoodWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenWhiteBigWoodWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -1614,9 +1616,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenWhiteSmallWoodWallRecipe,{
-        {type = "Base.PaintGreen", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenWhiteSmallWoodWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -1642,8 +1644,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleBigWoodWallRecipe,{
-        {type = "Base.PaintPurple", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleBigWoodWallRecipe, {
+        { type = "Base.PaintPurple", amount = 1 },
     })
 
     BuildingMenu.PurpleSmallWoodWallRecipe = {
@@ -1668,8 +1670,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleSmallWoodWallRecipe,{
-        {type = "Base.PaintPurple", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PurpleSmallWoodWallRecipe, {
+        { type = "Base.PaintPurple", amount = 1 },
     })
 
     BuildingMenu.GreyBigWoodWallRecipe = {
@@ -1694,8 +1696,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreyBigWoodWallRecipe,{
-        {type = "Base.PaintGrey", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreyBigWoodWallRecipe, {
+        { type = "Base.PaintGrey", amount = 1 },
     })
 
     BuildingMenu.GreyBigWoodWindowWallRecipe = {
@@ -1724,8 +1726,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreyBigWoodWindowWallRecipe,{
-        {type = "Base.PaintGrey", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreyBigWoodWindowWallRecipe, {
+        { type = "Base.PaintGrey", amount = 1 },
     })
 
     BuildingMenu.GreySmallWoodWallRecipe = {
@@ -1750,8 +1752,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.GreySmallWoodWallRecipe,{
-        {type = "Base.PaintGrey", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreySmallWoodWallRecipe, {
+        { type = "Base.PaintGrey", amount = 1 },
     })
 
 
@@ -1777,8 +1779,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeBigWoodWallRecipe,{
-        {type = "Base.PaintOrange", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeBigWoodWallRecipe, {
+        { type = "Base.PaintOrange", amount = 1 },
     })
 
 
@@ -1804,8 +1806,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeSmallWoodWallRecipe,{
-        {type = "Base.PaintOrange", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.OrangeSmallWoodWallRecipe, {
+        { type = "Base.PaintOrange", amount = 1 },
     })
 
 
@@ -1831,9 +1833,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.CreamBigWoodWallRecipe,{
-        {type = "Base.PaintPink", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.CreamBigWoodWallRecipe, {
+        { type = "Base.PaintPink",  amount = 1 },
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -1859,9 +1861,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.CreamSmallWoodWallRecipe,{
-        {type = "Base.PaintPink", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.CreamSmallWoodWallRecipe, {
+        { type = "Base.PaintPink",  amount = 1 },
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -1887,8 +1889,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackBigWoodWallRecipe,{
-        {type = "Base.PaintBlack", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackBigWoodWallRecipe, {
+        { type = "Base.PaintBlack", amount = 1 },
     })
 
     BuildingMenu.BlackBigWoodWindowWallRecipe = {
@@ -1917,8 +1919,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackBigWoodWindowWallRecipe,{
-        {type = "Base.PaintBlack", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackBigWoodWindowWallRecipe, {
+        { type = "Base.PaintBlack", amount = 1 },
     })
 
     BuildingMenu.BlackSmallWoodWallRecipe = {
@@ -1943,8 +1945,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackSmallWoodWallRecipe,{
-        {type = "Base.PaintBlack", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackSmallWoodWallRecipe, {
+        { type = "Base.PaintBlack", amount = 1 },
     })
 
     BuildingMenu.BlackSmallWoodGlassWallRecipe = {
@@ -1973,8 +1975,8 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackSmallWoodGlassWallRecipe,{
-        {type = "Base.PaintBlack", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackSmallWoodGlassWallRecipe, {
+        { type = "Base.PaintBlack", amount = 1 },
     })
 
     BuildingMenu.BlackWhiteBigWoodWallRecipe = {
@@ -1999,9 +2001,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackWhiteBigWoodWallRecipe,{
-        {type = "Base.PaintBlack", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackWhiteBigWoodWallRecipe, {
+        { type = "Base.PaintBlack", amount = 1 },
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -2027,9 +2029,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackWhiteSmallWoodWallRecipe,{
-        {type = "Base.PaintBlack", amount = 1},
-        {type = "Base.PaintWhite", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackWhiteSmallWoodWallRecipe, {
+        { type = "Base.PaintBlack", amount = 1 },
+        { type = "Base.PaintWhite", amount = 1 },
     })
 
 
@@ -2055,9 +2057,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteTurquoiseBigWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintTurquoise", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteTurquoiseBigWoodWallRecipe, {
+        { type = "Base.PaintWhite",     amount = 1 },
+        { type = "Base.PaintTurquoise", amount = 1 },
     })
 
     BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe = {
@@ -2086,9 +2088,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintTurquoise", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe, {
+        { type = "Base.PaintWhite",     amount = 1 },
+        { type = "Base.PaintTurquoise", amount = 1 },
     })
 
 
@@ -2114,9 +2116,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteTurquoiseSmallWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintTurquoise", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteTurquoiseSmallWoodWallRecipe, {
+        { type = "Base.PaintWhite",     amount = 1 },
+        { type = "Base.PaintTurquoise", amount = 1 },
     })
 
     BuildingMenu.WhiteOrangeBlueBigWoodWallRecipe = {
@@ -2141,10 +2143,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteOrangeBlueBigWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintOrange", amount = 1},
-        {type = "Base.PaintBlue", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteOrangeBlueBigWoodWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintOrange", amount = 1 },
+        { type = "Base.PaintBlue",   amount = 1 },
     })
 
     BuildingMenu.WhiteOrangeBlueBigWindowWoodWallRecipe = {
@@ -2173,10 +2175,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteOrangeBlueBigWindowWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintOrange", amount = 1},
-        {type = "Base.PaintBlue", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteOrangeBlueBigWindowWoodWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintOrange", amount = 1 },
+        { type = "Base.PaintBlue",   amount = 1 },
     })
 
 
@@ -2202,10 +2204,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteOrangeBlueSmallWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintOrange", amount = 1},
-        {type = "Base.PaintBlue", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteOrangeBlueSmallWoodWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintOrange", amount = 1 },
+        { type = "Base.PaintBlue",   amount = 1 },
     })
 
 
@@ -2231,10 +2233,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteRedYellowBigWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintRed", amount = 1},
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteRedYellowBigWoodWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintRed",    amount = 1 },
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
     BuildingMenu.WhiteRedYellowBigWindowWoodWallRecipe = {
@@ -2263,10 +2265,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteRedYellowBigWindowWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintRed", amount = 1},
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteRedYellowBigWindowWoodWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintRed",    amount = 1 },
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
     BuildingMenu.WhiteRedYellowSmallWoodWallRecipe = {
@@ -2291,10 +2293,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteRedYellowSmallWoodWallRecipe,{
-        {type = "Base.PaintWhite", amount = 1},
-        {type = "Base.PaintRed", amount = 1},
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.WhiteRedYellowSmallWoodWallRecipe, {
+        { type = "Base.PaintWhite",  amount = 1 },
+        { type = "Base.PaintRed",    amount = 1 },
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
 
@@ -2320,9 +2322,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBrownBigWoodWallRecipe,{
-        {type = "Base.PaintBrown", amount = 1},
-        {type = "Base.PaintYellow", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBrownBigWoodWallRecipe, {
+        { type = "Base.PaintBrown",  amount = 1 },
+        { type = "Base.PaintYellow", amount = 1 },
     })
 
 
@@ -2348,9 +2350,9 @@ local function initBuildingMenuRecipes()
             }
         }
     }
-    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBrownSmallWoodWallRecipe,{
-        {type = "Base.PaintYellow", amount = 1},
-        {type = "Base.PaintBrown", amount = 1},
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowBrownSmallWoodWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
+        { type = "Base.PaintBrown",  amount = 1 },
     })
 
 
@@ -3278,6 +3280,137 @@ local function initBuildingMenuRecipes()
                 Skill = "MetalWelding",
                 Level = 6,
                 Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.WireDoubleDoorGatesRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.MetalPipe",
+                Amount = metalBarsCount * 2
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.5)
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 0.5)
+            },
+            {
+                Material = "Base.Hinge",
+                Amount = 4
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Wire",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 7,
+                Xp = BuildingMenu.round(7 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+    BuildingMenu.PoleDoubleDoorGatesRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.MetalPipe",
+                Amount = metalBarsCount * 2.5
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.5)
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 0.5)
+            },
+            {
+                Material = "Base.Hinge",
+                Amount = 4
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 8,
+                Xp = BuildingMenu.round(8 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+    BuildingMenu.BlackPoleDoubleDoorGatesRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.MetalPipe",
+                Amount = metalBarsCount * 3
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.75)
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 1)
+            },
+            {
+                Material = "Base.Hinge",
+                Amount = 4
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 9,
+                Xp = BuildingMenu.round(9 * metalweldingXpPerLevel)
             }
         }
     }

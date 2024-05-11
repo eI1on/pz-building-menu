@@ -676,7 +676,9 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onDoubleDoor = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _doubleDoor = ISDoubleDoor:new(sprites.sprite:sub(1, -2), objectOptions.spriteIndex)
+    local spriteIndexLength = tostring(objectOptions.spriteIndex):len();
+    local baseSprite = sprites.sprite:sub(1, -spriteIndexLength - 1);
+    local _doubleDoor = ISDoubleDoor:new(baseSprite, objectOptions.spriteIndex);
 
     return _doubleDoor
 end

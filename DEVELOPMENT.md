@@ -28,16 +28,17 @@ To add new buildable objects into the menu, you'll need to create them using the
 Here's the function signature and a brief description of each parameter (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L50-L71)):
 
 ```lua
-function BuildingMenu.createObject(name, description, action, recipe, isRecipeKnown, options, sprites)
+function BuildingMenu.createObject(displayName, description, action, recipe, isRecipeKnown, options, sprites, nameID)
     return {
-        name = getTextOrNull(name) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or sprites.sprite,
+        displayName = getTextOrNull(displayName) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or sprites.sprite,
         description = getTextOrNull(description) or "",
         data = {
+            nameID = nameID,
             action = action,
             recipe = recipe,
             isRecipeKnown = isRecipeKnown,
             options = options,
-            sprites = sprites
+            sprites = sprites,
         }
     }
 end
@@ -63,7 +64,8 @@ local exampleObject = BuildingMenu.createObject(
     {   -- Sprites
         sprite = "walls_exterior_roofs_06_34", 
         northSprite = "walls_exterior_roofs_06_27"
-    }
+    },
+    "ObjectID" -- Used in Crafting Recipes
 )
 ```
 <br>

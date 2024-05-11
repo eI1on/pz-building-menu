@@ -45,7 +45,8 @@ function BuildingMenuTilePickerList:render()
                     end
 
                     if texture then
-                        self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
+                        self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH,
+                            TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
                     end
                 end
             end
@@ -131,7 +132,7 @@ function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
         isoObject:createContainersFromSpriteProperties();
 
         for i = 1, isoObject:getContainerCount() do
-            local itemContainer = isoObject:getContainerByIndex(i-1);
+            local itemContainer = isoObject:getContainerByIndex(i - 1);
             local containerCapacity = itemContainer:getEffectiveCapacity(self.character) or 0;
             local containerType = itemContainer:getType();
             local containerTitle = getTextOrNull("IGUI_ContainerTitle_" .. containerType) or containerType;
@@ -144,8 +145,9 @@ function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
     end
 
     local containerInfo = {};
-    local partNames = {"Tooltip_BuildingObject_Main_Part", "Tooltip_BuildingObject_Secondary_Part", "Tooltip_BuildingObject_Tertiary_Part", "Tooltip_BuildingObject_Quaternary_Part"};
-    for i, spriteKey in ipairs({"sprite", "sprite2", "sprite3", "sprite4"}) do
+    local partNames = { "Tooltip_BuildingObject_Main_Part", "Tooltip_BuildingObject_Secondary_Part",
+        "Tooltip_BuildingObject_Tertiary_Part", "Tooltip_BuildingObject_Quaternary_Part" };
+    for i, spriteKey in ipairs({ "sprite", "sprite2", "sprite3", "sprite4" }) do
         local sprite = selectedObject.objDef.data.sprites[spriteKey];
         if sprite then
             local props = getSprite(sprite):getProperties();
@@ -174,12 +176,11 @@ function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
 
     local description = selectedObject.objDef.description;
     local lineSeparator = description ~= "" and " <LINE> " or "";
-    self.tooltip.description = string.format("%s %s <RGB:1,1,1> %s %s %s", description, lineSeparator, containerStr, isThumpableStr, tooltipDescription);
+    self.tooltip.description = string.format("%s %s <RGB:1,1,1> %s %s %s", description, lineSeparator, containerStr,
+        isThumpableStr, tooltipDescription);
 
     self.tooltip.footNote = BuildingMenu.textCanRotate;
 end
-
-
 
 ---@param col number
 ---@param row number
@@ -459,7 +460,8 @@ function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
     o.textureCache         = {};
     o.tooltip              = nil;
     o.message              = nil;
-    o.overwriteIsThumpable = SandboxVars.BuildingMenu.isThumpable ~= nil and not SandboxVars.BuildingMenu.isThumpable or false;
+    o.overwriteIsThumpable = SandboxVars.BuildingMenu.isThumpable ~= nil and not SandboxVars.BuildingMenu.isThumpable or
+    false;
     o.parent               = parent;
     return o;
 end
@@ -537,8 +539,7 @@ function ISBuildingMenuUI:toggleBuildingMenuUI(playerObj)
     end
 end
 
-
-Events.OnPlayerDeath.Add(function (playerObj)
+Events.OnPlayerDeath.Add(function(playerObj)
     local ui = ISBuildingMenuUI.instance;
     if ui and ui:getIsVisible() then
         ui:close();
@@ -661,7 +662,8 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
         local option = context:addOption("Not Thumpable", self, function(self)
             self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable;
-            BM_Utils.debugPrint("[Building Menu DEBUG] self.tilesList.overwriteIsThumpable: ", self.tilesList.overwriteIsThumpable);
+            BM_Utils.debugPrint("[Building Menu DEBUG] self.tilesList.overwriteIsThumpable: ",
+                self.tilesList.overwriteIsThumpable);
         end);
         context:setOptionChecked(option, self.tilesList.overwriteIsThumpable);
     end
@@ -772,8 +774,8 @@ function ISBuildingMenuUI:render()
     end
 end
 
----@return table labels 
----@return table icons 
+---@return table labels
+---@return table icons
 function ISBuildingMenuUI:getJoypadFocusLabelsAndIcons()
     local labels, icons = {}, {};
     local labelMove = self.uiHasFocus and self.LabelStopMove or self.LabelMove;
@@ -1115,7 +1117,7 @@ function ISBuildingMenuUI:new(x, y, width, height, character)
         getKeyName(ISBuildingMenuUI.upArrowCategory), getKeyName(ISBuildingMenuUI.downArrowCategory),
         getKeyName(ISBuildingMenuUI.leftTab), getKeyName(ISBuildingMenuUI.rightTab));
 
-    o.floorIsRoof = false;
+    o.floorIsRoof                  = false;
     return o;
 end
 

@@ -1411,6 +1411,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_4_Tiles_Garage_Door = "4 Tiles Garage Door",
   Tooltip_Garage_Door = "A large garage door to fortify your base.",
 
+  Tooltip_Double_Door_Gates = "A double door gate for your base.",
 
   Tooltip_Door_Trim = "Elegant door trim to enhance your base aesthetics.",
 
@@ -1924,7 +1925,7 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Floor_Vines = "Floor Vines",
   Tooltip_Wall_Vines_Generic = "Lush, creeping vines that can be attached to walls. Adds a touch of nature and camouflage to your structures.",
 
-  Tooltip_Lighting = "It needs a battery to function. Can't be picked up.",
+  Tooltip_Lighting = "Requires generator power, a battery connector can be crafted at level 5 electrical. Can be moved.",
   Tooltip_BuildingMenuObj_Switch = "Switch",
   Tooltip_BuildingMenuObj_Light_Post1 = "Light Post 1",
   Tooltip_BuildingMenuObj_Light_Post2 = "Light Post 2",

@@ -151,7 +151,7 @@ BuildingMenu.Tools = {
         tags = { 'SewingNeedle' }
     },
     Wrench = {
-        types = { 
+        types = {
             'Base.PipeWrench',
             'Base.Wrench'
         },
@@ -164,7 +164,7 @@ BuildingMenu.Tools = {
             'ToolsOfTheTrade.SpiffArmyKnife',
             'ToolsOfTheTrade.Multitool'
         },
-        tags = {'Scissors'}
+        tags = { 'Scissors' }
     }
 }
 
@@ -431,7 +431,7 @@ function BuildingMenu.getTexFromItem(item)
             local icons = item:getIconsForTexture();
             if icons and icons:size() > 0 then
                 texture = loadTex(obj:getVisual():getBaseTexture(), icons) or
-                loadTex(obj:getVisual():getTextureChoice(), icons);
+                    loadTex(obj:getVisual():getTextureChoice(), icons);
             else
                 texture = obj:getTexture();
             end
@@ -615,7 +615,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
             if instanceof(firstItemInstance, 'InventoryItem') then
                 firstItemInstance = BuildingMenu.getItemInstance(firstItemInstance:getFullType());
             end
----@diagnostic disable-next-line: cast-local-type
+            ---@diagnostic disable-next-line: cast-local-type
             if totalFoundCount > 1000 then totalFoundCount = "Infinite"; end
             local itemText = color ..
                 firstItemInstance:getDisplayName() ..

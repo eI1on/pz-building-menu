@@ -6,9 +6,10 @@ description=
 description=
 description=[hr][/hr]
 description=
-description=[h1]Over 30 buildable objects:[/h1]
-description=[b] Carpentry & Metalworking[/b]
-description=[list]
+description=[h1]Over 90 buildable objects:[/h1]
+description=[b] Carpentry [/b]
+description=[list] White, Brown and Green Glass Frame Walls and Roofs
+description=[list] Wooden Low Fences and Curbs
 description=[*] [i] and much more [/i]
 description=[/list]
 description=
@@ -56,9 +57,9 @@ description=
 description= This mod was crafted with love, I hope it brings joy to your building adventures. And always remember - watch out for those zombies!
 description=
 description=[hr][/hr]
-description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/github_banner.png [/img][/url]
-description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_9_Kofi.png [/img][/url]
-description=[url=https://discord.gg/asA9BuAasd][img] https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/building_menu_media/workshop_images/BM_Workshop_Desc_8.png [/img][/url]
+description=[url=https://github.com/eI1on/pz-building-menu][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/workshop_images/Workshop_Desc_Github_Banner.png [/img][/url]
+description=[url=https://ko-fi.com/ely0n][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/workshop_images/Workshop_Desc_Kofi.png [/img][/url]
+description=[url=https://discord.gg/asA9BuAasd][img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/workshop_images/Workshop_Desc_PZ_Modding_Disc.png [/img][/url]
 description=
 description=[h1] Don't forget to rate and favorite! [/h1]
 description=[img] https://imgur.com/eZp8dXD.png [/img]

@@ -5,7 +5,12 @@ Changelog:
 Main mod:
 [list]
 [*] Added icon to Turn Off and Turn On context options
-[*] Changed that Light Posts and Outdoor Lamps built with BM to use generator power (only newly built ones). Outdoor lamps can still be fitted with a battery
+[*] Changed that Light Posts and Outdoor Lamps built with BM to use generator power (only newly built ones). They can be fitted with a battery connector at lv 5 electircal.
+[*] Updated Workshop description
+[/list]
+Greenhouse Tiles addon:
+[list]
+[*] Release
 [/list]
 [/list]
 
@@ -254,7 +259,7 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] Added keybind to toggle the Building Menu UI, you can change it with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url] (default key is "/" slash, option can be found [url=https://raw.githubusercontent.com/eI1on/pz-building-menu/main/workshop_resources/addons_preview/bm_keybindings.png] here [/url])
+[*] Added keybind to toggle the Building Menu UI, you can change it with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993] Mod Options [/url] (default key is "/" slash, option can be found [url=https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/bm_keybindings.png] here [/url])
 [*] Added keybinds to switch between categories/tabs
 [*] New additions: bathroom walls, church pews, decorative banners, more half roofs variations
 [*] Changed light radius to built light sources from BM to their vanilla value
