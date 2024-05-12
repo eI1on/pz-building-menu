@@ -1,0 +1,11 @@
+Sandbox_DA = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkie Specifikke kategorier _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Dette er kun en linjeseparator, at kontrollere det har ingen effekt.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Aktiver kategorien hemmelige indgange",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Aktiver for at tilføje hemmelige indgange. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Aktiver skovoverlevelseskategori",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Aktiver for at tilføje skovoverlevelsesstrukturer. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER!",
+
+}

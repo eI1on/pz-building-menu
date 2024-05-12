@@ -1,0 +1,79 @@
+Tooltip_UA = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Таємна вхідна полиця",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Секретні вхідні двері",
+  
+  Tooltip_SecretEntranceShelf = "Полиця в стилі КОНТЕЙНЕР, яка ідеально вписується в інтер’єр. Не можна відкрити, але добре працює разом із Secret Doors для прихованих проходів.",
+  Tooltip_SecretEntranceDoor = "Приховані двері, призначені для розміщення в ДВЕРНІЙ КОСИ, відкриваючи прихований прохід. Ідеально підходить для безпечного та непомітного доступу.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Журнал стіни",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Дверна рама з журналу",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Віконна рама журналу",
+  Tooltip_BuildingMenuObj_Twig_Window = "Вікно з гілочки",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Стовп колоди",
+  Tooltip_BuildingMenuObj_Log_Crate = "Ящик колод",
+
+  Tooltip_Log_Wall = "Міцна стіна з щільно складених колод.",
+  Tooltip_Log_Door_Frame = "Міцна рама з колоди для ваших дверей.",
+  Tooltip_Log_Window_Frame = "Міцний зруб для вікон.",
+  Tooltip_Log_Pillar = "Міцна вертикальна опора колоди.",
+  Tooltip_Log_Crate = "Простий, але міцний ящик, виготовлений із колод.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Дах з колод односхилий 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Дах з бруса односхилий 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Дах з бруса односхилий 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Сходи з бруса",
+  Tooltip_Forest_Furvival_Generic = "Необхідний для виживання в дикій природі.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Рубальний блок",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Шикарний білий подвійний гардероб",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Шикарна двомісна біла шафа зі склом",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Шикарні дубові ящики",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Шикарна дубова шафа",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Двомісна шафа зі світлого дерева",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Двомісна шафа зі скла зі світлого дерева",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Вишукані темні ящики",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Модний темний гардероб",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Бочка на піддоні",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Невеликі коробки на піддоні",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Овочеві кошики на піддоні",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Шлакоблок і дротяна огорожа",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Шлакоблок і куточок дроту",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Шлакоблок і стовпчик дротяної огорожі",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Шлакоблоковий паркан",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Шлакоблочний паркан кутовий",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Шлакоблоковий стовп для паркану",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Огорожа з шлакоблочної лози 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Шлакоблоковий паркан з виноградними лозами 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Шлакоблочний паркан куточок з виноградною лозою",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Шлакоблочний стовпчик паркану з виноградними лозами",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Огорожа з шлакоблоків і дощок",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Кут огорожі з шлакоблоків і дощок",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Огорожа з шлакоблоків і дощок",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Дерев'яна огорожа",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Дерев'яний паркан",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Дерев'яний паркан куточок",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Білий дерев'яний паркан",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Білий дерев'яний паркан",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Білий дерев'яний паркан куточок",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Білий дерев'яний паркан ворота",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Зелена маленька шафка",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Піддон із зеленими маленькими шафками",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Біла маленька шафка",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Піддон з білими малими шафками",
+
+}

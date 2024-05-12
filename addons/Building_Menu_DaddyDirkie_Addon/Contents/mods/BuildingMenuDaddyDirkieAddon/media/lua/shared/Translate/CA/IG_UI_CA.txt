@@ -1,0 +1,13 @@
+IGUI_CA = {
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "Altres",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Entrades secretes",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "Conjunt de mobles 1",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "Conjunt de mobles 2",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "Conjunt de mobles 3",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Conjunt de mobles 4",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Conjunt de mobles 5",
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "Altres",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Supervivència forestal",
+}   

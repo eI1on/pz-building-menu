@@ -1,0 +1,11 @@
+Sandbox_NL = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "______________ Papa Dirkie Specifieke categorieën _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Dit is slechts een regelscheidingsteken, het controleren ervan heeft geen effect.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Categorie geheime ingangen inschakelen",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Schakel in om geheime ingangen toe te voegen. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Schakel de categorie Bosoverleving in",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Schakel het toevoegen van bosoverlevingsstructuren in. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN!",
+
+}

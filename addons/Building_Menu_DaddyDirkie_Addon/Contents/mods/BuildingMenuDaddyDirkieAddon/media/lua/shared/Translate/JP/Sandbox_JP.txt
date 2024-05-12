@@ -1,0 +1,11 @@
+Sandbox_JP = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ パパ・ダーキーの特定のカテゴリー _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "これは単なる行区切り文字であり、チェックしても効果はありません。",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "秘密の入り口カテゴリを有効にする",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "秘密の入り口を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "森林生存カテゴリを有効にする",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "森林生存構造を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
+
+}

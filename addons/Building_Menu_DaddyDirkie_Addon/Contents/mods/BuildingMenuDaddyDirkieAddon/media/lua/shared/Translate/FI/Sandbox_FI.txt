@@ -1,0 +1,11 @@
+Sandbox_FI = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkien erityisluokat _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Tämä on vain rivierotin, sen tarkistamisella ei ole vaikutusta.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Ota käyttöön salaiset sisäänkäynnit -luokka",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Salli salaisten sisäänkäyntien lisääminen. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Ota metsän selviytymisluokka käyttöön",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Ota käyttöön metsän selviytymisrakenteiden lisääminen. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET!",
+
+}

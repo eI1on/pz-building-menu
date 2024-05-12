@@ -1,0 +1,79 @@
+Tooltip_KO = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "비밀 입구 선반",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "비밀 출입문",
+  
+  Tooltip_SecretEntranceShelf = "완벽하게 조화를 이루는 CONTAINER 스타일 선반입니다. 열 수는 없지만 비밀의 문과 함께 숨겨진 통로로 사용하는 것이 좋습니다.",
+  Tooltip_SecretEntranceDoor = "DOORFRAME에 맞도록 설계된 위장된 문으로, 열면 숨겨진 통로가 드러납니다. 안전하고 눈에 띄지 않는 액세스에 이상적입니다.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "통나무 벽",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "통나무 문틀",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "로그 창 프레임",
+  Tooltip_BuildingMenuObj_Twig_Window = "나뭇가지 창",
+  Tooltip_BuildingMenuObj_Log_Pillar = "통나무 기둥",
+  Tooltip_BuildingMenuObj_Log_Crate = "통나무 상자",
+
+  Tooltip_Log_Wall = "통나무를 촘촘하게 쌓아서 만든 튼튼한 벽입니다.",
+  Tooltip_Log_Door_Frame = "통나무로 만든 튼튼한 문틀입니다.",
+  Tooltip_Log_Window_Frame = "내구성이 뛰어난 Windows용 로그 프레임입니다.",
+  Tooltip_Log_Pillar = "강력한 수직 로그 지원.",
+  Tooltip_Log_Crate = "통나무로 만든 단순하면서도 견고한 상자입니다.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "통나무 지붕 투수 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "통나무 지붕 투수 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "통나무 지붕 피치 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "통나무 계단",
+  Tooltip_Forest_Furvival_Generic = "야생 생존에 필수적입니다.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "쵸핑 블록",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "팬시 화이트 더블 옷장",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "유리가 달린 멋진 흰색 이중 옷장",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "멋진 오크 서랍",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "팬시 오크 옷장",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "라이트 우드 더블 옷장",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "라이트 우드 더블 옷장(유리 포함)",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "멋진 어두운 서랍",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "멋진 어두운 옷장",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "팔레트 위의 배럴",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "팔레트의 작은 상자",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "팔레트에 야채 바구니",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "콘크리트 블록 및 철조망",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "콘크리트 블록 및 철조망 울타리 코너",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "콘크리트 블록 및 철조망 울타리 기둥",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "콘크리트 블록 울타리",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "콘크리트 블록 울타리 코너",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "콘크리트 블록 울타리 포스트",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "덩굴이 있는 콘크리트 블록 울타리 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "덩굴이 있는 콘크리트 블록 울타리 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "덩굴이 있는 콘크리트 블록 울타리 코너",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "덩굴이 있는 콘크리트 블록 울타리 기둥",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "콘크리트 블록과 판자 울타리",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "콘크리트 블록과 판자 울타리 코너",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "콘크리트 블록 및 판자 울타리 포스트",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "나무 울타리 포스트",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "나무 울타리",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "나무 울타리 코너",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "흰색 나무 울타리 포스트",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "흰색 나무 울타리",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "흰색 나무 울타리 코너",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "흰색 나무 울타리 게이트",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "녹색 소형 사물함",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "녹색 소형 사물함이 있는 팔레트",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "흰색 작은 사물함",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "흰색 소형 사물함이 있는 팔레트",
+
+}

@@ -1,0 +1,79 @@
+Tooltip_HU = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Titkos bejárati polc",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Titkos bejárati ajtó",
+  
+  Tooltip_SecretEntranceShelf = "Tökéletesen illeszkedő CONTAINER stílusú polc. Nem nyitható, de jól működik a Secret Doors mellett rejtett átjáróként.",
+  Tooltip_SecretEntranceDoor = "Egy álcázott ajtó, amelyet úgy terveztek, hogy elférjen egy AJTÓKERETBEN, kinyitva egy rejtett átjárót. Ideális a biztonságos és diszkrét hozzáféréshez.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Rönkfal",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Rönk ajtókeret",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Napló ablakkeret",
+  Tooltip_BuildingMenuObj_Twig_Window = "Gallyablak",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Rönkoszlop",
+  Tooltip_BuildingMenuObj_Log_Crate = "Rönkláda",
+
+  Tooltip_Log_Wall = "Erős fal szorosan egymásra rakott rönkökből.",
+  Tooltip_Log_Door_Frame = "Masszív rönkből készült keret ajtóihoz.",
+  Tooltip_Log_Window_Frame = "Tartós rönkkeret ablakokhoz.",
+  Tooltip_Log_Pillar = "Erős, függőleges rönktartó.",
+  Tooltip_Log_Crate = "Egy egyszerű, de robusztus láda rönkből.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Ferde tető 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Ferde tető 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Ferde tető 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Rönk Lépcsők",
+  Tooltip_Forest_Furvival_Generic = "Elengedhetetlen a vadonban való túléléshez.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Vágó blokk",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Divatos fehér dupla gardrób",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Divatos fehér dupla gardrób üveggel",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Divatos tölgyfa fiókok",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Díszes tölgy gardrób",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Világos fa dupla gardrób",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Világos fa dupla szekrény üveggel",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Divatos sötét fiókok",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Divatos sötét gardrób",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Hordó Raklapon",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Kis dobozok Raklapon",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Zöldségkosarak Raklapon",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock és drótkerítés",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Cinderblock és drótkerítés sarok",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock és drótkerítés oszlop",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Cinderblock kerítés",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cinderblock kerítéssarok",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Cinderblock kerítésoszlop",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Cinderblock kerítés szőlővel 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Cinderblock kerítés szőlővel 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock kerítéssarok szőlővel",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock kerítésoszlop szőlővel",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cinderblock és deszka kerítés",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Cinderblock és deszka kerítéssarok",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Cinderblock és deszka kerítésoszlop",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Fából készült kerítésoszlop",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Fa kerítés",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Fából készült kerítéssarok",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Fehér fa kerítésoszlop",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Fehér fából készült kerítés",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Fehér fa kerítéssarok",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Fehér fából készült kerítéskapu",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Zöld kis szekrény",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Raklap zöld kis szekrényekkel",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Fehér kis szekrény",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Raklap fehér kis szekrényekkel",
+
+}

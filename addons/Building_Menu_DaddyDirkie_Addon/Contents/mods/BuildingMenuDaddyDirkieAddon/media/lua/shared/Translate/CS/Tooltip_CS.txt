@@ -1,0 +1,79 @@
+Tooltip_CS = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Tajná vstupní police",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Tajné vstupní dveře",
+  
+  Tooltip_SecretEntranceShelf = "Polička ve stylu KONTEJNERU, která do sebe dokonale zapadá. Nelze otevřít, ale funguje dobře vedle tajných dveří pro skrytý průchod.",
+  Tooltip_SecretEntranceDoor = "Maskované dveře navržené tak, aby se vešly do ZÁRUBNĚ a po otevření odhalily skrytý průchod. Ideální pro bezpečný a diskrétní přístup.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Log Wall",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Log dveřní rám",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Log okenní rám",
+  Tooltip_BuildingMenuObj_Twig_Window = "Větvička okno",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Log Pilíř",
+  Tooltip_BuildingMenuObj_Log_Crate = "Log bedna",
+
+  Tooltip_Log_Wall = "Robustní stěna z pevně naskládaných kmenů.",
+  Tooltip_Log_Door_Frame = "Robustní rám z kulatiny pro vaše dveře.",
+  Tooltip_Log_Window_Frame = "Odolný srubový rám do oken.",
+  Tooltip_Log_Pillar = "Silná vertikální podpora kmene.",
+  Tooltip_Log_Crate = "Jednoduchá, ale robustní bedna vyrobená z kulatiny.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Šikmá srubová střecha 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Šikmá srubová střecha 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Šikmá srubová střecha 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Log Schody",
+  Tooltip_Forest_Furvival_Generic = "Nezbytné pro přežití v divočině.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Sekací blok",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Efektní bílá dvojitá šatní skříň",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Efektní bílá dvojitá šatní skříň se sklem",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Efektní dubové zásuvky",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Efektní dubová skříň",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Dvojitá šatní skříň ze světlého dřeva",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Dvojitá skříň ze světlého dřeva se sklem",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Efektní tmavé zásuvky",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Efektní tmavý šatník",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Sud Na Paletě",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Malé Krabice Na Paletě",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Zeleninové Koše Na Paletě",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock a drátěný plot",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Roh ze škváry a drátěného plotu",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock a drátěný plot",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Cinderblock plot",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Roh oplocení ze Cinderblock",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Cinderblock plotový sloupek",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Cinderblock plot s révou 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Cinderblock Fence with Vines 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock plotový kout s vinnou révou",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock plotový sloupek s révou",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cinderblock a prkna plot",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Roh oplocení ze škváry a prken",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Cinderblock a prkna plotový sloupek",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Dřevěný plotový sloupek",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Dřevěný plot",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Dřevěný plotový roh",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Bílý dřevěný plotový sloupek",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Bílý dřevěný plot",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Bílý dřevěný plotový roh",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Bílý dřevěný plot brána",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Zelená malá skříňka",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Paleta se zelenými malými skříňkami",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Bílá malá skříňka",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Paleta s bílými malými skříňkami",
+
+}

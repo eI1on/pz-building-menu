@@ -2,7 +2,7 @@ Tooltip_CH = {
 
   Tooltip_BuildingMenuObj_SecretEntranceShelf = "秘密入口貨架",
   Tooltip_BuildingMenuObj_SecretEntranceDoor = "秘密入口門",
-
+  
   Tooltip_SecretEntranceShelf = "便於管理書籍的精妙僞裝書架，在安全屋跟秘密入口門組合能創造無縫銜接的秘密通道。",
   Tooltip_SecretEntranceDoor = "旋轉後能開啓暗道的巧妙貨架，非常適合隱秘又轻悄悄地溜走。",
 
@@ -18,7 +18,7 @@ Tooltip_CH = {
   Tooltip_Log_Window_Frame = "耐久的原木窗戶。",
   Tooltip_Log_Pillar = "牢固的竪直支撐。",
   Tooltip_Log_Crate = "簡約又牢固的原木箱子。",
-
+  
   Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "原木斜坡屋頂1",
   Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "原木斜坡屋頂2",
   Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "原木斜坡屋頂3",
@@ -43,7 +43,7 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_Barrel_On_Pallet = "放置有木桶的夾板",
   Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "放置有小盒的夾板",
   Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "放置有蔬菜籃的夾板",
-
+  
   Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "網狀砌塊柵欄",
   Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "網狀砌塊柵欄轉角",
   Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "網狀砌塊柵欄柱",
@@ -69,5 +69,11 @@ Tooltip_CH = {
   Tooltip_BuildingMenuObj_White_Wooden_Fence = "白色木制柵欄",
   Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "白色木制柵欄轉角",
   Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "白色木制柵欄門",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "綠色小儲物櫃",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "帶綠色小儲物櫃的托盤",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "白色小置物櫃",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "帶有白色小儲物櫃的托盤",
 
 }

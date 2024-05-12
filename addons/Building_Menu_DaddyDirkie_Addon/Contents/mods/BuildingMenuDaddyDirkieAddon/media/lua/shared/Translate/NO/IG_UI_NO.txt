@@ -1,0 +1,13 @@
+IGUI_NO = {
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "Andre",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Hemmelige innganger",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "Møbelsett 1",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "Møbelsett 2",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "Møbelsett 3",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Møbelsett 4",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Møbelsett 5",
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "Andre",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Skogens overlevelse",
+}   

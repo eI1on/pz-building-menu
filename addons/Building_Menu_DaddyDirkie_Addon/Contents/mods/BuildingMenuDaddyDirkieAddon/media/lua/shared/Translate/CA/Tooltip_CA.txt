@@ -1,0 +1,79 @@
+Tooltip_CA = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Prestatge secret d'entrada",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Porta d'entrada secreta",
+  
+  Tooltip_SecretEntranceShelf = "Un prestatge d'estil CONTENIDOR que s'integra perfectament. No es pot obrir, però funciona bé al costat de Secret Doors per a un passadís ocult.",
+  Tooltip_SecretEntranceDoor = "Una porta disfressada dissenyada per encaixar dins d'un marc de porta, revelant un passatge ocult quan s'obre. Ideal per a un accés segur i discret.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Mur de registre",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Marc de la porta de tronc",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Marc de la finestra de registre",
+  Tooltip_BuildingMenuObj_Twig_Window = "Finestra Rameta",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Pilar de troncs",
+  Tooltip_BuildingMenuObj_Log_Crate = "Caixa de troncs",
+
+  Tooltip_Log_Wall = "Una paret sòlida feta de troncs ben apilats.",
+  Tooltip_Log_Door_Frame = "Un marc robust fet de troncs per a les vostres portes.",
+  Tooltip_Log_Window_Frame = "Un marc de tronc durador per a finestres.",
+  Tooltip_Log_Pillar = "Un suport de tronc fort i vertical.",
+  Tooltip_Log_Crate = "Una caixa senzilla però robusta feta a partir de troncs.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Sostre de tronc inclinat 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Sostre de tronc inclinat 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Sostre de tronc inclinat 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Escales de troncs",
+  Tooltip_Forest_Furvival_Generic = "Essencial per a la supervivència en el desert.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Bloc de tallar",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Fantastic armari doble blanc",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Fantastic armari doble blanc amb vidre",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Calaixos de roure de luxe",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Armari de roure fantàstic",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Armari doble de fusta clara",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Armari doble de fusta clara amb vidre",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Fantasia calaixos foscos",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Fantastic armari fosc",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Barril Sobre Palet",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Caixes petites sobre palet",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Cistelles De Verdures Sobre Palet",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Bloc de cemento i tanca de filferro",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Cantonada de tanca i tanca de filferro",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Bloc de cemento i pal de tanca de filferro",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Tanca de blocs de cemento",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cantó de tanca de blocs de cemento",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Poste de tanca de blocs de cemento",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Tanca de blocs de formigó amb vinyes 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Tanca de blocs de formigó amb vinyes 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cantó de tanca de blocs de cemento amb vinyes",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Poste de tanca de blocs de cemento amb vinyes",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Tanca de taulons i taulons",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Cantó de tanca de taulons i taulons",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Pal de tanca de taulons i taulons",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Poste de tanca de fusta",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Tanca de fusta",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Racó de tanca de fusta",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Poste de tanca de fusta blanca",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Tanca de fusta blanca",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Cantó de tanca de fusta blanca",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Porta de tanca de fusta blanca",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Armari petit verd",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Palet amb Armariets Verds Petits",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Armari petit blanc",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Palet amb taquilles petites blanques",
+
+}

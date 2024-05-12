@@ -1,0 +1,11 @@
+Sandbox_ID = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "________________ Kategori Tertentu Daddy Dirkie _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Ini hanya pemisah garis, pengecekannya tidak ada pengaruhnya.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Aktifkan Kategori Pintu Masuk Rahasia",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Aktifkan untuk menambahkan pintu masuk rahasia. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Aktifkan Kategori Kelangsungan Hidup Hutan",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Memungkinkan untuk menambahkan struktur kelangsungan hidup hutan. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN!",
+
+}

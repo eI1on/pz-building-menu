@@ -1,0 +1,13 @@
+IGUI_JP = {
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "その他",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "秘密の入り口",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "家具セット 1",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "家具セット2",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "家具セット 3",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "家具セット 4",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "家具セット 5",
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "その他",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "森のサバイバル",
+}   

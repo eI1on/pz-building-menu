@@ -1,0 +1,79 @@
+Tooltip_ID = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Rak Pintu Masuk Rahasia",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Pintu Masuk Rahasia",
+  
+  Tooltip_SecretEntranceShelf = "Rak bergaya CONTAINER yang menyatu sempurna. Tidak dapat dibuka, tetapi berfungsi dengan baik bersama Pintu Rahasia untuk jalan tersembunyi.",
+  Tooltip_SecretEntranceDoor = "Pintu terselubung yang dirancang agar pas dengan RANGKA PINTU, memperlihatkan jalan tersembunyi saat dibuka. Ideal untuk akses yang aman dan rahasia.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Dinding Log",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Kusen Pintu Kayu",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Bingkai Jendela Log",
+  Tooltip_BuildingMenuObj_Twig_Window = "Jendela Ranting",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Pilar Log",
+  Tooltip_BuildingMenuObj_Log_Crate = "Peti Log",
+
+  Tooltip_Log_Wall = "Dinding kokoh yang terbuat dari kayu gelondongan yang ditumpuk rapat.",
+  Tooltip_Log_Door_Frame = "Rangka kokoh yang terbuat dari kayu gelondongan untuk pintu Anda.",
+  Tooltip_Log_Window_Frame = "Bingkai kayu yang tahan lama untuk jendela.",
+  Tooltip_Log_Pillar = "Dukungan log vertikal yang kuat.",
+  Tooltip_Log_Crate = "Peti sederhana namun kuat yang dibuat dari kayu gelondongan.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Atap Log Bernada 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Atap Kayu Bernada 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Atap Kayu Bernada 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Tangga Kayu",
+  Tooltip_Forest_Furvival_Generic = "Penting untuk kelangsungan hidup di alam liar.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Memotong blok",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Lemari Pakaian Ganda Putih Mewah",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Lemari Pakaian Ganda Putih Mewah dengan Kaca",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Laci Kayu Ek Mewah",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Lemari Pakaian Kayu Oak Mewah",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Lemari Pakaian Ganda Kayu Ringan",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Lemari Pakaian Double Kayu Ringan dengan Kaca",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Laci Gelap Mewah",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Lemari Pakaian Gelap yang Mewah",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Barel Di Palet",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Kotak Kecil Di Pallet",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Keranjang Sayuran Di Pallet",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock dan Pagar Kawat",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Cinderblock dan Pojok Pagar Kawat",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock dan Pos Pagar Kawat",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Pagar Cinderblock",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Pojok Pagar Cinderblock",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Pos Pagar Cinderblock",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Pagar Cinderblock dengan Tanaman Merambat 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Pagar Cinderblock dengan Tanaman Merambat 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Sudut Pagar Cinderblock dengan Tanaman Merambat",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Tiang Pagar Cinderblock dengan Tanaman Merambat",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Pagar Cinderblock dan Papan",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Sudut Pagar Cinderblock dan Papan",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Tiang Pagar Cinderblock dan Papan",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Tiang Pagar Kayu",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Pagar kayu",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Sudut Pagar Kayu",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Tiang Pagar Kayu Putih",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Pagar Kayu Putih",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Sudut Pagar Kayu Putih",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Gerbang Pagar Kayu Putih",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Loker Kecil Hijau",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Palet dengan Loker Kecil Hijau",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Loker Kecil Putih",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Palet dengan Loker Kecil Putih",
+
+}

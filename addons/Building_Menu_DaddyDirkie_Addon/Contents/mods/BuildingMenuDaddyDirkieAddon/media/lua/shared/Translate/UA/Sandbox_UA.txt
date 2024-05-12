@@ -1,0 +1,11 @@
+Sandbox_UA = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Спеціальні категорії Daddy Dirkie _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Увімкнути категорію таємних входів",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Увімкнути додавання секретних входів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Увімкнути категорію виживання в лісі",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Увімкнути додавання структур для виживання в лісі. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
+
+}

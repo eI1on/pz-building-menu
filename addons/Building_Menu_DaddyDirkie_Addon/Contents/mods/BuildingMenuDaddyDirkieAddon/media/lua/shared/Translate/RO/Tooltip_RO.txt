@@ -1,0 +1,79 @@
+Tooltip_RO = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Intrare Secretă - Raft",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Intrare Secretă - Ușa",
+  
+  Tooltip_SecretEntranceShelf = "Un raft în stil CONTAINER care se integrează perfect. Nu poate fi deschis, dar funcționează bine alături de Uși Secrete pentru un pasaj ascuns.",
+  Tooltip_SecretEntranceDoor = "O ușă deghizată concepută pentru a se potrivi într-un CADRE DE UȘĂ, dezvăluind un pasaj ascuns atunci când este deschisă. Ideal pentru acces sigur și discret.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Perete de Bușteni",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Ramă de Ușă de Bușteni",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Cadru de Fereastră de Bușteni",
+  Tooltip_BuildingMenuObj_Twig_Window = "Fereastra din Crengi",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Stâlp de Bușteni",
+  Tooltip_BuildingMenuObj_Log_Crate = "Ladă de Bușteni",
+
+  Tooltip_Log_Wall = "Un perete robust format din bușteni suprapuși.",
+  Tooltip_Log_Door_Frame = "Un cadru robust din bușteni pentru ușile tale.",
+  Tooltip_Log_Window_Frame = "Un cadru de lemn durabil pentru ferestre.",
+  Tooltip_Log_Pillar = "Un suport vertical puternic din bușteni.",
+  Tooltip_Log_Crate = "O ladă simplă, dar robustă, realizată din bușteni.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Acoperiș din Bușteni Înclinat 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Acoperiș din Bușteni Înclinat 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Acoperiș din Bușteni Înclinat 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Scări din Bușteni",
+  Tooltip_Forest_Furvival_Generic = "Esențial pentru supraviețuirea în sălbăticie.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Bloc de Tocat",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Dulap Dublu Alb Frumos",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Dulap Dublu Alb cu Sticlă",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Sertar Frumos din Stejar",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Dulap Frumos Stejar",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Dulap Dublu din Lemn Deschis la Culoare",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Dulap Dublu din Lemn Deschis la Culoare cu Sticlă",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Sertare Închise la Culoare",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Dulap Închise la Culoare",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Butoi pe Palet",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Cutii Mici Pe Palet",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Coșuri de Legume Pe Palet",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Gard din Sârmă si Bolțari",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Colț de Gard din Sârmă si Bolțari",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Stâlă pentru Gard din Sârmă si Bolțari",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Gard din Bolțari",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Colț de Gard din Bolțari",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Stâlp pentru Gard din Bolțari",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Gard din Bolțari cu Viță de Vie 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Gard din Bolțari cu Viță de Vie 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Colț de Gard din Bolțari cu Viță de Vie",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Stâlp de Gard din Bolțari cu Viță de Vie",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Gard din Bolțari și Scânduri",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Colț de Gard din Bolțari și Scânduri",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Stâlp de Gard din Bolțari și Scânduri",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Stâlp de Gard din lemn",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Gard de Lemn",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Colț de Gard din Lemn",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Stâlp de Gard din Lemn Alb",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Gard din Lemn Alb",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Colț de Gard din Lemn Alb",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Poarta de Gard din Lemn Alb",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Cutie Mică Verde",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Palet cu Cutii Verzi Mici",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Cutie Mică Alb",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Palet cu Cutii albe mici",
+
+}

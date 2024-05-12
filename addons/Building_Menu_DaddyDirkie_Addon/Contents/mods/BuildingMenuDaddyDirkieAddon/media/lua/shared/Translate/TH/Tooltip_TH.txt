@@ -1,0 +1,79 @@
+Tooltip_TH = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "ชั้นวางทางเข้าความลับ",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "ประตูทางเข้าแห่งความลับ",
+  
+  Tooltip_SecretEntranceShelf = "ชั้นวางสไตล์คอนเทนเนอร์ที่ผสมผสานอย่างลงตัว ไม่สามารถเปิดได้ แต่ใช้ได้ดีกับประตูลับสำหรับทางเดินที่ซ่อนอยู่",
+  Tooltip_SecretEntranceDoor = "ประตูปลอมตัวที่ออกแบบมาให้พอดีกับกรอบประตู ซึ่งเผยให้เห็นทางเดินที่ซ่อนอยู่เมื่อเปิดออก เหมาะสำหรับการเข้าถึงที่ปลอดภัยและรอบคอบ",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "ล็อกวอลล์",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "กรอบประตูไม้ซุง",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "กรอบหน้าต่างล็อก",
+  Tooltip_BuildingMenuObj_Twig_Window = "หน้าต่างกิ่ง",
+  Tooltip_BuildingMenuObj_Log_Pillar = "เสาไม้ซุง",
+  Tooltip_BuildingMenuObj_Log_Crate = "ลังไม้ซุง",
+
+  Tooltip_Log_Wall = "ผนังที่แข็งแรงทำจากท่อนไม้ที่ซ้อนกันอย่างแน่นหนา",
+  Tooltip_Log_Door_Frame = "โครงที่แข็งแรงทำจากท่อนไม้สำหรับประตูของคุณ",
+  Tooltip_Log_Window_Frame = "กรอบไม้ซุงที่ทนทานสำหรับหน้าต่าง",
+  Tooltip_Log_Pillar = "รองรับบันทึกแนวตั้งที่แข็งแกร่ง",
+  Tooltip_Log_Crate = "ลังที่เรียบง่ายแต่แข็งแกร่งซึ่งสร้างจากท่อนไม้",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "หลังคาไม้ซุงแหลม 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "หลังคาไม้ซุงแหลม 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "หลังคาไม้ซุงแหลม 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "บันไดไม้",
+  Tooltip_Forest_Furvival_Generic = "จำเป็นสำหรับการอยู่รอดในถิ่นทุรกันดาร",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "เขียง",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "ตู้เสื้อผ้าคู่สีขาวแฟนซี",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "ตู้เสื้อผ้าคู่สีขาวแฟนซีพร้อมกระจก",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "ลิ้นชักไม้โอ๊คแฟนซี",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "ตู้เสื้อผ้าไม้โอ๊คแฟนซี",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "ตู้เสื้อผ้าคู่ไม้สีอ่อน",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "ตู้เสื้อผ้าคู่ไม้สีอ่อนพร้อมกระจก",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "ลิ้นชักสีเข้มแฟนซี",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "ตู้เสื้อผ้าสีเข้มแฟนซี",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "บาร์เรลบนพาเลท",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "กล่องเล็ก ๆ บนพาเลท",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "กระเช้าผักบนพาเลท",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock และรั้วลวดหนาม",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "มุมรั้วลวดหนามและลวดหนาม",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock และเสารั้วลวดหนาม",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "รั้วซินเดอร์บล็อค",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "มุมรั้วบล็อกซินเดอร์บล็อค",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "โพสต์รั้ว Cinderblock",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "รั้ว Cinderblock พร้อมเถาวัลย์ 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "รั้ว Cinderblock พร้อมเถาวัลย์ 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "มุมรั้ว Cinderblock พร้อมเถาวัลย์",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "เสารั้ว Cinderblock พร้อมเถาวัลย์",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "รั้วบล็อกและไม้กระดาน",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "มุมรั้ว Cinderblock และ Planks",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "เสารั้ว Cinderblock และ Planks",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "เสารั้วไม้",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "รั้วไม้",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "มุมรั้วไม้",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "เสารั้วไม้สีขาว",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "รั้วไม้สีขาว",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "มุมรั้วไม้สีขาว",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "ประตูรั้วไม้สีขาว",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "ล็อกเกอร์เล็กสีเขียว",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "พาเลทพร้อมล็อคเกอร์เล็กสีเขียว",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "ล็อคเกอร์เล็กสีขาว",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "พาเลทพร้อมล็อคเกอร์เล็กสีขาว",
+
+}

@@ -1,0 +1,11 @@
+Sandbox_HU = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Dirkie papa speciális kategóriák _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Ez csak egy sorelválasztó, az ellenőrzésnek nincs hatása.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Titkos bejáratok kategória engedélyezése",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Titkos bejáratok hozzáadásának engedélyezése. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Erdő túlélési kategória engedélyezése",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Erdő túlélési struktúrák hozzáadásának engedélyezése. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ!",
+
+}

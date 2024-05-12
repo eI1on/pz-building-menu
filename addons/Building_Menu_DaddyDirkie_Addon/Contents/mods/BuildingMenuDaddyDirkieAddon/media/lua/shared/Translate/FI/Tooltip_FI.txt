@@ -1,0 +1,79 @@
+Tooltip_FI = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Salainen sisäänkäynnin hylly",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Salainen sisäänkäynti",
+  
+  Tooltip_SecretEntranceShelf = "CONTAINER-tyylinen hylly, joka sulautuu täydellisesti. Ei voida avata, mutta toimii hyvin yhdessä Secret Doorsin kanssa piilossa käytävässä.",
+  Tooltip_SecretEntranceDoor = "Naamioitu ovi, joka on suunniteltu sopimaan oven karmiin ja paljastaa piilotetun käytävän avattaessa. Ihanteellinen turvalliseen ja hienovaraiseen käyttöön.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Hirsi seinä",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Hirsi oven karmi",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Log-ikkunan kehys",
+  Tooltip_BuildingMenuObj_Twig_Window = "Twig-ikkuna",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Hirsipilari",
+  Tooltip_BuildingMenuObj_Log_Crate = "Hirsilaatikko",
+
+  Tooltip_Log_Wall = "Tukeva seinä tiukasti pinotuista hirsistä.",
+  Tooltip_Log_Door_Frame = "Kestävä hirsistä valmistettu karmi ovillesi.",
+  Tooltip_Log_Window_Frame = "Kestävä hirsikehys ikkunoihin.",
+  Tooltip_Log_Pillar = "Vahva pystysuora tukituki.",
+  Tooltip_Log_Crate = "Yksinkertainen mutta vankka hirsistä valmistettu laatikko.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Kalteva hirsikatto 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Kalteva hirsikatto 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Kalteva hirsikatto 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Hirsiportaat",
+  Tooltip_Forest_Furvival_Generic = "Välttämätön erämaassa selviytymiselle.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Leikkuulauta",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Hieno valkoinen kaksinkertainen vaatekaappi",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Hieno valkoinen kaksinkertainen vaatekaappi lasilla",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Tyylikkäät tammilaatikot",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Tyylikäs tammivaatekaappi",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Vaalea puinen kaksinkertainen vaatekaappi",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Vaalea puinen kaksinkertainen vaatekaappi lasilla",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Tyylikkäät tummat laatikot",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Tyylikäs tumma vaatekaappi",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Tynnyri lavalla",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Pienet laatikot lavalla",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Kasviskorit lavalla",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock ja Wire Fence",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Cinderblock ja Wire Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock ja Wire Fence Post",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Cinderblock-aita",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cinderblock Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Cinderblock Fence Post",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Cinderblock-aita, jossa on viiniköynnöksiä 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Cinderblock Fence with Vines 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock Fence Corner viiniköynnösten kanssa",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock Fence Pylväs viiniköynnösten kanssa",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cinderblock ja lankkuaita",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Cinderblock ja lankut Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Cinderblock ja Planks Fence Post",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Puinen aitatolppa",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Puinen aita",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Puinen aidan kulma",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Valkoinen puinen aitatolppa",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Valkoinen puinen aita",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Valkoinen puinen aitakulma",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Valkoinen puinen aitaportti",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Vihreä pieni kaappi",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Lava, jossa vihreät pienet kaapit",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Valkoinen pieni kaappi",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Lava, jossa valkoiset pienet kaapit",
+
+}

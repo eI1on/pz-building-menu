@@ -1,0 +1,11 @@
+Sandbox_PL = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Specjalne kategorie taty Dirkie _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "To tylko separator linii, sprawdzanie go nie przynosi żadnego efektu.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Włącz kategorię Tajne wejścia",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Włącz dodawanie tajnych wejść. <LINE><LINE> <RGB:1,0,0> WYJDŹ I WEJDŹ PONOWNIE ZAPISZ, ABY ZASTOSOWAĆ ZMIANY!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Włącz kategorię przetrwania w lesie",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Włącz dodawanie struktur przetrwania lasu. <LINE><LINE> <RGB:1,0,0> WYJDŹ I WEJDŹ PONOWNIE ZAPISZ, ABY ZASTOSOWAĆ ZMIANY!",
+
+}

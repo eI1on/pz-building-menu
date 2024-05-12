@@ -1,0 +1,79 @@
+Tooltip_PH = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Lihim na Entrance Shelf",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Lihim na Pintuan ng Pagpasok",
+  
+  Tooltip_SecretEntranceShelf = "ISANG CONTAINER-style na istante na perpektong pinagsama. Hindi mabuksan, ngunit mahusay na gumagana sa tabi ng Secret Doors para sa isang nakatagong daanan.",
+  Tooltip_SecretEntranceDoor = "Isang disguised na pinto na idinisenyo upang magkasya sa loob ng isang DOORFRAME, na nagpapakita ng isang nakatagong daanan kapag binuksan. Tamang-tama para sa ligtas at maingat na pag-access.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Log Wall",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Log Door Frame",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Log Window Frame",
+  Tooltip_BuildingMenuObj_Twig_Window = "Twig Window",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Log Pillar",
+  Tooltip_BuildingMenuObj_Log_Crate = "Log Crate",
+
+  Tooltip_Log_Wall = "Isang matibay na pader na gawa sa mahigpit na nakasalansan na mga troso.",
+  Tooltip_Log_Door_Frame = "Isang masungit na frame na gawa sa mga log para sa iyong mga pinto.",
+  Tooltip_Log_Window_Frame = "Isang matibay na log frame para sa mga bintana.",
+  Tooltip_Log_Pillar = "Isang malakas, vertical na suporta sa log.",
+  Tooltip_Log_Crate = "Isang simple ngunit matatag na crate na ginawa mula sa mga log.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Log Roof Pitched 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Log Roof Pitched 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Log Roof Pitched 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Log Stairs",
+  Tooltip_Forest_Furvival_Generic = "Mahalaga para sa kaligtasan ng ilang.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Chopping Block",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Magarbong White Double Wardrobe",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Magarbong White Double Wardrobe na may Salamin",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Magarbong Oak Drawers",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Magarbong Oak Wardrobe",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Light Wood Double Wardrobe",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Light Wood Double Wardrobe na may Salamin",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Magarbong Dark Drawers",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Magarbong Dark Wardrobe",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Barrel Sa Papag",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Mga Maliit na Kahon sa Papag",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Mga Basket ng Gulay sa Papag",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock at Wire Fence",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Cinderblock at Wire Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock at Wire Fence Post",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Bakod ng Cinderblock",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cinderblock Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Poste ng Bakod ng Cinderblock",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Cinderblock Fence na may Vines 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Cinderblock Fence na may Vines 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock Fence Corner na may Vines",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock Fence Post na may Vines",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cinderblock at Planks Fence",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Cinderblock at Planks Fence Corner",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Sinderblock at Planks Fence Post",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Poste ng Bakod na Kahoy",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Kahoy na bakod",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Wooden Fence Corner",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "White Wooden Fence Post",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Puting Kahoy na Bakod",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "White Wooden Fence Corner",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "White Wooden Fence Gate",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Berdeng Maliit na Locker",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Papag na may Maliliit na Locker na Berde",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Puting Maliit na Locker",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Papag na may Puting Maliit na Locker",
+
+}

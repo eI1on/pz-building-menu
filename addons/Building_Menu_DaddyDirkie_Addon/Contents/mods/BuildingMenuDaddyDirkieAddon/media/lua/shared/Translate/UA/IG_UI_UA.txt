@@ -1,0 +1,13 @@
+IGUI_UA = {
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "інші",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Таємні входи",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "Комплект меблів 1",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "Комплект меблів 2",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "Комплект меблів 3",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Комплект меблів 4",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Комплект меблів 5",
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "інші",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Виживання в лісі",
+}   

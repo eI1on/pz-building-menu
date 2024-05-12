@@ -1,0 +1,79 @@
+Tooltip_PL = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Sekretna półka wejściowa",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Tajne drzwi wejściowe",
+  
+  Tooltip_SecretEntranceShelf = "Półka w stylu CONTAINER, która idealnie się komponuje. Nie można otworzyć, ale dobrze współpracuje z Sekretnymi Drzwiami, tworząc ukryte przejście.",
+  Tooltip_SecretEntranceDoor = "Ukryte drzwi zaprojektowane tak, aby pasowały do ??FRAME, odsłaniając ukryte przejście po otwarciu. Idealny do bezpiecznego i dyskretnego dostępu.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Ściana z bali",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Rama drzwi z bali",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Rama okna dziennika",
+  Tooltip_BuildingMenuObj_Twig_Window = "Okno gałązki",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Filar dziennika",
+  Tooltip_BuildingMenuObj_Log_Crate = "Skrzynia z logami",
+
+  Tooltip_Log_Wall = "Solidna ściana z ciasno ułożonych bali.",
+  Tooltip_Log_Door_Frame = "Wytrzymała rama z bali do Twoich drzwi.",
+  Tooltip_Log_Window_Frame = "Trwała rama z bali do okien.",
+  Tooltip_Log_Pillar = "Mocny, pionowy wspornik kłody.",
+  Tooltip_Log_Crate = "Prosta, ale solidna skrzynia wykonana z bali.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Dach z bali skośny 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Dach z bali skośny 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Dach z bali skośny 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Schody z bali",
+  Tooltip_Forest_Furvival_Generic = "Niezbędne do przetrwania w dziczy.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Blok do rąbania",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Fantazyjna biała podwójna szafa",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Fantazyjna biała podwójna szafa ze szkłem",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Fantazyjne dębowe szuflady",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Fantazyjna dębowa szafa",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Podwójna szafa z jasnego drewna",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Podwójna szafa z jasnego drewna ze szkłem",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Fantazyjne ciemne szuflady",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Fantazyjna ciemna szafa",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Beczka Na Palecie",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Małe Pudełka Na Palecie",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Kosze Warzyw Na Palecie",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Płot żużlowy i drut",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Narożnik z pustaków żużlowych i ogrodzenia z drutu",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Słupek ogrodzeniowy z bloków żużlowych i drutu",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Ogrodzenie z bloków żużlowych",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Narożnik płotu z bloków żużlowych",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Słupek ogrodzeniowy z bloków żużlowych",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Płot z pustaków żużlowych z winoroślą 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Płot z pustaków żużlowych z pnączami 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Narożnik płotu z żużlu z winoroślą",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Słupek ogrodzeniowy z bloków żużlowych z winoroślą",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Ogrodzenie z bloków żużlowych i desek",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Narożnik z pustaków żużlowych i desek",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Słupek ogrodzeniowy z bloków żużlowych i desek",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Drewniany słupek ogrodzeniowy",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Drewniany płot",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Narożnik drewnianego płotu",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Biały drewniany słupek ogrodzeniowy",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Biały Drewniany Płot",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Narożnik białego drewnianego płotu",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Biała drewniana brama ogrodzeniowa",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Zielona mała szafka",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Paleta z Zielonymi Małymi szafkami",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Biała mała szafka",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Paleta z Białymi Małymi Szafkami",
+
+}

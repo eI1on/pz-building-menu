@@ -1,0 +1,79 @@
+Tooltip_PT = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Prateleira de entrada secreta",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Porta de entrada secreta",
+  
+  Tooltip_SecretEntranceShelf = "Uma prateleira estilo CONTAINER que combina perfeitamente. Não pode ser aberto, mas funciona bem junto com Portas Secretas para uma passagem escondida.",
+  Tooltip_SecretEntranceDoor = "Uma porta disfarçada projetada para caber dentro de uma PORTA, revelando uma passagem oculta quando aberta. Ideal para acesso seguro e discreto.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Parede de toras",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Moldura da porta de toras",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Moldura da janela de registro",
+  Tooltip_BuildingMenuObj_Twig_Window = "Janela de galho",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Pilar de registro",
+  Tooltip_BuildingMenuObj_Log_Crate = "Caixa de toras",
+
+  Tooltip_Log_Wall = "Uma parede robusta feita de toras bem empilhadas.",
+  Tooltip_Log_Door_Frame = "Uma moldura robusta feita de toras para suas portas.",
+  Tooltip_Log_Window_Frame = "Uma moldura de registro durável para janelas.",
+  Tooltip_Log_Pillar = "Um suporte de toras forte e vertical.",
+  Tooltip_Log_Crate = "Uma caixa simples, mas robusta, feita de toras.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Telhado de toras inclinado 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Telhado de toras inclinado 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Telhado de toras inclinado 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Escadas de toras",
+  Tooltip_Forest_Furvival_Generic = "Essencial para a sobrevivência na selva.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Bloco de corte",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Guarda-roupa duplo branco chique",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Guarda-roupa duplo branco chique com vidro",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Gavetas extravagantes de carvalho",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Guarda-roupa chique de carvalho",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Guarda-roupa duplo de madeira clara",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Armário duplo de madeira clara com vidro",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Gavetas escuras chiques",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Guarda-roupa escuro chique",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Barril em palete",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Pequenas caixas em paletes",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Cestas De Legumes Em Palete",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Bloco de concreto e cerca de arame",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Canto de blocos de concreto e cerca de arame",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Poste de bloco de concreto e cerca de arame",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Cerca de blocos de concreto",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Canto da cerca de blocos de concreto",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Poste de cerca de blocos de concreto",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Cerca de blocos de concreto com videiras 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Cerca de blocos de concreto com videiras 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cerca de bloco de concreto com videiras",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Poste de cerca de blocos de concreto com videiras",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cerca de blocos de concreto e pranchas",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Canto da cerca de blocos de concreto e tábuas",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Poste de cerca de blocos de concreto e pranchas",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Poste de cerca de madeira",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Cerca de madeira",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Canto de cerca de madeira",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Poste de cerca de madeira branca",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Cerca De Madeira Branca",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Canto de cerca de madeira branca",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Portão de cerca de madeira branca",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Armário pequeno verde",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Palete com Armários Pequenos Verdes",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Armário pequeno branco",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Palete com Armários Pequenos Brancos",
+
+}

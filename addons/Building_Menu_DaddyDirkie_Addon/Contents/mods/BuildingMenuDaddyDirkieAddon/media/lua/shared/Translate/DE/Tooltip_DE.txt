@@ -1,0 +1,79 @@
+Tooltip_DE = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Geheimes Eingangsregal",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Geheime Eingangstür",
+  
+  Tooltip_SecretEntranceShelf = "Ein Regal im CONTAINER-Stil, das sich perfekt einfügt. Kann nicht geöffnet werden, funktioniert aber gut zusammen mit Geheimtüren für einen versteckten Durchgang.",
+  Tooltip_SecretEntranceDoor = "Eine getarnte Tür, die so konzipiert ist, dass sie in einen TÜRRAHMEN passt und beim Öffnen einen verborgenen Durchgang freigibt. Ideal für sicheren und diskreten Zugang.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Blockwand",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Blocktürrahmen",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Protokollfensterrahmen",
+  Tooltip_BuildingMenuObj_Twig_Window = "Zweigfenster",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Blocksäule",
+  Tooltip_BuildingMenuObj_Log_Crate = "Holzkiste",
+
+  Tooltip_Log_Wall = "Eine stabile Mauer aus dicht gestapelten Baumstämmen.",
+  Tooltip_Log_Door_Frame = "Ein robuster Rahmen aus Baumstämmen für Ihre Türen.",
+  Tooltip_Log_Window_Frame = "Ein langlebiger Holzrahmen für Fenster.",
+  Tooltip_Log_Pillar = "Eine starke, vertikale Stammstütze.",
+  Tooltip_Log_Crate = "Eine einfache, aber robuste Kiste aus Baumstämmen.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Blockdach geneigt 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Blockdach geneigt 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Blockdach geneigt 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Blocktreppe",
+  Tooltip_Forest_Furvival_Generic = "Unverzichtbar für das Überleben in der Wildnis.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Schneidebrett",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Schicker weißer Doppel-Kleiderschrank",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Schicker weißer Doppel-Kleiderschrank mit Glas",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Ausgefallene Schubladen aus Eichenholz",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Ausgefallener Kleiderschrank aus Eichenholz",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Doppel-Kleiderschrank aus hellem Holz",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Doppel-Kleiderschrank aus hellem Holz mit Glas",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Ausgefallene dunkle Schubladen",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Ausgefallener dunkler Kleiderschrank",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Fass auf Palette",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Kleine Kisten auf Palette",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Gemüsekörbe auf Palette",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Betonblock und Drahtzaun",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Betonblock- und Drahtzaunecke",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Aschenblock- und Drahtzaunpfosten",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Betonzaun",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cinderblock-Zaunecke",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Cinderblock-Zaunpfosten",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Betonzaun mit Ranken 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Betonzaun mit Ranken 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock-Zaunecke mit Ranken",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock-Zaunpfosten mit Ranken",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Aschenblock- und Bretterzaun",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Zaunecke aus Betonblock und Planken",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Zaunpfosten aus Aschenblock und Planken",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Holzzaunpfosten",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Holzzaun",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Holzzaunecke",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Weißer Holzzaunpfosten",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Weißer Holzzaun",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Weiße Holzzaunecke",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Weißes Holzzauntor",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Grüner kleiner Spind",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Palette mit grünen kleinen Schließfächern",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Weißer kleiner Spind",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Palette mit weißen kleinen Schließfächern",
+
+}

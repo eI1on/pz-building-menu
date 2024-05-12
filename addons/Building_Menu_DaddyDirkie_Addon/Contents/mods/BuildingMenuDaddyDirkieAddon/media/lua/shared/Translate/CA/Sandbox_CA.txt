@@ -1,0 +1,11 @@
+Sandbox_CA = {
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkie Categories específiques _______________",
+    Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Això només és un separador de línies, comprovar que no té cap efecte.",
+
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Activa la categoria d'entrades secretes",
+    Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Activa per afegir entrades secretes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
+
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival = "Activa la categoria de supervivència forestal",
+    Sandbox_BuildingMenu_daddyDirkieForestSurvival_tooltip = "Habilita per afegir estructures de supervivència forestal. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
+
+}

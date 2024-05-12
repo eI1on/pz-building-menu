@@ -1,0 +1,79 @@
+Tooltip_NL = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Geheime toegangsplank",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Geheime toegangsdeur",
+  
+  Tooltip_SecretEntranceShelf = "Een plank in CONTAINER-stijl die er perfect bij past. Kan niet worden geopend, maar werkt goed naast geheime deuren voor een verborgen doorgang.",
+  Tooltip_SecretEntranceDoor = "Een verborgen deur die is ontworpen om in een DEURKOZEL te passen en bij het openen een verborgen doorgang onthult. Ideaal voor veilige en discrete toegang.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Logboekmuur",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Deurkozijn van hout",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Log raamkozijn",
+  Tooltip_BuildingMenuObj_Twig_Window = "Takje venster",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Log-pilaar",
+  Tooltip_BuildingMenuObj_Log_Crate = "Log krat",
+
+  Tooltip_Log_Wall = "Een stevige muur gemaakt van strak op elkaar gestapelde boomstammen.",
+  Tooltip_Log_Door_Frame = "Een robuust frame van boomstammen voor uw deuren.",
+  Tooltip_Log_Window_Frame = "Een duurzaam houten frame voor ramen.",
+  Tooltip_Log_Pillar = "Een sterke, verticale boomstamsteun.",
+  Tooltip_Log_Crate = "Een eenvoudige maar robuuste kist gemaakt van boomstammen.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Houten dak hellend 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Houten dak hellend 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Houten dak hellend 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Log trappen",
+  Tooltip_Forest_Furvival_Generic = "Essentieel voor het overleven in de wildernis.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Hakblok",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Fancy witte dubbele kledingkast",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Fancy witte dubbele kledingkast met glas",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Fancy eiken laden",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Fancy eiken kledingkast",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Lichthouten dubbele kledingkast",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Lichthouten dubbele kledingkast met glas",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Fancy donkere laden",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Fancy donkere kledingkast",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Vat op pallet",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Kleine dozen op pallet",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Groentemanden Op Pallet",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Sintelblok en draadomheining",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Sintelblok en draadomheiningshoek",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock en draadomheiningspaal",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Sintelblok hek",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cinderblock hek hoek",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Cinderblock hekpaal",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Sintelblokomheining met wijnstokken 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Sintelblokomheining met wijnranken 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock hekhoek met wijnstokken",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock hekpaal met wijnstokken",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cinderblock en planken hek",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Cinderblock en planken hekhoek",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Cinderblock en planken hekpaal",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Houten hekpaal",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Houten hek",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Houten hekhoek",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Witte houten hekpaal",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Witte Houten Hek",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Witte houten hekhoek",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Witte houten hekpoort",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Groene kleine kluis",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Pallet met groene kleine kluisjes",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Witte kleine kluis",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Pallet met witte kleine kluisjes",
+
+}

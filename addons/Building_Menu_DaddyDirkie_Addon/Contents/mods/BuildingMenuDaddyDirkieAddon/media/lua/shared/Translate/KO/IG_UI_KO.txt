@@ -1,0 +1,13 @@
+IGUI_KO = {
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "기타",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "비밀 입구",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "가구 세트 1",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "가구 세트 2",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "가구 세트 3",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "가구 세트 4",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "가구 세트 5",
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "기타",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "숲의 생존",
+}   

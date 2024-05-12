@@ -1,13 +1,13 @@
 IGUI_ES = {
 
     IGUI_BuildingMenuCat_DaddyDirkie_Others = "Otros",
-     IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Entradas secretas",
-     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "Juego de muebles 1",
-     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "Juego de muebles 2",
-     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "Juego de muebles 3",
-     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Juego de muebles 4",
-     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Juego de muebles 5",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Entradas secretas",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "Juego de muebles 1",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "Juego de muebles 2",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "Juego de muebles 3",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Juego de muebles 4",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Juego de muebles 5",
 
-     IGUI_BuildingMenuCat_DaddyDirkie_Others = "Otros",
-     IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Supervivencia en el bosque",
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "Otros",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Supervivencia en el bosque",
 }   

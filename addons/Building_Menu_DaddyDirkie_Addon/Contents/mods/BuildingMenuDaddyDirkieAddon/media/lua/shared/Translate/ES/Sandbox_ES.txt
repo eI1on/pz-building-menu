@@ -1,5 +1,4 @@
-Sandbox_EN = {
-
+Sandbox_ES = {
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkie Specific Categories _______________",
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
 

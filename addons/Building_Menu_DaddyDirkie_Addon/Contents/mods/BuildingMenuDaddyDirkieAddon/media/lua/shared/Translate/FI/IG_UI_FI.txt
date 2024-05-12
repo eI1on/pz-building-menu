@@ -1,0 +1,13 @@
+IGUI_FI = {
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "muut",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Salaiset sisäänkäynnit",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "Huonekalusarja 1",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_2 = "Huonekalusarja 2",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_3 = "Huonekalusarja 3",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Huonekalusarja 4",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Huonekalusarja 5",
+
+    IGUI_BuildingMenuCat_DaddyDirkie_Others = "muut",
+    IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Metsän selviytyminen",
+}   

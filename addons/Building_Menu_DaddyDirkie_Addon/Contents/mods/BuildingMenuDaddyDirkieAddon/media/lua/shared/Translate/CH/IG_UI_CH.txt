@@ -10,4 +10,4 @@ IGUI_CH = {
 
     IGUI_BuildingMenuCat_DaddyDirkie_Others = "其它",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "森林求生",
-}
+}   

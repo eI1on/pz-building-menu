@@ -1,0 +1,79 @@
+Tooltip_DA = {
+
+  Tooltip_BuildingMenuObj_SecretEntranceShelf = "Hemmelig indgangshylde",
+  Tooltip_BuildingMenuObj_SecretEntranceDoor = "Hemmelig indgangsdør",
+  
+  Tooltip_SecretEntranceShelf = "En hylde i CONTAINER-stil, der passer perfekt ind. Kan ikke åbnes, men fungerer godt sammen med Secret Doors for en skjult passage.",
+  Tooltip_SecretEntranceDoor = "En forklædt dør designet til at passe ind i en DØRRAMME, der afslører en skjult passage, når den åbnes. Ideel til sikker og diskret adgang.",
+
+  Tooltip_BuildingMenuObj_Log_Wall = "Logvæg",
+  Tooltip_BuildingMenuObj_Log_Door_Frame = "Log dørramme",
+  Tooltip_BuildingMenuObj_Log_Window_Frame = "Log vinduesramme",
+  Tooltip_BuildingMenuObj_Twig_Window = "Kvistvindue",
+  Tooltip_BuildingMenuObj_Log_Pillar = "Træsøjle",
+  Tooltip_BuildingMenuObj_Log_Crate = "Log kasse",
+
+  Tooltip_Log_Wall = "En robust væg lavet af tæt stablede træstammer.",
+  Tooltip_Log_Door_Frame = "En robust ramme lavet af bjælker til dine døre.",
+  Tooltip_Log_Window_Frame = "En holdbar bjælkeramme til vinduer.",
+  Tooltip_Log_Pillar = "En stærk, lodret træstøtte.",
+  Tooltip_Log_Crate = "En enkel, men robust kasse lavet af træstammer.",
+  
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_1 = "Træ taghældning 1",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_2 = "Træ taghældning 2",
+  Tooltip_BuildingMenuObj_Log_Roof_Pitched_3 = "Træ taghældning 3",
+
+  Tooltip_BuildingMenuObj_Log_Stairs = "Log Trapper",
+  Tooltip_Forest_Furvival_Generic = "Vigtigt for vildmarkens overlevelse.",
+
+  Tooltip_BuildingMenuObj_Chopping_Block = "Hakkeblok",
+
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe = "Fancy hvidt dobbelt garderobeskab",
+  Tooltip_BuildingMenuObj_Fancy_White_Double_Wardrobe_Glass = "Fancy hvidt dobbelt garderobeskab med glas",
+
+  Tooltip_BuildingMenuObj_Fancy_Oak_Drawers = "Fine egetræsskuffer",
+  Tooltip_BuildingMenuObj_Fancy_Oak_Wardrobe = "Fancy eget garderobeskab",
+
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe = "Lyst træ dobbelt garderobeskab",
+  Tooltip_BuildingMenuObj_Light_Wood_Double_Wardrobe_Glass = "Lyst træ dobbelt garderobeskab med glas",
+
+  Tooltip_BuildingMenuObj_Fancy_Dark_Drawers = "Fine mørke skuffer",
+  Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe = "Fin mørk garderobe",
+
+  Tooltip_BuildingMenuObj_Barrel_On_Pallet = "Tønde På Palle",
+  Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet = "Små kasser på palle",
+  Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet = "Grøntsagskurve På Palle",
+  
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence = "Cinderblock og trådhegn",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner = "Cinderblock og trådhegnshjørne",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post = "Cinderblock og trådhegnspæl",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence = "Cinderblock hegn",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner = "Cinderblock hegnshjørne",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post = "Cinderblock hegnspæl",
+
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1 = "Cinderblock hegn med vinstokke 1",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2 = "Cinderblock hegn med vinstokke 2",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner_with_Vines = "Cinderblock hegnshjørne med vinstokke",
+  Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines = "Cinderblock hegnspæl med vinstokke",
+
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence = "Cinderblock og plankehegn",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Corner = "Cinderblock og Planks Hegnshjørne",
+  Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post = "Cinderblock og Planks Hegnspæl",
+
+  Tooltip_BuildingMenuObj_Wooden_Fence_Post = "Hegnspæl i træ",
+  Tooltip_BuildingMenuObj_Wooden_Fence = "Træhegn",
+  Tooltip_BuildingMenuObj_Wooden_Fence_Corner = "Hjørne af træhegn",
+
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Post = "Hvid hegnspæl i træ",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence = "Hvidt træhegn",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Hvidt træhegnshjørne",
+  Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Hvid træhegnslåge",
+
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Grønt lille skab",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Palle med grønne små skabe",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Hvidt lille skab",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Palle med hvide små skabe",
+
+}

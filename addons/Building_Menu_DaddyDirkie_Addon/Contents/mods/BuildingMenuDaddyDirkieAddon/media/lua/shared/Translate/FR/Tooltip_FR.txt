@@ -70,4 +70,10 @@ Tooltip_FR = {
   Tooltip_BuildingMenuObj_White_Wooden_Fence_Corner = "Angle de clÃ´ture en bois blanc",
   Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate = "Portail de clÃ´ture en bois blanc",
 
+  Tooltip_BuildingMenuObj_Green_Small_Locker = "Petit casier vert",
+  Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker = "Palette avec petits casiers verts",
+
+  Tooltip_BuildingMenuObj_White_Small_Locker = "Petit casier blanc",
+  Tooltip_BuildingMenuObj_Pallet_White_Small_Locker = "Palette avec petits casiers blancs",
+
 }
