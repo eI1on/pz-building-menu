@@ -96,3 +96,4 @@ function ISWindowObj:new(sprite, northSprite, playerNum)
     o.maxTime = 150;
     return o;
 end
+
