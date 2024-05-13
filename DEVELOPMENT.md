@@ -320,7 +320,7 @@ thumpDmg | integer | 8 |  Specifies the amount of damage that zombies can inflic
 
 **containerType**:
 ```lua
-"displaycasebakery", "fridge", "shelves", "smallcrate", "smallbox", "garage_storage", "militarycrate", "filingcabinet", "bin", "locker", "metal_shelves", "militarylocker", "officedrawers", "sidetable", "wardrobe", "counter", "desk", "crate", "logs", "postbox"
+"displaycasebakery", "displaycase", "fridge", "shelves", "smallcrate", "smallbox", "garage_storage", "militarycrate", "filingcabinet", "bin", "locker", "metal_shelves", "militarylocker", "officedrawers", "sidetable", "wardrobe", "counter", "desk", "crate", "logs", "postbox"
 ```   
 
 <br>

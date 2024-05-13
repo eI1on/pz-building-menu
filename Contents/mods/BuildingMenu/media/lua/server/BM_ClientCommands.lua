@@ -112,16 +112,25 @@ BM_Commands.object.removeDetailing = function(player, args)
 end
 
 BM_Commands.OnClientCommand = function(module, command, player, args)
-	if BM_Commands[module] and BM_Commands[module][command] then
-		local argStr = ''
-		for k, v in pairs(args) do
-			argStr = argStr .. ' ' .. k .. '=' .. tostring(v)
-		end
-		noise(' received ' .. module .. ' ' .. command .. ' ' .. tostring(player) .. argStr)
-		BM_Commands[module][command](player, args)
-	end
+    if BM_Commands[module] and BM_Commands[module][command] then
+        local argStr = '';
+        for k, v in pairs(args or {}) do
+            argStr = argStr .. ' ' .. k .. '=' .. tostring(v)
+        end
+        local playerStr = player and tostring(player) or "nil";
+        module = module or "nil";
+        command = command or "nil";
+
+        BM_Utils.debugPrint("[Building Menu DEBUG] ",' received command: ' .. module .. ' ' .. command .. ' ' .. playerStr .. argStr)
+
+        local success, errorMessage = pcall(BM_Commands[module][command], player, args);
+        if not success then
+            noise("Error executing command: " .. errorMessage);
+        end
+    end
 end
 Events.OnClientCommand.Add(BM_Commands.OnClientCommand)
+
 
 
 --- FIX FOR 

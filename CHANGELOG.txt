@@ -1,3 +1,18 @@
+ MAY 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Hesco Barriers will no longer use the sacks all together, only the soil in them and to use tarps instead of sheets
+[*] Fixed some debug prints
+[/list]
+Oujinjins Tiles addon:
+[list]
+[*] Release
+[/list]
+[/list]
+
 11 MAY 24
 2e03868
 

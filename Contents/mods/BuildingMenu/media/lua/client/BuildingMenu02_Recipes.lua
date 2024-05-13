@@ -3865,23 +3865,53 @@ local function initBuildingMenuRecipes()
 
     BuildingMenu.HescoBarrierRecipe = {
         neededTools = {
-            "Hammer",
-            "Shovel"
+            "Shovel",
+            "Hammer"
         },
         neededMaterials = {
             {
-                Material = "Base.Sheet",
-                Amount = 4
-            },
-            {
-                Material = "Base.Dirtbag",
+                Material = "Base.Tarp",
                 Amount = 2
-            }
+            },
         },
         useConsumable = {
             {
+                Consumable = "Base.Dirtbag",
+                Amount = 8
+            },
+            {
                 Consumable = "Base.Wire",
                 Amount = 10
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+
+    BuildingMenu.DoubleHescoBarrierRecipe = {
+        neededTools = {
+            "Shovel",
+            "Hammer"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Tarp",
+                Amount = 4
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Dirtbag",
+                Amount = 16
+            },
+            {
+                Consumable = "Base.Wire",
+                Amount = 20
             }
         },
         skills = {
@@ -4515,7 +4545,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SheetMetal",
-                Amount = sheetMetalCountForContainers
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 1.5)
             },
             {
                 Material = "Base.SmallSheetMetal",
