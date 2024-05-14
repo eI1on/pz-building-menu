@@ -1,0 +1,6 @@
+ContextMenu_EN = {
+
+  ContextMenu_Open_Container = "Open Container",
+  ContextMenu_Close_Container = "Close Container",
+  
+}

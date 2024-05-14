@@ -9,7 +9,6 @@ function ISBMLightSource:create(x, y, z, north, sprite)
     self.javaObject:addLightSourceFromSprite();
     self.javaObject:setPower(2);
     self.javaObject:update();
-    print("getPower() ", self.javaObject:getPower())
 
     local offsetX = 0;
     local offsetY = 0;

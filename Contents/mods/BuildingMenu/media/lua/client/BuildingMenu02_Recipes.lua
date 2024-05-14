@@ -398,6 +398,58 @@ local function initBuildingMenuRecipes()
     })
 
 
+    BuildingMenu.PinkBigBrickWallRecipe = {
+        neededTools = {
+            "Hammer",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
+                    "Material")
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PinkBigBrickWallRecipe, {
+        { type = "Base.PaintPink", amount = 1 },
+    })
+
+    BuildingMenu.PinkSmallBrickWallRecipe = {
+        neededTools = {
+            "Hammer",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = smallWallWoodCount
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount,
+                    "Material")
+            },
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PinkSmallBrickWallRecipe, {
+        { type = "Base.PaintPink", amount = 1 },
+    })
+
     BuildingMenu.OldBigBrickWallRecipe = {
         neededTools = {
             "Hammer",
@@ -6245,7 +6297,48 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.RippedSheets",
-                Amount = 10
+                Amount = 15
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 2)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 3,
+                Xp = BuildingMenu.round(3 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.MetalBarChairRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+            "Saw",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.MetalBar",
+                Amount = metalBarsCount
+            },
+            {
+                Material = "Base.RippedSheets",
+                Amount = 15
             },
             {
                 Material = "Base.Screws",

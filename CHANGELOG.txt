@@ -1,13 +1,18 @@
- MAY 24
+14 MAY 24
 
 Changelog:
 [list]
 Main mod:
 [list]
 [*] Hesco Barriers will no longer use the sacks all together, only the soil in them and to use tarps instead of sheets
+[*] Added Mass-Genfac warehouse wall brick variant
 [*] Fixed some debug prints
 [/list]
 Oujinjins Tiles addon:
+[list]
+[*] Release
+[/list]
+Throttlekitty's Tiles addon:
 [list]
 [*] Release
 [/list]
