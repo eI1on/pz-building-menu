@@ -8,6 +8,14 @@ option BuildingMenu.DaddyDirkieCategoryDivider
     translation = BuildingMenu_DaddyDirkieCategoryDivider,
 }
 
+option BuildingMenu.daddyDirkieFurniture
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_daddyDirkieFurniture,
+}
+
 option BuildingMenu.daddyDirkieSecretEntrances
 {
     type = boolean,

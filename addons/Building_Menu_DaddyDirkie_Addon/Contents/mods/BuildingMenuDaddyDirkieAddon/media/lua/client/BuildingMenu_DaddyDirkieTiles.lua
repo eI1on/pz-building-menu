@@ -2928,7 +2928,7 @@ local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.lowAndRailingFencesSubCategory then
         addLowAndRailingFencesToMenu()
     end
-    if SandboxVars.BuildingMenu.dressersAndWardrobesSubCategory then
+    if SandboxVars.BuildingMenu.daddyDirkieFurniture then
         addDaddyDirkieBedroomFurnitureToMenu()
     end
     if SandboxVars.BuildingMenu.kitchenCountersSubCategory then
