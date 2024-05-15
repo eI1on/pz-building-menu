@@ -201,7 +201,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "industry_tk_01_3", northSprite = "industry_tk_01_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_Slope_Wall_1",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteSmallWoodWallRecipe,
@@ -215,7 +215,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_0", northSprite = "walls_exterior_roofs_tk_01_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_Slope_Wall_2",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
@@ -229,7 +229,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_1", northSprite = "walls_exterior_roofs_tk_01_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_Slope_Wall_3",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
@@ -243,7 +243,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_2", northSprite = "walls_exterior_roofs_tk_01_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_Slope_Wall_4",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteSmallWoodWallRecipe,
@@ -257,7 +257,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_8", northSprite = "walls_exterior_roofs_tk_01_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_Slope_Wall_5",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
@@ -271,7 +271,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_9", northSprite = "walls_exterior_roofs_tk_01_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_Slope_Wall_6",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
@@ -285,7 +285,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_10", northSprite = "walls_exterior_roofs_tk_01_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_End_Small",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteSmallWoodWallRecipe,
@@ -299,7 +299,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_15", northSprite = "walls_exterior_roofs_tk_01_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_End_Medium",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
@@ -313,7 +313,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_14", northSprite = "walls_exterior_roofs_tk_01_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Industrial_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_White_Industrial_Roof_End_Big",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenWhiteBigWoodWallRecipe,
@@ -401,7 +401,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "industry_tk_01_7", northSprite = "industry_tk_01_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_Slope_Wall_1",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueSmallWoodWallRecipe,
@@ -415,7 +415,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_24", northSprite = "walls_exterior_roofs_tk_01_37" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_Slope_Wall_2",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigWoodWallRecipe,
@@ -429,7 +429,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_25", northSprite = "walls_exterior_roofs_tk_01_36" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_Slope_Wall_3",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigWoodWallRecipe,
@@ -443,7 +443,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_26", northSprite = "walls_exterior_roofs_tk_01_35" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_Slope_Wall_4",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueSmallWoodWallRecipe,
@@ -457,7 +457,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_32", northSprite = "walls_exterior_roofs_tk_01_29" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_Slope_Wall_5",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigWoodWallRecipe,
@@ -471,7 +471,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_33", northSprite = "walls_exterior_roofs_tk_01_28" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_Slope_Wall_6",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigWoodWallRecipe,
@@ -485,7 +485,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_34", northSprite = "walls_exterior_roofs_tk_01_27" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_End_Small",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueSmallWoodWallRecipe,
@@ -499,7 +499,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_39", northSprite = "walls_exterior_roofs_tk_01_31" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_End_Medium",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigWoodWallRecipe,
@@ -513,7 +513,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_01_38", northSprite = "walls_exterior_roofs_tk_01_30" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Industrial_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_End_Big",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigWoodWallRecipe,
@@ -601,7 +601,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "industry_tk_01_27", northSprite = "industry_tk_01_27" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_Slope_Wall_1",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallWoodWallRecipe,
@@ -615,7 +615,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_0", northSprite = "walls_exterior_roofs_tk_02_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_Slope_Wall_2",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -629,7 +629,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_1", northSprite = "walls_exterior_roofs_tk_02_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_Slope_Wall_3",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -643,7 +643,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_2", northSprite = "walls_exterior_roofs_tk_02_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_Slope_Wall_4",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallWoodWallRecipe,
@@ -657,7 +657,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_8", northSprite = "walls_exterior_roofs_tk_02_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_Slope_Wall_5",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -671,7 +671,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_9", northSprite = "walls_exterior_roofs_tk_02_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_Slope_Wall_6",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -685,7 +685,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_10", northSprite = "walls_exterior_roofs_tk_02_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_End_Small",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallWoodWallRecipe,
@@ -699,7 +699,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_15", northSprite = "walls_exterior_roofs_tk_02_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_End_Medium",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -713,7 +713,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_14", northSprite = "walls_exterior_roofs_tk_02_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_End_Big",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -801,7 +801,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "industry_tk_01_31", northSprite = "industry_tk_01_31" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_Slope_Wall_1",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallWoodWallRecipe,
@@ -815,7 +815,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_24", northSprite = "walls_exterior_roofs_tk_02_37" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_Slope_Wall_2",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -829,7 +829,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_25", northSprite = "walls_exterior_roofs_tk_02_36" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_Slope_Wall_3",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -843,7 +843,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_26", northSprite = "walls_exterior_roofs_tk_02_35" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_Slope_Wall_4",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallWoodWallRecipe,
@@ -857,7 +857,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_32", northSprite = "walls_exterior_roofs_tk_02_29" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_Slope_Wall_5",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -871,7 +871,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_33", northSprite = "walls_exterior_roofs_tk_02_28" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_Slope_Wall_6",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -885,7 +885,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_34", northSprite = "walls_exterior_roofs_tk_02_27" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_End_Small",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallWoodWallRecipe,
@@ -899,7 +899,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_39", northSprite = "walls_exterior_roofs_tk_02_31" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_End_Medium",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,
@@ -913,7 +913,7 @@ local function addIndustrialWallsToMenu()
                     { sprite = "walls_exterior_roofs_tk_02_38", northSprite = "walls_exterior_roofs_tk_02_30" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Green_Industrial_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Roof_End_Big",
                     "Tooltip_Old_Wood_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenBigWoodWallRecipe,

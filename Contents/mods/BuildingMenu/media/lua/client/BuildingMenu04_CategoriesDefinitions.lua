@@ -172,7 +172,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_wooden_01_31", northSprite = "walls_exterior_wooden_01_31" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_Slope_Wall_1",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.SmallWoodWallRecipe,
@@ -186,7 +186,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_24", northSprite = "walls_exterior_roofs_06_37" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_Slope_Wall_2",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -200,7 +200,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_25", northSprite = "walls_exterior_roofs_06_36" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_Slope_Wall_3",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -214,7 +214,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_26", northSprite = "walls_exterior_roofs_06_35" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_Slope_Wall_4",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.SmallWoodWallRecipe,
@@ -228,7 +228,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_32", northSprite = "walls_exterior_roofs_06_29" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_Slope_Wall_5",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -242,7 +242,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_33", northSprite = "walls_exterior_roofs_06_28" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_Slope_Wall_6",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -256,7 +256,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_34", northSprite = "walls_exterior_roofs_06_27" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_End_Small",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.SmallWoodWallRecipe,
@@ -270,7 +270,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_39", northSprite = "walls_exterior_roofs_06_31" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_End_Medium",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -284,7 +284,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_06_38", northSprite = "walls_exterior_roofs_06_30" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_End_Big",
             "Tooltip_Old_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -379,7 +379,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_wooden_01_27", northSprite = "walls_exterior_wooden_01_27" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_1",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -393,7 +393,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_24", northSprite = "walls_exterior_roofs_02_37" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_2",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -407,7 +407,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_25", northSprite = "walls_exterior_roofs_02_36" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_3",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -421,7 +421,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_26", northSprite = "walls_exterior_roofs_02_35" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_4",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -435,7 +435,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_32", northSprite = "walls_exterior_roofs_02_29" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_5",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -449,7 +449,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_33", northSprite = "walls_exterior_roofs_02_28" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_6",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -463,7 +463,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_34", northSprite = "walls_exterior_roofs_02_27" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_End_Small",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -477,7 +477,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_39", northSprite = "walls_exterior_roofs_02_31" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_End_Medium",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -491,7 +491,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_02_38", northSprite = "walls_exterior_roofs_02_30" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Wooden_Panel_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_End_Big",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -586,7 +586,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_wooden_02_3", northSprite = "walls_exterior_wooden_02_3" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_Slope_Wall_1",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -600,7 +600,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_104", northSprite = "walls_exterior_roofs_09_117" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_Slope_Wall_2",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -614,7 +614,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_105", northSprite = "walls_exterior_roofs_09_116" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_Slope_Wall_3",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -628,7 +628,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_106", northSprite = "walls_exterior_roofs_09_115" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_Slope_Wall_4",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -642,7 +642,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_112", northSprite = "walls_exterior_roofs_09_109" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_Slope_Wall_5",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -656,7 +656,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_113", northSprite = "walls_exterior_roofs_09_108" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_Slope_Wall_6",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -670,7 +670,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_114", northSprite = "walls_exterior_roofs_09_107" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_End_Small",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -684,7 +684,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_119", northSprite = "walls_exterior_roofs_09_111" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_End_Medium",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -698,7 +698,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_roofs_09_118", northSprite = "walls_exterior_roofs_09_110" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Panel_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_White_Panel_Roof_End_Big",
             "Tooltip_White_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -793,7 +793,7 @@ local function addWoodWallsToMenu()
             { sprite = "walls_exterior_wooden_01_3", northSprite = "walls_exterior_wooden_01_3" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_Slope_Wall_1",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -807,7 +807,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_24", northSprite = "location_barn_01_37" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_Slope_Wall_2",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -821,7 +821,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_25", northSprite = "location_barn_01_36" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_Slope_Wall_3",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -835,7 +835,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_26", northSprite = "location_barn_01_35" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_Slope_Wall_4",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -849,7 +849,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_32", northSprite = "location_barn_01_29" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_Slope_Wall_5",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -863,7 +863,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_33", northSprite = "location_barn_01_28" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_Slope_Wall_6",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -877,7 +877,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_34", northSprite = "location_barn_01_27" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_End_Small",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -891,7 +891,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_39", northSprite = "location_barn_01_31" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_End_Medium",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -905,7 +905,7 @@ local function addWoodWallsToMenu()
             { sprite = "location_barn_01_38", northSprite = "location_barn_01_30" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_End_Big",
             "Tooltip_Red_Barn_Wood_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -1002,7 +1002,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_Slope_Wall_1",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallWoodWallRecipe,
@@ -1019,7 +1019,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_Slope_Wall_2",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -1036,7 +1036,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_Slope_Wall_3",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -1053,7 +1053,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_Slope_Wall_4",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallWoodWallRecipe,
@@ -1070,7 +1070,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_Slope_Wall_5",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -1087,7 +1087,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_Slope_Wall_6",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -1104,7 +1104,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_End_Small",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallWoodWallRecipe,
@@ -1121,7 +1121,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_End_Medium",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -1138,7 +1138,7 @@ local function addWoodWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Panel_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Brown_Panel_Roof_End_Big",
             "Tooltip_Brown_Panel_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -1335,7 +1335,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_house_02_23", northSprite = "walls_exterior_house_02_23" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_Slope_Wall_1",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -1349,7 +1349,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_0", northSprite = "walls_exterior_roofs_05_13" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_Slope_Wall_2",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -1363,7 +1363,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_1", northSprite = "walls_exterior_roofs_05_12" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_Slope_Wall_3",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -1377,7 +1377,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_2", northSprite = "walls_exterior_roofs_05_11" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_Slope_Wall_4",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -1391,7 +1391,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_8", northSprite = "walls_exterior_roofs_05_5" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_Slope_Wall_5",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -1405,7 +1405,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_9", northSprite = "walls_exterior_roofs_05_4" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_Slope_Wall_6",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -1419,7 +1419,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_10", northSprite = "walls_exterior_roofs_05_3" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_End_Small",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -1433,7 +1433,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_15", northSprite = "walls_exterior_roofs_05_7" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_End_Medium",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -1447,7 +1447,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_14", northSprite = "walls_exterior_roofs_05_6" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Blue_Clapboard_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_End_Big",
             "Tooltip_Blue_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -1540,7 +1540,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_house_02_35", northSprite = "walls_exterior_house_02_35" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_Slope_Wall_1",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanSmallWoodWallRecipe,
@@ -1554,7 +1554,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_24", northSprite = "walls_exterior_roofs_05_37" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_Slope_Wall_2",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanBigWoodWallRecipe,
@@ -1568,7 +1568,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_25", northSprite = "walls_exterior_roofs_05_36" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_Slope_Wall_3",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanBigWoodWallRecipe,
@@ -1582,7 +1582,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_26", northSprite = "walls_exterior_roofs_05_35" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_Slope_Wall_4",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanSmallWoodWallRecipe,
@@ -1596,7 +1596,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_32", northSprite = "walls_exterior_roofs_05_29" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_Slope_Wall_5",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanBigWoodWallRecipe,
@@ -1610,7 +1610,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_33", northSprite = "walls_exterior_roofs_05_28" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_Slope_Wall_6",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanBigWoodWallRecipe,
@@ -1624,7 +1624,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_34", northSprite = "walls_exterior_roofs_05_27" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_End_Small",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanSmallWoodWallRecipe,
@@ -1638,7 +1638,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_39", northSprite = "walls_exterior_roofs_05_31" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_End_Medium",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanBigWoodWallRecipe,
@@ -1652,7 +1652,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_05_38", northSprite = "walls_exterior_roofs_05_30" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Tan_Clapboard_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_End_Big",
             "Tooltip_Tan_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TanBigWoodWallRecipe,
@@ -1987,7 +1987,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_house_01_35", northSprite = "walls_exterior_house_01_35" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_Slope_Wall_1",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -2001,7 +2001,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_24", northSprite = "walls_exterior_roofs_03_37" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_Slope_Wall_2",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -2015,7 +2015,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_25", northSprite = "walls_exterior_roofs_03_36" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_Slope_Wall_3",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -2029,7 +2029,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_26", northSprite = "walls_exterior_roofs_03_35" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_Slope_Wall_4",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -2043,7 +2043,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_32", northSprite = "walls_exterior_roofs_03_29" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_Slope_Wall_5",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -2057,7 +2057,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_33", northSprite = "walls_exterior_roofs_03_28" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_Slope_Wall_6",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -2071,7 +2071,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_34", northSprite = "walls_exterior_roofs_03_27" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_End_Small",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallWoodWallRecipe,
@@ -2085,7 +2085,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_39", northSprite = "walls_exterior_roofs_03_31" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_End_Medium",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -2099,7 +2099,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_38", northSprite = "walls_exterior_roofs_03_30" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_White_Clapboard_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_White_Clapboard_Roof_End_Big",
             "Tooltip_White_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigWoodWallRecipe,
@@ -2192,7 +2192,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_house_01_51", northSprite = "walls_exterior_house_01_51" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_Slope_Wall_1",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallWoodWallRecipe,
@@ -2206,7 +2206,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_0", northSprite = "walls_exterior_roofs_03_13" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_Slope_Wall_2",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -2220,7 +2220,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_1", northSprite = "walls_exterior_roofs_03_12" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_Slope_Wall_3",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -2234,7 +2234,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_2", northSprite = "walls_exterior_roofs_03_11" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_Slope_Wall_4",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallWoodWallRecipe,
@@ -2248,7 +2248,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_8", northSprite = "walls_exterior_roofs_03_5" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_Slope_Wall_5",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -2262,7 +2262,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_9", northSprite = "walls_exterior_roofs_03_4" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_Slope_Wall_6",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -2276,7 +2276,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_10", northSprite = "walls_exterior_roofs_03_3" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_End_Small",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallWoodWallRecipe,
@@ -2290,7 +2290,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_15", northSprite = "walls_exterior_roofs_03_7" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_End_Medium",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -2304,7 +2304,7 @@ local function addClapboardWallsToMenu()
             { sprite = "walls_exterior_roofs_03_14", northSprite = "walls_exterior_roofs_03_6" }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Brown_Clapboard_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_End_Big",
             "Tooltip_Brown_Clapboard_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigWoodWallRecipe,
@@ -2403,7 +2403,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_house_02_3", northSprite = "walls_exterior_house_02_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_Slope_Wall_1",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreySmallStoneWallRecipe,
@@ -2417,7 +2417,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_0", northSprite = "walls_exterior_roofs_09_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_Slope_Wall_2",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -2431,7 +2431,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_1", northSprite = "walls_exterior_roofs_09_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_Slope_Wall_3",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -2445,7 +2445,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_2", northSprite = "walls_exterior_roofs_09_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_Slope_Wall_4",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreySmallStoneWallRecipe,
@@ -2459,7 +2459,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_8", northSprite = "walls_exterior_roofs_09_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_Slope_Wall_5",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -2473,7 +2473,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_9", northSprite = "walls_exterior_roofs_09_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_Slope_Wall_6",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -2487,7 +2487,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_10", northSprite = "walls_exterior_roofs_09_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_End_Small",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreySmallStoneWallRecipe,
@@ -2501,7 +2501,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_15", northSprite = "walls_exterior_roofs_09_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_End_Medium",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -2515,7 +2515,7 @@ local function addStoneWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_14", northSprite = "walls_exterior_roofs_09_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Stone_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Grey_Stone_Roof_End_Big",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -2692,7 +2692,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_01_7", northSprite = "walls_exterior_house_01_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_Slope_Wall_1",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkSmallBrickWallRecipe,
@@ -2706,7 +2706,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_0", northSprite = "walls_exterior_roofs_02_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_Slope_Wall_2",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkBigBrickWallRecipe,
@@ -2720,7 +2720,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_1", northSprite = "walls_exterior_roofs_02_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_Slope_Wall_3",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkBigBrickWallRecipe,
@@ -2734,7 +2734,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_2", northSprite = "walls_exterior_roofs_02_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_Slope_Wall_4",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkSmallBrickWallRecipe,
@@ -2748,7 +2748,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_8", northSprite = "walls_exterior_roofs_02_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_Slope_Wall_5",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkBigBrickWallRecipe,
@@ -2762,7 +2762,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_9", northSprite = "walls_exterior_roofs_02_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_Slope_Wall_6",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkBigBrickWallRecipe,
@@ -2776,7 +2776,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_10", northSprite = "walls_exterior_roofs_02_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_End_Small",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkSmallBrickWallRecipe,
@@ -2790,7 +2790,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_15", northSprite = "walls_exterior_roofs_02_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_End_Medium",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkBigBrickWallRecipe,
@@ -2804,7 +2804,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_02_14", northSprite = "walls_exterior_roofs_02_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Pink_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Roof_End_Big",
                     "Tooltip_Pink_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.PinkBigBrickWallRecipe,
@@ -2892,7 +2892,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_02_67", northSprite = "walls_exterior_house_02_67" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_Slope_Wall_1",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedSmallBrickWallRecipe,
@@ -2906,7 +2906,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_80", northSprite = "walls_exterior_roofs_09_93" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_Slope_Wall_2",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedBigBrickWallRecipe,
@@ -2920,7 +2920,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_81", northSprite = "walls_exterior_roofs_09_92" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_Slope_Wall_3",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedBigBrickWallRecipe,
@@ -2934,7 +2934,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_82", northSprite = "walls_exterior_roofs_09_91" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_Slope_Wall_4",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedSmallBrickWallRecipe,
@@ -2948,7 +2948,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_88", northSprite = "walls_exterior_roofs_09_85" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_Slope_Wall_5",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedBigBrickWallRecipe,
@@ -2962,7 +2962,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_89", northSprite = "walls_exterior_roofs_09_84" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_Slope_Wall_6",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedBigBrickWallRecipe,
@@ -2976,7 +2976,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_90", northSprite = "walls_exterior_roofs_09_83" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_End_Small",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedSmallBrickWallRecipe,
@@ -2990,7 +2990,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_95", northSprite = "walls_exterior_roofs_09_87" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_End_Medium",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedBigBrickWallRecipe,
@@ -3004,7 +3004,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_94", northSprite = "walls_exterior_roofs_09_86" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Red_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Red_Brick_Roof_End_Big",
                     "Tooltip_Red_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.RedBigBrickWallRecipe,
@@ -3092,7 +3092,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_01_55", northSprite = "walls_exterior_house_01_55" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_Slope_Wall_1",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldSmallBrickWallRecipe,
@@ -3106,7 +3106,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_24", northSprite = "walls_exterior_roofs_04_37" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_Slope_Wall_2",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldBigBrickWallRecipe,
@@ -3120,7 +3120,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_25", northSprite = "walls_exterior_roofs_04_36" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_Slope_Wall_3",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldBigBrickWallRecipe,
@@ -3134,7 +3134,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_26", northSprite = "walls_exterior_roofs_04_35" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_Slope_Wall_4",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldSmallBrickWallRecipe,
@@ -3148,7 +3148,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_32", northSprite = "walls_exterior_roofs_04_29" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_Slope_Wall_5",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldBigBrickWallRecipe,
@@ -3162,7 +3162,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_33", northSprite = "walls_exterior_roofs_04_28" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_Slope_Wall_6",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldBigBrickWallRecipe,
@@ -3176,7 +3176,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_34", northSprite = "walls_exterior_roofs_04_27" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_End_Small",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldSmallBrickWallRecipe,
@@ -3190,7 +3190,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_39", northSprite = "walls_exterior_roofs_04_31" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_End_Medium",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldBigBrickWallRecipe,
@@ -3204,7 +3204,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_38", northSprite = "walls_exterior_roofs_04_30" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Old_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Old_Brick_Roof_End_Big",
                     "Tooltip_Old_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.OldBigBrickWallRecipe,
@@ -3366,7 +3366,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_01_19", northSprite = "walls_exterior_house_01_19" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_1",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownSmallBrickWallRecipe,
@@ -3380,7 +3380,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_0", northSprite = "walls_exterior_roofs_04_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_2",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownBigBrickWallRecipe,
@@ -3394,7 +3394,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_1", northSprite = "walls_exterior_roofs_04_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_3",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownBigBrickWallRecipe,
@@ -3408,7 +3408,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_2", northSprite = "walls_exterior_roofs_04_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_4",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownSmallBrickWallRecipe,
@@ -3422,7 +3422,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_8", northSprite = "walls_exterior_roofs_04_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_5",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownBigBrickWallRecipe,
@@ -3436,7 +3436,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_9", northSprite = "walls_exterior_roofs_04_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_6",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownBigBrickWallRecipe,
@@ -3450,7 +3450,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_10", northSprite = "walls_exterior_roofs_04_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_End_Small",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownSmallBrickWallRecipe,
@@ -3464,7 +3464,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_15", northSprite = "walls_exterior_roofs_04_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_End_Medium",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownBigBrickWallRecipe,
@@ -3478,7 +3478,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_04_14", northSprite = "walls_exterior_roofs_04_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Classic_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Roof_End_Big",
                     "Tooltip_Classic_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BrownBigBrickWallRecipe,
@@ -3566,7 +3566,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_01_3", northSprite = "walls_exterior_house_01_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_Slope_Wall_1",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueSmallBrickWallRecipe,
@@ -3580,7 +3580,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_0", northSprite = "walls_exterior_roofs_01_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_Slope_Wall_2",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigBrickWallRecipe,
@@ -3594,7 +3594,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_1", northSprite = "walls_exterior_roofs_01_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_Slope_Wall_3",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigBrickWallRecipe,
@@ -3608,7 +3608,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_2", northSprite = "walls_exterior_roofs_01_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_Slope_Wall_4",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueSmallBrickWallRecipe,
@@ -3622,7 +3622,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_8", northSprite = "walls_exterior_roofs_01_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_Slope_Wall_5",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigBrickWallRecipe,
@@ -3636,7 +3636,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_9", northSprite = "walls_exterior_roofs_01_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_Slope_Wall_6",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigBrickWallRecipe,
@@ -3650,7 +3650,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_10", northSprite = "walls_exterior_roofs_01_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_End_Small",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueSmallBrickWallRecipe,
@@ -3664,7 +3664,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_15", northSprite = "walls_exterior_roofs_01_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_End_Medium",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigBrickWallRecipe,
@@ -3678,7 +3678,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_01_14", northSprite = "walls_exterior_roofs_01_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Blue_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Blue_Brick_Roof_End_Big",
                     "Tooltip_Blue_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BlueBigBrickWallRecipe,
@@ -3766,7 +3766,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_02_19", northSprite = "walls_exterior_house_02_19" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_Slope_Wall_1",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreySmallStoneWallRecipe,
@@ -3780,7 +3780,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_0", northSprite = "walls_exterior_roofs_06_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_Slope_Wall_2",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -3794,7 +3794,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_1", northSprite = "walls_exterior_roofs_06_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_Slope_Wall_3",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -3808,7 +3808,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_2", northSprite = "walls_exterior_roofs_06_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_Slope_Wall_4",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreySmallStoneWallRecipe,
@@ -3822,7 +3822,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_8", northSprite = "walls_exterior_roofs_06_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_Slope_Wall_5",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -3836,7 +3836,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_9", northSprite = "walls_exterior_roofs_06_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_Slope_Wall_6",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -3850,7 +3850,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_10", northSprite = "walls_exterior_roofs_06_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_End_Small",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreySmallStoneWallRecipe,
@@ -3864,7 +3864,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_15", northSprite = "walls_exterior_roofs_06_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_End_Medium",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -3878,7 +3878,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_06_14", northSprite = "walls_exterior_roofs_06_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Grey_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Grey_Brick_Roof_End_Big",
                     "Tooltip_Grey_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreyBigStoneWallRecipe,
@@ -3966,7 +3966,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_02_39", northSprite = "walls_exterior_house_02_39" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_Slope_Wall_1",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeSmallBrickWallRecipe,
@@ -3980,7 +3980,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_24", northSprite = "walls_exterior_roofs_07_37" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_Slope_Wall_2",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeBigBrickWallRecipe,
@@ -3994,7 +3994,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_25", northSprite = "walls_exterior_roofs_07_36" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_Slope_Wall_3",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeBigBrickWallRecipe,
@@ -4008,7 +4008,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_26", northSprite = "walls_exterior_roofs_07_35" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_Slope_Wall_4",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeSmallBrickWallRecipe,
@@ -4022,7 +4022,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_32", northSprite = "walls_exterior_roofs_07_29" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_Slope_Wall_5",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeBigBrickWallRecipe,
@@ -4036,7 +4036,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_33", northSprite = "walls_exterior_roofs_07_28" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_Slope_Wall_6",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeBigBrickWallRecipe,
@@ -4050,7 +4050,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_34", northSprite = "walls_exterior_roofs_07_27" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_End_Small",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeSmallBrickWallRecipe,
@@ -4064,7 +4064,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_39", northSprite = "walls_exterior_roofs_07_31" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_End_Medium",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeBigBrickWallRecipe,
@@ -4078,7 +4078,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_07_38", northSprite = "walls_exterior_roofs_07_30" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Beige_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Beige_Brick_Roof_End_Big",
                     "Tooltip_Beige_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.BeigeBigBrickWallRecipe,
@@ -4166,7 +4166,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_house_02_51", northSprite = "walls_exterior_house_02_51" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_Slope_Wall_1",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -4180,7 +4180,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_0", northSprite = "walls_exterior_roofs_08_13" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_Slope_Wall_2",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteBigBrickWallRecipe,
@@ -4194,7 +4194,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_1", northSprite = "walls_exterior_roofs_08_12" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_Slope_Wall_3",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteBigBrickWallRecipe,
@@ -4208,7 +4208,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_2", northSprite = "walls_exterior_roofs_08_11" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_Slope_Wall_4",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -4222,7 +4222,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_8", northSprite = "walls_exterior_roofs_08_5" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_Slope_Wall_5",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteBigBrickWallRecipe,
@@ -4236,7 +4236,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_9", northSprite = "walls_exterior_roofs_08_4" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_Slope_Wall_6",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteBigBrickWallRecipe,
@@ -4250,7 +4250,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_10", northSprite = "walls_exterior_roofs_08_3" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_End_Small",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -4264,7 +4264,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_15", northSprite = "walls_exterior_roofs_08_7" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_End_Medium",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteBigBrickWallRecipe,
@@ -4278,7 +4278,7 @@ local function addBrickWallsToMenu()
                     { sprite = "walls_exterior_roofs_08_14", northSprite = "walls_exterior_roofs_08_6" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_White_Brick_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_White_Brick_Roof_End_Big",
                     "Tooltip_White_Brick_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.WhiteBigBrickWallRecipe,
@@ -4682,7 +4682,7 @@ local function addCinderblocWallsToMenu()
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Tan_Cinderblock_FencePost", "Tooltip_Tan_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_23", northSprite = "walls_commercial_03_23"}),
 
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_Slope_Wall_1",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanSmallStoneWallRecipe,
@@ -4696,7 +4696,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_56", northSprite = "walls_exterior_roofs_09_69" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_Slope_Wall_2",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanBigStoneWallRecipe,
@@ -4710,7 +4710,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_57", northSprite = "walls_exterior_roofs_09_68" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_Slope_Wall_3",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanBigStoneWallRecipe,
@@ -4724,7 +4724,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_58", northSprite = "walls_exterior_roofs_09_67" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_Slope_Wall_4",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanSmallStoneWallRecipe,
@@ -4738,7 +4738,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_64", northSprite = "walls_exterior_roofs_09_61" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_Slope_Wall_5",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanBigStoneWallRecipe,
@@ -4752,7 +4752,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_65", northSprite = "walls_exterior_roofs_09_60" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_Slope_Wall_6",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanBigStoneWallRecipe,
@@ -4766,7 +4766,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_66", northSprite = "walls_exterior_roofs_09_59" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Sloped_Small_Wall",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_End_Small",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanSmallStoneWallRecipe,
@@ -4780,7 +4780,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_71", northSprite = "walls_exterior_roofs_09_63" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Sloped_Medium_Wall",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_End_Medium",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanBigStoneWallRecipe,
@@ -4794,7 +4794,7 @@ local function addCinderblocWallsToMenu()
                     { sprite = "walls_exterior_roofs_09_70", northSprite = "walls_exterior_roofs_09_62" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Exterior_Sloped_Big_Wall",
+                    "Tooltip_BuildingMenuObj_Tan_Cinderblock_Roof_End_Big",
                     "Tooltip_Tan_Cinderblock_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.TanBigStoneWallRecipe,
@@ -13561,7 +13561,7 @@ local function addRoofingToMenu()
                     }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_1",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallFabricWallRecipe,
@@ -13575,7 +13575,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_40", northSprite = "location_military_tent_01_53" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_2",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallFabricWallRecipe,
@@ -13589,7 +13589,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_41", northSprite = "location_military_tent_01_52" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_3",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallFabricWallRecipe,
@@ -13603,7 +13603,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_42", northSprite = "location_military_tent_01_51" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_4",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallFabricWallRecipe,
@@ -13617,7 +13617,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_43", northSprite = "location_military_tent_01_50" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_5",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallFabricWallRecipe,
@@ -13631,7 +13631,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_44", northSprite = "location_military_tent_01_49" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_6",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.GreenSmallFabricWallRecipe,
@@ -13734,7 +13734,7 @@ local function addRoofingToMenu()
                     }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_1",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_1",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.YellowSmallFabricWallRecipe,
@@ -13748,7 +13748,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_104", northSprite = "location_military_tent_01_117" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_2",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_2",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.YellowSmallFabricWallRecipe,
@@ -13762,7 +13762,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_105", northSprite = "location_military_tent_01_116" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_3",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_3",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.YellowSmallFabricWallRecipe,
@@ -13776,7 +13776,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_106", northSprite = "location_military_tent_01_115" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_4",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_4",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.YellowSmallFabricWallRecipe,
@@ -13790,7 +13790,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_107", northSprite = "location_military_tent_01_114" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_5",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_5",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.YellowSmallFabricWallRecipe,
@@ -13804,7 +13804,7 @@ local function addRoofingToMenu()
                     { sprite = "location_military_tent_01_108", northSprite = "location_military_tent_01_113" }
                 ),
                 BuildingMenu.createObject(
-                    "Tooltip_BuildingMenuObj_Tent_Exterior_Wall_6",
+                    "Tooltip_BuildingMenuObj_Tent_Roof_Slope_Wall_6",
                     "Tooltip_Grey_Stone_Wall",
                     BuildingMenu.onBuildWall,
                     BuildingMenu.YellowSmallFabricWallRecipe,

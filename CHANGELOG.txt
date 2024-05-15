@@ -4,9 +4,13 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] Hesco Barriers will no longer use the sacks all together, only the soil in them and to use tarps instead of sheets
+[*] Hesco Barriers will no longer use the sacks all together, only the soil in them and you will use tarps to build them instead of sheets
 [*] Added Mass-Genfac warehouse wall brick variant
-[*] Fixed some debug prints
+[*] Fixed some debug prints on server
+[/list]
+Greenhouse Tiles addon:
+[list]
+[*] Fixed some stuff from the main Greenhouse mod
 [/list]
 Oujinjins Tiles addon:
 [list]

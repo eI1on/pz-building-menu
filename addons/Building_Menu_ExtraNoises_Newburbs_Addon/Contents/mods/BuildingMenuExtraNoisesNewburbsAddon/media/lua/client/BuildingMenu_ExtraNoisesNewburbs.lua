@@ -644,19 +644,38 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = (obj.wallType and string.lower(obj.wallType)) or "wall" }
-            }
-
+            };
+    
             if obj.wallType == "doorframe" then
             elseif obj.wallType == "windowsframe" then
-                options.isThumpable = obj.isThumpable ~= false
-                options.canBarricade = obj.canBarricade == true
-                options.hoppable = obj.hoppable == true
+                options.isThumpable = obj.isThumpable ~= false;
+                options.canBarricade = obj.canBarricade == true;
+                options.hoppable = obj.hoppable == true;
             elseif obj.wallType == "pillar" then
-                options.isCorner = obj.isCorner == true
-                options.canPassThrough = obj.canPassThrough == true
+                options.isCorner = obj.isCorner == true;
+                options.canPassThrough = obj.canPassThrough == true;
             else
-                options.isThumpable = obj.isThumpable ~= false
-                options.canBarricade = obj.canBarricade ~= false
+                options.isThumpable = obj.isThumpable ~= false;
+                options.canBarricade = obj.canBarricade ~= false;
+            end
+
+            local corner = nil;
+            if obj.wallType ~= "pillar" then
+                corner = texturePrefix .. "_" .. (obj.corner or "3");
+            end
+
+            local spriteDetails = {
+                sprite = texturePrefix .. "_" .. obj.sprite,
+                northSprite = texturePrefix .. "_" .. obj.northSprite,
+                corner = corner
+            };
+
+            if obj.eastSprite then
+                spriteDetails.eastSprite = texturePrefix .. "_" .. obj.eastSprite;
+            end
+
+            if obj.southSprite then
+                spriteDetails.southSprite = texturePrefix .. "_" .. obj.southSprite;
             end
 
             table.insert(walls, BuildingMenu.createObject(
@@ -666,15 +685,12 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
                 obj.recipe,
                 true,
                 options,
-                {
-                    sprite = texturePrefix .. "_" .. obj.sprite,
-                    northSprite = texturePrefix .. "_" .. obj.northSprite,
-                    corner = texturePrefix .. "_" .. (obj.corner or "3")
-                }
-            ))
+                spriteDetails
+            ));
         end
-        return walls
+        return walls;
     end
+
 
     local whiteWalls = createClapboardWallObjects("White_Clapboard", "en_newburbs_walls_01_white", {
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Wall", wallType = "wall", sprite = "0", northSprite = "1", corner = "3", isThumpable = true, canBarricade = false },
@@ -683,7 +699,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.WhiteSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -698,16 +715,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -728,7 +765,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -743,16 +781,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -772,7 +830,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.CreamSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -787,16 +846,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -817,7 +896,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -832,16 +912,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.GreyBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -863,7 +963,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.RedSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -878,16 +979,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -908,7 +1029,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.OrangeSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -923,16 +1045,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -953,7 +1095,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -968,16 +1111,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -998,7 +1161,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.BrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -1013,16 +1177,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -1043,7 +1227,8 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
         {recipe = BuildingMenu.TanSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
-        
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
+
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "56", northSprite = "61", corner = "3", isThumpable = true },
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildSpecialObject, sprite = "57", northSprite = "60", corner = "3", isThumpable = true },
@@ -1058,16 +1243,36 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "17", northSprite = "20", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Window_Frame", wallType = "windowsframe", sprite = "18", northSprite = "19", corner = "3", isThumpable = true, canBarricade = true, hoppable = true},
 
-        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Exterior_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Exterior_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Exterior_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Exterior_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Exterior_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Exterior_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Slope_Wall_1", wallType = "wall", sprite = "88", northSprite = "99", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Slope_Wall_2", wallType = "wall", sprite = "89", northSprite = "100", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Slope_Wall_3", wallType = "wall", sprite = "90", northSprite = "101", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Slope_Wall_4", wallType = "wall", sprite = "98", northSprite = "93", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Slope_Wall_5", wallType = "wall", sprite = "97", northSprite = "92", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Slope_Wall_6", wallType = "wall", sprite = "96", northSprite = "91", corner = "3", isThumpable = true, canBarricade = false },
 
-        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Exterior_Sloped_Small_Wall", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Exterior_Sloped_Medium_Wall", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
-        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Exterior_Sloped_Big_Wall", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_End_Small", wallType = "wall", sprite = "104", northSprite = "109", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_End_Medium", wallType = "wall", sprite = "105", northSprite = "108", corner = "3", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_End_Big", wallType = "wall", sprite = "106", northSprite = "107", corner = "3", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_1", wallType = "wall", sprite = "24", northSprite = "40", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_2", wallType = "wall", sprite = "25", northSprite = "41", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_3", wallType = "wall", sprite = "26", northSprite = "42", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_4", wallType = "wall", sprite = "27", northSprite = "43", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_5", wallType = "wall", sprite = "28", northSprite = "44", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_6", wallType = "wall", sprite = "29", northSprite = "45", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_7", wallType = "wall", sprite = "32", northSprite = "48", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_8", wallType = "wall", sprite = "33", northSprite = "49", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_9", wallType = "wall", sprite = "34", northSprite = "50", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_Slope_Wall_10", wallType = "wall", sprite = "35", northSprite = "51", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_11", wallType = "wall", sprite = "36", northSprite = "52", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Steep_Slope_Wall_12", wallType = "wall", sprite = "37", northSprite = "53", isThumpable = true, canBarricade = false },
+
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_End_Small", wallType = "wall", sprite = "23", northSprite = "63", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Small", wallType = "wall", sprite = "22", northSprite = "62", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_End_Medium", wallType = "wall", sprite = "31", northSprite = "55", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe, type = "Roof_Steep_End_Medium_Large", wallType = "wall", sprite = "30", northSprite = "54", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Steep_End_Large", wallType = "wall", sprite = "39", northSprite = "47", isThumpable = true, canBarricade = false },
+        {recipe = BuildingMenu.TanBigWoodWallRecipe, type = "Roof_Steep_End_Extra_Large", wallType = "wall", sprite = "38", northSprite = "46", isThumpable = true, canBarricade = false },
 
     });
 
@@ -1220,12 +1425,186 @@ local function addWindowsPlusToMenu()
     end
 end
 
+local function addRoofingToMenu()
+    local function createClapboardWallObjects(color, texturePrefix, wallObjects)
+        local roofs = {}
+        for _, obj in ipairs(wallObjects) do
+            local spriteDetails = {
+                sprite = texturePrefix .. "_" .. obj.sprite,
+                northSprite = texturePrefix .. "_" .. obj.northSprite,
+            }
+
+            if obj.eastSprite then
+                spriteDetails.eastSprite = texturePrefix .. "_" .. obj.eastSprite
+            end
+
+            if obj.southSprite then
+                spriteDetails.southSprite = texturePrefix .. "_" .. obj.southSprite
+            end
+
+            table.insert(roofs, BuildingMenu.createObject(
+                "Tooltip_BuildingMenuObj_" .. color .. "_" .. obj.name,
+                "Tooltip_Roof_Generic",
+                BuildingMenu.onBuildSimpleFurniture,
+                obj.recipe or BuildingMenu.RoofTileRecipe,
+                true,
+                {
+                    completionSound = "BuildWoodenStructureLarge",
+                    needToBeAgainstWall = false,
+                    blockAllTheSquare = false,
+                    renderFloorHelper = true,
+                    canPassThrough = true,
+                    canBarricade = false,
+                    dismantable = true,
+                    isCorner = true
+                },
+                spriteDetails
+            ))
+        end
+        return roofs
+    end
+
+    local roofSubcategories = {
+        {
+            color = "Light_Gray",
+            texturePrefix = {"en_newburbs_roofs_01a_lightgray", "en_newburbs_roofs_01b_lightgray"},
+            subCategory = "Roofing_Light_Gray_Roofs"
+        },
+        {
+            color = "Warm_Gray",
+            texturePrefix = {"en_newburbs_roofs_02a_warmgray", "en_newburbs_roofs_02b_warmgray"},
+            subCategory = "Roofing_Warm_Gray_Roofs"
+        },
+        {
+            color = "Red_Brown",
+            texturePrefix = {"en_newburbs_roofs_03a_redbrown", "en_newburbs_roofs_03b_redbrown"},
+            subCategory = "Roofing_Red_Brown_Roofs"
+        },
+        {
+            color = "Light_Brown",
+            texturePrefix = {"en_newburbs_roofs_04a_lightbrown", "en_newburbs_roofs_04b_lightbrown"},
+            subCategory = "Roofing_Light_Brown_Roofs"
+        },
+        {
+            color = "Slate_Green",
+            texturePrefix = {"en_newburbs_roofs_05a_slategreen", "en_newburbs_roofs_05b_slategreen"},
+            subCategory = "Roofing_Slate_Green_Roofs"
+        },
+        {
+            color = "Slate_Blue",
+            texturePrefix = {"en_newburbs_roofs_06a_slateblue", "en_newburbs_roofs_06b_slateblue"},
+            subCategory = "Roofing_Slate_Blue_Roofs"
+        },
+        {
+            color = "Black",
+            texturePrefix = {"en_newburbs_roofs_07a_black", "en_newburbs_roofs_07b_black"},
+            subCategory = "Roofing_Black_Roofs"
+        },
+    }
+
+    local roofObjectsConfigs = {
+        {name = "Roof_Pitched_1", sprite = "5", northSprite = "16", eastSprite = "8", southSprite = "29"},
+        {name = "Roof_Pitched_2", sprite = "4", northSprite = "17", eastSprite = "9", southSprite = "28"},
+        {name = "Roof_Pitched_3", sprite = "3", northSprite = "18", eastSprite = "10", southSprite = "27"},
+        {name = "Roof_Pitched_4", sprite = "2", northSprite = "19", eastSprite = "11", southSprite = "26"},
+        {name = "Roof_Pitched_5", sprite = "1", northSprite = "20", eastSprite = "12", southSprite = "25"},
+        {name = "Roof_Pitched_6", sprite = "0", northSprite = "21", eastSprite = "13", southSprite = "24"},
+
+        {name = "Roof_Pitched_2_wGlass", sprite = "7", northSprite = "14", recipe = BuildingMenu.GlassRoofTileRecipe},
+        {name = "Roof_Pitched_3_wGlass", sprite = "6", northSprite = "15", recipe = BuildingMenu.GlassRoofTileRecipe},
+
+        {name = "Roof_Valley_1", sprite = "32", northSprite = "48", eastSprite = "61", southSprite = "45"},
+        {name = "Roof_Valley_2", sprite = "33", northSprite = "49", eastSprite = "60", southSprite = "44"},
+        {name = "Roof_Valley_3", sprite = "34", northSprite = "50", eastSprite = "59", southSprite = "43"},
+        {name = "Roof_Valley_4", sprite = "35", northSprite = "51", eastSprite = "58", southSprite = "42"},
+        {name = "Roof_Valley_5", sprite = "36", northSprite = "52", eastSprite = "57", southSprite = "41"},
+        {name = "Roof_Valley_6", sprite = "37", northSprite = "53", eastSprite = "56", southSprite = "40"},
+
+        {name = "Roof_Inner_1", sprite = "69", northSprite = "72", eastSprite = "80", southSprite = "93"},
+        {name = "Roof_Inner_2", sprite = "68", northSprite = "73", eastSprite = "81", southSprite = "92"},
+        {name = "Roof_Inner_3", sprite = "67", northSprite = "74", eastSprite = "82", southSprite = "91"},
+        {name = "Roof_Inner_4", sprite = "66", northSprite = "75", eastSprite = "83", southSprite = "90"},
+        {name = "Roof_Inner_5", sprite = "65", northSprite = "76", eastSprite = "84", southSprite = "89"},
+        {name = "Roof_Inner_6", sprite = "64", northSprite = "77", eastSprite = "85", southSprite = "88"},
+
+        {name = "Roof_Ridge_Cap_1", sprite = "101", northSprite = "104"},
+        {name = "Roof_Ridge_Cap_2", sprite = "100", northSprite = "105"},
+        {name = "Roof_Ridge_Cap_3", sprite = "99", northSprite = "106"},
+        {name = "Roof_Ridge_Cap_4", sprite = "98", northSprite = "107"},
+        {name = "Roof_Ridge_Cap_5", sprite = "97", northSprite = "108"},
+        {name = "Roof_Ridge_Cap_6", sprite = "96", northSprite = "109"},
+    }
+
+    local fasciaRoofObjects = {
+        {name = "Roof_Fascia_1", sprite = "0", northSprite = "45", eastSprite = "29", southSprite = "48"},
+        {name = "Roof_Fascia_2", sprite = "1", northSprite = "44", eastSprite = "28", southSprite = "49"},
+        {name = "Roof_Fascia_3", sprite = "2", northSprite = "43", eastSprite = "27", southSprite = "50"},
+        {name = "Roof_Fascia_4", sprite = "3", northSprite = "42", eastSprite = "26", southSprite = "51"},
+        {name = "Roof_Fascia_5", sprite = "4", northSprite = "41", eastSprite = "25", southSprite = "52"},
+        {name = "Roof_Fascia_6", sprite = "5", northSprite = "40", eastSprite = "24", southSprite = "53"},
+
+        {name = "Roof_Fascia_Extension_Top_1", sprite = "6", northSprite = "46", eastSprite = "30", southSprite = "54"},
+        {name = "Roof_Fascia_Extension_Top_2", sprite = "14", northSprite = "38", eastSprite = "22", southSprite = "62"},
+
+        {name = "Roof_Fascia_Extension_Middle_1", sprite = "7", northSprite = "47", eastSprite = "31", southSprite = "55"},
+        {name = "Roof_Fascia_Extension_Middle_2", sprite = "15", northSprite = "39", eastSprite = "23", southSprite = "63"},
+
+        {name = "Roof_Gutter_Top", sprite = "78", northSprite = "94", eastSprite = "70", southSprite = "86"},
+        {name = "Roof_Gutter_Top_Inner_Corner", sprite = "96", northSprite = "98", eastSprite = "104", southSprite = "106"},
+        {name = "Roof_Gutter_Top_Outer_Corner", sprite = "102", northSprite = "110", eastSprite = "118", southSprite = "126"},
+
+        {name = "Roof_Gutter_Middle", sprite = "79", northSprite = "95", eastSprite = "71", southSprite = "87"},
+        {name = "Roof_Gutter_Middle_Outer_Corner", sprite = "103", northSprite = "111", eastSprite = "119", southSprite = "127"},
+
+        {name = "Roof_Apex_Fascia_Back_1", sprite = "69", northSprite = "80"},
+        {name = "Roof_Apex_Fascia_Back_2", sprite = "68", northSprite = "81"},
+        {name = "Roof_Apex_Fascia_Back_3", sprite = "67", northSprite = "82"},
+        {name = "Roof_Apex_Fascia_Back_4", sprite = "66", northSprite = "83"},
+        {name = "Roof_Apex_Fascia_Back_5", sprite = "65", northSprite = "84"},
+        {name = "Roof_Apex_Fascia_Back_6", sprite = "64", northSprite = "85"},
+
+        {name = "Roof_Apex_Fascia_Front_1", sprite = "77", northSprite = "88"},
+        {name = "Roof_Apex_Fascia_Front_2", sprite = "76", northSprite = "89"},
+        {name = "Roof_Apex_Fascia_Front_3", sprite = "75", northSprite = "90"},
+        {name = "Roof_Apex_Fascia_Front_4", sprite = "74", northSprite = "91"},
+        {name = "Roof_Apex_Fascia_Front_5", sprite = "73", northSprite = "92"},
+        {name = "Roof_Apex_Fascia_Front_6", sprite = "72", northSprite = "93"},
+    }
+
+    for _, colorConfig in ipairs(roofSubcategories) do
+        local roofsObjects = createClapboardWallObjects(colorConfig.color, colorConfig.texturePrefix[1], roofObjectsConfigs)
+        local fasciaObjects = createClapboardWallObjects(colorConfig.color, colorConfig.texturePrefix[2], fasciaRoofObjects)
+
+
+        BuildingMenu.addObjectsToCategories(
+            "ExtraNoise's Newburbs",
+            getText("IGUI_BuildingMenuCat_Roofing"),
+            colorConfig.texturePrefix[1] .. "_16",
+            getText("IGUI_BuildingMenuSubCat_" .. colorConfig.subCategory),
+            colorConfig.texturePrefix[1] .. "_16",
+            roofsObjects
+        )
+        BuildingMenu.addObjectsToCategories(
+            "ExtraNoise's Newburbs",
+            getText("IGUI_BuildingMenuCat_Roofing"),
+            colorConfig.texturePrefix[2] .. "_16",
+            getText("IGUI_BuildingMenuSubCat_" .. colorConfig.subCategory),
+            colorConfig.texturePrefix[2] .. "_16",
+            fasciaObjects
+        )
+    end
+end
+
+
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.paintedWallsSubCategory then
         addExtraNoisesNewburbsColouredWallsToMenu()
     end
     if SandboxVars.BuildingMenu.clapboardWallsSubCategory then
         addExtraNoisesNewburbsClapboardWallsToMenu()
+    end
+    if SandboxVars.BuildingMenu.roofsCategory then
+        addRoofingToMenu()
     end
     if SandboxVars.BuildingMenu.doorsSubCategory then
         addDoorsToMenu()

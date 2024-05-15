@@ -1,7 +1,7 @@
 version=1
-id=
+id=3246568083
 title=Building Menu - Throttlekitty's Tiles Addon
-description=[img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/building_menu_simonMD_preview/BM_Workshop_Addons_Throttlekittys_Desc_1.png [/img]
+description=[img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/building_menu_throttlekittys_preview/BM_Workshop_Addons_Throttlekittys_Desc_1.png [/img]
 description=[img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/workshop_images/BM_Workshop_Desc_2.png [/img]
 description=[url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] [img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/workshop_images/BM_Workshop_Desc_3.png [/img] [/url]
 description=[img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/workshop_images/BM_Workshop_Desc_4.png [/img]

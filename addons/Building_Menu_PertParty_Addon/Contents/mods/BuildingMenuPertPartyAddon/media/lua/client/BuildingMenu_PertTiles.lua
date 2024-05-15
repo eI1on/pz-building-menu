@@ -1271,7 +1271,7 @@ local function addChristmasDecorationsToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_1",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.SmallWoodWallRecipe,
@@ -1286,7 +1286,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_24", northSprite = "pert_Christmas_01_37"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_2",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -1301,7 +1301,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_25", northSprite = "pert_Christmas_01_36"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_3",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -1316,7 +1316,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_26", northSprite = "pert_Christmas_01_35"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_4",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.SmallWoodWallRecipe,
@@ -1331,7 +1331,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_32", northSprite = "pert_Christmas_01_29"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_5",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -1346,7 +1346,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_33", northSprite = "pert_Christmas_01_28"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_6",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -1361,7 +1361,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_34", northSprite = "pert_Christmas_01_27"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_End_Small",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.SmallWoodWallRecipe,
@@ -1376,7 +1376,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_39", northSprite = "pert_Christmas_01_31"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_End_Medium",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,
@@ -1391,7 +1391,7 @@ local function addChristmasDecorationsToMenu()
             {sprite = "pert_Christmas_01_38", northSprite = "pert_Christmas_01_30"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Ginger_Bread_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_End_Big",
             "Tooltip_Ginger_Bread_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BigWoodWallRecipe,

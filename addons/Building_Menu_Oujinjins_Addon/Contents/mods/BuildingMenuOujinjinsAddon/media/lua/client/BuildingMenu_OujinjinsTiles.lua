@@ -255,6 +255,20 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
+                        containerType = "shelves",
+                        blockAllTheSquare = true,
+                        canBeLockedByPadlock = true
+                    },
+                    { sprite = "guizi_01_5", northSprite = "guizi_01_5" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Counter_Generic",
+                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.MetalCounterRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureMedium",
                         containerType = "counter",
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true

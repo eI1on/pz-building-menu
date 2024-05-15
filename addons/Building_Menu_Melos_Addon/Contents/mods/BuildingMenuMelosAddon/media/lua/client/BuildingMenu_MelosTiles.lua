@@ -1210,7 +1210,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_86", northSprite = "melos_tiles_walls_bathroom_01a_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -1225,7 +1225,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_106", northSprite = "melos_tiles_walls_bathroom_01a_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -1240,7 +1240,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_105", northSprite = "melos_tiles_walls_bathroom_01a_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -1255,7 +1255,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_104", northSprite = "melos_tiles_walls_bathroom_01a_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -1270,7 +1270,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_96", northSprite = "melos_tiles_walls_bathroom_01a_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -1285,7 +1285,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_97", northSprite = "melos_tiles_walls_bathroom_01a_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -1300,7 +1300,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_98", northSprite = "melos_tiles_walls_bathroom_01a_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -1315,7 +1315,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_112", northSprite = "melos_tiles_walls_bathroom_01a_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -1330,7 +1330,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01a_113", northSprite = "melos_tiles_walls_bathroom_01a_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_White_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -1709,7 +1709,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_86", northSprite = "melos_tiles_walls_bathroom_01b_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreySmallStoneWallRecipe,
@@ -1724,7 +1724,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_106", northSprite = "melos_tiles_walls_bathroom_01b_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigStoneWallRecipe,
@@ -1739,7 +1739,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_105", northSprite = "melos_tiles_walls_bathroom_01b_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigStoneWallRecipe,
@@ -1754,7 +1754,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_104", northSprite = "melos_tiles_walls_bathroom_01b_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreySmallStoneWallRecipe,
@@ -1769,7 +1769,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_96", northSprite = "melos_tiles_walls_bathroom_01b_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigStoneWallRecipe,
@@ -1784,7 +1784,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_97", northSprite = "melos_tiles_walls_bathroom_01b_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigStoneWallRecipe,
@@ -1799,7 +1799,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_98", northSprite = "melos_tiles_walls_bathroom_01b_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreySmallStoneWallRecipe,
@@ -1814,7 +1814,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_112", northSprite = "melos_tiles_walls_bathroom_01b_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigStoneWallRecipe,
@@ -1829,7 +1829,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01b_113", northSprite = "melos_tiles_walls_bathroom_01b_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Grey_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigStoneWallRecipe,
@@ -2208,7 +2208,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_86", northSprite = "melos_tiles_walls_bathroom_01c_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackSmallWoodWallRecipe,
@@ -2223,7 +2223,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_106", northSprite = "melos_tiles_walls_bathroom_01c_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -2238,7 +2238,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_105", northSprite = "melos_tiles_walls_bathroom_01c_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -2253,7 +2253,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_104", northSprite = "melos_tiles_walls_bathroom_01c_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackSmallWoodWallRecipe,
@@ -2268,7 +2268,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_96", northSprite = "melos_tiles_walls_bathroom_01c_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -2283,7 +2283,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_97", northSprite = "melos_tiles_walls_bathroom_01c_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -2298,7 +2298,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_98", northSprite = "melos_tiles_walls_bathroom_01c_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackSmallWoodWallRecipe,
@@ -2313,7 +2313,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_112", northSprite = "melos_tiles_walls_bathroom_01c_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -2328,7 +2328,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01c_113", northSprite = "melos_tiles_walls_bathroom_01c_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Black_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlackBigWoodWallRecipe,
@@ -2707,7 +2707,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_86", northSprite = "melos_tiles_walls_bathroom_01d_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -2722,7 +2722,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_106", northSprite = "melos_tiles_walls_bathroom_01d_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -2737,7 +2737,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_105", northSprite = "melos_tiles_walls_bathroom_01d_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -2752,7 +2752,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_104", northSprite = "melos_tiles_walls_bathroom_01d_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -2767,7 +2767,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_96", northSprite = "melos_tiles_walls_bathroom_01d_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -2782,7 +2782,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_97", northSprite = "melos_tiles_walls_bathroom_01d_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -2797,7 +2797,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_98", northSprite = "melos_tiles_walls_bathroom_01d_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -2812,7 +2812,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_112", northSprite = "melos_tiles_walls_bathroom_01d_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -2827,7 +2827,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01d_113", northSprite = "melos_tiles_walls_bathroom_01d_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Swamp_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -3206,7 +3206,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_86", northSprite = "melos_tiles_walls_bathroom_01e_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowSmallWoodWallRecipe,
@@ -3221,7 +3221,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_106", northSprite = "melos_tiles_walls_bathroom_01e_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -3236,7 +3236,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_105", northSprite = "melos_tiles_walls_bathroom_01e_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -3251,7 +3251,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_104", northSprite = "melos_tiles_walls_bathroom_01e_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowSmallWoodWallRecipe,
@@ -3266,7 +3266,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_96", northSprite = "melos_tiles_walls_bathroom_01e_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -3281,7 +3281,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_97", northSprite = "melos_tiles_walls_bathroom_01e_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -3296,7 +3296,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_98", northSprite = "melos_tiles_walls_bathroom_01e_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowSmallWoodWallRecipe,
@@ -3311,7 +3311,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_112", northSprite = "melos_tiles_walls_bathroom_01e_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -3326,7 +3326,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01e_113", northSprite = "melos_tiles_walls_bathroom_01e_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Yellow_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -3705,7 +3705,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_86", northSprite = "melos_tiles_walls_bathroom_01f_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
@@ -3720,7 +3720,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_106", northSprite = "melos_tiles_walls_bathroom_01f_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigWoodWallRecipe,
@@ -3735,7 +3735,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_105", northSprite = "melos_tiles_walls_bathroom_01f_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigWoodWallRecipe,
@@ -3750,7 +3750,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_104", northSprite = "melos_tiles_walls_bathroom_01f_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
@@ -3765,7 +3765,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_96", northSprite = "melos_tiles_walls_bathroom_01f_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigWoodWallRecipe,
@@ -3780,7 +3780,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_97", northSprite = "melos_tiles_walls_bathroom_01f_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigWoodWallRecipe,
@@ -3795,7 +3795,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_98", northSprite = "melos_tiles_walls_bathroom_01f_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
@@ -3810,7 +3810,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_112", northSprite = "melos_tiles_walls_bathroom_01f_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigWoodWallRecipe,
@@ -3825,7 +3825,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01f_113", northSprite = "melos_tiles_walls_bathroom_01f_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Turquoise_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigWoodWallRecipe,
@@ -4204,7 +4204,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_86", northSprite = "melos_tiles_walls_bathroom_01g_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -4219,7 +4219,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_106", northSprite = "melos_tiles_walls_bathroom_01g_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -4234,7 +4234,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_105", northSprite = "melos_tiles_walls_bathroom_01g_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -4249,7 +4249,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_104", northSprite = "melos_tiles_walls_bathroom_01g_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -4264,7 +4264,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_96", northSprite = "melos_tiles_walls_bathroom_01g_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -4279,7 +4279,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_97", northSprite = "melos_tiles_walls_bathroom_01g_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -4294,7 +4294,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_98", northSprite = "melos_tiles_walls_bathroom_01g_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -4309,7 +4309,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_112", northSprite = "melos_tiles_walls_bathroom_01g_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -4324,7 +4324,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01g_113", northSprite = "melos_tiles_walls_bathroom_01g_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Blue_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -4703,7 +4703,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_86", northSprite = "melos_tiles_walls_bathroom_01h_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleSmallWoodWallRecipe,
@@ -4718,7 +4718,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_106", northSprite = "melos_tiles_walls_bathroom_01h_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigWoodWallRecipe,
@@ -4733,7 +4733,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_105", northSprite = "melos_tiles_walls_bathroom_01h_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigWoodWallRecipe,
@@ -4748,7 +4748,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_104", northSprite = "melos_tiles_walls_bathroom_01h_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleSmallWoodWallRecipe,
@@ -4763,7 +4763,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_96", northSprite = "melos_tiles_walls_bathroom_01h_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigWoodWallRecipe,
@@ -4778,7 +4778,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_97", northSprite = "melos_tiles_walls_bathroom_01h_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigWoodWallRecipe,
@@ -4793,7 +4793,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_98", northSprite = "melos_tiles_walls_bathroom_01h_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleSmallWoodWallRecipe,
@@ -4808,7 +4808,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_112", northSprite = "melos_tiles_walls_bathroom_01h_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigWoodWallRecipe,
@@ -4823,7 +4823,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01h_113", northSprite = "melos_tiles_walls_bathroom_01h_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Violet_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigWoodWallRecipe,
@@ -5202,7 +5202,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_86", northSprite = "melos_tiles_walls_bathroom_01i_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -5217,7 +5217,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_106", northSprite = "melos_tiles_walls_bathroom_01i_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5232,7 +5232,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_105", northSprite = "melos_tiles_walls_bathroom_01i_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5247,7 +5247,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_104", northSprite = "melos_tiles_walls_bathroom_01i_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -5262,7 +5262,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_96", northSprite = "melos_tiles_walls_bathroom_01i_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5277,7 +5277,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_97", northSprite = "melos_tiles_walls_bathroom_01i_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5292,7 +5292,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_98", northSprite = "melos_tiles_walls_bathroom_01i_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -5307,7 +5307,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_112", northSprite = "melos_tiles_walls_bathroom_01i_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5322,7 +5322,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01i_113", northSprite = "melos_tiles_walls_bathroom_01i_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Strawberry_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5701,7 +5701,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_86", northSprite = "melos_tiles_walls_bathroom_01j_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_1",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -5716,7 +5716,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_106", northSprite = "melos_tiles_walls_bathroom_01j_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_2",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5731,7 +5731,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_105", northSprite = "melos_tiles_walls_bathroom_01j_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_3",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5746,7 +5746,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_104", northSprite = "melos_tiles_walls_bathroom_01j_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_4",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -5761,7 +5761,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_96", northSprite = "melos_tiles_walls_bathroom_01j_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_5",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5776,7 +5776,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_97", northSprite = "melos_tiles_walls_bathroom_01j_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_6",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5791,7 +5791,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_98", northSprite = "melos_tiles_walls_bathroom_01j_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_End_Small",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallWoodWallRecipe,
@@ -5806,7 +5806,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_112", northSprite = "melos_tiles_walls_bathroom_01j_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_End_Medium",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -5821,7 +5821,7 @@ local function addMelosWallsCinderblockToMenu()
             {sprite = "melos_tiles_walls_bathroom_01j_113", northSprite = "melos_tiles_walls_bathroom_01j_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_End_Big",
             "Tooltip_Melos_Red_Cinderblock_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigWoodWallRecipe,
@@ -6211,7 +6211,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_Slope_Wall_1",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -6229,7 +6229,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_Slope_Wall_2",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6247,7 +6247,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_Slope_Wall_3",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6265,7 +6265,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_Slope_Wall_4",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -6283,7 +6283,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_Slope_Wall_5",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6301,7 +6301,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_Slope_Wall_6",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6319,7 +6319,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_End_Small",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -6337,7 +6337,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_End_Medium",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6355,7 +6355,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Small_Bathroom_Tiles_Roof_End_Big",
             "Tooltip_Melos_White_Small_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6746,7 +6746,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_1",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -6764,7 +6764,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_2",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6782,7 +6782,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_3",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6800,7 +6800,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_4",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -6818,7 +6818,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_5",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6836,7 +6836,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_6",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6854,7 +6854,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_End_Small",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -6872,7 +6872,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_End_Medium",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -6890,7 +6890,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_End_Big",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7281,7 +7281,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_1",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -7299,7 +7299,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_2",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7317,7 +7317,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_3",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7335,7 +7335,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_4",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -7353,7 +7353,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_5",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7371,7 +7371,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_Slope_Wall_6",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7389,7 +7389,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_End_Small",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -7407,7 +7407,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_End_Medium",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7425,7 +7425,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Medium_Bathroom_Tiles1_Roof_End_Big",
             "Tooltip_Melos_White_Medium_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7816,7 +7816,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_1",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -7834,7 +7834,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_2",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7852,7 +7852,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_3",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7870,7 +7870,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_4",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -7888,7 +7888,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_5",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7906,7 +7906,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_6",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7924,7 +7924,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_End_Small",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -7942,7 +7942,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_End_Medium",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -7960,7 +7960,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_End_Big",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -8351,7 +8351,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_1",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -8369,7 +8369,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_2",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -8387,7 +8387,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_3",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -8405,7 +8405,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_4",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -8423,7 +8423,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_5",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -8441,7 +8441,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_Slope_Wall_6",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -8459,7 +8459,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_End_Small",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -8477,7 +8477,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_End_Medium",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -8495,7 +8495,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Large_Bathroom_Tiles1_Roof_End_Big",
             "Tooltip_Melos_White_Large_Bathroom_Tiles1_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -8886,7 +8886,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_Slope_Wall_1",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreySmallWoodWallRecipe,
@@ -8904,7 +8904,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_Slope_Wall_2",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigWoodWallRecipe,
@@ -8922,7 +8922,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_Slope_Wall_3",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigWoodWallRecipe,
@@ -8940,7 +8940,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_Slope_Wall_4",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreySmallWoodWallRecipe,
@@ -8958,7 +8958,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_Slope_Wall_5",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigWoodWallRecipe,
@@ -8976,7 +8976,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_Slope_Wall_6",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigWoodWallRecipe,
@@ -8994,7 +8994,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_End_Small",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreySmallWoodWallRecipe,
@@ -9012,7 +9012,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_End_Medium",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigWoodWallRecipe,
@@ -9030,7 +9030,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Grey_Bathroom_Tiles_Roof_End_Big",
             "Tooltip_Melos_Grey_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreyBigWoodWallRecipe,
@@ -9421,7 +9421,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_Slope_Wall_1",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -9439,7 +9439,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_Slope_Wall_2",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -9457,7 +9457,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_Slope_Wall_3",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -9475,7 +9475,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_Slope_Wall_4",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -9493,7 +9493,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_Slope_Wall_5",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -9511,7 +9511,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_Slope_Wall_6",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -9529,7 +9529,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_End_Small",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -9547,7 +9547,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_End_Medium",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -9565,7 +9565,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Light_Blue_Bathroom_Tiles_Roof_End_Big",
             "Tooltip_Melos_Light_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -9956,7 +9956,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_Slope_Wall_1",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -9974,7 +9974,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_Slope_Wall_2",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -9992,7 +9992,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_Slope_Wall_3",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -10010,7 +10010,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_Slope_Wall_4",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -10028,7 +10028,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_Slope_Wall_5",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -10046,7 +10046,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_Slope_Wall_6",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -10064,7 +10064,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_End_Small",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallWoodWallRecipe,
@@ -10082,7 +10082,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_End_Medium",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -10100,7 +10100,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Bathroom_Tiles_Roof_End_Big",
             "Tooltip_Melos_Blue_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigWoodWallRecipe,
@@ -10491,7 +10491,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_Slope_Wall_1",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -10509,7 +10509,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_Slope_Wall_2",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -10527,7 +10527,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_Slope_Wall_3",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -10545,7 +10545,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_Slope_Wall_4",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -10563,7 +10563,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_Slope_Wall_5",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -10581,7 +10581,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_Slope_Wall_6",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -10599,7 +10599,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_End_Small",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -10617,7 +10617,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_End_Medium",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -10635,7 +10635,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Light_Green_Bathroom_Tiles_Roof_End_Big",
             "Tooltip_Melos_Light_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -11026,7 +11026,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_Slope_Wall_1",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -11044,7 +11044,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_Slope_Wall_2",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -11062,7 +11062,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_Slope_Wall_3",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -11080,7 +11080,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_Slope_Wall_4",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -11098,7 +11098,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_Slope_Wall_5",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -11116,7 +11116,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_Slope_Wall_6",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -11134,7 +11134,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_End_Small",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallWoodWallRecipe,
@@ -11152,7 +11152,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_End_Medium",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -11170,7 +11170,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Green_Bathroom_Tiles_Roof_End_Big",
             "Tooltip_Melos_Green_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigWoodWallRecipe,
@@ -11561,7 +11561,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_Slope_Wall_1",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowSmallWoodWallRecipe,
@@ -11579,7 +11579,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_Slope_Wall_2",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -11597,7 +11597,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_Slope_Wall_3",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -11615,7 +11615,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_Slope_Wall_4",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowSmallWoodWallRecipe,
@@ -11633,7 +11633,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_Slope_Wall_5",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -11651,7 +11651,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_Slope_Wall_6",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -11669,7 +11669,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_End_Small",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowSmallWoodWallRecipe,
@@ -11687,7 +11687,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_End_Medium",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -11705,7 +11705,7 @@ local function addMelosWallsBathroomToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Yellow_Bathroom_Tiles_Roof_End_Big",
             "Tooltip_Melos_Yellow_Bathroom_Tiles_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.YellowBigWoodWallRecipe,
@@ -12089,7 +12089,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_86", northSprite = "melos_tiles_walls_brick_01a_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -12104,7 +12104,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_106", northSprite = "melos_tiles_walls_brick_01a_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -12119,7 +12119,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_105", northSprite = "melos_tiles_walls_brick_01a_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -12134,7 +12134,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_104", northSprite = "melos_tiles_walls_brick_01a_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -12149,7 +12149,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_96", northSprite = "melos_tiles_walls_brick_01a_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -12164,7 +12164,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_97", northSprite = "melos_tiles_walls_brick_01a_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -12179,7 +12179,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_98", northSprite = "melos_tiles_walls_brick_01a_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_End_Small",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteSmallBrickWallRecipe,
@@ -12194,7 +12194,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_112", northSprite = "melos_tiles_walls_brick_01a_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_End_Medium",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -12209,7 +12209,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01a_113", northSprite = "melos_tiles_walls_brick_01a_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_White_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_End_Big",
             "Tooltip_Melos_White_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.WhiteBigBrickWallRecipe,
@@ -12588,7 +12588,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_86", northSprite = "melos_tiles_walls_brick_01b_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallBrickWallRecipe,
@@ -12603,7 +12603,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_106", northSprite = "melos_tiles_walls_brick_01b_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigBrickWallRecipe,
@@ -12618,7 +12618,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_105", northSprite = "melos_tiles_walls_brick_01b_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigBrickWallRecipe,
@@ -12633,7 +12633,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_104", northSprite = "melos_tiles_walls_brick_01b_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallBrickWallRecipe,
@@ -12648,7 +12648,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_96", northSprite = "melos_tiles_walls_brick_01b_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigBrickWallRecipe,
@@ -12663,7 +12663,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_97", northSprite = "melos_tiles_walls_brick_01b_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigBrickWallRecipe,
@@ -12678,7 +12678,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_98", northSprite = "melos_tiles_walls_brick_01b_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_End_Small",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedSmallBrickWallRecipe,
@@ -12693,7 +12693,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_112", northSprite = "melos_tiles_walls_brick_01b_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_End_Medium",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigBrickWallRecipe,
@@ -12708,7 +12708,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01b_113", northSprite = "melos_tiles_walls_brick_01b_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_End_Big",
             "Tooltip_Melos_Red_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.RedBigBrickWallRecipe,
@@ -13088,7 +13088,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_86", northSprite = "melos_tiles_walls_brick_01c_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
@@ -13103,7 +13103,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_106", northSprite = "melos_tiles_walls_brick_01c_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigBrickWallRecipe,
@@ -13118,7 +13118,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_105", northSprite = "melos_tiles_walls_brick_01c_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigBrickWallRecipe,
@@ -13133,7 +13133,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_104", northSprite = "melos_tiles_walls_brick_01c_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
@@ -13148,7 +13148,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_96", northSprite = "melos_tiles_walls_brick_01c_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigBrickWallRecipe,
@@ -13163,7 +13163,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_97", northSprite = "melos_tiles_walls_brick_01c_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigBrickWallRecipe,
@@ -13178,7 +13178,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_98", northSprite = "melos_tiles_walls_brick_01c_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_End_Small",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
@@ -13193,7 +13193,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_112", northSprite = "melos_tiles_walls_brick_01c_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_End_Medium",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigBrickWallRecipe,
@@ -13208,7 +13208,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01c_113", northSprite = "melos_tiles_walls_brick_01c_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_End_Big",
             "Tooltip_Melos_Turquoise_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.TurquoiseBigBrickWallRecipe,
@@ -13587,7 +13587,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_86", northSprite = "melos_tiles_walls_brick_01d_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallBrickWallRecipe,
@@ -13602,7 +13602,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_106", northSprite = "melos_tiles_walls_brick_01d_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigBrickWallRecipe,
@@ -13617,7 +13617,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_105", northSprite = "melos_tiles_walls_brick_01d_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigBrickWallRecipe,
@@ -13632,7 +13632,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_104", northSprite = "melos_tiles_walls_brick_01d_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallBrickWallRecipe,
@@ -13647,7 +13647,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_96", northSprite = "melos_tiles_walls_brick_01d_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigBrickWallRecipe,
@@ -13662,7 +13662,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_97", northSprite = "melos_tiles_walls_brick_01d_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigBrickWallRecipe,
@@ -13677,7 +13677,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_98", northSprite = "melos_tiles_walls_brick_01d_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_End_Small",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownSmallBrickWallRecipe,
@@ -13692,7 +13692,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_112", northSprite = "melos_tiles_walls_brick_01d_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_End_Medium",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigBrickWallRecipe,
@@ -13707,7 +13707,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01d_113", northSprite = "melos_tiles_walls_brick_01d_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_End_Big",
             "Tooltip_Melos_Brown_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BrownBigBrickWallRecipe,
@@ -14086,7 +14086,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_86", northSprite = "melos_tiles_walls_brick_01e_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallBrickWallRecipe,
@@ -14101,7 +14101,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_106", northSprite = "melos_tiles_walls_brick_01e_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigBrickWallRecipe,
@@ -14116,7 +14116,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_105", northSprite = "melos_tiles_walls_brick_01e_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigBrickWallRecipe,
@@ -14131,7 +14131,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_104", northSprite = "melos_tiles_walls_brick_01e_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallBrickWallRecipe,
@@ -14146,7 +14146,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_96", northSprite = "melos_tiles_walls_brick_01e_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigBrickWallRecipe,
@@ -14161,7 +14161,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_97", northSprite = "melos_tiles_walls_brick_01e_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigBrickWallRecipe,
@@ -14176,7 +14176,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_98", northSprite = "melos_tiles_walls_brick_01e_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_End_Small",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueSmallBrickWallRecipe,
@@ -14191,7 +14191,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_112", northSprite = "melos_tiles_walls_brick_01e_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_End_Medium",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigBrickWallRecipe,
@@ -14206,7 +14206,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01e_113", northSprite = "melos_tiles_walls_brick_01e_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_End_Big",
             "Tooltip_Melos_Blue_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.BlueBigBrickWallRecipe,
@@ -14585,7 +14585,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_86", northSprite = "melos_tiles_walls_brick_01f_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeSmallBrickWallRecipe,
@@ -14600,7 +14600,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_106", northSprite = "melos_tiles_walls_brick_01f_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeBigBrickWallRecipe,
@@ -14615,7 +14615,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_105", northSprite = "melos_tiles_walls_brick_01f_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeBigBrickWallRecipe,
@@ -14630,7 +14630,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_104", northSprite = "melos_tiles_walls_brick_01f_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeSmallBrickWallRecipe,
@@ -14645,7 +14645,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_96", northSprite = "melos_tiles_walls_brick_01f_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeBigBrickWallRecipe,
@@ -14660,7 +14660,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_97", northSprite = "melos_tiles_walls_brick_01f_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeBigBrickWallRecipe,
@@ -14675,7 +14675,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_98", northSprite = "melos_tiles_walls_brick_01f_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_End_Small",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeSmallBrickWallRecipe,
@@ -14690,7 +14690,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_112", northSprite = "melos_tiles_walls_brick_01f_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_End_Medium",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeBigBrickWallRecipe,
@@ -14705,7 +14705,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01f_113", northSprite = "melos_tiles_walls_brick_01f_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_End_Big",
             "Tooltip_Melos_Orange_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.OrangeBigBrickWallRecipe,
@@ -15085,7 +15085,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_86", northSprite = "melos_tiles_walls_brick_01g_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallBrickWallRecipe,
@@ -15100,7 +15100,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_106", northSprite = "melos_tiles_walls_brick_01g_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigBrickWallRecipe,
@@ -15115,7 +15115,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_105", northSprite = "melos_tiles_walls_brick_01g_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigBrickWallRecipe,
@@ -15130,7 +15130,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_104", northSprite = "melos_tiles_walls_brick_01g_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallBrickWallRecipe,
@@ -15145,7 +15145,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_96", northSprite = "melos_tiles_walls_brick_01g_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigBrickWallRecipe,
@@ -15160,7 +15160,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_97", northSprite = "melos_tiles_walls_brick_01g_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigBrickWallRecipe,
@@ -15175,7 +15175,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_98", northSprite = "melos_tiles_walls_brick_01g_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_End_Small",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenSmallBrickWallRecipe,
@@ -15190,7 +15190,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_112", northSprite = "melos_tiles_walls_brick_01g_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_End_Medium",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigBrickWallRecipe,
@@ -15205,7 +15205,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01g_113", northSprite = "melos_tiles_walls_brick_01g_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_End_Big",
             "Tooltip_Melos_Green_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.GreenBigBrickWallRecipe,
@@ -15585,7 +15585,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_86", northSprite = "melos_tiles_walls_brick_01h_86"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Wall_1",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_1",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleSmallBrickWallRecipe,
@@ -15600,7 +15600,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_106", northSprite = "melos_tiles_walls_brick_01h_107"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Wall_2",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_2",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigBrickWallRecipe,
@@ -15615,7 +15615,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_105", northSprite = "melos_tiles_walls_brick_01h_108"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Wall_3",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_3",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigBrickWallRecipe,
@@ -15630,7 +15630,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_104", northSprite = "melos_tiles_walls_brick_01h_109"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Wall_4",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_4",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleSmallBrickWallRecipe,
@@ -15645,7 +15645,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_96", northSprite = "melos_tiles_walls_brick_01h_101"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Wall_5",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_5",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigBrickWallRecipe,
@@ -15660,7 +15660,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_97", northSprite = "melos_tiles_walls_brick_01h_100"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Wall_6",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_6",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigBrickWallRecipe,
@@ -15675,7 +15675,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_98", northSprite = "melos_tiles_walls_brick_01h_99"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Sloped_Small_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_End_Small",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleSmallBrickWallRecipe,
@@ -15690,7 +15690,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_112", northSprite = "melos_tiles_walls_brick_01h_117"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Sloped_Medium_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_End_Medium",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigBrickWallRecipe,
@@ -15705,7 +15705,7 @@ local function addMelosWallsBrickToMenu()
             {sprite = "melos_tiles_walls_brick_01h_113", northSprite = "melos_tiles_walls_brick_01h_116"}
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Exterior_Sloped_Big_Wall",
+            "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_End_Big",
             "Tooltip_Melos_Purple_Brick_Wall",
             BuildingMenu.onBuildWall,
             BuildingMenu.PurpleBigBrickWallRecipe,
@@ -15946,7 +15946,9 @@ local function addDoorsToMenu()
         "melos_tiles_doors_01_24",
         melosMetalDoorObjects
     )
+end
 
+local function addGarageDoorsToMenu()
     local function create3TileGarageDoor(baseName, startSpriteNumber)
         local spriteData = {
             sprite = baseName .. startSpriteNumber,
@@ -22199,6 +22201,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.doorsSubCategory then
         addDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.garageDoorsSubCategory then
+        addGarageDoorsToMenu()
     end
     if SandboxVars.BuildingMenu.windowsCategory then
         addWindowsPlusToMenu()

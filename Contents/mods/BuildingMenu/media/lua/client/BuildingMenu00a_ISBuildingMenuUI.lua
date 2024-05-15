@@ -6,6 +6,10 @@ local getText = getText
 local getTexture = getTexture
 ---@type function
 local pairs = pairs
+---@type function
+local getSprite = getSprite
+---@type function
+local getTextOrNull = getTextOrNull
 
 local BM_Utils = require("BM_Utils")
 ---@class BuildingMenu
@@ -461,7 +465,7 @@ function BuildingMenuTilePickerList:new(x, y, w, h, character, parent)
     o.tooltip              = nil;
     o.message              = nil;
     o.overwriteIsThumpable = SandboxVars.BuildingMenu.isThumpable ~= nil and not SandboxVars.BuildingMenu.isThumpable or
-    false;
+        false;
     o.parent               = parent;
     return o;
 end

@@ -606,11 +606,12 @@ BuildingMenu.onBuildBarricade = function(sprites, name, playerNum, objectRecipe,
     if playerObj:HasTrait("Handy") then health = health + 250; end
 
     _barricade.getHealth = function(self)
-        if isDebugEnabled() then
-            print("[Building Menu] objectOptions.health: ", objectOptions.health,
-                " (_barricade.health or 2500) + health: ", (_barricade.health or 2500) + health)
-        end
-        return (_barricade.health or 2500) + health;
+        if not _barricade.health then _barricade.health = 2500; end
+
+        BM_Utils.debugPrint("[Building Menu DEBUG] ", "_barricade.health: " .. objectOptions.health);
+        BM_Utils.debugPrint("[Building Menu DEBUG] ", "_barricade.health + health: " .. _barricade.health + health);
+
+        return _barricade.health + health;
     end
 
     return _barricade

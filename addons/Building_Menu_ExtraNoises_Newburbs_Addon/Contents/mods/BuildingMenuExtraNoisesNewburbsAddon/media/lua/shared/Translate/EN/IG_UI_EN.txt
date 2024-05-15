@@ -29,4 +29,12 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Walls_RedBrown_Clapboard = "Red Brown Clapboard",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tan Clapboard",
 
-}   
+    IGUI_BuildingMenuSubCat_Roofing_Light_Gray_Roofs = "Light Gray Roofs",
+    IGUI_BuildingMenuSubCat_Roofing_Warm_Gray_Roofs = "Warm Gray Roofs",
+    IGUI_BuildingMenuSubCat_Roofing_Red_Brown_Roofs = "Red Brown Roofs",
+    IGUI_BuildingMenuSubCat_Roofing_Light_Brown_Roofs = "Light Brown Roofs",
+    IGUI_BuildingMenuSubCat_Roofing_Slate_Green_Roofs = "Slate Green Roofs",
+    IGUI_BuildingMenuSubCat_Roofing_Slate_Blue_Roofs = "Slate Blue Roofs",
+    IGUI_BuildingMenuSubCat_Roofing_Black_Roofs = "Roofing Black Roofs",
+
+}
