@@ -5662,7 +5662,107 @@ local function initBuildingMenuRecipes()
         }
     }
 
-    
+
+    BuildingMenu.Fridge2TileRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+            "Saw",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 3.5)
+            },
+            {
+                Material = "Base.ElectronicsScrap",
+                Amount = 55
+            },
+            {
+                Material = "Radio.ElectricWire",
+                Amount = 8
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 2.5)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 7.5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(7.5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 7,
+                Xp = BuildingMenu.round(7 * metalweldingXpPerLevel)
+            },
+            {
+                Skill = "Electricity",
+                Level = 5,
+                Xp = BuildingMenu.round(5 * electricalXpPerLevel)
+            },
+        }
+    }
+
+
+    BuildingMenu.Fridge3TileRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+            "Saw",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 5)
+            },
+            {
+                Material = "Base.ElectronicsScrap",
+                Amount = 85
+            },
+            {
+                Material = "Radio.ElectricWire",
+                Amount = 12
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 3)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 10
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(10)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 8,
+                Xp = BuildingMenu.round(8 * metalweldingXpPerLevel)
+            },
+            {
+                Skill = "Electricity",
+                Level = 6,
+                Xp = BuildingMenu.round(6 * electricalXpPerLevel)
+            },
+        }
+    }
+
+
     BuildingMenu.TrailerFridgeRecipe = {
         neededTools = {
             "BlowTorch",

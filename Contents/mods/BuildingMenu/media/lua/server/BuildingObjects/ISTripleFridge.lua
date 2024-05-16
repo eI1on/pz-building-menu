@@ -1,6 +1,8 @@
 ---@class ISTripleFridge : ISBuildingObject
 ISTripleFridge = ISBuildingObject:derive('ISTripleFridge')
 
+local BM_Utils = require("BM_Utils")
+
 --- Constructor for creating a new three-tile fridge instance
 --- @param sprite string Main sprite for the fridge
 --- @param sprite2 string Sprite for the second tile
@@ -37,9 +39,9 @@ end
 --- @param sprite string The sprite to use for the main part of the fridge
 function ISTripleFridge:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
-    local square = cell:getGridSquare(x, y, z);
-    local xa, ya = self:getSquare2Pos(square, north);
-    local xb, yb = self:getSquare3Pos(square, north);
+    self.sq = cell:getGridSquare(x, y, z);
+    local xa, ya = self:getSquare2Pos(self.sq, north);
+    local xb, yb = self:getSquare3Pos(self.sq, north);
     local spriteAName = self.sprite2;
     local spriteBName = self.sprite3;
 
@@ -64,11 +66,11 @@ end
 --- @param index number The index of the fridge part (1, 2, or 3)
 function ISTripleFridge:createPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell();
-    self.sq = cell:getGridSquare(x, y, z);
+    local square = cell:getGridSquare(x, y, z);
 
-    if self:partExists(self.sq, index) then return; end
+    if self:partExists(square, index) then return; end
 
-    self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+    self.javaObject = IsoThumpable.new(cell, square, sprite, north, self);
     self.javaObject:setMaxHealth(self:getHealth());
     self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
@@ -80,7 +82,7 @@ function ISTripleFridge:createPart(x, y, z, north, sprite, index)
 
     buildUtil.setInfo(self.javaObject, self);
 
-    self.sq:AddSpecialObject(self.javaObject);
+    square:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
 
@@ -124,7 +126,7 @@ end
 --- Returns the health of the fridge based on construction parameters
 --- @return number health The health value of the fridge
 function ISTripleFridge:getHealth()
-    return 200 + buildUtil.getWoodHealth(self);
+    return 500 + buildUtil.getWoodHealth(self);
 end
 
 --- Renders a ghost tile of the fridge for placement preview
@@ -304,6 +306,17 @@ function ISTripleFridge:getSquare3Pos(square, north)
     end
     return x, y, z;
 end
+
+
+--- Retrieves the square for the second part of the triple fridge
+--- @param square IsoGridSquare The square for the first part
+--- @param north boolean Whether the fridge is oriented northward
+--- @return IsoGridSquare square The square for the second part
+function ISTripleFridge:getSquare2(square, north)
+	local x, y, z = self:getSquare2Pos(square, north);
+	return getCell():getGridSquare(x, y, z);
+end
+
 
 --- Checks if a part of the fridge already exists on a given square
 --- @param square IsoGridSquare The square to check

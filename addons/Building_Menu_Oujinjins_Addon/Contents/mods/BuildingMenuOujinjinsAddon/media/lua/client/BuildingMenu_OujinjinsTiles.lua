@@ -1356,7 +1356,7 @@ local function addFridgeAppliancesToMenu()
             "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildLargeFridge,
-            BuildingMenu.FridgeRecipe,
+            BuildingMenu.Fridge2TileRecipe,
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
@@ -1376,7 +1376,7 @@ local function addFridgeAppliancesToMenu()
             "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildLargeFridge,
-            BuildingMenu.FridgeRecipe,
+            BuildingMenu.Fridge2TileRecipe,
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
@@ -1396,7 +1396,7 @@ local function addFridgeAppliancesToMenu()
             "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildTripleFridge,
-            BuildingMenu.FridgeRecipe,
+            BuildingMenu.Fridge3TileRecipe,
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
@@ -1418,7 +1418,7 @@ local function addFridgeAppliancesToMenu()
             "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildPopsicleFridge,
-            BuildingMenu.FridgeRecipe,
+            BuildingMenu.Fridge2TileRecipe,
             true,
             {
                 completionSound = "BuildMetalStructureMedium",

@@ -121,12 +121,9 @@ BM_Commands.OnClientCommand = function(module, command, player, args)
         module = module or "nil";
         command = command or "nil";
 
-        BM_Utils.debugPrint("[Building Menu DEBUG] ",' received command: ' .. module .. ' ' .. command .. ' ' .. playerStr .. argStr)
+        BM_Utils.debugPrint("[Building Menu DEBUG] ",' received command: ' .. module .. ' ' .. command .. ' ' .. playerStr .. argStr);
 
-        local success, errorMessage = pcall(BM_Commands[module][command], player, args);
-        if not success then
-            noise("Error executing command: " .. errorMessage);
-        end
+        BM_Commands[module][command](player, args);
     end
 end
 Events.OnClientCommand.Add(BM_Commands.OnClientCommand)

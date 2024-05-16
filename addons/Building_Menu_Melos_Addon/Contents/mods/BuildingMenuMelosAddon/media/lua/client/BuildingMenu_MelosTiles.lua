@@ -22172,7 +22172,7 @@ local function addMelosFridgesToMenu()
     }
 
     for _, fridgeData in ipairs(additionalFridges) do
-        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, true, fridgeData))
+        table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.Fridge2TileRecipe, true, fridgeData))
     end
 
     BuildingMenu.addObjectsToCategories(

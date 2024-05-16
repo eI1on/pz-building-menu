@@ -69,12 +69,12 @@ end
 ---@param sprite string The sprite to use for this object
 function ISFourTileFurniture:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
-    local square = cell:getGridSquare(x, y, z);
+    self.sq = cell:getGridSquare(x, y, z);
 
     -- determine the positions for the other 3 tiles in the 2x2 formation
-    local xa, ya = self:getSquare2Pos(square, north);
-    local xb, yb = self:getSquare3Pos(square, north);
-    local xc, yc = self:getSquare4Pos(square, north);
+    local xa, ya = self:getSquare2Pos(self.sq, north);
+    local xb, yb = self:getSquare3Pos(self.sq, north);
+    local xc, yc = self:getSquare4Pos(self.sq, north);
 
     -- define the sprite names for the additional tiles
     local spriteAName = north and self.northSprite2 or self.sprite2;
@@ -99,20 +99,20 @@ end
 ---@param index integer The index of the part
 function ISFourTileFurniture:createPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell();
-    self.sq = cell:getGridSquare(x, y, z);
+    local square = cell:getGridSquare(x, y, z);
 
     -- check if the part already exists on this tile
-    if self:partExists(self.sq, index) then return; end
+    if self:partExists(square, index) then return; end
 
     -- create the furniture part and set its properties
-    self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+    self.javaObject = IsoThumpable.new(cell, square, sprite, north, self);
     self.javaObject:setMaxHealth(self:getHealth());
     self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
 
     buildUtil.setInfo(self.javaObject, self);
 
-    self.sq:AddSpecialObject(self.javaObject);
+    square:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
 

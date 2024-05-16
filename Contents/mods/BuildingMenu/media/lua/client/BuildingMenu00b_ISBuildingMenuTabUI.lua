@@ -2,6 +2,8 @@ require "ISUI/ISPanel"
 
 ---@type function
 local getTexture = getTexture;
+---@type function
+local getText = getText
 
 --- Class representing a tab in the Building Menu UI
 ---@class ISBuildingMenuTabUI: ISPanelJoypad

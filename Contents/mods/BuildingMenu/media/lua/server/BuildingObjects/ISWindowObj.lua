@@ -8,13 +8,16 @@ ISWindowObj = ISBuildingObject:derive('ISWindowObj')
 --- @param north boolean Indicates if the window faces north
 --- @param sprite string The sprite to use for this object
 function ISWindowObj:create(x, y, z, north, sprite)
-    local cell = getWorld():getCell()
-    self.sq = cell:getGridSquare(x, y, z)
-    self.javaObject = IsoWindow.new(getCell(), self.sq, getSprite(sprite), north)
-    buildUtil.consumeMaterial(self)
-    self.sq:AddSpecialObject(self.javaObject)
-    self.javaObject:setIsLocked(false)
-    self.javaObject:transmitCompleteItemToServer()
+    local cell = getWorld():getCell();
+    self.sq = cell:getGridSquare(x, y, z);
+
+    self.javaObject = IsoWindow.new(getCell(), self.sq, getSprite(sprite), north);
+
+    buildUtil.consumeMaterial(self);
+
+    self.sq:AddSpecialObject(self.javaObject);
+    self.javaObject:setIsLocked(false);
+    self.javaObject:transmitCompleteItemToServer();
 end
 
 --- List of valid sprites for window objects.

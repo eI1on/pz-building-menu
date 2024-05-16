@@ -38,9 +38,9 @@ end
 --- @param sprite string The sprite to use for the main part of the door
 function ISThreeTileGarageDoor:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
-    local square = cell:getGridSquare(x, y, z);
-    local xa, ya = self:getSquare2Pos(square, north);
-    local xb, yb = self:getSquare3Pos(square, north);
+    self.sq = cell:getGridSquare(x, y, z);
+    local xa, ya = self:getSquare2Pos(self.sq, north);
+    local xb, yb = self:getSquare3Pos(self.sq, north);
     local spriteAName = self.sprite2;
     local spriteBName = self.sprite3;
 
@@ -63,11 +63,11 @@ end
 --- @param index number The index of the door part (1, 2, or 3)
 function ISThreeTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell();
-    self.sq = cell:getGridSquare(x, y, z);
+    local square = cell:getGridSquare(x, y, z);
 
-    if self:partExists(self.sq, index) then return; end
+    if self:partExists(square, index) then return; end
 
-    self.javaObject = IsoDoor.new(cell, self.sq, sprite, north);
+    self.javaObject = IsoDoor.new(cell, square, sprite, north);
     self.javaObject:setHealth(self:getHealth());
 
     if index == 1 then
@@ -80,7 +80,7 @@ function ISThreeTileGarageDoor:addDoorPart(x, y, z, north, sprite, index)
         end
     end
 
-    self.sq:AddSpecialObject(self.javaObject);
+    square:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
 

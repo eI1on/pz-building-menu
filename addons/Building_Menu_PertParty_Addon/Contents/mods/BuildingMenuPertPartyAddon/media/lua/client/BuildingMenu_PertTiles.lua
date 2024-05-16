@@ -1929,7 +1929,7 @@ local function addFridgeAppliancesToMenu()
             "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildPopsicleFridge,
-            BuildingMenu.FridgeRecipe,
+            BuildingMenu.Fridge2TileRecipe,
             true,
             {
                 noNeedHammer = true,

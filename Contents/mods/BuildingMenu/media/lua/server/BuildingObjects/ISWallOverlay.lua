@@ -35,7 +35,8 @@ end
 --- @param north boolean Indicates if the overlay faces north
 --- @param sprite string The sprite to use for this overlay
 function ISWallOverlay:create(x, y, z, north, sprite)
-    self.sq = getWorld():getCell():getGridSquare(x, y, z);
+    local cell = getWorld():getCell();
+    self.sq = cell:getGridSquare(x, y, z);
 
     local objects = self.sq:getObjects();
     local spriteInstance = getSprite(sprite):newInstance();

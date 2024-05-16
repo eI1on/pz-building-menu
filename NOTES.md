@@ -1,0 +1,1 @@
+BuildingObject classes must have the self.sq set because it's used in buildUtil.consumeMaterial to delete the used items

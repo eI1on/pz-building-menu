@@ -39,9 +39,9 @@ function ISBarbecue:create(x, y, z, north, sprite)
     self.javaObject = IsoBarbecue.new(getCell(), self.sq, getSprite(sprite));
     self.javaObject:setMovedThumpable(true);
 
-    self.sq:AddSpecialObject(self.javaObject);
     buildUtil.consumeMaterial(self);
 
+    self.sq:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
 

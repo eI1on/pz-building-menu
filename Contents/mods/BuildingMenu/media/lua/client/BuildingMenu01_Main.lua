@@ -15,6 +15,9 @@ local getSprite = getSprite
 ---@type function
 local getItemNameFromFullType = getItemNameFromFullType
 ---@type function
+local type = type
+---@type function
+local instanceof = instanceof
 
 local BM_Utils = require("BM_Utils")
 

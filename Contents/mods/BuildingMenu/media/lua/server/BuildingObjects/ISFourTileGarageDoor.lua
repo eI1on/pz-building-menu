@@ -44,11 +44,11 @@ end
 --- @param north boolean Whether the door is facing north
 function ISFourTileGarageDoor:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
-    local square = cell:getGridSquare(x, y, z);
+    self.sq = cell:getGridSquare(x, y, z);
 
-    local xa, ya = self:getSquare2Pos(square, north);
-    local xb, yb = self:getSquare3Pos(square, north);
-    local xc, yc = self:getSquare4Pos(square, north);
+    local xa, ya = self:getSquare2Pos(self.sq, north);
+    local xb, yb = self:getSquare3Pos(self.sq, north);
+    local xc, yc = self:getSquare4Pos(self.sq, north);
 
     local spriteAName = self.sprite2;
     local spriteBName = self.sprite3;
@@ -75,11 +75,11 @@ end
 --- @param index integer The index of the part (1-4)
 function ISFourTileGarageDoor:createPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell();
-    self.sq = cell:getGridSquare(x, y, z);
+    local square = cell:getGridSquare(x, y, z);
 
-    if self:partExists(self.sq, index) then return; end
+    if self:partExists(square, index) then return; end
 
-    self.javaObject = IsoDoor.new(cell, self.sq, sprite, north);
+    self.javaObject = IsoDoor.new(cell, square, sprite, north);
     self:overrideModData(index);
     self.javaObject:setHealth(self:getHealth());
 
@@ -93,7 +93,7 @@ function ISFourTileGarageDoor:createPart(x, y, z, north, sprite, index)
         end
     end
 
-    self.sq:AddSpecialObject(self.javaObject);
+    square:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
 

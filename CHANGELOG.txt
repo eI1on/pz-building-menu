@@ -5,6 +5,7 @@ Changelog:
 Main mod:
 [list]
 [*] All Addons: Changed name of "Exterior Wall" objects to "Roof Slope Wall"
+[*] Fixed issue with multi-tile objects not using ground materials
 [/list]
 Melos Tiles addon:
 [list]

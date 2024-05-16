@@ -32,8 +32,8 @@ end
 --- @param sprite string The sprite to use for this object
 function ISHighMetalFence:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
-    local square = cell:getGridSquare(x, y, z)
-    local xa, ya = self:getSquare2Pos(square, north);
+    self.sq = cell:getGridSquare(x, y, z)
+    local xa, ya = self:getSquare2Pos(self.sq, north);
     local spriteAName = self.sprite2;
 
     if self.north then
@@ -55,16 +55,16 @@ end
 --- @param index integer The index of the part
 function ISHighMetalFence:createPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell();
-    self.sq = cell:getGridSquare(x, y, z);
-    if self:partExists(self.sq, index) then return; end
+    local square = cell:getGridSquare(x, y, z);
+    if self:partExists(square, index) then return; end
 
-    self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+    self.javaObject = IsoThumpable.new(cell, square, sprite, north, self);
     self.javaObject:setThumpSound("ZombieThumpMetal");
     self.javaObject:setHealth(self:getHealth());
 
     buildUtil.setInfo(self.javaObject, self);
 
-    self.sq:AddSpecialObject(self.javaObject);
+    square:AddSpecialObject(self.javaObject);
     self.javaObject:transmitCompleteItemToServer();
 end
 

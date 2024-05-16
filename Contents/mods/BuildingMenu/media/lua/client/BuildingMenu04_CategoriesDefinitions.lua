@@ -1,6 +1,14 @@
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main")
 
+---@type function
+local getTextOrNull = getTextOrNull
+---@type function
+local pairs = pairs
+---@type function
+local ipairs = ipairs
+---@type function
+local getText = getText
 
 --- Finds an item in a list by a key-value pair, or creates and adds it if not found
 --- @param list table The list to search or add the item to

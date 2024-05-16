@@ -12,7 +12,7 @@ function ISFloorOverlay:new(sprite, northSprite)
     o:init();
     o:setSprite(sprite);
     o:setNorthSprite(northSprite);
-    o.buildMid = true;
+    o.buildLow = true;
     o.floor = true;
     return o;
 end
