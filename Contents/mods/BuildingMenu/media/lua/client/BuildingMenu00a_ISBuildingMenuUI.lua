@@ -330,6 +330,61 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
     end
 end
 
+
+--- Spawns items in the player's inventory
+---@param selectedObject table
+function BuildingMenuTilePickerList:spawnItems(selectedObject)
+    local objectRecipe = selectedObject.objDef.data.recipe
+    if not objectRecipe then return end
+
+    local inventory = self.character:getInventory()
+
+    for _, tool in ipairs(objectRecipe.neededTools) do
+        inventory:AddItem(tool)
+    end
+
+    local function addItemToInventory(itemTable)
+        local items, amount = itemTable.Material or itemTable.Consumable, tonumber(itemTable.Amount)
+
+        if type(items) == "table" then
+            items = items[1]
+        end
+
+        if items and amount then
+            for i = 1, amount do
+                inventory:AddItem(items)
+            end
+        else
+            print("[Building Menu ERROR] Item or amount is nil for", items)
+        end
+    end
+
+    for _, material in pairs(objectRecipe.neededMaterials or {}) do
+        addItemToInventory(type(material[1]) == "table" and material[1] or material)
+    end
+
+    for _, consumable in pairs(objectRecipe.useConsumable or {}) do
+        addItemToInventory(type(consumable[1]) == "table" and consumable[1] or consumable)
+    end
+end
+
+
+--- Handles mouse down events on the tile picker list
+---@param x number
+---@param y number
+function BuildingMenuTilePickerList:onRightMouseDown(x, y)
+    if (not self.character or self.character:isDead()) and not isDebugEnabled() then return; end
+
+    local c = math.floor(x / 64);
+    local r = math.floor(y / 128);
+    local selectedObject = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
+
+    if selectedObject then
+        self:spawnItems(selectedObject)
+    end
+end
+
+
 --- Handles joypad down events on the tile picker list
 ---@param button Joypad
 function BuildingMenuTilePickerList:onJoypadDown(button)
