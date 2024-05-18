@@ -49,9 +49,12 @@ function ISBMNaturalFloor:new(sprite, northSprite, item, uses, playerObj)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
+
 	o:init();
+
 	o:setSprite(sprite);
 	o:setNorthSprite(northSprite);
+
 	o.item = item;
 	o.uses = uses;
 	o.itemType = item and item:getFullType() or "none";
@@ -59,6 +62,7 @@ function ISBMNaturalFloor:new(sprite, northSprite, item, uses, playerObj)
 	o.noNeedHammer = true;
 	o.actionAnim = CharacterActionAnims.Pour;
 	o.floorType = o:getFloorType(item);
+
 	o.craftingBank = "DropSoilFromDirtBag";
 	if o.floorType == "gravel" then
 		o.craftingBank = "DropSoilFromGravelBag";

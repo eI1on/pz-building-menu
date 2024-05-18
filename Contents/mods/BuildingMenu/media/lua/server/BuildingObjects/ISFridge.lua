@@ -1,3 +1,5 @@
+local BM_Utils = require("BM_Utils")
+
 ---@class ISFridge : ISBuildingObject
 ISFridge = ISBuildingObject:derive("ISFridge");
 
@@ -30,6 +32,7 @@ function ISFridge:create(x, y, z, north, sprite)
 	buildUtil.consumeMaterial(self);
 
 	self.sq:AddSpecialObject(self.javaObject);
+	self.sq:RecalcAllWithNeighbours(true);
 	self.javaObject:transmitCompleteItemToServer();
 end
 
@@ -61,6 +64,14 @@ end
 --- Calculates the health of the fridge based on construction skills
 --- @return integer health The total health of the fridge
 function ISFridge:getHealth()
+    if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 300 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
 	return 300 + buildUtil.getWoodHealth(self);
 end
 
@@ -68,25 +79,25 @@ end
 --- @param square IsoGridSquare The square to check
 --- @return boolean validity True if the fridge can be placed, false otherwise
 function ISFridge:isValid(square)
-    if not square then return false; end
+	if not square then return false; end
 	if not ISBuildingObject.isValid(self, square) then return false; end
 	if self.needToBeAgainstWall then
-        for i=0,square:getObjects():size()-1 do
-           local obj = square:getObjects():get(i);
-           if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
-               return true;
-           end
-        end
-        return false;
-    else
+		for i = 0, square:getObjects():size() - 1 do
+			local obj = square:getObjects():get(i);
+			if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
+				return true;
+			end
+		end
+		return false;
+	else
 		local sharedSprite = getSprite(self:getSprite());
-		if square and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
+		if square and sharedSprite and sharedSprite:getProperties():Is("IsMoveAble") then
 			local props = ISMoveableSpriteProps.new(sharedSprite);
 			return props:canPlaceMoveable("bogus", square, nil);
 		end
-		if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
-    end
-    return true;
+		if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
+	end
+	return true;
 end
 
 --- Renders the fridge as a ghost tile at the specified location

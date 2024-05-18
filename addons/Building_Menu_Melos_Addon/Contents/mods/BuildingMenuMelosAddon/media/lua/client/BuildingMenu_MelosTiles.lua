@@ -22138,7 +22138,6 @@ local function addMelosFridgesToMenu()
                 buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             sprites

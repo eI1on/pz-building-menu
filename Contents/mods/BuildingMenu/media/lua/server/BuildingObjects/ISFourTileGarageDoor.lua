@@ -1,5 +1,8 @@
+local BM_Utils = require("BM_Utils")
+
 --- @class ISFourTileGarageDoor : ISBuildingObject
 ISFourTileGarageDoor = ISBuildingObject:derive('ISFourTileGarageDoor')
+
 
 --- Initializes a new instance of the ISFourTileGarageDoor class
 --- @param sprite string The primary sprite for the door
@@ -19,6 +22,7 @@ function ISFourTileGarageDoor:new(sprite, sprite2, sprite3, sprite4, northSprite
 
     o:init();
     o:setSprite(sprite);
+
     o.sprite2 = sprite2;
     o.sprite3 = sprite3;
     o.sprite4 = sprite4;
@@ -34,8 +38,11 @@ function ISFourTileGarageDoor:new(sprite, sprite2, sprite3, sprite4, northSprite
     o.thumpDmg = 5;
     o.name = 'Big Garage Door';
 
+    o.RENDER_SPRITE_CACHE = {};
+
     return o;
 end
+
 
 --- Creates the four parts of the garage door on the map
 --- @param x integer x coordinate in the world
@@ -65,6 +72,7 @@ function ISFourTileGarageDoor:create(x, y, z, north, sprite)
     self:createPart(xb, yb, z, north, spriteBName, 3);
     self:createPart(xc, yc, z, north, spriteCName, 4);
 end
+
 
 --- Adds a single part of the garage door to the specified location
 --- @param x integer x coordinate where the part should be placed
@@ -97,20 +105,29 @@ function ISFourTileGarageDoor:createPart(x, y, z, north, sprite, index)
     self.javaObject:transmitCompleteItemToServer();
 end
 
+
 --- Returns the health of the garage door based on material and construction
 --- @return integer health The calculated health value
 function ISFourTileGarageDoor:getHealth()
-    return 700 + buildUtil.getWoodHealth(self);
+    if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 700 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
+	return 700 + buildUtil.getWoodHealth(self);
 end
+
 
 --- Checks if the specified square is a valid location for placing the garage door
 --- @param square IsoGridSquare The square to check for validity
 --- @return boolean validity True if valid, false otherwise
 function ISFourTileGarageDoor:isValid(square)
-    -- check the primary square (part 1)
-    if not self:partExists(square, 1) and not self:checkSingleTileValidity(square) then
-        return false;
-    end
+    if not square then return false; end
+    -- basic checks for the primary square
+    if not self:haveMaterial(square) or not square:hasFloor(self.north) then return false; end
 
     -- checks for additional squares (parts 2, 3, 4)
     local xa, ya = self:getSquare2Pos(square, self.north);
@@ -127,28 +144,24 @@ function ISFourTileGarageDoor:isValid(square)
     if squareA:isSomethingTo(squareB) then return false; end
     if squareB:isSomethingTo(squareC) then return false; end
 
+    -- check the primary square (part 1)
+    if self:partExists(square, 1) or not self:checkSingleTileValidity(square) then
+        return false;
+    end
     -- check validity for additional squares
-    local spriteAFree = true;
-    if not self:partExists(square, 2) and not self:checkSingleTileValidity(squareA) then
-        spriteAFree = false;
+    if self:partExists(squareA, 2) or not self:checkSingleTileValidity(squareA) then
+        return false;
     end
-
-    local spriteBFree = true;
-    if not self:partExists(square, 3) and not self:checkSingleTileValidity(squareB) then
-        spriteBFree = false;
+    if self:partExists(squareB, 3) or not self:checkSingleTileValidity(squareB) then
+        return false;
     end
-
-    local spriteCFree = true;
-    if not self:partExists(square, 4) and not self:checkSingleTileValidity(squareC) then
-        spriteCFree = false;
-    end
-
-    if not spriteAFree or not spriteBFree or not spriteCFree then
+    if self:partExists(squareC, 4) or not self:checkSingleTileValidity(squareC) then
         return false;
     end
     -- if all checks passed, return true
     return true;
 end
+
 
 --- Renders a ghost tile of the garage door at the specified location for pre-placement visualization
 --- @param x integer x coordinate in the world
@@ -156,6 +169,8 @@ end
 --- @param z integer z coordinate (floor level)
 --- @param square IsoGridSquare The square where the garage door will be placed
 function ISFourTileGarageDoor:render(x, y, z, square)
+    local haveMaterials = self:haveMaterial(square);
+
     local spriteName = self:getSprite();
     local spriteAName = self.sprite2;
     local spriteBName = self.sprite3;
@@ -168,70 +183,66 @@ function ISFourTileGarageDoor:render(x, y, z, square)
         spriteCName = self.northSprite4;
     end
 
-    local spriteFree = true;
-    local spriteAFree = true;
-    local spriteBFree = true;
-    local spriteCFree = true;
-
+    -- positions for the additional tiles
     local xa, ya, za = self:getSquare2Pos(square, self.north);
     local xb, yb, zb = self:getSquare3Pos(square, self.north);
     local xc, yc, zc = self:getSquare4Pos(square, self.north);
 
-
+    -- squares for the additional tiles
     local squareA = getCell():getGridSquare(xa, ya, za)
     if squareA == nil and getWorld():isValidSquare(xa, ya, za) then
+---@diagnostic disable-next-line: param-type-mismatch
         squareA = IsoGridSquare.new(getCell(), nil, xa, ya, za);
         getCell():ConnectNewSquare(squareA, false);
     end
 
     local squareB = getCell():getGridSquare(xb, yb, zb)
     if squareB == nil and getWorld():isValidSquare(xb, yb, zb) then
+---@diagnostic disable-next-line: param-type-mismatch
         squareB = IsoGridSquare.new(getCell(), nil, xb, yb, zb);
         getCell():ConnectNewSquare(squareB, false);
     end
 
     local squareC = getCell():getGridSquare(xc, yc, zc)
     if squareC == nil and getWorld():isValidSquare(xc, yc, zc) then
+---@diagnostic disable-next-line: param-type-mismatch
         squareC = IsoGridSquare.new(getCell(), nil, xc, yc, zc);
         getCell():ConnectNewSquare(squareC, false);
     end
 
-    if not self:partExists(square, 1) then
-        spriteFree = ISBuildingObject.isValid(self, square);
-        if buildUtil.stairIsBlockingPlacement(square, true, self.north) then spriteFree = false end
+    -- initial checks for the primary square
+    local spriteFree = true;
+    if self:partExists(square, 1) or not self:checkSingleTileValidity(square) or not haveMaterials then
+        spriteFree = false;
     end
 
-	local existsA = self:partExists(squareA, 2)
-	local existsB = self:partExists(squareB, 3)
-	local existsC = self:partExists(squareC, 4)
-	
-	-- test if the square are free to add our door
-	if not existsA and not buildUtil.canBePlace(self, squareA) then spriteAFree = false; end
-	if not existsB and not buildUtil.canBePlace(self, squareB) then spriteBFree = false; end
-	if not existsC and not buildUtil.canBePlace(self, squareC) then spriteCFree = false; end
-
     -- check validity for additional squares
-	if squareA and (squareA:isSomethingTo(square) or buildUtil.stairIsBlockingPlacement(squareA, true, self.north)) then
-		spriteAFree = false;
-	end
+    local spriteAFree = true;
+    if self:partExists(squareA, 2) or not self:checkSingleTileValidity(squareA) or not haveMaterials then
+        spriteAFree = false;
+    end
 
-	if squareB and (squareB:isSomethingTo(squareA) or buildUtil.stairIsBlockingPlacement(squareB, true, self.north)) then
-		spriteBFree = false;
-	end
+    local spriteBFree = true;
+    if self:partExists(squareB, 3) or not self:checkSingleTileValidity(squareB) or not haveMaterials then
+        spriteBFree = false;
+    end
 
-	if squareC and (squareC:isSomethingTo(squareB) or buildUtil.stairIsBlockingPlacement(squareC, true, self.north)) then
-		spriteCFree = false;
-	end
+    local spriteCFree = true;
+    if self:partExists(squareC, 4) or not self:checkSingleTileValidity(squareC) or not haveMaterials then
+        spriteCFree = false;
+    end
 
-    -- if square:isSomethingTo(squareA) then spriteFree = false; spriteAFree = false; end
-    -- if squareA:isSomethingTo(squareB) then spriteAFree = false; spriteBFree = false; end
-    -- if squareB:isSomethingTo(squareC) then spriteBFree = false; spriteCFree = false; end
+    if square:isSomethingTo(squareA) then spriteFree = false; spriteAFree = false; end
+    if squareA:isSomethingTo(squareB) then spriteAFree = false; spriteBFree = false; end
+    if squareB:isSomethingTo(squareC) then spriteBFree = false; spriteCFree = false; end
 
-    -- print("self:partExists(square, 1) ", self:partExists(square, 1))
-    -- print("self:partExists(squareA, 2) ", self:partExists(squareA, 2))
-    -- print("self:partExists(squareB, 3) ", self:partExists(squareB, 3))
-    -- print("self:partExists(squareC, 4) ", self:partExists(squareC, 4))
-
+    -- render floor helpers if enabled
+    if self.renderFloorHelper then
+        self:renderFloorHelperTile(1, x, y, z);
+        self:renderFloorHelperTile(2, xa, ya, za);
+        self:renderFloorHelperTile(3, xb, yb, zb);
+        self:renderFloorHelperTile(4, xc, yc, zc);
+    end
 
     self:renderPart(spriteName, x, y, z, spriteFree);
     self:renderPart(spriteAName, xa, ya, za, spriteAFree);
@@ -239,18 +250,6 @@ function ISFourTileGarageDoor:render(x, y, z, square)
     self:renderPart(spriteCName, xc, yc, zc, spriteCFree);
 end
 
----Checks if a single tile is valid for furniture placement
----@param square IsoGridSquare The square to check
----@return boolean validity
-function ISFourTileGarageDoor:checkSingleTileValidity(square)
-    if not square then return false; end
-	if not ISBuildingObject.isValid(self, square) then return false; end
-    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
-	if not square:isFreeOrMidair(true) then return false; end
-
-    -- if all checks passed, return true
-    return true;
-end
 
 ---Renders a ghost tile part of the furniture
 ---@param spriteName string The name of the sprite to render
@@ -259,14 +258,70 @@ end
 ---@param z integer z coordinate (floor level)
 ---@param isFree boolean Whether the tile is free to place the part
 function ISFourTileGarageDoor:renderPart(spriteName, x, y, z, isFree)
-    local sprite = IsoSprite.new();
-    sprite:LoadFramesNoDirPageSimple(spriteName);
+    if not self.RENDER_SPRITE_CACHE[spriteName] then
+        local sprite = IsoSprite.new();
+        sprite:LoadFramesNoDirPageSimple(spriteName);
+        self.RENDER_SPRITE_CACHE[spriteName] = sprite;
+    end
+    local sprite = self.RENDER_SPRITE_CACHE[spriteName];
     if isFree then
         sprite:RenderGhostTile(x, y, z);
     else
         sprite:RenderGhostTileRed(x, y, z);
     end
 end
+
+
+---Renders a floor helper tile
+---@param index integer The index of the part to check for
+---@param x integer x coordinate in the world
+---@param y integer y coordinate in the world
+---@param z integer z coordinate (floor level)
+function ISFourTileGarageDoor:renderFloorHelperTile(index, x, y, z)
+    local helperSpriteName = 'carpentry_02_56';
+    if not self.RENDER_SPRITE_FLOOR_CACHE then
+        self.RENDER_SPRITE_FLOOR_CACHE = {};
+    end
+    if not self.RENDER_SPRITE_FLOOR_CACHE[index] then
+        self.RENDER_SPRITE_FLOOR_CACHE[index] = IsoSprite.new();
+        self.RENDER_SPRITE_FLOOR_CACHE[index]:LoadFramesNoDirPageSimple(helperSpriteName);
+    end
+    self.RENDER_SPRITE_FLOOR_CACHE[index]:RenderGhostTile(x, y, z);
+end
+
+
+---Checks if a single tile is valid for furniture placement
+---@param square IsoGridSquare The square to check
+---@return boolean validity
+function ISFourTileGarageDoor:checkSingleTileValidity(square)
+    if not square then return false; end
+
+    -- ISBuildingObject:isValid without the check for materials on square, we only check for the first part of the obj 
+---@diagnostic disable-next-line: param-type-mismatch
+    if self.notExterior and not square:Is(IsoFlagType.exterior) then return false; end
+	if square:isVehicleIntersecting() then return false end
+	if self.canBeAlwaysPlaced then
+		-- even if we can place this item everywhere, we can't place 2 same objects on the same tile
+		for i=0,square:getObjects():size()-1 do
+			local obj = square:getObjects():get(i);
+			if self:getSprite() == obj:getTextureName() then
+				return false
+			end
+		end
+		return true
+	end
+	local blockedByCharacters = self.isWallLike ~= true;
+    if not square:isFreeOrMidair(blockedByCharacters) or not buildUtil.canBePlace(self, square) then return false; end
+
+    if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
+    if isClient() and SafeHouse.isSafeHouse(square, getSpecificPlayer(self.player):getUsername(), true) then
+        return false;
+    end
+
+    -- if all checks passed, return true
+    return true;
+end
+
 
 --- Modifies the modData of the ISFourTileGarageDoor based on the part index to correctly set the material requirements for each part of the door
 --- @param spriteIndex integer The index of the door part being processed
@@ -304,6 +359,7 @@ function ISFourTileGarageDoor:overrideModData(spriteIndex)
     end
 end
 
+
 --- Calculates the world coordinates for the second part of the garage door based on its orientation
 --- @param square IsoGridSquare The square where the main part is placed
 --- @param north boolean True if the door is facing north, affecting the calculation of positions
@@ -318,6 +374,7 @@ function ISFourTileGarageDoor:getSquare2Pos(square, north)
     end
     return x, y, z;
 end
+
 
 --- Calculates the world coordinates for the third part of the garage door based on its orientation
 --- @param square IsoGridSquare The square where the main part is placed
@@ -334,6 +391,7 @@ function ISFourTileGarageDoor:getSquare3Pos(square, north)
     return x, y, z;
 end
 
+
 --- Calculates the world coordinates for the fourth part of the garage door based on its orientation
 --- @param square IsoGridSquare The square where the main part is placed
 --- @param north boolean True if the door is facing north, affecting the calculation of positions
@@ -349,31 +407,34 @@ function ISFourTileGarageDoor:getSquare4Pos(square, north)
     return x, y, z;
 end
 
+
 --- Checks if a specific part of the garage door already exists at a given square
 --- This is used to prevent duplicating parts on the same square and ensures each part is unique
 --- @param square IsoGridSquare The square to check for existing parts
 --- @param index integer|string|nil The index of the part to check (1-4)
 --- @return boolean exists True if the part exists, false otherwise
 function ISFourTileGarageDoor:partExists(square, index)
-	local spriteName
-	if self.north then
-		if index == 1 then spriteName = self.northSprite
-		elseif index == 2 then spriteName = self.northSprite2
-		elseif index == 3 then spriteName = self.northSprite3
-		else spriteName = self.northSprite4 end
-	else
-		if index == 1 then spriteName = self.sprite
-		elseif index == 2 then spriteName = self.sprite2
-		elseif index == 3 then spriteName = self.sprite3
-		else spriteName = self.sprite4 end
-	end
+    local spriteName = self:getSpriteNameForPart(index, self.north);
     local objects = square:getSpecialObjects();
     for i = 0, objects:size() - 1 do
         local object = objects:get(i);
-        
         if IsoDoor.getGarageDoorIndex(object) == index and object:getNorth() == self.north and not object:IsOpen() and object:getSprite():getName() == spriteName then
             return true;
         end
     end
     return false;
+end
+
+
+---Gets the sprite name for a part based on its index and orientation
+---@param index integer|string|nil The index of the part
+---@param north boolean The orientation of the part
+---@return string spriteName The sprite name
+function ISFourTileGarageDoor:getSpriteNameForPart(index, north)
+    if index == 1 or index == nil then index = ""; end
+    if north then
+        return self["northSprite" .. index];
+    else
+        return self["sprite" .. index];
+    end
 end

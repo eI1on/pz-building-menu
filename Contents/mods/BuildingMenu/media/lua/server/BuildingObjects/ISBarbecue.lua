@@ -36,7 +36,7 @@ function ISBarbecue:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
     self.sq = cell:getGridSquare(x, y, z);
 
-    self.javaObject = IsoBarbecue.new(getCell(), self.sq, getSprite(sprite));
+    self.javaObject = IsoBarbecue.new(cell, self.sq, getSprite(sprite));
     self.javaObject:setMovedThumpable(true);
 
     buildUtil.consumeMaterial(self);
@@ -50,17 +50,22 @@ end
 --- @return boolean validity true if the square is valid, false otherwise
 function ISBarbecue:isValid(square)
     if not square then return false; end
-	if not ISBuildingObject.isValid(self, square) then return false; end
-	if self.needToBeAgainstWall then
-        for i=0,square:getObjects():size()-1 do
-           local obj = square:getObjects():get(i);
-           if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
-               return true;
-           end
+    if not ISBuildingObject.isValid(self, square) then return false; end
+    if self.needToBeAgainstWall then
+        for i = 0, square:getObjects():size() - 1 do
+            local obj = square:getObjects():get(i);
+            if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
+                return true;
+            end
         end
         return false;
     else
-        if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
+        local sharedSprite = getSprite(self:getSprite());
+        if square and sharedSprite and sharedSprite:getProperties():Is("IsMoveAble") then
+            local props = ISMoveableSpriteProps.new(sharedSprite);
+            return props:canPlaceMoveable("bogus", square, nil);
+        end
+        if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
     end
     return true;
 end

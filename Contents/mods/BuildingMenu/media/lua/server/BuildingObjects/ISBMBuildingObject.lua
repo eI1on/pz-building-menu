@@ -9,14 +9,14 @@ local originalOnJoypadPressButton = ISBuildingObject.onJoypadPressButton;
 --- @param joypadData any Data associated with the joypad
 --- @param button integer The button code that was pressed
 function ISBuildingObject:onJoypadPressButton(joypadIndex, joypadData, button)
-    ---@type ISBuildingMenuUI
-    local BMUI = ISBuildingMenuUI.instance;
-    -- If the B button is pressed and the Building Menu UI instance exists, set focus to it
-    if button == Joypad.BButton and BMUI then
-        setJoypadFocus(joypadData.player, BMUI);
-    end
-    -- Call the original method with the current context and passed parameters
-    originalOnJoypadPressButton(self, joypadIndex, joypadData, button);
+	---@type ISBuildingMenuUI
+	local BMUI = ISBuildingMenuUI.instance;
+	-- If the B button is pressed and the Building Menu UI instance exists, set focus to it
+	if button == Joypad.BButton and BMUI then
+		setJoypadFocus(joypadData.player, BMUI);
+	end
+	-- Call the original method with the current context and passed parameters
+	originalOnJoypadPressButton(self, joypadIndex, joypadData, button);
 end
 
 local function predicateNotBroken(item)
@@ -46,21 +46,22 @@ function ISBuildingObject:tryBuild(x, y, z)
 				if hammer then
 					ISInventoryPaneContextMenu.equipWeapon(hammer, true, false, self.player)
 				end
-            end
-            if not ISBuildMenu.cheat then
+			end
+			if not ISBuildMenu.cheat then
 				if self.equipBothHandItem then
 					if luautils.haveToBeTransfered(playerObj, self.equipBothHandItem) then
-						ISTimedActionQueue.add(ISInventoryTransferAction:new(playerObj, self.equipBothHandItem, self.equipBothHandItem:getContainer(), playerInv));
+						ISTimedActionQueue.add(ISInventoryTransferAction:new(playerObj, self.equipBothHandItem,
+							self.equipBothHandItem:getContainer(), playerInv));
 					end
 					ISInventoryPaneContextMenu.equipWeapon(self.equipBothHandItem, true, true, self.player)
 				end
-                if self.firstItem then
+				if self.firstItem then
 					local item = nil
 					if self.firstPredicate then
 						item = playerInv:getFirstTypeEvalArgRecurse(self.firstItem, self.firstPredicate, self.firstArg)
 						if not item then
 							local groundItems = buildUtil.getMaterialOnGround(square)
-							for _,item2 in ipairs(groundItems[self.firstItem]) do
+							for _, item2 in ipairs(groundItems[self.firstItem]) do
 								if self.firstPredicate(item2, self.firstArg) then
 									item = item2
 									break
@@ -79,8 +80,8 @@ function ISBuildingObject:tryBuild(x, y, z)
 						end
 					end
 					ISInventoryPaneContextMenu.equipWeapon(item, true, false, self.player)
-                end
-                if self.secondItem then
+				end
+				if self.secondItem then
 					local item = playerInv:getItemFromType(self.secondItem, true, true)
 					if instanceof(item, "Clothing") then
 						if not item:isEquipped() then
@@ -89,17 +90,19 @@ function ISBuildingObject:tryBuild(x, y, z)
 					else
 						ISInventoryPaneContextMenu.equipWeapon(item, false, false, self.player)
 					end
-                end
-            end
+				end
+			end
 
 			local selfCopy = copyTable(self);
 			setmetatable(selfCopy, getmetatable(self, true));
 
-            if self.modData and self.modData.isBuiltObject then
-                ISTimedActionQueue.add(ISBMBuildAction:new(playerObj, selfCopy, x, y, z, self.north, self:getSprite(), maxTime));
-            else
-                ISTimedActionQueue.add(ISBuildAction:new(playerObj, selfCopy, x, y, z, self.north, self:getSprite(), maxTime));
-            end
+			if self.modData and self.modData.isBuiltObject then
+				ISTimedActionQueue.add(ISBMBuildAction:new(playerObj, selfCopy, x, y, z, self.north, self:getSprite(),
+					maxTime));
+			else
+				ISTimedActionQueue.add(ISBuildAction:new(playerObj, selfCopy, x, y, z, self.north, self:getSprite(),
+					maxTime));
+			end
 		end
 	end
 end

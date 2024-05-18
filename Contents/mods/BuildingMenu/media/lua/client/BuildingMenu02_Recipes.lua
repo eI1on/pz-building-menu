@@ -3572,7 +3572,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.75)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 1)
             },
             {
                 Material = "Base.ScrapMetal",
@@ -3582,7 +3582,7 @@ local function initBuildingMenuRecipes()
         useConsumable = {
             {
                 Consumable = "Base.Wire",
-                Amount = 5
+                Amount = 10
             },
             {
                 Consumable = "Base.BlowTorch",
@@ -3610,17 +3610,17 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.75)
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.5)
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.75)
             }
         },
         useConsumable = {
             {
                 Consumable = "Base.Wire",
-                Amount = 2
+                Amount = 5
             },
             {
                 Consumable = "Base.BlowTorch",
@@ -3634,36 +3634,32 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "MetalWelding",
-                Level = 5,
-                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
+                Level = 4,
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
             }
         }
     }
 
-    BuildingMenu.HighConcreteWireFenceRecipe = {
+    BuildingMenu.HighMetalBarsFenceRecipe = {
         neededTools = {
             "BlowTorch",
             "WeldingMask"
         },
         neededMaterials = {
             {
+                Material = "Base.MetalBar",
+                Amount = BuildingMenu.round(metalBarsCount * 2)
+            },
+            {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.75)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 1)
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = BuildingMenu.round(scrapMetalCountForFences * 1)
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.5)
             }
         },
         useConsumable = {
-            {
-                Consumable = "Base.BucketConcreteFull",
-                Amount = 1
-            },
-            {
-                Consumable = "Base.Wire",
-                Amount = 5
-            },
             {
                 Consumable = "Base.BlowTorch",
                 Amount = 5
@@ -3682,8 +3678,45 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.HighMetalBarsFencePostRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.MetalBar",
+                Amount = BuildingMenu.round(metalBarsCount * 1)
+            },
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.25)
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.25)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 3
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(3)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 4,
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
+            }
+        }
+    }
 
-    BuildingMenu.HighConcreteWireFencePostRecipe = {
+    BuildingMenu.HighConcreteWireFenceRecipe = {
         neededTools = {
             "BlowTorch",
             "WeldingMask"
@@ -3691,11 +3724,11 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.SmallSheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 1)
             },
             {
                 Material = "Base.ScrapMetal",
-                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.5)
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 1)
             }
         },
         useConsumable = {
@@ -3705,7 +3738,50 @@ local function initBuildingMenuRecipes()
             },
             {
                 Consumable = "Base.Wire",
-                Amount = 2
+                Amount = 10
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 7,
+                Xp = BuildingMenu.round(7 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.HighConcreteWireFencePostRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.75)
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 0.75)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BucketConcreteFull",
+                Amount = 1
+            },
+            {
+                Consumable = "Base.Wire",
+                Amount = 5
             },
             {
                 Consumable = "Base.BlowTorch",
@@ -3719,8 +3795,8 @@ local function initBuildingMenuRecipes()
         skills = {
             {
                 Skill = "MetalWelding",
-                Level = 5,
-                Xp = BuildingMenu.round(5 * metalweldingXpPerLevel)
+                Level = 7,
+                Xp = BuildingMenu.round(7 * metalweldingXpPerLevel)
             }
         }
     }
@@ -3743,7 +3819,7 @@ local function initBuildingMenuRecipes()
         useConsumable = {
             {
                 Consumable = "Base.BucketConcreteFull",
-                Amount = 2
+                Amount = 4
             }
         },
         skills = {
@@ -3773,7 +3849,7 @@ local function initBuildingMenuRecipes()
         useConsumable = {
             {
                 Consumable = "Base.BucketConcreteFull",
-                Amount = 1
+                Amount = 2
             }
         },
         skills = {
@@ -3787,8 +3863,8 @@ local function initBuildingMenuRecipes()
 
     BuildingMenu.HighWoodenFenceRecipe = {
         neededTools = {
-            "Hammer",
-            "Shovel"
+            "Shovel",
+            "Hammer"
         },
         neededMaterials = {
             {
@@ -3803,7 +3879,7 @@ local function initBuildingMenuRecipes()
         useConsumable = {
             {
                 Consumable = "Base.Dirtbag",
-                Amount = 1
+                Amount = 2
             },
             {
                 Consumable = "Base.BucketWaterFull",
@@ -3821,8 +3897,8 @@ local function initBuildingMenuRecipes()
 
     BuildingMenu.HighWoodenFencePostRecipe = {
         neededTools = {
-            "Hammer",
-            "Shovel"
+            "Shovel",
+            "Hammer"
         },
         neededMaterials = {
             {

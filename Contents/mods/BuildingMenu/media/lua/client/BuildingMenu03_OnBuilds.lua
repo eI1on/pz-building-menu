@@ -294,8 +294,8 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildLargeFridge = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _doubleFridge = ISDoubleFridge:new(playerNum, name, sprites.sprite, sprites.sprite2, sprites.northSprite,
-        sprites.northSprite2);
+    local _doubleFridge = ISDoubleTileContainer:new(playerNum, name, sprites.sprite, sprites.sprite2, sprites
+    .northSprite, sprites.northSprite2);
 
     return _doubleFridge
 end
@@ -305,7 +305,7 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildTripleFridge = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _tripleFridge = ISTripleFridge:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite,
+    local _tripleFridge = ISThreeTileContainer:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.northSprite,
         sprites.northSprite2, sprites.northSprite3)
 
     return _tripleFridge
@@ -316,7 +316,8 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildPopsicleFridge = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _popsicleFridge = ISPopsicleFridge:new(playerNum, name, sprites.sprite, sprites.sprite2, sprites.northSprite,
+    local _popsicleFridge = ISDoubleTileContainer:new(playerNum, name, sprites.sprite, sprites.sprite2,
+        sprites.northSprite,
         sprites.northSprite2);
 
     return _popsicleFridge
@@ -438,7 +439,7 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildDoubleMetalShelf = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _metalDoubleShelf = ISDoubleMetalShelf:new(playerNum, name, sprites.sprite, sprites.sprite2,
+    local _metalDoubleShelf = ISDoubleTileContainer:new(playerNum, name, sprites.sprite, sprites.sprite2,
         sprites.northSprite,
         sprites.northSprite2);
 

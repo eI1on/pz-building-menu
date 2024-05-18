@@ -1,4 +1,5 @@
----@diagnostic disable: param-type-mismatch
+local BM_Utils = require("BM_Utils")
+
 ---@class ISFourTileFurniture : ISBuildingObject
 ---@field sprite2 string Sprite for the second tile
 ---@field sprite3 string Sprite for the third tile
@@ -58,6 +59,9 @@ function ISFourTileFurniture:new(name, sprite, sprite2, sprite3, sprite4, northS
     o.blockAllTheSquare = true;
     o.canBeAlwaysPlaced = true;
     o.buildMid = true;
+
+    o.RENDER_SPRITE_CACHE = {};
+
     return o;
 end
 
@@ -125,6 +129,7 @@ function ISFourTileFurniture:walkTo(x, y, z)
     local playerObj = getSpecificPlayer(self.player);
     local square = getCell():getGridSquare(x, y, z);
     local square2 = self:getSquare2(square, self.north);
+---@diagnostic disable-next-line: param-type-mismatch
     if square:DistToProper(playerObj) < square2:DistToProper(playerObj) then
         return luautils.walkAdj(playerObj, square);
     end
@@ -154,6 +159,7 @@ function ISFourTileFurniture:removeFromGround(square)
     };
 
     for _, pos in ipairs(positions) do
+---@diagnostic disable-next-line: param-type-mismatch
         local xa, ya = unpack(pos);
         local squareA = getCell():getGridSquare(xa, ya, square:getZ());
         removeItemFromSquare(squareA);
@@ -163,7 +169,15 @@ end
 ---Calculates the health of the furniture based on certain conditions. Currently it's 400 + 100 per carpentry lvl
 ---@return integer health
 function ISFourTileFurniture:getHealth()
-    return 400 + buildUtil.getWoodHealth(self);
+    if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 500 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
+	return 500 + buildUtil.getWoodHealth(self);
 end
 
 ---Renders ghost tiles of the furniture object for placement preview
@@ -210,23 +224,23 @@ function ISFourTileFurniture:render(x, y, z, square)
 
     -- initial checks for the primary square
     local spriteFree = true;
-    if not self:partExists(square, 1) and not self:checkSingleTileValidity(square) then
+    if self:partExists(square, 1) or not self:checkSingleTileValidity(square) then
         spriteFree = false;
     end
 
     -- check validity for additional squares
     local spriteAFree = true;
-    if not self:partExists(squareA, 2) and not self:checkSingleTileValidity(squareA) then
+    if self:partExists(squareA, 2) or not self:checkSingleTileValidity(squareA) then
         spriteAFree = false;
     end
 
     local spriteBFree = true;
-    if not self:partExists(squareB, 3) and not self:checkSingleTileValidity(squareB) then
+    if self:partExists(squareB, 3) or not self:checkSingleTileValidity(squareB) then
         spriteBFree = false;
     end
 
     local spriteCFree = true;
-    if not self:partExists(squareC, 4) and not self:checkSingleTileValidity(squareC) then
+    if self:partExists(squareC, 4) or not self:checkSingleTileValidity(squareC) then
         spriteCFree = false;
     end
 
@@ -235,11 +249,20 @@ function ISFourTileFurniture:render(x, y, z, square)
     if squareA:isSomethingTo(squareB) then spriteAFree = false; spriteBFree = false; end
     if squareB:isSomethingTo(squareC) then spriteBFree = false; spriteCFree = false; end
 
+    -- render floor helpers if enabled
+    if self.renderFloorHelper then
+        self:renderFloorHelperTile(1, x, y, z)
+        self:renderFloorHelperTile(2, xa, ya, za)
+        self:renderFloorHelperTile(3, xb, yb, zb)
+        self:renderFloorHelperTile(4, xc, yc, zc)
+    end
+
     self:renderPart(spriteName, x, y, z, spriteFree);
     self:renderPart(spriteAName, xa, ya, za, spriteAFree);
     self:renderPart(spriteBName, xb, yb, zb, spriteBFree);
     self:renderPart(spriteCName, xc, yc, zc, spriteCFree);
 end
+
 
 ---Renders a ghost tile part of the furniture
 ---@param spriteName string The name of the sprite to render
@@ -248,36 +271,62 @@ end
 ---@param z integer z coordinate (floor level)
 ---@param isFree boolean Whether the tile is free to place the part
 function ISFourTileFurniture:renderPart(spriteName, x, y, z, isFree)
-    local sprite = IsoSprite.new();
-    sprite:LoadFramesNoDirPageSimple(spriteName);
+    if not self.RENDER_SPRITE_CACHE[spriteName] then
+        local sprite = IsoSprite.new()
+        sprite:LoadFramesNoDirPageSimple(spriteName)
+        self.RENDER_SPRITE_CACHE[spriteName] = sprite
+    end
+    local sprite = self.RENDER_SPRITE_CACHE[spriteName]
     if isFree then
-        sprite:RenderGhostTile(x, y, z);
+        sprite:RenderGhostTile(x, y, z)
     else
-        sprite:RenderGhostTileRed(x, y, z);
+        sprite:RenderGhostTileRed(x, y, z)
     end
 end
+
+
+---Renders a floor helper tile
+---@param index integer The index of the part to check for
+---@param x integer x coordinate in the world
+---@param y integer y coordinate in the world
+---@param z integer z coordinate (floor level)
+function ISFourTileFurniture:renderFloorHelperTile(index, x, y, z)
+    local helperSpriteName = 'carpentry_02_56';
+    if not self.RENDER_SPRITE_FLOOR_CACHE then
+        self.RENDER_SPRITE_FLOOR_CACHE = {};
+    end
+    if not self.RENDER_SPRITE_FLOOR_CACHE[index] then
+        self.RENDER_SPRITE_FLOOR_CACHE[index] = IsoSprite.new();
+        self.RENDER_SPRITE_FLOOR_CACHE[index]:LoadFramesNoDirPageSimple(helperSpriteName);
+    end
+    self.RENDER_SPRITE_FLOOR_CACHE[index]:RenderGhostTile(x, y, z);
+end
+
 
 ---Checks if a single tile is valid for furniture placement
 ---@param square IsoGridSquare The square to check
 ---@return boolean validity
 function ISFourTileFurniture:checkSingleTileValidity(square)
     if not square then return false; end
-	if not ISBuildingObject.isValid(self, square) then return false; end
-    if buildUtil.stairIsBlockingPlacement( square, true ) then return false; end
-	if not square:isFreeOrMidair(true) then return false; end
+    if not ISBuildingObject.isValid(self, square) then return false; end
+    if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
+    if isClient() and SafeHouse.isSafeHouse(square, getSpecificPlayer(self.player):getUsername(), true) then
+        return false;
+    end
+    if not square:isFreeOrMidair(true) then return false; end
 
     -- if all checks passed, return true
     return true;
 end
 
+
 ---Checks if the furniture placement is valid
 ---@param square IsoGridSquare The square to check for the main part
 ---@return boolean validity
 function ISFourTileFurniture:isValid(square)
-    -- check the primary square (part 1)
-    if not self:partExists(square, 1) and not self:checkSingleTileValidity(square) then
-        return false;
-    end
+    if not square then return false; end
+    -- basic checks for the primary square
+    if not self:haveMaterial(square) or not square:hasFloor(self.north) then return false; end
 
     -- checks for additional squares (parts 2, 3, 4)
     local xa, ya = self:getSquare2Pos(square, self.north);
@@ -295,24 +344,18 @@ function ISFourTileFurniture:isValid(square)
     if squareA:isSomethingTo(squareB) then return false; end
     if squareB:isSomethingTo(squareC) then return false; end
 
-
+    -- check the primary square (part 1)
+    if self:partExists(square, 1) or not self:checkSingleTileValidity(square) or not self:haveMaterial(square) then
+        return false;
+    end
     -- check validity for additional squares
-    local spriteAFree = true;
-    if not self:partExists(square, 2) and not self:checkSingleTileValidity(squareA) then
-        spriteAFree = false;
+    if self:partExists(squareA, 2) or not self:checkSingleTileValidity(squareA) then
+        return false;
     end
-
-    local spriteBFree = true;
-    if not self:partExists(square, 3) and not self:checkSingleTileValidity(squareB) then
-        spriteBFree = false;
+    if self:partExists(squareB, 3) or not self:checkSingleTileValidity(squareB) then
+        return false;
     end
-
-    local spriteCFree = true;
-    if not self:partExists(square, 4) and not self:checkSingleTileValidity(squareC) then
-        spriteCFree = false;
-    end
-
-    if not spriteAFree or not spriteBFree or not spriteCFree then
+    if self:partExists(squareC, 4) or not self:checkSingleTileValidity(squareC) then
         return false;
     end
     -- if all checks passed, return true
@@ -398,7 +441,7 @@ function ISFourTileFurniture:partExists(square, index)
 end
 
 ---Gets the sprite name for a part based on its index and orientation
----@param index integer The index of the part
+---@param index integer|string The index of the part
 ---@param north boolean The orientation of the part
 ---@return string spriteName The sprite name
 function ISFourTileFurniture:getSpriteNameForPart(index, north)

@@ -1937,7 +1937,6 @@ local function addFridgeAppliancesToMenu()
                 buildMid = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {

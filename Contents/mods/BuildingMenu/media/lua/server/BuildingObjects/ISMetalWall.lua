@@ -49,7 +49,7 @@ end
 --- Calculates the health of the metal wall
 --- @return integer health The calculated health based on construction skills and traits
 function ISMetalWall:getHealth()
-    return 400 + BM_Utils.getMetalHealth(self);
+    return 600 + BM_Utils.getMetalHealth(self);
 end
 
 --- Validates if the metal wall can be placed on the specified square
@@ -76,8 +76,6 @@ function ISMetalWall:isValid(square)
 			return false;
 		end
 
-		-- Forbid placing walls between parts of multi-tile objects like couches.
-		-- TODO: Check for parts being destroyed.
 		local spriteGrid = sprite and sprite:getSpriteGrid()
 		if spriteGrid then
 			local gridX = spriteGrid:getSpriteGridPosX(sprite)

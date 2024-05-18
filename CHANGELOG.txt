@@ -17,7 +17,11 @@ Greenhouse Tiles addon:
 [/list]
 Daddy Dirkie's Tiles addon:
 [list]
-[*] Added sandbox option to disable DDD specific furniture
+[*] Added sandbox option to disable addon specific furniture
+[/list]
+Oujinjin's Tiles Addon:
+[list]
+[*] Fixed Fridges recipes
 [/list]
 ExtraNoise's Tiles addon:
 [list]

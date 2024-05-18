@@ -1,3 +1,5 @@
+local BM_Utils = require("BM_Utils")
+
 ---@class ISHighMetalFence : ISBuildingObject
 ISHighMetalFence = ISBuildingObject:derive("ISHighMetalFence")
 
@@ -15,11 +17,12 @@ function ISHighMetalFence:new(sprite, sprite2, northSprite, northSprite2)
     o:setSprite(sprite);
     o:setNorthSprite(northSprite);
 
-    o.sprite = sprite;
     o.sprite2 = sprite2;
-
-    o.northSprite = northSprite;
     o.northSprite2 = northSprite2;
+
+    o.isWallLike = true;
+
+    o.RENDER_SPRITE_CACHE = {};
 
     return o;
 end
@@ -32,10 +35,11 @@ end
 --- @param sprite string The sprite to use for this object
 function ISHighMetalFence:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
-    self.sq = cell:getGridSquare(x, y, z)
-    local xa, ya = self:getSquare2Pos(self.sq, north);
-    local spriteAName = self.sprite2;
+    self.sq = cell:getGridSquare(x, y, z);
 
+    local xa, ya = self:getSquare2Pos(self.sq, north);
+
+    local spriteAName = self.sprite2;
     if self.north then
         spriteAName = self.northSprite2;
     end
@@ -56,6 +60,7 @@ end
 function ISHighMetalFence:createPart(x, y, z, north, sprite, index)
     local cell = getWorld():getCell();
     local square = cell:getGridSquare(x, y, z);
+
     if self:partExists(square, index) then return; end
 
     self.javaObject = IsoThumpable.new(cell, square, sprite, north, self);
@@ -64,14 +69,23 @@ function ISHighMetalFence:createPart(x, y, z, north, sprite, index)
 
     buildUtil.setInfo(self.javaObject, self);
 
-    square:AddSpecialObject(self.javaObject);
+    square:AddSpecialObject(self.javaObject, self:getObjectIndex(square));
+    square:RecalcAllWithNeighbours(true);
     self.javaObject:transmitCompleteItemToServer();
 end
 
 --- Returns the health of the fence based on material properties
 --- @return integer health The calculated health of the fence
 function ISHighMetalFence:getHealth()
-    return 500 + buildUtil.getWoodHealth(self);
+    if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 700 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
+	return 700 + buildUtil.getWoodHealth(self);
 end
 
 --- Renders the fence as a ghost tile at the specified location
@@ -81,72 +95,140 @@ end
 --- @param z integer z coordinate (floor level)
 --- @param square IsoGridSquare The square where the fence will be placed
 function ISHighMetalFence:render(x, y, z, square)
-    local spriteName;
-    if not self:partExists(square, 1) then
-        spriteName = self:getSprite();
-        local sprite = IsoSprite.new();
-        sprite:LoadFramesNoDirPageSimple(spriteName);
+    local haveMaterials = self:haveMaterial(square);
 
-        local spriteFree = ISBuildingObject.isValid(self, square);
-        if buildUtil.stairIsBlockingPlacement(square, true, self.north) then
-            spriteFree = false;
-        end
-        if spriteFree then
-            sprite:RenderGhostTile(x, y, z);
-        else
-            sprite:RenderGhostTileRed(x, y, z);
-        end
-    end
-
-
+    local spriteName = self:getSprite();
     local spriteAName = self.sprite2;
-    local xa, ya = self:getSquare2Pos(square, self.north);
-    local squareA = getCell():getGridSquare(xa, ya, z);
+
     if self.north then
         spriteName = self.northSprite;
         spriteAName = self.northSprite2;
     end
 
-    if squareA == nil and getWorld():isValidSquare(xa, ya, z) then
-        squareA = IsoGridSquare.new(getCell(), nil, xa, ya, z);
+    -- positions for the additional tiles
+    local xa, ya, za = self:getSquare2Pos(square, self.north);
+
+    -- squares for the additional tiles
+    local squareA = getCell():getGridSquare(xa, ya, za)
+    if squareA == nil and getWorld():isValidSquare(xa, ya, za) then
+---@diagnostic disable-next-line: param-type-mismatch
+        squareA = IsoGridSquare.new(getCell(), nil, xa, ya, za);
         getCell():ConnectNewSquare(squareA, false);
     end
 
+    -- initial checks for the primary square
+    local spriteFree = true;
+    if self:partExists(square, 1) or not self:checkSingleTileValidity(square) or not haveMaterials then
+        spriteFree = false;
+    end
+
+    -- check validity for additional squares
     local spriteAFree = true;
-    local existsA = self:partExists(squareA, 2);
-    if not existsA and not buildUtil.canBePlace(self, squareA) then
+    if self:partExists(squareA, 2) or not self:checkSingleTileValidity(squareA) or not haveMaterials then
         spriteAFree = false;
     end
 
-    if squareA and (squareA:isSomethingTo(square) or buildUtil.stairIsBlockingPlacement(squareA, true, self.north)) then
-        spriteAFree = false;
+    if square:isSomethingTo(squareA) then spriteFree = false; spriteAFree = false; end
+
+    -- render floor helpers if enabled
+    if self.renderFloorHelper then
+        self:renderFloorHelperTile(1, x, y, z);
+        self:renderFloorHelperTile(2, xa, ya, za);
     end
 
-    if not existsA then
-        local spriteA = IsoSprite.new();
-        spriteA:LoadFramesNoDirPageSimple(spriteAName);
-        if spriteAFree then
-            spriteA:RenderGhostTile(xa, ya, z);
-        else
-            spriteA:RenderGhostTileRed(xa, ya, z);
-        end
+    self:renderPart(spriteName, x, y, z, spriteFree);
+    self:renderPart(spriteAName, xa, ya, za, spriteAFree);
+end
+
+
+---Renders a ghost tile part of the high metal wall
+---@param spriteName string The name of the sprite to render
+---@param x integer x coordinate in the world
+---@param y integer y coordinate in the world
+---@param z integer z coordinate (floor level)
+---@param isFree boolean Whether the tile is free to place the part
+function ISHighMetalFence:renderPart(spriteName, x, y, z, isFree)
+    if not self.RENDER_SPRITE_CACHE[spriteName] then
+        local sprite = IsoSprite.new();
+        sprite:LoadFramesNoDirPageSimple(spriteName);
+        self.RENDER_SPRITE_CACHE[spriteName] = sprite;
+    end
+    local sprite = self.RENDER_SPRITE_CACHE[spriteName];
+    if isFree then
+        sprite:RenderGhostTile(x, y, z);
+    else
+        sprite:RenderGhostTileRed(x, y, z);
     end
 end
 
+
+---Renders a floor helper tile
+---@param index integer The index of the part to check for
+---@param x integer x coordinate in the world
+---@param y integer y coordinate in the world
+---@param z integer z coordinate (floor level)
+function ISHighMetalFence:renderFloorHelperTile(index, x, y, z)
+    local helperSpriteName = 'carpentry_02_56';
+    if not self.RENDER_SPRITE_FLOOR_CACHE then
+        self.RENDER_SPRITE_FLOOR_CACHE = {};
+    end
+    if not self.RENDER_SPRITE_FLOOR_CACHE[index] then
+        self.RENDER_SPRITE_FLOOR_CACHE[index] = IsoSprite.new();
+        self.RENDER_SPRITE_FLOOR_CACHE[index]:LoadFramesNoDirPageSimple(helperSpriteName);
+    end
+    self.RENDER_SPRITE_FLOOR_CACHE[index]:RenderGhostTile(x, y, z);
+end
+
+
+-- function to check objects in a square
+local function checkObjects(square, isNorth)
+	for i=1,square:getObjects():size() do
+		local object = square:getObjects():get(i-1);
+		local sprite = object:getSprite();
+		if (sprite and ((sprite:getProperties():Is(IsoFlagType.collideN) and isNorth) or
+				(sprite:getProperties():Is(IsoFlagType.collideW) and not isNorth))) or
+				((instanceof(object, "IsoThumpable") and (object:getNorth() == isNorth)) and not object:isCorner() and not object:isFloor() and not object:isBlockAllTheSquare()) or
+				(instanceof(object, "IsoWindow") and object:getNorth() == isNorth) or
+				(instanceof(object, "IsoDoor") and object:getNorth() == isNorth) then
+			return false;
+		end
+		local spriteGrid = sprite and sprite:getSpriteGrid();
+		if spriteGrid then
+			local gridX = spriteGrid:getSpriteGridPosX(sprite);
+			local gridY = spriteGrid:getSpriteGridPosY(sprite);
+			if isNorth and gridY > 0 then
+				return false;
+			end
+			if not isNorth and gridX > 0 then
+				return false;
+			end
+		end
+	end
+    return true;
+end
 
 ---Checks if a single tile is valid for furniture placement
 ---@param square IsoGridSquare The square to check
 ---@return boolean validity
 function ISHighMetalFence:checkSingleTileValidity(square)
     if not square then return false; end
-	if not self:haveMaterial(square) then return false; end
+	if square:isVehicleIntersecting() then return false; end
+    if buildUtil.stairIsBlockingPlacement(square, true, self.north) then return false; end
 	if isClient() and SafeHouse.isSafeHouse(square, getSpecificPlayer(self.player):getUsername(), true) then
 		return false;
 	end
-	if square:isVehicleIntersecting() then return false; end
+
+    -- if we don't have floor we gonna check if there's a stairs under it, in this case we allow the build
+	if not square:hasFloor(self.north) then
+		local belowSQ = getCell():getGridSquare(square:getX(), square:getY(), square:getZ()-1)
+		if belowSQ then
+			if self.north and not belowSQ:HasStairsWest() then return false; end
+			if not self.north and not belowSQ:HasStairsNorth() then return false; end
+		end
+	end
 
     -- if all checks passed, return true
-    return true;
+    return checkObjects(square, self.north);
 end
 
 
@@ -154,64 +236,25 @@ end
 --- @param square IsoGridSquare The square to check for placement validity
 --- @return boolean validity Returns true if the fence can be placed, otherwise false
 function ISHighMetalFence:isValid(square)
+    if not square then return false; end
+    -- basic checks for the primary square
+    if not self:haveMaterial(square) or not square:hasFloor(self.north) then return false; end
+
+    local xa, ya, za = self:getSquare2Pos(square, self.north);
+    local squareA = getCell():getGridSquare(xa, ya, za);
+
+    if not squareA then return false; end
+
+    if square:isSomethingTo(squareA) then return false; end
+
     -- check the primary square (part 1)
-    if not self:partExists(square, 1) and not self:checkSingleTileValidity(square) then
+    if self:partExists(square, 1) or not self:checkSingleTileValidity(square) then
         return false;
     end
-
-    -- function to check objects in a square
-    local function checkObjects(sq)
-        for i = 1, sq:getObjects():size() do
-            local object = sq:getObjects():get(i - 1);
-            local sprite = object:getSprite();
-
-            if sprite then
-                local properties = sprite:getProperties();
-                local spriteGrid = sprite:getSpriteGrid();
-                if (properties:Is(IsoFlagType.collideN) and self.north) or
-                    (properties:Is(IsoFlagType.collideW) and not self.north) or
-                    (spriteGrid and ((self.north and spriteGrid:getSpriteGridPosY(sprite) > 0) or
-                        (not self.north and spriteGrid:getSpriteGridPosX(sprite) > 0))) then
-                    return false;
-                end
-            end
-
-            if instanceof(object, "IsoThumpable") and object:getNorth() == self.north and not object:isCorner() and not object:isFloor() and not object:isBlockAllTheSquare() then return false; end
-
-            if (instanceof(object, "IsoWindow") or instanceof(object, "IsoDoor")) and object:getNorth() == self.north then return false; end
-
-            local spriteGrid = sprite and sprite:getSpriteGrid();
-            if spriteGrid then
-                local gridX = spriteGrid:getSpriteGridPosX(sprite);
-                local gridY = spriteGrid:getSpriteGridPosY(sprite);
-                if self.north and gridY > 0 then
-                    return false;
-                end
-                if not self.north and gridX > 0 then
-                    return false;
-                end
-            end
-        end
-        return true;
-    end
-
-    -- check current square
-    if not checkObjects(square) then return false; end
-    -- check for stair blocking
-    if buildUtil.stairIsBlockingPlacement(square, true, self.north) then return false; end
-
-    -- check adjacent square
-    local xa, ya = self:getSquare2Pos(square, self.north);
-    local squareA = getCell():getGridSquare(xa, ya, square:getZ());
-    if not squareA or not squareA:hasFloor(self.north) or (not self:partExists(squareA, 2) and not squareA:isFreeOrMidair(false)) then
+    -- check validity for additional squares
+    if self:partExists(squareA, 2) or not self:checkSingleTileValidity(squareA) then
         return false;
     end
-
-    -- check objects in adjacent square
-    if not checkObjects(squareA) then return false; end
-    -- check stair blocking in adjacent square
-    if buildUtil.stairIsBlockingPlacement(squareA, true, self.north) then return false; end
-
     return true;
 end
 
@@ -269,4 +312,15 @@ function ISHighMetalFence:getSpriteNameForPart(index, north)
     else
         return self["sprite" .. index];
     end
+end
+
+function ISHighMetalFence:getObjectIndex(square)
+	for i = square:getObjects():size(),1,-1 do
+		local object = square:getObjects():get(i-1);
+		local props = object:getProperties();
+		if props and props:Is(IsoFlagType.solidfloor) then
+			return i;
+		end
+	end
+	return -1;
 end

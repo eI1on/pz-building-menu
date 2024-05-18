@@ -1,3 +1,5 @@
+local BM_Utils = require("BM_Utils")
+
 --- @class ISWoodenContainer : ISBuildingObject
 ISWoodenContainer = ISBuildingObject:derive("ISWoodenContainer");
 
@@ -16,6 +18,11 @@ function ISWoodenContainer:create(x, y, z, north, sprite)
     self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
 
+	self.javaObject:createContainersFromSpriteProperties();
+	for i = 1, self.javaObject:getContainerCount() do
+		self.javaObject:getContainerByIndex(i - 1):setExplored(true);
+	end
+
     local sharedSprite = getSprite(self:getSprite())
     if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
         local props = ISMoveableSpriteProps.new(sharedSprite);
@@ -26,6 +33,7 @@ function ISWoodenContainer:create(x, y, z, north, sprite)
     buildUtil.consumeMaterial(self);
 
     self.sq:AddSpecialObject(self.javaObject);
+	self.sq:RecalcAllWithNeighbours(true);
     self.javaObject:transmitCompleteItemToServer();
 end
 
@@ -53,7 +61,15 @@ end
 --- Returns the health of the wooden container
 --- @return number health Health value
 function ISWoodenContainer:getHealth()
-    return 200 + buildUtil.getWoodHealth(self);
+    if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 300 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
+	return 300 + buildUtil.getWoodHealth(self);
 end
 
 --- Validates the placement of the wooden container

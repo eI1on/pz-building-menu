@@ -88,4 +88,11 @@ function BM_Utils.getMetalHealth(ISItem)
 end
 
 
+function BM_Utils.safeCallMethod(object, methodName, ...)
+    if type(object[methodName]) == "function" then
+        return object[methodName](object, ...);
+    end
+end
+
+
 return BM_Utils

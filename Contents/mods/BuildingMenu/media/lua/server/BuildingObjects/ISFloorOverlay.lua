@@ -57,7 +57,7 @@ function ISFloorOverlay:isValid(square)
     for i = 0, square:getObjects():size() - 1 do
         local item = square:getObjects():get(i);
         if (item:getTextureName() and luautils.stringStarts(item:getTextureName(), "vegetation_farming")) or
-           (item:getSpriteName() and luautils.stringStarts(item:getSpriteName(), "vegetation_farming")) then
+            (item:getSpriteName() and luautils.stringStarts(item:getSpriteName(), "vegetation_farming")) then
             return false;
         end
     end

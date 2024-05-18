@@ -47,7 +47,7 @@ end
 ---@param northSprite string
 ---@param openSprite string
 ---@param openNorthSprite string
----@return ISDoubleFridge ISBuildingObject instance
+---@return ISWoodenDoor ISBuildingObject instance
 function ISWoodenDoor:new(sprite, northSprite, openSprite, openNorthSprite)
 	local o = {};
 	setmetatable(o, self);

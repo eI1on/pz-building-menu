@@ -715,7 +715,6 @@ local function addFridgeAppliancesToMenu()
                 completionSound = "BuildMetalStructrueMedium",
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {

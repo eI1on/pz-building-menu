@@ -466,16 +466,6 @@ sprites =   {
 }
 ```  
 
-BuildingMenu.onBuildPopsicleFridge:  
-```lua
-sprites =   {
-    sprite = "",
-    sprite2 = "",
-    northSprite = "",
-    northSprite2 = ""
-}
-```  
-
 BuildingMenu.onBuildCombinationWasherDryer:  
 ```lua
 sprites =   {

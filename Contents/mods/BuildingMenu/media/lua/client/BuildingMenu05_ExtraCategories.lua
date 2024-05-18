@@ -685,7 +685,6 @@ local function addFridgeAppliancesToMenu()
                 buildHigh = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {
@@ -722,12 +721,8 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.Fridge2TileRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildHigh = true,
-                canBeAlwaysPlaced = true,
-                renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {
@@ -749,9 +744,6 @@ local function addFridgeAppliancesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildHigh = true,
-                canBeAlwaysPlaced = true,
-                renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {
@@ -769,15 +761,12 @@ local function addFridgeAppliancesToMenu()
             "",
             "Tooltip_Fridges",
             BuildingMenu.onBuildPopsicleFridge,
-            BuildingMenu.Fridge2TileRecipe,
+            BuildingMenu.FridgeRecipe,
             true,
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
-                renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {
@@ -802,7 +791,6 @@ local function addFridgeAppliancesToMenu()
                 buildHigh = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {
@@ -825,7 +813,6 @@ local function addFridgeAppliancesToMenu()
                 buildHigh = true,
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
-                containerType = "fridge",
                 dismantable = true
             },
             {

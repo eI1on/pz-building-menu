@@ -17299,7 +17299,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildHighMetalFence,
-            BuildingMenu.HighWireFenceRecipe,
+            BuildingMenu.HighMetalBarsFenceRecipe,
             true,
             {
                 noNeedHammer = true,
@@ -17320,7 +17320,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence_Corner",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighWireFenceRecipe,
+            BuildingMenu.HighMetalBarsFenceRecipe,
             true,
             {
                 noNeedHammer = true,
@@ -17336,7 +17336,7 @@ local function addHighFencesToMenu()
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence_Post",
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
-            BuildingMenu.HighWireFencePostRecipe,
+            BuildingMenu.HighMetalBarsFencePostRecipe,
             true,
             {
                 noNeedHammer = true,
@@ -25699,9 +25699,6 @@ local function addCommercialCountersToMenu()
                     {
                         completionSound = "BuildWoodenStructureLarge",
                         buildHigh = true,
-                        canBeAlwaysPlaced = true,
-                        renderFloorHelper = false,
-                        containerType = "fridge",
                         dismantable = true
                     },
                     {
