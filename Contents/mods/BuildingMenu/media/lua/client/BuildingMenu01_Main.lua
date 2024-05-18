@@ -331,6 +331,7 @@ BuildingMenu.haveAToolToBuild = function(inv)
     local toolInfo = BuildingMenu.Tools['Hammer'];
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
+---@diagnostic disable-next-line: param-type-mismatch
             if inv:containsTypeEvalRecurse(type, BuildingMenu.predicateNotBroken) then
                 return true;
             end
@@ -338,6 +339,7 @@ BuildingMenu.haveAToolToBuild = function(inv)
     end
     if toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
+---@diagnostic disable-next-line: param-type-mismatch
             if inv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end) then
                 return true;
             end
@@ -354,13 +356,16 @@ BuildingMenu.getAvailableTool = function(inv, tool)
     local toolInfo = BuildingMenu.Tools[tool];
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
+---@diagnostic disable-next-line: param-type-mismatch
             local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken);
             if item then return item; end
         end
     end
     if toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
+---@diagnostic disable-next-line: param-type-mismatch
             local item = inv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
+---@diagnostic disable-next-line: param-type-mismatch
                 function(item) return true end);
             if item then return item; end
         end
@@ -427,8 +432,10 @@ function BuildingMenu.getTexFromItem(item)
         print("[Building Menu ERROR] ", "Warning: Attempted to get texture name from a nil item.");
         return nil;
     end
+    ---@type Texture|nil
     local texture = item:getNormalTexture();
     if not texture then
+---@diagnostic disable-next-line: param-type-mismatch
         local obj = item:InstanceItem(nil);
         if obj then
             local icons = item:getIconsForTexture();
@@ -504,6 +511,7 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     if toolInfo.types then
         for _, type in ipairs(toolInfo.types) do
             ---@type InventoryItem
+---@diagnostic disable-next-line: param-type-mismatch
             local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken);
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
@@ -517,7 +525,9 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
 
     if not found and toolInfo.tags then
         for _, tag in ipairs(toolInfo.tags) do
+---@diagnostic disable-next-line: param-type-mismatch
             local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
+---@diagnostic disable-next-line: param-type-mismatch
                 function(item) return true end);
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
