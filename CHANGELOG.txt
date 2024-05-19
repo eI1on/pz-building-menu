@@ -1,4 +1,19 @@
- MAY 24
+19 MAY 24
+46a4282
+Hotfix
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Removed some debug prints
+[*] Fixed an error on server
+[/list]
+[/list]
+
+
+18 MAY 24
+869a3ac
 
 Changelog:
 [list]
