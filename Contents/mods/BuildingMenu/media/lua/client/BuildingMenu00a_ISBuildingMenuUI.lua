@@ -373,15 +373,16 @@ end
 ---@param x number
 ---@param y number
 function BuildingMenuTilePickerList:onRightMouseDown(x, y)
-    -- if (not self.character or self.character:isDead()) and not isDebugEnabled() then return; end
+    if not isDebugEnabled() then return; end
+    if not self.character or self.character:isDead() then return; end
 
-    -- local c = math.floor(x / 64);
-    -- local r = math.floor(y / 128);
-    -- local selectedObject = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
+    local c = math.floor(x / 64);
+    local r = math.floor(y / 128);
+    local selectedObject = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
 
-    -- if selectedObject then
-    --     self:spawnItems(selectedObject)
-    -- end
+    if selectedObject then
+        self:spawnItems(selectedObject)
+    end
 end
 
 
