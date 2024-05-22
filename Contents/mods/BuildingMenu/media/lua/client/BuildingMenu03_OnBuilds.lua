@@ -609,7 +609,7 @@ BuildingMenu.onBuildBarricade = function(sprites, name, playerNum, objectRecipe,
     _barricade.getHealth = function(self)
         if not _barricade.health then _barricade.health = 2500; end
 
-        BM_Utils.debugPrint("[Building Menu DEBUG] ", "_barricade.health: " .. objectOptions.health);
+        BM_Utils.debugPrint("[Building Menu DEBUG] ", "_barricade.health: " .. (objectOptions.health or 0));
         BM_Utils.debugPrint("[Building Menu DEBUG] ", "_barricade.health + health: " .. _barricade.health + health);
 
         return _barricade.health + health;
