@@ -683,7 +683,6 @@ local function addFridgeAppliancesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildHigh = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },
@@ -910,7 +909,6 @@ local function addLaundryAppliancesToMenu()
                 canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
-                containerType = "clothingdryerbasic"
             },
             {
                 sprite = "appliances_laundry_01_24",

@@ -87,7 +87,7 @@ function ISDoubleTileContainer:createPart(x, y, z, north, sprite)
 		inv:setType(self.containerType);
 		inv:setCapacity(self.capacity or 50);
 		inv:removeAllItems();
-		inv:setParent(self.javaObject);
+		inv:setParent(thumpable);
 		inv:setExplored(true);
 		thumpable:setContainer(inv);
 	else
@@ -326,6 +326,21 @@ function ISDoubleTileContainer:checkSingleTileValidity(square)
 	if isClient() and SafeHouse.isSafeHouse(square, getSpecificPlayer(self.player):getUsername(), true) then
 		return false;
 	end
+
+    local canPlace = true;
+	if self.needToBeAgainstWall then
+		for i = 0, square:getObjects():size() - 1 do
+			local obj = square:getObjects():get(i);
+			-- self.north is inversed on multi tile objects
+			if (not self.north and obj:getProperties():Is("WallN")) or (self.north and obj:getProperties():Is("WallW")) then
+				canPlace = true;
+                break;
+            else
+                canPlace = false;
+			end
+		end
+		return canPlace;
+    end
 
 	local sharedSprite = getSprite(self:getSprite());
 	local selfProps = sharedSprite:getProperties();

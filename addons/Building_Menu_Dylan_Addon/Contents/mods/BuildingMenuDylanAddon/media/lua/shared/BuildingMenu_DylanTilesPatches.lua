@@ -27,4 +27,27 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "80", false);
         props:CreateKeySet();
     end
+
+    sprites = {
+        "BlackCoffeeCo01_8",
+        "BlackCoffeeCo01_9",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "locker", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "80", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "DylansRandomFurniture01_13",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "Toolbox", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "25", false);
+        props:CreateKeySet();
+    end
 end)

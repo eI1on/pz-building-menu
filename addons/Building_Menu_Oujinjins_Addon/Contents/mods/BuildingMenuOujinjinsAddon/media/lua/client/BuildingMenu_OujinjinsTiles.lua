@@ -91,7 +91,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureMedium",
-                containerType = "shelves"
             },
             {
                 sprite = "Chinatown_EX_generic_1_0",
@@ -106,7 +105,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureMedium",
-                containerType = "shelves"
             },
             {
                 sprite = "Chinatown_EX_generic_1_2",
@@ -121,7 +119,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
-                containerType = "displaycase"
             },
             {
                 sprite = "Chinatown_EX_generic_1_40",
@@ -136,7 +133,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
-                containerType = "displaycase"
             },
             {
                 sprite = "Chinatown_EX_generic_1_42",
@@ -151,7 +147,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves"
             },
             {
                 sprite = "Chinatown_EX_generic_1_83",
@@ -168,7 +163,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves"
             },
             {
                 sprite = "Chinatown_EX_generic_1_85",
@@ -185,7 +179,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "counter"
             },
             {
                 sprite = "Chinatown_3_27",
@@ -202,7 +195,6 @@ local function addCommercialCountersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "counter"
             },
             {
                 sprite = "Chinatown_3_26",
@@ -241,7 +233,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -255,7 +246,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -269,7 +259,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "counter",
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -288,7 +277,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "counter",
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -307,7 +295,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "locker",
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -324,7 +311,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "metal_shelves",
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -347,7 +333,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "displaycase",
                     },
                     {
                         sprite = "Chinatown_EX_military_1_11",
@@ -364,7 +349,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "displaycase",
                     },
                     {
                         sprite = "Chinatown_EX_military_1_18",
@@ -381,8 +365,8 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         canPassThrough = true,
+                        needToBeAgainstWall = true,
                         isCorner = true,
                         buildHigh = true,
                     },
@@ -401,7 +385,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         buildHigh = true,
                     },
                     {
@@ -419,7 +402,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "militarycrate",
                         canBeLockedByPadlock = true
                     },
                     {
@@ -437,7 +419,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "militarycrate",
                         canBeLockedByPadlock = true
                     },
                     {
@@ -459,7 +440,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         canPassThrough = true,
                         isCorner = true,
                         buildHigh = true,
@@ -480,7 +460,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "locker",
                         canBeLockedByPadlock = true
                     },
                     {
@@ -491,13 +470,11 @@ local function addMetalContainersToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Dresser",
-                    BuildingMenu.onBuildDoubleTileFurniture,
+                    BuildingMenu.onBuildDoubleTileContainer,
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "wardrobe",
-                        isContainer = true,
                         canBeLockedByPadlock = true
                     },
                     {
@@ -510,13 +487,11 @@ local function addMetalContainersToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Dresser",
-                    BuildingMenu.onBuildDoubleTileFurniture,
+                    BuildingMenu.onBuildDoubleTileContainer,
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "shelves",
-                        isContainer = true,
                         canBeLockedByPadlock = false
                     },
                     {
@@ -529,7 +504,7 @@ local function addMetalContainersToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Dresser",
-                    BuildingMenu.onBuildDoubleTileFurniture,
+                    BuildingMenu.onBuildDoubleTileContainer,
                     {
                         neededTools = {
                             "BlowTorch",
@@ -581,8 +556,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "shelves",
-                        isContainer = true,
                         buildHigh = true,
                         canBeLockedByPadlock = false
                     },
@@ -648,8 +621,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
-                        isContainer = true,
                         buildHigh = true,
                         canBeLockedByPadlock = false
                     },
@@ -666,8 +637,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "locker",
-                        isContainer = true,
                         canBeLockedByPadlock = true
                     },
                     {
@@ -683,8 +652,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "locker",
-                        isContainer = true,
                         canBeLockedByPadlock = true
                     },
                     {
@@ -700,8 +667,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "militarycrate",
-                        isContainer = true,
                         canBeLockedByPadlock = false
                     },
                     {
@@ -717,8 +682,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "militarycrate",
-                        isContainer = true,
                         canBeLockedByPadlock = false
                     },
                     {
@@ -734,8 +697,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "militarycrate",
-                        isContainer = true,
                         canBeLockedByPadlock = true
                     },
                     {
@@ -751,8 +712,6 @@ local function addMetalContainersToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "militarycrate",
-                        isContainer = true,
                         canBeLockedByPadlock = true
                     },
                     {
@@ -787,7 +746,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true
             },
             {
                 sprite = "Industry_1_8",
@@ -802,7 +760,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true
             },
             {
                 sprite = "Industry_1_9",
@@ -831,8 +788,6 @@ local function addTrashCansToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                isContainer = true,
             },
             { sprite = "Vaulttec_6_16", northSprite = "Vaulttec_6_17" }
         ),
@@ -1240,8 +1195,6 @@ local function addCookingAppliancesToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "stove",
-                isContainer = true,
             },
             {
                 sprite = "Chinatown_EX_kitchen_1_0",
@@ -1256,8 +1209,6 @@ local function addCookingAppliancesToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "stove",
-                isContainer = true,
             },
             {
                 sprite = "Vaulttec_5_10",
@@ -1272,8 +1223,6 @@ local function addCookingAppliancesToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "stove",
-                isContainer = true,
             },
             {
                 sprite = "Vaulttec_5_18",
@@ -1288,8 +1237,6 @@ local function addCookingAppliancesToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "stove",
-                isContainer = true,
             },
             {
                 sprite = "Chinatown_EX_kitchen_1_25",
@@ -1322,7 +1269,6 @@ local function addFridgeAppliancesToMenu()
                 buildMid = true,
                 renderFloorHelper = false,
                 dismantable = true,
-                isContainer = true,
             },
             {
                 sprite = sprite,
@@ -1455,8 +1401,6 @@ local function addBathroomAppliancesToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "counter",
-                isContainer = true,
                 buildMid = true,
             },
             spec.sprites

@@ -727,7 +727,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "cabinet",
                 },
                 {
                     sprite = tileSetName .. "_62",
@@ -743,8 +742,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "cabinet",
-                    isContainer = true,
                 },
                 {
                     sprite = tileSetName .. "_25",
@@ -762,7 +759,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "cabinet",
                 },
                 {
                     sprite = tileSetName .. "_29",
@@ -780,7 +776,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "cabinet",
                 },
                 {
                     sprite = tileSetName .. "_33",
@@ -798,7 +793,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "cabinet",
                 },
                 {
                     sprite = tileSetName .. "_37",
@@ -816,7 +810,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "shelves",
                 },
                 {
                     sprite = tileSetName .. "_53",
@@ -834,8 +827,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "wardrobe",
-                    isContainer = true,
                     canBeLockedByPadlock = true
                 },
                 {
@@ -854,8 +845,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "wardrobe",
-                    isContainer = true,
                     canBeLockedByPadlock = true
                 },
                 {
@@ -874,8 +863,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 {
                     noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "shelves",
-                    isContainer = true,
                     canBeLockedByPadlock = false
                 },
                 {
@@ -892,9 +879,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
-                    containerType = "shelves",
                     needToBeAgainstWall = true,
                     buildHigh = true,
                     blockAllTheSquare = false,
@@ -930,8 +915,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -950,8 +933,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -970,8 +951,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -990,8 +969,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -1010,7 +987,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "desk",
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_28",
@@ -1028,7 +1004,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_33",
@@ -1046,7 +1021,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_41",
@@ -1064,7 +1038,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_34",
@@ -1080,7 +1053,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_67",
@@ -1098,7 +1070,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_71",
@@ -1116,7 +1087,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_75",
@@ -1134,7 +1104,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_79",
@@ -1152,7 +1121,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "desk"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_100",
@@ -1170,7 +1138,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_80",
@@ -1188,7 +1155,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_81",
@@ -1206,7 +1172,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_82",
@@ -1219,12 +1184,11 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             "Tooltip_BuildingMenuObj_Fancy_Dark_Wardrobe",
             "Tooltip_Dresser",
             BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.LargeFurnitureRecipe,
+            BuildingMenu.SmallFurnitureRecipe,
             true,
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                container = "wardrobe"
             },
             {
                 sprite = "edit_ddd_RUS_furniture_storage_03_89",
@@ -1616,7 +1580,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -1636,7 +1599,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "shelves",
                 needToBeAgainstWall = false,
                 renderFloorHelper = false,
                 canBeAlwaysPlaced = true,
@@ -1656,7 +1618,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "shelves",
                 needToBeAgainstWall = false,
                 renderFloorHelper = false,
                 canBeAlwaysPlaced = true,
@@ -1676,8 +1637,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                isContainer = true,
-                containerType = "shelves",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 buildHigh = true,
@@ -1698,7 +1657,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -1716,7 +1674,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -1734,7 +1691,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "shelves",
                 needToBeAgainstWall = true,
                 renderFloorHelper = true,
                 blockAllTheSquare = false,
@@ -1753,7 +1709,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -1773,7 +1728,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -1806,7 +1760,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1822,7 +1775,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1838,7 +1790,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1854,7 +1805,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "locker",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1870,7 +1820,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "locker",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1886,7 +1835,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "locker",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1902,7 +1850,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "locker",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1918,7 +1865,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1934,7 +1880,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1950,7 +1895,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1966,7 +1910,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1982,7 +1925,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1998,7 +1940,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2014,7 +1955,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2030,7 +1970,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2046,7 +1985,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2062,7 +2000,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2078,7 +2015,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2094,7 +2030,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2110,7 +2045,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2126,7 +2060,6 @@ local function addCratesToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2284,10 +2217,8 @@ local function addDaddyDirkieOthersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
                 canBeAlwaysPlaced = true,
                 needToBeAgainstWall = true,
-                isContainer = true,
                 canBeLockedByPadlock = true,
                 blockAllTheSquare = false,
             },
@@ -2305,10 +2236,8 @@ local function addDaddyDirkieOthersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
                 canBeAlwaysPlaced = true,
                 needToBeAgainstWall = true,
-                isContainer = true,
                 canBeLockedByPadlock = true,
                 blockAllTheSquare = false,
             },
@@ -2487,7 +2416,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "militarycrate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -2506,12 +2434,10 @@ local function addDaddyDirkieForestSurvivalToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
                 canBeAlwaysPlaced = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 isWallLike = true,
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {

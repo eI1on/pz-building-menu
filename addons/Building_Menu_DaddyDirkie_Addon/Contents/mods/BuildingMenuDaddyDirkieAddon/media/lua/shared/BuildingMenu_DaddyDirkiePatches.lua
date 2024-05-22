@@ -27,14 +27,15 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     }
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "container", "", false);
-        BM_Utils.setSpriteProperty(props, "container", "crate", true);
         BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
-        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false)
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false)
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false)
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false)
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false)
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
+        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false);
+        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "crate", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
         props:CreateKeySet();
     end
 
@@ -127,7 +128,6 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         props:CreateKeySet()
     end
 
-    
     sprites = {
         "furniture_storage_ddd_01_4",
         "furniture_storage_ddd_01_9"

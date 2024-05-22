@@ -17481,8 +17481,7 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "metal_shelves",
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -17527,11 +17526,10 @@ local function addContainersOthersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 100
             },
             {
@@ -17550,11 +17548,10 @@ local function addContainersOthersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 100
             },
             {
@@ -17573,11 +17570,10 @@ local function addContainersOthersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 100
             },
             {
@@ -17596,11 +17592,10 @@ local function addContainersOthersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 100
             },
             {
@@ -18467,8 +18462,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -18524,9 +18517,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -18637,8 +18628,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -18694,9 +18683,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -18807,8 +18794,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -18864,9 +18849,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -18977,8 +18960,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -19034,9 +19015,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19147,8 +19126,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -19204,9 +19181,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19317,8 +19292,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -19374,9 +19347,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19487,8 +19458,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -19544,9 +19513,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19657,8 +19624,6 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -19714,9 +19679,7 @@ local function addMelosFurnitureSet1ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19840,8 +19803,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -19897,9 +19858,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20010,8 +19969,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -20067,9 +20024,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20180,8 +20135,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -20237,9 +20190,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20350,8 +20301,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -20407,9 +20356,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20520,8 +20467,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -20577,9 +20522,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20690,8 +20633,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -20747,9 +20688,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20860,8 +20799,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -20917,9 +20854,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -21030,8 +20965,6 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -21087,9 +21020,7 @@ local function addMelosFurnitureSet2ToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
+                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -22090,7 +22021,7 @@ local function addMelosCookingObjsToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 renderFloorHelper = false
             },
             {
@@ -22136,7 +22067,7 @@ local function addMelosFridgesToMenu()
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
+                canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 dismantable = true
             },

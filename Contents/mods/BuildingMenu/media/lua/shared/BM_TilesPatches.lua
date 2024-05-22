@@ -110,7 +110,6 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "location_business_bank_01_45",
         "location_business_bank_01_44",
         "fixtures_bathroom_02_24",
-        "fixtures_bathroom_02_25"
     }
 
     for _, sprite in ipairs(sprites) do
@@ -127,15 +126,29 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "location_farm_accesories_01_8",
         "location_farm_accesories_01_9",
         "location_farm_accesories_01_10",
-        "location_farm_accesories_01_11"
+        "location_farm_accesories_01_11",
+        "fixtures_bathroom_02_25"
     }
 
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
         BM_Utils.setSpriteProperty(props, IsoFlagType.container);
-        BM_Utils.setSpriteProperty(props, "container", "officedrawers", false);
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        BM_Utils.setSpriteProperty(props, "container", "crate", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "40", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "location_community_medical_01_37",
+    }
+
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "sidetable", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "30", false);
         props:CreateKeySet();
     end
 
@@ -200,19 +213,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "camping_01_35",
         "camping_01_38",
         "camping_01_39",
-    }
 
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
-        BM_Utils.setSpriteProperty(props, "IsLow", "", false);
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
-        BM_Utils.setSpriteProperty(props, "container", "logs", false);
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "200", false);
-        props:CreateKeySet();
-    end
-
-    sprites = {
         "camping_01_26",
         "camping_01_27",
         "camping_01_30",
@@ -227,17 +228,38 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "camping_01_43",
     }
 
+    -- for _, sprite in ipairs(sprites) do
+    --     local props = manager:getSprite(sprite):getProperties();
+    --     BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
+    --     BM_Utils.setSpriteProperty(props, "IsLow", "", false);
+    --     BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+    --     BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+    --     BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+    --     BM_Utils.setSpriteProperty(props, "container", "logs", false);
+    --     BM_Utils.setSpriteProperty(props, "ContainerCapacity", "200", false);
+    --     BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
+    --     BM_Utils.setSpriteProperty(props, "PickUpWeight", "75", false);
+    --     props:CreateKeySet();
+    -- end
+
+
+    sprites = {
+        "location_shop_generic_01_35",
+        "location_shop_generic_01_34",
+        "location_shop_generic_01_32",
+        "location_shop_generic_01_33",
+
+        "location_restaurant_pie_01_51",
+        "location_restaurant_pie_01_50",
+        "location_restaurant_pie_01_48",
+        "location_restaurant_pie_01_49"
+    }
+
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false);
-        BM_Utils.setSpriteProperty(props, "IsLow", "", false);
-        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         BM_Utils.setSpriteProperty(props, IsoFlagType.container);
-        BM_Utils.setSpriteProperty(props, "container", "logs", false);
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "200", false);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "75", false);
+        BM_Utils.setSpriteProperty(props, "container", "displaycasebakery", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "100", false);
         props:CreateKeySet();
     end
 

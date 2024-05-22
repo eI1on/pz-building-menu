@@ -276,7 +276,7 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildSimpleFridge = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _simpleFridge = ISFridge:new(playerNum, name, sprites.sprite, sprites.northSprite)
+    local _simpleFridge = ISWoodenContainer:new(sprites.sprite, sprites.northSprite)
 
     if sprites.eastSprite then
         _simpleFridge:setEastSprite(sprites.eastSprite);
@@ -295,7 +295,7 @@ end
 ---@return ISBuildingObject
 BuildingMenu.onBuildLargeFridge = function(sprites, name, playerNum, objectRecipe, objectOptions)
     local _doubleFridge = ISDoubleTileContainer:new(playerNum, name, sprites.sprite, sprites.sprite2, sprites
-    .northSprite, sprites.northSprite2);
+        .northSprite, sprites.northSprite2);
 
     return _doubleFridge
 end

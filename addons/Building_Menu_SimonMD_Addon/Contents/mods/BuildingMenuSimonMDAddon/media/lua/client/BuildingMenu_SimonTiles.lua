@@ -1034,7 +1034,6 @@ local function addMetalContainersToMenu()
                     {
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "metal_shelves",
                         canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
@@ -1087,9 +1086,7 @@ local function addMetalContainersToMenu()
                     {
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         isThumpable = true,
-                        isContainer = true,
                         blockAllTheSquare = false,
                         needToBeAgainstWall = true,
                         canBeAlwaysPlaced = false,

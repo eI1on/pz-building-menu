@@ -14,7 +14,6 @@ local function addDylanContainersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                containerType = "counter",
                 isThumpable = true
             },
             {
@@ -30,11 +29,11 @@ local function addDylanContainersToMenu()
     table.insert(dylanCounter, createCounterObject("Block_Trasher_", 50))
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-            getText("IGUI_BuildingMenuCat_Containers"),
-            "",
-            getText("IGUI_BuildingMenuSubCat_Containers_Block_Trasher"),
-            "Block_Trasher_51",
-            dylanCounter
+        getText("IGUI_BuildingMenuCat_Containers"),
+        "",
+        getText("IGUI_BuildingMenuSubCat_Containers_Block_Trasher"),
+        "Block_Trasher_51",
+        dylanCounter
     )
 
     dylanCounter = {}
@@ -42,11 +41,11 @@ local function addDylanContainersToMenu()
     table.insert(dylanCounter, createCounterObject("DylansBar01_", 42))
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-            getText("IGUI_BuildingMenuCat_Containers"),
-            "",
-            getText("IGUI_BuildingMenuSubCat_Containers_Restaurant"),
-            "DylansBar01_43",
-            dylanCounter
+        getText("IGUI_BuildingMenuCat_Containers"),
+        "",
+        getText("IGUI_BuildingMenuSubCat_Containers_Restaurant"),
+        "DylansBar01_43",
+        dylanCounter
     )
 
 
@@ -60,8 +59,6 @@ local function addDylanContainersToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                containerType = "shelves",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -81,13 +78,12 @@ local function addDylanContainersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-            getText("IGUI_BuildingMenuCat_Containers"),
-            "Block_Trasher_1",
-            getText("IGUI_BuildingMenuSubCat_Containers_Shelves"),
-            "Block_Trasher_1",
-            dylanBookshelves
+        getText("IGUI_BuildingMenuCat_Containers"),
+        "Block_Trasher_1",
+        getText("IGUI_BuildingMenuSubCat_Containers_Shelves"),
+        "Block_Trasher_1",
+        dylanBookshelves
     )
-    
 end
 
 local function addGardenStuffToMenu()
@@ -101,12 +97,11 @@ local function addGardenStuffToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                containerType = "smallbox",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = false
             },
-            {sprite = "DylansGardenStuff01_18", northSprite = "DylansGardenStuff01_18"}
+            { sprite = "DylansGardenStuff01_18", northSprite = "DylansGardenStuff01_18" }
         ),
         BuildingMenu.createObject(
             "",
@@ -117,13 +112,12 @@ local function addGardenStuffToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                containerType = "smallbox",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
             {
-                sprite = "DylansGardenStuff01_8", 
+                sprite = "DylansGardenStuff01_8",
                 northSprite = "DylansGardenStuff01_9",
             }
         ),
@@ -136,13 +130,12 @@ local function addGardenStuffToMenu()
             {
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                containerType = "smallbox",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
             {
-                sprite = "DylansGardenStuff01_11", 
+                sprite = "DylansGardenStuff01_11",
                 northSprite = "DylansGardenStuff01_10",
             }
         ),
@@ -185,16 +178,18 @@ local function addGardenStuffToMenu()
             table.insert(plantCrateObjects, createPlantCrateObject(spriteName, northSpriteName, recipe))
         end
     end
-    
+
     addPlantCrateObjects(19, 31, "DylansGardenStuff01", nil, BuildingMenu.PlantCrateRecipe)
     addPlantCrateObjects(38, 41, "DylansGardenStuff01", nil, BuildingMenu.PlantCrateRecipe)
-    table.insert(plantCrateObjects, createPlantCrateObject("DylansGardenStuff01_0", "DylansGardenStuff01_1", BuildingMenu.PlantCrateRecipe))
-    
+    table.insert(plantCrateObjects,
+        createPlantCrateObject("DylansGardenStuff01_0", "DylansGardenStuff01_1", BuildingMenu.PlantCrateRecipe))
+
     addPlantCrateObjects(3, 7, "DylansGardenStuff02", nil, BuildingMenu.FlowerBedRecipe)
-    table.insert(plantCrateObjects, createPlantCrateObject("DylansGardenStuff02_14", "DylansGardenStuff02_15", BuildingMenu.PlantCrateRecipe))
+    table.insert(plantCrateObjects,
+        createPlantCrateObject("DylansGardenStuff02_14", "DylansGardenStuff02_15", BuildingMenu.PlantCrateRecipe))
     table.insert(plantCrateObjects, createPlantCrateObject("DylansGardenStuff02_2", nil, BuildingMenu.PlantCrateRecipe))
     addPlantCrateObjects(16, 31, "DylansGardenStuff02", nil, BuildingMenu.PlantCrateRecipe)
-    
+
     BuildingMenu.addObjectsToCategories(
         "Dylan",
         getText("IGUI_BuildingMenuCat_Garden_Stuff"),
@@ -221,7 +216,7 @@ local function addGardenStuffToMenu()
                 isCorner = false,
                 isThumpable = true,
             },
-            {sprite = "DylansGardenStuff02_32", northSprite = "DylansGardenStuff02_33"}
+            { sprite = "DylansGardenStuff02_32", northSprite = "DylansGardenStuff02_33" }
         ),
         BuildingMenu.createObject(
             "",
@@ -237,7 +232,7 @@ local function addGardenStuffToMenu()
                 isCorner = false,
                 isThumpable = true,
             },
-            {sprite = "DylansGardenStuff02_34", northSprite = "DylansGardenStuff02_35"}
+            { sprite = "DylansGardenStuff02_34", northSprite = "DylansGardenStuff02_35" }
         ),
         BuildingMenu.createObject(
             "",
@@ -338,7 +333,7 @@ local function addGardenStuffToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "DylansGardenStuff02_8",
@@ -360,7 +355,7 @@ local function addGardenStuffToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            {sprite = "DylansGardenStuff02_10", northSprite = "DylansGardenStuff02_10"}
+            { sprite = "DylansGardenStuff02_10", northSprite = "DylansGardenStuff02_10" }
         ),
         BuildingMenu.createObject(
             "",
@@ -373,7 +368,7 @@ local function addGardenStuffToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "DylansGardenStuff02_11",
@@ -395,7 +390,7 @@ local function addGardenStuffToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            {sprite = "DylansGardenStuff02_13", northSprite = "DylansGardenStuff02_13"}
+            { sprite = "DylansGardenStuff02_13", northSprite = "DylansGardenStuff02_13" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -406,7 +401,6 @@ local function addGardenStuffToMenu()
         "DylansGardenStuff02_8",
         gardenWallsObjects
     )
-
 end
 
 local function addMetalCountersToMenu()
@@ -420,7 +414,6 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructrueMedium",
-                containerType = "locker",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -435,12 +428,12 @@ local function addMetalCountersToMenu()
     table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_8"))
     table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_9"))
     BuildingMenu.addObjectsToCategories(
-    "Dylan",
-    getText("IGUI_BuildingMenuCat_Containers"),
-    "BlackCoffeeCo01_8",
-    getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
-    "BlackCoffeeCo01_8",
-    blackCoffeeContainer
+        "Dylan",
+        getText("IGUI_BuildingMenuCat_Containers"),
+        "BlackCoffeeCo01_8",
+        getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
+        "BlackCoffeeCo01_8",
+        blackCoffeeContainer
     )
 
     local metalCounterObjects = {
@@ -453,13 +446,11 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "shelves",
                 isThumpable = true,
-                isContainer = true,
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
-                renderFloorHelper = true,
+                renderFloorHelper = true
             },
             {
                 sprite = "DarthGunStore_9",
@@ -477,9 +468,7 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "shelves",
                 isThumpable = true,
-                isContainer = true,
                 blockAllTheSquare = false,
                 needToBeAgainstWall = true,
                 canBeAlwaysPlaced = false,
@@ -501,7 +490,6 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -519,7 +507,6 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "toolcabinet",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -548,13 +535,8 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "counter",
                 isThumpable = true,
-                isContainer = true,
-                blockAllTheSquare = false,
-                needToBeAgainstWall = true,
-                canBeAlwaysPlaced = false,
-                renderFloorHelper = false
+                blockAllTheSquare = true,
             },
             {
                 sprite = "DylansRandomFurniture03_37",
@@ -572,11 +554,8 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "counter",
                 isThumpable = true,
-                isContainer = true,
-                blockAllTheSquare = false,
-                needToBeAgainstWall = true,
+                blockAllTheSquare = true,
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false
             },
@@ -596,11 +575,8 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "counter",
                 isThumpable = true,
-                isContainer = true,
-                blockAllTheSquare = false,
-                needToBeAgainstWall = true,
+                blockAllTheSquare = true,
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false
             },
@@ -620,11 +596,8 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "counter",
                 isThumpable = true,
-                isContainer = true,
-                blockAllTheSquare = false,
-                needToBeAgainstWall = true,
+                blockAllTheSquare = true,
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false
             },
@@ -644,7 +617,6 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "counter",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -664,7 +636,6 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "shelves",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -682,7 +653,6 @@ local function addMetalCountersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "shelves",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
             },
@@ -757,11 +727,11 @@ local function addBarricadesToMenu()
     end
 
     local barricadeObjects = {}
-    local dataLowBarricades = {1, 3, 4, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 30, 31, 33, 34, 35, 41, 44, 51, 52, 53, 54, 55, 56, 57, 59, 60, 61, 62}
+    local dataLowBarricades = { 1, 3, 4, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 30, 31, 33, 34, 35, 41, 44, 51, 52, 53, 54, 55, 56, 57, 59, 60, 61, 62 }
     for _, spriteNumber in ipairs(dataLowBarricades) do
         table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks01_", spriteNumber, "LowBarricadeRecipe"))
     end
-    dataLowBarricades = {1, 9, 10, 11, 12, 14, 15, 17, 19, 24, 25, 27, 28, 30, 31, 32, 36, 38, 40, 44, 49, 50, 53, 54, 55, 56, 57, 60, 62}
+    dataLowBarricades = { 1, 9, 10, 11, 12, 14, 15, 17, 19, 24, 25, 27, 28, 30, 31, 32, 36, 38, 40, 44, 49, 50, 53, 54, 55, 56, 57, 60, 62 }
     for _, spriteNumber in ipairs(dataLowBarricades) do
         table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks02_", spriteNumber, "LowBarricadeRecipe"))
     end
@@ -775,11 +745,11 @@ local function addBarricadesToMenu()
     )
 
     barricadeObjects = {}
-    local dataHighBarricades = {0, 2, 5, 6, 7, 14,25, 26, 28, 29, 32, 36, 37, 38, 39, 40, 42, 43, 45, 46, 47, 48, 49, 50, 58, 63}
+    local dataHighBarricades = { 0, 2, 5, 6, 7, 14, 25, 26, 28, 29, 32, 36, 37, 38, 39, 40, 42, 43, 45, 46, 47, 48, 49, 50, 58, 63 }
     for _, startNumber in ipairs(dataHighBarricades) do
         table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks01_", startNumber, "HighBarricadeRecipe"))
     end
-    dataHighBarricades = {2, 3, 4, 5, 6, 7, 8, 13, 16, 18, 20, 21, 22, 23, 26, 29, 33, 34, 35, 37, 39, 41, 42, 43, 45, 46, 47, 48, 51, 52, 58, 59, 61, 63}
+    dataHighBarricades = { 2, 3, 4, 5, 6, 7, 8, 13, 16, 18, 20, 21, 22, 23, 26, 29, 33, 34, 35, 37, 39, 41, 42, 43, 45, 46, 47, 48, 51, 52, 58, 59, 61, 63 }
     for _, startNumber in ipairs(dataHighBarricades) do
         table.insert(barricadeObjects, createBarricadeObject("DylansJunkstacks02_", startNumber, "HighBarricadeRecipe"))
     end

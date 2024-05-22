@@ -25656,10 +25656,10 @@ local function addCommercialCountersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "displaycasebakery",
                         renderFloorHelper = false,
                         dismantable = true,
                         isContainer = true,
+                        containerType = "displaycasebakery",
                         capacity = 100
                     },
                     {
@@ -26040,7 +26040,6 @@ local function addMetalContainersToMenu()
                     {
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        isContainer = true,
                         needToBeAgainstWall = true,
                         renderFloorHelper = true,
                         canBeAlwaysPlaced = true,
@@ -26772,8 +26771,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "sidetable",
-                isContainer = true
             },
             {
                 sprite = "furniture_storage_01_53",
@@ -26790,8 +26787,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true
             },
             {
                 sprite = "location_community_medical_01_36",
@@ -26838,8 +26833,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "desk",
-                isContainer = true
             },
             {
                 sprite = "location_community_school_01_4",
@@ -26856,8 +26849,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "desk",
-                isContainer = true
             },
             {
                 sprite = "location_community_school_01_12",
@@ -26874,9 +26865,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
-                canBeAlwaysPlaced = true,
-                isContainer = true
             },
             {
                 sprite = "location_business_distillery_01_0",
@@ -26891,9 +26879,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
-                canBeAlwaysPlaced = true,
-                isContainer = true
             },
             {
                 sprite = "location_business_distillery_01_1",
@@ -26908,9 +26893,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
-                canBeAlwaysPlaced = true,
-                isContainer = true
             },
             {
                 sprite = "location_business_distillery_01_2",
@@ -26969,11 +26951,10 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
                 canBeAlwaysPlaced = true,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 200
             },
             {
@@ -26991,11 +26972,10 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
                 canBeAlwaysPlaced = true,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 200
             },
             {
@@ -27013,11 +26993,10 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
                 canBeAlwaysPlaced = true,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 200
             },
             {
@@ -27035,11 +27014,10 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
                 canBeAlwaysPlaced = true,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 200
             },
             {
@@ -27057,11 +27035,10 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "logs",
                 renderFloorHelper = false,
                 canBeAlwaysPlaced = true,
                 dismantable = true,
-                isContainer = true,
+                containerType = "logs",
                 capacity = 200
             },
             {
@@ -27146,8 +27123,6 @@ local function addTablesToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "officedrawers",
-                        isContainer = true
                     },
                     {
                         sprite = "furniture_tables_low_01_12",
@@ -27162,8 +27137,6 @@ local function addTablesToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "officedrawers",
-                        isContainer = true
                     },
                     {
                         sprite = "furniture_tables_low_01_18",
@@ -27530,7 +27503,7 @@ local function addTablesToMenu()
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
-                    { isContainer = true, containerType = "desk" },
+                    {},
                     {
                         sprite = "location_business_office_generic_01_43",
                         sprite2 = "location_business_office_generic_01_42",
@@ -27544,7 +27517,7 @@ local function addTablesToMenu()
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
-                    { isContainer = true, containerType = "desk" },
+                    {},
                     {
                         sprite = "location_business_office_generic_01_45",
                         sprite2 = "location_business_office_generic_01_44",
@@ -27558,7 +27531,7 @@ local function addTablesToMenu()
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
-                    { isContainer = true, containerType = "desk" },
+                    {},
                     {
                         sprite = "location_business_office_generic_01_6",
                         sprite2 = "location_business_office_generic_01_5",
@@ -27572,7 +27545,7 @@ local function addTablesToMenu()
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.LargeFurnitureRecipe,
                     true,
-                    { isContainer = true, containerType = "desk" },
+                    {},
                     {
                         sprite = "location_business_office_generic_01_10",
                         sprite2 = "location_business_office_generic_01_8",
@@ -29443,15 +29416,11 @@ local function addBookshelvesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
-                canBeLockedByPadlock = true
             },
             {
                 sprite = "furniture_shelving_01_41",
@@ -29463,15 +29432,11 @@ local function addBookshelvesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
-                canBeLockedByPadlock = true
             },
             {
                 sprite = "furniture_shelving_01_45",
@@ -29483,15 +29448,12 @@ local function addBookshelvesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
-                canBeLockedByPadlock = true
+                needToBeAgainstWall = true,
             },
             {
                 sprite = "furniture_shelving_01_10",
@@ -29501,15 +29463,13 @@ local function addBookshelvesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Big_Wall_Shelves",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "shelves",
-                canBeAlwaysPlaced = true,
-                isContainer = true,
-                canBeLockedByPadlock = true
+                needToBeAgainstWall = true,
+                
             },
             {
                 sprite = "furniture_shelving_01_8",
@@ -29532,12 +29492,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29550,12 +29509,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29568,12 +29526,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29586,13 +29543,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29605,13 +29560,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29624,12 +29577,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29642,13 +29594,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29661,13 +29611,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29680,12 +29628,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29698,13 +29645,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29717,13 +29662,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29736,12 +29679,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29754,13 +29696,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29773,13 +29713,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29792,12 +29730,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {
@@ -29810,13 +29747,11 @@ local function addDressersAndWardrobesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Dresser",
-            BuildingMenu.onBuildDoubleTileFurniture,
+            BuildingMenu.onBuildDoubleTileContainer,
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "wardrobe",
-                isContainer = true,
                 canBeLockedByPadlock = true
             },
             {

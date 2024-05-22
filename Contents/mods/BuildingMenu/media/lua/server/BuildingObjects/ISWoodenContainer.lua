@@ -18,16 +18,27 @@ function ISWoodenContainer:create(x, y, z, north, sprite)
     self.javaObject:setHealth(self.javaObject:getMaxHealth());
     self.javaObject:setBreakSound("BreakObject");
 
-	self.javaObject:createContainersFromSpriteProperties();
-	for i = 1, self.javaObject:getContainerCount() do
-		self.javaObject:getContainerByIndex(i - 1):setExplored(true);
+	if self.containerType then
+		local inv = ItemContainer.new();
+		inv:setType(self.containerType);
+		inv:setCapacity(self.capacity or 50);
+		inv:removeAllItems();
+		inv:setParent(self.javaObject);
+		inv:setExplored(true);
+		self.javaObject:setContainer(inv);
+	else
+		self.javaObject:createContainersFromSpriteProperties();
+		for i = 1, self.javaObject:getContainerCount() do
+			self.javaObject:getContainerByIndex(i - 1):setExplored(true);
+		end
 	end
 
-    local sharedSprite = getSprite(self:getSprite())
-    if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
-        local props = ISMoveableSpriteProps.new(sharedSprite);
-        self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq));
-    end
+	local sharedSprite = getSprite(sprite);
+	---@diagnostic disable-next-line: param-type-mismatch
+	if self.sq and sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
+		local props = ISMoveableSpriteProps.new(sharedSprite);
+		self.javaObject:setRenderYOffset(props:getTotalTableHeight(self.sq));
+	end
 
     buildUtil.setInfo(self.javaObject, self);
     buildUtil.consumeMaterial(self);
@@ -48,9 +59,8 @@ function ISWoodenContainer:new(sprite, northSprite)
     o:init();
     o:setSprite(sprite);
     o:setNorthSprite(northSprite);
-    o.isContainer = true;
     o.blockAllTheSquare = true;
-    o.name = "Wooden Crate";
+    o.name = "Container";
     o.dismantable = true;
     o.canBeAlwaysPlaced = true;
     o.canBeLockedByPadlock = true;
@@ -76,12 +86,27 @@ end
 --- @param square IsoGridSquare The square to validate
 --- @return boolean validity True if placement is valid, false otherwise
 function ISWoodenContainer:isValid(square)
+	if not square then return false; end
+    if square:getObjects():size() > 8 then return false; end
     if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
     if not self:haveMaterial(square) then return false; end
 
+    local canPlace = true;
+	if self.needToBeAgainstWall then
+		for i = 0, square:getObjects():size() - 1 do
+			local obj = square:getObjects():get(i);
+			if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
+				canPlace = true;
+                break;
+            else
+                canPlace = false;
+			end
+		end
+    end
+
 
     local sharedSprite = getSprite(self:getSprite());
-    if sharedSprite and sharedSprite:getProperties():Is("IsStackable") then
+    if sharedSprite and (sharedSprite:getProperties():Is("IsStackable")) then
         local props = ISMoveableSpriteProps.new(sharedSprite);
         return props:canPlaceMoveable("amongus", square, nil);
     end
@@ -89,30 +114,27 @@ function ISWoodenContainer:isValid(square)
     local selfProps = getSprite(self:getSprite()):getProperties();
     local selfIsLow = selfProps:Is("IsLow");
     local selfIsHigh = selfProps:Is("IsHigh");
-    local canPlace = true;
 
-    if square then
-        for i = 0, square:getObjects():size() - 1 do
-            local object = square:getObjects():get(i);
-            local objectProps = object:getSprite():getProperties();
+    for i = 0, square:getObjects():size() - 1 do
+        local object = square:getObjects():get(i);
+        local objectProps = object:getSprite():getProperties();
 
-            -- check if the current object is a container
-            if objectProps and objectProps:Is(IsoFlagType.container) then
-                local objectIsLow = objectProps:Is("IsLow");
-                local objectIsHigh = objectProps:Is("IsHigh");
+        -- check if the current object is a container
+        if objectProps and objectProps:Is(IsoFlagType.container) then
+            local objectIsLow = objectProps:Is("IsLow");
+            local objectIsHigh = objectProps:Is("IsHigh");
 
-                -- if both objects are low or both are high, prevent placement
-                if (selfIsLow and objectIsLow) or (selfIsHigh and objectIsHigh) then
-                    canPlace = false;
-                end
+            -- if both objects are low or both are high, prevent placement
+            if (selfIsLow and objectIsLow) or (selfIsHigh and objectIsHigh) then
+                canPlace = false;
+            end
 
-                -- if one object is low and the other is high, allow placement
-                if (selfIsLow and objectIsHigh) or (selfIsHigh and objectIsLow) then
-                    --- this case is allowed, do nothing
-                else
-                    --- any other case, prevent placement
-                    canPlace = false;
-                end
+            -- if one object is low and the other is high, allow placement
+            if (selfIsLow and objectIsHigh) or (selfIsHigh and objectIsLow) then
+                --- this case is allowed, do nothing
+            else
+                --- any other case, prevent placement
+                canPlace = false;
             end
         end
     end

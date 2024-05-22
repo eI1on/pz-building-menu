@@ -1,3 +1,32 @@
+ MAY 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Corrected some tile properties for containers
+[/list]
+Daddy Dirkie Tiles Addon:
+[list]
+[*] Corrected some tile properties for containers
+[/list]
+Dylan Tiles Addon:
+[list]
+[*] Corrected some tile properties for containers
+[/list]
+Melos Tiles Addon:
+[list]
+[*] Corrected some tile properties for containers
+[/list]
+Oujinjin's Tiles Addon:
+[list]
+[*] Corrected some tile properties for containers
+[*] "Basket" containers can be stacked now 
+[/list]
+[/list]
+
+
+
 19 MAY 24
 800eced
 Hotfix

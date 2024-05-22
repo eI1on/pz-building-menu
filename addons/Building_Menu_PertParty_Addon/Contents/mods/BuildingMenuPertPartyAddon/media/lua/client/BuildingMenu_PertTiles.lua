@@ -531,7 +531,6 @@ local function addMetalContainersToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "filingcabinet",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1850,9 +1849,7 @@ local function addChristmasDecorationsToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "postbox",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 isCorner = true,
                 canBeLockedByPadlock = false
             },
@@ -1890,6 +1887,7 @@ local function addChristmasDecorationsToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "smallcrate",
+                capacity = 35,
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1906,6 +1904,7 @@ local function addChristmasDecorationsToMenu()
                 noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 containerType = "smallcrate",
+                capacity = 35,
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true

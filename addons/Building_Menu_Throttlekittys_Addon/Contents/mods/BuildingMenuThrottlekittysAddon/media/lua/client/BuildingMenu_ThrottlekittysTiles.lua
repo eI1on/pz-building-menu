@@ -19,7 +19,6 @@ local function addMetalContainersToMenu()
                     {
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         blockAllTheSquare = false,
                     },
                     {
@@ -38,7 +37,6 @@ local function addMetalContainersToMenu()
                     {
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "extinguisher_box",
                         renderFloorHelper = true,
                         blockAllTheSquare = false,
                     },
@@ -56,7 +54,6 @@ local function addMetalContainersToMenu()
                     {
                         noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         blockAllTheSquare = true,
                     },
                     {
@@ -92,7 +89,6 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -107,7 +103,6 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "crate",
                 canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
@@ -1179,7 +1174,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
             },
             { sprite = "trash_containers_tk_01_0", northSprite = "trash_containers_tk_01_1" }
         ),
@@ -1192,7 +1186,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
             },
             { sprite = "trash_containers_tk_01_2", northSprite = "trash_containers_tk_01_3" }
         ),
@@ -1205,7 +1198,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
             },
             { sprite = "trash_containers_tk_01_4", northSprite = "trash_containers_tk_01_5" }
         ),
@@ -1218,7 +1210,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
             },
             { sprite = "trash_containers_tk_01_6", northSprite = "trash_containers_tk_01_7" }
         ),
@@ -1231,7 +1222,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
             },
             { sprite = "trash_containers_tk_01_8", northSprite = "trash_containers_tk_01_8" }
         ),
@@ -1244,7 +1234,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
             },
             { sprite = "trash_containers_tk_01_10", northSprite = "trash_containers_tk_01_10" }
         ),
@@ -1257,7 +1246,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 buildMid = true,
@@ -1278,7 +1266,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 buildMid = true,
@@ -1299,7 +1286,6 @@ local function addTrashCansToMenu()
             {
                 noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 buildMid = true,

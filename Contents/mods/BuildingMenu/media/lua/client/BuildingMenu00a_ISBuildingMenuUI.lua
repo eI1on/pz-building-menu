@@ -115,76 +115,114 @@ function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
     return nil;
 end
 
+
 local spriteCache = {};
+local partNames = {
+    "Tooltip_BuildingObject_Main_Part",
+    "Tooltip_BuildingObject_Secondary_Part",
+    "Tooltip_BuildingObject_Tertiary_Part",
+    "Tooltip_BuildingObject_Quaternary_Part"
+};
 
----@param selectedObject table
-function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
-    local tooltipDescription = "";
-    tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix, selectedObject.toolFoundIndexMatrix =
-        BuildingMenu.canBuildObject(self.character, tooltipDescription, selectedObject.objDef.data.recipe);
-    self.tooltip:setName(selectedObject.objDef.displayName or selectedObject.objDef.data.nameID);
 
-    local function processSprite(sprite)
-        if not sprite or spriteCache[sprite] then
-            return spriteCache[sprite] or {};
-        end
+local function getContainerDetailsFromSpriteProps(sprite, character)
+    if spriteCache[sprite] then return spriteCache[sprite]; end
 
-        local containerDetails = {};
-        local cell = getWorld():getCell();
-        local square = self.character:getCurrentSquare();
-        local isoObject = IsoObject.new(cell, square, sprite);
-        isoObject:createContainersFromSpriteProperties();
+    local containerDetails = {};
+    local cell = getWorld():getCell();
+    local square = character:getCurrentSquare();
+    local isoObject = IsoObject.new(cell, square, sprite);
+    isoObject:createContainersFromSpriteProperties();
 
-        for i = 1, isoObject:getContainerCount() do
-            local itemContainer = isoObject:getContainerByIndex(i - 1);
-            local containerCapacity = itemContainer:getEffectiveCapacity(self.character) or 0;
-            local containerType = itemContainer:getType();
-            local containerTitle = getTextOrNull("IGUI_ContainerTitle_" .. containerType) or containerType;
+    for i = 1, isoObject:getContainerCount() do
+        local itemContainer = isoObject:getContainerByIndex(i - 1);
+        local containerCapacity = itemContainer:getEffectiveCapacity(character) or 0;
+        local containerType = itemContainer:getType();
+        local containerTitle = getTextOrNull("IGUI_ContainerTitle_" .. containerType) or containerType;
 
-            table.insert(containerDetails, string.format("%s: %d", containerTitle, containerCapacity));
-        end
-
-        spriteCache[sprite] = containerDetails;
-        return containerDetails;
+        table.insert(containerDetails, string.format("%s: %d", containerTitle, containerCapacity));
     end
 
+    spriteCache[sprite] = containerDetails;
+    return containerDetails;
+end
+
+
+local function getContainerDetailsFromObjectDef(sprite, containerType, capacity)
+    if spriteCache[sprite] then return spriteCache[sprite]; end
+
+    local containerDetails = {};
+    local containerTitle = getTextOrNull("IGUI_ContainerTitle_" .. containerType) or containerType;
+    table.insert(containerDetails, string.format("%s: %d", containerTitle, capacity));
+
+    spriteCache[sprite] = containerDetails;
+    return containerDetails;
+end
+
+
+local function getContainerInfo(selectedObject, character)
     local containerInfo = {};
-    local partNames = { "Tooltip_BuildingObject_Main_Part", "Tooltip_BuildingObject_Secondary_Part",
-        "Tooltip_BuildingObject_Tertiary_Part", "Tooltip_BuildingObject_Quaternary_Part" };
     for i, spriteKey in ipairs({ "sprite", "sprite2", "sprite3", "sprite4" }) do
         local sprite = selectedObject.objDef.data.sprites[spriteKey];
         if sprite then
-            local props = getSprite(sprite):getProperties();
-            if props:Is("container") or props:Is("Freezer") then
-                local partName = partNames[i] or "Tooltip_BuildingObject_Extra_Part";
-                local details = processSprite(sprite);
-                if #details > 0 then
-                    table.insert(containerInfo, getText(partName) .. ": " .. table.concat(details, " | "));
+            local containerDetails;
+            if selectedObject.objDef.data.options and selectedObject.objDef.data.options.containerType and selectedObject.objDef.data.options.capacity then
+                containerDetails = getContainerDetailsFromObjectDef(sprite, selectedObject.objDef.data.options.containerType, selectedObject.objDef.data.options.capacity);
+            else
+                local props = getSprite(sprite):getProperties();
+                if props:Is("container") or props:Is("Freezer") then
+                    containerDetails = getContainerDetailsFromSpriteProps(sprite, character);
                 end
+            end
+            if containerDetails and #containerDetails > 0 then
+                local partName = partNames[i] or "Tooltip_BuildingObject_Extra_Part";
+                table.insert(containerInfo, getText(partName) .. ": " .. table.concat(containerDetails, " | "));
             end
         end
     end
+    return containerInfo;
+end
 
-    local containerStr = #containerInfo > 0 and (table.concat(containerInfo, " <LINE> ") .. " <LINE>") or "";
 
+local function getTooltipContent(character, selectedObject)
+    local tooltipDescription = ""
+    tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix, selectedObject.toolFoundIndexMatrix =
+        BuildingMenu.canBuildObject(character, tooltipDescription, selectedObject.objDef.data.recipe);
+
+    return tooltipDescription;
+end
+
+
+local function getIsThumpableStr(overwriteIsThumpable, onBuild)
     local isThumpableStr = "";
     if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
-        if self.overwriteIsThumpable then
-            local onBuild = selectedObject.objDef.data.action;
-            if onBuild == BuildingMenu.onBuildDoor or onBuild == BuildingMenu.onDoubleDoor or onBuild == BuildingMenu.onBuild3TileGarageDoor or onBuild == BuildingMenu.onBuild4TileGarageDoor then
-            else
+        if overwriteIsThumpable then
+            if not (onBuild == BuildingMenu.onBuildDoor or onBuild == BuildingMenu.onDoubleDoor or onBuild == BuildingMenu.onBuild3TileGarageDoor or onBuild == BuildingMenu.onBuild4TileGarageDoor) then
                 isThumpableStr = " <LINE> " .. BuildingMenu.bhsString .. " INDESTRUCTIBLE ";
             end
         end
     end
+    return isThumpableStr;
+end
+
+
+---@param selectedObject table
+function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
+    local tooltipDescription = getTooltipContent(self.character, selectedObject);
+    self.tooltip:setName(selectedObject.objDef.displayName or selectedObject.objDef.data.nameID);
+
+    local containerInfo = getContainerInfo(selectedObject, self.character);
+    local containerStr = #containerInfo > 0 and (table.concat(containerInfo, " <LINE> ") .. " <LINE>") or "";
+
+    local isThumpableStr = getIsThumpableStr(self.overwriteIsThumpable, selectedObject.objDef.data.action);
 
     local description = selectedObject.objDef.description;
     local lineSeparator = description ~= "" and " <LINE> " or "";
-    self.tooltip.description = string.format("%s %s <RGB:1,1,1> %s %s %s", description, lineSeparator, containerStr,
-        isThumpableStr, tooltipDescription);
+    self.tooltip.description = string.format("%s %s <RGB:1,1,1> %s %s %s", description, lineSeparator, containerStr, isThumpableStr, tooltipDescription);
 
     self.tooltip.footNote = BuildingMenu.textCanRotate;
 end
+
 
 ---@param col number
 ---@param row number
