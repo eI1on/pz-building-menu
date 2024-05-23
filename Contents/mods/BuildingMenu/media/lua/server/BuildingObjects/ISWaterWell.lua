@@ -83,24 +83,22 @@ end
 --- @param square IsoGridSquare The square to validate
 --- @return boolean validity rue if placement is valid, false otherwise
 function ISWaterWell:isValid(square)
-    if not ISBuildingObject.isValid(self, square) then
-        return false;
-    end
-    if not square:getMovingObjects():isEmpty() then
-        return false;
-    end
-    for i = 1, square:getObjects():size() do
-        local obj = square:getObjects():get(i - 1);
-        if obj:getTextureName() and getSpecificPlayer(self.player):getZ() == 0 and
-            (luautils.stringStarts(obj:getTextureName(), 'floors_exterior_natural') or
-                luautils.stringStarts(obj:getTextureName(), 'blends_natural_01')) then
-            return true;
-        end
-    end
+    if not ISBuildingObject.isValid(self, square) then return false; end
+    if not square:getMovingObjects():isEmpty() then return false; end
+    if getSpecificPlayer(self.player):getZ() >= 1 then return false; end
     if not ISWaterWell.shovelledFloorCanDig(square) then return false; end
     if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-    if not ISBuildingObject.isValid(self, square) then return false; end
-    if not buildUtil.canBePlace(self, square) then return false; end
+    for i = 1, square:getObjects():size() do
+        local obj = square:getObjects():get(i - 1);
+        if obj:getTextureName() then
+            if (luautils.stringStarts(obj:getTextureName(), 'floors_exterior_natural') or
+                    luautils.stringStarts(obj:getTextureName(), 'blends_natural_01')) then
+                return true;
+            else
+                return false;
+            end
+        end
+    end
     return true;
 end
 

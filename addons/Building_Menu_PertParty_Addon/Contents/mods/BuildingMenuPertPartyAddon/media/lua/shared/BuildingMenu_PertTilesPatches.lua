@@ -132,4 +132,21 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false)
         props:CreateKeySet()
     end
+
+    sprites = {
+        "pert_Christmas_01_86",
+        "pert_Christmas_01_87",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.setSpriteProperty(props, "IsoType", "IsoThumpable", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false)
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false)
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container)
+        BM_Utils.setSpriteProperty(props, "container", "smallcrate", false)
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "35", false)
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false)
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "20", false)
+        props:CreateKeySet()
+    end
 end)

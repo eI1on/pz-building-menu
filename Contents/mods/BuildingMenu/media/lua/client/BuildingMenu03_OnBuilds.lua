@@ -96,19 +96,16 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
                 return;
             end
         end
-        if objectOptions.containerType then
-            object.getHealth = function(self)
-                local health = 200 + buildUtil.getWoodHealth(self);
-                BM_Utils.debugPrint("[Building Menu DEBUG] ",
-                    string.format("objectOptions.health: %s  buildUtil.getWoodHealth(self): %s",
-                        objectOptions.health or 0, health or 0));
-                return objectOptions.health or health;
-            end
-        end
 
         BM_Utils.debugPrint("[Building Menu DEBUG] ", name);
         BM_Utils.debugPrint("[Building Menu DEBUG] ", objectOptions);
         BM_Utils.debugPrint("[Building Menu DEBUG] ", objectRecipe);
+
+        local health = BM_Utils.safeCallMethod(object, "getHealth");
+        BM_Utils.debugPrint("[Building Menu DEBUG] ",
+            string.format("objectOptions.health: %s  object:getHealth(): %s",
+                objectOptions.health or 0, health or 0));
+
         if spritesName then
             if spritesName["sprite"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["sprite"]);

@@ -5,6 +5,9 @@ Changelog:
 Main mod:
 [list]
 [*] Corrected some tile properties for containers
+[*] Water wells can now only be built on ground level and only on grass/dirt tiles
+[*] Restricted the total number of containers per tile to 8 to prevent errors
+[*] [/i]Finally[i] fixed icons with modded item icons
 [/list]
 Daddy Dirkie Tiles Addon:
 [list]

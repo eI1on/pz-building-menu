@@ -76,13 +76,11 @@ end
 ---@param ISItem ISBuildingObject
 ---@return number
 function BM_Utils.getMetalHealth(ISItem)
-    if not ISItem or not ISItem.player then
-        return 100;
-    end
+    if not ISItem or not ISItem.player then return 200; end
     local playerObj = getSpecificPlayer(ISItem.player)
-    local health = (playerObj:getPerkLevel(Perks.MetalWelding) * 60);
+    local health = (playerObj:getPerkLevel(Perks.MetalWelding) * 75);
     if playerObj:HasTrait("Handy") then
-        health = health + 100;
+        health = health + 150;
     end
     return health;
 end

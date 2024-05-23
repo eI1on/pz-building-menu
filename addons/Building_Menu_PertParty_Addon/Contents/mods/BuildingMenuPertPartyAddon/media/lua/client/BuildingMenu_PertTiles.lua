@@ -1884,13 +1884,7 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
-                completionSound = "BuildWoodenStructureLarge",
-                containerType = "smallcrate",
-                capacity = 35,
-                canBeAlwaysPlaced = true,
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
+                completionSound = "BuildWoodenStructureSmall",
             },
             {sprite = "pert_Christmas_01_86", northSprite = "pert_Christmas_01_86"}
         ),
@@ -1901,13 +1895,7 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
-                completionSound = "BuildWoodenStructureLarge",
-                containerType = "smallcrate",
-                capacity = 35,
-                canBeAlwaysPlaced = true,
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
+                completionSound = "BuildWoodenStructureSmall",
             },
             {sprite = "pert_Christmas_01_87", northSprite = "pert_Christmas_01_87"}
         ),

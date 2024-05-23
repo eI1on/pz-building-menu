@@ -79,7 +79,7 @@ function ISWoodenContainer:getHealth()
 			end
 		end
 	end
-	return 300 + buildUtil.getWoodHealth(self);
+	return 200 + buildUtil.getWoodHealth(self);
 end
 
 --- Validates the placement of the wooden container
@@ -92,16 +92,26 @@ function ISWoodenContainer:isValid(square)
     if not self:haveMaterial(square) then return false; end
 
     local canPlace = true;
-	if self.needToBeAgainstWall then
-		for i = 0, square:getObjects():size() - 1 do
-			local obj = square:getObjects():get(i);
-			if (self.north and obj:getProperties():Is("WallN")) or (not self.north and obj:getProperties():Is("WallW")) then
+
+    local checkSquare = square;
+    if self.east then
+        checkSquare = getCell():getGridSquare(square:getX() + 1, square:getY(), square:getZ());
+    elseif self.south then
+        checkSquare = getCell():getGridSquare(square:getX(), square:getY() + 1, square:getZ());
+    end
+    if not checkSquare then return false; end
+
+    if self.needToBeAgainstWall then
+        for i = 0, checkSquare:getObjects():size() - 1 do
+            local obj = checkSquare:getObjects():get(i)
+            if ((self.north or self.south) and (obj:getProperties():Is("WallN") or obj:getProperties():Is("WallNW"))) or
+               ((self.west or self.east) and (obj:getProperties():Is("WallW") or obj:getProperties():Is("WallNW"))) then
 				canPlace = true;
                 break;
             else
                 canPlace = false;
 			end
-		end
+        end
     end
 
 

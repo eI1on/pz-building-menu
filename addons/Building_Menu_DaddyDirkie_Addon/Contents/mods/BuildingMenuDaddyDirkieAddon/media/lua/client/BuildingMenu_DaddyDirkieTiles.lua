@@ -2422,13 +2422,13 @@ local function addDaddyDirkieForestSurvivalToMenu()
             },
             {
                 sprite = "edit_ddd_RUS_Forest Survival_01_32",
-                northSprite = "edit_ddd_RUS_Forest Survival_01_33"
+                northSprite = "edit_ddd_RUS_Forest Survival_01_32"
             }
         ),
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bookcaseDesc",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.SmallLogWallRecipe,
             true,
             {

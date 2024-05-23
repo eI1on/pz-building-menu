@@ -429,7 +429,7 @@ end
 ---@return Texture|nil
 function BuildingMenu.getTexFromItem(item)
     if not item then
-        print("[Building Menu ERROR] ", "Warning: Attempted to get texture name from a nil item.");
+        print("[Building Menu WARNING] ", "Attempted to get texture name from a nil item.");
         return nil;
     end
     ---@type Texture|nil
@@ -456,11 +456,15 @@ function BuildingMenu.getTexNameFromItem(item)
     local texture = BuildingMenu.getTexFromItem(item);
     if texture then
         local textureName = texture:getName();
-        -- extract just the name from a path if it contains directory separators
-        local nameOnly = textureName:match("([^\\/]*)$");
-        return nameOnly;
+        local relativePath;
+        if textureName:find("[\\/]+") then
+            relativePath = textureName:match(".*(media[\\/].+)");
+        else
+            relativePath = textureName;
+        end
+        return relativePath;
     else
-        print("[Building Menu ERROR] ", "Warning: Texture not found for item " .. item:getFullName());
+        print("[Building Menu WARNING] ", "Texture not found for item " .. item:getFullName());
         return nil;
     end
 end
@@ -474,7 +478,7 @@ function BuildingMenu.getItemInstance(itemFullType)
     if not item then
         item = getScriptManager():FindItem(itemFullType);
         if item then
-            -- Cache both the item instance and its texture name for quick access later.
+            -- cache both the item instance and its texture name for quick access later
             local texNameOnly = BuildingMenu.getTexNameFromItem(item);
             BuildingMenu.ItemInstances[itemFullType] = { item = item, textureName = texNameOnly };
         end
@@ -490,7 +494,7 @@ function BuildingMenu.getTextureFromItem(item)
     if cacheEntry then
         return cacheEntry.textureName;
     end
-    -- If for some reason the item wasn't cached, we fall back to extracting the texture name
+    -- if for some reason the item wasn't cached, we fall back to extracting the texture name
     local texNameOnly = BuildingMenu.getTexNameFromItem(item)
     BuildingMenu.ItemInstances[item:getFullName()] = { item = item, textureName = texNameOnly }
     return texNameOnly
@@ -572,7 +576,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
     local groundItems = buildUtil.getMaterialOnGround(playerObj:getCurrentSquare());
     local groundItemCountMap = {};
 
-    -- Prepare ground item counts
+    -- prepare ground item counts
     if groupType == "Consumable" then
         groundItemCountMap = buildUtil.getMaterialOnGroundUses(groundItems);
     else
@@ -581,7 +585,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
         end
     end
 
-    -- Iterate over each alternative Material/Consumable group
+    -- iterate over each alternative Material/Consumable group
     for altGroupIndex, altGroup in pairs(currentItemGroup) do
         local items = type(altGroup[groupType]) == "table" and altGroup[groupType] or { altGroup[groupType] };
         local totalAmountNeeded = altGroup.Amount;
@@ -589,7 +593,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
         local itemDetails = {};
         local firstItemInstance = nil;
 
-        -- Iterate over each material Full Type within the alternative Material/Consumable group
+        -- iterate over each material Full Type within the alternative Material/Consumable group
         for _, itemFullType in pairs(items) do
             local item = BuildingMenu.getItemInstance(itemFullType);
             if item then
@@ -662,7 +666,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
 end
 
 
---- Tooltip check for a specific material.
+--- Tooltip check for a specific material
 ---@param playerObj IsoPlayer
 ---@param playerInv ItemContainer
 ---@param currentMaterialsGroup table
@@ -673,7 +677,7 @@ BuildingMenu.tooltipCheckForMaterial = function(playerObj, playerInv, currentMat
 end
 
 
---- Tooltip check for a consumable item.
+--- Tooltip check for a consumable item
 ---@param playerObj IsoPlayer
 ---@param playerInv ItemContainer
 ---@param currentConsumableGroup table

@@ -5903,7 +5903,7 @@ local function initBuildingMenuRecipes()
     }
 
 
-    BuildingMenu.WashingMachineRecipe = {
+    BuildingMenu.WashingMachineWindowRecipe = {
         neededTools = {
             "BlowTorch",
             "WeldingMask",
@@ -5915,6 +5915,56 @@ local function initBuildingMenuRecipes()
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
                 Amount = BuildingMenu.round(glassPaneCount * 1.5)
             },
+            {
+                Material = "Base.SheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 2)
+            },
+            {
+                Material = "Base.ElectronicsScrap",
+                Amount = 30
+            },
+            {
+                Material = "Radio.ElectricWire",
+                Amount = 4
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 2)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 6,
+                Xp = BuildingMenu.round(6 * metalweldingXpPerLevel)
+            },
+            {
+                Skill = "Electricity",
+                Level = 4,
+                Xp = BuildingMenu.round(4 * electricalXpPerLevel)
+            },
+        }
+    }
+
+
+    BuildingMenu.WashingMachineRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+            "Saw",
+        },
+        neededMaterials = {
             {
                 Material = "Base.SheetMetal",
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 2)

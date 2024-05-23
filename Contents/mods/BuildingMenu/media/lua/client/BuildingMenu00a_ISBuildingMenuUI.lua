@@ -61,6 +61,21 @@ function BuildingMenuTilePickerList:render()
     self:clearStencilRect();
 end
 
+
+--- Finds the next object in the tile picker list
+---@param objectsBuffer table
+---@return table|nil
+function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
+    if not self.subCatData then return nil; end
+    for _, objectDef in pairs(self.subCatData) do
+        if objectDef.data and objectDef.data.sprites and not objectsBuffer[objectDef.data.sprites.sprite] then
+            return objectDef;
+        end
+    end
+    return nil;
+end
+
+
 --- Updates the tooltip for the tile picker list
 ---@param maxCols number
 ---@param maxRows number
@@ -160,6 +175,10 @@ local function getContainerDetailsFromObjectDef(sprite, containerType, capacity)
 end
 
 
+--- Gets the container information for the selected object
+---@param selectedObject table
+---@param character IsoPlayer
+---@return table
 local function getContainerInfo(selectedObject, character)
     local containerInfo = {};
     for i, spriteKey in ipairs({ "sprite", "sprite2", "sprite3", "sprite4" }) do
@@ -184,8 +203,12 @@ local function getContainerInfo(selectedObject, character)
 end
 
 
+--- Gets the tooltip content for the selected object
+---@param character IsoPlayer
+---@param selectedObject table
+---@return string
 local function getTooltipContent(character, selectedObject)
-    local tooltipDescription = ""
+    local tooltipDescription = "";
     tooltipDescription, selectedObject.canBuild, selectedObject.materialFoundIndexMatrix, selectedObject.consumablesFoundIndexMatrix, selectedObject.toolFoundIndexMatrix =
         BuildingMenu.canBuildObject(character, tooltipDescription, selectedObject.objDef.data.recipe);
 
@@ -193,6 +216,10 @@ local function getTooltipContent(character, selectedObject)
 end
 
 
+--- Gets the thumpable state string for the tooltip
+---@param overwriteIsThumpable boolean
+---@param onBuild function
+---@return string
 local function getIsThumpableStr(overwriteIsThumpable, onBuild)
     local isThumpableStr = "";
     if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
@@ -206,6 +233,7 @@ local function getIsThumpableStr(overwriteIsThumpable, onBuild)
 end
 
 
+--- Updates the tooltip content for the selected object
 ---@param selectedObject table
 function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
     local tooltipDescription = getTooltipContent(self.character, selectedObject);
@@ -238,19 +266,6 @@ end
 function BuildingMenuTilePickerList:hideTooltip()
     self.tooltip:setVisible(false);
     self.tooltip:removeFromUIManager();
-end
-
---- Finds the next object in the tile picker list
----@param objectsBuffer table
----@return table|nil
-function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
-    if not self.subCatData then return nil; end
-    for _, objectDef in pairs(self.subCatData) do
-        if objectDef.data and objectDef.data.sprites and not objectsBuffer[objectDef.data.sprites.sprite] then
-            return objectDef;
-        end
-    end
-    return nil;
 end
 
 --- Handles mouse wheel events for the tile picker list
@@ -377,16 +392,14 @@ function BuildingMenuTilePickerList:spawnItems(selectedObject)
 
     local inventory = self.character:getInventory()
 
-    for _, tool in ipairs(objectRecipe.neededTools) do
-        inventory:AddItem(tool)
-    end
-
     local function addItemToInventory(itemTable)
         local items, amount = itemTable.Material or itemTable.Consumable, tonumber(itemTable.Amount)
 
         if type(items) == "table" then
             items = items[1]
         end
+
+        if items == "Base.BlowTorch" then return; end
 
         if items and amount then
             for i = 1, amount do
@@ -395,6 +408,10 @@ function BuildingMenuTilePickerList:spawnItems(selectedObject)
         else
             print("[Building Menu ERROR] Item or amount is nil for", items)
         end
+    end
+
+    for _, tool in ipairs(objectRecipe.neededTools or {}) do
+        inventory:AddItem(tool)
     end
 
     for _, material in pairs(objectRecipe.neededMaterials or {}) do

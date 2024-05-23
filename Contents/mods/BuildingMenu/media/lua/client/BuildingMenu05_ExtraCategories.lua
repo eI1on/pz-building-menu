@@ -43,8 +43,8 @@ local function addLightingToMenu()
             {
                 sprite = "building_menu_lighting_29",
                 northSprite = "building_menu_lighting_28",
-                eastSprite = "building_menu_lighting_30",
-                southSprite = "building_menu_lighting_31"
+                eastSprite = "building_menu_lighting_31",
+                southSprite = "building_menu_lighting_30"
             }
         )
     }
@@ -837,7 +837,7 @@ local function addLaundryAppliancesToMenu()
             "",
             "Tooltip_Laundry",
             BuildingMenu.onBuildCombinationWasherDryer,
-            BuildingMenu.WashingMachineRecipe,
+            BuildingMenu.WashingMachineWindowRecipe,
             true,
             {
                 noNeedHammer = true,
