@@ -21,6 +21,16 @@ function ISWoodenContainer:create(x, y, z, north, sprite)
     if self.containerType then
         local inv = ItemContainer.new();
         inv:setType(self.containerType);
+
+        self.capacity = 50;
+        local objSprite = getSprite(sprite);
+        if objSprite then
+            local objProps = objSprite:getProperties();
+            if objProps and objProps:Is("ContainerCapacity") then
+                self.capacity = tonumber(objProps:Val("ContainerCapacity")) or self.capacity;
+            end
+        end
+
         inv:setCapacity(self.capacity);
         inv:removeAllItems();
         inv:setParent(self.javaObject);
