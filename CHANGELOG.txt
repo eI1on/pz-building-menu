@@ -1,21 +1,42 @@
 27 MAY 24
-
+433f0bd
 
 Changelog:
 [list]
 Main mod:
 [list]
 [*] Added Curtains Category (default = [b]disabled[/b])
-[*] Fixed more types and capacities of containers
+[*] Fixed Types and Capacities of Containers
 [/list]
 Melos Tiles Addon:
 [list]
+[*] Fixed Types and Capacities of Containers
 [*] Added Curtains Category
 [/list]
 Daddy Dirkie Tiles Addon:
 [list]
 [*] Added Dirt, Sand and Asphalt Ramps (default = [b]disabled[/b])
 [*] Fixed Secret Entrances Shelf containers
+[/list]
+PertParty's addon:
+[list]
+[*] Fixed Types and Capacities of Containers
+[/list]
+ExtraNoise's Newburbs Tiles addon:
+[list]
+[*] Fixed Types and Capacities of Containers
+[/list]
+Oujinjin's Tiles Addon:
+[list]
+[*] Fixed Types and Capacities of Containers
+[/list]
+SimonMD's addon:
+[list]
+[*] Fixed Types and Capacities of Containers
+[/list]
+Throttlekitty's Tiles addon:
+[list]
+[*] Fixed Types and Capacities of Containers
 [/list]
 [/list]
 
