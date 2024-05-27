@@ -1,12 +1,12 @@
 27 MAY 24
-Hotfix
+
 
 Changelog:
 [list]
 Main mod:
 [list]
 [*] Added Curtains Category (default = [b]disabled[/b])
-[*] Fixed Container Types and Capacity
+[*] Fixed more types and capacities of containers
 [/list]
 Melos Tiles Addon:
 [list]

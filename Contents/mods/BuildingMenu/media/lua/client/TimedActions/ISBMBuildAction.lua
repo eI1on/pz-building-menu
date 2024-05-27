@@ -103,6 +103,7 @@ end
 
 function ISBMBuildAction:getSound(toolType)
     local soundEntry = self.toolAudioMappings[toolType];
+    if self.item.craftingBank then return self.item.craftingBank; end
     if soundEntry then
         if type(soundEntry) == "table" then
             local sound = soundEntry.default or "BuildingGeneric";
