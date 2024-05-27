@@ -15,7 +15,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -34,7 +33,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -53,7 +51,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -72,7 +69,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -91,7 +87,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -110,7 +105,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -129,7 +123,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -148,7 +141,6 @@ local function addSimonMDWallsToMenu()
                 completionSound = "BuildMetalStructureWallFrame",
                 isThumpable = true,
                 canBarricade = false,
-                noNeedHammer = true,
                 modData = {wallType = "wall"}
             },
             {
@@ -165,7 +157,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -182,7 +173,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -199,7 +189,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -216,7 +205,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 modData = {wallType = "doorframe"}
             },
             {
@@ -233,7 +221,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
@@ -253,7 +240,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
@@ -273,7 +259,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
@@ -293,7 +278,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
@@ -313,7 +297,6 @@ local function addSimonMDWallsToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
@@ -343,7 +326,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -364,7 +346,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -380,7 +361,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = false,
@@ -401,7 +381,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 hoppable = false,
@@ -418,7 +397,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -439,7 +417,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -455,7 +432,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = false,
@@ -476,7 +452,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 hoppable = false,
@@ -493,7 +468,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -514,7 +488,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = false,
@@ -535,7 +508,6 @@ local function addHighFencesToMenu()
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -556,7 +528,6 @@ local function addHighFencesToMenu()
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = false,
@@ -592,7 +563,6 @@ local function addRoofingToMenu()
             BuildingMenu.MetalFloorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -609,7 +579,6 @@ local function addRoofingToMenu()
             BuildingMenu.MetalFloorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -626,7 +595,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -643,7 +611,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -660,7 +627,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -677,7 +643,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -694,7 +659,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -711,7 +675,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -728,7 +691,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -745,7 +707,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -762,7 +723,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -779,7 +739,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -796,7 +755,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -813,7 +771,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -830,7 +787,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -847,7 +803,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -864,7 +819,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -881,7 +835,6 @@ local function addRoofingToMenu()
             BuildingMenu.ScrapRoofTileRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -911,7 +864,6 @@ local function addSimonMDSecretEntrancesToMenu()
             BuildingMenu.WoodenDoorRecipe,
             "Build Secret Entrance",
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -952,7 +904,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -978,7 +929,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -1032,9 +982,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -1052,7 +1000,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalGlassCounterRecipe,
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -1068,7 +1015,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalGlassCounterRecipe,
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         isThumpable = true
                     },
@@ -1084,7 +1030,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isThumpable = true,
                         blockAllTheSquare = false,
@@ -1129,7 +1074,6 @@ local function addDoubleDoorToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         canBarricade = false,
                         ignoreNorth = true,
                         completionSound = "BuildMetalStructureLargeWiredFence",
@@ -1169,7 +1113,6 @@ local function addDoorsToMenu()
                     BuildingMenu.ScrapDoor1Recipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = {wallType = "doorframe"}
@@ -1188,7 +1131,6 @@ local function addDoorsToMenu()
                     BuildingMenu.ScrapDoor2Recipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = {wallType = "doorframe"}

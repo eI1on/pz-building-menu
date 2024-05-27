@@ -1,11 +1,7 @@
+local BM_Utils = require("BM_Utils");
+
 ---@class ISWoodenDoor: ISBuildingObject
 ISWoodenDoor = ISBuildingObject:derive("ISWoodenDoor");
-
-local function safeCallMethod(object, methodName, ...)
-    if type(object[methodName]) == "function" then
-        return object[methodName](object, ...);
-    end
-end
 
 ---Creates a door and places it in the world
 ---@param x number The x coordinate in the world
@@ -26,9 +22,9 @@ function ISWoodenDoor:create(x, y, z, north, sprite)
 	local isoOpenSprite = getSprite(openSprite);
 	isoOpenSprite:setName(openSprite);
 	self.javaObject:setOpenSprite(isoOpenSprite);
-    safeCallMethod(self.javaObject, "setName", self.name);
-	safeCallMethod(self.javaObject, "setHealth", self:getHealth());
-    safeCallMethod(self.javaObject, "setBreakSound", "BreakDoor");
+    BM_Utils.safeCallMethod(self.javaObject, "setName", self.name);
+	BM_Utils.safeCallMethod(self.javaObject, "setHealth", self:getHealth());
+    BM_Utils.safeCallMethod(self.javaObject, "setBreakSound", "BreakDoor");
 
 	local consumedItems = buildUtil.consumeMaterial(self);
 	-- add the item to the ground

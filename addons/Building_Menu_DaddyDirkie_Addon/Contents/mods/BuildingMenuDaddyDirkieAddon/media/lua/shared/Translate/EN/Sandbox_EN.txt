@@ -5,6 +5,9 @@ Sandbox_EN = {
     Sandbox_BuildingMenu_daddyDirkieFurniture = "Enable Daddy Dirkie Furniture Category",
     Sandbox_BuildingMenu_daddyDirkieFurniture_tooltip = "Enable to add Daddy Dirkie furniture. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
 
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps = "Enable Daddy Dirkie Roadwork Ramps Subcategory",
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps_tooltip = "Enable to add dirt, sand and asphalt ramps. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
+
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Enable Secret Entrances Category",
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Enable to add secret entrances. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
 

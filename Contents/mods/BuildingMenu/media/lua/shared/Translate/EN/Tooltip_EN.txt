@@ -2001,6 +2001,7 @@ Tooltip_EN = {
   Tooltip_Posters_Generic = "Decorative poster that can add some character to your safehouse. Personalize your space with your favorite images and artwork.",
   Tooltip_Signs_Generic = "Generic sign, useful for conveying messages or marking key locations",
   Tooltip_Rug_Generic = "A cozy and versatile rug, adding warmth and style to your post-apocalyptic hideout.",
+  Tooltip_Curtains_Generic = "These curtains won’t just block out the morning light, but also the sight of the undead hordes."
   Tooltip_Grave_Generic = "A somber resting place, a reminder of lives lost in the apocalypse.",
   Tooltip_Roadway_Generic = "Various decorative items to enhance the aesthetics of your roadway.",
   Tooltip_Garage_Deco_Generic = "Various decorative items to personalize your garage space.",

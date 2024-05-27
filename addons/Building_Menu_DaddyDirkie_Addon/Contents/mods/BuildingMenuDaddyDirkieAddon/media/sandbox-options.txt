@@ -16,6 +16,14 @@ option BuildingMenu.daddyDirkieFurniture
     translation = BuildingMenu_daddyDirkieFurniture,
 }
 
+option BuildingMenu.daddyDirkieRoadworkRamps
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_daddyDirkieRoadworkRamps,
+}
+
 option BuildingMenu.daddyDirkieSecretEntrances
 {
     type = boolean,

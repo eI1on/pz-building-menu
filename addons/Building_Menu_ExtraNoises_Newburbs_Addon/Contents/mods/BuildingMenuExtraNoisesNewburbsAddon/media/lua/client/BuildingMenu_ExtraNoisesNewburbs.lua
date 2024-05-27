@@ -12,7 +12,6 @@ local function addExtraNoisesNewburbsFlagsToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureWallFrame",
                 renderFloorHelper = false,
                 blockAllTheSquare = false,
@@ -68,7 +67,6 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = {wallType = "doorframe"}
@@ -100,7 +98,6 @@ local function addDoorsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -118,7 +115,6 @@ local function addDoorsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -136,7 +132,6 @@ local function addDoorsToMenu()
             BuildingMenu.WoodenDoubleGlassDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 dontNeedFrame = true,
                 canBarricade = false,
                 completionSound = "BuildWoodenStructureLarge",
@@ -178,7 +173,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -204,7 +198,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -250,7 +243,6 @@ end
 local function addExtraNoisesNewburbsColouredWallsToMenu()
     local function createWallObject(tooltipObj, tooltip, buildFunction, recipe, modDataWallType, spriteIndices)
         local options = {
-            noNeedHammer = false,
             completionSound = "BuildWoodenStructureLarge",
             modData = { wallType = modDataWallType }
         }
@@ -641,7 +633,6 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         for _, obj in ipairs(wallObjects) do
             local options = {
                 actionAnim = obj.actionAnim or "Build",
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = { wallType = (obj.wallType and string.lower(obj.wallType)) or "wall" }
             };

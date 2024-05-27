@@ -18,4 +18,16 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, "PickUpLevel", "4", false);
         props:CreateKeySet();
     end
+
+    sprites = {
+        "kitchen_misc_tk_01_12",
+        "kitchen_misc_tk_01_13",
+        "kitchen_misc_tk_01_14",
+        "kitchen_misc_tk_01_15",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.unsetSpriteProperty(props, "MoveType");
+        props:CreateKeySet();
+    end
 end)

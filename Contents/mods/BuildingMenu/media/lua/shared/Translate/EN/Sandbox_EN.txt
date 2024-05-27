@@ -185,6 +185,9 @@ Sandbox_EN = {
     Sandbox_BuildingMenu_rugsSubCategory = "Enable Rugs Subcategory",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Enable to add Rugs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Enable Curtains Subcategory",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Enable to add Curtains. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Enable Posters and Signs Subcategory",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Enable to add Posters and Signs. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
    

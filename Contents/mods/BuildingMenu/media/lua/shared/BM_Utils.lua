@@ -93,4 +93,19 @@ function BM_Utils.safeCallMethod(object, methodName, ...)
 end
 
 
+-- Function to add a list of values to a specified property in the world's property value map
+---@param propertyName string The name of the property to which values are added
+---@param values table A table of values to ensure they are present in the property map
+function BM_Utils.addValuesToPropertyMap(propertyName, values)
+    local currentValues = IsoWorld.PropertyValueMap:get(propertyName) or ArrayList.new()
+
+    for _, value in ipairs(values) do
+        if not currentValues:contains(value) then
+            currentValues:add(value)
+        end
+    end
+
+    IsoWorld.PropertyValueMap:put(propertyName, currentValues)
+end
+
 return BM_Utils

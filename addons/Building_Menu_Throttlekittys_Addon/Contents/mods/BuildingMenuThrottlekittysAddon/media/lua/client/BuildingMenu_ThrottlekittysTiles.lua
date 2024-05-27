@@ -17,7 +17,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         blockAllTheSquare = false,
                     },
@@ -35,7 +34,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         renderFloorHelper = true,
                         blockAllTheSquare = false,
@@ -52,7 +50,6 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         blockAllTheSquare = true,
                     },
@@ -89,9 +86,7 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
-                canBeLockedByPadlock = true
             },
             { sprite = "industry_tk_02_32", northSprite = "industry_tk_02_32" }
         ),
@@ -103,9 +98,7 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
-                canBeLockedByPadlock = true
             },
             { sprite = "industry_tk_02_33", northSprite = "industry_tk_02_33" }
         ),
@@ -946,7 +939,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -965,7 +957,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -984,7 +975,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -1172,7 +1162,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
             },
             { sprite = "trash_containers_tk_01_0", northSprite = "trash_containers_tk_01_1" }
@@ -1184,7 +1173,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
             },
             { sprite = "trash_containers_tk_01_2", northSprite = "trash_containers_tk_01_3" }
@@ -1196,7 +1184,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
             },
             { sprite = "trash_containers_tk_01_4", northSprite = "trash_containers_tk_01_5" }
@@ -1208,7 +1195,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
             },
             { sprite = "trash_containers_tk_01_6", northSprite = "trash_containers_tk_01_7" }
@@ -1220,7 +1206,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
             },
             { sprite = "trash_containers_tk_01_8", northSprite = "trash_containers_tk_01_8" }
@@ -1232,7 +1217,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
             },
             { sprite = "trash_containers_tk_01_10", northSprite = "trash_containers_tk_01_10" }
@@ -1244,7 +1228,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
@@ -1264,7 +1247,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
@@ -1284,7 +1266,6 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
@@ -1304,10 +1285,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 buildMid = true,
             },
@@ -1342,7 +1320,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -1367,7 +1344,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {

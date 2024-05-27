@@ -61,7 +61,6 @@ function BuildingMenuTilePickerList:render()
     self:clearStencilRect();
 end
 
-
 --- Finds the next object in the tile picker list
 ---@param objectsBuffer table
 ---@return table|nil
@@ -74,7 +73,6 @@ function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
     end
     return nil;
 end
-
 
 --- Updates the tooltip for the tile picker list
 ---@param maxCols number
@@ -129,7 +127,6 @@ function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
     end
     return nil;
 end
-
 
 local spriteCache = {};
 local partNames = {
@@ -186,7 +183,8 @@ local function getContainerInfo(selectedObject, character)
         if sprite then
             local containerDetails;
             if selectedObject.objDef.data.options and selectedObject.objDef.data.options.containerType and selectedObject.objDef.data.options.capacity then
-                containerDetails = getContainerDetailsFromObjectDef(sprite, selectedObject.objDef.data.options.containerType, selectedObject.objDef.data.options.capacity);
+                containerDetails = getContainerDetailsFromObjectDef(sprite,
+                    selectedObject.objDef.data.options.containerType, selectedObject.objDef.data.options.capacity);
             else
                 local props = getSprite(sprite):getProperties();
                 if props:Is("container") or props:Is("Freezer") then
@@ -246,11 +244,11 @@ function BuildingMenuTilePickerList:updateTooltipContent(selectedObject)
 
     local description = selectedObject.objDef.description;
     local lineSeparator = description ~= "" and " <LINE> " or "";
-    self.tooltip.description = string.format("%s %s <RGB:1,1,1> %s %s %s", description, lineSeparator, containerStr, isThumpableStr, tooltipDescription);
+    self.tooltip.description = string.format("%s %s <RGB:1,1,1> %s %s %s", description, lineSeparator, containerStr,
+        isThumpableStr, tooltipDescription);
 
     self.tooltip.footNote = BuildingMenu.textCanRotate;
 end
-
 
 ---@param col number
 ---@param row number
@@ -383,7 +381,6 @@ function BuildingMenuTilePickerList:onMouseDown(x, y)
     end
 end
 
-
 --- Spawns items in the player's inventory
 ---@param selectedObject table
 function BuildingMenuTilePickerList:spawnItems(selectedObject)
@@ -411,7 +408,7 @@ function BuildingMenuTilePickerList:spawnItems(selectedObject)
     end
 
     for _, tool in ipairs(objectRecipe.neededTools or {}) do
-        inventory:AddItem(tool)
+        inventory:AddItem(BuildingMenu.Tools[tool].types[1])
     end
 
     for _, material in pairs(objectRecipe.neededMaterials or {}) do
@@ -422,7 +419,6 @@ function BuildingMenuTilePickerList:spawnItems(selectedObject)
         addItemToInventory(type(consumable[1]) == "table" and consumable[1] or consumable)
     end
 end
-
 
 --- Handles mouse down events on the tile picker list
 ---@param x number
@@ -439,7 +435,6 @@ function BuildingMenuTilePickerList:onRightMouseDown(x, y)
         self:spawnItems(selectedObject)
     end
 end
-
 
 --- Handles joypad down events on the tile picker list
 ---@param button Joypad

@@ -12,7 +12,6 @@ local function addPertWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -31,7 +30,6 @@ local function addPertWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -49,7 +47,6 @@ local function addPertWallsToMenu()
             BuildingMenu.WhiteBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -69,7 +66,6 @@ local function addPertWallsToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -96,7 +92,6 @@ local function addPertWallsToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -115,7 +110,6 @@ local function addPertWallsToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
             },
@@ -132,7 +126,6 @@ local function addPertWallsToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -152,7 +145,6 @@ local function addPertWallsToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -196,7 +188,6 @@ local function addPertDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = {wallType = "doorframe"}
@@ -242,7 +233,6 @@ local function addPertDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = {wallType = "doorframe"}
@@ -266,7 +256,6 @@ local function addPertDoorsToMenu()
             BuildingMenu.WoodenDoorFrameRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
             },
@@ -281,7 +270,6 @@ local function addPertDoorsToMenu()
             BuildingMenu.WoodenDoorFrameRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
             },
@@ -296,7 +284,6 @@ local function addPertDoorsToMenu()
             BuildingMenu.WoodenDoorTrimRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 needToBeAgainstWall = false,
@@ -341,7 +328,6 @@ local function addPertDoorsToMenu()
                     BuildingMenu.WoodenDoubleGlassDoorRecipe,
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
                         modData = {wallType = "doorframe"}
@@ -384,7 +370,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -410,7 +395,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -459,7 +443,6 @@ local function addPertCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -501,7 +484,6 @@ local function addPertCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -529,9 +511,7 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -561,7 +541,6 @@ local function createDoubleTileFurnitureObject(tooltip, recipe, sprite, sprite2,
         recipe,
         true,
         {
-            noNeedHammer = false,
             completionSound = "BuildWoodenStructureLarge"
         },
         {
@@ -583,7 +562,6 @@ local function addpertLargeTablesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {sprite = "pert_re-phoenix_4_53", northSprite = "pert_re-phoenix_4_52"}
@@ -630,7 +608,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -652,7 +629,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -688,7 +664,6 @@ local function addPostersAndSignsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -710,7 +685,6 @@ local function addPostersAndSignsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -732,7 +706,6 @@ local function addPostersAndSignsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -754,7 +727,6 @@ local function addPostersAndSignsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -776,7 +748,6 @@ local function addPostersAndSignsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -811,7 +782,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -831,7 +801,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -852,7 +821,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -873,7 +841,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
             },
@@ -889,7 +856,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
             },
@@ -905,7 +871,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
             },
@@ -921,7 +886,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
             },
@@ -937,7 +901,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
             },
@@ -953,7 +916,6 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
             },
@@ -969,10 +931,8 @@ local function addHalloweenDecorationsToMenu()
             BuildingMenu.GraveRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1001,7 +961,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -1023,7 +982,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -1045,7 +1003,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1064,7 +1021,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1083,7 +1039,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -1101,7 +1056,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1121,7 +1075,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -1137,7 +1090,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1156,7 +1108,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1175,7 +1126,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -1193,7 +1143,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -1213,7 +1162,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -1238,7 +1186,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WoodenDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -1257,7 +1204,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WoodenDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -1276,7 +1222,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1291,7 +1236,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1306,7 +1250,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1321,7 +1264,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1336,7 +1278,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1351,7 +1292,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1366,7 +1306,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
@@ -1381,7 +1320,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1396,7 +1334,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -1411,7 +1348,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
             },
@@ -1434,7 +1370,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -1450,7 +1385,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -1469,7 +1403,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -1488,7 +1421,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -1515,7 +1447,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -1531,7 +1462,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1544,7 +1474,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1557,7 +1486,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1570,7 +1498,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1583,7 +1510,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1601,7 +1527,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1614,7 +1539,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1627,7 +1551,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.WallDecorationRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
@@ -1651,7 +1574,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1667,7 +1589,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1683,7 +1604,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1699,7 +1619,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1715,7 +1634,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1731,7 +1649,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1747,7 +1664,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -1765,7 +1681,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -1783,7 +1698,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1799,7 +1713,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1815,7 +1728,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1831,7 +1743,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1847,7 +1758,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 renderFloorHelper = false,
                 isCorner = true,
@@ -1867,7 +1777,6 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.SignRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isCorner = true
             },
@@ -1919,10 +1828,8 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.Fridge2TileRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },

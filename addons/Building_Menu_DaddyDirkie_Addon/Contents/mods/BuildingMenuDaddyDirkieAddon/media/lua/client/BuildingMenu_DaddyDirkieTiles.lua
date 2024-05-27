@@ -24,7 +24,6 @@ local function addDaddyDirkieDoorsToMenu()
                         recipe,
                         true,
                         {
-                            noNeedHammer = false,
                             completionSound = "BuildWoodenStructureLarge",
                             canBarricade = true,
                             modData = {wallType = "doorframe"}
@@ -151,7 +150,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -172,7 +170,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -188,7 +185,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -204,7 +200,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -225,7 +220,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -241,7 +235,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFencePostRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -257,7 +250,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -278,7 +270,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -299,7 +290,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -315,7 +305,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFencePostRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -331,7 +320,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -352,7 +340,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -368,7 +355,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteFencePostRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -398,7 +384,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -414,7 +399,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -433,7 +417,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -452,7 +435,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -468,7 +450,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
                 canBarricade = false,
@@ -488,7 +469,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
                 canBarricade = false,
@@ -508,7 +488,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -524,7 +503,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -543,7 +521,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -562,7 +539,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.WoodenFenceRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -578,7 +554,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
                 canBarricade = false,
@@ -598,7 +573,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.LowWoodenDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 dontNeedFrame = true,
                 canBarricade = false,
@@ -634,7 +608,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
                 {
@@ -651,7 +624,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
                 {
@@ -668,7 +640,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
                 {
@@ -689,7 +660,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.BedRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
                 {
@@ -710,7 +680,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge"
                 },
                 {
@@ -725,7 +694,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                 },
                 {
@@ -740,7 +708,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                 },
                 {
@@ -757,7 +724,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                 },
                 {
@@ -774,7 +740,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                 },
                 {
@@ -791,7 +756,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                 },
                 {
@@ -808,7 +772,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                 },
                 {
@@ -825,7 +788,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     canBeLockedByPadlock = true
                 },
@@ -843,7 +805,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     canBeLockedByPadlock = true
                 },
@@ -861,7 +822,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                 BuildingMenu.LargeFurnitureRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     canBeLockedByPadlock = false
                 },
@@ -913,7 +873,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -931,7 +890,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -949,7 +907,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -967,7 +924,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -985,7 +941,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1002,7 +957,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1019,7 +973,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1036,7 +989,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1051,7 +1003,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1068,7 +1019,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1085,7 +1035,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1102,7 +1051,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1119,7 +1067,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1136,7 +1083,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1153,7 +1099,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1170,7 +1115,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1187,7 +1131,6 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
             BuildingMenu.SmallFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
@@ -1217,7 +1160,6 @@ local function addDaddyDirkieCouchesToMenu()
             BuildingMenu.CouchRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -1447,7 +1389,6 @@ local function addKitchenCountersToMenu()
                 BuildingMenu.CounterRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     isThumpable = true
                 },
@@ -1469,7 +1410,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -1490,7 +1430,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -1524,7 +1463,6 @@ local function addKitchenCountersToMenu()
                 BuildingMenu.CounterRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     isThumpable = true
                 },
@@ -1546,7 +1484,6 @@ local function addKitchenCountersToMenu()
                 BuildingMenu.CounterRecipe,
                 true,
                 {
-                    noNeedHammer = false,
                     completionSound = "BuildWoodenStructureLarge",
                     isThumpable = true
                 },
@@ -1578,7 +1515,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -1597,11 +1533,9 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = false,
             },
             {
@@ -1616,11 +1550,9 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = false,
             },
             {
@@ -1635,7 +1567,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterBigRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
@@ -1652,10 +1583,9 @@ local function addMetalContainersToMenu()
             "",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.MetalLockerRecipe,
+            BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -1672,7 +1602,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -1689,7 +1618,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = true,
                 renderFloorHelper = true,
@@ -1707,7 +1635,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -1726,7 +1653,6 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -1758,9 +1684,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1773,9 +1697,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1788,9 +1710,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1803,9 +1723,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1818,9 +1736,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1833,9 +1749,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1848,9 +1762,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1863,9 +1775,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1878,9 +1788,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1893,9 +1801,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1908,9 +1814,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1923,9 +1827,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1938,9 +1840,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1953,9 +1853,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1968,9 +1866,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1983,9 +1879,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -1998,9 +1892,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -2013,9 +1905,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -2028,9 +1918,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -2043,9 +1931,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -2058,9 +1944,7 @@ local function addCratesToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -2086,7 +1970,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
             },
@@ -2111,7 +1994,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
             },
@@ -2156,7 +2038,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
             },
@@ -2179,7 +2060,6 @@ local function addDaddyDirkieStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
             },
@@ -2215,7 +2095,6 @@ local function addDaddyDirkieOthersToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             "Build Secret Entrance",
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 needToBeAgainstWall = true,
@@ -2230,15 +2109,12 @@ local function addDaddyDirkieOthersToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_SecretEntranceShelf",
             "Tooltip_SecretEntranceShelf",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.LargeFurnitureRecipe,
             "Build Secret Entrance",
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 needToBeAgainstWall = true,
-                canBeLockedByPadlock = true,
                 blockAllTheSquare = false,
             },
             {
@@ -2253,7 +2129,6 @@ local function addDaddyDirkieOthersToMenu()
             BuildingMenu.WoodenDoorRecipe,
             "Build Secret Entrance",
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -2272,7 +2147,6 @@ local function addDaddyDirkieOthersToMenu()
             BuildingMenu.WoodenDoorRecipe,
             "Build Secret Entrance",
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
                 modData = {wallType = "doorframe"}
@@ -2304,7 +2178,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -2323,7 +2196,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 modData = {wallType = "doorframe"}
             },
@@ -2340,7 +2212,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
@@ -2359,8 +2230,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.onBuildWindow,
             BuildingMenu.WindowRecipe,
             true,
-            { 
-                noNeedHammer = false, 
+            {  
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = false,
@@ -2376,7 +2246,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -2395,7 +2264,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
@@ -2414,9 +2282,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -2432,9 +2298,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 isWallLike = true,
@@ -2454,7 +2318,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {sprite = "edit_ddd_RUS_Forest Survival_01_61", northSprite = "edit_ddd_RUS_Forest Survival_01_58"}
@@ -2466,7 +2329,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BigLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {sprite = "edit_ddd_RUS_Forest Survival_01_60", northSprite = "edit_ddd_RUS_Forest Survival_01_59"}
@@ -2480,7 +2342,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -2498,7 +2359,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -2516,7 +2376,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -2534,7 +2393,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall"
             },
             {
@@ -2549,7 +2407,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.LogFloorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall"
             },
             {
@@ -2564,7 +2421,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
             },
@@ -2587,7 +2443,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
             },
@@ -2610,7 +2465,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BedRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -2627,7 +2481,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.BedRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -2646,7 +2499,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.PrimitveBedRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -2663,7 +2515,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.PrimitveBedRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -2680,7 +2531,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.PrimitveBedRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -2698,7 +2548,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.SmallLogWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isCorner = true
             },
@@ -2727,9 +2576,7 @@ local function addDaddyDirkieCraftedStoveToMenu()
             BuildingMenu.StoveRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true
             },
             {
                 sprite = "edit_ddd_RUS_House_Furnace_14",
@@ -2745,9 +2592,7 @@ local function addDaddyDirkieCraftedStoveToMenu()
             BuildingMenu.StoveRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true
             },
             {
                 sprite = "edit_ddd_RUS_House_Furnace_35",
@@ -2778,7 +2623,6 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
             spec.recipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
             },
@@ -2844,6 +2688,1156 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
     )
 end
 
+
+local function addRoadworkDirtandGrassToMenu()
+    local roadworkAsphalt = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Asphalt_Ramp",
+            "Tooltip_Staris_Generic",
+            BuildingMenu.onBuildStairs,
+            BuildingMenu.AsphaltRampRoadRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                isThumpable = false
+            },
+            {
+                sprite = "ramps_ddd_11",
+                upToLeft01 = "ramps_ddd_11",
+                upToLeft02 = "ramps_ddd_12",
+                upToLeft03 = "ramps_ddd_13",
+                upToRight01 = "ramps_ddd_8",
+                upToRight02 = "ramps_ddd_9",
+                upToRight03 = "ramps_ddd_10",
+                pillar = "",
+                pillarNorth = ""
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Daddy Dirkie",
+        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "ramps_ddd_11",
+        getText("IGUI_BuildingMenuSubCat_Road_Work_Asphalt_Ramp"),
+        "ramps_ddd_11",
+        roadworkAsphalt
+    )
+
+    local roadworkGrass = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1",
+            "Tooltip_Staris_Generic",
+            BuildingMenu.onBuildStairs,
+            BuildingMenu.DirtRampRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                isThumpable = false
+            },
+            {
+                sprite = "ramps_ddd_5",
+                upToLeft01 = "ramps_ddd_5",
+                upToLeft02 = "ramps_ddd_4",
+                upToLeft03 = "ramps_ddd_3",
+                upToRight01 = "ramps_ddd_0",
+                upToRight02 = "ramps_ddd_1",
+                upToRight03 = "ramps_ddd_2",
+                pillar = "",
+                pillarNorth = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Pitched_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_0", northSprite = "ramps_ddd_5" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Pitched_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_1", northSprite = "ramps_ddd_4" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Pitched_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_2", northSprite = "ramps_ddd_3" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Inner_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_16", northSprite = "ramps_ddd_16" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Inner_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_17", northSprite = "ramps_ddd_17" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Inner_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_18", northSprite = "ramps_ddd_18" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Valley_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_19", northSprite = "ramps_ddd_19" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Valley_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_20", northSprite = "ramps_ddd_20" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Valley_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_21", northSprite = "ramps_ddd_21" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Outer_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_24", northSprite = "ramps_ddd_29" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Outer_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_25", northSprite = "ramps_ddd_28" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_1_Outer_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_26", northSprite = "ramps_ddd_27" }
+        ),
+
+
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2",
+            "Tooltip_Staris_Generic",
+            BuildingMenu.onBuildStairs,
+            BuildingMenu.DirtRampRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                isThumpable = false
+            },
+            {
+                sprite = "ramps_ddd_61",
+                upToLeft01 = "ramps_ddd_61",
+                upToLeft02 = "ramps_ddd_60",
+                upToLeft03 = "ramps_ddd_59",
+                upToRight01 = "ramps_ddd_56",
+                upToRight02 = "ramps_ddd_57",
+                upToRight03 = "ramps_ddd_58",
+                pillar = "",
+                pillarNorth = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Pitched_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_56", northSprite = "ramps_ddd_61" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Pitched_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_57", northSprite = "ramps_ddd_60" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Pitched_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_58", northSprite = "ramps_ddd_59" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Inner_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_64", northSprite = "ramps_ddd_64" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Inner_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_65", northSprite = "ramps_ddd_65" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Inner_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_66", northSprite = "ramps_ddd_66" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Valley_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_67", northSprite = "ramps_ddd_67" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Valley_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_68", northSprite = "ramps_ddd_68" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Valley_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_69", northSprite = "ramps_ddd_69" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Outer_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_72", northSprite = "ramps_ddd_77" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Outer_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_73", northSprite = "ramps_ddd_76" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grass_Ramp_2_Outer_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_74", northSprite = "ramps_ddd_75" }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Daddy Dirkie",
+        getText("IGUI_BuildingMenuCat_Road_Work"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Road_Work_Grass_Ramp"),
+        "ramps_ddd_5",
+        roadworkGrass
+    )
+
+    local roadworkDirt = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp",
+            "Tooltip_Staris_Generic",
+            BuildingMenu.onBuildStairs,
+            BuildingMenu.DirtRampRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                isThumpable = false
+            },
+            {
+                sprite = "ramps_ddd_85",
+                upToLeft01 = "ramps_ddd_85",
+                upToLeft02 = "ramps_ddd_84",
+                upToLeft03 = "ramps_ddd_83",
+                upToRight01 = "ramps_ddd_80",
+                upToRight02 = "ramps_ddd_81",
+                upToRight03 = "ramps_ddd_82",
+                pillar = "",
+                pillarNorth = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Pitched_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_80", northSprite = "ramps_ddd_85" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Pitched_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_81", northSprite = "ramps_ddd_84" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Pitched_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_82", northSprite = "ramps_ddd_83" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Inner_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_88", northSprite = "ramps_ddd_88" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Inner_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_89", northSprite = "ramps_ddd_89" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Inner_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_90", northSprite = "ramps_ddd_90" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Valley_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_91", northSprite = "ramps_ddd_91" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Valley_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_92", northSprite = "ramps_ddd_92" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Valley_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_93", northSprite = "ramps_ddd_93" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Outer_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_96", northSprite = "ramps_ddd_101" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Outer_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_97", northSprite = "ramps_ddd_100" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Outer_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_98", northSprite = "ramps_ddd_99" }
+        ),
+
+
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt",
+            "Tooltip_Dirt_Generic",
+            BuildingMenu.onBuildNaturalFloor,
+            BuildingMenu.DirtRecipe,
+            true,
+            {
+            },
+            { sprite = "ramps_ddd_126", northSprite = "ramps_ddd_126" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Wall",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canScrap = false,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            {
+                sprite = "ramps_ddd_122",
+                northSprite = "ramps_ddd_123",
+                corner = "ramps_ddd_125"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Wall",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canScrap = false,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            {
+                sprite = "ramps_ddd_124",
+                northSprite = "ramps_ddd_124",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_1",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_104", northSprite = "ramps_ddd_117" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_2",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_105", northSprite = "ramps_ddd_116" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_3",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_106", northSprite = "ramps_ddd_115" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_4",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_112", northSprite = "ramps_ddd_109" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_5",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_113", northSprite = "ramps_ddd_108" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_6",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_114", northSprite = "ramps_ddd_107" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_End_Small",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.SmallWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_119", northSprite = "ramps_ddd_111" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_End_Medium",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_118", northSprite = "ramps_ddd_110" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dirt_Ramp_End_Big",
+            "Tooltip_Dirt_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            { sprite = "ramps_ddd_120", northSprite = "ramps_ddd_121" }
+        )
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Daddy Dirkie",
+        getText("IGUI_BuildingMenuCat_Road_Work"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Road_Work_Dirt_Ramp"),
+        "ramps_ddd_85",
+        roadworkDirt
+    )
+
+    local roadworkSand = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp",
+            "Tooltip_Staris_Generic",
+            BuildingMenu.onBuildStairs,
+            BuildingMenu.SandRampRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                isThumpable = false
+            },
+            {
+                sprite = "ramps_ddd_37",
+                upToLeft01 = "ramps_ddd_37",
+                upToLeft02 = "ramps_ddd_36",
+                upToLeft03 = "ramps_ddd_35",
+                upToRight01 = "ramps_ddd_32",
+                upToRight02 = "ramps_ddd_33",
+                upToRight03 = "ramps_ddd_34",
+                pillar = "",
+                pillarNorth = ""
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Pitched_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_32", northSprite = "ramps_ddd_37" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Pitched_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_33", northSprite = "ramps_ddd_36" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Pitched_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_34", northSprite = "ramps_ddd_35" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Inner_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_40", northSprite = "ramps_ddd_40" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Inner_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_41", northSprite = "ramps_ddd_41" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Inner_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_42", northSprite = "ramps_ddd_42" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Valley_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_43", northSprite = "ramps_ddd_43" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Valley_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_44", northSprite = "ramps_ddd_44" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Valley_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_45", northSprite = "ramps_ddd_45" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Outer_1",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_48", northSprite = "ramps_ddd_53" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Outer_2",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_49", northSprite = "ramps_ddd_52" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Sand_Ramp_Outer_3",
+            "Tooltip_Roof_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.SandRecipe,
+            true,
+            {
+                completionSound = "BuildFenceSandbag",
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                renderFloorHelper = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "ramps_ddd_50", northSprite = "ramps_ddd_51" }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Daddy Dirkie",
+        getText("IGUI_BuildingMenuCat_Road_Work"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Road_Work_Sand_Ramp"),
+        "ramps_ddd_37",
+        roadworkSand
+    )
+end
+
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.doorsSubCategory then
         addDaddyDirkieDoorsToMenu()
@@ -2871,6 +3865,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.stairsCategory then
         addDaddyDirkieStairsToMenu()
+    end
+    if SandboxVars.BuildingMenu.daddyDirkieRoadworkRamps then
+        addRoadworkDirtandGrassToMenu()
     end
     if SandboxVars.BuildingMenu.daddyDirkieSecretEntrances then
         addDaddyDirkieOthersToMenu()

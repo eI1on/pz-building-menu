@@ -1,6 +1,19 @@
 local BM_Utils = require('BM_Utils')
 
 
+Events.OnInitWorld.Add(function()
+    BM_Utils.addValuesToPropertyMap("container", {
+        "clothingrack"
+    })
+    BM_Utils.addValuesToPropertyMap("ContainerCapacity", {
+        "25", "30", "35", "40", "50", "80", "200"
+    })
+    BM_Utils.addValuesToPropertyMap("ItemHeight", {
+        "100"
+    })
+end)
+
+
 Events.OnLoadedTileDefinitions.Add(function(manager)
     local sprites = {
         "location_military_generic_01_23",
@@ -60,13 +73,22 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "location_business_distillery_01_0",
         "location_business_distillery_01_1",
         "location_business_distillery_01_2",
+        "location_business_distillery_01_3",
+        "location_business_distillery_01_4",
+        "location_business_distillery_01_5",
     }
 
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Mid", false);
+        BM_Utils.setSpriteProperty(props, "IsHigh", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false);
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false);
-        BM_Utils.setSpriteProperty(props, "PickUpLevel", "4", false);
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
         BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, IsoFlagType.container);
@@ -187,10 +209,6 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     end
 
     sprites = {
-        "location_community_medical_01_155",
-        "location_community_medical_01_154",
-        "location_community_medical_01_152",
-        "location_community_medical_01_153",
         "location_business_bank_01_40",
         "location_business_bank_01_41"
     }
@@ -513,6 +531,105 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         BM_Utils.setSpriteProperty(props, "CustomName", "Banner", false);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "location_community_medical_01_152",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Mid", false);
+        BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false);
+        BM_Utils.setSpriteProperty(props, "Facing", "E", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "ItemHeight", "100", false);
+        BM_Utils.setSpriteProperty(props, "Material", "MetalPlates", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "MetalBars", false);
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "300", false);
+        BM_Utils.setSpriteProperty(props, "Soffset", "2", false);
+        BM_Utils.setSpriteProperty(props, "SpriteGridPos", "0,1", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "counter", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.solidtrans, nil, true);
+        props:CreateKeySet();
+    end
+    sprites = {
+        "location_community_medical_01_153",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Mid", false);
+        BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false);
+        BM_Utils.setSpriteProperty(props, "Facing", "E", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "ItemHeight", "100", false);
+        BM_Utils.setSpriteProperty(props, "Material", "MetalPlates", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "MetalBars", false);
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "300", false);
+        BM_Utils.setSpriteProperty(props, "Soffset", "1", false);
+        BM_Utils.setSpriteProperty(props, "SpriteGridPos", "0,0", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "counter", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.solidtrans, nil, true);
+        props:CreateKeySet();
+    end
+
+    
+    sprites = {
+        "location_community_medical_01_155",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Mid", false);
+        BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false);
+        BM_Utils.setSpriteProperty(props, "Facing", "E", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "ItemHeight", "100", false);
+        BM_Utils.setSpriteProperty(props, "Material", "MetalPlates", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "MetalBars", false);
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "300", false);
+        BM_Utils.setSpriteProperty(props, "Eoffset", "-2", false);
+        BM_Utils.setSpriteProperty(props, "SpriteGridPos", "1,0", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "counter", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.solidtrans, nil, true);
+        props:CreateKeySet();
+    end
+    sprites = {
+        "location_community_medical_01_154",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Mid", false);
+        BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false);
+        BM_Utils.setSpriteProperty(props, "Facing", "E", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "ItemHeight", "100", false);
+        BM_Utils.setSpriteProperty(props, "Material", "MetalPlates", false);
+        BM_Utils.setSpriteProperty(props, "Material2", "MetalBars", false);
+        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
+        BM_Utils.setSpriteProperty(props, "PickUpWeight", "300", false);
+        BM_Utils.setSpriteProperty(props, "Eoffset", "-1", false);
+        BM_Utils.setSpriteProperty(props, "SpriteGridPos", "0,0", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
+        BM_Utils.setSpriteProperty(props, "container", "counter", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.solidtrans, nil, true);
         props:CreateKeySet();
     end
 end)

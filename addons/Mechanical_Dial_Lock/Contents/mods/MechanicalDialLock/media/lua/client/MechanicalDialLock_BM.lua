@@ -12,9 +12,7 @@ local function addSafesToBuildingMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
                 health = 1000,
@@ -31,9 +29,7 @@ local function addSafesToBuildingMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
                 health = 1000,
@@ -50,9 +46,7 @@ local function addSafesToBuildingMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "locker",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
                 health = 1000,

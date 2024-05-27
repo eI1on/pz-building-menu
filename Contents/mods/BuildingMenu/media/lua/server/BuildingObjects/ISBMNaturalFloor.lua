@@ -59,7 +59,6 @@ function ISBMNaturalFloor:new(sprite, northSprite, item, uses, playerObj)
 	o.uses = uses;
 	o.itemType = item and item:getFullType() or "none";
 	o.playerObj = playerObj;
-	o.noNeedHammer = true;
 	o.actionAnim = CharacterActionAnims.Pour;
 	o.floorType = o:getFloorType(item);
 

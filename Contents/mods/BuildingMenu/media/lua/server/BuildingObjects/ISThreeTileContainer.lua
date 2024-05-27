@@ -414,12 +414,6 @@ function ISThreeTileContainer:getSquare3(square, north)
     return getCell():getGridSquare(x, y, z);
 end
 
-local function safeCallMethod(object, methodName, ...)
-    if type(object[methodName]) == "function" then
-        return object[methodName](object, ...);
-    end
-end
-
 
 --- Checks if a part of the container already exists on a given square
 --- @param square IsoGridSquare The square to check
@@ -432,7 +426,7 @@ function ISThreeTileContainer:partExists(square, index)
         local sprite = object:getSprite();
         if object and sprite then
             local spriteName = sprite:getName();
-            local isObjectNorth = safeCallMethod(object, "getNorth");
+            local isObjectNorth = BM_Utils.safeCallMethod(object, "getNorth");
             local expectedSpriteName = self:getSpriteNameForPart(index, isObjectNorth);
             if spriteName == expectedSpriteName then
                 return true;

@@ -11,7 +11,7 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_castle_01_0",
                 northSprite = "melos_tiles_castle_01_1",
@@ -24,7 +24,7 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.WhiteTurquoiseWindowBigWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_castle_01_2",
                 northSprite = "melos_tiles_castle_01_2",
@@ -38,12 +38,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_22",
@@ -59,7 +58,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -68,7 +66,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_16", northSprite = "melos_tiles_castle_01_17"}
+            { sprite = "melos_tiles_castle_01_16", northSprite = "melos_tiles_castle_01_17" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Wood_Beam_Corner",
@@ -77,7 +75,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -86,7 +83,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_18", northSprite = "melos_tiles_castle_01_18"}
+            { sprite = "melos_tiles_castle_01_18", northSprite = "melos_tiles_castle_01_18" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Wood_Beam_Small_Corner",
@@ -95,7 +92,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -104,7 +100,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_19", northSprite = "melos_tiles_castle_01_19"}
+            { sprite = "melos_tiles_castle_01_19", northSprite = "melos_tiles_castle_01_19" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_White_Wood_Pillar",
@@ -113,12 +109,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_30",
@@ -134,7 +129,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -143,7 +137,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_24", northSprite = "melos_tiles_castle_01_25"}
+            { sprite = "melos_tiles_castle_01_24", northSprite = "melos_tiles_castle_01_25" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_White_Wood_Beam_Corner",
@@ -152,7 +146,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -161,7 +154,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_26", northSprite = "melos_tiles_castle_01_26"}
+            { sprite = "melos_tiles_castle_01_26", northSprite = "melos_tiles_castle_01_26" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_White_Wood_Beam_Small_Corner",
@@ -170,7 +163,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.WhiteSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -179,7 +171,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_27", northSprite = "melos_tiles_castle_01_27"}
+            { sprite = "melos_tiles_castle_01_27", northSprite = "melos_tiles_castle_01_27" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Wall_1",
@@ -188,11 +180,10 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_castle_01_32",
@@ -207,11 +198,10 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_castle_01_36",
@@ -226,9 +216,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_42",
@@ -243,9 +232,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_46",
@@ -260,12 +248,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_40",
@@ -280,12 +267,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_44",
@@ -300,12 +286,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_48",
@@ -320,12 +305,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_50",
@@ -340,12 +324,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_56",
@@ -360,12 +343,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_57",
@@ -380,12 +362,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_60",
@@ -400,12 +381,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_61",
@@ -420,14 +400,13 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_77", northSprite = "melos_tiles_castle_01_77"}
+            { sprite = "melos_tiles_castle_01_77", northSprite = "melos_tiles_castle_01_77" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Fence_Post_2",
@@ -436,14 +415,13 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_79", northSprite = "melos_tiles_castle_01_79"}
+            { sprite = "melos_tiles_castle_01_79", northSprite = "melos_tiles_castle_01_79" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Fence_1",
@@ -452,7 +430,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -471,7 +448,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -490,7 +466,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -509,7 +484,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -528,14 +502,13 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_76", northSprite = "melos_tiles_castle_01_76"}
+            { sprite = "melos_tiles_castle_01_76", northSprite = "melos_tiles_castle_01_76" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Fence_Corner_2",
@@ -544,14 +517,13 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_78", northSprite = "melos_tiles_castle_01_78"}
+            { sprite = "melos_tiles_castle_01_78", northSprite = "melos_tiles_castle_01_78" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Archway_U_Door_1",
@@ -560,7 +532,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -569,7 +540,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_88", northSprite = "melos_tiles_castle_01_91"}
+            { sprite = "melos_tiles_castle_01_88", northSprite = "melos_tiles_castle_01_91" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Archway_U_Door_2",
@@ -578,7 +549,6 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = true,
                 needToBeAgainstWall = false,
@@ -587,7 +557,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            {sprite = "melos_tiles_castle_01_89", northSprite = "melos_tiles_castle_01_90"}
+            { sprite = "melos_tiles_castle_01_89", northSprite = "melos_tiles_castle_01_90" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Archway_Door_1L",
@@ -596,9 +566,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_80",
@@ -613,9 +582,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_81",
@@ -630,9 +598,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_84",
@@ -647,9 +614,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_85",
@@ -664,9 +630,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_92",
@@ -681,9 +646,8 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_castle_01_94",
@@ -698,12 +662,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_97",
@@ -717,12 +680,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_98",
@@ -736,12 +698,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_100",
@@ -755,12 +716,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_101",
@@ -774,12 +734,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_105",
@@ -793,12 +752,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_106",
@@ -812,12 +770,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_108",
@@ -831,12 +788,11 @@ local function addMelosWallsCastleToMenu()
             BuildingMenu.SmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_castle_01_109",
@@ -845,7 +801,7 @@ local function addMelosWallsCastleToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         "melos_tiles_castle_01_0",
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Castle"),
@@ -863,11 +819,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_0",
@@ -882,11 +837,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_6",
@@ -901,9 +855,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_10",
@@ -918,9 +871,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_10",
@@ -935,9 +887,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_12",
@@ -952,9 +903,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_13",
@@ -969,12 +919,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_8",
@@ -989,12 +938,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_4",
@@ -1009,12 +957,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_16",
@@ -1029,12 +976,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_17",
@@ -1049,12 +995,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_18",
@@ -1069,12 +1014,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_22",
@@ -1089,12 +1033,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_24",
@@ -1109,12 +1052,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_25",
@@ -1129,12 +1071,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01a_26",
@@ -1149,14 +1090,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_3", northSprite = "melos_tiles_walls_bathroom_01a_3"}
+            { sprite = "melos_tiles_walls_bathroom_01a_3", northSprite = "melos_tiles_walls_bathroom_01a_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Fence_Post",
@@ -1165,14 +1105,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_87", northSprite = "melos_tiles_walls_bathroom_01a_87"}
+            { sprite = "melos_tiles_walls_bathroom_01a_87", northSprite = "melos_tiles_walls_bathroom_01a_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Fence",
@@ -1181,7 +1120,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -1200,14 +1138,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_86", northSprite = "melos_tiles_walls_bathroom_01a_86"}
+            { sprite = "melos_tiles_walls_bathroom_01a_86", northSprite = "melos_tiles_walls_bathroom_01a_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_1",
@@ -1216,13 +1153,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_106", northSprite = "melos_tiles_walls_bathroom_01a_107"}
+            { sprite = "melos_tiles_walls_bathroom_01a_106", northSprite = "melos_tiles_walls_bathroom_01a_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_2",
@@ -1231,13 +1167,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_105", northSprite = "melos_tiles_walls_bathroom_01a_108"}
+            { sprite = "melos_tiles_walls_bathroom_01a_105", northSprite = "melos_tiles_walls_bathroom_01a_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_3",
@@ -1246,13 +1181,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_104", northSprite = "melos_tiles_walls_bathroom_01a_109"}
+            { sprite = "melos_tiles_walls_bathroom_01a_104", northSprite = "melos_tiles_walls_bathroom_01a_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_4",
@@ -1261,13 +1195,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_96", northSprite = "melos_tiles_walls_bathroom_01a_101"}
+            { sprite = "melos_tiles_walls_bathroom_01a_96", northSprite = "melos_tiles_walls_bathroom_01a_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_5",
@@ -1276,13 +1209,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_97", northSprite = "melos_tiles_walls_bathroom_01a_100"}
+            { sprite = "melos_tiles_walls_bathroom_01a_97", northSprite = "melos_tiles_walls_bathroom_01a_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_6",
@@ -1291,13 +1223,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_98", northSprite = "melos_tiles_walls_bathroom_01a_99"}
+            { sprite = "melos_tiles_walls_bathroom_01a_98", northSprite = "melos_tiles_walls_bathroom_01a_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_End_Small",
@@ -1306,13 +1237,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_112", northSprite = "melos_tiles_walls_bathroom_01a_117"}
+            { sprite = "melos_tiles_walls_bathroom_01a_112", northSprite = "melos_tiles_walls_bathroom_01a_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_End_Medium",
@@ -1321,13 +1251,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_113", northSprite = "melos_tiles_walls_bathroom_01a_116"}
+            { sprite = "melos_tiles_walls_bathroom_01a_113", northSprite = "melos_tiles_walls_bathroom_01a_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_End_Big",
@@ -1336,17 +1265,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01a_114", northSprite = "melos_tiles_walls_bathroom_01a_115"}
+            { sprite = "melos_tiles_walls_bathroom_01a_114", northSprite = "melos_tiles_walls_bathroom_01a_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Cinderblock"),
@@ -1362,11 +1290,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_0",
@@ -1381,11 +1308,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_6",
@@ -1400,9 +1326,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_10",
@@ -1417,9 +1342,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_10",
@@ -1434,9 +1358,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_12",
@@ -1451,9 +1374,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_13",
@@ -1468,12 +1390,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_8",
@@ -1488,12 +1409,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_4",
@@ -1508,12 +1428,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_16",
@@ -1528,12 +1447,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_17",
@@ -1548,12 +1466,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_18",
@@ -1568,12 +1485,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_22",
@@ -1588,12 +1504,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_24",
@@ -1608,12 +1523,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_25",
@@ -1628,12 +1542,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01b_26",
@@ -1648,14 +1561,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_3", northSprite = "melos_tiles_walls_bathroom_01b_3"}
+            { sprite = "melos_tiles_walls_bathroom_01b_3", northSprite = "melos_tiles_walls_bathroom_01b_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Fence_Post",
@@ -1664,14 +1576,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_87", northSprite = "melos_tiles_walls_bathroom_01b_87"}
+            { sprite = "melos_tiles_walls_bathroom_01b_87", northSprite = "melos_tiles_walls_bathroom_01b_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Fence",
@@ -1680,7 +1591,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -1699,14 +1609,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_86", northSprite = "melos_tiles_walls_bathroom_01b_86"}
+            { sprite = "melos_tiles_walls_bathroom_01b_86", northSprite = "melos_tiles_walls_bathroom_01b_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_1",
@@ -1715,13 +1624,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_106", northSprite = "melos_tiles_walls_bathroom_01b_107"}
+            { sprite = "melos_tiles_walls_bathroom_01b_106", northSprite = "melos_tiles_walls_bathroom_01b_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_2",
@@ -1730,13 +1638,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_105", northSprite = "melos_tiles_walls_bathroom_01b_108"}
+            { sprite = "melos_tiles_walls_bathroom_01b_105", northSprite = "melos_tiles_walls_bathroom_01b_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_3",
@@ -1745,13 +1652,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_104", northSprite = "melos_tiles_walls_bathroom_01b_109"}
+            { sprite = "melos_tiles_walls_bathroom_01b_104", northSprite = "melos_tiles_walls_bathroom_01b_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_4",
@@ -1760,13 +1666,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_96", northSprite = "melos_tiles_walls_bathroom_01b_101"}
+            { sprite = "melos_tiles_walls_bathroom_01b_96", northSprite = "melos_tiles_walls_bathroom_01b_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_5",
@@ -1775,13 +1680,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_97", northSprite = "melos_tiles_walls_bathroom_01b_100"}
+            { sprite = "melos_tiles_walls_bathroom_01b_97", northSprite = "melos_tiles_walls_bathroom_01b_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_6",
@@ -1790,13 +1694,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_98", northSprite = "melos_tiles_walls_bathroom_01b_99"}
+            { sprite = "melos_tiles_walls_bathroom_01b_98", northSprite = "melos_tiles_walls_bathroom_01b_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_End_Small",
@@ -1805,13 +1708,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreySmallStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_112", northSprite = "melos_tiles_walls_bathroom_01b_117"}
+            { sprite = "melos_tiles_walls_bathroom_01b_112", northSprite = "melos_tiles_walls_bathroom_01b_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_End_Medium",
@@ -1820,13 +1722,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_113", northSprite = "melos_tiles_walls_bathroom_01b_116"}
+            { sprite = "melos_tiles_walls_bathroom_01b_113", northSprite = "melos_tiles_walls_bathroom_01b_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_End_Big",
@@ -1835,17 +1736,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreyBigStoneWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01b_114", northSprite = "melos_tiles_walls_bathroom_01b_115"}
+            { sprite = "melos_tiles_walls_bathroom_01b_114", northSprite = "melos_tiles_walls_bathroom_01b_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Grey_Cinderblock"),
@@ -1861,11 +1761,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_0",
@@ -1880,11 +1779,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_6",
@@ -1899,9 +1797,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_10",
@@ -1916,9 +1813,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_10",
@@ -1933,9 +1829,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_12",
@@ -1950,9 +1845,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_13",
@@ -1967,12 +1861,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_8",
@@ -1987,12 +1880,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_4",
@@ -2007,12 +1899,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_16",
@@ -2027,12 +1918,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_17",
@@ -2047,12 +1937,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_18",
@@ -2067,12 +1956,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_22",
@@ -2087,12 +1975,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_24",
@@ -2107,12 +1994,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_25",
@@ -2127,12 +2013,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01c_26",
@@ -2147,14 +2032,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_3", northSprite = "melos_tiles_walls_bathroom_01c_3"}
+            { sprite = "melos_tiles_walls_bathroom_01c_3", northSprite = "melos_tiles_walls_bathroom_01c_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Fence_Post",
@@ -2163,14 +2047,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_87", northSprite = "melos_tiles_walls_bathroom_01c_87"}
+            { sprite = "melos_tiles_walls_bathroom_01c_87", northSprite = "melos_tiles_walls_bathroom_01c_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Fence",
@@ -2179,7 +2062,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -2198,14 +2080,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_86", northSprite = "melos_tiles_walls_bathroom_01c_86"}
+            { sprite = "melos_tiles_walls_bathroom_01c_86", northSprite = "melos_tiles_walls_bathroom_01c_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_1",
@@ -2214,13 +2095,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_106", northSprite = "melos_tiles_walls_bathroom_01c_107"}
+            { sprite = "melos_tiles_walls_bathroom_01c_106", northSprite = "melos_tiles_walls_bathroom_01c_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_2",
@@ -2229,13 +2109,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_105", northSprite = "melos_tiles_walls_bathroom_01c_108"}
+            { sprite = "melos_tiles_walls_bathroom_01c_105", northSprite = "melos_tiles_walls_bathroom_01c_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_3",
@@ -2244,13 +2123,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_104", northSprite = "melos_tiles_walls_bathroom_01c_109"}
+            { sprite = "melos_tiles_walls_bathroom_01c_104", northSprite = "melos_tiles_walls_bathroom_01c_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_4",
@@ -2259,13 +2137,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_96", northSprite = "melos_tiles_walls_bathroom_01c_101"}
+            { sprite = "melos_tiles_walls_bathroom_01c_96", northSprite = "melos_tiles_walls_bathroom_01c_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_5",
@@ -2274,13 +2151,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_97", northSprite = "melos_tiles_walls_bathroom_01c_100"}
+            { sprite = "melos_tiles_walls_bathroom_01c_97", northSprite = "melos_tiles_walls_bathroom_01c_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_6",
@@ -2289,13 +2165,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_98", northSprite = "melos_tiles_walls_bathroom_01c_99"}
+            { sprite = "melos_tiles_walls_bathroom_01c_98", northSprite = "melos_tiles_walls_bathroom_01c_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_End_Small",
@@ -2304,13 +2179,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_112", northSprite = "melos_tiles_walls_bathroom_01c_117"}
+            { sprite = "melos_tiles_walls_bathroom_01c_112", northSprite = "melos_tiles_walls_bathroom_01c_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_End_Medium",
@@ -2319,13 +2193,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_113", northSprite = "melos_tiles_walls_bathroom_01c_116"}
+            { sprite = "melos_tiles_walls_bathroom_01c_113", northSprite = "melos_tiles_walls_bathroom_01c_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_End_Big",
@@ -2334,17 +2207,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlackBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01c_114", northSprite = "melos_tiles_walls_bathroom_01c_115"}
+            { sprite = "melos_tiles_walls_bathroom_01c_114", northSprite = "melos_tiles_walls_bathroom_01c_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Black_Cinderblock"),
@@ -2360,11 +2232,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_0",
@@ -2379,11 +2250,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_6",
@@ -2398,9 +2268,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_10",
@@ -2415,9 +2284,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_10",
@@ -2432,9 +2300,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_12",
@@ -2449,9 +2316,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_13",
@@ -2466,12 +2332,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_8",
@@ -2486,12 +2351,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_4",
@@ -2506,12 +2370,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_16",
@@ -2526,12 +2389,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_17",
@@ -2546,12 +2408,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_18",
@@ -2566,12 +2427,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_22",
@@ -2586,12 +2446,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_24",
@@ -2606,12 +2465,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_25",
@@ -2626,12 +2484,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01d_26",
@@ -2646,14 +2503,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_3", northSprite = "melos_tiles_walls_bathroom_01d_3"}
+            { sprite = "melos_tiles_walls_bathroom_01d_3", northSprite = "melos_tiles_walls_bathroom_01d_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Fence_Post",
@@ -2662,14 +2518,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_87", northSprite = "melos_tiles_walls_bathroom_01d_87"}
+            { sprite = "melos_tiles_walls_bathroom_01d_87", northSprite = "melos_tiles_walls_bathroom_01d_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Fence",
@@ -2678,7 +2533,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -2697,14 +2551,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_86", northSprite = "melos_tiles_walls_bathroom_01d_86"}
+            { sprite = "melos_tiles_walls_bathroom_01d_86", northSprite = "melos_tiles_walls_bathroom_01d_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_1",
@@ -2713,13 +2566,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_106", northSprite = "melos_tiles_walls_bathroom_01d_107"}
+            { sprite = "melos_tiles_walls_bathroom_01d_106", northSprite = "melos_tiles_walls_bathroom_01d_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_2",
@@ -2728,13 +2580,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_105", northSprite = "melos_tiles_walls_bathroom_01d_108"}
+            { sprite = "melos_tiles_walls_bathroom_01d_105", northSprite = "melos_tiles_walls_bathroom_01d_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_3",
@@ -2743,13 +2594,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_104", northSprite = "melos_tiles_walls_bathroom_01d_109"}
+            { sprite = "melos_tiles_walls_bathroom_01d_104", northSprite = "melos_tiles_walls_bathroom_01d_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_4",
@@ -2758,13 +2608,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_96", northSprite = "melos_tiles_walls_bathroom_01d_101"}
+            { sprite = "melos_tiles_walls_bathroom_01d_96", northSprite = "melos_tiles_walls_bathroom_01d_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_5",
@@ -2773,13 +2622,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_97", northSprite = "melos_tiles_walls_bathroom_01d_100"}
+            { sprite = "melos_tiles_walls_bathroom_01d_97", northSprite = "melos_tiles_walls_bathroom_01d_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_6",
@@ -2788,13 +2636,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_98", northSprite = "melos_tiles_walls_bathroom_01d_99"}
+            { sprite = "melos_tiles_walls_bathroom_01d_98", northSprite = "melos_tiles_walls_bathroom_01d_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_End_Small",
@@ -2803,13 +2650,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_112", northSprite = "melos_tiles_walls_bathroom_01d_117"}
+            { sprite = "melos_tiles_walls_bathroom_01d_112", northSprite = "melos_tiles_walls_bathroom_01d_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_End_Medium",
@@ -2818,13 +2664,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_113", northSprite = "melos_tiles_walls_bathroom_01d_116"}
+            { sprite = "melos_tiles_walls_bathroom_01d_113", northSprite = "melos_tiles_walls_bathroom_01d_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_End_Big",
@@ -2833,17 +2678,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01d_114", northSprite = "melos_tiles_walls_bathroom_01d_115"}
+            { sprite = "melos_tiles_walls_bathroom_01d_114", northSprite = "melos_tiles_walls_bathroom_01d_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Swamp_Cinderblock"),
@@ -2859,11 +2703,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_0",
@@ -2878,11 +2721,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_6",
@@ -2897,9 +2739,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_10",
@@ -2914,9 +2755,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_10",
@@ -2931,9 +2771,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_12",
@@ -2948,9 +2787,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_13",
@@ -2965,12 +2803,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_8",
@@ -2985,12 +2822,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_4",
@@ -3005,12 +2841,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_16",
@@ -3025,12 +2860,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_17",
@@ -3045,12 +2879,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_18",
@@ -3065,12 +2898,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_22",
@@ -3085,12 +2917,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_24",
@@ -3105,12 +2936,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_25",
@@ -3125,12 +2955,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01e_26",
@@ -3145,14 +2974,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_3", northSprite = "melos_tiles_walls_bathroom_01e_3"}
+            { sprite = "melos_tiles_walls_bathroom_01e_3", northSprite = "melos_tiles_walls_bathroom_01e_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Fence_Post",
@@ -3161,14 +2989,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_87", northSprite = "melos_tiles_walls_bathroom_01e_87"}
+            { sprite = "melos_tiles_walls_bathroom_01e_87", northSprite = "melos_tiles_walls_bathroom_01e_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Fence",
@@ -3177,7 +3004,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -3196,14 +3022,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_86", northSprite = "melos_tiles_walls_bathroom_01e_86"}
+            { sprite = "melos_tiles_walls_bathroom_01e_86", northSprite = "melos_tiles_walls_bathroom_01e_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_1",
@@ -3212,13 +3037,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_106", northSprite = "melos_tiles_walls_bathroom_01e_107"}
+            { sprite = "melos_tiles_walls_bathroom_01e_106", northSprite = "melos_tiles_walls_bathroom_01e_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_2",
@@ -3227,13 +3051,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_105", northSprite = "melos_tiles_walls_bathroom_01e_108"}
+            { sprite = "melos_tiles_walls_bathroom_01e_105", northSprite = "melos_tiles_walls_bathroom_01e_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_3",
@@ -3242,13 +3065,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_104", northSprite = "melos_tiles_walls_bathroom_01e_109"}
+            { sprite = "melos_tiles_walls_bathroom_01e_104", northSprite = "melos_tiles_walls_bathroom_01e_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_4",
@@ -3257,13 +3079,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_96", northSprite = "melos_tiles_walls_bathroom_01e_101"}
+            { sprite = "melos_tiles_walls_bathroom_01e_96", northSprite = "melos_tiles_walls_bathroom_01e_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_5",
@@ -3272,13 +3093,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_97", northSprite = "melos_tiles_walls_bathroom_01e_100"}
+            { sprite = "melos_tiles_walls_bathroom_01e_97", northSprite = "melos_tiles_walls_bathroom_01e_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_6",
@@ -3287,13 +3107,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_98", northSprite = "melos_tiles_walls_bathroom_01e_99"}
+            { sprite = "melos_tiles_walls_bathroom_01e_98", northSprite = "melos_tiles_walls_bathroom_01e_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_End_Small",
@@ -3302,13 +3121,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_112", northSprite = "melos_tiles_walls_bathroom_01e_117"}
+            { sprite = "melos_tiles_walls_bathroom_01e_112", northSprite = "melos_tiles_walls_bathroom_01e_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_End_Medium",
@@ -3317,13 +3135,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_113", northSprite = "melos_tiles_walls_bathroom_01e_116"}
+            { sprite = "melos_tiles_walls_bathroom_01e_113", northSprite = "melos_tiles_walls_bathroom_01e_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_End_Big",
@@ -3332,17 +3149,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01e_114", northSprite = "melos_tiles_walls_bathroom_01e_115"}
+            { sprite = "melos_tiles_walls_bathroom_01e_114", northSprite = "melos_tiles_walls_bathroom_01e_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Yellow_Cinderblock"),
@@ -3358,11 +3174,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_0",
@@ -3377,11 +3192,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_6",
@@ -3396,9 +3210,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_10",
@@ -3413,9 +3226,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_10",
@@ -3430,9 +3242,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_12",
@@ -3447,9 +3258,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_13",
@@ -3464,12 +3274,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_8",
@@ -3484,12 +3293,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_4",
@@ -3504,12 +3312,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_16",
@@ -3524,12 +3331,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_17",
@@ -3544,12 +3350,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_18",
@@ -3564,12 +3369,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_22",
@@ -3584,12 +3388,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_24",
@@ -3604,12 +3407,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_25",
@@ -3624,12 +3426,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01f_26",
@@ -3644,14 +3445,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_3", northSprite = "melos_tiles_walls_bathroom_01f_3"}
+            { sprite = "melos_tiles_walls_bathroom_01f_3", northSprite = "melos_tiles_walls_bathroom_01f_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Fence_Post",
@@ -3660,14 +3460,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_87", northSprite = "melos_tiles_walls_bathroom_01f_87"}
+            { sprite = "melos_tiles_walls_bathroom_01f_87", northSprite = "melos_tiles_walls_bathroom_01f_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Fence",
@@ -3676,7 +3475,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -3695,14 +3493,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_86", northSprite = "melos_tiles_walls_bathroom_01f_86"}
+            { sprite = "melos_tiles_walls_bathroom_01f_86", northSprite = "melos_tiles_walls_bathroom_01f_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_1",
@@ -3711,13 +3508,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_106", northSprite = "melos_tiles_walls_bathroom_01f_107"}
+            { sprite = "melos_tiles_walls_bathroom_01f_106", northSprite = "melos_tiles_walls_bathroom_01f_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_2",
@@ -3726,13 +3522,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_105", northSprite = "melos_tiles_walls_bathroom_01f_108"}
+            { sprite = "melos_tiles_walls_bathroom_01f_105", northSprite = "melos_tiles_walls_bathroom_01f_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_3",
@@ -3741,13 +3536,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_104", northSprite = "melos_tiles_walls_bathroom_01f_109"}
+            { sprite = "melos_tiles_walls_bathroom_01f_104", northSprite = "melos_tiles_walls_bathroom_01f_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_4",
@@ -3756,13 +3550,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_96", northSprite = "melos_tiles_walls_bathroom_01f_101"}
+            { sprite = "melos_tiles_walls_bathroom_01f_96", northSprite = "melos_tiles_walls_bathroom_01f_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_5",
@@ -3771,13 +3564,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_97", northSprite = "melos_tiles_walls_bathroom_01f_100"}
+            { sprite = "melos_tiles_walls_bathroom_01f_97", northSprite = "melos_tiles_walls_bathroom_01f_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_6",
@@ -3786,13 +3578,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_98", northSprite = "melos_tiles_walls_bathroom_01f_99"}
+            { sprite = "melos_tiles_walls_bathroom_01f_98", northSprite = "melos_tiles_walls_bathroom_01f_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_End_Small",
@@ -3801,13 +3592,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_112", northSprite = "melos_tiles_walls_bathroom_01f_117"}
+            { sprite = "melos_tiles_walls_bathroom_01f_112", northSprite = "melos_tiles_walls_bathroom_01f_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_End_Medium",
@@ -3816,13 +3606,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_113", northSprite = "melos_tiles_walls_bathroom_01f_116"}
+            { sprite = "melos_tiles_walls_bathroom_01f_113", northSprite = "melos_tiles_walls_bathroom_01f_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_End_Big",
@@ -3831,17 +3620,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.TurquoiseBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01f_114", northSprite = "melos_tiles_walls_bathroom_01f_115"}
+            { sprite = "melos_tiles_walls_bathroom_01f_114", northSprite = "melos_tiles_walls_bathroom_01f_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Turquoise_Cinderblock"),
@@ -3857,11 +3645,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_0",
@@ -3876,11 +3663,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_6",
@@ -3895,9 +3681,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_10",
@@ -3912,9 +3697,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_10",
@@ -3929,9 +3713,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_12",
@@ -3946,9 +3729,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_13",
@@ -3963,12 +3745,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_8",
@@ -3983,12 +3764,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_4",
@@ -4003,12 +3783,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_16",
@@ -4023,12 +3802,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_17",
@@ -4043,12 +3821,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_18",
@@ -4063,12 +3840,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_22",
@@ -4083,12 +3859,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_24",
@@ -4103,12 +3878,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_25",
@@ -4123,12 +3897,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01g_26",
@@ -4143,14 +3916,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_3", northSprite = "melos_tiles_walls_bathroom_01g_3"}
+            { sprite = "melos_tiles_walls_bathroom_01g_3", northSprite = "melos_tiles_walls_bathroom_01g_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Fence_Post",
@@ -4159,14 +3931,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_87", northSprite = "melos_tiles_walls_bathroom_01g_87"}
+            { sprite = "melos_tiles_walls_bathroom_01g_87", northSprite = "melos_tiles_walls_bathroom_01g_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Fence",
@@ -4175,7 +3946,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -4194,14 +3964,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_86", northSprite = "melos_tiles_walls_bathroom_01g_86"}
+            { sprite = "melos_tiles_walls_bathroom_01g_86", northSprite = "melos_tiles_walls_bathroom_01g_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_1",
@@ -4210,13 +3979,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_106", northSprite = "melos_tiles_walls_bathroom_01g_107"}
+            { sprite = "melos_tiles_walls_bathroom_01g_106", northSprite = "melos_tiles_walls_bathroom_01g_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_2",
@@ -4225,13 +3993,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_105", northSprite = "melos_tiles_walls_bathroom_01g_108"}
+            { sprite = "melos_tiles_walls_bathroom_01g_105", northSprite = "melos_tiles_walls_bathroom_01g_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_3",
@@ -4240,13 +4007,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_104", northSprite = "melos_tiles_walls_bathroom_01g_109"}
+            { sprite = "melos_tiles_walls_bathroom_01g_104", northSprite = "melos_tiles_walls_bathroom_01g_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_4",
@@ -4255,13 +4021,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_96", northSprite = "melos_tiles_walls_bathroom_01g_101"}
+            { sprite = "melos_tiles_walls_bathroom_01g_96", northSprite = "melos_tiles_walls_bathroom_01g_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_5",
@@ -4270,13 +4035,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_97", northSprite = "melos_tiles_walls_bathroom_01g_100"}
+            { sprite = "melos_tiles_walls_bathroom_01g_97", northSprite = "melos_tiles_walls_bathroom_01g_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_6",
@@ -4285,13 +4049,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_98", northSprite = "melos_tiles_walls_bathroom_01g_99"}
+            { sprite = "melos_tiles_walls_bathroom_01g_98", northSprite = "melos_tiles_walls_bathroom_01g_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_End_Small",
@@ -4300,13 +4063,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_112", northSprite = "melos_tiles_walls_bathroom_01g_117"}
+            { sprite = "melos_tiles_walls_bathroom_01g_112", northSprite = "melos_tiles_walls_bathroom_01g_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_End_Medium",
@@ -4315,13 +4077,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_113", northSprite = "melos_tiles_walls_bathroom_01g_116"}
+            { sprite = "melos_tiles_walls_bathroom_01g_113", northSprite = "melos_tiles_walls_bathroom_01g_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_End_Big",
@@ -4330,17 +4091,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01g_114", northSprite = "melos_tiles_walls_bathroom_01g_115"}
+            { sprite = "melos_tiles_walls_bathroom_01g_114", northSprite = "melos_tiles_walls_bathroom_01g_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Cinderblock"),
@@ -4356,11 +4116,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_0",
@@ -4375,11 +4134,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_6",
@@ -4394,9 +4152,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_10",
@@ -4411,9 +4168,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_10",
@@ -4428,9 +4184,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_12",
@@ -4445,9 +4200,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_13",
@@ -4462,12 +4216,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_8",
@@ -4482,12 +4235,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_4",
@@ -4502,12 +4254,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_16",
@@ -4522,12 +4273,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_17",
@@ -4542,12 +4292,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_18",
@@ -4562,12 +4311,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_22",
@@ -4582,12 +4330,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_24",
@@ -4602,12 +4349,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_25",
@@ -4622,12 +4368,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01h_26",
@@ -4642,14 +4387,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_3", northSprite = "melos_tiles_walls_bathroom_01h_3"}
+            { sprite = "melos_tiles_walls_bathroom_01h_3", northSprite = "melos_tiles_walls_bathroom_01h_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Fence_Post",
@@ -4658,14 +4402,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_87", northSprite = "melos_tiles_walls_bathroom_01h_87"}
+            { sprite = "melos_tiles_walls_bathroom_01h_87", northSprite = "melos_tiles_walls_bathroom_01h_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Fence",
@@ -4674,7 +4417,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -4693,14 +4435,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_86", northSprite = "melos_tiles_walls_bathroom_01h_86"}
+            { sprite = "melos_tiles_walls_bathroom_01h_86", northSprite = "melos_tiles_walls_bathroom_01h_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_1",
@@ -4709,13 +4450,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_106", northSprite = "melos_tiles_walls_bathroom_01h_107"}
+            { sprite = "melos_tiles_walls_bathroom_01h_106", northSprite = "melos_tiles_walls_bathroom_01h_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_2",
@@ -4724,13 +4464,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_105", northSprite = "melos_tiles_walls_bathroom_01h_108"}
+            { sprite = "melos_tiles_walls_bathroom_01h_105", northSprite = "melos_tiles_walls_bathroom_01h_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_3",
@@ -4739,13 +4478,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_104", northSprite = "melos_tiles_walls_bathroom_01h_109"}
+            { sprite = "melos_tiles_walls_bathroom_01h_104", northSprite = "melos_tiles_walls_bathroom_01h_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_4",
@@ -4754,13 +4492,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_96", northSprite = "melos_tiles_walls_bathroom_01h_101"}
+            { sprite = "melos_tiles_walls_bathroom_01h_96", northSprite = "melos_tiles_walls_bathroom_01h_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_5",
@@ -4769,13 +4506,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_97", northSprite = "melos_tiles_walls_bathroom_01h_100"}
+            { sprite = "melos_tiles_walls_bathroom_01h_97", northSprite = "melos_tiles_walls_bathroom_01h_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_6",
@@ -4784,13 +4520,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_98", northSprite = "melos_tiles_walls_bathroom_01h_99"}
+            { sprite = "melos_tiles_walls_bathroom_01h_98", northSprite = "melos_tiles_walls_bathroom_01h_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_End_Small",
@@ -4799,13 +4534,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_112", northSprite = "melos_tiles_walls_bathroom_01h_117"}
+            { sprite = "melos_tiles_walls_bathroom_01h_112", northSprite = "melos_tiles_walls_bathroom_01h_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_End_Medium",
@@ -4814,13 +4548,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_113", northSprite = "melos_tiles_walls_bathroom_01h_116"}
+            { sprite = "melos_tiles_walls_bathroom_01h_113", northSprite = "melos_tiles_walls_bathroom_01h_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_End_Big",
@@ -4829,17 +4562,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.PurpleBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01h_114", northSprite = "melos_tiles_walls_bathroom_01h_115"}
+            { sprite = "melos_tiles_walls_bathroom_01h_114", northSprite = "melos_tiles_walls_bathroom_01h_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Violet_Cinderblock"),
@@ -4855,11 +4587,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_0",
@@ -4874,11 +4605,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_6",
@@ -4893,9 +4623,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_10",
@@ -4910,9 +4639,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_10",
@@ -4927,9 +4655,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_12",
@@ -4944,9 +4671,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_13",
@@ -4961,12 +4687,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_8",
@@ -4981,12 +4706,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_4",
@@ -5001,12 +4725,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_16",
@@ -5021,12 +4744,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_17",
@@ -5041,12 +4763,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_18",
@@ -5061,12 +4782,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_22",
@@ -5081,12 +4801,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_24",
@@ -5101,12 +4820,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_25",
@@ -5121,12 +4839,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01i_26",
@@ -5141,14 +4858,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_3", northSprite = "melos_tiles_walls_bathroom_01i_3"}
+            { sprite = "melos_tiles_walls_bathroom_01i_3", northSprite = "melos_tiles_walls_bathroom_01i_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Fence_Post",
@@ -5157,14 +4873,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_87", northSprite = "melos_tiles_walls_bathroom_01i_87"}
+            { sprite = "melos_tiles_walls_bathroom_01i_87", northSprite = "melos_tiles_walls_bathroom_01i_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Fence",
@@ -5173,7 +4888,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -5192,14 +4906,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_86", northSprite = "melos_tiles_walls_bathroom_01i_86"}
+            { sprite = "melos_tiles_walls_bathroom_01i_86", northSprite = "melos_tiles_walls_bathroom_01i_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_1",
@@ -5208,13 +4921,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_106", northSprite = "melos_tiles_walls_bathroom_01i_107"}
+            { sprite = "melos_tiles_walls_bathroom_01i_106", northSprite = "melos_tiles_walls_bathroom_01i_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_2",
@@ -5223,13 +4935,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_105", northSprite = "melos_tiles_walls_bathroom_01i_108"}
+            { sprite = "melos_tiles_walls_bathroom_01i_105", northSprite = "melos_tiles_walls_bathroom_01i_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_3",
@@ -5238,13 +4949,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_104", northSprite = "melos_tiles_walls_bathroom_01i_109"}
+            { sprite = "melos_tiles_walls_bathroom_01i_104", northSprite = "melos_tiles_walls_bathroom_01i_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_4",
@@ -5253,13 +4963,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_96", northSprite = "melos_tiles_walls_bathroom_01i_101"}
+            { sprite = "melos_tiles_walls_bathroom_01i_96", northSprite = "melos_tiles_walls_bathroom_01i_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_5",
@@ -5268,13 +4977,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_97", northSprite = "melos_tiles_walls_bathroom_01i_100"}
+            { sprite = "melos_tiles_walls_bathroom_01i_97", northSprite = "melos_tiles_walls_bathroom_01i_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_6",
@@ -5283,13 +4991,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_98", northSprite = "melos_tiles_walls_bathroom_01i_99"}
+            { sprite = "melos_tiles_walls_bathroom_01i_98", northSprite = "melos_tiles_walls_bathroom_01i_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_End_Small",
@@ -5298,13 +5005,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_112", northSprite = "melos_tiles_walls_bathroom_01i_117"}
+            { sprite = "melos_tiles_walls_bathroom_01i_112", northSprite = "melos_tiles_walls_bathroom_01i_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_End_Medium",
@@ -5313,13 +5019,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_113", northSprite = "melos_tiles_walls_bathroom_01i_116"}
+            { sprite = "melos_tiles_walls_bathroom_01i_113", northSprite = "melos_tiles_walls_bathroom_01i_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_End_Big",
@@ -5328,17 +5033,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01i_114", northSprite = "melos_tiles_walls_bathroom_01i_115"}
+            { sprite = "melos_tiles_walls_bathroom_01i_114", northSprite = "melos_tiles_walls_bathroom_01i_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Strawberry_Cinderblock"),
@@ -5354,11 +5058,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_0",
@@ -5373,11 +5076,10 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_6",
@@ -5392,9 +5094,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_10",
@@ -5409,9 +5110,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_10",
@@ -5426,9 +5126,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_12",
@@ -5443,9 +5142,8 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_13",
@@ -5460,12 +5158,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_8",
@@ -5480,12 +5177,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_4",
@@ -5500,12 +5196,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_16",
@@ -5520,12 +5215,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_17",
@@ -5540,12 +5234,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_18",
@@ -5560,12 +5253,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_22",
@@ -5580,12 +5272,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_24",
@@ -5600,12 +5291,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_25",
@@ -5620,12 +5310,11 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_01j_26",
@@ -5640,14 +5329,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_3", northSprite = "melos_tiles_walls_bathroom_01j_3"}
+            { sprite = "melos_tiles_walls_bathroom_01j_3", northSprite = "melos_tiles_walls_bathroom_01j_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Fence_Post",
@@ -5656,14 +5344,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_87", northSprite = "melos_tiles_walls_bathroom_01j_87"}
+            { sprite = "melos_tiles_walls_bathroom_01j_87", northSprite = "melos_tiles_walls_bathroom_01j_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Fence",
@@ -5672,7 +5359,6 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -5691,14 +5377,13 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_86", northSprite = "melos_tiles_walls_bathroom_01j_86"}
+            { sprite = "melos_tiles_walls_bathroom_01j_86", northSprite = "melos_tiles_walls_bathroom_01j_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_1",
@@ -5707,13 +5392,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_106", northSprite = "melos_tiles_walls_bathroom_01j_107"}
+            { sprite = "melos_tiles_walls_bathroom_01j_106", northSprite = "melos_tiles_walls_bathroom_01j_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_2",
@@ -5722,13 +5406,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_105", northSprite = "melos_tiles_walls_bathroom_01j_108"}
+            { sprite = "melos_tiles_walls_bathroom_01j_105", northSprite = "melos_tiles_walls_bathroom_01j_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_3",
@@ -5737,13 +5420,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_104", northSprite = "melos_tiles_walls_bathroom_01j_109"}
+            { sprite = "melos_tiles_walls_bathroom_01j_104", northSprite = "melos_tiles_walls_bathroom_01j_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_4",
@@ -5752,13 +5434,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_96", northSprite = "melos_tiles_walls_bathroom_01j_101"}
+            { sprite = "melos_tiles_walls_bathroom_01j_96", northSprite = "melos_tiles_walls_bathroom_01j_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_5",
@@ -5767,13 +5448,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_97", northSprite = "melos_tiles_walls_bathroom_01j_100"}
+            { sprite = "melos_tiles_walls_bathroom_01j_97", northSprite = "melos_tiles_walls_bathroom_01j_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_6",
@@ -5782,13 +5462,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_98", northSprite = "melos_tiles_walls_bathroom_01j_99"}
+            { sprite = "melos_tiles_walls_bathroom_01j_98", northSprite = "melos_tiles_walls_bathroom_01j_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_End_Small",
@@ -5797,13 +5476,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_112", northSprite = "melos_tiles_walls_bathroom_01j_117"}
+            { sprite = "melos_tiles_walls_bathroom_01j_112", northSprite = "melos_tiles_walls_bathroom_01j_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_End_Medium",
@@ -5812,13 +5490,12 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_113", northSprite = "melos_tiles_walls_bathroom_01j_116"}
+            { sprite = "melos_tiles_walls_bathroom_01j_113", northSprite = "melos_tiles_walls_bathroom_01j_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_End_Big",
@@ -5827,17 +5504,16 @@ local function addMelosWallsCinderblockToMenu()
             BuildingMenu.RedBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_bathroom_01j_114", northSprite = "melos_tiles_walls_bathroom_01j_115"}
+            { sprite = "melos_tiles_walls_bathroom_01j_114", northSprite = "melos_tiles_walls_bathroom_01j_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Red_Cinderblock"),
@@ -5855,11 +5531,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_0",
@@ -5874,11 +5549,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_6",
@@ -5893,9 +5567,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_10",
@@ -5910,9 +5583,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_10",
@@ -5927,9 +5599,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_12",
@@ -5944,9 +5615,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_13",
@@ -5961,12 +5631,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_8",
@@ -5981,12 +5650,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_4",
@@ -6001,12 +5669,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_16",
@@ -6021,12 +5688,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_17",
@@ -6041,12 +5707,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_18",
@@ -6061,12 +5726,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_22",
@@ -6081,12 +5745,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_24",
@@ -6101,12 +5764,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_25",
@@ -6121,12 +5783,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_26",
@@ -6141,12 +5802,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_3",
@@ -6160,7 +5820,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -6179,7 +5838,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -6198,7 +5856,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -6217,11 +5874,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_106",
@@ -6235,11 +5891,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_105",
@@ -6253,11 +5908,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_104",
@@ -6271,11 +5925,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_96",
@@ -6289,11 +5942,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_97",
@@ -6307,11 +5959,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_98",
@@ -6325,11 +5976,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_112",
@@ -6343,11 +5993,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_113",
@@ -6361,11 +6010,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_08_114",
@@ -6374,7 +6022,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Small_Tiles"),
@@ -6390,11 +6038,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_0",
@@ -6409,11 +6056,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_6",
@@ -6428,9 +6074,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_10",
@@ -6445,9 +6090,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_10",
@@ -6462,9 +6106,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_12",
@@ -6479,9 +6122,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_13",
@@ -6496,12 +6138,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_8",
@@ -6516,12 +6157,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_4",
@@ -6536,12 +6176,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_16",
@@ -6556,12 +6195,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_17",
@@ -6576,12 +6214,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_18",
@@ -6596,12 +6233,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_22",
@@ -6616,12 +6252,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_24",
@@ -6636,12 +6271,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_25",
@@ -6656,12 +6290,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_26",
@@ -6676,12 +6309,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_3",
@@ -6695,7 +6327,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -6714,7 +6345,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -6733,7 +6363,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -6752,11 +6381,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_106",
@@ -6770,11 +6398,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_105",
@@ -6788,11 +6415,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_40",
@@ -6806,11 +6432,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_96",
@@ -6824,11 +6449,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_97",
@@ -6842,11 +6466,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_98",
@@ -6860,11 +6483,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_112",
@@ -6878,11 +6500,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_113",
@@ -6896,11 +6517,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_01_114",
@@ -6909,7 +6529,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Medium_Tiles_1"),
@@ -6925,11 +6545,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_0",
@@ -6944,11 +6563,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_6",
@@ -6963,9 +6581,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_10",
@@ -6980,9 +6597,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_10",
@@ -6997,9 +6613,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_12",
@@ -7014,9 +6629,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_13",
@@ -7031,12 +6645,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_8",
@@ -7051,12 +6664,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_4",
@@ -7071,12 +6683,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_16",
@@ -7091,12 +6702,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_17",
@@ -7111,12 +6721,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_18",
@@ -7131,12 +6740,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_22",
@@ -7151,12 +6759,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_24",
@@ -7171,12 +6778,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_25",
@@ -7191,12 +6797,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_26",
@@ -7211,12 +6816,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_3",
@@ -7230,7 +6834,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -7249,7 +6852,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -7268,7 +6870,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -7287,11 +6888,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_106",
@@ -7305,11 +6905,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_105",
@@ -7323,11 +6922,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_40",
@@ -7341,11 +6939,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_96",
@@ -7359,11 +6956,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_97",
@@ -7377,11 +6973,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_98",
@@ -7395,11 +6990,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_112",
@@ -7413,11 +7007,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_113",
@@ -7431,11 +7024,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_02_114",
@@ -7444,7 +7036,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Medium_Tiles_2"),
@@ -7460,11 +7052,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_0",
@@ -7479,11 +7070,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_6",
@@ -7498,9 +7088,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_10",
@@ -7515,9 +7104,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_10",
@@ -7532,9 +7120,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_12",
@@ -7549,9 +7136,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_13",
@@ -7566,12 +7152,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_8",
@@ -7586,12 +7171,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_4",
@@ -7606,12 +7190,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_16",
@@ -7626,12 +7209,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_17",
@@ -7646,12 +7228,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_18",
@@ -7666,12 +7247,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_22",
@@ -7686,12 +7266,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_24",
@@ -7706,12 +7285,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_25",
@@ -7726,12 +7304,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_26",
@@ -7746,12 +7323,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_3",
@@ -7765,7 +7341,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -7784,7 +7359,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -7803,7 +7377,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -7822,11 +7395,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_106",
@@ -7840,11 +7412,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_105",
@@ -7858,11 +7429,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_104",
@@ -7876,11 +7446,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_96",
@@ -7894,11 +7463,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_97",
@@ -7912,11 +7480,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_98",
@@ -7930,11 +7497,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_112",
@@ -7948,11 +7514,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_113",
@@ -7966,11 +7531,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_09_114",
@@ -7979,7 +7543,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Large_Tiles_1"),
@@ -7995,11 +7559,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_0",
@@ -8014,11 +7577,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_6",
@@ -8033,9 +7595,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_10",
@@ -8050,9 +7611,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_10",
@@ -8067,9 +7627,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_12",
@@ -8084,9 +7643,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_13",
@@ -8101,12 +7659,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_8",
@@ -8121,12 +7678,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_4",
@@ -8141,12 +7697,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_16",
@@ -8161,12 +7716,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_17",
@@ -8181,12 +7735,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_18",
@@ -8201,12 +7754,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_22",
@@ -8221,12 +7773,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_24",
@@ -8241,12 +7792,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_25",
@@ -8261,12 +7811,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_26",
@@ -8281,12 +7830,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_3",
@@ -8300,7 +7848,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -8319,7 +7866,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -8338,7 +7884,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -8357,11 +7902,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_106",
@@ -8375,11 +7919,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_105",
@@ -8393,11 +7936,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_40",
@@ -8411,11 +7953,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_96",
@@ -8429,11 +7970,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_97",
@@ -8447,11 +7987,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_98",
@@ -8465,11 +8004,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_112",
@@ -8483,11 +8021,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_113",
@@ -8501,11 +8038,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_04_114",
@@ -8514,7 +8050,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Large_Tiles_2"),
@@ -8530,11 +8066,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_0",
@@ -8549,11 +8084,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_6",
@@ -8568,9 +8102,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_10",
@@ -8585,9 +8118,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_10",
@@ -8602,9 +8134,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_12",
@@ -8619,9 +8150,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_13",
@@ -8636,12 +8166,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_8",
@@ -8656,12 +8185,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_4",
@@ -8676,12 +8204,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_16",
@@ -8696,12 +8223,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_17",
@@ -8716,12 +8242,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_18",
@@ -8736,12 +8261,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_22",
@@ -8756,12 +8280,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_24",
@@ -8776,12 +8299,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_25",
@@ -8796,12 +8318,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_26",
@@ -8816,12 +8337,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_3",
@@ -8835,7 +8355,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -8854,7 +8373,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -8873,7 +8391,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -8892,11 +8409,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_106",
@@ -8910,11 +8426,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_105",
@@ -8928,11 +8443,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_40",
@@ -8946,11 +8460,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_96",
@@ -8964,11 +8477,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_97",
@@ -8982,11 +8494,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_98",
@@ -9000,11 +8511,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_112",
@@ -9018,11 +8528,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_113",
@@ -9036,11 +8545,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreyBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_03_114",
@@ -9049,7 +8557,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Grey_Large_Tiles"),
@@ -9065,11 +8573,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_0",
@@ -9084,11 +8591,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_6",
@@ -9103,9 +8609,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_10",
@@ -9120,9 +8625,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_10",
@@ -9137,9 +8641,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_12",
@@ -9154,9 +8657,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_13",
@@ -9171,12 +8673,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_8",
@@ -9191,12 +8692,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_4",
@@ -9211,12 +8711,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_16",
@@ -9231,12 +8730,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_17",
@@ -9251,12 +8749,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_18",
@@ -9271,12 +8768,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_22",
@@ -9291,12 +8787,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_24",
@@ -9311,12 +8806,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_25",
@@ -9331,12 +8825,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_26",
@@ -9351,12 +8844,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_3",
@@ -9370,7 +8862,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -9389,7 +8880,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -9408,7 +8898,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -9427,11 +8916,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_106",
@@ -9445,11 +8933,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_105",
@@ -9463,11 +8950,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_40",
@@ -9481,11 +8967,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_96",
@@ -9499,11 +8984,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_97",
@@ -9517,11 +9001,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_98",
@@ -9535,11 +9018,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_112",
@@ -9553,11 +9035,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_113",
@@ -9571,11 +9052,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_05_114",
@@ -9584,7 +9064,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Light_Blue_Large_Tiles"),
@@ -9600,11 +9080,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_0",
@@ -9619,11 +9098,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_6",
@@ -9638,9 +9116,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_10",
@@ -9655,9 +9132,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_10",
@@ -9672,9 +9148,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_12",
@@ -9689,9 +9164,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_13",
@@ -9706,12 +9180,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_8",
@@ -9726,12 +9199,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_4",
@@ -9746,12 +9218,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_16",
@@ -9766,12 +9237,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_17",
@@ -9786,12 +9256,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_18",
@@ -9806,12 +9275,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_22",
@@ -9826,12 +9294,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_24",
@@ -9846,12 +9313,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_25",
@@ -9866,12 +9332,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_26",
@@ -9886,12 +9351,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_3",
@@ -9905,7 +9369,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -9924,7 +9387,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -9943,7 +9405,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -9962,11 +9423,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_106",
@@ -9980,11 +9440,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_105",
@@ -9998,11 +9457,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_104",
@@ -10016,11 +9474,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_96",
@@ -10034,11 +9491,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_97",
@@ -10052,11 +9508,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_98",
@@ -10070,11 +9525,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_112",
@@ -10088,11 +9542,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_113",
@@ -10106,11 +9559,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.BlueBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_114",
@@ -10119,7 +9571,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Large_Tiles"),
@@ -10135,11 +9587,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_0",
@@ -10154,11 +9605,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_6",
@@ -10173,9 +9623,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_10",
@@ -10190,9 +9639,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_10",
@@ -10207,9 +9655,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_12",
@@ -10224,9 +9671,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_13",
@@ -10241,12 +9687,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_8",
@@ -10261,12 +9706,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_4",
@@ -10281,12 +9725,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_16",
@@ -10301,12 +9744,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_17",
@@ -10321,12 +9763,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_18",
@@ -10341,12 +9782,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_22",
@@ -10361,12 +9801,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_24",
@@ -10381,12 +9820,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_25",
@@ -10401,12 +9839,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_26",
@@ -10421,12 +9858,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_3",
@@ -10440,7 +9876,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -10459,7 +9894,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -10478,7 +9912,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -10497,11 +9930,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_106",
@@ -10515,11 +9947,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_105",
@@ -10533,11 +9964,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_104",
@@ -10551,11 +9981,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_96",
@@ -10569,11 +9998,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_97",
@@ -10587,11 +10015,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_98",
@@ -10605,11 +10032,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_112",
@@ -10623,11 +10049,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_113",
@@ -10641,11 +10066,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_07_114",
@@ -10654,7 +10078,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Light_Green"),
@@ -10670,11 +10094,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_0",
@@ -10689,11 +10112,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_6",
@@ -10708,9 +10130,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_10",
@@ -10725,9 +10146,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_10",
@@ -10742,9 +10162,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_12",
@@ -10759,9 +10178,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_13",
@@ -10776,12 +10194,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_8",
@@ -10796,12 +10213,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_4",
@@ -10816,12 +10232,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_16",
@@ -10836,12 +10251,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_17",
@@ -10856,12 +10270,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_18",
@@ -10876,12 +10289,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_22",
@@ -10896,12 +10308,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_24",
@@ -10916,12 +10327,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_25",
@@ -10936,12 +10346,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_26",
@@ -10956,12 +10365,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_3",
@@ -10975,7 +10383,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -10994,7 +10401,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -11013,7 +10419,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -11032,11 +10437,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_106",
@@ -11050,11 +10454,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_105",
@@ -11068,11 +10471,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_104",
@@ -11086,11 +10488,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_96",
@@ -11104,11 +10505,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_97",
@@ -11122,11 +10522,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_98",
@@ -11140,11 +10539,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_112",
@@ -11158,11 +10556,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_113",
@@ -11176,11 +10573,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.GreenBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_11_114",
@@ -11189,7 +10585,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Green_Large_Tiles"),
@@ -11205,11 +10601,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_0",
@@ -11224,11 +10619,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_6",
@@ -11243,9 +10637,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_10",
@@ -11260,9 +10653,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_10",
@@ -11277,9 +10669,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_12",
@@ -11294,9 +10685,8 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_13",
@@ -11311,12 +10701,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_8",
@@ -11331,12 +10720,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_4",
@@ -11351,12 +10739,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_16",
@@ -11371,12 +10758,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_17",
@@ -11391,12 +10777,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_18",
@@ -11411,12 +10796,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_22",
@@ -11431,12 +10815,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_24",
@@ -11451,12 +10834,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_25",
@@ -11471,12 +10853,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_26",
@@ -11491,12 +10872,11 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_3",
@@ -11510,7 +10890,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -11529,7 +10908,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -11548,7 +10926,6 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -11567,11 +10944,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_106",
@@ -11585,11 +10961,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_105",
@@ -11603,11 +10978,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_104",
@@ -11621,11 +10995,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_96",
@@ -11639,11 +11012,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_97",
@@ -11657,11 +11029,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_98",
@@ -11675,11 +11046,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_112",
@@ -11693,11 +11063,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_113",
@@ -11711,11 +11080,10 @@ local function addMelosWallsBathroomToMenu()
             BuildingMenu.YellowBigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_12_114",
@@ -11724,7 +11092,7 @@ local function addMelosWallsBathroomToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Yellow_Large_Tiles"),
@@ -11742,11 +11110,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_0",
@@ -11761,11 +11128,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_6",
@@ -11780,9 +11146,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_10",
@@ -11797,9 +11162,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_10",
@@ -11814,9 +11178,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_12",
@@ -11831,9 +11194,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_13",
@@ -11848,12 +11210,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_8",
@@ -11868,12 +11229,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_4",
@@ -11888,12 +11248,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_16",
@@ -11908,12 +11267,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_17",
@@ -11928,12 +11286,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_18",
@@ -11948,12 +11305,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_22",
@@ -11968,12 +11324,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_24",
@@ -11988,12 +11343,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_25",
@@ -12008,12 +11362,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01a_26",
@@ -12028,14 +11381,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_3", northSprite = "melos_tiles_walls_brick_01a_3"}
+            { sprite = "melos_tiles_walls_brick_01a_3", northSprite = "melos_tiles_walls_brick_01a_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Fence_Post",
@@ -12044,14 +11396,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01a_87", northSprite = "melos_tiles_walls_brick_01a_87"}
+            { sprite = "melos_tiles_walls_brick_01a_87", northSprite = "melos_tiles_walls_brick_01a_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Fence",
@@ -12060,7 +11411,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -12079,14 +11429,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01a_86", northSprite = "melos_tiles_walls_brick_01a_86"}
+            { sprite = "melos_tiles_walls_brick_01a_86", northSprite = "melos_tiles_walls_brick_01a_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_1",
@@ -12095,13 +11444,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_106", northSprite = "melos_tiles_walls_brick_01a_107"}
+            { sprite = "melos_tiles_walls_brick_01a_106", northSprite = "melos_tiles_walls_brick_01a_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_2",
@@ -12110,13 +11458,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_105", northSprite = "melos_tiles_walls_brick_01a_108"}
+            { sprite = "melos_tiles_walls_brick_01a_105", northSprite = "melos_tiles_walls_brick_01a_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_3",
@@ -12125,13 +11472,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_104", northSprite = "melos_tiles_walls_brick_01a_109"}
+            { sprite = "melos_tiles_walls_brick_01a_104", northSprite = "melos_tiles_walls_brick_01a_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_4",
@@ -12140,13 +11486,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_96", northSprite = "melos_tiles_walls_brick_01a_101"}
+            { sprite = "melos_tiles_walls_brick_01a_96", northSprite = "melos_tiles_walls_brick_01a_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_5",
@@ -12155,13 +11500,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_97", northSprite = "melos_tiles_walls_brick_01a_100"}
+            { sprite = "melos_tiles_walls_brick_01a_97", northSprite = "melos_tiles_walls_brick_01a_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_6",
@@ -12170,13 +11514,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_98", northSprite = "melos_tiles_walls_brick_01a_99"}
+            { sprite = "melos_tiles_walls_brick_01a_98", northSprite = "melos_tiles_walls_brick_01a_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_End_Small",
@@ -12185,13 +11528,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_112", northSprite = "melos_tiles_walls_brick_01a_117"}
+            { sprite = "melos_tiles_walls_brick_01a_112", northSprite = "melos_tiles_walls_brick_01a_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_End_Medium",
@@ -12200,13 +11542,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_113", northSprite = "melos_tiles_walls_brick_01a_116"}
+            { sprite = "melos_tiles_walls_brick_01a_113", northSprite = "melos_tiles_walls_brick_01a_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_End_Big",
@@ -12215,17 +11556,16 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.WhiteBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01a_114", northSprite = "melos_tiles_walls_brick_01a_115"}
+            { sprite = "melos_tiles_walls_brick_01a_114", northSprite = "melos_tiles_walls_brick_01a_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Brick"),
@@ -12241,11 +11581,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_0",
@@ -12260,11 +11599,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_6",
@@ -12279,9 +11617,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_10",
@@ -12296,9 +11633,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_10",
@@ -12313,9 +11649,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_12",
@@ -12330,9 +11665,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_13",
@@ -12347,12 +11681,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_8",
@@ -12367,12 +11700,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_4",
@@ -12387,12 +11719,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_16",
@@ -12407,12 +11738,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_17",
@@ -12427,12 +11757,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_18",
@@ -12447,12 +11776,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_22",
@@ -12467,12 +11795,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_24",
@@ -12487,12 +11814,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_25",
@@ -12507,12 +11833,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01b_26",
@@ -12527,14 +11852,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_3", northSprite = "melos_tiles_walls_brick_01b_3"}
+            { sprite = "melos_tiles_walls_brick_01b_3", northSprite = "melos_tiles_walls_brick_01b_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Fence_Post",
@@ -12543,14 +11867,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01b_87", northSprite = "melos_tiles_walls_brick_01b_87"}
+            { sprite = "melos_tiles_walls_brick_01b_87", northSprite = "melos_tiles_walls_brick_01b_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Fence",
@@ -12559,7 +11882,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -12578,14 +11900,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01b_86", northSprite = "melos_tiles_walls_brick_01b_86"}
+            { sprite = "melos_tiles_walls_brick_01b_86", northSprite = "melos_tiles_walls_brick_01b_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_1",
@@ -12594,13 +11915,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_106", northSprite = "melos_tiles_walls_brick_01b_107"}
+            { sprite = "melos_tiles_walls_brick_01b_106", northSprite = "melos_tiles_walls_brick_01b_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_2",
@@ -12609,13 +11929,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_105", northSprite = "melos_tiles_walls_brick_01b_108"}
+            { sprite = "melos_tiles_walls_brick_01b_105", northSprite = "melos_tiles_walls_brick_01b_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_3",
@@ -12624,13 +11943,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_104", northSprite = "melos_tiles_walls_brick_01b_109"}
+            { sprite = "melos_tiles_walls_brick_01b_104", northSprite = "melos_tiles_walls_brick_01b_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_4",
@@ -12639,13 +11957,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_96", northSprite = "melos_tiles_walls_brick_01b_101"}
+            { sprite = "melos_tiles_walls_brick_01b_96", northSprite = "melos_tiles_walls_brick_01b_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_5",
@@ -12654,13 +11971,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_97", northSprite = "melos_tiles_walls_brick_01b_100"}
+            { sprite = "melos_tiles_walls_brick_01b_97", northSprite = "melos_tiles_walls_brick_01b_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_6",
@@ -12669,13 +11985,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_98", northSprite = "melos_tiles_walls_brick_01b_99"}
+            { sprite = "melos_tiles_walls_brick_01b_98", northSprite = "melos_tiles_walls_brick_01b_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_End_Small",
@@ -12684,13 +11999,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_112", northSprite = "melos_tiles_walls_brick_01b_117"}
+            { sprite = "melos_tiles_walls_brick_01b_112", northSprite = "melos_tiles_walls_brick_01b_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_End_Medium",
@@ -12699,13 +12013,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_113", northSprite = "melos_tiles_walls_brick_01b_116"}
+            { sprite = "melos_tiles_walls_brick_01b_113", northSprite = "melos_tiles_walls_brick_01b_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_End_Big",
@@ -12714,24 +12027,23 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.RedBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01b_114", northSprite = "melos_tiles_walls_brick_01b_115"}
+            { sprite = "melos_tiles_walls_brick_01b_114", northSprite = "melos_tiles_walls_brick_01b_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Red_Brick"),
         "melos_tiles_walls_brick_01b_0",
         melosWallsRedBrick
     )
-    
+
 
     local melosWallsTurquoiseBrick = {
         BuildingMenu.createObject(
@@ -12741,11 +12053,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_0",
@@ -12760,11 +12071,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_6",
@@ -12779,9 +12089,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_10",
@@ -12796,9 +12105,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_10",
@@ -12813,9 +12121,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_12",
@@ -12830,9 +12137,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_13",
@@ -12847,12 +12153,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_8",
@@ -12867,12 +12172,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_4",
@@ -12887,12 +12191,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_16",
@@ -12907,12 +12210,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_17",
@@ -12927,12 +12229,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_18",
@@ -12947,12 +12248,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_22",
@@ -12967,12 +12267,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_24",
@@ -12987,12 +12286,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_25",
@@ -13007,12 +12305,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01c_26",
@@ -13027,14 +12324,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_3", northSprite = "melos_tiles_walls_brick_01c_3"}
+            { sprite = "melos_tiles_walls_brick_01c_3", northSprite = "melos_tiles_walls_brick_01c_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Fence_Post",
@@ -13043,14 +12339,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01c_87", northSprite = "melos_tiles_walls_brick_01c_87"}
+            { sprite = "melos_tiles_walls_brick_01c_87", northSprite = "melos_tiles_walls_brick_01c_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Fence",
@@ -13059,7 +12354,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -13078,14 +12372,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01c_86", northSprite = "melos_tiles_walls_brick_01c_86"}
+            { sprite = "melos_tiles_walls_brick_01c_86", northSprite = "melos_tiles_walls_brick_01c_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_1",
@@ -13094,13 +12387,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_106", northSprite = "melos_tiles_walls_brick_01c_107"}
+            { sprite = "melos_tiles_walls_brick_01c_106", northSprite = "melos_tiles_walls_brick_01c_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_2",
@@ -13109,13 +12401,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_105", northSprite = "melos_tiles_walls_brick_01c_108"}
+            { sprite = "melos_tiles_walls_brick_01c_105", northSprite = "melos_tiles_walls_brick_01c_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_3",
@@ -13124,13 +12415,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_104", northSprite = "melos_tiles_walls_brick_01c_109"}
+            { sprite = "melos_tiles_walls_brick_01c_104", northSprite = "melos_tiles_walls_brick_01c_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_4",
@@ -13139,13 +12429,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_96", northSprite = "melos_tiles_walls_brick_01c_101"}
+            { sprite = "melos_tiles_walls_brick_01c_96", northSprite = "melos_tiles_walls_brick_01c_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_5",
@@ -13154,13 +12443,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_97", northSprite = "melos_tiles_walls_brick_01c_100"}
+            { sprite = "melos_tiles_walls_brick_01c_97", northSprite = "melos_tiles_walls_brick_01c_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_6",
@@ -13169,13 +12457,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_98", northSprite = "melos_tiles_walls_brick_01c_99"}
+            { sprite = "melos_tiles_walls_brick_01c_98", northSprite = "melos_tiles_walls_brick_01c_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_End_Small",
@@ -13184,13 +12471,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_112", northSprite = "melos_tiles_walls_brick_01c_117"}
+            { sprite = "melos_tiles_walls_brick_01c_112", northSprite = "melos_tiles_walls_brick_01c_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_End_Medium",
@@ -13199,13 +12485,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_113", northSprite = "melos_tiles_walls_brick_01c_116"}
+            { sprite = "melos_tiles_walls_brick_01c_113", northSprite = "melos_tiles_walls_brick_01c_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_End_Big",
@@ -13214,17 +12499,16 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.TurquoiseBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01c_114", northSprite = "melos_tiles_walls_brick_01c_115"}
+            { sprite = "melos_tiles_walls_brick_01c_114", northSprite = "melos_tiles_walls_brick_01c_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Turquoise_Brick"),
@@ -13240,11 +12524,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_0",
@@ -13259,11 +12542,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_6",
@@ -13278,9 +12560,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_10",
@@ -13295,9 +12576,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_10",
@@ -13312,9 +12592,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_12",
@@ -13329,9 +12608,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_13",
@@ -13346,12 +12624,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_8",
@@ -13366,12 +12643,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_4",
@@ -13386,12 +12662,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_16",
@@ -13406,12 +12681,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_17",
@@ -13426,12 +12700,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_18",
@@ -13446,12 +12719,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_22",
@@ -13466,12 +12738,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_24",
@@ -13486,12 +12757,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_25",
@@ -13506,12 +12776,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01d_26",
@@ -13526,14 +12795,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_3", northSprite = "melos_tiles_walls_brick_01d_3"}
+            { sprite = "melos_tiles_walls_brick_01d_3", northSprite = "melos_tiles_walls_brick_01d_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Fence_Post",
@@ -13542,14 +12810,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01d_87", northSprite = "melos_tiles_walls_brick_01d_87"}
+            { sprite = "melos_tiles_walls_brick_01d_87", northSprite = "melos_tiles_walls_brick_01d_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Fence",
@@ -13558,7 +12825,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -13577,14 +12843,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01d_86", northSprite = "melos_tiles_walls_brick_01d_86"}
+            { sprite = "melos_tiles_walls_brick_01d_86", northSprite = "melos_tiles_walls_brick_01d_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_1",
@@ -13593,13 +12858,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_106", northSprite = "melos_tiles_walls_brick_01d_107"}
+            { sprite = "melos_tiles_walls_brick_01d_106", northSprite = "melos_tiles_walls_brick_01d_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_2",
@@ -13608,13 +12872,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_105", northSprite = "melos_tiles_walls_brick_01d_108"}
+            { sprite = "melos_tiles_walls_brick_01d_105", northSprite = "melos_tiles_walls_brick_01d_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_3",
@@ -13623,13 +12886,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_104", northSprite = "melos_tiles_walls_brick_01d_109"}
+            { sprite = "melos_tiles_walls_brick_01d_104", northSprite = "melos_tiles_walls_brick_01d_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_4",
@@ -13638,13 +12900,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_96", northSprite = "melos_tiles_walls_brick_01d_101"}
+            { sprite = "melos_tiles_walls_brick_01d_96", northSprite = "melos_tiles_walls_brick_01d_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_5",
@@ -13653,13 +12914,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_97", northSprite = "melos_tiles_walls_brick_01d_100"}
+            { sprite = "melos_tiles_walls_brick_01d_97", northSprite = "melos_tiles_walls_brick_01d_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_6",
@@ -13668,13 +12928,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_98", northSprite = "melos_tiles_walls_brick_01d_99"}
+            { sprite = "melos_tiles_walls_brick_01d_98", northSprite = "melos_tiles_walls_brick_01d_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_End_Small",
@@ -13683,13 +12942,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_112", northSprite = "melos_tiles_walls_brick_01d_117"}
+            { sprite = "melos_tiles_walls_brick_01d_112", northSprite = "melos_tiles_walls_brick_01d_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_End_Medium",
@@ -13698,13 +12956,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_113", northSprite = "melos_tiles_walls_brick_01d_116"}
+            { sprite = "melos_tiles_walls_brick_01d_113", northSprite = "melos_tiles_walls_brick_01d_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_End_Big",
@@ -13713,17 +12970,16 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BrownBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01d_114", northSprite = "melos_tiles_walls_brick_01d_115"}
+            { sprite = "melos_tiles_walls_brick_01d_114", northSprite = "melos_tiles_walls_brick_01d_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Brown_Brick"),
@@ -13739,11 +12995,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_0",
@@ -13758,11 +13013,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_6",
@@ -13777,9 +13031,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_10",
@@ -13794,9 +13047,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_10",
@@ -13811,9 +13063,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_12",
@@ -13828,9 +13079,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_13",
@@ -13845,12 +13095,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_8",
@@ -13865,12 +13114,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_4",
@@ -13885,12 +13133,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_16",
@@ -13905,12 +13152,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_17",
@@ -13925,12 +13171,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_18",
@@ -13945,12 +13190,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_22",
@@ -13965,12 +13209,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_24",
@@ -13985,12 +13228,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_25",
@@ -14005,12 +13247,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01e_26",
@@ -14025,14 +13266,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_3", northSprite = "melos_tiles_walls_brick_01e_3"}
+            { sprite = "melos_tiles_walls_brick_01e_3", northSprite = "melos_tiles_walls_brick_01e_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Fence_Post",
@@ -14041,14 +13281,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01e_87", northSprite = "melos_tiles_walls_brick_01e_87"}
+            { sprite = "melos_tiles_walls_brick_01e_87", northSprite = "melos_tiles_walls_brick_01e_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Fence",
@@ -14057,7 +13296,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -14076,14 +13314,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01e_86", northSprite = "melos_tiles_walls_brick_01e_86"}
+            { sprite = "melos_tiles_walls_brick_01e_86", northSprite = "melos_tiles_walls_brick_01e_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_1",
@@ -14092,13 +13329,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_106", northSprite = "melos_tiles_walls_brick_01e_107"}
+            { sprite = "melos_tiles_walls_brick_01e_106", northSprite = "melos_tiles_walls_brick_01e_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_2",
@@ -14107,13 +13343,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_105", northSprite = "melos_tiles_walls_brick_01e_108"}
+            { sprite = "melos_tiles_walls_brick_01e_105", northSprite = "melos_tiles_walls_brick_01e_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_3",
@@ -14122,13 +13357,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_104", northSprite = "melos_tiles_walls_brick_01e_109"}
+            { sprite = "melos_tiles_walls_brick_01e_104", northSprite = "melos_tiles_walls_brick_01e_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_4",
@@ -14137,13 +13371,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_96", northSprite = "melos_tiles_walls_brick_01e_101"}
+            { sprite = "melos_tiles_walls_brick_01e_96", northSprite = "melos_tiles_walls_brick_01e_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_5",
@@ -14152,13 +13385,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_97", northSprite = "melos_tiles_walls_brick_01e_100"}
+            { sprite = "melos_tiles_walls_brick_01e_97", northSprite = "melos_tiles_walls_brick_01e_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_6",
@@ -14167,13 +13399,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_98", northSprite = "melos_tiles_walls_brick_01e_99"}
+            { sprite = "melos_tiles_walls_brick_01e_98", northSprite = "melos_tiles_walls_brick_01e_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_End_Small",
@@ -14182,13 +13413,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_112", northSprite = "melos_tiles_walls_brick_01e_117"}
+            { sprite = "melos_tiles_walls_brick_01e_112", northSprite = "melos_tiles_walls_brick_01e_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_End_Medium",
@@ -14197,13 +13427,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_113", northSprite = "melos_tiles_walls_brick_01e_116"}
+            { sprite = "melos_tiles_walls_brick_01e_113", northSprite = "melos_tiles_walls_brick_01e_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_End_Big",
@@ -14212,24 +13441,23 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.BlueBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01e_114", northSprite = "melos_tiles_walls_brick_01e_115"}
+            { sprite = "melos_tiles_walls_brick_01e_114", northSprite = "melos_tiles_walls_brick_01e_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Brick"),
         "melos_tiles_walls_brick_01e_0",
         melosWallsBlueBrick
     )
-    
+
     local melosWallsOrangeBrick = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Wall",
@@ -14238,11 +13466,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_0",
@@ -14257,11 +13484,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_6",
@@ -14276,9 +13502,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_10",
@@ -14293,9 +13518,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_10",
@@ -14310,9 +13534,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_12",
@@ -14327,9 +13550,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_13",
@@ -14344,12 +13566,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_8",
@@ -14364,12 +13585,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_4",
@@ -14384,12 +13604,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_16",
@@ -14404,12 +13623,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_17",
@@ -14424,12 +13642,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_18",
@@ -14444,12 +13661,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_22",
@@ -14464,12 +13680,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_24",
@@ -14484,12 +13699,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_25",
@@ -14504,12 +13718,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01f_26",
@@ -14524,14 +13737,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_3", northSprite = "melos_tiles_walls_brick_01f_3"}
+            { sprite = "melos_tiles_walls_brick_01f_3", northSprite = "melos_tiles_walls_brick_01f_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Fence_Post",
@@ -14540,14 +13752,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01f_87", northSprite = "melos_tiles_walls_brick_01f_87"}
+            { sprite = "melos_tiles_walls_brick_01f_87", northSprite = "melos_tiles_walls_brick_01f_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Fence",
@@ -14556,7 +13767,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -14575,14 +13785,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01f_86", northSprite = "melos_tiles_walls_brick_01f_86"}
+            { sprite = "melos_tiles_walls_brick_01f_86", northSprite = "melos_tiles_walls_brick_01f_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_1",
@@ -14591,13 +13800,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_106", northSprite = "melos_tiles_walls_brick_01f_107"}
+            { sprite = "melos_tiles_walls_brick_01f_106", northSprite = "melos_tiles_walls_brick_01f_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_2",
@@ -14606,13 +13814,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_105", northSprite = "melos_tiles_walls_brick_01f_108"}
+            { sprite = "melos_tiles_walls_brick_01f_105", northSprite = "melos_tiles_walls_brick_01f_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_3",
@@ -14621,13 +13828,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_104", northSprite = "melos_tiles_walls_brick_01f_109"}
+            { sprite = "melos_tiles_walls_brick_01f_104", northSprite = "melos_tiles_walls_brick_01f_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_4",
@@ -14636,13 +13842,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_96", northSprite = "melos_tiles_walls_brick_01f_101"}
+            { sprite = "melos_tiles_walls_brick_01f_96", northSprite = "melos_tiles_walls_brick_01f_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_5",
@@ -14651,13 +13856,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_97", northSprite = "melos_tiles_walls_brick_01f_100"}
+            { sprite = "melos_tiles_walls_brick_01f_97", northSprite = "melos_tiles_walls_brick_01f_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_6",
@@ -14666,13 +13870,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_98", northSprite = "melos_tiles_walls_brick_01f_99"}
+            { sprite = "melos_tiles_walls_brick_01f_98", northSprite = "melos_tiles_walls_brick_01f_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_End_Small",
@@ -14681,13 +13884,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_112", northSprite = "melos_tiles_walls_brick_01f_117"}
+            { sprite = "melos_tiles_walls_brick_01f_112", northSprite = "melos_tiles_walls_brick_01f_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_End_Medium",
@@ -14696,13 +13898,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_113", northSprite = "melos_tiles_walls_brick_01f_116"}
+            { sprite = "melos_tiles_walls_brick_01f_113", northSprite = "melos_tiles_walls_brick_01f_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_End_Big",
@@ -14711,17 +13912,16 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.OrangeBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01f_114", northSprite = "melos_tiles_walls_brick_01f_115"}
+            { sprite = "melos_tiles_walls_brick_01f_114", northSprite = "melos_tiles_walls_brick_01f_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Orange_Brick"),
@@ -14729,7 +13929,7 @@ local function addMelosWallsBrickToMenu()
         melosWallsOrangeBrick
     )
 
-        
+
     local melosWallsGreenBrick = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Wall",
@@ -14738,11 +13938,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_0",
@@ -14757,11 +13956,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_6",
@@ -14776,9 +13974,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_10",
@@ -14793,9 +13990,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_10",
@@ -14810,9 +14006,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_12",
@@ -14827,9 +14022,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_13",
@@ -14844,12 +14038,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_8",
@@ -14864,12 +14057,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_4",
@@ -14884,12 +14076,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_16",
@@ -14904,12 +14095,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_17",
@@ -14924,12 +14114,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_18",
@@ -14944,12 +14133,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_22",
@@ -14964,12 +14152,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_24",
@@ -14984,12 +14171,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_25",
@@ -15004,12 +14190,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01g_26",
@@ -15024,14 +14209,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_3", northSprite = "melos_tiles_walls_brick_01g_3"}
+            { sprite = "melos_tiles_walls_brick_01g_3", northSprite = "melos_tiles_walls_brick_01g_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Fence_Post",
@@ -15040,14 +14224,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01g_87", northSprite = "melos_tiles_walls_brick_01g_87"}
+            { sprite = "melos_tiles_walls_brick_01g_87", northSprite = "melos_tiles_walls_brick_01g_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Fence",
@@ -15056,7 +14239,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -15075,14 +14257,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01g_86", northSprite = "melos_tiles_walls_brick_01g_86"}
+            { sprite = "melos_tiles_walls_brick_01g_86", northSprite = "melos_tiles_walls_brick_01g_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_1",
@@ -15091,13 +14272,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_106", northSprite = "melos_tiles_walls_brick_01g_107"}
+            { sprite = "melos_tiles_walls_brick_01g_106", northSprite = "melos_tiles_walls_brick_01g_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_2",
@@ -15106,13 +14286,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_105", northSprite = "melos_tiles_walls_brick_01g_108"}
+            { sprite = "melos_tiles_walls_brick_01g_105", northSprite = "melos_tiles_walls_brick_01g_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_3",
@@ -15121,13 +14300,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_104", northSprite = "melos_tiles_walls_brick_01g_109"}
+            { sprite = "melos_tiles_walls_brick_01g_104", northSprite = "melos_tiles_walls_brick_01g_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_4",
@@ -15136,13 +14314,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_96", northSprite = "melos_tiles_walls_brick_01g_101"}
+            { sprite = "melos_tiles_walls_brick_01g_96", northSprite = "melos_tiles_walls_brick_01g_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_5",
@@ -15151,13 +14328,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_97", northSprite = "melos_tiles_walls_brick_01g_100"}
+            { sprite = "melos_tiles_walls_brick_01g_97", northSprite = "melos_tiles_walls_brick_01g_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_6",
@@ -15166,13 +14342,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_98", northSprite = "melos_tiles_walls_brick_01g_99"}
+            { sprite = "melos_tiles_walls_brick_01g_98", northSprite = "melos_tiles_walls_brick_01g_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_End_Small",
@@ -15181,13 +14356,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_112", northSprite = "melos_tiles_walls_brick_01g_117"}
+            { sprite = "melos_tiles_walls_brick_01g_112", northSprite = "melos_tiles_walls_brick_01g_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_End_Medium",
@@ -15196,13 +14370,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_113", northSprite = "melos_tiles_walls_brick_01g_116"}
+            { sprite = "melos_tiles_walls_brick_01g_113", northSprite = "melos_tiles_walls_brick_01g_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_End_Big",
@@ -15211,17 +14384,16 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.GreenBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01g_114", northSprite = "melos_tiles_walls_brick_01g_115"}
+            { sprite = "melos_tiles_walls_brick_01g_114", northSprite = "melos_tiles_walls_brick_01g_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Green_Brick"),
@@ -15238,11 +14410,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_0",
@@ -15257,11 +14428,10 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_6",
@@ -15276,9 +14446,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_10",
@@ -15293,9 +14462,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_10",
@@ -15310,9 +14478,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_12",
@@ -15327,9 +14494,8 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_13",
@@ -15344,12 +14510,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_8",
@@ -15364,12 +14529,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_4",
@@ -15384,12 +14548,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_16",
@@ -15404,12 +14567,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_17",
@@ -15424,12 +14586,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_18",
@@ -15444,12 +14605,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_22",
@@ -15464,12 +14624,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_24",
@@ -15484,12 +14643,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_25",
@@ -15504,12 +14662,11 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "melos_tiles_walls_brick_01h_26",
@@ -15524,14 +14681,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_3", northSprite = "melos_tiles_walls_brick_01h_3"}
+            { sprite = "melos_tiles_walls_brick_01h_3", northSprite = "melos_tiles_walls_brick_01h_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Fence_Post",
@@ -15540,14 +14696,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01h_87", northSprite = "melos_tiles_walls_brick_01h_87"}
+            { sprite = "melos_tiles_walls_brick_01h_87", northSprite = "melos_tiles_walls_brick_01h_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Fence",
@@ -15556,7 +14711,6 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -15575,14 +14729,13 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_walls_brick_01h_86", northSprite = "melos_tiles_walls_brick_01h_86"}
+            { sprite = "melos_tiles_walls_brick_01h_86", northSprite = "melos_tiles_walls_brick_01h_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_1",
@@ -15591,13 +14744,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_106", northSprite = "melos_tiles_walls_brick_01h_107"}
+            { sprite = "melos_tiles_walls_brick_01h_106", northSprite = "melos_tiles_walls_brick_01h_107" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_2",
@@ -15606,13 +14758,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_105", northSprite = "melos_tiles_walls_brick_01h_108"}
+            { sprite = "melos_tiles_walls_brick_01h_105", northSprite = "melos_tiles_walls_brick_01h_108" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_3",
@@ -15621,13 +14772,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_104", northSprite = "melos_tiles_walls_brick_01h_109"}
+            { sprite = "melos_tiles_walls_brick_01h_104", northSprite = "melos_tiles_walls_brick_01h_109" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_4",
@@ -15636,13 +14786,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_96", northSprite = "melos_tiles_walls_brick_01h_101"}
+            { sprite = "melos_tiles_walls_brick_01h_96", northSprite = "melos_tiles_walls_brick_01h_101" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_5",
@@ -15651,13 +14800,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_97", northSprite = "melos_tiles_walls_brick_01h_100"}
+            { sprite = "melos_tiles_walls_brick_01h_97", northSprite = "melos_tiles_walls_brick_01h_100" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_6",
@@ -15666,13 +14814,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_98", northSprite = "melos_tiles_walls_brick_01h_99"}
+            { sprite = "melos_tiles_walls_brick_01h_98", northSprite = "melos_tiles_walls_brick_01h_99" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_End_Small",
@@ -15681,13 +14828,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleSmallBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_112", northSprite = "melos_tiles_walls_brick_01h_117"}
+            { sprite = "melos_tiles_walls_brick_01h_112", northSprite = "melos_tiles_walls_brick_01h_117" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_End_Medium",
@@ -15696,13 +14842,12 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_113", northSprite = "melos_tiles_walls_brick_01h_116"}
+            { sprite = "melos_tiles_walls_brick_01h_113", northSprite = "melos_tiles_walls_brick_01h_116" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_End_Big",
@@ -15711,17 +14856,16 @@ local function addMelosWallsBrickToMenu()
             BuildingMenu.PurpleBigBrickWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "melos_tiles_walls_brick_01h_114", northSprite = "melos_tiles_walls_brick_01h_115"}
+            { sprite = "melos_tiles_walls_brick_01h_114", northSprite = "melos_tiles_walls_brick_01h_115" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Walls"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Melos_Walls_Purple_Brick"),
@@ -15733,8 +14877,8 @@ end
 local function addDoorsToMenu()
     local melosDoorObjects = {}
     local doorOptionsTable = {
-        {start = 0, stop = 23, baseName = "melos_tiles_doors_02_"},
-        {start = 48, stop = 63, baseName = "melos_tiles_doors_02_"},
+        { start = 0,  stop = 23, baseName = "melos_tiles_doors_02_" },
+        { start = 48, stop = 63, baseName = "melos_tiles_doors_02_" },
     }
     for _, doorOptions in ipairs(doorOptionsTable) do
         for i = doorOptions.start, doorOptions.stop, 4 do
@@ -15753,10 +14897,9 @@ local function addDoorsToMenu()
                     BuildingMenu.WoodenDoorRecipe,
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
-                        modData = {wallType = "doorframe"}
+                        modData = { wallType = "doorframe" }
                     },
                     {
                         sprite = sprite,
@@ -15769,7 +14912,7 @@ local function addDoorsToMenu()
         end
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Doors"),
         "melos_tiles_doors_02_0",
         getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
@@ -15779,14 +14922,14 @@ local function addDoorsToMenu()
 
     melosDoorObjects = {}
     doorOptionsTable = {
-        {start = 0, stop = 47, baseName = "melos_tiles_doors_04_", recipe = "WoodenSingleGlassDoorRecipe"},
-        {start = 0, stop = 7, baseName = "melos_tiles_doors_01_", recipe = "WoodenDoubleGlassDoorRecipe"},
-        {start = 32, stop = 127, baseName = "melos_tiles_doors_01_", recipe = "WoodenSingleGlassDoorRecipe"},
-        {start = 40, stop = 47, baseName = "melos_tiles_doors_02_", recipe = "WoodenSingleGlassDoorRecipe"},
-        {start = 64, stop = 79, baseName = "melos_tiles_doors_02_", recipe = "WoodenSingleGlassDoorRecipe"},
-        {start = 80, stop = 83, baseName = "melos_tiles_doors_02_", recipe = "WoodenDoubleGlassDoorRecipe"},
-        {start = 96, stop = 107, baseName = "melos_tiles_doors_02_", recipe = "WoodenDoubleGlassDoorRecipe"},
-        {start = 96, stop = 119, baseName = "melos_tiles_doors_03_", recipe = "WoodenDoubleGlassDoorRecipe"},
+        { start = 0,  stop = 47,  baseName = "melos_tiles_doors_04_", recipe = "WoodenSingleGlassDoorRecipe" },
+        { start = 0,  stop = 7,   baseName = "melos_tiles_doors_01_", recipe = "WoodenDoubleGlassDoorRecipe" },
+        { start = 32, stop = 127, baseName = "melos_tiles_doors_01_", recipe = "WoodenSingleGlassDoorRecipe" },
+        { start = 40, stop = 47,  baseName = "melos_tiles_doors_02_", recipe = "WoodenSingleGlassDoorRecipe" },
+        { start = 64, stop = 79,  baseName = "melos_tiles_doors_02_", recipe = "WoodenSingleGlassDoorRecipe" },
+        { start = 80, stop = 83,  baseName = "melos_tiles_doors_02_", recipe = "WoodenDoubleGlassDoorRecipe" },
+        { start = 96, stop = 107, baseName = "melos_tiles_doors_02_", recipe = "WoodenDoubleGlassDoorRecipe" },
+        { start = 96, stop = 119, baseName = "melos_tiles_doors_03_", recipe = "WoodenDoubleGlassDoorRecipe" },
     }
     for _, doorOptions in ipairs(doorOptionsTable) do
         for i = doorOptions.start, doorOptions.stop, 4 do
@@ -15805,9 +14948,8 @@ local function addDoorsToMenu()
                     BuildingMenu[doorOptions.recipe],
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureLarge",
-                        modData = {wallType = "doorframe"}
+                        modData = { wallType = "doorframe" }
                     },
                     {
                         sprite = sprite,
@@ -15820,7 +14962,7 @@ local function addDoorsToMenu()
         end
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
@@ -15836,9 +14978,8 @@ local function addDoorsToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_doors_01_24",
@@ -15854,9 +14995,8 @@ local function addDoorsToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_doors_01_28",
@@ -15872,9 +15012,8 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_doors_01_8",
@@ -15890,9 +15029,8 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_doors_01_12",
@@ -15908,9 +15046,8 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_doors_01_16",
@@ -15926,9 +15063,8 @@ local function addDoorsToMenu()
             BuildingMenu.MetalSingleGlassDoorRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_doors_01_20",
@@ -15939,7 +15075,7 @@ local function addDoorsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_Metal_Doors"),
@@ -15966,7 +15102,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -15992,7 +15127,6 @@ local function addGarageDoorsToMenu()
             BuildingMenu.GarageDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             spriteData
@@ -16001,8 +15135,8 @@ local function addGarageDoorsToMenu()
 
     local melosGarageDoorsObjects = {}
     local garageDoorSpriteRanges = {
-        set1 = {0, 16, 32, 48, 64, 96},
-        set2 = {0, 32, 64, 96}
+        set1 = { 0, 16, 32, 48, 64, 96 },
+        set2 = { 0, 32, 64, 96 }
     }
 
     for _, startNumber in ipairs(garageDoorSpriteRanges.set1) do
@@ -16014,7 +15148,7 @@ local function addGarageDoorsToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
@@ -16032,7 +15166,7 @@ local function addGarageDoorsToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Doors"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
@@ -16050,7 +15184,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.WindowRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -16061,12 +15194,12 @@ local function addWindowsPlusToMenu()
     end
 
     local melosWindows = {}
-    local dataRusticWindows = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120}
+    local dataRusticWindows = { 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120 }
     for _, startNumber in ipairs(dataRusticWindows) do
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_03_", startNumber))
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         "melos_tiles_windows_03_0",
         getText("IGUI_BuildingMenuSubCat_Windows_Rustic_Windows"),
@@ -16075,13 +15208,13 @@ local function addWindowsPlusToMenu()
     )
 
     melosWindows = {}
-    local dataRound = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72}
+    local dataRound = { 0, 8, 16, 24, 32, 40, 48, 56, 64, 72 }
     for _, startNumber in ipairs(dataRound) do
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_04_", startNumber))
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Round_Windows"),
@@ -16090,7 +15223,7 @@ local function addWindowsPlusToMenu()
     )
 
     melosWindows = {}
-    local dataModern1 = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112}
+    local dataModern1 = { 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112 }
     for _, startNumber in ipairs(dataModern1) do
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_05_", startNumber))
     end
@@ -16098,7 +15231,7 @@ local function addWindowsPlusToMenu()
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_05a_", startNumber))
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Modern1_Windows"),
@@ -16107,7 +15240,7 @@ local function addWindowsPlusToMenu()
     )
 
     melosWindows = {}
-    local dataModern2 = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112}
+    local dataModern2 = { 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112 }
     for _, startNumber in ipairs(dataModern2) do
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_05b_", startNumber))
     end
@@ -16115,7 +15248,7 @@ local function addWindowsPlusToMenu()
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_05c_", startNumber))
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Modern2_Windows"),
@@ -16124,7 +15257,7 @@ local function addWindowsPlusToMenu()
     )
 
     melosWindows = {}
-    local dataModernExtended1 = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112}
+    local dataModernExtended1 = { 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112 }
     for _, startNumber in ipairs(dataModernExtended1) do
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_06_", startNumber))
     end
@@ -16132,7 +15265,7 @@ local function addWindowsPlusToMenu()
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_06a_", startNumber))
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Modern_Extended1_Windows"),
@@ -16141,7 +15274,7 @@ local function addWindowsPlusToMenu()
     )
 
     melosWindows = {}
-    local dataModernExtended2 = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112}
+    local dataModernExtended2 = { 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112 }
     for _, startNumber in ipairs(dataModernExtended2) do
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_06b_", startNumber))
     end
@@ -16149,7 +15282,7 @@ local function addWindowsPlusToMenu()
         table.insert(melosWindows, createWindowObject("melos_tiles_windows_06c_", startNumber))
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Modern_Extended2_Windows"),
@@ -16164,7 +15297,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_0",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_5",
@@ -16177,7 +15310,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_1",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_4",
@@ -16190,7 +15323,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_2",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_3",
@@ -16203,7 +15336,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_32",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_37",
@@ -16216,7 +15349,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_33",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_36",
@@ -16229,7 +15362,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_34",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_35",
@@ -16242,7 +15375,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_64",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_69",
@@ -16255,7 +15388,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_65",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_68",
@@ -16268,7 +15401,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_66",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_67",
@@ -16281,7 +15414,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.RedBigWindowWoodWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_98",
                 northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_99",
@@ -16295,12 +15428,11 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_54",
@@ -16316,7 +15448,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16337,7 +15468,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16356,7 +15486,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16375,7 +15504,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16394,7 +15522,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16413,7 +15540,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16432,7 +15558,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16451,7 +15576,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.RedSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16465,7 +15589,7 @@ local function addWindowsPlusToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Dark_Red_Brick_Triple_Large"),
@@ -16480,7 +15604,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_0",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_5",
@@ -16493,7 +15617,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_1",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_4",
@@ -16506,7 +15630,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_2",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_3",
@@ -16519,7 +15643,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_32",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_37",
@@ -16532,7 +15656,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_33",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_36",
@@ -16545,7 +15669,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_34",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_35",
@@ -16558,7 +15682,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_64",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_69",
@@ -16571,7 +15695,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_65",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_68",
@@ -16584,7 +15708,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_66",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_67",
@@ -16597,7 +15721,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.GreyBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_98",
                 northSprite = "melos_tiles_windows_triple_large_grey_brick_01_99",
@@ -16611,12 +15735,11 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_windows_triple_large_grey_brick_01_54",
@@ -16632,7 +15755,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16653,7 +15775,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16672,7 +15793,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16691,7 +15811,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16710,7 +15829,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16729,7 +15847,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16748,7 +15865,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16767,7 +15883,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.GreySmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16781,7 +15896,7 @@ local function addWindowsPlusToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Dark_Grey_Brick_Triple_Large"),
@@ -16796,7 +15911,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_0",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_5",
@@ -16809,7 +15924,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_1",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_4",
@@ -16822,7 +15937,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_2",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_3",
@@ -16835,7 +15950,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_32",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_37",
@@ -16848,7 +15963,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_33",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_36",
@@ -16861,7 +15976,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_34",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_35",
@@ -16874,7 +15989,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_64",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_69",
@@ -16887,7 +16002,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_65",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_68",
@@ -16900,7 +16015,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_66",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_67",
@@ -16913,7 +16028,7 @@ local function addWindowsPlusToMenu()
             BuildingMenu.onBuildWindowWall,
             BuildingMenu.YellowBigWoodWindowWallRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
+            { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_98",
                 northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_99",
@@ -16927,12 +16042,11 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
                 sprite = "melos_tiles_windows_triple_large_yellow_brick_01_54",
@@ -16948,7 +16062,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -16969,7 +16082,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -16988,7 +16100,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -17007,7 +16118,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17026,7 +16136,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -17045,7 +16154,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 hoppable = true,
@@ -17064,7 +16172,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17083,7 +16190,6 @@ local function addWindowsPlusToMenu()
             BuildingMenu.YellowSmallWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureSmall",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17097,7 +16203,7 @@ local function addWindowsPlusToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Windows"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Windows_Dark_Yellow_Brick_Triple_Large"),
@@ -17115,7 +16221,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -17135,14 +16240,13 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_fencing_02_52", northSprite = "melos_tiles_fencing_02_52"}
+            { sprite = "melos_tiles_fencing_02_52", northSprite = "melos_tiles_fencing_02_52" }
         ),
         BuildingMenu.createObject(
             "",
@@ -17151,7 +16255,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -17171,14 +16274,13 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_fencing_02_60", northSprite = "melos_tiles_fencing_02_60"}
+            { sprite = "melos_tiles_fencing_02_60", northSprite = "melos_tiles_fencing_02_60" }
         ),
         BuildingMenu.createObject(
             "",
@@ -17187,9 +16289,8 @@ local function addHighFencesToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_fencing_02_36",
@@ -17206,8 +16307,7 @@ local function addHighFencesToMenu()
             true,
             {
                 completionSound = "BuildMetalStructureWallFrame",
-                noNeedHammer = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "melos_tiles_fencing_02_32",
@@ -17221,14 +16321,13 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFencePostRecipe,
             "Make Metal Fences",
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "melos_tiles_fencing_02_34", northSprite = "melos_tiles_fencing_02_35"}
+            { sprite = "melos_tiles_fencing_02_34", northSprite = "melos_tiles_fencing_02_35" }
         ),
         BuildingMenu.createObject(
             "",
@@ -17237,7 +16336,6 @@ local function addHighFencesToMenu()
             BuildingMenu.MetalDoorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 dontNeedFrame = true,
                 canBarricade = false,
@@ -17264,11 +16362,11 @@ end
 local function addFloorsToMenu()
     local baseNameMelosFloors = "melos_tiles_floors_01_"
     local dataFloors = {
-        wooden = {8, 9, 10, 11, 48, 49, 50, 51, 52, 53, 54, 55},
-        checkeredSmall = {92, 93, 94, 95},
+        wooden = { 8, 9, 10, 11, 48, 49, 50, 51, 52, 53, 54, 55 },
+        checkeredSmall = { 92, 93, 94, 95 },
         checkeredLarge = { 0, 1, 2, 3, 4, 5, 6, 7, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 72, 73, 74, 75, 81, 82, 83, 84, 85, 86, 87 },
-        diagonal = {76, 77, 78, 79, 104, 105, 106, 107, 112, 113, 114, 115},
-        special = {24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 42, 43},
+        diagonal = { 76, 77, 78, 79, 104, 105, 106, 107, 112, 113, 114, 115 },
+        special = { 24, 25, 26, 27, 36, 37, 38, 39, 40, 41, 42, 43 },
         carpet = { 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 96, 97, 98, 99, 100, 101, 102, 103, 108, 109, 110, 111, 116, 117, 118, 119 }
     }
     local function createAndAddFloorObjects(subCategory, spriteNumbers)
@@ -17283,7 +16381,6 @@ local function addFloorsToMenu()
                     BuildingMenu.TwoSpriteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = false,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
@@ -17320,7 +16417,6 @@ local function addMelosStairsToMenu()
             BuildingMenu.WoodenStairsRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = false
             },
@@ -17339,18 +16435,18 @@ local function addMelosStairsToMenu()
     end
 
     local melosWoodenStairs = {}
-    local dataStairs = {16, 19, 32, 35, 48, 51, 64, 67, 80, 83, 96, 99, 112, 115}
+    local dataStairs = { 16, 19, 32, 35, 48, 51, 64, 67, 80, 83, 96, 99, 112, 115 }
     for _, startNumber in ipairs(dataStairs) do
         table.insert(melosWoodenStairs, createWoodenStairsObject("melos_tiles_stairs_01_", startNumber))
     end
 
-    dataStairs = {0, 16, 19, 32, 35, 48, 51, 64, 67, 80, 83, 96, 99, 112, 115}
+    dataStairs = { 0, 16, 19, 32, 35, 48, 51, 64, 67, 80, 83, 96, 99, 112, 115 }
     for _, startNumber in ipairs(dataStairs) do
         table.insert(melosWoodenStairs, createWoodenStairsObject("melos_tiles_stairs_02_", startNumber))
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Stairs"),
         "melos_tiles_stairs_01_16",
         getText("IGUI_BuildingMenuSubCat_Stairs_Wooden"),
@@ -17366,7 +16462,6 @@ local function addMelosStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
             },
@@ -17389,7 +16484,6 @@ local function addMelosStairsToMenu()
             BuildingMenu.MetalStairsRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = false
             },
@@ -17407,7 +16501,7 @@ local function addMelosStairsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Stairs"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Stairs_Metal"),
@@ -17425,7 +16519,6 @@ local function addKitchenCountersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -17439,7 +16532,7 @@ local function addKitchenCountersToMenu()
     end
 
     local melosCounters = {}
-    local dataCounters = {3, 2, 19, 18, 35, 34, 51, 50, 67, 66, 83, 82, 99, 98, 115, 114}
+    local dataCounters = { 3, 2, 19, 18, 35, 34, 51, 50, 67, 66, 83, 82, 99, 98, 115, 114 }
 
     table.insert(melosCounters, createCounterObject("melos_tiles_furniture_counters_02_", 3))
     table.insert(melosCounters, createCounterObject("melos_tiles_furniture_counters_02_", 2))
@@ -17447,7 +16540,7 @@ local function addKitchenCountersToMenu()
         table.insert(melosCounters, createCounterObject("melos_tiles_furniture_counters_01_", spriteNumber))
     end
     BuildingMenu.addObjectsToCategories(
-    "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Containers"),
         "melos_tiles_furniture_counters_02_3",
         getText("IGUI_BuildingMenuSubCat_Containers_Residential"),
@@ -17456,12 +16549,12 @@ local function addKitchenCountersToMenu()
     )
 
     melosCounters = {}
-    local dataUpperCounters = {11, 10, 27, 26, 43, 42, 59, 58, 75, 74, 91, 90, 107, 106, 123, 122}
+    local dataUpperCounters = { 11, 10, 27, 26, 43, 42, 59, 58, 75, 74, 91, 90, 107, 106, 123, 122 }
     for _, spriteNumber in ipairs(dataUpperCounters) do
         table.insert(melosCounters, createCounterObject("melos_tiles_furniture_counters_01_", spriteNumber))
     end
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Containers"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Containers_Upper_Counters"),
@@ -17479,9 +16572,7 @@ local function addMetalContainersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = false,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -17506,7 +16597,7 @@ local function addMetalContainersToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Containers"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
@@ -17524,13 +16615,9 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = false,
                 dismantable = true,
-                containerType = "logs",
-                capacity = 100
             },
             {
                 sprite = "melos_tiles_gardencenter_02_107",
@@ -17546,13 +16633,9 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = false,
                 dismantable = true,
-                containerType = "logs",
-                capacity = 100
             },
             {
                 sprite = "melos_tiles_gardencenter_02_115",
@@ -17568,13 +16651,8 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = false,
                 dismantable = true,
-                containerType = "logs",
-                capacity = 100
             },
             {
                 sprite = "melos_tiles_gardencenter_02_119",
@@ -17590,13 +16668,9 @@ local function addContainersOthersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 renderFloorHelper = false,
-                canBeAlwaysPlaced = false,
                 dismantable = true,
-                containerType = "logs",
-                capacity = 100
             },
             {
                 sprite = "melos_tiles_gardencenter_02_111",
@@ -17608,17 +16682,17 @@ local function addContainersOthersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-         getText("IGUI_BuildingMenuCat_Containers"),
-         nil,
-         getText("IGUI_BuildingMenuSubCat_Containers_Others"),
-         "melos_tiles_gardencenter_02_104",
-         melosCounters
-     )
+        getText("IGUI_BuildingMenuCat_Containers"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Containers_Others"),
+        "melos_tiles_gardencenter_02_104",
+        melosCounters
+    )
 end
 
 local function addMelosSmallTablesToMenu()
     local melosSmallTables = {}
-    local dataSmallTables = {0, 4, 5, 8, 11, 12, 13, 16, 17, 18, 19, 20}
+    local dataSmallTables = { 0, 4, 5, 8, 11, 12, 13, 16, 17, 18, 19, 20 }
 
     local function createMelosSmallTable(spriteIndex)
         return BuildingMenu.createObject(
@@ -17628,7 +16702,6 @@ local function addMelosSmallTablesToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -17643,7 +16716,7 @@ local function addMelosSmallTablesToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         "melos_tiles_furniture_tables_01_0",
         getText("IGUI_BuildingMenuSubCat_Furniture_Small_Tables"),
@@ -17660,7 +16733,6 @@ local function createDoubleTileFurnitureObject(tooltip, recipe, sprite, sprite2,
         recipe,
         true,
         {
-            noNeedHammer = false,
             completionSound = "BuildWoodenStructureLarge"
         },
         {
@@ -17742,7 +16814,7 @@ local function addMelosLargeTablesToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Large_Tables"),
@@ -17822,7 +16894,7 @@ local function addMelosSimpleBedsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Simple_Beds"),
@@ -17840,7 +16912,6 @@ local function addMelosLargeBedsToMenu()
             BuildingMenu.BedRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
@@ -17858,16 +16929,16 @@ local function addMelosLargeBedsToMenu()
 
 
     local melosLargeBeds = {}
-    local  dataLargeBed = {
-        {15, 14, 12, 13, 8, 9, 11, 10},
-        {35, 33, 32, 34, 36, 38, 39, 37},
-        {43, 41, 40, 42, 44, 46, 47, 45},
-        {67, 65, 64, 66, 68, 70, 71, 69},
-        {75, 73, 72, 74, 76, 78, 79, 77},
-        {91, 89, 88, 90, 92, 94, 95, 93},
-        {99, 97, 96, 98, 100, 102, 103, 101},
-        {115, 113, 112, 114, 116, 118, 119, 117},
-        {123, 121, 120, 122, 124, 126, 127, 125},
+    local dataLargeBed = {
+        { 15,  14,  12,  13,  8,   9,   11,  10 },
+        { 35,  33,  32,  34,  36,  38,  39,  37 },
+        { 43,  41,  40,  42,  44,  46,  47,  45 },
+        { 67,  65,  64,  66,  68,  70,  71,  69 },
+        { 75,  73,  72,  74,  76,  78,  79,  77 },
+        { 91,  89,  88,  90,  92,  94,  95,  93 },
+        { 99,  97,  96,  98,  100, 102, 103, 101 },
+        { 115, 113, 112, 114, 116, 118, 119, 117 },
+        { 123, 121, 120, 122, 124, 126, 127, 125 },
     }
     for j, data in ipairs(dataLargeBed) do
         table.insert(melosLargeBeds, createFourTileFurnitureObject("melos_tiles_furniture_bedding_01_", data))
@@ -17879,22 +16950,22 @@ local function addMelosLargeBedsToMenu()
         "melos_tiles_furniture_bedding_03_"
     }
     dataLargeBed = {
-        {7, 6, 4, 5, 0, 1, 3, 2},
-        {15, 14, 12, 13, 8, 9, 11, 10},
-        {23, 22, 20, 21, 16, 17, 19, 18},
-        {31, 30, 28, 29, 24, 25, 27, 26},
-        {35, 33, 32, 34, 36, 38, 39, 37},
-        {43, 41, 40, 42, 44, 46, 47, 45},
-        {51, 49, 48, 50, 52, 54, 55, 53},
-        {59, 57, 56, 58, 60, 62, 63, 61},
-        {67, 65, 64, 66, 68, 70, 71, 69},
-        {75, 73, 72, 74, 76, 78, 79, 77},
-        {83, 81, 80, 82, 84, 86, 87, 85},
-        {91, 89, 88, 90, 92, 94, 95, 93},
-        {99, 97, 96, 98, 100, 102, 103, 101},
-        {107, 105, 104, 106, 108, 110, 111, 109},
-        {115, 113, 112, 114, 116, 118, 119, 117},
-        {123, 121, 120, 122, 124, 126, 127, 125},
+        { 7,   6,   4,   5,   0,   1,   3,   2 },
+        { 15,  14,  12,  13,  8,   9,   11,  10 },
+        { 23,  22,  20,  21,  16,  17,  19,  18 },
+        { 31,  30,  28,  29,  24,  25,  27,  26 },
+        { 35,  33,  32,  34,  36,  38,  39,  37 },
+        { 43,  41,  40,  42,  44,  46,  47,  45 },
+        { 51,  49,  48,  50,  52,  54,  55,  53 },
+        { 59,  57,  56,  58,  60,  62,  63,  61 },
+        { 67,  65,  64,  66,  68,  70,  71,  69 },
+        { 75,  73,  72,  74,  76,  78,  79,  77 },
+        { 83,  81,  80,  82,  84,  86,  87,  85 },
+        { 91,  89,  88,  90,  92,  94,  95,  93 },
+        { 99,  97,  96,  98,  100, 102, 103, 101 },
+        { 107, 105, 104, 106, 108, 110, 111, 109 },
+        { 115, 113, 112, 114, 116, 118, 119, 117 },
+        { 123, 121, 120, 122, 124, 126, 127, 125 },
     }
 
     for i, category in ipairs(bedCategories) do
@@ -17905,7 +16976,7 @@ local function addMelosLargeBedsToMenu()
 
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Large_Beds"),
@@ -17923,7 +16994,6 @@ local function addMelosCouchesToMenu()
             recipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18177,7 +17247,7 @@ local function addMelosCouchesToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
@@ -18195,7 +17265,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18213,7 +17282,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18231,7 +17299,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18251,7 +17318,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18271,7 +17337,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18291,7 +17356,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18311,7 +17375,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18331,7 +17394,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.PaddedChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18351,7 +17413,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.MetalChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18371,7 +17432,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.MetalChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18391,7 +17451,6 @@ local function addMelosCharisToMenu()
             BuildingMenu.MetalChairRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canPassThrough = true,
                 isThumpable = true,
@@ -18406,7 +17465,7 @@ local function addMelosCharisToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Chairs"),
@@ -18424,7 +17483,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18442,7 +17500,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18460,7 +17517,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -18478,7 +17534,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18496,7 +17551,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18515,9 +17569,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -18534,7 +17586,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18551,7 +17602,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18568,7 +17618,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -18590,7 +17639,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18608,7 +17656,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18626,7 +17673,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -18644,7 +17690,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18662,7 +17707,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18681,9 +17725,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -18700,7 +17742,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18717,7 +17758,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18734,7 +17774,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -18756,7 +17795,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18774,7 +17812,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18792,7 +17829,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -18810,7 +17846,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18828,7 +17863,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18847,9 +17881,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -18866,7 +17898,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18883,7 +17914,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -18900,7 +17930,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -18922,7 +17951,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18940,7 +17968,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18958,7 +17985,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -18976,7 +18002,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -18994,7 +18019,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19013,9 +18037,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19032,7 +18054,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19049,7 +18070,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19066,7 +18086,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -19088,7 +18107,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19106,7 +18124,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19124,7 +18141,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -19142,7 +18158,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19160,7 +18175,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19179,9 +18193,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19198,7 +18210,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19215,7 +18226,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19232,7 +18242,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -19254,7 +18263,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19272,7 +18280,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19290,7 +18297,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -19308,7 +18314,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19326,7 +18331,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19345,9 +18349,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19364,7 +18366,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19381,7 +18382,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19398,7 +18398,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -19420,7 +18419,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19438,7 +18436,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19456,7 +18453,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -19474,7 +18470,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19492,7 +18487,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19511,9 +18505,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19530,7 +18522,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19547,7 +18538,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19564,7 +18554,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -19586,7 +18575,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19604,7 +18592,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19622,7 +18609,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -19640,7 +18626,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19658,7 +18643,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19677,9 +18661,7 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19696,7 +18678,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19713,7 +18694,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19730,7 +18710,6 @@ local function addMelosFurnitureSet1ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -19747,7 +18726,7 @@ local function addMelosFurnitureSet1ToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Melos_Furniture_Sets_1"),
@@ -19765,7 +18744,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19783,7 +18761,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19801,7 +18778,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -19819,7 +18795,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19837,7 +18812,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19856,9 +18830,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -19875,7 +18847,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19892,7 +18863,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -19909,7 +18879,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -19931,7 +18900,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19949,7 +18917,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -19967,7 +18934,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -19985,7 +18951,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20003,7 +18968,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20022,9 +18986,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20041,7 +19003,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20058,7 +19019,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20075,7 +19035,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -20097,7 +19056,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20115,7 +19073,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20133,7 +19090,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -20151,7 +19107,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20169,7 +19124,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20188,9 +19142,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20207,7 +19159,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20224,7 +19175,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20241,7 +19191,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -20263,7 +19212,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20281,7 +19229,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20299,7 +19246,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -20317,7 +19263,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20335,7 +19280,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20354,9 +19298,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20373,7 +19315,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20390,7 +19331,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20407,7 +19347,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -20429,7 +19368,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20447,7 +19385,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20465,7 +19402,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -20483,7 +19419,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20501,7 +19436,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20520,9 +19454,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20539,7 +19471,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20556,7 +19487,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20573,7 +19503,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -20595,7 +19524,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20613,7 +19541,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20631,7 +19558,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -20649,7 +19575,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20667,7 +19592,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20686,9 +19610,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20705,7 +19627,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20722,7 +19643,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20739,7 +19659,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -20761,7 +19680,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20779,7 +19697,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20797,7 +19714,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -20815,7 +19731,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20833,7 +19748,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20852,9 +19766,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -20871,7 +19783,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20888,7 +19799,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -20905,7 +19815,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -20927,7 +19836,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20945,7 +19853,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20963,7 +19870,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 canBeLockedByPadlock = true
             },
@@ -20981,7 +19887,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true
             },
@@ -20999,7 +19904,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -21018,9 +19922,7 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
-                canBeAlwaysPlaced = false,
                 canBeLockedByPadlock = true
             },
             {
@@ -21037,7 +19939,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -21054,7 +19955,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 renderFloorHelper = true
@@ -21071,7 +19971,6 @@ local function addMelosFurnitureSet2ToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -21088,7 +19987,7 @@ local function addMelosFurnitureSet2ToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Furniture"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Furniture_Melos_Furniture_Sets_2"),
@@ -21106,13 +20005,12 @@ local function addMelosFlowersToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
                 isCorner = true
             },
-            {sprite = sprite, northSprite = northSprite}
+            { sprite = sprite, northSprite = northSprite }
         )
     end
 
@@ -21136,7 +20034,7 @@ local function addMelosFlowersToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Vegetation"),
         "melos_tiles_gardencenter_01_0",
         getText("IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor"),
@@ -21154,7 +20052,6 @@ local function addMelosPlantersToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 renderFloorHelper = true,
                 blockAllTheSquare = false,
@@ -21174,7 +20071,7 @@ local function addMelosPlantersToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Vegetation"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Vegetation_Melos_Flower_Planter_Set1"),
@@ -21188,7 +20085,7 @@ local function addMelosPlantersToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Vegetation"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Vegetation_Melos_Flower_Planter_Set2"),
@@ -21206,7 +20103,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21228,7 +20124,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21250,7 +20145,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21272,7 +20166,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21294,7 +20187,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21312,7 +20204,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21330,7 +20221,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21348,7 +20238,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21366,7 +20255,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21384,7 +20272,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21402,7 +20289,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21420,7 +20306,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21438,7 +20323,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21456,7 +20340,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21474,7 +20357,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21492,7 +20374,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21510,7 +20391,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21528,7 +20408,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21546,7 +20425,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21564,7 +20442,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21582,7 +20459,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21600,7 +20476,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21618,7 +20493,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21636,7 +20510,6 @@ local function addMelosWallVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21653,7 +20526,7 @@ local function addMelosWallVinesToMenu()
 
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Vegetation"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Vegetation_Vines"),
@@ -21671,7 +20544,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21689,7 +20561,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21707,7 +20578,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21726,7 +20596,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21744,7 +20613,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21762,7 +20630,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21781,7 +20648,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21799,7 +20665,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21817,7 +20682,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21836,7 +20700,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21854,7 +20717,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21872,7 +20734,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21891,7 +20752,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21909,7 +20769,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21927,7 +20786,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21946,7 +20804,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21964,7 +20821,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21982,7 +20838,6 @@ local function addMelosGrapeVinesToMenu()
             BuildingMenu.WallVinesRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22000,7 +20855,7 @@ local function addMelosGrapeVinesToMenu()
 
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Vegetation"),
         nil,
         getText("IGUI_BuildingMenuSubCat_Vegetation_Vines"),
@@ -22018,10 +20873,8 @@ local function addMelosCookingObjsToMenu()
             BuildingMenu.OvenRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = false,
                 renderFloorHelper = false
             },
             {
@@ -22046,7 +20899,7 @@ local function addMelosCookingObjsToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Appliances"),
         "melos_tiles_appliances_01_0",
         getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
@@ -22064,17 +20917,15 @@ local function addMelosFridgesToMenu()
             recipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 dismantable = true
             },
             sprites
         )
     end
-    
+
     local function createFridgeSprites(baseIndex)
         return {
             sprite = "melos_tiles_appliances_01_" .. baseIndex,
@@ -22083,9 +20934,9 @@ local function addMelosFridgesToMenu()
             southSprite = "melos_tiles_appliances_01_" .. (baseIndex + 1)
         }
     end
-    
+
     local melosFridgesObjects = {}
-    
+
     for i = 65, 77, 4 do
         local sprites = createFridgeSprites(i)
         table.insert(melosFridgesObjects, createFridgeObject(BuildingMenu.FridgeRecipe, false, sprites))
@@ -22097,8 +20948,8 @@ local function addMelosFridgesToMenu()
     end
 
     local additionalFridges = {
-        {sprite = "melos_tiles_appliances_01_87", sprite2 = "melos_tiles_appliances_01_86", northSprite = "melos_tiles_appliances_01_84", northSprite2 = "melos_tiles_appliances_01_85"},
-        {sprite = "melos_tiles_appliances_01_93", sprite2 = "melos_tiles_appliances_01_92", northSprite = "melos_tiles_appliances_01_94", northSprite2 = "melos_tiles_appliances_01_95"},
+        { sprite = "melos_tiles_appliances_01_87", sprite2 = "melos_tiles_appliances_01_86", northSprite = "melos_tiles_appliances_01_84", northSprite2 = "melos_tiles_appliances_01_85" },
+        { sprite = "melos_tiles_appliances_01_93", sprite2 = "melos_tiles_appliances_01_92", northSprite = "melos_tiles_appliances_01_94", northSprite2 = "melos_tiles_appliances_01_95" },
     }
 
     for _, fridgeData in ipairs(additionalFridges) do
@@ -22106,7 +20957,7 @@ local function addMelosFridgesToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-       "Melos",
+        "Melos",
         getText("IGUI_BuildingMenuCat_Appliances"),
         "melos_tiles_appliances_01_87",
         getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),

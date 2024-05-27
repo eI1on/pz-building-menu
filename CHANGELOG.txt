@@ -1,4 +1,29 @@
- MAY 24
+27 MAY 24
+Hotfix
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Added Curtains Category (default = [b]disabled[/b])
+[*] Fixed Container Types and Capacity
+[/list]
+Melos Tiles Addon:
+[list]
+[*] Added Curtains Category
+[/list]
+Daddy Dirkie Tiles Addon:
+[list]
+[*] Added Dirt, Sand and Asphalt Ramps (default = [b]disabled[/b])
+[*] Fixed Secret Entrances Shelf containers
+[/list]
+[/list]
+
+
+
+
+23 MAY 24
+a1e68cd
 
 Changelog:
 [list]
@@ -7,7 +32,8 @@ Main mod:
 [*] Corrected some tile properties for containers
 [*] Water wells can now only be built on ground level and only on grass/dirt tiles
 [*] Restricted the total number of containers per tile to 8 to prevent errors
-[*] [/i]Finally[i] fixed icons with modded item icons
+[*] Improved validity of buildable objects 
+[*] [i] Finally [/i] fixed icons with modded item icons
 [/list]
 Daddy Dirkie Tiles Addon:
 [list]

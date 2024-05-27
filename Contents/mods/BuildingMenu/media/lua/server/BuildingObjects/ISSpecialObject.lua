@@ -50,7 +50,6 @@ function ISSpecialObject:new(sprite, northSprite, character)
     o.character = character;
     o.player = character:getPlayerNum();
 	o.dismantable = true;
-    o.noNeedHammer = true;
     o.canBeAlwaysPlaced = false;
 	o.maxTime = 150;
     return o

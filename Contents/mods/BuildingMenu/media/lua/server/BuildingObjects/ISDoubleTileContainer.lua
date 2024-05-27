@@ -37,7 +37,6 @@ function ISDoubleTileContainer:new(playerNum, name, sprite, sprite2, northSprite
 	return o;
 end
 
-
 ---Creates the container and places it in the world
 ---@param x integer The x coordinate in the world
 ---@param y integer The y coordinate in the world
@@ -65,7 +64,6 @@ function ISDoubleTileContainer:create(x, y, z, north, sprite)
 	self.modData = oldModData;
 	buildUtil.consumeMaterial(self);
 end
-
 
 ---Sets information for the container object
 --- @param x number x coordinate in the world
@@ -107,10 +105,9 @@ function ISDoubleTileContainer:createPart(x, y, z, north, sprite)
 	buildUtil.setInfo(thumpable, self);
 
 	square:AddSpecialObject(thumpable);
-    square:RecalcAllWithNeighbours(true);
+	square:RecalcAllWithNeighbours(true);
 	thumpable:transmitCompleteItemToServer();
 end
-
 
 ---Determines which square the player should walk to in order to interact with the container
 ---@param x integer The x coordinate in the world
@@ -127,7 +124,6 @@ function ISDoubleTileContainer:walkTo(x, y, z)
 	end
 	return luautils.walkAdj(playerObj, square2);
 end
-
 
 ---Removes the container object from the ground
 ---@param square IsoGridSquare The square from which to remove the container
@@ -159,7 +155,6 @@ function ISDoubleTileContainer:removeFromGround(square)
 	end
 end
 
-
 ---Calculates the health of the container based on certain conditions
 ---@return integer health
 function ISDoubleTileContainer:getHealth()
@@ -173,7 +168,6 @@ function ISDoubleTileContainer:getHealth()
 	end
 	return 500 + buildUtil.getWoodHealth(self);
 end
-
 
 --- Renders a ghost tile of the container for placement preview
 ---@param x integer The x coordinate in the world
@@ -226,7 +220,6 @@ function ISDoubleTileContainer:render(x, y, z, square)
 	self:renderPart(spriteAName, xa, ya, za, spriteAFree);
 end
 
-
 ---Renders a part of the container
 ---@param spriteName string The name of the sprite to render
 ---@param x integer x coordinate in the world
@@ -247,7 +240,6 @@ function ISDoubleTileContainer:renderPart(spriteName, x, y, z, isFree)
 	end
 end
 
-
 ---Renders a floor helper tile
 ---@param index integer The index of the part to check for
 ---@param x integer x coordinate in the world
@@ -264,7 +256,6 @@ function ISDoubleTileContainer:renderFloorHelperTile(index, x, y, z)
 	end
 	self.RENDER_SPRITE_FLOOR_CACHE[index]:RenderGhostTile(x, y, z);
 end
-
 
 local function checkSquare(squareToCheck, selfIsLow, selfIsHigh)
 	local canPlace = true;
@@ -305,42 +296,46 @@ end
 ---@return boolean validity
 function ISDoubleTileContainer:checkSingleTileValidity(square)
 	if not square then return false; end
-
-	-- ISBuildingObject:isValid without the check for materials on square, we only check for the first part of the obj
-	if self.notExterior and not square:Is(IsoFlagType.exterior) then return false; end
+	if square:getZ() >= 8 then return false; end
+	if isClient() and SafeHouse.isSafeHouse(square, getSpecificPlayer(self.player):getUsername(), true) then return false; end
 	if square:isVehicleIntersecting() then return false; end
-	if self.canBeAlwaysPlaced then
-		-- even if we can place this item everywhere, we can't place 2 same objects on the same tile
-		for i = 0, square:getObjects():size() - 1 do
-			local obj = square:getObjects():get(i);
-			if self:getSprite() == obj:getTextureName() then
-				return false;
-			end
-		end
-		return true;
-	end
 	local blockedByCharacters = self.isWallLike ~= true;
-	if not square:isFreeOrMidair(blockedByCharacters) or not buildUtil.canBePlace(self, square) then return false; end
-
+	if self.notExterior and not square:Is(IsoFlagType.exterior) then return false; end
+	if not square:isFreeOrMidair(blockedByCharacters) then return false; end
 	if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
-	if isClient() and SafeHouse.isSafeHouse(square, getSpecificPlayer(self.player):getUsername(), true) then
-		return false;
+
+	local canPlace = true;
+
+	for i = 0, square:getObjects():size() - 1 do
+		local item = square:getObjects():get(i);
+		if (item:getSprite() and ((item:getSprite():getProperties():Is(IsoFlagType.collideN) and not self.north) or
+				(item:getSprite():getProperties():Is(IsoFlagType.collideW) and self.north))) or
+			((instanceof(item, "IsoThumpable") and (item:getNorth() == not self.north or self.ignoreNorth)) and not item:isCorner() and not item:isFloor()) or
+			(instanceof(item, "IsoWindow") and item:getNorth() == not self.north) or
+			(instanceof(item, "IsoDoor") and item:getNorth() == not self.north) then
+			-- even if we can place this item everywhere, we can't place 2 same objects on the same tile
+			if self.canBeAlwaysPlaced and self:getSprite() == item:getTextureName() then
+				canPlace = false;
+			elseif self.canBeAlwaysPlaced then
+				canPlace = true;
+			end
+			canPlace = false;
+		end
 	end
 
-    local canPlace = true;
 	if self.needToBeAgainstWall then
 		for i = 0, square:getObjects():size() - 1 do
 			local obj = square:getObjects():get(i);
 			-- self.north is inversed on multi tile objects
 			if (not self.north and obj:getProperties():Is("WallN")) or (self.north and obj:getProperties():Is("WallW")) then
 				canPlace = true;
-                break;
-            else
-                canPlace = false;
+				break;
+			else
+				canPlace = false;
 			end
 		end
 		return canPlace;
-    end
+	end
 
 	local sharedSprite = getSprite(self:getSprite());
 	local selfProps = sharedSprite:getProperties();
@@ -352,7 +347,6 @@ function ISDoubleTileContainer:checkSingleTileValidity(square)
 	end
 	return false;
 end
-
 
 ---Checks if the container placement is valid considering both parts
 ---@param square IsoGridSquare The square to check for the first part
@@ -382,13 +376,12 @@ function ISDoubleTileContainer:isValid(square)
 	return true;
 end
 
-
 ---Calculates the position of the second part of the container
 ---@param square IsoGridSquare The square of the first part
 ---@param north boolean Whether the container is facing north
 ---@return integer x, integer y, integer z The x, y, and z coordinates for the second part
 function ISDoubleTileContainer:getSquare2Pos(square, north)
-    local x, y, z = square:getX(), square:getY(), square:getZ();
+	local x, y, z = square:getX(), square:getY(), square:getZ();
 
 	if north then
 		y = y - 1;
@@ -398,7 +391,6 @@ function ISDoubleTileContainer:getSquare2Pos(square, north)
 	return x, y, z;
 end
 
-
 ---Retrieves the square for the second part of the container
 ---@param square IsoGridSquare The square of the first part
 ---@param north boolean Whether the container is facing north
@@ -406,12 +398,6 @@ end
 function ISDoubleTileContainer:getSquare2(square, north)
 	local x, y, z = self:getSquare2Pos(square, north);
 	return getCell():getGridSquare(x, y, z);
-end
-
-local function safeCallMethod(object, methodName, ...)
-	if type(object[methodName]) == "function" then
-		return object[methodName](object, ...);
-	end
 end
 
 
@@ -426,7 +412,7 @@ function ISDoubleTileContainer:partExists(square, index)
 		local sprite = object:getSprite();
 		if object and sprite then
 			local spriteName = sprite:getName();
-			local isObjectNorth = safeCallMethod(object, "getNorth");
+			local isObjectNorth = BM_Utils.safeCallMethod(object, "getNorth");
 			local expectedSpriteName = self:getSpriteNameForPart(index, isObjectNorth);
 			if spriteName == expectedSpriteName then
 				return true;
@@ -435,7 +421,6 @@ function ISDoubleTileContainer:partExists(square, index)
 	end
 	return false;
 end
-
 
 ---Gets the sprite name for a part based on its index and orientation
 ---@param index integer The index of the part

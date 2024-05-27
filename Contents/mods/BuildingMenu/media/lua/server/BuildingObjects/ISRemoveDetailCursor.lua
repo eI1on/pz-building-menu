@@ -121,7 +121,6 @@ function ISRemoveDetailCursor:new(character, removeType)
 	o:init();
 	o.character = character;
 	o.player = character:getPlayerNum();
-	o.noNeedHammer = true;
 	o.skipBuildAction = true;
 	o.isYButtonResetCursor = true;
 	o.removeType = removeType;

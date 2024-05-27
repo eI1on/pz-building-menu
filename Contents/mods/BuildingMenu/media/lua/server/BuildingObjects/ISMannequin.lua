@@ -67,7 +67,7 @@ function ISMannequin:new(playerNum, sprite)
     o.stopOnWalk = false;
     o.stopOnRun = false;
     o.blockAllTheSquare = false;
-    o.canBeAlwaysPlaced = true;
+    o.canBeAlwaysPlaced = false;
     o.maxTime = 800;
     return o;
 end

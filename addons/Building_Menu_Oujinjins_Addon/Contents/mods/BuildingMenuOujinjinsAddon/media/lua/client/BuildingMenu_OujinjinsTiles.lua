@@ -1495,7 +1495,7 @@ local function addOtherFencesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_craft_woodenChairDesc",
+            "Tooltip_Roadway_Generic",
             BuildingMenu.onBuildThreeTileSimpleFurniture,
             BuildingMenu.LargeFurnitureRecipe,
             true,

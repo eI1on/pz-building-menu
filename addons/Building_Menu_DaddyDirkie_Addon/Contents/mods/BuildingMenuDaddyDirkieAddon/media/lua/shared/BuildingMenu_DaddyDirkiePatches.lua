@@ -217,4 +217,17 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedN)
         props:CreateKeySet()
     end
+
+    
+    sprites = {
+        "furniture_storage_ddd_01_14",
+        "furniture_storage_ddd_01_15",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.unsetSpriteProperty(props, "PickUpLevel")
+        BM_Utils.unsetSpriteProperty(props, "PickUpTool")
+        BM_Utils.unsetSpriteProperty(props, "PlaceTool")
+        props:CreateKeySet()
+    end
 end)

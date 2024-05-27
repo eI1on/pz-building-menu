@@ -12,7 +12,6 @@ local function addDylanContainersToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 isThumpable = true
             },
@@ -57,7 +56,6 @@ local function addDylanContainersToMenu()
             BuildingMenu.LargeFurnitureRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 canBeLockedByPadlock = true
             },
@@ -95,9 +93,7 @@ local function addGardenStuffToMenu()
             BuildingMenu.CounterRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = false
             },
@@ -110,9 +106,7 @@ local function addGardenStuffToMenu()
             BuildingMenu.CardboardBoxRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -128,11 +122,8 @@ local function addGardenStuffToMenu()
             BuildingMenu.CardboardBoxRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
-                canBeLockedByPadlock = true
             },
             {
                 sprite = "DylansGardenStuff01_11",
@@ -158,7 +149,6 @@ local function addGardenStuffToMenu()
             recipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = true,
                 canPassThrough = false,
@@ -209,7 +199,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = true,
                 canPassThrough = false,
@@ -225,7 +214,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = true,
                 canPassThrough = false,
@@ -241,7 +229,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -261,7 +248,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.PlantCrateRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -293,7 +279,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.SmallPlantBoxRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildWoodenStructureLarge",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -329,7 +314,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -347,7 +331,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -364,7 +347,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -382,7 +364,6 @@ local function addGardenStuffToMenu()
             BuildingMenu.BigWoodWallRecipe,
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
@@ -412,9 +393,7 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructrueMedium",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -444,7 +423,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -466,7 +444,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalCounterSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -488,7 +465,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -505,7 +481,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -533,7 +508,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = true,
@@ -552,7 +526,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = true,
@@ -573,7 +546,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = true,
@@ -594,7 +566,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = true,
@@ -615,7 +586,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -634,7 +604,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -651,7 +620,6 @@ local function addMetalCountersToMenu()
             BuildingMenu.MetalLockerWGlassRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true,
@@ -681,9 +649,7 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.FridgeRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructrueMedium",
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },
@@ -712,7 +678,6 @@ local function addBarricadesToMenu()
             BuildingMenu[recipe],
             true,
             {
-                noNeedHammer = false,
                 completionSound = "BuildWoodenStructrueLarge",
                 canBeAlwaysPlaced = false,
                 blockAllTheSquare = true,

@@ -9,9 +9,11 @@ local function applyParamToItems(items, paramName, paramValue)
         local item = ScriptManager.instance:getItem(itemID);
         if item then
             item:DoParam(paramName .. " = " .. tostring(paramValue));
-            print("[Building Menu TWEAKS] itemID:" .. itemID .. " paramName:" .. paramName .. " paramValue:" .. paramValue);
+            print("[Building Menu TWEAKS] itemID:" ..
+            itemID .. " paramName:" .. paramName .. " paramValue:" .. paramValue);
         else
-            print("[Building Menu ERROR] INVALID itemID:" .. itemID .. " paramName:" .. paramName .. " paramValue:" .. paramValue);
+            print("[Building Menu ERROR] INVALID itemID:" ..
+            itemID .. " paramName:" .. paramName .. " paramValue:" .. paramValue);
         end
     end
 end
@@ -60,11 +62,13 @@ local function tweakItems()
     applyParamToItems({ "BlowTorch" }, "UseDelta", blowTorchUseDelta);
 
 
-    local bucketOfAsphaltMixUseDelta = computeUseDelta((SandboxVars.BuildingMenuRecipes.bucketAsphaltMixtureUses or 3), optionValues);
+    local bucketOfAsphaltMixUseDelta = computeUseDelta((SandboxVars.BuildingMenuRecipes.bucketAsphaltMixtureUses or 3),
+        optionValues);
     applyParamToItems({ "BucketAsphaltMixtureFull" }, "UseDelta", bucketOfAsphaltMixUseDelta);
 
 
-    local bucketConcreteUseDelta = computeUseDelta((SandboxVars.BuildingMenuRecipes.bucketConcreteUses or 3), optionValues);
+    local bucketConcreteUseDelta = computeUseDelta((SandboxVars.BuildingMenuRecipes.bucketConcreteUses or 3),
+        optionValues);
     applyParamToItems({ "BucketConcreteFull" }, "UseDelta", bucketConcreteUseDelta);
 end
 Events.OnInitGlobalModData.Add(tweakItems)

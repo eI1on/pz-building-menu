@@ -63,7 +63,7 @@ local function initBuildingMenuRecipes()
     local sheetMetalCountForDoors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
     local sheetMetalCountForContainers = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
     local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes
-    .sheetMetalCountForFixturesAndAppliances or 4;
+        .sheetMetalCountForFixturesAndAppliances or 4;
     local sheetMetalCountForRoofingAndFloors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors or 1;
 
 
@@ -4248,6 +4248,25 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.AsphaltRampRoadRecipe = {
+        neededTools = {
+            "HandShovel"
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BucketAsphaltMixtureFull",
+                Amount = 3
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.25),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+
     BuildingMenu.AsphaltBlendRecipe = {
         neededTools = {
             "HandShovel"
@@ -4269,6 +4288,9 @@ local function initBuildingMenuRecipes()
 
 
     BuildingMenu.DirtRecipe = {
+        neededTools = {
+            "Shovel"
+        },
         useConsumable = {
             {
                 Consumable = "Base.Dirtbag",
@@ -4277,6 +4299,41 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.SandRecipe = {
+        neededTools = {
+            "Shovel"
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Sandbag",
+                Amount = 1
+            }
+        }
+    }
+
+    BuildingMenu.DirtRampRecipe = {
+        neededTools = {
+            "Shovel"
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Dirtbag",
+                Amount = 3
+            }
+        }
+    }
+
+    BuildingMenu.SandRampRecipe = {
+        neededTools = {
+            "Shovel"
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Sandbag",
+                Amount = 3
+            }
+        }
+    }
 
     BuildingMenu.StreetCrackRecipe = {
         neededTools = {
@@ -4720,7 +4777,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = sheetMetalCountForContainers
+                Amount = BuildingMenu.round(sheetMetalCountForContainers * 1.25)
             },
             {
                 Material = "Base.SmallSheetMetal",
@@ -4980,6 +5037,35 @@ local function initBuildingMenuRecipes()
                 Skill = "Tailoring",
                 Level = 3,
                 Xp = 10
+            }
+        }
+    }
+
+    BuildingMenu.CurtainsRecipe = {
+        neededTools = {
+            "Needle"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.MetalBar",
+                Amount = 1
+            },
+            {
+                Material = "Base.Sheet",
+                Amount = 2
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Thread",
+                Amount = 10
+            }
+        },
+        skills = {
+            {
+                Skill = "Tailoring",
+                Level = 5,
+                Xp = 15
             }
         }
     }

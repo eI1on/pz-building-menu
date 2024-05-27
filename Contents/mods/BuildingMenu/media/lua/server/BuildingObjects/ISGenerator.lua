@@ -86,7 +86,7 @@ function ISGenerator:new(sprite, northSprite)
     o.name = 'Generator';
     o.stopOnWalk = true;
     o.stopOnRun = true;
-    o.canBeAlwaysPlaced = true;
+    o.canBeAlwaysPlaced = false;
     o.maxTime = 500;
 
     return o

@@ -34,6 +34,7 @@ function BuildingMenu.doRemoveWallDetailing(playerObj, square, wallDetailing)
 
     local handItem = playerObj:getPrimaryHandItem();
     if not handItem or not BuildingMenu.predicateHasTag(handItem, "Hammer") then
+---@diagnostic disable-next-line: param-type-mismatch
         handItem = playerInv:getFirstEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "Hammer") end);
         if not handItem then return; end
         ISWorldObjectContextMenu.equip(playerObj, playerObj:getPrimaryHandItem(), handItem, true);
@@ -104,10 +105,14 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
     if not playerObj or playerObj:getVehicle() then return; end
 
     local playerInv = playerObj:getInventory();
-    local hasCuttingTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "CutPlant") end);
+---@diagnostic disable-next-line: param-type-mismatch
+    local hasCuttingTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item,
+            "CutPlant") end);
+---@diagnostic disable-next-line: param-type-mismatch
     local hasHammerTool = playerInv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, "Hammer") end);
     local hasTrowelTool = playerInv:getFirstTypeRecurse("farming.HandShovel");
-    local genPoweredLightingObj, wallVine, wallDetailing, trafficLine, thumpableLightSource, lightSwitch = nil, nil, nil, nil, nil, nil;
+    local genPoweredLightingObj, wallVine, wallDetailing, trafficLine, thumpableLightSource, lightSwitch = nil, nil, nil,
+        nil, nil, nil;
 
     for _, worldObj in ipairs(worldobjects) do
         if instanceof(worldObj, "IsoThumpable") and not worldObj:isDoor() and worldObj:getLightSource() then
@@ -146,17 +151,17 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
 
     if thumpableLightSource then
         if (thumpableLightSource:getLightSourceFuel() and thumpableLightSource:haveFuel()) or not thumpableLightSource:getLightSourceFuel() then
-			if thumpableLightSource:isLightSourceOn() then
+            if thumpableLightSource:isLightSourceOn() then
                 local offContextOption = context:getOptionFromName(getText("ContextMenu_Turn_Off"));
                 if offContextOption then
                     offContextOption.iconTexture = getTexture("media/ui/light_bulb_off.png");
                 end
-			elseif thumpableLightSource:getLifeLeft() > 0 then
+            elseif thumpableLightSource:getLifeLeft() > 0 then
                 local onContextOption = context:getOptionFromName(getText("ContextMenu_Turn_On"));
                 if onContextOption then
                     onContextOption.iconTexture = getTexture("media/ui/light_bulb_on.png");
                 end
-			end
+            end
         end
     end
 
@@ -181,10 +186,12 @@ local function onFillWorldObjectContextMenu(player, context, worldobjects, test)
         context:removeOptionByName(getText("ContextMenu_Turn_Off"));
         context:removeOptionByName(getText("ContextMenu_Turn_On"));
         if genPoweredLightingObj:isActivated() then
-            local option = context:insertOptionBefore(getText("ContextMenu_Walk_to"), getText('ContextMenu_Turn_Off'), genPoweredLightingObj, BuildingMenu.onToggleThumpableLight, player);
+            local option = context:insertOptionBefore(getText("ContextMenu_Walk_to"), getText('ContextMenu_Turn_Off'),
+                genPoweredLightingObj, BuildingMenu.onToggleThumpableLight, player);
             option.iconTexture = getTexture("media/ui/light_bulb_off.png");
         elseif genPoweredLightingObj:getSquare():haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier) then
-            local option = context:insertOptionBefore(getText("ContextMenu_Walk_to"), getText('ContextMenu_Turn_On'), genPoweredLightingObj, BuildingMenu.onToggleThumpableLight, player);
+            local option = context:insertOptionBefore(getText("ContextMenu_Walk_to"), getText('ContextMenu_Turn_On'),
+                genPoweredLightingObj, BuildingMenu.onToggleThumpableLight, player);
             option.iconTexture = getTexture("media/ui/light_bulb_on.png");
         end
     end

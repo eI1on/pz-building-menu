@@ -76,7 +76,7 @@ function BuildingMenu.createObject(displayName, description, action, recipe, isR
     end
 
     local finalDisplayName = getTextOrNull(displayName) or BuildingMenu.getMoveableDisplayName(sprites.sprite) or
-    sprites.sprite;
+        sprites.sprite;
     local finalDescription = getTextOrNull(description) or "";
 
     return {
@@ -9011,7 +9011,6 @@ local function addIndustrialWallsToMenu()
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9030,7 +9029,6 @@ local function addIndustrialWallsToMenu()
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9049,7 +9047,6 @@ local function addIndustrialWallsToMenu()
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9066,7 +9063,6 @@ local function addIndustrialWallsToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
-                        noNeedHammer = true,
                         modData = { wallType = "doorframe" }
                     },
                     {
@@ -9086,7 +9082,6 @@ local function addIndustrialWallsToMenu()
                         isThumpable = true,
                         canBarricade = true,
                         hoppable = true,
-                        noNeedHammer = true,
                         modData = { wallType = "windowsframe" }
                     },
                     {
@@ -9106,7 +9101,6 @@ local function addIndustrialWallsToMenu()
                         canPassThrough = true,
                         canBarricade = false,
                         isCorner = true,
-                        noNeedHammer = true,
                         modData = { wallType = "pillar" }
                     },
                     { sprite = "industry_trucks_01_7", northSprite = "industry_trucks_01_7" }
@@ -9121,7 +9115,6 @@ local function addIndustrialWallsToMenu()
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9138,7 +9131,6 @@ local function addIndustrialWallsToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
-                        noNeedHammer = true,
                         modData = { wallType = "doorframe" }
                     },
                     {
@@ -9158,7 +9150,6 @@ local function addIndustrialWallsToMenu()
                         isThumpable = true,
                         canBarricade = true,
                         hoppable = true,
-                        noNeedHammer = true,
                         modData = { wallType = "windowsframe" }
                     },
                     {
@@ -9178,7 +9169,6 @@ local function addIndustrialWallsToMenu()
                         canPassThrough = true,
                         canBarricade = false,
                         isCorner = true,
-                        noNeedHammer = true,
                         modData = { wallType = "pillar" }
                     },
                     { sprite = "industry_trucks_01_51", northSprite = "industry_trucks_01_51" }
@@ -9193,7 +9183,6 @@ local function addIndustrialWallsToMenu()
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9210,7 +9199,6 @@ local function addIndustrialWallsToMenu()
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
-                        noNeedHammer = true,
                         modData = { wallType = "doorframe" }
                     },
                     {
@@ -9230,7 +9218,6 @@ local function addIndustrialWallsToMenu()
                         canPassThrough = true,
                         canBarricade = false,
                         isCorner = true,
-                        noNeedHammer = true,
                         modData = { wallType = "pillar" }
                     },
                     { sprite = "location_community_police_01_3", northSprite = "location_community_police_01_3" }
@@ -9252,7 +9239,6 @@ local function addIndustrialWallsToMenu()
                         isThumpable = true,
                         hoppable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9271,7 +9257,6 @@ local function addIndustrialWallsToMenu()
                         isThumpable = true,
                         hoppable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9290,7 +9275,6 @@ local function addIndustrialWallsToMenu()
                         isThumpable = true,
                         hoppable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9309,7 +9293,6 @@ local function addIndustrialWallsToMenu()
                         isThumpable = true,
                         hoppable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9328,7 +9311,6 @@ local function addIndustrialWallsToMenu()
                         isThumpable = true,
                         hoppable = true,
                         canBarricade = false,
-                        noNeedHammer = true,
                         modData = { wallType = "wall" }
                     },
                     {
@@ -9343,7 +9325,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -9358,7 +9339,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -9373,7 +9353,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -9388,7 +9367,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -9403,7 +9381,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -9418,7 +9395,6 @@ local function addIndustrialWallsToMenu()
                     BuildingMenu.SmallMetalBarWallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureWallFrame",
                         isThumpable = true,
                         hoppable = true,
@@ -14173,7 +14149,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalFencePostRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         dontNeedFrame = true,
                         canBarricade = false,
@@ -14199,7 +14174,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14218,7 +14192,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14237,7 +14210,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14256,7 +14228,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14275,7 +14246,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14294,7 +14264,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14313,7 +14282,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14332,7 +14300,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14351,7 +14318,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14370,7 +14336,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14389,7 +14354,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14408,7 +14372,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14427,7 +14390,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14446,7 +14408,6 @@ local function addDoorsToMenu()
                     BuildingMenu.MetalSingleGlassDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14639,7 +14600,6 @@ local function addDoorsToMenu()
                     BuildingMenu.JailDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
                         modData = { wallType = "doorframe" }
@@ -14782,7 +14742,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14801,7 +14760,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14820,7 +14778,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14839,7 +14796,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14858,7 +14814,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14877,7 +14832,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14902,7 +14856,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14923,7 +14876,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14944,7 +14896,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14965,7 +14916,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -14986,7 +14936,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -15007,7 +14956,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.GarageDoorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -15034,7 +14982,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.WireDoubleDoorGatesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         canBarricade = false,
                         ignoreNorth = true,
                         completionSound = "BuildMetalStructureLargeWiredFence",
@@ -15051,7 +14998,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.PoleDoubleDoorGatesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         canBarricade = false,
                         ignoreNorth = true,
                         completionSound = "BuildMetalStructureLargeWiredFence",
@@ -15068,7 +15014,6 @@ local function addGarageDoorsToMenu()
                     BuildingMenu.BlackPoleDoubleDoorGatesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         canBarricade = false,
                         ignoreNorth = true,
                         completionSound = "BuildMetalStructureLargeWiredFence",
@@ -16704,7 +16649,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16719,7 +16663,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16734,7 +16677,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16749,7 +16691,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16770,7 +16711,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16785,7 +16725,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16800,7 +16739,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16815,7 +16753,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16832,7 +16769,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16847,7 +16783,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16862,7 +16797,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16878,7 +16812,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16893,7 +16826,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16908,7 +16840,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16924,7 +16855,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16939,7 +16869,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16955,7 +16884,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16970,7 +16898,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -16985,7 +16912,6 @@ local function addArchitecturePlusToMenu()
                     BuildingMenu.WallDecorationRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -17109,7 +17035,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -17130,7 +17055,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17147,7 +17071,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighConcreteWireFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17164,7 +17087,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -17185,7 +17107,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17201,7 +17122,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17302,7 +17222,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighMetalBarsFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -17323,7 +17242,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighMetalBarsFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17339,7 +17257,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighMetalBarsFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17355,7 +17272,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -17375,7 +17291,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17391,7 +17306,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 blockAllTheSquare = false,
@@ -17411,7 +17325,6 @@ local function addHighFencesToMenu()
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17442,7 +17355,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17458,7 +17370,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = true,
@@ -17473,7 +17384,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17802,7 +17712,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17818,7 +17727,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = true,
@@ -17837,7 +17745,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17853,7 +17760,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17869,7 +17775,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = true,
@@ -17888,7 +17793,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17904,7 +17808,6 @@ local function addLowAndRailingFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = true,
@@ -17936,7 +17839,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17952,7 +17854,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = true,
@@ -17971,7 +17872,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,
                 canPassThrough = true,
@@ -17987,7 +17887,6 @@ local function addOtherFencesToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 isThumpable = true,
                 hoppable = true,
@@ -18253,7 +18152,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_0", northSprite = "floors_interior_carpet_01_0" }
@@ -18265,7 +18163,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_1", northSprite = "floors_interior_carpet_01_1" }
@@ -18277,7 +18174,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_2", northSprite = "floors_interior_carpet_01_2" }
@@ -18289,7 +18185,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_3", northSprite = "floors_interior_carpet_01_3" }
@@ -18301,7 +18196,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_4", northSprite = "floors_interior_carpet_01_4" }
@@ -18313,7 +18207,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_5", northSprite = "floors_interior_carpet_01_5" }
@@ -18325,7 +18218,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_6", northSprite = "floors_interior_carpet_01_6" }
@@ -18337,7 +18229,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_7", northSprite = "floors_interior_carpet_01_7" }
@@ -18349,7 +18240,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_8", northSprite = "floors_interior_carpet_01_8" }
@@ -18361,7 +18251,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "location_shop_greenes_01_32", northSprite = "location_shop_greenes_01_33" }
@@ -18373,7 +18262,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_9", northSprite = "floors_interior_carpet_01_9" }
@@ -18385,7 +18273,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_10", northSprite = "floors_interior_carpet_01_10" }
@@ -18397,7 +18284,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_11", northSprite = "floors_interior_carpet_01_11" }
@@ -18409,7 +18295,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_12", northSprite = "floors_interior_carpet_01_12" }
@@ -18421,7 +18306,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_13", northSprite = "floors_interior_carpet_01_13" }
@@ -18433,7 +18317,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_14", northSprite = "floors_interior_carpet_01_14" }
@@ -18445,7 +18328,6 @@ local function addFloorsToMenu()
                     BuildingMenu.FloorRugRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     { sprite = "floors_interior_carpet_01_15", northSprite = "floors_interior_carpet_01_15" }
@@ -18463,7 +18345,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -18481,7 +18362,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -18499,7 +18379,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -18517,7 +18396,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     { sprite = "industry_01_7", northSprite = "industry_01_7" }
@@ -18529,7 +18407,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     { sprite = "industry_01_6", northSprite = "industry_01_6" }
@@ -18541,7 +18418,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     { sprite = "industry_railroad_05_22", northSprite = "industry_railroad_05_23" }
@@ -18553,7 +18429,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     { sprite = "industry_railroad_05_38", northSprite = "industry_railroad_05_39" }
@@ -18581,7 +18456,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -18599,7 +18473,6 @@ local function addFloorsToMenu()
                     BuildingMenu.MetalFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -18988,7 +18861,6 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -19003,7 +18875,6 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -19018,7 +18889,6 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -19033,7 +18903,6 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -19048,7 +18917,6 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -19063,7 +18931,6 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -19078,7 +18945,6 @@ local function addFloorsToMenu()
                     BuildingMenu.ConcreteFloorRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
@@ -19293,7 +19159,6 @@ local function addStairsToMenu()
                     BuildingMenu.MetalStairsRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isThumpable = false
                     },
@@ -19316,7 +19181,6 @@ local function addStairsToMenu()
                     BuildingMenu.MetalStairsRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isThumpable = false
                     },
@@ -19339,7 +19203,6 @@ local function addStairsToMenu()
                     BuildingMenu.MetalStairsRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         isThumpable = false
                     },
@@ -19380,7 +19243,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag"
             },
             { sprite = "floors_exterior_street_01_0", northSprite = "floors_exterior_street_01_0" }
@@ -19392,7 +19254,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19414,7 +19275,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag"
             },
             {
@@ -19431,7 +19291,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19453,7 +19312,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19475,7 +19333,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             { sprite = "blends_street_01_16", northSprite = "blends_street_01_21" }
         ),
@@ -19486,7 +19343,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19508,7 +19364,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.GravelBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19530,7 +19385,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             {
                 sprite = "blends_street_01_48",
@@ -19546,7 +19400,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19568,7 +19421,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19590,7 +19442,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             { sprite = "blends_street_01_0", northSprite = "blends_street_01_5" }
         ),
@@ -19601,7 +19452,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19623,7 +19473,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19645,7 +19494,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             {
                 sprite = "blends_street_01_64",
@@ -19661,7 +19509,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19683,7 +19530,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             {
                 sprite = "blends_street_01_80",
@@ -19699,7 +19545,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19721,7 +19566,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltRoadRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             {
                 sprite = "blends_street_01_96",
@@ -19737,7 +19581,6 @@ local function addRoadworkAsphaltToMenu()
             BuildingMenu.AsphaltBlendRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19774,7 +19617,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19794,7 +19636,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19814,7 +19655,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19834,7 +19674,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19854,7 +19693,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19874,7 +19712,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19894,7 +19731,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19914,7 +19750,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19934,7 +19769,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19953,7 +19787,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19972,7 +19805,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -19991,7 +19823,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20010,7 +19841,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20029,7 +19859,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20048,7 +19877,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20067,7 +19895,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20086,7 +19913,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20105,7 +19931,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20124,7 +19949,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20143,7 +19967,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20162,7 +19985,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20181,7 +20003,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20200,7 +20021,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20219,7 +20039,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20238,7 +20057,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20257,7 +20075,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20276,7 +20093,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20295,7 +20111,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20314,7 +20129,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20333,7 +20147,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20352,7 +20165,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20371,7 +20183,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20390,7 +20201,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20409,7 +20219,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20428,7 +20237,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20447,7 +20255,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20466,7 +20273,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20485,7 +20291,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20504,7 +20309,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20523,7 +20327,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.StreetCrackRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20555,7 +20358,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20576,7 +20378,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20597,7 +20398,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20618,7 +20418,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20639,7 +20438,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20660,7 +20458,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20681,7 +20478,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20702,7 +20498,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20723,7 +20518,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20744,7 +20538,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20765,7 +20558,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20786,7 +20578,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20807,7 +20598,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20828,7 +20618,6 @@ local function addRoadworkOverlaysToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -20863,7 +20652,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -20884,7 +20672,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -20905,7 +20692,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -20928,7 +20714,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -20949,7 +20734,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -20970,7 +20754,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -20991,7 +20774,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21012,7 +20794,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21033,7 +20814,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21054,7 +20834,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21075,7 +20854,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21096,7 +20874,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21117,7 +20894,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21138,7 +20914,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21159,7 +20934,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21180,7 +20954,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21201,7 +20974,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21222,7 +20994,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21243,7 +21014,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21264,7 +21034,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21285,7 +21054,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21306,7 +21074,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21327,7 +21094,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21348,7 +21114,6 @@ local function addRoadworkSidewalkEdgeToMenu()
             BuildingMenu.ConcreteFloorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -21385,7 +21150,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             { sprite = "blends_natural_01_64", northSprite = "blends_natural_01_64" }
         ),
@@ -21396,7 +21160,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21418,7 +21181,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             { sprite = "blends_natural_01_16", northSprite = "blends_natural_01_16" }
         ),
@@ -21429,7 +21191,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21451,7 +21212,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21473,7 +21233,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             { sprite = "blends_natural_01_32", northSprite = "blends_natural_01_32" }
         ),
@@ -21484,7 +21243,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21506,7 +21264,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21528,7 +21285,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
             },
             { sprite = "blends_natural_01_48", northSprite = "blends_natural_01_48" }
         ),
@@ -21539,7 +21295,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21561,7 +21316,6 @@ local function addRoadworkDirtandGrassToMenu()
             BuildingMenu.DirtRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21596,7 +21350,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21618,7 +21371,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21640,7 +21392,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21657,7 +21408,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21679,7 +21429,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21701,7 +21450,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21735,7 +21483,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21755,7 +21502,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21775,7 +21521,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21795,7 +21540,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21815,7 +21559,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21835,7 +21578,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21855,7 +21597,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21875,7 +21616,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21895,7 +21635,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21915,7 +21654,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21935,7 +21673,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21955,7 +21692,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21975,7 +21711,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -21995,7 +21730,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22015,7 +21749,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22035,7 +21768,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22055,7 +21787,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22075,7 +21806,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22095,7 +21825,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22115,7 +21844,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22135,7 +21863,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22155,7 +21882,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22175,7 +21901,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22195,7 +21920,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22215,7 +21939,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22235,7 +21958,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22255,7 +21977,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22275,7 +21996,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22295,7 +22015,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22315,7 +22034,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22335,7 +22053,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22355,7 +22072,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22375,7 +22091,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22395,7 +22110,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22415,7 +22129,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22435,7 +22148,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22455,7 +22167,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22475,7 +22186,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22495,7 +22205,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22515,7 +22224,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22535,7 +22243,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22555,7 +22262,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22575,7 +22281,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22595,7 +22300,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22615,7 +22319,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22635,7 +22338,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22655,7 +22357,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22675,7 +22376,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22695,7 +22395,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22715,7 +22414,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22735,7 +22433,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22755,7 +22452,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22775,7 +22471,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22795,7 +22490,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22815,7 +22509,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22835,7 +22528,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22855,7 +22547,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22875,7 +22566,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22895,7 +22585,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22915,7 +22604,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22935,7 +22623,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22955,7 +22642,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22975,7 +22661,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -22995,7 +22680,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23015,7 +22699,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23035,7 +22718,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23055,7 +22737,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23075,7 +22756,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23095,7 +22775,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23126,7 +22805,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23148,7 +22826,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23182,7 +22859,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23202,7 +22878,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23222,7 +22897,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23242,7 +22916,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23262,7 +22935,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23282,7 +22954,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23302,7 +22973,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23322,7 +22992,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23342,7 +23011,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23362,7 +23030,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23382,7 +23049,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23402,7 +23068,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23422,7 +23087,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23442,7 +23106,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23462,7 +23125,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23482,7 +23144,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23502,7 +23163,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23522,7 +23182,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23542,7 +23201,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23562,7 +23220,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23582,7 +23239,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23602,7 +23258,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23622,7 +23277,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23642,7 +23296,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23662,7 +23315,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23682,7 +23334,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23702,7 +23353,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23722,7 +23372,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23742,7 +23391,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23762,7 +23410,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23782,7 +23429,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23802,7 +23448,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23822,7 +23467,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23842,7 +23486,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23862,7 +23505,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23882,7 +23524,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23902,7 +23543,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23922,7 +23562,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23942,7 +23581,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23962,7 +23600,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -23982,7 +23619,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24002,7 +23638,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24022,7 +23657,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24042,7 +23676,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24062,7 +23695,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24082,7 +23714,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24102,7 +23733,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24122,7 +23752,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24142,7 +23771,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24162,7 +23790,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24182,7 +23809,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24202,7 +23828,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24222,7 +23847,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24242,7 +23866,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24262,7 +23885,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24282,7 +23904,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24302,7 +23923,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24322,7 +23942,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24342,7 +23961,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24362,7 +23980,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24382,7 +23999,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24402,7 +24018,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24422,7 +24037,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24442,7 +24056,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24462,7 +24075,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24482,7 +24094,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24502,7 +24113,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24522,7 +24132,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -24542,7 +24151,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -25658,9 +25266,6 @@ local function addCommercialCountersToMenu()
                         completionSound = "BuildWoodenStructureLarge",
                         renderFloorHelper = false,
                         dismantable = true,
-                        isContainer = true,
-                        containerType = "displaycasebakery",
-                        capacity = 100
                     },
                     {
                         sprite = "location_shop_generic_01_35",
@@ -25677,11 +25282,8 @@ local function addCommercialCountersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "displaycasebakery",
                         renderFloorHelper = false,
                         dismantable = true,
-                        isContainer = true,
-                        capacity = 100
                     },
                     {
                         sprite = "location_restaurant_pie_01_51",
@@ -25718,8 +25320,6 @@ local function addCommercialCountersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "shelves",
-                        isContainer = true,
                         canBeLockedByPadlock = true
                     },
                     {
@@ -25737,8 +25337,6 @@ local function addCommercialCountersToMenu()
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
-                        containerType = "shelves",
-                        isContainer = true,
                         canBeLockedByPadlock = true
                     },
                     {
@@ -25773,8 +25371,6 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "smallcrate",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -25788,8 +25384,6 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "smallcrate",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -25803,10 +25397,7 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "smallbox",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
-                canBeLockedByPadlock = false
             },
             { sprite = "location_shop_greenes_01_37", northSprite = "location_shop_greenes_01_38" }
         ),
@@ -25818,10 +25409,7 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "garage_storage",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
-                canBeLockedByPadlock = true
             },
             { sprite = "furniture_storage_02_16", northSprite = "furniture_storage_02_17" }
         ),
@@ -25833,10 +25421,7 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "smallbox",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
-                canBeLockedByPadlock = true
             },
             { sprite = "trashcontainers_01_26", northSprite = "trashcontainers_01_27" }
         ),
@@ -25848,8 +25433,6 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "militarycrate",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -25866,8 +25449,6 @@ local function addCratesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "militarycrate",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -25900,10 +25481,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "filingcabinet",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -25921,10 +25499,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "filingcabinet",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -25948,12 +25523,9 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "bin",
                         needToBeAgainstWall = true,
                         renderFloorHelper = true,
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = false,
                         canBeLockedByPadlock = true
                     },
@@ -25966,12 +25538,9 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "shelves",
                         needToBeAgainstWall = true,
                         renderFloorHelper = true,
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = false,
                     },
                     {
@@ -25988,11 +25557,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterBigRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        isContainer = true,
-                        containerType = "shelves",
-                        canBeAlwaysPlaced = false,
                         renderFloorHelper = false,
                         buildHigh = true,
                     },
@@ -26010,11 +25575,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterBigRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        isContainer = true,
-                        containerType = "shelves",
-                        canBeAlwaysPlaced = false,
                         renderFloorHelper = false,
                         buildHigh = true,
                     },
@@ -26038,11 +25599,9 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
                         needToBeAgainstWall = true,
                         renderFloorHelper = true,
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = false,
                         canBeLockedByPadlock = true
                     },
@@ -26055,10 +25614,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalCounterBigRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "locker",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -26076,10 +25632,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "metal_shelves",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -26097,10 +25650,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "militarylocker",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -26118,10 +25668,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "locker",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -26139,10 +25686,7 @@ local function addMetalContainersToMenu()
                     BuildingMenu.MetalLockerRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "locker",
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -26200,13 +25744,10 @@ local function addClothesRacksToMenu()
             BuildingMenu.ClothingRackRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
-                containerType = "shelves"
             },
             {
                 sprite = "location_shop_generic_01_52",
@@ -26222,13 +25763,10 @@ local function addClothesRacksToMenu()
             BuildingMenu.DoubleClothingRackRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
-                containerType = "shelves"
             },
             {
                 sprite = "location_shop_generic_01_39",
@@ -26244,13 +25782,10 @@ local function addClothesRacksToMenu()
             BuildingMenu.DoubleClothingRackRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
-                containerType = "shelves"
             },
             {
                 sprite = "location_shop_generic_01_51",
@@ -26266,7 +25801,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26288,7 +25822,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26309,7 +25842,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26330,7 +25862,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26351,7 +25882,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26372,7 +25902,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26393,7 +25922,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26414,7 +25942,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26435,7 +25962,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26456,7 +25982,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26477,7 +26002,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26498,7 +26022,6 @@ local function addClothesRacksToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26532,11 +26055,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -26549,15 +26068,11 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "trashcontainers_01_18", northSprite = "trashcontainers_01_19" }
+            { sprite = "trashcontainers_01_19", northSprite = "trashcontainers_01_18" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26566,11 +26081,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -26583,11 +26094,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -26600,15 +26107,11 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "location_shop_fossoil_01_32", northSprite = "location_shop_fossoil_01_33" }
+            { sprite = "location_shop_fossoil_01_33", northSprite = "location_shop_fossoil_01_32" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26617,11 +26120,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -26634,11 +26133,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -26651,19 +26146,15 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
             {
-                sprite = "trashcontainers_01_0",
-                northSprite = "trashcontainers_01_1",
-                eastSprite = "trashcontainers_01_2",
-                southSprite = "trashcontainers_01_3"
+                sprite = "trashcontainers_01_1",
+                northSprite = "trashcontainers_01_0",
+                eastSprite = "trashcontainers_01_3",
+                southSprite = "trashcontainers_01_2"
             }
         ),
         BuildingMenu.createObject(
@@ -26673,19 +26164,13 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinSmallRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                renderFloorHelper = false,
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
             {
-                sprite = "location_restaurant_spiffos_01_30",
-                northSprite = "location_restaurant_spiffos_01_30",
-                eastSprite = "location_restaurant_spiffos_01_31",
-                southSprite = "location_restaurant_spiffos_01_31"
+                sprite = "location_restaurant_spiffos_01_31",
+                northSprite = "location_restaurant_spiffos_01_30"
             }
         ),
         BuildingMenu.createObject(
@@ -26695,10 +26180,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 buildMid = true,
             },
@@ -26716,10 +26198,7 @@ local function addTrashCansToMenu()
             BuildingMenu.GarbageBinBigRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                containerType = "bin",
-                canBeAlwaysPlaced = false,
                 renderFloorHelper = false,
                 buildMid = true,
             },
@@ -26751,8 +26230,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "officedrawers",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -26803,8 +26280,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "counter",
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 canBeLockedByPadlock = true
             },
@@ -26818,8 +26293,6 @@ local function addContainersOthersToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                containerType = "counter",
-                canBeAlwaysPlaced = true,
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
@@ -26828,7 +26301,7 @@ local function addContainersOthersToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
             {
@@ -26844,7 +26317,7 @@ local function addContainersOthersToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
-            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
             {
@@ -26881,8 +26354,8 @@ local function addContainersOthersToMenu()
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
-                sprite = "location_business_distillery_01_1",
-                northSprite = "location_business_distillery_01_4"
+                sprite = "location_business_distillery_01_2",
+                northSprite = "location_business_distillery_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -26895,8 +26368,8 @@ local function addContainersOthersToMenu()
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
-                sprite = "location_business_distillery_01_2",
-                northSprite = "location_business_distillery_01_3"
+                sprite = "location_business_distillery_01_1",
+                northSprite = "location_business_distillery_01_4"
             }
         ),
         BuildingMenu.createObject(
@@ -26906,7 +26379,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -26928,7 +26400,6 @@ local function addContainersOthersToMenu()
             BuildingMenu.MannequinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 canBeAlwaysPlaced = true,
@@ -29469,7 +28940,7 @@ local function addBookshelvesToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
-                
+
             },
             {
                 sprite = "furniture_shelving_01_8",
@@ -29782,7 +29253,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29804,7 +29274,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29826,7 +29295,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29848,7 +29316,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29868,7 +29335,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29890,7 +29356,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29912,7 +29377,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29934,7 +29398,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29954,7 +29417,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29976,7 +29438,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -29998,7 +29459,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30020,7 +29480,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30040,7 +29499,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30062,7 +29520,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30084,7 +29541,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30106,7 +29562,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30126,7 +29581,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30148,7 +29602,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30170,7 +29623,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30192,7 +29644,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30214,7 +29665,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30236,7 +29686,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30258,7 +29707,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30280,7 +29728,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30302,7 +29749,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30324,7 +29770,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30346,7 +29791,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -30368,7 +29812,6 @@ local function addRugsToMenu()
             BuildingMenu.FloorRugRecipe,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -31335,6 +30778,62 @@ local function addPostersAndSignsToMenu()
     end
 end
 
+
+local function addCurtainsToMenu()
+    local curtainTypes = {
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 4, 6, 5, 7 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 12, 14, 13, 15 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 28, 30, 29, 31 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 36, 38, 37, 39 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 44, 46, 45, 47 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 52, 54, 53, 55 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 60, 62, 61, 63 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 68, 70, 69, 71 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 76, 78, 77, 79 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 84, 86, 85, 87 } },
+        { prefix = "fixtures_windows_curtains_01_", offsets = { 92, 94, 93, 95 } },
+
+        { prefix = "fixtures_windows_curtains_02_", offsets = { 4, 6, 5, 7 } },
+        { prefix = "fixtures_windows_curtains_02_", offsets = { 12, 14, 13, 15 } },
+        { prefix = "fixtures_windows_curtains_02_", offsets = { 20, 22, 21, 23 } },
+        { prefix = "fixtures_windows_curtains_02_", offsets = { 28, 30, 29, 31 } },
+    };
+
+    local curtains = {};
+
+    local function createCurtainObject(typeInfo)
+        local sprites = {
+            sprite = typeInfo.prefix .. typeInfo.offsets[1],
+            northSprite = typeInfo.prefix .. typeInfo.offsets[2],
+            eastSprite = typeInfo.prefix .. typeInfo.offsets[3],
+            southSprite = typeInfo.prefix .. typeInfo.offsets[4]
+        };
+        return BuildingMenu.createObject(
+            "",
+            "Tooltip_Curtains_Generic",
+            BuildingMenu.onBuildCurtain,
+            BuildingMenu.CurtainsRecipe,
+            true,
+            {},
+            sprites
+        );
+    end
+
+    for _, typeInfo in ipairs(curtainTypes) do
+        table.insert(curtains, createCurtainObject(typeInfo));
+    end
+
+    BuildingMenu.addObjectsToCategories(
+        getText("IGUI_BuildingMenuTab_General"),
+        getText("IGUI_BuildingMenuCat_Decorations"),
+        "fixtures_windows_curtains_01_8",
+        getText("IGUI_BuildingMenuSubCat_Decorations_Curtains"),
+        "fixtures_windows_curtains_01_8",
+        curtains
+    );
+end
+
+
 local function addGraffitiToMenu()
     local graffiti = {
         BuildingMenu.createObject(
@@ -31344,7 +30843,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -31360,7 +30858,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -31376,7 +30873,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -31392,7 +30888,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -31408,7 +30903,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
                 renderFloorHelper = false,
@@ -31424,7 +30918,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintOrange,
             true,
             {
-                noNeedHammer = true,
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -31448,7 +30941,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintPurple,
             true,
             {
-                noNeedHammer = true,
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -31472,7 +30964,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintGreen,
             true,
             {
-                noNeedHammer = true,
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -31496,7 +30987,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintYellow,
             true,
             {
-                noNeedHammer = true,
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -31520,7 +31010,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintPurple,
             true,
             {
-                noNeedHammer = true,
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -31544,7 +31033,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintOrange,
             true,
             {
-                noNeedHammer = true,
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -31568,7 +31056,6 @@ local function addGraffitiToMenu()
             BuildingMenu.PaintWhite,
             true,
             {
-                noNeedHammer = true,
                 isCorner = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -31639,7 +31126,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium"
                     },
                     {
@@ -31656,12 +31142,8 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "postbox",
-                        renderFloorHelper = false,
-                        canBeAlwaysPlaced = true,
-                        isCorner = true,
+                        blockAllTheSquare = false,
                         canBeLockedByPadlock = false
                     },
                     {
@@ -31678,12 +31160,8 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildMetalStructureMedium",
-                        containerType = "postbox",
-                        renderFloorHelper = false,
-                        canBeAlwaysPlaced = true,
-                        blockAllTheSquare = true,
+                        blockAllTheSquare = false,
                         canBeLockedByPadlock = false
                     },
                     {
@@ -31782,7 +31260,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,
@@ -31803,7 +31280,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,
@@ -31824,7 +31300,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,
@@ -31845,7 +31320,6 @@ local function addOtherDecorationsToMenu()
                     BuildingMenu.MetalCounterSmallRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "BuildWoodenStructureLarge",
                         isCorner = true,
                         blockAllTheSquare = false,
@@ -31868,11 +31342,10 @@ local function addOtherDecorationsToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Grave_Generic",
-                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
                         canBeAlwaysPlaced = true,
@@ -31887,11 +31360,10 @@ local function addOtherDecorationsToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Grave_Generic",
-                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
                         canBeAlwaysPlaced = true,
@@ -31906,14 +31378,12 @@ local function addOtherDecorationsToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Grave_Generic",
-                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -31925,14 +31395,12 @@ local function addOtherDecorationsToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Grave_Generic",
-                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -31944,14 +31412,12 @@ local function addOtherDecorationsToMenu()
                 BuildingMenu.createObject(
                     "",
                     "Tooltip_Grave_Generic",
-                    BuildingMenu.onBuildWoodenContainer,
+                    BuildingMenu.onBuildSimpleFurniture,
                     BuildingMenu.GraveRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         renderFloorHelper = false,
-                        canBeAlwaysPlaced = true,
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
@@ -31985,7 +31451,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32003,7 +31468,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32021,7 +31485,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32039,7 +31502,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32057,7 +31519,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32075,7 +31536,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32093,7 +31553,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32111,7 +31570,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32129,7 +31587,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32147,7 +31604,6 @@ local function addFlowerBedsToMenu()
             BuildingMenu.FlowerBedRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -32179,7 +31635,6 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -32194,7 +31649,6 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -32209,7 +31663,6 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -32224,7 +31677,6 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -32239,7 +31691,6 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -32254,7 +31705,6 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -32269,7 +31719,6 @@ local function addIndoorPlantsToMenu()
             BuildingMenu.FlowerPotRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "DropSoilFromGravelBag",
                 blockAllTheSquare = false,
                 canPassThrough = true,
@@ -32303,7 +31752,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32327,7 +31775,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32351,7 +31798,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32375,7 +31821,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32399,7 +31844,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32423,7 +31867,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32447,7 +31890,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32471,7 +31913,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32495,7 +31936,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32519,7 +31959,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32543,7 +31982,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32567,7 +32005,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32591,7 +32028,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32615,7 +32051,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32639,7 +32074,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32663,7 +32097,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32687,7 +32120,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32711,7 +32143,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.GrassRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32741,7 +32172,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32761,7 +32191,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32786,7 +32215,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32806,7 +32234,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.FlowerBedRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         completionSound = "DropSoilFromGravelBag",
                         needToBeAgainstWall = false,
                         blockAllTheSquare = false,
@@ -32837,7 +32264,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32855,7 +32281,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32873,7 +32298,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32892,7 +32316,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32910,7 +32333,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32928,7 +32350,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32947,7 +32368,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32965,7 +32385,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -32983,7 +32402,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -33002,7 +32420,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -33020,7 +32437,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -33038,7 +32454,6 @@ local function addLandscapingToMenu()
                     BuildingMenu.WallVinesRecipe,
                     true,
                     {
-                        noNeedHammer = true,
                         needToBeAgainstWall = true,
                         blockAllTheSquare = false,
                         canPassThrough = true,
@@ -33450,7 +32865,6 @@ local function addGeneratorToMenu()
             BuildingMenu.GeneratorRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "appliances_misc_01_0", northSprite = "appliances_misc_01_0" }
@@ -33476,7 +32890,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "crafted_01_24" }
@@ -33488,7 +32901,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "building_menu_barrels_02_16" }
@@ -33500,7 +32912,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "crafted_01_28" }
@@ -33512,7 +32923,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "building_menu_barrels_02_0" }
@@ -33524,7 +32934,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "building_menu_barrels_02_4" }
@@ -33536,7 +32945,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "building_menu_barrels_02_8" }
@@ -33548,7 +32956,6 @@ local function addMetalDrumsToMenu()
             BuildingMenu.MetalDrumRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium"
             },
             { sprite = "building_menu_barrels_02_12" }
@@ -33573,7 +32980,6 @@ local function addWaterWellToMenu()
             BuildingMenu.WaterWellRecipe,
             true,
             {
-                noNeedHammer = true,
                 canPassThrough = true,
                 isCorner = true,
                 completionSound = "BuildFenceCairn",
@@ -33707,6 +33113,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.rugsSubCategory then
         addRugsToMenu()
+    end
+    if SandboxVars.BuildingMenu.curtainsSubCategory then
+        addCurtainsToMenu()
     end
     if SandboxVars.BuildingMenu.postersAndSignsSubCategory then
         addPostersAndSignsToMenu()

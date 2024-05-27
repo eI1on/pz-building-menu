@@ -103,14 +103,11 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         local props = manager:getSprite(sprite):getProperties();
         BM_Utils.setSpriteProperty(props, "ContainerCapacity", "100", false);
         BM_Utils.setSpriteProperty(props, "container", "logs", false);
-        BM_Utils.setSpriteProperty(props, "container", "", true);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
         props:CreateKeySet();
     end
 
-    
+
     sprites = {
         "melos_tiles_furniture_seating_01_48",
         "melos_tiles_furniture_seating_01_49",

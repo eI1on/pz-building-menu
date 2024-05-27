@@ -360,6 +360,24 @@ end
 ---@param name string
 ---@param playerNum number
 ---@return ISBuildingObject
+BuildingMenu.onBuildCurtain = function(sprites, name, playerNum, objectRecipe, objectOptions)
+    local _curtain = ISCurtain:new(playerNum, name, sprites.sprite, sprites.northSprite)
+
+    if sprites.eastSprite then
+        _curtain:setEastSprite(sprites.eastSprite);
+    end
+
+    if sprites.southSprite then
+        _curtain:setSouthSprite(sprites.southSprite);
+    end
+
+    return _curtain
+end
+
+---@param sprites table
+---@param name string
+---@param playerNum number
+---@return ISBuildingObject
 BuildingMenu.onBuildClothingWasher = function(sprites, name, playerNum, objectRecipe, objectOptions)
     local _clothingWasher = ISClothingWasher:new(playerNum, name, sprites.sprite, sprites.northSprite)
 

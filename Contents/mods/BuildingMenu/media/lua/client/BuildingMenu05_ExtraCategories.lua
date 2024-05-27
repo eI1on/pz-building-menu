@@ -12,7 +12,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -33,7 +32,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -66,7 +64,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -87,7 +84,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -108,7 +104,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -129,7 +124,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -150,7 +144,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -171,7 +164,6 @@ local function addLightingToMenu()
             BuildingMenu.SwitchRecipe,
             true,
             {
-                noNeedHammer = true,
                 renderFloorHelper = true,
                 needToBeAgainstWall = true,
                 blockAllTheSquare = false,
@@ -204,7 +196,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -225,7 +216,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -244,7 +234,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -263,7 +252,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -282,7 +270,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -303,7 +290,6 @@ local function addLightingToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = false,
                 canPassThrough = true,
@@ -322,7 +308,6 @@ local function addLightingToMenu()
             BuildingMenu.LightPostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 needToBeAgainstWall = false,
                 blockAllTheSquare = false,
@@ -341,7 +326,6 @@ local function addLightingToMenu()
             BuildingMenu.MetalFencePostRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = false,
                 canPassThrough = true,
@@ -370,7 +354,6 @@ local function addBathroomAppliancesToMenu()
             spec.recipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
             },
@@ -555,9 +538,7 @@ local function addCookingAppliancesToMenu()
             BuildingMenu.StoveRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true
             },
             {
                 sprite = "appliances_cooking_01_35",
@@ -571,9 +552,7 @@ local function addCookingAppliancesToMenu()
             BuildingMenu.StoveRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
-                canBeAlwaysPlaced = true
             },
             {
                 sprite = "appliances_cooking_01_16",
@@ -600,10 +579,8 @@ local function addCookingAppliancesToMenu()
             BuildingMenu.OvenRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false
             },
             {
@@ -623,7 +600,6 @@ local function addCookingAppliancesToMenu()
         BuildingMenu.MicrowaveOvenRecipe,
         true,
         {
-            noNeedHammer = true,
             completionSound = "BuildMetalStructureMedium",
             buildMid = true,
             canBeAlwaysPlaced = false,
@@ -645,7 +621,6 @@ local function addCookingAppliancesToMenu()
         BuildingMenu.MicrowaveOvenRecipe,
         true,
         {
-            noNeedHammer = true,
             completionSound = "BuildMetalStructureMedium",
             buildMid = true,
             canBeAlwaysPlaced = false,
@@ -680,7 +655,6 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.FridgeRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildHigh = true,
                 renderFloorHelper = false,
@@ -740,7 +714,6 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.Fridge2TileRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildHigh = true,
                 dismantable = true
@@ -763,7 +736,6 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.FridgeRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
                 dismantable = true
@@ -785,10 +757,8 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.TrailerFridgeRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildHigh = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },
@@ -807,10 +777,8 @@ local function addFridgeAppliancesToMenu()
             BuildingMenu.TrailerFridgeRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildHigh = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },
@@ -840,10 +808,8 @@ local function addLaundryAppliancesToMenu()
             BuildingMenu.WashingMachineWindowRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },
@@ -861,10 +827,8 @@ local function addLaundryAppliancesToMenu()
             BuildingMenu.WashingMachineRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },
@@ -882,10 +846,8 @@ local function addLaundryAppliancesToMenu()
             BuildingMenu.WashingMachineRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true
             },
@@ -903,10 +865,8 @@ local function addLaundryAppliancesToMenu()
             BuildingMenu.WashingBinRecipe,
             true,
             {
-                noNeedHammer = true,
                 completionSound = "BuildMetalStructureMedium",
                 buildMid = true,
-                canBeAlwaysPlaced = true,
                 renderFloorHelper = false,
                 dismantable = true,
             },
