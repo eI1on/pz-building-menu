@@ -1,3 +1,14 @@
+ MAY 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Fixed Build Action that did not correctly flag if the recipe needed a hammer
+[/list]
+[/list]
+
+
 27 MAY 24
 433f0bd
 

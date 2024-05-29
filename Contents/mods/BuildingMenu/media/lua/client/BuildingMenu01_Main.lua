@@ -377,6 +377,7 @@ end
 ---@param object any
 ---@param playerNum number
 ---@param tool string
+---@return InventoryItem|nil
 BuildingMenu.equipToolPrimary = function(object, playerNum, tool)
     local item = nil;
     local inv = getSpecificPlayer(playerNum):getInventory();
@@ -390,12 +391,14 @@ BuildingMenu.equipToolPrimary = function(object, playerNum, tool)
     else
         ISInventoryPaneContextMenu.equipWeapon(item, true, item:isTwoHandWeapon(), playerNum);
     end
+    return item;
 end
 
 --- Equips a secondary tool for the player
 ---@param object any
 ---@param playerNum number
 ---@param tool string
+---@return InventoryItem|nil
 BuildingMenu.equipToolSecondary = function(object, playerNum, tool)
     local item = nil;
     local inv = getSpecificPlayer(playerNum):getInventory();
@@ -409,6 +412,7 @@ BuildingMenu.equipToolSecondary = function(object, playerNum, tool)
     else
         -- ISInventoryPaneContextMenu.equipWeapon(item, false, item:isTwoHandWeapon(), playerNum)
     end
+    return item;
 end
 
 

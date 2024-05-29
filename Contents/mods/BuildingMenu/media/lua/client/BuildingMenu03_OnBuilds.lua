@@ -19,14 +19,12 @@ local exclusions = {
 ---@param objectRecipe table
 ---@param objectOptions table
 function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRecipe, objectOptions)
-    if name then
-        object.name = name;
-    end
+    if name then object.name = name; end
     object.player = playerNum;
 
     if not objectRecipe then return; end
 
-    local modData = object.modData; -- cache modData reference.
+    local modData = object.modData; -- cache modData reference
 
     modData.isBuiltObject = true;
 
@@ -50,13 +48,38 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
 
     local neededTools = objectRecipe.neededTools;
     local needHammer = false;
-    if neededTools then
+    if neededTools and #neededTools >= 1 then
+        local item = nil;
+
         if neededTools[1] == "Hammer" then needHammer = true; end
-        BuildingMenu.equipToolPrimary(object, playerNum, neededTools[1]);
+        item = BuildingMenu.equipToolPrimary(object, playerNum, neededTools[1]);
+
+        if item and instanceof(item, "InventoryItem") then
+            objectOptions.firstItem = item:getType();
+        elseif not ISBuildMenu.cheat then
+            error("[Building Menu ERROR] " ..
+                string.format("At selecting - firstItem - for: %s  objectOptions.firstItem: %s", name or "",
+                    objectOptions.firstItem or ""));
+            return;
+        end
+
         if neededTools[2] then
-            BuildingMenu.equipToolSecondary(object, playerNum, neededTools[2]);
+            local secondItem = nil;
+
+            secondItem = BuildingMenu.equipToolSecondary(object, playerNum, neededTools[2]);
+
+            if secondItem and instanceof(secondItem, "InventoryItem") then
+                objectOptions.secondItem = secondItem:getType();
+            elseif not ISBuildMenu.cheat then
+                error("[Building Menu ERROR] " ..
+                    string.format("At selecting - secondItem - for: %s  objectOptions.secondItem: %s", name or "",
+                        objectOptions.secondItem or ""));
+                return;
+            end
         end
     end
+
+    object.noNeedHammer = not needHammer;
 
     if objectOptions then
         for option, value in pairs(objectOptions) do
@@ -68,32 +91,6 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
                 else
                     object[option] = value;
                 end
-            elseif option == "noNeedHammer" then
-                object[option] = not needHammer;
-            end
-        end
-        local inv = getSpecificPlayer(playerNum):getInventory();
-        local item = nil;
-        if objectOptions.firstItem then
-            item = BuildingMenu.getAvailableTool(inv, objectOptions.firstItem);
-            if item and instanceof(item, "InventoryItem") then
-                objectOptions.firstItem = item:getType()
-            elseif not ISBuildMenu.cheat then
-                print("[Building Menu ERROR] ",
-                    string.format("At selecting - firstItem - for: %s  objectOptions.firstItem: %s", name or "",
-                        objectOptions.firstItem or ""));
-                return;
-            end
-        end
-        if objectOptions.secondItem then
-            item = BuildingMenu.getAvailableTool(inv, objectOptions.secondItem);
-            if item and instanceof(item, "InventoryItem") then
-                objectOptions.secondItem = item:getType();
-            elseif not ISBuildMenu.cheat then
-                print("[Building Menu ERROR] ",
-                    string.format("At selecting - secondItem - for: %s  objectOptions.secondItem: %s", name or "",
-                        objectOptions.secondItem or ""));
-                return;
             end
         end
 
@@ -102,9 +99,19 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
         BM_Utils.debugPrint("[Building Menu DEBUG] ", objectRecipe);
 
         local health = BM_Utils.safeCallMethod(object, "getHealth");
+        local origGetHealth = object.getHealth;
+        if origGetHealth then
+            object.getHealth = function(self)
+                if objectOptions.health then return objectOptions.health; end
+                if objectOptions.extraHealth then return objectOptions.extraHealth + (health or 100); end
+                return (health or 100);
+            end
+        end
+
+        health = BM_Utils.safeCallMethod(object, "getHealth");
         BM_Utils.debugPrint("[Building Menu DEBUG] ",
-            string.format("objectOptions.health: %s  object:getHealth(): %s",
-                objectOptions.health or 0, health or 0));
+            string.format("objectOptions.extraHealth: %s  objectOptions.health: %s  object:getHealth(): %s",
+                objectOptions.extraHealth or 0, objectOptions.health or 0, health or 0));
 
         if spritesName then
             if spritesName["sprite"] then
