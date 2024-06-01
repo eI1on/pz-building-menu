@@ -101,11 +101,11 @@ function ISThreeTileGarageDoor:getHealth()
         for i, tool in ipairs(self.usedTools) do
             local toolType = tool.toolType;
             if toolType == "BlowTorch" then
-                return 600 + BM_Utils.getMetalHealth(self);
+                return 750 + BM_Utils.getMetalHealth(self);
             end
         end
     end
-    return 600 + buildUtil.getWoodHealth(self);
+    return 750 + buildUtil.getWoodHealth(self);
 end
 
 --- Validates if the garage door can be placed on the specified square

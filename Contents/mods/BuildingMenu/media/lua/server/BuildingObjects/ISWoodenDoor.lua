@@ -63,7 +63,15 @@ end
 -- Return the health of the new wall, it's 300 + 100 per carpentry lvl
 ---@return number health
 function ISWoodenDoor:getHealth()
-	return 300 + buildUtil.getWoodHealth(self);
+	if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 500 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
+	return 500 + buildUtil.getWoodHealth(self);
 end
 
 ---Valid only if it's on a door frame

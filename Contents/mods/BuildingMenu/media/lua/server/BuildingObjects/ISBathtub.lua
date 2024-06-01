@@ -124,11 +124,11 @@ function ISBathtub:getHealth()
 		for i, tool in ipairs(self.usedTools) do
 			local toolType = tool.toolType;
 			if toolType == "BlowTorch" then
-				return 500 + BM_Utils.getMetalHealth(self);
+				return 750 + BM_Utils.getMetalHealth(self);
 			end
 		end
 	end
-	return 500 + buildUtil.getWoodHealth(self);
+	return 750 + buildUtil.getWoodHealth(self);
 end
 
 

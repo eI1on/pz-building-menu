@@ -49,7 +49,15 @@ end
 --- Calculates the health of the metal wall
 --- @return integer health The calculated health based on construction skills and traits
 function ISMetalWall:getHealth()
-    return 600 + BM_Utils.getMetalHealth(self);
+	if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 600 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
+	return 600 + buildUtil.getWoodHealth(self);
 end
 
 --- Validates if the metal wall can be placed on the specified square

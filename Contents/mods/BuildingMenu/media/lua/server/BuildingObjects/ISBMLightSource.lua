@@ -1,3 +1,5 @@
+local BM_Utils = require("BM_Utils")
+
 ISBMLightSource = ISBuildingObject:derive("ISBMLightSource");
 
 function ISBMLightSource:create(x, y, z, north, sprite)
@@ -69,7 +71,15 @@ function ISBMLightSource:new(sprite, northSprite, player)
 end
 
 function ISBMLightSource:getHealth()
-    return 200 + buildUtil.getWoodHealth(self);
+	if self.usedTools then
+		for i, tool in ipairs(self.usedTools) do
+			local toolType = tool.toolType;
+			if toolType == "BlowTorch" then
+				return 350 + BM_Utils.getMetalHealth(self);
+			end
+		end
+	end
+	return 350 + buildUtil.getWoodHealth(self);
 end
 
 function ISBMLightSource:isValid(square)

@@ -85,11 +85,11 @@ function ISWoodenContainer:getHealth()
         for i, tool in ipairs(self.usedTools) do
             local toolType = tool.toolType;
             if toolType == "BlowTorch" then
-                return 300 + BM_Utils.getMetalHealth(self);
+                return 350 + BM_Utils.getMetalHealth(self);
             end
         end
     end
-    return 200 + buildUtil.getWoodHealth(self);
+    return 350 + buildUtil.getWoodHealth(self);
 end
 
 --- Validates the placement of the wooden container

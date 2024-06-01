@@ -81,11 +81,11 @@ function ISHighMetalFence:getHealth()
 		for i, tool in ipairs(self.usedTools) do
 			local toolType = tool.toolType;
 			if toolType == "BlowTorch" then
-				return 700 + BM_Utils.getMetalHealth(self);
+				return 750 + BM_Utils.getMetalHealth(self);
 			end
 		end
 	end
-	return 700 + buildUtil.getWoodHealth(self);
+	return 750 + buildUtil.getWoodHealth(self);
 end
 
 --- Renders the fence as a ghost tile at the specified location

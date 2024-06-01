@@ -166,11 +166,11 @@ function ISThreeTileSimpleFurniture:getHealth()
         for i, tool in ipairs(self.usedTools) do
             local toolType = tool.toolType;
             if toolType == "BlowTorch" then
-                return 300 + BM_Utils.getMetalHealth(self);
+                return 500 + BM_Utils.getMetalHealth(self);
             end
         end
     end
-    return 300 + buildUtil.getWoodHealth(self);
+    return 500 + buildUtil.getWoodHealth(self);
 end
 
 --- Renders a ghost tile of the furniture object for placement preview
