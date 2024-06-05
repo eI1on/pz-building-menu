@@ -1,8 +1,8 @@
-name=Building Menu
+name=Building Menu [B41.78]
 poster=poster.png
 id=BuildingMenu
 description=
 tiledef=building_menu 400
 pack=building_menu
 tags=Build 41,Misc,Multiplayer,Interface
-versionMin=41.0
+versionMax=41.78

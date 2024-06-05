@@ -1,6 +1,6 @@
 version=1
 id=3137092790
-title=Building Menu - Simon MDs Tiles Addon
+title=Building Menu [B41.78] - Simon MDs Tiles Addon
 description=[img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/addons_media/building_menu_simonMD_preview/BM_Workshop_Addons_SimonMD_Desc_1.png [/img]
 description=[img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/workshop_images/BM_Workshop_Desc_2.png [/img]
 description=[url=https://www.youtube.com/watch?v=TbvAJmf9Lg4] [img] https://raw.githubusercontent.com/eI1on/workshop_resources/main/building_menu_media/workshop_images/BM_Workshop_Desc_3.png [/img] [/url]

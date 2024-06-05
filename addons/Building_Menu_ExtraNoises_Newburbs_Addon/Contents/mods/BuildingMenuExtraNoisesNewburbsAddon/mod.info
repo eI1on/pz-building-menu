@@ -4,4 +4,4 @@ id=BuildingMenuExtraNoisesNewburbsAddon
 description=Ready to take your building experience up a notch? This is an add-on for the Building Menu that adds buildable objects from ExtraNoise's Newburbs Tilepack.
 require=BuildingMenu,EN_Newburbs
 tags=Build 41,Misc,Multiplayer,Interface
-versionMin=41.0
+versionMax=41.78
