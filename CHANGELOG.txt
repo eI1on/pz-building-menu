@@ -1,3 +1,15 @@
+JUNE 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Added restriction for maximum game version of 41.78
+[*] Fixed not being able to build wall detailings on window walls
+[/list]
+[/list]
+
+
 29 MAY 24
 1c1cf75
 Hotfix

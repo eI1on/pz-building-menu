@@ -8,15 +8,11 @@ ISWallOverlay = ISBuildingObject:derive("ISWallOverlay");
 --- @param north boolean Indicates if the overlay faces north
 --- @return boolean isRelevant True if the object is a relevant wall, false otherwise
 local function isRelevantWall(isCorner, object, north)
-    if instanceof(object, "IsoWindow") or object:getProperties():Is(IsoFlagType.solidfloor) then return false; end
-
     if object:getModData().WindowWall then return true; end
+    local properties = object:getProperties();
+    if instanceof(object, "IsoWindow") or (properties and properties:Is(IsoFlagType.solidfloor)) then return false; end
 
-    local properties = object:getProperties()
-
-    if isCorner then
-        return properties:Is(IsoFlagType.WallNW) or properties:Is(IsoFlagType.WallSE);
-    end
+    if isCorner then return properties:Is(IsoFlagType.WallNW) or properties:Is(IsoFlagType.WallSE); end
 
     if north then
         return properties:Is(IsoFlagType.WallN) or properties:Is(IsoFlagType.WindowN) or
