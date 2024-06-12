@@ -107,6 +107,7 @@ BuildingMenu.Tools = {
             'Base.Screwdriver',
             'ToolsOfTheTrade.Multitool',      --Tools of the Trade
             'ToolsOfTheTrade.SpiffArmyKnife', --Tools of the Trade
+            'RainsToolsandBlades.Swiss'       -- Rain's Tools & Blades
         },
         tags = { 'Screwdriver' }
     },

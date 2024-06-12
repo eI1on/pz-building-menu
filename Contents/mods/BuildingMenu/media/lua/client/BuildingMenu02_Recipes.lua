@@ -3759,6 +3759,49 @@ local function initBuildingMenuRecipes()
     }
 
 
+    BuildingMenu.HighConcretePoleFenceRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.MetalBar",
+                Amount = BuildingMenu.round(metalBarsCount * 2)
+            },
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 1)
+            },
+            {
+                Material = "Base.ScrapMetal",
+                Amount = BuildingMenu.round(scrapMetalCountForFences * 1)
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BucketConcreteFull",
+                Amount = 1
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 8,
+                Xp = BuildingMenu.round(8 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
     BuildingMenu.HighConcreteWireFencePostRecipe = {
         neededTools = {
             "BlowTorch",
@@ -3990,6 +4033,130 @@ local function initBuildingMenuRecipes()
             }
         }
     }
+
+
+    BuildingMenu.MetalWoodStairRailingsRecipe = {
+        neededTools = {
+            "Hammer",
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 1),
+            },
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
+            },
+            {
+                Material = "Base.MetalBar",
+                Amount = BuildingMenu.round(metalBarsCount * 1.5)
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 1)
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 1), "Material")
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill * 0.5),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+            },
+            {
+                Skill = "MetalWelding",
+                Level = 4,
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.MetalStairRailingsRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
+            },
+            {
+                Material = "Base.MetalBar",
+                Amount = BuildingMenu.round(metalBarsCount * 1.75)
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 1)
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(5)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 4,
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.WoodStairRailingsRecipe = {
+        neededTools = {
+            "Hammer",
+            "Screwdriver",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = BuildingMenu.round(smallObjectsWoodCount * 2),
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 0.5)
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 2), "Material")
+            },
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = BuildingMenu.round(smallObjectsCarpentrySkill),
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+            },
+        }
+    }
+
 
     BuildingMenu.HescoBarrierRecipe = {
         neededTools = {

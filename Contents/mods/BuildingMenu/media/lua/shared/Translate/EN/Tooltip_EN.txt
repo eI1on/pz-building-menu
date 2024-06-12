@@ -1767,6 +1767,13 @@ Tooltip_EN = {
   Tooltip_Mall_Rail_Fence_Post = "These railing posts were repurposed from a local mall.",
   Tooltip_Mall_Rail_Fence = "These railings were repurposed from a local mall.",
 
+  Tooltip_BuildingMenuObj_Wood_and_Metal_Stair_Railings = "Wood and Metal Stair Railings",
+  Tooltip_BuildingMenuObj_Metal_Stair_Railings = "Metal Stair Railings",
+  Tooltip_BuildingMenuObj_Wood_Stair_Railings = "Wood Stair Railings",
+  Tooltip_Wood_and_Metal_Stair_Railings = "Strong enough to hold you, weak enough to fail when you need it most.",
+  Tooltip_Metal_Stair_Railings = "Guaranteed to rust away before the zombies even get you.",
+  Tooltip_Wood_Stair_Railings = "Strong enough to hold you, until the termites decide otherwise.",
+
   Tooltip_BuildingMenuObj_Green_Metal_Fence_Post = "Green Metal Fence Post",
   Tooltip_BuildingMenuObj_Green_Metal_Fence = "Green Metal Fence",
   Tooltip_BuildingMenuObj_Red_Metal_Fence_Post = "Red Metal Fence Post",

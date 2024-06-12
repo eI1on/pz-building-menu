@@ -17556,7 +17556,11 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_35", northSprite = "fixtures_railings_01_35" }
+            {
+                sprite = "fixtures_railings_01_35",
+                northSprite = "fixtures_railings_01_45",
+                eastSprite = "fixtures_railings_01_33",
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Railing_with_Tall_Post",
@@ -17577,6 +17581,74 @@ local function addLowAndRailingFencesToMenu()
             }
         ),
         BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing",
+            "Tooltip_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fixtures_railings_01_88",
+                northSprite = "fixtures_railings_01_89",
+                corner = "fixtures_railings_01_91"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing",
+            "Tooltip_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fixtures_railings_01_92",
+                northSprite = "fixtures_railings_01_93",
+                corner = "fixtures_railings_01_91"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing",
+            "Tooltip_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fixtures_railings_01_85",
+                northSprite = "fixtures_railings_01_96",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wooden_Railing_Post",
+            "Tooltip_Wooden_Railing_Post",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "fixtures_railings_01_91", northSprite = "fixtures_railings_01_91" }
+        ),
+        BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing_Post",
             "Tooltip_White_Wooden_Railing_Post",
             BuildingMenu.onBuildWall,
@@ -17590,6 +17662,21 @@ local function addLowAndRailingFencesToMenu()
                 isCorner = true
             },
             { sprite = "fixtures_railings_01_67", northSprite = "fixtures_railings_01_67" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Wooden_Railing_Post",
+            "Tooltip_White_Wooden_Railing_Post",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "fixtures_railings_01_77", northSprite = "fixtures_railings_01_77" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing",
@@ -17637,7 +17724,11 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_75", northSprite = "fixtures_railings_01_75" }
+            {
+                sprite = "fixtures_railings_01_75",
+                northSprite = "fixtures_railings_01_76",
+                eastSprite = "fixtures_railings_01_73"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing_with_Tall_Post",
@@ -17656,6 +17747,75 @@ local function addLowAndRailingFencesToMenu()
                 northSprite = "fixtures_railings_01_74",
                 corner = "fixtures_railings_01_74"
             }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Wooden_Railing",
+            "Tooltip_White_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fixtures_railings_01_128",
+                northSprite = "fixtures_railings_01_129",
+                corner = "fixtures_railings_01_131"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Wooden_Railing",
+            "Tooltip_White_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fixtures_railings_01_132",
+                northSprite = "fixtures_railings_01_133",
+                corner = "fixtures_railings_01_131"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Wooden_Railing",
+            "Tooltip_White_Wooden_Railing",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                sprite = "fixtures_railings_01_125",
+                northSprite = "fixtures_railings_01_136",
+                corner = "fixtures_railings_01_131"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Wooden_Railing_Post",
+            "Tooltip_White_Wooden_Railing_Post",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WoodenFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "fixtures_railings_01_131", northSprite = "fixtures_railings_01_131" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wood_and_Metal_Railing_Post",
@@ -17827,6 +17987,137 @@ local function addLowAndRailingFencesToMenu()
         getText("IGUI_BuildingMenuSubCat_Fencing_Railing"),
         "fixtures_railings_01_27",
         railing
+    )
+
+    local stairRailings  ={
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wood_and_Metal_Stair_Railings",
+            "Tooltip_Wood_and_Metal_Stair_Railings",
+            BuildingMenu.onBuildStairRailings,
+            BuildingMenu.MetalWoodStairRailingsRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canPassThrough = true,
+                canBarricade = false,
+            },
+            {
+                sprite = "fixtures_railings_01_7",
+                sprite2 = "fixtures_railings_01_6",
+                sprite3 = "fixtures_railings_01_5",
+                sprite4 = "fixtures_railings_01_15",
+                sprite5 = "fixtures_railings_01_4",
+                northSprite = "fixtures_railings_01_0",
+                northSprite2 = "fixtures_railings_01_1",
+                northSprite3 = "fixtures_railings_01_2",
+                northSprite4 = "fixtures_railings_01_14",
+                northSprite5 = "fixtures_railings_01_3",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wood_Stair_Railings",
+            "Tooltip_Wood_Stair_Railings",
+            BuildingMenu.onBuildStairRailings,
+            BuildingMenu.WoodStairRailingsRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canPassThrough = true,
+                canBarricade = false,
+            },
+            {
+                sprite = "fixtures_railings_01_80",
+                sprite2 = "fixtures_railings_01_81",
+                sprite3 = "fixtures_railings_01_82",
+                sprite4 = "fixtures_railings_01_83",
+                sprite5 = "fixtures_railings_01_84",
+                northSprite = "fixtures_railings_01_101",
+                northSprite2 = "fixtures_railings_01_100",
+                northSprite3 = "fixtures_railings_01_99",
+                northSprite4 = "fixtures_railings_01_98",
+                northSprite5 = "fixtures_railings_01_97",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wood_Stair_Railings",
+            "Tooltip_Wood_Stair_Railings",
+            BuildingMenu.onBuildStairRailings,
+            BuildingMenu.WoodStairRailingsRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canPassThrough = true,
+                canBarricade = false,
+            },
+            {
+                sprite = "fixtures_railings_01_120",
+                sprite2 = "fixtures_railings_01_121",
+                sprite3 = "fixtures_railings_01_122",
+                sprite4 = "fixtures_railings_01_123",
+                sprite5 = "fixtures_railings_01_124",
+                northSprite = "fixtures_railings_01_141",
+                northSprite2 = "fixtures_railings_01_140",
+                northSprite3 = "fixtures_railings_01_139",
+                northSprite4 = "fixtures_railings_01_138",
+                northSprite5 = "fixtures_railings_01_137",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Stair_Railings",
+            "Tooltip_Metal_Stair_Railings",
+            BuildingMenu.onBuildStairRailings,
+            BuildingMenu.MetalStairRailingsRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canPassThrough = true,
+                canBarricade = false,
+            },
+            {
+                sprite = "fixtures_railings_01_23",
+                sprite2 = "fixtures_railings_01_22",
+                sprite3 = "fixtures_railings_01_21",
+                sprite4 = "fixtures_railings_01_13",
+                sprite5 = "fixtures_railings_01_20",
+                northSprite = "fixtures_railings_01_16",
+                northSprite2 = "fixtures_railings_01_17",
+                northSprite3 = "fixtures_railings_01_18",
+                northSprite4 = "fixtures_railings_01_12",
+                northSprite5 = "fixtures_railings_01_19",
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Metal_Stair_Railings",
+            "Tooltip_Metal_Stair_Railings",
+            BuildingMenu.onBuildStairRailings,
+            BuildingMenu.MetalStairRailingsRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canPassThrough = true,
+                canBarricade = false,
+            },
+            {
+                sprite = "fixtures_railings_01_40",
+                sprite2 = "fixtures_railings_01_41",
+                sprite3 = "fixtures_railings_01_42",
+                sprite4 = "fixtures_railings_01_43",
+                sprite5 = "fixtures_railings_01_44",
+                northSprite = "fixtures_railings_01_61",
+                northSprite2 = "fixtures_railings_01_60",
+                northSprite3 = "fixtures_railings_01_59",
+                northSprite4 = "fixtures_railings_01_58",
+                northSprite5 = "fixtures_railings_01_57",
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        getText("IGUI_BuildingMenuTab_General"),
+        getText("IGUI_BuildingMenuCat_Fencing"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Fencing_Stair_Railings"),
+        "fixtures_railings_01_0",
+        stairRailings
     )
 end
 

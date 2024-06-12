@@ -26,7 +26,7 @@ local function addDaddyDirkieDoorsToMenu()
                         {
                             completionSound = "BuildWoodenStructureLarge",
                             canBarricade = true,
-                            modData = {wallType = "doorframe"}
+                            modData = { wallType = "doorframe" }
                         },
                         sprites
                     )
@@ -38,24 +38,24 @@ local function addDaddyDirkieDoorsToMenu()
 
     local daddyDirkieDoors = {}
     local doorSpriteRanges = {
-        {start = 0, stop = 3, baseName = "d_doors_01_"},
-        {start = 36, stop = 39, baseName = "d_doors_01_"},
-        {start = 44, stop = 47, baseName = "d_doors_01_"},
-        {start = 52, stop = 55, baseName = "d_doors_01_"},
-        {start = 56, stop = 63, baseName = "d_doors_01_"},
-        {start = 8, stop = 15, baseName = "d_doors_02_"},
-        {start = 40, stop = 51, baseName = "d_doors_02_"},
-        {start = 56, stop = 59, baseName = "d_doors_02_"},
-        {start = 0, stop = 3, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 8, stop = 11, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 16, stop = 19, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 24, stop = 27, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 32, stop = 35, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 40, stop = 43, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 48, stop = 51, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 56, stop = 59, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 64, stop = 67, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 72, stop = 95, baseName = "edit_ddd_RUS_Doors_house_01_"},
+        { start = 0,  stop = 3,  baseName = "d_doors_01_" },
+        { start = 36, stop = 39, baseName = "d_doors_01_" },
+        { start = 44, stop = 47, baseName = "d_doors_01_" },
+        { start = 52, stop = 55, baseName = "d_doors_01_" },
+        { start = 56, stop = 63, baseName = "d_doors_01_" },
+        { start = 8,  stop = 15, baseName = "d_doors_02_" },
+        { start = 40, stop = 51, baseName = "d_doors_02_" },
+        { start = 56, stop = 59, baseName = "d_doors_02_" },
+        { start = 0,  stop = 3,  baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 8,  stop = 11, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 16, stop = 19, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 24, stop = 27, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 32, stop = 35, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 40, stop = 43, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 48, stop = 51, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 56, stop = 59, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 64, stop = 67, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 72, stop = 95, baseName = "edit_ddd_RUS_Doors_house_01_" },
     }
 
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenDoorRecipe)
@@ -69,10 +69,10 @@ local function addDaddyDirkieDoorsToMenu()
     )
 
     doorSpriteRanges = {
-        {start = 4, stop = 7, baseName = "d_doors_01_"},
-        {start = 20, stop = 23, baseName = "d_doors_01_"},
-        {start = 28, stop = 31, baseName = "d_doors_01_"},
-        {start = 32, stop = 39, baseName = "d_doors_02_"},
+        { start = 4,  stop = 7,  baseName = "d_doors_01_" },
+        { start = 20, stop = 23, baseName = "d_doors_01_" },
+        { start = 28, stop = 31, baseName = "d_doors_01_" },
+        { start = 32, stop = 39, baseName = "d_doors_02_" },
     }
 
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenSingleGlassDoorRecipe)
@@ -86,18 +86,18 @@ local function addDaddyDirkieDoorsToMenu()
     )
 
     doorSpriteRanges = {
-        {start = 8, stop = 11, baseName = "d_doors_01_"},
-        {start = 16, stop = 19, baseName = "d_doors_01_"},
-        {start = 0, stop = 7, baseName = "d_doors_02_"},
-        {start = 4, stop = 7, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 12, stop = 15, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 20, stop = 23, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 28, stop = 31, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 36, stop = 39, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 44, stop = 47, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 52, stop = 55, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 60, stop = 63, baseName = "edit_ddd_RUS_Doors_house_01_"},
-        {start = 68, stop = 71, baseName = "d_doors_01_"},
+        { start = 8,  stop = 11, baseName = "d_doors_01_" },
+        { start = 16, stop = 19, baseName = "d_doors_01_" },
+        { start = 0,  stop = 7,  baseName = "d_doors_02_" },
+        { start = 4,  stop = 7,  baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 12, stop = 15, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 20, stop = 23, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 28, stop = 31, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 36, stop = 39, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 44, stop = 47, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 52, stop = 55, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 60, stop = 63, baseName = "edit_ddd_RUS_Doors_house_01_" },
+        { start = 68, stop = 71, baseName = "d_doors_01_" },
     }
 
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenDoubleGlassDoorRecipe)
@@ -112,7 +112,7 @@ local function addDaddyDirkieDoorsToMenu()
 
 
     doorSpriteRanges = {
-        {start = 28, stop = 31, baseName = "d_doors_02_"},
+        { start = 28, stop = 31, baseName = "d_doors_02_" },
     }
 
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.MetalDoorRecipe)
@@ -126,8 +126,8 @@ local function addDaddyDirkieDoorsToMenu()
     )
 
     doorSpriteRanges = {
-        {start = 12, stop = 15, baseName = "d_doors_01_"},
-        {start = 16, stop = 23, baseName = "d_doors_02_"},
+        { start = 12, stop = 15, baseName = "d_doors_01_" },
+        { start = 16, stop = 23, baseName = "d_doors_02_" },
     }
 
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.MetalSingleGlassDoorRecipe)
@@ -176,7 +176,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_12", northSprite = "fencing_ddd_01_12"}
+            { sprite = "fencing_ddd_01_12", northSprite = "fencing_ddd_01_12" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
@@ -191,7 +191,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_13", northSprite = "fencing_ddd_01_13"}
+            { sprite = "fencing_ddd_01_13", northSprite = "fencing_ddd_01_13" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence",
@@ -226,7 +226,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_20", northSprite = "fencing_ddd_01_20"}
+            { sprite = "fencing_ddd_01_20", northSprite = "fencing_ddd_01_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
@@ -241,7 +241,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_21", northSprite = "fencing_ddd_01_21"}
+            { sprite = "fencing_ddd_01_21", northSprite = "fencing_ddd_01_21" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1",
@@ -296,7 +296,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_36", northSprite = "fencing_ddd_01_36"}
+            { sprite = "fencing_ddd_01_36", northSprite = "fencing_ddd_01_36" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines",
@@ -311,7 +311,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_37", northSprite = "fencing_ddd_01_37"}
+            { sprite = "fencing_ddd_01_37", northSprite = "fencing_ddd_01_37" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence",
@@ -346,7 +346,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_28", northSprite = "fencing_ddd_01_28"}
+            { sprite = "fencing_ddd_01_28", northSprite = "fencing_ddd_01_28" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post",
@@ -361,7 +361,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "fencing_ddd_01_29", northSprite = "fencing_ddd_01_29"}
+            { sprite = "fencing_ddd_01_29", northSprite = "fencing_ddd_01_29" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -372,7 +372,6 @@ local function addHighFencesToMenu()
         "fencing_ddd_01_11",
         highFences
     )
-
 end
 
 local function addLowAndRailingFencesToMenu()
@@ -390,7 +389,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "location_farm_accesories_spyjack_01_5", northSprite = "location_farm_accesories_spyjack_01_5"}
+            { sprite = "location_farm_accesories_spyjack_01_5", northSprite = "location_farm_accesories_spyjack_01_5" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Fence",
@@ -441,7 +440,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "location_farm_accesories_spyjack_01_4", northSprite = "location_farm_accesories_spyjack_01_4"}
+            { sprite = "location_farm_accesories_spyjack_01_4", northSprite = "location_farm_accesories_spyjack_01_4" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Fence_Gate",
@@ -494,7 +493,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "location_farm_accesories_spyjack_01_21", northSprite = "location_farm_accesories_spyjack_01_21"}
+            { sprite = "location_farm_accesories_spyjack_01_21", northSprite = "location_farm_accesories_spyjack_01_21" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Fence",
@@ -545,7 +544,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "location_farm_accesories_spyjack_01_20", northSprite = "location_farm_accesories_spyjack_01_20"}
+            { sprite = "location_farm_accesories_spyjack_01_20", northSprite = "location_farm_accesories_spyjack_01_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate",
@@ -683,7 +682,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
                     completionSound = "BuildWoodenStructureLarge"
                 },
                 {
-                    sprite = tileSetName .. "_58", 
+                    sprite = tileSetName .. "_58",
                     northSprite = tileSetName .. "_59"
                 }
             ),
@@ -1378,10 +1377,10 @@ end
 
 local function addKitchenCountersToMenu()
     local daddyDirkieCounters = {}
-    local dataCounters = {10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59, 66, 67, 74, 75, 82, 83, 90, 91, 98, 99, 106, 107}
+    local dataCounters = { 10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59, 66, 67, 74, 75, 82, 83, 90, 91, 98, 99, 106, 107 }
 
     for _, spriteNumber in ipairs(dataCounters) do
-        table.insert(daddyDirkieCounters, 
+        table.insert(daddyDirkieCounters,
             BuildingMenu.createObject(
                 "",
                 "Tooltip_Counter_Generic",
@@ -1402,7 +1401,7 @@ local function addKitchenCountersToMenu()
         )
     end
 
-    table.insert(daddyDirkieCounters, 
+    table.insert(daddyDirkieCounters,
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
@@ -1422,7 +1421,7 @@ local function addKitchenCountersToMenu()
         )
     )
 
-    table.insert(daddyDirkieCounters, 
+    table.insert(daddyDirkieCounters,
         BuildingMenu.createObject(
             "",
             "Tooltip_Counter_Generic",
@@ -1453,7 +1452,7 @@ local function addKitchenCountersToMenu()
 
 
     daddyDirkieCounters = {}
-    dataCounters = {1, 3, 5, 7, 113}
+    dataCounters = { 1, 3, 5, 7, 113 }
     for _, spriteNumber in ipairs(dataCounters) do
         table.insert(daddyDirkieCounters,
             BuildingMenu.createObject(
@@ -1474,7 +1473,7 @@ local function addKitchenCountersToMenu()
         )
     end
 
-    dataCounters = {2, 3, 10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59}
+    dataCounters = { 2, 3, 10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59 }
     for _, spriteNumber in ipairs(dataCounters) do
         table.insert(daddyDirkieCounters,
             BuildingMenu.createObject(
@@ -1688,7 +1687,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_9", northSprite = "industry_ddd_01_9"}
+            { sprite = "industry_ddd_01_9", northSprite = "industry_ddd_01_9" }
         ),
         BuildingMenu.createObject(
             "",
@@ -1701,7 +1700,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "furniture_storage_ddd_01_12", northSprite = "furniture_storage_ddd_01_12"}
+            { sprite = "furniture_storage_ddd_01_12", northSprite = "furniture_storage_ddd_01_12" }
         ),
         BuildingMenu.createObject(
             "",
@@ -1714,7 +1713,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "furniture_storage_ddd_01_20", northSprite = "furniture_storage_ddd_01_20"}
+            { sprite = "furniture_storage_ddd_01_20", northSprite = "furniture_storage_ddd_01_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Small_Locker",
@@ -1727,7 +1726,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "furniture_storage_ddd_01_4", northSprite = "furniture_storage_ddd_01_4"}
+            { sprite = "furniture_storage_ddd_01_4", northSprite = "furniture_storage_ddd_01_4" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker",
@@ -1740,7 +1739,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "furniture_storage_ddd_01_7", northSprite = "furniture_storage_ddd_01_7"}
+            { sprite = "furniture_storage_ddd_01_7", northSprite = "furniture_storage_ddd_01_7" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Small_Locker",
@@ -1753,7 +1752,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "furniture_storage_ddd_01_9", northSprite = "furniture_storage_ddd_01_9"}
+            { sprite = "furniture_storage_ddd_01_9", northSprite = "furniture_storage_ddd_01_9" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pallet_White_Small_Locker",
@@ -1766,7 +1765,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "furniture_storage_ddd_01_8", northSprite = "furniture_storage_ddd_01_8"}
+            { sprite = "furniture_storage_ddd_01_8", northSprite = "furniture_storage_ddd_01_8" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1779,7 +1778,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_4", northSprite = "industry_ddd_01_4"}
+            { sprite = "industry_ddd_01_4", northSprite = "industry_ddd_01_4" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1792,7 +1791,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_5", northSprite = "industry_ddd_01_5"}
+            { sprite = "industry_ddd_01_5", northSprite = "industry_ddd_01_5" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1805,7 +1804,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_6", northSprite = "industry_ddd_01_6"}
+            { sprite = "industry_ddd_01_6", northSprite = "industry_ddd_01_6" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1818,7 +1817,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_7", northSprite = "industry_ddd_01_7"}
+            { sprite = "industry_ddd_01_7", northSprite = "industry_ddd_01_7" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet",
@@ -1831,7 +1830,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_55", northSprite = "industry_ddd_01_55"}
+            { sprite = "industry_ddd_01_55", northSprite = "industry_ddd_01_55" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet",
@@ -1844,7 +1843,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_53", northSprite = "industry_ddd_01_53"}
+            { sprite = "industry_ddd_01_53", northSprite = "industry_ddd_01_53" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet",
@@ -1857,7 +1856,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_54", northSprite = "industry_ddd_01_54"}
+            { sprite = "industry_ddd_01_54", northSprite = "industry_ddd_01_54" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1870,7 +1869,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_55", northSprite = "industry_ddd_01_55"}
+            { sprite = "industry_ddd_01_55", northSprite = "industry_ddd_01_55" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1883,7 +1882,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_52", northSprite = "industry_ddd_01_52"}
+            { sprite = "industry_ddd_01_52", northSprite = "industry_ddd_01_52" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1896,7 +1895,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_60", northSprite = "industry_ddd_01_60"}
+            { sprite = "industry_ddd_01_60", northSprite = "industry_ddd_01_60" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1909,7 +1908,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_56", northSprite = "industry_ddd_01_56"}
+            { sprite = "industry_ddd_01_56", northSprite = "industry_ddd_01_56" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1922,7 +1921,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_57", northSprite = "industry_ddd_01_57"}
+            { sprite = "industry_ddd_01_57", northSprite = "industry_ddd_01_57" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1935,7 +1934,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_58", northSprite = "industry_ddd_01_58"}
+            { sprite = "industry_ddd_01_58", northSprite = "industry_ddd_01_58" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1948,7 +1947,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            {sprite = "industry_ddd_01_59", northSprite = "industry_ddd_01_59"}
+            { sprite = "industry_ddd_01_59", northSprite = "industry_ddd_01_59" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -2012,12 +2011,12 @@ local function addDaddyDirkieStairsToMenu()
     end
 
     local melosWoodenStairs = {}
-    local dataStairs = {16, 19}
+    local dataStairs = { 16, 19 }
     for _, startNumber in ipairs(dataStairs) do
         table.insert(melosWoodenStairs, createWoodenStairsObject1("fixtures_stairs_ddd_01_", startNumber))
     end
 
-    dataStairs = {32, 40, 48}
+    dataStairs = { 32, 40, 48 }
     for _, startNumber in ipairs(dataStairs) do
         table.insert(melosWoodenStairs, createWoodenStairsObject2("fixtures_stairs_ddd_01_", startNumber))
     end
@@ -2131,7 +2130,7 @@ local function addDaddyDirkieOthersToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "d_doors_02_64",
@@ -2149,7 +2148,7 @@ local function addDaddyDirkieOthersToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "d_doors_02_68",
@@ -2181,7 +2180,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "edit_ddd_RUS_Forest Survival_01_0",
@@ -2197,7 +2196,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "edit_ddd_RUS_Forest Survival_01_6",
@@ -2216,7 +2215,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "building_menu_03_ddd_Forest_Survival_0",
@@ -2230,14 +2229,14 @@ local function addDaddyDirkieForestSurvivalToMenu()
             BuildingMenu.onBuildWindow,
             BuildingMenu.WindowRecipe,
             true,
-            {  
+            {
                 completionSound = "BuildWoodenStructureLarge",
                 canBeAlwaysPlaced = true,
                 canPassThrough = false,
                 canBarricade = true,
                 isThumpable = true,
             },
-            {sprite = "edit_ddd_RUS_Forest Survival_01_14", northSprite = "edit_ddd_RUS_Forest Survival_01_15"}
+            { sprite = "edit_ddd_RUS_Forest Survival_01_14", northSprite = "edit_ddd_RUS_Forest Survival_01_15" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Log_Pillar",
@@ -2250,10 +2249,10 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
-                sprite = "edit_ddd_RUS_Forest Survival_01_1", 
+                sprite = "edit_ddd_RUS_Forest Survival_01_1",
                 northSprite = "edit_ddd_RUS_Forest Survival_01_3"
             }
         ),
@@ -2268,10 +2267,10 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
             {
-                sprite = "edit_ddd_RUS_Forest Survival_01_5", 
+                sprite = "edit_ddd_RUS_Forest Survival_01_5",
                 northSprite = "edit_ddd_RUS_Forest Survival_01_5"
             }
         ),
@@ -2320,7 +2319,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge"
             },
-            {sprite = "edit_ddd_RUS_Forest Survival_01_61", northSprite = "edit_ddd_RUS_Forest Survival_01_58"}
+            { sprite = "edit_ddd_RUS_Forest Survival_01_61", northSprite = "edit_ddd_RUS_Forest Survival_01_58" }
         ),
         BuildingMenu.createObject(
             "",
@@ -2331,7 +2330,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge"
             },
-            {sprite = "edit_ddd_RUS_Forest Survival_01_60", northSprite = "edit_ddd_RUS_Forest Survival_01_59"}
+            { sprite = "edit_ddd_RUS_Forest Survival_01_60", northSprite = "edit_ddd_RUS_Forest Survival_01_59" }
         ),
 
 
@@ -2350,7 +2349,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "edit_ddd_RUS_Forest Survival_01_16", northSprite = "edit_ddd_RUS_Forest Survival_01_21"}
+            { sprite = "edit_ddd_RUS_Forest Survival_01_16", northSprite = "edit_ddd_RUS_Forest Survival_01_21" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Log_Roof_Pitched_2",
@@ -2367,7 +2366,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "edit_ddd_RUS_Forest Survival_01_17", northSprite = "edit_ddd_RUS_Forest Survival_01_20"}
+            { sprite = "edit_ddd_RUS_Forest Survival_01_17", northSprite = "edit_ddd_RUS_Forest Survival_01_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Log_Roof_Pitched_3",
@@ -2384,7 +2383,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "edit_ddd_RUS_Forest Survival_01_18", northSprite = "edit_ddd_RUS_Forest Survival_01_19"}
+            { sprite = "edit_ddd_RUS_Forest Survival_01_18", northSprite = "edit_ddd_RUS_Forest Survival_01_19" }
         ),
         BuildingMenu.createObject(
             "",
@@ -2491,7 +2490,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
             }
         ),
 
-        
+
         BuildingMenu.createObject(
             "",
             "Tooltip_craft_bedDesc",
@@ -2559,11 +2558,11 @@ local function addDaddyDirkieForestSurvivalToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-         getText("IGUI_BuildingMenuCat_DaddyDirkie_Others"),
-         "edit_ddd_RUS_Forest Survival_01_0",
-         getText("IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival"),
-         "edit_ddd_RUS_Forest Survival_01_0",
-         forestSurvival
+        getText("IGUI_BuildingMenuCat_DaddyDirkie_Others"),
+        "edit_ddd_RUS_Forest Survival_01_0",
+        getText("IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival"),
+        "edit_ddd_RUS_Forest Survival_01_0",
+        forestSurvival
     )
 end
 
@@ -2606,11 +2605,11 @@ local function addDaddyDirkieCraftedStoveToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-         getText("IGUI_BuildingMenuCat_Appliances"),
-         "edit_ddd_RUS_House_Furnace_35",
-         getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
-         "edit_ddd_RUS_House_Furnace_35",
-         craftedStove
+        getText("IGUI_BuildingMenuCat_Appliances"),
+        "edit_ddd_RUS_House_Furnace_35",
+        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
+        "edit_ddd_RUS_House_Furnace_35",
+        craftedStove
     )
 end
 
@@ -2632,9 +2631,9 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
 
     local bathroomObjectSpecs = {
         {
-            buildFunc = BuildingMenu.onBuildSink, 
-            recipe = BuildingMenu.SinkRecipe, 
-            sprites = { 
+            buildFunc = BuildingMenu.onBuildSink,
+            recipe = BuildingMenu.SinkRecipe,
+            sprites = {
                 sprite = "furniture_more_ddd_01_14",
                 northSprite = "furniture_more_ddd_01_13",
                 eastSprite = "furniture_more_ddd_01_15",
@@ -2642,9 +2641,9 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
             }
         },
         {
-            buildFunc = BuildingMenu.onBuildSink, 
-            recipe = BuildingMenu.SinkRecipe, 
-            sprites = { 
+            buildFunc = BuildingMenu.onBuildSink,
+            recipe = BuildingMenu.SinkRecipe,
+            sprites = {
                 sprite = "furniture_more_ddd_01_23",
                 northSprite = "furniture_more_ddd_01_22",
                 eastSprite = "furniture_more_ddd_01_29",
@@ -2652,9 +2651,9 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
             }
         },
         {
-            buildFunc = BuildingMenu.onBuildBathtub, 
-            recipe = BuildingMenu.BathtubRecipe, 
-            sprites = { 
+            buildFunc = BuildingMenu.onBuildBathtub,
+            recipe = BuildingMenu.BathtubRecipe,
+            sprites = {
                 sprite = "furniture_more_ddd_01_3",
                 sprite2 = "furniture_more_ddd_01_2",
                 northSprite = "furniture_more_ddd_01_0",
@@ -2664,7 +2663,7 @@ local function addDaddyDirkieBathroomAppliancesToMenu()
         {
             buildFunc = BuildingMenu.onBuildBathtub,
             recipe = BuildingMenu.BathtubRecipe,
-            sprites = { 
+            sprites = {
                 sprite = "furniture_more_ddd_01_7",
                 sprite2 = "furniture_more_ddd_01_6",
                 northSprite = "furniture_more_ddd_01_4",

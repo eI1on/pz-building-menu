@@ -15,7 +15,7 @@ local function addPertWallsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "pert_walls_wallpaper_1_80",
@@ -32,7 +32,7 @@ local function addPertWallsToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "pert_walls_wallpaper_1_90",
@@ -51,7 +51,7 @@ local function addPertWallsToMenu()
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "pert_walls_wallpaper_1_88",
@@ -70,18 +70,18 @@ local function addPertWallsToMenu()
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "pert_walls_wallpaper_1_83", northSprite = "pert_walls_wallpaper_1_83"}
+            { sprite = "pert_walls_wallpaper_1_83", northSprite = "pert_walls_wallpaper_1_83" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Walls"),
-    "pert_walls_wallpaper_1_80",
-    getText("IGUI_BuildingMenuSubCat_Walls_Fancy_White_Wood_Panel"),
-    "pert_walls_wallpaper_1_80",
-    pertFancyWhiteWoodPanelWall
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Walls"),
+        "pert_walls_wallpaper_1_80",
+        getText("IGUI_BuildingMenuSubCat_Walls_Fancy_White_Wood_Panel"),
+        "pert_walls_wallpaper_1_80",
+        pertFancyWhiteWoodPanelWall
     )
 
     local pertFancyBlackWoodPanelWall = {
@@ -95,7 +95,7 @@ local function addPertWallsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "pert_walls_wallpaper_1_84",
@@ -111,7 +111,7 @@ local function addPertWallsToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "pert_walls_wallpaper_1_94",
@@ -130,7 +130,7 @@ local function addPertWallsToMenu()
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "pert_walls_wallpaper_1_92",
@@ -149,27 +149,28 @@ local function addPertWallsToMenu()
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "pert_walls_wallpaper_1_87", northSprite = "pert_walls_wallpaper_1_87"}
+            { sprite = "pert_walls_wallpaper_1_87", northSprite = "pert_walls_wallpaper_1_87" }
         )
     }
     BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Walls"),
-    "pert_walls_wallpaper_1_80",
-    getText("IGUI_BuildingMenuSubCat_Walls_Fancy_Black_Wood_Panel"),
-    "pert_walls_wallpaper_1_84",
-    pertFancyBlackWoodPanelWall
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Walls"),
+        "pert_walls_wallpaper_1_80",
+        getText("IGUI_BuildingMenuSubCat_Walls_Fancy_Black_Wood_Panel"),
+        "pert_walls_wallpaper_1_84",
+        pertFancyBlackWoodPanelWall
     )
 end
 
 local function addPertDoorsToMenu()
     local pertDoorObjects = {}
     local doorSpriteRanges = {
-        {start = 8, stop = 19, baseName = "pert_doors_01_"},
-        {start = 24, stop = 31, baseName = "pert_doors_01_"},
-        {start = 36, stop = 39, baseName = "pert_doors_01_"},
+        { start = 8,  stop = 19, baseName = "pert_doors_01_", recipe = BuildingMenu.WoodenDoorRecipe },
+        { start = 24, stop = 31, baseName = "pert_doors_01_", recipe = BuildingMenu.WoodenDoorRecipe },
+        { start = 36, stop = 39, baseName = "pert_doors_01_", recipe = BuildingMenu.WoodenDoorRecipe },
+        { start = 104, stop = 127, baseName = "pert_more_dbl_doors_02_", recipe = BuildingMenu.WoodenDoubleGlassDoorRecipe },
     }
     for _, range in ipairs(doorSpriteRanges) do
         for i = range.start, range.stop, 4 do
@@ -185,12 +186,12 @@ local function addPertDoorsToMenu()
                     "Tooltip_BuildingMenuObj_Generic_Door",
                     "Tooltip_Wooden_Door",
                     BuildingMenu.onBuildDoor,
-                    BuildingMenu.WoodenDoorRecipe,
+                    range.recipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
-                        modData = {wallType = "doorframe"}
+                        modData = { wallType = "doorframe" }
                     },
                     {
                         sprite = sprite,
@@ -214,7 +215,7 @@ local function addPertDoorsToMenu()
 
     pertDoorObjects = {}
     doorSpriteRanges = {
-        {start = 0, stop = 23, baseName = "pert_doors_fire_1_"},
+        { start = 0, stop = 23, baseName = "pert_doors_fire_1_" },
     }
     for _, range in ipairs(doorSpriteRanges) do
         for i = range.start, range.stop, 4 do
@@ -235,7 +236,7 @@ local function addPertDoorsToMenu()
                     {
                         completionSound = "BuildMetalStructureMedium",
                         canBarricade = true,
-                        modData = {wallType = "doorframe"}
+                        modData = { wallType = "doorframe" }
                     },
                     {
                         sprite = sprite,
@@ -248,7 +249,7 @@ local function addPertDoorsToMenu()
         end
     end
 
-    table.insert(pertDoorObjects, 
+    table.insert(pertDoorObjects,
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pert_Fire_Door_Frame_West",
             "Tooltip_Door_Trim",
@@ -257,12 +258,12 @@ local function addPertDoorsToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
-            {sprite = "pert_doors_fire_1_24", northSprite = "pert_doors_fire_1_25"}
+            { sprite = "pert_doors_fire_1_24", northSprite = "pert_doors_fire_1_25" }
         )
     )
-    table.insert(pertDoorObjects, 
+    table.insert(pertDoorObjects,
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pert_Fire_Door_Frame_North",
             "Tooltip_Door_Trim",
@@ -271,12 +272,12 @@ local function addPertDoorsToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
-            {sprite = "pert_doors_fire_1_26", northSprite = "pert_doors_fire_1_27"}
+            { sprite = "pert_doors_fire_1_26", northSprite = "pert_doors_fire_1_27" }
         )
     )
-    table.insert(pertDoorObjects, 
+    table.insert(pertDoorObjects,
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pert_Fire_Door_Trim",
             "Tooltip_Door_Trim",
@@ -292,7 +293,7 @@ local function addPertDoorsToMenu()
                 canBarricade = false,
                 isThumpable = false
             },
-            {sprite = "pert_doors_fire_1_28", northSprite = "pert_doors_fire_1_29"}
+            { sprite = "pert_doors_fire_1_28", northSprite = "pert_doors_fire_1_29" }
         )
     )
 
@@ -308,8 +309,8 @@ local function addPertDoorsToMenu()
 
     pertDoorObjects = {}
     doorSpriteRanges = {
-        {start = 0, stop = 8, baseName = "pert_doors_01_"},
-        {start = 20, stop = 23, baseName = "pert_doors_01_"},
+        { start = 0,  stop = 8,  baseName = "pert_doors_01_" },
+        { start = 20, stop = 23, baseName = "pert_doors_01_" },
     }
     for _, range in ipairs(doorSpriteRanges) do
         for i = range.start, range.stop, 4 do
@@ -330,7 +331,7 @@ local function addPertDoorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureLarge",
                         canBarricade = true,
-                        modData = {wallType = "doorframe"}
+                        modData = { wallType = "doorframe" }
                     },
                     {
                         sprite = sprite,
@@ -349,6 +350,273 @@ local function addPertDoorsToMenu()
         getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
         "pert_doors_01_0",
         pertDoorObjects
+    )
+end
+
+local function addHighFencesToMenu()
+    local highFences = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.HighConcretePoleFenceRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                blockAllTheSquare = false,
+                hoppable = false
+            },
+            {
+                sprite = "pert_fencing_01_8",
+                sprite2 = "pert_fencing_01_12",
+                northSprite = "pert_fencing_01_13",
+                northSprite2 = "pert_fencing_01_9",
+                corner = "pert_fencing_01_10"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcretePoleFenceRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_11", northSprite = "pert_fencing_01_11" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteWireFencePostRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_10", northSprite = "pert_fencing_01_10" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.HighConcreteFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                blockAllTheSquare = false,
+                hoppable = false
+            },
+            {
+                sprite = "pert_fencing_01_0",
+                sprite2 = "pert_fencing_01_4",
+                northSprite = "pert_fencing_01_5",
+                northSprite2 = "pert_fencing_01_1",
+                corner = "pert_fencing_01_2"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_3", northSprite = "pert_fencing_01_3" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteFencePostRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_2", northSprite = "pert_fencing_01_2" }
+        ),
+
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.HighConcreteFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                blockAllTheSquare = false,
+                hoppable = false
+            },
+            {
+                sprite = "pert_fencing_01_24",
+                sprite2 = "pert_fencing_01_28",
+                northSprite = "pert_fencing_01_29",
+                northSprite2 = "pert_fencing_01_25",
+                corner = "pert_fencing_01_26"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_27", northSprite = "pert_fencing_01_27" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteFencePostRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_26", northSprite = "pert_fencing_01_26" }
+        ),
+
+
+
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.HighConcretePoleFenceRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                blockAllTheSquare = false,
+                hoppable = false
+            },
+            {
+                sprite = "pert_fencing_01_48",
+                sprite2 = "pert_fencing_01_52",
+                northSprite = "pert_fencing_01_53",
+                northSprite2 = "pert_fencing_01_49",
+                corner = "pert_fencing_01_50"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Corner",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcretePoleFenceRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_51", northSprite = "pert_fencing_01_51" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteWireFencePostRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_50", northSprite = "pert_fencing_01_50" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.HighConcreteFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                blockAllTheSquare = false,
+                hoppable = false
+            },
+            {
+                sprite = "pert_fencing_01_40",
+                sprite2 = "pert_fencing_01_44",
+                northSprite = "pert_fencing_01_45",
+                northSprite2 = "pert_fencing_01_41",
+                corner = "pert_fencing_01_42"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence_Corner",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteFenceRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_43", northSprite = "pert_fencing_01_43" }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
+            "Tooltip_High_Metal_Fence_Generic",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.HighConcreteFencePostRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                canBeAlwaysPlaced = true,
+                canPassThrough = true,
+                canBarricade = false,
+                isCorner = true
+            },
+            { sprite = "pert_fencing_01_42", northSprite = "pert_fencing_01_42" }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Fencing"),
+        "pert_fencing_01_12",
+        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_High"),
+        "pert_fencing_01_12",
+        highFences
     )
 end
 
@@ -402,7 +670,7 @@ local function addGarageDoorsToMenu()
     end
 
     local pertGarageDoorsObjects = {}
-    local garageDoorSpriteRanges = {0, 16, 32, 48}
+    local garageDoorSpriteRanges = { 0, 16, 32, 48 }
 
     for _, startNumber in ipairs(garageDoorSpriteRanges) do
         table.insert(pertGarageDoorsObjects, create3TileGarageDoor("pert_more_garage_doors_", startNumber))
@@ -456,7 +724,7 @@ local function addPertCountersToMenu()
     end
 
     local pertContainers = {}
-    local dataCounters = {3, 2, 19, 18, 59, 58, 83, 82}
+    local dataCounters = { 3, 2, 19, 18, 59, 58, 83, 82 }
 
 
     for _, spriteNumber in ipairs(dataCounters) do
@@ -465,15 +733,15 @@ local function addPertCountersToMenu()
 
 
     local additionalContainers = {
-        {sprite = "pert_bar_01_29", northSprite = "pert_bar_01_37"},
-        {sprite = "pert_bar_01_30", northSprite = "pert_bar_01_38"},
-        {sprite = "pert_bar_01_31", northSprite = "pert_bar_01_39"},
-        {sprite = "pert_bar_01_64", northSprite = "pert_bar_01_72"},
-        {sprite = "pert_bar_01_65", northSprite = "pert_bar_01_73"},
-        {sprite = "pert_bar_01_66", northSprite = "pert_bar_01_74"},
-        {sprite = "pert_bar_01_77", northSprite = "pert_bar_01_69"},
-        {sprite = "pert_bar_01_78", northSprite = "pert_bar_01_70"},
-        {sprite = "pert_bar_01_79", northSprite = "pert_bar_01_71"}
+        { sprite = "pert_bar_01_29", northSprite = "pert_bar_01_37" },
+        { sprite = "pert_bar_01_30", northSprite = "pert_bar_01_38" },
+        { sprite = "pert_bar_01_31", northSprite = "pert_bar_01_39" },
+        { sprite = "pert_bar_01_64", northSprite = "pert_bar_01_72" },
+        { sprite = "pert_bar_01_65", northSprite = "pert_bar_01_73" },
+        { sprite = "pert_bar_01_66", northSprite = "pert_bar_01_74" },
+        { sprite = "pert_bar_01_77", northSprite = "pert_bar_01_69" },
+        { sprite = "pert_bar_01_78", northSprite = "pert_bar_01_70" },
+        { sprite = "pert_bar_01_79", northSprite = "pert_bar_01_71" }
     }
 
     for _, spriteData in ipairs(additionalContainers) do
@@ -499,7 +767,6 @@ local function addPertCountersToMenu()
         "pert_bar_01_3",
         pertContainers
     )
-
 end
 
 local function addMetalContainersToMenu()
@@ -553,7 +820,6 @@ local function createDoubleTileFurnitureObject(tooltip, recipe, sprite, sprite2,
 end
 
 local function addpertLargeTablesToMenu()
-
     local pertSmallTables = {
         BuildingMenu.createObject(
             "",
@@ -564,7 +830,7 @@ local function addpertLargeTablesToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge"
             },
-            {sprite = "pert_re-phoenix_4_53", northSprite = "pert_re-phoenix_4_52"}
+            { sprite = "pert_re-phoenix_4_53", northSprite = "pert_re-phoenix_4_52" }
         )
     }
 
@@ -643,7 +909,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 southSprite = "pert_re-phoenix_2_48"
             }
         ),
-        
+
     }
     BuildingMenu.addObjectsToCategories(
         "Perts Party",
@@ -792,7 +1058,7 @@ local function addHalloweenDecorationsToMenu()
                 solid = false,
                 moveWithWind = true
             },
-            {sprite = "pert_halloween_01_1", northSprite = "pert_halloween_01_0"}
+            { sprite = "pert_halloween_01_1", northSprite = "pert_halloween_01_0" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pert_Halloween_Pumpkin",
@@ -953,7 +1219,7 @@ local function addHalloweenDecorationsToMenu()
 end
 
 local function addChristmasDecorationsToMenu()
-    local pertGingerBreadWalls= {
+    local pertGingerBreadWalls = {
         BuildingMenu.createObject(
             "",
             "Tooltip_Ginger_Bread_Window",
@@ -1006,7 +1272,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "pert_Christmas_01_0",
@@ -1024,7 +1290,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "pert_Christmas_01_2",
@@ -1041,7 +1307,7 @@ local function addChristmasDecorationsToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "pert_Christmas_01_10",
@@ -1060,7 +1326,7 @@ local function addChristmasDecorationsToMenu()
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "pert_Christmas_01_8",
@@ -1079,9 +1345,9 @@ local function addChristmasDecorationsToMenu()
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "pert_Christmas_01_3", northSprite = "pert_Christmas_01_3"}
+            { sprite = "pert_Christmas_01_3", northSprite = "pert_Christmas_01_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Wall",
@@ -1093,7 +1359,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "pert_Christmas_01_4",
@@ -1111,7 +1377,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
             {
                 sprite = "pert_Christmas_01_6",
@@ -1128,7 +1394,7 @@ local function addChristmasDecorationsToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "pert_Christmas_01_14",
@@ -1147,7 +1413,7 @@ local function addChristmasDecorationsToMenu()
                 isThumpable = true,
                 canBarricade = true,
                 hoppable = true,
-                modData = {wallType = "windowsframe"}
+                modData = { wallType = "windowsframe" }
             },
             {
                 sprite = "pert_Christmas_01_12",
@@ -1166,9 +1432,9 @@ local function addChristmasDecorationsToMenu()
                 canPassThrough = true,
                 canBarricade = false,
                 isCorner = true,
-                modData = {wallType = "pillar"}
+                modData = { wallType = "pillar" }
             },
-            {sprite = "pert_Christmas_01_7", northSprite = "pert_Christmas_01_7"}
+            { sprite = "pert_Christmas_01_7", northSprite = "pert_Christmas_01_7" }
         ),
         BuildingMenu.createObject(
             "",
@@ -1176,8 +1442,8 @@ local function addChristmasDecorationsToMenu()
             BuildingMenu.onBuildWindow,
             BuildingMenu.WindowRecipe,
             true,
-            { completionSound = "BuildWoodenStructureLarge"},
-            {sprite = "pert_Christmas_01_16", northSprite = "pert_Christmas_01_17"}
+            { completionSound = "BuildWoodenStructureLarge" },
+            { sprite = "pert_Christmas_01_16", northSprite = "pert_Christmas_01_17" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Door",
@@ -1188,7 +1454,7 @@ local function addChristmasDecorationsToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "pert_Christmas_01_56",
@@ -1206,7 +1472,7 @@ local function addChristmasDecorationsToMenu()
             {
                 completionSound = "BuildWoodenStructureLarge",
                 canBarricade = true,
-                modData = {wallType = "doorframe"}
+                modData = { wallType = "doorframe" }
             },
             {
                 sprite = "pert_Christmas_01_60",
@@ -1225,9 +1491,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_24", northSprite = "pert_Christmas_01_37"}
+            { sprite = "pert_Christmas_01_24", northSprite = "pert_Christmas_01_37" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_2",
@@ -1239,9 +1505,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_25", northSprite = "pert_Christmas_01_36"}
+            { sprite = "pert_Christmas_01_25", northSprite = "pert_Christmas_01_36" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_3",
@@ -1253,9 +1519,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_26", northSprite = "pert_Christmas_01_35"}
+            { sprite = "pert_Christmas_01_26", northSprite = "pert_Christmas_01_35" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_4",
@@ -1267,9 +1533,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_32", northSprite = "pert_Christmas_01_29"}
+            { sprite = "pert_Christmas_01_32", northSprite = "pert_Christmas_01_29" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_5",
@@ -1281,9 +1547,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_33", northSprite = "pert_Christmas_01_28"}
+            { sprite = "pert_Christmas_01_33", northSprite = "pert_Christmas_01_28" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_Slope_Wall_6",
@@ -1295,9 +1561,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_34", northSprite = "pert_Christmas_01_27"}
+            { sprite = "pert_Christmas_01_34", northSprite = "pert_Christmas_01_27" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_End_Small",
@@ -1309,9 +1575,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureSmall",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_39", northSprite = "pert_Christmas_01_31"}
+            { sprite = "pert_Christmas_01_39", northSprite = "pert_Christmas_01_31" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_End_Medium",
@@ -1323,9 +1589,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_38", northSprite = "pert_Christmas_01_30"}
+            { sprite = "pert_Christmas_01_38", northSprite = "pert_Christmas_01_30" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Ginger_Bread_Roof_End_Big",
@@ -1337,9 +1603,9 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 isThumpable = true,
                 canBarricade = false,
-                modData = {wallType = "wall"}
+                modData = { wallType = "wall" }
             },
-            {sprite = "pert_Christmas_01_40", northSprite = "pert_Christmas_01_41"}
+            { sprite = "pert_Christmas_01_40", northSprite = "pert_Christmas_01_41" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Slide_Stairs",
@@ -1376,7 +1642,7 @@ local function addChristmasDecorationsToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "pert_Christmas_01_91", northSprite = "pert_Christmas_01_91"}
+            { sprite = "pert_Christmas_01_91", northSprite = "pert_Christmas_01_91" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Railing",
@@ -1427,18 +1693,18 @@ local function addChristmasDecorationsToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            {sprite = "pert_Christmas_01_90", northSprite = "pert_Christmas_01_90"}
+            { sprite = "pert_Christmas_01_90", northSprite = "pert_Christmas_01_90" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Festive"),
-    "pert_halloween_01_9",
-    getText("IGUI_BuildingMenuSubCat_Pert_Structures_Christmas"),
-    "pert_Christmas_01_4",
-    pertGingerBreadWalls
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Festive"),
+        "pert_halloween_01_9",
+        getText("IGUI_BuildingMenuSubCat_Pert_Structures_Christmas"),
+        "pert_Christmas_01_4",
+        pertGingerBreadWalls
     )
-    
+
     local gingerBreadDetailing = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1453,7 +1719,7 @@ local function addChristmasDecorationsToMenu()
                 canPassThrough = true,
                 canBarricade = false,
             },
-            {sprite = "pert_Christmas_01_66", northSprite = "pert_Christmas_01_67"}
+            { sprite = "pert_Christmas_01_66", northSprite = "pert_Christmas_01_67" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1465,7 +1731,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
-            {sprite = "pert_Christmas_01_68", northSprite = "pert_Christmas_01_69"}
+            { sprite = "pert_Christmas_01_68", northSprite = "pert_Christmas_01_69" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1477,7 +1743,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
-            {sprite = "pert_Christmas_01_70", northSprite = "pert_Christmas_01_70"}
+            { sprite = "pert_Christmas_01_70", northSprite = "pert_Christmas_01_70" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1489,7 +1755,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
-            {sprite = "pert_Christmas_01_71", northSprite = "pert_Christmas_01_71"}
+            { sprite = "pert_Christmas_01_71", northSprite = "pert_Christmas_01_71" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1501,7 +1767,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
-            {sprite = "pert_Christmas_01_64", northSprite = "pert_Christmas_01_65"}
+            { sprite = "pert_Christmas_01_64", northSprite = "pert_Christmas_01_65" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1530,7 +1796,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
-            {sprite = "pert_Christmas_01_42", northSprite = "pert_Christmas_01_43"}
+            { sprite = "pert_Christmas_01_42", northSprite = "pert_Christmas_01_43" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1542,7 +1808,7 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
-            {sprite = "pert_Christmas_01_104", northSprite = "pert_Christmas_01_104"}
+            { sprite = "pert_Christmas_01_104", northSprite = "pert_Christmas_01_104" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Icing",
@@ -1554,16 +1820,16 @@ local function addChristmasDecorationsToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 needToBeAgainstWall = true,
             },
-            {sprite = "pert_Christmas_01_105", northSprite = "pert_Christmas_01_105"}
+            { sprite = "pert_Christmas_01_105", northSprite = "pert_Christmas_01_105" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
-    "Perts Party",
-    getText("IGUI_BuildingMenuCat_Festive"),
-    "pert_halloween_01_9",
-    getText("IGUI_BuildingMenuSubCat_Pert_Detailing_Christmas"),
-    "pert_Christmas_01_42",
-    gingerBreadDetailing
+        "Perts Party",
+        getText("IGUI_BuildingMenuCat_Festive"),
+        "pert_halloween_01_9",
+        getText("IGUI_BuildingMenuSubCat_Pert_Detailing_Christmas"),
+        "pert_Christmas_01_42",
+        gingerBreadDetailing
     )
 
     local christmasDecorations = {
@@ -1795,7 +2061,7 @@ local function addChristmasDecorationsToMenu()
             {
                 completionSound = "BuildWoodenStructureSmall",
             },
-            {sprite = "pert_Christmas_01_86", northSprite = "pert_Christmas_01_86"}
+            { sprite = "pert_Christmas_01_86", northSprite = "pert_Christmas_01_86" }
         ),
         BuildingMenu.createObject(
             "",
@@ -1806,7 +2072,7 @@ local function addChristmasDecorationsToMenu()
             {
                 completionSound = "BuildWoodenStructureSmall",
             },
-            {sprite = "pert_Christmas_01_87", northSprite = "pert_Christmas_01_87"}
+            { sprite = "pert_Christmas_01_87", northSprite = "pert_Christmas_01_87" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -1860,6 +2126,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.garageDoorsSubCategory then
         addGarageDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.highFencesSubCategory then
+        addHighFencesToMenu()
     end
     if SandboxVars.BuildingMenu.commercialCountersSubCategory then
         addPertCountersToMenu()

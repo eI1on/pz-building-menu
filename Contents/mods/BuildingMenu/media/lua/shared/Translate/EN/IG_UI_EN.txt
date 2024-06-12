@@ -139,6 +139,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "High",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Low",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Railing",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Stair Railings",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Other",
 
     IGUI_BuildingMenuCat_Floors = "Floors",

@@ -744,6 +744,18 @@ end
 ---@param name string
 ---@param playerNum number
 ---@return ISBuildingObject
+BuildingMenu.onBuildStairRailings = function(sprites, name, playerNum, objectRecipe, objectOptions)
+    local _stairRailings = ISStairRailings:new(sprites.sprite, sprites.sprite2, sprites.sprite3, sprites.sprite4,
+        sprites.sprite5, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4,
+        sprites.northSprite5)
+
+    return _stairRailings
+end
+
+---@param sprites table
+---@param name string
+---@param playerNum number
+---@return ISBuildingObject
 BuildingMenu.onBuildFourTileSimpleFurniture = function(sprites, name, playerNum, objectRecipe, objectOptions)
     local _fourTileSimpleFurniture = ISFourTileSimpleFurniture:new(sprites.sprite, sprites.sprite2, sprites.sprite3,
         sprites.sprite4, sprites.northSprite, sprites.northSprite2, sprites.northSprite3, sprites.northSprite4)

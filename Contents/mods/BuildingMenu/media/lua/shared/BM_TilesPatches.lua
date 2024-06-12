@@ -632,4 +632,38 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, IsoFlagType.solidtrans, nil, true);
         props:CreateKeySet();
     end
+
+    sprites = {
+        "location_sewer_01_16",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Nails", false);
+        BM_Utils.setSpriteProperty(props, "WindowW", "", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.collideW);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.transparentW);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.cutW);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.canPathW);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.WindowW);
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "location_sewer_01_17",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Wood", false);
+        BM_Utils.setSpriteProperty(props, "Material", "Nails", false);
+        BM_Utils.setSpriteProperty(props, "WindowN", "", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.collideN);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.transparentN);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.cutN);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.canPathN);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.WindowN);
+        props:CreateKeySet();
+    end
 end)

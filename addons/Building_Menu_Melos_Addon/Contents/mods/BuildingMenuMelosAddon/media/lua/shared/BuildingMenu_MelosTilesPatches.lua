@@ -101,9 +101,11 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     }
     for _, sprite in ipairs(sprites) do
         local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "100", false);
+        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "200", false);
         BM_Utils.setSpriteProperty(props, "container", "logs", false);
         BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
+        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
         props:CreateKeySet();
     end
 

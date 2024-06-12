@@ -5,7 +5,18 @@ Changelog:
 Main mod:
 [list]
 [*] Added restriction for maximum game version of 41.78
+[*] Added Stair Railings and more Railings variations
 [*] Fixed not being able to build wall detailings on window walls
+[*] Fixed Sewer Window Wall properties
+[/list]
+Melos Tiles Addon:
+[list]
+[*] Fixed Firewood Stacks container property
+[*] Added Stair Railings and Railings
+[/list]
+PertParty's Tiles Addon:
+[list]
+[*] Added High Fences
 [/list]
 [/list]
 

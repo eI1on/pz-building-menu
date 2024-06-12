@@ -16359,6 +16359,285 @@ local function addHighFencesToMenu()
     )
 end
 
+local function addLowAndRailingFencesToMenu()
+    local function createStairRailingsObject(baseName, startSpriteNumber)
+        return BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Wood_Stair_Railings",
+            "Tooltip_Wood_Stair_Railings",
+            BuildingMenu.onBuildStairRailings,
+            BuildingMenu.WoodStairRailingsRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                canPassThrough = true,
+                canBarricade = false,
+            },
+            {
+                sprite = baseName .. startSpriteNumber,
+                sprite2 = baseName .. (startSpriteNumber + 1),
+                sprite3 = baseName .. (startSpriteNumber + 2),
+                sprite4 = baseName .. (startSpriteNumber + 3),
+                sprite5 = baseName .. (startSpriteNumber + 4),
+                northSprite = baseName .. (startSpriteNumber + 12),
+                northSprite2 = baseName .. (startSpriteNumber + 11),
+                northSprite3 = baseName .. (startSpriteNumber + 10),
+                northSprite4 = baseName .. (startSpriteNumber + 9),
+                northSprite5 = baseName .. (startSpriteNumber + 8),
+            }
+        )
+    end
+
+    local stairRailings = {};
+    local dataStairRailings = { 0, 24, 48, 72, 96 };
+    for _, startNumber in ipairs(dataStairRailings) do
+        table.insert(stairRailings, createStairRailingsObject("melos_tiles_railings_01_", startNumber));
+    end
+
+    dataStairRailings = { 0, 24, 48, 72, 96 };
+    for _, startNumber in ipairs(dataStairRailings) do
+        table.insert(stairRailings, createStairRailingsObject("melos_tiles_railings_02_", startNumber));
+    end
+
+    BuildingMenu.addObjectsToCategories(
+        "Melos",
+        getText("IGUI_BuildingMenuCat_Fencing"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Fencing_Stair_Railings"),
+        "melos_tiles_railings_02_60",
+        stairRailings
+    )
+
+
+    local function createRailingObjects(prefix, sprites)
+        local railingObjects = {
+            BuildingMenu.createObject(
+                "Tooltip_BuildingMenuObj_Wooden_Railing_Post",
+                "Tooltip_Wooden_Railing_Post",
+                BuildingMenu.onBuildWall,
+                BuildingMenu.WoodenFenceRecipe,
+                true,
+                {
+                    completionSound = "BuildWoodenStructureSmall",
+                    canBeAlwaysPlaced = true,
+                    canPassThrough = true,
+                    canBarricade = false,
+                    isCorner = true
+                },
+                { sprite = prefix .. sprites.post, northSprite = prefix .. sprites.post }
+            ),
+            BuildingMenu.createObject(
+                "Tooltip_BuildingMenuObj_Wooden_Railing_Post",
+                "Tooltip_Wooden_Railing_Post",
+                BuildingMenu.onBuildWall,
+                BuildingMenu.WoodenFenceRecipe,
+                true,
+                {
+                    completionSound = "BuildWoodenStructureSmall",
+                    canBeAlwaysPlaced = true,
+                    canPassThrough = true,
+                    canBarricade = false,
+                    isCorner = true
+                },
+                { sprite = prefix .. sprites.postAlt, northSprite = prefix .. sprites.postAltNorth }
+            ),
+            BuildingMenu.createObject(
+                "Tooltip_BuildingMenuObj_Wooden_Railing_Tall_Post",
+                "Tooltip_Wooden_Railing_Tall_Post",
+                BuildingMenu.onBuildWall,
+                BuildingMenu.WoodenFenceRecipe,
+                true,
+                {
+                    completionSound = "BuildWoodenStructureSmall",
+                    canBeAlwaysPlaced = true,
+                    canPassThrough = true,
+                    canBarricade = false,
+                    isCorner = true
+                },
+                {
+                    sprite = prefix .. sprites.tallPost, northSprite = prefix .. sprites.tallPost
+                }
+            ),
+            BuildingMenu.createObject(
+                "Tooltip_BuildingMenuObj_Wooden_Railing",
+                "Tooltip_Wooden_Railing",
+                BuildingMenu.onBuildWall,
+                BuildingMenu.WoodenFenceRecipe,
+                true,
+                {
+                    completionSound = "BuildWoodenStructureSmall",
+                    isThumpable = true,
+                    hoppable = true,
+                    blockAllTheSquare = false
+                },
+                {
+                    sprite = prefix .. sprites.railing,
+                    northSprite = prefix .. sprites.railingNorth,
+                    corner = prefix .. sprites.post
+                }
+            ),
+            BuildingMenu.createObject(
+                "Tooltip_BuildingMenuObj_Wooden_Railing",
+                "Tooltip_Wooden_Railing",
+                BuildingMenu.onBuildWall,
+                BuildingMenu.WoodenFenceRecipe,
+                true,
+                {
+                    completionSound = "BuildWoodenStructureSmall",
+                    isThumpable = true,
+                    hoppable = true,
+                    blockAllTheSquare = false
+                },
+                {
+                    sprite = prefix .. sprites.railingAlt,
+                    northSprite = prefix .. sprites.railingAltNorth,
+                    corner = prefix .. sprites.post
+                }
+            )
+        }
+        return railingObjects
+    end
+
+
+    local spriteSets = {
+        {
+            prefix = "melos_tiles_railings_01_",
+            sprites = {
+                post = "46",
+                postAlt = "44",
+                postAltNorth = "45",
+                tallPost = "31",
+                railing = "29",
+                railingNorth = "30",
+                railingAlt = "37",
+                railingAltNorth = "38"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_01_",
+            sprites = {
+                post = "70",
+                postAlt = "68",
+                postAltNorth = "69",
+                tallPost = "55",
+                railing = "53",
+                railingNorth = "54",
+                railingAlt = "61",
+                railingAltNorth = "62"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_01_",
+            sprites = {
+                post = "94",
+                postAlt = "92",
+                postAltNorth = "93",
+                tallPost = "79",
+                railing = "77",
+                railingNorth = "78",
+                railingAlt = "85",
+                railingAltNorth = "86"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_01_",
+            sprites = {
+                post = "118",
+                postAlt = "116",
+                postAltNorth = "117",
+                tallPost = "103",
+                railing = "101",
+                railingNorth = "102",
+                railingAlt = "109",
+                railingAltNorth = "110"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_02_",
+            sprites = {
+                post = "22",
+                postAlt = "20",
+                postAltNorth = "21",
+                tallPost = "7",
+                railing = "5",
+                railingNorth = "6",
+                railingAlt = "13",
+                railingAltNorth = "14"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_02_",
+            sprites = {
+                post = "46",
+                postAlt = "44",
+                postAltNorth = "45",
+                tallPost = "31",
+                railing = "29",
+                railingNorth = "30",
+                railingAlt = "37",
+                railingAltNorth = "38"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_02_",
+            sprites = {
+                post = "70",
+                postAlt = "68",
+                postAltNorth = "69",
+                tallPost = "55",
+                railing = "53",
+                railingNorth = "54",
+                railingAlt = "61",
+                railingAltNorth = "62"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_02_",
+            sprites = {
+                post = "94",
+                postAlt = "92",
+                postAltNorth = "93",
+                tallPost = "79",
+                railing = "77",
+                railingNorth = "78",
+                railingAlt = "85",
+                railingAltNorth = "86"
+            }
+        },
+        {
+            prefix = "melos_tiles_railings_02_",
+            sprites = {
+                post = "118",
+                postAlt = "116",
+                postAltNorth = "117",
+                tallPost = "103",
+                railing = "101",
+                railingNorth = "102",
+                railingAlt = "109",
+                railingAltNorth = "110"
+            }
+        },
+    }
+
+    local allRailingObjects = {}
+    for _, set in ipairs(spriteSets) do
+        local railingObjects = createRailingObjects(set.prefix, set.sprites)
+        for _, obj in ipairs(railingObjects) do
+            table.insert(allRailingObjects, obj)
+        end
+    end
+
+    BuildingMenu.addObjectsToCategories(
+        "Melos",
+        getText("IGUI_BuildingMenuCat_Fencing"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Fencing_Railing"),
+        "melos_tiles_railings_01_53",
+        allRailingObjects
+    )
+end
+
+
+
 local function addFloorsToMenu()
     local baseNameMelosFloors = "melos_tiles_floors_01_"
     local dataFloors = {
@@ -20991,6 +21270,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.highFencesSubCategory then
         addHighFencesToMenu()
+    end
+    if SandboxVars.BuildingMenu.lowAndRailingFencesSubCategory then
+        addLowAndRailingFencesToMenu()
     end
     if SandboxVars.BuildingMenu.floorsCategory then
         addFloorsToMenu()
