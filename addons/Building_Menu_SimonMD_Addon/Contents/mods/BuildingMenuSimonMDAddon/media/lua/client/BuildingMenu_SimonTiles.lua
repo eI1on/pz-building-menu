@@ -861,7 +861,7 @@ local function addSimonMDSecretEntrancesToMenu()
             "Tooltip_BuildingMenuObj_SecretEntranceDoor",
             "Tooltip_SecretEntranceDoor",
             BuildingMenu.onBuildDoor,
-            BuildingMenu.WoodenDoorRecipe,
+            BuildingMenu.MetalDoorRecipe,
             "Build Secret Entrance",
             {
                 completionSound = "BuildWoodenStructureLarge",

@@ -1,10 +1,14 @@
-JUNE 24
+14 JUNE 24
+d09e229
 
 Changelog:
 [list]
-Main mod:
+All mods:
 [list]
 [*] Added restriction for maximum game version of 41.78
+[/list]
+Main mod:
+[list]
 [*] Added Stair Railings and more Railings variations
 [*] Fixed not being able to build wall detailings on window walls
 [*] Fixed Sewer Window Wall properties
