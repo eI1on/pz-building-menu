@@ -1051,6 +1051,24 @@ option BuildingMenuRecipes.maxWaterWellStorageAmount
     translation = BuildingMenuRecipes_maxWaterWellStorageAmount,
 }
 
+option BuildingMenuRecipes.waterWellRainIntensityMul
+{
+    type = double,
+    min = 0.1,
+    default = 1.0,
+    max = 10.0,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_waterWellRainIntensityMul,
+}
+
+option BuildingMenuRecipes.waterWellHourlyRefillRateInterval
+{
+    type = string,
+    default = 1;5,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_waterWellHourlyRefillRateInterval,
+}
+
 option BuildingMenuRecipes.plankCountForMilitaryCrate
 {
     type = integer,

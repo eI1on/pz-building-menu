@@ -369,6 +369,12 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max Water Well Storage Amount",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "How much water a Well hold.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Water Well Rain Intensity Multiplier",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplier for the amount of water added to the well during rain.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Water Well Hourly Refill Rate Interval",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Range of water amount added to the well every hour. For example '1;5' will generate a random number between 1 and 5, '5' will always generate 5 units of water. Default=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Wood Material Cost for Military Crate",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Sets planks required for Military Crates. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1>",
     

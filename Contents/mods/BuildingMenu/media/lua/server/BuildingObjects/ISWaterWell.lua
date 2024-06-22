@@ -158,18 +158,20 @@ function ISWaterWell.checkRain()
     if isClient() then return; end
 
     local rainIntensity = Math.round(ClimateManager.getInstance():getRainIntensity() * 10) / 10; -- get rain intensity
+    local rainIntensityMul = SandboxVars.BuildingMenuRecipes.waterWellRainIntensityMul or 1;
+
     if rainIntensity > 0 then
         for iB, vB in ipairs(ISWaterWell.WaterWells) do
             if vB.waterAmount < vB.waterMax then
                 local square = getCell():getGridSquare(vB.x, vB.y, vB.z)
                 if square then
-                    vB.exterior = square:isOutside()
+                    vB.exterior = square:isOutside();
                 end
                 if vB.exterior then
-                    vB.waterAmount = math.min(vB.waterMax, vB.waterAmount + rainIntensity)
-                    local obj = ISWaterWell.findObject(square)
+                    local obj = ISWaterWell.findObject(square);
                     if obj then
-                        noise(string.format('Added rain water to WaterWell at %d,%d,%d: waterAmount=%d rainIntensity=%.1f', vB.x, vB.y, vB.z, vB.waterAmount, rainIntensity))
+                        noise(string.format('Added rain water to WaterWell at %d,%d,%d: waterAmount=%d rainIntensity=%.1f rainIntensityMul=%.1f', vB.x, vB.y, vB.z, vB.waterAmount, rainIntensity, rainIntensityMul));
+                        vB.waterAmount = math.min(vB.waterMax, vB.waterAmount + rainIntensity * tonumber(rainIntensityMul));
                         obj:setWaterAmount(vB.waterAmount);
                         obj:transmitModData();
                     end
@@ -179,17 +181,43 @@ function ISWaterWell.checkRain()
     end
 end
 
+--- Utility function to parse the interval string and return min and max values
+--- @param intervalString string The interval string to parse (e.g., "1;5")
+--- @return integer minFillRate The minimum fill rate
+--- @return integer maxFillRate The maximum fill rate
+local function parseIntervalString(intervalString)
+    local minFillRate, maxFillRate = 1, 5;
+
+    if intervalString then
+        local splitValues = {};
+        for value in string.gmatch(intervalString, "([^;]+)") do
+            table.insert(splitValues, tonumber(value));
+        end
+
+        if #splitValues == 1 then
+            minFillRate, maxFillRate = splitValues[1], splitValues[1];
+        elseif #splitValues == 2 then
+            minFillRate, maxFillRate = math.min(splitValues[1], splitValues[2]), math.max(splitValues[1], splitValues[2]);
+        end
+    end
+
+    return minFillRate, maxFillRate;
+end
+
 function ISWaterWell.checkEveryHours()
     if isClient() then return; end
+
+    local intervalString = SandboxVars.BuildingMenuRecipes.waterWellHourlyRefillRateInterval or "1;5";
+    local minFillRate, maxFillRate = parseIntervalString(intervalString);
 
     for iB, vB in ipairs(ISWaterWell.WaterWells) do
         if vB.waterAmount < vB.waterMax then
             local square = getCell():getGridSquare(vB.x, vB.y, vB.z);
             if square then
-                vB.waterAmount = math.min(vB.waterMax, vB.waterAmount + ZombRand(1, 5));
                 local obj = ISWaterWell.findObject(square);
                 if obj then
-                    noise(string.format('Added water to WaterWell at %d,%d,%d: waterAmount=%d', vB.x, vB.y, vB.z, vB.waterAmount));
+                    noise(string.format('Added water to WaterWell at %d,%d,%d: waterAmount=%d minFillRate=%.1f maxFillRate=%.1f', vB.x, vB.y, vB.z, vB.waterAmount, minFillRate, maxFillRate));
+                    vB.waterAmount = math.min(vB.waterMax, vB.waterAmount + ZombRand(minFillRate, maxFillRate));
                     obj:setWaterAmount(vB.waterAmount);
                     obj:transmitModData();
                 end
@@ -200,7 +228,7 @@ end
 
 --- Loads a water well object from a grid square
 --- @param square IsoGridSquare The grid square to check
-function ISWaterWell.LoadGridsquare(square)
+function ISWaterWell.loadGridsquare(square)
     if isClient() then return; end
 
     for i = 0, square:getSpecialObjects():size() - 1 do
@@ -258,7 +286,7 @@ function ISWaterWell.loadRainWaterWell(WaterWellObject)
     waterWell.exterior = square:isOutside();
 end
 
-ISWaterWell.OnWaterAmountChange = function(object, prevAmount)
+ISWaterWell.onWaterAmountChange = function(object, prevAmount)
     if isClient() then return; end
     if not ISWaterWell.isISWaterWellObject(object) then return; end
 
@@ -272,7 +300,7 @@ ISWaterWell.OnWaterAmountChange = function(object, prevAmount)
 end
 
 
-ISWaterWell.OnObjectAdded = function(object)
+ISWaterWell.onObjectAdded = function(object)
     if isClient() then return; end
 
     if ISWaterWell.isISWaterWellObject(object) then
@@ -280,7 +308,7 @@ ISWaterWell.OnObjectAdded = function(object)
     end
 end
 
-function ISWaterWell.OnDestroyIsoThumpable(thump, player)
+function ISWaterWell.onDestroyIsoThumpable(thump, player)
     if isClient() then return; end
 
     if not thump:getSquare() or not ISWaterWell.isISWaterWellObject(thump) then return; end
@@ -297,7 +325,7 @@ end
 
 Events.EveryTenMinutes.Add(ISWaterWell.checkRain);
 Events.EveryHours.Add(ISWaterWell.checkEveryHours);
-Events.LoadGridsquare.Add(ISWaterWell.LoadGridsquare);
-Events.OnWaterAmountChange.Add(ISWaterWell.OnWaterAmountChange);
-Events.OnObjectAdded.Add(ISWaterWell.OnObjectAdded);
-Events.OnDestroyIsoThumpable.Add(ISWaterWell.OnDestroyIsoThumpable);
+Events.LoadGridsquare.Add(ISWaterWell.loadGridsquare);
+Events.OnWaterAmountChange.Add(ISWaterWell.onWaterAmountChange);
+Events.OnObjectAdded.Add(ISWaterWell.onObjectAdded);
+Events.OnDestroyIsoThumpable.Add(ISWaterWell.onDestroyIsoThumpable);

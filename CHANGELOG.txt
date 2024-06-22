@@ -4,7 +4,7 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] 
+[*] Added sandbox options to modify Water Well Rain Intensity Fill Rate Multiplier and Water Well Hourly Fill rate
 [/list]
 SimonMD's addon:
 [list]
