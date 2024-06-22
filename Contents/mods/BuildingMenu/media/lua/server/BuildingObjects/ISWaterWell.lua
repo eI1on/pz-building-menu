@@ -3,7 +3,7 @@ local BM_Utils = require("BM_Utils");
 --- @class ISWaterWell : ISBuildingObject
 ISWaterWell = ISBuildingObject:derive('ISWaterWell')
 
---- List of all water wells created.
+--- List of all water wells created
 ISWaterWell.WaterWells = {}
 
 --- Debug flag to control output of debug information
@@ -39,14 +39,14 @@ function ISWaterWell:create(x, y, z, north, sprite)
     self.javaObject:getModData()['waterAmount'] = ISWaterWell.waterAmount;
     self.javaObject:setSpecialTooltip(true);
 
-    local WaterWell = {};
-    WaterWell.x = self.sq:getX();
-    WaterWell.y = self.sq:getY();
-    WaterWell.z = self.sq:getZ();
-    WaterWell.waterAmount = ISWaterWell.waterAmount;
-    WaterWell.waterMax = self.waterMax;
-    WaterWell.exterior = self.sq:isOutside();
-    table.insert(ISWaterWell.WaterWells, WaterWell);
+    local waterWell = {};
+    waterWell.x = self.sq:getX();
+    waterWell.y = self.sq:getY();
+    waterWell.z = self.sq:getZ();
+    waterWell.waterAmount = ISWaterWell.waterAmount;
+    waterWell.waterMax = self.waterMax;
+    waterWell.exterior = self.sq:isOutside();
+    table.insert(ISWaterWell.WaterWells, waterWell);
 
     self.javaObject:transmitCompleteItemToServer();
 end
@@ -157,7 +157,7 @@ end
 function ISWaterWell.checkRain()
     if isClient() then return; end
 
-    local rainIntensity = Math.round(ClimateManager.getInstance():getRainIntensity() * 10) / 10 -- get rain intensity
+    local rainIntensity = Math.round(ClimateManager.getInstance():getRainIntensity() * 10) / 10; -- get rain intensity
     if rainIntensity > 0 then
         for iB, vB in ipairs(ISWaterWell.WaterWells) do
             if vB.waterAmount < vB.waterMax then
@@ -228,34 +228,34 @@ end
 function ISWaterWell.loadRainWaterWell(WaterWellObject)
     if not WaterWellObject or not WaterWellObject:getSquare() then return; end
     local square = WaterWellObject:getSquare();
-    local WaterWell = nil;
+    local waterWell = nil;
     for i, v in ipairs(ISWaterWell.WaterWells) do
         if v.x == square:getX() and v.y == square:getY() and v.z == square:getZ() then
-            WaterWell = v;
+            waterWell = v;
             break;
         end
     end
-    if not WaterWell then
-        WaterWell = {};
-        WaterWell.x = square:getX();
-        WaterWell.y = square:getY();
-        WaterWell.z = square:getZ();
-        WaterWell.waterAmount = WaterWellObject:getWaterAmount();
-        WaterWell.waterMax = WaterWellObject:getModData()['waterMax'];
+    if not waterWell then
+        waterWell = {};
+        waterWell.x = square:getX();
+        waterWell.y = square:getY();
+        waterWell.z = square:getZ();
+        waterWell.waterAmount = WaterWellObject:getWaterAmount();
+        waterWell.waterMax = WaterWellObject:getModData()['waterMax'];
         if square:getModData()['waterAmount'] then
-            WaterWell.waterAmount = tonumber(square:getModData()['waterAmount']);
+            waterWell.waterAmount = tonumber(square:getModData()['waterAmount']);
             square:getModData()['waterAmount'] = ISWaterWell.waterAmount;
             square:getModData()['waterMax'] = "1200";
             square:getModData()['alwaysTakeWater'] = nil;
         end
-        table.insert(ISWaterWell.WaterWells, WaterWell)
-        noise(string.format('New WaterWell created at %d,%d,%d: waterAmount=%d', WaterWell.x, WaterWell.y, WaterWell.z, WaterWell.waterAmount));
+        table.insert(ISWaterWell.WaterWells, waterWell)
+        noise(string.format('New WaterWell created at %d,%d,%d: waterAmount=%d', waterWell.x, waterWell.y, waterWell.z, waterWell.waterAmount));
     else
-        noise(string.format('Found existing WaterWell at %d,%d,%d: waterAmount=%d', WaterWell.x, WaterWell.y, WaterWell.z, WaterWell.waterAmount));
-        WaterWellObject:setWaterAmount(WaterWell.waterAmount);
+        noise(string.format('Found existing WaterWell at %d,%d,%d: waterAmount=%d', waterWell.x, waterWell.y, waterWell.z, waterWell.waterAmount));
+        WaterWellObject:setWaterAmount(waterWell.waterAmount);
     end
-    WaterWellObject:getModData()['waterMax'] = WaterWell.waterMax;
-    WaterWell.exterior = square:isOutside();
+    WaterWellObject:getModData()['waterMax'] = waterWell.waterMax;
+    waterWell.exterior = square:isOutside();
 end
 
 ISWaterWell.OnWaterAmountChange = function(object, prevAmount)

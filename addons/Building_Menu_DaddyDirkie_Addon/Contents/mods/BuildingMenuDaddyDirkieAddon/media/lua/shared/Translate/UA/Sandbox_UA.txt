@@ -2,6 +2,12 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Спеціальні категорії Daddy Dirkie _______________",
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Це лише роздільник рядків, перевірка не має ефекту.",
 
+    Sandbox_BuildingMenu_daddyDirkieFurniture = "Увімкнути категорію меблів Daddy Dirkie",
+    Sandbox_BuildingMenu_daddyDirkieFurniture_tooltip = "Дозволити додавати меблі Daddy Dirkie. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
+
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps = "Увімкнути підкатегорію Daddy Dirkie Roadwork Ramps",
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps_tooltip = "Дозволити додавати грунтові, піщані та асфальтові пандуси. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
+
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Увімкнути категорію таємних входів",
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Увімкнути додавання секретних входів. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
 

@@ -2,6 +2,12 @@ Sandbox_AR = {
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkie Categorías específicas _______________",
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Esto es sólo un separador de línea, comprobarlo no tiene ningún efecto.",
 
+    Sandbox_BuildingMenu_daddyDirkieFurniture = "Habilitar la categoría de muebles Daddy Dirkie",
+    Sandbox_BuildingMenu_daddyDirkieFurniture_tooltip = "Habilite la adición de muebles Daddy Dirkie. <LINE><LINE> <RGB:1,0,0> ¡SALIR Y VOLVER A ENTRAR GUARDAR PARA APLICAR LOS CAMBIOS!",
+
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps = "Habilitar la subcategoría Rampas de obras viales Daddy Dirkie",
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps_tooltip = "Habilitar para agregar rampas de tierra, arena y asfalto. <LINE><LINE> <RGB:1,0,0> ¡SALIR Y VOLVER A ENTRAR! ¡GUARDAR PARA APLICAR CAMBIOS!",
+
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Habilitar categoría de entradas secretas",
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Habilite para agregar entradas secretas. <LINE><LINE> <RGB:1,0,0> ¡SALIR Y VOLVER A ENTRAR GUARDAR PARA APLICAR LOS CAMBIOS!",
 

@@ -2,6 +2,12 @@ Sandbox_DE = {
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkie Spezifische Kategorien _______________",
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Dies ist nur ein Zeilentrenner, die Überprüfung hat keine Auswirkung.",
 
+    Sandbox_BuildingMenu_daddyDirkieFurniture = "Daddy Dirkie Möbelkategorie aktivieren",
+    Sandbox_BuildingMenu_daddyDirkieFurniture_tooltip = "Aktivieren, um Daddy-Dirkie-Möbel hinzuzufügen. <LINE><LINE> <RGB:1,0,0> BEENDEN UND ERNEUT EINGEBEN, SPEICHERN, UM ÄNDERUNGEN ZU ÜBERNEHMEN!",
+
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps = "Aktivieren Sie die Unterkategorie „Daddy Dirkie Roadwork Ramps“",
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps_tooltip = "Aktivieren, um Rampen aus Erde, Sand und Asphalt hinzuzufügen. <LINE><LINE> <RGB:1,0,0> BEENDEN UND ERNEUT EINGEBEN, SPEICHERN, UM ÄNDERUNGEN ZU ÜBERNEHMEN!",
+
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Aktivieren Sie die Kategorie „Geheime Eingänge“.",
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Aktivieren Sie diese Option, um geheime Eingänge hinzuzufügen. <LINE><LINE> <RGB:1,0,0> Beenden und erneut eingeben, speichern, um die Änderungen zu übernehmen!",
 

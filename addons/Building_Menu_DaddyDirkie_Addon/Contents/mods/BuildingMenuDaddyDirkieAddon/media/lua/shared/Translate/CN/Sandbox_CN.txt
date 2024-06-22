@@ -2,6 +2,12 @@ Sandbox_CN = {
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Daddy Dirkie类别 _______________",
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果",
 
+    Sandbox_BuildingMenu_daddyDirkieFurniture = "启用 Daddy Dirkie 家具类别",
+    Sandbox_BuildingMenu_daddyDirkieFurniture_tooltip = "启用添加 Daddy Dirkie 家具。<LINE><LINE> <RGB:1,0,0> 退出并重新进入保存以应用更改！",
+
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps = "启用 Daddy Dirkie 道路工程坡道子类别",
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps_tooltip = "可以添加泥土、沙子和沥青坡道。<LINE><LINE> <RGB:1,0,0> 退出并重新进入保存以应用更改！",
+
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "开启秘密入口类别",
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "开启后添加秘密入口。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
 

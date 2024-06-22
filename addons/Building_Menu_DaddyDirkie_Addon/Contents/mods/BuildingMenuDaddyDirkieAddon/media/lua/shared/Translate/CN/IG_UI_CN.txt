@@ -8,6 +8,11 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "家具组合4",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "家具组合5",
 
+    IGUI_BuildingMenuSubCat_Road_Work_Asphalt_Ramp = "沥青坡道",
+    IGUI_BuildingMenuSubCat_Road_Work_Grass_Ramp = "草坡道",
+    IGUI_BuildingMenuSubCat_Road_Work_Dirt_Ramp = "土坡道",
+    IGUI_BuildingMenuSubCat_Road_Work_Sand_Ramp = "沙坡",
+
     IGUI_BuildingMenuCat_DaddyDirkie_Others = "其它",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "森林求生",
 }   

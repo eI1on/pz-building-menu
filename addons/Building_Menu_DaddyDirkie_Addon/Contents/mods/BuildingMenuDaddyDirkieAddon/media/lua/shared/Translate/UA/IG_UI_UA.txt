@@ -8,6 +8,11 @@ IGUI_UA = {
     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Комплект меблів 4",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Комплект меблів 5",
 
+    IGUI_BuildingMenuSubCat_Road_Work_Asphalt_Ramp = "Асфальтні пандуси",
+    IGUI_BuildingMenuSubCat_Road_Work_Grass_Ramp = "Трав'яні пандуси",
+    IGUI_BuildingMenuSubCat_Road_Work_Dirt_Ramp = "Грунтові рампи",
+    IGUI_BuildingMenuSubCat_Road_Work_Sand_Ramp = "Піщані пандуси",
+
     IGUI_BuildingMenuCat_DaddyDirkie_Others = "інші",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Виживання в лісі",
 }   

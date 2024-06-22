@@ -1,3 +1,18 @@
+ JUNE 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] 
+[/list]
+SimonMD's addon:
+[list]
+[*] Changed Secret Entrance Recipe to Metal Door Recipe
+[/list]
+[/list]
+
+
 14 JUNE 24
 d09e229
 

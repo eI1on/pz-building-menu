@@ -8,6 +8,11 @@ IGUI_IT = {
     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_4 = "Set di mobili 4",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_5 = "Set di mobili 5",
 
+    IGUI_BuildingMenuSubCat_Road_Work_Asphalt_Ramp = "Rampe d'asfalto",
+    IGUI_BuildingMenuSubCat_Road_Work_Grass_Ramp = "Rampe d'erba",
+    IGUI_BuildingMenuSubCat_Road_Work_Dirt_Ramp = "Rampe sterrate",
+    IGUI_BuildingMenuSubCat_Road_Work_Sand_Ramp = "Rampe di sabbia",
+
     IGUI_BuildingMenuCat_DaddyDirkie_Others = "Altri",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival = "Sopravvivenza nella foresta",
 }   

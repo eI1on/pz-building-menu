@@ -2,6 +2,12 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider = "_______________ Pappa Dirkie Spesifikke kategorier _______________",
     Sandbox_BuildingMenu_DaddyDirkieCategoryDivider_tooltip = "Dette er bare en linjeskiller, og sjekker den har ingen effekt.",
 
+    Sandbox_BuildingMenu_daddyDirkieFurniture = "Aktiver Daddy Dirkie Møbelkategori",
+    Sandbox_BuildingMenu_daddyDirkieFurniture_tooltip = "Aktiver for å legge til Daddy Dirkie-møbler. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å BRUKE ENDRINGER!",
+
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps = "Aktiver Daddy Dirkie Roadwork Ramps underkategori",
+    Sandbox_BuildingMenu_daddyDirkieRoadworkRamps_tooltip = "Aktiver for å legge til smuss, sand og asfaltramper. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å BRUKE ENDRINGER!",
+
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances = "Aktiver Secret Entrances Category",
     Sandbox_BuildingMenu_daddyDirkieSecretEntrances_tooltip = "Aktiver for å legge til hemmelige innganger. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å BRUKE ENDRINGER!",
 
