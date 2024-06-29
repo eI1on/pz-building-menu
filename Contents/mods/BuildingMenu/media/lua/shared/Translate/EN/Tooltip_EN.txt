@@ -1853,18 +1853,22 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Beige_Asphalt = "Beige Asphalt",
   Tooltip_BuildingMenuObj_Beige_Asphalt_Corner = "Beige Asphalt Corner",
   Tooltip_BuildingMenuObj_Beige_Asphalt_Edge = "Beige Asphalt Edge",
+
   Tooltip_BuildingMenuObj_Beige_Gravel = "Beige Gravel",
   Tooltip_BuildingMenuObj_Beige_Gravel_Corner = "Beige Gravel Corner",
   Tooltip_BuildingMenuObj_Beige_Gravel_Edge = "Beige Gravel Edge",
 
   Tooltip_BuildingMenuObj_Medium_Asphalt = "Medium Asphalt",
   Tooltip_BuildingMenuObj_Medium_Asphalt_Corner = "Medium Asphalt Corner",
+  Tooltip_BuildingMenuObj_Medium_Asphalt_Edge = "Medium Asphalt Edge",
 
   Tooltip_BuildingMenuObj_Dark_Asphalt = "Dark Asphalt",
   Tooltip_BuildingMenuObj_Dark_Asphalt_Corner = "Dark Asphalt Corner",
+  Tooltip_BuildingMenuObj_Dark_Asphalt_Edge = "Dark Asphalt Edge",
 
   Tooltip_BuildingMenuObj_Old_Asphalt = "Old Asphalt",
   Tooltip_BuildingMenuObj_Old_Asphalt_Corner = "Old Asphalt Corner",
+  Tooltip_BuildingMenuObj_Old_Asphalt_Edge = "Old Asphalt Edge",
 
   Tooltip_BuildingMenuObj_Grime_Overlay = "Grime Overlay",
   Tooltip_BuildingMenuObj_Street_Overlay = "Street Overlay",

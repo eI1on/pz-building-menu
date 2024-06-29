@@ -19706,27 +19706,6 @@ local function addRoadworkAsphaltToMenu()
             }
         ),
         BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Beige_Asphalt_Edge",
-            "Tooltip_Asphalt_Generic",
-            BuildingMenu.onBuildFloorOverlay,
-            BuildingMenu.AsphaltBlendRecipe,
-            true,
-            {
-                needToBeAgainstWall = false,
-                blockAllTheSquare = false,
-                canPassThrough = true,
-                canBarricade = false,
-                isThumpable = true,
-                isCorner = true
-            },
-            {
-                sprite = "blends_street_01_9",
-                northSprite = "blends_street_01_8",
-                eastSprite = "blends_street_01_10",
-                southSprite = "blends_street_01_11"
-            }
-        ),
-        BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Light_Asphalt",
             "Tooltip_Asphalt_Generic",
             BuildingMenu.onBuildFloor,
@@ -19815,6 +19794,27 @@ local function addRoadworkAsphaltToMenu()
             }
         ),
         BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Medium_Asphalt_Edge",
+            "Tooltip_Asphalt_Generic",
+            BuildingMenu.onBuildFloorOverlay,
+            BuildingMenu.AsphaltBlendRecipe,
+            true,
+            {
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "building_menu_floors_01_9",
+                northSprite = "building_menu_floors_01_8",
+                eastSprite = "building_menu_floors_01_10",
+                southSprite = "building_menu_floors_01_11"
+            }
+        ),
+        BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dark_Asphalt",
             "Tooltip_Asphalt_Generic",
             BuildingMenu.onBuildFloor,
@@ -19848,6 +19848,27 @@ local function addRoadworkAsphaltToMenu()
                 northSprite = "blends_street_01_81",
                 eastSprite = "blends_street_01_84",
                 southSprite = "blends_street_01_82"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Dark_Asphalt_Edge",
+            "Tooltip_Asphalt_Generic",
+            BuildingMenu.onBuildFloorOverlay,
+            BuildingMenu.AsphaltBlendRecipe,
+            true,
+            {
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "building_menu_floors_01_13",
+                northSprite = "building_menu_floors_01_12",
+                eastSprite = "building_menu_floors_01_14",
+                southSprite = "building_menu_floors_01_15"
             }
         ),
         BuildingMenu.createObject(
@@ -19885,7 +19906,28 @@ local function addRoadworkAsphaltToMenu()
                 eastSprite = "blends_street_01_100",
                 southSprite = "blends_street_01_98"
             }
-        )
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Old_Asphalt_Edge",
+            "Tooltip_Asphalt_Generic",
+            BuildingMenu.onBuildFloorOverlay,
+            BuildingMenu.AsphaltBlendRecipe,
+            true,
+            {
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "building_menu_floors_01_17",
+                northSprite = "building_menu_floors_01_16",
+                eastSprite = "building_menu_floors_01_18",
+                southSprite = "building_menu_floors_01_19"
+            }
+        ),
     }
 
 

@@ -129,6 +129,7 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
         end
     end
 
+    triggerEvent("OnBeforeSetDragBuildObject", object, playerNum);
     getCell():setDrag(object, playerNum);
 end
 

@@ -5,6 +5,8 @@ Changelog:
 Main mod:
 [list]
 [*] Added sandbox options to modify Water Well Rain Intensity Fill Rate Multiplier and Water Well Hourly Fill rate
+[*] Added Medium, Dark and Old Asphalt Edges
+[*] Door trims now can be removed with a hammer
 [/list]
 SimonMD's addon:
 [list]

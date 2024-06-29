@@ -21,6 +21,9 @@ local instanceof = instanceof
 
 local BM_Utils = require("BM_Utils");
 
+LuaEventManager.AddEvent("OnBuildActionPerformed");
+LuaEventManager.AddEvent("OnBeforeSetDragBuildObject");
+
 --- BuildingMenu namespace
 ---@class BuildingMenu
 local BuildingMenu = {};

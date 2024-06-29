@@ -3,6 +3,16 @@ local BM_Utils = require("BM_Utils");
 local RemovableWallDetailingTiles = {
     "walls_detailing_01",
     "walls_interior_detailing_01",
+    "fixtures_doors_frames_01_0",
+    "fixtures_doors_frames_01_1",
+    "fixtures_doors_frames_01_2",
+    "fixtures_doors_frames_01_3",
+    "fixtures_doors_frames_01_4",
+    "fixtures_doors_frames_01_5",
+    "fixtures_doors_frames_01_6",
+    "fixtures_doors_frames_01_7",
+    "fixtures_doors_frames_01_8",
+    "fixtures_doors_frames_01_9",
 };
 
 

@@ -458,4 +458,5 @@ end
 function ISBMBuildAction:perform()
     self:stopSoundPointers();
     ISBuildAction.perform(self);
+    triggerEvent("OnBuildActionPerformed", self.item);
 end
