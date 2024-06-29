@@ -954,3 +954,4 @@ sprites =   {
 | --- | --- | --- |
 | object | ISBuildingObject | The build object that is being set. |
 | playerNum | integer | The index of the player performing the build action. |
+| playerNum | integer | The index of the player performing the build action. |

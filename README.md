@@ -13,7 +13,7 @@ This mod, developed by [Elyon](https://github.com/eI1on), aims to simplify the c
 #### Add-ons and Framework:
 This project serves as a flexible framework that allows anyone to develop add-ons and extensions. Whether you want to create new building options, modify existing features, or customize the mod, you can contribute to expanding its functionality.
 
-For more detailed information on contributing and developing add-ons, please see [Development Guide](https://github.com/eI1on/pz-building-menu/blob/main/README.md).
+For more detailed information on contributing and developing add-ons, please see [Development Guide](https://github.com/eI1on/pz-building-menu/blob/main/DEVELOPMENT.md).
 
 #### Installation:
 For the latest releases visit the mod's [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3067798182).
