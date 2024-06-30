@@ -7,7 +7,7 @@ Items_RO = {
 
     /* Magazines */
     DisplayName_BMMagazineGlass = "Cuptoare de Bucătărie Handyman Corner",
-    DisplayName_BMMagazineCars = "Geamuri de precizie pentru Vehicule și Lucrări de Artizanat",
+    DisplayName_BMMagazineCars = "Geamuri de Precizie pentru Vehicule și Lucrări de Artizanat",
     DisplayName_BMMagazineSecretEntrances = "Pasaje Secrete Monthly",
 
 }

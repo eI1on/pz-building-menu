@@ -35,6 +35,7 @@ IGUI_IT = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Pietra grigia",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Pietra abbronzata",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Mattone rosa",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Mattone rosso",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Vecchio mattone",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Mattone blu",
@@ -138,6 +139,7 @@ IGUI_IT = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Alto",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Basso",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Ringhiera",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Ringhiere per scale",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Altro",
 
     IGUI_BuildingMenuCat_Floors = "Piani",
@@ -197,6 +199,7 @@ IGUI_IT = {
     IGUI_BuildingMenuCat_Decorations = "Decorazioni",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Caminetti",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Tappeti",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Tende",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Manifesti",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Segni",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

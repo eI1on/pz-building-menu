@@ -185,6 +185,9 @@ Sandbox_KO = {
     Sandbox_BuildingMenu_rugsSubCategory = "러그 하위 카테고리 활성화",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "러그를 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 종료하고 다시 입력하여 변경 사항을 적용하세요!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "커튼 하위 카테고리 활성화",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "커튼을 추가하려면 활성화하세요. <LINE><LINE> <RGB:1,0,0> 종료하고 다시 입력하여 변경 사항을 적용하세요!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "포스터 및 표지판 하위 범주 활성화",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "포스터 및 표지판을 추가할 수 있습니다. <LINE><LINE> <RGB:1,0,0> 종료하고 다시 입력하여 변경 사항을 적용하세요!",
    
@@ -366,6 +369,12 @@ Sandbox_KO = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "최대 우물 저장량",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "우물이 얼마나 많은 물을 보유하고 있는지.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "우물 비 강도 승수",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "비가 오는 동안 우물에 추가되는 물의 양에 대한 승수입니다.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "우물 시간별 보충 속도 간격",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "매 시간마다 우물에 추가되는 물의 양 범위입니다. 예를 들어 '1;5'는 1과 5 사이의 난수를 생성하고, '5'는 항상 5단위의 물을 생성합니다. 기본값=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "군용 상자의 목재 재료 비용",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "군용 상자에 필요한 판자를 설정합니다. <LINE><LINE> <RGB:1,0,0> 종료하고 다시 입력하여 변경 사항을 적용하세요! <RGB:1,1,1>",
     

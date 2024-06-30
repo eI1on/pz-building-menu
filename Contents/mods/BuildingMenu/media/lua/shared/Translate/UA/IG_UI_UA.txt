@@ -35,6 +35,7 @@ IGUI_UA = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Сірий камінь",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Тан Стоун",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Рожева цегла",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Червона цегла",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Стара цегла",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Синя цегла",
@@ -138,6 +139,7 @@ IGUI_UA = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Високий",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Низький",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Перила",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Перила для сходів",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Інший",
 
     IGUI_BuildingMenuCat_Floors = "Підлоги",
@@ -197,6 +199,7 @@ IGUI_UA = {
     IGUI_BuildingMenuCat_Decorations = "Прикраси",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Каміни",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Килимки",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Штори",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Плакати",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Знаки",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Графіті",

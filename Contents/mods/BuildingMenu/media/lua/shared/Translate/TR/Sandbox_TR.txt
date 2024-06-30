@@ -185,6 +185,9 @@ Sandbox_TR = {
     Sandbox_BuildingMenu_rugsSubCategory = "Halılar Alt Kategorisini Etkinleştir",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Halı eklemeyi etkinleştirin. <LINE><LINE> <RGB:1,0,0> ÇIKIN VE YENİDEN GİRİN DEĞİŞİKLİKLERİ UYGULAMAK İÇİN KAYDET!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Perdeler Alt Kategorisini Etkinleştir",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Perde eklemeyi etkinleştirin. <LINE><LINE> <RGB:1,0,0> ÇIKIN VE YENİDEN GİRİN DEĞİŞİKLİKLERİ UYGULAMAK İÇİN KAYDET!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Posterler ve Tabelalar Alt Kategorisini Etkinleştir",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Poster ve Tabela eklemeyi etkinleştirin. <LINE><LINE> <RGB:1,0,0> ÇIKIN VE YENİDEN GİRİN DEĞİŞİKLİKLERİ UYGULAMAK İÇİN KAYDET!",
    
@@ -366,6 +369,12 @@ Sandbox_TR = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Maksimum Su Kuyusu Depolama Miktarı",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Bir kuyu ne kadar su tutar?",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Su Kuyusu Yağmur Şiddeti Çarpanı",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Yağmur sırasında kuyuya eklenen su miktarının çarpanı.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Su Kuyusu Saatlik Dolum Oranı Aralığı",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Kuyuya her saat başı eklenen su miktarı aralığı. Örneğin '1;5' 1 ile 5 arasında rastgele bir sayı üretecektir, '5' her zaman 5 birim su üretecektir. Varsayılan=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Askeri Sandık Ahşap Malzeme Maliyeti",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Askeri Kasalar için gerekli kalasları ayarlar. <LINE><LINE> <RGB:1,0,0> ÇIKIN VE YENİDEN GİRİN DEĞİŞİKLİKLERİ UYGULAMAK İÇİN KAYDET! <RGB:1,1,1>",
     

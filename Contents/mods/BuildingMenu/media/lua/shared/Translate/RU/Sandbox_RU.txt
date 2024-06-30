@@ -185,6 +185,9 @@ Sandbox_RU = {
     Sandbox_BuildingMenu_rugsSubCategory = "Включить подкатегорию «Коврики»",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Включите, чтобы добавить коврики. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Включить подкатегорию «Шторы»",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Включите, чтобы добавить шторы. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Включить подкатегорию «Плакаты и знаки»",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Включите, чтобы добавлять плакаты и знаки. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ!",
    
@@ -366,6 +369,12 @@ Sandbox_RU = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Максимальный объем хранения водяной скважины",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Сколько воды вмещает колодец.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Множитель интенсивности дождя из водяной скважины",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Множитель количества воды, добавленной в колодец во время дождя.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Интервал почасовой загрузки водяной скважины",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Диапазон количества воды, добавляемой в колодец каждый час. Например, '1;5' сгенерирует случайное число от 1 до 5, '5' всегда будет генерировать 5 единиц воды. По умолчанию=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Стоимость древесного материала для военного ящика",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Устанавливает доски, необходимые для военных ящиков. <LINE><LINE> <RGB:1,0,0> ВЫХОДИТЕ И ПОВТОРНО ВОЙДИТЕ СОХРАНИТЕ, ЧТОБЫ ПРИМЕНИТЬ ИЗМЕНЕНИЯ! <RGB:1,1,1>",
     

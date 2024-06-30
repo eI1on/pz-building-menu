@@ -185,6 +185,9 @@ Sandbox_PH = {
     Sandbox_BuildingMenu_rugsSubCategory = "Paganahin ang Rugs Subcategory",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Paganahin ang magdagdag ng Rugs. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "I-enable ang Curtains Subcategory",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Paganahin ang magdagdag ng Mga Kurtina. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA MAG-APPLY NG MGA PAGBABAGO!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Paganahin ang Subcategory ng Mga Poster at Palatandaan",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Paganahin upang magdagdag ng mga Poster at Mga Palatandaan. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO!",
    
@@ -366,6 +369,12 @@ Sandbox_PH = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Pinakamataas na Halaga ng Imbakan ng Balon ng Tubig",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Gaano karaming tubig ang hawak ng isang Well.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Water Well Rain Intensity Multiplier",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplier para sa dami ng tubig na idinagdag sa balon sa panahon ng ulan.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Water Well Oras-oras na Refill Rate Interval",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Saklaw ng dami ng tubig na idinaragdag sa balon bawat oras. Halimbawa, ang '1;5' ay bubuo ng random na numero sa pagitan ng 1 at 5, ang '5' ay palaging bubuo ng 5 unit ng tubig. Default=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Gastos sa Wood Material para sa Militar Crate",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Nagtatakda ng mga tabla na kinakailangan para sa mga Military Crates. <LINE><LINE> <RGB:1,0,0> LUMABAS AT MULING PUMASOK I-SAVE PARA Ilapat ANG MGA PAGBABAGO! <RGB:1,1,1>",
     

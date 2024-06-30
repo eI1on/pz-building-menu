@@ -35,6 +35,7 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Grijze steen",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Bruine steen",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Roze baksteen",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Rode baksteen",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Oude baksteen",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Blauwe baksteen",
@@ -138,6 +139,7 @@ IGUI_NL = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Hoog",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Laag",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Traliewerk",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Trapleuningen",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Ander",
 
     IGUI_BuildingMenuCat_Floors = "Vloeren",
@@ -197,6 +199,7 @@ IGUI_NL = {
     IGUI_BuildingMenuCat_Decorations = "Decoraties",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Open haarden",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Vloerkleden",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Gordijnen",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Affiches",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Tekens",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

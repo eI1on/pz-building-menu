@@ -185,6 +185,9 @@ Sandbox_IT = {
     Sandbox_BuildingMenu_rugsSubCategory = "Abilita la sottocategoria dei tappeti",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Abilita per aggiungere tappeti. <LINE><LINE> <RGB:1,0,0> ESCI E RIENTRO SALVA PER APPLICARE LE MODIFICHE!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Abilita la sottocategoria Tende",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Abilita per aggiungere tende. <LINE><LINE> <RGB:1,0,0> ESCI E RIENTRO SALVA PER APPLICARE LE MODIFICHE!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Abilita la sottocategoria Poster e insegne",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Abilita l'aggiunta di poster e cartelli. <LINE><LINE> <RGB:1,0,0> ESCI E RIENTRO SALVA PER APPLICARE LE MODIFICHE!",
    
@@ -366,6 +369,12 @@ Sandbox_IT = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Quantità massima di stoccaggio del pozzo d'acqua",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Quanta acqua contiene un pozzo.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Moltiplicatore dell'intensità della pioggia del pozzo d'acqua",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Moltiplicatore della quantità di acqua aggiunta al pozzo durante la pioggia.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Intervallo della velocità di ricarica oraria del pozzo d'acqua",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Intervallo della quantità di acqua aggiunta al pozzo ogni ora. Ad esempio '1;5' genererà un numero casuale compreso tra 1 e 5, '5' genererà sempre 5 unità d'acqua. Impostazione predefinita=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Costo del materiale in legno per la cassa militare",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Imposta le assi necessarie per le casse militari. <LINE><LINE> <RGB:1,0,0> ESCI E RIENTRO SALVA PER APPLICARE LE MODIFICHE! <RGB:1,1,1>",
     

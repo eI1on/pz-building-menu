@@ -1,30 +1,30 @@
 Recipe_FR = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "BM Préparer le verre pour la fusion",
-    Recipe_BMUnprepareGlassShards = "BM Retirer le verre de la poêle",
-    Recipe_BMRemoveGlassPane = "BM Extraire la vitre",
+    Recipe_BMPrepareGlassShards = "PrÃ©parer le verre pour la fusion",
+    Recipe_BMUnprepareGlassShards = "Retirer le verre de la poÃªle",
+    Recipe_BMRemoveGlassPane = "Extraire la vitre",
 
     /* Smash Glass Recipes */
-    Recipe_BMSmashGlassJar = "Écraser pour en faire du verre brisé",
-    Recipe_BMSmashGlassPane = "Écraser pour en faire du verre brisé",
-    Recipe_BMSmashWindshield = "Écraser pour en faire du verre brisé",
-    Recipe_BMSmashWindows = "Écraser pour en faire du verre brisé",
+    Recipe_BMSmashGlassJar = "Ã‰craser pour en faire du verre brisÃ©",
+    Recipe_BMSmashGlassPane = "Ã‰craser pour en faire du verre brisÃ©",
+    Recipe_BMSmashWindshield = "Ã‰craser pour en faire du verre brisÃ©",
+    Recipe_BMSmashWindows = "Ã‰craser pour en faire du verre brisÃ©",
 
     /* Vehicle: Standard Recipes */
     Recipe_BMWindshield1 = "Fabriquer un pare-brise standard",
-    Recipe_BMRearWindshield1 = "Fabriquer une lunette arrière standard",
+    Recipe_BMRearWindshield1 = "Fabriquer une lunette arriÃ¨re standard",
     Recipe_BMFrontWindow1 = "Fabriquer une vitre avant standard",
-    Recipe_BMRearWindow1 = "Fabriquer une vitre arrière standard",
+    Recipe_BMRearWindow1 = "Fabriquer une vitre arriÃ¨re standard",
 
     /* Vehicle: Heavy-Duty Recipes */
     Recipe_BMWindshield2 = "Fabriquer un pare-brise robuste",
-    Recipe_BMRearWindshield2 = "Fabriquer une lunette arrière robuste",
+    Recipe_BMRearWindshield2 = "Fabriquer une lunette arriÃ¨re robuste",
     Recipe_BMFrontWindow2 = "Fabriquer une vitre avant robuste",
-    Recipe_BMRearWindow2 = "Fabriquer une vitre arrière robuste",
+    Recipe_BMRearWindow2 = "Fabriquer une vitre arriÃ¨re robuste",
 
     /* Vehicle: Sport Recipes */
     Recipe_BMWindshield3 = "Fabriquer un pare-brise sport",
-    Recipe_BMRearWindshield3 = "Fabriquer une lunette arrière sport",
+    Recipe_BMRearWindshield3 = "Fabriquer une lunette arriÃ¨re sport",
     Recipe_BMFrontWindow3 = "Fabriquer une vitre avant sport",
-    Recipe_BMRearWindow3 = "Fabriquer une vitre arrière sport",
+    Recipe_BMRearWindow3 = "Fabriquer une vitre arriÃ¨re sport",
 }

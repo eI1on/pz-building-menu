@@ -185,6 +185,9 @@ Sandbox_CS = {
     Sandbox_BuildingMenu_rugsSubCategory = "Povolit podkategorii Koberce",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Povolit přidání koberečků. <LINE><LINE> <RGB:1,0,0> ODEJÍTE A ZNOVU ZADEJTE ULOŽIT, ABYSTE POUŽILI ZMĚNY!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Povolit podkategorii Záclony",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Aktivujte pro přidání záclon. <LINE><LINE> <RGB:1,0,0> ODEJÍTE A ZNOVU ZADEJTE ULOŽIT, ABYSTE POUŽILI ZMĚNY!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Povolit podkategorii plakáty a nápisy",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktivujte pro přidávání plakátů a cedulí. <LINE><LINE> <RGB:1,0,0> ODEJÍTE A ZNOVU ZADEJTE ULOŽIT, ABYSTE POUŽILI ZMĚNY!",
    
@@ -366,6 +369,12 @@ Sandbox_CS = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Maximální množství vody ve studni",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Kolik vody pojme studna.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Násobitel intenzity deště z vodní studny",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Násobitel pro množství vody přidané do studny během deště.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Hodinový interval doplňování vodní studny",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Rozsah množství vody přidané do studny každou hodinu. Například „1;5“ vygeneruje náhodné číslo mezi 1 a 5, „5“ vždy vygeneruje 5 jednotek vody. Výchozí=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Náklady na dřevěný materiál pro vojenskou bednu",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Nastaví prkna potřebná pro vojenské bedny. <LINE><LINE> <RGB:1,0,0> ODEJÍTE A ZNOVU ZADEJTE ULOŽIT, ABYSTE POUŽILI ZMĚNY! <RGB:1,1,1>",
     

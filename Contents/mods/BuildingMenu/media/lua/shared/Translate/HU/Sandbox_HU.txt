@@ -185,6 +185,9 @@ Sandbox_HU = {
     Sandbox_BuildingMenu_rugsSubCategory = "Szőnyegek alkategória engedélyezése",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Szőnyegek hozzáadásának engedélyezése. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Függönyök alkategória engedélyezése",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Függönyök hozzáadásának engedélyezése. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Poszterek és táblák alkategória engedélyezése",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Poszterek és táblák hozzáadásának engedélyezése. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ!",
    
@@ -366,6 +369,12 @@ Sandbox_HU = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Maximális vízkút-tárolási mennyiség",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Mennyi vizet egy kút tart.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Vízkút esőintenzitás-szorzója",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Eső közben a kútba töltött víz mennyiségének szorzója.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Vízkút óránkénti utántöltési aránya",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "A kútba adagolt vízmennyiség tartománya óránként. Például az '1;5' véletlenszerű számot generál 1 és 5 között, az '5' pedig mindig 5 egység vizet. Alapértelmezett=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Faanyag költsége katonai ládához",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Beállítja a katonai ládákhoz szükséges deszkákat. <LINE><LINE> <RGB:1,0,0> KILÉPÉS KI ÉS ÚJRA JELENTKEZZE MEG A VÁLTOZÁSOK ALKALMAZÁSÁHOZ! <RGB:1,1,1>",
     

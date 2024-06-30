@@ -185,6 +185,9 @@ Sandbox_ID = {
     Sandbox_BuildingMenu_rugsSubCategory = "Aktifkan Subkategori Permadani",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Aktifkan untuk menambahkan Karpet. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Aktifkan Subkategori Tirai",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Aktifkan untuk menambahkan Tirai. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Aktifkan Subkategori Poster dan Tanda",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktifkan untuk menambahkan Poster dan Tanda. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN!",
    
@@ -366,6 +369,12 @@ Sandbox_ID = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Jumlah Penyimpanan Sumur Air Maks",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Berapa banyak air yang dapat ditampung oleh Sumur.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Pengganda Intensitas Hujan Sumur Air",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Pengali jumlah air yang ditambahkan ke sumur saat hujan.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Interval Kecepatan Isi Ulang Sumur Air Setiap Jam",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Kisaran jumlah air yang ditambahkan ke sumur setiap jam. Misalnya '1;5' akan menghasilkan angka acak antara 1 dan 5, '5' akan selalu menghasilkan 5 unit air. Bawaan=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Biaya Bahan Kayu untuk Peti Militer",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Menetapkan papan yang diperlukan untuk Peti Militer. <LINE><LINE> <RGB:1,0,0> KELUAR DAN MASUKAN KEMBALI SIMPAN UNTUK MENERAPKAN PERUBAHAN! <RGB:1,1,1>",
     

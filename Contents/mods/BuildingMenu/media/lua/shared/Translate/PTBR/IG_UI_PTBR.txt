@@ -35,6 +35,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Pedra Cinza",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Pedra Bege",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Tijolo Rosa",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Tijolo Vermelho",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Tijolo Antigo",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Tijolo Azul",
@@ -138,6 +139,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Alta",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Baixa",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Corrimão",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Corrimãos de escada",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Outro",
 
     IGUI_BuildingMenuCat_Floors = "Pisos",
@@ -197,6 +199,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuCat_Decorations = "Decorações",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Lereira",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Tapete",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Cortinas",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Poster",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Placa",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

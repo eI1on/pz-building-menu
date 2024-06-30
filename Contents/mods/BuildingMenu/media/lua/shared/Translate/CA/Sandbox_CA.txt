@@ -185,6 +185,9 @@ Sandbox_CA = {
     Sandbox_BuildingMenu_rugsSubCategory = "Activa la subcategoria de catifes",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Activa per afegir catifes. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Activa la subcategoria Cortines",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Activa per afegir cortines. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Activa la subcategoria Cartells i rètols",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Activa per afegir pòsters i rètols. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS!",
    
@@ -366,6 +369,12 @@ Sandbox_CA = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Quantitat màxima d'emmagatzematge del pou d'aigua",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Quanta aigua aguanta un pou.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Multiplicador de la intensitat de la pluja del pou d'aigua",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplicador de la quantitat d'aigua que s'afegeix al pou durant la pluja.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Interval de velocitat horaria del pou d'aigua",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Interval de quantitat d'aigua que s'afegeix al pou cada hora. Per exemple, "1;5" generarà un nombre aleatori entre 1 i 5, "5" sempre generarà 5 unitats d'aigua. Per defecte=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Cost del material de fusta per a la caixa militar",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Estableix les taules necessàries per a les caixes militars. <LINE><LINE> <RGB:1,0,0> SORTIR I TORNAR A ENTRAR DESA PER APLICAR ELS CANVIS! <RGB:1,1,1>",
     

@@ -185,6 +185,9 @@ Sandbox_TH = {
     Sandbox_BuildingMenu_rugsSubCategory = "เปิดใช้งานหมวดหมู่ย่อยของ Rugs",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "เปิดใช้งานเพื่อเพิ่มพรม <LINE><LINE> <RGB:1,0,0> ออกและบันทึกต่อเพื่อใช้การเปลี่ยนแปลง!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "เปิดใช้งานหมวดหมู่ย่อยของ Curtains",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "เปิดใช้งานเพื่อเพิ่มผ้าม่าน <LINE><LINE> <RGB:1,0,0> ออกและบันทึกต่อเพื่อใช้การเปลี่ยนแปลง!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "เปิดใช้งานหมวดหมู่ย่อยโปสเตอร์และป้าย",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "เปิดใช้งานเพื่อเพิ่มโปสเตอร์และป้าย <LINE><LINE> <RGB:1,0,0> ออกและบันทึกต่อเพื่อใช้การเปลี่ยนแปลง!",
    
@@ -366,6 +369,12 @@ Sandbox_TH = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "ปริมาณการเก็บน้ำสูงสุด",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "กักเก็บน้ำได้เท่าไร",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "ตัวคูณความเข้มของฝนในบ่อน้ำ",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "ตัวคูณปริมาณน้ำที่เติมลงในบ่อระหว่างฝนตก",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "ช่วงเวลาอัตราการเติมน้ำบ่อน้ำรายชั่วโมง",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "ช่วงปริมาณน้ำที่เติมลงในบ่อทุกชั่วโมง ตัวอย่างเช่น '1;5' จะสร้างตัวเลขสุ่มระหว่าง 1 ถึง 5, '5' จะสร้างน้ำ 5 หน่วยเสมอ ค่าเริ่มต้น=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "ค่าวัสดุไม้สำหรับลังทหาร",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "กำหนดไม้กระดานที่จำเป็นสำหรับลังทหาร <LINE><LINE> <RGB:1,0,0> ออกและบันทึกต่อเพื่อใช้การเปลี่ยนแปลง! <RGB:1,1,1>",
     

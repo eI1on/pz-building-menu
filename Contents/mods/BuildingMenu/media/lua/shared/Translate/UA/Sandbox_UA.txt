@@ -185,6 +185,9 @@ Sandbox_UA = {
     Sandbox_BuildingMenu_rugsSubCategory = "Увімкнути підкатегорію «Килими».",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Увімкнути додавання килимків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Увімкнути підкатегорію «Штори».",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Увімкнути додавання штор. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Увімкнути підкатегорію «Плакати та вивіски».",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Дозволити додавати плакати та вивіски. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ!",
    
@@ -366,6 +369,12 @@ Sandbox_UA = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Максимальний обсяг зберігання колодязя",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Скільки води містить колодязь.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Коефіцієнт інтенсивності дощу для колодязя",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Множник на кількість води, що додається в колодязь під час дощу.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Інтервал щогодини поповнення водяного колодязя",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Діапазон кількості води, що додається в колодязь щогодини. Наприклад, «1;5» генеруватиме випадкове число від 1 до 5, «5» завжди генеруватиме 5 одиниць води. За замовчуванням=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Вартість деревини для військового ящика",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Набір дощок, необхідних для військових ящиків. <LINE><LINE> <RGB:1,0,0> ВИХІД ТА ПОВТОРНИЙ ВВІД ЗБЕРЕГТИ, ЩОБ ЗАСТОСУВАТИ ЗМІНИ! <RGB:1,1,1>",
     

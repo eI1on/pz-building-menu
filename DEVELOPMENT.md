@@ -1036,9 +1036,9 @@ sprites =   {
 | --- | --- | --- |
 | ``object`` | ISBuildingObject | The instance of the ``ISBuildingObject`` object. |
 
-## OnBeforeSetDragObject
+## OnBeforeSetDragBuildObject
 
-(Client) OnBeforeSetDragObject: This event is triggered right before setting the drag object for the player cursor in the ``BuildingMenu.buildObject`` function. It allows to manipulate or utilize the build object and player number before the object is set as the drag object.
+(Client) OnBeforeSetDragBuildObject: This event is triggered right before setting the drag object for the player cursor in the ``BuildingMenu.buildObject`` function. It allows to manipulate or utilize the build object and player number before the object is set as the drag object.
 
 **Parameters**
 

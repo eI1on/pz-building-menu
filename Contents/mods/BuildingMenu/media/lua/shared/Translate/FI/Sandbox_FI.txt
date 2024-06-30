@@ -185,6 +185,9 @@ Sandbox_FI = {
     Sandbox_BuildingMenu_rugsSubCategory = "Ota käyttöön Matot-alaluokka",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Ota käyttöön mattojen lisääminen. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Ota Verhot-alaluokka käyttöön",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Ota verhojen lisääminen käyttöön. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Ota Julisteet ja kyltit -alaluokka käyttöön",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Ota käyttöön julisteiden ja kylttien lisääminen. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET!",
    
@@ -366,6 +369,12 @@ Sandbox_FI = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Suurin vesikaivovarastointimäärä",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Kuinka paljon vettä kaivo pitää.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Vesikaivon sateen voimakkuuden kerroin",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Kerroin kaivoon sateen aikana lisätyn vesimäärän mukaan.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Vesikaivon tunnin täyttömäärän aikaväli",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Kaivoon lisättävä vesimäärä tunnin välein. Esimerkiksi '1;5' tuottaa satunnaisluvun väliltä 1 ja 5, '5' tuottaa aina 5 yksikköä vettä. Oletus=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Puumateriaalikustannukset sotilaalliseen häkkiin",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Asettaa sotilaslaatikoihin tarvittavat lankut. <LINE><LINE> <RGB:1,0,0> POISTU JA SYÖTÄ UUDELLEEN TALLENNA KÄYTTÖÖN MUUTOKSET! <RGB:1,1,1>",
     

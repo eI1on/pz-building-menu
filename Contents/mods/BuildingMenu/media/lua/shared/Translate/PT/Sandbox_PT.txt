@@ -185,6 +185,9 @@ Sandbox_PT = {
     Sandbox_BuildingMenu_rugsSubCategory = "Ativar subcategoria de tapetes",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Ative para adicionar tapetes. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Ativar subcategoria Cortinas",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Ative para adicionar cortinas. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Ativar subcategoria de cartazes e cartazes",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Ative para adicionar pôsteres e placas. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES!",
    
@@ -366,6 +369,12 @@ Sandbox_PT = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Quantidade máxima de armazenamento de poço de água",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Quanta água um poço retém.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Multiplicador de intensidade de chuva de poço de água",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplicador pela quantidade de água adicionada ao poço durante a chuva.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Intervalo de taxa de recarga por hora de poço de água",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Faixa de quantidade de água adicionada ao poço a cada hora. Por exemplo '1;5' irá gerar um número aleatório entre 1 e 5, '5' sempre gerará 5 unidades de água. Padrão=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Custo de material de madeira para caixa militar",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Define as pranchas necessárias para caixas militares. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES! <RGB:1,1,1>",
     

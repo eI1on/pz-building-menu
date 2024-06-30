@@ -5,27 +5,27 @@ IGUI_RO = {
     IGUI_BuildingMenuUI_Controls = "%1/%2 = Modificați categoria %3/%4 = Schimbați filele F = Categoria favorită ESC = Închideți",
 
 
-    IGUI_BuildingMenuUI_ShowItemIcons = "Afișează pictogramele articolului",
-    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Comutați pentru a afișa sau ascunde pictogramele articolului în balonul cu instrumente.",
-    IGUI_BuildingMenuUI_IconScale = "Dimensiunea pictogramei articolului",
-    IGUI_BuildingMenuUI_IconScale_ToolTip = "Ajustează dimensiunea pictogramelor articolului afișate în sfaturi cu instrumente. <BR> O scară de „1” menține dimensiunea originală a pictogramei (20 de pixeli), în timp ce „2” o dublează.",
+    IGUI_BuildingMenuUI_ShowItemIcons = "Afișează Pictogramele Materialelor",
+    IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Bifați pentru a afișa sau ascunde pictogramele materialelor din tooltip.",
+    IGUI_BuildingMenuUI_IconScale = "Dimensiunea Pictogramei Materialelor",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Ajustează dimensiunea pictogramelor materialelor afișate în tooltip. <BR> O valoare de „1” menține dimensiunea originală a pictogramei (20 de pixeli), în timp ce „2” o dublează.",
 
-    IGUI_BuildingMenuUI_Move_UI = "Mutați fereastra",
+    IGUI_BuildingMenuUI_Move_UI = "Mutați Fereastra",
     IGUI_BuildingMenuUI_Stop_Move_UI = "Opriți Mutarea Ferestrei",
-    IGUI_BuildingMenuUI_Build = "Construieste",
-    IGUI_BuildingMenuUI_Favorite = "Favorit",
+    IGUI_BuildingMenuUI_Build = "Construiește",
+    IGUI_BuildingMenuUI_Favorite = "Preferat",
     IGUI_BuildingMenuUI_Close = "Închide",
 
     IGUI_BuildingMenuUI_Tab_Left = "Tab Stânga",
     IGUI_BuildingMenuUI_Tab_Right = "Tab Dreapta",
     
-    IGUI_BuildingMenuUI_List_Left = "Listă stânga",
-    IGUI_BuildingMenuUI_List_Right = "Listă dreapta",
+    IGUI_BuildingMenuUI_List_Left = "Listă Stânga",
+    IGUI_BuildingMenuUI_List_Right = "Listă Dreapta",
     IGUI_BuildingMenuUI_List_Up = "Listă Sus",
     IGUI_BuildingMenuUI_List_Down = "Lista Jos",
 
 
-    IGUI_BuildingMenuTab_Favorite = "Favorite",
+    IGUI_BuildingMenuTab_Favorite = "Preferate",
     IGUI_BuildingMenuTab_General = "General",
 
 
@@ -33,8 +33,9 @@ IGUI_RO = {
 
     IGUI_BuildingMenuCat_Walls = "Pereți",
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Piatră Gri",
-    IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Perete Tan",
+    IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Perete Cafeniu Deschis",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Caramidă Roz",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Cărămidă Roșie",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Cărămidă Veche",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Cărămidă Albastră",
@@ -43,7 +44,7 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Cărămidă Albă",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Cărămidă Verde",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Cărămidă Maro",
-    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Caramidă Clasică",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Șindrilă Albastră",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Șindrilă Cafenie",
@@ -55,29 +56,29 @@ IGUI_RO = {
     
     IGUI_BuildingMenuSubCat_Walls_White_Panel = "Panou Alb",
     IGUI_BuildingMenuSubCat_Walls_Wooden_Panel = "Panou din Lemn",
-    IGUI_BuildingMenuSubCat_Walls_Old_Wood_Panel = "Panou Vechi din Lemn",
+    IGUI_BuildingMenuSubCat_Walls_Old_Wood_Panel = "Panou din Lemn Vechi",
     IGUI_BuildingMenuSubCat_Walls_Red_Barn_Wood = "Perete Roșu de Hambar",
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Panou Maro",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Panou din Lemn de Lux",
 
-    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Plăci Medii pentru Baie",
 
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Perete din Bolțar Alb",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Perete din Bolțar Maro",
-    IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Perete din Bolțar Cafeniu",
+    IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock = "Perete din Bolțar Cafeniu Deschis",
     IGUI_BuildingMenuSubCat_Walls_Dark_Grey_Cinderblock = "Perete din Bolțar Gri Închis",
     IGUI_BuildingMenuSubCat_Walls_Light_Grey_Cinderblock = "Perete din Bolțar Gri Deschis",
-    IGUI_BuildingMenuSubCat_Walls_School_Cinderblock_Walls = "Perete dein Bolțar de Școală",
+    IGUI_BuildingMenuSubCat_Walls_School_Cinderblock_Walls = "Perete din Bolțar de Școală",
 
     IGUI_BuildingMenuSubCat_Walls_Painted_Blue = "Perete Vopsit în Albastru",
     IGUI_BuildingMenuSubCat_Walls_Painted_Green = "Perete Vopsit în Verde",
     IGUI_BuildingMenuSubCat_Walls_Painted_Purple = "Perete Vopsit în Violet",
     IGUI_BuildingMenuSubCat_Walls_Painted_Pink = "Perete Vopsit în Roz",
-    IGUI_BuildingMenuSubCat_Walls_Painted_Other_Colours = "Perete Vopsit Alte Culori",
+    IGUI_BuildingMenuSubCat_Walls_Painted_Other_Colours = "Perete Vopsit în Alte Culori",
     IGUI_BuildingMenuSubCat_Walls_Interior_Arched_Windows = "Pereți Interiori cu Ferestre Arcuite",
     IGUI_BuildingMenuSubCat_Walls_Exterior_Arched_Windows = "Pereți Exteriori cu Ferestre Arcuite",
 
-    IGUI_BuildingMenuSubCat_Walls_PileoCrepe = "Perete Pile o Crepe",
+    IGUI_BuildingMenuSubCat_Walls_PileoCrepe = "Perete Pile-o-Crepe",
     IGUI_BuildingMenuSubCat_Walls_Diner_Walls = "Perete de Restaurant",
     IGUI_BuildingMenuSubCat_Walls_Spiffos_Walls = "Perete Spiffos",
     IGUI_BuildingMenuSubCat_Walls_Fossoil_Walls = "Perete Fossoil",
@@ -88,8 +89,8 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Walls_Garage_Walls = "Pereți de Garaj",
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Pereți Industriali",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Sticlă cu Rama Maro",
-    IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Sticlă cu Rama Neagra",
-    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
+    IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Sticlă cu Rama Neagră",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Sticlă cu Ramă Gri",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Pereți de Canalizare",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "Pereții de Cort",
 
@@ -100,7 +101,7 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Roofing_Pink_Roofs = "Acoperișuri Roz",
     IGUI_BuildingMenuSubCat_Roofing_Green_Roofs = "Acoperișuri Verzi",
     IGUI_BuildingMenuSubCat_Roofing_Grey_Roofs = "Acoperișuri Gri",
-    IGUI_BuildingMenuSubCat_Roofing_Brown_Shakes_Roofs = "Acoperișuri din Șindrilă Maro",
+    IGUI_BuildingMenuSubCat_Roofing_Brown_Shakes_Roofs = "Acoperișuri din Țiglă Maro",
     IGUI_BuildingMenuSubCat_Roofing_Glass_Roofs = "Acoperișuri de Sticlă",
     IGUI_BuildingMenuSubCat_Roofing_Tent_Roofs = "Acoperișuri de Cort",
     
@@ -110,14 +111,14 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Doors_Panel_Doors = "Uși cu Panouri",
     IGUI_BuildingMenuSubCat_Doors_Metal_Doors = "Uși Metalice",
     IGUI_BuildingMenuSubCat_Doors_Jail_Doors = "Uși de Închisoare",
-    IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Uși de Sticla",
+    IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Uși de Sticlă",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Uși de Securitate",
     
-    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Uși Glisante",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Ușă de Garaj de 3 Tile-uri",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Ușă de Garaj de 4 Tile-uri",
-    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Porți cu Uși Duble",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Arhitectura Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Ornamente pentru Uși",
@@ -125,8 +126,8 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Ornamente pentru Margini",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Ornamente pentru Podea",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Panouri de Perete",
-    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
-    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Accente de acoperiș",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Fundație",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Accente de Acoperiș",
 
     IGUI_BuildingMenuCat_Windows = "Ferestre",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "De lemn",
@@ -138,7 +139,8 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Înalte",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Joase",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Balustrade",
-    IGUI_BuildingMenuSubCat_Fencing_Other = "Alte",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Balustrade Scări",
+    IGUI_BuildingMenuSubCat_Fencing_Other = "Altele",
 
     IGUI_BuildingMenuCat_Floors = "Podele",
     IGUI_BuildingMenuSubCat_Floors_Wooden = "De lemn",
@@ -172,15 +174,15 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Containers_Upper_Counters = "Tejghele Superioare",
     IGUI_BuildingMenuSubCat_Containers_Crates = "Lăzi",
     IGUI_BuildingMenuSubCat_Containers_Filing_Cabinets = "Dulapuri pentru Arhive",
-    IGUI_BuildingMenuSubCat_Containers_Metal = "Recipiente Metalice",
+    IGUI_BuildingMenuSubCat_Containers_Metal = "Containere Metalice",
     IGUI_BuildingMenuSubCat_Containers_Lockers = "Dulapuri",
     IGUI_BuildingMenuSubCat_Containers_Shelves = "Rafturi",
     IGUI_BuildingMenuSubCat_Containers_Clothing = "Îmbrăcăminte",
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Coșuri de Gunoi",
     IGUI_BuildingMenuSubCat_Containers_Others = "Altele",
 
-    IGUI_BuildingMenuCat_Recreational = "Recreational",
-    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+    IGUI_BuildingMenuCat_Recreational = "Recreaționale",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Muzică",
 
     IGUI_BuildingMenuCat_Furniture = "Mobilă",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Mese Mici",
@@ -197,6 +199,7 @@ IGUI_RO = {
     IGUI_BuildingMenuCat_Decorations = "Decorațiuni",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Șeminee",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Covoare",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Perdele",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Postere",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Semne",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",
@@ -209,7 +212,7 @@ IGUI_RO = {
     IGUI_BuildingMenuSubCat_Vegetation_Flower_Beds = "Paturi de Flori",
     IGUI_BuildingMenuSubCat_Vegetation_Grass = "Iarbă",
     IGUI_BuildingMenuSubCat_Vegetation_Hedges = "Garduri Vii",
-    IGUI_BuildingMenuSubCat_Vegetation_Vines = "Vița de vie de Perete",
+    IGUI_BuildingMenuSubCat_Vegetation_Vines = "Vița de Vie de Perete",
     IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor = "Plante de Interior",
 
     IGUI_BuildingMenuCat_Survival = "Supravieţuire",

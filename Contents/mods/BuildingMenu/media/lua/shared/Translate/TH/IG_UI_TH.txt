@@ -35,6 +35,7 @@ IGUI_TH = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "หินสีเทา",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "หินตาล",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "อิฐสีชมพู",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "อิฐแดง",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "อิฐเก่า",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "บลูบริค",
@@ -138,6 +139,7 @@ IGUI_TH = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "สูง",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "ต่ำ",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "ราวบันได",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "ราวบันได",
     IGUI_BuildingMenuSubCat_Fencing_Other = "อื่น",
 
     IGUI_BuildingMenuCat_Floors = "พื้น",
@@ -197,6 +199,7 @@ IGUI_TH = {
     IGUI_BuildingMenuCat_Decorations = "ของตกแต่ง",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "เตาผิง",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "พรม",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "ผ้าม่าน",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "โปสเตอร์",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "สัญญาณ",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "กราฟฟิตี้",

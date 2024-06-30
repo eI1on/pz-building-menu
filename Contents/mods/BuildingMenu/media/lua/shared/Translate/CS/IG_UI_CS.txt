@@ -35,6 +35,7 @@ IGUI_CS = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Šedý kámen",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Tan Stone",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Růžová cihla",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Červená cihla",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Stará cihla",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Modrá cihla",
@@ -138,6 +139,7 @@ IGUI_CS = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Vysoký",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Nízký",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Zábradlí",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Schodišťové zábradlí",
     IGUI_BuildingMenuSubCat_Fencing_Other = "jiný",
 
     IGUI_BuildingMenuCat_Floors = "Podlahy",
@@ -197,6 +199,7 @@ IGUI_CS = {
     IGUI_BuildingMenuCat_Decorations = "Dekorace",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Krby",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Koberce",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Závěsy",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "plakáty",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Známky",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

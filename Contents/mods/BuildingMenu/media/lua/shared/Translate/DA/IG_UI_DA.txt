@@ -35,6 +35,7 @@ IGUI_DA = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Grå sten",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Tan Sten",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Lyserød mursten",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Rød mursten",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Gammel mursten",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Blå Mursten",
@@ -138,6 +139,7 @@ IGUI_DA = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Høj",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Lav",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Rækværk",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Trappegelændere",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Andet",
 
     IGUI_BuildingMenuCat_Floors = "Gulve",
@@ -197,6 +199,7 @@ IGUI_DA = {
     IGUI_BuildingMenuCat_Decorations = "Dekorationer",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Pejse",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Tæpper",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Gardiner",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Plakater",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Tegn",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

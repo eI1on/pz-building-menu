@@ -185,6 +185,9 @@ Sandbox_CH = {
     Sandbox_BuildingMenu_rugsSubCategory = "啟用地毯子類別",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "啟用添加地毯。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "啟用窗簾子類別",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "啟用添加窗簾。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "啟用海報和標誌子類別",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "啟用添加海報和標誌。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！",
    
@@ -366,6 +369,12 @@ Sandbox_CH = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "最大水井蓄水量",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "一口井能容納多少水。",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "水井降雨強度乘數",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "下雨時向井中添加的水量的乘數。",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "水井每小時補充率間隔",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "每小時向井中添加的水量範圍。例如「1;5」將產生 1 到 5 之間的隨機數，而「5」將始終產生 5 個單位的水。預設=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用板條箱的木質材料成本",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "設置軍用板條箱所需的木板。 <LINE><LINE> <RGB:1,0,0> 退出並重新輸入儲存以套用變更！ <RGB:1,1,1>",
     

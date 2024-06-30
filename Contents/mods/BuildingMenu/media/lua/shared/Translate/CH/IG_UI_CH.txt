@@ -35,6 +35,7 @@ IGUI_CH = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "灰色石頭墻",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "棕色石頭墻",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "粉紅磚",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "紅磚墻",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "舊磚墻",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "藍磚墻",
@@ -138,6 +139,7 @@ IGUI_CH = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "高",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "低",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "欄杆",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "樓梯欄桿",
     IGUI_BuildingMenuSubCat_Fencing_Other = "其它",
 
     IGUI_BuildingMenuCat_Floors = "地板",
@@ -197,6 +199,7 @@ IGUI_CH = {
     IGUI_BuildingMenuCat_Decorations = "裝飾",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "壁爐",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "地毯",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "窗簾",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "海報",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "標識",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "塗鴉",

@@ -1496,7 +1496,6 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_3_Tiles_Garage_Door = "3 Tiles Garage Door",
   Tooltip_Garage_Door = "A large garage door to fortify your base.",
   Tooltip_BuildingMenuObj_4_Tiles_Garage_Door = "4 Tiles Garage Door",
-  Tooltip_Garage_Door = "A large garage door to fortify your base.",
 
   Tooltip_Double_Door_Gates = "A double door gate for your base.",
 
@@ -1524,7 +1523,6 @@ Tooltip_EN = {
 
   Tooltip_Metal_Drum = "A sturdy metal drum designed for collecting and storing water.",
 
-  Tooltip_BuildingMenuObj_White_Door_Trim = "White Door Trim",
   Tooltip_BuildingMenuObj_White_Crown_Molding = "White Crown Molding",
   Tooltip_BuildingMenuObj_White_Crown_Molding_Pillar = "White Crown Molding Pillar",
 
@@ -1561,13 +1559,9 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_White_Simple_Trim_Pillar = "White Simple Trim Pillar",
   Tooltip_BuildingMenuObj_White_Simple_Trim_Doorway = "White Simple Trim Doorway",
 
-  Tooltip_BuildingMenuObj_Brown_Tile_Trim = "Brown Tile Trim",
   Tooltip_BuildingMenuObj_Brown_Simple_Trim = "Brown Simple Trim",
   Tooltip_BuildingMenuObj_Brown_Simple_Trim_Pillar = "Brown Simple Trim Pillar",
   Tooltip_BuildingMenuObj_Brown_Simple_Trim_Doorway = "Brown Simple trim Doorway",
-
-  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim = "Grey Vinyl Trim",
-  Tooltip_BuildingMenuObj_Grey_Vinyl_Trim_Pillar = "Grey Vinyl Trim Pillar",
 
   Tooltip_BuildingMenuObj_White_Wainscoting = "White Wainscoting",
   Tooltip_BuildingMenuObj_White_Wainscoting_Pillar = "White Wainscoting Pillar",

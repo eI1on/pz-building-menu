@@ -35,6 +35,7 @@ IGUI_JP = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "灰色の石",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "タンストーン",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "ピンクブリック",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "赤レンガ",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "オールドブリック",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "ブルーブリック",
@@ -138,6 +139,7 @@ IGUI_JP = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "高い",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "低い",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "手すり",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "階段の手すり",
     IGUI_BuildingMenuSubCat_Fencing_Other = "他の",
 
     IGUI_BuildingMenuCat_Floors = "床",
@@ -197,6 +199,7 @@ IGUI_JP = {
     IGUI_BuildingMenuCat_Decorations = "装飾品",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "暖炉",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "ラグ",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "カーテン",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "ポスター",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "標識",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "落書き",

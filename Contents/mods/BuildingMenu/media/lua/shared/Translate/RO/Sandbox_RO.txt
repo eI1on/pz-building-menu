@@ -185,6 +185,9 @@ Sandbox_RO = {
     Sandbox_BuildingMenu_rugsSubCategory = "Activați subcategoria Covoare",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Activați pentru a adăuga covoare. <LINE><LINE> <RGB:1,0,0> IEȘIȚI ȘI REINTRAȚI SALVAȚI PENTRU A APLICA MODIFICĂRILE!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Activați subcategoria Perdele",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Activați pentru a adăuga perdele. <LINE><LINE> <RGB:1,0,0> IEȘIȚI ȘI REINTRAȚI SALVAȚI PENTRU A APLICA MODIFICĂRILE!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Activați subcategoria postere și semne",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Activați pentru a adăuga postere și semne. <LINE><LINE> <RGB:1,0,0> IEȘIȚI ȘI REINTRAȚI SALVAȚI PENTRU A APLICA MODIFICĂRILE!",
    
@@ -366,6 +369,12 @@ Sandbox_RO = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Cantitatea maximă de stocare a puțului de apă",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Câtă apă reține un puț.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Puțul de apă Multiplicator de intensitate a ploii",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplicator pentru cantitatea de apă adăugată în fântână în timpul ploii.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Intervalul orar al ratei de umplere a puțului de apă",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Intervalul cantității de apă adăugată în fântână în fiecare oră. De exemplu, „1;5” va genera un număr aleator între 1 și 5, „5” va genera întotdeauna 5 unități de apă. Implicit=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Costul materialului lemnos pentru lada militară",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Setează scândurile necesare pentru lăzile militare. <LINE><LINE> <RGB:1,0,0> IEȘIȚI ȘI REINTRAȚI SALVAȚI PENTRU A APLICA MODIFICĂRILE! <RGB:1,1,1>",
     

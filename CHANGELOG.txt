@@ -7,6 +7,8 @@ Main mod:
 [*] Added sandbox options to modify Water Well Rain Intensity Fill Rate Multiplier and Water Well Hourly Fill rate
 [*] Added Medium, Dark and Old Asphalt Edges
 [*] Door trims now can be removed with a hammer
+[*] Added OnBuildActionPerformed and OnBeforeSetDragBuildObject events
+[*] Updated translations and removed duplicated keys
 [/list]
 SimonMD's addon:
 [list]

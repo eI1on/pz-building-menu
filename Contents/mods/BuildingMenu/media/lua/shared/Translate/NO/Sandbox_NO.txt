@@ -185,6 +185,9 @@ Sandbox_NO = {
     Sandbox_BuildingMenu_rugsSubCategory = "Aktiver Rugs Subcategory",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Aktiver for å legge til tepper. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Aktiver underkategori for gardiner",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Aktiver for å legge til gardiner. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Aktiver underkategori for plakater og skilt",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktiver for å legge til plakater og skilt. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER!",
    
@@ -366,6 +369,12 @@ Sandbox_NO = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Maks vannbrønnlagringsmengde",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Hvor mye vann en Well hold.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Vannbrønn regnintensitet multiplikator",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplikator for mengden vann som legges til brønnen under regn.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Vannbrønn Påfyllingshastighetsintervall hver time",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Rekkevidde av vannmengde tilsatt brønnen hver time. For eksempel vil '1;5' generere et tilfeldig tall mellom 1 og 5, '5' vil alltid generere 5 enheter vann. Standard=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Trematerialekostnad for militærkasse",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Setter planker som kreves for militære kasser. <LINE><LINE> <RGB:1,0,0> AVSLUTT OG GJØR LAGRE PÅ NYTT FOR Å GJØRE ENDRINGER! <RGB:1,1,1>",
     

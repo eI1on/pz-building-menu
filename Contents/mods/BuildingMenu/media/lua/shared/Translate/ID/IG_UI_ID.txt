@@ -35,6 +35,7 @@ IGUI_ID = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Batu Abu-abu",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Batu Tan",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Bata Merah Muda",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Bata merah",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Bata Tua",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Bata Biru",
@@ -138,6 +139,7 @@ IGUI_ID = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Tinggi",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Rendah",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Pagar",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Pagar Tangga",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Lainnya",
 
     IGUI_BuildingMenuCat_Floors = "Lantai",
@@ -197,6 +199,7 @@ IGUI_ID = {
     IGUI_BuildingMenuCat_Decorations = "Dekorasi",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Perapian",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Permadani",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Tirai",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Poster",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Tanda-tanda",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Coretan",

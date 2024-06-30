@@ -185,6 +185,9 @@ Sandbox_PL = {
     Sandbox_BuildingMenu_rugsSubCategory = "Włącz podkategorię dywanów",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Włącz dodawanie dywaników. <LINE><LINE> <RGB:1,0,0> WYJDŹ I WEJDŹ PONOWNIE ZAPISZ, ABY ZASTOSOWAĆ ZMIANY!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Włącz podkategorię Zasłony",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Włącz dodawanie zasłon. <LINE><LINE> <RGB:1,0,0> WYJDŹ I WEJDŹ PONOWNIE ZAPISZ, ABY ZASTOSOWAĆ ZMIANY!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Włącz podkategorię Plakaty i znaki",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Włącz dodawanie plakatów i znaków. <LINE><LINE> <RGB:1,0,0> WYJDŹ I WEJDŹ PONOWNIE ZAPISZ, ABY ZASTOSOWAĆ ZMIANY!",
    
@@ -366,6 +369,12 @@ Sandbox_PL = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Maksymalna ilość magazynowanej wody w studni",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Ile wody mieści się w studni.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Mnożnik intensywności opadów w studni wodnej",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Mnożnik ilości wody dodanej do studni podczas deszczu.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Godzinowa częstotliwość uzupełniania studni wodnej",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Zakres ilości wody dodawanej do studni co godzinę. Na przykład „1;5” wygeneruje losową liczbę od 1 do 5, „5” zawsze wygeneruje 5 jednostek wody. Domyślnie=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Koszt materiału drzewnego na skrzynię wojskową",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Ustawia deski wymagane do skrzyń wojskowych. <LINE><LINE> <RGB:1,0,0> WYJDŹ I WEJDŹ PONOWNIE ZAPISZ, ABY ZASTOSOWAĆ ZMIANY! <RGB:1,1,1>",
     

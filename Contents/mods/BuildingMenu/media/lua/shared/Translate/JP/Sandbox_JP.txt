@@ -185,6 +185,9 @@ Sandbox_JP = {
     Sandbox_BuildingMenu_rugsSubCategory = "ラグのサブカテゴリを有効にする",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "ラグを追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "カーテンのサブカテゴリを有効にする",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "カーテンを追加できるようにします。 {{{LINE><LINE> {{{RGB:1,0,0> 変更を適用するには、終了して再度入力し、保存してください。",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "ポスターと看板のサブカテゴリを有効にする",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "ポスターや看板を追加できるようにします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。",
    
@@ -366,6 +369,12 @@ Sandbox_JP = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "最大井戸貯留量",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "井戸にはどれくらいの水が溜まるのか。",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "井戸の雨量強度乗数",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "雨が降っているときに井戸に追加される水の量の乗数。",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "井戸水補給間隔",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "1 時間ごとに井戸に追加される水の量の範囲。たとえば、「1;5」は 1 から 5 の間の乱数を生成し、「5」は常に 5 単位の水を生成します。デフォルト = 1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "軍用木箱の木材コスト",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "軍事箱に必要な板をセットします。 <LINE><LINE> <RGB:1,0,0> 変更を適用するには、保存して終了して再入力してください。 <RGB:1,1,1>",
     

@@ -35,6 +35,7 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Harmaa kivi",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Tan Stone",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Vaaleanpunainen tiili",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Punainen tiili",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Vanha Tiili",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Sininen tiili",
@@ -138,6 +139,7 @@ IGUI_FI = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Korkea",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Matala",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Kaide",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Portaiden kaiteet",
     IGUI_BuildingMenuSubCat_Fencing_Other = "muu",
 
     IGUI_BuildingMenuCat_Floors = "Lattiat",
@@ -197,6 +199,7 @@ IGUI_FI = {
     IGUI_BuildingMenuCat_Decorations = "Koristeet",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Takat",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Matot",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Verhot",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Julisteet",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Merkkejä",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

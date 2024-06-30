@@ -185,6 +185,9 @@ Sandbox_ES = {
     Sandbox_BuildingMenu_rugsSubCategory = "Habilitar la subcategoría de alfombras",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Habilite para agregar alfombras. <LINE><LINE> <RGB:1,0,0> ¡SALIR Y VOLVER A ENTRAR GUARDAR PARA APLICAR LOS CAMBIOS!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Habilitar subcategoría de cortinas",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Habilite para agregar cortinas. <LINE><LINE> <RGB:1,0,0> ¡SALIR Y VOLVER A ENTRAR GUARDAR PARA APLICAR LOS CAMBIOS!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Habilitar la subcategoría de carteles y señales",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Habilite para agregar carteles y letreros. <LINE><LINE> <RGB:1,0,0> ¡SALIR Y VOLVER A ENTRAR GUARDAR PARA APLICAR LOS CAMBIOS!",
    
@@ -366,6 +369,12 @@ Sandbox_ES = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Cantidad máxima de almacenamiento en pozos de agua",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Cuánta agua retiene un pozo.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Multiplicador de intensidad de lluvia de pozo de agua",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplicador por la cantidad de agua agregada al pozo durante la lluvia.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Intervalo de tasa de recarga por hora del pozo de agua",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Intervalo de cantidad de agua que se añade al pozo cada hora. Por ejemplo, "1;5" generará un número aleatorio entre 1 y 5; "5" siempre generará 5 unidades de agua. Valor predeterminado: 1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Costo del material de madera para caja militar",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Establece los tablones necesarios para las cajas militares. <LINE><LINE> <RGB:1,0,0> ¡SALIR Y VOLVER A ENTRAR GUARDAR PARA APLICAR LOS CAMBIOS! <RGB:1,1,1>",
     

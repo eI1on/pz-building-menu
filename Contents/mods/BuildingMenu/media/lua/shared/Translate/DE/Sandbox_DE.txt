@@ -185,6 +185,9 @@ Sandbox_DE = {
     Sandbox_BuildingMenu_rugsSubCategory = "Aktivieren Sie die Unterkategorie „Teppiche“.",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Aktivieren Sie diese Option, um Teppiche hinzuzufügen. <LINE><LINE> <RGB:1,0,0> Beenden und erneut eingeben, speichern, um die Änderungen zu übernehmen!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Unterkategorie „Vorhänge“ aktivieren",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Aktivieren, um Vorhänge hinzuzufügen. <LINE><LINE> <RGB:1,0,0> BEENDEN UND ERNEUT EINTRETEN, SPEICHERN, UM ÄNDERUNGEN ANZUWENDEN!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Aktivieren Sie die Unterkategorie „Poster und Schilder“.",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktivieren Sie diese Option, um Poster und Schilder hinzuzufügen. <LINE><LINE> <RGB:1,0,0> Beenden und erneut eingeben, speichern, um die Änderungen zu übernehmen!",
    
@@ -366,6 +369,12 @@ Sandbox_DE = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Maximale Speicherkapazität für Wasserbrunnen",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Wie viel Wasser fasst ein Brunnen?",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Multiplikator für die Regenintensität von Wasserbrunnen",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplikator für die Wassermenge, die dem Brunnen bei Regen zugeführt wird.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Stündliches Nachfüllintervall für Wasserbrunnen",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Bereich der Wassermenge, die dem Brunnen stündlich zugeführt wird. Beispielsweise generiert „1;5“ eine Zufallszahl zwischen 1 und 5, „5“ generiert immer 5 Einheiten Wasser. Standard = 1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Holzmaterialkosten für Militärkiste",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Legt die für Militärkisten erforderlichen Bretter fest. <LINE><LINE> <RGB:1,0,0> Beenden und erneut eingeben, speichern, um die Änderungen zu übernehmen! <RGB:1,1,1>",
     

@@ -35,6 +35,7 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_Walls_Grey_Stone = "Gray na Bato",
     IGUI_BuildingMenuSubCat_Walls_Tan_Stone = "Tan Stone",
 
+    IGUI_BuildingMenuSubCat_Walls_Pink_Brick = "Pink Brick",
     IGUI_BuildingMenuSubCat_Walls_Red_Brick = "Pulang Brick",
     IGUI_BuildingMenuSubCat_Walls_Old_Brick = "Lumang Brick",
     IGUI_BuildingMenuSubCat_Walls_Blue_Brick = "Asul na Brick",
@@ -138,6 +139,7 @@ IGUI_PH = {
     IGUI_BuildingMenuSubCat_Fencing_Fencing_High = "Mataas",
     IGUI_BuildingMenuSubCat_Fencing_Fencing_Low = "Mababa",
     IGUI_BuildingMenuSubCat_Fencing_Railing = "Rehas",
+    IGUI_BuildingMenuSubCat_Fencing_Stair_Railings = "Mga Rehas ng Hagdanan",
     IGUI_BuildingMenuSubCat_Fencing_Other = "Iba pa",
 
     IGUI_BuildingMenuCat_Floors = "Mga sahig",
@@ -197,6 +199,7 @@ IGUI_PH = {
     IGUI_BuildingMenuCat_Decorations = "Mga dekorasyon",
     IGUI_BuildingMenuSubCat_Decorations_Fireplace = "Mga fireplace",
     IGUI_BuildingMenuSubCat_Decorations_Rugs = "Mga alpombra",
+    IGUI_BuildingMenuSubCat_Decorations_Curtains = "Mga kurtina",
     IGUI_BuildingMenuSubCat_Decorations_Posters = "Mga poster",
     IGUI_BuildingMenuSubCat_Decorations_Signs = "Palatandaan",
     IGUI_BuildingMenuSubCat_Decorations_Graffiti = "Graffiti",

@@ -185,6 +185,9 @@ Sandbox_DA = {
     Sandbox_BuildingMenu_rugsSubCategory = "Aktiver Rugs Subcategory",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Aktiver for at tilføje tæpper. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Aktiver gardiner underkategori",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Aktiver for at tilføje gardiner. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Aktiver underkategorien plakater og skilte",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Aktiver for at tilføje plakater og skilte. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER!",
    
@@ -366,6 +369,12 @@ Sandbox_DA = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Max vandbrøndsopbevaringsmængde",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Hvor meget vand en Well hold.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Vandbrønd Regn intensitet multiplikator",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplikator for mængden af ??vand tilsat brønden under regn.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Vandbrønd Genopfyldningshastighed pr. time",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Område af vandmængde tilsat til brønden hver time. For eksempel vil '1;5' generere et tilfældigt tal mellem 1 og 5, '5' vil altid generere 5 enheder vand. Standard=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Træmaterialeomkostninger til militærkasse",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Sætter planker påkrævet til militærkasser. <LINE><LINE> <RGB:1,0,0> AFSLUT OG GEM IGEN FOR AT ANVENDE ÆNDRINGER! <RGB:1,1,1>",
     

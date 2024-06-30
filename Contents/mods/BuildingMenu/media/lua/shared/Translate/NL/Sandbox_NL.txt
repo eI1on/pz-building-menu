@@ -185,6 +185,9 @@ Sandbox_NL = {
     Sandbox_BuildingMenu_rugsSubCategory = "Subcategorie Vloerkleden inschakelen",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Schakel het toevoegen van vloerkleden in. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN!",
    
+    Sandbox_BuildingMenu_curtainsSubCategory = "Schakel de subcategorie Gordijnen in",
+    Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Schakel het toevoegen van gordijnen in. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN!",
+
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Subcategorie Posters en borden inschakelen",
     Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Schakel het toevoegen van posters en borden in. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN!",
    
@@ -366,6 +369,12 @@ Sandbox_NL = {
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Maximale hoeveelheid waterputopslag",
     Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Hoeveel water bevat een bron.",
     
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Waterput Regenintensiteitsvermenigvuldiger",
+    Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Vermenigvuldiger voor de hoeveelheid water die tijdens regen aan de put wordt toegevoegd.",
+        
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Interval bijvulsnelheid waterput per uur",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Bereik van de hoeveelheid water die elk uur aan de put wordt toegevoegd. '1;5' genereert bijvoorbeeld een willekeurig getal tussen 1 en 5, '5' genereert altijd 5 eenheden water. Standaard=1;5",
+
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Houtmateriaalkosten voor militair krat",
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Stelt de planken in die nodig zijn voor militaire kratten. <LINE><LINE> <RGB:1,0,0> SLUITEN EN OPNIEUW INVOEREN OPSLAAN OM WIJZIGINGEN TOE TE PASSEN! <RGB:1,1,1>",
     
