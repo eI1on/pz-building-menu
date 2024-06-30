@@ -40,7 +40,16 @@ To add new buildable objects into the menu, you'll need to create them using the
 Here's the function signature and a brief description of each parameter (can be found in [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L50-L71)):
 
 ```lua
-function BuildingMenu.createObject(displayName, description, action, recipe, isRecipeKnown, options, sprites, nameID)
+function BuildingMenu.createObject(
+    displayName, 
+    description, 
+    action, 
+    recipe, 
+    isRecipeKnown, 
+    options, 
+    sprites, 
+    nameID
+)
 ```
 <br>
 
@@ -55,7 +64,7 @@ function BuildingMenu.createObject(displayName, description, action, recipe, isR
 `recipe` crafting recipe for the object, you can use predefined recipes for consistency. Or you can create your own. Whole list
 [BuildingMenu02_Recipes](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu02_Recipes.lua). Additionally see the "[Recipes](#recipes)" section to define new recipes. If not specified, the object cannot be build and the text _RECIPE IS NULL_ will appear in the tooltip.<br>
 
-`isRecipeKnown` determines whether the recipe is known to the player (can be true or string with the recipe, i.e. "Make Metal Fences") or `false` and will never be buildable.<br>
+`isRecipeKnown` determines whether the recipe is known to the player (can be `true` or a `string` with the recipe name, i.e. "Make Metal Fences") or `false` and will never be buildable.<br>
 
 `options` additional options for the object. See Section [Buildables Options](#buildables-options).<br>
 
@@ -841,6 +850,45 @@ sprites =   {
     northSprite2 = "",
     northSprite3 = "",
     northSprite4 = ""
+}
+```
+<br>
+
+
+``BuildingMenu.onBuildEigthTileFurniture``:
+
+```lua
+- Sprite positions
+--          / \               / \
+--         /x-3\             / x \                      sprite6                                        northSprite6
+--       / \ y / \         / \y-3/ \
+--      /x-3\ /x-2\       / x \ /x+1\           sprite5       sprite7                      northSprite7            northSprite5
+--      \y+1/ \ y / \   / \y-2/ \y-3/
+--       \ /x-2\ /x-1\ / x \ /x+1\ /                 sprite4         sprite8          northSprite8          northSprite4
+--         \y+1/ \ y / \y-1/ \y-2/
+--          \ /x-1\ / x \ /x+1\ /                          sprite3       sprite/northSprite     northSprite3
+--            \y+1/ \ y / \y-1/
+--             \ / x \ /x+1\ /                                     sprite2             northSprite2
+--               \y+1/ \ y /
+--                \ /   \ /
+
+sprites =   {
+    sprite = "",
+    sprite2 = "",
+    sprite3 = "",
+    sprite4 = "",
+    sprite5 = "",
+    sprite6 = "",
+    sprite7 = "",
+    sprite8 = "",
+    northSprite = "",
+    northSprite2 = "",
+    northSprite3 = "",
+    northSprite4 = "",
+    northSprite5 = "",
+    northSprite6 = "",
+    northSprite7 = "",
+    northSprite8 = "",
 }
 ```
 <br>

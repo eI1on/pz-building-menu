@@ -775,6 +775,20 @@ BuildingMenu.onBuildFourTileFurniture = function(sprites, name, playerNum, objec
     return _fourTileFurniture
 end
 
+
+---@param sprites table
+---@param name string
+---@param playerNum number
+---@return ISBuildingObject
+BuildingMenu.onBuildEigthTileFurniture = function(sprites, name, playerNum, objectRecipe, objectOptions)
+    local _eightTileFurniture = ISEightTileFurniture:new(name, sprites.sprite, sprites.sprite2, sprites.sprite3,
+        sprites.sprite4, sprites.sprite5, sprites.sprite6, sprites.sprite7, sprites.sprite8, sprites.northSprite,
+        sprites.northSprite2, sprites.northSprite3, sprites.northSprite4, sprites.northSprite5, sprites.northSprite6,
+        sprites.northSprite7, sprites.northSprite8)
+
+    return _eightTileFurniture
+end
+
 BuildingMenu.onBuildDoorFrame = function(sprites, name, playerNum, objectRecipe, objectOptions)
     local _doorFrame = ISWoodenDoorFrame:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
