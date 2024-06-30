@@ -39,15 +39,29 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         props:CreateKeySet();
     end
 
-    -- -- Not working, idk why.
-    -- sprites = {
-    --     "building_menu_03_ddd_Forest_Survival_1",
-    -- }
-    -- for _, sprite in ipairs(sprites) do
-    --     local props = manager:getSprite(sprite):getProperties()
-    --     BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
-    --     props:CreateKeySet();
-    -- end
+
+    -- Not working, idk why.
+    sprites = {
+        "building_menu_03_ddd_Forest_Survival_0",
+        "edit_ddd_RUS_Forest Survival_01_12"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowW);
+        BM_Utils.setSpriteProperty(props, "FlatTextureOffset", "-7")
+        props:CreateKeySet();
+    end
+
+    sprites = {
+        "building_menu_03_ddd_Forest_Survival_1",
+        "edit_ddd_RUS_Forest Survival_01_13"
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties()
+        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
+        BM_Utils.setSpriteProperty(props, "FlatTextureOffset", "-8")
+        props:CreateKeySet();
+    end
 
 
     sprites = {
