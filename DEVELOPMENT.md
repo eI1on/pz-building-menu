@@ -87,6 +87,7 @@ local exampleObject = BuildingMenu.createObject(
 )
 ```
 <br>
+<br>
 
 # Inserting Objects into Categories
 
@@ -123,7 +124,7 @@ For the earlier example you can insert the object like this:
 ```
 
 Example of usage [BuildingMenu05_ExtraCategories.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu05_ExtraCategories.lua#L7-L39)
-
+<br>
 <br>
 
 # Integrating with Sandbox Options
@@ -147,6 +148,8 @@ Events.OnGameStart.Add(addCategoriesToBuildingMenu)
 In this example, new categories for wood walls and clapboard walls are added to the Building Menu based on the corresponding sandbox settings. <br>
 Example of usage [BuildingMenu04_CategoriesDefinitions.lua](https://github.com/eI1on/pz-building-menu/blob/06ae6a0d1cc30c5fc2649e123c940cdf82d0e2c0/Contents/mods/BuildingMenu/media/lua/client/BuildingMenu04_CategoriesDefinitions.lua#L37079-L37225)  
 For the whole list with the Sandbox-options refer to [sandbox-options.txt](https://github.com/eI1on/pz-building-menu/blob/main/Contents/mods/BuildingMenu/media/sandbox-options.txt)
+<br>
+<br>
 
 # Recipes
 
@@ -229,9 +232,11 @@ BuildingMenu.GreyBigStoneWallRecipe = {
 <sup>_Note: If you want to change recipes based on sandbox options, you must initialize them at **Event.OnInitGlobalModData**, this event is called right after the Sandbox Options are initialized._</sup>
 <br>
 <br>
+
 # Buildables Options
 
 When creating buildable objects using the `BuildingMenu.createObject` function, you can specify a set of options that define the behavior and characteristics of these objects in the game.
+<br>
 <br>
 
 ## Option Keys
@@ -277,13 +282,12 @@ When creating buildable objects using the `BuildingMenu.createObject` function, 
 | ``stopOnWalk``           | boolean       | false         | Interrupts the building process if the player starts walking.                                                                                                                                                                                                                |
 | ``stopOnRun``            | boolean       | false         | Interrupts the building process if the player starts running.                                                                                                                                                                                                                |
 | ``thumpDmg``             | integer       | 8             | Specifies the amount of damage that zombies can inflict on the structure when attacking it.                                                                                                                                                                                  |
+<br>
 
 ## Option Values
-
 <br>
 
 ``actionAnim``:
-
 ```lua
 --- List of appropriate animations based on tool type
 --- @type table<string, string[]>
@@ -302,11 +306,9 @@ ISBMBuildAction.appropriateAnimations = {
     ["BareHands"] = {"Pour", "Pour", "Pour"},
 };
 ```
-
 <br>
 
 ``completionSound``:
-
 ```lua
 --- Wood
 "BuildWoodenStructureLarge", "BuildWoodenStructureMedium", "BuildWoodenStructureSmall"
@@ -324,19 +326,15 @@ ISBMBuildAction.appropriateAnimations = {
 --- Others
 "BuildFenceGravelbag", "BuildFenceCairn", "BuildFenceSandbag"
 ```
-
 <br>
 
 ``containerType``:
-
 ```lua
 "displaycasebakery", "displaycase", "fridge", "shelves", "smallcrate", "smallbox", "garage_storage", "militarycrate", "filingcabinet", "bin", "locker", "metal_shelves", "militarylocker", "officedrawers", "sidetable", "wardrobe", "counter", "desk", "crate", "logs", "postbox"
 ```
-
 <br>
 
 ``craftingBank``:
-
 ```lua
 --- Tool audio mappings based on the tool type
 --- @type table<string, string|table<string, string>>
@@ -356,24 +354,24 @@ ISBMBuildAction.toolAudioMappings = {
     ["BareHands"] = {default = "BuildingGeneric", gravel = "DropSoilFromGravelBag", sand = "DropSoilFromSandBag", dirt = "DropSoilFromDirtBag"},
 };
 ```
-
 <br>
 
 ``modData``:
-
 ```lua
 "wall", "doorframe", "windowsframe", "pillar", "doorframe"
 ```
+<br>
+<br>
 
 # Buildables Sprites
 
 ## Sprites Definition
 
 Each buildable object in the game can have multiple sprites associated with it to handle its appearance from different angles or states.  
-**sprite** and **northSprite** are mandatory, if the object has only one face you can put the same string in both keys.  
+``sprite`` and ``northSprite`` are mandatory, if the object has only one face you can put the same string in both keys.  
 <br>
 
-**Example of Sprite Usage**:
+<details> <summary><b> Example of Sprite Usage: </b></summary>
 
 ``BuildingMenu.onBuildSink``:
 
@@ -385,6 +383,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildBathtub``:
 
@@ -396,6 +396,8 @@ sprites =   {
     northSprite2 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildFireplace``:
 
@@ -407,6 +409,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildOven``:
 
@@ -418,6 +422,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildStove``:
 
@@ -429,6 +435,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildBarbecue``:
 
@@ -440,6 +448,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildGenerator``:
 
@@ -451,6 +461,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildMicrowaveOven``:
 
@@ -462,6 +474,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildSimpleFridge``:
 
@@ -473,6 +487,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildLargeFridge``:
 
@@ -484,6 +500,8 @@ sprites =   {
     northSprite2 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildTripleFridge``:
 
@@ -497,6 +515,8 @@ sprites =   {
     northSprite3 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildCombinationWasherDryer``:
 
@@ -508,6 +528,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildClothingDryer``:
 
@@ -519,6 +541,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildClothingWasher``:
 
@@ -530,6 +554,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildWashingBin``:
 
@@ -541,6 +567,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 (DEPRECATED) ``BuildingMenu.onBuildMetalCounter``:
 
@@ -552,6 +580,8 @@ sprites =   {
     northSprite2 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onRainCollectorBarrel``:
 
@@ -563,6 +593,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildDoubleMetalShelf``:
 
@@ -574,6 +606,8 @@ sprites =   {
     northSprite2 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildDoubleTileContainer``:
 
@@ -585,6 +619,8 @@ sprites =   {
     northSprite2 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildMannequin``:
 
@@ -596,6 +632,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildScarecrow``:
 
@@ -607,6 +645,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildSkeleton``:
 
@@ -618,6 +658,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildClothingRack``:
 
@@ -629,6 +671,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildDoubleTileFurniture``:
 
@@ -640,6 +684,8 @@ sprites =   {
     northSprite2 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildBarricade``:
 
@@ -651,6 +697,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildWoodenContainer``:
 
@@ -662,6 +710,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildSimpleFurniture``:
 
@@ -673,6 +723,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onDoubleDoor``:
 
@@ -682,6 +734,8 @@ sprites =   {
     sprite = "fixtures_doors_fences_Simon_MD_0",
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuild3TileGarageDoor``:
 
@@ -695,6 +749,8 @@ sprites =   {
     northSprite3 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuild4TileGarageDoor``:
 
@@ -710,6 +766,8 @@ sprites =   {
     northSprite4 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildThreeTileSimpleFurniture``:
 
@@ -723,6 +781,8 @@ sprites =   {
     northSprite3 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildFourTileSimpleFurniture``:
 
@@ -756,6 +816,8 @@ sprites =   {
     northSprite4 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildFourTileFurniture``:
 
@@ -781,6 +843,8 @@ sprites =   {
     northSprite4 = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildDoorFrame``:
 
@@ -791,6 +855,8 @@ sprites =   {
     corner = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildWall``:
 
@@ -801,6 +867,8 @@ sprites =   {
     corner = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildMetalWall``:
 
@@ -811,6 +879,8 @@ sprites =   {
     corner = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildWaterWell``:
 
@@ -820,6 +890,8 @@ sprites =   {
     northSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildHighMetalFence``:
 
@@ -832,6 +904,8 @@ sprites =   {
     corner = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildNaturalFloor``:
 
@@ -843,6 +917,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildFloor``:
 
@@ -854,6 +930,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildFloorOverlay``:
 
@@ -865,6 +943,8 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildWallOverlay``:
 
@@ -874,6 +954,8 @@ sprites =   {
     northSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildStairs``:
 
@@ -890,6 +972,8 @@ sprites =   {
     pillarNorth = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildWindowWall``:
 
@@ -900,6 +984,8 @@ sprites =   {
     corner = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildWindow``:
 
@@ -909,6 +995,8 @@ sprites =   {
     northSprite = ""
 }
 ```
+<br>
+
 
 ``BuildingMenu.onBuildGeneratorPoweredLight``:
 
@@ -920,6 +1008,7 @@ sprites =   {
     southSprite = ""
 }
 ```
+<br>
 
 ``BuildingMenu.onBuildBatteryPoweredLight``:
 
@@ -931,6 +1020,9 @@ sprites =   {
     southSprite = ""
 }
 ```
+</details>
+<br>
+<br>
 
 # Building Menu Events
 
@@ -942,7 +1034,7 @@ sprites =   {
 
 | Name | Type | Notes |
 | --- | --- | --- |
-| object | ISBuildingObject | The instance of the ``ISBuildingObject`` object. |
+| ``object`` | ISBuildingObject | The instance of the ``ISBuildingObject`` object. |
 
 ## OnBeforeSetDragObject
 
@@ -952,5 +1044,5 @@ sprites =   {
 
 | Name | Type | Notes |
 | --- | --- | --- |
-| object | ISBuildingObject | The build object that is being set. |
-| playerNum | integer | The index of the player performing the build action. |
+| ``object`` | ISBuildingObject | The build object that is being set. |
+| ``playerNum`` | integer | The index of the player performing the build action. |
