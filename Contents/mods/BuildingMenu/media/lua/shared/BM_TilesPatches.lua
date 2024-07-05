@@ -666,4 +666,17 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.setSpriteProperty(props, IsoFlagType.WindowN);
         props:CreateKeySet();
     end
+
+    sprites = {
+        "floors_rugs_01_60",
+        "floors_rugs_01_61",
+        "floors_rugs_01_62",
+        "floors_rugs_01_87",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.unsetSpriteProperty(props, "IsMoveAble");
+        BM_Utils.unsetSpriteProperty(props, "MoveType");
+        props:CreateKeySet();
+    end
 end)

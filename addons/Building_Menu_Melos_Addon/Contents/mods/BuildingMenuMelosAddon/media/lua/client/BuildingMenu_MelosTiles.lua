@@ -27,7 +27,6 @@ local function addMelosWallsCastleToMenu()
             { completionSound = "BuildWoodenStructureLarge" },
             {
                 sprite = "melos_tiles_castle_01_2",
-                northSprite = "melos_tiles_castle_01_2",
                 corner = "melos_tiles_castle_01_3"
             }
         ),
@@ -83,7 +82,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_18", northSprite = "melos_tiles_castle_01_18" }
+            { sprite = "melos_tiles_castle_01_18" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Wood_Beam_Small_Corner",
@@ -100,7 +99,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_19", northSprite = "melos_tiles_castle_01_19" }
+            { sprite = "melos_tiles_castle_01_19" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_White_Wood_Pillar",
@@ -154,7 +153,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_26", northSprite = "melos_tiles_castle_01_26" }
+            { sprite = "melos_tiles_castle_01_26" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_White_Wood_Beam_Small_Corner",
@@ -171,7 +170,7 @@ local function addMelosWallsCastleToMenu()
                 isThumpable = true,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_27", northSprite = "melos_tiles_castle_01_27" }
+            { sprite = "melos_tiles_castle_01_27" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Wall_1",
@@ -406,7 +405,7 @@ local function addMelosWallsCastleToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_77", northSprite = "melos_tiles_castle_01_77" }
+            { sprite = "melos_tiles_castle_01_77" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Fence_Post_2",
@@ -421,7 +420,7 @@ local function addMelosWallsCastleToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_79", northSprite = "melos_tiles_castle_01_79" }
+            { sprite = "melos_tiles_castle_01_79" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Fence_1",
@@ -508,7 +507,7 @@ local function addMelosWallsCastleToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_76", northSprite = "melos_tiles_castle_01_76" }
+            { sprite = "melos_tiles_castle_01_76" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Fence_Corner_2",
@@ -523,7 +522,7 @@ local function addMelosWallsCastleToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_castle_01_78", northSprite = "melos_tiles_castle_01_78" }
+            { sprite = "melos_tiles_castle_01_78" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Castle_Stone_Archway_U_Door_1",
@@ -687,8 +686,7 @@ local function addMelosWallsCastleToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_castle_01_98",
-                northSprite = "melos_tiles_castle_01_98"
+                sprite = "melos_tiles_castle_01_98"
             }
         ),
         BuildingMenu.createObject(
@@ -723,8 +721,7 @@ local function addMelosWallsCastleToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_castle_01_101",
-                northSprite = "melos_tiles_castle_01_101"
+                sprite = "melos_tiles_castle_01_101"
             }
         ),
         BuildingMenu.createObject(
@@ -759,8 +756,7 @@ local function addMelosWallsCastleToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_castle_01_106",
-                northSprite = "melos_tiles_castle_01_106"
+                sprite = "melos_tiles_castle_01_106"
             }
         ),
         BuildingMenu.createObject(
@@ -795,8 +791,7 @@ local function addMelosWallsCastleToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_castle_01_109",
-                northSprite = "melos_tiles_castle_01_109"
+                sprite = "melos_tiles_castle_01_109"
             }
         )
     }
@@ -1096,7 +1091,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01a_3", northSprite = "melos_tiles_walls_bathroom_01a_3" }
+            { sprite = "melos_tiles_walls_bathroom_01a_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Fence_Post",
@@ -1111,7 +1106,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01a_87", northSprite = "melos_tiles_walls_bathroom_01a_87" }
+            { sprite = "melos_tiles_walls_bathroom_01a_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Fence",
@@ -1144,7 +1139,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01a_86", northSprite = "melos_tiles_walls_bathroom_01a_86" }
+            { sprite = "melos_tiles_walls_bathroom_01a_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Cinderblock_Roof_Slope_Wall_1",
@@ -1567,7 +1562,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01b_3", northSprite = "melos_tiles_walls_bathroom_01b_3" }
+            { sprite = "melos_tiles_walls_bathroom_01b_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Fence_Post",
@@ -1582,7 +1577,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01b_87", northSprite = "melos_tiles_walls_bathroom_01b_87" }
+            { sprite = "melos_tiles_walls_bathroom_01b_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Fence",
@@ -1615,7 +1610,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01b_86", northSprite = "melos_tiles_walls_bathroom_01b_86" }
+            { sprite = "melos_tiles_walls_bathroom_01b_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Grey_Cinderblock_Roof_Slope_Wall_1",
@@ -2038,7 +2033,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01c_3", northSprite = "melos_tiles_walls_bathroom_01c_3" }
+            { sprite = "melos_tiles_walls_bathroom_01c_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Fence_Post",
@@ -2053,7 +2048,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01c_87", northSprite = "melos_tiles_walls_bathroom_01c_87" }
+            { sprite = "melos_tiles_walls_bathroom_01c_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Fence",
@@ -2086,7 +2081,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01c_86", northSprite = "melos_tiles_walls_bathroom_01c_86" }
+            { sprite = "melos_tiles_walls_bathroom_01c_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Black_Cinderblock_Roof_Slope_Wall_1",
@@ -2509,7 +2504,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01d_3", northSprite = "melos_tiles_walls_bathroom_01d_3" }
+            { sprite = "melos_tiles_walls_bathroom_01d_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Fence_Post",
@@ -2524,7 +2519,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01d_87", northSprite = "melos_tiles_walls_bathroom_01d_87" }
+            { sprite = "melos_tiles_walls_bathroom_01d_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Fence",
@@ -2557,7 +2552,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01d_86", northSprite = "melos_tiles_walls_bathroom_01d_86" }
+            { sprite = "melos_tiles_walls_bathroom_01d_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Swamp_Cinderblock_Roof_Slope_Wall_1",
@@ -2980,7 +2975,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01e_3", northSprite = "melos_tiles_walls_bathroom_01e_3" }
+            { sprite = "melos_tiles_walls_bathroom_01e_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Fence_Post",
@@ -2995,7 +2990,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01e_87", northSprite = "melos_tiles_walls_bathroom_01e_87" }
+            { sprite = "melos_tiles_walls_bathroom_01e_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Fence",
@@ -3028,7 +3023,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01e_86", northSprite = "melos_tiles_walls_bathroom_01e_86" }
+            { sprite = "melos_tiles_walls_bathroom_01e_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Yellow_Cinderblock_Roof_Slope_Wall_1",
@@ -3451,7 +3446,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01f_3", northSprite = "melos_tiles_walls_bathroom_01f_3" }
+            { sprite = "melos_tiles_walls_bathroom_01f_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Fence_Post",
@@ -3466,7 +3461,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01f_87", northSprite = "melos_tiles_walls_bathroom_01f_87" }
+            { sprite = "melos_tiles_walls_bathroom_01f_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Fence",
@@ -3499,7 +3494,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01f_86", northSprite = "melos_tiles_walls_bathroom_01f_86" }
+            { sprite = "melos_tiles_walls_bathroom_01f_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Cinderblock_Roof_Slope_Wall_1",
@@ -3922,7 +3917,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01g_3", northSprite = "melos_tiles_walls_bathroom_01g_3" }
+            { sprite = "melos_tiles_walls_bathroom_01g_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Fence_Post",
@@ -3937,7 +3932,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01g_87", northSprite = "melos_tiles_walls_bathroom_01g_87" }
+            { sprite = "melos_tiles_walls_bathroom_01g_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Fence",
@@ -3970,7 +3965,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01g_86", northSprite = "melos_tiles_walls_bathroom_01g_86" }
+            { sprite = "melos_tiles_walls_bathroom_01g_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Cinderblock_Roof_Slope_Wall_1",
@@ -4393,7 +4388,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01h_3", northSprite = "melos_tiles_walls_bathroom_01h_3" }
+            { sprite = "melos_tiles_walls_bathroom_01h_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Fence_Post",
@@ -4408,7 +4403,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01h_87", northSprite = "melos_tiles_walls_bathroom_01h_87" }
+            { sprite = "melos_tiles_walls_bathroom_01h_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Fence",
@@ -4441,7 +4436,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01h_86", northSprite = "melos_tiles_walls_bathroom_01h_86" }
+            { sprite = "melos_tiles_walls_bathroom_01h_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Violet_Cinderblock_Roof_Slope_Wall_1",
@@ -4864,7 +4859,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01i_3", northSprite = "melos_tiles_walls_bathroom_01i_3" }
+            { sprite = "melos_tiles_walls_bathroom_01i_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Fence_Post",
@@ -4879,7 +4874,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01i_87", northSprite = "melos_tiles_walls_bathroom_01i_87" }
+            { sprite = "melos_tiles_walls_bathroom_01i_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Fence",
@@ -4912,7 +4907,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01i_86", northSprite = "melos_tiles_walls_bathroom_01i_86" }
+            { sprite = "melos_tiles_walls_bathroom_01i_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Strawberry_Cinderblock_Roof_Slope_Wall_1",
@@ -5335,7 +5330,7 @@ local function addMelosWallsCinderblockToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_bathroom_01j_3", northSprite = "melos_tiles_walls_bathroom_01j_3" }
+            { sprite = "melos_tiles_walls_bathroom_01j_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Fence_Post",
@@ -5350,7 +5345,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01j_87", northSprite = "melos_tiles_walls_bathroom_01j_87" }
+            { sprite = "melos_tiles_walls_bathroom_01j_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Fence",
@@ -5383,7 +5378,7 @@ local function addMelosWallsCinderblockToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_bathroom_01j_86", northSprite = "melos_tiles_walls_bathroom_01j_86" }
+            { sprite = "melos_tiles_walls_bathroom_01j_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Cinderblock_Roof_Slope_Wall_1",
@@ -5809,8 +5804,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_08_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_08_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_08_3"
             }
         ),
         BuildingMenu.createObject(
@@ -5827,8 +5821,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_08_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_08_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_08_87"
             }
         ),
         BuildingMenu.createObject(
@@ -5863,8 +5856,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_08_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_08_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_08_86"
             }
         ),
         BuildingMenu.createObject(
@@ -6316,8 +6308,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_01_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_01_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -6334,8 +6325,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_01_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_01_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_01_87"
             }
         ),
         BuildingMenu.createObject(
@@ -6370,8 +6360,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_01_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_01_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_01_86"
             }
         ),
         BuildingMenu.createObject(
@@ -6823,8 +6812,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_02_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_02_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_02_3"
             }
         ),
         BuildingMenu.createObject(
@@ -6841,8 +6829,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_02_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_02_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_02_87"
             }
         ),
         BuildingMenu.createObject(
@@ -6877,8 +6864,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_02_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_02_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_02_86"
             }
         ),
         BuildingMenu.createObject(
@@ -7330,8 +7316,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_09_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_09_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_09_3"
             }
         ),
         BuildingMenu.createObject(
@@ -7348,8 +7333,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_09_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_09_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_09_87"
             }
         ),
         BuildingMenu.createObject(
@@ -7384,8 +7368,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_09_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_09_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_09_86"
             }
         ),
         BuildingMenu.createObject(
@@ -7837,8 +7820,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_04_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_04_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_04_3"
             }
         ),
         BuildingMenu.createObject(
@@ -7855,8 +7837,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_04_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_04_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_04_87"
             }
         ),
         BuildingMenu.createObject(
@@ -7891,8 +7872,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_04_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_04_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_04_86"
             }
         ),
         BuildingMenu.createObject(
@@ -8344,8 +8324,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_03_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_03_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_03_3"
             }
         ),
         BuildingMenu.createObject(
@@ -8362,8 +8341,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_03_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_03_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_03_87"
             }
         ),
         BuildingMenu.createObject(
@@ -8398,8 +8376,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_03_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_03_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_03_86"
             }
         ),
         BuildingMenu.createObject(
@@ -8851,8 +8828,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_05_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_05_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_05_3"
             }
         ),
         BuildingMenu.createObject(
@@ -8869,8 +8845,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_05_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_05_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_05_87"
             }
         ),
         BuildingMenu.createObject(
@@ -8905,8 +8880,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_05_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_05_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_05_86"
             }
         ),
         BuildingMenu.createObject(
@@ -9358,8 +9332,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_10_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_10_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_10_3"
             }
         ),
         BuildingMenu.createObject(
@@ -9376,8 +9349,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_10_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_10_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_10_87"
             }
         ),
         BuildingMenu.createObject(
@@ -9413,7 +9385,6 @@ local function addMelosWallsBathroomToMenu()
             },
             {
                 sprite = "melos_tiles_walls_bathroom_ddd_add_10_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_10_86"
             }
         ),
         BuildingMenu.createObject(
@@ -9865,8 +9836,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_07_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_07_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_07_3"
             }
         ),
         BuildingMenu.createObject(
@@ -9883,8 +9853,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_07_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_07_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_07_87"
             }
         ),
         BuildingMenu.createObject(
@@ -9919,8 +9888,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_07_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_07_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_07_86"
             }
         ),
         BuildingMenu.createObject(
@@ -10372,8 +10340,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_11_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_11_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_11_3"
             }
         ),
         BuildingMenu.createObject(
@@ -10390,8 +10357,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_11_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_11_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_11_87"
             }
         ),
         BuildingMenu.createObject(
@@ -10426,8 +10392,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_11_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_11_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_11_86"
             }
         ),
         BuildingMenu.createObject(
@@ -10879,8 +10844,7 @@ local function addMelosWallsBathroomToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_12_3",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_12_3"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_12_3"
             }
         ),
         BuildingMenu.createObject(
@@ -10897,8 +10861,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_12_87",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_12_87"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_12_87"
             }
         ),
         BuildingMenu.createObject(
@@ -10933,8 +10896,7 @@ local function addMelosWallsBathroomToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_walls_bathroom_ddd_add_12_86",
-                northSprite = "melos_tiles_walls_bathroom_ddd_add_12_86"
+                sprite = "melos_tiles_walls_bathroom_ddd_add_12_86"
             }
         ),
         BuildingMenu.createObject(
@@ -11387,7 +11349,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01a_3", northSprite = "melos_tiles_walls_brick_01a_3" }
+            { sprite = "melos_tiles_walls_brick_01a_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Fence_Post",
@@ -11402,7 +11364,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01a_87", northSprite = "melos_tiles_walls_brick_01a_87" }
+            { sprite = "melos_tiles_walls_brick_01a_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Fence",
@@ -11435,7 +11397,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01a_86", northSprite = "melos_tiles_walls_brick_01a_86" }
+            { sprite = "melos_tiles_walls_brick_01a_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_White_Brick_Roof_Slope_Wall_1",
@@ -11858,7 +11820,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01b_3", northSprite = "melos_tiles_walls_brick_01b_3" }
+            { sprite = "melos_tiles_walls_brick_01b_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Fence_Post",
@@ -11873,7 +11835,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01b_87", northSprite = "melos_tiles_walls_brick_01b_87" }
+            { sprite = "melos_tiles_walls_brick_01b_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Fence",
@@ -11906,7 +11868,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01b_86", northSprite = "melos_tiles_walls_brick_01b_86" }
+            { sprite = "melos_tiles_walls_brick_01b_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Red_Brick_Roof_Slope_Wall_1",
@@ -12330,7 +12292,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01c_3", northSprite = "melos_tiles_walls_brick_01c_3" }
+            { sprite = "melos_tiles_walls_brick_01c_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Fence_Post",
@@ -12345,7 +12307,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01c_87", northSprite = "melos_tiles_walls_brick_01c_87" }
+            { sprite = "melos_tiles_walls_brick_01c_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Fence",
@@ -12378,7 +12340,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01c_86", northSprite = "melos_tiles_walls_brick_01c_86" }
+            { sprite = "melos_tiles_walls_brick_01c_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Turquoise_Brick_Roof_Slope_Wall_1",
@@ -12801,7 +12763,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01d_3", northSprite = "melos_tiles_walls_brick_01d_3" }
+            { sprite = "melos_tiles_walls_brick_01d_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Fence_Post",
@@ -12816,7 +12778,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01d_87", northSprite = "melos_tiles_walls_brick_01d_87" }
+            { sprite = "melos_tiles_walls_brick_01d_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Fence",
@@ -12849,7 +12811,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01d_86", northSprite = "melos_tiles_walls_brick_01d_86" }
+            { sprite = "melos_tiles_walls_brick_01d_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Brown_Brick_Roof_Slope_Wall_1",
@@ -13272,7 +13234,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01e_3", northSprite = "melos_tiles_walls_brick_01e_3" }
+            { sprite = "melos_tiles_walls_brick_01e_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Fence_Post",
@@ -13287,7 +13249,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01e_87", northSprite = "melos_tiles_walls_brick_01e_87" }
+            { sprite = "melos_tiles_walls_brick_01e_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Fence",
@@ -13320,7 +13282,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01e_86", northSprite = "melos_tiles_walls_brick_01e_86" }
+            { sprite = "melos_tiles_walls_brick_01e_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Blue_Brick_Roof_Slope_Wall_1",
@@ -13743,7 +13705,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01f_3", northSprite = "melos_tiles_walls_brick_01f_3" }
+            { sprite = "melos_tiles_walls_brick_01f_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Fence_Post",
@@ -13758,7 +13720,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01f_87", northSprite = "melos_tiles_walls_brick_01f_87" }
+            { sprite = "melos_tiles_walls_brick_01f_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Fence",
@@ -13791,7 +13753,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01f_86", northSprite = "melos_tiles_walls_brick_01f_86" }
+            { sprite = "melos_tiles_walls_brick_01f_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Orange_Brick_Roof_Slope_Wall_1",
@@ -14215,7 +14177,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01g_3", northSprite = "melos_tiles_walls_brick_01g_3" }
+            { sprite = "melos_tiles_walls_brick_01g_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Fence_Post",
@@ -14230,7 +14192,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01g_87", northSprite = "melos_tiles_walls_brick_01g_87" }
+            { sprite = "melos_tiles_walls_brick_01g_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Fence",
@@ -14263,7 +14225,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01g_86", northSprite = "melos_tiles_walls_brick_01g_86" }
+            { sprite = "melos_tiles_walls_brick_01g_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Green_Brick_Roof_Slope_Wall_1",
@@ -14687,7 +14649,7 @@ local function addMelosWallsBrickToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "melos_tiles_walls_brick_01h_3", northSprite = "melos_tiles_walls_brick_01h_3" }
+            { sprite = "melos_tiles_walls_brick_01h_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Fence_Post",
@@ -14702,7 +14664,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01h_87", northSprite = "melos_tiles_walls_brick_01h_87" }
+            { sprite = "melos_tiles_walls_brick_01h_87" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Fence",
@@ -14735,7 +14697,7 @@ local function addMelosWallsBrickToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_walls_brick_01h_86", northSprite = "melos_tiles_walls_brick_01h_86" }
+            { sprite = "melos_tiles_walls_brick_01h_86" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Melos_Purple_Brick_Roof_Slope_Wall_1",
@@ -15511,8 +15473,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_60",
-                northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_60"
+                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_60"
             }
         ),
         BuildingMenu.createObject(
@@ -15565,8 +15526,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_86",
-                northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_86"
+                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_86"
             }
         ),
         BuildingMenu.createObject(
@@ -15583,8 +15543,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_87",
-                northSprite = "melos_tiles_windows_triple_large_dark_red_brick_01_87"
+                sprite = "melos_tiles_windows_triple_large_dark_red_brick_01_87"
             }
         )
     }
@@ -15818,8 +15777,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_grey_brick_01_60",
-                northSprite = "melos_tiles_windows_triple_large_grey_brick_01_60"
+                sprite = "melos_tiles_windows_triple_large_grey_brick_01_60"
             }
         ),
         BuildingMenu.createObject(
@@ -15872,8 +15830,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_grey_brick_01_86",
-                northSprite = "melos_tiles_windows_triple_large_grey_brick_01_86"
+                sprite = "melos_tiles_windows_triple_large_grey_brick_01_86"
             }
         ),
         BuildingMenu.createObject(
@@ -15890,8 +15847,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_grey_brick_01_87",
-                northSprite = "melos_tiles_windows_triple_large_grey_brick_01_87"
+                sprite = "melos_tiles_windows_triple_large_grey_brick_01_87"
             }
         )
     }
@@ -16125,8 +16081,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_60",
-                northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_60"
+                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_60"
             }
         ),
         BuildingMenu.createObject(
@@ -16179,8 +16134,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_86",
-                northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_86"
+                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_86"
             }
         ),
         BuildingMenu.createObject(
@@ -16197,8 +16151,7 @@ local function addWindowsPlusToMenu()
                 isCorner = true
             },
             {
-                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_87",
-                northSprite = "melos_tiles_windows_triple_large_yellow_brick_01_87"
+                sprite = "melos_tiles_windows_triple_large_yellow_brick_01_87"
             }
         )
     }
@@ -16246,7 +16199,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_fencing_02_52", northSprite = "melos_tiles_fencing_02_52" }
+            { sprite = "melos_tiles_fencing_02_52" }
         ),
         BuildingMenu.createObject(
             "",
@@ -16280,7 +16233,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_fencing_02_60", northSprite = "melos_tiles_fencing_02_60" }
+            { sprite = "melos_tiles_fencing_02_60" }
         ),
         BuildingMenu.createObject(
             "",
@@ -16423,7 +16376,7 @@ local function addLowAndRailingFencesToMenu()
                     canBarricade = false,
                     isCorner = true
                 },
-                { sprite = prefix .. sprites.post, northSprite = prefix .. sprites.post }
+                { sprite = prefix .. sprites.post }
             ),
             BuildingMenu.createObject(
                 "Tooltip_BuildingMenuObj_Wooden_Railing_Post",
@@ -16454,7 +16407,7 @@ local function addLowAndRailingFencesToMenu()
                     isCorner = true
                 },
                 {
-                    sprite = prefix .. sprites.tallPost, northSprite = prefix .. sprites.tallPost
+                    sprite = prefix .. sprites.tallPost
                 }
             ),
             BuildingMenu.createObject(
@@ -16663,8 +16616,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = baseNameMelosFloors .. startNumber,
-                        northSprite = baseNameMelosFloors .. startNumber
+                        sprite = baseNameMelosFloors .. startNumber
                     }
                 )
             )
@@ -16984,8 +16936,7 @@ local function addMelosSmallTablesToMenu()
                 completionSound = "BuildWoodenStructureLarge"
             },
             {
-                sprite = "melos_tiles_furniture_tables_01_" .. spriteIndex,
-                northSprite = "melos_tiles_furniture_tables_01_" .. spriteIndex
+                sprite = "melos_tiles_furniture_tables_01_" .. spriteIndex
             }
         )
     end
@@ -20276,7 +20227,7 @@ local function addMelosFurnitureSet2ToMenu()
 end
 
 local function addMelosFlowersToMenu()
-    local function createIndoorFlowerObject(sprite, northSprite)
+    local function createIndoorFlowerObject(sprite)
         return BuildingMenu.createObject(
             "",
             "Tooltip_Plants_Indoor_Generic",
@@ -20290,26 +20241,21 @@ local function addMelosFlowersToMenu()
                 isCorner = true
             },
             { sprite = sprite, northSprite = northSprite }
-        )
+        );
     end
 
-    local melosIndoorFlowers = {}
+    local melosIndoorFlowers = {};
     for i = 0, 16 do
-        local sprite = "melos_tiles_gardencenter_01_" .. i
-        local northSprite = sprite
-        if i == 15 then
-            northSprite = "melos_tiles_gardencenter_01_15"
+        local sprite = "melos_tiles_gardencenter_01_" .. i;
+        if i == 12 or i == 13 or i == 14 or i == 15 then
+        else
+            table.insert(melosIndoorFlowers, createIndoorFlowerObject(sprite));
         end
-        table.insert(melosIndoorFlowers, createIndoorFlowerObject(sprite, northSprite))
     end
 
     for i = 0, 16 do
-        local sprite = "melos_tiles_gardencenter_plants_02_" .. i
-        local northSprite = sprite
-        if i == 15 then
-            northSprite = "melos_tiles_gardencenter_plants_02_15"
-        end
-        table.insert(melosIndoorFlowers, createIndoorFlowerObject(sprite, northSprite))
+        local sprite = "melos_tiles_gardencenter_plants_02_" .. i;
+        table.insert(melosIndoorFlowers, createIndoorFlowerObject(sprite));
     end
 
     BuildingMenu.addObjectsToCategories(
@@ -20319,7 +20265,7 @@ local function addMelosFlowersToMenu()
         getText("IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor"),
         "melos_tiles_gardencenter_01_0",
         melosIndoorFlowers
-    )
+    );
 end
 
 local function addMelosPlantersToMenu()
@@ -20864,8 +20810,7 @@ local function addMelosGrapeVinesToMenu()
                 isCorner = true,
             },
             {
-                sprite = "melos_tiles_grapevines_01_4",
-                northSprite = "melos_tiles_grapevines_01_4"
+                sprite = "melos_tiles_grapevines_01_4"
             }
         ),
         BuildingMenu.createObject(

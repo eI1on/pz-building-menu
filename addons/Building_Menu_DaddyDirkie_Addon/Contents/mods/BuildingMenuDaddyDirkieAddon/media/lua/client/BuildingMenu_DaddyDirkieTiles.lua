@@ -176,7 +176,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_12", northSprite = "fencing_ddd_01_12" }
+            { sprite = "fencing_ddd_01_12" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
@@ -191,7 +191,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_13", northSprite = "fencing_ddd_01_13" }
+            { sprite = "fencing_ddd_01_13" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence",
@@ -226,7 +226,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_20", northSprite = "fencing_ddd_01_20" }
+            { sprite = "fencing_ddd_01_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
@@ -241,7 +241,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_21", northSprite = "fencing_ddd_01_21" }
+            { sprite = "fencing_ddd_01_21" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1",
@@ -296,7 +296,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_36", northSprite = "fencing_ddd_01_36" }
+            { sprite = "fencing_ddd_01_36" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines",
@@ -311,7 +311,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_37", northSprite = "fencing_ddd_01_37" }
+            { sprite = "fencing_ddd_01_37" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence",
@@ -346,7 +346,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_28", northSprite = "fencing_ddd_01_28" }
+            { sprite = "fencing_ddd_01_28" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post",
@@ -361,7 +361,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_29", northSprite = "fencing_ddd_01_29" }
+            { sprite = "fencing_ddd_01_29" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -389,7 +389,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "location_farm_accesories_spyjack_01_5", northSprite = "location_farm_accesories_spyjack_01_5" }
+            { sprite = "location_farm_accesories_spyjack_01_5" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Fence",
@@ -440,7 +440,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "location_farm_accesories_spyjack_01_4", northSprite = "location_farm_accesories_spyjack_01_4" }
+            { sprite = "location_farm_accesories_spyjack_01_4" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Fence_Gate",
@@ -493,7 +493,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "location_farm_accesories_spyjack_01_21", northSprite = "location_farm_accesories_spyjack_01_21" }
+            { sprite = "location_farm_accesories_spyjack_01_21" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Fence",
@@ -544,7 +544,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "location_farm_accesories_spyjack_01_20", northSprite = "location_farm_accesories_spyjack_01_20" }
+            { sprite = "location_farm_accesories_spyjack_01_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate",
@@ -1687,7 +1687,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_9", northSprite = "industry_ddd_01_9" }
+            { sprite = "industry_ddd_01_9" }
         ),
         BuildingMenu.createObject(
             "",
@@ -1700,7 +1700,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "furniture_storage_ddd_01_12", northSprite = "furniture_storage_ddd_01_12" }
+            { sprite = "furniture_storage_ddd_01_12" }
         ),
         BuildingMenu.createObject(
             "",
@@ -1713,7 +1713,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "furniture_storage_ddd_01_20", northSprite = "furniture_storage_ddd_01_20" }
+            { sprite = "furniture_storage_ddd_01_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Small_Locker",
@@ -1726,7 +1726,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "furniture_storage_ddd_01_4", northSprite = "furniture_storage_ddd_01_4" }
+            { sprite = "furniture_storage_ddd_01_4" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pallet_Green_Small_Locker",
@@ -1739,7 +1739,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "furniture_storage_ddd_01_7", northSprite = "furniture_storage_ddd_01_7" }
+            { sprite = "furniture_storage_ddd_01_7" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Small_Locker",
@@ -1752,7 +1752,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "furniture_storage_ddd_01_9", northSprite = "furniture_storage_ddd_01_9" }
+            { sprite = "furniture_storage_ddd_01_9" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Pallet_White_Small_Locker",
@@ -1765,7 +1765,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "furniture_storage_ddd_01_8", northSprite = "furniture_storage_ddd_01_8" }
+            { sprite = "furniture_storage_ddd_01_8" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1778,7 +1778,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_4", northSprite = "industry_ddd_01_4" }
+            { sprite = "industry_ddd_01_4" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1791,7 +1791,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_5", northSprite = "industry_ddd_01_5" }
+            { sprite = "industry_ddd_01_5" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1804,7 +1804,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_6", northSprite = "industry_ddd_01_6" }
+            { sprite = "industry_ddd_01_6" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Barrel_On_Pallet",
@@ -1817,7 +1817,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_7", northSprite = "industry_ddd_01_7" }
+            { sprite = "industry_ddd_01_7" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet",
@@ -1830,7 +1830,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_55", northSprite = "industry_ddd_01_55" }
+            { sprite = "industry_ddd_01_55" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet",
@@ -1843,7 +1843,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_53", northSprite = "industry_ddd_01_53" }
+            { sprite = "industry_ddd_01_53" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Small_Boxes_On_Pallet",
@@ -1856,7 +1856,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_54", northSprite = "industry_ddd_01_54" }
+            { sprite = "industry_ddd_01_54" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1869,7 +1869,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_55", northSprite = "industry_ddd_01_55" }
+            { sprite = "industry_ddd_01_55" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1882,7 +1882,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_52", northSprite = "industry_ddd_01_52" }
+            { sprite = "industry_ddd_01_52" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1895,7 +1895,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_60", northSprite = "industry_ddd_01_60" }
+            { sprite = "industry_ddd_01_60" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1908,7 +1908,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_56", northSprite = "industry_ddd_01_56" }
+            { sprite = "industry_ddd_01_56" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1921,7 +1921,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_57", northSprite = "industry_ddd_01_57" }
+            { sprite = "industry_ddd_01_57" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1934,7 +1934,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_58", northSprite = "industry_ddd_01_58" }
+            { sprite = "industry_ddd_01_58" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Vegetable_Baskets_On_Pallet",
@@ -1947,7 +1947,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "industry_ddd_01_59", northSprite = "industry_ddd_01_59" }
+            { sprite = "industry_ddd_01_59" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -2270,8 +2270,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "edit_ddd_RUS_Forest Survival_01_5",
-                northSprite = "edit_ddd_RUS_Forest Survival_01_5"
+                sprite = "edit_ddd_RUS_Forest Survival_01_5"
             }
         ),
         BuildingMenu.createObject(
@@ -2286,8 +2285,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 canBeLockedByPadlock = true
             },
             {
-                sprite = "edit_ddd_RUS_Forest Survival_01_32",
-                northSprite = "edit_ddd_RUS_Forest Survival_01_32"
+                sprite = "edit_ddd_RUS_Forest Survival_01_32"
             }
         ),
         BuildingMenu.createObject(
@@ -2396,7 +2394,6 @@ local function addDaddyDirkieForestSurvivalToMenu()
             },
             {
                 sprite = "edit_ddd_RUS_Forest Survival_01_72",
-                northSprite = "edit_ddd_RUS_Forest Survival_01_72"
             }
         ),
         BuildingMenu.createObject(
@@ -2409,8 +2406,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 completionSound = "BuildWoodenStructureSmall"
             },
             {
-                sprite = "edit_ddd_RUS_Forest Survival_01_73",
-                northSprite = "edit_ddd_RUS_Forest Survival_01_73"
+                sprite = "edit_ddd_RUS_Forest Survival_01_73"
             }
         ),
         BuildingMenu.createObject(
@@ -2551,8 +2547,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
                 isCorner = true
             },
             {
-                sprite = "edit_ddd_RUS_Forest Survival_01_56",
-                northSprite = "edit_ddd_RUS_Forest Survival_01_56"
+                sprite = "edit_ddd_RUS_Forest Survival_01_56"
             }
         ),
     }
@@ -2811,7 +2806,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_16", northSprite = "ramps_ddd_16" }
+            { sprite = "ramps_ddd_16" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_1_Inner_2",
@@ -2828,7 +2823,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_17", northSprite = "ramps_ddd_17" }
+            { sprite = "ramps_ddd_17" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_1_Inner_3",
@@ -2845,7 +2840,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_18", northSprite = "ramps_ddd_18" }
+            { sprite = "ramps_ddd_18" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_1_Valley_1",
@@ -2862,7 +2857,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_19", northSprite = "ramps_ddd_19" }
+            { sprite = "ramps_ddd_19" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_1_Valley_2",
@@ -2879,7 +2874,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_20", northSprite = "ramps_ddd_20" }
+            { sprite = "ramps_ddd_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_1_Valley_3",
@@ -2896,7 +2891,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_21", northSprite = "ramps_ddd_21" }
+            { sprite = "ramps_ddd_21" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_1_Outer_1",
@@ -3039,7 +3034,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_64", northSprite = "ramps_ddd_64" }
+            { sprite = "ramps_ddd_64" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_2_Inner_2",
@@ -3056,7 +3051,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_65", northSprite = "ramps_ddd_65" }
+            { sprite = "ramps_ddd_65" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_2_Inner_3",
@@ -3073,7 +3068,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_66", northSprite = "ramps_ddd_66" }
+            { sprite = "ramps_ddd_66" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_2_Valley_1",
@@ -3090,7 +3085,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_67", northSprite = "ramps_ddd_67" }
+            { sprite = "ramps_ddd_67" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_2_Valley_2",
@@ -3107,7 +3102,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_68", northSprite = "ramps_ddd_68" }
+            { sprite = "ramps_ddd_68" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_2_Valley_3",
@@ -3124,7 +3119,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_69", northSprite = "ramps_ddd_69" }
+            { sprite = "ramps_ddd_69" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Ramp_2_Outer_1",
@@ -3276,7 +3271,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_88", northSprite = "ramps_ddd_88" }
+            { sprite = "ramps_ddd_88" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Inner_2",
@@ -3293,7 +3288,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_89", northSprite = "ramps_ddd_89" }
+            { sprite = "ramps_ddd_89" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Inner_3",
@@ -3310,7 +3305,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_90", northSprite = "ramps_ddd_90" }
+            { sprite = "ramps_ddd_90" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Valley_1",
@@ -3327,7 +3322,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_91", northSprite = "ramps_ddd_91" }
+            { sprite = "ramps_ddd_91" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Valley_2",
@@ -3344,7 +3339,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_92", northSprite = "ramps_ddd_92" }
+            { sprite = "ramps_ddd_92" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Valley_3",
@@ -3361,7 +3356,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_93", northSprite = "ramps_ddd_93" }
+            { sprite = "ramps_ddd_93" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Outer_1",
@@ -3424,7 +3419,7 @@ local function addRoadworkDirtandGrassToMenu()
             true,
             {
             },
-            { sprite = "ramps_ddd_126", northSprite = "ramps_ddd_126" }
+            { sprite = "ramps_ddd_126" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Wall",
@@ -3459,8 +3454,7 @@ local function addRoadworkDirtandGrassToMenu()
                 modData = { wallType = "wall" }
             },
             {
-                sprite = "ramps_ddd_124",
-                northSprite = "ramps_ddd_124",
+                sprite = "ramps_ddd_124"
             }
         ),
         BuildingMenu.createObject(
@@ -3688,7 +3682,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_40", northSprite = "ramps_ddd_40" }
+            { sprite = "ramps_ddd_40" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Sand_Ramp_Inner_2",
@@ -3705,7 +3699,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_41", northSprite = "ramps_ddd_41" }
+            { sprite = "ramps_ddd_41" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Sand_Ramp_Inner_3",
@@ -3722,7 +3716,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_42", northSprite = "ramps_ddd_42" }
+            { sprite = "ramps_ddd_42" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Sand_Ramp_Valley_1",
@@ -3739,7 +3733,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_43", northSprite = "ramps_ddd_43" }
+            { sprite = "ramps_ddd_43" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Sand_Ramp_Valley_2",
@@ -3756,7 +3750,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_44", northSprite = "ramps_ddd_44" }
+            { sprite = "ramps_ddd_44" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Sand_Ramp_Valley_3",
@@ -3773,7 +3767,7 @@ local function addRoadworkDirtandGrassToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "ramps_ddd_45", northSprite = "ramps_ddd_45" }
+            { sprite = "ramps_ddd_45" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Sand_Ramp_Outer_1",

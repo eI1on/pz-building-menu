@@ -20,7 +20,7 @@ function ISBuildingObject:onJoypadPressButton(joypadIndex, joypadData, button)
 end
 
 local function predicateNotBroken(item)
-	return not item:isBroken()
+	return not item:isBroken();
 end
 
 function ISBuildingObject:tryBuild(x, y, z)
@@ -104,5 +104,93 @@ function ISBuildingObject:tryBuild(x, y, z)
 					maxTime));
 			end
 		end
+	end
+end
+
+
+-- helper function to check if the sprite exists
+function ISBuildingObject:isValidSprite(direction)
+	local spriteMap = {
+		[1] = self.sprite,
+		[2] = self.northSprite,
+		[3] = self.eastSprite,
+		[4] = self.southSprite
+	};
+	return spriteMap[direction] ~= nil;
+end
+
+-- rotate the buildable depending on the position of the mouse
+function ISBuildingObject:rotateMouse(x, y)
+	if self.square then
+		-- start to get the direction the mouse is compared to the selected square for the item
+		local difx = x - self.square:getX();
+		local dify = y - self.square:getY();
+
+		-- determine the direction based on the mouse position relative to the square
+		if difx < 0 and math.abs(difx) > math.abs(dify) and self:isValidSprite(1) then
+			self.nSprite = 1;
+		elseif difx > 0 and math.abs(difx) > math.abs(dify) and self:isValidSprite(3) then
+			self.nSprite = 3;
+		elseif dify < 0 and math.abs(difx) < math.abs(dify) and self:isValidSprite(2) then
+			self.nSprite = 2;
+		elseif dify > 0 and math.abs(difx) < math.abs(dify) and self:isValidSprite(4) then
+			self.nSprite = 4;
+		end
+	end
+end
+
+-- rotate the sprite to the next valid position
+function ISBuildingObject:rotateSprite(direction)
+	local originalSprite = self.nSprite;
+	local spriteFound = false;
+
+	for i = 1, 4 do
+		self.nSprite = self.nSprite + direction;
+		if self.nSprite > 4 then self.nSprite = 1;
+		elseif self.nSprite < 1 then self.nSprite = 4;
+		end
+
+		if self:isValidSprite(self.nSprite) then
+			spriteFound = true;
+			break;
+		end
+	end
+
+	-- if no valid sprite was found, revert to the original sprite
+	if not spriteFound then self.nSprite = originalSprite; end
+end
+
+function ISBuildingObject:rotateKey(key)
+	if key == getCore():getKey("Rotate building") then
+		self:rotateSprite(1);
+	end
+end
+
+function ISBuildingObject:onJoypadPressButton(joypadIndex, joypadData, button)
+	local playerObj = getSpecificPlayer(joypadData.player);
+
+	if button == Joypad.AButton then
+		if self.canBeBuild then
+			self:tryBuild(self.xJoypad, self.yJoypad, self.zJoypad);
+		end
+	end
+
+	if button == Joypad.BButton then
+		getCell():setDrag(nil, joypadData.player);
+	end
+
+	if button == Joypad.YButton then
+		if self.isYButtonResetCursor then
+			self.xJoypad = self.character:getCurrentSquare():getX();
+			self.yJoypad = self.character:getCurrentSquare():getY();
+		end
+	end
+
+	if button == Joypad.RBumper then
+		self:rotateSprite(1);
+	end
+
+	if button == Joypad.LBumper then
+		self:rotateSprite(-1);
 	end
 end

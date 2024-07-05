@@ -302,7 +302,7 @@ local function addSimonMDWallsToMenu()
                 isCorner = true,
                 modData = {wallType = "pillar"}
             },
-            {sprite = "constructedobjects_01_51", northSprite = "constructedobjects_01_51"}
+            {sprite = "constructedobjects_01_51" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -650,7 +650,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_16", northSprite = "roofs_Simon_MD_16"}
+            {sprite = "roofs_Simon_MD_16" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_2",
@@ -666,7 +666,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_17", northSprite = "roofs_Simon_MD_17"}
+            {sprite = "roofs_Simon_MD_17" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Corrugated_Metal_Inner_3",
@@ -682,7 +682,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_18", northSprite = "roofs_Simon_MD_18"}
+            {sprite = "roofs_Simon_MD_18" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_1",
@@ -698,7 +698,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_19", northSprite = "roofs_Simon_MD_19"}
+            {sprite = "roofs_Simon_MD_19" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_2",
@@ -714,7 +714,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_20", northSprite = "roofs_Simon_MD_20"}
+            {sprite = "roofs_Simon_MD_20" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Corrugated_Metal_Valley_3",
@@ -730,7 +730,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_21", northSprite = "roofs_Simon_MD_21"}
+            {sprite = "roofs_Simon_MD_21" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer_1",
@@ -810,7 +810,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_29", northSprite = "roofs_Simon_MD_29"}
+            {sprite = "roofs_Simon_MD_29" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Corrugated_Metal_Outer",
@@ -842,7 +842,7 @@ local function addRoofingToMenu()
                 canPassThrough = true,
                 canBarricade = false
             },
-            {sprite = "roofs_Simon_MD_28", northSprite = "roofs_Simon_MD_28"}
+            {sprite = "roofs_Simon_MD_28" }
         )
     }
     BuildingMenu.addObjectsToCategories(

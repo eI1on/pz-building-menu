@@ -88,7 +88,7 @@ local function addCratesToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 blockAllTheSquare = true,
             },
-            { sprite = "industry_tk_02_32", northSprite = "industry_tk_02_32" }
+            { sprite = "industry_tk_02_32" }
         ),
         BuildingMenu.createObject(
             "",
@@ -100,7 +100,7 @@ local function addCratesToMenu()
                 completionSound = "BuildWoodenStructureLarge",
                 blockAllTheSquare = true,
             },
-            { sprite = "industry_tk_02_33", northSprite = "industry_tk_02_33" }
+            { sprite = "industry_tk_02_33" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -186,7 +186,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_tk_01_3", northSprite = "industry_tk_01_3" }
+                    { sprite = "industry_tk_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Industrial_Roof_Slope_Wall_1",
@@ -386,7 +386,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_tk_01_7", northSprite = "industry_tk_01_7" }
+                    { sprite = "industry_tk_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Blue_Industrial_Roof_Slope_Wall_1",
@@ -586,7 +586,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_tk_01_27", northSprite = "industry_tk_01_27" }
+                    { sprite = "industry_tk_01_27" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Green_Industrial_Roof_Slope_Wall_1",
@@ -786,7 +786,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_tk_01_31", northSprite = "industry_tk_01_31" }
+                    { sprite = "industry_tk_01_31" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Industrial_Roof_Slope_Wall_1",
@@ -1208,7 +1208,7 @@ local function addTrashCansToMenu()
             {
                 completionSound = "BuildMetalStructureMedium",
             },
-            { sprite = "trash_containers_tk_01_8", northSprite = "trash_containers_tk_01_8" }
+            { sprite = "trash_containers_tk_01_8" }
         ),
         BuildingMenu.createObject(
             "",
@@ -1219,7 +1219,7 @@ local function addTrashCansToMenu()
             {
                 completionSound = "BuildMetalStructureMedium",
             },
-            { sprite = "trash_containers_tk_01_10", northSprite = "trash_containers_tk_01_10" }
+            { sprite = "trash_containers_tk_01_10" }
         ),
         BuildingMenu.createObject(
             "",

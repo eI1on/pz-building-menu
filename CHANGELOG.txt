@@ -6,8 +6,11 @@ Main mod:
 [list]
 [*] Added sandbox options to modify Water Well Rain Intensity Fill Rate Multiplier and Water Well Hourly Fill rate
 [*] Added Medium, Dark and Old Asphalt Edges
-[*] Door trims now can be removed with a hammer
+[*] Added the missing rugs with Solid Colors for Victorian 1, Victorian 2, Victorian 3, and Victorian 4
 [*] Added OnBuildActionPerformed and OnBeforeSetDragBuildObject events
+[*] Door trims can now be removed with a hammer
+[*] Refined how buildable rotates. Now, the buildable will only rotate if there is an appropriate sprite for that direction
+[*] Cleaned up the sprite data by removing redundant sprite entries 
 [*] Updated translations and removed duplicated keys
 [/list]
 SimonMD's addon:

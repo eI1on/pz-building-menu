@@ -177,7 +177,7 @@ local function addWoodWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_wooden_01_31", northSprite = "walls_exterior_wooden_01_31" }
+            { sprite = "walls_exterior_wooden_01_31" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Old_Wood_Panel_Roof_Slope_Wall_1",
@@ -384,7 +384,7 @@ local function addWoodWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_wooden_01_27", northSprite = "walls_exterior_wooden_01_27" }
+            { sprite = "walls_exterior_wooden_01_27" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_1",
@@ -591,7 +591,7 @@ local function addWoodWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_wooden_02_3", northSprite = "walls_exterior_wooden_02_3" }
+            { sprite = "walls_exterior_wooden_02_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Panel_Roof_Slope_Wall_1",
@@ -798,7 +798,7 @@ local function addWoodWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_wooden_01_3", northSprite = "walls_exterior_wooden_01_3" }
+            { sprite = "walls_exterior_wooden_01_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Barn_Wood_Roof_Slope_Wall_1",
@@ -1005,8 +1005,7 @@ local function addWoodWallsToMenu()
                 modData = { wallType = "pillar" }
             },
             {
-                sprite = "location_shop_bargNclothes_01_27",
-                northSprite = "location_shop_bargNclothes_01_27"
+                sprite = "location_shop_bargNclothes_01_27"
             }
         ),
         BuildingMenu.createObject(
@@ -1259,7 +1258,7 @@ local function addWoodWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "location_restaurant_bar_01_47", northSprite = "location_restaurant_bar_01_47" }
+            { sprite = "location_restaurant_bar_01_47" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -1340,7 +1339,7 @@ local function addClapboardWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_02_23", northSprite = "walls_exterior_house_02_23" }
+            { sprite = "walls_exterior_house_02_23" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Blue_Clapboard_Roof_Slope_Wall_1",
@@ -1545,7 +1544,7 @@ local function addClapboardWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_02_35", northSprite = "walls_exterior_house_02_35" }
+            { sprite = "walls_exterior_house_02_35" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tan_Clapboard_Roof_Slope_Wall_1",
@@ -1750,7 +1749,7 @@ local function addClapboardWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_02_71", northSprite = "walls_exterior_house_02_71" }
+            { sprite = "walls_exterior_house_02_71" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -1831,7 +1830,7 @@ local function addClapboardWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_02_83", northSprite = "walls_exterior_house_02_83" }
+            { sprite = "walls_exterior_house_02_83" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -1912,7 +1911,7 @@ local function addClapboardWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "location_trailer_01_3", northSprite = "location_trailer_01_3" }
+            { sprite = "location_trailer_01_3" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -1992,7 +1991,7 @@ local function addClapboardWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_01_35", northSprite = "walls_exterior_house_01_35" }
+            { sprite = "walls_exterior_house_01_35" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Clapboard_Roof_Slope_Wall_1",
@@ -2197,7 +2196,7 @@ local function addClapboardWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_01_51", northSprite = "walls_exterior_house_01_51" }
+            { sprite = "walls_exterior_house_01_51" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brown_Clapboard_Roof_Slope_Wall_1",
@@ -2408,7 +2407,7 @@ local function addStoneWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_3", northSprite = "walls_exterior_house_02_3" }
+                    { sprite = "walls_exterior_house_02_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Stone_Roof_Slope_Wall_1",
@@ -2608,7 +2607,7 @@ local function addStoneWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_7", northSprite = "walls_exterior_house_02_7" }
+                    { sprite = "walls_exterior_house_02_7" }
                 )
             }
         },
@@ -2697,7 +2696,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_01_7", northSprite = "walls_exterior_house_01_7" }
+                    { sprite = "walls_exterior_house_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Brick_Roof_Slope_Wall_1",
@@ -2897,7 +2896,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_67", northSprite = "walls_exterior_house_02_67" }
+                    { sprite = "walls_exterior_house_02_67" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Red_Brick_Roof_Slope_Wall_1",
@@ -3097,7 +3096,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_01_55", northSprite = "walls_exterior_house_01_55" }
+                    { sprite = "walls_exterior_house_01_55" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Old_Brick_Roof_Slope_Wall_1",
@@ -3297,7 +3296,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_99", northSprite = "walls_exterior_house_02_99" }
+                    { sprite = "walls_exterior_house_02_99" }
                 )
             }
         },
@@ -3371,7 +3370,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_01_19", northSprite = "walls_exterior_house_01_19" }
+                    { sprite = "walls_exterior_house_01_19" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_1",
@@ -3571,7 +3570,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_01_3", northSprite = "walls_exterior_house_01_3" }
+                    { sprite = "walls_exterior_house_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Blue_Brick_Roof_Slope_Wall_1",
@@ -3771,7 +3770,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_19", northSprite = "walls_exterior_house_02_19" }
+                    { sprite = "walls_exterior_house_02_19" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Brick_Roof_Slope_Wall_1",
@@ -3971,7 +3970,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_39", northSprite = "walls_exterior_house_02_39" }
+                    { sprite = "walls_exterior_house_02_39" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Beige_Brick_Roof_Slope_Wall_1",
@@ -4171,7 +4170,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_51", northSprite = "walls_exterior_house_02_51" }
+                    { sprite = "walls_exterior_house_02_51" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Brick_Roof_Slope_Wall_1",
@@ -4371,7 +4370,7 @@ local function addBrickWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_exterior_house_02_55", northSprite = "walls_exterior_house_02_55" }
+                    { sprite = "walls_exterior_house_02_55" }
                 )
             }
         },
@@ -4460,7 +4459,7 @@ local function addCinderblocWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_bathroom_01_3", northSprite = "walls_interior_bathroom_01_3" }
+                    { sprite = "walls_interior_bathroom_01_3" }
                 )
             }
         },
@@ -4534,7 +4533,7 @@ local function addCinderblocWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_01_51", northSprite = "walls_commercial_01_51" }
+                    { sprite = "walls_commercial_01_51" }
                 )
             }
         },
@@ -4608,7 +4607,7 @@ local function addCinderblocWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_03_3", northSprite = "walls_commercial_03_3" }
+                    { sprite = "walls_commercial_03_3" }
                 )
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Brown_Cinderblock_Fence", "Tooltip_Brown_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_12", northSprite = "walls_commercial_03_13", corner = "walls_commercial_03_15"}),
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Brown_Cinderblock_FencePost", "Tooltip_Brown_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_15", northSprite = "walls_commercial_03_15"}),
@@ -4684,7 +4683,7 @@ local function addCinderblocWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_03_19", northSprite = "walls_commercial_03_19" }
+                    { sprite = "walls_commercial_03_19" }
                 ),
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Tan_Cinderblock_Fence", "Tooltip_Tan_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_20", northSprite = "walls_commercial_03_21", corner = "walls_commercial_03_23"}),
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Tan_Cinderblock_FencePost", "Tooltip_Tan_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_23", northSprite = "walls_commercial_03_23"}),
@@ -4887,7 +4886,7 @@ local function addCinderblocWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_03_35", northSprite = "walls_commercial_03_35" }
+                    { sprite = "walls_commercial_03_35" }
                 )
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Fence", "Tooltip_Dark_Grey_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_36", northSprite = "walls_commercial_03_37", corner = "walls_commercial_03_39"}),
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_FencePost", "Tooltip_Dark_Grey_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_39", northSprite = "walls_commercial_03_39"}),
@@ -4963,7 +4962,7 @@ local function addCinderblocWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_03_51", northSprite = "walls_commercial_03_51" }
+                    { sprite = "walls_commercial_03_51" }
                 )
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Fence", "Tooltip_Light_Grey_Cinderblock_Fence", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",  isThumpable = true, hoppable = true, blockAllTheSquare = false}, { sprite = "walls_commercial_03_52", northSprite = "walls_commercial_03_53", corner = "walls_commercial_03_55"}),
                 -- BuildingMenu.createObject("Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_FencePost", "Tooltip_Light_Grey_Cinderblock_FencePost", BuildingMenu.onBuildWall, BuildingMenu.WoodenFenceRecipe, {  completionSound = "BuildWoodenStructureLarge",   canBeAlwaysPlaced = true, canPassThrough = true, canBarricade = false, isCorner = true}, { sprite = "walls_commercial_03_55", northSprite = "walls_commercial_03_55"}),
@@ -5039,7 +5038,7 @@ local function addCinderblocWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_community_school_01_3", northSprite = "location_community_school_01_3" }
+                    { sprite = "location_community_school_01_3" }
                 )
             }
         },
@@ -5128,7 +5127,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_02_35", northSprite = "walls_interior_house_02_35" }
+                    { sprite = "walls_interior_house_02_35" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Sky_Blue_Wall",
@@ -5196,7 +5195,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_04_39", northSprite = "walls_interior_house_04_39" }
+                    { sprite = "walls_interior_house_04_39" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Blue_Grey_Wall",
@@ -5264,7 +5263,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_02_7", northSprite = "walls_interior_house_02_7" }
+                    { sprite = "walls_interior_house_02_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Blue_Wall",
@@ -5332,7 +5331,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_01_19", northSprite = "walls_interior_house_01_19" }
+                    { sprite = "walls_interior_house_01_19" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pale_Blue_Wall",
@@ -5400,7 +5399,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_04_87", northSprite = "walls_interior_house_04_87" }
+                    { sprite = "walls_interior_house_04_87" }
                 )
             }
         },
@@ -5474,7 +5473,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_03_19", northSprite = "walls_interior_house_03_19" }
+                    { sprite = "walls_interior_house_03_19" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Wall",
@@ -5542,7 +5541,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_01_51", northSprite = "walls_interior_house_01_51" }
+                    { sprite = "walls_interior_house_01_51" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Mint_Green_Wall",
@@ -5610,7 +5609,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_02_3", northSprite = "walls_interior_house_02_3" }
+                    { sprite = "walls_interior_house_02_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Fern_Green_Wall",
@@ -5678,7 +5677,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_01_23", northSprite = "walls_interior_house_01_23" }
+                    { sprite = "walls_interior_house_01_23" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pale_Green_Wall",
@@ -5746,7 +5745,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_04_35", northSprite = "walls_interior_house_04_35" }
+                    { sprite = "walls_interior_house_04_35" }
                 )
             }
         },
@@ -5820,7 +5819,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_03_7", northSprite = "walls_interior_house_03_7" }
+                    { sprite = "walls_interior_house_03_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Purple_Wall",
@@ -5888,7 +5887,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_04_3", northSprite = "walls_interior_house_04_3" }
+                    { sprite = "walls_interior_house_04_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Purple_Stripes_Wall",
@@ -5956,7 +5955,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_03_51", northSprite = "walls_interior_house_03_51" }
+                    { sprite = "walls_interior_house_03_51" }
                 )
             }
         },
@@ -6030,7 +6029,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_04_55", northSprite = "walls_interior_house_04_55" }
+                    { sprite = "walls_interior_house_04_55" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Wall",
@@ -6098,7 +6097,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_04_7", northSprite = "walls_interior_house_04_7" }
+                    { sprite = "walls_interior_house_04_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Cream_Wall",
@@ -6166,7 +6165,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_02_51", northSprite = "walls_interior_house_02_51" }
+                    { sprite = "walls_interior_house_02_51" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_SunstarMotel_Wall",
@@ -6235,9 +6234,7 @@ local function addPaintedWallsToMenu()
                         modData = { wallType = "pillar" }
                     },
                     {
-                        sprite = "location_hospitality_sunstarmotel_01_7",
-                        northSprite =
-                        "location_hospitality_sunstarmotel_01_7"
+                        sprite = "location_hospitality_sunstarmotel_01_7"
                     }
                 ),
 
@@ -6313,7 +6310,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_01_3", northSprite = "walls_interior_house_01_3" }
+                    { sprite = "walls_interior_house_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Strawberry_Wall",
@@ -6381,7 +6378,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_01_7", northSprite = "walls_interior_house_01_7" }
+                    { sprite = "walls_interior_house_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Berry_Red_Wall",
@@ -6449,7 +6446,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_01_35", northSprite = "walls_interior_house_01_35" }
+                    { sprite = "walls_interior_house_01_35" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Orange_Wall",
@@ -6517,7 +6514,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_02_19", northSprite = "walls_interior_house_02_19" }
+                    { sprite = "walls_interior_house_02_19" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Wall",
@@ -6585,7 +6582,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_02_23", northSprite = "walls_interior_house_02_23" }
+                    { sprite = "walls_interior_house_02_23" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Tan_Wall",
@@ -6653,7 +6650,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_04_83", northSprite = "walls_interior_house_04_83" }
+                    { sprite = "walls_interior_house_04_83" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Tan_Stripes_Wall",
@@ -6721,7 +6718,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_01_39", northSprite = "walls_interior_house_01_39" }
+                    { sprite = "walls_interior_house_01_39" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Off_Tan_Wall",
@@ -6789,7 +6786,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_02_39", northSprite = "walls_interior_house_02_39" }
+                    { sprite = "walls_interior_house_02_39" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Wall",
@@ -6857,7 +6854,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_03_23", northSprite = "walls_interior_house_03_23" }
+                    { sprite = "walls_interior_house_03_23" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Wall",
@@ -6925,7 +6922,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_03_39", northSprite = "walls_interior_house_03_39" }
+                    { sprite = "walls_interior_house_03_39" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Flowers_Wall",
@@ -6993,7 +6990,7 @@ local function addPaintedWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_interior_house_03_55", northSprite = "walls_interior_house_03_55" }
+                    { sprite = "walls_interior_house_03_55" }
                 )
             }
         },
@@ -8043,8 +8040,7 @@ local function addCommercialWallsToMenu()
                         modData = { wallType = "pillar" }
                     },
                     {
-                        sprite = "location_restaurant_pileocrepe_01_3",
-                        northSprite = "location_restaurant_pileocrepe_01_3"
+                        sprite = "location_restaurant_pileocrepe_01_3"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -8079,8 +8075,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "location_restaurant_pileocrepe_01_47",
-                        northSprite = "location_restaurant_pileocrepe_01_47"
+                        sprite = "location_restaurant_pileocrepe_01_47"
                     }
                 )
             }
@@ -8162,7 +8157,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_restaurant_diner_01_3", northSprite = "location_restaurant_diner_01_3" }
+                    { sprite = "location_restaurant_diner_01_3" }
                 )
             }
         },
@@ -8263,8 +8258,7 @@ local function addCommercialWallsToMenu()
                         modData = { wallType = "pillar" }
                     },
                     {
-                        sprite = "location_restaurant_spiffos_01_22",
-                        northSprite = "location_restaurant_spiffos_01_22"
+                        sprite = "location_restaurant_spiffos_01_22"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -8360,8 +8354,7 @@ local function addCommercialWallsToMenu()
                         modData = { wallType = "pillar" }
                     },
                     {
-                        sprite = "location_restaurant_spiffos_01_23",
-                        northSprite = "location_restaurant_spiffos_01_23"
+                        sprite = "location_restaurant_spiffos_01_23"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -8431,8 +8424,7 @@ local function addCommercialWallsToMenu()
                         modData = { wallType = "pillar" }
                     },
                     {
-                        sprite = "location_restaurant_spiffos_01_43",
-                        northSprite = "location_restaurant_spiffos_01_43"
+                        sprite = "location_restaurant_spiffos_01_43"
                     }
                 )
             }
@@ -8501,7 +8493,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_shop_fossoil_01_7", northSprite = "location_shop_fossoil_01_7" }
+                    { sprite = "location_shop_fossoil_01_7" }
                 )
             }
         },
@@ -8569,7 +8561,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_shop_gas2go_01_3", northSprite = "location_shop_gas2go_01_3" }
+                    { sprite = "location_shop_gas2go_01_3" }
                 )
             }
         },
@@ -8643,7 +8635,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_business_bank_01_3", northSprite = "location_business_bank_01_3" }
+                    { sprite = "location_business_bank_01_3" }
                 )
             }
         },
@@ -8703,7 +8695,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_01_2", northSprite = "walls_commercial_01_2" }
+                    { sprite = "walls_commercial_01_2" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Frame_Glass_Door_Frame1",
@@ -8846,7 +8838,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_01_19", northSprite = "walls_commercial_01_19" }
+                    { sprite = "walls_commercial_01_19" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Frame_Glass_Door_Frame1",
@@ -8909,7 +8901,7 @@ local function addCommercialWallsToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_01_31", northSprite = "walls_commercial_01_31" }
+                    { sprite = "walls_commercial_01_31" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Frame_Glass_Fence",
@@ -8942,7 +8934,7 @@ local function addCommercialWallsToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_01_30", northSprite = "walls_commercial_01_30" }
+                    { sprite = "walls_commercial_01_30" }
                 )
             }
         },
@@ -8976,7 +8968,7 @@ local function addCommercialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_commercial_02_3", northSprite = "walls_commercial_02_3" }
+                    { sprite = "walls_commercial_02_3" }
                 ),
             }
         }
@@ -9103,7 +9095,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_trucks_01_7", northSprite = "industry_trucks_01_7" }
+                    { sprite = "industry_trucks_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Dark_Metal_Wall",
@@ -9171,7 +9163,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_trucks_01_51", northSprite = "industry_trucks_01_51" }
+                    { sprite = "industry_trucks_01_51" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Jail_Wall",
@@ -9220,7 +9212,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_community_police_01_3", northSprite = "location_community_police_01_3" }
+                    { sprite = "location_community_police_01_3" }
                 ),
             }
         },
@@ -9502,7 +9494,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_garage_01_35", northSprite = "walls_garage_01_35" }
+                    { sprite = "walls_garage_01_35" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Grey_Garage_Wall",
@@ -9570,7 +9562,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "walls_garage_01_39", northSprite = "walls_garage_01_39" }
+                    { sprite = "walls_garage_01_39" }
                 )
             }
         },
@@ -9644,7 +9636,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_01_3", northSprite = "industry_01_3" }
+                    { sprite = "industry_01_3" }
                 ),
 
 
@@ -9739,7 +9731,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_railroad_05_11", northSprite = "industry_railroad_05_11" }
+                    { sprite = "industry_railroad_05_11" }
                 ),
 
 
@@ -9834,7 +9826,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "industry_railroad_05_27", northSprite = "industry_railroad_05_27" }
+                    { sprite = "industry_railroad_05_27" }
                 ),
             }
         },
@@ -9891,7 +9883,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_sewer_01_3", northSprite = "location_sewer_01_3" }
+                    { sprite = "location_sewer_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Sewer_Wall1",
@@ -9942,7 +9934,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_sewer_01_11", northSprite = "location_sewer_01_11" }
+                    { sprite = "location_sewer_01_11" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Sewer_Door_Frame",
@@ -10051,7 +10043,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_military_tent_01_3", northSprite = "location_military_tent_01_3" }
+                    { sprite = "location_military_tent_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Tent_Edge",
@@ -10197,7 +10189,7 @@ local function addIndustrialWallsToMenu()
                         isCorner = true,
                         modData = { wallType = "pillar" }
                     },
-                    { sprite = "location_military_tent_01_67", northSprite = "location_military_tent_01_67" }
+                    { sprite = "location_military_tent_01_67" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Tent_Edge",
@@ -10379,7 +10371,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_8", northSprite = "roofs_01_8" }
+                    { sprite = "roofs_01_8" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Shingles_Inner_2",
@@ -10396,7 +10388,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_9", northSprite = "roofs_01_9" }
+                    { sprite = "roofs_01_9" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Shingles_Inner_3",
@@ -10413,7 +10405,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_10", northSprite = "roofs_01_10" }
+                    { sprite = "roofs_01_10" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Shingles_Valley_1",
@@ -10430,7 +10422,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_11", northSprite = "roofs_01_11" }
+                    { sprite = "roofs_01_11" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Shingles_Valley_2",
@@ -10447,7 +10439,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_12", northSprite = "roofs_01_12" }
+                    { sprite = "roofs_01_12" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Shingles_Valley_3",
@@ -10464,7 +10456,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_13", northSprite = "roofs_01_13" }
+                    { sprite = "roofs_01_13" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Shingles_Outer_1",
@@ -10549,7 +10541,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_21", northSprite = "roofs_01_21" }
+                    { sprite = "roofs_01_21" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Patio_Shingles_Outer",
@@ -10583,7 +10575,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_20", northSprite = "roofs_01_20" }
+                    { sprite = "roofs_01_20" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Shingles_Half_Valley_Outer_1",
@@ -10601,8 +10593,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_01_64",
-                        northSprite = "roofs_01_64"
+                        sprite = "roofs_01_64"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -10621,8 +10612,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_01_65",
-                        northSprite = "roofs_01_65"
+                        sprite = "roofs_01_65"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -10641,8 +10631,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_01_66",
-                        northSprite = "roofs_01_66"
+                        sprite = "roofs_01_66"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -10661,8 +10650,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_01_67",
-                        northSprite = "roofs_01_67"
+                        sprite = "roofs_01_67"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -10681,8 +10669,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_01_68",
-                        northSprite = "roofs_01_68"
+                        sprite = "roofs_01_68"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -10701,8 +10688,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_01_69",
-                        northSprite = "roofs_01_69"
+                        sprite = "roofs_01_69"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -10942,7 +10928,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_8", northSprite = "roofs_02_8" }
+                    { sprite = "roofs_02_8" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shingles_Inner_2",
@@ -10959,7 +10945,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_9", northSprite = "roofs_02_9" }
+                    { sprite = "roofs_02_9" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shingles_Inner_3",
@@ -10976,7 +10962,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_10", northSprite = "roofs_02_10" }
+                    { sprite = "roofs_02_10" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shingles_Valley_1",
@@ -10993,7 +10979,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_11", northSprite = "roofs_02_11" }
+                    { sprite = "roofs_02_11" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shingles_Valley_2",
@@ -11010,7 +10996,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_12", northSprite = "roofs_02_12" }
+                    { sprite = "roofs_02_12" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shingles_Valley_3",
@@ -11027,7 +11013,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_13", northSprite = "roofs_02_13" }
+                    { sprite = "roofs_02_13" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shingles_Outer_1",
@@ -11112,7 +11098,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_21", northSprite = "roofs_02_21" }
+                    { sprite = "roofs_02_21" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Patio_Shingles_Outer",
@@ -11146,7 +11132,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_20", northSprite = "roofs_02_20" }
+                    { sprite = "roofs_02_20" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shingles_Half_Valley_Outer_1",
@@ -11164,8 +11150,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_02_64",
-                        northSprite = "roofs_02_64"
+                        sprite = "roofs_02_64"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -11184,8 +11169,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_02_65",
-                        northSprite = "roofs_02_65"
+                        sprite = "roofs_02_65"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -11204,8 +11188,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_02_66",
-                        northSprite = "roofs_02_66"
+                        sprite = "roofs_02_66"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -11224,8 +11207,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_02_67",
-                        northSprite = "roofs_02_67"
+                        sprite = "roofs_02_67"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -11244,8 +11226,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_02_68",
-                        northSprite = "roofs_02_68"
+                        sprite = "roofs_02_68"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -11264,8 +11245,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_02_69",
-                        northSprite = "roofs_02_69"
+                        sprite = "roofs_02_69"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -11505,7 +11485,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_8", northSprite = "roofs_03_8" }
+                    { sprite = "roofs_03_8" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Brown_Shingles_Inner_2",
@@ -11522,7 +11502,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_9", northSprite = "roofs_03_9" }
+                    { sprite = "roofs_03_9" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Brown_Shingles_Inner_3",
@@ -11539,7 +11519,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_10", northSprite = "roofs_03_10" }
+                    { sprite = "roofs_03_10" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Brown_Shingles_Valley_1",
@@ -11556,7 +11536,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_11", northSprite = "roofs_03_11" }
+                    { sprite = "roofs_03_11" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Brown_Shingles_Valley_2",
@@ -11573,7 +11553,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_12", northSprite = "roofs_03_12" }
+                    { sprite = "roofs_03_12" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Brown_Shingles_Valley_3",
@@ -11590,7 +11570,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_13", northSprite = "roofs_03_13" }
+                    { sprite = "roofs_03_13" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Brown_Shingles_Outer_1",
@@ -11675,7 +11655,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_21", northSprite = "roofs_03_21" }
+                    { sprite = "roofs_03_21" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Brown_Patio_Shingles_Outer",
@@ -11709,7 +11689,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_03_20", northSprite = "roofs_03_20" }
+                    { sprite = "roofs_03_20" }
                 )
             }
         },
@@ -11799,7 +11779,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_8", northSprite = "roofs_04_8" }
+                    { sprite = "roofs_04_8" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Shingles_Inner_2",
@@ -11816,7 +11796,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_9", northSprite = "roofs_04_9" }
+                    { sprite = "roofs_04_9" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Shingles_Inner_3",
@@ -11833,7 +11813,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_10", northSprite = "roofs_04_10" }
+                    { sprite = "roofs_04_10" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Shingles_Valley_1",
@@ -11850,7 +11830,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_11", northSprite = "roofs_04_11" }
+                    { sprite = "roofs_04_11" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Shingles_Valley_2",
@@ -11867,7 +11847,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_12", northSprite = "roofs_04_12" }
+                    { sprite = "roofs_04_12" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Shingles_Valley_3",
@@ -11884,7 +11864,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_13", northSprite = "roofs_04_13" }
+                    { sprite = "roofs_04_13" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Shingles_Outer_1",
@@ -11969,7 +11949,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_21", northSprite = "roofs_04_21" }
+                    { sprite = "roofs_04_21" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Pink_Patio_Shingles_Outer",
@@ -12003,7 +11983,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_04_20", northSprite = "roofs_04_20" }
+                    { sprite = "roofs_04_20" }
                 )
             }
         },
@@ -12093,7 +12073,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_8", northSprite = "roofs_05_8" }
+                    { sprite = "roofs_05_8" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Shingles_Inner_2",
@@ -12110,7 +12090,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_9", northSprite = "roofs_05_9" }
+                    { sprite = "roofs_05_9" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Shingles_Inner_3",
@@ -12127,7 +12107,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_10", northSprite = "roofs_05_10" }
+                    { sprite = "roofs_05_10" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Shingles_Valley_1",
@@ -12144,7 +12124,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_11", northSprite = "roofs_05_11" }
+                    { sprite = "roofs_05_11" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Shingles_Valley_2",
@@ -12161,7 +12141,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_12", northSprite = "roofs_05_12" }
+                    { sprite = "roofs_05_12" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Shingles_Valley_3",
@@ -12178,7 +12158,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_13", northSprite = "roofs_05_13" }
+                    { sprite = "roofs_05_13" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Shingles_Outer_1",
@@ -12263,7 +12243,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_21", northSprite = "roofs_05_21" }
+                    { sprite = "roofs_05_21" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Patio_Shingles_Outer",
@@ -12297,7 +12277,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_20", northSprite = "roofs_05_20" }
+                    { sprite = "roofs_05_20" }
                 )
             }
         },
@@ -12387,7 +12367,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_40", northSprite = "roofs_05_40" }
+                    { sprite = "roofs_05_40" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Shingles_Inner_2",
@@ -12404,7 +12384,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_41", northSprite = "roofs_05_41" }
+                    { sprite = "roofs_05_41" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Shingles_Inner_3",
@@ -12421,7 +12401,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_42", northSprite = "roofs_05_42" }
+                    { sprite = "roofs_05_42" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Shingles_Valley_1",
@@ -12438,7 +12418,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_43", northSprite = "roofs_05_43" }
+                    { sprite = "roofs_05_43" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Shingles_Valley_2",
@@ -12455,7 +12435,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_44", northSprite = "roofs_05_44" }
+                    { sprite = "roofs_05_44" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Shingles_Valley_3",
@@ -12472,7 +12452,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_45", northSprite = "roofs_05_45" }
+                    { sprite = "roofs_05_45" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Shingles_Outer_1",
@@ -12557,7 +12537,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_52", northSprite = "roofs_05_52" }
+                    { sprite = "roofs_05_52" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Patio_Shingles_Outer",
@@ -12591,7 +12571,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_05_53", northSprite = "roofs_05_53" }
+                    { sprite = "roofs_05_53" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Shingles_Half_Valley_Outer_1",
@@ -12609,8 +12589,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_05_72",
-                        northSprite = "roofs_05_72"
+                        sprite = "roofs_05_72"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -12629,8 +12608,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_05_73",
-                        northSprite = "roofs_05_73"
+                        sprite = "roofs_05_73"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -12649,8 +12627,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_05_74",
-                        northSprite = "roofs_05_74"
+                        sprite = "roofs_05_74"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -12669,8 +12646,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_05_75",
-                        northSprite = "roofs_05_75"
+                        sprite = "roofs_05_75"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -12689,8 +12665,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_05_76",
-                        northSprite = "roofs_05_76"
+                        sprite = "roofs_05_76"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -12709,8 +12684,7 @@ local function addRoofingToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "roofs_05_77",
-                        northSprite = "roofs_05_77"
+                        sprite = "roofs_05_77"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -12950,7 +12924,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_40", northSprite = "roofs_01_40" }
+                    { sprite = "roofs_01_40" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shakes_Inner_2",
@@ -12967,7 +12941,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_41", northSprite = "roofs_01_41" }
+                    { sprite = "roofs_01_41" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shakes_Inner_3",
@@ -12984,7 +12958,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_42", northSprite = "roofs_01_42" }
+                    { sprite = "roofs_01_42" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shakes_Valley_1",
@@ -13001,7 +12975,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_43", northSprite = "roofs_01_43" }
+                    { sprite = "roofs_01_43" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shakes_Valley_2",
@@ -13018,7 +12992,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_44", northSprite = "roofs_01_44" }
+                    { sprite = "roofs_01_44" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shakes_Valley_3",
@@ -13035,7 +13009,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_45", northSprite = "roofs_01_45" }
+                    { sprite = "roofs_01_45" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Shakes_Outer_1",
@@ -13120,7 +13094,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_52", northSprite = "roofs_01_52" }
+                    { sprite = "roofs_01_52" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Patio_Shakes_Outer",
@@ -13154,7 +13128,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_01_53", northSprite = "roofs_01_53" }
+                    { sprite = "roofs_01_53" }
                 )
             }
         },
@@ -13261,7 +13235,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_40", northSprite = "roofs_02_40" }
+                    { sprite = "roofs_02_40" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Inner_2",
@@ -13278,7 +13252,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_41", northSprite = "roofs_02_41" }
+                    { sprite = "roofs_02_41" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Inner_3",
@@ -13295,7 +13269,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_42", northSprite = "roofs_02_42" }
+                    { sprite = "roofs_02_42" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Valley_1",
@@ -13312,7 +13286,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_43", northSprite = "roofs_02_43" }
+                    { sprite = "roofs_02_43" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Valley_2",
@@ -13329,7 +13303,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_44", northSprite = "roofs_02_44" }
+                    { sprite = "roofs_02_44" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Valley_3",
@@ -13346,7 +13320,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_45", northSprite = "roofs_02_45" }
+                    { sprite = "roofs_02_45" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Outer_1",
@@ -13431,7 +13405,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_52", northSprite = "roofs_02_52" }
+                    { sprite = "roofs_02_52" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Glass_Patio_Valley",
@@ -13448,7 +13422,7 @@ local function addRoofingToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "roofs_02_53", northSprite = "roofs_02_53" }
+                    { sprite = "roofs_02_53" }
                 )
             }
         },
@@ -15276,7 +15250,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_28", northSprite = "walls_detailing_01_28" }
+                    { sprite = "walls_detailing_01_28" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Vinyl_Trim",
@@ -15307,7 +15281,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_26", northSprite = "walls_detailing_01_26" }
+                    { sprite = "walls_detailing_01_26" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Black_Vinyl_Trim",
@@ -15338,7 +15312,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_34", northSprite = "walls_detailing_01_34" }
+                    { sprite = "walls_detailing_01_34" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Tile_Trim",
@@ -15369,7 +15343,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_39", northSprite = "walls_detailing_01_39" }
+                    { sprite = "walls_detailing_01_39" }
                 )
             }
         },
@@ -15582,7 +15556,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_20", northSprite = "walls_detailing_01_20" }
+                    { sprite = "walls_detailing_01_20" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Simple_Trim",
@@ -15613,7 +15587,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_7", northSprite = "walls_interior_detailing_01_7" }
+                    { sprite = "walls_interior_detailing_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Simple_Trim_Doorway",
@@ -15674,7 +15648,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_39", northSprite = "walls_interior_detailing_01_39" }
+                    { sprite = "walls_interior_detailing_01_39" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Simple_Trim_Doorway",
@@ -15720,7 +15694,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_90", northSprite = "walls_detailing_01_90" }
+                    { sprite = "walls_detailing_01_90" }
                 )
             }
         },
@@ -15757,7 +15731,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_19", northSprite = "walls_detailing_01_19" }
+                    { sprite = "walls_detailing_01_19" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Wood_Panneling_Upper",
@@ -15788,7 +15762,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_59", northSprite = "walls_detailing_01_59" }
+                    { sprite = "walls_detailing_01_59" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Wood_Panneling",
@@ -15819,7 +15793,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_3", northSprite = "walls_interior_detailing_01_3" }
+                    { sprite = "walls_interior_detailing_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Wood_Panneling_Doorway",
@@ -15865,7 +15839,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_83", northSprite = "walls_detailing_01_83" }
+                    { sprite = "walls_detailing_01_83" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Stained_Wood_Wood_Panneling",
@@ -15896,7 +15870,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_detailing_01_87", northSprite = "walls_detailing_01_87" }
+                    { sprite = "walls_detailing_01_87" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Wall_Panneling",
@@ -15927,7 +15901,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_35", northSprite = "walls_interior_detailing_01_35" }
+                    { sprite = "walls_interior_detailing_01_35" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Wall_Panneling_Doorway",
@@ -15973,7 +15947,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_51", northSprite = "walls_interior_detailing_01_51" }
+                    { sprite = "walls_interior_detailing_01_51" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Red_Brick_Wall_Panneling_Doorway",
@@ -16019,7 +15993,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_55", northSprite = "walls_interior_detailing_01_55" }
+                    { sprite = "walls_interior_detailing_01_55" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Dark_Red_Brick_Wall_Panneling_Doorway",
@@ -16065,7 +16039,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_03_63", northSprite = "walls_commercial_03_63" }
+                    { sprite = "walls_commercial_03_63" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Vibrant_Green_Brick_Lower_Third",
@@ -16096,7 +16070,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_03_71", northSprite = "walls_commercial_03_71" }
+                    { sprite = "walls_commercial_03_71" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third",
@@ -16127,7 +16101,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_99", northSprite = "walls_interior_detailing_01_99" }
+                    { sprite = "walls_interior_detailing_01_99" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Brick_Lower_Third_Doorway",
@@ -16176,7 +16150,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_03_47", northSprite = "walls_commercial_03_47" }
+                    { sprite = "walls_commercial_03_47" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Painted_White_Lower_Third",
@@ -16207,7 +16181,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_67", northSprite = "walls_interior_detailing_01_67" }
+                    { sprite = "walls_interior_detailing_01_67" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Painted_White_Lower_Third_Doorway",
@@ -16253,7 +16227,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_71", northSprite = "walls_interior_detailing_01_71" }
+                    { sprite = "walls_interior_detailing_01_71" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Painted_Tan_Lower_Third_Doorway",
@@ -16299,7 +16273,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_03_31", northSprite = "walls_commercial_03_31" }
+                    { sprite = "walls_commercial_03_31" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Cinderblock_Lower_Third",
@@ -16330,7 +16304,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_83", northSprite = "walls_interior_detailing_01_83" }
+                    { sprite = "walls_interior_detailing_01_83" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third",
@@ -16361,7 +16335,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_interior_detailing_01_87", northSprite = "walls_interior_detailing_01_87" }
+                    { sprite = "walls_interior_detailing_01_87" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_White_Cinderblock_Lower_Third_Doorway",
@@ -16407,7 +16381,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_03_23", northSprite = "walls_commercial_03_23" }
+                    { sprite = "walls_commercial_03_23" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Light_Grey_Cinderblock_Lower_Third",
@@ -16438,7 +16412,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_03_55", northSprite = "walls_commercial_03_55" }
+                    { sprite = "walls_commercial_03_55" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Dark_Grey_Cinderblock_Lower_Third",
@@ -16473,8 +16447,7 @@ local function addArchitecturePlusToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "walls_interior_detailing_01_119",
-                        northSprite = "walls_interior_detailing_01_119"
+                        sprite = "walls_interior_detailing_01_119"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -16524,7 +16497,7 @@ local function addArchitecturePlusToMenu()
                         canBarricade = false,
                         isCorner = true
                     },
-                    { sprite = "walls_commercial_03_15", northSprite = "walls_commercial_03_15" }
+                    { sprite = "walls_commercial_03_15" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Stone_Lower_Third",
@@ -16559,8 +16532,7 @@ local function addArchitecturePlusToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "walls_interior_detailing_01_103",
-                        northSprite = "walls_interior_detailing_01_103"
+                        sprite = "walls_interior_detailing_01_103"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -16614,8 +16586,7 @@ local function addArchitecturePlusToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "walls_interior_detailing_01_115",
-                        northSprite = "walls_interior_detailing_01_115"
+                        sprite = "walls_interior_detailing_01_115"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -16682,7 +16653,7 @@ local function addArchitecturePlusToMenu()
                         canPassThrough = true,
                         isThumpable = true,
                     },
-                    { sprite = "walls_detailing_01_67", northSprite = "walls_detailing_01_67" }
+                    { sprite = "walls_detailing_01_67" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Foundation_Corner",
@@ -16696,7 +16667,7 @@ local function addArchitecturePlusToMenu()
                         canPassThrough = true,
                         isThumpable = true,
                     },
-                    { sprite = "walls_detailing_01_66", northSprite = "walls_detailing_01_66" }
+                    { sprite = "walls_detailing_01_66" }
                 ),
             }
         },
@@ -16845,7 +16816,7 @@ local function addArchitecturePlusToMenu()
                         canPassThrough = true,
                         isThumpable = true,
                     },
-                    { sprite = "roofs_accents_01_47", northSprite = "roofs_accents_01_47" }
+                    { sprite = "roofs_accents_01_47" }
                 ),
 
                 BuildingMenu.createObject(
@@ -17062,7 +17033,7 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "fencing_01_52", northSprite = "fencing_01_52" }
+            { sprite = "fencing_01_52" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Post",
@@ -17078,7 +17049,7 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "fencing_01_53", northSprite = "fencing_01_53" }
+            { sprite = "fencing_01_53" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fence_Chain",
@@ -17113,7 +17084,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_60", northSprite = "fencing_01_60" }
+            { sprite = "fencing_01_60" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fence_Chain_Post",
@@ -17128,7 +17099,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_61", northSprite = "fencing_01_61" }
+            { sprite = "fencing_01_61" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Decorative_Wooden_Fence",
@@ -17163,7 +17134,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_13", northSprite = "fencing_01_13" }
+            { sprite = "fencing_01_13" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wooden_Fence",
@@ -17198,7 +17169,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_75", northSprite = "fencing_01_75" }
+            { sprite = "fencing_01_75" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wooden_Fence_Post",
@@ -17213,7 +17184,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_74", northSprite = "fencing_01_74" }
+            { sprite = "fencing_01_74" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence",
@@ -17248,7 +17219,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_68", northSprite = "fencing_01_68" }
+            { sprite = "fencing_01_68" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence_Post",
@@ -17263,7 +17234,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_69", northSprite = "fencing_01_69" }
+            { sprite = "fencing_01_69" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wired_Fence",
@@ -17297,7 +17268,7 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_84", northSprite = "fencing_01_84" }
+            { sprite = "fencing_01_84" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wired_Razor_Fence",
@@ -17332,7 +17303,7 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "fencing_01_92", northSprite = "fencing_01_92" }
+            { sprite = "fencing_01_92" }
         )
     }
 
@@ -17361,7 +17332,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_0", northSprite = "fencing_01_0" }
+            { sprite = "fencing_01_0" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wrought_Iron_Fence",
@@ -17390,7 +17361,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_3", northSprite = "fencing_01_3" }
+            { sprite = "fencing_01_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Picket_Fence_Post",
@@ -17405,7 +17376,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_7", northSprite = "fencing_01_7" }
+            { sprite = "fencing_01_7" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Picket_Fence",
@@ -17434,7 +17405,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_6", northSprite = "fencing_01_6" }
+            { sprite = "fencing_01_6" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grey_Wood_Fence_Post",
@@ -17449,7 +17420,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_exterior_wooden_01_63", northSprite = "walls_exterior_wooden_01_63" }
+            { sprite = "walls_exterior_wooden_01_63" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grey_Wood_Fence",
@@ -17482,7 +17453,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_exterior_wooden_01_62", northSprite = "walls_exterior_wooden_01_62" }
+            { sprite = "walls_exterior_wooden_01_62" }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -17508,7 +17479,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_27", northSprite = "fixtures_railings_01_27" }
+            { sprite = "fixtures_railings_01_27" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Railing",
@@ -17541,7 +17512,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_26", northSprite = "fixtures_railings_01_26" }
+            { sprite = "fixtures_railings_01_26" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Railing_Tall_Post",
@@ -17576,7 +17547,6 @@ local function addLowAndRailingFencesToMenu()
             },
             {
                 sprite = "fixtures_railings_01_34",
-                northSprite = "fixtures_railings_01_34",
                 corner = "fixtures_railings_01_35"
             }
         ),
@@ -17646,7 +17616,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_91", northSprite = "fixtures_railings_01_91" }
+            { sprite = "fixtures_railings_01_91" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing_Post",
@@ -17661,7 +17631,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_67", northSprite = "fixtures_railings_01_67" }
+            { sprite = "fixtures_railings_01_67" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing_Post",
@@ -17676,7 +17646,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_77", northSprite = "fixtures_railings_01_77" }
+            { sprite = "fixtures_railings_01_77" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing",
@@ -17709,7 +17679,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_66", northSprite = "fixtures_railings_01_66" }
+            { sprite = "fixtures_railings_01_66" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing_Tall_Post",
@@ -17744,7 +17714,6 @@ local function addLowAndRailingFencesToMenu()
             },
             {
                 sprite = "fixtures_railings_01_74",
-                northSprite = "fixtures_railings_01_74",
                 corner = "fixtures_railings_01_74"
             }
         ),
@@ -17815,7 +17784,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_131", northSprite = "fixtures_railings_01_131" }
+            { sprite = "fixtures_railings_01_131" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wood_and_Metal_Railing_Post",
@@ -17830,7 +17799,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_31", northSprite = "fixtures_railings_01_31" }
+            { sprite = "fixtures_railings_01_31" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wood_and_Metal_Railing",
@@ -17863,7 +17832,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_30", northSprite = "fixtures_railings_01_30" }
+            { sprite = "fixtures_railings_01_30" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Metal_Railing_Post",
@@ -17878,7 +17847,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_39", northSprite = "fixtures_railings_01_39" }
+            { sprite = "fixtures_railings_01_39" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Metal_Railing",
@@ -17911,7 +17880,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_38", northSprite = "fixtures_railings_01_38" }
+            { sprite = "fixtures_railings_01_38" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Rail_Fence_Post",
@@ -17926,7 +17895,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_115", northSprite = "fixtures_railings_01_115" }
+            { sprite = "fixtures_railings_01_115" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Rail_Fence",
@@ -17959,7 +17928,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_119", northSprite = "fixtures_railings_01_119" }
+            { sprite = "fixtures_railings_01_119" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grey_Rail_Fence",
@@ -17989,7 +17958,7 @@ local function addLowAndRailingFencesToMenu()
         railing
     )
 
-    local stairRailings  ={
+    local stairRailings = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wood_and_Metal_Stair_Railings",
             "Tooltip_Wood_and_Metal_Stair_Railings",
@@ -18136,7 +18105,7 @@ local function addOtherFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "industry_railroad_05_43", northSprite = "industry_railroad_05_43" }
+            { sprite = "industry_railroad_05_43" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Metal_Fence",
@@ -18169,7 +18138,7 @@ local function addOtherFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "industry_bunker_01_27", northSprite = "industry_bunker_01_27" }
+            { sprite = "industry_bunker_01_27" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Red_Metal_Fence",
@@ -18211,7 +18180,7 @@ local function addOtherFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "construction_01_3", northSprite = "construction_01_3" }
+            { sprite = "construction_01_3" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brick_Fence",
@@ -18258,8 +18227,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_40",
-                        northSprite = "floors_interior_tilesandwood_01_40"
+                        sprite = "floors_interior_tilesandwood_01_40"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18272,8 +18240,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_41",
-                        northSprite = "floors_interior_tilesandwood_01_41"
+                        sprite = "floors_interior_tilesandwood_01_41"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18286,8 +18253,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_42",
-                        northSprite = "floors_interior_tilesandwood_01_42"
+                        sprite = "floors_interior_tilesandwood_01_42"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18300,8 +18266,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_43",
-                        northSprite = "floors_interior_tilesandwood_01_43"
+                        sprite = "floors_interior_tilesandwood_01_43"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18314,8 +18279,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_44",
-                        northSprite = "floors_interior_tilesandwood_01_44"
+                        sprite = "floors_interior_tilesandwood_01_44"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18328,8 +18292,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_45",
-                        northSprite = "floors_interior_tilesandwood_01_45"
+                        sprite = "floors_interior_tilesandwood_01_45"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18342,8 +18305,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_46",
-                        northSprite = "floors_interior_tilesandwood_01_46"
+                        sprite = "floors_interior_tilesandwood_01_46"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18356,8 +18318,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_47",
-                        northSprite = "floors_interior_tilesandwood_01_47"
+                        sprite = "floors_interior_tilesandwood_01_47"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18370,8 +18331,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_48",
-                        northSprite = "floors_interior_tilesandwood_01_48"
+                        sprite = "floors_interior_tilesandwood_01_48"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18384,8 +18344,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_49",
-                        northSprite = "floors_interior_tilesandwood_01_49"
+                        sprite = "floors_interior_tilesandwood_01_49"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18398,8 +18357,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_50",
-                        northSprite = "floors_interior_tilesandwood_01_50"
+                        sprite = "floors_interior_tilesandwood_01_50"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18412,8 +18370,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_51",
-                        northSprite = "floors_interior_tilesandwood_01_51"
+                        sprite = "floors_interior_tilesandwood_01_51"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18426,8 +18383,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_52",
-                        northSprite = "floors_interior_tilesandwood_01_52"
+                        sprite = "floors_interior_tilesandwood_01_52"
                     }
                 )
             }
@@ -18445,7 +18401,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_0", northSprite = "floors_interior_carpet_01_0" }
+                    { sprite = "floors_interior_carpet_01_0" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18456,7 +18412,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_1", northSprite = "floors_interior_carpet_01_1" }
+                    { sprite = "floors_interior_carpet_01_1" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18467,7 +18423,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_2", northSprite = "floors_interior_carpet_01_2" }
+                    { sprite = "floors_interior_carpet_01_2" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18478,7 +18434,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_3", northSprite = "floors_interior_carpet_01_3" }
+                    { sprite = "floors_interior_carpet_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18489,7 +18445,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_4", northSprite = "floors_interior_carpet_01_4" }
+                    { sprite = "floors_interior_carpet_01_4" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18500,7 +18456,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_5", northSprite = "floors_interior_carpet_01_5" }
+                    { sprite = "floors_interior_carpet_01_5" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18511,7 +18467,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_6", northSprite = "floors_interior_carpet_01_6" }
+                    { sprite = "floors_interior_carpet_01_6" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18522,7 +18478,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_7", northSprite = "floors_interior_carpet_01_7" }
+                    { sprite = "floors_interior_carpet_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18533,7 +18489,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_8", northSprite = "floors_interior_carpet_01_8" }
+                    { sprite = "floors_interior_carpet_01_8" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18555,7 +18511,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_9", northSprite = "floors_interior_carpet_01_9" }
+                    { sprite = "floors_interior_carpet_01_9" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18566,7 +18522,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_10", northSprite = "floors_interior_carpet_01_10" }
+                    { sprite = "floors_interior_carpet_01_10" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18577,7 +18533,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_11", northSprite = "floors_interior_carpet_01_11" }
+                    { sprite = "floors_interior_carpet_01_11" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18588,7 +18544,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_12", northSprite = "floors_interior_carpet_01_12" }
+                    { sprite = "floors_interior_carpet_01_12" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18599,7 +18555,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_13", northSprite = "floors_interior_carpet_01_13" }
+                    { sprite = "floors_interior_carpet_01_13" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18610,7 +18566,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_14", northSprite = "floors_interior_carpet_01_14" }
+                    { sprite = "floors_interior_carpet_01_14" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -18621,7 +18577,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildWoodenStructureSmall"
                     },
-                    { sprite = "floors_interior_carpet_01_15", northSprite = "floors_interior_carpet_01_15" }
+                    { sprite = "floors_interior_carpet_01_15" }
                 )
             }
         },
@@ -18661,7 +18617,7 @@ local function addFloorsToMenu()
                         isThumpable = true,
                         isCorner = true
                     },
-                    { sprite = "industry_01_39", northSprite = "industry_01_39" }
+                    { sprite = "industry_01_39" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Steel_Bars_Floor",
@@ -18689,7 +18645,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildMetalStructureMedium"
                     },
-                    { sprite = "industry_01_7", northSprite = "industry_01_7" }
+                    { sprite = "industry_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Green_Industrial_Floor",
@@ -18700,7 +18656,7 @@ local function addFloorsToMenu()
                     {
                         completionSound = "BuildMetalStructureMedium"
                     },
-                    { sprite = "industry_01_6", northSprite = "industry_01_6" }
+                    { sprite = "industry_01_6" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Brown_Railroad_Metal_Panel",
@@ -18795,8 +18751,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_2",
-                        northSprite = "floors_interior_tilesandwood_01_2"
+                        sprite = "floors_interior_tilesandwood_01_2"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18809,8 +18764,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_3",
-                        northSprite = "floors_interior_tilesandwood_01_3"
+                        sprite = "floors_interior_tilesandwood_01_3"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18823,8 +18777,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_4",
-                        northSprite = "floors_interior_tilesandwood_01_4"
+                        sprite = "floors_interior_tilesandwood_01_4"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18837,8 +18790,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_5",
-                        northSprite = "floors_interior_tilesandwood_01_5"
+                        sprite = "floors_interior_tilesandwood_01_5"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18851,8 +18803,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_10",
-                        northSprite = "floors_interior_tilesandwood_01_10"
+                        sprite = "floors_interior_tilesandwood_01_10"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18865,8 +18816,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_13",
-                        northSprite = "floors_interior_tilesandwood_01_13"
+                        sprite = "floors_interior_tilesandwood_01_13"
                     }
                 )
             }
@@ -18885,8 +18835,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_7",
-                        northSprite = "floors_interior_tilesandwood_01_7"
+                        sprite = "floors_interior_tilesandwood_01_7"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18899,8 +18848,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_20",
-                        northSprite = "floors_interior_tilesandwood_01_20"
+                        sprite = "floors_interior_tilesandwood_01_20"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18913,8 +18861,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_21",
-                        northSprite = "floors_interior_tilesandwood_01_21"
+                        sprite = "floors_interior_tilesandwood_01_21"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18927,8 +18874,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_22",
-                        northSprite = "floors_interior_tilesandwood_01_22"
+                        sprite = "floors_interior_tilesandwood_01_22"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18941,8 +18887,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_28",
-                        northSprite = "floors_interior_tilesandwood_01_28"
+                        sprite = "floors_interior_tilesandwood_01_28"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18955,8 +18900,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_29",
-                        northSprite = "floors_interior_tilesandwood_01_29"
+                        sprite = "floors_interior_tilesandwood_01_29"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18969,8 +18913,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_30",
-                        northSprite = "floors_interior_tilesandwood_01_30"
+                        sprite = "floors_interior_tilesandwood_01_30"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -18983,8 +18926,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_31",
-                        northSprite = "floors_interior_tilesandwood_01_31"
+                        sprite = "floors_interior_tilesandwood_01_31"
                     }
                 )
             }
@@ -19003,8 +18945,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_0",
-                        northSprite = "floors_interior_tilesandwood_01_0"
+                        sprite = "floors_interior_tilesandwood_01_0"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19017,8 +18958,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_1",
-                        northSprite = "floors_interior_tilesandwood_01_1"
+                        sprite = "floors_interior_tilesandwood_01_1"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19031,8 +18971,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_8",
-                        northSprite = "floors_interior_tilesandwood_01_8"
+                        sprite = "floors_interior_tilesandwood_01_8"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19045,8 +18984,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "location_restaurant_spiffos_01_39",
-                        northSprite = "location_restaurant_spiffos_01_39"
+                        sprite = "location_restaurant_spiffos_01_39"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19059,8 +18997,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_9",
-                        northSprite = "floors_interior_tilesandwood_01_9"
+                        sprite = "floors_interior_tilesandwood_01_9"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19073,8 +19010,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_12",
-                        northSprite = "floors_interior_tilesandwood_01_12"
+                        sprite = "floors_interior_tilesandwood_01_12"
                     }
                 )
             }
@@ -19093,8 +19029,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_16",
-                        northSprite = "floors_interior_tilesandwood_01_16"
+                        sprite = "floors_interior_tilesandwood_01_16"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19107,8 +19042,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_18",
-                        northSprite = "floors_interior_tilesandwood_01_18"
+                        sprite = "floors_interior_tilesandwood_01_18"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19121,8 +19055,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_19",
-                        northSprite = "floors_interior_tilesandwood_01_19"
+                        sprite = "floors_interior_tilesandwood_01_19"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19135,8 +19068,7 @@ local function addFloorsToMenu()
                         completionSound = "BuildWoodenStructureSmall"
                     },
                     {
-                        sprite = "floors_interior_tilesandwood_01_24",
-                        northSprite = "floors_interior_tilesandwood_01_24"
+                        sprite = "floors_interior_tilesandwood_01_24"
                     }
                 )
             }
@@ -19155,8 +19087,7 @@ local function addFloorsToMenu()
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
-                        sprite = "floors_exterior_tilesandstone_01_0",
-                        northSprite = "floors_exterior_tilesandstone_01_0"
+                        sprite = "floors_exterior_tilesandstone_01_0"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19169,8 +19100,7 @@ local function addFloorsToMenu()
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
-                        sprite = "floors_exterior_tilesandstone_01_1",
-                        northSprite = "floors_exterior_tilesandstone_01_1"
+                        sprite = "floors_exterior_tilesandstone_01_1"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19183,8 +19113,7 @@ local function addFloorsToMenu()
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
-                        sprite = "floors_exterior_tilesandstone_01_2",
-                        northSprite = "floors_exterior_tilesandstone_01_2"
+                        sprite = "floors_exterior_tilesandstone_01_2"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19197,8 +19126,7 @@ local function addFloorsToMenu()
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
-                        sprite = "floors_exterior_tilesandstone_01_3",
-                        northSprite = "floors_exterior_tilesandstone_01_3"
+                        sprite = "floors_exterior_tilesandstone_01_3"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19211,8 +19139,7 @@ local function addFloorsToMenu()
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
-                        sprite = "floors_exterior_tilesandstone_01_4",
-                        northSprite = "floors_exterior_tilesandstone_01_4"
+                        sprite = "floors_exterior_tilesandstone_01_4"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19225,8 +19152,7 @@ local function addFloorsToMenu()
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
-                        sprite = "floors_exterior_tilesandstone_01_5",
-                        northSprite = "floors_exterior_tilesandstone_01_5"
+                        sprite = "floors_exterior_tilesandstone_01_5"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -19239,8 +19165,7 @@ local function addFloorsToMenu()
                         completionSound = "DropSoilFromGravelBag"
                     },
                     {
-                        sprite = "floors_exterior_tilesandstone_01_6",
-                        northSprite = "floors_exterior_tilesandstone_01_6"
+                        sprite = "floors_exterior_tilesandstone_01_6"
                     }
                 )
             }
@@ -19536,7 +19461,7 @@ local function addRoadworkAsphaltToMenu()
             {
                 completionSound = "DropSoilFromGravelBag"
             },
-            { sprite = "floors_exterior_street_01_0", northSprite = "floors_exterior_street_01_0" }
+            { sprite = "floors_exterior_street_01_0" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Concrete_Corner",
@@ -20109,8 +20034,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_0",
-                northSprite = "blends_streetoverlays_01_0",
+                sprite = "blends_streetoverlays_01_0"
             }
         ),
         BuildingMenu.createObject(
@@ -20127,8 +20051,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_1",
-                northSprite = "blends_streetoverlays_01_1",
+                sprite = "blends_streetoverlays_01_1"
             }
         ),
         BuildingMenu.createObject(
@@ -20145,8 +20068,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_2",
-                northSprite = "blends_streetoverlays_01_2",
+                sprite = "blends_streetoverlays_01_2"
             }
         ),
         BuildingMenu.createObject(
@@ -20163,8 +20085,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_3",
-                northSprite = "blends_streetoverlays_01_3",
+                sprite = "blends_streetoverlays_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -20181,8 +20102,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_4",
-                northSprite = "blends_streetoverlays_01_4",
+                sprite = "blends_streetoverlays_01_4"
             }
         ),
         BuildingMenu.createObject(
@@ -20199,8 +20119,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_5",
-                northSprite = "blends_streetoverlays_01_5",
+                sprite = "blends_streetoverlays_01_5"
             }
         ),
         BuildingMenu.createObject(
@@ -20217,8 +20136,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_6",
-                northSprite = "blends_streetoverlays_01_6",
+                sprite = "blends_streetoverlays_01_6"
             }
         ),
         BuildingMenu.createObject(
@@ -20235,8 +20153,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_7",
-                northSprite = "blends_streetoverlays_01_7",
+                sprite = "blends_streetoverlays_01_7"
             }
         ),
         BuildingMenu.createObject(
@@ -20253,8 +20170,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_8",
-                northSprite = "blends_streetoverlays_01_8",
+                sprite = "blends_streetoverlays_01_8"
             }
         ),
         BuildingMenu.createObject(
@@ -20271,8 +20187,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_9",
-                northSprite = "blends_streetoverlays_01_9",
+                sprite = "blends_streetoverlays_01_9"
             }
         ),
         BuildingMenu.createObject(
@@ -20289,8 +20204,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_10",
-                northSprite = "blends_streetoverlays_01_10",
+                sprite = "blends_streetoverlays_01_10"
             }
         ),
         BuildingMenu.createObject(
@@ -20307,8 +20221,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_11",
-                northSprite = "blends_streetoverlays_01_11",
+                sprite = "blends_streetoverlays_01_11"
             }
         ),
         BuildingMenu.createObject(
@@ -20325,8 +20238,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_12",
-                northSprite = "blends_streetoverlays_01_12",
+                sprite = "blends_streetoverlays_01_12"
             }
         ),
         BuildingMenu.createObject(
@@ -20343,8 +20255,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_13",
-                northSprite = "blends_streetoverlays_01_13",
+                sprite = "blends_streetoverlays_01_13"
             }
         ),
         BuildingMenu.createObject(
@@ -20361,8 +20272,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_14",
-                northSprite = "blends_streetoverlays_01_14",
+                sprite = "blends_streetoverlays_01_14"
             }
         ),
         BuildingMenu.createObject(
@@ -20379,8 +20289,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_15",
-                northSprite = "blends_streetoverlays_01_15",
+                sprite = "blends_streetoverlays_01_15"
             }
         ),
         BuildingMenu.createObject(
@@ -20397,8 +20306,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_16",
-                northSprite = "blends_streetoverlays_01_16",
+                sprite = "blends_streetoverlays_01_16"
             }
         ),
         BuildingMenu.createObject(
@@ -20415,8 +20323,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_17",
-                northSprite = "blends_streetoverlays_01_17",
+                sprite = "blends_streetoverlays_01_17"
             }
         ),
         BuildingMenu.createObject(
@@ -20433,8 +20340,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_18",
-                northSprite = "blends_streetoverlays_01_18",
+                sprite = "blends_streetoverlays_01_18"
             }
         ),
         BuildingMenu.createObject(
@@ -20451,8 +20357,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_19",
-                northSprite = "blends_streetoverlays_01_19",
+                sprite = "blends_streetoverlays_01_19"
             }
         ),
         BuildingMenu.createObject(
@@ -20469,8 +20374,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_20",
-                northSprite = "blends_streetoverlays_01_20",
+                sprite = "blends_streetoverlays_01_20"
             }
         ),
         BuildingMenu.createObject(
@@ -20487,8 +20391,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_21",
-                northSprite = "blends_streetoverlays_01_21",
+                sprite = "blends_streetoverlays_01_21"
             }
         ),
         BuildingMenu.createObject(
@@ -20505,8 +20408,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_22",
-                northSprite = "blends_streetoverlays_01_22",
+                sprite = "blends_streetoverlays_01_22"
             }
         ),
         BuildingMenu.createObject(
@@ -20523,8 +20425,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_23",
-                northSprite = "blends_streetoverlays_01_23",
+                sprite = "blends_streetoverlays_01_23"
             }
         ),
         BuildingMenu.createObject(
@@ -20541,8 +20442,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_24",
-                northSprite = "blends_streetoverlays_01_24",
+                sprite = "blends_streetoverlays_01_24"
             }
         ),
         BuildingMenu.createObject(
@@ -20559,8 +20459,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_25",
-                northSprite = "blends_streetoverlays_01_25",
+                sprite = "blends_streetoverlays_01_25"
             }
         ),
         BuildingMenu.createObject(
@@ -20577,8 +20476,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_26",
-                northSprite = "blends_streetoverlays_01_26",
+                sprite = "blends_streetoverlays_01_26"
             }
         ),
         BuildingMenu.createObject(
@@ -20595,8 +20493,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_27",
-                northSprite = "blends_streetoverlays_01_27",
+                sprite = "blends_streetoverlays_01_27"
             }
         ),
         BuildingMenu.createObject(
@@ -20613,8 +20510,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_28",
-                northSprite = "blends_streetoverlays_01_28",
+                sprite = "blends_streetoverlays_01_28"
             }
         ),
         BuildingMenu.createObject(
@@ -20631,8 +20527,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_29",
-                northSprite = "blends_streetoverlays_01_29",
+                sprite = "blends_streetoverlays_01_29"
             }
         ),
         BuildingMenu.createObject(
@@ -20649,8 +20544,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_30",
-                northSprite = "blends_streetoverlays_01_30",
+                sprite = "blends_streetoverlays_01_30"
             }
         ),
         BuildingMenu.createObject(
@@ -20667,8 +20561,7 @@ local function addRoadworkOverlaysToMenu()
                 isCorner = true
             },
             {
-                sprite = "blends_streetoverlays_01_31",
-                northSprite = "blends_streetoverlays_01_31",
+                sprite = "blends_streetoverlays_01_31"
             }
         ),
     }
@@ -20994,8 +20887,7 @@ local function addRoadworkSidewalkEdgeToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_curbs_01_0",
-                northSprite = "street_curbs_01_0"
+                sprite = "street_curbs_01_0"
             }
         ),
         BuildingMenu.createObject(
@@ -21014,8 +20906,7 @@ local function addRoadworkSidewalkEdgeToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_curbs_01_1",
-                northSprite = "street_curbs_01_1"
+                sprite = "street_curbs_01_1"
             }
         ),
         BuildingMenu.createObject(
@@ -21056,8 +20947,7 @@ local function addRoadworkSidewalkEdgeToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_curbs_01_3",
-                northSprite = "street_curbs_01_3"
+                sprite = "street_curbs_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -21436,8 +21326,7 @@ local function addRoadworkSidewalkEdgeToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_curbs_01_56",
-                northSprite = "street_curbs_01_56"
+                sprite = "street_curbs_01_56"
             }
         ),
         BuildingMenu.createObject(
@@ -21484,7 +21373,7 @@ local function addRoadworkDirtandGrassToMenu()
             true,
             {
             },
-            { sprite = "blends_natural_01_64", northSprite = "blends_natural_01_64" }
+            { sprite = "blends_natural_01_64" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Dirt_Corner",
@@ -21515,7 +21404,7 @@ local function addRoadworkDirtandGrassToMenu()
             true,
             {
             },
-            { sprite = "blends_natural_01_16", northSprite = "blends_natural_01_16" }
+            { sprite = "blends_natural_01_16" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Corner",
@@ -21567,7 +21456,7 @@ local function addRoadworkDirtandGrassToMenu()
             true,
             {
             },
-            { sprite = "blends_natural_01_32", northSprite = "blends_natural_01_32" }
+            { sprite = "blends_natural_01_32" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Corner",
@@ -21619,7 +21508,7 @@ local function addRoadworkDirtandGrassToMenu()
             true,
             {
             },
-            { sprite = "blends_natural_01_48", northSprite = "blends_natural_01_48" }
+            { sprite = "blends_natural_01_48" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grass_Corner",
@@ -21957,8 +21846,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_trafficlines_curb_white_full_14",
-                northSprite = "street_trafficlines_curb_white_full_14",
+                sprite = "street_trafficlines_curb_white_full_14"
             }
         ),
         BuildingMenu.createObject(
@@ -21976,8 +21864,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_trafficlines_curb_white_full_15",
-                northSprite = "street_trafficlines_curb_white_full_15",
+                sprite = "street_trafficlines_curb_white_full_15"
             }
         ),
         BuildingMenu.createObject(
@@ -22242,8 +22129,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_trafficlines_curb_white_full_47",
-                northSprite = "street_trafficlines_curb_white_full_47",
+                sprite = "street_trafficlines_curb_white_full_47"
             }
         ),
         BuildingMenu.createObject(
@@ -22261,8 +22147,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_trafficlines_curb_white_full_48",
-                northSprite = "street_trafficlines_curb_white_full_48",
+                sprite = "street_trafficlines_curb_white_full_48"
             }
         ),
         BuildingMenu.createObject(
@@ -22337,8 +22222,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_trafficlines_curb_white_full_55",
-                northSprite = "street_trafficlines_curb_white_full_55",
+                sprite = "street_trafficlines_curb_white_full_55"
             }
         ),
         BuildingMenu.createObject(
@@ -22755,8 +22639,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_trafficlines_curb_white_full_109",
-                northSprite = "street_trafficlines_curb_white_full_109",
+                sprite = "street_trafficlines_curb_white_full_109"
             }
         ),
         BuildingMenu.createObject(
@@ -22945,8 +22828,7 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
                 isCorner = true
             },
             {
-                sprite = "street_trafficlines_curb_white_full_139",
-                northSprite = "street_trafficlines_curb_white_full_139",
+                sprite = "street_trafficlines_curb_white_full_139"
             }
         ),
         BuildingMenu.createObject(
@@ -23334,7 +23216,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             },
             {
                 sprite = "street_trafficlines_curb_yellow_full_14",
-                northSprite = "street_trafficlines_curb_yellow_full_14",
             }
         ),
         BuildingMenu.createObject(
@@ -23353,7 +23234,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             },
             {
                 sprite = "street_trafficlines_curb_yellow_full_15",
-                northSprite = "street_trafficlines_curb_yellow_full_15",
             }
         ),
         BuildingMenu.createObject(
@@ -23619,7 +23499,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             },
             {
                 sprite = "street_trafficlines_curb_yellow_full_47",
-                northSprite = "street_trafficlines_curb_yellow_full_47",
             }
         ),
         BuildingMenu.createObject(
@@ -23638,7 +23517,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             },
             {
                 sprite = "street_trafficlines_curb_yellow_full_48",
-                northSprite = "street_trafficlines_curb_yellow_full_48",
             }
         ),
         BuildingMenu.createObject(
@@ -23714,7 +23592,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             },
             {
                 sprite = "street_trafficlines_curb_yellow_full_55",
-                northSprite = "street_trafficlines_curb_yellow_full_55",
             }
         ),
         BuildingMenu.createObject(
@@ -24132,7 +24009,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             },
             {
                 sprite = "street_trafficlines_curb_yellow_full_109",
-                northSprite = "street_trafficlines_curb_yellow_full_109",
             }
         ),
         BuildingMenu.createObject(
@@ -24322,7 +24198,6 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
             },
             {
                 sprite = "street_trafficlines_curb_yellow_full_139",
-                northSprite = "street_trafficlines_curb_yellow_full_139",
             }
         ),
         BuildingMenu.createObject(
@@ -25076,8 +24951,7 @@ local function addCommercialCountersToMenu()
                         isThumpable = true
                     },
                     {
-                        sprite = "location_entertainment_theatre_01_16",
-                        northSprite = "location_entertainment_theatre_01_16"
+                        sprite = "location_entertainment_theatre_01_16"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -25720,7 +25594,7 @@ local function addCratesToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "carpentry_01_16", northSprite = "carpentry_01_16" }
+            { sprite = "carpentry_01_16" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26057,7 +25931,7 @@ local function addClothesRacksToMenu()
             {
                 completionSound = "BuildWoodenStructureSmall"
             },
-            { sprite = "location_shop_mall_01_64", northSprite = "location_shop_mall_01_64" }
+            { sprite = "location_shop_mall_01_64" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26068,7 +25942,7 @@ local function addClothesRacksToMenu()
             {
                 completionSound = "BuildWoodenStructureSmall"
             },
-            { sprite = "location_shop_mall_01_72", northSprite = "location_shop_mall_01_72" }
+            { sprite = "location_shop_mall_01_72" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26084,9 +25958,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_generic_01_52",
-                northSprite = "location_shop_generic_01_52",
-                eastSprite = "location_shop_generic_01_52",
-                southSprite = "location_shop_generic_01_52"
             }
         ),
         BuildingMenu.createObject(
@@ -26143,9 +26014,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_65",
-                northSprite = "location_shop_mall_01_65",
-                eastSprite = "location_shop_mall_01_65",
-                southSprite = "location_shop_mall_01_65"
             }
         ),
         BuildingMenu.createObject(
@@ -26163,9 +26031,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_66",
-                northSprite = "location_shop_mall_01_66",
-                eastSprite = "location_shop_mall_01_66",
-                southSprite = "location_shop_mall_01_66"
             }
         ),
         BuildingMenu.createObject(
@@ -26183,9 +26048,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_67",
-                northSprite = "location_shop_mall_01_67",
-                eastSprite = "location_shop_mall_01_67",
-                southSprite = "location_shop_mall_01_67"
             }
         ),
         BuildingMenu.createObject(
@@ -26203,9 +26065,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_68",
-                northSprite = "location_shop_mall_01_68",
-                eastSprite = "location_shop_mall_01_68",
-                southSprite = "location_shop_mall_01_68"
             }
         ),
         BuildingMenu.createObject(
@@ -26223,9 +26082,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_69",
-                northSprite = "location_shop_mall_01_69",
-                eastSprite = "location_shop_mall_01_69",
-                southSprite = "location_shop_mall_01_69"
             }
         ),
         BuildingMenu.createObject(
@@ -26243,9 +26099,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_70",
-                northSprite = "location_shop_mall_01_70",
-                eastSprite = "location_shop_mall_01_70",
-                southSprite = "location_shop_mall_01_70"
             }
         ),
         BuildingMenu.createObject(
@@ -26263,9 +26116,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_73",
-                northSprite = "location_shop_mall_01_73",
-                eastSprite = "location_shop_mall_01_73",
-                southSprite = "location_shop_mall_01_73"
             }
         ),
         BuildingMenu.createObject(
@@ -26283,9 +26133,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_74",
-                northSprite = "location_shop_mall_01_74",
-                eastSprite = "location_shop_mall_01_74",
-                southSprite = "location_shop_mall_01_74"
             }
         ),
         BuildingMenu.createObject(
@@ -26303,9 +26150,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_75",
-                northSprite = "location_shop_mall_01_75",
-                eastSprite = "location_shop_mall_01_75",
-                southSprite = "location_shop_mall_01_75"
             }
         ),
         BuildingMenu.createObject(
@@ -26323,9 +26167,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_76",
-                northSprite = "location_shop_mall_01_76",
-                eastSprite = "location_shop_mall_01_76",
-                southSprite = "location_shop_mall_01_76"
             }
         ),
         BuildingMenu.createObject(
@@ -26343,9 +26184,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_77",
-                northSprite = "location_shop_mall_01_77",
-                eastSprite = "location_shop_mall_01_77",
-                southSprite = "location_shop_mall_01_77"
             }
         ),
         BuildingMenu.createObject(
@@ -26363,9 +26201,6 @@ local function addClothesRacksToMenu()
             },
             {
                 sprite = "location_shop_mall_01_78",
-                northSprite = "location_shop_mall_01_78",
-                eastSprite = "location_shop_mall_01_78",
-                southSprite = "location_shop_mall_01_78"
             }
         )
     }
@@ -26392,7 +26227,7 @@ local function addTrashCansToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "trashcontainers_01_16", northSprite = "trashcontainers_01_16" }
+            { sprite = "trashcontainers_01_16" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26418,7 +26253,7 @@ local function addTrashCansToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "trashcontainers_01_20", northSprite = "trashcontainers_01_20" }
+            { sprite = "trashcontainers_01_20" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26431,7 +26266,7 @@ local function addTrashCansToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "trashcontainers_01_21", northSprite = "trashcontainers_01_21" }
+            { sprite = "trashcontainers_01_21" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26457,7 +26292,7 @@ local function addTrashCansToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "location_shop_mall_01_44", northSprite = "location_shop_mall_01_44" }
+            { sprite = "location_shop_mall_01_44" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26470,7 +26305,7 @@ local function addTrashCansToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = true
             },
-            { sprite = "trashcontainers_01_17", northSprite = "trashcontainers_01_17" }
+            { sprite = "trashcontainers_01_17" }
         ),
         BuildingMenu.createObject(
             "",
@@ -26721,9 +26556,6 @@ local function addContainersOthersToMenu()
             },
             {
                 sprite = "location_shop_mall_01_65",
-                northSprite = "location_shop_mall_01_65",
-                eastSprite = "location_shop_mall_01_65",
-                southSprite = "location_shop_mall_01_65"
             }
         ),
         BuildingMenu.createObject(
@@ -26742,9 +26574,6 @@ local function addContainersOthersToMenu()
             },
             {
                 sprite = "location_shop_mall_01_66",
-                northSprite = "location_shop_mall_01_66",
-                eastSprite = "location_shop_mall_01_66",
-                southSprite = "location_shop_mall_01_66"
             }
         ),
         BuildingMenu.createObject(
@@ -27011,7 +26840,7 @@ local function addTablesToMenu()
                     {
                         completionSound = "BuildWoodenStructureLarge"
                     },
-                    { sprite = "furniture_tables_high_01_7", northSprite = "furniture_tables_high_01_7" }
+                    { sprite = "furniture_tables_high_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -27022,7 +26851,7 @@ local function addTablesToMenu()
                     {
                         completionSound = "BuildWoodenStructureLarge"
                     },
-                    { sprite = "furniture_tables_high_01_6", northSprite = "furniture_tables_high_01_6" }
+                    { sprite = "furniture_tables_high_01_6" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -27047,7 +26876,7 @@ local function addTablesToMenu()
                     {
                         completionSound = "BuildWoodenStructureLarge"
                     },
-                    { sprite = "furniture_tables_high_01_15", northSprite = "furniture_tables_high_01_15" }
+                    { sprite = "furniture_tables_high_01_15" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -27058,7 +26887,7 @@ local function addTablesToMenu()
                     {
                         completionSound = "BuildWoodenStructureLarge"
                     },
-                    { sprite = "furniture_tables_high_01_16", northSprite = "furniture_tables_high_01_16" }
+                    { sprite = "furniture_tables_high_01_16" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -28966,10 +28795,7 @@ local function addSeatingFurnitureToMenu()
                         isCorner = true
                     },
                     {
-                        sprite = "location_restaurant_bar_01_26",
-                        northSprite = "location_restaurant_bar_01_26",
-                        eastSprite = "location_restaurant_bar_01_26",
-                        southSprite = "location_restaurant_bar_01_26"
+                        sprite = "location_restaurant_bar_01_26"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -29276,8 +29102,7 @@ local function addBookshelvesToMenu()
 
             },
             {
-                sprite = "furniture_shelving_01_8",
-                northSprite = "furniture_shelving_01_8"
+                sprite = "furniture_shelving_01_8"
             }
         )
     }
@@ -29676,6 +29501,24 @@ local function addRugsToMenu()
                 isCorner = true
             },
             {
+                sprite = "floors_rugs_01_60",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Rug_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.FloorRugRecipe,
+            true,
+            {
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
                 sprite = "floors_rugs_01_8",
                 northSprite = "floors_rugs_01_14",
                 eastSprite = "floors_rugs_01_15",
@@ -29741,6 +29584,24 @@ local function addRugsToMenu()
             {
                 sprite = "floors_rugs_01_84",
                 northSprite = "floors_rugs_01_85"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Rug_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.FloorRugRecipe,
+            true,
+            {
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "floors_rugs_01_61",
             }
         ),
         BuildingMenu.createObject(
@@ -29840,6 +29701,24 @@ local function addRugsToMenu()
                 isCorner = true
             },
             {
+                sprite = "floors_rugs_01_62",
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Rug_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.FloorRugRecipe,
+            true,
+            {
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
                 sprite = "floors_rugs_01_78",
                 northSprite = "floors_rugs_01_72",
                 eastSprite = "floors_rugs_01_73",
@@ -29905,6 +29784,24 @@ local function addRugsToMenu()
             {
                 sprite = "floors_rugs_01_108",
                 northSprite = "floors_rugs_01_109"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Rug_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            BuildingMenu.FloorRugRecipe,
+            true,
+            {
+                needToBeAgainstWall = false,
+                blockAllTheSquare = false,
+                canPassThrough = true,
+                canBarricade = false,
+                isThumpable = true,
+                isCorner = true
+            },
+            {
+                sprite = "floors_rugs_01_87",
             }
         ),
         BuildingMenu.createObject(
@@ -30091,9 +29988,6 @@ local function addRugsToMenu()
             },
             {
                 sprite = "floors_rugs_01_68",
-                northSprite = "floors_rugs_01_68",
-                eastSprite = "floors_rugs_01_68",
-                southSprite = "floors_rugs_01_68"
             }
         ),
         BuildingMenu.createObject(
@@ -31463,9 +31357,6 @@ local function addOtherDecorationsToMenu()
                     },
                     {
                         sprite = "street_decoration_01_12",
-                        northSprite = "street_decoration_01_12",
-                        eastSprite = "street_decoration_01_12",
-                        southSprite = "street_decoration_01_12"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -31516,9 +31407,6 @@ local function addOtherDecorationsToMenu()
                     },
                     {
                         sprite = "street_decoration_01_26",
-                        northSprite = "street_decoration_01_26",
-                        eastSprite = "street_decoration_01_26",
-                        southSprite = "street_decoration_01_26"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -31533,9 +31421,6 @@ local function addOtherDecorationsToMenu()
                     },
                     {
                         sprite = "street_decoration_01_27",
-                        northSprite = "street_decoration_01_27",
-                        eastSprite = "street_decoration_01_27",
-                        southSprite = "street_decoration_01_27"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -31756,7 +31641,6 @@ local function addOtherDecorationsToMenu()
                     },
                     {
                         sprite = "location_community_cemetary_01_11",
-                        northSprite = "location_community_cemetary_01_11"
                     }
                 )
             }
@@ -31973,7 +31857,7 @@ local function addIndoorPlantsToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "vegetation_indoor_01_7", northSprite = "vegetation_indoor_01_7" }
+            { sprite = "vegetation_indoor_01_7" }
         ),
         BuildingMenu.createObject(
             "",
@@ -31987,7 +31871,7 @@ local function addIndoorPlantsToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "vegetation_indoor_01_8", northSprite = "vegetation_indoor_01_8" }
+            { sprite = "vegetation_indoor_01_8" }
         ),
         BuildingMenu.createObject(
             "",
@@ -32001,7 +31885,7 @@ local function addIndoorPlantsToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "location_shop_mall_01_47", northSprite = "location_shop_mall_01_47" }
+            { sprite = "location_shop_mall_01_47" }
         ),
         BuildingMenu.createObject(
             "",
@@ -32015,7 +31899,7 @@ local function addIndoorPlantsToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "vegetation_indoor_01_9", northSprite = "vegetation_indoor_01_9" }
+            { sprite = "vegetation_indoor_01_9" }
         ),
         BuildingMenu.createObject(
             "",
@@ -32029,7 +31913,7 @@ local function addIndoorPlantsToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "vegetation_indoor_01_10", northSprite = "vegetation_indoor_01_10" }
+            { sprite = "vegetation_indoor_01_10" }
         ),
         BuildingMenu.createObject(
             "",
@@ -32043,7 +31927,7 @@ local function addIndoorPlantsToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "vegetation_indoor_01_11", northSprite = "vegetation_indoor_01_11" }
+            { sprite = "vegetation_indoor_01_11" }
         ),
         BuildingMenu.createObject(
             "",
@@ -32057,7 +31941,7 @@ local function addIndoorPlantsToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "vegetation_indoor_01_12", northSprite = "vegetation_indoor_01_12" }
+            { sprite = "vegetation_indoor_01_12" }
         )
     }
 
@@ -33200,7 +33084,7 @@ local function addGeneratorToMenu()
             {
                 completionSound = "BuildMetalStructureMedium"
             },
-            { sprite = "appliances_misc_01_0", northSprite = "appliances_misc_01_0" }
+            { sprite = "appliances_misc_01_0" }
         ),
     }
 
@@ -33318,7 +33202,7 @@ local function addWaterWellToMenu()
                 completionSound = "BuildFenceCairn",
                 maxTime = 2400
             },
-            { sprite = "camping_01_16", northSprite = "camping_01_16" }
+            { sprite = "camping_01_16" }
         ),
     }
 

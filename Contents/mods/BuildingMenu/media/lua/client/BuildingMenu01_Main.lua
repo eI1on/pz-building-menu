@@ -185,11 +185,9 @@ BuildingMenu.ItemsAlternatives = {
         "ImprovisedGlass.GlassPane",
         "filcher.SFGlassPanel",
         "Base.SmallGlassPanel",
-        "damnCraft.GlassPaneSmall",
     },
     GlassPaneBig = {
         "Base.BigGlassPanel",
-        "damnCraft.GlassPaneLarge",
     },
 }
 
@@ -501,9 +499,9 @@ function BuildingMenu.getTextureFromItem(item)
         return cacheEntry.textureName;
     end
     -- if for some reason the item wasn't cached, we fall back to extracting the texture name
-    local texNameOnly = BuildingMenu.getTexNameFromItem(item)
-    BuildingMenu.ItemInstances[item:getFullName()] = { item = item, textureName = texNameOnly }
-    return texNameOnly
+    local texNameOnly = BuildingMenu.getTexNameFromItem(item);
+    BuildingMenu.ItemInstances[item:getFullName()] = { item = item, textureName = texNameOnly };
+    return texNameOnly;
 end
 
 --- Tooltip check for a specific tool category

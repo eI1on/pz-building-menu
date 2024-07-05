@@ -84,7 +84,7 @@ local function addGreenhouseWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_01_35", northSprite = "walls_exterior_house_01_35" }
+            { sprite = "walls_exterior_house_01_35" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Frame_Glass_Roof_Slope_Wall_1",
@@ -290,7 +290,7 @@ local function addGreenhouseWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "walls_exterior_house_01_51", northSprite = "walls_exterior_house_01_51" }
+            { sprite = "walls_exterior_house_01_51" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brown_Frame_Glass_Roof_Slope_Wall_1",
@@ -492,7 +492,7 @@ local function addGreenhouseWallsToMenu()
                 isCorner = true,
                 modData = { wallType = "pillar" }
             },
-            { sprite = "location_shop_greenes_01_12", northSprite = "location_shop_greenes_01_12" }
+            { sprite = "location_shop_greenes_01_12" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Frame_Glass_Roof_Slope_Wall_1",
@@ -1164,7 +1164,7 @@ local function addArchitecturePlusToMenu()
                 canBarricade = false,
                 isCorner = true,
             },
-            { sprite = "location_community_park_01_25", northSprite = "location_community_park_01_25" }
+            { sprite = "location_community_park_01_25" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Curb_Corner",
@@ -1179,7 +1179,7 @@ local function addArchitecturePlusToMenu()
                 canBarricade = false,
                 isCorner = true,
             },
-            { sprite = "location_community_park_01_24", northSprite = "location_community_park_01_24" }
+            { sprite = "location_community_park_01_24" }
         ),
 
 
@@ -1226,7 +1226,7 @@ local function addArchitecturePlusToMenu()
                 canBarricade = false,
                 isCorner = true,
             },
-            { sprite = "location_community_park_01_33", northSprite = "location_community_park_01_33" }
+            { sprite = "location_community_park_01_33" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Curb_Corner",
@@ -1241,7 +1241,7 @@ local function addArchitecturePlusToMenu()
                 canBarricade = false,
                 isCorner = true,
             },
-            { sprite = "location_community_park_01_32", northSprite = "location_community_park_01_32" }
+            { sprite = "location_community_park_01_32" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Narrow_Wooden_Curb",
@@ -1271,7 +1271,7 @@ local function addArchitecturePlusToMenu()
                 canBarricade = false,
                 isCorner = true,
             },
-            { sprite = "walls_greenhouse_01_28", northSprite = "walls_greenhouse_01_28" }
+            { sprite = "walls_greenhouse_01_28" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -1313,7 +1313,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_67", northSprite = "walls_greenhouse_01_67" }
+            { sprite = "walls_greenhouse_01_67" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Low_Fence_Pillar",
@@ -1328,7 +1328,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_66", northSprite = "walls_greenhouse_01_66" }
+            { sprite = "walls_greenhouse_01_66" }
         ),
 
         BuildingMenu.createObject(
@@ -1358,7 +1358,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_71", northSprite = "walls_greenhouse_01_71" }
+            { sprite = "walls_greenhouse_01_71" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Low_Fence_Pillar",
@@ -1373,7 +1373,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_70", northSprite = "walls_greenhouse_01_70" }
+            { sprite = "walls_greenhouse_01_70" }
         ),
 
         BuildingMenu.createObject(
@@ -1403,7 +1403,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_75", northSprite = "walls_greenhouse_01_75" }
+            { sprite = "walls_greenhouse_01_75" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Low_Fence_Pillar",
@@ -1418,7 +1418,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_74", northSprite = "walls_greenhouse_01_74" }
+            { sprite = "walls_greenhouse_01_74" }
         ),
 
         BuildingMenu.createObject(
@@ -1448,7 +1448,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_79", northSprite = "walls_greenhouse_01_79" }
+            { sprite = "walls_greenhouse_01_79" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brown_Low_Fence_Pillar",
@@ -1463,7 +1463,7 @@ local function addFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_greenhouse_01_78", northSprite = "walls_greenhouse_01_78" }
+            { sprite = "walls_greenhouse_01_78" }
         ),
     }
     BuildingMenu.addObjectsToCategories(

@@ -97,7 +97,7 @@ local function addGardenStuffToMenu()
                 blockAllTheSquare = true,
                 canBeLockedByPadlock = false
             },
-            { sprite = "DylansGardenStuff01_18", northSprite = "DylansGardenStuff01_18" }
+            { sprite = "DylansGardenStuff01_18" }
         ),
         BuildingMenu.createObject(
             "",
@@ -155,7 +155,7 @@ local function addGardenStuffToMenu()
                 isCorner = false,
                 isThumpable = true,
             },
-            { sprite = sprite, northSprite = northSprite or sprite }
+            { sprite = sprite, northSprite = northSprite }
         )
     end
 
@@ -164,7 +164,7 @@ local function addGardenStuffToMenu()
     local function addPlantCrateObjects(startIndex, endIndex, baseName, specialCases, recipe)
         for i = startIndex, endIndex do
             local spriteName = baseName .. "_" .. tostring(i)
-            local northSpriteName = specialCases and specialCases[i] or spriteName
+            local northSpriteName = specialCases and specialCases[i]
             table.insert(plantCrateObjects, createPlantCrateObject(spriteName, northSpriteName, recipe))
         end
     end
@@ -285,7 +285,7 @@ local function addGardenStuffToMenu()
                 isCorner = true,
                 isThumpable = true,
             },
-            { sprite = sprite, northSprite = sprite }
+            { sprite = sprite }
         )
     end
 
@@ -338,7 +338,7 @@ local function addGardenStuffToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "DylansGardenStuff02_10", northSprite = "DylansGardenStuff02_10" }
+            { sprite = "DylansGardenStuff02_10" }
         ),
         BuildingMenu.createObject(
             "",
@@ -371,7 +371,7 @@ local function addGardenStuffToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = "DylansGardenStuff02_13", northSprite = "DylansGardenStuff02_13" }
+            { sprite = "DylansGardenStuff02_13" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -398,8 +398,7 @@ local function addMetalCountersToMenu()
                 canBeLockedByPadlock = true
             },
             {
-                sprite = spriteName,
-                northSprite = spriteName
+                sprite = spriteName
             }
         )
     end
@@ -685,8 +684,7 @@ local function addBarricadesToMenu()
                 maxTime = 500
             },
             {
-                sprite = baseName .. spriteNumber,
-                northSprite = baseName .. spriteNumber
+                sprite = baseName .. spriteNumber
             }
         )
     end

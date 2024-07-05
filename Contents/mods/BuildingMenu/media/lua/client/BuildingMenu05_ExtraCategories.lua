@@ -223,8 +223,7 @@ local function addLightingToMenu()
                 isCorner = true
             },
             {
-                sprite = "building_menu_lighting_0",
-                northSprite = "building_menu_lighting_0",
+                sprite = "building_menu_lighting_0"
             }
         ),
         BuildingMenu.createObject(
@@ -241,8 +240,7 @@ local function addLightingToMenu()
                 isCorner = true
             },
             {
-                sprite = "building_menu_lighting_1",
-                northSprite = "building_menu_lighting_1",
+                sprite = "building_menu_lighting_1"
             }
         ),
         BuildingMenu.createObject(
@@ -259,8 +257,7 @@ local function addLightingToMenu()
                 isCorner = true
             },
             {
-                sprite = "building_menu_lighting_2",
-                northSprite = "building_menu_lighting_2",
+                sprite = "building_menu_lighting_2"
             }
         ),
         BuildingMenu.createObject(
@@ -297,8 +294,7 @@ local function addLightingToMenu()
                 isCorner = true
             },
             {
-                sprite = "building_menu_lighting_16",
-                northSprite = "building_menu_lighting_16"
+                sprite = "building_menu_lighting_16"
             }
         ),
         BuildingMenu.createObject(
@@ -332,7 +328,7 @@ local function addLightingToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "building_menu_lighting_17", northSprite = "building_menu_lighting_17" }
+            { sprite = "building_menu_lighting_17" }
         ),
     }
     BuildingMenu.addObjectsToCategories(
@@ -541,8 +537,7 @@ local function addCookingAppliancesToMenu()
                 completionSound = "BuildMetalStructureMedium",
             },
             {
-                sprite = "appliances_cooking_01_35",
-                northSprite = "appliances_cooking_01_35"
+                sprite = "appliances_cooking_01_35"
             }
         ),
         BuildingMenu.createObject(
@@ -768,7 +763,7 @@ local function addFridgeAppliancesToMenu()
             }
         )
     )
-    
+
     table.insert(fridgesObjects,
         BuildingMenu.createObject(
             "",

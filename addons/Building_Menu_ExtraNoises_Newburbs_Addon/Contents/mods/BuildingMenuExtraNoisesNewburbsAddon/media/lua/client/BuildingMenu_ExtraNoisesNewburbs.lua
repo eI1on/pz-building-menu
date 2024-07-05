@@ -245,7 +245,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
         local options = {
             completionSound = "BuildWoodenStructureLarge",
             modData = { wallType = modDataWallType }
-        }
+        };
 
         if modDataWallType ~= "doorframe" then
             options.isThumpable = nil;
@@ -262,17 +262,17 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             options,
             {
                 sprite = spriteIndices.baseSprite .. spriteIndices.sprite,
-                northSprite = spriteIndices.baseSprite .. spriteIndices.northSprite,
-                corner = spriteIndices.baseSprite .. spriteIndices.corner
+                northSprite = spriteIndices.northSprite and (spriteIndices.baseSprite .. spriteIndices.northSprite) or nil,
+                corner = spriteIndices.corner and (spriteIndices.baseSprite .. spriteIndices.corner) or nil,
             }
-        )
+        );
     end
 
     local function addWallsToMenu(baseSprite, wallColor, objects)
-        local categoryName = "ExtraNoise's Newburbs"
-        local categoryText = getText("IGUI_BuildingMenuCat_Walls")
-        local subCategoryText = getText("IGUI_BuildingMenuSubCat_Walls_Painted_" .. wallColor)
-        BuildingMenu.addObjectsToCategories(categoryName, categoryText, objects[1].data.sprites.sprite, subCategoryText, objects[1].data.sprites.sprite, objects)
+        local categoryName = "ExtraNoise's Newburbs";
+        local categoryText = getText("IGUI_BuildingMenuCat_Walls");
+        local subCategoryText = getText("IGUI_BuildingMenuSubCat_Walls_Painted_" .. wallColor);
+        BuildingMenu.addObjectsToCategories(categoryName, categoryText, objects[1].data.sprites.sprite, subCategoryText, objects[1].data.sprites.sprite, objects);
     end
 
 
@@ -296,7 +296,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_White_Window_Frame", "Tooltip_White_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.WhiteBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="17", northSprite="20", corner="3"}),
             createWallObject("Tooltip_BuildingMenuObj_White_Window_Frame", "Tooltip_White_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.WhiteBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="18", northSprite="19", corner="3"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_White_Window_Frame", "Tooltip_White_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.WhiteSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite="3", corner="3"}),
+            createWallObject("Tooltip_BuildingMenuObj_White_Window_Frame", "Tooltip_White_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.WhiteSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite = nil, corner= nil}),
         },
         Pink = {
             createWallObject("Tooltip_BuildingMenuObj_Pink_Wall", "Tooltip_Pink_Wall", BuildingMenu.onBuildWall, BuildingMenu.PinkBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="32", northSprite="33", corner="35"}),
@@ -316,7 +316,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Pink_Window_Frame", "Tooltip_Pink_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PinkBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="49", northSprite="52", corner="35"}),
             createWallObject("Tooltip_BuildingMenuObj_Pink_Window_Frame", "Tooltip_Pink_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PinkBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="50", northSprite="51", corner="35"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Pink_Window_Frame", "Tooltip_Pink_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PinkSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite="35", corner="35"}),
+            createWallObject("Tooltip_BuildingMenuObj_Pink_Window_Frame", "Tooltip_Pink_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PinkSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite= nil, corner= nil}),
         },
         Tan = {
             createWallObject("Tooltip_BuildingMenuObj_Tan_Wall", "Tooltip_Tan_Wall", BuildingMenu.onBuildWall, BuildingMenu.TanBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="64", northSprite="65", corner="67"}),
@@ -336,7 +336,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Tan_Window_Frame", "Tooltip_Tan_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.TanBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="81", northSprite="84", corner="67"}),
             createWallObject("Tooltip_BuildingMenuObj_Tan_Window_Frame", "Tooltip_Tan_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.TanBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="82", northSprite="83", corner="67"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Tan_Window_Frame", "Tooltip_Tan_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.TanSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite="67", corner="67"}),
+            createWallObject("Tooltip_BuildingMenuObj_Tan_Window_Frame", "Tooltip_Tan_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.TanSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite= nil, corner= nil}),
         },
         Pale_Silver = {
             createWallObject("Tooltip_BuildingMenuObj_Pale_Silver_Wall", "Tooltip_Pale_Silver_Wall", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="96", northSprite="97", corner="99"}),
@@ -356,7 +356,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Pale_Silver_Window_Frame", "Tooltip_Pale_Silver_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="113", northSprite="116", corner="99"}),
             createWallObject("Tooltip_BuildingMenuObj_Pale_Silver_Window_Frame", "Tooltip_Pale_Silver_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="114", northSprite="115", corner="99"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Pale_Silver_Window_Frame", "Tooltip_Pale_Silver_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite="99", corner="99"}),
+            createWallObject("Tooltip_BuildingMenuObj_Pale_Silver_Window_Frame", "Tooltip_Pale_Silver_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite= nil, corner= nil}),
         },
     }
     for color, objectList in pairs(objects01) do
@@ -384,7 +384,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Blue_Window_Frame", "Tooltip_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="17", northSprite="20", corner="3"}),
             createWallObject("Tooltip_BuildingMenuObj_Blue_Window_Frame", "Tooltip_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="18", northSprite="19", corner="3"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Blue_Window_Frame", "Tooltip_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite="3", corner="3"}),
+            createWallObject("Tooltip_BuildingMenuObj_Blue_Window_Frame", "Tooltip_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite= nil, corner= nil}),
         },
         Smoke = {
             createWallObject("Tooltip_BuildingMenuObj_Smoke_Wall", "Tooltip_Smoke_Wall", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="32", northSprite="33", corner="35"}),
@@ -404,7 +404,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Smoke_Window_Frame", "Tooltip_Smoke_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="49", northSprite="52", corner="35"}),
             createWallObject("Tooltip_BuildingMenuObj_Smoke_Window_Frame", "Tooltip_Smoke_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="50", northSprite="51", corner="35"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Smoke_Window_Frame", "Tooltip_Smoke_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreySmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite="35", corner="35"}),
+            createWallObject("Tooltip_BuildingMenuObj_Smoke_Window_Frame", "Tooltip_Smoke_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreySmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite= nil, corner= nil}),
         },
         Morning_Blue = {
             createWallObject("Tooltip_BuildingMenuObj_Morning_Blue_Wall", "Tooltip_Morning_Blue_Wall", BuildingMenu.onBuildWall, BuildingMenu.BlueBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="64", northSprite="65", corner="67"}),
@@ -424,7 +424,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Morning_Blue_Window_Frame", "Tooltip_Morning_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="81", northSprite="84", corner="67"}),
             createWallObject("Tooltip_BuildingMenuObj_Morning_Blue_Window_Frame", "Tooltip_Morning_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="82", northSprite="83", corner="67"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Morning_Blue_Window_Frame", "Tooltip_Morning_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite="67", corner="67"}),
+            createWallObject("Tooltip_BuildingMenuObj_Morning_Blue_Window_Frame", "Tooltip_Morning_Blue_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlueSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite= nil, corner= nil}),
         },
         Rhythm = {
             createWallObject("Tooltip_BuildingMenuObj_Rhythm_Wall", "Tooltip_Rhythm_Wall", BuildingMenu.onBuildWall, BuildingMenu.PurpleBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="96", northSprite="97", corner="99"}),
@@ -444,7 +444,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Rhythm_Window_Frame", "Tooltip_Rhythm_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PurpleBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="113", northSprite="116", corner="99"}),
             createWallObject("Tooltip_BuildingMenuObj_Rhythm_Window_Frame", "Tooltip_Rhythm_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PurpleBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="114", northSprite="115", corner="99"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Rhythm_Window_Frame", "Tooltip_Rhythm_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PurpleSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite="99", corner="99"}),
+            createWallObject("Tooltip_BuildingMenuObj_Rhythm_Window_Frame", "Tooltip_Rhythm_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.PurpleSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite= nil, corner= nil}),
         },
     }
     for color, objectList in pairs(objects02) do
@@ -472,7 +472,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Cream_Window_Frame", "Tooltip_Cream_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="17", northSprite="20", corner="3"}),
             createWallObject("Tooltip_BuildingMenuObj_Cream_Window_Frame", "Tooltip_Cream_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="18", northSprite="19", corner="3"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Cream_Window_Frame", "Tooltip_Cream_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite="3", corner="3"}),
+            createWallObject("Tooltip_BuildingMenuObj_Cream_Window_Frame", "Tooltip_Cream_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite= nil, corner= nil}),
         },
         Black = {
             createWallObject("Tooltip_BuildingMenuObj_Black_Wall", "Tooltip_Black_Wall", BuildingMenu.onBuildWall, BuildingMenu.BlackBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="32", northSprite="33", corner="35"}),
@@ -492,7 +492,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Black_Window_Frame", "Tooltip_Black_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlackBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="49", northSprite="52", corner="35"}),
             createWallObject("Tooltip_BuildingMenuObj_Black_Window_Frame", "Tooltip_Black_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlackBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="50", northSprite="51", corner="35"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Black_Window_Frame", "Tooltip_Black_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlackSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite="35", corner="35"}),
+            createWallObject("Tooltip_BuildingMenuObj_Black_Window_Frame", "Tooltip_Black_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.BlackSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite= nil, corner= nil}),
         },
         Cinereous = {
             createWallObject("Tooltip_BuildingMenuObj_Cinereous_Wall", "Tooltip_Cinereous_Wall", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="64", northSprite="65", corner="67"}),
@@ -512,7 +512,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Cinereous_Window_Frame", "Tooltip_Cinereous_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="81", northSprite="84", corner="67"}),
             createWallObject("Tooltip_BuildingMenuObj_Cinereous_Window_Frame", "Tooltip_Cinereous_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="82", northSprite="83", corner="67"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Cinereous_Window_Frame", "Tooltip_Cinereous_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite="67", corner="67"}),
+            createWallObject("Tooltip_BuildingMenuObj_Cinereous_Window_Frame", "Tooltip_Cinereous_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite= nil, corner= nil}),
         },
         Grey_Asparagus = {
             createWallObject("Tooltip_BuildingMenuObj_Grey_Asparagus_Wall", "Tooltip_Grey_Asparagus_Wall", BuildingMenu.onBuildWall, BuildingMenu.GreenBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="96", northSprite="97", corner="99"}),
@@ -532,7 +532,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Grey_Asparagus_Window_Frame", "Tooltip_Grey_Asparagus_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="113", northSprite="116", corner="99"}),
             createWallObject("Tooltip_BuildingMenuObj_Grey_Asparagus_Window_Frame", "Tooltip_Grey_Asparagus_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="114", northSprite="115", corner="99"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Grey_Asparagus_Window_Frame", "Tooltip_Grey_Asparagus_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite="99", corner="99"}),
+            createWallObject("Tooltip_BuildingMenuObj_Grey_Asparagus_Window_Frame", "Tooltip_Grey_Asparagus_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite= nil, corner= nil}),
         },
     }
     for color, objectList in pairs(objects03) do
@@ -559,7 +559,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Window_Frame", "Tooltip_Granite_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="17", northSprite="20", corner="3"}),
             createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Window_Frame", "Tooltip_Granite_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="18", northSprite="19", corner="3"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Window_Frame", "Tooltip_Granite_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreySmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite="3", corner="3"}),
+            createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Window_Frame", "Tooltip_Granite_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreySmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="3", northSprite= nil, corner= nil}),
         },
         Granite_Grey_Dark = {
             createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Dark_Wall", "Tooltip_Granite_Grey_Dark_Wall", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="96", northSprite="97", corner="99"}),
@@ -579,7 +579,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Dark_Window_Frame", "Tooltip_Granite_Grey_Dark_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="113", northSprite="116", corner="99"}),
             createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Dark_Window_Frame", "Tooltip_Granite_Grey_Dark_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreyBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="114", northSprite="115", corner="99"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Dark_Window_Frame", "Tooltip_Granite_Grey_Dark_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreySmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite="99", corner="99"}),
+            createWallObject("Tooltip_BuildingMenuObj_Granite_Grey_Dark_Window_Frame", "Tooltip_Granite_Grey_Dark_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreySmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="99", northSprite= nil, corner= nil}),
         },
         Spanish_Grey = {
             createWallObject("Tooltip_BuildingMenuObj_Spanish_Grey_Wall", "Tooltip_Spanish_Grey_Wall", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="32", northSprite="33", corner="35"}),
@@ -599,7 +599,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Spanish_Grey_Window_Frame", "Tooltip_Spanish_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="49", northSprite="52", corner="35"}),
             createWallObject("Tooltip_BuildingMenuObj_Spanish_Grey_Window_Frame", "Tooltip_Spanish_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="50", northSprite="51", corner="35"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Spanish_Grey_Window_Frame", "Tooltip_Spanish_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite="35", corner="35"}),
+            createWallObject("Tooltip_BuildingMenuObj_Spanish_Grey_Window_Frame", "Tooltip_Spanish_Grey_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.CreamSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="35", northSprite= nil, corner= nil}),
         },
         Grullo = {
             createWallObject("Tooltip_BuildingMenuObj_Grullo_Wall", "Tooltip_Grullo_Wall", BuildingMenu.onBuildWall, BuildingMenu.GreenBigWoodWallRecipe, "wall", {baseSprite = baseSprite, sprite="64", northSprite="65", corner="67"}),
@@ -619,7 +619,7 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
             createWallObject("Tooltip_BuildingMenuObj_Grullo_Window_Frame", "Tooltip_Grullo_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="81", northSprite="84", corner="67"}),
             createWallObject("Tooltip_BuildingMenuObj_Grullo_Window_Frame", "Tooltip_Grullo_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenBigWoodWallRecipe, "windowsframe", {baseSprite = baseSprite, sprite="82", northSprite="83", corner="67"}),
             
-            createWallObject("Tooltip_BuildingMenuObj_Grullo_Window_Frame", "Tooltip_Grullo_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite="67", corner="67"}),
+            createWallObject("Tooltip_BuildingMenuObj_Grullo_Window_Frame", "Tooltip_Grullo_Window_Frame", BuildingMenu.onBuildWall, BuildingMenu.GreenSmallWoodWallRecipe, "pillar", {baseSprite = baseSprite, sprite="67", northSprite= nil, corner= nil}),
         },
     }
     for color, objectList in pairs(objects04) do
@@ -657,9 +657,12 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
             local spriteDetails = {
                 sprite = texturePrefix .. "_" .. obj.sprite,
-                northSprite = texturePrefix .. "_" .. obj.northSprite,
                 corner = corner
             };
+
+            if obj.northSprite then
+                spriteDetails.northSprite = texturePrefix .. "_" .. obj.northSprite;
+            end
 
             if obj.eastSprite then
                 spriteDetails.eastSprite = texturePrefix .. "_" .. obj.eastSprite;
@@ -689,7 +692,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.WhiteSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.WhiteSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.WhiteBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -755,7 +758,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -820,7 +823,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.CreamSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.CreamSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.CreamSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.CreamBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -886,7 +889,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.GreySmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.GreyBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -953,7 +956,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.RedSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.RedSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.RedSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.RedBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -1019,7 +1022,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.OrangeSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.OrangeSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.OrangeBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -1085,7 +1088,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.RedBrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.RedBrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -1151,7 +1154,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.BrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.BrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.BrownSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.BrownBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },
@@ -1217,7 +1220,7 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "86", northSprite = "87", corner = "3", isThumpable = true, canBarricade = false },
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Wall", wallType = "wall", sprite = "94", northSprite = "95", corner = "3", isThumpable = true, canBarricade = false },
         
-        {recipe = BuildingMenu.TanSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = "3", isCorner = true, canPassThrough = true, canBarricade = false },
+        {recipe = BuildingMenu.TanSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "3", northSprite = nil, isCorner = true, canPassThrough = true, canBarricade = false },
         {recipe = BuildingMenu.TanSmallWoodWallRecipe,  type = "Pillar", wallType = "pillar", sprite = "114", northSprite = "112", eastSprite = "118", southSprite = "116", isCorner = true, canPassThrough = true, canBarricade = false },
 
         {recipe = BuildingMenu.TanBigWoodWallRecipe,  type = "Door_Frame", wallType = "doorframe", buildFunction =  BuildingMenu.onBuildDoorFrame, sprite = "6", northSprite = "7", corner = "3", isThumpable = true },

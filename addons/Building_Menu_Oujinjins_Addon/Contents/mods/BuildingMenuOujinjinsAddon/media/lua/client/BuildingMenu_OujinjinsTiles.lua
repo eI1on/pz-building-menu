@@ -249,7 +249,7 @@ local function addMetalContainersToMenu()
                         blockAllTheSquare = true,
                         canBeLockedByPadlock = true
                     },
-                    { sprite = "guizi_01_5", northSprite = "guizi_01_5" }
+                    { sprite = "guizi_01_5" }
                 ),
                 BuildingMenu.createObject(
                     "",
@@ -748,8 +748,7 @@ local function addContainersOthersToMenu()
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
-                sprite = "Industry_1_8",
-                northSprite = "Industry_1_8",
+                sprite = "Industry_1_8"
             }
         ),
         BuildingMenu.createObject(
@@ -762,8 +761,7 @@ local function addContainersOthersToMenu()
                 completionSound = "BuildWoodenStructureLarge",
             },
             {
-                sprite = "Industry_1_9",
-                northSprite = "Industry_1_9",
+                sprite = "Industry_1_9"
             }
         ),
     }
@@ -1464,7 +1462,7 @@ local function addOtherFencesToMenu()
             BuildingMenu.HescoBarrierRecipe,
             true,
             { isThumpable = true },
-            { sprite = "Chinatown_EX_military_1_120", northSprite = "Chinatown_EX_military_1_120" }
+            { sprite = "Chinatown_EX_military_1_120" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Hesco_Barrier",
@@ -1473,7 +1471,7 @@ local function addOtherFencesToMenu()
             BuildingMenu.DoubleHescoBarrierRecipe,
             true,
             { isThumpable = true },
-            { sprite = "Chinatown_EX_military_1_121", northSprite = "Chinatown_EX_military_1_121" }
+            { sprite = "Chinatown_EX_military_1_121" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Hesco_Barrier",
@@ -1482,7 +1480,7 @@ local function addOtherFencesToMenu()
             BuildingMenu.HescoBarrierRecipe,
             true,
             { isThumpable = true },
-            { sprite = "Chinatown_EX_military_1_122", northSprite = "Chinatown_EX_military_1_122" }
+            { sprite = "Chinatown_EX_military_1_122" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Hesco_Barrier",
@@ -1491,7 +1489,7 @@ local function addOtherFencesToMenu()
             BuildingMenu.DoubleHescoBarrierRecipe,
             true,
             { isThumpable = true },
-            { sprite = "Chinatown_EX_military_1_123", northSprite = "Chinatown_EX_military_1_123" }
+            { sprite = "Chinatown_EX_military_1_123" }
         ),
         BuildingMenu.createObject(
             "",
