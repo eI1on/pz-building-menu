@@ -1,8 +1,8 @@
 Recipe_RU = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "BM Приготовить стекло для выплавки",
-    Recipe_BMUnprepareGlassShards = "BM Извлечь стекло из жаровни",
-    Recipe_BMRemoveGlassPane = "BM Извлечь стеклянную панельe",
+    Recipe_BMPrepareGlassShards = "Приготовить стекло для выплавки",
+    Recipe_BMUnprepareGlassShards = "Извлечь стекло из жаровни",
+    Recipe_BMRemoveGlassPane = "Извлечь стеклянную панельe",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Разбить на осколки",

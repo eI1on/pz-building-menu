@@ -1,5 +1,0 @@
-UI_PH = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Ito ang Building Menu. <LINE> <LINE> <SIZE:small> <LEFT> Ang bawat tab ay kumakatawan sa isang natatanging Tilepack addon, kung saan ang mga buildable ay pinagbukod-bukod sa Mga Kategorya at Subcategory. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Kapag nag-hover ka sa isang buildable item, ipapakita ng tooltip ang mga kinakailangang item para sa construction. Ang mga kinakailangang ito ay dynamic na nag-a-update batay sa mga item sa iyong imbentaryo at sa mga nasa nakapalibot na palapag sa loob ng isang 3x3 grid ng iyong karakter. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Upang pasimplehin ang proseso ng iyong pagbuo, maaari kang magdagdag ng mga madalas gamitin na Buildable kasama ng kanilang mga recipe sa tab na Mga Paborito. Para lumabas ang isang Subcategory sa Mga Paborito, tiyaking pinapaboran din ang pangunahing Kategorya nito.",
-    UI_optionscreen_binding_BuildingMenu = "I-toggle ang Building Menu UI",
-}

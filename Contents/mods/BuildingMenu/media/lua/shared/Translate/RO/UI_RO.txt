@@ -1,5 +1,0 @@
-UI_RO = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Acesta este meniul de clădire. <LINE> <LINE> <SIZE:small> <LEFT> Fiecare filă reprezintă un supliment Tilepack unic, unde elementele de construcție sunt sortate în Categorii și Subcategorii. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Când treceți cu mouse-ul peste un articol care poate fi construit, indicația va afișa elementele necesare pentru construcție. Aceste cerințe se actualizează dinamic în funcție de articolele din inventarul tău și de cele de pe podeaua înconjurătoare într-o grilă de 3x3 a personajului tău. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Pentru a simplifica procesul de construire, puteți adăuga elemente de construcție utilizate frecvent cu rețetele lor în fila Favorite. Pentru ca o subcategorie să apară în Favorite, asigurați-vă că categoria ei părinte este, de asemenea, preferată.",
-    UI_optionscreen_binding_BuildingMenu = "Comutați interfața de utilizare a meniului de construcție",
-}

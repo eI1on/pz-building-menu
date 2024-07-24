@@ -1,8 +1,8 @@
 Recipe_ES = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "BM Preparar cristal para fundir",
-    Recipe_BMUnprepareGlassShards = "BM Quitar cristal de la sartén",
-    Recipe_BMRemoveGlassPane = "BM Extraer panel de cristal",
+    Recipe_BMPrepareGlassShards = "Preparar cristal para fundir",
+    Recipe_BMUnprepareGlassShards = "Quitar cristal de la sartén",
+    Recipe_BMRemoveGlassPane = "Extraer panel de cristal",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Romper en cristal roto",

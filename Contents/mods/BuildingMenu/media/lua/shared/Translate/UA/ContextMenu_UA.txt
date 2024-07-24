@@ -1,7 +1,0 @@
-ContextMenu_UA = {
-  
-  ContextMenu_BuildingMenu = "Меню будівлі",
-  ContextMenu_RemoveWallDetailing = "Видалити деталі стіни",
-  ContextMenu_RemoveTrafficLine = "Видаліть смугу руху",
-
-}

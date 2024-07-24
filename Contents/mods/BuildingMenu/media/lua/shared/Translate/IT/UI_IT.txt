@@ -1,5 +1,0 @@
-UI_IT = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Questo è il menu dell'edificio. <LINE> <LINE> <SIZE:small> <LEFT> Ogni scheda rappresenta un componente aggiuntivo Tilepack univoco, in cui gli elementi costruibili sono ordinati in categorie e sottocategorie. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Quando passi il mouse sopra un oggetto costruibile, il suggerimento mostrerà gli elementi richiesti per la costruzione. Questi requisiti si aggiornano dinamicamente in base agli oggetti nel tuo inventario e a quelli sul pavimento circostante all'interno di una griglia 3x3 del tuo personaggio. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Per semplificare il processo di costruzione, puoi aggiungere gli elementi costruibili utilizzati di frequente con le relative ricette alla scheda Preferiti. Affinché una sottocategoria venga visualizzata nei Preferiti, assicurati che anche la sua categoria principale sia tra i preferiti.",
-    UI_optionscreen_binding_BuildingMenu = "Attiva/disattiva l'interfaccia utente del menu Costruzione",
-}

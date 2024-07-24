@@ -1,5 +1,0 @@
-UI_FI = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Tämä on Rakennusvalikko. <LINE> <LINE> <SIZE:small> <LEFT> Jokainen välilehti edustaa ainutlaatuista Tilepack-lisäosaa, jossa rakennettavat osat on lajiteltu luokkiin ja alakategorioihin. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Kun viet hiiren osoittimen rakennettavan kohteen päälle, työkaluvihje näyttää rakentamiseen tarvittavat kohteet. Nämä vaatimukset päivittyvät dynaamisesti varastosi ja ympäröivän kerroksen kohteiden perusteella hahmosi 3x3-ruudukossa. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Rakennusprosessin yksinkertaistamiseksi voit lisätä usein käytettyjä rakennelmia ja niiden reseptejä Suosikit-välilehteen. Jotta alaluokka näkyy suosikeissa, varmista, että sen yläluokka on myös suosikeissa.",
-    UI_optionscreen_binding_BuildingMenu = "Vaihda Rakennusvalikko-käyttöliittymä",
-}

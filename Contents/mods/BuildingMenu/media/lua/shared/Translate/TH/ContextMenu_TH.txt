@@ -1,7 +1,0 @@
-ContextMenu_TH = {
-  
-  ContextMenu_BuildingMenu = "เมนูอาคาร",
-  ContextMenu_RemoveWallDetailing = "ลบรายละเอียดผนัง",
-  ContextMenu_RemoveTrafficLine = "ถอดเส้นจราจร",
-
-}

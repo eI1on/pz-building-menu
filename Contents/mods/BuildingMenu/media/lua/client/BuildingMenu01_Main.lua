@@ -807,7 +807,9 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     -- BM_Utils.debugPrint("[Building Menu DEBUG] toolFoundIndexMatrix ", toolFoundIndexMatrix);
 
     if ISBuildMenu.cheat then
-        tooltipDescription = "<LINE> <RGB:1,0.8,0> Build Cheat Mode Active " .. tooltipDescription;
+        local temp = getTextOrNull("IGUI_AdminPanel_BuildCheat");
+        local buildCheatText = temp and (temp .. " ACTIVE ") or "Build Cheat Mode Active";
+        tooltipDescription = string.format("<LINE> <RGB:1,0.8,0> %s%s", buildCheatText, tooltipDescription);
         canBuildResult = true;
     end
 

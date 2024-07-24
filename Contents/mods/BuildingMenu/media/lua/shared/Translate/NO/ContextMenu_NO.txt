@@ -1,7 +1,0 @@
-ContextMenu_NO = {
-  
-  ContextMenu_BuildingMenu = "Byggmeny",
-  ContextMenu_RemoveWallDetailing = "Fjern veggdetaljer",
-  ContextMenu_RemoveTrafficLine = "Fjern trafikklinjen",
-
-}

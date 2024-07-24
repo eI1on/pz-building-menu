@@ -1,7 +1,0 @@
-ContextMenu_PH = {
-  
-  ContextMenu_BuildingMenu = "Menu ng Building",
-  ContextMenu_RemoveWallDetailing = "Alisin ang Wall Detailing",
-  ContextMenu_RemoveTrafficLine = "Alisin ang Linya ng Trapiko",
-
-}

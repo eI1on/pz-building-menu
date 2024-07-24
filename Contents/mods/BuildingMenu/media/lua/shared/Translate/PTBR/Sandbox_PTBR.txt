@@ -185,7 +185,7 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenu_rugsSubCategory = "Ativar subcategoria de Tapetes",
     Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Habilite para adicionar estruturas de tapetes. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO!",
    
-    Sandbox_BuildingMenu_curtainsSubCategory = "Habilitar subcategoria de cortinas",
+    Sandbox_BuildingMenu_curtainsSubCategory = "Ativar subcategoria Cortinas",
     Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Ative para adicionar cortinas. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES!",
 
     Sandbox_BuildingMenu_postersAndSignsSubCategory = "Ativar subcategoria de Posters e Placas",
@@ -324,10 +324,10 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Define os parafusos nescessários. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Custo de sucata para cercas",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Define sucata necessária para cercas. <LINE> Escalas com tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> SAIR E REENTRAR SALVAR PARA APLICAR ALTERAÇÕES! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Define sucata necessária para cercas. <LINE> Dimensiona com tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES! <RGB:1,1,1>",
     
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Sucata para ARTIGOS ELÉTRICOS Custo",
-    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Define sucata necessária para coisas elétricas. <LINE> Dimensiona de acordo com o tamanho e o tipo do objeto. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES! <RGB:1,1,1>",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Custo de sucata para ITENS ELÉTRICOS",
+    Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Define sucata necessária para coisas elétricas. <LINE> Dimensiona com tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> SAIA E ENTRE novamente, SALVAR PARA APLICAR AS ALTERAÇÕES! <RGB:1,1,1>",
     
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Custo de Placas de Metal para PAREDES",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Define as placas de metal nescessárias para paredes. <LINE> Escala com o tamanho e tipo de objeto. <LINE><LINE> <RGB:1,0,0> REQUER QUE O JOGO SEJA REINICIADO! <RGB:1,1,1>",
@@ -372,7 +372,7 @@ Sandbox_PTBR = {
     Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Multiplicador de intensidade de chuva de poço de água",
     Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplicador pela quantidade de água adicionada ao poço durante a chuva.",
         
-    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Intervalo de taxa de recarga por hora de poço de água",
+    Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Intervalo de taxa de recarga horária de poço de água",
     Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Faixa de quantidade de água adicionada ao poço a cada hora. Por exemplo '1;5' irá gerar um número aleatório entre 1 e 5, '5' sempre gerará 5 unidades de água. Padrão=1;5",
 
     Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Custo de madeira para Caixa Militar",

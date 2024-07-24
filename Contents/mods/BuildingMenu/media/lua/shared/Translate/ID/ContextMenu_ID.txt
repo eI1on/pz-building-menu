@@ -1,7 +1,0 @@
-ContextMenu_ID = {
-  
-  ContextMenu_BuildingMenu = "Menu Gedung",
-  ContextMenu_RemoveWallDetailing = "Hapus Detail Dinding",
-  ContextMenu_RemoveTrafficLine = "Hapus Jalur Lalu Lintas",
-
-}

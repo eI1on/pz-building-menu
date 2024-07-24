@@ -44,7 +44,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Tijolo Branco",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Tijolo Verde",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Tijolo Marrom",
-    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Tijolo Clássico",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Tábua de Alvenaria Azul",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Tábua de Alvenaria Bege",
@@ -61,7 +61,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Painel Marrom",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Painel de Madeira Elegante",
 
-    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Azulejos médios para banheiro",
 
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Bloco de Concreto Branco",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Bloco de Concreto Marrom",
@@ -90,7 +90,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Industrial",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Vidro com Moldura Marrom",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Vidro com Moldura Preta",
-    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Vidro com moldura cinza",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Esgoto",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "Tenda",
 
@@ -114,11 +114,11 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Vidro",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Segurança",
     
-    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Portas de correr",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Portão de 3 Tiles",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Portão de 4 Tiles",
-    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Portões de porta dupla",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Arquitetura Plus",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Acabamento de Porta",
@@ -126,7 +126,7 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Detalhe de Canto",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Rodapé",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Painel de Parede",
-    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Fundação",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Acentos no telhado",
 
     IGUI_BuildingMenuCat_Windows = "Janelas",
@@ -181,8 +181,8 @@ IGUI_PTBR = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Lata de Lixo",
     IGUI_BuildingMenuSubCat_Containers_Others = "Outro",
 
-    IGUI_BuildingMenuCat_Recreational = "Recreational",
-    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+    IGUI_BuildingMenuCat_Recreational = "Recreativo",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Música",
 
     IGUI_BuildingMenuCat_Furniture = "Móveis",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Mesa Pequena",

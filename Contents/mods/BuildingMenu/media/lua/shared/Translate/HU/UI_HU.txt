@@ -1,5 +1,0 @@
-UI_HU = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Ez az Épület menü. <LINE> <LINE> <SIZE:small> <LEFT> Minden lap egy egyedi Tilepack-kiegészítőt képvisel, ahol az építhető elemek kategóriákba és alkategóriákba vannak rendezve. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Ha az egérmutatót egy felépíthető elem fölé viszi, az eszköztipp megjeleníti az építéshez szükséges elemeket. Ezek a követelmények dinamikusan frissülnek a készletedben és a környező emeleten lévő tételek alapján a karaktered 3x3-as rácsán belül. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Az építési folyamat egyszerűsítése érdekében gyakran használt építményeket és azok receptjeit felveheti a Kedvencek lapra. Ahhoz, hogy egy alkategória megjelenjen a Kedvencekben, győződjön meg arról, hogy a szülő kategóriája is a kedvencek közé kerül.",
-    UI_optionscreen_binding_BuildingMenu = "Az Épület menü kezelőfelületének váltása",
-}

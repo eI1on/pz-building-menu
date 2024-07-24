@@ -8,7 +8,7 @@ IGUI_RU = {
     IGUI_BuildingMenuUI_ShowItemIcons = "Отображение значков элементов",
     IGUI_BuildingMenuUI_ShowItemIcons_ToolTip = "Переключите, чтобы отобразить или скрыть значки элементов во всплывающей подсказке.",
     IGUI_BuildingMenuUI_IconScale = "Размер значка элемента",
-    IGUI_BuildingMenuUI_IconScale_ToolTip = "Регулирует размер значков элементов, отображаемых во всплывающих подсказках. <BR> Масштаб "1" сохраняет исходный размер значка (20 пикселей), а "2" увеличивает его вдвое.",
+    IGUI_BuildingMenuUI_IconScale_ToolTip = "Изменяет размер значков элементов, отображаемых во всплывающих подсказках. <BR> Масштаб «1» сохраняет исходный размер значка (20 пикселей), а «2» удваивает его.",
 
     IGUI_BuildingMenuUI_Move_UI = "Переместить окно",
     IGUI_BuildingMenuUI_Stop_Move_UI = "Остановить перемещение окна",
@@ -44,7 +44,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "Белый кирпич",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "Зелёный кирпич",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "Коричневый кирпич",
-    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Классический кирпич",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "Голубой сайдинг",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "Бежевый сайдинг",
@@ -61,7 +61,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "Коричневое дерево",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "Деревянные панели с резьбой",
 
-    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Средняя плитка для ванной комнаты",
 
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "Белый шлакоблок",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "Коричневый шлакоблок",
@@ -90,7 +90,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "Индустриальные стены",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "Стеклянные в коричневой раме",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "Стеклянные в черной раме",
-    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Серое стекло в рамке",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "Канализационные",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "Тенты",
 
@@ -114,11 +114,11 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "Стеклянные",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "Дверь охраны",
     
-    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Раздвижные двери",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "Гаражная на 3 клетки",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "Гаражная на 4 клетки",
-    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Двойные дверные ворота",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "Дополнительный декор",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "Наличники",
@@ -126,7 +126,7 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing = "Декор углов",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding = "Плинтусы",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Настенные панели",
-    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Фундамент",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Акценты на крыше",
 
     IGUI_BuildingMenuCat_Windows = "Окна",
@@ -181,8 +181,8 @@ IGUI_RU = {
     IGUI_BuildingMenuSubCat_Containers_Trash_Cans = "Мусорные баки",
     IGUI_BuildingMenuSubCat_Containers_Others = "Прочее",
 
-    IGUI_BuildingMenuCat_Recreational = "Recreational",
-    IGUI_BuildingMenuSubCat_Recreational_Music = "Music",
+    IGUI_BuildingMenuCat_Recreational = "Рекреационный",
+    IGUI_BuildingMenuSubCat_Recreational_Music = "Музыка",
 
     IGUI_BuildingMenuCat_Furniture = "Мебель",
     IGUI_BuildingMenuSubCat_Furniture_Small_Tables = "Маленькие столы",

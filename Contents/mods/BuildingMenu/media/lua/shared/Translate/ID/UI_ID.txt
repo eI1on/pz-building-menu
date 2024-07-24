@@ -1,5 +1,0 @@
-UI_ID = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Ini adalah Menu Gedung. <LINE> <LINE> <SIZE:small> <LEFT> Setiap tab mewakili add-on Tilepack unik, yang buildable-nya diurutkan ke dalam Kategori dan Subkategori. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Saat Anda mengarahkan kursor ke item yang dapat dibangun, tooltip akan menampilkan item yang diperlukan untuk konstruksi. Persyaratan ini diperbarui secara dinamis berdasarkan item di inventaris Anda dan item di lantai sekitar dalam kotak 3x3 karakter Anda. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Untuk menyederhanakan proses pembuatan, Anda dapat menambahkan Buildable yang sering digunakan beserta resepnya ke tab Favorit. Agar Subkategori muncul di Favorit, pastikan Kategori induknya juga difavoritkan.",
-    UI_optionscreen_binding_BuildingMenu = "Alihkan UI Menu Bangunan",
-}

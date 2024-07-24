@@ -1,10 +1,10 @@
-# Translation files are encoded differently per-language,
+# Translation files are encoded differently per-language
+# see https://github.com/TheIndieStone/ProjectZomboidTranslations/blob/master/.gitattributes
 # see https://github.com/TheIndieStone/ProjectZomboidTranslations/issues/155
 AF/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
 AR/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-CA/*.txt text working-tree-encoding=iso-8859-15 encoding=utf-8,
+CA/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
 CH/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
-CH/**/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
 CN/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
 CS/*.txt text working-tree-encoding=cp1250 encoding=utf-8,
 DA/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
@@ -21,8 +21,8 @@ JP/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
 KO/*.txt text working-tree-encoding=utf-16 encoding=utf-8,
 NL/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
 NO/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
-PL/*.txt text working-tree-encoding=cp1250 encoding=utf-8,
 PH/*.txt text working-tree-encoding=utf-8 encoding=utf-8,
+PL/*.txt text working-tree-encoding=cp1250 encoding=utf-8,
 PT/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
 PTBR/*.txt text working-tree-encoding=cp1252 encoding=utf-8,
 RO/*.txt text working-tree-encoding=utf-8 encoding=utf-8,

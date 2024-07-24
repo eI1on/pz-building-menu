@@ -1,3 +1,15 @@
+ JULY 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Deleted the languages translated with the automatic translator because of severe mistranslations. Leaving mostly translations done by translators
+[*] Fixed encoding for various languages
+[/list]
+[/list]
+
+
 05 JULY 24
 219e960
 

@@ -1,7 +1,0 @@
-ContextMenu_HU = {
-  
-  ContextMenu_BuildingMenu = "Épület menü",
-  ContextMenu_RemoveWallDetailing = "Távolítsa el a falrészleteket",
-  ContextMenu_RemoveTrafficLine = "Távolítsa el a forgalmi vonalat",
-
-}

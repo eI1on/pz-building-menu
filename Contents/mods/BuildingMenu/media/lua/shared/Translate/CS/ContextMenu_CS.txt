@@ -1,7 +1,0 @@
-ContextMenu_CS = {
-  
-  ContextMenu_BuildingMenu = "Nabídka budovy",
-  ContextMenu_RemoveWallDetailing = "Odstraňte detaily stěny",
-  ContextMenu_RemoveTrafficLine = "Odstraňte dopravní linku",
-
-}

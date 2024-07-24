@@ -1,7 +1,0 @@
-ContextMenu_FI = {
-  
-  ContextMenu_BuildingMenu = "Rakennusvalikko",
-  ContextMenu_RemoveWallDetailing = "Poista seinän yksityiskohdat",
-  ContextMenu_RemoveTrafficLine = "Poista liikenneviiva",
-
-}

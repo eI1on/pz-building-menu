@@ -1,8 +1,8 @@
 Recipe_PTBR = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "BM Preparar vidro para fusão",
-    Recipe_BMUnprepareGlassShards = "BM Remover vidro da Assadeira",
-    Recipe_BMRemoveGlassPane = "BM Extrair painel de vidro",
+    Recipe_BMPrepareGlassShards = "Preparar vidro para fusão",
+    Recipe_BMUnprepareGlassShards = "Remover vidro da Assadeira",
+    Recipe_BMRemoveGlassPane = "Extrair painel de vidro",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Quebrar em vidro quebrado",

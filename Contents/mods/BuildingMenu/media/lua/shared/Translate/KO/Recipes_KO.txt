@@ -1,8 +1,8 @@
 Recipe_KO = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "BM 유리 녹일 준비하기",
-    Recipe_BMUnprepareGlassShards = "BM 팬에서 유리 제거",
-    Recipe_BMRemoveGlassPane = "BM 유리 판 추출하기",
+    Recipe_BMPrepareGlassShards = "유리 녹일 준비하기",
+    Recipe_BMUnprepareGlassShards = "팬에서 유리 제거",
+    Recipe_BMRemoveGlassPane = "유리 판 추출하기",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "깨진 유리로 만들기",
