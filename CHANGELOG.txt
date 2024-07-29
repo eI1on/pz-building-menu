@@ -6,6 +6,8 @@ Main mod:
 [list]
 [*] Deleted the languages translated with the automatic translator because of severe mistranslations. Leaving mostly translations done by translators
 [*] Fixed encoding for various languages
+[*] Added Fence Gate
+[*] Added the other shovel as a valid "Shovel" tool, lol
 [/list]
 [/list]
 

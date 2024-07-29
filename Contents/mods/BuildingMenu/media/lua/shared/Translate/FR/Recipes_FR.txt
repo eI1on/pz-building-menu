@@ -17,10 +17,10 @@ Recipe_FR = {
     Recipe_BMRearWindow1 = "Fabriquer une vitre arrière standard",
 
     /* Vehicle: Heavy-Duty Recipes */
-    Recipe_BMWindshield2 = "Fabriquer un pare-brise robuste",
-    Recipe_BMRearWindshield2 = "Fabriquer une lunette arrière robuste",
-    Recipe_BMFrontWindow2 = "Fabriquer une vitre avant robuste",
-    Recipe_BMRearWindow2 = "Fabriquer une vitre arrière robuste",
+    Recipe_BMWindshield2 = "Fabriquer un pare-brise résistant",
+    Recipe_BMRearWindshield2 = "Fabriquer une lunette arrière résistant",
+    Recipe_BMFrontWindow2 = "Fabriquer une vitre avant résistant",
+    Recipe_BMRearWindow2 = "Fabriquer une vitre arrière résistant",
 
     /* Vehicle: Sport Recipes */
     Recipe_BMWindshield3 = "Fabriquer un pare-brise sport",

@@ -14079,6 +14079,25 @@ local function addDoorsToMenu()
             subCategoryIcon = "fixtures_doors_fences_01_4",
             objects = {
                 BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Brown_Door",
+                    BuildingMenu.onBuildDoor,
+                    BuildingMenu.WoodenDoorRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        canBarricade = true,
+                        dontNeedFrame = true,
+                        modData = { wallType = "doorframe" }
+                    },
+                    {
+                        sprite = "fixtures_doors_fences_01_12",
+                        northSprite = "fixtures_doors_fences_01_13",
+                        openSprite = "fixtures_doors_fences_01_14",
+                        openNorthSprite = "fixtures_doors_fences_01_15"
+                    }
+                ),
+                BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Wooden_Fence_Gate",
                     "Tooltip_Wooden_Fence_Gate",
                     BuildingMenu.onBuildDoor,

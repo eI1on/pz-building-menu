@@ -134,6 +134,7 @@ BuildingMenu.Tools = {
     Shovel = {
         types = {
             'Base.Shovel',
+            'Base.Shovel2',
             'SOMW.EntrenchingShovel',            --SOMW
             'MWPWeapons.sptesnaztacticalshovel', -- [Reworked] MWPWeapons
             'ToolsOfTheTrade.TrenchShovel'       -- Tools of the Trade
