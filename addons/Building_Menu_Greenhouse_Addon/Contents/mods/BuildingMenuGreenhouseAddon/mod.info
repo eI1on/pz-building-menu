@@ -1,7 +1,0 @@
-name=Building Menu [B41.78] - Greenhouse Addon
-poster=poster.png
-id=BuildingMenuGreenhouseAddon
-description=Ready to take your building experience up a notch? This is an add-on for the Building Menu that adds buildable objects from Greenhouse.
-require=BuildingMenu,Greenhouse
-tags=Build 41,Misc,Multiplayer,Interface
-versionMax=41.78

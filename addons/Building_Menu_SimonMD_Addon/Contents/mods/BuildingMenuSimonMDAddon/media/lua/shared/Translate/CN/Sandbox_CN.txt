@@ -1,7 +1,0 @@
-Sandbox_CN = {
-    Sandbox_BuildingMenu_SimonMDCategoryDivider = "_______________ SimonMD类别 _______________",
-    Sandbox_BuildingMenu_SimonMDCategoryDivider_tooltip = "这只是一条分割线，勾选它没有任何效果",
-
-    Sandbox_BuildingMenu_simonMDSecretEntrances = "开启秘密入口类别",
-    Sandbox_BuildingMenu_simonMDSecretEntrances_tooltip = "开启后添加秘密入口。 <LINE><LINE> <RGB:1,0,0> 需要重启客户端！",
-}

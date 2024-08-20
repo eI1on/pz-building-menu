@@ -1,5 +1,0 @@
-UI_ES = {
-
-    UI_BuildingMenuUI = "<CENTRO> <SIZE:medium> Este es el menú de construcción. <LINE> <LINE> <SIZE:small> <LEFT> Cada pestaña representa un complemento único de Tilepack, donde los elementos para construir se clasifican en Categorías y Subcategorías. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Cuando pasas el cursor sobre un elemento para construir, la información sobre herramientas mostrará los elementos necesarios para la construcción. Estos requisitos se actualizan dinámicamente según los elementos de tu inventario y los del piso circundante dentro de una cuadrícula de 3x3 de tu personaje. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Para simplificar el proceso de construcción, puedes agregar los Buildables de uso frecuente con sus recetas a la pestaña Favoritos. Para que una subcategoría aparezca en Favoritos, asegúrese de que su categoría principal también sea favorita.",
-    UI_optionscreen_binding_BuildingMenu = "Alternar interfaz de usuario del menú de construcción",
-}

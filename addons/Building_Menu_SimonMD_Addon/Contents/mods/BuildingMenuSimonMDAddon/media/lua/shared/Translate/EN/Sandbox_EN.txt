@@ -1,7 +1,0 @@
-Sandbox_EN = {
-    Sandbox_BuildingMenu_SimonMDCategoryDivider = "_______________ SimonMD Specific Categories _______________",
-    Sandbox_BuildingMenu_SimonMDCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
-
-    Sandbox_BuildingMenu_simonMDSecretEntrances = "Enable Secret Entrances Category",
-    Sandbox_BuildingMenu_simonMDSecretEntrances_tooltip = "Enable to add secret entrances. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
-}

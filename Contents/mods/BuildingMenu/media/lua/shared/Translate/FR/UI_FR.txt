@@ -1,5 +1,0 @@
-UI_FR = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Ceci est le menu du bâtiment. <LINE> <LINE> <SIZE:small> <LEFT> Chaque onglet représente un module complémentaire Tilepack unique, où les éléments à construire sont triés en catégories et sous-catégories. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Lorsque vous survolez un élément à construire, l'info-bulle affichera les éléments requis pour la construction. Ces exigences sont mises à jour dynamiquement en fonction des objets de votre inventaire et de ceux qui se trouvent à l'étage environnant dans une grille 3x3 de votre personnage. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Pour simplifier votre processus de construction, vous pouvez ajouter les Buildables fréquemment utilisés avec leurs recettes à l'onglet Favoris. Pour qu'une sous-catégorie apparaisse dans les Favoris, assurez-vous que sa catégorie parent est également favorite.",
-    UI_optionscreen_binding_BuildingMenu = "Basculer l'interface utilisateur du menu de construction",
-}

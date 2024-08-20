@@ -1,7 +1,0 @@
-ContextMenu_RU = {
-  
-  ContextMenu_BuildingMenu = "ћеню строительства",
-  ContextMenu_RemoveWallDetailing = "”далить декор стены",
-  ContextMenu_RemoveTrafficLine = "”далить разметку",
-
-}

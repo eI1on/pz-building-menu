@@ -1,5 +1,0 @@
-UI_PTBR = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> Este é o Menu Construção. <LINE> <LINE> <SIZE:small> <LEFT> Cada guia representa um complemento Tilepack exclusivo, onde os edificáveis ??são classificados em categorias e subcategorias. <LINE> <LINE> <IMAGE:media/ui/building_menu.png> Quando você passa o mouse sobre um item edificável, a dica de ferramenta exibirá os itens necessários para construção. Esses requisitos são atualizados dinamicamente com base nos itens em seu inventário e nos itens ao redor em uma grade 3x3 de seu personagem. <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> Para simplificar seu processo de construção, você pode adicionar Buildables usados ??com frequência com suas receitas à guia Favoritos. Para que uma subcategoria apareça em Favoritos, certifique-se de que sua categoria pai também esteja favoritada.",
-    UI_optionscreen_binding_BuildingMenu = "Alternar interface do menu de construção",
-}

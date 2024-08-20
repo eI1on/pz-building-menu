@@ -1,5 +1,0 @@
-UI_CN = {
-
-    UI_BuildingMenuUI = "<CENTRE> <SIZE:medium> 这是建筑菜单。 <LINE> <LINE> <SIZE:small> <LEFT> 每个选项卡代表一个独特的 Tilepack 插件，其中可构建内容被分类为类别和子类别。 <LINE> <LINE> <IMAGE:media/ui/building_menu.png> 当您将鼠标悬停在可构建项目上时，工具提示将显示构建所需的项目。这些要求根据您的库存中的物品以及角色 3x3 网格内周围地板上的物品动态更新。 <LINE> <LINE> <IMAGE:media/ui/FavoriteStar.png> 为了简化您的构建过程，您可以将常用的 Buildables 及其配方添加到“收藏夹”选项卡中。要使子类别出现在收藏夹中，请确保其父类别也被收藏。",
-    UI_optionscreen_binding_BuildingMenu = "切换构建菜单 UI",
-}

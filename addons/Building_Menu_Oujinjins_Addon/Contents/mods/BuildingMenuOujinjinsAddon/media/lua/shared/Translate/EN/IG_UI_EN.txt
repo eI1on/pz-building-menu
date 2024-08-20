@@ -1,6 +1,0 @@
-IGUI_EN = {
-
-    IGUI_BuildingMenuSubCat_Containers_Military = "Military Containers",
-    IGUI_BuildingMenuSubCat_Containers_Vault_Tec = "Vault-Tec Containers",
-
-}

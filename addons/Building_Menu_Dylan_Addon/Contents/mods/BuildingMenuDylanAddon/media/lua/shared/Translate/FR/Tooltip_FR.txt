@@ -1,6 +1,0 @@
-Tooltip_FR = {
-    Tooltip_BuildingMenuObj_Small_Plant_Crate = "Petite boÃ®te en carton avec pot de fleurs",
-    Tooltip_Random_Garden_Stuff = "Divers articles et fournitures de jardinage pour embellir votre jardin post-apocalyptique.",
-    Tooltip_Garden_Fencing = "ClÃ´ture de jardin dÃ©corative pour embellir votre espace extÃ©rieur.",
-    Tooltip_Barricade = "A defensive barrier constructed from scrap materials.",
-}

@@ -1,7 +1,0 @@
-ContextMenu_FR = {
-  
-  ContextMenu_BuildingMenu = "Menu de construction",
-  ContextMenu_RemoveWallDetailing = "Supprimer les détails du mur",
-  ContextMenu_RemoveTrafficLine = "Supprimer les marquages de voirie",
-
-}

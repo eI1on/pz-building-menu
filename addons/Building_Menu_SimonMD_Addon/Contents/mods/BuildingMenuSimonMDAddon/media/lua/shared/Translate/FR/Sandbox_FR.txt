@@ -1,7 +1,0 @@
-Sandbox_FR = {
-    Sandbox_BuildingMenu_SimonMDCategoryDivider = "_______________ CatÃ©gories spÃ©cifiques SimonMD _______________",
-    Sandbox_BuildingMenu_SimonMDCategoryDivider_tooltip = "Il ne s'agit que d'un sÃ©parateur de ligne, le cocher n'a aucun effet.",
-
-    Sandbox_BuildingMenu_simonMDSecretEntrances = "Activer la catÃ©gorie EntrÃ©es secrÃ¨tes",
-    Sandbox_BuildingMenu_simonMDSecretEntrances_tooltip = "Permet d'ajouter des entrÃ©es secrÃ¨tes. <LINE><LINE> <RGB:1,0,0> NÃ‰CESSITE UN REDÃ‰MARRAGE DU JEU COTÃ‰ CLIENT !",
-}

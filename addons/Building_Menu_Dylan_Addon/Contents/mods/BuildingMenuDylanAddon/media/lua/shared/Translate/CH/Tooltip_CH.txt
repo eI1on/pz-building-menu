@@ -1,7 +1,0 @@
-Tooltip_CN = {
-    Tooltip_BuildingMenuObj_Small_Plant_Crate = "帶花盆的小紙板箱",
-    Tooltip_Random_Garden_Stuff = "改善的末世花園的各種園藝物體和供給。",
-    Tooltip_Garden_Fencing = "改善室外空間的園藝裝飾柵欄。",
-    Tooltip_Barricade = "A defensive barrier constructed from scrap materials.",
-
-}

@@ -1,7 +1,0 @@
-ContextMenu_KO = {
-  
-  ContextMenu_BuildingMenu = "건축 메뉴",
-  ContextMenu_RemoveWallDetailing = "벽 디테일링 제거",
-  ContextMenu_RemoveTrafficLine = "교통 표시선 제거",
-
-}

@@ -1,7 +1,0 @@
-ContextMenu_CN = {
-  
-  ContextMenu_BuildingMenu = "建造菜单",
-  ContextMenu_RemoveWallDetailing = "移除墙体装饰",
-  ContextMenu_RemoveTrafficLine = "移除交通标线",
-
-}
