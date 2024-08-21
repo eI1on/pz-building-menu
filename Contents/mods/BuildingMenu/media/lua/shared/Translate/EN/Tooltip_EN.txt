@@ -1497,6 +1497,7 @@ Tooltip_EN = {
   Tooltip_Garage_Door = "A large garage door to fortify your base.",
   Tooltip_BuildingMenuObj_4_Tiles_Garage_Door = "4 Tiles Garage Door",
 
+  Tooltip_BuildingMenuObj_Double_Wrought_Iron_Gate = "Double Wrought Iron Gate",
   Tooltip_Double_Door_Gates = "A double door gate for your base.",
 
   Tooltip_Door_Trim = "Elegant door trim to enhance your base aesthetics.",

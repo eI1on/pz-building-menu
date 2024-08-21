@@ -15001,7 +15001,7 @@ local function addGarageDoorsToMenu()
                     }
                 ),
                 BuildingMenu.createObject(
-                    "ContextMenu_BigMetalDoubleDoor",
+                    "Tooltip_BuildingMenuObj_Double_Wrought_Iron_Gate",
                     "Tooltip_Double_Door_Gates",
                     BuildingMenu.onDoubleDoor,
                     BuildingMenu.BlackPoleDoubleDoorGatesRecipe,
@@ -29117,8 +29117,7 @@ local function addBookshelvesToMenu()
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
-                needToBeAgainstWall = true,
-
+                canBeAlwaysPlaced = true,
             },
             {
                 sprite = "furniture_shelving_01_8"
