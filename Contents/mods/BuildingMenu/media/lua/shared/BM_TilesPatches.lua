@@ -679,4 +679,19 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         BM_Utils.unsetSpriteProperty(props, "MoveType");
         props:CreateKeySet();
     end
+
+    sprites = {
+        "fixtures_bathroom_01_52",
+        "fixtures_bathroom_01_53",
+        "fixtures_bathroom_01_54",
+        "fixtures_bathroom_01_55",
+    }
+    for _, sprite in ipairs(sprites) do
+        local props = manager:getSprite(sprite):getProperties();
+        BM_Utils.setSpriteProperty(props, "waterAmount", "100", false);
+        BM_Utils.setSpriteProperty(props, "waterMaxAmount", "100", false);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.solidtrans);
+        BM_Utils.setSpriteProperty(props, IsoFlagType.waterPiped);
+        props:CreateKeySet();
+    end
 end)
