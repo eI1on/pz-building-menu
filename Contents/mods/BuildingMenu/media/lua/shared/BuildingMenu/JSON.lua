@@ -23,7 +23,7 @@
 
 local Logger = require("BuildingMenu/Logger");
 
-local json = { _version = "0.1.2" }
+local bm_json = { _version = "0.1.2" }
 
 -------------------------------------------------------------------------------
 -- Encode
@@ -134,7 +134,7 @@ encode = function(val, stack)
   Logger:error("unexpected type '" .. t .. "'")
 end
 
-function json.stringify(val)
+function bm_json.stringify(val)
   return ( encode(val) )
 end
 
@@ -362,7 +362,7 @@ parse = function(str, idx)
   decode_error(str, idx, "unexpected character '" .. chr .. "'")
 end
 
-function json.parse(str)
+function bm_json.parse(str)
   if type(str) ~= "string" then
     Logger:error("expected argument of type string, got " .. type(str))
   end
@@ -374,4 +374,4 @@ function json.parse(str)
   return res
 end
 
-return json
+return bm_json
