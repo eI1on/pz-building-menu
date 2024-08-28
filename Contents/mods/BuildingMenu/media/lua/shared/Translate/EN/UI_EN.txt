@@ -2,6 +2,6 @@ IGUI_EN = {
 
     IGUI_BuildingMenu = "Building Menu",
 
-    IGUI_Unnamed_Buildable_Object = "Unnamed Buildable Object",
+    IGUI_BuildableName_Unnamed_Object = "Unnamed Buildable Object",
 
 }

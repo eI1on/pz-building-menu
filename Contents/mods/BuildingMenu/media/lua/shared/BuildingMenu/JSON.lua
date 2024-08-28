@@ -1,6 +1,7 @@
 -- JSON.lua
 --
--- Copyright (c) 2020 rxi, modified by JabDoesThings (https://gist.github.com/JabDoesThings/0742c08f3d066425857c11f7ef28183c)
+-- Copyright (c) 2020 rxi, modified by JabDoesThings 
+-- (https://gist.github.com/JabDoesThings/0742c08f3d066425857c11f7ef28183c)
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy of
 -- this software and associated documentation files (the "Software"), to deal in
@@ -23,7 +24,7 @@
 
 local Logger = require("BuildingMenu/Logger");
 
-local bm_json = { _version = "0.1.2" }
+local json = { _version = "0.1.2" }
 
 -------------------------------------------------------------------------------
 -- Encode
@@ -134,7 +135,7 @@ encode = function(val, stack)
   Logger:error("unexpected type '" .. t .. "'")
 end
 
-function bm_json.stringify(val)
+function json.stringify(val)
   return ( encode(val) )
 end
 
@@ -362,7 +363,7 @@ parse = function(str, idx)
   decode_error(str, idx, "unexpected character '" .. chr .. "'")
 end
 
-function bm_json.parse(str)
+function json.parse(str)
   if type(str) ~= "string" then
     Logger:error("expected argument of type string, got " .. type(str))
   end
@@ -374,4 +375,4 @@ function bm_json.parse(str)
   return res
 end
 
-return bm_json
+return json
