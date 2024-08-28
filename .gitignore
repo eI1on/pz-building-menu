@@ -1,4 +1,1 @@
-
-*.json
-*.bat
-Umbrella
+.vscode/settings.json

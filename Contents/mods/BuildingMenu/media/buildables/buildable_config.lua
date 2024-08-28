@@ -1,6 +1,6 @@
 return {
     buildables = {
-        "media/buildables/test_buildables.json",
-        "media/buildables/wall_objects.json"
+        "test_buildables.json",
+        "wall_objects.json"
     }
 }

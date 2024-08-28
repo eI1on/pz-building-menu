@@ -1,0 +1,113 @@
+[
+    {
+        "class": "Wall",
+        "primaryCategory": "Walls",
+        "secondaryCategory": "Wooden",
+        "tertiaryCategory": null,
+        "displayName": "Wooden_Panel_Wall",
+        "info": "Wooden_Wall",
+        "sprites": [
+            {
+                "sprite": "walls_exterior_wooden_01_24",
+                "northSprite": "walls_exterior_wooden_01_25",
+                "corner": "walls_exterior_wooden_01_27"
+            },
+            {
+                "sprite": "walls_exterior_wooden_01_24",
+                "northSprite": "walls_exterior_wooden_01_25",
+                "corner": "walls_exterior_wooden_01_27"
+            },
+            {
+                "sprite": "walls_exterior_wooden_01_24",
+                "northSprite": "walls_exterior_wooden_01_25",
+                "corner": "walls_exterior_wooden_01_27"
+            }
+        ],
+        "recipes": [
+            {
+                "materials": {
+                    "Base.SheetMetal": 2,
+                    "Base.MetalBar": 4,
+                    "Base.Screws": 10
+                },
+                "consumables": {
+                    "Base.BlowTorch": 5,
+                    "Base.WeldingRods": 5
+                },
+                "tools": {
+                    "BlowTorch": true,
+                    "WeldingMask": true,
+                    "Screwdriver": true
+                },
+                "skills": [
+                    {
+                        "skill": "MetalWelding",
+                        "level": 4,
+                        "xp": 25
+                    },
+                    {
+                        "skill": "Woodwork",
+                        "level": 6,
+                        "xp": "auto"
+                    }
+                ]
+            },
+            {
+                "materials": {
+                    "Base.SheetMetal": 2,
+                    "Base.MetalBar": 4,
+                    "Base.Screws": 10
+                },
+                "consumables": {
+                    "Base.BlowTorch": 5,
+                    "Base.WeldingRods": 5
+                },
+                "tools": {
+                    "BlowTorch": true,
+                    "WeldingMask": true,
+                    "Screwdriver": true
+                },
+                "skills": [
+                    {
+                        "skill": "MetalWelding",
+                        "level": 4,
+                        "xp": 25
+                    },
+                    {
+                        "skill": "Woodwork",
+                        "level": 6,
+                        "xp": "auto"
+                    }
+                ]
+            },
+            {
+                "materials": {
+                    "Base.SheetMetal": 2,
+                    "Base.MetalBar": 4,
+                    "Base.Screws": 10
+                },
+                "consumables": {
+                    "Base.BlowTorch": 5,
+                    "Base.WeldingRods": 5
+                },
+                "tools": {
+                    "BlowTorch": true,
+                    "WeldingMask": true,
+                    "Screwdriver": true
+                },
+                "skills": [
+                    {
+                        "skill": "MetalWelding",
+                        "level": 4,
+                        "xp": 25
+                    },
+                    {
+                        "skill": "Woodwork",
+                        "level": 6,
+                        "xp": "auto"
+                    }
+                ]
+            }
+        ]
+    }
+]

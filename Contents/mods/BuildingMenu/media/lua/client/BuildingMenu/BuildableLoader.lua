@@ -1,94 +1,108 @@
 local Logger = require("BuildingMenu/Logger");
-local Utils = require("BuildingMenu/Utils");
-local ClassLoader = require("BuildingMenu/ClassLoader")
+local FileUtils = require("BuildingMenu/FileUtils");
+local ClassLoader = require("BuildingMenu/ClassLoader");
 
 local BuildableLoader = {};
 BuildableLoader.scripts = {};
 
+--- Loads buildable configurations from all activated mods.
 function BuildableLoader.loadFromMods()
     BuildableLoader.scripts = {};
-    local list = getActivatedMods();
+    local activatedMods = getActivatedMods();
 
-    for i = 0, list:size() - 1 do
-        local mod = tostring(list:get(i));
+    for i = 0, activatedMods:size() - 1 do
+        local modId = tostring(activatedMods:get(i));
         local configPath = "media/buildables/buildable_config.lua";
-        local fileReader = getModFileReader(mod, configPath, false);
 
-        if fileReader then
-            Logger:info(string.format("Found 'buildable_config.lua' in mod '%s'.", mod));
+        local fileContent = FileUtils.readFile(configPath, { modId = modId, isModFile = true, createIfNull = false });
 
-            local fileContent = "";
-            local line = fileReader:readLine();
-            while line do
-                fileContent = fileContent .. line .. "\n";
-                line = fileReader:readLine();
-            end
-            fileReader:close();
-
-            local status, configTable = pcall(loadstring(fileContent));
-            if status and type(configTable) == "table" and configTable.buildables then
-                local entry = { mod = mod, buildableFiles = configTable.buildables };
-                BuildableLoader.scripts[#BuildableLoader.scripts + 1] = entry;
+        if fileContent then
+            local loadFunction, loadError = loadstring(fileContent);
+            if not loadFunction then
+                Logger:error(string.format("Failed to load 'buildable_config.lua' in mod '%s': %s", modId, loadError));
             else
-                Logger:error(string.format("Failed to load or parse 'buildable_config.lua' in mod '%s'.", mod));
+                local success, configTable = pcall(loadFunction);
+                if success and type(configTable) == "table" and configTable.buildables then
+                    table.insert(BuildableLoader.scripts, {
+                        modId = modId,
+                        buildableFiles = configTable.buildables
+                    });
+                    Logger:info(string.format("Loaded buildable configuration from mod '%s'.", modId));
+                else
+                    Logger:error(string.format("Invalid configuration in 'buildable_config.lua' of mod '%s'.", modId));
+                end
             end
+        else
+            -- Logger:warning(string.format("'buildable_config.lua' not found in mod '%s'.", modId));
         end
     end
 end
 
---- Loads all buildable objects from the collected scripts
---- @return table BuildableObjectsRepository A table containing all the created buildable objects from all mods
+--- Loads all buildable objects from the collected scripts.
+--- @return table buildableObjectsRepository A table containing all the created buildable objects from all mods.
 function BuildableLoader.loadAllBuildables()
-    local BuildableObjectsRepository = {};
+    local buildableObjectsRepository = {};
 
     for _, script in ipairs(BuildableLoader.scripts) do
         for _, jsonFilename in ipairs(script.buildableFiles) do
-
+            local filePath = "media/buildables/" .. jsonFilename;
             local startTime = getTimestampMs();
 
-            local buildableData = Utils.jsonutil.load(script.mod, jsonFilename);
+            local buildableData = FileUtils.readJson(filePath,
+                { modId = script.modId, isModFile = true, createIfNull = false });
 
             local endTime = getTimestampMs();
             local loadTime = endTime - startTime;
-            Logger:info(string.format("Loaded JSON file '%s' from mod '%s' in %d ms", jsonFilename, script.mod, loadTime));
+            Logger:info(string.format("Loaded JSON file '%s' from mod '%s' in %d ms", jsonFilename, script.modId,
+                loadTime));
 
             if buildableData then
                 for _, data in ipairs(buildableData) do
-                    local class = data.class;
-                    local ClassModule = ClassLoader.loadClass(class);
-                    local obj;
+                    local className = data.class;
+                    local classModule = ClassLoader.loadClass(className);
 
-                    if ClassModule then
-                        obj = ClassModule:new(data);
-                    end
+                    if classModule then
+                        local buildableObject = classModule:new(data);
+                        if buildableObject then
+                            local primaryCategory = data.primaryCategory or "Uncategorized";
+                            local secondaryCategory = data.secondaryCategory;
+                            local tertiaryCategory = data.tertiaryCategory;
 
-                    if obj then
-                        BuildableObjectsRepository[data.primaryCategory] = BuildableObjectsRepository[data.primaryCategory] or {};
-                        local primary = BuildableObjectsRepository[data.primaryCategory];
+                            buildableObjectsRepository[primaryCategory] = buildableObjectsRepository[primaryCategory] or
+                                {};
+                            local primary = buildableObjectsRepository[primaryCategory];
 
-                        if data.secondaryCategory then
-                            primary[data.secondaryCategory] = primary[data.secondaryCategory] or {};
-                            local secondary = primary[data.secondaryCategory];
+                            if secondaryCategory then
+                                primary[secondaryCategory] = primary[secondaryCategory] or {};
+                                local secondary = primary[secondaryCategory];
 
-                            if data.tertiaryCategory then
-                                secondary[data.tertiaryCategory] = secondary[data.tertiaryCategory] or {};
-                                local tertiary = secondary[data.tertiaryCategory];
-                                tertiary[obj:getID()] = obj;
+                                if tertiaryCategory then
+                                    secondary[tertiaryCategory] = secondary[tertiaryCategory] or {};
+                                    local tertiary = secondary[tertiaryCategory];
+                                    tertiary[buildableObject:getID()] = buildableObject;
+                                else
+                                    secondary[buildableObject:getID()] = buildableObject;
+                                end
                             else
-                                secondary[obj:getID()] = obj;
+                                primary[buildableObject:getID()] = buildableObject;
                             end
                         else
-                            primary[obj:getID()] = obj;
+                            Logger:error(string.format("Failed to create buildable object for class '%s' in mod '%s'.",
+                                className, script.modId));
                         end
+                    else
+                        Logger:error(string.format("Class '%s' not found for buildable object in mod '%s'.", className,
+                            script.modId));
                     end
                 end
             else
-                Logger:error(string.format("Failed to load buildable objects from JSON: %s in mod %s", jsonFilename, script.mod));
+                Logger:error(string.format("Failed to load buildable data from '%s' in mod '%s'.", jsonFilename,
+                    script.modId));
             end
         end
     end
 
-    return BuildableObjectsRepository;
+    return buildableObjectsRepository;
 end
 
-return BuildableLoader
+return BuildableLoader;
