@@ -44,7 +44,7 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_Walls_White_Brick = "白砖墙",
     IGUI_BuildingMenuSubCat_Walls_Green_Brick = "绿砖墙",
     IGUI_BuildingMenuSubCat_Walls_Brown_Brick = "褐色砖墙",
-    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "Classic Brick",
+    IGUI_BuildingMenuSubCat_Walls_Classic_Brick = "经典砖墙",
 
     IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard = "蓝色隔板墙",
     IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard = "棕色隔板墙",
@@ -61,7 +61,7 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_Walls_Brown_Panel = "褐色面板墙",
     IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel = "花式木面板墙",
 
-    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "Bathroom Medium Tiles",
+    IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles = "浴室（中）",
 
     IGUI_BuildingMenuSubCat_Walls_White_Cinderblock = "白色砌块墙",
     IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock = "褐色砌块墙",
@@ -90,7 +90,7 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_Walls_Industrial_Walls = "工业墙",
     IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass = "褐色玻璃门",
     IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass = "黑色玻璃门",
-    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "Grey Frame Glass",
+    IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass = "灰色玻璃门",
     IGUI_BuildingMenuSubCat_Walls_Sewer_Walls = "下水道墙",
     IGUI_BuildingMenuSubCat_Walls_Tent_Walls = "帐篷墙",
 
@@ -114,11 +114,11 @@ IGUI_CN = {
     IGUI_BuildingMenuSubCat_Doors_Glass_Doors = "玻璃门",
     IGUI_BuildingMenuSubCat_Doors_Security_Doors = "安保门",
     
-    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "Sliding Doors",
+    IGUI_BuildingMenuSubCat_Doors_Sliding_Doors = "滑动门",
 
     IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors = "3格车库门",
     IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors = "4格车库门",
-    IGUI_BuildingMenuSubCat_Double_Door_Gates = "Double Door Gates",
+    IGUI_BuildingMenuSubCat_Double_Door_Gates = "双开门",
 
     IGUI_BuildingMenuCat_ArchitecturePlus = "更多建筑构造",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims = "门饰边",
