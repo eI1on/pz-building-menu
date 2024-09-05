@@ -196,7 +196,7 @@ Tooltip_CN = {
 
   Tooltip_BuildingMenuObj_Classic_Brick_Wall = "经典砖墙",
   Tooltip_BuildingMenuObj_Classic_Brick_Door_Frame = "经典砖门框",
-  Tooltip_BuildingMenuObj_Classic_Brick_Window_Frame = "经典褐窗框",
+  Tooltip_BuildingMenuObj_Classic_Brick_Window_Frame = "经典砖窗框",
   Tooltip_BuildingMenuObj_Classic_Brick_Pillar = "经典砖柱",
   Tooltip_BuildingMenuObj_Classic_Brick_Arched_Window_Frame = "经典砖拱形窗框",
   Tooltip_BuildingMenuObj_Classic_Brick_Roof_Slope_Wall_1 = "经典砖外墙1",
