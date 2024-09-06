@@ -1,3 +1,4 @@
+local BM_Logger = require("BM_Logger");
 local BM_Utils = require("BM_Utils");
 
 local RemovableWallVinesTiles = {
@@ -17,7 +18,7 @@ setmetatable(M, {
     end,
     __newindex = function(t, k, v)
         if not RemovableWallVinesTiles[k] and not methods[k] then
-            print("[Building Menu ERROR] ", "[RemovableWallVinesTiles] Adding new keys is not allowed. Use the addTile method: " .. tostring(k) .. " " .. tostring(v));
+            BM_Logger:error("[RemovableWallVinesTiles] Adding new keys is not allowed. Use the addTile method: " .. tostring(k) .. " " .. tostring(v));
         else
             RemovableWallVinesTiles[k] = v;
         end
@@ -36,7 +37,7 @@ methods.addTile = function(tile)
             table.insert(RemovableWallVinesTiles, v);
         end
     else
-        print("[Building Menu ERROR] ", "[RemovableWallVinesTiles] INVALID type. String or table expected: " .. tostring(tile));
+        BM_Logger:error("[RemovableWallVinesTiles] INVALID type. String or table expected: " .. tostring(tile));
     end
 end
 

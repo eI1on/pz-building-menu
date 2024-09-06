@@ -1397,4 +1397,4 @@ local function addCategoriesToBuildingMenu()
         addLightingToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

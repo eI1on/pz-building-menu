@@ -900,4 +900,4 @@ local function addCategoriesToBuildingMenu()
         addLaundryAppliancesToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

@@ -2147,4 +2147,4 @@ local function addCategoriesToBuildingMenu()
         addFridgeAppliancesToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

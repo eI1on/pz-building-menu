@@ -97,7 +97,7 @@ local function addDaddyDirkieDoorsToMenu()
         { start = 44, stop = 47, baseName = "edit_ddd_RUS_Doors_house_01_" },
         { start = 52, stop = 55, baseName = "edit_ddd_RUS_Doors_house_01_" },
         { start = 60, stop = 63, baseName = "edit_ddd_RUS_Doors_house_01_" },
-        { start = 68, stop = 71, baseName = "d_doors_01_" },
+        -- { start = 68, stop = 71, baseName = "d_doors_01_" },
     }
 
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenDoubleGlassDoorRecipe)
@@ -3875,4 +3875,4 @@ local function addCategoriesToBuildingMenu()
         addDaddyDirkieCraftedStoveToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

@@ -1,7 +1,8 @@
 local BM_Utils = require('BM_Utils')
 
 Events.OnLoadedTileDefinitions.Add(function(manager)
-    local sprites = {
+    -- grouped sprite operations to reuse local variables
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "industry_ddd_01_4",
         "industry_ddd_01_12",
         "industry_ddd_01_5",
@@ -24,193 +25,164 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "industry_ddd_01_58",
         "industry_ddd_01_57",
         "industry_ddd_01_56",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
-        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false);
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
-        BM_Utils.setSpriteProperty(props, "container", "crate", false);
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
-        props:CreateKeySet();
-    end
-
+    }, {
+        { "CanScrap",           "",       false },
+        { "IsMoveAble",         "",       false },
+        { "PickUpLevel",        "2",      false },
+        { "PickUpTool",         "Hammer", false },
+        { "PickUpWeight",       "200",    false },
+        { "PlaceTool",          "Hammer", false },
+        { IsoFlagType.container },
+        { "container",          "crate",  false },
+        { "ContainerCapacity",  "50",     false },
+    });
 
     -- Not working, idk why.
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "building_menu_03_ddd_Forest_Survival_0",
         "edit_ddd_RUS_Forest Survival_01_12"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowW);
-        BM_Utils.setSpriteProperty(props, "FlatTextureOffset", "-7")
-        props:CreateKeySet();
-    end
+    }, {
+        { "FlatTextureOffset", "-7", false }
+    }, {
+        IsoFlagType.windowW
+    });
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "building_menu_03_ddd_Forest_Survival_1",
         "edit_ddd_RUS_Forest Survival_01_13"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.unsetSpriteProperty(props, IsoFlagType.windowN);
-        BM_Utils.setSpriteProperty(props, "FlatTextureOffset", "-8")
-        props:CreateKeySet();
-    end
+    }, {
+        { "FlatTextureOffset", "-8", false }
+    }, {
+        IsoFlagType.windowN
+    });
 
-
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "edit_ddd_RUS_Forest Survival_01_16",
         "edit_ddd_RUS_Forest Survival_01_17",
         "edit_ddd_RUS_Forest Survival_01_18",
         "edit_ddd_RUS_Forest Survival_01_19",
         "edit_ddd_RUS_Forest Survival_01_20",
         "edit_ddd_RUS_Forest Survival_01_21",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "RoofGroup", "1", false);
-        BM_Utils.setSpriteProperty(props, IsoFlagType.ForceAmbient);
-        props:CreateKeySet();
-    end
-
+    }, {
+        { "RoofGroup",             "1", false },
+        { IsoFlagType.ForceAmbient }
+    }, nil);
 
     for i = 1, 5 do
         for j = 24, 55 do
-            local sprite = string.format("d_furniture_bedroom_0%d_%d", i, j)
-            local props = manager:getSprite(sprite):getProperties()
-            BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false)
-            BM_Utils.setSpriteProperty(props, IsoFlagType.container)
-            BM_Utils.setSpriteProperty(props, "container", "wardrobe", false)
-            BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false)
-            props:CreateKeySet()
-        end
-        
-        for j = 62, 63 do
-            local sprite = string.format("d_furniture_bedroom_0%d_%d", i, j)
-            local props = manager:getSprite(sprite):getProperties()
-            BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false)
-            BM_Utils.setSpriteProperty(props, IsoFlagType.container)
-            BM_Utils.setSpriteProperty(props, "container", "wardrobe", false)
-            BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false)
-            props:CreateKeySet()
+            BM_Utils.setOrUnsetSpriteProperties(manager, {
+                string.format("d_furniture_bedroom_0%d_%d", i, j)
+            }, {
+                { "ContainerPosition",  "Low",      false },
+                { IsoFlagType.container },
+                { "container",          "wardrobe", false },
+                { "ContainerCapacity",  "50",       false },
+            }, nil);
         end
 
+        for j = 62, 63 do
+            BM_Utils.setOrUnsetSpriteProperties(manager, {
+                string.format("d_furniture_bedroom_0%d_%d", i, j)
+            }, {
+                { "ContainerPosition",  "Low",      false },
+                { IsoFlagType.container },
+                { "container",          "wardrobe", false },
+                { "ContainerCapacity",  "50",       false },
+            }, nil);
+        end
     end
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "edit_ddd_RUS_furniture_storage_03_40",
         "edit_ddd_RUS_furniture_storage_03_41",
         "edit_ddd_RUS_furniture_storage_03_42",
         "edit_ddd_RUS_furniture_storage_03_43",
-        "edit_ddd_RUS_furniture_storage_03_89",
         "edit_ddd_RUS_furniture_storage_03_88",
+        "edit_ddd_RUS_furniture_storage_03_89",
         "edit_ddd_RUS_furniture_storage_03_91",
-        "edit_ddd_RUS_furniture_storage_03_90"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false)
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container)
-        BM_Utils.setSpriteProperty(props, "container", "wardrobe", false)
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false)
-        props:CreateKeySet()
-    end
+        "edit_ddd_RUS_furniture_storage_03_90",
+    }, {
+        { "ContainerPosition",  "Low",      false },
+        { IsoFlagType.container },
+        { "container",          "wardrobe", false },
+        { "ContainerCapacity",  "50",       false },
+    }, nil);
 
-    local dataCounters = {2, 3, 10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59}
-    sprites = {}
+    local dataCounters = { 2, 3, 10, 11, 18, 19, 26, 27, 34, 35, 42, 43, 50, 51, 58, 59 };
+    local sprites = {};
     for _, spriteNumber in ipairs(dataCounters) do
         table.insert(sprites, "edit_ddd_RUS_fixtures_counters_03_" .. spriteNumber);
         table.insert(sprites, "edit_ddd_RUS_fixtures_counters_03_" .. spriteNumber + 2);
         table.insert(sprites, "edit_ddd_RUS_fixtures_counters_03_" .. spriteNumber + 4);
         table.insert(sprites, "edit_ddd_RUS_fixtures_counters_03_" .. spriteNumber - 2);
     end
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "ContainerPosition", "High", false)
-        BM_Utils.setSpriteProperty(props, "IsHigh", "", false)
-        BM_Utils.setSpriteProperty(props, "MoveType", "WallObject", false)
-        BM_Utils.setSpriteProperty(props, "ScrapSize", "Small", false)
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container)
-        BM_Utils.setSpriteProperty(props, "container", "counter", false)
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false)
-        props:CreateKeySet()
-    end
+    BM_Utils.setOrUnsetSpriteProperties(manager, sprites, {
+        { "ContainerPosition",  "High",       false },
+        { "IsHigh",             "",           false },
+        { "MoveType",           "WallObject", false },
+        { "ScrapSize",          "Small",      false },
+        { IsoFlagType.container },
+        { "container",          "counter",    false },
+        { "ContainerCapacity",  "50",         false },
+    }, nil);
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "furniture_storage_ddd_01_4",
-        "furniture_storage_ddd_01_9"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "IsLow", "", false)
-        BM_Utils.setSpriteProperty(props, "IsTable", "", false)
-        BM_Utils.setSpriteProperty(props, "IsStackable", "", false)
-        BM_Utils.setSpriteProperty(props, "Surface", "16", false)
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container)
-        BM_Utils.setSpriteProperty(props, "container", "locker", false)
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "30", false)
-        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false)
-        props:CreateKeySet()
-    end
+        "furniture_storage_ddd_01_9",
+    }, {
+        { "IsLow",              "",       false },
+        { "IsTable",            "",       false },
+        { "IsStackable",        "",       false },
+        { "Surface",            "16",     false },
+        { IsoFlagType.container },
+        { "container",          "locker", false },
+        { "ContainerCapacity",  "30",     false },
+        { "ContainerPosition",  "Low",    false },
+    }, nil);
 
-
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "furniture_storage_ddd_01_7",
-        "furniture_storage_ddd_01_8"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "GroupName", "Pallet", false)
-        BM_Utils.setSpriteProperty(props, "CustomName", "with Small Crates", false)
-        BM_Utils.setSpriteProperty(props, "IsLow", "", false)
-        BM_Utils.setSpriteProperty(props, "IsTable", "", false)
-        BM_Utils.setSpriteProperty(props, "IsStackable", "", false)
-        BM_Utils.setSpriteProperty(props, "Surface", "32", false)
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container)
-        BM_Utils.setSpriteProperty(props, "container", "locker", false)
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "80", false)
-        BM_Utils.setSpriteProperty(props, "ContainerPosition", "Low", false)
-        props:CreateKeySet()
-    end
+        "furniture_storage_ddd_01_8",
+    }, {
+        { "GroupName",          "Pallet",            false },
+        { "CustomName",         "with Small Crates", false },
+        { "IsLow",              "",                  false },
+        { "IsTable",            "",                  false },
+        { "IsStackable",        "",                  false },
+        { "Surface",            "32",                false },
+        { IsoFlagType.container },
+        { "container",          "locker",            false },
+        { "ContainerCapacity",  "80",                false },
+        { "ContainerPosition",  "Low",               false },
+    }, nil);
 
-
-    sprites = {
-        "edit_ddd_RUS_furniture_storage_03_89",
-        "edit_ddd_RUS_furniture_storage_03_88",
-        "edit_ddd_RUS_furniture_storage_03_91",
-        "edit_ddd_RUS_furniture_storage_03_90",
-        "edit_ddd_RUS_furniture_storage_03_41",
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "edit_ddd_RUS_furniture_storage_03_40",
+        "edit_ddd_RUS_furniture_storage_03_41",
+        "edit_ddd_RUS_furniture_storage_03_42",
         "edit_ddd_RUS_furniture_storage_03_43",
-        "edit_ddd_RUS_furniture_storage_03_42"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "BlocksPlacement", "", false)
-        BM_Utils.setSpriteProperty(props, "CanBreak", "", false)
-        BM_Utils.setSpriteProperty(props, "CanScrap", "", false)
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "25", false)
-        BM_Utils.setSpriteProperty(props, "Material", "Wood", false)
-        BM_Utils.setSpriteProperty(props, "Material2", "Nails", false)
-        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false)
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false)
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false)
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false)
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false)
-        BM_Utils.setSpriteProperty(props, "ScrapSize", "Large", false)
-        BM_Utils.setSpriteProperty(props, "Surface", "15", false)
-        BM_Utils.setSpriteProperty(props, "Container", "wardrobe", false)
-        props:CreateKeySet()
-    end
+        "edit_ddd_RUS_furniture_storage_03_88",
+        "edit_ddd_RUS_furniture_storage_03_89",
+        "edit_ddd_RUS_furniture_storage_03_90",
+        "edit_ddd_RUS_furniture_storage_03_91",
+    }, {
+        { "BlocksPlacement",   "",         false },
+        { "CanBreak",          "",         false },
+        { "CanScrap",          "",         false },
+        { "ContainerCapacity", "25",       false },
+        { "Material",          "Wood",     false },
+        { "Material2",         "Nails",    false },
+        { "PickUpLevel",       "2",        false },
+        { "PickUpTool",        "Hammer",   false },
+        { "IsMoveAble",        "",         false },
+        { "PickUpWeight",      "200",      false },
+        { "PlaceTool",         "Hammer",   false },
+        { "ScrapSize",         "Large",    false },
+        { "Surface",           "15",       false },
+        { "Container",         "wardrobe", false },
+    }, nil);
 
-
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "d_furniture_kitchen_01_0",
         "d_furniture_kitchen_01_1",
         "d_furniture_kitchen_01_2",
@@ -221,27 +193,21 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "d_furniture_kitchen_01_7",
         "d_furniture_kitchen_01_112",
         "d_furniture_kitchen_01_113",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "ContainerPosition", "High", false)
-        BM_Utils.setSpriteProperty(props, "container", "overhead", false)
-        BM_Utils.unsetSpriteProperty(props, IsoFlagType.solidtrans)
-        BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedW)
-        BM_Utils.unsetSpriteProperty(props, IsoFlagType.attachedN)
-        props:CreateKeySet()
-    end
+    }, {
+        { "ContainerPosition", "High",     false },
+        { "container",         "overhead", false },
+    }, {
+        IsoFlagType.solidtrans,
+        IsoFlagType.attachedW,
+        IsoFlagType.attachedN,
+    });
 
-    
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "furniture_storage_ddd_01_14",
         "furniture_storage_ddd_01_15",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.unsetSpriteProperty(props, "PickUpLevel")
-        BM_Utils.unsetSpriteProperty(props, "PickUpTool")
-        BM_Utils.unsetSpriteProperty(props, "PlaceTool")
-        props:CreateKeySet()
-    end
+    }, nil, {
+        "PickUpLevel",
+        "PickUpTool",
+        "PlaceTool",
+    });
 end)

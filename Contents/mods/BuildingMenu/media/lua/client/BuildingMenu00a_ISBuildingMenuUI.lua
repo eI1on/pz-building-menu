@@ -11,10 +11,11 @@ local getSprite = getSprite
 ---@type function
 local getTextOrNull = getTextOrNull
 
-local BM_Utils = require("BM_Utils")
+local BM_Logger = require("BM_Logger");
+local BM_Utils = require("BM_Utils");
+
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
-
 
 --- Class representing the tile picker list in the Building Menu
 ---@class BuildingMenuTilePickerList: ISPanel
@@ -28,8 +29,9 @@ function BuildingMenuTilePickerList:render()
     self:setStencilRect(1, 1, self:getWidth(), self:getHeight());
 
     local objectsBuffer = {};
-    local maxCols = math.floor(self:getWidth() / TILE_WIDTH);
-    local maxRows = math.ceil(#(self.subCatData or {}) / maxCols);
+    local maxCols = (self:getWidth() / TILE_WIDTH) - ((self:getWidth() / TILE_WIDTH) % 1);
+    local totalItems = #(self.subCatData or {});
+    local maxRows = (totalItems / maxCols) + ((totalItems % maxCols > 0) and 1 or 0);
 
     for r = 1, maxRows do
         for c = 1, maxCols do
@@ -102,8 +104,8 @@ function BuildingMenuTilePickerList:updateTooltip(maxCols, maxRows)
             self:clearStencilRect(); return;
         end
 
-        local c = math.floor(mouseX / TILE_WIDTH);
-        local r = math.floor(mouseY / TILE_HEIGHT);
+        local c = (mouseX / TILE_WIDTH) - ((mouseX / TILE_WIDTH) % 1);
+        local r = (mouseY / TILE_HEIGHT) - ((mouseY / TILE_HEIGHT) % 1);
 
         if c >= 0 and r >= 0 and r < maxRows and c < maxCols and self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1] then
             local selectedObject = self.posToObjectNameTable[r + 1][c + 1];
@@ -306,11 +308,12 @@ function BuildingMenuTilePickerList:processBuild(objData)
         end
     end
 
-
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.materialFoundIndexMatrix ", objData.materialFoundIndexMatrix);
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.consumablesFoundIndexMatrix ", objData.consumablesFoundIndexMatrix);
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] objData.toolFoundIndexMatrix ", objData.toolFoundIndexMatrix);
-
+    -- BM_Logger:debug("objData.materialFoundIndexMatrix");
+    -- BM_Logger:debug(objData.materialFoundIndexMatrix);
+    -- BM_Logger:debug("objData.consumablesFoundIndexMatrix");
+    -- BM_Logger:debug(objData.consumablesFoundIndexMatrix);
+    -- BM_Logger:debug("objData.toolFoundIndexMatrix");
+    -- BM_Logger:debug(objData.toolFoundIndexMatrix);
 
     -- Helper function to process Material Groups or Consumable Groups
     local function processItems(itemGroupInfo, targetList, groupType)
@@ -324,7 +327,10 @@ function BuildingMenuTilePickerList:processBuild(objData)
 
                 for item, count in pairs(itemDetails[groupType .. "Details"]) do
                     -- Only use this item if we still need more and haven't used a full alternative
-                    local amountToUse = math.min(count, totalNeeded - totalCollected);
+                    local amountToUse = count;
+                    if totalNeeded - totalCollected < count then
+                        amountToUse = totalNeeded - totalCollected;
+                    end
 
                     if ISBuildMenu.cheat then amountToUse = totalNeeded; end
 
@@ -372,8 +378,8 @@ end
 ---@param x number
 ---@param y number
 function BuildingMenuTilePickerList:onMouseDown(x, y)
-    local c = math.floor(x / 64);
-    local r = math.floor(y / 128);
+    local c = (x - (x % 64)) / 64;
+    local r = (y - (y % 128)) / 128;
     local selectedObject = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
 
     if selectedObject and selectedObject.canBuild then
@@ -384,39 +390,40 @@ end
 --- Spawns items in the player's inventory
 ---@param selectedObject table
 function BuildingMenuTilePickerList:spawnItems(selectedObject)
-    local objectRecipe = selectedObject.objDef.data.recipe
-    if not objectRecipe then return end
+    local objectRecipe = selectedObject.objDef.data.recipe;
+    if not objectRecipe then return; end
 
-    local inventory = self.character:getInventory()
+    local inventory = self.character:getInventory();
 
     local function addItemToInventory(itemTable)
-        local items, amount = itemTable.Material or itemTable.Consumable, tonumber(itemTable.Amount)
+        local items, amount = itemTable.Material or itemTable.Consumable, tonumber(itemTable.Amount);
 
         if type(items) == "table" then
-            items = items[1]
+            items = items[1];
         end
 
         if items == "Base.BlowTorch" then return; end
 
         if items and amount then
             for i = 1, amount do
-                inventory:AddItem(items)
+                inventory:AddItem(items);
             end
         else
-            print("[Building Menu ERROR] Item or amount is nil for", items)
+            BM_Logger:error("Item or amount is nil for:");
+            BM_Logger:error(items);
         end
     end
 
     for _, tool in ipairs(objectRecipe.neededTools or {}) do
-        inventory:AddItem(BuildingMenu.Tools[tool].types[1])
+        inventory:AddItem(BuildingMenu.Tools[tool].types[1]);
     end
 
     for _, material in pairs(objectRecipe.neededMaterials or {}) do
-        addItemToInventory(type(material[1]) == "table" and material[1] or material)
+        addItemToInventory(type(material[1]) == "table" and material[1] or material);
     end
 
     for _, consumable in pairs(objectRecipe.useConsumable or {}) do
-        addItemToInventory(type(consumable[1]) == "table" and consumable[1] or consumable)
+        addItemToInventory(type(consumable[1]) == "table" and consumable[1] or consumable);
     end
 end
 
@@ -427,12 +434,12 @@ function BuildingMenuTilePickerList:onRightMouseDown(x, y)
     if not isDebugEnabled() then return; end
     if not self.character or self.character:isDead() then return; end
 
-    local c = math.floor(x / 64);
-    local r = math.floor(y / 128);
+    local c = (x - (x % 64)) / 64;
+    local r = (y - (y % 128)) / 128;
     local selectedObject = self.posToObjectNameTable[r + 1] and self.posToObjectNameTable[r + 1][c + 1];
 
     if selectedObject then
-        self:spawnItems(selectedObject)
+        self:spawnItems(selectedObject);
     end
 end
 
@@ -504,8 +511,9 @@ function BuildingMenuTilePickerList:onJoypadDirUp()
 end
 
 function BuildingMenuTilePickerList:onJoypadDirDown()
-    local maxCols = math.floor(self:getWidth() / TILE_WIDTH);
-    local maxRows = math.ceil(#(self.subCatData or {}) / maxCols);
+    local maxCols = (self:getWidth() / TILE_WIDTH) - ((self:getWidth() / TILE_WIDTH) % 1);
+    local totalItems = #(self.subCatData or {});
+    local maxRows = (totalItems / maxCols) + ((totalItems % maxCols > 0) and 1 or 0);
     if self.selectedTileRow < maxRows then
         local newRow = self.selectedTileRow + 1;
         -- check if the new position has an object
@@ -530,7 +538,7 @@ function BuildingMenuTilePickerList:onJoypadDirLeft()
 end
 
 function BuildingMenuTilePickerList:onJoypadDirRight()
-    local maxCols = math.floor(self:getWidth() / TILE_WIDTH)
+    local maxCols = (self:getWidth() / TILE_WIDTH) - ((self:getWidth() / TILE_WIDTH) % 1);
     if self.selectedTileCol < maxCols then
         local newCol = self.selectedTileCol + 1
         -- check if the new position has an object
@@ -592,12 +600,16 @@ ISBuildingMenuUI.upArrowCategory     = Keyboard.KEY_UP;
 ISBuildingMenuUI.downArrowCategory   = Keyboard.KEY_DOWN;
 ISBuildingMenuUI.players             = {};
 
+local objectsInitialized             = false;
+
 --- Opens the Building Menu UI panel
 ---@param playerObj IsoPlayer
 function ISBuildingMenuUI.openPanel(playerObj)
     local modData = playerObj:getModData();
     local savedPosition = modData.BMUIPosition;
     local width, height, x, y;
+    local screenWidth = getCore():getScreenWidth();
+    local screenHeight = getCore():getScreenHeight();
 
     if savedPosition then
         width = savedPosition.width;
@@ -607,8 +619,24 @@ function ISBuildingMenuUI.openPanel(playerObj)
     else
         width = 570;
         height = 400;
-        x = (getCore():getScreenWidth() / 2) + (width / 2);
-        y = (getCore():getScreenHeight() / 2) - (height / 2);
+        x = (screenWidth / 2) - (width / 2);
+        y = (screenHeight / 2) - (height / 2);
+    end
+
+    -- make sure the UI is within screen bounds
+    if x + width > screenWidth then
+        x = screenWidth - width;
+    end
+    if y + height > screenHeight then
+        y = screenHeight - height;
+    end
+    if x < 0 then x = 0; end
+    if y < 0 then y = 0; end
+
+    if not objectsInitialized then
+        triggerEvent("OnInitializeBuildingMenuRecipes");
+        triggerEvent("OnInitializeBuildingMenuObjects"); --- init objects take about 150ms
+        objectsInitialized = true;
     end
 
     local BMUI = ISBuildingMenuUI.instance;
@@ -772,8 +800,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
         local option = context:addOption("Not Thumpable", self, function(self)
             self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable;
-            BM_Utils.debugPrint("[Building Menu DEBUG] self.tilesList.overwriteIsThumpable: ",
-                self.tilesList.overwriteIsThumpable);
+            BM_Logger:info("Overwrite Is Thumpable: " .. self.tilesList.overwriteIsThumpable);
         end);
         context:setOptionChecked(option, self.tilesList.overwriteIsThumpable);
     end
@@ -783,7 +810,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isBuildRoofActive then
         local option = context:addOption("Floor is Ceiling", self, function(self)
             self.floorIsRoof = not self.floorIsRoof;
-            BM_Utils.debugPrint("[Building Menu DEBUG] self.floorIsRoof: ", self.floorIsRoof);
+            BM_Logger:info("Floor Is Roof: " .. self.floorIsRoof);
         end);
         context:setOptionChecked(option, self.floorIsRoof);
     end
@@ -797,8 +824,8 @@ function ISBuildingMenuUI:onGearButtonClick()
         if logTo01(opaques[i]) <= self.maxOpaque then
             local option = minOpaqueSubMenu:addOption((opaques[i] * 100) .. "%", ISBuildingMenuUI.instance,
                 ISBuildingMenuUI.onMinOpaqueChange, opaques[i]);
-            local current = math.floor(self.minOpaque * 1000);
-            local value = math.floor(logTo01(opaques[i]) * 1000);
+            local current = (self.minOpaque * 1000) - (self.minOpaque * 1000) % 1;
+            local value = (logTo01(opaques[i]) * 1000) - (logTo01(opaques[i]) * 1000) % 1;
             if current == value then
                 minOpaqueSubMenu:setOptionChecked(option, true);
             end
@@ -812,8 +839,8 @@ function ISBuildingMenuUI:onGearButtonClick()
         if logTo01(opaques[i]) >= self.minOpaque then
             local option = maxOpaqueSubMenu:addOption((opaques[i] * 100) .. "%", ISBuildingMenuUI.instance,
                 ISBuildingMenuUI.onMaxOpaqueChange, opaques[i]);
-            local current = math.floor(self.maxOpaque * 1000);
-            local value = math.floor(logTo01(opaques[i]) * 1000);
+            local current = (self.maxOpaque * 1000) - (self.maxOpaque * 1000) % 1;
+            local value = (logTo01(opaques[i]) * 1000) - (logTo01(opaques[i]) * 1000) % 1;
             if current == value then
                 maxOpaqueSubMenu:setOptionChecked(option, true);
             end

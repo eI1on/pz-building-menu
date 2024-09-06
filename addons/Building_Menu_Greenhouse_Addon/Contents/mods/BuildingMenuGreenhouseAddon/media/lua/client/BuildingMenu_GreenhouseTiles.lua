@@ -1491,4 +1491,4 @@ local function addCategoriesToBuildingMenu()
         addFencesToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

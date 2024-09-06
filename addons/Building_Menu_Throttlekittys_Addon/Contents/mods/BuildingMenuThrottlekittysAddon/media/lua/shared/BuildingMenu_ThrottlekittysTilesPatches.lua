@@ -2,32 +2,26 @@ local BM_Utils = require('BM_Utils')
 
 
 Events.OnLoadedTileDefinitions.Add(function(manager)
-    local sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "lighting_outdoor_tk_01_12",
         "lighting_outdoor_tk_01_13",
         "lighting_outdoor_tk_01_17",
         "lighting_outdoor_tk_01_14",
         "lighting_outdoor_tk_01_16",
         "lighting_outdoor_tk_01_15",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "200", false);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Electrician", false);
-        BM_Utils.setSpriteProperty(props, "PickUpLevel", "4", false);
-        props:CreateKeySet();
-    end
+    }, {
+        { "IsMoveAble",   "",            false },
+        { "PickUpWeight", "200",         false },
+        { "PickUpTool",   "Electrician", false },
+        { "PickUpLevel",  "4",           false },
+    });
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "kitchen_misc_tk_01_12",
         "kitchen_misc_tk_01_13",
         "kitchen_misc_tk_01_14",
         "kitchen_misc_tk_01_15",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.unsetSpriteProperty(props, "MoveType");
-        props:CreateKeySet();
-    end
+    }, nil, {
+        "MoveType"
+    });
 end)

@@ -1,5 +1,7 @@
-require "BuildingObjects/TimedActions/ISBuildAction"
+require "BuildingObjects/TimedActions/ISBuildAction";
+
 local BM_Utils = require("BM_Utils");
+
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
 

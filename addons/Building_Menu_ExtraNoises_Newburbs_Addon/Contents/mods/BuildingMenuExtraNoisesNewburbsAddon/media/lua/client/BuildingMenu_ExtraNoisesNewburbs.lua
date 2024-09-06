@@ -1613,4 +1613,4 @@ local function addCategoriesToBuildingMenu()
         addWindowsPlusToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

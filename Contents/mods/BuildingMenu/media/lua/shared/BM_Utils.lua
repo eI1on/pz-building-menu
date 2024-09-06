@@ -1,27 +1,7 @@
+local BM_Logger = require("BM_Logger");
+
 ---@class BM_Utils
 local BM_Utils = {};
-BM_Utils.verbose = isDebugEnabled();
-
---- Utility function for debug printing
----@param prefix string
----@param data any
-function BM_Utils.debugPrint(prefix, data)
-    if not BM_Utils.verbose then return; end
-    if type(data) == "table" then
-        for key, value in pairs(data) do
-            if type(value) == "table" then
-                print(prefix .. key .. ":");
-                BM_Utils.debugPrint(prefix .. "\t", value);
-            else
-                print(prefix .. key .. ": " .. tostring(value));
-            end
-        end
-    elseif data ~= nil then
-        print(prefix .. tostring(data));
-    else
-        print(prefix .. " nil");
-    end
-end
 
 --- Sets a sprite property
 ---@param props PropertyContainer The properties object of the sprite
@@ -30,18 +10,18 @@ end
 ---@param checkIsoFlagType boolean|nil Additional flag to indicate if IsoFlagType should be checked
 function BM_Utils.setSpriteProperty(props, propertyName, propertyValue, checkIsoFlagType)
     if type(propertyName) == "userdata" and propertyValue == nil then
-        props:Set(propertyName)
+        props:Set(propertyName);
     elseif type(propertyName) == "string" and type(propertyValue) == "string" then
         if checkIsoFlagType == nil then
-            props:Set(propertyName, propertyValue)
+            props:Set(propertyName, propertyValue);
         else
-            props:Set(propertyName, propertyValue, checkIsoFlagType)
+            props:Set(propertyName, propertyValue, checkIsoFlagType);
         end
     elseif type(propertyName) == "userdata" and type(propertyValue) == "string" then
-        props:Set(propertyName, propertyValue)
+        props:Set(propertyName, propertyValue);
     else
-        print("[Building Menu ERROR] Invalid parameter types or count for Set function")
-        print(propertyName, " ", propertyValue, " ", checkIsoFlagType)
+        BM_Logger:error("Invalid parameter types or count for Set function");
+        BM_Logger:error((propertyName or "nil") .. " " .. (propertyValue or "nil") .. " " .. (checkIsoFlagType or "nil"));
     end
 end
 
@@ -54,22 +34,46 @@ function BM_Utils.unsetSpriteProperty(props, propertyName)
     elseif type(propertyName) == "userdata" then
         props:UnSet(propertyName)
     else
-        print("[Building Menu ERROR] Invalid parameter type for UnSet function")
-        print(propertyName)
+        priBM_Logger:errornt("Invalid parameter type for UnSet function")
+        BM_Logger:error((propertyName or "nil"))
+    end
+end
+
+--- Function to set or unset sprite properties
+---@param manager IsoSpriteManager The sprite manager
+---@param spriteList table The list of sprite names
+---@param setProperties table|nil A list of properties to set
+---@param unsetProperties table|nil A list of properties to unset
+function BM_Utils.setOrUnsetSpriteProperties(manager, spriteList, setProperties, unsetProperties)
+    local props;
+    for _, sprite in ipairs(spriteList) do
+        props = manager:getSprite(sprite):getProperties();
+        -- set properties
+        if setProperties then
+            for _, prop in ipairs(setProperties) do
+                BM_Utils.setSpriteProperty(props, unpack(prop));
+            end
+        end
+        -- unset properties
+        if unsetProperties then
+            for _, prop in ipairs(unsetProperties) do
+                BM_Utils.unsetSpriteProperty(props, prop);
+            end
+        end
+        props:CreateKeySet();
     end
 end
 
 --- Prints property names and flags list for a sprite
 ---@param sprite string The sprite name
 function BM_Utils.printPropNamesFromSprite(sprite)
-    if not BM_Utils.verbose then return; end
     local isoSprite = IsoSpriteManager.instance:getSprite(sprite);
     if not isoSprite then
-        print("[Building Menu DEBUG] NO Properties for " .. sprite); return;
+        BM_Logger:debug("NO Properties for " .. sprite); return;
     end;
     local props = isoSprite:getProperties();
-    print("[Building Menu DEBUG] Property Names for " .. sprite .. " :", props:getPropertyNames());
-    print("[Building Menu DEBUG] Flags List for " .. sprite .. " :", props:getFlagsList());
+    BM_Logger:debug("Property Names for " .. sprite .. " :" .. tostring(props:getPropertyNames()));
+    BM_Logger:debug("Flags List for " .. sprite .. " :" .. tostring(props:getFlagsList()));
 end
 
 --- Calculates the health of metal buildings based on Metalwelding perk
@@ -85,13 +89,11 @@ function BM_Utils.getMetalHealth(ISItem)
     return health;
 end
 
-
 function BM_Utils.safeCallMethod(object, methodName, ...)
     if type(object[methodName]) == "function" then
         return object[methodName](object, ...);
     end
 end
-
 
 -- Function to add a list of values to a specified property in the world's property value map
 ---@param propertyName string The name of the property to which values are added

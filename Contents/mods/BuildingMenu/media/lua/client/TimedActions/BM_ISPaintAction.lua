@@ -1,5 +1,5 @@
 require("BuildingObjects/TimedActions/ISPaintAction")
-local BM_Utils = require("BM_Utils");
+local BM_Logger = require("BM_Logger");
 
 local oldISPaintActionPerform = ISPaintAction.perform;
 
@@ -19,7 +19,7 @@ function ISPaintAction:perform()
 
     if newSpriteName then
         self.thumpable:setSpriteFromName(newSpriteName);
-        BM_Utils.debugPrint("[Building Menu DEBUG] ", "currentSpriteName: " .. currentSpriteName .. " newSpriteName:" .. newSpriteName);
+        BM_Logger:debug("currentSpriteName: " .. currentSpriteName .. " newSpriteName:" .. newSpriteName);
     end
 
     oldISPaintActionPerform(self);

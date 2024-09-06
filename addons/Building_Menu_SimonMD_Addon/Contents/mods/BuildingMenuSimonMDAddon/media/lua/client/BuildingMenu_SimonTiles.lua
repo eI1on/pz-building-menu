@@ -1182,4 +1182,4 @@ local function addCategoriesToBuildingMenu()
         addSimonMDSecretEntrancesToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

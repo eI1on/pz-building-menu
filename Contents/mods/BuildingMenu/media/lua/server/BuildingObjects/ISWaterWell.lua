@@ -1,4 +1,4 @@
-local BM_Utils = require("BM_Utils");
+local BM_Logger = require("BM_Logger");
 
 --- @class ISWaterWell : ISBuildingObject
 ISWaterWell = ISBuildingObject:derive('ISWaterWell')
@@ -10,7 +10,7 @@ ISWaterWell.WaterWells = {}
 ISWaterWell.wantNoise = getDebug()
 local noise = function(msg)
     if (ISWaterWell.wantNoise) then 
-        BM_Utils.debugPrint("[Building Menu DEBUG] Water Wells: ", msg);
+        BM_Logger:debug("Water Wells: " .. tostring(msg));
     end
 end
 

@@ -1,5 +1,3 @@
--- if not isClient() then return print("WARN: Sandbox UIPatch available only for multiplayer."); end
-
 local function ForcedSetY(self, y)
     self.y = y;
     if self.javaObject ~= nil then

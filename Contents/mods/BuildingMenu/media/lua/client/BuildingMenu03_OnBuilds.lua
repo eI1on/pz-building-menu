@@ -1,3 +1,4 @@
+local BM_Logger = require("BM_Logger");
 local BM_Utils = require("BM_Utils");
 
 ---@class BuildingMenu
@@ -94,9 +95,9 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
             end
         end
 
-        BM_Utils.debugPrint("[Building Menu DEBUG] ", name);
-        BM_Utils.debugPrint("[Building Menu DEBUG] ", objectOptions);
-        BM_Utils.debugPrint("[Building Menu DEBUG] ", objectRecipe);
+        BM_Logger:debug(name);
+        BM_Logger:debug(objectOptions);
+        BM_Logger:debug(objectRecipe);
 
         local health = BM_Utils.safeCallMethod(object, "getHealth");
         local origGetHealth = object.getHealth;
@@ -109,9 +110,8 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
         end
 
         health = BM_Utils.safeCallMethod(object, "getHealth");
-        BM_Utils.debugPrint("[Building Menu DEBUG] ",
-            string.format("objectOptions.extraHealth: %s  objectOptions.health: %s  object:getHealth(): %s",
-                objectOptions.extraHealth or 0, objectOptions.health or 0, health or 0));
+        BM_Logger:debug(string.format("objectOptions.extraHealth: %s  objectOptions.health: %s  object:getHealth(): %s",
+            objectOptions.extraHealth or 0, objectOptions.health or 0, health or 0));
 
         if spritesName then
             if spritesName["sprite"] then
@@ -514,7 +514,7 @@ BuildingMenu.onBuildMannequin = function(sprites, name, playerNum, objectRecipe,
     --     BuildingMenu.buildObject(mo, nil, mo.playerNum)
     --     -- getCell():setDrag(mo, mo.playerNum);
     -- else
-    --     BM_Utils.debugPrint("[BuildingMenu] ", "Mannequin script now found!!!")
+    --     BM_Logger:debug("[BuildingMenu] ", "Mannequin script now found!!!")
     --     return
     -- end
 
@@ -632,8 +632,8 @@ BuildingMenu.onBuildBarricade = function(sprites, name, playerNum, objectRecipe,
     _barricade.getHealth = function(self)
         if not _barricade.health then _barricade.health = 2500; end
 
-        BM_Utils.debugPrint("[Building Menu DEBUG] ", "_barricade.health: " .. (objectOptions.health or 0));
-        BM_Utils.debugPrint("[Building Menu DEBUG] ", "_barricade.health + health: " .. _barricade.health + health);
+        BM_Logger:debug("_barricade.health: " .. (objectOptions.health or 0));
+        BM_Logger:debug("_barricade.health + health: " .. _barricade.health + health);
 
         return _barricade.health + health;
     end
@@ -901,7 +901,7 @@ BuildingMenu.onBuildFloor = function(sprites, name, playerNum, objectRecipe, obj
     local _floor = nil
 
     if ISBuildingMenuUI.instance and ISBuildingMenuUI.instance.floorIsRoof then
-        print("ISBuildingMenuUI.instance.floorIsRoof ", ISBuildingMenuUI.instance.floorIsRoof)
+        BM_Logger:info("Floor if roof " .. ISBuildingMenuUI.instance.floorIsRoof);
         _floor = ISWoodenRoof:new(sprites.sprite, sprites.northSprite);
     else
         _floor = ISWoodenFloor:new(sprites.sprite, sprites.northSprite);

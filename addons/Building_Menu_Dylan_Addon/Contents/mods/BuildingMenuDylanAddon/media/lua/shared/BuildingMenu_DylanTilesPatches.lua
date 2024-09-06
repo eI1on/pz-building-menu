@@ -2,17 +2,14 @@ local BM_Utils = require('BM_Utils')
 
 
 Events.OnLoadedTileDefinitions.Add(function(manager)
-    local sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "DylansRandomFurniture01_8",
-        "DylansRandomFurniture01_9"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "50", false);
-        props:CreateKeySet();
-    end
+        "DylansRandomFurniture01_9",
+    }, {
+        { "ContainerCapacity", "50", false }
+    });
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "DarthGunStore_8",
         "DarthGunStore_9",
         "DarthGunStore_10",
@@ -20,34 +17,25 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "DarthGunStore_12",
         "DarthGunStore_13",
         "DarthGunStore_14",
-        "DarthGunStore_15"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "80", false);
-        props:CreateKeySet();
-    end
+        "DarthGunStore_15",
+    }, {
+        { "ContainerCapacity", "80", false }
+    });
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "BlackCoffeeCo01_8",
         "BlackCoffeeCo01_9",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
-        BM_Utils.setSpriteProperty(props, "container", "locker", false);
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "80", false);
-        props:CreateKeySet();
-    end
+    }, {
+        { IsoFlagType.container },
+        { "container",          "locker", false },
+        { "ContainerCapacity",  "80",     false },
+    });
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "DylansRandomFurniture01_13",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
-        BM_Utils.setSpriteProperty(props, "container", "Toolbox", false);
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "25", false);
-        props:CreateKeySet();
-    end
+    }, {
+        { IsoFlagType.container },
+        { "container",          "toolbox", false },
+        { "ContainerCapacity",  "25",      false },
+    });
 end)

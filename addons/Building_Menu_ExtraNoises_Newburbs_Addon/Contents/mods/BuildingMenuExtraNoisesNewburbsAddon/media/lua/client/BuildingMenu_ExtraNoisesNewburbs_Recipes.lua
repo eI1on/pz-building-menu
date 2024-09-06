@@ -82,6 +82,6 @@ local function initBuildingMenuRecipes()
 
 end
 
-Events.OnInitGlobalModData.Add(function()
+Events.OnInitializeBuildingMenuRecipes.Add(function()
     initBuildingMenuRecipes()
 end)

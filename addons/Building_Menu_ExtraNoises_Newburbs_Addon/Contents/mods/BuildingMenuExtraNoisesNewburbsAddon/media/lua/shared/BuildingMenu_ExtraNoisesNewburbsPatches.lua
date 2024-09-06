@@ -1,7 +1,7 @@
 local BM_Utils = require('BM_Utils')
 
 Events.OnLoadedTileDefinitions.Add(function(manager)
-    local sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "en_newburbs_windows_01_0",
         "en_newburbs_windows_01_8",
         "en_newburbs_windows_01_16",
@@ -15,34 +15,25 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "en_newburbs_windows_01_80",
         "en_newburbs_windows_01_81",
         "en_newburbs_windows_01_82",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
-        BM_Utils.setSpriteProperty(props, "CustomName", "Window", false);
-        BM_Utils.setSpriteProperty(props, "GroupName", "Wooden", false);
+    }, {
+        { "CanBreak",           "",        false },
+        { "CustomName",         "Window",  false },
+        { "GroupName",          "Wooden",  false },
+        { "Facing",             "W",       false },
+        { "IsClosedState",      "",        false },
+        { "IsMoveAble",         "",        false },
+        { "MoveType",           "Window",  false },
+        { "Noffset",            "1",       false },
+        { "PickUpLevel",        "2",       false },
+        { "PickUpTool",         "Crowbar", false },
+        { "PickUpWeight",       "100",     false },
+        { "PlaceTool",          "Hammer",  false },
+        { "WindowN",            "WindowN", false },
+        { "disableFade",        "",        false },
+        { IsoFlagType.attachedW },
+    }, nil);
 
-        BM_Utils.setSpriteProperty(props, "Facing", "W", false);
-        
-        BM_Utils.setSpriteProperty(props, "IsClosedState", "", false);
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
-        BM_Utils.setSpriteProperty(props, "MoveType", "Window", false);
-        
-        BM_Utils.setSpriteProperty(props, "Noffset", "1", false);
-
-        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Crowbar", false);
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "100", false);
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "WindowN", "WindowN", false);
-        BM_Utils.setSpriteProperty(props, "disableFade", "", false);
-        
-        BM_Utils.setSpriteProperty(props, IsoFlagType.attachedW);
-
-        props:CreateKeySet();
-    end
-
-    local sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "en_newburbs_windows_01_4",
         "en_newburbs_windows_01_12",
         "en_newburbs_windows_01_20",
@@ -56,30 +47,21 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "en_newburbs_windows_01_84",
         "en_newburbs_windows_01_85",
         "en_newburbs_windows_01_86",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties()
-        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
-        BM_Utils.setSpriteProperty(props, "CustomName", "Window", false);
-        BM_Utils.setSpriteProperty(props, "GroupName", "Wooden", false);
-
-        BM_Utils.setSpriteProperty(props, "Facing", "N", false);
-
-        BM_Utils.setSpriteProperty(props, "IsClosedState", "", false);
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
-        BM_Utils.setSpriteProperty(props, "MoveType", "Window", false);
-        
-        BM_Utils.setSpriteProperty(props, "Woffset", "-1", false);
-
-        BM_Utils.setSpriteProperty(props, "PickUpLevel", "2", false);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Crowbar", false);
-        BM_Utils.setSpriteProperty(props, "PickUpWeight", "100", false);
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "WindowN", "WindowN", false);
-        BM_Utils.setSpriteProperty(props, "disableFade", "", false);
-        
-        BM_Utils.setSpriteProperty(props, IsoFlagType.attachedN);
-
-        props:CreateKeySet();
-    end
+    }, {
+        { "CanBreak",           "",        false },
+        { "CustomName",         "Window",  false },
+        { "GroupName",          "Wooden",  false },
+        { "Facing",             "N",       false },
+        { "IsClosedState",      "",        false },
+        { "IsMoveAble",         "",        false },
+        { "MoveType",           "Window",  false },
+        { "Woffset",            "-1",      false },
+        { "PickUpLevel",        "2",       false },
+        { "PickUpTool",         "Crowbar", false },
+        { "PickUpWeight",       "100",     false },
+        { "PlaceTool",          "Hammer",  false },
+        { "WindowN",            "WindowN", false },
+        { "disableFade",        "",        false },
+        { IsoFlagType.attachedN },
+    }, nil);
 end)

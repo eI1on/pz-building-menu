@@ -19,8 +19,11 @@ local type = type
 ---@type function
 local instanceof = instanceof
 
+local BM_Logger = require("BM_Logger");
 local BM_Utils = require("BM_Utils");
 
+LuaEventManager.AddEvent("OnInitializeBuildingMenuRecipes");
+LuaEventManager.AddEvent("OnInitializeBuildingMenuObjects");
 LuaEventManager.AddEvent("OnBuildActionPerformed");
 LuaEventManager.AddEvent("OnBeforeSetDragBuildObject");
 
@@ -233,14 +236,13 @@ BuildingMenu.GroupsAlternatives = {
 ---@param context ISContextMenu
 ---@param worldobjects table
 ---@param test boolean
-BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldobjects, test)
+BuildingMenu.onFillWorldObjectContextMenu = function(playerNum, context, worldobjects, test)
     if getCore():getGameMode() == "LastStand" then return; end
     if test and ISWorldObjectContextMenu.Test then return true; end
 
     local playerObj = getSpecificPlayer(playerNum);
 
     if playerObj:getVehicle() then return; end
-
 
     if BuildingMenu.getPlayerSkills(playerObj)["Woodwork"] > 7 or ISBuildMenu.cheat then
         BuildingMenu.playerCanPlaster = true;
@@ -254,7 +256,7 @@ BuildingMenu.OnFillWorldObjectContextMenu = function(playerNum, context, worldob
         end)
     option.iconTexture = getTexture("media/ui/building_menu.png");
 end
-Events.OnFillWorldObjectContextMenu.Add(BuildingMenu.OnFillWorldObjectContextMenu)
+Events.OnFillWorldObjectContextMenu.Add(BuildingMenu.onFillWorldObjectContextMenu)
 
 
 --- Gets the player's skills
@@ -290,7 +292,8 @@ end
 ---@param torchUses number
 ---@return number
 BuildingMenu.weldingRodUses = function(torchUses)
-    return math.floor((torchUses + 0.1) / 2);
+    local value = (torchUses + 0.1) / 2;
+    return value - (value % 1);
 end
 
 --- Rounds a number to a specified number of decimal places
@@ -301,11 +304,14 @@ end
 BuildingMenu.round = function(num, numDecimalPlaces)
     if numDecimalPlaces and numDecimalPlaces > 0 then
         local multiplier = 10 ^ numDecimalPlaces;
-        return math.floor(num * multiplier + 0.5) / multiplier;
+        local roundedValue = num * multiplier + 0.5;
+        local intValue = roundedValue - (roundedValue % 1);
+        return intValue / multiplier;
     end
 
-    local roundedNum = math.floor(num + 0.5);
-    return math.max(roundedNum, 1);
+    local roundedNum = num + 0.5;
+    local intValue = roundedNum - (roundedNum % 1);
+    return intValue >= 1 and intValue or 1;
 end
 
 --- Gets the display name of a moveable object
@@ -333,7 +339,8 @@ end
 BuildingMenu.haveAToolToBuild = function(inv)
     local toolInfo = BuildingMenu.Tools['Hammer'];
     if toolInfo.types then
-        for _, type in ipairs(toolInfo.types) do
+        for i = 1, #toolInfo.types do
+            local type = toolInfo.types[i];
             ---@diagnostic disable-next-line: param-type-mismatch
             if inv:containsTypeEvalRecurse(type, BuildingMenu.predicateNotBroken) then
                 return true;
@@ -341,7 +348,8 @@ BuildingMenu.haveAToolToBuild = function(inv)
         end
     end
     if toolInfo.tags then
-        for _, tag in ipairs(toolInfo.tags) do
+        for i = 1, #toolInfo.tags do
+            local tag = toolInfo.tags[i];
             ---@diagnostic disable-next-line: param-type-mismatch
             if inv:containsEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end) then
                 return true;
@@ -358,18 +366,20 @@ end
 BuildingMenu.getAvailableTool = function(inv, tool)
     local toolInfo = BuildingMenu.Tools[tool];
     if toolInfo.types then
-        for _, type in ipairs(toolInfo.types) do
+        for i = 1, #toolInfo.types do
+            local type = toolInfo.types[i];
             ---@diagnostic disable-next-line: param-type-mismatch
             local item = inv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken);
             if item then return item; end
         end
     end
     if toolInfo.tags then
-        for _, tag in ipairs(toolInfo.tags) do
+        for i = 1, #toolInfo.tags do
+            local tag = toolInfo.tags[i];
             ---@diagnostic disable-next-line: param-type-mismatch
-            local item = inv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
+            local item = inv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag); end,
                 ---@diagnostic disable-next-line: param-type-mismatch
-                function(item) return true end);
+                function(item) return true; end)
             if item then return item; end
         end
     end
@@ -434,7 +444,7 @@ end
 ---@return Texture|nil
 function BuildingMenu.getTexFromItem(item)
     if not item then
-        print("[Building Menu WARNING] ", "Attempted to get texture name from a nil item.");
+        BM_Logger:warning("Attempted to get texture name from a nil item.");
         return nil;
     end
     ---@type Texture|nil
@@ -469,7 +479,7 @@ function BuildingMenu.getTexNameFromItem(item)
         end
         return relativePath;
     else
-        print("[Building Menu WARNING] ", "Texture not found for item " .. item:getFullName());
+        BM_Logger:warning("Texture not found for item " .. item:getFullName());
         return nil;
     end
 end
@@ -518,7 +528,8 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     ---@cast currentInvItemTool InventoryItem
 
     if toolInfo.types then
-        for _, type in ipairs(toolInfo.types) do
+        for i = 1, #toolInfo.types do
+            local type = toolInfo.types[i];
             ---@type InventoryItem
             ---@diagnostic disable-next-line: param-type-mismatch
             local item = playerInv:getBestTypeEvalRecurse(type, BuildingMenu.predicateNotBroken);
@@ -533,11 +544,12 @@ BuildingMenu.tooltipCheckForTool = function(playerInv, tool)
     end
 
     if not found and toolInfo.tags then
-        for _, tag in ipairs(toolInfo.tags) do
+        for i = 1, #toolInfo.tags do
+            local tag = toolInfo.tags[i];
             ---@diagnostic disable-next-line: param-type-mismatch
-            local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag) end,
+            local item = playerInv:getBestEvalRecurse(function(item) return BuildingMenu.predicateHasTag(item, tag); end,
                 ---@diagnostic disable-next-line: param-type-mismatch
-                function(item) return true end);
+                function(item) return true; end)
             if item then
                 itemText = itemText .. BuildingMenu.ghsString .. item:getName() .. ' <LINE>';
                 itemInstance = item;
@@ -591,7 +603,8 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
     end
 
     -- iterate over each alternative Material/Consumable group
-    for altGroupIndex, altGroup in pairs(currentItemGroup) do
+    for altGroupIndex = 1, #currentItemGroup do
+        local altGroup = currentItemGroup[altGroupIndex];
         local items = type(altGroup[groupType]) == "table" and altGroup[groupType] or { altGroup[groupType] };
         local totalAmountNeeded = altGroup.Amount;
         local totalFoundCount = 0;
@@ -599,14 +612,16 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
         local firstItemInstance = nil;
 
         -- iterate over each material Full Type within the alternative Material/Consumable group
-        for _, itemFullType in pairs(items) do
+        for i = 1, #items do
+            local itemFullType = items[i];
             local item = BuildingMenu.getItemInstance(itemFullType);
             if item then
                 local itemCount = 0;
                 if groupType == "Consumable" then
                     itemCount = playerInv:getUsesTypeRecurse(itemFullType);
                     if groundItemCountMap[itemFullType] then
-                        for _, groundItem in ipairs(groundItemCountMap[itemFullType]) do
+                        for j = 1, #groundItemCountMap[itemFullType] do
+                            local groundItem = groundItemCountMap[itemFullType][j];
                             itemCount = itemCount + groundItem:getDrainableUsesInt();
                         end
                     end
@@ -671,6 +686,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
 end
 
 
+
 --- Tooltip check for a specific material
 ---@param playerObj IsoPlayer
 ---@param playerInv ItemContainer
@@ -726,7 +742,8 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     if objectRecipe.useConsumable then
         local consumablesGroupInfo = {};
         local consumableTooltipDescription = "";
-        for i, currentConsumableGroup in ipairs(objectRecipe.useConsumable) do
+        for i = 1, #objectRecipe.useConsumable do
+            local currentConsumableGroup = objectRecipe.useConsumable[i];
             local adaptedConsumableGroup = adaptRecipeGroupToNewFormat(currentConsumableGroup);
             consumableTooltipDescription, currentResult, consumablesGroupInfo = BuildingMenu.tooltipCheckForConsumable(
                 playerObj,
@@ -737,16 +754,15 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
             consumablesFoundIndexMatrix[i] = consumablesGroupInfo;
             tooltipDescription = tooltipDescription .. consumableTooltipDescription;
 
-            if not currentResult then
-                canBuildResult = false;
-            end
+            if not currentResult then canBuildResult = false; end
         end
     end
 
     if objectRecipe.neededMaterials then
         local materialsGroupInfo = {};
         local materialTooltipDescription = "";
-        for i, materialsGroup in ipairs(objectRecipe.neededMaterials) do
+        for i = 1, #objectRecipe.neededMaterials do
+            local materialsGroup = objectRecipe.neededMaterials[i];
             local adaptedMaterialsGroup = adaptRecipeGroupToNewFormat(materialsGroup);
             materialTooltipDescription, currentResult, materialsGroupInfo = BuildingMenu.tooltipCheckForMaterial(
                 playerObj,
@@ -757,9 +773,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
             materialFoundIndexMatrix[i] = materialsGroupInfo;
             tooltipDescription = tooltipDescription .. materialTooltipDescription;
 
-            if not currentResult then
-                canBuildResult = false;
-            end
+            if not currentResult then canBuildResult = false; end
         end
     end
 
@@ -768,7 +782,8 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     if objectRecipe.neededTools then
         local currentInvItemTool = nil;
         local toolsTooltipDescription = "";
-        for i, currentTool in ipairs(objectRecipe.neededTools) do
+        for i = 1, #objectRecipe.neededTools do
+            local currentTool = objectRecipe.neededTools[i];
             toolsTooltipDescription, currentResult, currentInvItemTool = BuildingMenu.tooltipCheckForTool(
                 playerInv,
                 currentTool
@@ -776,9 +791,7 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
             toolFoundIndexMatrix[i] = { toolType = currentTool, invItem = currentInvItemTool };
             tooltipDescription = tooltipDescription .. toolsTooltipDescription;
 
-            if not currentResult then
-                canBuildResult = false;
-            end
+            if not currentResult then canBuildResult = false; end
         end
     end
 
@@ -787,7 +800,8 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
     local playerSkills = BuildingMenu.getPlayerSkills(playerObj);
     if objectRecipe.skills then
         local skillsTooltipDescription = "";
-        for _, skill in pairs(objectRecipe.skills) do
+        for i = 1, #objectRecipe.skills do
+            local skill = objectRecipe.skills[i];
             if playerSkills[skill.Skill] < skill.Level then
                 skillsTooltipDescription = BuildingMenu.bhsString ..
                     getText("IGUI_perks_" .. skill.Skill) ..
@@ -802,10 +816,10 @@ BuildingMenu.canBuildObject = function(playerObj, tooltipDescription, objectReci
         end
     end
 
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] BuildingMenu.ItemInstances ", BuildingMenu.ItemInstances);
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] materialFoundIndexMatrix ", materialFoundIndexMatrix);
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] toolFoundIndexMatrix ", toolFoundIndexMatrix);
+    -- BM_Logger:debug("BuildingMenu.ItemInstances ", BuildingMenu.ItemInstances);
+    -- BM_Logger:debug("materialFoundIndexMatrix ", materialFoundIndexMatrix);
+    -- BM_Logger:debug("consumablesFoundIndexMatrix ", consumablesFoundIndexMatrix);
+    -- BM_Logger:debug("toolFoundIndexMatrix ", toolFoundIndexMatrix);
 
     if ISBuildMenu.cheat then
         local temp = getTextOrNull("IGUI_AdminPanel_BuildCheat");

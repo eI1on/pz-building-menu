@@ -1,14 +1,17 @@
-29 JULY 24
-4fa6385
+06 SEP 24
 
 Changelog:
 [list]
+All mods:
+[list]
+[*] Switched event which added buildable objects from OnGameStart to a custom one, OnInitializeBuildingMenuObjects and OnInitializeBuildingMenuRecipes for improved performance and reduced login time. This prevents players from missing actions due to time constraints after pressing start
+[*] Fixed an issue causing the game to crash due to a limit on local variable count when patching tile properties
+[/list]
 Main mod:
 [list]
-[*] Deleted the languages translated with the automatic translator because of severe mistranslations. Leaving mostly translations done by translators
-[*] Fixed encoding for various languages
-[*] Added Fence Gate
-[*] Added the other shovel as a valid "Shovel" tool, lol
+[*] Moved item parameter changes to shared folder so servers can apply them as well
+[*] Fixed UI opening outside screen bounds when using saved position data
+[*] General performance improvements
 [/list]
 [/list]
 

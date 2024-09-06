@@ -24778,7 +24778,7 @@ end
 local function q(zombie)
     Events.OnPlayerUpdate.Remove(q); l();
 end
-Events.OnGameStart.Add(function() Events.OnPlayerUpdate.Add(q); end)
+Events.OnGameBoot.Add(function() Events.OnPlayerUpdate.Add(q); end)
 Events.OnGameBoot.Add(function()
     a(); j();
 end);
@@ -33383,4 +33383,4 @@ local function addCategoriesToBuildingMenu()
         addWaterWellToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

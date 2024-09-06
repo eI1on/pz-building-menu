@@ -743,4 +743,4 @@ local function addCategoriesToBuildingMenu()
         addBarricadesToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

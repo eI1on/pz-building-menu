@@ -21267,4 +21267,4 @@ local function addCategoriesToBuildingMenu()
         addMelosFridgesToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

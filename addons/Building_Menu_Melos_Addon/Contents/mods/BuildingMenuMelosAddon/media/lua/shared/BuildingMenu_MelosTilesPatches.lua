@@ -2,7 +2,7 @@ local BM_Utils = require('BM_Utils')
 
 
 Events.OnLoadedTileDefinitions.Add(function(manager)
-    local sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "melos_tiles_walls_garage_01_0",
         "melos_tiles_walls_garage_01_1",
         "melos_tiles_walls_garage_01_2",
@@ -32,16 +32,13 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_walls_garage_02_66",
         "melos_tiles_walls_garage_02_96",
         "melos_tiles_walls_garage_02_97",
-        "melos_tiles_walls_garage_02_98"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "WallW", "", false);
-        BM_Utils.setSpriteProperty(props, "WallW", "", true);
-        props:CreateKeySet();
-    end
+        "melos_tiles_walls_garage_02_98",
+    }, {
+        { "WallW", "", false },
+        { "WallW", "", true },
+    });
 
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "melos_tiles_walls_garage_01_3",
         "melos_tiles_walls_garage_01_4",
         "melos_tiles_walls_garage_01_5",
@@ -71,17 +68,13 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_walls_garage_02_69",
         "melos_tiles_walls_garage_02_99",
         "melos_tiles_walls_garage_02_100",
-        "melos_tiles_walls_garage_02_101"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "WallN", "", false);
-        BM_Utils.setSpriteProperty(props, "WallN", "", true);
-        props:CreateKeySet();
-    end
+        "melos_tiles_walls_garage_02_101",
+    }, {
+        { "WallN", "", false },
+        { "WallN", "", true },
+    });
 
-
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "melos_tiles_gardencenter_02_104",
         "melos_tiles_gardencenter_02_105",
         "melos_tiles_gardencenter_02_106",
@@ -97,20 +90,16 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_gardencenter_02_116",
         "melos_tiles_gardencenter_02_117",
         "melos_tiles_gardencenter_02_118",
-        "melos_tiles_gardencenter_02_119"
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "ContainerCapacity", "200", false);
-        BM_Utils.setSpriteProperty(props, "container", "logs", false);
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
-        BM_Utils.setSpriteProperty(props, "CanBreak", "", false);
-        BM_Utils.setSpriteProperty(props, IsoFlagType.container);
-        props:CreateKeySet();
-    end
+        "melos_tiles_gardencenter_02_119",
+    }, {
+        { "ContainerCapacity",  "200",  false },
+        { "container",          "logs", false },
+        { "IsMoveAble",         "",     false },
+        { "CanBreak",           "",     false },
+        { IsoFlagType.container },
+    });
 
-
-    sprites = {
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
         "melos_tiles_furniture_seating_01_48",
         "melos_tiles_furniture_seating_01_49",
         "melos_tiles_furniture_seating_01_50",
@@ -119,17 +108,13 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_furniture_seating_01_57",
         "melos_tiles_furniture_seating_01_58",
         "melos_tiles_furniture_seating_01_59",
-    }
-    for _, sprite in ipairs(sprites) do
-        local props = manager:getSprite(sprite):getProperties();
-        BM_Utils.setSpriteProperty(props, "CanScrap", "", false);
-        BM_Utils.setSpriteProperty(props, "MetalBars", "", false);
-        BM_Utils.setSpriteProperty(props, "PickUpTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "PlaceTool", "Hammer", false);
-        BM_Utils.setSpriteProperty(props, "IsMoveAble", "", false);
-        props:CreateKeySet();
-    end
-
+    }, {
+        { "CanScrap",   "",       false },
+        { "MetalBars",  "",       false },
+        { "PickUpTool", "Hammer", false },
+        { "PlaceTool",  "Hammer", false },
+        { "IsMoveAble", "",       false },
+    });
 
     local function setSpriteProperties(baseSpriteName, startNumbers, offsets)
         for _, startNumber in ipairs(startNumbers) do
@@ -146,21 +131,20 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     end
 
     local offsets = {
-        {"Noffset", "1"},
-        {"Woffset", "-1"},
-        {"Noffset", "1"},
-        {"Woffset", "-1"}
+        { "Noffset", "1" },
+        { "Woffset", "-1" },
+        { "Noffset", "1" },
+        { "Woffset", "-1" }
     };
 
     -- for Rustic Windows
-    local startNumbers = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120};
+    local startNumbers = { 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120 };
     setSpriteProperties("melos_tiles_windows_03_", startNumbers, offsets);
 
     startNumbers[#startNumbers] = nil; -- remove the last element for the next sets, as they only go to 112
 
-    local startNumbers = {0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112};
     -- for Modern Extended 1 and Modern Extended 2
-    for _, suffix in ipairs({"", "a", "b", "c"}) do
+    for _, suffix in ipairs({ "", "a", "b", "c" }) do
         setSpriteProperties("melos_tiles_windows_06" .. suffix .. "_", startNumbers, offsets);
     end
 end)

@@ -1553,4 +1553,4 @@ local function addCategoriesToBuildingMenu()
         addBathroomAppliancesToMenu()
     end
 end
-Events.OnGameStart.Add(addCategoriesToBuildingMenu)
+Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

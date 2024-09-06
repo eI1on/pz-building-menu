@@ -1,3 +1,4 @@
+local BM_Logger = require("BM_Logger");
 local BM_Utils = require("BM_Utils");
 
 ---@class BuildingMenu
@@ -13,7 +14,7 @@ function BuildingMenu.generateGroupAlternatives(groupAlternativesTable, baseCoun
             { [groupType] = itemTable.Item, Amount = BuildingMenu.round(baseCount * itemTable.Multiplier) });
     end
 
-    -- BM_Utils.debugPrint("[Building Menu DEBUG] newGroupAlternativesTable ", newGroupAlternativesTable);
+    -- BM_Logger:debug("newGroupAlternativesTable " .. BM_Logger:prettyPrintTable(newGroupAlternativesTable));
     return unpack(newGroupAlternativesTable);
 end
 
@@ -6942,6 +6943,6 @@ local function initBuildingMenuRecipes()
     }
 end
 
-Events.OnInitGlobalModData.Add(function()
+Events.OnInitializeBuildingMenuRecipes.Add(function()
     initBuildingMenuRecipes()
 end)
