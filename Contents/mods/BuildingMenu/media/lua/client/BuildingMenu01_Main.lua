@@ -620,10 +620,7 @@ local function tooltipCheckForItem(playerObj, playerInv, currentItemGroup, toolt
                 if groupType == "Consumable" then
                     itemCount = playerInv:getUsesTypeRecurse(itemFullType);
                     if groundItemCountMap[itemFullType] then
-                        for j = 1, #groundItemCountMap[itemFullType] do
-                            local groundItem = groundItemCountMap[itemFullType][j];
-                            itemCount = itemCount + groundItem:getDrainableUsesInt();
-                        end
+                        itemCount = itemCount + groundItemCountMap[itemFullType];
                     end
                 else
                     itemCount = playerInv:getItemCountFromTypeRecurse(itemFullType) +

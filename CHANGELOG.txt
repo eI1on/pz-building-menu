@@ -1,16 +1,30 @@
+ SEP 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] 
+[/list]
+[/list]
+
+
 06 SEP 24
+34de2b0
 
 Changelog:
 [list]
 All mods:
 [list]
-[*] Switched event which added buildable objects from OnGameStart to a custom one, OnInitializeBuildingMenuObjects and OnInitializeBuildingMenuRecipes for improved performance and reduced login time. This prevents players from missing actions due to time constraints after pressing start
+[*] Switched event which added buildable objects from OnGameStart to a custom custom ones when the UI is initializing for improved performance and reduced login time. This prevents players from missing actions due to time constraints after pressing start
 [*] Fixed an issue causing the game to crash due to a limit on local variable count when patching tile properties
 [/list]
 Main mod:
 [list]
-[*] Moved item parameter changes to shared folder so servers can apply them as well
+[*] Fixed plumbing issue with Large Deluxe Bath, now it properly connects to water
 [*] Fixed UI opening outside screen bounds when using saved position data
+[*] Moved item parameter changes to shared folder so servers can apply them as well
+[*] Added missing CN translations (thanks to @Yusuzhan)
 [*] General performance improvements
 [/list]
 [/list]
