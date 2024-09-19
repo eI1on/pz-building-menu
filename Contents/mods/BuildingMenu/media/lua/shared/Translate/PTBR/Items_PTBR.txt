@@ -1,9 +1,10 @@
 Items_PTBR = {
-    DisplayName_PanWithGlassShards = "Assadeira com Cacos de Vidro",
-    DisplayName_PanWithGlassPane = "Assadeira com Painel de Vidro",
-    DisplayName_GlassPane = "Painel de Vidro",
-
-    DisplayName_BMMagazineGlass = "Fornos de Cozinha da Esquina do Faz-Tudo",
-    DisplayName_BMMagazineCars = "Vidros de Veículos de Precisão e Artesanato",
-    DisplayName_BMMagazineSecretEntrances = "Passagens Secretas Mensais",
+DisplayName_AsphaltMixturePowder = "Saco de Mistura Asfáltica",
+DisplayName_BucketAsphaltMixtureFull = "Balde de Mistura Asfáltica",    
+DisplayName_PanWithGlassShards = "Assadeira com Cacos de Vidro",
+DisplayName_PanWithGlassPane = "Assadeira com Painel de Vidro",
+DisplayName_GlassPane = "Painel de Vidro",
+DisplayName_BMMagazineGlass = "Fornos de Cozinha da Esquina do Faz-Tudo",
+DisplayName_BMMagazineCars = "Vidros de Veículos de Precisão e Artesanato",
+DisplayName_BMMagazineSecretEntrances = "Passagens Secretas Mensais",
 }
