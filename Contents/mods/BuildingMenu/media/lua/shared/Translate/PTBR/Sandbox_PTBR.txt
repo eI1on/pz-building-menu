@@ -1,244 +1,244 @@
 Sandbox_PTBR = {
-Sandbox_BuildingMenu = "Menu de ConstruÃ§Ã£o",
+Sandbox_BuildingMenu = "Menu de Construção",
 
-Sandbox_BuildingMenu_isThumpable = "Estruturas podem ser destruÃ­das por zumbis",
-Sandbox_BuildingMenu_isThumpable_tooltip = "Desmarque esta caixa de seleÃ§Ã£o para criar estruturas usando o menu construÃ§Ã£o imunes a danos.",
+Sandbox_BuildingMenu_isThumpable = "Estruturas podem ser destruídas por zumbis",
+Sandbox_BuildingMenu_isThumpable_tooltip = "Desmarque esta caixa de seleção para criar estruturas usando o menu construção imunes a danos.",
 
 Sandbox_BuildingMenu_EmptyBox = "",
-Sandbox_BuildingMenu_EmptyBox_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_EmptyBox_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_WallsCategoryDivider = "_______________ Categoria Paredes _______________",
-Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_WallsCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_woodWallsSubCategory = "Ativar subcategoria de paredes de madeira",
-Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Habilite a adiÃ§Ã£o de estruturas de paredes de madeira. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_woodWallsSubCategory_tooltip = "Habilite a adição de estruturas de paredes de madeira. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_clapboardWallsSubCategory = "Ativar subcategoria de paredes de ripa",
-Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de ripa. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_clapboardWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de ripa. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_stoneWallsSubCategory = "Ativar subcategoria de paredes de pedra",
-Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Habilite para adicionar estruturas com paredes de pedra. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_stoneWallsSubCategory_tooltip = "Habilite para adicionar estruturas com paredes de pedra. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_brickWallsSubCategory = "Ativar subcategoria Paredes de Tijolo",
-Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Habilite a adiÃ§Ã£o de estruturas de paredes de tijolos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_brickWallsSubCategory_tooltip = "Habilite a adição de estruturas de paredes de tijolos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_cinderblockWallsSubCategory = "Ativar subcategoria Paredes de blocos de concreto",
-Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de blocos de concreto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_cinderblockWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de blocos de concreto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_paintedWallsSubCategory = "Ativar subcategoria Paredes Pintadas",
-Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes pintadas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_paintedWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes pintadas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_archedWindowWallsSubCategory = "Ativar subcategoria Paredes de janelas arqueadas",
-Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de janelas em arco. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_archedWindowWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes de janelas em arco. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_commercialWallsSubCategory = "Ativar subcategoria Paredes Comerciais",
-Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes comerciais. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_commercialWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes comerciais. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_industrialWallsSubCategory = "Ativar subcategoria Paredes Industriais",
-Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes industriais. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_industrialWallsSubCategory_tooltip = "Ative para adicionar estruturas de paredes industriais. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_RoofsCategoryDivider = "_______________ Categoria dos Telhados _______________",
-Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_RoofsCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_roofsCategory = "Ativar a categoria dos telhados",
-Sandbox_BuildingMenu_roofsCategory_tooltip = "Ative para adicionar as estruturas de andares. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_roofsCategory_tooltip = "Ative para adicionar as estruturas de andares. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_DoorsCategoryDivider = "_______________ Categoria das Portas _______________",
-Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_DoorsCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_doorsSubCategory = "Ativar categoria de portas",
-Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Ative para adicionar a criaÃ§Ã£o de portas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_doorsSubCategory_tooltip = "Ative para adicionar a criação de portas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_garageDoorsSubCategory = "Ativar subcategoria de portas de garagem",
-Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Ative para adicionar a criaÃ§Ã£o de portas de garagem. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_garageDoorsSubCategory_tooltip = "Ative para adicionar a criação de portas de garagem. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
  
 Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider = "________ Categoria de Arquitetura Plus ________",
-Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_ArchitecturePlusCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_architecturePlusCategory = "Habilitar a categoria Arquitetura Plus",
-Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Ative para adicionar estruturas de acabamento de porta, rodapÃ© e painÃ©is de parede. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_architecturePlusCategory_tooltip = "Ative para adicionar estruturas de acabamento de porta, rodapé e painéis de parede. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_WindowsCategoryDivider = "______________ Categoria de Janelas ______________",
-Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_WindowsCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_windowsCategory = "Ativar categoria de Janelas",
-Sandbox_BuildingMenu_windowsCategory_tooltip = "Ative para adicionar a categoria de criaÃ§Ã£o de janelas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_windowsCategory_tooltip = "Ative para adicionar a categoria de criação de janelas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_FencingCategoryDivider = "______________ Categoria das Cercas ______________",
-Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_FencingCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_highFencesSubCategory = "Ativar a subcategoria das cercas altas",
-Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Ative para adicionar cercas altas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_highFencesSubCategory_tooltip = "Ative para adicionar cercas altas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Ativar subcategoria das cercas baixas e corrimÃ£o",
-Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Ative para adicionar cercas baixas e corrimÃ£o. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_lowAndRailingFencesSubCategory = "Ativar subcategoria das cercas baixas e corrimão",
+Sandbox_BuildingMenu_lowAndRailingFencesSubCategory_tooltip = "Ative para adicionar cercas baixas e corrimão. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_otherFencesSubCategory = "Habilitar subcategoria Outras Cercas",
-Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Ative para adicionar outras cercas, como barreiras de proteÃ§Ã£o militar, cercas baixas de metal e cercas de tijolos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_otherFencesSubCategory_tooltip = "Ative para adicionar outras cercas, como barreiras de proteção militar, cercas baixas de metal e cercas de tijolos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_FloorsCategoryDivider = "______________ Categoria de Pisos ______________",
-Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_FloorsCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_floorsCategory = "Ativar categoria de piso",
-Sandbox_BuildingMenu_floorsCategory_tooltip = "Ative para adicionar estruturas de pisos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_floorsCategory_tooltip = "Ative para adicionar estruturas de pisos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_StairsCategoryDivider = "______________ Categoria de Escadas ______________",
-Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_StairsCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_stairsCategory = "Ativar categoria de escadas",
-Sandbox_BuildingMenu_stairsCategory_tooltip = "Ative para adicionar escadas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_stairsCategory_tooltip = "Ative para adicionar escadas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_RoadworkCategoryDivider = "_____________ Categoria de Estradas _____________",
-Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_RoadworkCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_roadworkAsphaltSubCategory = "Ativar subcategoria Asfalto",
-Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Ative para adicionar estruturas de asfalto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",  
+Sandbox_BuildingMenu_roadworkAsphaltSubCategory_tooltip = "Ative para adicionar estruturas de asfalto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",  
 
-Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Ativar subcategoria de sobreposiÃ§Ãµes",
-Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Ative para adicionar estruturas de sobreposiÃ§Ã£o como terra e rachaduras nas ruas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_roadworkOverlaysSubCategory = "Ativar subcategoria de sobreposições",
+Sandbox_BuildingMenu_roadworkOverlaysSubCategory_tooltip = "Ative para adicionar estruturas de sobreposição como terra e rachaduras nas ruas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory = "Ativar subcategoria de meio fio e canteiros",
-Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Ative para adicionar meio fio de estradas e canteiros. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_roadworkSidewalkEdgeSubCategory_tooltip = "Ative para adicionar meio fio de estradas e canteiros. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory = "Ativar subcategoria Sujeira e Grama",
-Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Ative para adicionar estruturas com sujeira e grama. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_roadworkDirtandGrassSubCategory_tooltip = "Ative para adicionar estruturas com sujeira e grama. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Ativar subcategoria sinalizaÃ§Ã£o de rodovia",
-Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Ative para adicionar estruturas com pintura marcaÃ§Ã£o para rodovias. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory = "Ativar subcategoria sinalização de rodovia",
+Sandbox_BuildingMenu_roadworkPaintedRoadMarkingsSubCategory_tooltip = "Ative para adicionar estruturas com pintura marcação para rodovias. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoria de ContÃªineres ____________",
-Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_ContainersCategoryDivider = "____________ Categoria de Contêineres ____________",
+Sandbox_BuildingMenu_ContainersCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
-Sandbox_BuildingMenu_kitchenCountersSubCategory = "Ativar subcategoria de balcÃµes de cozinha",
-Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Ative para adicionar estruturas de balÃ§Ã£o de cozinha. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_kitchenCountersSubCategory = "Ativar subcategoria de balcões de cozinha",
+Sandbox_BuildingMenu_kitchenCountersSubCategory_tooltip = "Ative para adicionar estruturas de balção de cozinha. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_commercialCountersSubCategory = "Ativar subcategoria mÃ³veis para restaurante",
-Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Ative para adicionar os objetos de interior de restaurante. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_commercialCountersSubCategory = "Ativar subcategoria móveis para restaurante",
+Sandbox_BuildingMenu_commercialCountersSubCategory_tooltip = "Ative para adicionar os objetos de interior de restaurante. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_cratesSubCategory = "Ativar subcategoria de caixas",
-Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Ative para adicionar objetos de armazenamento como caixas simples, caixas militares e caixas de papelÃ£o. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_cratesSubCategory_tooltip = "Ative para adicionar objetos de armazenamento como caixas simples, caixas militares e caixas de papelão. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_metalContainersSubCategory = "Ativar subcategoria de contÃªineres metÃ¡licos",
-Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Ative para adicionar recipientes com estrutura de metal. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_metalContainersSubCategory = "Ativar subcategoria de contêineres metálicos",
+Sandbox_BuildingMenu_metalContainersSubCategory_tooltip = "Ative para adicionar recipientes com estrutura de metal. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_clothesRacksSubCategory = "Ativar subcategoria de cabideiros",
-Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Ative para adicionar cabideiros de roupas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_clothesRacksSubCategory_tooltip = "Ative para adicionar cabideiros de roupas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_trashCansSubCategory = "Ativar subcategoria de latas de lixo",
-Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Ative para adicionar latas de lixo. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_trashCansSubCategory_tooltip = "Ative para adicionar latas de lixo. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_containersOthersSubCategory = "Ativar subcategoria de outros contÃªineres",
-Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Ative para adicionar mais recipientes. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_containersOthersSubCategory = "Ativar subcategoria de outros contêineres",
+Sandbox_BuildingMenu_containersOthersSubCategory_tooltip = "Ative para adicionar mais recipientes. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_RecreationalCategoryDivider = "_____________ Categoria Recreativa _____________",
-Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_RecreationalCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
-Sandbox_BuildingMenu_musicSubCategory = "Ativar subcategoria de mÃºsica",
-Sandbox_BuildingMenu_musicSubCategory_tooltip = "Ative para adicionar maquina de musica jukebox, pianos e outros. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_musicSubCategory = "Ativar subcategoria de música",
+Sandbox_BuildingMenu_musicSubCategory_tooltip = "Ative para adicionar maquina de musica jukebox, pianos e outros. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria dos MÃ³veis _____________",
-Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_FurnitureCategoryDivider = "_____________ Categoria dos Móveis _____________",
+Sandbox_BuildingMenu_FurnitureCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_tablesSubCategory = "Ativar subcategoria de mesas",
-Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Ative para adicionar estruturas de mesas grandes e pequenas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_tablesSubCategory_tooltip = "Ative para adicionar estruturas de mesas grandes e pequenas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_bedsSubCategory = "Ativar subcategoria de camas",
-Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Ative para adicionar camas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_bedsSubCategory_tooltip = "Ative para adicionar camas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_seatingFurnitureSubCategory = "Ativar subcategoria de assentos",
-Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Ative para adicionar bancos, sofÃ¡s e cadeiras. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_seatingFurnitureSubCategory_tooltip = "Ative para adicionar bancos, sofás e cadeiras. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_bookshelvesSubCategory = "Ativar subcategoria estantes de livros",
-Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Ative para adicionar estantes de livros. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_bookshelvesSubCategory_tooltip = "Ative para adicionar estantes de livros. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Ativar subcategoria de recipientes mÃ³veis",
-Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Ative para adicionar cÃ´modas, gavetas e guarda-roupas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_dressersAndWardrobesSubCategory = "Ativar subcategoria de recipientes móveis",
+Sandbox_BuildingMenu_dressersAndWardrobesSubCategory_tooltip = "Ative para adicionar cômodas, gavetas e guarda-roupas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoria de DecoraÃ§Ãµes ____________",
-Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_DecorationsCategoryDivider = "____________ Categoria de Decorações ____________",
+Sandbox_BuildingMenu_DecorationsCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_rugsSubCategory = "Ativar subcategoria de tapetes",
-Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Ative para adicionar tapetes. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_rugsSubCategory_tooltip = "Ative para adicionar tapetes. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_curtainsSubCategory = "Ativar subcategoria de cortinas",
-Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Ative para adicionar cortinas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_curtainsSubCategory_tooltip = "Ative para adicionar cortinas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_postersAndSignsSubCategory = "Ativar subcategoria de quadros e coletÃ¡veis",
-Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Ative para adicionar quadros e coletÃ¡veis. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_postersAndSignsSubCategory = "Ativar subcategoria de quadros e coletáveis",
+Sandbox_BuildingMenu_postersAndSignsSubCategory_tooltip = "Ative para adicionar quadros e coletáveis. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_graffitiSubCategory = "Ativar subcategoria de grafite",
-Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Ative para adicionar pichaÃ§Ãµes na parede das casas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_graffitiSubCategory_tooltip = "Ative para adicionar pichações na parede das casas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_otherDecorationsSubCategory = "Ativar subcategoria outras decoraÃ§Ãµes",
-Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Ative para adicionar outras decoraÃ§Ãµes, como bloqueios de estradas, caixas de correio, barreiras, cones de estradas, caixas de correio. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_otherDecorationsSubCategory = "Ativar subcategoria outras decorações",
+Sandbox_BuildingMenu_otherDecorationsSubCategory_tooltip = "Ative para adicionar outras decorações, como bloqueios de estradas, caixas de correio, barreiras, cones de estradas, caixas de correio. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoria de VegetaÃ§Ã£o ____________",
-Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_VegetationCategoryDivider = "____________ Categoria de Vegetação ____________",
+Sandbox_BuildingMenu_VegetationCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_flowerBedsSubCategory = "Ativar subcategoria canteiros de flores",
-Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Ative para adicionar canteiros de flores. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_flowerBedsSubCategory_tooltip = "Ative para adicionar canteiros de flores. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_indoorPlantsSubCategory = "Ativar subcategoria plantas de interior",
-Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Ative para adicionar plantas de interior, como vasos de flores. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_indoorPlantsSubCategory_tooltip = "Ative para adicionar plantas de interior, como vasos de flores. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_outdoorPlantsSubCategory = "Ativar subcategoria de plantas externas",
-Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Ative para adicionar plantas externas com vasos grandes e arbustos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_outdoorPlantsSubCategory_tooltip = "Ative para adicionar plantas externas com vasos grandes e arbustos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_landscapingSubCategory = "Ativar subcategoria paisagismo",
-Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Ative adicionar estruturas de vegetaÃ§Ã£o paisagÃ­stica para decoraÃ§Ã£o externa da casa. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_landscapingSubCategory_tooltip = "Ative adicionar estruturas de vegetação paisagística para decoração externa da casa. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoria de SobrevivÃªncia _____________",
-Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_SurvivalCategoryDivider = "_____________ Categoria de Sobrevivência _____________",
+Sandbox_BuildingMenu_SurvivalCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_BuildingMenu_fireplaceSubCategory = "Ativar subcategoria lareira",
-Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Ative para adicionar lareiras dentro do interior da casa. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_fireplaceSubCategory_tooltip = "Ative para adicionar lareiras dentro do interior da casa. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_generatorSubCategory = "Ativar subcategoria gerador de energia",
-Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Ative para permitir a criaÃ§Ã£o geradores de energia. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_generatorSubCategory_tooltip = "Ative para permitir a criação geradores de energia. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_metalDrums = "Ativar subcategoria barril de metal",
-Sandbox_BuildingMenu_metalDrums_tooltip = "Ative para permitir a criaÃ§Ã£o de barris de metal. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_metalDrums_tooltip = "Ative para permitir a criação de barris de metal. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_waterWell = "Ativar subcategoria poÃ§o de Ã¡gua",
-Sandbox_BuildingMenu_waterWell_tooltip = "Ative para permitir a criaÃ§Ã£o de um poÃ§o de Ã¡gua. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_waterWell = "Ativar subcategoria poço de água",
+Sandbox_BuildingMenu_waterWell_tooltip = "Ative para permitir a criação de um poço de água. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Categoria de EletrodomÃ©sticos ____________",
-Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenu_AppliancesCategoryDivider = "____________ Categoria de Eletrodomésticos ____________",
+Sandbox_BuildingMenu_AppliancesCategoryDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
-Sandbox_BuildingMenu_lightingAppliances = "Ativar categoria de iluminaÃ§Ã£o",
-Sandbox_BuildingMenu_lightingAppliances_tooltip = "Ative para permitir a criaÃ§Ã£o de estruturas de iluminaÃ§Ã£o. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_lightingAppliances = "Ativar categoria de iluminação",
+Sandbox_BuildingMenu_lightingAppliances_tooltip = "Ative para permitir a criação de estruturas de iluminação. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_bathroomAppliances = "Ativar subcategoria banheiro",
-Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Ative para permitir a construÃ§Ã£o de vÃ¡rios tipos de recipientes de higienizaÃ§Ã£o em interiores. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_bathroomAppliances_tooltip = "Ative para permitir a construção de vários tipos de recipientes de higienização em interiores. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenu_cookingAppliances = "Ativar subcategoria de culinÃ¡ria",
-Sandbox_BuildingMenu_cookingAppliances_tooltip = "Ative para permitir a criaÃ§Ã£o de fogÃµes, fornos elÃ©tricos e micro-ondas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_cookingAppliances = "Ativar subcategoria de culinária",
+Sandbox_BuildingMenu_cookingAppliances_tooltip = "Ative para permitir a criação de fogões, fornos elétricos e micro-ondas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_fridgeAppliances = "Ativar subcategoria geladeira",
-Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Ative para permitir a criaÃ§Ã£o de geladeiras e freezers. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_fridgeAppliances_tooltip = "Ative para permitir a criação de geladeiras e freezers. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenu_laundryAppliances = "Ativar subcategoria lavanderia",
-Sandbox_BuildingMenu_laundryAppliances_tooltip = "Ative para permitir a criaÃ§Ã£o de cestas de roupas, lavadoras e secadoras. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenu_laundryAppliances_tooltip = "Ative para permitir a criação de cestas de roupas, lavadoras e secadoras. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenuRecipes = "Menu de ConstruÃ§Ã£o - Receitas",
+Sandbox_BuildingMenuRecipes = "Menu de Construção - Receitas",
 
 Sandbox_BuildingMenuRecipes_MaterialsDivider = "____________ Materiais ____________",
-Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenuRecipes_MaterialsDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
 Sandbox_UsePaint = "Usar tinta em receitas",
-Sandbox_UsePaint_tooltip = "Desative o uso de tinta em receitas, as que possuem tinta como seu Ãºnico ingrediente permanecerÃ£o na receita. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_UsePaint_tooltip = "Desative o uso de tinta em receitas, as que possuem tinta como seu único ingrediente permanecerão na receita. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_PaintUses = "Barra de drenagem da lata de tinta",
-Sandbox_PaintUses_tooltip = "Controla quantas vezes vocÃª pode usar uma lata de tina aumentando ou diminuindo esse valor. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_PaintUses_tooltip = "Controla quantas vezes você pode usar uma lata de tina aumentando ou diminuindo esse valor. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BlowTorchUses = "Barra de drenagem do maÃ§arico",
-Sandbox_BlowTorchUses_tooltip = "Controla quantas vezes vocÃª pode usar o maÃ§arico aumentando ou diminuindo esse valor. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BlowTorchUses = "Barra de drenagem do maçarico",
+Sandbox_BlowTorchUses_tooltip = "Controla quantas vezes você pode usar o maçarico aumentando ou diminuindo esse valor. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BucketAsphaltMixtureUses = "Barra de drenagem do saco de mistura asfÃ¡ltica",
-Sandbox_BucketAsphaltMixtureUses_tooltip = "Controla quantas vezes vocÃª pode usar o saco mistura asfÃ¡ltica aumentando ou diminuindo esse valor. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BucketAsphaltMixtureUses = "Barra de drenagem do saco de mistura asfáltica",
+Sandbox_BucketAsphaltMixtureUses_tooltip = "Controla quantas vezes você pode usar o saco mistura asfáltica aumentando ou diminuindo esse valor. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BucketConcreteUses = "Barra de drenagem do balde de concreto",
-Sandbox_BucketConcreteUses_tooltip = "Controla quantas vezes vocÃª pode usar o balde de concreto aumentando ou diminuindo esse valor. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BucketConcreteUses_tooltip = "Controla quantas vezes você pode usar o balde de concreto aumentando ou diminuindo esse valor. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_deltaUses_option1 = "4 x por drenagem",
 Sandbox_BuildingMenuRecipes_deltaUses_option2 = "8 x por drenagem",
@@ -255,95 +255,95 @@ Sandbox_BuildingMenuRecipes_deltaUses_option12 = "100 x por drenagem",
 Sandbox_BuildingMenuRecipes_deltaUses_option13 = "Infinito nunca drenar",
 
 Sandbox_BuildingMenuRecipes_bigWallWoodCount = "Custo de madeira para paredes grandes",
-Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Defina a quantidade madeira necessÃ¡ria para criar paredes grandes. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_bigWallWoodCount_tooltip = "Defina a quantidade madeira necessária para criar paredes grandes. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_bigWallNailsCount = "Custo de pregos para paredes grandes",
-Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Defina a quantidade pregos necessÃ¡rios para construir paredes grandes. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_bigWallNailsCount_tooltip = "Defina a quantidade pregos necessários para construir paredes grandes. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_smallWallWoodCount = "Custo de madeira para paredes pequenas",
-Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Defina a quantidade de madeira necessÃ¡ria para construir paredes pequenas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_smallWallWoodCount_tooltip = "Defina a quantidade de madeira necessária para construir paredes pequenas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_smallWallNailsCount = "Custo de pregos para paredes pequenas",
-Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Defina a quantidade de pregos necessÃ¡rios para construir paredes pequenas. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_smallWallNailsCount_tooltip = "Defina a quantidade de pregos necessários para construir paredes pequenas. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_bigObjectsWoodCount = "Custo de madeira para objetos grandes",
-Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Defina a quantidade de madeira necessÃ¡ria para construir objetos grandes. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_bigObjectsWoodCount_tooltip = "Defina a quantidade de madeira necessária para construir objetos grandes. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_bigObjectsNailsCount = "Custo de pregos para objetos grandes",
-Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Defina a quantidade pregos necessÃ¡rios para construir objetos grandes. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_bigObjectsNailsCount_tooltip = "Defina a quantidade pregos necessários para construir objetos grandes. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_smallObjectsWoodCount = "Custo de madeira para objetos pequenos",
-Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Defina a quantidade madeira necessÃ¡ria para construir objetos pequenos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_smallObjectsWoodCount_tooltip = "Defina a quantidade madeira necessária para construir objetos pequenos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_smallObjectsNailsCount = "Custo de pregos para objetos pequenos",
-Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Defina a quantidade de pregos necessÃ¡rios para construir objetos pequenos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_smallObjectsNailsCount_tooltip = "Defina a quantidade de pregos necessários para construir objetos pequenos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_glassPaneCount = "Custo do Painel de Vidro",
-Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Defina a quantidade de painÃ©is de vidro necessÃ¡rios para criar janelas. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_glassPaneCount_tooltip = "Defina a quantidade de painéis de vidro necessários para criar janelas. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_metalBarsCount = "Custo das Barras de Metal",
-Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Defina a quantidade de barras de metal necessÃ¡rias para as construÃ§Ãµes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_metalBarsCount_tooltip = "Defina a quantidade de barras de metal necessárias para as construções. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_screwsCount = "Custo dos Parafusos",
-Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Defina a quantidade de parafusos necessÃ¡rios para as construÃ§Ãµes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_screwsCount_tooltip = "Defina a quantidade de parafusos necessários para as construções. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_scrapMetalCountForFences = "Custo das Sucatas de Metal",
-Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Defina a quantidade de sucatas necessÃ¡rias para construir as cercas. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_scrapMetalCountForFences_tooltip = "Defina a quantidade de sucatas necessárias para construir as cercas. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Custo de sucata para eletrÃ´nicos",
-Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Defina quantidade de sucata metal necessÃ¡ria para construir itens elÃ©tricos. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical = "Custo de sucata para eletrônicos",
+Sandbox_BuildingMenuRecipes_scrapMetalCountForElectrical_tooltip = "Defina quantidade de sucata metal necessária para construir itens elétricos. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls = "Custo das Placas de Metal para paredes",
-Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Defina a quantidade de placas de metal necessÃ¡rias para construir as paredes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_sheetMetalCountForWalls_tooltip = "Defina a quantidade de placas de metal necessárias para construir as paredes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors = "Custo das Placas de Metal para portas",
-Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Defina a quantidade de placas de metal necessÃ¡rias para construir as portas. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_sheetMetalCountForDoors_tooltip = "Defina a quantidade de placas de metal necessárias para construir as portas. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers = "Custo das Placas de Metal para recipientes",
-Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Defina a quantidade de placas de metal necessÃ¡rias para construir os recipientes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_sheetMetalCountForContainers_tooltip = "Defina a quantidade de placas de metal necessárias para construir os recipientes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Custo de Placa de Metal para acessÃ³rios e aparelhos",
-Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Defina a quantidade de placas de metal necessÃ¡rias para construir mÃ³veis. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances = "Custo de Placa de Metal para acessórios e aparelhos",
+Sandbox_BuildingMenuRecipes_sheetMetalCountForFixturesAndAppliances_tooltip = "Defina a quantidade de placas de metal necessárias para construir móveis. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Custo de Placa de Metal para teto e piso",
-Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Defina a quantidade de placas de metal necessÃ¡rias para construÃ§Ãµes de tetos e pisos. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Defina a quantidade de placas de metal necessárias para construções de tetos e pisos. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Habilidades ____________",
-Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
-Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "NÃ­vel de carpintaria para objetos grandes",
-Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Defina o nÃ­vel de carpintaria necessÃ¡rio para construir objetos grandes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill = "Nível de carpintaria para objetos grandes",
+Sandbox_BuildingMenuRecipes_bigObjectsCarpentrySkill_tooltip = "Defina o nível de carpintaria necessário para construir objetos grandes. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "NÃ­vel de carpintaria para objetos pequenos",
-Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Defina o nÃ­vel de carpintaria necessÃ¡rio para construir objetos pequenos. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill = "Nível de carpintaria para objetos pequenos",
+Sandbox_BuildingMenuRecipes_smallObjectsCarpentrySkill_tooltip = "Defina o nível de carpintaria necessário para construir objetos pequenos. <LINE> Aumenta sua escala com o tipo e o tamanho do objeto. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_carpentryXpPerLevel = "Ganho de xp em carpintaria",
-Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Defina quantos pontos de xp por nÃ­vel o jogador devera receber ao construir objetos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_carpentryXpPerLevel_tooltip = "Defina quantos pontos de xp por nível o jogador devera receber ao construir objetos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel = "Ganho de xp em metalurgia",
-Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Defina quantos pontos de xp por nÃ­vel o jogador devera receber ao construir objetos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_metalweldingXpPerLevel_tooltip = "Defina quantos pontos de xp por nível o jogador devera receber ao construir objetos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Ganho de xp em elÃ©trica",
-Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Defina quantos pontos de xp por nÃ­vel o jogador devera receber ao construir eletrÃ´nicos. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_electricalXpPerLevel = "Ganho de xp em elétrica",
+Sandbox_BuildingMenuRecipes_electricalXpPerLevel_tooltip = "Defina quantos pontos de xp por nível o jogador devera receber ao construir eletrônicos. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider = "____________ Receitas de Objetos Especiais ____________",
-Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Esta caixa de seleÃ§Ã£o Ã© apenas um separador de linhas, nÃ£o marque esta caixa de seleÃ§Ã£o nÃ£o possui nenhum efeito.",
+Sandbox_BuildingMenuRecipes_SpecialObjectsRecipesDivider_tooltip = "Esta caixa de seleção é apenas um separador de linhas, não marque esta caixa de seleção não possui nenhum efeito.",
 
-Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Quantidade mÃ¡xima de Ã¡gua dentro de um poÃ§o",
-Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Defina a quantidade mÃ¡xima de Ã¡gua que um poÃ§o pode possuir.",
+Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount = "Quantidade máxima de água dentro de um poço",
+Sandbox_BuildingMenuRecipes_maxWaterWellStorageAmount_tooltip = "Defina a quantidade máxima de água que um poço pode possuir.",
 
-Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Intensidade da chuva no poÃ§o de Ã¡gua",
-Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplica a quantidade de Ã¡gua que serÃ¡ adicionada ao poÃ§o durante a chuva.",
+Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul = "Intensidade da chuva no poço de água",
+Sandbox_BuildingMenuRecipes_waterWellRainIntensityMul_tooltip = "Multiplica a quantidade de água que será adicionada ao poço durante a chuva.",
 
-Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Tempo de recarga do poÃ§o de Ã¡gua",
-Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Controla o tempo que o poÃ§o ira durar para encher por completo, se vocÃª adicionar um valor entre 1;5 por exemplo irÃ¡ gerar um nÃºmero aleatÃ³rio entre 1 e 5 o 5 sempre ira gerar 5 unidades de Ã¡gua a cada hora.",
+Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval = "Tempo de recarga do poço de água",
+Sandbox_BuildingMenuRecipes_waterWellHourlyRefillRateInterval_tooltip = "Controla o tempo que o poço ira durar para encher por completo, se você adicionar um valor entre 1;5 por exemplo irá gerar um número aleatório entre 1 e 5 o 5 sempre ira gerar 5 unidades de água a cada hora.",
 
 Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate = "Custo de madeira para caixas militares",
-Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Defina a quantidade de madeira necessÃ¡ria para construir caixas militares. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_plankCountForMilitaryCrate_tooltip = "Defina a quantidade de madeira necessária para construir caixas militares. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
 Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate = "Custo de pregos para caixas militares",
-Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Defina a quantidade de pregos necessÃ¡rios para construir caixas militares. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_nailsCountForMilitaryCrate_tooltip = "Defina a quantidade de pregos necessários para construir caixas militares. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 
-Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "NÃ­vel de carpintaria para caixa militar",
-Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Defina o nÃ­vel de carpintaria que o jogador deve possuir para criar caixas militares. <LINE> VocÃª precisa salvar todas as suas configuraÃ§Ãµes sandbox e sair do jogo para que tudo seja alterado!",
+Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill = "Nível de carpintaria para caixa militar",
+Sandbox_BuildingMenuRecipes_militaryCrateCarpentrySkill_tooltip = "Defina o nível de carpintaria que o jogador deve possuir para criar caixas militares. <LINE> Você precisa salvar todas as suas configurações sandbox e sair do jogo para que tudo seja alterado!",
 }

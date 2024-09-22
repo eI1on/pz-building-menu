@@ -800,7 +800,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isDebugEnabled() or (not isServer() and not isClient() and not SandboxVars.BuildingMenu.isThumpable) or (isClient() and (isAdmin() or not SandboxVars.BuildingMenu.isThumpable)) then
         local option = context:addOption("Not Thumpable", self, function(self)
             self.tilesList.overwriteIsThumpable = not self.tilesList.overwriteIsThumpable;
-            BM_Logger:info("Overwrite Is Thumpable: " .. self.tilesList.overwriteIsThumpable);
+            BM_Logger:info("Overwrite Is Thumpable: " .. tostring(self.tilesList.overwriteIsThumpable));
         end);
         context:setOptionChecked(option, self.tilesList.overwriteIsThumpable);
     end

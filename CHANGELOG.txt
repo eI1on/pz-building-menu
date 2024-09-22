@@ -4,7 +4,9 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] Fxied an error where tooltips for buildables containing drainable materials would cause an error when the materials were placed on the ground
+[*] Fixed an error where tooltips for buildables containing drainable materials would cause an error when the materials were placed on the ground
+[*] Fixed an error when attempting to change the "thumpable" behavior in the UI options
+[*] Updated PTBR translations thanks to @BrenoS93
 [/list]
 [/list]
 

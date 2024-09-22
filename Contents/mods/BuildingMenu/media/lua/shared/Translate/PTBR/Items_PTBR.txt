@@ -1,11 +1,11 @@
 Items_PTBR = {
-DisplayName_AsphaltMixturePowder = "Saco de Mistura AsfÃ¡ltica",
-DisplayName_BucketAsphaltMixtureFull = "Balde de Mistura AsfÃ¡ltica",    
+DisplayName_AsphaltMixturePowder = "Saco de Mistura Asfáltica",
+DisplayName_BucketAsphaltMixtureFull = "Balde de Mistura Asfáltica",    
 DisplayName_PanWithGlassShards = "Assadeira com Cacos de Vidro",
 DisplayName_PanWithGlassPane = "Assadeira com Painel de Vidro",
 DisplayName_GlassPane = "Painel de Vidro",
 DisplayName_BMMagazineGlass = "Revista Trabalhando com Vidros",
-DisplayName_BMMagazineCars = "Revista ManutenÃ§Ã£o de Janelas",
+DisplayName_BMMagazineCars = "Revista Manutenção de Janelas",
 DisplayName_BMMagazineSecretEntrances = "Revista Passagens Secretas Mensais",
 }
 
