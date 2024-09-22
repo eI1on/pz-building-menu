@@ -1,0 +1,10 @@
+ItemName_PTBR = {
+ItemName_Base.AsphaltMixturePowder = "Saco de Mistura Asfáltica",
+ItemName_Base.BucketAsphaltMixtureFull = "Balde de Mistura Asfáltica",
+ItemName_Base.PanWithGlassShards = "Assadeira com Cacos de Vidro",
+ItemName_Base.PanWithGlassPane = "Assadeira com Painel de Vidro",
+ItemName_Base.GlassPane = "Painel de Vidro",
+ItemName_Base.BMMagazineGlass = "Revista Trabalhando com Vidros",
+ItemName_Base.BMMagazineCars = "Revista Manutenção de Janelas",
+ItemName_Base.BMMagazineSecretEntrances = "Revista Passagens Secretas Mensais",
+}
