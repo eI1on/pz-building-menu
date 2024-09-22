@@ -1,0 +1,23 @@
+Moveables_EN = {
+    Banner = "Red, White and Blue Triangle Bunting",
+
+    Victorian_1_Rug = "Victorian 1 Rug",
+    Victorian_2_Rug = "Victorian 2 Rug",
+    Victorian_3_Rug = "Victorian 3 Rug",
+    Victorian_4_Rug = "Victorian 4 Rug",
+
+    Victorian_C1_Couch = "Victorian C1 Couch",
+    Victorian_C2_Couch = "Victorian C2 Couch",
+    Victorian_C3_Couch = "Victorian C3 Couch",
+    Victorian_C4_Couch = "Victorian C4 Couch",
+    Victorian_C5_Couch = "Victorian C5 Couch",
+    Victorian_C6_Couch = "Victorian C6 Couch",
+
+    Victorian_1_Chair = "Victorian 1 Chair",
+    Victorian_2_Chair = "Victorian 2 Chair",
+    Victorian_3_Chair = "Victorian 3 Chair",
+    Victorian_4_Chair = "Victorian 4 Chair",
+    Victorian_5_Chair = "Victorian 5 Chair",
+    Victorian_6_Chair = "Victorian 6 Chair",
+}
+

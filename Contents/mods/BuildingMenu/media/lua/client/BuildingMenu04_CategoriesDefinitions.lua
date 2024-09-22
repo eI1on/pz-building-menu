@@ -27419,7 +27419,7 @@ local function addBedsToMenu()
                     }
                 ),
                 BuildingMenu.createObject(
-                    "",
+                    "Tooltip_BuildingMenuObj_Baby_Crib",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.BedRecipe,
@@ -27435,7 +27435,7 @@ local function addBedsToMenu()
                     }
                 ),
                 BuildingMenu.createObject(
-                    "",
+                    "Tooltip_BuildingMenuObj_Baby_Crib",
                     "Tooltip_craft_bedDesc",
                     BuildingMenu.onBuildDoubleTileFurniture,
                     BuildingMenu.BedRecipe,
