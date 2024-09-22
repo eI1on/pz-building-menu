@@ -4,7 +4,7 @@ Changelog:
 [list]
 Main mod:
 [list]
-[*] 
+[*] Fxied an error where tooltips for buildables containing drainable materials would cause an error when the materials were placed on the ground
 [/list]
 [/list]
 
