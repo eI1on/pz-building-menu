@@ -1,0 +1,7 @@
+Sandbox_EN = {
+    Sandbox_BuildingMenu_TryHonestyCategoryDivider = "_______________ TryHonesty's Specific Categories _______________",
+    Sandbox_BuildingMenu_TryHonestyCategoryDivider_tooltip = "This is only a line separator, checking it has no effect.",
+
+    Sandbox_BuildingMenu_tryHonestyChinatown = "Enable Chinatown Objects Category",
+    Sandbox_BuildingMenu_tryHonestyChinatown_tooltip = "Enable to add chinatown objects. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES!",
+}

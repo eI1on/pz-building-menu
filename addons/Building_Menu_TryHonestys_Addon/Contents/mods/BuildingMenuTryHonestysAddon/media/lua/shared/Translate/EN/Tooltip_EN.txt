@@ -1,0 +1,131 @@
+Tooltip_EN = {
+
+  Tooltip_BuildingMenuObj_Fast_Food_Pink_Wall = "Fast Food Pink Wall",
+  Tooltip_BuildingMenuObj_Fast_Food_Pink_Frame = "Fast Food Pink Door Frame",
+  Tooltip_Fast_Food_Pink_Wall = "A wall with pink fast-food themed pattern",
+  Tooltip_Fast_Food_Pink_Door_Frame = "A door frame with pink fast-food themed pattern",
+
+  Tooltip_BuildingMenuObj_Fast_Food_Light_Yellow_Wall = "Fast Food Light Yellow Wall",
+  Tooltip_BuildingMenuObj_Fast_Food_Light_Yellow_Frame = "Fast Food Light Yellow Door Frame",
+  Tooltip_Fast_Food_Light_Yellow_Wall = "A wall with light yellow fast-food themed pattern",
+  Tooltip_Fast_Food_Light_Yellow_Door_Frame = "A door frame with light yellow fast-food themed pattern",
+
+  Tooltip_BuildingMenuObj_Greasy_Joe_Black_Yellow_Wall = "Greasy Joe Black and Yellow Wall",
+  Tooltip_BuildingMenuObj_Greasy_Joe_Black_Yellow_Frame = "Greasy Joe Black and Yellow Door Frame",
+  Tooltip_Greasy_Joe_Black_Yellow_Wall = "A black and yellow wall Greasy Joe themed restaurant",
+  Tooltip_Greasy_Joe_Black_Yellow_Door_Frame = "A black and yellow door frame Greasy Joe themed restaurant",
+
+  Tooltip_BuildingMenuObj_Greasy_Joe_Light_Green_Wall = "Greasy Joe Light Green Wall",
+  Tooltip_BuildingMenuObj_Greasy_Joe_Light_Green_Frame = "Greasy Joe Light Green Door Frame",
+  Tooltip_Greasy_Joe_Light_Green_Wall = "A light green wall Greasy Joe themed",
+  Tooltip_Greasy_Joe_Light_Green_Door_Frame = "A light green door frame Greasy Joe themed",
+
+  Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Window_Wall = "Storefront Rifle Green Window Wall",
+  Tooltip_BuildingMenuObj_Storefront_Gravel_Window_Wall = "Storefront Gravel Window Wall",
+  Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Window_Wall = "Storefront Judge Grey Window Wall",
+  Tooltip_BuildingMenuObj_Storefront_River_Bed_Window_Wall = "Storefront River Bed Window Wall",
+  Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Window_Wall = "Storefront Mulled Wine Window Wall",
+
+  Tooltip_Storefront_Rifle_Green_Window_Wall = "A refined yet rugged storefront wall in Rifle Green, perfect for creating a bold, nature-inspired facade with an industrial edge.",
+  Tooltip_Storefront_Gravel_Window_Wall = "Storefront walls in Gravel offer a neutral, understated look, evoking strength and simplicity for a clean, modern exterior.",
+  Tooltip_Storefront_Judge_Grey_Window_Wall = "The Judge Grey storefront wall brings an air of sophistication and formality, ideal for structures that demand a timeless, authoritative appearance.",
+  Tooltip_Storefront_River_Bed_Window_Wall = "Inspired by natural river stones, the River Bed storefront wall provides a serene, earthy feel, blending seamlessly into tranquil settings.",
+  Tooltip_Storefront_Mulled_Wine_Window_Wall = "Deep and rich, the Mulled Wine storefront wall adds a touch of warmth and elegance, creating a welcoming and luxurious facade."
+
+
+  Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Pillar = "Storefront Rifle Green Pillar",
+  Tooltip_Storefront_Rifle_Green_Pillar = "A pillar in rifle green, combining rugged durability with a sleek outdoor aesthetic.",
+
+  Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Wall = "Storefront Rifle Green Wall",
+  Tooltip_Storefront_Rifle_Green_Wall = "A bold, rifle green wall that evokes the strength and resilience of the wilderness.",
+
+  Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Door_Frame = "Storefront Rifle Green Door Frame",
+  Tooltip_Storefront_Rifle_Green_Door_Frame = "A sturdy door frame in rifle green, perfect for blending into natural surroundings while maintaining a bold presence.",
+
+  Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Window_Frame = "Storefront Rifle Green Window Frame",
+  Tooltip_Storefront_Rifle_Green_Window_Frame = "A rifle green window frame, providing a tough, yet refined finish for an outdoor-inspired storefront.",
+
+  Tooltip_BuildingMenuObj_Storefront_Gravel_Pillar = "Storefront Gravel Pillar",
+  Tooltip_Storefront_Gravel_Pillar = "A gravel-toned pillar, perfect for grounding your storefront with natural, earthy tones.",
+
+  Tooltip_BuildingMenuObj_Storefront_Gravel_Wall = "Storefront Gravel Wall",
+  Tooltip_Storefront_Gravel_Wall = "A textured gravel wall, offering a balanced mix of simplicity and rugged appeal.",
+
+  Tooltip_BuildingMenuObj_Storefront_Gravel_Door_Frame = "Storefront Gravel Door Frame",
+  Tooltip_Storefront_Gravel_Door_Frame = "A robust gravel-colored door frame that complements both modern and rustic designs.",
+
+  Tooltip_BuildingMenuObj_Storefront_Gravel_Window_Frame = "Storefront Gravel Window Frame",
+  Tooltip_Storefront_Gravel_Window_Frame = "A gravel-toned window frame, adding a clean, minimalist touch to your storefront's design.",
+
+  Tooltip_BuildingMenuObj_Storefront_River_Bed_Pillar = "Storefront River Bed Pillar",
+  Tooltip_Storefront_River_Bed_Pillar = "A pillar in the calm, soothing tones of river bed rock, enhancing the natural beauty of your build.",
+
+  Tooltip_BuildingMenuObj_Storefront_River_Bed_Wall = "Storefront River Bed Wall",
+  Tooltip_Storefront_River_Bed_Wall = "A wall with a serene, river bed hue, evoking peace and tranquility in your storefront.",
+
+  Tooltip_BuildingMenuObj_Storefront_River_Bed_Door_Frame = "Storefront River Bed Door Frame",
+  Tooltip_Storefront_River_Bed_Door_Frame = "A door frame in river bed tones, bringing a sense of calm strength to your entrance.",
+
+  Tooltip_BuildingMenuObj_Storefront_River_Bed_Window_Frame = "Storefront River Bed Window Frame",
+  Tooltip_Storefront_River_Bed_Window_Frame = "A river bed window frame, offering a soft and peaceful complement to your storefront.",
+
+  Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Pillar = "Storefront Judge Grey Pillar",
+  Tooltip_Storefront_Judge_Grey_Pillar = "A pillar in deep, authoritative judge grey, exuding stability and seriousness.",
+
+  Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Wall = "Storefront Judge Grey Wall",
+  Tooltip_Storefront_Judge_Grey_Wall = "A wall in judge grey, perfect for a dignified and formal storefront.",
+
+  Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Door_Frame = "Storefront Judge Grey Door Frame",
+  Tooltip_Storefront_Judge_Grey_Door_Frame = "A door frame in judge grey, adding a stately, professional tone to your entryway.",
+
+  Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Window_Frame = "Storefront Judge Grey Window Frame",
+  Tooltip_Storefront_Judge_Grey_Window_Frame = "A window frame in judge grey, offering a sleek, professional look for your storefront.",
+
+  Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Pillar = "Storefront Mulled Wine Pillar",
+  Tooltip_Storefront_Mulled_Wine_Pillar = "A rich mulled wine pillar, bringing warmth and depth to your storefront's structure.",
+
+  Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Wall = "Storefront Mulled Wine Wall",
+  Tooltip_Storefront_Mulled_Wine_Wall = "A wall in mulled wine, providing a warm, welcoming atmosphere to any storefront.",
+
+  Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Door_Frame = "Storefront Mulled Wine Door Frame",
+  Tooltip_Storefront_Mulled_Wine_Door_Frame = "A door frame in mulled wine, perfect for creating a cozy and inviting entrance.",
+
+  Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Window_Frame = "Storefront Mulled Wine Window Frame",
+  Tooltip_Storefront_Mulled_Wine_Window_Frame = "A window frame in warm mulled wine, adding a touch of comfort and style to your storefront windows.",
+
+
+  Tooltip_BuildingMenuObj_Double_Big_Black_Pole_Gate = "Double Big Black Pole Gate",
+  Tooltip_BuildingMenuObj_Double_Big_Wooden_Gate = "Double Big Wooden Gate",
+
+  Tooltip_BuildingMenuObj_Brick_and_Concrete_High_Fence = "Brick and Concrete High Fence",
+  Tooltip_BuildingMenuObj_Brick_and_Concrete_High_Fence_Corner = "Brick and Concrete High Fence Corner",
+  Tooltip_BuildingMenuObj_Brick_and_Concrete_High_Fence_Post = "Brick and Concrete High Fence Post",
+
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Pillar = "Decorative Wrought Iron and Brick High Fence Pillar",
+
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_with_Arched_Drainage = "Decorative Wrought Iron and Brick High Fence with Arched Drainage",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Corner_with_Arched_Drainage = "Decorative Wrought Iron and Brick High Fence Corner with Arched Drainage",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_with_Arched_Drainage = "An ornate wrought iron fence with a sturdy brick pillar. The arched base provides both decoration and potential drainage.",
+
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence = "Decorative Wrought Iron and Brick High Fence",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Corner = "Decorative Wrought Iron and Brick High Fence Corner",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick = "An ornate wrought iron fence with a sturdy brick pillar.",
+
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_with_Climbing_Ivy = "Decorative Wrought Iron and Brick High Fence with Climbing Ivy",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Corner_with_Climbing_Ivy = "Decorative Wrought Iron and Brick High Fence Corner with Climbing Ivy",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Pillar_with_Climbing_Vines = "Decorative Wrought Iron and Brick High Fence Pillar with Climbing Vines",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_with_Climbing_Vines = "An ornate wrought iron fence paired with a sturdy brick pillar, adorned with climbing vines for a touch of natural beauty.",
+
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_with_Hedge = "Decorative Wrought Iron and Brick High Fence with Hedge",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Corner_with_Hedge = "Decorative Wrought Iron and Brick High Fence Corner with Hedge",
+  Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_with_Hedge = "An ornate wrought iron fence paired with a sturdy brick pillar, complemented by a neatly trimmed hedge for added greenery.",
+
+  Tooltip_BuildingMenuObj_Simple_Wrought_Iron_and_Brick_High_Fence = "Simple Wrought Iron and Brick High Fence",
+  Tooltip_BuildingMenuObj_Simple_Wrought_Iron_and_Brick_High_Fence_Corner = "Simple Wrought Iron and Brick High Fence Corner",
+  Tooltip_BuildingMenuObj_Simple_Wrought_Iron_and_Brick = "A simple iron fence paired with a sturdy brick pillar",
+
+  Tooltip_BuildingMenuObj_Floor = "Floor",
+
+  Tooltip_BuildingMenuObj_Wing_Chun_Wooden_Dummy = "Wing Chun Wooden Dummy",
+
+}

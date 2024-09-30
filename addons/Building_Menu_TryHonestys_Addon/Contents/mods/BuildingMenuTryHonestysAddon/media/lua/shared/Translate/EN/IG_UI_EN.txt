@@ -1,0 +1,21 @@
+IGUI_EN = {
+
+    IGUI_BuildingMenuSubCat_Walls_Fast_Food_Pink = "Fast Food Pink",
+    IGUI_BuildingMenuSubCat_Walls_Fast_Food_Light_Yellow = "Fast Food Light Yellow",
+    IGUI_BuildingMenuSubCat_Walls_Greasy_Joe = "Greasy Joe",
+
+    IGUI_BuildingMenuSubCat_Walls_Storefront_Rifle_Green = "Storefront Rifle Green",
+    IGUI_BuildingMenuSubCat_Walls_Storefront_Gravel = "Storefront Gravel",
+    IGUI_BuildingMenuSubCat_Walls_Storefront_Judge_Grey = "Storefront Judge Grey",
+    IGUI_BuildingMenuSubCat_Walls_Storefront_River_Bed = "Storefront River Bed",
+    IGUI_BuildingMenuSubCat_Walls_Storefront_Mulled_Wine = "Storefront Mulled Wine",
+
+    IGUI_BuildingMenuSubCat_Floors_TryHonestys_Special = "Special",
+    IGUI_BuildingMenuSubCat_Floors_TryHonestys_Others = "Others",
+
+    IGUI_BuildingMenuCat_TryHonestys_Chinatown = "Chinatown",
+    IGUI_BuildingMenuSubCat_Chinatown_Decorative_Objects = "Decorative Objects",
+
+    IGUI_BuildingMenuSubCat_Decorations_Others = "Others",
+
+}

@@ -1001,6 +1001,36 @@ local function initBuildingMenuRecipes()
         { type = "Base.PaintPink", amount = 1 },
     })
 
+    BuildingMenu.PinkWindowBigWoodWallRecipe = {
+        neededTools = {
+            "Hammer",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
+                    "Material")
+            },
+            {
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
+                Amount = glassPaneCount
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.PinkWindowBigWoodWallRecipe, {
+        { type = "Base.PaintPink", amount = 1 },
+    })
+
     BuildingMenu.PinkSmallWoodWallRecipe = {
         neededTools = {
             "Hammer",
@@ -1210,6 +1240,38 @@ local function initBuildingMenuRecipes()
         { type = "Base.PaintYellow", amount = 1 },
     })
 
+
+    BuildingMenu.YellowWindowBigWoodWallRecipe = {
+        neededTools = {
+            "Hammer",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
+                    "Material")
+            },
+            {
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
+                Amount = glassPaneCount
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowWindowBigWoodWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
+    })
+
+
     BuildingMenu.YellowSmallWoodWallRecipe = {
         neededTools = {
             "Hammer",
@@ -1236,6 +1298,65 @@ local function initBuildingMenuRecipes()
         { type = "Base.PaintYellow", amount = 1 },
     })
 
+
+    BuildingMenu.BlackYellowBigWoodWallRecipe = {
+        neededTools = {
+            "Hammer",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
+                    "Material")
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackYellowBigWoodWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
+        { type = "Base.PaintBlack", amount = 1 },
+    })
+
+
+    BuildingMenu.BlackYellowWindowBigWoodWallRecipe = {
+        neededTools = {
+            "Hammer",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
+                    "Material")
+            },
+            {
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
+                Amount = glassPaneCount
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.BlackYellowWindowBigWoodWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
+        { type = "Base.PaintBlack", amount = 1 },
+    })
 
     BuildingMenu.BrownBigWoodWallRecipe = {
         neededTools = {
@@ -1642,6 +1763,37 @@ local function initBuildingMenuRecipes()
         }
     }
     BuildingMenu.addPaintToRecipe(BuildingMenu.GreenWhiteBigWoodWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
+        { type = "Base.PaintWhite", amount = 1 },
+    })
+
+    BuildingMenu.GreenWhiteWindowBigWoodWallRecipe = {
+        neededTools = {
+            "Hammer",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Plank",
+                Amount = bigWallWoodCount
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
+                    "Material")
+            },
+            {
+                Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
+                Amount = glassPaneCount
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = bigObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(bigObjectsCarpentrySkill * carpentryXpPerLevel)
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenWhiteWindowBigWoodWallRecipe, {
         { type = "Base.PaintGreen", amount = 1 },
         { type = "Base.PaintWhite", amount = 1 },
     })

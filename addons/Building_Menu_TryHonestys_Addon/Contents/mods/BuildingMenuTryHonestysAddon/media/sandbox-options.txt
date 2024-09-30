@@ -1,0 +1,17 @@
+VERSION = 1,
+
+option BuildingMenu.TryHonestyCategoryDivider
+{
+    type = boolean,
+    default = false,
+    page = BuildingMenu,
+    translation = BuildingMenu_TryHonestyCategoryDivider,
+}
+
+option BuildingMenu.tryHonestyChinatown
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_tryHonestyChinatown,
+}
