@@ -781,7 +781,7 @@ option BuildingMenuRecipes.bigWallNailsCount
 {
     type = integer,
     min = 1,
-    default = 8,
+    default = 6,
     max = 100,
     page = BuildingMenuRecipes,
     translation = BuildingMenuRecipes_bigWallNailsCount,
@@ -824,7 +824,7 @@ option BuildingMenuRecipes.bigObjectsNailsCount
 {
     type = integer,
     min = 1,
-    default = 10,
+    default = 8,
     max = 100,
     page = BuildingMenuRecipes,
     translation = BuildingMenuRecipes_bigObjectsNailsCount,
@@ -889,7 +889,7 @@ option BuildingMenuRecipes.scrapMetalCountForFences
 {
     type = integer,
     min = 1,
-    default = 20,
+    default = 10,
     max = 100,
     page = BuildingMenuRecipes,
     translation = BuildingMenuRecipes_scrapMetalCountForFences,
@@ -900,7 +900,7 @@ option BuildingMenuRecipes.scrapMetalCountForElectrical
 {
     type = integer,
     min = 1,
-    default = 10,
+    default = 5,
     max = 100,
     page = BuildingMenuRecipes,
     translation = BuildingMenuRecipes_scrapMetalCountForElectrical,

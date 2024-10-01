@@ -1,12 +1,28 @@
- SEP 24
+1 OCT 24
 
 Changelog:
 [list]
 Main mod:
 [list]
-[*] Fixed an error where tooltips for buildables containing drainable materials would cause an error when the materials were placed on the ground
-[*] Fixed an error when attempting to change the "thumpable" behavior in the UI options
-[*] Updated PTBR translations thanks to @BrenoS93
+[*] Fixed an error where tooltips for buildables containing drainable materials would cause an error when the materials were placed on the ground ([url=https://github.com/eI1on/pz-building-menu/issues/40] Issue #40 [/url])
+[*] Fixed an error when attempting to change the "thumpable" behavior in the UI options 
+[*] Updated PTBR translations thanks to @BrenoS93 ([url=https://github.com/eI1on/pz-building-menu/issues/44] Issue #44 [/url])
+[*] Updates to material costs (default values):
+[list]
+[*] Big Wall Nails Count: 8 >> 6
+[*] Big Objects Nails Count 10 >> 8
+[*] Scrap Metal Count For Fences 20 >> 10 
+[*] Scrap Metal Count For Electrical 10 >> 5
+[/list]
+[*] Updates to objects costs:
+[list]
+[*] Garbage Bin Small Recipe: Small Sheet Metal 4 >> 0
+[*] Hedges: 5 Stones >> 5 Twigs
+[/list]
+[/list]
+TryHonesty's Tiles addon:
+[list]
+[*] Initial Release 
 [/list]
 [/list]
 

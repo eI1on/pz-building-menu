@@ -742,19 +742,12 @@ local function addGreenhouseWallsToMenu()
 end
 
 local function addDoorsToMenu()
-    local woodenDoorRecipe = {};
-    for k, v in pairs(BuildingMenu.WoodenDoorRecipe) do
-        woodenDoorRecipe[k] = v;
-    end
-    BuildingMenu.addPaintToRecipe(woodenDoorRecipe, {
-        { type = "Base.PaintGreen", amount = 1 },
-    })
     local doors = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Green_Door",
             "Tooltip_Green_Door",
             BuildingMenu.onBuildDoor,
-            woodenDoorRecipe,
+            BuildingMenu.GreenWoodenDoorRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",

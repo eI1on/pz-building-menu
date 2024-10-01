@@ -390,7 +390,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_1",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteSmallWoodWallRecipe,
+            BuildingMenu.SmallWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
@@ -404,7 +404,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_2",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteBigWoodWallRecipe,
+            BuildingMenu.BigWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -418,7 +418,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_3",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteBigWoodWallRecipe,
+            BuildingMenu.BigWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -432,7 +432,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_4",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteSmallWoodWallRecipe,
+            BuildingMenu.SmallWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
@@ -446,7 +446,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_5",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteBigWoodWallRecipe,
+            BuildingMenu.BigWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -460,7 +460,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_Slope_Wall_6",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteBigWoodWallRecipe,
+            BuildingMenu.BigWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -474,7 +474,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_End_Small",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteSmallWoodWallRecipe,
+            BuildingMenu.SmallWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
@@ -488,7 +488,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_End_Medium",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteBigWoodWallRecipe,
+            BuildingMenu.BigWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -502,7 +502,7 @@ local function addWoodWallsToMenu()
             "Tooltip_BuildingMenuObj_Wooden_Panel_Roof_End_Big",
             "Tooltip_Wooden_Panel_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.WhiteBigWoodWallRecipe,
+            BuildingMenu.BigWoodWallRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -25619,7 +25619,7 @@ local function addCratesToMenu()
             "",
             "Tooltip_Grocery_Box",
             BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.SmallCounterRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -25643,7 +25643,7 @@ local function addCratesToMenu()
             "",
             "Tooltip_Broken_Cardboard_Box",
             BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CardboardBoxRecipe,
+            BuildingMenu.SmallCardboardBoxRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -31445,7 +31445,7 @@ local function addOtherDecorationsToMenu()
                     "",
                     "Tooltip_Roadway_Generic",
                     BuildingMenu.onBuildFourTileSimpleFurniture,
-                    BuildingMenu.SignRecipe,
+                    BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureSmall",
@@ -31466,7 +31466,7 @@ local function addOtherDecorationsToMenu()
                     "",
                     "Tooltip_Roadway_Generic",
                     BuildingMenu.onBuildFourTileSimpleFurniture,
-                    BuildingMenu.SignRecipe,
+                    BuildingMenu.LargeFurnitureRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureSmall",
@@ -32404,7 +32404,7 @@ local function addLandscapingToMenu()
                     "",
                     "Tooltip_Hedges_Generic",
                     BuildingMenu.onBuildSpecialObject,
-                    BuildingMenu.FlowerBedRecipe,
+                    BuildingMenu.HedgeRecipe,
                     true,
                     {
                         completionSound = "DropSoilFromGravelBag",
@@ -32423,7 +32423,7 @@ local function addLandscapingToMenu()
                     "",
                     "Tooltip_Hedges_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.FlowerBedRecipe,
+                    BuildingMenu.HedgeRecipe,
                     true,
                     {
                         completionSound = "DropSoilFromGravelBag",
@@ -32447,7 +32447,7 @@ local function addLandscapingToMenu()
                     "",
                     "Tooltip_Hedges_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.FlowerBedRecipe,
+                    BuildingMenu.HedgeRecipe,
                     true,
                     {
                         completionSound = "DropSoilFromGravelBag",
@@ -32466,7 +32466,7 @@ local function addLandscapingToMenu()
                     "",
                     "Tooltip_Hedges_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.FlowerBedRecipe,
+                    BuildingMenu.HedgeRecipe,
                     true,
                     {
                         completionSound = "DropSoilFromGravelBag",

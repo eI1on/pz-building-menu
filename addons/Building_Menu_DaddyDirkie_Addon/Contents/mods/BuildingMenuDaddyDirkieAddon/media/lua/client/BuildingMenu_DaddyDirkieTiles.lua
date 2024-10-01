@@ -1719,7 +1719,7 @@ local function addCratesToMenu()
             "Tooltip_BuildingMenuObj_Green_Small_Locker",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.SmallCounterRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -1745,7 +1745,7 @@ local function addCratesToMenu()
             "Tooltip_BuildingMenuObj_White_Small_Locker",
             "Tooltip_Counter_Generic",
             BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
+            BuildingMenu.SmallCounterRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",

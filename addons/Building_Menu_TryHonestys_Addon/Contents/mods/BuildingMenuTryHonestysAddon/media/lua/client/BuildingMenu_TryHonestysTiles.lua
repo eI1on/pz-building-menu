@@ -2340,7 +2340,7 @@ local function addCratesToMenu()
     local crate = {
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2353,7 +2353,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2366,7 +2366,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2379,7 +2379,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2392,7 +2392,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2405,7 +2405,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2418,7 +2418,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2431,7 +2431,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2444,7 +2444,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2457,7 +2457,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2470,7 +2470,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2483,7 +2483,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2496,7 +2496,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2507,14 +2507,126 @@ local function addCratesToMenu()
             },
             { sprite = "LC_industrial_stuff_01_88" }
         ),
-
-
-
-
-
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_91" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_96" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_99" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_104" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_107" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_112" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_115" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_120" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
+            BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.CounterRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = true
+            },
+            { sprite = "LC_industrial_stuff_01_123" }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.SmallCounterRecipe,
             true,
@@ -2527,7 +2639,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2540,7 +2652,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.CounterRecipe,
             true,
@@ -2553,7 +2665,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.SmallCounterRecipe,
             true,
@@ -2566,7 +2678,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.SmallCounterRecipe,
             true,
@@ -2579,7 +2691,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.SmallCounterRecipe,
             true,
@@ -2592,7 +2704,7 @@ local function addCratesToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.SmallCounterRecipe,
             true,
@@ -2634,7 +2746,7 @@ local function addContainersOthersToMenu()
         ),
         BuildingMenu.createObject(
             "",
-            "Tooltip_Half_Crate",
+            "",
             BuildingMenu.onBuildWoodenContainer,
             BuildingMenu.SmallCounterRecipe,
             true,
@@ -3788,6 +3900,8 @@ local function addCookingAppliancesToMenu()
             {
                 sprite = "LC_Kitchen_01_1",
                 northSprite = "LC_Kitchen_01_0",
+                eastSprite = "LC_Kitchen_01_3",
+                southSprite = "LC_Kitchen_01_2"
             }
         ),
     }
