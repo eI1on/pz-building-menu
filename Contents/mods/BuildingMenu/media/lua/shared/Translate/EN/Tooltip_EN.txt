@@ -1664,6 +1664,20 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Eave_Trim_Middle = "Eave Trim Middle",
   Tooltip_BuildingMenuObj_Eave_Trim_Top = "Eave Trim Top",
 
+  Tooltip_BuildingMenuObj_Greyish_Brown_Canvas_Cover = "Greyish Brown Canvas Cover",
+  Tooltip_BuildingMenuObj_Greyish_Brown_Canvas_Cover_Corner = "Greyish Brown Canvas Cover Corner",
+
+  Tooltip_BuildingMenuObj_Blue_Canvas_Cover = "Blue Canvas Cover",
+  Tooltip_BuildingMenuObj_Blue_Canvas_Cover_Corner = "Blue Canvas Cover Corner",
+
+  Tooltip_BuildingMenuObj_Green_Canvas_Cover = "Green Canvas Cover",
+  Tooltip_BuildingMenuObj_Green_Canvas_Cover_Corner = "Green Canvas Cover Corner",
+
+  Tooltip_BuildingMenuObj_Grey_Canvas_Cover = "Grey Canvas Cover",
+  Tooltip_BuildingMenuObj_Grey_Canvas_Cover_Corner = "Grey Canvas Cover Corner",
+
+  Tooltip_Canvas_Cover = "Worn and tattered, but still serves its purpose in keeping the weather out.",
+
   Tooltip_Roof_Accent = "Jazz up that rooftop—after all, it's the last thing zombies will see before the fall.",
 
   Tooltip_BuildingMenuObj_Large_White_Window = "Large White Window",

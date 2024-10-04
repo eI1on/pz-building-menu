@@ -55,6 +55,18 @@ function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon
     for _, obj in ipairs(objects) do
         table.insert(subcategory.objects, obj)
     end
+
+    if not BuildingMenu.ObjectCounts[tabName] then
+        BuildingMenu.ObjectCounts[tabName] = { count = 0, categories = {} };
+    end
+
+    local tabCounts = BuildingMenu.ObjectCounts[tabName]
+    tabCounts.count = tabCounts.count + #objects;
+
+    if not tabCounts.categories[categoryName] then
+        tabCounts.categories[categoryName] = 0;
+    end
+    tabCounts.categories[categoryName] = tabCounts.categories[categoryName] + #objects;
 end
 
 --- Creates a new object with given properties
@@ -92,6 +104,8 @@ function BuildingMenu.createObject(displayName, description, action, recipe, isR
         }
     }
 end
+
+BuildingMenu.ObjectCounts = {};
 
 --- Initializes the tabs in the building menu with default tab values
 BuildingMenu.Tabs = {
@@ -10049,7 +10063,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Tent_Edge",
                     "Tooltip_Tent_Pillar",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.GreenSmallFabricWallRecipe,
+                    BuildingMenu.GreenSmallFabricRopeWallRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
@@ -10106,7 +10120,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Tent_Edge",
                     "Tooltip_Tent_Pillar",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.GreenSmallFabricWallRecipe,
+                    BuildingMenu.GreenSmallFabricRopeWallRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
@@ -10195,7 +10209,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Tent_Edge",
                     "Tooltip_Tent_Pillar",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.YellowSmallFabricWallRecipe,
+                    BuildingMenu.YellowSmallFabricRopeWallRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
@@ -10252,7 +10266,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Tent_Edge",
                     "Tooltip_Tent_Pillar",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.YellowSmallFabricWallRecipe,
+                    BuildingMenu.YellowSmallFabricRopeWallRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
@@ -16910,7 +16924,143 @@ local function addArchitecturePlusToMenu()
                     { sprite = "roofs_accents_01_12", northSprite = "roofs_accents_01_38" }
                 ),
             }
-        }
+        },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Canvas_Covers"),
+            subCategoryIcon = "industry_trucks_01_64",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Greyish_Brown_Canvas_Cover",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.CanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                    },
+                    { sprite = "industry_trucks_01_52", northSprite = "industry_trucks_01_53" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Greyish_Brown_Canvas_Cover_Corner",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.SmallCanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    { sprite = "industry_trucks_01_54", northSprite = "industry_trucks_01_55" }
+                ),
+
+
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Canvas_Cover",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.CanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                    },
+                    { sprite = "industry_trucks_01_60", northSprite = "industry_trucks_01_61" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Canvas_Cover_Corner",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.SmallCanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    { sprite = "industry_trucks_01_62", northSprite = "industry_trucks_01_63" }
+                ),
+
+
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Green_Canvas_Cover",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.CanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                    },
+                    { sprite = "industry_trucks_01_64", northSprite = "industry_trucks_01_65" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Green_Canvas_Cover_Corner",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.SmallCanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    { sprite = "industry_trucks_01_66", northSprite = "industry_trucks_01_67" }
+                ),
+
+
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Canvas_Cover",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.CanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                    },
+                    { sprite = "industry_trucks_01_68", northSprite = "industry_trucks_01_69" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Grey_Canvas_Cover_Corner",
+                    "Tooltip_Canvas_Cover",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.SmallCanvasCoversRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    { sprite = "industry_trucks_01_70", northSprite = "industry_trucks_01_71" }
+                ),
+            }
+        },
     }
 
     for k, subCatData in pairs(architecturePlus) do

@@ -128,6 +128,7 @@ IGUI_EN = {
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels = "Wall Panels",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation = "Foundation",
     IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents = "Roof Accents",
+    IGUI_BuildingMenuSubCat_ArchitecturePlus_Canvas_Covers = "Canvas Covers",
 
     IGUI_BuildingMenuCat_Windows = "Windows",
     IGUI_BuildingMenuSubCat_Windows_Wooden_Windows = "Wooden",

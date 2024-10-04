@@ -1,3 +1,36 @@
+OCT 24
+
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Changed "Prepare Glass Shards" and "Remove Glass Pane" recipes to prevent an exploit that granted unintended cooking experience when repeated
+[*] Added "Canvas Covers" (these are [b]wall overlays[/b]) in "Architecture Plus"
+[*] Metal Pipes can now be used as an alternative to Metal Bars in most of the recipes
+[*] Updates to objects costs:
+[list]
+[*] Hesco Barriers: Tarp 2 >> 1
+[*] Double Hesco Barriers: Tarp 4 >> 2
+[/list]
+[/list]
+Oujinjin's Tiles Addon:
+[list]
+[*] Fixed an issue where some containers couldn't be rotated due to missing sprite assignments for other directions
+[/list]
+Greenhouse addon:
+[list]
+[*] Hidden "Prepare Glass Shards" and "Remove Glass Pane" recipes from Greenhouse Building Set and Improvised Glass mods to prevent an exploit allowing infinite glass panes through repeated smashing and smelting of glass
+[/list]
+TryHonesty's Tiles addon:
+[list]
+[*] Increased the capacity of the cool crates to 100 (130 with Organized) and aligned their recipe with that of the military crates
+[*] Fixed Decorative Wrought Iron and Brick High Fence with Hedge incorrect north sprite
+[/list]
+[/list]
+
+
+
 1 OCT 24
 a67ec53
 

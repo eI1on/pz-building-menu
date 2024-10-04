@@ -11,6 +11,7 @@ local getSprite = getSprite
 ---@type function
 local getTextOrNull = getTextOrNull
 
+local BM_Constants = require("BM_Constants");
 local BM_Logger = require("BM_Logger");
 local BM_Utils = require("BM_Utils");
 
@@ -130,8 +131,8 @@ function BuildingMenuTilePickerList:getSelectedObject(maxCols, maxRows)
     return nil;
 end
 
-local spriteCache = {};
-local partNames = {
+local containerDetailsBySpriteCache = {};
+local containerPartNames = {
     "Tooltip_BuildingObject_Main_Part",
     "Tooltip_BuildingObject_Secondary_Part",
     "Tooltip_BuildingObject_Tertiary_Part",
@@ -140,7 +141,7 @@ local partNames = {
 
 
 local function getContainerDetailsFromSpriteProps(sprite, character)
-    if spriteCache[sprite] then return spriteCache[sprite]; end
+    if containerDetailsBySpriteCache[sprite] then return containerDetailsBySpriteCache[sprite]; end
 
     local containerDetails = {};
     local cell = getWorld():getCell();
@@ -157,19 +158,19 @@ local function getContainerDetailsFromSpriteProps(sprite, character)
         table.insert(containerDetails, string.format("%s: %d", containerTitle, containerCapacity));
     end
 
-    spriteCache[sprite] = containerDetails;
+    containerDetailsBySpriteCache[sprite] = containerDetails;
     return containerDetails;
 end
 
 
 local function getContainerDetailsFromObjectDef(sprite, containerType, capacity)
-    if spriteCache[sprite] then return spriteCache[sprite]; end
+    if containerDetailsBySpriteCache[sprite] then return containerDetailsBySpriteCache[sprite]; end
 
     local containerDetails = {};
     local containerTitle = getTextOrNull("IGUI_ContainerTitle_" .. containerType) or containerType;
     table.insert(containerDetails, string.format("%s: %d", containerTitle, capacity));
 
-    spriteCache[sprite] = containerDetails;
+    containerDetailsBySpriteCache[sprite] = containerDetails;
     return containerDetails;
 end
 
@@ -194,7 +195,7 @@ local function getContainerInfo(selectedObject, character)
                 end
             end
             if containerDetails and #containerDetails > 0 then
-                local partName = partNames[i] or "Tooltip_BuildingObject_Extra_Part";
+                local partName = containerPartNames[i] or "Tooltip_BuildingObject_Extra_Part";
                 table.insert(containerInfo, getText(partName) .. ": " .. table.concat(containerDetails, " | "));
             end
         end
@@ -637,7 +638,11 @@ function ISBuildingMenuUI.openPanel(playerObj)
         triggerEvent("OnInitializeBuildingMenuRecipes");
         triggerEvent("OnInitializeBuildingMenuObjects"); --- init objects take about 150ms
         objectsInitialized = true;
+
+        if BuildingMenu.ObjectCounts then BM_Logger:logTable(BM_Constants.LOG_LEVELS.DEBUG, BuildingMenu.ObjectCounts); end
     end
+
+    containerDetailsBySpriteCache = {};
 
     local BMUI = ISBuildingMenuUI.instance;
     if not BMUI then

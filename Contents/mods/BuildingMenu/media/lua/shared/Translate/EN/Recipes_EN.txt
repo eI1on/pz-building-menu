@@ -1,8 +1,8 @@
 Recipe_EN = {
     /* Make Glass Recipes */
-    Recipe_BMPrepareGlassShards = "BM Prepare glass for smelting",
-    Recipe_BMUnprepareGlassShards = "BM Remove glass from pan",
-    Recipe_BMRemoveGlassPane = "BM Extract glass pane",
+    Recipe_BMPrepareGlassShards = "Prepare glass for smelting",
+    Recipe_BMUnprepareGlassShards = "Remove glass from pan",
+    Recipe_BMRemoveGlassPane = "Extract glass pane",
 
     /* Smash Glass Recipes */
     Recipe_BMSmashGlassJar = "Smash into broken glass",

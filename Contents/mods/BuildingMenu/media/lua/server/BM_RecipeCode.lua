@@ -24,3 +24,23 @@ end
 function Recipe.OnGiveXP.BuildingMenu_XPMakeWindowCar(recipe, ingredients, result, player)
     player:getXp():AddXP(Perks.Cooking, 2);
 end
+
+if getActivatedMods():contains("Greenhouse") or getActivatedMods():contains("ImprovisedGlass") then
+    local blockRecipes = {};
+    blockRecipes["IGPrepareGlassShards"] = true;
+    blockRecipes["IGUnprepareGlassShards"] = true;
+    blockRecipes["IGRemoveGlassPane"] = true;
+
+    local recipes = getScriptManager():getAllRecipes();
+    for i = 1, recipes:size() do
+        local recipe = recipes:get(i - 1);
+        local fullType = recipe:getFullType();
+
+        local extractedRecipeName = fullType:match("^.+%.(.+)$");
+
+        if blockRecipes[extractedRecipeName] then
+            recipe:setNeedToBeLearn(true);
+            recipe:setIsHidden(true);
+        end
+    end
+end

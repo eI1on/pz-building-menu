@@ -135,28 +135,55 @@ local function initBuildingMenuRecipes()
 
     BuildingMenu.GreenBigFabricWallRecipe = {
         neededTools = {
-            "Hammer",
+            "BlowTorch",
+            "WeldingMask",
             "Needle"
         },
         neededMaterials = {
             {
-                Material = "Base.RippedSheets",
-                Amount = 10
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 2
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 2
+                },
             },
             {
-                Material = "Base.Plank",
-                Amount = bigWallWoodCount
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 15
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 8
+                }
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Thread",
+                Amount = 5
             },
             {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
-                    "Material")
+                Consumable = "Base.BlowTorch",
+                Amount = 2
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
             }
         },
         skills = {
             {
-                Skill = "Woodwork",
-                Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -171,34 +198,55 @@ local function initBuildingMenuRecipes()
 
     BuildingMenu.GreenSmallFabricWallRecipe = {
         neededTools = {
-            "Hammer",
+            "BlowTorch",
+            "WeldingMask",
             "Needle"
         },
         neededMaterials = {
             {
-                Material = "Base.RippedSheets",
-                Amount = 6
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 1
+                },
             },
             {
-                Material = "Base.Plank",
-                Amount = smallWallWoodCount
-            },
-            {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount,
-                    "Material")
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 8
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 4
+                }
             },
         },
         useConsumable = {
             {
                 Consumable = "Base.Thread",
-                Amount = 5
+                Amount = 3
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 2
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
             }
         },
         skills = {
             {
-                Skill = "Woodwork",
-                Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -211,31 +259,125 @@ local function initBuildingMenuRecipes()
         { type = "Base.PaintGreen", amount = 1 },
     })
 
-
-    BuildingMenu.YellowBigFabricWallRecipe = {
+    BuildingMenu.GreenSmallFabricRopeWallRecipe = {
         neededTools = {
-            "Hammer",
-            "Needle",
+            "BlowTorch",
+            "WeldingMask",
+            "Needle"
         },
         neededMaterials = {
             {
-                Material = "Base.RippedSheets",
-                Amount = 10
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 1
+                },
             },
             {
-                Material = "Base.Plank",
-                Amount = bigWallWoodCount
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 8
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 4
+                }
             },
             {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount,
-                    "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Ropes, 1, "Material")
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Thread",
+                Amount = 3
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 2
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
             }
         },
         skills = {
             {
-                Skill = "Woodwork",
-                Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
+            },
+            {
+                Skill = "Tailoring",
+                Level = 3,
+                Xp = 10
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.GreenSmallFabricRopeWallRecipe, {
+        { type = "Base.PaintGreen", amount = 1 },
+    })
+
+
+
+    BuildingMenu.YellowBigFabricWallRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Needle"
+        },
+        neededMaterials = {
+            {
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 2
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 2
+                },
+            },
+            {
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 15
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 8
+                }
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Thread",
+                Amount = 5
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 2
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -248,37 +390,57 @@ local function initBuildingMenuRecipes()
         { type = "Base.PaintYellow", amount = 1 },
     })
 
-
     BuildingMenu.YellowSmallFabricWallRecipe = {
         neededTools = {
-            "Hammer",
+            "BlowTorch",
+            "WeldingMask",
             "Needle"
         },
         neededMaterials = {
             {
-                Material = "Base.RippedSheets",
-                Amount = 6
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 1
+                },
             },
             {
-                Material = "Base.Plank",
-                Amount = smallWallWoodCount
-            },
-            {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount,
-                    "Material")
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 8
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 4
+                }
             },
         },
         useConsumable = {
             {
                 Consumable = "Base.Thread",
-                Amount = 5
+                Amount = 3
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 2
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
             }
         },
         skills = {
             {
-                Skill = "Woodwork",
-                Level = smallObjectsCarpentrySkill,
-                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
             },
             {
                 Skill = "Tailoring",
@@ -291,6 +453,71 @@ local function initBuildingMenuRecipes()
         { type = "Base.PaintYellow", amount = 1 },
     })
 
+    BuildingMenu.YellowSmallFabricRopeWallRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Needle"
+        },
+        neededMaterials = {
+            {
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 1
+                },
+            },
+            {
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 8
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 4
+                }
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Ropes, 1, "Material")
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Thread",
+                Amount = 3
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 2
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
+            },
+            {
+                Skill = "Tailoring",
+                Level = 3,
+                Xp = 10
+            }
+        }
+    }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.YellowSmallFabricRopeWallRecipe, {
+        { type = "Base.PaintYellow", amount = 1 },
+    })
 
     BuildingMenu.TanBigStoneWallRecipe = {
         neededTools = {
@@ -2569,8 +2796,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2608,8 +2841,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2644,8 +2883,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2684,8 +2929,14 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForWalls
             },
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2723,8 +2974,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2763,8 +3020,14 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForRoofingAndFloors
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2798,8 +3061,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2852,8 +3121,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.25)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.25)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.25)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.25)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2906,8 +3181,14 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForWalls
             },
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.Screws",
@@ -2960,8 +3241,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -3230,8 +3517,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForDoors * 0.75)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
             },
             {
                 BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
@@ -3290,8 +3583,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForDoors * 1.25)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
@@ -3345,8 +3644,14 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForDoors
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.75)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.75)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.75)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -3391,8 +3696,14 @@ local function initBuildingMenuRecipes()
                 Amount = sheetMetalCountForDoors
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.75)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.75)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.75)
+                },
             },
             {
                 Material = BuildingMenu.ItemsAlternatives.GlassPaneSmall,
@@ -3441,8 +3752,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForDoors * 0.5)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 2)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -3487,8 +3804,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForDoors * 2)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.Screws",
@@ -3722,6 +4045,87 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.CanvasCoversRecipe = {
+        neededTools = {
+            "Hammer",
+            "Needle"
+        },
+        neededMaterials = {
+            {
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 15
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 8
+                }
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.5), "Material")
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Thread",
+                Amount = 4
+            }
+        },
+        skills = {
+            {
+                Skill = "Tailoring",
+                Level = 4,
+                Xp = 20
+            }
+        }
+    }
+
+    BuildingMenu.SmallCanvasCoversRecipe = {
+        neededTools = {
+            "Hammer",
+            "Needle"
+        },
+        neededMaterials = {
+            {
+                {
+                    Material = "Base.Tarp",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.RippedSheets",
+                    Amount = 8
+                },
+                {
+                    Material = "Base.DenimStrips",
+                    Amount = 4
+                }
+            },
+            {
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(smallObjectsNailsCount * 0.25), "Material")
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Thread",
+                Amount = 2
+            }
+        },
+        skills = {
+            {
+                Skill = "Tailoring",
+                Level = 5,
+                Xp = 20
+            }
+        }
+    }
+
+
     BuildingMenu.WindowRecipe = {
         neededTools = {
             "Hammer",
@@ -3833,8 +4237,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 2)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
             },
             {
                 Material = "Base.SmallSheetMetal",
@@ -3871,8 +4281,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.SmallSheetMetal",
@@ -3952,8 +4368,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 2)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
             },
             {
                 Material = "Base.SmallSheetMetal",
@@ -4193,8 +4615,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -4238,8 +4666,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -4287,8 +4721,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForWalls * 0.5)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1.75)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.75)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.75)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -4352,7 +4792,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Tarp",
-                Amount = 2
+                Amount = 1
             },
         },
         useConsumable = {
@@ -4382,7 +4822,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Tarp",
-                Amount = 4
+                Amount = 2
             },
         },
         useConsumable = {
@@ -4463,8 +4903,14 @@ local function initBuildingMenuRecipes()
                 Amount = 10
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1.5)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.5)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -4994,8 +5440,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(glassPaneCount * 2)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.Screws",
@@ -5422,8 +5874,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = 1
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 1
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 1
+                },
             },
             {
                 Material = "Base.Sheet",
@@ -5920,8 +6378,14 @@ local function initBuildingMenuRecipes()
                 Amount = 10
             },
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                },
             },
             {
                 Material = "Base.ScrapMetal",
@@ -6053,8 +6517,14 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(sheetMetalCountForFixturesAndAppliances * 2)
             },
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.Screws",
@@ -6505,8 +6975,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1.75)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.75)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.75)
+                },
             },
             {
                 Material = "Base.Sheet",
@@ -6545,8 +7021,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -6581,8 +7063,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 2)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 2)
+                },
             },
             {
                 Material = "Base.Screws",
@@ -6617,8 +7105,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 1.25)
+                },
             },
             {
                 Material = "Base.RippedSheets",
@@ -7004,8 +7498,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.SheetMetal",
@@ -7049,8 +7549,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.MetalBar",
-                Amount = metalBarsCount
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
             },
             {
                 Material = "Base.RippedSheets",

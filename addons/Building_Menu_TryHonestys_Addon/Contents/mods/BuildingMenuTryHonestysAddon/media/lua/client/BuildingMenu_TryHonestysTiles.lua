@@ -1853,7 +1853,7 @@ local function addHighFencesToMenu()
                 sprite = "LC_fencing_88",
                 sprite2 = "LC_fencing_89",
                 northSprite = "LC_fencing_90",
-                northSprite2 = "LC_fencing_83",
+                northSprite2 = "LC_fencing_91",
                 corner = "LC_fencing_85"
             }
         ),
@@ -2337,385 +2337,65 @@ local function addCommercialCountersToMenu()
 end
 
 local function addCratesToMenu()
-    local crate = {
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_Bitch_n_dogfood_01_0" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_0" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_48" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_51" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_56" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_59" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_64" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_67" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_72" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_75" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_80" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_83" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_88" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_91" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_96" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_99" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_104" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_107" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_112" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_115" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_120" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_123" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.SmallCounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_29", northSprite = "LC_industrial_stuff_01_28" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_31", northSprite = "LC_industrial_stuff_01_30" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.CounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_33", northSprite = "LC_industrial_stuff_01_32" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.SmallCounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_35", northSprite = "LC_industrial_stuff_01_34" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.SmallCounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_37", northSprite = "LC_industrial_stuff_01_36" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.SmallCounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_39", northSprite = "LC_industrial_stuff_01_38" }
-        ),
-        BuildingMenu.createObject(
-            "",
-            "",
-            BuildingMenu.onBuildWoodenContainer,
-            BuildingMenu.SmallCounterRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                blockAllTheSquare = true,
-                canBeLockedByPadlock = true
-            },
-            { sprite = "LC_industrial_stuff_01_41", northSprite = "LC_industrial_stuff_01_40" }
-        ),
-    }
+    local commonOptions = {
+        completionSound = "BuildWoodenStructureLarge",
+        blockAllTheSquare = true,
+        canBeLockedByPadlock = true
+    };
+
+    local crateSprites = {
+        { sprite = "LC_Bitch_n_dogfood_01_0" },
+        { sprite = "LC_industrial_stuff_01_0" },
+        { sprite = "LC_industrial_stuff_01_48" },
+        { sprite = "LC_industrial_stuff_01_51" },
+        { sprite = "LC_industrial_stuff_01_56" },
+        { sprite = "LC_industrial_stuff_01_59" },
+        { sprite = "LC_industrial_stuff_01_64" },
+        { sprite = "LC_industrial_stuff_01_67" },
+        { sprite = "LC_industrial_stuff_01_72" },
+        { sprite = "LC_industrial_stuff_01_75" },
+        { sprite = "LC_industrial_stuff_01_80" },
+        { sprite = "LC_industrial_stuff_01_83" },
+        { sprite = "LC_industrial_stuff_01_88" },
+        { sprite = "LC_industrial_stuff_01_91" },
+        { sprite = "LC_industrial_stuff_01_96" },
+        { sprite = "LC_industrial_stuff_01_99" },
+        { sprite = "LC_industrial_stuff_01_104" },
+        { sprite = "LC_industrial_stuff_01_107" },
+        { sprite = "LC_industrial_stuff_01_112" },
+        { sprite = "LC_industrial_stuff_01_115" },
+        { sprite = "LC_industrial_stuff_01_120" },
+        { sprite = "LC_industrial_stuff_01_123" }
+    };
+
+    local smallCratesSprites = {
+        { sprite = "LC_industrial_stuff_01_29", northSprite = "LC_industrial_stuff_01_28" },
+        { sprite = "LC_industrial_stuff_01_31", northSprite = "LC_industrial_stuff_01_30" },
+        { sprite = "LC_industrial_stuff_01_33", northSprite = "LC_industrial_stuff_01_32" },
+        { sprite = "LC_industrial_stuff_01_35", northSprite = "LC_industrial_stuff_01_34" },
+        { sprite = "LC_industrial_stuff_01_37", northSprite = "LC_industrial_stuff_01_36" },
+        { sprite = "LC_industrial_stuff_01_39", northSprite = "LC_industrial_stuff_01_38" },
+        { sprite = "LC_industrial_stuff_01_41", northSprite = "LC_industrial_stuff_01_40" }
+    };
+
+    local crate = {};
+
+    for _, spriteInfo in ipairs(crateSprites) do
+        table.insert(crate, BuildingMenu.createObject(
+            "", "", BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.MilitaryCrateRecipe, true,
+            commonOptions, spriteInfo
+        ));
+    end
+
+    for _, spriteInfo in ipairs(smallCratesSprites) do
+        table.insert(crate, BuildingMenu.createObject(
+            "", "", BuildingMenu.onBuildWoodenContainer,
+            BuildingMenu.SmallCounterRecipe, true,
+            commonOptions, spriteInfo
+        ));
+    end
+
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
         getText("IGUI_BuildingMenuCat_Containers"),
@@ -2723,7 +2403,7 @@ local function addCratesToMenu()
         getText("IGUI_BuildingMenuSubCat_Containers_Crates"),
         "LC_Bitch_n_dogfood_01_0",
         crate
-    )
+    );
 end
 
 local function addContainersOthersToMenu()

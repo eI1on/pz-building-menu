@@ -1,7 +1,7 @@
 Recipe_CH = {
     /* Make Glass Recipes */
     Recipe_BMPrepareGlassShards = "預備玻璃用於融化",
-    Recipe_BMUnprepareGlassShards = "BM 從烤盤中移除玻璃",
+    Recipe_BMUnprepareGlassShards = "從烤盤中移除玻璃",
     Recipe_BMRemoveGlassPane = "提取玻璃板",
 
     /* Smash Glass Recipes */
