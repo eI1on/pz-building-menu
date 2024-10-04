@@ -8,6 +8,7 @@ Main mod:
 [*] Changed "Prepare Glass Shards" and "Remove Glass Pane" recipes to prevent an exploit that granted unintended cooking experience when repeated
 [*] Added "Canvas Covers" (these are [b]wall overlays[/b]) in "Architecture Plus"
 [*] Metal Pipes can now be used as an alternative to Metal Bars in most of the recipes
+[*] Removed the Category attribute from the "Make Bucket of Asphalt Mixture" and "Make Bucket of Concrete" recipes to prevent duplicate category tabs in the crafting menu for non-English languages
 [*] Updates to objects costs:
 [list]
 [*] Hesco Barriers: Tarp 2 >> 1
