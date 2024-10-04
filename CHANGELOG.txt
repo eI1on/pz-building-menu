@@ -1,5 +1,5 @@
 OCT 24
-
+Hotfix 
 
 Changelog:
 [list]
@@ -26,6 +26,10 @@ TryHonesty's Tiles addon:
 [list]
 [*] Increased the capacity of the cool crates to 100 (130 with Organized) and aligned their recipe with that of the military crates
 [*] Fixed Decorative Wrought Iron and Brick High Fence with Hedge incorrect north sprite
+[/list]
+Daddy Dirkie Tiles Addon:
+[list]
+[*] Corrected dirt walls to require dirt instead of planks for construction
 [/list]
 [/list]
 

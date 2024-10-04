@@ -3425,7 +3425,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Wall",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -3444,7 +3444,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Wall",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -3461,7 +3461,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_1",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.SmallWoodWallRecipe,
+            BuildingMenu.DirtRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
@@ -3475,7 +3475,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_2",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -3489,7 +3489,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_3",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -3503,7 +3503,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_4",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.SmallWoodWallRecipe,
+            BuildingMenu.DirtRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
@@ -3517,7 +3517,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_5",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -3531,7 +3531,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_Slope_Wall_6",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -3545,7 +3545,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_End_Small",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.SmallWoodWallRecipe,
+            BuildingMenu.DirtRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureSmall",
@@ -3559,7 +3559,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_End_Medium",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
@@ -3573,7 +3573,7 @@ local function addRoadworkDirtandGrassToMenu()
             "Tooltip_BuildingMenuObj_Dirt_Ramp_End_Big",
             "Tooltip_Dirt_Wall",
             BuildingMenu.onBuildWall,
-            BuildingMenu.BigWoodWallRecipe,
+            BuildingMenu.DirtRampRecipe,
             true,
             {
                 completionSound = "BuildWoodenStructureLarge",
