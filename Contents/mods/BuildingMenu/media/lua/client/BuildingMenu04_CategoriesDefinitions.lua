@@ -9238,7 +9238,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Metal_Wall",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.BigMetalBarWallRecipe,
+                    BuildingMenu.BigMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9256,7 +9256,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Metal_Wall",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.BigMetalBarWallRecipe,
+                    BuildingMenu.BigMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9274,7 +9274,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Metal_Wall",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.BigMetalBarWallRecipe,
+                    BuildingMenu.BigMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9292,7 +9292,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Metal_Wall",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.BigMetalBarWallRecipe,
+                    BuildingMenu.BigMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9310,7 +9310,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Metal_Wall",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.BigMetalBarWallRecipe,
+                    BuildingMenu.BigMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9328,7 +9328,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Wrought_Iron_Fence",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.SmallMetalBarWallRecipe,
+                    BuildingMenu.SmallMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9342,7 +9342,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Wrought_Iron_Fence",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.SmallMetalBarWallRecipe,
+                    BuildingMenu.SmallMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9356,7 +9356,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Wrought_Iron_Fence",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.SmallMetalBarWallRecipe,
+                    BuildingMenu.SmallMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9370,7 +9370,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Wrought_Iron_Fence",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.SmallMetalBarWallRecipe,
+                    BuildingMenu.SmallMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9384,7 +9384,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Wrought_Iron_Fence",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.SmallMetalBarWallRecipe,
+                    BuildingMenu.SmallMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",
@@ -9398,7 +9398,7 @@ local function addIndustrialWallsToMenu()
                     "Tooltip_BuildingMenuObj_Scaffold_Side",
                     "Tooltip_Wrought_Iron_Fence",
                     BuildingMenu.onBuildMetalWall,
-                    BuildingMenu.SmallMetalBarWallRecipe,
+                    BuildingMenu.SmallMetalScaffoldRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureWallFrame",

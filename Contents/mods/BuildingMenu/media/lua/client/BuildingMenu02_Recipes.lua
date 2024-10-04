@@ -2917,6 +2917,89 @@ local function initBuildingMenuRecipes()
     }
 
 
+    BuildingMenu.BigMetalScaffoldRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+        },
+        neededMaterials = {
+            {
+                {
+                    Material = "Base.MetalBar",
+                    Amount = metalBarsCount
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = metalBarsCount
+                },
+            },
+            {
+                Material = "Base.Screws",
+                Amount = screwsCount
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 3
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(3)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 4,
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+
+    BuildingMenu.SmallMetalScaffoldRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+        },
+        neededMaterials = {
+            {
+                {
+                    Material = "Base.MetalBar",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = BuildingMenu.round(metalBarsCount * 0.5)
+                },
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 0.5)
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 2
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 4,
+                Xp = BuildingMenu.round(4 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
     BuildingMenu.BigMetalWallRecipe = {
         neededTools = {
             "BlowTorch",
