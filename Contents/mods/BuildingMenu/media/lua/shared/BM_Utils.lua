@@ -34,7 +34,7 @@ function BM_Utils.unsetSpriteProperty(props, propertyName)
     elseif type(propertyName) == "userdata" then
         props:UnSet(propertyName)
     else
-        priBM_Logger:errornt("Invalid parameter type for UnSet function")
+        BM_Logger:error("Invalid parameter type for UnSet function")
         BM_Logger:error((propertyName or "nil"))
     end
 end

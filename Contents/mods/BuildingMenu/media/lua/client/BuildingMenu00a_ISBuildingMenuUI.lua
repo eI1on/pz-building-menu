@@ -36,15 +36,16 @@ function BuildingMenuTilePickerList:render()
 
     for r = 1, maxRows do
         for c = 1, maxCols do
-            local objDef = self:findNextObject(objectsBuffer);
-            if objDef then
-                local objSpriteName = objDef.data.sprites.sprite;
+            local objDef, objIndex = self:findNextObject(objectsBuffer);
+            if objDef and objIndex then
                 if objDef.data.isRecipeKnown == true or self.character:isRecipeKnown(objDef.data.isRecipeKnown) then
-                    objectsBuffer[objSpriteName] = true;
+                    objectsBuffer[objIndex] = true;
+
                     self.posToObjectNameTable[r] = self.posToObjectNameTable[r] or {};
                     self.posToObjectNameTable[r][c] = { objDef = objDef, canBuild = false };
 
                     -- use cached texture if available, otherwise load and cache it
+                    local objSpriteName = objDef.data.sprites.sprite;
                     local texture = self.textureCache[objSpriteName];
                     if not texture then
                         texture = getTexture(objSpriteName);
@@ -55,6 +56,24 @@ function BuildingMenuTilePickerList:render()
                         self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH,
                             TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
                     end
+
+                    local attachedSprites = objDef.data.sprites.attachedSprites;
+                    if attachedSprites then
+                        if attachedSprites.sprite then
+                            for i = 1, #attachedSprites.sprite do
+                                local attachedSpriteName = attachedSprites.sprite[i];
+                                local attachedTexture = self.textureCache[attachedSpriteName];
+                                if not attachedTexture then
+                                    attachedTexture = getTexture(attachedSpriteName);
+                                    self.textureCache[attachedSpriteName] = attachedTexture;
+                                end
+                                if attachedTexture then
+                                    self:drawTextureScaledAspect(attachedTexture, (c - 1) * TILE_WIDTH,
+                                        (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
+                                end
+                            end
+                        end
+                    end
                 end
             end
         end
@@ -64,17 +83,18 @@ function BuildingMenuTilePickerList:render()
     self:clearStencilRect();
 end
 
---- Finds the next object in the tile picker list
+--- Finds the next object in the tile picker list using the index to track rendered objects
 ---@param objectsBuffer table
----@return table|nil
+---@return table|nil, number|nil
 function BuildingMenuTilePickerList:findNextObject(objectsBuffer)
-    if not self.subCatData then return nil; end
-    for _, objectDef in pairs(self.subCatData) do
-        if objectDef.data and objectDef.data.sprites and not objectsBuffer[objectDef.data.sprites.sprite] then
-            return objectDef;
+    if not self.subCatData then return nil, nil; end
+    for i = 1, #self.subCatData do
+        if not objectsBuffer[i] then
+            local objectDef = self.subCatData[i];
+            return objectDef, i;
         end
     end
-    return nil;
+    return nil, nil;
 end
 
 --- Updates the tooltip for the tile picker list
@@ -372,6 +392,7 @@ function BuildingMenuTilePickerList:processBuild(objData)
 
     local object = onBuild(spritesName, objectName, playerNum, modifiedRecipe, modifiedOptions);
     object.usedTools = objData.toolFoundIndexMatrix;
+    object.attachedSprites = spritesName.attachedSprites;
     BuildingMenu.buildObject(object, spritesName, objectName, playerNum, modifiedRecipe, modifiedOptions);
 end
 

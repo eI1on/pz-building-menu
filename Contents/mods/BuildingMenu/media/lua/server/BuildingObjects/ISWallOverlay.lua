@@ -16,11 +16,11 @@ local function isRelevantWall(isCorner, object, north)
 
     if north then
         return properties:Is(IsoFlagType.WallN) or properties:Is(IsoFlagType.WindowN) or
-        properties:Is(IsoFlagType.WallNW) or properties:Is(IsoFlagType.WallSE) or properties:Is(IsoFlagType.DoorWallN);
+        properties:Is(IsoFlagType.WallNW) or properties:Is(IsoFlagType.WallSE) or properties:Is(IsoFlagType.DoorWallN) or (properties:Is(IsoFlagType.HoppableN) and properties:Is(IsoFlagType.WallNTrans));
     end
 
     return properties:Is(IsoFlagType.WallW) or properties:Is(IsoFlagType.WindowW) or properties:Is(IsoFlagType.WallNW) or
-    properties:Is(IsoFlagType.WallSE) or properties:Is(IsoFlagType.DoorWallW);
+    properties:Is(IsoFlagType.WallSE) or properties:Is(IsoFlagType.DoorWallW) or (properties:Is(IsoFlagType.HoppableW) and properties:Is(IsoFlagType.WallWTrans));
 end
 
 

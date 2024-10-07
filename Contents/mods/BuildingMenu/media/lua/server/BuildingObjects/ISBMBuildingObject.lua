@@ -1,5 +1,7 @@
 require("BuildingObjects/ISBuildingObject")
 
+local BM_Logger = require("BM_Logger");
+
 --- Original onJoypadPressButton method from ISBuildingObject
 --- @type fun(self:ISBuildingObject, joypadIndex:integer, joypadData:any, button:integer)
 local originalOnJoypadPressButton = ISBuildingObject.onJoypadPressButton;
@@ -107,7 +109,6 @@ function ISBuildingObject:tryBuild(x, y, z)
 	end
 end
 
-
 -- helper function to check if the sprite exists
 function ISBuildingObject:isValidSprite(direction)
 	local spriteMap = {
@@ -146,8 +147,10 @@ function ISBuildingObject:rotateSprite(direction)
 
 	for i = 1, 4 do
 		self.nSprite = self.nSprite + direction;
-		if self.nSprite > 4 then self.nSprite = 1;
-		elseif self.nSprite < 1 then self.nSprite = 4;
+		if self.nSprite > 4 then
+			self.nSprite = 1;
+		elseif self.nSprite < 1 then
+			self.nSprite = 4;
 		end
 
 		if self:isValidSprite(self.nSprite) then
@@ -193,4 +196,49 @@ function ISBuildingObject:onJoypadPressButton(joypadIndex, joypadData, button)
 	if button == Joypad.LBumper then
 		self:rotateSprite(-1);
 	end
+end
+
+--- @type fun(self:ISBuildingObject, x:integer, y:integer, z:integer, square:IsoGridSquare)
+local originalRender = ISBuildingObject.render;
+
+--- @param x integer
+--- @param y integer
+--- @param z integer
+--- @param square IsoGridSquare
+function ISBuildingObject:render(x, y, z, square)
+	local res = originalRender(self, x, y, z, square);
+
+	if self.attachedSprites then
+		local attachedSprites = nil;
+
+		if self.west then
+			attachedSprites = self.attachedSprites.sprite;
+		elseif self.north then
+			attachedSprites = self.attachedSprites.northSprite;
+		elseif self.east then
+			attachedSprites = self.attachedSprites.eastSprite;
+		elseif self.south then
+			attachedSprites = self.attachedSprites.southSprite;
+		end
+
+		if attachedSprites then
+			for i = 1, #attachedSprites do
+				local spriteName = attachedSprites[i];
+
+				if not self.RENDER_SPRITE_CACHE then
+					self.RENDER_SPRITE_CACHE = {};
+				end
+				if not self.RENDER_SPRITE_CACHE[spriteName] then
+					local sprite = IsoSprite.new();
+					sprite:LoadFramesNoDirPageSimple(spriteName);
+					self.RENDER_SPRITE_CACHE[spriteName] = sprite;
+				end
+
+				local sprite = self.RENDER_SPRITE_CACHE[spriteName];
+				sprite:RenderGhostTile(x, y, z);
+			end
+		end
+	end
+
+	return res;
 end

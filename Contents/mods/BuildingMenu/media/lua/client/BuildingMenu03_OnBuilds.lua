@@ -790,7 +790,15 @@ BuildingMenu.onBuildEigthTileFurniture = function(sprites, name, playerNum, obje
 end
 
 BuildingMenu.onBuildDoorFrame = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _doorFrame = ISWoodenDoorFrame:new(sprites.sprite, sprites.northSprite, sprites.corner)
+    local _doorFrame = ISDoorFrame:new(sprites.sprite, sprites.northSprite, sprites.corner)
+
+    if sprites.eastSprite then
+        _doorFrame:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _doorFrame:setSouthSprite(sprites.southSprite)
+    end
 
     return _doorFrame
 end
@@ -800,7 +808,7 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildWall = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _wall = ISWoodenWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
+    local _wall = ISWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
     if sprites.eastSprite then
         _wall:setEastSprite(sprites.eastSprite)
@@ -818,7 +826,7 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildMetalWall = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _metalWall = ISMetalWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
+    local _metalWall = ISWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
 
     if sprites.eastSprite then
         _metalWall:setEastSprite(sprites.eastSprite)

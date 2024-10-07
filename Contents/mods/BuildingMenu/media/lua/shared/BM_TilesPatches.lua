@@ -545,4 +545,23 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         { IsoFlagType.solidtrans },
         { IsoFlagType.waterPiped }
     });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "walls_commercial_02_55",
+        "walls_commercial_02_51",
+        "walls_commercial_02_52",
+        "walls_commercial_02_53",
+    }, {
+        { IsoFlagType.collideW },
+        { IsoFlagType.canPathW },
+    });
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "walls_commercial_02_54",
+        "walls_commercial_02_50",
+        "walls_commercial_02_49",
+        "walls_commercial_02_48",
+    }, {
+        { IsoFlagType.collideN },
+        { IsoFlagType.canPathN },
+    });
 end);

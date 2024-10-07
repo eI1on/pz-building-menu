@@ -38,4 +38,15 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         { "container",          "toolbox", false },
         { "ContainerCapacity",  "25",      false },
     });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "DylansRandomFurniture01_10",
+        "DylansRandomFurniture01_11",
+        "DylansRandomFurniture01_12",
+        "DylansRandomFurniture01_13",
+    }, {
+        { IsoFlagType.solidtrans },
+    },{
+        IsoFlagType.solid,
+    });
 end)

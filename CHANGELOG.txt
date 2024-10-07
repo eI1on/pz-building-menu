@@ -1,5 +1,26 @@
 OCT 24
-Hotfix 
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] Fixed a visual bug where water appeared to drip around White Frame Glass Walls, which are used in the greenhouse addon but sourced from vanilla tilesheets
+[*] Modified health assignment of walls to BM standards, metal walls will have more health based on player's Metalworking skill + higher base health than wooden walls
+[*] Refactored walls rendering logic in the menu and when dragging and building to allow attached sprite overlays (allowing for visual customization like grime and rust effects at the time of creation)
+[*] Updated the placement system of Wall Overlays to allow Architecture Plus Panels to be mounted on low fence structures
+[/list]
+Daddy Dirkie Tiles Addon:
+[list]
+[*] Added new corrugated metal wall and roof tiles, with a system to dynamically apply rust and grime overlays via attached sprites at build-time
+[/list]
+Dylan Tiles Addon:
+[list]
+[*] Corrected an issue where the red and blue toolboxes had improper sprite properties, now allowing correct transparency and visibility through them
+[/list]
+[/list]
+
+5 OCT 24
+Hotfix 87de023
 
 Changelog:
 [list]

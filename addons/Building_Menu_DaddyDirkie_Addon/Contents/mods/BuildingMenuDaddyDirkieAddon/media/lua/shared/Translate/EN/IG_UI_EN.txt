@@ -1,5 +1,10 @@
 IGUI_EN = {
 
+    IGUI_BuildingMenuSubCat_Walls_Rusted_Corrugated_Metal_Sheet = "Rusted Corrugated Metal Sheet",
+    IGUI_BuildingMenuSubCat_Walls_Corrugated_Metal_Sheet = "Corrugated Metal Sheet",
+
+    IGUI_BuildingMenuSubCat_Roofing_Rusted_Corrugated_Metal_Sheet_Roofs = "Rusted Corrugated Metal Sheet Roofs",
+
     IGUI_BuildingMenuCat_DaddyDirkie_Others = "Others",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Secret Entrances",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_1 = "Furniture Set 1",
