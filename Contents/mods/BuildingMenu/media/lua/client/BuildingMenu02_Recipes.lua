@@ -3137,7 +3137,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(bigWallWoodCount * 0.75)
+                Amount = BuildingMenu.round(bigWallWoodCount * 0.5)
             },
             {
                 Material = "Base.SheetMetal",
@@ -3197,7 +3197,7 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = BuildingMenu.round(smallWallWoodCount * 0.75)
+                Amount = BuildingMenu.round(smallWallWoodCount * 0.5)
             },
             {
                 Material = "Base.SheetMetal",
@@ -5525,10 +5525,10 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = 15
+                Amount = 10
             },
             {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 15, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 5, "Material")
             },
         },
         skills = {
@@ -5548,10 +5548,10 @@ local function initBuildingMenuRecipes()
         neededMaterials = {
             {
                 Material = "Base.Plank",
-                Amount = 20
+                Amount = 15
             },
             {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 20, "Material")
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, 10, "Material")
             },
         },
         skills = {

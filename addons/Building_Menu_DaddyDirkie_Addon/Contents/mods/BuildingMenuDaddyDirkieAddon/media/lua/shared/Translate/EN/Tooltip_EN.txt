@@ -1,5 +1,34 @@
 Tooltip_EN = {
 
+
+  Tooltip_BuildingMenuObj_Blue_Industrial_Wall = "Blue Industrial Wall",
+  Tooltip_BuildingMenuObj_Blue_Industrial_Door_Frame = "Blue Industrial Door Frame",
+  Tooltip_BuildingMenuObj_Blue_Industrial_Window_Frame = "Blue Industrial Window Frame",
+  Tooltip_BuildingMenuObj_Blue_Industrial_Pillar = "Blue Industrial Pillar",
+  Tooltip_Blue_Industrial_Wall = "",
+  Tooltip_Blue_Industrial_Door_Frame = "",
+  Tooltip_Blue_Industrial_Window_Frame = "",
+  Tooltip_Blue_Industrial_Pillar = "",
+
+  Tooltip_BuildingMenuObj_Red_Industrial_Wall = "Red Industrial Wall",
+  Tooltip_BuildingMenuObj_Red_Industrial_Door_Frame = "Red Industrial Door Frame",
+  Tooltip_BuildingMenuObj_Red_Industrial_Window_Frame = "Red Industrial Window Frame",
+  Tooltip_BuildingMenuObj_Red_Industrial_Pillar = "Red Industrial Pillar",
+  Tooltip_Red_Industrial_Wall = "",
+  Tooltip_Red_Industrial_Door_Frame = "",
+  Tooltip_Red_Industrial_Window_Frame = "",
+  Tooltip_Red_Industrial_Pillar = "",
+
+  Tooltip_BuildingMenuObj_Orange_Industrial_Wall = "Orange Industrial Wall",
+  Tooltip_BuildingMenuObj_Orange_Industrial_Door_Frame = "Orange Industrial Door Frame",
+  Tooltip_BuildingMenuObj_Orange_Industrial_Window_Frame = "Orange Industrial Window Frame",
+  Tooltip_BuildingMenuObj_Orange_Industrial_Pillar = "Orange Industrial Pillar",
+  Tooltip_Orange_Industrial_Wall = "",
+  Tooltip_Orange_Industrial_Door_Frame = "",
+  Tooltip_Orange_Industrial_Window_Frame = "",
+  Tooltip_Orange_Industrial_Pillar = "",
+
+
   Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Wall = "Rusted Corrugated Metal Sheet Wall",
   Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Door_Frame = "Rusted Corrugated Metal Sheet Door Frame",
   Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Window_Frame = "Rusted Corrugated Metal Sheet Window Frame",

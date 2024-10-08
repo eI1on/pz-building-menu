@@ -425,9 +425,7 @@ function ISBMBuildAction:setAnimationAndTools(currentToolInfo)
         -- select the second hand item based on the height flags, defaulting to the first item if no specific conditions are met
         local secondHandItem = toolConfig.secondHand and InventoryItemFactory.CreateItem(toolConfig.secondHand[heightFlag]):getStaticModel() or nil;
 
-        if self.item.actionAnim and self:isAppropriateAnimation(self.item.actionAnim, currentToolInfo.toolType) then
-            anim = self.item.actionAnim;
-        end
+        if self.item.actionAnim then anim = self.item.actionAnim; end
 
         self:setActionAnim(anim);
         self:setOverrideHandModels(currentToolInfo.invItem, secondHandItem);

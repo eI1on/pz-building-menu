@@ -1,9 +1,12 @@
 IGUI_EN = {
 
+    IGUI_BuildingMenuSubCat_Walls_Dirkea_Walls = "Dirkea Walls",
     IGUI_BuildingMenuSubCat_Walls_Rusted_Corrugated_Metal_Sheet = "Rusted Corrugated Metal Sheet",
     IGUI_BuildingMenuSubCat_Walls_Corrugated_Metal_Sheet = "Corrugated Metal Sheet",
 
     IGUI_BuildingMenuSubCat_Roofing_Rusted_Corrugated_Metal_Sheet_Roofs = "Rusted Corrugated Metal Sheet Roofs",
+
+    IGUI_BuildingMenuSubCat_Floors_Shanty = "Shanty",
 
     IGUI_BuildingMenuCat_DaddyDirkie_Others = "Others",
     IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances = "Secret Entrances",

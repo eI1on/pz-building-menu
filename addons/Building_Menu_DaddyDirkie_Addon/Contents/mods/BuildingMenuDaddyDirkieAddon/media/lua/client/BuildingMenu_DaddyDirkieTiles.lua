@@ -3,440 +3,666 @@ local BuildingMenu = require("BuildingMenu01_Main")
 require("BuildingMenu04_CategoriesDefinitions")
 
 
-local function addDaddyDirkieWallsToMenu()
-    local daddyDirkieCorrugatedMetalSheetWalls = {
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Wall",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildMetalWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            {
-                sprite = "more_walls_ddd_02_16",
-                northSprite = "more_walls_ddd_02_17",
-                corner = "more_walls_ddd_02_19",
+local function addWallsToMenu()
+    local industrialWalls = {
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Dirkea_Walls"),
+            subCategoryIcon = "industry_dirkea_ddd_01_8",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Wall",
+                    "Tooltip_Blue_Industrial_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BlueBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        sprite = "industry_dirkea_ddd_01_8",
+                        northSprite = "industry_dirkea_ddd_01_9",
+                        corner = "industry_dirkea_ddd_01_11",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Door_Frame",
+                    "Tooltip_Blue_Industrial_Door_Frame",
+                    BuildingMenu.onBuildDoorFrame,
+                    BuildingMenu.BlueBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        modData = { wallType = "doorframe" }
+                    },
+                    {
+                        sprite = "industry_dirkea_ddd_01_18",
+                        northSprite = "industry_dirkea_ddd_01_19",
+                        corner = "industry_dirkea_ddd_01_11",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Window_Frame",
+                    "Tooltip_Blue_Industrial_Window_Frame",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BlueBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "industry_dirkea_ddd_01_16",
+                        northSprite = "industry_dirkea_ddd_01_17",
+                        corner = "industry_dirkea_ddd_01_11",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Pillar",
+                    "Tooltip_Blue_Industrial_Pillar",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BlueSmallWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = { wallType = "pillar" }
+                    },
+                    {
+                        sprite = "industry_dirkea_ddd_01_11",
+                    }
+                ),
             }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Door_Frame",
-            "Tooltip_Corrugated_Metal_Sheet_Door_Frame",
-            BuildingMenu.onBuildDoorFrame,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                modData = { wallType = "doorframe" }
-            },
-            {
-                sprite = "more_walls_ddd_02_26",
-                northSprite = "more_walls_ddd_02_27",
-                corner = "more_walls_ddd_02_19",
+        },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Industrial_Walls"),
+            subCategoryIcon = "more_walls_ddd_01_76",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Red_Industrial_Wall",
+                    "Tooltip_Red_Industrial_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.RedBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_76",
+                        northSprite = "more_walls_ddd_01_77",
+                        corner = "more_walls_ddd_01_79",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Red_Industrial_Door_Frame",
+                    "Tooltip_Red_Industrial_Door_Frame",
+                    BuildingMenu.onBuildDoorFrame,
+                    BuildingMenu.RedBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        modData = { wallType = "doorframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_86",
+                        northSprite = "more_walls_ddd_01_87",
+                        corner = "more_walls_ddd_01_79",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Red_Industrial_Window_Frame",
+                    "Tooltip_Red_Industrial_Window_Frame",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.RedBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_84",
+                        northSprite = "more_walls_ddd_01_85",
+                        corner = "more_walls_ddd_01_79",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Red_Industrial_Pillar",
+                    "Tooltip_Red_Industrial_Pillar",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.RedSmallWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = { wallType = "pillar" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_79",
+                    }
+                ),
+
+
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Orange_Industrial_Wall",
+                    "Tooltip_Orange_Industrial_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.OrangeBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_72",
+                        northSprite = "more_walls_ddd_01_73",
+                        corner = "more_walls_ddd_01_75",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Orange_Industrial_Door_Frame",
+                    "Tooltip_Orange_Industrial_Door_Frame",
+                    BuildingMenu.onBuildDoorFrame,
+                    BuildingMenu.OrangeBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        modData = { wallType = "doorframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_82",
+                        northSprite = "more_walls_ddd_01_83",
+                        corner = "more_walls_ddd_01_75",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Orange_Industrial_Window_Frame",
+                    "Tooltip_Orange_Industrial_Window_Frame",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.OrangeBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_80",
+                        northSprite = "more_walls_ddd_01_81",
+                        corner = "more_walls_ddd_01_75",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Orange_Industrial_Pillar",
+                    "Tooltip_Orange_Industrial_Pillar",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.OrangeSmallWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = { wallType = "pillar" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_01_75",
+                    }
+                ),
             }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Window_Frame",
-            "Tooltip_Corrugated_Metal_Sheet_Window_Frame",
-            BuildingMenu.onBuildMetalWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                isThumpable = true,
-                canBarricade = true,
-                hoppable = true,
-                modData = { wallType = "windowsframe" }
-            },
-            {
-                sprite = "more_walls_ddd_02_24",
-                northSprite = "more_walls_ddd_02_25",
-                corner = "more_walls_ddd_02_19",
+        },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Corrugated_Metal_Sheet"),
+            subCategoryIcon = "more_walls_ddd_02_16",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Wall",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_16",
+                        northSprite = "more_walls_ddd_02_17",
+                        corner = "more_walls_ddd_02_19",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Door_Frame",
+                    "Tooltip_Corrugated_Metal_Sheet_Door_Frame",
+                    BuildingMenu.onBuildDoorFrame,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        modData = { wallType = "doorframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_26",
+                        northSprite = "more_walls_ddd_02_27",
+                        corner = "more_walls_ddd_02_19",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Window_Frame",
+                    "Tooltip_Corrugated_Metal_Sheet_Window_Frame",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_24",
+                        northSprite = "more_walls_ddd_02_25",
+                        corner = "more_walls_ddd_02_19",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Pillar",
+                    "Tooltip_Corrugated_Metal_Sheet_Pillar",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = { wallType = "pillar" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_19",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_1",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_24", northSprite = "building_menu_walls_exterior_roofs_ddd_01_37" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_2",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_25", northSprite = "building_menu_walls_exterior_roofs_ddd_01_36" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_3",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_26", northSprite = "building_menu_walls_exterior_roofs_ddd_01_35" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_4",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_32", northSprite = "building_menu_walls_exterior_roofs_ddd_01_29" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_5",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_33", northSprite = "building_menu_walls_exterior_roofs_ddd_01_28" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_6",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_34", northSprite = "building_menu_walls_exterior_roofs_ddd_01_27" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Small",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_39", northSprite = "building_menu_walls_exterior_roofs_ddd_01_31" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Medium",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_38", northSprite = "building_menu_walls_exterior_roofs_ddd_01_30" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Big",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_40", northSprite = "building_menu_walls_exterior_roofs_ddd_01_41" }
+                )
             }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Pillar",
-            "Tooltip_Corrugated_Metal_Sheet_Pillar",
-            BuildingMenu.onBuildMetalWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                canPassThrough = true,
-                canBarricade = false,
-                isCorner = true,
-                modData = { wallType = "pillar" }
-            },
-            {
-                sprite = "more_walls_ddd_02_19",
+        },
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Rusted_Corrugated_Metal_Sheet"),
+            subCategoryIcon = "more_walls_ddd_02_16",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Wall",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_16",
+                        northSprite = "more_walls_ddd_02_17",
+                        corner = "more_walls_ddd_02_19",
+                        attachedSprites = {
+                            sprite = { "grime_ddd_01_0", "grime_ddd_01_24" },
+                            northSprite = { "grime_ddd_01_1", "grime_ddd_01_25" },
+                            corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                        }
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Door_Frame",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Door_Frame",
+                    BuildingMenu.onBuildDoorFrame,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        modData = { wallType = "doorframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_26",
+                        northSprite = "more_walls_ddd_02_27",
+                        corner = "more_walls_ddd_02_19",
+                        attachedSprites = {
+                            sprite = { "grime_ddd_01_10", "grime_ddd_01_34" },
+                            northSprite = { "grime_ddd_01_11", "grime_ddd_01_35" },
+                            corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                        }
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Window_Frame",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Window_Frame",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_24",
+                        northSprite = "more_walls_ddd_02_25",
+                        corner = "more_walls_ddd_02_19",
+                        attachedSprites = {
+                            sprite = { "grime_ddd_01_8", "grime_ddd_01_32" },
+                            northSprite = { "grime_ddd_01_9", "grime_ddd_01_33" },
+                            corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                        }
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Pillar",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Pillar",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true,
+                        modData = { wallType = "pillar" }
+                    },
+                    {
+                        sprite = "more_walls_ddd_02_19",
+                        attachedSprites = {
+                            sprite = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                        }
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_1",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_0", northSprite = "building_menu_walls_exterior_roofs_ddd_01_13" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_2",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_1", northSprite = "building_menu_walls_exterior_roofs_ddd_01_12" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_3",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_2", northSprite = "building_menu_walls_exterior_roofs_ddd_01_11" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_4",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_8", northSprite = "building_menu_walls_exterior_roofs_ddd_01_5" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_5",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_9", northSprite = "building_menu_walls_exterior_roofs_ddd_01_4" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_6",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_10", northSprite = "building_menu_walls_exterior_roofs_ddd_01_3" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Small",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.SmallCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_15", northSprite = "building_menu_walls_exterior_roofs_ddd_01_7" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Medium",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_14", northSprite = "building_menu_walls_exterior_roofs_ddd_01_6" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Big",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_16", northSprite = "building_menu_walls_exterior_roofs_ddd_01_17" }
+                )
             }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_1",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureSmall",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_24", northSprite = "walls_exterior_roofs_ddd_01_37" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_2",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_25", northSprite = "walls_exterior_roofs_ddd_01_36" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_3",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_26", northSprite = "walls_exterior_roofs_ddd_01_35" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_4",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureSmall",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_32", northSprite = "walls_exterior_roofs_ddd_01_29" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_5",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_33", northSprite = "walls_exterior_roofs_ddd_01_28" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_6",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_34", northSprite = "walls_exterior_roofs_ddd_01_27" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Small",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureSmall",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_39", northSprite = "walls_exterior_roofs_ddd_01_31" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Medium",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_38", northSprite = "walls_exterior_roofs_ddd_01_30" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Big",
-            "Tooltip_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_40", northSprite = "walls_exterior_roofs_ddd_01_41" }
-        )
+        },
     }
-    BuildingMenu.addObjectsToCategories(
-        "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Walls"),
-        "more_walls_ddd_02_16",
-        getText("IGUI_BuildingMenuSubCat_Walls_Corrugated_Metal_Sheet"),
-        "more_walls_ddd_02_16",
-        daddyDirkieCorrugatedMetalSheetWalls
-    )
 
-    daddyDirkieCorrugatedMetalSheetWalls = {
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Wall",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildMetalWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            {
-                sprite = "more_walls_ddd_02_16",
-                northSprite = "more_walls_ddd_02_17",
-                corner = "more_walls_ddd_02_19",
-                attachedSprites = {
-                    sprite = { "grime_ddd_01_0", "grime_ddd_01_24" },
-                    northSprite = { "grime_ddd_01_1", "grime_ddd_01_25" },
-                    corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
-                }
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Door_Frame",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Door_Frame",
-            BuildingMenu.onBuildDoorFrame,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                modData = { wallType = "doorframe" }
-            },
-            {
-                sprite = "more_walls_ddd_02_26",
-                northSprite = "more_walls_ddd_02_27",
-                corner = "more_walls_ddd_02_19",
-                attachedSprites = {
-                    sprite = { "grime_ddd_01_10", "grime_ddd_01_34" },
-                    northSprite = { "grime_ddd_01_11", "grime_ddd_01_35" },
-                    corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
-                }
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Window_Frame",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Window_Frame",
-            BuildingMenu.onBuildMetalWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                isThumpable = true,
-                canBarricade = true,
-                hoppable = true,
-                modData = { wallType = "windowsframe" }
-            },
-            {
-                sprite = "more_walls_ddd_02_24",
-                northSprite = "more_walls_ddd_02_25",
-                corner = "more_walls_ddd_02_19",
-                attachedSprites = {
-                    sprite = { "grime_ddd_01_8", "grime_ddd_01_32" },
-                    northSprite = { "grime_ddd_01_9", "grime_ddd_01_33" },
-                    corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
-                }
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Pillar",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Pillar",
-            BuildingMenu.onBuildMetalWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildMetalStructureWallFrame",
-                canPassThrough = true,
-                canBarricade = false,
-                isCorner = true,
-                modData = { wallType = "pillar" }
-            },
-            {
-                sprite = "more_walls_ddd_02_19",
-                attachedSprites = {
-                    sprite = { "grime_ddd_01_3", "grime_ddd_01_27" },
-                }
-            }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_1",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureSmall",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_0", northSprite = "walls_exterior_roofs_ddd_01_13" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_2",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_1", northSprite = "walls_exterior_roofs_ddd_01_12" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_3",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_2", northSprite = "walls_exterior_roofs_ddd_01_11" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_4",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureSmall",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_8", northSprite = "walls_exterior_roofs_ddd_01_5" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_5",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_9", northSprite = "walls_exterior_roofs_ddd_01_4" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_6",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_10", northSprite = "walls_exterior_roofs_ddd_01_3" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Small",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.SmallCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureSmall",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_15", northSprite = "walls_exterior_roofs_ddd_01_7" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Medium",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_14", northSprite = "walls_exterior_roofs_ddd_01_6" }
-        ),
-        BuildingMenu.createObject(
-            "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Big",
-            "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
-            BuildingMenu.onBuildWall,
-            BuildingMenu.BigCorrugatedWallRecipe,
-            true,
-            {
-                completionSound = "BuildWoodenStructureLarge",
-                isThumpable = true,
-                canBarricade = false,
-                modData = { wallType = "wall" }
-            },
-            { sprite = "walls_exterior_roofs_ddd_01_16", northSprite = "walls_exterior_roofs_ddd_01_17" }
+    for k, subCatData in pairs(industrialWalls) do
+        BuildingMenu.addObjectsToCategories(
+            "Daddy Dirkie",
+            getText("IGUI_BuildingMenuCat_Walls"),
+            "more_walls_ddd_02_16",
+            subCatData.subcategoryName,
+            subCatData.subCategoryIcon,
+            subCatData.objects
         )
-    }
-    BuildingMenu.addObjectsToCategories(
-        "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Walls"),
-        "more_walls_ddd_02_16",
-        getText("IGUI_BuildingMenuSubCat_Walls_Rusted_Corrugated_Metal_Sheet"),
-        "more_walls_ddd_02_16",
-        daddyDirkieCorrugatedMetalSheetWalls
-    )
-
-
+    end
 end
 
 local function addRoofingToMenu()
@@ -683,6 +909,23 @@ local function addRoofingToMenu()
                     { sprite = "roofs_ddd_04_6", northSprite = "roofs_ddd_04_7" }
                 ),
                 BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Pitched",
+                    "Tooltip_Roof_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.CorrugatedRoofTileRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = true,
+                        canPassThrough = true,
+                        canBarricade = false,
+                        isCorner = true
+                    },
+                    { sprite = "shanty_ddd_01_15", northSprite = "shanty_ddd_01_14" }
+                ),
+                BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Inner",
                     "Tooltip_Roof_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
@@ -853,7 +1096,7 @@ local function addRoofingToMenu()
     end
 end
 
-local function addDaddyDirkieDoorsToMenu()
+local function addDoorsToMenu()
     local function createDoorObjects(doorRanges, recipe)
         local doors = {}
         for _, range in ipairs(doorRanges) do
@@ -1224,6 +1467,47 @@ local function addHighFencesToMenu()
     )
 end
 
+local function addFloorsToMenu()
+    local function createAndAddFloorObjects(subCategory, baseFloorName, spriteNumbersTable)
+        local floors = {}
+        for _, spriteNumbers in ipairs(spriteNumbersTable) do
+            table.insert(
+                floors,
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Floor",
+                    "Tooltip_Floor_Generic",
+                    BuildingMenu.onBuildFloor,
+                    BuildingMenu.TwoSpriteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall"
+                    },
+                    {
+                        sprite = spriteNumbers[1] and (baseFloorName .. spriteNumbers[1]) or nil,
+                        northSprite = spriteNumbers[2] and (baseFloorName .. spriteNumbers[2]) or nil,
+                        eastSprite = spriteNumbers[3] and (baseFloorName .. spriteNumbers[3]) or nil,
+                        southSprite = spriteNumbers[4] and (baseFloorName .. spriteNumbers[4]) or nil
+                    }
+                )
+            )
+        end
+        BuildingMenu.addObjectsToCategories(
+            "Daddy Dirkie",
+            getText("IGUI_BuildingMenuCat_Floors"),
+            "misc_ddd_01_16",
+            getText(subCategory),
+            baseFloorName .. spriteNumbersTable[1][1],
+            floors
+        )
+    end
+    local dataFloors = {
+        industrial = { {17, 16}, {19, 18}, {21, 20}, {23, 22}, {25, 24}, },
+        shanty = { {9, 8}, {11, 10}, {12}, {13}, {3, 2, 1, 0}, {7, 6, 5 ,4} },
+    }
+    createAndAddFloorObjects("IGUI_BuildingMenuSubCat_Floors_Industrial", "misc_ddd_01_", dataFloors.industrial)
+    createAndAddFloorObjects("IGUI_BuildingMenuSubCat_Floors_Shanty", "shanty_ddd_01_", dataFloors.shanty)
+end
+
 local function addLowAndRailingFencesToMenu()
     local lowFences = {
         BuildingMenu.createObject(
@@ -1445,7 +1729,7 @@ local function addLowAndRailingFencesToMenu()
     )
 end
 
-local function addDaddyDirkieBedroomFurnitureToMenu()
+local function addBedroomFurnitureToMenu()
     local furnitureSets = {}
     for i = 1, 5 do
         local tileSetName = "d_furniture_bedroom_0" .. i
@@ -2000,7 +2284,7 @@ local function addDaddyDirkieBedroomFurnitureToMenu()
     )
 end
 
-local function addDaddyDirkieCouchesToMenu()
+local function addCouchesToMenu()
     local function createFurnitureObject(spriteData, isSimpleFurniture)
         return BuildingMenu.createObject(
             "",
@@ -2810,7 +3094,7 @@ local function addCratesToMenu()
     )
 end
 
-local function addDaddyDirkieStairsToMenu()
+local function addStairsToMenu()
     local function createWoodenStairsObject1(baseName, startSpriteNumber)
         return BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Simple_Wooden_Stairs",
@@ -2935,7 +3219,7 @@ local function addDaddyDirkieStairsToMenu()
     )
 end
 
-local function addDaddyDirkieOthersToMenu()
+local function addOthersToMenu()
     local daddyDirkieOthers = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_SecretEntranceShelf",
@@ -3018,7 +3302,7 @@ local function addDaddyDirkieOthersToMenu()
     )
 end
 
-local function addDaddyDirkieForestSurvivalToMenu()
+local function addForestSurvivalToMenu()
     local forestSurvival = {
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Log_Wall",
@@ -3411,7 +3695,7 @@ local function addDaddyDirkieForestSurvivalToMenu()
     )
 end
 
-local function addDaddyDirkieCraftedStoveToMenu()
+local function addCraftedStoveToMenu()
     local craftedStove = {
         BuildingMenu.createObject(
             "",
@@ -3458,7 +3742,7 @@ local function addDaddyDirkieCraftedStoveToMenu()
     )
 end
 
-local function addDaddyDirkieBathroomAppliancesToMenu()
+local function addBathroomAppliancesToMenu()
     local function createBathroomObject(spec)
         return BuildingMenu.createObject(
             "",
@@ -4683,13 +4967,13 @@ end
 
 local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.industrialWallsSubCategory then
-        addDaddyDirkieWallsToMenu()
+        addWallsToMenu()
     end
     if SandboxVars.BuildingMenu.roofsCategory then
         addRoofingToMenu()
     end
     if SandboxVars.BuildingMenu.doorsSubCategory then
-        addDaddyDirkieDoorsToMenu()
+        addDoorsToMenu()
     end
     if SandboxVars.BuildingMenu.highFencesSubCategory then
         addHighFencesToMenu()
@@ -4697,8 +4981,11 @@ local function addCategoriesToBuildingMenu()
     if SandboxVars.BuildingMenu.lowAndRailingFencesSubCategory then
         addLowAndRailingFencesToMenu()
     end
+    if SandboxVars.BuildingMenu.floorsCategory then
+        addFloorsToMenu()
+    end
     if SandboxVars.BuildingMenu.daddyDirkieFurniture then
-        addDaddyDirkieBedroomFurnitureToMenu()
+        addBedroomFurnitureToMenu()
     end
     if SandboxVars.BuildingMenu.kitchenCountersSubCategory then
         addKitchenCountersToMenu()
@@ -4710,25 +4997,25 @@ local function addCategoriesToBuildingMenu()
         addMetalContainersToMenu()
     end
     if SandboxVars.BuildingMenu.seatingFurnitureSubCategory then
-        addDaddyDirkieCouchesToMenu()
+        addCouchesToMenu()
     end
     if SandboxVars.BuildingMenu.stairsCategory then
-        addDaddyDirkieStairsToMenu()
+        addStairsToMenu()
     end
     if SandboxVars.BuildingMenu.daddyDirkieRoadworkRamps then
         addRoadworkDirtandGrassToMenu()
     end
     if SandboxVars.BuildingMenu.daddyDirkieSecretEntrances then
-        addDaddyDirkieOthersToMenu()
+        addOthersToMenu()
     end
     if SandboxVars.BuildingMenu.daddyDirkieForestSurvival then
-        addDaddyDirkieForestSurvivalToMenu()
+        addForestSurvivalToMenu()
     end
     if SandboxVars.BuildingMenu.bathroomAppliances then
-        addDaddyDirkieBathroomAppliancesToMenu()
+        addBathroomAppliancesToMenu()
     end
     if SandboxVars.BuildingMenu.cookingAppliances then
-        addDaddyDirkieCraftedStoveToMenu()
+        addCraftedStoveToMenu()
     end
 end
 Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)

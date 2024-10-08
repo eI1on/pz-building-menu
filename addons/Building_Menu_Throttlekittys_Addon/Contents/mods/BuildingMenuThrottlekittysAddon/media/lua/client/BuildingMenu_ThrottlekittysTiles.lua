@@ -75,7 +75,6 @@ local function addMetalContainersToMenu()
     end
 end
 
-
 local function addCratesToMenu()
     local crate = {
         BuildingMenu.createObject(
@@ -113,6 +112,309 @@ local function addCratesToMenu()
     )
 end
 
+local function addStairsToMenu()
+    local junkyardStairs = {
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Junkyard_Stairs",
+            "Tooltip_Staris_Generic",
+            BuildingMenu.onBuildStairs,
+            BuildingMenu.JunkyardStairsRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = false
+            },
+            {
+                sprite = "junkyard_tk_02_5",
+                upToLeft01 = "junkyard_tk_02_5",
+                upToLeft02 = "junkyard_tk_02_4",
+                upToLeft03 = "junkyard_tk_02_3",
+                upToRight01 = "junkyard_tk_02_0",
+                upToRight02 = "junkyard_tk_02_1",
+                upToRight03 = "junkyard_tk_02_2",
+                pillar = "",
+                pillarNorth = ""
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Throttlekitty",
+        getText("IGUI_BuildingMenuCat_Junkyard"),
+        "junkyard_tk_02_5",
+        getText("IGUI_BuildingMenuSubCat_Stairs_Junkyard"),
+        "junkyard_tk_02_5",
+        junkyardStairs
+    )
+
+    local decorations = {};
+    if getActivatedMods():contains("damnlib") then
+        decorations = {
+            BuildingMenu.createObject(
+                "",
+                "Tooltip_Roadway_Generic",
+                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.TireRubberPileRecipe,
+                true,
+                {
+                    completionSound = "BuildMetalStructureSmallScrap",
+                    actionAnim = "VehicleTrailer",
+                    craftingBank = "RepairWithWrench",
+                    isCorner = true,
+                    canPassThrough = true,
+                },
+                {
+                    sprite = "junkyard_tk_02_18"
+                }
+            ),
+            BuildingMenu.createObject(
+                "",
+                "Tooltip_Roadway_Generic",
+                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.TireRubberRecipe,
+                true,
+                {
+                    completionSound = "BuildMetalStructureSmallScrap",
+                    actionAnim = "VehicleTrailer",
+                    craftingBank = "RepairWithWrench",
+                    isCorner = true,
+                    canPassThrough = true,
+                },
+                {
+                    sprite = "junkyard_tk_02_16"
+                }
+            ),
+            BuildingMenu.createObject(
+                "",
+                "Tooltip_Roadway_Generic",
+                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.TireRubberRecipe,
+                true,
+                {
+                    completionSound = "BuildMetalStructureSmallScrap",
+                    actionAnim = "VehicleTrailer",
+                    craftingBank = "RepairWithWrench",
+                    isCorner = true,
+                    canPassThrough = true,
+                },
+                {
+                    sprite = "junkyard_tk_02_19",
+                    northSprite = "junkyard_tk_02_20"
+                }
+            ),
+            BuildingMenu.createObject(
+                "",
+                "Tooltip_Roadway_Generic",
+                BuildingMenu.onBuildSimpleFurniture,
+                BuildingMenu.TireRubberPileRecipe,
+                true,
+                {
+                    completionSound = "BuildMetalStructureSmallScrap",
+                    actionAnim = "VehicleTrailer",
+                    craftingBank = "RepairWithWrench",
+                    isCorner = true,
+                    canPassThrough = true,
+                },
+                {
+                    sprite = "junkyard_tk_02_40",
+                    northSprite = "junkyard_tk_02_41"
+                }
+            ),
+            BuildingMenu.createObject(
+                "",
+                "Tooltip_Roadway_Generic",
+                BuildingMenu.onBuildSimpleFurniture,
+                {
+                    neededTools = {
+                        "Paintbrush"
+                    },
+                    neededMaterials = {
+                        {
+                            {
+                                Material = "damnCraft.TireRubberNewLarge",
+                                Amount = 4
+                            },
+                            {
+                                Material = "damnCraft.TireRubberUsedLarge",
+                                Amount = 4
+                            },
+                            {
+                                Material = "damnCraft.TireRubberDestroyedLarge",
+                                Amount = 4
+                            },
+                        },
+                    },
+                    useConsumable = {
+                        {
+                            Consumable = "Base.PaintWhite",
+                            Amount = 2
+                        }
+                    },
+                },
+                true,
+                {
+                    completionSound = "BuildMetalStructureSmallScrap",
+                    actionAnim = "VehicleTrailer",
+                    craftingBank = "RepairWithWrench",
+                    isCorner = true,
+                    canPassThrough = true,
+                },
+                {
+                    sprite = "junkyard_tk_02_42",
+                    northSprite = "junkyard_tk_02_43"
+                }
+            ),
+        }
+        BuildingMenu.addObjectsToCategories(
+            "Throttlekitty",
+            getText("IGUI_BuildingMenuCat_Junkyard"),
+            nil,
+            getText("IGUI_BuildingMenuSubCat_Junkyard_Decorations"),
+            "junkyard_tk_02_18",
+            decorations
+        )
+    end
+
+    decorations = {
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            {
+                neededMaterials = {
+                    {
+                        {
+                            Material = "Base.SheetMetal",
+                            Amount = 1
+                        },
+                    },
+                }
+            },
+            true,
+            {
+                completionSound = "BuildMetalStructureSmallScrap",
+                actionAnim = "VehicleWorkOnTire",
+                craftingBank = "RepairWithWrench",
+                isCorner = true,
+                canPassThrough = true,
+            },
+            {
+                sprite = "junkyard_tk_02_8",
+                northSprite = "junkyard_tk_02_9"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            {
+                neededMaterials = {
+                    {
+                        Material = "Base.Plank",
+                        Amount = 2
+                    },
+                }
+            },
+            true,
+            {
+                completionSound = "BuildWoodenStructureSmall",
+                actionAnim = "VehicleWorkOnTire",
+                craftingBank = "BuildingGeneric",
+                isCorner = true,
+                canPassThrough = true,
+            },
+            {
+                sprite = "junkyard_tk_02_10",
+                northSprite = "junkyard_tk_02_11"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            {
+                neededTools = {
+                    "Paintbrush"
+                },
+                neededMaterials = {
+                    {
+                        Material = "Base.SheetMetal",
+                        Amount = 1
+                    },
+                },
+                useConsumable = {
+                    {
+                        Consumable = "Base.PaintGreen",
+                        Amount = 1
+                    }
+                },
+                skills = {
+                    {
+                        Skill = "Woodwork",
+                        Level = 1,
+                        Xp = BuildingMenu.round(1 * SandboxVars.BuildingMenuRecipes.carpentryXpPerLevel)
+                    }
+                }
+            },
+            true,
+            {
+                completionSound = "BuildMetalStructureSmall",
+                isCorner = true,
+                canPassThrough = true,
+            },
+            {
+                sprite = "junkyard_tk_02_12",
+                northSprite = "junkyard_tk_02_13"
+            }
+        ),
+        BuildingMenu.createObject(
+            "",
+            "Tooltip_Roadway_Generic",
+            BuildingMenu.onBuildSimpleFurniture,
+            {
+                neededTools = {
+                    "Paintbrush"
+                },
+                neededMaterials = {
+                    {
+                        Material = "Base.SheetMetal",
+                        Amount = 1
+                    },
+                },
+                useConsumable = {
+                    {
+                        Consumable = "Base.PaintOrange",
+                        Amount = 1
+                    }
+                },
+                skills = {
+                    {
+                        Skill = "Woodwork",
+                        Level = 1,
+                        Xp = BuildingMenu.round(1 * SandboxVars.BuildingMenuRecipes.carpentryXpPerLevel)
+                    }
+                }
+            },
+            true,
+            {
+                completionSound = "BuildMetalStructureSmall",
+                isCorner = true,
+                canPassThrough = true,
+            },
+            {
+                sprite = "junkyard_tk_02_14",
+                northSprite = "junkyard_tk_02_15"
+            }
+        ),
+    }
+    BuildingMenu.addObjectsToCategories(
+        "Throttlekitty",
+        getText("IGUI_BuildingMenuCat_Junkyard"),
+        nil,
+        getText("IGUI_BuildingMenuSubCat_Junkyard_Decorations"),
+        "junkyard_tk_02_18",
+        decorations
+    )
+end
 
 local function addIndustrialWallsToMenu()
     local industrialWalls = {
@@ -929,7 +1231,6 @@ local function addIndustrialWallsToMenu()
     end
 end
 
-
 local function addLightingToMenu()
     local lighting = {
         BuildingMenu.createObject(
@@ -996,7 +1297,6 @@ local function addLightingToMenu()
         lighting
     )
 end
-
 
 local function addSeatingFurnitureToMenu()
     local seatingFurniture = {
@@ -1380,6 +1680,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.garageDoorsSubCategory then
         addGarageDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.stairsCategory then
+        addStairsToMenu()
     end
     if SandboxVars.BuildingMenu.metalContainersSubCategory then
         addMetalContainersToMenu()

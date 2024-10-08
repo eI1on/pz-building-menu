@@ -1,5 +1,9 @@
 IGUI_EN = {
 
+    IGUI_BuildingMenuCat_Junkyard = "Junkyard",
+    IGUI_BuildingMenuSubCat_Stairs_Junkyard = "Stairs",
+    IGUI_BuildingMenuSubCat_Junkyard_Decorations = "Decorations",
+
     IGUI_BuildingMenuSubCat_Walls_White_Industrial_Walls = "White Industrial Walls",
     IGUI_BuildingMenuSubCat_Walls_Blue_Industrial_Walls = "Blue Industrial Walls",
     IGUI_BuildingMenuSubCat_Walls_Light_Green_Industrial_Walls = "Light Green Industrial Walls",

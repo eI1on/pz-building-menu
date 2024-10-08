@@ -1,0 +1,6 @@
+Tooltip_EN = {
+
+  Tooltip_BuildingMenuObj_Junkyard_Stairs = "Junkyard Stairs",
+  Tooltip_Tire_Rubber = "The tire rubber used to build them can't be retrieved back",
+
+}
