@@ -2,7 +2,7 @@ Sandbox_ES = {
 
     Sandbox_BuildingMenu = "Menú de construcción",
     Sandbox_BuildingMenu_isThumpable = "Estructuras que se pueden golpear",
-    Sandbox_BuildingMenu_isThumpable_tooltip = "Desactive <ESPACIO><RGB:1,0.8,0> <RGB:1,1,1><ESPACIO> para que las estructuras construidas usando el menú sean inmunes al daño de los zombis.",
+    Sandbox_BuildingMenu_isThumpable_tooltip = "<SPACE><RGB:1,0.8,0>Desactive<RGB:1,1,1><SPACE> para que las estructuras construidas usando el menú sean inmunes al daño de los zombis.",
 
 
     Sandbox_BuildingMenu_EmptyBox = "",
