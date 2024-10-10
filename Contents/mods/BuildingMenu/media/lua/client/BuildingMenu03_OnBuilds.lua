@@ -113,18 +113,18 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
         BM_Logger:debug(string.format("objectOptions.extraHealth: %s  objectOptions.health: %s  object:getHealth(): %s",
             objectOptions.extraHealth or 0, objectOptions.health or 0, health or 0));
 
-        if spritesName then
+        if spritesName and BM_Logger:shouldLog("DEBUG") then
             if spritesName["sprite"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["sprite"]);
             end
-            if spritesName["sprite1"] then
-                BM_Utils.printPropNamesFromSprite(spritesName["sprite1"]);
+            if spritesName["sprite2"] then
+                BM_Utils.printPropNamesFromSprite(spritesName["sprite2"]);
             end
             if spritesName["northSprite"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["northSprite"]);
             end
-            if spritesName["northSprite1"] then
-                BM_Utils.printPropNamesFromSprite(spritesName["northSprite1"]);
+            if spritesName["northSprite2"] then
+                BM_Utils.printPropNamesFromSprite(spritesName["northSprite2"]);
             end
         end
     end

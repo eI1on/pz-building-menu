@@ -1,4 +1,25 @@
-OCT 24
+ OCT 24
+
+Changelog:
+[list]
+Main mod:
+[list]
+[*] 
+[*] Updates to objects costs:
+[list]
+[*] Hesco Barriers: Tarp 2 >> 1
+[/list]
+[/list]
+Oujinjin's Tiles Addon:
+[list]
+[*] Fixed an exploit where wooden and military shelves, when dismantled, would incorrectly drop metal sheets instead of wood and nails. The construction/dismantling loop could lead to unintended "metal production"
+[*] Updated sprite properties for containers to correct their material assignments, making sure that only wood and nails are dropped upon dismantling
+[/list]
+[/list]
+
+
+8 OCT 24
+002df7c
 
 Changelog:
 [list]

@@ -64,17 +64,38 @@ function BM_Utils.setOrUnsetSpriteProperties(manager, spriteList, setProperties,
     end
 end
 
---- Prints property names and flags list for a sprite
+--- Prints property names and their values, as well as flags list for a sprite
 ---@param sprite string The sprite name
 function BM_Utils.printPropNamesFromSprite(sprite)
     local isoSprite = IsoSpriteManager.instance:getSprite(sprite);
-    if not isoSprite then
-        BM_Logger:debug("NO Properties for " .. sprite); return;
-    end;
+    if not isoSprite then BM_Logger:debug("No properties for " .. sprite); return; end
+
     local props = isoSprite:getProperties();
-    BM_Logger:debug("Property Names for " .. sprite .. " :" .. tostring(props:getPropertyNames()));
-    BM_Logger:debug("Flags List for " .. sprite .. " :" .. tostring(props:getFlagsList()));
+
+    local propertyNames = props:getPropertyNames();
+    if propertyNames and propertyNames:size() > 0 then
+        BM_Logger:debug("Property Names and Values for " .. sprite .. ":");
+        for i = 0, propertyNames:size() - 1 do
+            local propName = propertyNames:get(i);
+            local propValue = props:Val(propName) or "nil";
+            BM_Logger:debug(string.format("    %s = %s", propName, propValue));
+        end
+    else
+        BM_Logger:debug("No property names for " .. sprite);
+    end
+
+    local flagsList = props:getFlagsList();
+    if flagsList and flagsList:size() > 0 then
+        BM_Logger:debug("Flags List for " .. sprite .. ":");
+        for i = 0, flagsList:size() - 1 do
+            local flag = flagsList:get(i);
+            BM_Logger:debug("    " .. tostring(flag));
+        end
+    else
+        BM_Logger:debug("No flags for " .. sprite);
+    end
 end
+
 
 --- Calculates the health of metal buildings based on Metalwelding perk
 ---@param ISItem ISBuildingObject
