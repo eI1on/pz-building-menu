@@ -18758,7 +18758,7 @@ local function addFloorsToMenu()
                     "Tooltip_BuildingMenuObj_Rusty_Mesh",
                     "Tooltip_Floor_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.MetalFloorRecipe,
+                    BuildingMenu.MetalMeshFloorRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
@@ -18775,7 +18775,7 @@ local function addFloorsToMenu()
                     "Tooltip_BuildingMenuObj_Rusty_Mesh_Grate",
                     "Tooltip_Floor_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.MetalFloorRecipe,
+                    BuildingMenu.MetalMeshFloorRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",
@@ -18792,7 +18792,7 @@ local function addFloorsToMenu()
                     "Tooltip_BuildingMenuObj_Steel_Bars_Floor",
                     "Tooltip_Floor_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.MetalFloorRecipe,
+                    BuildingMenu.MetalBarsFloorRecipe,
                     true,
                     {
                         completionSound = "BuildMetalStructureMedium",

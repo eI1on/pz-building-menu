@@ -7,7 +7,10 @@ Main mod:
 [*] 
 [*] Updates to objects costs:
 [list]
-[*] Hesco Barriers: Tarp 2 >> 1
+[*] Floor Rugs: Thread 5 >> 3
+[*] Rusty Mesh Floors: Metal Sheet 1 >> Small Sheet Metal 2; Wire 2
+[*] Steel Bars Floors: Metal Sheet 1 >> Metal Bars 2; Small Sheet Metal 1
+[*] Rest of Industrial Floors: Metal Sheet 1 >> Small Sheet Metal 2
 [/list]
 [/list]
 Oujinjin's Tiles Addon:

@@ -344,6 +344,9 @@ Sandbox_EN = {
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors = "Sheet Metal for ROOFING and FLOORS Cost",
     Sandbox_BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors_tooltip = "Sets sheet metal needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1>",
     
+    Sandbox_BuildingMenuRecipes_smallSheetMetalCountForRoofingAndFloors = "Small Metal Sheet for ROOFING and FLOORS Cost",
+    Sandbox_BuildingMenuRecipes_smallSheetMetalCountForRoofingAndFloors_tooltip = "Sets small metal sheet needed for ROOFING and FLOORS. <LINE> Scales with object size and type. <LINE><LINE> <RGB:1,0,0> EXIT AND REENTER SAVE TO APPLY CHANGES! <RGB:1,1,1>",
+    
 
     Sandbox_BuildingMenuRecipes_SkillsDivider = "____________ Skills ____________",
     Sandbox_BuildingMenuRecipes_SkillsDivider_tooltip = "This is only a line separator, checking it has no effect.",

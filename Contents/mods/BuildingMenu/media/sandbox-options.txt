@@ -958,6 +958,16 @@ option BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors
     translation = BuildingMenuRecipes_sheetMetalCountForRoofingAndFloors,
 }
 
+option BuildingMenuRecipes.smallSheetMetalCountForRoofingAndFloors
+{
+    type = integer,
+    min = 1,
+    default = 2,
+    max = 100,
+    page = BuildingMenuRecipes,
+    translation = BuildingMenuRecipes_smallSheetMetalCountForRoofingAndFloors,
+}
+
 option BuildingMenuRecipes.EmptyBox1
 {
     type = boolean,

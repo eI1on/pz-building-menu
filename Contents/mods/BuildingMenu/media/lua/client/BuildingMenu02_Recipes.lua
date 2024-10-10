@@ -64,12 +64,17 @@ local function initBuildingMenuRecipes()
     local sheetMetalCountForDoors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
     local sheetMetalCountForContainers = SandboxVars.BuildingMenuRecipes.sheetMetalCountForDoors or 4;
     local sheetMetalCountForFixturesAndAppliances = SandboxVars.BuildingMenuRecipes
-        .sheetMetalCountForFixturesAndAppliances or 4;
+    .sheetMetalCountForFixturesAndAppliances or 4;
     local sheetMetalCountForRoofingAndFloors = SandboxVars.BuildingMenuRecipes.sheetMetalCountForRoofingAndFloors or 1;
+
+    local smallSheetMetalCountForRoofingAndFloors = SandboxVars.BuildingMenuRecipes
+    .smallSheetMetalCountForRoofingAndFloors or 2;
 
 
     local bigObjectsCarpentrySkill = SandboxVars.BuildingMenuRecipes.bigObjectsCarpentrySkill or 5;
     local smallObjectsCarpentrySkill = SandboxVars.BuildingMenuRecipes.smallObjectsCarpentrySkill or 4;
+
+
     local carpentryXpPerLevel = SandboxVars.BuildingMenuRecipes.carpentryXpPerLevel or 2.5;
     local metalweldingXpPerLevel = SandboxVars.BuildingMenuRecipes.metalweldingXpPerLevel or 3.5;
     local electricalXpPerLevel = SandboxVars.BuildingMenuRecipes.electricalXpPerLevel or 5.0;
@@ -3255,8 +3260,14 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.SheetMetal",
-                Amount = sheetMetalCountForRoofingAndFloors
+                {
+                    Material = "Base.SheetMetal",
+                    Amount = sheetMetalCountForRoofingAndFloors
+                },
+                {
+                    Material = "Base.SmallSheetMetal",
+                    Amount = smallSheetMetalCountForRoofingAndFloors
+                }
             },
             {
                 {
@@ -5155,18 +5166,102 @@ local function initBuildingMenuRecipes()
         },
         neededMaterials = {
             {
-                Material = "Base.SheetMetal",
-                Amount = sheetMetalCountForRoofingAndFloors
+                Material = "Base.SmallSheetMetal",
+                Amount = smallSheetMetalCountForRoofingAndFloors
             },
             {
                 Material = "Base.Screws",
-                Amount = BuildingMenu.round(screwsCount * 0.5)
+                Amount = BuildingMenu.round(screwsCount * 0.25)
             },
         },
         useConsumable = {
             {
                 Consumable = "Base.BlowTorch",
+                Amount = 1
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+    BuildingMenu.MetalMeshFloorRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+        },
+        neededMaterials = {
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = smallSheetMetalCountForRoofingAndFloors
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 0.25)
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.Wire",
                 Amount = 2
+            },
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 1
+            },
+            {
+                Consumable = "Base.WeldingRods",
+                Amount = BuildingMenu.weldingRodUses(2)
+            }
+        },
+        skills = {
+            {
+                Skill = "MetalWelding",
+                Level = 2,
+                Xp = BuildingMenu.round(2 * metalweldingXpPerLevel)
+            }
+        }
+    }
+
+    BuildingMenu.MetalBarsFloorRecipe = {
+        neededTools = {
+            "BlowTorch",
+            "WeldingMask",
+            "Screwdriver",
+        },
+        neededMaterials = {
+            {
+                {
+                    Material = "Base.MetalBar",
+                    Amount = 2
+                },
+                {
+                    Material = "Base.MetalPipe",
+                    Amount = 2
+                },
+            },
+            {
+                Material = "Base.SmallSheetMetal",
+                Amount = BuildingMenu.round(smallSheetMetalCountForRoofingAndFloors * 0.5)
+            },
+            {
+                Material = "Base.Screws",
+                Amount = BuildingMenu.round(screwsCount * 0.25)
+            },
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BlowTorch",
+                Amount = 1
             },
             {
                 Consumable = "Base.WeldingRods",
@@ -6067,7 +6162,7 @@ local function initBuildingMenuRecipes()
         useConsumable = {
             {
                 Consumable = "Base.Thread",
-                Amount = 5
+                Amount = 3
             }
         },
         skills = {
@@ -7478,7 +7573,8 @@ local function initBuildingMenuRecipes()
                 Amount = BuildingMenu.round(bigObjectsWoodCount * 1.25)
             },
             {
-                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, BuildingMenu.round(bigObjectsNailsCount * 0.75) ,
+                BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails,
+                    BuildingMenu.round(bigObjectsNailsCount * 0.75),
                     "Material")
             },
         },
@@ -7720,7 +7816,7 @@ local function initBuildingMenuRecipes()
             },
             {
                 Material = "Base.SheetMetal",
-                Amount = BuildingMenu.round(sheetMetalCountForRoofingAndFloors * 3)
+                Amount = 3
             },
             {
                 Material = "Base.RippedSheets",
