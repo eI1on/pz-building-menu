@@ -64,4 +64,177 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         { "disableFade",        "",        false },
         { IsoFlagType.attachedN },
     }, nil);
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_01_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_01_0", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_01_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_01_34"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_01_32", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_01_33", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_01_66"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_01_64", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_01_65", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_01_98"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_01_96", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_01_97", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_02_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_02_0", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_02_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_02_34"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_02_32", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_02_33", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_02_66"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_02_64", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_02_65", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_02_98"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_02_96", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_02_97", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_03_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_03_0", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_03_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_03_34"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_03_32", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_03_33", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_03_66"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_03_64", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_03_65", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_03_98"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_03_96", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_03_97", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_04_2" }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_04_0", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_04_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_04_98"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_04_96", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_04_97", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_04_34"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_04_32", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_04_33", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_interiors_04_66"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_interiors_04_64", false },
+    --     { "CornerNorthWall", "en_newburbs_interiors_04_65", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_01_white_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_01_white_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_01_white_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_02_lightgray_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_02_lightgray_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_02_lightgray_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_03_eggshell_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_03_eggshell_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_03_eggshell_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_04_warmgray_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_04_warmgray_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_04_warmgray_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_05_red_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_05_red_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_05_red_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_06_orange_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_06_orange_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_06_orange_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_07_redbrown_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_07_redbrown_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_07_redbrown_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_08_brown_2"
+    -- }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_08_brown_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_08_brown_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "en_newburbs_walls_09_tan_2" }, {
+    --     { "CornerWestWall",  "en_newburbs_walls_09_tan_0", false },
+    --     { "CornerNorthWall", "en_newburbs_walls_09_tan_1", false }
+    -- });
 end)

@@ -437,7 +437,8 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_0",
                         northSprite = "industry_tk_01_1",
-                        corner = "industry_tk_01_3"
+                        corner = "industry_tk_01_2",
+                        pillar = "industry_tk_01_3"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -453,7 +454,7 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_10",
                         northSprite = "industry_tk_01_11",
-                        corner = "industry_tk_01_3"
+                        pillar = "industry_tk_01_3"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -472,7 +473,24 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_8",
                         northSprite = "industry_tk_01_9",
-                        corner = "industry_tk_01_3"
+                        pillar = "industry_tk_01_3"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_White_Industrial_Corner_Wall",
+                    "Tooltip_White_Industrial_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.GreenWhiteBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "industry_tk_01_2",
+                        pillar = "industry_tk_01_3"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -637,7 +655,8 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_4",
                         northSprite = "industry_tk_01_5",
-                        corner = "industry_tk_01_7"
+                        corner = "industry_tk_01_6",
+                        pillar = "industry_tk_01_7"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -653,7 +672,7 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_14",
                         northSprite = "industry_tk_01_15",
-                        corner = "industry_tk_01_7"
+                        pillar = "industry_tk_01_7"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -672,7 +691,24 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_12",
                         northSprite = "industry_tk_01_13",
-                        corner = "industry_tk_01_7"
+                        pillar = "industry_tk_01_7"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Corner_Wall",
+                    "Tooltip_Blue_Industrial_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.BlueBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "industry_tk_01_6",
+                        pillar = "industry_tk_01_7"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -837,7 +873,8 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_24",
                         northSprite = "industry_tk_01_25",
-                        corner = "industry_tk_01_27"
+                        corner = "industry_tk_01_26",
+                        pillar = "industry_tk_01_27"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -853,7 +890,7 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_34",
                         northSprite = "industry_tk_01_35",
-                        corner = "industry_tk_01_27"
+                        pillar = "industry_tk_01_27"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -872,7 +909,24 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_32",
                         northSprite = "industry_tk_01_33",
-                        corner = "industry_tk_01_27"
+                        pillar = "industry_tk_01_27"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Light_Green_Industrial_Corner_Wall",
+                    "Tooltip_Light_Green_Industrial_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.GreenBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "industry_tk_01_26",
+                        pillar = "industry_tk_01_27"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -1037,7 +1091,8 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_28",
                         northSprite = "industry_tk_01_29",
-                        corner = "industry_tk_01_31"
+                        corner = "industry_tk_01_30",
+                        pillar = "industry_tk_01_31"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -1053,7 +1108,7 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_38",
                         northSprite = "industry_tk_01_39",
-                        corner = "industry_tk_01_31"
+                        pillar = "industry_tk_01_31"
                     }
                 ),
                 BuildingMenu.createObject(
@@ -1072,7 +1127,24 @@ local function addIndustrialWallsToMenu()
                     {
                         sprite = "industry_tk_01_36",
                         northSprite = "industry_tk_01_37",
-                        corner = "industry_tk_01_31"
+                        pillar = "industry_tk_01_31"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Green_Industrial_Corner_Wall",
+                    "Tooltip_Green_Industrial_Wall",
+                    BuildingMenu.onBuildWall,
+                    BuildingMenu.GreenBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "industry_tk_01_30",
+                        pillar = "industry_tk_01_31"
                     }
                 ),
                 BuildingMenu.createObject(

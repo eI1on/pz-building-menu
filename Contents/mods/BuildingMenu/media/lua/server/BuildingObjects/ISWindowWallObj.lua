@@ -1,65 +1,31 @@
+local BM_Utils = require("BM_Utils");
+
 --- @class ISWindowWallObj : ISBuildingObject
 ISWindowWallObj = ISBuildingObject:derive('ISWindowWallObj')
 
---- Creates a windowed wall object and places it in the game world
+--- Creates a window wall object and places it in the game world
 --- @param x number x coordinate in the world
 --- @param y number y coordinate in the world
 --- @param z number z coordinate (floor level)
---- @param north boolean Indicates if the windowed wall faces north
+--- @param north boolean Indicates if the window wall faces north
 --- @param sprite string The sprite to use for this object
 function ISWindowWallObj:create(x, y, z, north, sprite)
-	local cell = getWorld():getCell()
-	self.sq = cell:getGridSquare(x, y, z)
+	local cell = getWorld():getCell();
+	self.sq = cell:getGridSquare(x, y, z);
 
-	self.javaObject = IsoWindow.new(getCell(), self.sq, getSprite(sprite), north)
-	self.javaObject:getModData().WindowWall = true;
-
-	if self.corner then
-		buildUtil.checkCorner(x, y, z, north, self, self.javaObject);
+	if not BM_Utils.checkCorner(x, y, z, north, self) then
+		self.javaObject = IsoWindow.new(cell, self.sq, getSprite(sprite), north);
+		BM_Utils.setAttachedSprites(self, false);
+		BM_Utils.checkPillar(x, y, z, north, self);
 	end
 
+	self.javaObject:getModData().WindowWall = true;
 	buildUtil.consumeMaterial(self);
 
-	self.sq:AddSpecialObject(self.javaObject);
-	self.javaObject:transmitCompleteItemToServer()
-end
+	self.sq:AddSpecialObject(self.javaObject, self:getObjectIndex());
+	self.sq:RecalcAllWithNeighbours(true);
 
---- Checks for corner placement and adds a corner object if applicable
---- @param x number x coordinate
---- @param y number y coordinate
---- @param z number z coordinate
---- @param north boolean Orientation
-function ISWindowWallObj:checkCorner(x, y, z, north)
-	local found = false;
-	local sx = x;
-	local sy = y;
-	local sq2 = getCell():getGridSquare(x + 1, y - 1, z);
-	for i = 0, sq2:getSpecialObjects():size() - 1 do
-		local item = sq2:getSpecialObjects():get(i);
-		if instanceof(item, "IsoThumpable") and item:getNorth() ~= north then
-			found = true;
-			sx = x + 1;
-			sy = y;
-			break;
-		end
-	end
-	if found then
-		ISWindowWallObj:addCorner(sx, sy, z, north);
-	end
-end
-
---- Adds a corner object at the specified position
---- @param x number x coordinate
---- @param y number y coordinate
---- @param z number z coordinate
---- @param north boolean Orientation
-function ISWindowWallObj:addCorner(x, y, z, north)
-	local sq = getCell():getGridSquare(x, y, z);
-	local corner = IsoThumpable.new(getCell(), sq, self.corner, north, self);
-	corner:setCorner(true);
-	corner:setCanBarricade(false);
-	sq:AddSpecialObject(corner);
-	corner:transmitCompleteItemToServer();
+	self.javaObject:transmitCompleteItemToServer();
 end
 
 --- Validates the placement of the windowed wall
@@ -138,9 +104,20 @@ function ISWindowWallObj:new(sprite, northSprite, playerNum)
 	o.canBarricade = true;
 	o.dismantable = true;
 	o.stopOnWalk = true;
-	o.corner = nil;
 	o.stopOnRun = true;
 	o.maxTime = 150;
 	return o;
 end
 
+---Returns the index of the object in the square
+---@return number index The index of the object in the grid square
+function ISWindowWallObj:getObjectIndex()
+	for i = self.sq:getObjects():size(), 1, -1 do
+		local object = self.sq:getObjects():get(i - 1);
+		local props = object:getProperties();
+		if props and props:Is(IsoFlagType.solidfloor) then
+			return i;
+		end
+	end
+	return -1;
+end

@@ -44,36 +44,19 @@ function BuildingMenuTilePickerList:render()
                     self.posToObjectNameTable[r] = self.posToObjectNameTable[r] or {};
                     self.posToObjectNameTable[r][c] = { objDef = objDef, canBuild = false };
 
-                    -- use cached texture if available, otherwise load and cache it
-                    local objSpriteName = objDef.data.sprites.sprite;
-                    local texture = self.textureCache[objSpriteName];
-                    if not texture then
-                        texture = getTexture(objSpriteName);
-                        self.textureCache[objSpriteName] = texture;
-                    end
-
-                    if texture then
-                        self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH,
-                            TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
-                    end
-
-                    local attachedSprites = objDef.data.sprites.attachedSprites;
-                    if attachedSprites then
-                        if attachedSprites.sprite then
-                            for i = 1, #attachedSprites.sprite do
-                                local attachedSpriteName = attachedSprites.sprite[i];
-                                local attachedTexture = self.textureCache[attachedSpriteName];
-                                if not attachedTexture then
-                                    attachedTexture = getTexture(attachedSpriteName);
-                                    self.textureCache[attachedSpriteName] = attachedTexture;
-                                end
-                                if attachedTexture then
-                                    self:drawTextureScaledAspect(attachedTexture, (c - 1) * TILE_WIDTH,
-                                        (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
-                                end
-                            end
+                    local spriteKeys = {"sprite", "northSprite", "corner"};
+                    local objSpriteName, attachedSprites = nil, nil;
+                    for i = 1, #spriteKeys do
+                        local spriteName = objDef.data.sprites[spriteKeys[i]];
+                        if spriteName then
+                            objSpriteName = spriteName;
+                            attachedSprites = objDef.data.sprites.attachedSprites and objDef.data.sprites.attachedSprites[key];
+                            break;
                         end
                     end
+
+                    self:drawSprite(objSpriteName, c, r);
+                    self:drawAttachedSprites(attachedSprites, c, r);
                 end
             end
         end
@@ -81,6 +64,32 @@ function BuildingMenuTilePickerList:render()
     self:setScrollHeight(maxRows * TILE_HEIGHT);
     self:updateTooltip(maxCols, maxRows);
     self:clearStencilRect();
+end
+
+--- Draws the main sprite on the correct tile position
+--- @param spriteName string|nil The name of the sprite to draw
+--- @param c number The column position in the grid
+--- @param r number The row position in the grid
+function BuildingMenuTilePickerList:drawSprite(spriteName, c, r)
+    if spriteName then
+        local texture = self.textureCache[spriteName] or getTexture(spriteName);
+        self.textureCache[spriteName] = texture;
+        if texture then
+            self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
+        end
+    end
+end
+
+--- Draws a list of attached sprites on the correct tile position
+--- @param attachedSpriteNames table|nil A table of attached sprite names
+--- @param c number The column position in the grid
+--- @param r number The row position in the grid
+function BuildingMenuTilePickerList:drawAttachedSprites(attachedSpriteNames, c, r)
+    if attachedSpriteNames then
+        for _, attachedSpriteName in ipairs(attachedSpriteNames) do
+            self:drawSprite(attachedSpriteName, c, r);
+        end
+    end
 end
 
 --- Finds the next object in the tile picker list using the index to track rendered objects

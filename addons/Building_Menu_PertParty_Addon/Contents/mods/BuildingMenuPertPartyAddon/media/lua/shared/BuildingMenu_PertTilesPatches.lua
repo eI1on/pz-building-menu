@@ -121,4 +121,18 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         { "IsMoveAble",         "",             false },
         { "PickUpWeight",       "20",           false },
     });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "pert_walls_wallpaper_1_82"
+    -- }, {
+    --     { "CornerWestWall", "pert_walls_wallpaper_1_80", false },
+    --     { "CornerNorthWall",  "pert_walls_wallpaper_1_81", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "pert_walls_wallpaper_1_86"
+    -- }, {
+    --     { "CornerWestWall", "pert_walls_wallpaper_1_84", false },
+    --     { "CornerNorthWall",  "pert_walls_wallpaper_1_85", false }
+    -- });
 end)

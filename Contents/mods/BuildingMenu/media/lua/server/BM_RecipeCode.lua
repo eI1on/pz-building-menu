@@ -34,11 +34,7 @@ if getActivatedMods():contains("Greenhouse") or getActivatedMods():contains("Imp
     local recipes = getScriptManager():getAllRecipes();
     for i = 1, recipes:size() do
         local recipe = recipes:get(i - 1);
-        local fullType = recipe:getFullType();
-
-        local extractedRecipeName = fullType:match("^.+%.(.+)$");
-
-        if blockRecipes[extractedRecipeName] then
+        if blockRecipes[recipe:getOriginalname()] then
             recipe:setNeedToBeLearn(true);
             recipe:setIsHidden(true);
         end

@@ -13,7 +13,12 @@ function ISWall:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
 
-	self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+	if not BM_Utils.checkCorner(x, y, z, north, self) then
+		self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+		BM_Utils.setAttachedSprites(self, false);
+		BM_Utils.checkPillar(x, y, z, north, self);
+	end
+
 	buildUtil.setInfo(self.javaObject, self);
 	buildUtil.consumeMaterial(self);
 
@@ -30,67 +35,7 @@ function ISWall:create(x, y, z, north, sprite)
 	self.sq:AddSpecialObject(self.javaObject, self:getObjectIndex());
 	self.sq:RecalcAllWithNeighbours(true);
 
-	buildUtil.checkCorner(x, y, z, north, self, self.javaObject);
-
-	if self.attachedSprites ~= nil then
-		local attachedSprites = nil;
-		if self.north then
-			attachedSprites = self.attachedSprites.northSprite;
-		elseif self.west then
-			attachedSprites = self.attachedSprites.sprite;
-		elseif self.south then
-			attachedSprites = self.attachedSprites.southSprite;
-		elseif self.east then
-			attachedSprites = self.attachedSprites.eastSprite;
-		end
-
-		if attachedSprites ~= nil then
-			self.javaObject:setAttachedAnimSprite(ArrayList:new());
-			for i = 1, #attachedSprites do
-				self.javaObject:getAttachedAnimSprite():add(getSprite(attachedSprites[i]):newInstance());
-			end
-		end
-	end
-
 	self.javaObject:transmitCompleteItemToServer();
-end
-
----Checks if there is a corner at the given position
----@param x number The x coordinate in the world
----@param y number The y coordinate in the world
----@param z number The z coordinate (floor level)
----@param north boolean Whether the wall is facing north
-function ISWall:checkCorner(x, y, z, north)
-	local found = false;
-	local sx = x;
-	local sy = y;
-	local sq2 = getCell():getGridSquare(x + 1, y - 1, z);
-	for i = 0, sq2:getSpecialObjects():size() - 1 do
-		local item = sq2:getSpecialObjects():get(i);
-		if instanceof(item, "IsoThumpable") and item:getNorth() ~= north then
-			found = true;
-			sx = x + 1;
-			sy = y;
-			break;
-		end
-	end
-	if found then
-		ISWall:addCorner(sx, sy, z, north);
-	end
-end
-
----Adds a corner wall piece at the specified location
----@param x number The x coordinate in the world
----@param y number The y coordinate in the world
----@param z number The z coordinate (floor level)
----@param north boolean Whether the corner piece is facing north
-function ISWall:addCorner(x, y, z, north)
-	local sq = getCell():getGridSquare(x, y, z);
-	local corner = IsoThumpable.new(getCell(), sq, "TileWalls_51", north, self);
-	corner:setCorner(true);
-	corner:setCanBarricade(false);
-	sq:AddSpecialObject(corner);
-	corner:transmitCompleteItemToServer();
 end
 
 ---Handles the animation when the timed action starts
@@ -113,18 +58,16 @@ end
 ---Constructor for ISWall
 ---@param sprite string
 ---@param northSprite string
----@param corner string
 ---@return ISWall ISBuildingObject instance
-function ISWall:new(sprite, northSprite, corner)
+function ISWall:new(sprite, northSprite)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
 	o:setSprite(sprite);
 	o:setNorthSprite(northSprite);
-	o.corner = corner;
 	o.canBarricade = true;
-	o.name = "Wooden Wall";
+	o.name = "Wall";
 	o.isWallLike = true;
 	return o;
 end

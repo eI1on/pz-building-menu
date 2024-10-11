@@ -109,6 +109,19 @@ function ISBuildingObject:tryBuild(x, y, z)
 	end
 end
 
+--- Original getSprite method from ISBuildingObject
+--- @type fun(self:ISBuildingObject)
+local originalISBuildingObjectgetSprite = ISBuildingObject.getSprite;
+function ISBuildingObject:getSprite()
+	local res = originalISBuildingObjectgetSprite(self);
+	if not res then
+		if not self.sprite or not self.northSprite or not self.eastSprite or not self.southSprite then
+			res = self.corner;
+		end
+	end
+	return res;
+end
+
 -- helper function to check if the sprite exists
 function ISBuildingObject:isValidSprite(direction)
 	local spriteMap = {

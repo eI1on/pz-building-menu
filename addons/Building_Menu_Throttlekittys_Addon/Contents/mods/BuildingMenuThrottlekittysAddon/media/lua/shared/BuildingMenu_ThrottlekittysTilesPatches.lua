@@ -24,4 +24,11 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     }, nil, {
         "MoveType"
     });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "industry_tk_01_2"
+    -- }, {
+    --     { "CornerWestWall", "industry_tk_01_0", false },
+    --     { "CornerNorthWall",  "industry_tk_01_1", false }
+    -- });
 end)

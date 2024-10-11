@@ -918,7 +918,7 @@ sprites =   {
 sprites =   {
     sprite = "",
     northSprite = "",
-    corner = ""
+    pillar = ""
 }
 ```
 
@@ -930,7 +930,7 @@ sprites =   {
 sprites =   {
     sprite = "",
     northSprite = "",
-    corner = ""
+    pillar = ""
 }
 ```
 
@@ -942,7 +942,7 @@ sprites =   {
 sprites =   {
     sprite = "",
     northSprite = "",
-    corner = ""
+    pillar = ""
 }
 ```
 
@@ -967,7 +967,7 @@ sprites =   {
     sprite2 = "",
     northSprite = "",
     northSprite2 = "",
-    corner = ""
+    pillar = ""
 }
 ```
 
@@ -1047,7 +1047,7 @@ sprites =   {
 sprites =   {
     sprite = "",
     northSprite = "",
-    corner = ""
+    pillar = ""
 }
 ```
 

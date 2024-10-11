@@ -2,23 +2,35 @@ Tooltip_EN = {
 
   Tooltip_BuildingMenuObj_Fast_Food_Pink_Wall = "Fast Food Pink Wall",
   Tooltip_BuildingMenuObj_Fast_Food_Pink_Frame = "Fast Food Pink Door Frame",
+  Tooltip_BuildingMenuObj_Fast_Food_Pink_Corner_Wall = "Fast Food Pink Corner Wall",
+  Tooltip_BuildingMenuObj_Fast_Food_Pink_Pillar = "Fast Food Pink Pillar",
   Tooltip_Fast_Food_Pink_Wall = "A wall with pink fast-food themed pattern",
   Tooltip_Fast_Food_Pink_Door_Frame = "A door frame with pink fast-food themed pattern",
+  Tooltip_Storefront_Fast_Food_Pink_Pillar = "A pillar with pink fast-food themed pattern",
 
   Tooltip_BuildingMenuObj_Fast_Food_Light_Yellow_Wall = "Fast Food Light Yellow Wall",
   Tooltip_BuildingMenuObj_Fast_Food_Light_Yellow_Frame = "Fast Food Light Yellow Door Frame",
+  Tooltip_BuildingMenuObj_Fast_Food_Light_Yellow_Corner_Wall = "Fast Food Light Yellow Corner Wall",
+  Tooltip_BuildingMenuObj_Fast_Food_Light_Yellow_Pillar = "Fast Food Light Yellow Pillar",
   Tooltip_Fast_Food_Light_Yellow_Wall = "A wall with light yellow fast-food themed pattern",
   Tooltip_Fast_Food_Light_Yellow_Door_Frame = "A door frame with light yellow fast-food themed pattern",
+  Tooltip_Storefront_Fast_Food_Light_Yellow_Pillar = "A pillar with light yellow fast-food themed pattern",
 
   Tooltip_BuildingMenuObj_Greasy_Joe_Black_Yellow_Wall = "Greasy Joe Black and Yellow Wall",
   Tooltip_BuildingMenuObj_Greasy_Joe_Black_Yellow_Frame = "Greasy Joe Black and Yellow Door Frame",
+  Tooltip_BuildingMenuObj_Greasy_Joe_Black_Yellow_Corner_Wall = "Greasy Joe Black and Yellow Corner Wall",
+  Tooltip_BuildingMenuObj_Greasy_Joe_Black_Yellow_Pillar = "Greasy Joe Black and Yellow Pillar",
   Tooltip_Greasy_Joe_Black_Yellow_Wall = "A black and yellow wall Greasy Joe themed restaurant",
   Tooltip_Greasy_Joe_Black_Yellow_Door_Frame = "A black and yellow door frame Greasy Joe themed restaurant",
+  Tooltip_Storefront_Greasy_Joe_Black_Yellow_Pillar = "A black and yellow pillar Greasy Joe themed restaurant",
 
   Tooltip_BuildingMenuObj_Greasy_Joe_Light_Green_Wall = "Greasy Joe Light Green Wall",
   Tooltip_BuildingMenuObj_Greasy_Joe_Light_Green_Frame = "Greasy Joe Light Green Door Frame",
+  Tooltip_BuildingMenuObj_Greasy_Joe_Light_Green_Corner_Wall = "Greasy Joe Light Green Corner Wall",
+  Tooltip_BuildingMenuObj_Greasy_Joe_Light_Green_Pillar = "Greasy Joe Light Green Pillar",
   Tooltip_Greasy_Joe_Light_Green_Wall = "A light green wall Greasy Joe themed",
   Tooltip_Greasy_Joe_Light_Green_Door_Frame = "A light green door frame Greasy Joe themed",
+  Tooltip_Storefront_Greasy_Joe_Light_Green_Pillar = "A light green pillar Greasy Joe themed restaurant",
 
   Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Window_Wall = "Storefront Rifle Green Window Wall",
   Tooltip_BuildingMenuObj_Storefront_Gravel_Window_Wall = "Storefront Gravel Window Wall",
@@ -37,6 +49,7 @@ Tooltip_EN = {
   Tooltip_Storefront_Rifle_Green_Pillar = "A pillar in rifle green, combining rugged durability with a sleek outdoor aesthetic.",
 
   Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Wall = "Storefront Rifle Green Wall",
+  Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Corner_Wall = "Storefront Rifle Green Corner Wall",
   Tooltip_Storefront_Rifle_Green_Wall = "A bold, rifle green wall that evokes the strength and resilience of the wilderness.",
 
   Tooltip_BuildingMenuObj_Storefront_Rifle_Green_Door_Frame = "Storefront Rifle Green Door Frame",
@@ -49,6 +62,7 @@ Tooltip_EN = {
   Tooltip_Storefront_Gravel_Pillar = "A gravel-toned pillar, perfect for grounding your storefront with natural, earthy tones.",
 
   Tooltip_BuildingMenuObj_Storefront_Gravel_Wall = "Storefront Gravel Wall",
+  Tooltip_BuildingMenuObj_Storefront_Gravel_Corner_Wall = "Storefront Gravel Corner Wall",
   Tooltip_Storefront_Gravel_Wall = "A textured gravel wall, offering a balanced mix of simplicity and rugged appeal.",
 
   Tooltip_BuildingMenuObj_Storefront_Gravel_Door_Frame = "Storefront Gravel Door Frame",
@@ -61,6 +75,7 @@ Tooltip_EN = {
   Tooltip_Storefront_River_Bed_Pillar = "A pillar in the calm, soothing tones of river bed rock, enhancing the natural beauty of your build.",
 
   Tooltip_BuildingMenuObj_Storefront_River_Bed_Wall = "Storefront River Bed Wall",
+  Tooltip_BuildingMenuObj_Storefront_River_Bed_Corner_Wall = "Storefront River Bed Corner Wall",
   Tooltip_Storefront_River_Bed_Wall = "A wall with a serene, river bed hue, evoking peace and tranquility in your storefront.",
 
   Tooltip_BuildingMenuObj_Storefront_River_Bed_Door_Frame = "Storefront River Bed Door Frame",
@@ -73,6 +88,7 @@ Tooltip_EN = {
   Tooltip_Storefront_Judge_Grey_Pillar = "A pillar in deep, authoritative judge grey, exuding stability and seriousness.",
 
   Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Wall = "Storefront Judge Grey Wall",
+  Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Corner_Wall = "Storefront Judge Grey Corner Wall",
   Tooltip_Storefront_Judge_Grey_Wall = "A wall in judge grey, perfect for a dignified and formal storefront.",
 
   Tooltip_BuildingMenuObj_Storefront_Judge_Grey_Door_Frame = "Storefront Judge Grey Door Frame",
@@ -85,6 +101,7 @@ Tooltip_EN = {
   Tooltip_Storefront_Mulled_Wine_Pillar = "A rich mulled wine pillar, bringing warmth and depth to your storefront's structure.",
 
   Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Wall = "Storefront Mulled Wine Wall",
+  Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Corner_Wall = "Storefront Mulled Wine Corner Wall",
   Tooltip_Storefront_Mulled_Wine_Wall = "A wall in mulled wine, providing a warm, welcoming atmosphere to any storefront.",
 
   Tooltip_BuildingMenuObj_Storefront_Mulled_Wine_Door_Frame = "Storefront Mulled Wine Door Frame",

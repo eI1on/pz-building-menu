@@ -24,7 +24,8 @@ local function addWallsToMenu()
                     {
                         sprite = "industry_dirkea_ddd_01_8",
                         northSprite = "industry_dirkea_ddd_01_9",
-                        corner = "industry_dirkea_ddd_01_11",
+                        corner = "industry_dirkea_ddd_01_10",
+                        pillar = "industry_dirkea_ddd_01_11",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -40,7 +41,7 @@ local function addWallsToMenu()
                     {
                         sprite = "industry_dirkea_ddd_01_18",
                         northSprite = "industry_dirkea_ddd_01_19",
-                        corner = "industry_dirkea_ddd_01_11",
+                        pillar = "industry_dirkea_ddd_01_11",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -59,7 +60,24 @@ local function addWallsToMenu()
                     {
                         sprite = "industry_dirkea_ddd_01_16",
                         northSprite = "industry_dirkea_ddd_01_17",
-                        corner = "industry_dirkea_ddd_01_11",
+                        pillar = "industry_dirkea_ddd_01_11",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Blue_Industrial_Corner_Wall",
+                    "Tooltip_Blue_Industrial_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BlueBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "industry_dirkea_ddd_01_10",
+                        pillar = "industry_dirkea_ddd_01_11",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -100,7 +118,8 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_01_76",
                         northSprite = "more_walls_ddd_01_77",
-                        corner = "more_walls_ddd_01_79",
+                        corner = "more_walls_ddd_01_78",
+                        pillar = "more_walls_ddd_01_79",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -116,7 +135,7 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_01_86",
                         northSprite = "more_walls_ddd_01_87",
-                        corner = "more_walls_ddd_01_79",
+                        pillar = "more_walls_ddd_01_79",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -135,7 +154,24 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_01_84",
                         northSprite = "more_walls_ddd_01_85",
-                        corner = "more_walls_ddd_01_79",
+                        pillar = "more_walls_ddd_01_79",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Red_Industrial_Corner_Wall",
+                    "Tooltip_Red_Industrial_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.RedBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "more_walls_ddd_01_78",
+                        pillar = "more_walls_ddd_01_79",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -172,7 +208,8 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_01_72",
                         northSprite = "more_walls_ddd_01_73",
-                        corner = "more_walls_ddd_01_75",
+                        corner = "more_walls_ddd_01_74",
+                        pillar = "more_walls_ddd_01_75",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -188,7 +225,7 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_01_82",
                         northSprite = "more_walls_ddd_01_83",
-                        corner = "more_walls_ddd_01_75",
+                        pillar = "more_walls_ddd_01_75",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -207,7 +244,24 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_01_80",
                         northSprite = "more_walls_ddd_01_81",
-                        corner = "more_walls_ddd_01_75",
+                        pillar = "more_walls_ddd_01_75",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Orange_Industrial_Corner_Wall",
+                    "Tooltip_Orange_Industrial_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.OrangeBigWoodWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "more_walls_ddd_01_74",
+                        pillar = "more_walls_ddd_01_75",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -248,7 +302,8 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_02_16",
                         northSprite = "more_walls_ddd_02_17",
-                        corner = "more_walls_ddd_02_19",
+                        corner = "more_walls_ddd_02_18",
+                        pillar = "more_walls_ddd_02_19",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -264,7 +319,7 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_02_26",
                         northSprite = "more_walls_ddd_02_27",
-                        corner = "more_walls_ddd_02_19",
+                        pillar = "more_walls_ddd_02_19",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -283,7 +338,24 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_02_24",
                         northSprite = "more_walls_ddd_02_25",
-                        corner = "more_walls_ddd_02_19",
+                        pillar = "more_walls_ddd_02_19",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Corner_Wall",
+                    "Tooltip_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "more_walls_ddd_02_18",
+                        pillar = "more_walls_ddd_02_19",
                     }
                 ),
                 BuildingMenu.createObject(
@@ -450,11 +522,13 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_02_16",
                         northSprite = "more_walls_ddd_02_17",
-                        corner = "more_walls_ddd_02_19",
+                        corner = "more_walls_ddd_02_18",
+                        pillar = "more_walls_ddd_02_19",
                         attachedSprites = {
                             sprite = { "grime_ddd_01_0", "grime_ddd_01_24" },
                             northSprite = { "grime_ddd_01_1", "grime_ddd_01_25" },
-                            corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                            corner = { "grime_ddd_01_2", "grime_ddd_01_26" },
+                            pillar = { "grime_ddd_01_3", "grime_ddd_01_27" },
                         }
                     }
                 ),
@@ -471,11 +545,11 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_02_26",
                         northSprite = "more_walls_ddd_02_27",
-                        corner = "more_walls_ddd_02_19",
+                        pillar = "more_walls_ddd_02_19",
                         attachedSprites = {
                             sprite = { "grime_ddd_01_10", "grime_ddd_01_34" },
                             northSprite = { "grime_ddd_01_11", "grime_ddd_01_35" },
-                            corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                            pillar = { "grime_ddd_01_3", "grime_ddd_01_27" },
                         }
                     }
                 ),
@@ -495,11 +569,32 @@ local function addWallsToMenu()
                     {
                         sprite = "more_walls_ddd_02_24",
                         northSprite = "more_walls_ddd_02_25",
-                        corner = "more_walls_ddd_02_19",
+                        pillar = "more_walls_ddd_02_19",
                         attachedSprites = {
                             sprite = { "grime_ddd_01_8", "grime_ddd_01_32" },
                             northSprite = { "grime_ddd_01_9", "grime_ddd_01_33" },
-                            corner = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                            pillar = { "grime_ddd_01_3", "grime_ddd_01_27" },
+                        }
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Corner_Wall",
+                    "Tooltip_Rusted_Corrugated_Metal_Sheet_Wall",
+                    BuildingMenu.onBuildMetalWall,
+                    BuildingMenu.BigCorrugatedWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureWallFrame",
+                        isThumpable = true,
+                        canBarricade = false,
+                        modData = { wallType = "wall" }
+                    },
+                    {
+                        corner = "more_walls_ddd_02_18",
+                        pillar = "more_walls_ddd_02_19",
+                        attachedSprites = {
+                            corner = { "grime_ddd_01_2", "grime_ddd_01_26" },
+                            pillar = { "grime_ddd_01_3", "grime_ddd_01_27" },
                         }
                     }
                 ),
@@ -1253,7 +1348,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_ddd_01_11",
                 northSprite = "fencing_ddd_01_8",
                 northSprite2 = "fencing_ddd_01_9",
-                corner = "fencing_ddd_01_13"
+                pillar = "fencing_ddd_01_13"
             }
         ),
         BuildingMenu.createObject(
@@ -1303,7 +1398,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_ddd_01_19",
                 northSprite = "fencing_ddd_01_16",
                 northSprite2 = "fencing_ddd_01_17",
-                corner = "fencing_ddd_01_21"
+                pillar = "fencing_ddd_01_21"
             }
         ),
         BuildingMenu.createObject(
@@ -1353,7 +1448,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_ddd_01_35",
                 northSprite = "fencing_ddd_01_32",
                 northSprite2 = "fencing_ddd_01_33",
-                corner = "fencing_ddd_01_37"
+                pillar = "fencing_ddd_01_37"
             }
         ),
         BuildingMenu.createObject(
@@ -1373,7 +1468,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_ddd_01_35",
                 northSprite = "fencing_ddd_01_32",
                 northSprite2 = "fencing_ddd_01_38",
-                corner = "fencing_ddd_01_37"
+                pillar = "fencing_ddd_01_37"
             }
         ),
         BuildingMenu.createObject(
@@ -1423,7 +1518,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_ddd_01_27",
                 northSprite = "fencing_ddd_01_24",
                 northSprite2 = "fencing_ddd_01_25",
-                corner = "fencing_ddd_01_29"
+                pillar = "fencing_ddd_01_29"
             }
         ),
         BuildingMenu.createObject(
@@ -1540,7 +1635,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_3",
                 northSprite = "location_farm_accesories_spyjack_01_0",
-                corner = "location_farm_accesories_spyjack_01_5"
+                pillar = "location_farm_accesories_spyjack_01_5"
             }
         ),
         BuildingMenu.createObject(
@@ -1558,7 +1653,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_2",
                 northSprite = "location_farm_accesories_spyjack_01_1",
-                corner = "location_farm_accesories_spyjack_01_5"
+                pillar = "location_farm_accesories_spyjack_01_5"
             }
         ),
         BuildingMenu.createObject(
@@ -1644,7 +1739,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_19",
                 northSprite = "location_farm_accesories_spyjack_01_16",
-                corner = "location_farm_accesories_spyjack_01_21"
+                pillar = "location_farm_accesories_spyjack_01_21"
             }
         ),
         BuildingMenu.createObject(
@@ -1662,7 +1757,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_18",
                 northSprite = "location_farm_accesories_spyjack_01_17",
-                corner = "location_farm_accesories_spyjack_01_21"
+                pillar = "location_farm_accesories_spyjack_01_21"
             }
         ),
         BuildingMenu.createObject(
@@ -3319,7 +3414,7 @@ local function addForestSurvivalToMenu()
             {
                 sprite = "edit_ddd_RUS_Forest Survival_01_0",
                 northSprite = "edit_ddd_RUS_Forest Survival_01_2",
-                corner = "edit_ddd_RUS_Forest Survival_01_5"
+                pillar = "edit_ddd_RUS_Forest Survival_01_5"
             }
         ),
         BuildingMenu.createObject(
@@ -3335,7 +3430,7 @@ local function addForestSurvivalToMenu()
             {
                 sprite = "edit_ddd_RUS_Forest Survival_01_6",
                 northSprite = "edit_ddd_RUS_Forest Survival_01_7",
-                corner = "edit_ddd_RUS_Forest Survival_01_5"
+                pillar = "edit_ddd_RUS_Forest Survival_01_5"
             }
         ),
         BuildingMenu.createObject(
@@ -3354,7 +3449,7 @@ local function addForestSurvivalToMenu()
             {
                 sprite = "building_menu_03_ddd_Forest_Survival_0",
                 northSprite = "building_menu_03_ddd_Forest_Survival_1",
-                corner = "edit_ddd_RUS_Forest Survival_01_5"
+                pillar = "edit_ddd_RUS_Forest Survival_01_5"
             }
         ),
         BuildingMenu.createObject(
@@ -4571,7 +4666,7 @@ local function addRoadworkDirtandGrassToMenu()
             {
                 sprite = "ramps_ddd_122",
                 northSprite = "ramps_ddd_123",
-                corner = "ramps_ddd_125"
+                pillar = "ramps_ddd_125"
             }
         ),
         BuildingMenu.createObject(

@@ -1,6 +1,7 @@
 local BM_Utils = require("BM_Utils")
 
 ---@class ISEightTileFurniture : ISBuildingObject
+---@field sprite string Sprite for the main tile
 ---@field sprite2 string Sprite for the second tile
 ---@field sprite3 string Sprite for the third tile
 ---@field sprite4 string Sprite for the fourth tile

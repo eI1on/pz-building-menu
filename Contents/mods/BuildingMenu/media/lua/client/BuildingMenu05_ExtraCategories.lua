@@ -509,7 +509,7 @@ local function addBathroomAppliancesToMenu()
             {
                 sprite = "fixtures_bathroom_01_34",
                 northSprite = "fixtures_bathroom_01_35",
-                corner = "fixtures_bathroom_01_36"
+                pillar = "fixtures_bathroom_01_36"
             }
         )
     )

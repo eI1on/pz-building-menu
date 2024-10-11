@@ -15,7 +15,7 @@ local function addGreenhouseWallsToMenu()
             {
                 sprite = "walls_commercial_02_55",
                 northSprite = "walls_commercial_02_54",
-                corner = "walls_exterior_house_01_35"
+                pillar = "walls_exterior_house_01_35"
             }
         ),
         BuildingMenu.createObject(
@@ -28,7 +28,7 @@ local function addGreenhouseWallsToMenu()
             {
                 sprite = "walls_commercial_02_51",
                 northSprite = "walls_commercial_02_50",
-                corner = "walls_exterior_house_01_35"
+                pillar = "walls_exterior_house_01_35"
             }
         ),
         BuildingMenu.createObject(
@@ -68,7 +68,7 @@ local function addGreenhouseWallsToMenu()
             {
                 sprite = "walls_greenhouse_01_9",
                 northSprite = "walls_greenhouse_01_8",
-                corner = "walls_exterior_house_01_35"
+                pillar = "walls_exterior_house_01_35"
             }
         ),
         BuildingMenu.createObject(
@@ -220,7 +220,7 @@ local function addGreenhouseWallsToMenu()
             {
                 sprite = "walls_greenhouse_01_7",
                 northSprite = "walls_greenhouse_01_6",
-                corner = "walls_exterior_house_01_51"
+                pillar = "walls_exterior_house_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -233,7 +233,7 @@ local function addGreenhouseWallsToMenu()
             {
                 sprite = "walls_greenhouse_01_3",
                 northSprite = "walls_greenhouse_01_2",
-                corner = "walls_exterior_house_01_51"
+                pillar = "walls_exterior_house_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -258,7 +258,7 @@ local function addGreenhouseWallsToMenu()
             {
                 sprite = "walls_greenhouse_01_5",
                 northSprite = "walls_greenhouse_01_0",
-                corner = "walls_exterior_house_01_51"
+                pillar = "walls_exterior_house_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -274,7 +274,7 @@ local function addGreenhouseWallsToMenu()
             {
                 sprite = "walls_greenhouse_01_11",
                 northSprite = "walls_greenhouse_01_10",
-                corner = "walls_exterior_house_01_51"
+                pillar = "walls_exterior_house_01_51"
             }
         ),
         BuildingMenu.createObject(

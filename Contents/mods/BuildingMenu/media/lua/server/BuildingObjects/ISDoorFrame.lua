@@ -1,5 +1,6 @@
 local BM_Utils = require("BM_Utils");
 
+---@class ISDoorFrame: ISBuildingObject
 ISDoorFrame = ISBuildingObject:derive("ISDoorFrame");
 
 ---Creates a doorframe and places it in the world
@@ -11,7 +12,13 @@ ISDoorFrame = ISBuildingObject:derive("ISDoorFrame");
 function ISDoorFrame:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
-	self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+
+	if not BM_Utils.checkCorner(x, y, z, north, self) then
+		self.javaObject = IsoThumpable.new(cell, self.sq, sprite, north, self);
+		BM_Utils.setAttachedSprites(self, false);
+		BM_Utils.checkPillar(x, y, z, north, self);
+	end
+
 	buildUtil.setInfo(self.javaObject, self);
 	buildUtil.consumeMaterial(self);
 
@@ -25,30 +32,8 @@ function ISDoorFrame:create(x, y, z, north, sprite)
 	self.javaObject:setName(self.name);
 	self.javaObject:setBreakSound("BreakObject");
 
-	self.sq:AddSpecialObject(self.javaObject);
+	self.sq:AddSpecialObject(self.javaObject, self:getObjectIndex());
 	self.sq:RecalcAllWithNeighbours(true);
-
-	buildUtil.checkCorner(x, y, z, north, self, self.javaObject);
-
-	if self.attachedSprites ~= nil then
-		local attachedSprites = nil;
-		if self.north then
-			attachedSprites = self.attachedSprites.northSprite;
-		elseif self.west then
-			attachedSprites = self.attachedSprites.sprite;
-		elseif self.south then
-			attachedSprites = self.attachedSprites.southSprite;
-		elseif self.east then
-			attachedSprites = self.attachedSprites.eastSprite;
-		end
-
-		if attachedSprites ~= nil then
-			self.javaObject:setAttachedAnimSprite(ArrayList:new());
-			for i = 1, #attachedSprites do
-				self.javaObject:getAttachedAnimSprite():add(getSprite(attachedSprites[i]):newInstance());
-			end
-		end
-	end
 
 	self.javaObject:transmitCompleteItemToServer();
 end
@@ -56,16 +41,14 @@ end
 ---Constructor for ISDoorFrame
 ---@param sprite string
 ---@param northSprite string
----@param corner string
 ---@return ISWall ISBuildingObject instance
-function ISDoorFrame:new(sprite, northSprite, corner)
+function ISDoorFrame:new(sprite, northSprite)
 	local o = {};
 	setmetatable(o, self);
 	self.__index = self;
 	o:init();
 	o:setSprite(sprite);
 	o:setNorthSprite(northSprite);
-	o.corner = corner;
 	o.canPassThrough = true;
 	o.isDoorFrame = true;
 	o.name = "Door_Frame";
@@ -109,4 +92,17 @@ end
 --- @param square IsoGridSquare The square where the wall will be placed
 function ISDoorFrame:render(x, y, z, square)
 	ISBuildingObject.render(self, x, y, z, square);
+end
+
+---Returns the index of the object in the square
+---@return number index The index of the object in the grid square
+function ISDoorFrame:getObjectIndex()
+	for i = self.sq:getObjects():size(), 1, -1 do
+		local object = self.sq:getObjects():get(i - 1);
+		local props = object:getProperties();
+		if props and props:Is(IsoFlagType.solidfloor) then
+			return i;
+		end
+	end
+	return -1;
 end

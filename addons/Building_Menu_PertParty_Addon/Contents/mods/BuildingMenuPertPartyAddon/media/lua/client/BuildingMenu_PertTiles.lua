@@ -20,7 +20,8 @@ local function addPertWallsToMenu()
             {
                 sprite = "pert_walls_wallpaper_1_80",
                 northSprite = "pert_walls_wallpaper_1_81",
-                corner = "pert_walls_wallpaper_1_83"
+                corner = "pert_walls_wallpaper_1_82",
+                pillar = "pert_walls_wallpaper_1_83"
             }
         ),
         BuildingMenu.createObject(
@@ -37,7 +38,7 @@ local function addPertWallsToMenu()
             {
                 sprite = "pert_walls_wallpaper_1_90",
                 northSprite = "pert_walls_wallpaper_1_91",
-                corner = "pert_walls_wallpaper_1_83"
+                pillar = "pert_walls_wallpaper_1_83"
             }
         ),
         BuildingMenu.createObject(
@@ -56,7 +57,24 @@ local function addPertWallsToMenu()
             {
                 sprite = "pert_walls_wallpaper_1_88",
                 northSprite = "pert_walls_wallpaper_1_89",
-                corner = "pert_walls_wallpaper_1_83"
+                pillar = "pert_walls_wallpaper_1_83"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Fancy_White_Wood_Panel_Corner_Wall",
+            "Tooltip_Fancy_White_Wood_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            {
+                corner = "pert_walls_wallpaper_1_82",
+                pillar = "pert_walls_wallpaper_1_83"
             }
         ),
         BuildingMenu.createObject(
@@ -100,7 +118,8 @@ local function addPertWallsToMenu()
             {
                 sprite = "pert_walls_wallpaper_1_84",
                 northSprite = "pert_walls_wallpaper_1_85",
-                corner = "pert_walls_wallpaper_1_87"
+                corner = "pert_walls_wallpaper_1_86",
+                pillar = "pert_walls_wallpaper_1_87"
             }
         ),
         BuildingMenu.createObject(
@@ -116,7 +135,7 @@ local function addPertWallsToMenu()
             {
                 sprite = "pert_walls_wallpaper_1_94",
                 northSprite = "pert_walls_wallpaper_1_95",
-                corner = "pert_walls_wallpaper_1_87"
+                pillar = "pert_walls_wallpaper_1_87"
             }
         ),
         BuildingMenu.createObject(
@@ -135,7 +154,24 @@ local function addPertWallsToMenu()
             {
                 sprite = "pert_walls_wallpaper_1_92",
                 northSprite = "pert_walls_wallpaper_1_93",
-                corner = "pert_walls_wallpaper_1_87"
+                pillar = "pert_walls_wallpaper_1_87"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Fancy_Black_Wood_Panel_Corner_Wall",
+            "Tooltip_Fancy_Black_Wood_Panel_Wall",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.BlackBigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = false,
+                modData = { wallType = "wall" }
+            },
+            {
+                corner = "pert_walls_wallpaper_1_86",
+                pillar = "pert_walls_wallpaper_1_87"
             }
         ),
         BuildingMenu.createObject(
@@ -372,7 +408,7 @@ local function addHighFencesToMenu()
                 sprite2 = "pert_fencing_01_12",
                 northSprite = "pert_fencing_01_13",
                 northSprite2 = "pert_fencing_01_9",
-                corner = "pert_fencing_01_10"
+                pillar = "pert_fencing_01_10"
             }
         ),
         BuildingMenu.createObject(
@@ -422,7 +458,7 @@ local function addHighFencesToMenu()
                 sprite2 = "pert_fencing_01_4",
                 northSprite = "pert_fencing_01_5",
                 northSprite2 = "pert_fencing_01_1",
-                corner = "pert_fencing_01_2"
+                pillar = "pert_fencing_01_2"
             }
         ),
         BuildingMenu.createObject(
@@ -473,7 +509,7 @@ local function addHighFencesToMenu()
                 sprite2 = "pert_fencing_01_28",
                 northSprite = "pert_fencing_01_29",
                 northSprite2 = "pert_fencing_01_25",
-                corner = "pert_fencing_01_26"
+                pillar = "pert_fencing_01_26"
             }
         ),
         BuildingMenu.createObject(
@@ -526,7 +562,7 @@ local function addHighFencesToMenu()
                 sprite2 = "pert_fencing_01_52",
                 northSprite = "pert_fencing_01_53",
                 northSprite2 = "pert_fencing_01_49",
-                corner = "pert_fencing_01_50"
+                pillar = "pert_fencing_01_50"
             }
         ),
         BuildingMenu.createObject(
@@ -576,7 +612,7 @@ local function addHighFencesToMenu()
                 sprite2 = "pert_fencing_01_44",
                 northSprite = "pert_fencing_01_45",
                 northSprite2 = "pert_fencing_01_41",
-                corner = "pert_fencing_01_42"
+                pillar = "pert_fencing_01_42"
             }
         ),
         BuildingMenu.createObject(
@@ -1273,7 +1309,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_0",
                 northSprite = "pert_Christmas_01_1",
-                corner = "pert_Christmas_01_3"
+                pillar = "pert_Christmas_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -1290,7 +1326,7 @@ local function addChristmasDecorationsToMenu()
             },
             {
                 sprite = "pert_Christmas_01_2",
-                corner = "pert_Christmas_01_3"
+                pillar = "pert_Christmas_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -1307,7 +1343,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_10",
                 northSprite = "pert_Christmas_01_11",
-                corner = "pert_Christmas_01_3"
+                pillar = "pert_Christmas_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -1326,7 +1362,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_8",
                 northSprite = "pert_Christmas_01_9",
-                corner = "pert_Christmas_01_3"
+                pillar = "pert_Christmas_01_3"
             }
         ),
         BuildingMenu.createObject(
@@ -1359,7 +1395,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_4",
                 northSprite = "pert_Christmas_01_5",
-                corner = "pert_Christmas_01_7"
+                pillar = "pert_Christmas_01_7"
             }
         ),
         BuildingMenu.createObject(
@@ -1376,7 +1412,7 @@ local function addChristmasDecorationsToMenu()
             },
             {
                 sprite = "pert_Christmas_01_6",
-                corner = "pert_Christmas_01_7"
+                pillar = "pert_Christmas_01_7"
             }
         ),
         BuildingMenu.createObject(
@@ -1393,7 +1429,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_14",
                 northSprite = "pert_Christmas_01_15",
-                corner = "pert_Christmas_01_7"
+                pillar = "pert_Christmas_01_7"
             }
         ),
         BuildingMenu.createObject(
@@ -1412,7 +1448,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_12",
                 northSprite = "pert_Christmas_01_13",
-                corner = "pert_Christmas_01_7"
+                pillar = "pert_Christmas_01_7"
             }
         ),
         BuildingMenu.createObject(
@@ -1653,7 +1689,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_88",
                 northSprite = "pert_Christmas_01_89",
-                corner = "pert_Christmas_01_91"
+                pillar = "pert_Christmas_01_91"
             }
         ),
         BuildingMenu.createObject(
@@ -1671,7 +1707,7 @@ local function addChristmasDecorationsToMenu()
             {
                 sprite = "pert_Christmas_01_92",
                 northSprite = "pert_Christmas_01_93",
-                corner = "pert_Christmas_01_91"
+                pillar = "pert_Christmas_01_91"
             }
         ),
         BuildingMenu.createObject(

@@ -126,6 +126,9 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
             if spritesName["northSprite2"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["northSprite2"]);
             end
+            if spritesName["corner"] then
+                BM_Utils.printPropNamesFromSprite(spritesName["corner"]);
+            end
         end
     end
 
@@ -790,7 +793,15 @@ BuildingMenu.onBuildEigthTileFurniture = function(sprites, name, playerNum, obje
 end
 
 BuildingMenu.onBuildDoorFrame = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _doorFrame = ISDoorFrame:new(sprites.sprite, sprites.northSprite, sprites.corner)
+    local _doorFrame = ISDoorFrame:new(sprites.sprite, sprites.northSprite)
+
+    if sprites.pillar then
+        _doorFrame.pillar = sprites.pillar;
+    end
+
+    if sprites.corner then
+        _doorFrame.corner = sprites.corner;
+    end
 
     if sprites.eastSprite then
         _doorFrame:setEastSprite(sprites.eastSprite)
@@ -808,7 +819,15 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildWall = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _wall = ISWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
+    local _wall = ISWall:new(sprites.sprite, sprites.northSprite)
+
+    if sprites.pillar then
+        _wall.pillar = sprites.pillar;
+    end
+
+    if sprites.corner then
+        _wall.corner = sprites.corner;
+    end
 
     if sprites.eastSprite then
         _wall:setEastSprite(sprites.eastSprite)
@@ -826,7 +845,15 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildMetalWall = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _metalWall = ISWall:new(sprites.sprite, sprites.northSprite, sprites.corner)
+    local _metalWall = ISWall:new(sprites.sprite, sprites.northSprite)
+
+    if sprites.pillar then
+        _metalWall.pillar = sprites.pillar;
+    end
+
+    if sprites.corner then
+        _metalWall.corner = sprites.corner;
+    end
 
     if sprites.eastSprite then
         _metalWall:setEastSprite(sprites.eastSprite)
@@ -848,6 +875,14 @@ BuildingMenu.onBuildWaterWell = function(sprites, name, playerNum, objectRecipe,
         SandboxVars.BuildingMenuRecipes.maxWaterWellStorageAmount or 1500, getSpecificPlayer(playerNum))
 
     _waterwell.modData['IsWaterWell'] = true
+
+    if sprites.eastSprite then
+        _waterwell:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _waterwell:setSouthSprite(sprites.southSprite)
+    end
 
     return _waterwell
 end
@@ -978,7 +1013,23 @@ end
 ---@param playerNum number
 ---@return ISBuildingObject
 BuildingMenu.onBuildWindowWall = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _windowWall = ISWindowWallObj:new(sprites.sprite, sprites.northSprite, playerNum)
+    local _windowWall = ISWindowWallObj:new(sprites.sprite, sprites.northSprite, playerNum);
+
+    if sprites.pillar then
+        _windowWall.pillar = sprites.pillar;
+    end
+
+    if sprites.corner then
+        _windowWall.corner = sprites.corner;
+    end
+
+    if sprites.eastSprite then
+        _windowWall:setEastSprite(sprites.eastSprite);
+    end
+
+    if sprites.southSprite then
+        _windowWall:setSouthSprite(sprites.southSprite);
+    end
 
     return _windowWall
 end
@@ -989,6 +1040,14 @@ end
 ---@return ISBuildingObject
 BuildingMenu.onBuildWindow = function(sprites, name, playerNum, objectRecipe, objectOptions)
     local _window = ISWindowObj:new(sprites.sprite, sprites.northSprite, playerNum);
+
+    if sprites.eastSprite then
+        _window:setEastSprite(sprites.eastSprite)
+    end
+
+    if sprites.southSprite then
+        _window:setSouthSprite(sprites.southSprite)
+    end
 
     return _window;
 end

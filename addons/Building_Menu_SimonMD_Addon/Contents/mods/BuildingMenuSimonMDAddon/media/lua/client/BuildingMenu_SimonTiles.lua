@@ -20,7 +20,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_92",
                 northSprite = "walls_Simon_MD_80",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -38,7 +38,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_93",
                 northSprite = "walls_Simon_MD_81",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -56,7 +56,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_94",
                 northSprite = "walls_Simon_MD_82",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -74,7 +74,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_95",
                 northSprite = "walls_Simon_MD_83",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -92,7 +92,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_96",
                 northSprite = "walls_Simon_MD_84",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -110,7 +110,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_97",
                 northSprite = "walls_Simon_MD_85",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -128,7 +128,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_98",
                 northSprite = "walls_Simon_MD_86",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -146,7 +146,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_99",
                 northSprite = "walls_Simon_MD_87",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -162,7 +162,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_119",
                 northSprite = "walls_Simon_MD_112",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -178,7 +178,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_118",
                 northSprite = "walls_Simon_MD_113",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -194,7 +194,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_117",
                 northSprite = "walls_Simon_MD_114",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -210,7 +210,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_116",
                 northSprite = "walls_Simon_MD_115",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -229,7 +229,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_111",
                 northSprite = "walls_Simon_MD_104",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -248,7 +248,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_110",
                 northSprite = "walls_Simon_MD_105",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -267,7 +267,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_109",
                 northSprite = "walls_Simon_MD_106",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -286,7 +286,7 @@ local function addSimonMDWallsToMenu()
             {
                 sprite = "walls_Simon_MD_108",
                 northSprite = "walls_Simon_MD_107",
-                corner = "constructedobjects_01_51"
+                pillar = "constructedobjects_01_51"
             }
         ),
         BuildingMenu.createObject(
@@ -336,7 +336,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_32",
                 northSprite = "fencing_Simon_MD_36",
                 northSprite2 = "fencing_Simon_MD_37",
-                corner = ""
+                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -371,7 +371,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_35",
                 northSprite = "fencing_Simon_MD_39",
                 northSprite2 = "fencing_Simon_MD_40",
-                corner = ""
+                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -407,7 +407,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_44",
                 northSprite = "fencing_Simon_MD_48",
                 northSprite2 = "fencing_Simon_MD_49",
-                corner = ""
+                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -442,7 +442,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_47",
                 northSprite = "fencing_Simon_MD_51",
                 northSprite2 = "fencing_Simon_MD_52",
-                corner = ""
+                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -478,7 +478,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_55",
                 northSprite = "fencing_Simon_MD_58",
                 northSprite2 = "fencing_Simon_MD_59",
-                corner = ""
+                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -498,7 +498,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_57",
                 northSprite = "fencing_Simon_MD_60",
                 northSprite2 = "fencing_Simon_MD_61",
-                corner = ""
+                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -518,7 +518,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_63",
                 northSprite = "fencing_Simon_MD_66",
                 northSprite2 = "fencing_Simon_MD_67",
-                corner = ""
+                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -538,7 +538,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_Simon_MD_65",
                 northSprite = "fencing_Simon_MD_68",
                 northSprite2 = "fencing_Simon_MD_69",
-                corner = ""
+                pillar = ""
             }
         ),
     }

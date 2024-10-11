@@ -210,4 +210,39 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "PickUpTool",
         "PlaceTool",
     });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "industry_dirkea_ddd_01_10"
+    -- }, {
+    --     { "CornerWestWall", "industry_dirkea_ddd_01_8", false },
+    --     { "CornerNorthWall",  "industry_dirkea_ddd_01_9", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "more_walls_ddd_01_78"
+    -- }, {
+    --     { "CornerWestWall", "more_walls_ddd_01_76", false },
+    --     { "CornerNorthWall",  "more_walls_ddd_01_77", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "more_walls_ddd_01_74"
+    -- }, {
+    --     { "CornerWestWall", "more_walls_ddd_01_72", false },
+    --     { "CornerNorthWall",  "more_walls_ddd_01_73", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "more_walls_ddd_02_18"
+    -- }, {
+    --     { "CornerWestWall", "more_walls_ddd_02_16", false },
+    --     { "CornerNorthWall",  "more_walls_ddd_02_17", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "more_walls_ddd_02_18"
+    -- }, {
+    --     { "CornerWestWall", "more_walls_ddd_02_16", false },
+    --     { "CornerNorthWall",  "more_walls_ddd_02_17", false }
+    -- });
 end)

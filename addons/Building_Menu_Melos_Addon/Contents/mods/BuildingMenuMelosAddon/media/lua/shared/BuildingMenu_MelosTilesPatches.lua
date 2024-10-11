@@ -34,8 +34,8 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_walls_garage_02_97",
         "melos_tiles_walls_garage_02_98",
     }, {
-        { "WallW", "", false },
-        { "WallW", "", true },
+        { "WallW", "", false }, {
+        "WallW", "", true },
     });
 
     BM_Utils.setOrUnsetSpriteProperties(manager, {
@@ -70,8 +70,8 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_walls_garage_02_100",
         "melos_tiles_walls_garage_02_101",
     }, {
-        { "WallN", "", false },
-        { "WallN", "", true },
+        { "WallN", "", false }, {
+        "WallN", "", true },
     });
 
     BM_Utils.setOrUnsetSpriteProperties(manager, {
@@ -92,11 +92,11 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_gardencenter_02_118",
         "melos_tiles_gardencenter_02_119",
     }, {
-        { "ContainerCapacity",  "200",  false },
-        { "container",          "logs", false },
-        { "IsMoveAble",         "",     false },
-        { "CanBreak",           "",     false },
-        { IsoFlagType.container },
+        { "ContainerCapacity", "200", false }, {
+        "container", "logs", false }, {
+        "IsMoveAble", "", false }, {
+        "CanBreak", "", false }, {
+        IsoFlagType.container },
     });
 
     BM_Utils.setOrUnsetSpriteProperties(manager, {
@@ -109,11 +109,11 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "melos_tiles_furniture_seating_01_58",
         "melos_tiles_furniture_seating_01_59",
     }, {
-        { "CanScrap",   "",       false },
-        { "MetalBars",  "",       false },
-        { "PickUpTool", "Hammer", false },
-        { "PlaceTool",  "Hammer", false },
-        { "IsMoveAble", "",       false },
+        { "CanScrap", "", false }, {
+        "MetalBars", "", false }, {
+        "PickUpTool", "Hammer", false }, {
+        "PlaceTool", "Hammer", false }, {
+        "IsMoveAble", "", false },
     });
 
     local function setSpriteProperties(baseSpriteName, startNumbers, offsets)
@@ -131,10 +131,10 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     end
 
     local offsets = {
-        { "Noffset", "1" },
-        { "Woffset", "-1" },
-        { "Noffset", "1" },
-        { "Woffset", "-1" }
+        { "Noffset", "1" }, {
+        "Woffset", "-1" }, {
+        "Noffset", "1" }, {
+        "Woffset", "-1" }
     };
 
     -- for Rustic Windows
@@ -147,4 +147,228 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
     for _, suffix in ipairs({ "", "a", "b", "c" }) do
         setSpriteProperties("melos_tiles_windows_06" .. suffix .. "_", startNumbers, offsets);
     end
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_castle_01_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_castle_01_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_castle_01_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_castle_01_34"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_castle_01_32", false },
+    --     { "CornerNorthWall",  "melos_tiles_castle_01_33", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_castle_01_38"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_castle_01_36", false },
+    --     { "CornerNorthWall",  "melos_tiles_castle_01_37", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01a_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01a_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01a_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01b_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01b_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01b_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01c_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01c_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01c_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01d_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01d_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01d_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01e_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01e_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01e_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01f_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01f_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01f_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01g_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01g_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01g_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_brick_01h_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_brick_01h_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_brick_01h_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01a_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01a_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01a_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01b_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01b_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01b_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01c_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01c_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01c_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01d_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01d_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01d_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01e_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01e_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01e_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01f_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01f_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01f_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01g_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01g_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01g_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01h_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01h_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01h_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01i_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01i_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01i_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_01j_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_01j_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_01j_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_08_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_08_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_08_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_01_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_01_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_01_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_02_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_02_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_02_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_09_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_09_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_09_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_04_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_04_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_04_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_03_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_03_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_03_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_05_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_05_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_05_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_10_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_10_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_10_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_07_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_07_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_07_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_11_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_11_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_11_1", false }
+    -- });
+
+    -- BM_Utils.setOrUnsetSpriteProperties(manager, {
+    --     "melos_tiles_walls_bathroom_ddd_add_12_2"
+    -- }, {
+    --     { "CornerWestWall", "melos_tiles_walls_bathroom_ddd_add_12_0", false },
+    --     { "CornerNorthWall",  "melos_tiles_walls_bathroom_ddd_add_12_1", false }
+    -- });
 end)
