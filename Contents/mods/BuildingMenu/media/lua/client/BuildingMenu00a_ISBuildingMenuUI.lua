@@ -44,13 +44,14 @@ function BuildingMenuTilePickerList:render()
                     self.posToObjectNameTable[r] = self.posToObjectNameTable[r] or {};
                     self.posToObjectNameTable[r][c] = { objDef = objDef, canBuild = false };
 
-                    local spriteKeys = {"sprite", "northSprite", "corner"};
+                    local spriteKeys = { "sprite", "northSprite", "corner" };
                     local objSpriteName, attachedSprites = nil, nil;
                     for i = 1, #spriteKeys do
                         local spriteName = objDef.data.sprites[spriteKeys[i]];
                         if spriteName then
                             objSpriteName = spriteName;
-                            attachedSprites = objDef.data.sprites.attachedSprites and objDef.data.sprites.attachedSprites[key];
+                            attachedSprites = objDef.data.sprites.attachedSprites and
+                            objDef.data.sprites.attachedSprites[key];
                             break;
                         end
                     end
@@ -75,7 +76,8 @@ function BuildingMenuTilePickerList:drawSprite(spriteName, c, r)
         local texture = self.textureCache[spriteName] or getTexture(spriteName);
         self.textureCache[spriteName] = texture;
         if texture then
-            self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT, 1.0, 1.0, 1.0, 1.0);
+            self:drawTextureScaledAspect(texture, (c - 1) * TILE_WIDTH, (r - 1) * TILE_HEIGHT, TILE_WIDTH, TILE_HEIGHT,
+                1.0, 1.0, 1.0, 1.0);
         end
     end
 end
@@ -654,7 +656,6 @@ function ISBuildingMenuUI.openPanel(playerObj)
         y = (screenHeight / 2) - (height / 2);
     end
 
-    -- make sure the UI is within screen bounds
     if x + width > screenWidth then
         x = screenWidth - width;
     end
@@ -665,13 +666,22 @@ function ISBuildingMenuUI.openPanel(playerObj)
     if y < 0 then y = 0; end
 
     if not objectsInitialized then
+        local startTime = getTimestampMs();
         triggerEvent("OnInitializeBuildingMenuRecipes");
-        triggerEvent("OnInitializeBuildingMenuObjects"); --- init objects take about 150ms
-        objectsInitialized = true;
+        local midTime = getTimestampMs();
+        triggerEvent("OnInitializeBuildingMenuObjects");
+        local endTime = getTimestampMs();
 
-        if BuildingMenu.ObjectCounts then BM_Logger:logTable(BM_Constants.LOG_LEVELS.DEBUG, BuildingMenu.ObjectCounts); end
+        local recipesDuration = midTime - startTime;
+        local objectsDuration = endTime - midTime;
+
+        BM_Logger:debug("Time taken to initialize recipes: " .. recipesDuration .. " ms");
+        BM_Logger:debug("Time taken to initialize objects: " .. objectsDuration .. " ms");
+
+        objectsInitialized = true;
     end
 
+    local uiStartTime = getTimestampMs();
     containerDetailsBySpriteCache = {};
 
     local BMUI = ISBuildingMenuUI.instance;
@@ -682,13 +692,17 @@ function ISBuildingMenuUI.openPanel(playerObj)
         ISBuildingMenuUI.instance = window;
         if JoypadState.players[window.playerNum + 1] then
             setJoypadFocus(window.playerNum, window);
-        end;
+        end
     else
         local playerNum = playerObj:getPlayerNum();
         if JoypadState.players[playerNum + 1] then
             setJoypadFocus(playerNum, BMUI);
         end
     end
+
+    local uiEndTime = getTimestampMs();
+    local uiDuration = uiEndTime - uiStartTime;
+    BM_Logger:debug("Time taken to initialize UI: " .. uiDuration .. " ms");
 end
 
 function ISBuildingMenuUI:close()

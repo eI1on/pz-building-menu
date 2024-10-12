@@ -1813,7 +1813,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brick_and_Concrete_High_Fence",
             "",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -1823,10 +1823,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "LC_fencing_41",
-                sprite2 = "LC_fencing_43",
+                sprite = "LC_fencing_43",
+                sprite2 = "LC_fencing_41",
                 northSprite = "LC_fencing_40",
                 northSprite2 = "LC_fencing_39",
+                corner = "LC_fencing_42",
                 pillar = "LC_fencing_38"
             }
         ),
@@ -1843,7 +1844,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "LC_fencing_42" }
+            {
+                corner = "LC_fencing_42",
+                pillar = "LC_fencing_38"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Brick_and_Concrete_High_Fence_Corner",
@@ -1883,7 +1887,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_with_Arched_Drainage",
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_with_Arched_Drainage",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
@@ -1893,10 +1897,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "LC_fencing_64",
-                sprite2 = "LC_fencing_65",
+                sprite = "LC_fencing_65",
+                sprite2 = "LC_fencing_64",
                 northSprite = "LC_fencing_66",
                 northSprite2 = "LC_fencing_67",
+                corner = "LC_fencing_68",
                 pillar = "LC_fencing_69"
             }
         ),
@@ -1914,7 +1919,10 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "LC_fencing_68" }
+            {
+                corner = "LC_fencing_68",
+                pillar = "LC_fencing_69"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Pillar",
@@ -1937,7 +1945,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence",
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
@@ -1947,10 +1955,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "LC_fencing_72",
-                sprite2 = "LC_fencing_73",
+                sprite = "LC_fencing_73",
+                sprite2 = "LC_fencing_72",
                 northSprite = "LC_fencing_74",
                 northSprite2 = "LC_fencing_75",
+                corner = "LC_fencing_76",
                 pillar = "LC_fencing_69"
             }
         ),
@@ -1968,7 +1977,10 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "LC_fencing_76" }
+            {
+                corner = "LC_fencing_76",
+                pillar = "LC_fencing_69"
+            }
         ),
 
 
@@ -1976,7 +1988,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_with_Climbing_Ivy",
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_with_Climbing_Vines",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
@@ -1986,10 +1998,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "LC_fencing_80",
-                sprite2 = "LC_fencing_81",
+                sprite = "LC_fencing_81",
+                sprite2 = "LC_fencing_80",
                 northSprite = "LC_fencing_82",
                 northSprite2 = "LC_fencing_83",
+                corner = "LC_fencing_84",
                 pillar = "LC_fencing_85"
             }
         ),
@@ -2007,7 +2020,10 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "LC_fencing_84" }
+            {
+                corner = "LC_fencing_84",
+                pillar = "LC_fencing_85"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_Pillar_with_Climbing_Vines",
@@ -2030,7 +2046,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_High_Fence_with_Hedge",
             "Tooltip_BuildingMenuObj_Decorative_Wrought_Iron_and_Brick_with_Hedge",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
@@ -2040,10 +2056,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "LC_fencing_88",
-                sprite2 = "LC_fencing_89",
+                sprite = "LC_fencing_89",
+                sprite2 = "LC_fencing_88",
                 northSprite = "LC_fencing_90",
                 northSprite2 = "LC_fencing_91",
+                corner = "LC_fencing_92",
                 pillar = "LC_fencing_85"
             }
         ),
@@ -2061,14 +2078,17 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "LC_fencing_92" }
+            {
+                corner = "LC_fencing_92",
+                pillar = "LC_fencing_85"
+            }
         ),
 
 
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Simple_Wrought_Iron_and_Brick_High_Fence",
             "Tooltip_BuildingMenuObj_Simple_Wrought_Iron_and_Brick",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
@@ -2078,10 +2098,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "LC_fencing_96",
-                sprite2 = "LC_fencing_97",
+                sprite = "LC_fencing_97",
+                sprite2 = "LC_fencing_96",
                 northSprite = "LC_fencing_98",
                 northSprite2 = "LC_fencing_99",
+                corner = "LC_fencing_100",
                 pillar = "LC_fencing_69"
             }
         ),
@@ -2099,7 +2120,10 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "LC_fencing_100" }
+            {
+                corner = "LC_fencing_100",
+                pillar = "LC_fencing_69"
+            }
         ),
     }
     BuildingMenu.addObjectsToCategories(

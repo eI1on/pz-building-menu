@@ -17,13 +17,14 @@ local getText = getText
 --- @param newItem table The new item to add to the list if the keyValue is not found
 --- @return table newItem The found or newly added item
 local function findOrCreateItem(list, keyName, keyValue, newItem)
-    for _, item in ipairs(list) do
+    for i = 1, #list do
+        local item = list[i]
         if item[keyName] == keyValue then
-            return item
+            return item;
         end
     end
-    table.insert(list, newItem)
-    return newItem
+    table.insert(list, newItem);
+    return newItem;
 end
 
 --- Adds objects to a specific subcategory under a category in a tab
@@ -35,25 +36,26 @@ end
 --- @param objects table The list of objects to add to the subcategory
 function BuildingMenu.addObjectsToCategories(tabName, categoryName, categoryIcon, subcategoryName, subCategoryIcon,
                                              objects)
-    if not BuildingMenu.Tabs then return end
+    if not BuildingMenu.Tabs then return; end
 
-    local tab = findOrCreateItem(BuildingMenu.Tabs, "tabName", tabName, { tabName = tabName, categories = {} })
+    local tab = findOrCreateItem(BuildingMenu.Tabs, "tabName", tabName,
+        { tabName = tabName, categories = table.newarray() });
     local category = findOrCreateItem(tab.categories, "categoryName", categoryName,
-        { categoryName = categoryName, subcategories = {} })
+        { categoryName = categoryName, subcategories = table.newarray() });
 
     if categoryIcon ~= nil and categoryIcon ~= "" then
-        category.categoryIcon = category.categoryIcon or categoryIcon
+        category.categoryIcon = category.categoryIcon or categoryIcon;
     end
 
     local subcategory = findOrCreateItem(category.subcategories, "subcategoryName", subcategoryName,
-        { subcategoryName = subcategoryName, objects = {} })
+        { subcategoryName = subcategoryName, objects = table.newarray() });
 
     if subCategoryIcon ~= nil and subCategoryIcon ~= "" then
-        subcategory.subCategoryIcon = subcategory.subCategoryIcon or subCategoryIcon
+        subcategory.subCategoryIcon = subcategory.subCategoryIcon or subCategoryIcon;
     end
 
-    for _, obj in ipairs(objects) do
-        table.insert(subcategory.objects, obj)
+    for i = 1, #objects do
+        table.insert(subcategory.objects, objects[i]);
     end
 
     if not BuildingMenu.ObjectCounts[tabName] then
@@ -105,21 +107,19 @@ function BuildingMenu.createObject(displayName, description, action, recipe, isR
     }
 end
 
-BuildingMenu.ObjectCounts = {};
+BuildingMenu.ObjectCounts = {}
 
 --- Initializes the tabs in the building menu with default tab values
-BuildingMenu.Tabs = {
+BuildingMenu.Tabs = table.newarray(
     {
         tabName = getText("IGUI_BuildingMenuTab_Favorite"),
-        categories = {
-        },
+        categories = table.newarray(),
     },
     {
         tabName = getText("IGUI_BuildingMenuTab_General"),
-        categories = {
-        }
+        categories = table.newarray(),
     }
-}
+)
 
 
 local function addWoodWallsToMenu()
@@ -18733,7 +18733,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
@@ -18743,10 +18743,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_01_50",
-                sprite2 = "fencing_01_51",
+                sprite = "fencing_01_51",
+                sprite2 = "fencing_01_50",
                 northSprite = "fencing_01_48",
                 northSprite2 = "fencing_01_49",
+                corner = "fencing_01_52",
                 pillar = "fencing_01_53"
             }
         ),
@@ -18764,7 +18765,10 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "fencing_01_52" }
+            {
+                corner = "fencing_01_52",
+                pillar = "fencing_01_53"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Chainlink_and_Razor_Wire_Fence_Post",
@@ -18785,7 +18789,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fence_Chain",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
@@ -18795,10 +18799,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_01_58",
-                sprite2 = "fencing_01_59",
+                sprite = "fencing_01_59",
+                sprite2 = "fencing_01_58",
                 northSprite = "fencing_01_56",
                 northSprite2 = "fencing_01_57",
+                corner = "fencing_01_60",
                 pillar = "fencing_01_61"
             }
         ),
@@ -18815,7 +18820,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_60" }
+            {
+                corner = "fencing_01_60",
+                pillar = "fencing_01_61"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Fence_Chain_Post",
@@ -18835,7 +18843,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Decorative_Wooden_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighWoodenFenceRecipe,
             true,
             {
@@ -18845,8 +18853,8 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_01_10",
-                sprite2 = "fencing_01_11",
+                sprite = "fencing_01_11",
+                sprite2 = "fencing_01_10",
                 northSprite = "fencing_01_8",
                 northSprite2 = "fencing_01_9",
                 pillar = "fencing_01_13"
@@ -18870,7 +18878,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wooden_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighWoodenFenceRecipe,
             true,
             {
@@ -18884,6 +18892,7 @@ local function addHighFencesToMenu()
                 sprite2 = "fencing_01_72",
                 northSprite = "fencing_01_73",
                 northSprite2 = "fencing_01_73",
+                corner = "fencing_01_75",
                 pillar = "fencing_01_74"
             }
         ),
@@ -18900,7 +18909,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_75" }
+            {
+                corner = "fencing_01_75",
+                pillar = "fencing_01_74"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wooden_Fence_Post",
@@ -18920,7 +18932,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighMetalBarsFenceRecipe,
             true,
             {
@@ -18930,10 +18942,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_01_66",
-                sprite2 = "fencing_01_67",
+                sprite = "fencing_01_67",
+                sprite2 = "fencing_01_66",
                 northSprite = "fencing_01_64",
                 northSprite2 = "fencing_01_65",
+                corner = "fencing_01_68",
                 pillar = "fencing_01_69"
             }
         ),
@@ -18950,7 +18963,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_68" }
+            {
+                corner = "fencing_01_68",
+                pillar = "fencing_01_69"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Tall_Wrought_Iron_Fence_Post",
@@ -18970,7 +18986,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wired_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
@@ -18980,10 +18996,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_01_82",
-                sprite2 = "fencing_01_83",
+                sprite = "fencing_01_83",
+                sprite2 = "fencing_01_82",
                 northSprite = "fencing_01_80",
-                northSprite2 = "fencing_01_81"
+                northSprite2 = "fencing_01_81",
+                corner = "fencing_01_84",
             }
         ),
         BuildingMenu.createObject(
@@ -18999,12 +19016,12 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_84" }
+            { corner = "fencing_01_84" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wired_Razor_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
@@ -19014,10 +19031,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_01_90",
-                sprite2 = "fencing_01_91",
+                sprite = "fencing_01_91",
+                sprite2 = "fencing_01_90",
                 northSprite = "fencing_01_88",
-                northSprite2 = "fencing_01_89"
+                northSprite2 = "fencing_01_89",
+                corner = "fencing_01_92",
             }
         ),
         BuildingMenu.createObject(
@@ -19034,7 +19052,7 @@ local function addHighFencesToMenu()
                 isCorner = true,
                 hoppable = false
             },
-            { sprite = "fencing_01_92" }
+            { corner = "fencing_01_92" }
         )
     }
 
@@ -19077,7 +19095,7 @@ local function addLowAndRailingFencesToMenu()
                 hoppable = true,
                 blockAllTheSquare = false
             },
-            { sprite = "fencing_01_2", northSprite = "fencing_01_1", pillar = "fencing_01_0" }
+            { sprite = "fencing_01_2", northSprite = "fencing_01_1", corner = "fencing_01_3", pillar = "fencing_01_0" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wrought_Iron_Fence_Corner",
@@ -19092,7 +19110,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_3" }
+            { corner = "fencing_01_3", pillar = "fencing_01_0" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Picket_Fence_Post",
@@ -19121,7 +19139,7 @@ local function addLowAndRailingFencesToMenu()
                 hoppable = true,
                 blockAllTheSquare = false
             },
-            { sprite = "fencing_01_4", northSprite = "fencing_01_5", pillar = "fencing_01_7" }
+            { sprite = "fencing_01_4", northSprite = "fencing_01_5", corner = "fencing_01_6", pillar = "fencing_01_7" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Picket_Fence_Corner",
@@ -19136,7 +19154,7 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_01_6" }
+            { corner = "fencing_01_6", pillar = "fencing_01_7" }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Grey_Wood_Fence_Post",
@@ -19168,6 +19186,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "walls_exterior_wooden_01_60",
                 northSprite = "walls_exterior_wooden_01_61",
+                corner = "walls_exterior_wooden_01_62",
                 pillar = "walls_exterior_wooden_01_63"
             }
         ),
@@ -19184,7 +19203,10 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "walls_exterior_wooden_01_62" }
+            {
+                corner = "walls_exterior_wooden_01_62",
+                pillar = "walls_exterior_wooden_01_63"
+            }
         )
     }
     BuildingMenu.addObjectsToCategories(
@@ -19227,6 +19249,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "fixtures_railings_01_24",
                 northSprite = "fixtures_railings_01_25",
+                corner = "fixtures_railings_01_26",
                 pillar = "fixtures_railings_01_27"
             }
         ),
@@ -19243,7 +19266,10 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_26" }
+            {
+                corner = "fixtures_railings_01_26",
+                pillar = "fixtures_railings_01_27"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Railing_Tall_Post",
@@ -19394,6 +19420,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "fixtures_railings_01_64",
                 northSprite = "fixtures_railings_01_65",
+                corner = "fixtures_railings_01_66",
                 pillar = "fixtures_railings_01_67"
             }
         ),
@@ -19410,7 +19437,10 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_66" }
+            {
+                corner = "fixtures_railings_01_66",
+                pillar = "fixtures_railings_01_67"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Railing_Tall_Post",
@@ -19547,6 +19577,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "fixtures_railings_01_28",
                 northSprite = "fixtures_railings_01_29",
+                corner = "fixtures_railings_01_30",
                 pillar = "fixtures_railings_01_31"
             }
         ),
@@ -19563,7 +19594,10 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_30" }
+            {
+                corner = "fixtures_railings_01_30",
+                pillar = "fixtures_railings_01_31"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Metal_Railing_Post",
@@ -19595,6 +19629,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "fixtures_railings_01_36",
                 northSprite = "fixtures_railings_01_37",
+                corner = "fixtures_railings_01_38",
                 pillar = "fixtures_railings_01_39"
             }
         ),
@@ -19611,7 +19646,10 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fixtures_railings_01_38" }
+            {
+                corner = "fixtures_railings_01_38",
+                pillar = "fixtures_railings_01_39"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Rail_Fence_Post",
@@ -19643,6 +19681,24 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "fixtures_railings_01_112",
                 northSprite = "fixtures_railings_01_113",
+                corner = "fixtures_railings_01_114",
+                pillar = "fixtures_railings_01_115"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Rail_Corner_Fence",
+            "Tooltip_Mall_Rail_Fence",
+            BuildingMenu.onBuildMetalWall,
+            BuildingMenu.MetalFencePostRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                corner = "fixtures_railings_01_114",
                 pillar = "fixtures_railings_01_115"
             }
         ),
@@ -19676,9 +19732,27 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "fixtures_railings_01_116",
                 northSprite = "fixtures_railings_01_117",
+                corner = "fixtures_railings_01_118",
                 pillar = "fixtures_railings_01_119"
             }
-        )
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_Grey_Rail_Corner_Fence",
+            "Tooltip_Mall_Rail_Fence",
+            BuildingMenu.onBuildMetalWall,
+            BuildingMenu.MetalFencePostRecipe,
+            true,
+            {
+                completionSound = "BuildMetalStructureMedium",
+                isThumpable = true,
+                hoppable = true,
+                blockAllTheSquare = false
+            },
+            {
+                corner = "fixtures_railings_01_118",
+                pillar = "fixtures_railings_01_119"
+            }
+        ),
     }
     BuildingMenu.addObjectsToCategories(
         getText("IGUI_BuildingMenuTab_General"),

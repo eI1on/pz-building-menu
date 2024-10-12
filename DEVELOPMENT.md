@@ -959,7 +959,7 @@ sprites =   {
 
 <br>
 
-`BuildingMenu.onBuildHighMetalFence`:
+`BuildingMenu.onBuildHighDoubleFence`:
 
 ```lua
 sprites =   {

@@ -16780,7 +16780,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
@@ -16790,10 +16790,12 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "melos_tiles_fencing_02_50",
-                sprite2 = "melos_tiles_fencing_02_51",
+                sprite = "melos_tiles_fencing_02_51",
+                sprite2 = "melos_tiles_fencing_02_50",
                 northSprite = "melos_tiles_fencing_02_49",
-                northSprite2 = "melos_tiles_fencing_02_48"
+                northSprite2 = "melos_tiles_fencing_02_48",
+                corner = "melos_tiles_fencing_02_52",
+                pillar = "melos_tiles_fencing_02_53",
             }
         ),
         BuildingMenu.createObject(
@@ -16809,12 +16811,15 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_fencing_02_52" }
+            {
+                corner = "melos_tiles_fencing_02_52",
+                pillar = "melos_tiles_fencing_02_53"
+            }
         ),
         BuildingMenu.createObject(
             "",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighWireFenceRecipe,
             true,
             {
@@ -16824,10 +16829,12 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "melos_tiles_fencing_02_58",
-                sprite2 = "melos_tiles_fencing_02_59",
+                sprite = "melos_tiles_fencing_02_59",
+                sprite2 = "melos_tiles_fencing_02_58",
                 northSprite = "melos_tiles_fencing_02_57",
-                northSprite2 = "melos_tiles_fencing_02_56"
+                northSprite2 = "melos_tiles_fencing_02_56",
+                corner = "melos_tiles_fencing_02_60",
+                pillar = "melos_tiles_fencing_02_61"
             }
         ),
         BuildingMenu.createObject(
@@ -16843,7 +16850,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "melos_tiles_fencing_02_60" }
+            {
+                corner = "melos_tiles_fencing_02_60",
+                pillar = "melos_tiles_fencing_02_61"
+            }
         ),
         BuildingMenu.createObject(
             "",
@@ -16882,7 +16892,7 @@ local function addHighFencesToMenu()
             "Tooltip_High_Metal_Fence_Generic",
             BuildingMenu.onBuildWall,
             BuildingMenu.HighWireFencePostRecipe,
-            "Make Metal Fences",
+            true,
             {
                 completionSound = "BuildMetalStructureMedium",
                 canBeAlwaysPlaced = true,

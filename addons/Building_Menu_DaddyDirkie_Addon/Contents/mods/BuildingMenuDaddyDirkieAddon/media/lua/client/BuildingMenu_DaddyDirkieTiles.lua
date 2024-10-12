@@ -387,7 +387,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_24", northSprite = "building_menu_walls_exterior_roofs_ddd_01_37" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_24", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_37" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_2",
@@ -401,7 +402,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_25", northSprite = "building_menu_walls_exterior_roofs_ddd_01_36" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_25", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_36" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_3",
@@ -415,7 +417,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_26", northSprite = "building_menu_walls_exterior_roofs_ddd_01_35" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_26", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_35" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_4",
@@ -429,7 +432,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_32", northSprite = "building_menu_walls_exterior_roofs_ddd_01_29" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_32", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_29" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_5",
@@ -443,7 +447,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_33", northSprite = "building_menu_walls_exterior_roofs_ddd_01_28" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_33", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_28" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_Slope_Wall_6",
@@ -457,7 +462,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_34", northSprite = "building_menu_walls_exterior_roofs_ddd_01_27" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_34", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_27" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Small",
@@ -471,7 +477,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_39", northSprite = "building_menu_walls_exterior_roofs_ddd_01_31" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_39", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_31" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Medium",
@@ -485,7 +492,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_38", northSprite = "building_menu_walls_exterior_roofs_ddd_01_30" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_38", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_30" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Corrugated_Metal_Sheet_Roof_End_Big",
@@ -499,7 +507,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_40", northSprite = "building_menu_walls_exterior_roofs_ddd_01_41" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_40", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_41" }
                 )
             }
         },
@@ -630,7 +639,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_0", northSprite = "building_menu_walls_exterior_roofs_ddd_01_13" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_0", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_13" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_2",
@@ -644,7 +654,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_1", northSprite = "building_menu_walls_exterior_roofs_ddd_01_12" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_1", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_12" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_3",
@@ -658,7 +669,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_2", northSprite = "building_menu_walls_exterior_roofs_ddd_01_11" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_2", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_11" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_4",
@@ -672,7 +684,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_8", northSprite = "building_menu_walls_exterior_roofs_ddd_01_5" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_8", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_5" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_5",
@@ -686,7 +699,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_9", northSprite = "building_menu_walls_exterior_roofs_ddd_01_4" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_9", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_4" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_Slope_Wall_6",
@@ -700,7 +714,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_10", northSprite = "building_menu_walls_exterior_roofs_ddd_01_3" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_10", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_3" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Small",
@@ -714,7 +729,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_15", northSprite = "building_menu_walls_exterior_roofs_ddd_01_7" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_15", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_7" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Medium",
@@ -728,7 +744,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_14", northSprite = "building_menu_walls_exterior_roofs_ddd_01_6" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_14", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_6" }
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Rusted_Corrugated_Metal_Sheet_Roof_End_Big",
@@ -742,7 +759,8 @@ local function addWallsToMenu()
                         canBarricade = false,
                         modData = { wallType = "wall" }
                     },
-                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_16", northSprite = "building_menu_walls_exterior_roofs_ddd_01_17" }
+                    { sprite = "building_menu_walls_exterior_roofs_ddd_01_16", northSprite =
+                    "building_menu_walls_exterior_roofs_ddd_01_17" }
                 )
             }
         },
@@ -1334,7 +1352,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteWireFenceRecipe,
             true,
             {
@@ -1344,10 +1362,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_ddd_01_10",
-                sprite2 = "fencing_ddd_01_11",
+                sprite = "fencing_ddd_01_11",
+                sprite2 = "fencing_ddd_01_10",
                 northSprite = "fencing_ddd_01_8",
                 northSprite2 = "fencing_ddd_01_9",
+                corner ="fencing_ddd_01_12",
                 pillar = "fencing_ddd_01_13"
             }
         ),
@@ -1364,7 +1383,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_12" }
+            { 
+                corner ="fencing_ddd_01_12",
+                pillar = "fencing_ddd_01_13" 
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
@@ -1384,7 +1406,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -1394,10 +1416,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_ddd_01_18",
-                sprite2 = "fencing_ddd_01_19",
+                sprite = "fencing_ddd_01_19",
+                sprite2 = "fencing_ddd_01_18",
                 northSprite = "fencing_ddd_01_16",
                 northSprite2 = "fencing_ddd_01_17",
+                corner = "fencing_ddd_01_20",
                 pillar = "fencing_ddd_01_21"
             }
         ),
@@ -1414,7 +1437,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_20" }
+            { 
+                corner = "fencing_ddd_01_20",
+                pillar = "fencing_ddd_01_21"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
@@ -1434,7 +1460,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines1",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -1444,17 +1470,18 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_ddd_01_34",
-                sprite2 = "fencing_ddd_01_35",
+                sprite = "fencing_ddd_01_35",
+                sprite2 = "fencing_ddd_01_34",
                 northSprite = "fencing_ddd_01_32",
                 northSprite2 = "fencing_ddd_01_33",
+                corner = "fencing_ddd_01_36",
                 pillar = "fencing_ddd_01_37"
             }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_with_Vines2",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -1464,10 +1491,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_ddd_01_39",
-                sprite2 = "fencing_ddd_01_35",
+                sprite = "fencing_ddd_01_35",
+                sprite2 = "fencing_ddd_01_39",
                 northSprite = "fencing_ddd_01_32",
                 northSprite2 = "fencing_ddd_01_38",
+                corner = "fencing_ddd_01_36",
                 pillar = "fencing_ddd_01_37"
             }
         ),
@@ -1484,7 +1512,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_36" }
+            { 
+                corner = "fencing_ddd_01_36",
+                pillar = "fencing_ddd_01_37" 
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post_with_Vines",
@@ -1504,7 +1535,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -1514,10 +1545,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_ddd_01_26",
-                sprite2 = "fencing_ddd_01_27",
+                sprite = "fencing_ddd_01_27",
+                sprite2 = "fencing_ddd_01_26",
                 northSprite = "fencing_ddd_01_24",
                 northSprite2 = "fencing_ddd_01_25",
+                corner = "fencing_ddd_01_28",
                 pillar = "fencing_ddd_01_29"
             }
         ),
@@ -1534,7 +1566,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "fencing_ddd_01_28" }
+            { 
+                corner = "fencing_ddd_01_28",
+                pillar = "fencing_ddd_01_29" 
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Planks_Fence_Post",
@@ -1596,8 +1631,8 @@ local function addFloorsToMenu()
         )
     end
     local dataFloors = {
-        industrial = { {17, 16}, {19, 18}, {21, 20}, {23, 22}, {25, 24}, },
-        shanty = { {9, 8}, {11, 10}, {12}, {13}, {3, 2, 1, 0}, {7, 6, 5 ,4} },
+        industrial = { { 17, 16 }, { 19, 18 }, { 21, 20 }, { 23, 22 }, { 25, 24 }, },
+        shanty = { { 9, 8 }, { 11, 10 }, { 12 }, { 13 }, { 3, 2, 1, 0 }, { 7, 6, 5, 4 } },
     }
     createAndAddFloorObjects("IGUI_BuildingMenuSubCat_Floors_Industrial", "misc_ddd_01_", dataFloors.industrial)
     createAndAddFloorObjects("IGUI_BuildingMenuSubCat_Floors_Shanty", "shanty_ddd_01_", dataFloors.shanty)
@@ -1635,6 +1670,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_3",
                 northSprite = "location_farm_accesories_spyjack_01_0",
+                corner = "location_farm_accesories_spyjack_01_4",
                 pillar = "location_farm_accesories_spyjack_01_5"
             }
         ),
@@ -1653,6 +1689,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_2",
                 northSprite = "location_farm_accesories_spyjack_01_1",
+                corner = "location_farm_accesories_spyjack_01_4",
                 pillar = "location_farm_accesories_spyjack_01_5"
             }
         ),
@@ -1669,7 +1706,10 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "location_farm_accesories_spyjack_01_4" }
+            {
+                corner = "location_farm_accesories_spyjack_01_4",
+                pillar = "location_farm_accesories_spyjack_01_5"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Wooden_Fence_Gate",
@@ -1739,6 +1779,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_19",
                 northSprite = "location_farm_accesories_spyjack_01_16",
+                corner = "location_farm_accesories_spyjack_01_20",
                 pillar = "location_farm_accesories_spyjack_01_21"
             }
         ),
@@ -1757,6 +1798,7 @@ local function addLowAndRailingFencesToMenu()
             {
                 sprite = "location_farm_accesories_spyjack_01_18",
                 northSprite = "location_farm_accesories_spyjack_01_17",
+                corner = "location_farm_accesories_spyjack_01_20",
                 pillar = "location_farm_accesories_spyjack_01_21"
             }
         ),
@@ -1773,7 +1815,10 @@ local function addLowAndRailingFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "location_farm_accesories_spyjack_01_20" }
+            {
+                corner = "location_farm_accesories_spyjack_01_20",
+                pillar = "location_farm_accesories_spyjack_01_21"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wooden_Fence_Gate",

@@ -555,11 +555,26 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         { IsoFlagType.collideW },
         { IsoFlagType.canPathW },
     });
+
     BM_Utils.setOrUnsetSpriteProperties(manager, {
         "walls_commercial_02_54",
         "walls_commercial_02_50",
         "walls_commercial_02_49",
         "walls_commercial_02_48",
+    }, {
+        { IsoFlagType.collideN },
+        { IsoFlagType.canPathN },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "walls_commercial_02_0",
+    }, {
+        { IsoFlagType.collideW },
+        { IsoFlagType.canPathW },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "walls_commercial_02_1",
     }, {
         { IsoFlagType.collideN },
         { IsoFlagType.canPathN },

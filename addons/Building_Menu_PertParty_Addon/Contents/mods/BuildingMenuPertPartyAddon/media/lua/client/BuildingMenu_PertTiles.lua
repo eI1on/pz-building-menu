@@ -203,9 +203,9 @@ end
 local function addPertDoorsToMenu()
     local pertDoorObjects = {}
     local doorSpriteRanges = {
-        { start = 8,  stop = 19, baseName = "pert_doors_01_", recipe = BuildingMenu.WoodenDoorRecipe },
-        { start = 24, stop = 31, baseName = "pert_doors_01_", recipe = BuildingMenu.WoodenDoorRecipe },
-        { start = 36, stop = 39, baseName = "pert_doors_01_", recipe = BuildingMenu.WoodenDoorRecipe },
+        { start = 8,   stop = 19,  baseName = "pert_doors_01_",          recipe = BuildingMenu.WoodenDoorRecipe },
+        { start = 24,  stop = 31,  baseName = "pert_doors_01_",          recipe = BuildingMenu.WoodenDoorRecipe },
+        { start = 36,  stop = 39,  baseName = "pert_doors_01_",          recipe = BuildingMenu.WoodenDoorRecipe },
         { start = 104, stop = 127, baseName = "pert_more_dbl_doors_02_", recipe = BuildingMenu.WoodenDoubleGlassDoorRecipe },
     }
     for _, range in ipairs(doorSpriteRanges) do
@@ -394,7 +394,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcretePoleFenceRecipe,
             true,
             {
@@ -404,10 +404,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "pert_fencing_01_8",
-                sprite2 = "pert_fencing_01_12",
+                sprite = "pert_fencing_01_12",
+                sprite2 = "pert_fencing_01_8",
                 northSprite = "pert_fencing_01_13",
                 northSprite2 = "pert_fencing_01_9",
+                corner = "pert_fencing_01_11",
                 pillar = "pert_fencing_01_10"
             }
         ),
@@ -424,7 +425,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "pert_fencing_01_11" }
+            {
+                corner = "pert_fencing_01_11",
+                pillar = "pert_fencing_01_10"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
@@ -444,7 +448,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -454,10 +458,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "pert_fencing_01_0",
-                sprite2 = "pert_fencing_01_4",
+                sprite = "pert_fencing_01_4",
+                sprite2 = "pert_fencing_01_0",
                 northSprite = "pert_fencing_01_5",
                 northSprite2 = "pert_fencing_01_1",
+                corner = "pert_fencing_01_3",
                 pillar = "pert_fencing_01_2"
             }
         ),
@@ -474,7 +479,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "pert_fencing_01_3" }
+            {
+                corner = "pert_fencing_01_3",
+                pillar = "pert_fencing_01_2"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
@@ -495,7 +503,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -505,10 +513,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "pert_fencing_01_24",
-                sprite2 = "pert_fencing_01_28",
+                sprite = "pert_fencing_01_28",
+                sprite2 = "pert_fencing_01_24",
                 northSprite = "pert_fencing_01_29",
                 northSprite2 = "pert_fencing_01_25",
+                corner = "pert_fencing_01_27",
                 pillar = "pert_fencing_01_26"
             }
         ),
@@ -525,7 +534,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "pert_fencing_01_27" }
+            {
+                corner = "pert_fencing_01_27",
+                pillar = "pert_fencing_01_26"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",
@@ -548,7 +560,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcretePoleFenceRecipe,
             true,
             {
@@ -558,10 +570,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "pert_fencing_01_48",
-                sprite2 = "pert_fencing_01_52",
+                sprite = "pert_fencing_01_52",
+                sprite2 = "pert_fencing_01_48",
                 northSprite = "pert_fencing_01_53",
                 northSprite2 = "pert_fencing_01_49",
+                corner = "pert_fencing_01_51",
                 pillar = "pert_fencing_01_50"
             }
         ),
@@ -578,7 +591,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "pert_fencing_01_51" }
+            {
+                corner = "pert_fencing_01_51",
+                pillar = "pert_fencing_01_50"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_and_Wire_Fence_Post",
@@ -598,7 +614,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence",
             "Tooltip_High_Metal_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.HighConcreteFenceRecipe,
             true,
             {
@@ -608,10 +624,11 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "pert_fencing_01_40",
-                sprite2 = "pert_fencing_01_44",
+                sprite = "pert_fencing_01_44",
+                sprite2 = "pert_fencing_01_40",
                 northSprite = "pert_fencing_01_45",
                 northSprite2 = "pert_fencing_01_41",
+                corner = "pert_fencing_01_43",
                 pillar = "pert_fencing_01_42"
             }
         ),
@@ -628,7 +645,10 @@ local function addHighFencesToMenu()
                 canBarricade = false,
                 isCorner = true
             },
-            { sprite = "pert_fencing_01_43" }
+            {
+                corner = "pert_fencing_01_43",
+                pillar = "pert_fencing_01_42"
+            }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Cinderblock_Fence_Post",

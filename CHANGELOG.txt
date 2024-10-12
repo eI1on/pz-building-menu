@@ -4,10 +4,10 @@ Changelog:
 [list]
 Main mod:
 [list]
+[*] Added all missing corner buildables
 [*] Introduced a better pillar placement detection system: The build system now automatically identifies when a pillar is necessary at the corner or intersection of walls. Pillar placement dynamically adjusts based on the surrounding wall layout. When placing a corner, the adjacent tiles in the southern and eastern directions will be checked to determine if a pillar is required. Additionally, if a wall is placed on a tile already containing a pillar, the pillar will be removed to prevent the "structure not being recognized as indoors" bug.
 [*] Implemented a corner wall merging system: When a newly placed wall can form a valid corner with an existing wall on the same tile, the system will automatically transform the walls into a corner structure by merging them intro a corner piece. This applies to all wall types that have a valid corner attributed (the majority will have the corner object in the menu too).
-[*] Added all missing corner buildables to the building menu, making them available for placement across both the base game and all compatible addons
-[*] Known issue: If corner walls from certain addons cannot be destroyed, this is due to a limitation in the game itself, which prevents assigning and managing the [b]CornerNorthWall[/b] and [b]CornerWestWall[/b] properties of corner buildables
+[*] [b]Known issue[/b]: If corner walls from certain addons cannot be destroyed, this is due to a limitation in the game itself, which prevents assigning and managing the [b]CornerNorthWall[/b] and [b]CornerWestWall[/b] properties of corner buildables
 [*] Adjusted material costs for several objects:
 [list]
 [*] Floor Rugs: Thread cost reduced from 5 >> 3
@@ -20,6 +20,34 @@ Oujinjin's Tiles Addon:
 [list]
 [*] Fixed an exploit where wooden and military shelves, when dismantled, would incorrectly drop metal sheets instead of wood and nails. The construction/dismantling loop could lead to unintended "metal production"
 [*] Updated sprite properties for containers to correct their material assignments, making sure that only wood and nails are dropped upon dismantling
+[/list]
+Daddy Dirkie Tiles Addon:
+[list]
+[*] Added all missing corner buildables
+[/list]
+ExtraNoise's Newburbs Tiles addon:
+[list]
+[*] Added all missing corner buildables
+[/list]
+Melos Tiles Addon:
+[list]
+[*] Added all missing corner buildables
+[/list]
+PertParty's Tiles Addon:
+[list]
+[*] Added all missing corner buildables
+[/list]
+SimonMD's addon:
+[list]
+[*] Added all missing corner buildables
+[/list]
+Throttlekitty's Tiles addon:
+[list]
+[*] Added all missing corner buildables
+[/list]
+TryHonesty's Tiles addon:
+[list]
+[*] Added all missing corner buildables
 [/list]
 [/list]
 

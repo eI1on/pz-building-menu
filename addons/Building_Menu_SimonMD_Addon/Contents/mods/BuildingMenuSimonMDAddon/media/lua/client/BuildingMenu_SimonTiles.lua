@@ -322,7 +322,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_High_Fence_1",
             "Tooltip_Scrap_High_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
@@ -332,11 +332,10 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_Simon_MD_31",
-                sprite2 = "fencing_Simon_MD_32",
+                sprite = "fencing_Simon_MD_32",
+                sprite2 = "fencing_Simon_MD_31",
                 northSprite = "fencing_Simon_MD_36",
                 northSprite2 = "fencing_Simon_MD_37",
-                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -357,7 +356,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Low_Fence_1",
             "Tooltip_Scrap_Low_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
@@ -367,11 +366,10 @@ local function addHighFencesToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "fencing_Simon_MD_34",
-                sprite2 = "fencing_Simon_MD_35",
+                sprite = "fencing_Simon_MD_35",
+                sprite2 = "fencing_Simon_MD_34",
                 northSprite = "fencing_Simon_MD_39",
                 northSprite2 = "fencing_Simon_MD_40",
-                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -393,7 +391,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_High_Fence_2",
             "Tooltip_Scrap_High_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
@@ -403,11 +401,10 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_Simon_MD_43",
-                sprite2 = "fencing_Simon_MD_44",
+                sprite = "fencing_Simon_MD_44",
+                sprite2 = "fencing_Simon_MD_43",
                 northSprite = "fencing_Simon_MD_48",
                 northSprite2 = "fencing_Simon_MD_49",
-                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -428,7 +425,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Low_Fence_2",
             "Tooltip_Scrap_Low_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
@@ -438,11 +435,10 @@ local function addHighFencesToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "fencing_Simon_MD_46",
-                sprite2 = "fencing_Simon_MD_47",
+                sprite = "fencing_Simon_MD_47",
+                sprite2 = "fencing_Simon_MD_46",
                 northSprite = "fencing_Simon_MD_51",
                 northSprite2 = "fencing_Simon_MD_52",
-                pillar = ""
             }
         ),
         BuildingMenu.createObject(
@@ -464,7 +460,7 @@ local function addHighFencesToMenu()
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_High_Fence_1_Back",
             "Tooltip_Scrap_High_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
@@ -474,17 +470,17 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_Simon_MD_54",
-                sprite2 = "fencing_Simon_MD_55",
+                sprite = "fencing_Simon_MD_55",
+                sprite2 = "fencing_Simon_MD_54",
                 northSprite = "fencing_Simon_MD_58",
                 northSprite2 = "fencing_Simon_MD_59",
-                pillar = ""
+                corner = "fencing_Simon_MD_70",
             }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Low_Fence_1_Back",
             "Tooltip_Scrap_Low_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
@@ -494,17 +490,16 @@ local function addHighFencesToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "fencing_Simon_MD_56",
-                sprite2 = "fencing_Simon_MD_57",
+                sprite = "fencing_Simon_MD_57",
+                sprite2 = "fencing_Simon_MD_56",
                 northSprite = "fencing_Simon_MD_60",
                 northSprite2 = "fencing_Simon_MD_61",
-                pillar = ""
             }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_High_Fence_2_Back",
             "Tooltip_Scrap_High_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.BigScrapHighFenceRecipe,
             true,
             {
@@ -514,17 +509,17 @@ local function addHighFencesToMenu()
                 hoppable = false
             },
             {
-                sprite = "fencing_Simon_MD_62",
-                sprite2 = "fencing_Simon_MD_63",
+                sprite = "fencing_Simon_MD_63",
+                sprite2 = "fencing_Simon_MD_62",
                 northSprite = "fencing_Simon_MD_66",
                 northSprite2 = "fencing_Simon_MD_67",
-                pillar = ""
+                corner = "fencing_Simon_MD_70",
             }
         ),
         BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_Scrap_Low_Fence_2_Back",
             "Tooltip_Scrap_Low_Fence_Generic",
-            BuildingMenu.onBuildHighMetalFence,
+            BuildingMenu.onBuildHighDoubleFence,
             BuildingMenu.SmallScrapLowFenceRecipe,
             true,
             {
@@ -534,11 +529,10 @@ local function addHighFencesToMenu()
                 blockAllTheSquare = false
             },
             {
-                sprite = "fencing_Simon_MD_64",
-                sprite2 = "fencing_Simon_MD_65",
+                sprite = "fencing_Simon_MD_65",
+                sprite2 = "fencing_Simon_MD_64",
                 northSprite = "fencing_Simon_MD_68",
                 northSprite2 = "fencing_Simon_MD_69",
-                pillar = ""
             }
         ),
     }

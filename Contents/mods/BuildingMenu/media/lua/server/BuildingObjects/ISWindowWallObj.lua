@@ -13,10 +13,15 @@ function ISWindowWallObj:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
 
-	if not BM_Utils.checkCorner(x, y, z, north, self) then
+	local cornerObject = BM_Utils.checkCorner(x, y, z, north, self);
+	if not cornerObject then
 		self.javaObject = IsoWindow.new(cell, self.sq, getSprite(sprite), north);
 		BM_Utils.setAttachedSprites(self, false);
 		BM_Utils.checkPillar(x, y, z, north, self);
+	else
+		self.javaObject = cornerObject;
+        BM_Utils.setAttachedSprites(self, true);
+		BM_Utils.placeCornerPillars(x, y, z, north, self);
 	end
 
 	self.javaObject:getModData().WindowWall = true;

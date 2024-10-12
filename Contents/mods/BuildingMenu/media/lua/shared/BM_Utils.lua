@@ -161,27 +161,33 @@ function BM_Utils.setAttachedSprites(buildingObject, isCorner)
     end
 end
 
---- Checks if two walls can form a corner, places the corner object if necessary, and returns whether a corner was placed
---- Also handles placing pillars at the correct positions when placing a corner
+--- Checks if two walls can form a corner, places the corner object if necessary, and returns the corner object is it's needed
+--- Also handles removing the second wall
 --- @param x number The x-coordinate of the grid square
 --- @param y number The y-coordinate of the grid square
 --- @param z number The z-coordinate (floor level)
 --- @param north boolean Whether the building object is facing north
---- @param buildingObject ISBuildingObject The object containing relevant data for corner placement
---- @return boolean validity true if a corner was placed, or false otherwise
+--- @param buildingObject ISBuildingObject The object containing relevant data for corner creation
+--- @return IsoThumpable|IsoWindow|nil cornerObject the corner object if is needed, or false otherwise
 function BM_Utils.checkCorner(x, y, z, north, buildingObject)
-    if not buildingObject.corner then return false; end
+    local cornerObject = nil;
+    if not buildingObject.corner then return cornerObject; end
 
     -- find second wall (neighbor wall to form a corner)
     local secondWall = nil;
     for i = 0, buildingObject.sq:getSpecialObjects():size() - 1 do
         local worldObj = buildingObject.sq:getSpecialObjects():get(i);
         if instanceof(worldObj, "IsoThumpable") or (instanceof(worldObj, "IsoWindow") and worldObj:getModData()["WindowWall"]) then
-            local secondWallSpriteName = worldObj:getSprite():getName();
-            if (north and not worldObj:getNorth() and secondWallSpriteName == buildingObject.sprite) or
-                (not north and worldObj:getNorth() and secondWallSpriteName == buildingObject.northSprite) then
-                secondWall = worldObj;
-                break;
+            local objectSprite = worldObj:getSprite();
+            if objectSprite then
+                local props = objectSprite:getProperties();
+                local spriteName = objectSprite:getName();
+                if props and spriteName then
+                    if (buildingObject.sprite == spriteName and buildingObject.north and props:Is(IsoFlagType.collideW)) or (buildingObject.northSprite == spriteName and not buildingObject.north and props:Is(IsoFlagType.collideN)) then
+                        secondWall = worldObj;
+                        break;
+                    end
+                end
             end
         end
     end
@@ -191,19 +197,15 @@ function BM_Utils.checkCorner(x, y, z, north, buildingObject)
         buildingObject.sq:RemoveTileObject(secondWall);
 
         local cell = getWorld():getCell();
+
         if buildingObject.Type == "ISWindowWallObj" then
-            buildingObject.javaObject = IsoWindow.new(cell, buildingObject.sq, getSprite(buildingObject.corner), north);
+            cornerObject = IsoWindow.new(cell, buildingObject.sq, getSprite(buildingObject.corner), north);
         else
-            buildingObject.javaObject = IsoThumpable.new(cell, buildingObject.sq, buildingObject.corner, north,
-                buildingObject);
+            cornerObject = IsoThumpable.new(cell, buildingObject.sq, buildingObject.corner, north, buildingObject);
         end
-
-        BM_Utils.setAttachedSprites(buildingObject, true);
-        BM_Utils.placeCornerPillars(x, y, z, north, buildingObject);
-
-        return true;
+        return cornerObject;
     end
-    return false;
+    return cornerObject;
 end
 
 --- Checks if the wall object conflicts with the current building object for pillar placement
@@ -215,8 +217,10 @@ local function isRelevantWall(worldObj, north, buildingObject)
     local sprite = worldObj:getSprite();
     if not sprite then return false; end
 
-    local isWallSE = sprite:getProperties():Is(IsoFlagType.WallSE);
-    local isWallNW = sprite:getProperties():Is(IsoFlagType.WallNW);
+    local props = sprite:getProperties();
+
+    local isWallSE = props:Is(IsoFlagType.WallSE);
+    local isWallNW = props:Is(IsoFlagType.WallNW) or (props:Is(IsoFlagType.collideW) and props:Is(IsoFlagType.collideN));
     local isOtherWallNorth = worldObj:getNorth();
     local isCornerWallNW = (not buildingObject.sprite and not buildingObject.northSprite and buildingObject.corner) and
         getSprite(buildingObject.corner):getProperties():Is(IsoFlagType.WallNW);
@@ -252,7 +256,7 @@ function BM_Utils.checkPillar(x, y, z, north, buildingObject)
     local otherWallSq = getCell():getGridSquare(x + wallOffsetX, y + wallOffsetY, z);
     for i = 0, otherWallSq:getSpecialObjects():size() - 1 do
         local worldObj = otherWallSq:getSpecialObjects():get(i);
-        if instanceof(worldObj, "IsoThumpable") and isRelevantWall(worldObj, north, buildingObject) then
+        if (instanceof(worldObj, "IsoThumpable") or (instanceof(worldObj, "IsoWindow") and worldObj:getModData()["WindowWall"])) and isRelevantWall(worldObj, north, buildingObject) then
             BM_Utils.addPillar(pillarCoordX, pillarCoordY, z, buildingObject);
         end
     end
@@ -265,7 +269,7 @@ function BM_Utils.checkPillar(x, y, z, north, buildingObject)
         local oppositeWallSq = getCell():getGridSquare(x + secondWallOffsetX, y + secondWallOffsetY, z);
         for i = 0, oppositeWallSq:getSpecialObjects():size() - 1 do
             local worldObj = oppositeWallSq:getSpecialObjects():get(i);
-            if instanceof(worldObj, "IsoThumpable") and isRelevantWall(worldObj, north, buildingObject) then
+            if (instanceof(worldObj, "IsoThumpable") or (instanceof(worldObj, "IsoWindow") and worldObj:getModData()["WindowWall"])) and isRelevantWall(worldObj, north, buildingObject) then
                 BM_Utils.addPillar(secondPillarCoordX, secondPillarCoordY, z, buildingObject);
             end
         end

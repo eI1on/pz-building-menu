@@ -116,17 +116,13 @@ function BuildingMenu.buildObject(object, spritesName, name, playerNum, objectRe
         if spritesName and BM_Logger:shouldLog("DEBUG") then
             if spritesName["sprite"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["sprite"]);
-            end
-            if spritesName["sprite2"] then
+            elseif spritesName["sprite2"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["sprite2"]);
-            end
-            if spritesName["northSprite"] then
+            elseif spritesName["northSprite"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["northSprite"]);
-            end
-            if spritesName["northSprite2"] then
+            elseif spritesName["northSprite2"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["northSprite2"]);
-            end
-            if spritesName["corner"] then
+            elseif spritesName["corner"] then
                 BM_Utils.printPropNamesFromSprite(spritesName["corner"]);
             end
         end
@@ -891,11 +887,19 @@ end
 ---@param name string
 ---@param playerNum number
 ---@return ISBuildingObject
-BuildingMenu.onBuildHighMetalFence = function(sprites, name, playerNum, objectRecipe, objectOptions)
-    local _highMetalFence = ISHighMetalFence:new(sprites.sprite, sprites.sprite2, sprites.northSprite,
+BuildingMenu.onBuildHighDoubleFence = function(sprites, name, playerNum, objectRecipe, objectOptions)
+    local _highDoubleFence = ISHighDoubleFence:new(sprites.sprite, sprites.sprite2, sprites.northSprite,
         sprites.northSprite2)
 
-    return _highMetalFence
+    if sprites.pillar then
+        _highDoubleFence.pillar = sprites.pillar;
+    end
+
+    if sprites.corner then
+        _highDoubleFence.corner = sprites.corner;
+    end
+
+    return _highDoubleFence
 end
 
 ---@param sprites table
