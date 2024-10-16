@@ -2095,6 +2095,44 @@ local function addClapboardWallsToMenu()
             }
         ),
         BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Wide_Clapboard_Window_Frame",
+            "Tooltip_White_Wide_Clapboard_Window_Frame",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = true,
+                hoppable = true,
+                modData = { wallType = "windowsframe" }
+            },
+            {
+                sprite = "location_trailer_01_12",
+                northSprite = "location_trailer_01_15",
+                pillar = "location_trailer_01_3"
+            }
+        ),
+        BuildingMenu.createObject(
+            "Tooltip_BuildingMenuObj_White_Wide_Clapboard_Window_Frame",
+            "Tooltip_White_Wide_Clapboard_Window_Frame",
+            BuildingMenu.onBuildWall,
+            BuildingMenu.WhiteBigWoodWallRecipe,
+            true,
+            {
+                completionSound = "BuildWoodenStructureLarge",
+                isThumpable = true,
+                canBarricade = true,
+                hoppable = true,
+                modData = { wallType = "windowsframe" }
+            },
+            {
+                sprite = "location_trailer_01_13",
+                northSprite = "location_trailer_01_14",
+                pillar = "location_trailer_01_3"
+            }
+        ),
+        BuildingMenu.createObject(
             "Tooltip_BuildingMenuObj_White_Wide_Clapboard_Corner_Wall",
             "Tooltip_White_Wide_Clapboard_Wall",
             BuildingMenu.onBuildWall,
@@ -16558,7 +16596,8 @@ local function addGarageDoorsToMenu()
                     },
                     {
                         sprite = "fixtures_doors_fences_01_72",
-                    }
+                    },
+                    "Double Metal Wire Gate"
                 ),
                 BuildingMenu.createObject(
                     "ContextMenu_BigMetalDoubleDoor",
@@ -16574,7 +16613,8 @@ local function addGarageDoorsToMenu()
                     },
                     {
                         sprite = "fixtures_doors_fences_01_88",
-                    }
+                    },
+                    "Double Metal Pole Gate"
                 ),
                 BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Double_Wrought_Iron_Gate",
@@ -16590,7 +16630,8 @@ local function addGarageDoorsToMenu()
                     },
                     {
                         sprite = "fixtures_doors_fences_01_40",
-                    }
+                    },
+                    "Double Wrought Iron Gate"
                 ),
             }
         }
@@ -18218,6 +18259,7 @@ local function addArchitecturePlusToMenu()
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
+                        isCorner = true,
                         isThumpable = true,
                     },
                     { sprite = "walls_detailing_01_64", northSprite = "walls_detailing_01_65" }
@@ -18232,6 +18274,7 @@ local function addArchitecturePlusToMenu()
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
+                        isCorner = true,
                         isThumpable = true,
                     },
                     { sprite = "walls_detailing_01_68", northSprite = "walls_detailing_01_69" }
@@ -18246,6 +18289,7 @@ local function addArchitecturePlusToMenu()
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
+                        isCorner = true,
                         isThumpable = true,
                     },
                     { sprite = "walls_detailing_01_67" }
@@ -18260,6 +18304,7 @@ local function addArchitecturePlusToMenu()
                         completionSound = "DropSoilFromGravelBag",
                         blockAllTheSquare = false,
                         canPassThrough = true,
+                        isCorner = true,
                         isThumpable = true,
                     },
                     { sprite = "walls_detailing_01_66" }
@@ -18711,7 +18756,43 @@ local function addWindowsPlusToMenu()
                     true,
                     { completionSound = "BuildWoodenStructureLarge" },
                     { sprite = "fixtures_windows_01_56", northSprite = "fixtures_windows_01_57" }
-                )
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "fixtures_windows_01_40", northSprite = "fixtures_windows_01_43" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "fixtures_windows_01_41", northSprite = "fixtures_windows_01_42" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "fixtures_windows_01_48", northSprite = "fixtures_windows_01_51" }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Windows_Generic",
+                    BuildingMenu.onBuildWindow,
+                    BuildingMenu.WindowRecipe,
+                    true,
+                    { completionSound = "BuildWoodenStructureLarge" },
+                    { sprite = "fixtures_windows_01_49", northSprite = "fixtures_windows_01_50" }
+                ),
             }
         },
     }
@@ -34511,12 +34592,6 @@ local function addFireplaceToMenu()
             BuildingMenu.FireplaceRecipe,
             true,
             {
-                canPassThrough = true,
-                isCorner = true,
-                modData = {
-                    value = 10,
-                    max = 10
-                },
                 completionSound = "BuildWoodenStructureSmall"
             },
             { sprite = "fixtures_fireplaces_01_0", northSprite = "fixtures_fireplaces_01_5" }
@@ -34528,8 +34603,6 @@ local function addFireplaceToMenu()
             BuildingMenu.FireplaceRecipe,
             true,
             {
-                canPassThrough = true,
-                isCorner = true,
                 completionSound = "BuildWoodenStructureSmall"
             },
             { sprite = "fixtures_fireplaces_01_1", northSprite = "fixtures_fireplaces_01_4" }
@@ -34541,8 +34614,6 @@ local function addFireplaceToMenu()
             BuildingMenu.FireplaceRecipe,
             true,
             {
-                canPassThrough = true,
-                isCorner = true,
                 completionSound = "BuildWoodenStructureSmall"
             },
             { sprite = "fixtures_fireplaces_01_2", northSprite = "fixtures_fireplaces_01_3" }

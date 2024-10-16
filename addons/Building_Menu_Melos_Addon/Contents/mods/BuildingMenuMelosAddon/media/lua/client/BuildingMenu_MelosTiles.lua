@@ -20860,18 +20860,48 @@ local function addMelosFlowersToMenu()
                 canPassThrough = true,
                 isCorner = true
             },
-            { sprite = sprite, northSprite = northSprite }
+            { sprite = sprite }
         );
     end
 
     local melosIndoorFlowers = {};
-    for i = 0, 16 do
+    for i = 0, 21 do
         local sprite = "melos_tiles_gardencenter_01_" .. i;
         if i == 12 or i == 13 or i == 14 or i == 15 then
         else
             table.insert(melosIndoorFlowers, createIndoorFlowerObject(sprite));
         end
     end
+
+    table.insert(melosIndoorFlowers, BuildingMenu.createObject(
+        "",
+        "Tooltip_Plants_Indoor_Generic",
+        BuildingMenu.onBuildSimpleFurniture,
+        BuildingMenu.FlowerPotRecipe,
+        true,
+        {
+            completionSound = "DropSoilFromGravelBag",
+            blockAllTheSquare = false,
+            canPassThrough = true,
+            isCorner = true
+        },
+        { sprite = "melos_tiles_gardencenter_01_22", northSprite = "melos_tiles_gardencenter_01_23" }
+    ));
+
+    table.insert(melosIndoorFlowers, BuildingMenu.createObject(
+        "",
+        "Tooltip_Plants_Indoor_Generic",
+        BuildingMenu.onBuildSimpleFurniture,
+        BuildingMenu.FlowerPotRecipe,
+        true,
+        {
+            completionSound = "DropSoilFromGravelBag",
+            blockAllTheSquare = false,
+            canPassThrough = true,
+            isCorner = true
+        },
+        { sprite = "melos_tiles_gardencenter_01_43" }
+    ));
 
     for i = 0, 16 do
         local sprite = "melos_tiles_gardencenter_plants_02_" .. i;

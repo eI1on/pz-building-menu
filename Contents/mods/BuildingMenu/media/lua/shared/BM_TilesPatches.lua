@@ -579,4 +579,72 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         { IsoFlagType.collideN },
         { IsoFlagType.canPathN },
     });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "fixtures_windows_01_40",
+        "fixtures_windows_01_48"
+    }, {
+        { "CanBreak",   "",       false },
+        { "CustomName",   "Window",       false },
+        { "Facing",   "W",       false },
+        { "GroupName",   "Trailer",       false },
+        { "IsMoveAble",   "",       false },
+        { "MoveType",   "Window",       false },
+        { "Noffset",   "3",       false },
+        { "PickUpLevel",   "4",       false },
+        { "PickUpTool",   "Crowbar",       false },
+        { "PickUpWeight",   "100",       false },
+        { "PlaceTool",   "Hammer",       false },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "fixtures_windows_01_41",
+        "fixtures_windows_01_49"
+    }, {
+        { "CanBreak",   "",       false },
+        { "CustomName",   "Window",       false },
+        { "Facing",   "W",       false },
+        { "GroupName",   "Trailer",       false },
+        { "IsMoveAble",   "",       false },
+        { "MoveType",   "Window",       false },
+        { "Noffset",   "1",       false },
+        { "PickUpLevel",   "4",       false },
+        { "PickUpTool",   "Crowbar",       false },
+        { "PickUpWeight",   "100",       false },
+        { "PlaceTool",   "Hammer",       false },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "fixtures_windows_01_42",
+        "fixtures_windows_01_50"
+    }, {
+        { "CanBreak",   "",       false },
+        { "CustomName",   "Window",       false },
+        { "Facing",   "N",       false },
+        { "GroupName",   "Trailer",       false },
+        { "IsMoveAble",   "",       false },
+        { "MoveType",   "Window",       false },
+        { "Woffset",   "-1",       false },
+        { "PickUpLevel",   "4",       false },
+        { "PickUpTool",   "Crowbar",       false },
+        { "PickUpWeight",   "100",       false },
+        { "PlaceTool",   "Hammer",       false },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "fixtures_windows_01_43",
+        "fixtures_windows_01_51"
+    }, {
+        { "CanBreak",   "",       false },
+        { "CustomName",   "Window",       false },
+        { "Facing",   "N",       false },
+        { "GroupName",   "Trailer",       false },
+        { "IsMoveAble",   "",       false },
+        { "MoveType",   "Window",       false },
+        { "Woffset",   "-3",       false },
+        { "PickUpLevel",   "4",       false },
+        { "PickUpTool",   "Crowbar",       false },
+        { "PickUpWeight",   "100",       false },
+        { "PlaceTool",   "Hammer",       false },
+    });
 end);

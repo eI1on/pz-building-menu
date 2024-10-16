@@ -1347,6 +1347,242 @@ local function addDoorsToMenu()
     )
 end
 
+local function addArchitecturePlusToMenu()
+    local architecturePlus = {
+        {
+            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation"),
+            subCategoryIcon = "walls_trim_ddd_02_14",
+            objects = {
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_0", northSprite = "walls_trim_ddd_02_1" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_4", northSprite = "walls_trim_ddd_02_5" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_6", northSprite = "walls_trim_ddd_02_7" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_8", northSprite = "walls_trim_ddd_02_9" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Corner",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_3" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Corner",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_2" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brick_Column",
+                    "Tooltip_Edge_Detailing",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                    },
+                    { sprite = "walls_trim_ddd_02_14", northSprite = "walls_trim_ddd_02_15" }
+                ),
+
+
+
+                
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_16", northSprite = "walls_trim_ddd_02_17" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_20", northSprite = "walls_trim_ddd_02_21" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_22", northSprite = "walls_trim_ddd_02_23" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Edge",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_24", northSprite = "walls_trim_ddd_02_25" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Corner",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_19" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Foundation_Corner",
+                    "Tooltip_Foundation",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "DropSoilFromGravelBag",
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        isCorner = true,
+                        isThumpable = true,
+                    },
+                    { sprite = "walls_trim_ddd_02_18" }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Brick_Column",
+                    "Tooltip_Edge_Detailing",
+                    BuildingMenu.onBuildWallOverlay,
+                    BuildingMenu.ConcreteFloorRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        needToBeAgainstWall = true,
+                        blockAllTheSquare = false,
+                        canPassThrough = true,
+                        canBarricade = false,
+                    },
+                    { sprite = "walls_trim_ddd_02_30", northSprite = "walls_trim_ddd_02_31" }
+                )
+            }
+        },
+    }
+
+    for k, subCatData in pairs(architecturePlus) do
+        BuildingMenu.addObjectsToCategories(
+            "Daddy Dirkie",
+            getText("IGUI_BuildingMenuCat_ArchitecturePlus"),
+            "walls_trim_ddd_02_14",
+            subCatData.subcategoryName,
+            subCatData.subCategoryIcon,
+            subCatData.objects
+        )
+    end
+end
+
 local function addHighFencesToMenu()
     local highFences = {
         BuildingMenu.createObject(
@@ -5114,6 +5350,9 @@ local function addCategoriesToBuildingMenu()
     end
     if SandboxVars.BuildingMenu.doorsSubCategory then
         addDoorsToMenu()
+    end
+    if SandboxVars.BuildingMenu.architecturePlusCategory then
+        addArchitecturePlusToMenu()
     end
     if SandboxVars.BuildingMenu.highFencesSubCategory then
         addHighFencesToMenu()

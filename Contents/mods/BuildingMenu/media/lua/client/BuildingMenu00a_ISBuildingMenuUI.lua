@@ -50,8 +50,7 @@ function BuildingMenuTilePickerList:render()
                         local spriteName = objDef.data.sprites[spriteKeys[i]];
                         if spriteName then
                             objSpriteName = spriteName;
-                            attachedSprites = objDef.data.sprites.attachedSprites and
-                            objDef.data.sprites.attachedSprites[key];
+                            attachedSprites = objDef.data.sprites.attachedSprites and objDef.data.sprites.attachedSprites[spriteKeys[i]];
                             break;
                         end
                     end

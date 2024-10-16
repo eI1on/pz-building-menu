@@ -13,6 +13,10 @@ function ISStove:create(x, y, z, north, sprite)
 
   self.javaObject = IsoFireplace.new(cell, self.sq, getSprite(sprite));
   self.javaObject:setMovedThumpable(true);
+
+	self.javaObject:setFuelAmount(0);
+	self.javaObject:setLit(false);
+
   self.sq:AddSpecialObject(self.javaObject);
 
   buildUtil.consumeMaterial(self);

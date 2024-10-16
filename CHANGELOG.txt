@@ -4,10 +4,33 @@ Changelog:
 [list]
 Main mod:
 [list]
+[*] Added trailer windows. Enabled the ability to pick them up
+[*] Added support for Double Metal Wire and Double Metal Pole Gates for the Automatic Gate Motors mod. Already existing gates must be rebuilt for compatibility
+[*] Fixed attached sprites not rendering in the UI
+[/list]
+Daddy Dirkie Tiles Addon:
+[list]
+[*] Added Foundation objects
+[/list]
+Melos Tiles Addon:
+[list]
+[*] Added a few more missed flower pots
+[/list]
+[/list]
+
+
+12 OCT 24
+4f654a1
+
+Changelog:
+[list]
+Main mod:
+[list]
 [*] Added all missing corner buildables
 [*] Introduced a better pillar placement detection system: The build system now automatically identifies when a pillar is necessary at the corner or intersection of walls. Pillar placement dynamically adjusts based on the surrounding wall layout. When placing a corner, the adjacent tiles in the southern and eastern directions will be checked to determine if a pillar is required. Additionally, if a wall is placed on a tile already containing a pillar, the pillar will be removed to prevent the "structure not being recognized as indoors" bug.
 [*] Implemented a corner wall merging system: When a newly placed wall can form a valid corner with an existing wall on the same tile, the system will automatically transform the walls into a corner structure by merging them intro a corner piece. This applies to all wall types that have a valid corner attributed (the majority will have the corner object in the menu too).
-[*] [b]Known issue[/b]: If corner walls from certain addons cannot be destroyed, this is due to a limitation in the game itself, which prevents assigning and managing the [b]CornerNorthWall[/b] and [b]CornerWestWall[/b] properties of corner buildables
+[*] [b]Known issue[/b]: If corner walls from certain addons cannot be destroyed, this is due to a limitation in the game itself, which prevents assigning and managing the [b]CornerNorthWall[/b] and [b]CornerWestWall[/b] properties of corner buildables.
+[*] Fixed some ES char error and conversions thanks to @jesusnac ([url=https://github.com/eI1on/pz-building-menu/commit/7e4f326b7db4fe49aca53053ba8f45ef20e4677d] Merge #48 [/url]).
 [*] Adjusted material costs for several objects:
 [list]
 [*] Floor Rugs: Thread cost reduced from 5 >> 3

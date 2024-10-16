@@ -148,6 +148,14 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         setSpriteProperties("melos_tiles_windows_06" .. suffix .. "_", startNumbers, offsets);
     end
 
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+            "melos_tiles_gardencenter_01_22",
+            "melos_tiles_gardencenter_01_23"
+        }, nil, {
+            "TileOverlay"
+        }
+    );
+
     -- BM_Utils.setOrUnsetSpriteProperties(manager, {
     --     "melos_tiles_castle_01_2"
     -- }, {
