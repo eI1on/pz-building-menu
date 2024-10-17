@@ -3,7 +3,7 @@ require "ISUI/ISPanel"
 ---@type function
 local getTexture = getTexture;
 ---@type function
-local getText = getText
+local getText = getText;
 
 --- Class representing a tab in the Building Menu UI
 ---@class ISBuildingMenuTabUI: ISPanelJoypad
@@ -80,24 +80,41 @@ function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
         self:drawTextureScaledAspect(texture, 1, y, 25, self.itemheight, 1, 1, 1, 1);
     end
 
-    self:drawText(item.text, 25, y + (self.itemheight - ISBuildingMenuTabUI.mediumNewFontHeight) / 2, 1, 1, 1, 0.9,
-        self.font);
-
     local buildingMenuTab = self.parent;
+    local itemText = item.text;
+
+    if self.listType == "categoriesList" and buildingMenuTab.tab == getText("IGUI_BuildingMenuTab_Favorite") and item.item and item.item.tabName then
+        itemText = "[" .. item.item.tabName .. "] " .. item.text;
+    end
+
+    self:drawText(itemText, 25, y + (self.itemheight - ISBuildingMenuTabUI.mediumNewFontHeight) / 2, 1, 1, 1, 0.9,
+    self.font);
+
     local favoriteStar = nil;
     local favoriteAlpha = 1;
 
     local isFavorite = false;
-    local modData = self.parent.character:getModData();
-    local favorites = modData.favorites or { categories = {}, subcategories = {} };
+    local favorites = buildingMenuTab.buildingMenuUI.favorites;
 
     if self.listType == "categoriesList" then
-        isFavorite = favorites.categories[item.item.icon];
+        local selectedCategoryTabName = item.item and item.item.tabName or buildingMenuTab.tab;
+        isFavorite = favorites[selectedCategoryTabName] and
+            favorites[selectedCategoryTabName][item.text] and
+            favorites[selectedCategoryTabName][item.text].favorite == true;
     else
-        isFavorite = favorites.subcategories[item.item.icon];
+        local selectedCategoryItem = buildingMenuTab.categoriesList.items[buildingMenuTab.categoriesList.selected];
+        local selectedCategoryTabName = selectedCategoryItem.item and selectedCategoryItem.item.tabName or
+            buildingMenuTab.tab;
+
+        if selectedCategoryItem then
+            local categoryName = selectedCategoryItem.text
+            isFavorite = favorites[selectedCategoryTabName] and
+                favorites[selectedCategoryTabName][categoryName] and
+                favorites[selectedCategoryTabName][categoryName][item.text] == true;
+        end
     end
 
-    if item.index == self.mouseoverselected and not self:isMouseOverScrollBar() and not self.parent.parent.tilesList:isMouseOver() and self:getMouseX() <= self:getWidth() then
+    if item.index == self.mouseoverselected and not self:isMouseOverScrollBar() and not buildingMenuTab.parent.tilesList:isMouseOver() and self:getMouseX() <= self:getWidth() then
         if self:getMouseX() >= buildingMenuTab:getFavoriteX(self.listType) then
             favoriteStar = isFavorite and buildingMenuTab.favCheckedTex or buildingMenuTab.favNotCheckedTex;
             favoriteAlpha = 0.9;
@@ -108,7 +125,6 @@ function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
     elseif isFavorite then
         favoriteStar = buildingMenuTab.favoriteStar;
     end
-
 
     if favoriteStar then
         self:drawTexture(favoriteStar, buildingMenuTab:getFavoriteX(self.listType) + buildingMenuTab.favPadX,
@@ -156,7 +172,7 @@ function ISBuildingMenuTabUI:update()
     self.subCategoriesList:setX(self.categoriesList:getRight());
 end
 
---- Adds or removes an item from favorites
+--- Add or remove an item from favorites
 ---@param fromKeyboard boolean
 ---@param listType string
 function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
@@ -165,20 +181,64 @@ function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
 
     local selectedIndex = fromKeyboard and list.selected or list:rowAt(list:getMouseX(), list:getMouseY());
     local selectedItem = list.items[selectedIndex];
-    local itemIcon = selectedItem.item.icon;
 
-    local modData = self.character:getModData();
-    modData.favorites = modData.favorites or { categories = {}, subcategories = {} };
+    local favorites = self.buildingMenuUI.favorites
+    if listType == "categoriesList" then
+        self:toggleCategoryFavorite(selectedItem, favorites);
+    elseif listType == "subCategoriesList" then
+        self:toggleSubCategoryFavorite(selectedItem, favorites);
+    end
 
-    local favoritesDict = listType == "categoriesList" and modData.favorites.categories or
-        modData.favorites.subcategories;
-    favoritesDict[itemIcon] = not favoritesDict[itemIcon];
+    self.buildingMenuUI:saveFavorites(favorites);
 
     if self.buildingMenuUI then
-        self.buildingMenuUI:populateFavoritesTab();
+        self.buildingMenuUI:populateFavoritesTab()
         if self.buildingMenuUI:getActiveTab().tab == getText("IGUI_BuildingMenuTab_Favorite") and listType == "subCategoriesList" then
             self.buildingMenuUI:updateSubCategoriesListForFavorite(self.buildingMenuUI:getActiveTab());
         end
+    end
+end
+
+--- Toggle favorite status for a category
+---@param selectedItem table
+---@param favorites table
+function ISBuildingMenuTabUI:toggleCategoryFavorite(selectedItem, favorites)
+    local selectedCategoryName = selectedItem.text;
+    local selectedCategoryTabName = selectedItem.item and selectedItem.item.tabName or self.tab;
+
+    favorites[selectedCategoryTabName] = favorites[selectedCategoryTabName] or {};
+    favorites[selectedCategoryTabName][selectedCategoryName] = favorites[selectedCategoryTabName][selectedCategoryName] or
+        {};
+
+    local categoryFavorites = favorites[selectedCategoryTabName][selectedCategoryName];
+
+    if categoryFavorites.favorite then
+        favorites[selectedCategoryTabName][selectedCategoryName] = nil;
+    else
+        categoryFavorites.favorite = true;
+    end
+end
+
+--- Toggle favorite status for a subcategory
+---@param selectedItem table
+---@param favorites table
+function ISBuildingMenuTabUI:toggleSubCategoryFavorite(selectedItem, favorites)
+    local selectedCategoryItem = self.categoriesList.items[self.categoriesList.selected];
+    local selectedCategoryName = selectedCategoryItem.text;
+    local selectedCategoryTabName = selectedCategoryItem.item and selectedCategoryItem.item.tabName or self.tab;
+
+    local subcategoryName = selectedItem.text;
+
+    favorites[selectedCategoryTabName] = favorites[selectedCategoryTabName] or {};
+    favorites[selectedCategoryTabName][selectedCategoryName] = favorites[selectedCategoryTabName][selectedCategoryName] or
+        {};
+
+    local subcategories = favorites[selectedCategoryTabName][selectedCategoryName];
+
+    subcategories[subcategoryName] = not subcategories[subcategoryName];
+
+    if subcategories[subcategoryName] then
+        favorites[selectedCategoryTabName][selectedCategoryName].favorite = true;
     end
 end
 

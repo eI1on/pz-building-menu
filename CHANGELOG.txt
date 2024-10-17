@@ -5,8 +5,10 @@ Changelog:
 Main mod:
 [list]
 [*] Added trailer windows. Enabled the ability to pick them up
-[*] Added support for Double Metal Wire and Double Metal Pole Gates for the Automatic Gate Motors mod. Already existing gates must be rebuilt for compatibility
-[*] Fixed attached sprites not rendering in the UI
+[*] Added compatibility for Double Metal Wire and Double Metal Pole Gates with the Automatic Gate Motors mod. Existing gates require rebuilding for proper functionality
+[*] Added the missing Exterior Arched Window Frames that were previously missed
+[*] Resolved issue with attached sprites not rendering correctly in the UI
+[*] Implemented a new method for saving favorites that operates independently of player data. This prevents loss of favorites upon character death and avoids favoriting subcategories with identical icons in the list
 [/list]
 Daddy Dirkie Tiles Addon:
 [list]
@@ -14,7 +16,7 @@ Daddy Dirkie Tiles Addon:
 [/list]
 Melos Tiles Addon:
 [list]
-[*] Added a few more missed flower pots
+[*] Added additional flower pots that were previously missed
 [/list]
 [/list]
 

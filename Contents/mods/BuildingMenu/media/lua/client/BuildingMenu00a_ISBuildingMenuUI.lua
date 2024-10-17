@@ -11,9 +11,7 @@ local getSprite = getSprite
 ---@type function
 local getTextOrNull = getTextOrNull
 
-local BM_Constants = require("BM_Constants");
 local BM_Logger = require("BM_Logger");
-local BM_Utils = require("BM_Utils");
 
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main");
@@ -50,7 +48,8 @@ function BuildingMenuTilePickerList:render()
                         local spriteName = objDef.data.sprites[spriteKeys[i]];
                         if spriteName then
                             objSpriteName = spriteName;
-                            attachedSprites = objDef.data.sprites.attachedSprites and objDef.data.sprites.attachedSprites[spriteKeys[i]];
+                            attachedSprites = objDef.data.sprites.attachedSprites and
+                                objDef.data.sprites.attachedSprites[spriteKeys[i]];
                             break;
                         end
                     end
@@ -736,7 +735,7 @@ local minOpaqueVal = 0;
 local maxOpaqueVal = 0.5;
 --- Creates child elements for the Building Menu UI
 function ISBuildingMenuUI:createChildren()
-    ISCollapsableWindowJoypad.createChildren(self)
+    ISCollapsableWindowJoypad.createChildren(self);
     local th = self:titleBarHeight();
     local rh = self.resizable and self:resizeWidgetHeight() or 0;
 
@@ -1100,27 +1099,30 @@ end
 
 --- Populates the favorites tab in the Building Menu UI
 function ISBuildingMenuUI:populateFavoritesTab()
-    local modData = self.character:getModData();
-    local favorites = modData.favorites or { categories = {}, subcategories = {} };
-
     local favoriteTab = self:getFavoriteTab();
     if not favoriteTab or self:getActiveTab() ~= favoriteTab then return; end
+
+    local favorites = self.favorites;
 
     favoriteTab.categoriesList:clear();
     favoriteTab.subCategoriesList:clear();
 
     for _, tab in pairs(BuildingMenu.Tabs) do
-        for _, category in pairs(tab.categories) do
-            if favorites.categories[category.categoryIcon] then
-                local subCatData = {};
-                for _, subcategory in pairs(category.subcategories) do
-                    if favorites.subcategories[subcategory.subCategoryIcon] then
-                        table.insert(subCatData, subcategory);
+        local favoriteTabData = favorites[tab.tabName];
+        if favoriteTabData then
+            for _, category in pairs(tab.categories) do
+                local favoriteCategoryData = favoriteTabData[category.categoryName];
+                if favoriteCategoryData then
+                    local subCatData = {};
+                    for _, subcategory in pairs(category.subcategories) do
+                        if favoriteCategoryData[subcategory.subcategoryName] then
+                            table.insert(subCatData, subcategory);
+                        end
                     end
-                end
-                if #subCatData > 0 then
-                    favoriteTab.categoriesList:addItem("[" .. tab.tabName .. "] " .. category.categoryName,
-                        { icon = category.categoryIcon, subCatData = subCatData });
+                    if #subCatData > 0 then
+                        favoriteTab.categoriesList:addItem(category.categoryName,
+                            { icon = category.categoryIcon, subCatData = subCatData, tabName = tab.tabName });
+                    end
                 end
             end
         end
@@ -1130,18 +1132,22 @@ end
 --- Updates the subcategories list for the favorite tab
 ---@param favoriteTab ISBuildingMenuTabUI
 function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
-    local modData = self.character:getModData();
-    local favorites = modData.favorites or { categories = {}, subcategories = {} };
+    local favorites = self.favorites;
 
     local selectedCategoryIndex = favoriteTab.categoriesList.selected;
     if selectedCategoryIndex > 0 then
         local selectedCategoryItem = favoriteTab.categoriesList.items[selectedCategoryIndex];
         favoriteTab.subCategoriesList:clear();
         if selectedCategoryItem then
+            local selectedCategoryName = selectedCategoryItem.text;
+            local selectedCategoryTabName = selectedCategoryItem.item and selectedCategoryItem.item.tabName or nil;
+
             for _, subcategory in pairs(selectedCategoryItem.item.subCatData) do
-                if favorites.subcategories[subcategory.subCategoryIcon] then
-                    favoriteTab.subCategoriesList:addItem(subcategory.subcategoryName,
-                        { icon = subcategory.subCategoryIcon, objectsData = subcategory.objects });
+                if favorites[selectedCategoryTabName] and favorites[selectedCategoryTabName][selectedCategoryName].favorite then
+                    if favorites[selectedCategoryTabName][selectedCategoryName][subcategory.subcategoryName] then
+                        favoriteTab.subCategoriesList:addItem(subcategory.subcategoryName,
+                            { icon = subcategory.subCategoryIcon, objectsData = subcategory.objects });
+                    end
                 end
             end
         end
@@ -1252,6 +1258,14 @@ end
 
 Events.OnKeyPressed.Add(ISBuildingMenuUI.onKeyPressed);
 
+function ISBuildingMenuUI:updateFavorites()
+    self.favorites = ModData.getOrCreate("BM_favorites");
+end
+
+function ISBuildingMenuUI:saveFavorites(favorites)
+    self.favorites = favorites;
+end
+
 --- Constructor for ISBuildingMenuUI
 ---@param x number
 ---@param y number
@@ -1303,6 +1317,7 @@ function ISBuildingMenuUI:new(x, y, width, height, character)
         getKeyName(ISBuildingMenuUI.leftTab), getKeyName(ISBuildingMenuUI.rightTab));
 
     o.floorIsRoof                  = false;
+    self:updateFavorites();
     return o;
 end
 

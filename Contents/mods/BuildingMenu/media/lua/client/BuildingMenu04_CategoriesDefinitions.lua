@@ -8812,6 +8812,25 @@ local function addArchedWindowWallsToMenu()
                     }
                 ),
                 BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Pink_Brick_Arched_Window_Frame",
+                    "Tooltip_Pink_Brick_Window_Frame",
+                    BuildingMenu.onBuildWindowWall,
+                    BuildingMenu.PinkBigBrickWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "walls_exterior_house_03_6",
+                        northSprite = "walls_exterior_house_03_7",
+                        pillar = "walls_exterior_house_01_7"
+                    }
+                ),
+                BuildingMenu.createObject(
                     "Tooltip_BuildingMenuObj_Grey_Brick_Arched_Window_Frame",
                     "Tooltip_Grey_Brick_Window_Frame",
                     BuildingMenu.onBuildWindowWall,
@@ -8828,6 +8847,25 @@ local function addArchedWindowWallsToMenu()
                         sprite = "walls_exterior_house_03_8",
                         northSprite = "walls_exterior_house_03_9",
                         pillar = "walls_exterior_house_02_19"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Classic_Brick_Arched_Window_Frame",
+                    "Tooltip_Grey_Brick_Window_Frame",
+                    BuildingMenu.onBuildWindowWall,
+                    BuildingMenu.GreyBigStoneWallRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureLarge",
+                        isThumpable = true,
+                        canBarricade = true,
+                        hoppable = true,
+                        modData = { wallType = "windowsframe" }
+                    },
+                    {
+                        sprite = "walls_exterior_house_03_10",
+                        northSprite = "walls_exterior_house_03_11",
+                        pillar = "walls_exterior_house_01_19"
                     }
                 ),
                 BuildingMenu.createObject(
