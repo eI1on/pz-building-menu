@@ -201,9 +201,9 @@ local function addGreenhouseWallsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         "walls_greenhouse_01_25",
-        getText("IGUI_BuildingMenuSubCat_Walls_White_Panel"),
+        "IGUI_BuildingMenuSubCat_Walls_White_Panel",
         "walls_commercial_02_55",
         whiteWalls
     )
@@ -407,9 +407,9 @@ local function addGreenhouseWallsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         "walls_greenhouse_01_25",
-        getText("IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass"),
+        "IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass",
         "walls_greenhouse_01_7",
         brownWalls
     )
@@ -609,9 +609,9 @@ local function addGreenhouseWallsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         "walls_greenhouse_01_25",
-        getText("IGUI_BuildingMenuSubCat_Walls_Green_Frame_Glass"),
+        "IGUI_BuildingMenuSubCat_Walls_Green_Frame_Glass",
         "walls_greenhouse_01_25",
         greenWalls
     )
@@ -732,10 +732,10 @@ local function addGreenhouseWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass"),
+        "IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass",
         nil,
         blackWalls
     )
@@ -764,9 +764,9 @@ local function addDoorsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "walls_greenhouse_01_12",
-        getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Wooden_Doors",
         "walls_greenhouse_01_12",
         doors
     )
@@ -878,9 +878,9 @@ local function addRoofingToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Roofing"),
+        "IGUI_BuildingMenuCat_Roofing",
         "roofs_greenhouse_01_37",
-        getText("IGUI_BuildingMenuSubCat_Roofing_Green_Roofs"),
+        "IGUI_BuildingMenuSubCat_Roofing_Green_Roofs",
         "roofs_greenhouse_01_37",
         greenRoofs
     )
@@ -991,9 +991,9 @@ local function addRoofingToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Roofing"),
+        "IGUI_BuildingMenuCat_Roofing",
         "roofs_greenhouse_01_37",
-        getText("IGUI_BuildingMenuSubCat_Roofing_White_Roofs"),
+        "IGUI_BuildingMenuSubCat_Roofing_White_Roofs",
         "roofs_greenhouse_01_37",
         whiteRoofs
     )
@@ -1104,9 +1104,9 @@ local function addRoofingToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Roofing"),
+        "IGUI_BuildingMenuCat_Roofing",
         "roofs_greenhouse_01_37",
-        getText("IGUI_BuildingMenuSubCat_Roofing_Brown_Roofs"),
+        "IGUI_BuildingMenuSubCat_Roofing_Brown_Roofs",
         "roofs_greenhouse_01_37",
         brownRoofs
     )
@@ -1269,9 +1269,9 @@ local function addArchitecturePlusToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_ArchitecturePlus"),
+        "IGUI_BuildingMenuCat_ArchitecturePlus",
         "location_community_park_01_26",
-        getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding"),
+        "IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding",
         "location_community_park_01_26",
         architecturePlusObj
     )
@@ -1461,9 +1461,9 @@ local function addFencesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Greenhouse",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         "walls_greenhouse_01_69",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_Low"),
+        "IGUI_BuildingMenuSubCat_Fencing_Fencing_Low",
         "walls_greenhouse_01_69",
         architecturePlusObj
     )

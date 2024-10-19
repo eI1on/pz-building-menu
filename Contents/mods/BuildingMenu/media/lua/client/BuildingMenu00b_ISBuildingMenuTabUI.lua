@@ -70,10 +70,10 @@ end
 ---@param alt boolean
 ---@return number
 function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
-    self:drawRectBorder(0, (y), self:getWidth(), self.itemheight - 1, 0.9, self.borderColor.r, self.borderColor.g,
+    self:drawRectBorder(0, y, self:getWidth(), self.itemheight - 1, 0.9, self.borderColor.r, self.borderColor.g,
         self.borderColor.b);
     if self.selected == item.index then
-        self:drawRect(0, (y), self:getWidth(), self.itemheight - 1, 0.3, 0.7, 0.35, 0.15);
+        self:drawRect(0, y, self:getWidth(), self.itemheight - 1, 0.3, 0.7, 0.35, 0.15);
     end
     local texture = getTexture(item.item.icon);
     if texture then
@@ -81,36 +81,46 @@ function ISBuildingMenuTabUI:doDrawListItem(y, item, alt)
     end
 
     local buildingMenuTab = self.parent;
-    local itemText = item.text;
 
-    if self.listType == "categoriesList" and buildingMenuTab.tab == getText("IGUI_BuildingMenuTab_Favorite") and item.item and item.item.tabName then
-        itemText = "[" .. item.item.tabName .. "] " .. item.text;
-    end
+    local tabNameKey = item.item.tabName or "";
+    local textKey = item.text or "";
+    local cachedTabName = buildingMenuTab.textCache[tabNameKey] or
+        (item.item and item.item.tabName and getText(item.item.tabName) or "");
+    local cachedText = buildingMenuTab.textCache[textKey] or (item.text and getText(item.text) or "");
 
+    buildingMenuTab.textCache[tabNameKey] = cachedTabName;
+    buildingMenuTab.textCache[textKey] = cachedText;
+
+    local itemText = (self.listType == "categoriesList" and buildingMenuTab.tab == "IGUI_BuildingMenuTab_Favorite") and
+        ("[" .. cachedTabName .. "] " .. cachedText) or cachedText;
     self:drawText(itemText, 25, y + (self.itemheight - ISBuildingMenuTabUI.mediumNewFontHeight) / 2, 1, 1, 1, 0.9,
-    self.font);
+        self.font);
 
-    local favoriteStar = nil;
-    local favoriteAlpha = 1;
+    local favoriteStar, favoriteAlpha = nil, 1;
 
     local isFavorite = false;
     local favorites = buildingMenuTab.buildingMenuUI.favorites;
 
     if self.listType == "categoriesList" then
         local selectedCategoryTabName = item.item and item.item.tabName or buildingMenuTab.tab;
+        selectedCategoryTabName = buildingMenuTab.buildingMenuUI:stripTabPrefix(selectedCategoryTabName);
+        local selectedCategoryName = buildingMenuTab.buildingMenuUI:stripCategoryPrefix(item.text);
         isFavorite = favorites[selectedCategoryTabName] and
-            favorites[selectedCategoryTabName][item.text] and
-            favorites[selectedCategoryTabName][item.text].favorite == true;
+            favorites[selectedCategoryTabName][selectedCategoryName] and
+            favorites[selectedCategoryTabName][selectedCategoryName].favorite == true;
     else
         local selectedCategoryItem = buildingMenuTab.categoriesList.items[buildingMenuTab.categoriesList.selected];
+
         local selectedCategoryTabName = selectedCategoryItem.item and selectedCategoryItem.item.tabName or
             buildingMenuTab.tab;
+        selectedCategoryTabName = buildingMenuTab.buildingMenuUI:stripTabPrefix(selectedCategoryTabName);
 
         if selectedCategoryItem then
-            local categoryName = selectedCategoryItem.text
+            local selectedCategoryName = buildingMenuTab.buildingMenuUI:stripCategoryPrefix(selectedCategoryItem.text);
             isFavorite = favorites[selectedCategoryTabName] and
-                favorites[selectedCategoryTabName][categoryName] and
-                favorites[selectedCategoryTabName][categoryName][item.text] == true;
+                favorites[selectedCategoryTabName][selectedCategoryName] and
+                favorites[selectedCategoryTabName][selectedCategoryName]
+                [buildingMenuTab.buildingMenuUI:stripSubCategoryPrefix(item.text)] == true;
         end
     end
 
@@ -193,7 +203,7 @@ function ISBuildingMenuTabUI:addToFavorite(fromKeyboard, listType)
 
     if self.buildingMenuUI then
         self.buildingMenuUI:populateFavoritesTab()
-        if self.buildingMenuUI:getActiveTab().tab == getText("IGUI_BuildingMenuTab_Favorite") and listType == "subCategoriesList" then
+        if self.buildingMenuUI:getActiveTab().tab == "IGUI_BuildingMenuTab_Favorite" and listType == "subCategoriesList" then
             self.buildingMenuUI:updateSubCategoriesListForFavorite(self.buildingMenuUI:getActiveTab());
         end
     end
@@ -203,8 +213,9 @@ end
 ---@param selectedItem table
 ---@param favorites table
 function ISBuildingMenuTabUI:toggleCategoryFavorite(selectedItem, favorites)
-    local selectedCategoryName = selectedItem.text;
-    local selectedCategoryTabName = selectedItem.item and selectedItem.item.tabName or self.tab;
+    local selectedCategoryTabName = self.buildingMenuUI:stripTabPrefix(selectedItem.item and selectedItem.item.tabName or
+        self.tab);
+    local selectedCategoryName = self.buildingMenuUI:stripCategoryPrefix(selectedItem.text);
 
     favorites[selectedCategoryTabName] = favorites[selectedCategoryTabName] or {};
     favorites[selectedCategoryTabName][selectedCategoryName] = favorites[selectedCategoryTabName][selectedCategoryName] or
@@ -224,10 +235,12 @@ end
 ---@param favorites table
 function ISBuildingMenuTabUI:toggleSubCategoryFavorite(selectedItem, favorites)
     local selectedCategoryItem = self.categoriesList.items[self.categoriesList.selected];
-    local selectedCategoryName = selectedCategoryItem.text;
-    local selectedCategoryTabName = selectedCategoryItem.item and selectedCategoryItem.item.tabName or self.tab;
+    local selectedCategoryName = self.buildingMenuUI:stripCategoryPrefix(selectedCategoryItem.text);
 
-    local subcategoryName = selectedItem.text;
+    local selectedCategoryTabName = self.buildingMenuUI:stripTabPrefix(selectedCategoryItem.item and
+        selectedCategoryItem.item.tabName or self.tab);
+
+    local subcategoryName = self.buildingMenuUI:stripSubCategoryPrefix(selectedItem.text);
 
     favorites[selectedCategoryTabName] = favorites[selectedCategoryTabName] or {};
     favorites[selectedCategoryTabName][selectedCategoryName] = favorites[selectedCategoryTabName][selectedCategoryName] or
@@ -262,6 +275,7 @@ function ISBuildingMenuTabUI:new(x, y, width, height, buildingMenuUI)
     o.favNotCheckedTex = getTexture("media/ui/FavoriteStarUnchecked.png");
     o.favPadX          = 10;
     o.favWidth         = o.favoriteStar and o.favoriteStar:getWidth() or 13;
+    o.textCache        = {};
     o:noBackground();
     return o;
 end

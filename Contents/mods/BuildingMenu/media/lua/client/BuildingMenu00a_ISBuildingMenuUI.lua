@@ -66,9 +66,9 @@ function BuildingMenuTilePickerList:render()
 end
 
 --- Draws the main sprite on the correct tile position
---- @param spriteName string|nil The name of the sprite to draw
---- @param c number The column position in the grid
---- @param r number The row position in the grid
+---@param spriteName string|nil The name of the sprite to draw
+---@param c number The column position in the grid
+---@param r number The row position in the grid
 function BuildingMenuTilePickerList:drawSprite(spriteName, c, r)
     if spriteName then
         local texture = self.textureCache[spriteName] or getTexture(spriteName);
@@ -81,13 +81,13 @@ function BuildingMenuTilePickerList:drawSprite(spriteName, c, r)
 end
 
 --- Draws a list of attached sprites on the correct tile position
---- @param attachedSpriteNames table|nil A table of attached sprite names
---- @param c number The column position in the grid
---- @param r number The row position in the grid
+---@param attachedSpriteNames table|nil A table of attached sprite names
+---@param c number The column position in the grid
+---@param r number The row position in the grid
 function BuildingMenuTilePickerList:drawAttachedSprites(attachedSpriteNames, c, r)
     if attachedSpriteNames then
-        for _, attachedSpriteName in ipairs(attachedSpriteNames) do
-            self:drawSprite(attachedSpriteName, c, r);
+        for i = 1, #attachedSpriteNames do
+            self:drawSprite(attachedSpriteNames[i], c, r);
         end
     end
 end
@@ -210,8 +210,9 @@ end
 ---@return table
 local function getContainerInfo(selectedObject, character)
     local containerInfo = {};
-    for i, spriteKey in ipairs({ "sprite", "sprite2", "sprite3", "sprite4" }) do
-        local sprite = selectedObject.objDef.data.sprites[spriteKey];
+    local spriteKeys = { "sprite", "sprite2", "sprite3", "sprite4" };
+    for i = 1, #spriteKeys do
+        local sprite = selectedObject.objDef.data.sprites[spriteKeys[i]];
         if sprite then
             local containerDetails;
             if selectedObject.objDef.data.options and selectedObject.objDef.data.options.containerType and selectedObject.objDef.data.options.capacity then
@@ -769,20 +770,22 @@ function ISBuildingMenuUI:createChildren()
 
 
     self.tabs = {};
-    for _, tab in pairs(BuildingMenu.Tabs) do
+    for i = 1, #BuildingMenu.Tabs do
+        local tab = BuildingMenu.Tabs[i];
         local newTab = ISBuildingMenuTabUI:new(0, 0, self.width, self.panel.height - self.panel.tabHeight, self);
         newTab:initialise();
         newTab:setAnchorRight(true);
         newTab:setAnchorBottom(true);
         local tabName = tab.tabName;
         newTab.tab = tabName;
-        self.panel:addView(tabName, newTab);
+        self.panel:addView(getText(tabName), newTab);
         newTab.infoText = getText("UI_BuildingMenuUI");
         newTab.parent = self;
 
         if tab.categories then
             newTab.categories = tab.categories;
-            for _, category in pairs(tab.categories) do
+            for j = 1, #tab.categories do
+                local category = tab.categories[j];
                 local catName = category.categoryName;
                 local catIcon = category.categoryIcon;
                 local subCatData = category.subcategories;
@@ -790,7 +793,8 @@ function ISBuildingMenuUI:createChildren()
 
                 if category.subcategories then
                     local subCategories = newTab.categoriesList.items[newTab.categoriesList.selected].item.subCatData;
-                    for _, subcategories in pairs(subCategories) do
+                    for k = 1, #subCategories do
+                        local subcategories = subCategories[k];
                         local subCatName = subcategories.subcategoryName;
                         local subCatIcon = subcategories.subCategoryIcon;
                         local objectsData = subcategories.objects;
@@ -904,8 +908,9 @@ end
 --- Retrieves the favorite tab in the UI
 ---@return ISBuildingMenuTabUI|nil
 function ISBuildingMenuUI:getFavoriteTab()
-    for _, tab in pairs(self.tabs) do
-        if tab.tab == getText("IGUI_BuildingMenuTab_Favorite") then
+    for i = 1, #self.tabs do
+        local tab = self.tabs[i];
+        if tab.tab == "IGUI_BuildingMenuTab_Favorite" then
             return tab;
         end
     end
@@ -947,10 +952,10 @@ function ISBuildingMenuUI:render()
         local totalWidth = self:calculateTotalWidth(labels, 20, 8);
         local left = (self.width - totalWidth) / 2;
 
-        for i, label in ipairs(labels) do
+        for i = 1, #labels do
             self:drawTextureScaled(icons[i], left, buttonY, 20, 20, 1, 1, 1, 1);
-            self:drawText(label, left + 20 + 8, textY, 1, 1, 1, 1, UIFont.Small);
-            left = left + 20 + 8 + getTextManager():MeasureStringX(UIFont.Small, label) + 32;
+            self:drawText(labels[i], left + 20 + 8, textY, 1, 1, 1, 1, UIFont.Small);
+            left = left + 20 + 8 + getTextManager():MeasureStringX(UIFont.Small, labels[i]) + 32;
         end
         self:highlightFocusedUI();
     else
@@ -983,8 +988,9 @@ end
 
 function ISBuildingMenuUI:calculateTotalWidth(labels, buttonSize, buttonSpace)
     local totalWidth = 0;
-    for _, label in ipairs(labels) do
-        totalWidth = totalWidth + buttonSize + buttonSpace + getTextManager():MeasureStringX(UIFont.Small, label) + 32;
+    for i = 1, #labels do
+        totalWidth = totalWidth + buttonSize + buttonSpace + getTextManager():MeasureStringX(UIFont.Small, labels[i]) +
+            32;
     end
     return totalWidth - 32;
 end
@@ -1045,7 +1051,7 @@ function ISBuildingMenuUI:update()
         -- update categories list for the new tab
         self:updateCategoriesList(currentTab.categories);
 
-        if currentTab.tab == getText("IGUI_BuildingMenuTab_Favorite") then
+        if currentTab.tab == "IGUI_BuildingMenuTab_Favorite" then
             self:populateFavoritesTab();
         end
 
@@ -1107,15 +1113,18 @@ function ISBuildingMenuUI:populateFavoritesTab()
     favoriteTab.categoriesList:clear();
     favoriteTab.subCategoriesList:clear();
 
-    for _, tab in pairs(BuildingMenu.Tabs) do
-        local favoriteTabData = favorites[tab.tabName];
+    for i = 1, #BuildingMenu.Tabs do
+        local tab = BuildingMenu.Tabs[i];
+        local favoriteTabData = favorites[self:stripTabPrefix(tab.tabName)];
         if favoriteTabData then
-            for _, category in pairs(tab.categories) do
-                local favoriteCategoryData = favoriteTabData[category.categoryName];
+            for j = 1, #tab.categories do
+                local category = tab.categories[j];
+                local favoriteCategoryData = favoriteTabData[self:stripCategoryPrefix(category.categoryName)];
                 if favoriteCategoryData then
                     local subCatData = {};
-                    for _, subcategory in pairs(category.subcategories) do
-                        if favoriteCategoryData[subcategory.subcategoryName] then
+                    for k = 1, #category.subcategories do
+                        local subcategory = category.subcategories[k];
+                        if favoriteCategoryData[self:stripSubCategoryPrefix(subcategory.subcategoryName)] then
                             table.insert(subCatData, subcategory);
                         end
                     end
@@ -1139,12 +1148,15 @@ function ISBuildingMenuUI:updateSubCategoriesListForFavorite(favoriteTab)
         local selectedCategoryItem = favoriteTab.categoriesList.items[selectedCategoryIndex];
         favoriteTab.subCategoriesList:clear();
         if selectedCategoryItem then
-            local selectedCategoryName = selectedCategoryItem.text;
-            local selectedCategoryTabName = selectedCategoryItem.item and selectedCategoryItem.item.tabName or nil;
+            local selectedCategoryTabName = selectedCategoryItem.item and selectedCategoryItem.item.tabName;
+            selectedCategoryTabName = self:stripTabPrefix(selectedCategoryTabName);
 
-            for _, subcategory in pairs(selectedCategoryItem.item.subCatData) do
+            local selectedCategoryName = self:stripCategoryPrefix(selectedCategoryItem.text);
+
+            for i = 1, #selectedCategoryItem.item.subCatData do
+                local subcategory = selectedCategoryItem.item.subCatData[i];
                 if favorites[selectedCategoryTabName] and favorites[selectedCategoryTabName][selectedCategoryName].favorite then
-                    if favorites[selectedCategoryTabName][selectedCategoryName][subcategory.subcategoryName] then
+                    if favorites[selectedCategoryTabName][selectedCategoryName][self:stripSubCategoryPrefix(subcategory.subcategoryName)] then
                         favoriteTab.subCategoriesList:addItem(subcategory.subcategoryName,
                             { icon = subcategory.subCategoryIcon, objectsData = subcategory.objects });
                     end
@@ -1162,7 +1174,8 @@ function ISBuildingMenuUI:updateCategoriesList(categories)
 
     currentCategoriesList:clear();
 
-    for _, category in pairs(categories) do
+    for i = 1, #categories do
+        local category = categories[i];
         currentCategoriesList:addItem(category.categoryName,
             { icon = category.categoryIcon, subCatData = category.subcategories });
     end
@@ -1176,7 +1189,8 @@ function ISBuildingMenuUI:updateSubCategoriesList(subCatData)
 
     currentSubCategoriesList:clear();
 
-    for _, subCategory in pairs(subCatData) do
+    for i = 1, #subCatData do
+        local subCategory = subCatData[i];
         currentSubCategoriesList:addItem(subCategory.subcategoryName,
             { icon = subCategory.subCategoryIcon, objectsData = subCategory.objects });
     end
@@ -1258,12 +1272,75 @@ end
 
 Events.OnKeyPressed.Add(ISBuildingMenuUI.onKeyPressed);
 
-function ISBuildingMenuUI:updateFavorites()
-    self.favorites = ModData.getOrCreate("BM_favorites");
-end
 
 function ISBuildingMenuUI:saveFavorites(favorites)
     self.favorites = favorites;
+end
+
+--- Strips the given prefix from the full name if it exists
+---@param fullName string The full name to strip the prefix from
+---@param prefix string The prefix to remove
+---@return string fullName The name without the prefix, or the original name if the prefix does not exist
+local function stripPrefix(fullName, prefix)
+    if fullName:sub(1, #prefix) == prefix then
+        return fullName:sub(#prefix + 1);
+    else
+        return fullName;
+    end
+end
+
+--- Adds the given prefix to the name if it is not already present
+---@param name string The name to add the prefix to
+---@param prefix string The prefix to add
+---@return string name The name with the prefix, or the original name if the prefix already exists
+local function addPrefix(name, prefix)
+    if name:sub(1, #prefix) ~= prefix then
+        return prefix .. name;
+    else
+        return name;
+    end
+end
+
+--- Strips the "IGUI_BuildingMenuTab_" prefix from the tab name
+---@param tabName string The full tab name to strip the prefix from
+---@return string tabName The stripped tab name
+function ISBuildingMenuUI:stripTabPrefix(tabName)
+    return stripPrefix(tabName, "IGUI_BuildingMenuTab_");
+end
+
+--- Strips the "IGUI_BuildingMenuCat_" prefix from the category name
+---@param categoryName string The full category name to strip the prefix from
+---@return string categoryName The stripped category name
+function ISBuildingMenuUI:stripCategoryPrefix(categoryName)
+    return stripPrefix(categoryName, "IGUI_BuildingMenuCat_");
+end
+
+--- Strips the "IGUI_BuildingMenuSubCat_" prefix from the subcategory name
+---@param subCategoryName string The full subcategory name to strip the prefix from
+---@return string subCategoryName The stripped subcategory name
+function ISBuildingMenuUI:stripSubCategoryPrefix(subCategoryName)
+    return stripPrefix(subCategoryName, "IGUI_BuildingMenuSubCat_");
+end
+
+--- Adds the "IGUI_BuildingMenuTab_" prefix to the tab name if it is not present
+---@param tabName string The tab name to which the prefix should be added
+---@return string tabName The tab name with the prefix
+function ISBuildingMenuUI:addTabPrefix(tabName)
+    return addPrefix(tabName, "IGUI_BuildingMenuTab_");
+end
+
+--- Adds the "IGUI_BuildingMenuCat_" prefix to the category name if it is not present
+---@param categoryName string The category name to which the prefix should be added
+---@return string categoryName The category name with the prefix
+function ISBuildingMenuUI:addCategoryPrefix(categoryName)
+    return addPrefix(categoryName, "IGUI_BuildingMenuCat_");
+end
+
+--- Adds the "IGUI_BuildingMenuSubCat_" prefix to the subcategory name if it is not present
+---@param subCategoryName string The subcategory name to which the prefix should be added
+---@return string subCategoryName The subcategory name with the prefix
+function ISBuildingMenuUI:addSubCategoryPrefix(subCategoryName)
+    return addPrefix(subCategoryName, "IGUI_BuildingMenuSubCat_");
 end
 
 --- Constructor for ISBuildingMenuUI
@@ -1317,7 +1394,8 @@ function ISBuildingMenuUI:new(x, y, width, height, character)
         getKeyName(ISBuildingMenuUI.leftTab), getKeyName(ISBuildingMenuUI.rightTab));
 
     o.floorIsRoof                  = false;
-    self:updateFavorites();
+    o.favorites                    = ModData.getOrCreate("BuildingMenu_Favorites");
+
     return o;
 end
 
@@ -1327,7 +1405,8 @@ function ISBuildingMenuUI:setVisible(bVisible)
 
     if not bVisible then -- save the selected index
         self.selectedIndex = {};
-        for i, v in ipairs(self.tabs) do
+        for i = 1, #self.tabs do
+            local v = self.tabs[i];
             self.selectedIndex[v.tab] = v.categoriesList.selected;
         end
     end
@@ -1335,7 +1414,8 @@ function ISBuildingMenuUI:setVisible(bVisible)
         self:refresh();
     end
     if bVisible then
-        for i, v in ipairs(self.tabs) do
+        for i = 1, #self.tabs do
+            local v = self.tabs[i];
             if self.selectedIndex[v.tab] then
                 v.categoriesList.selected = self.selectedIndex[v.tab];
             end

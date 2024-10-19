@@ -885,9 +885,9 @@ local function addMelosWallsCastleToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         "melos_tiles_castle_01_0",
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Castle"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Castle",
         "melos_tiles_castle_01_0",
         melosWallsCastle
     )
@@ -1376,9 +1376,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_White_Cinderblock",
         "melos_tiles_walls_bathroom_01a_0",
         melosWallsWhiteCinderblock
     )
@@ -1865,9 +1865,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Grey_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Grey_Cinderblock",
         "melos_tiles_walls_bathroom_01b_0",
         melosWallsGreyCinderblock
     )
@@ -2354,9 +2354,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Black_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Black_Cinderblock",
         "melos_tiles_walls_bathroom_01c_0",
         melosWallsBlackCinderblock
     )
@@ -2843,9 +2843,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Swamp_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Swamp_Cinderblock",
         "melos_tiles_walls_bathroom_01d_0",
         melosWallsSwampCinderblock
     )
@@ -3332,9 +3332,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Yellow_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Yellow_Cinderblock",
         "melos_tiles_walls_bathroom_01e_0",
         melosWallsYellowCinderblock
     )
@@ -3821,9 +3821,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Turquoise_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Turquoise_Cinderblock",
         "melos_tiles_walls_bathroom_01f_0",
         melosWallsTurquoiseCinderblock
     )
@@ -4310,9 +4310,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Cinderblock",
         "melos_tiles_walls_bathroom_01g_0",
         melosWallsBlueCinderblock
     )
@@ -4799,9 +4799,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Violet_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Violet_Cinderblock",
         "melos_tiles_walls_bathroom_01h_0",
         melosWallsVioletCinderblock
     )
@@ -5288,9 +5288,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Strawberry_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Strawberry_Cinderblock",
         "melos_tiles_walls_bathroom_01i_0",
         melosWallsStrawberryCinderblock
     )
@@ -5777,9 +5777,9 @@ local function addMelosWallsCinderblockToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Red_Cinderblock"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Red_Cinderblock",
         "melos_tiles_walls_bathroom_01j_0",
         melosWallsRedCinderblock
     )
@@ -6301,9 +6301,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Small_Tiles"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_White_Small_Tiles",
         "melos_tiles_walls_bathroom_ddd_add_08_0",
         melosWallsBathroomWhiteSmallTiles
     )
@@ -6823,9 +6823,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Medium_Tiles_1"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_White_Medium_Tiles_1",
         "melos_tiles_walls_bathroom_ddd_add_01_0",
         melosWallsBathroomWhiteMediumTiles1
     )
@@ -7345,9 +7345,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Medium_Tiles_2"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_White_Medium_Tiles_2",
         "melos_tiles_walls_bathroom_ddd_add_02_0",
         melosWallsBathroomWhiteMediumTiles2
     )
@@ -7867,9 +7867,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Large_Tiles_1"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_White_Large_Tiles_1",
         "melos_tiles_walls_bathroom_ddd_add_09_0",
         melosWallsBathroomWhiteLargeTiles1
     )
@@ -8389,9 +8389,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Large_Tiles_2"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_White_Large_Tiles_2",
         "melos_tiles_walls_bathroom_ddd_add_04_0",
         melosWallsBathroomWhiteLargeTiles2
     )
@@ -8911,9 +8911,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Grey_Large_Tiles"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Grey_Large_Tiles",
         "melos_tiles_walls_bathroom_ddd_add_03_0",
         melosWallsBathroomGreyLargeTiles
     )
@@ -9433,9 +9433,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Light_Blue_Large_Tiles"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Light_Blue_Large_Tiles",
         "melos_tiles_walls_bathroom_ddd_add_05_0",
         melosWallsBathroomLightBlueLargeTiles
     )
@@ -9955,9 +9955,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Large_Tiles"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Large_Tiles",
         "melos_tiles_walls_bathroom_ddd_add_10_0",
         melosWallsBathroomBlueLargeTiles
     )
@@ -10477,9 +10477,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Light_Green"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Light_Green",
         "melos_tiles_walls_bathroom_ddd_add_07_0",
         melosWallsBathroomLightGreen
     )
@@ -10999,9 +10999,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Green_Large_Tiles"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Green_Large_Tiles",
         "melos_tiles_walls_bathroom_ddd_add_11_0",
         melosWallsBathroomGreenLargeTiles
     )
@@ -11521,9 +11521,9 @@ local function addMelosWallsBathroomToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Yellow_Large_Tiles"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Yellow_Large_Tiles",
         "melos_tiles_walls_bathroom_ddd_add_12_0",
         melosWallsBathroomYellowLargeTiles
     )
@@ -12012,9 +12012,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_White_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_White_Brick",
         "melos_tiles_walls_brick_01a_0",
         melosWallsWhiteBrick
     )
@@ -12501,9 +12501,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Red_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Red_Brick",
         "melos_tiles_walls_brick_01b_0",
         melosWallsRedBrick
     )
@@ -12991,9 +12991,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Turquoise_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Turquoise_Brick",
         "melos_tiles_walls_brick_01c_0",
         melosWallsTurquoiseBrick
     )
@@ -13480,9 +13480,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Brown_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Brown_Brick",
         "melos_tiles_walls_brick_01d_0",
         melosWallsBrownBrick
     )
@@ -13969,9 +13969,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Blue_Brick",
         "melos_tiles_walls_brick_01e_0",
         melosWallsBlueBrick
     )
@@ -14458,9 +14458,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Orange_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Orange_Brick",
         "melos_tiles_walls_brick_01f_0",
         melosWallsOrangeBrick
     )
@@ -14948,9 +14948,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Green_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Green_Brick",
         "melos_tiles_walls_brick_01g_0",
         melosWallsGreenBrick
     )
@@ -15438,9 +15438,9 @@ local function addMelosWallsBrickToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Melos_Walls_Purple_Brick"),
+        "IGUI_BuildingMenuSubCat_Melos_Walls_Purple_Brick",
         "melos_tiles_walls_brick_01h_0",
         melosWallsPurpleBrick
     )
@@ -15485,9 +15485,9 @@ local function addDoorsToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "melos_tiles_doors_02_0",
-        getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Wooden_Doors",
         "melos_tiles_doors_02_0",
         melosDoorObjects
     )
@@ -15535,9 +15535,9 @@ local function addDoorsToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Glass_Doors",
         "melos_tiles_doors_02_40",
         melosDoorObjects
     )
@@ -15648,9 +15648,9 @@ local function addDoorsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_Metal_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Metal_Doors",
         "melos_tiles_doors_01_24",
         melosMetalDoorObjects
     )
@@ -15721,9 +15721,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors",
         "melos_tiles_walls_garage_01_0",
         melosGarageDoorsObjects
     )
@@ -15739,9 +15739,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors",
         "melos_tiles_walls_garage_01_0",
         melosGarageDoorsObjects
     )
@@ -15772,9 +15772,9 @@ local function addWindowsPlusToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         "melos_tiles_windows_03_0",
-        getText("IGUI_BuildingMenuSubCat_Windows_Rustic_Windows"),
+        "IGUI_BuildingMenuSubCat_Windows_Rustic_Windows",
         "melos_tiles_windows_03_0",
         melosWindows
     )
@@ -15787,9 +15787,9 @@ local function addWindowsPlusToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Round_Windows"),
+        "IGUI_BuildingMenuSubCat_Windows_Round_Windows",
         "melos_tiles_windows_04_0",
         melosWindows
     )
@@ -15804,9 +15804,9 @@ local function addWindowsPlusToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Modern1_Windows"),
+        "IGUI_BuildingMenuSubCat_Windows_Modern1_Windows",
         "melos_tiles_windows_05_0",
         melosWindows
     )
@@ -15821,9 +15821,9 @@ local function addWindowsPlusToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Modern2_Windows"),
+        "IGUI_BuildingMenuSubCat_Windows_Modern2_Windows",
         "melos_tiles_windows_05b_0",
         melosWindows
     )
@@ -15838,9 +15838,9 @@ local function addWindowsPlusToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Modern_Extended1_Windows"),
+        "IGUI_BuildingMenuSubCat_Windows_Modern_Extended1_Windows",
         "melos_tiles_windows_06_0",
         melosWindows
     )
@@ -15855,9 +15855,9 @@ local function addWindowsPlusToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Modern_Extended2_Windows"),
+        "IGUI_BuildingMenuSubCat_Windows_Modern_Extended2_Windows",
         "melos_tiles_windows_06b_0",
         melosWindows
     )
@@ -16159,9 +16159,9 @@ local function addWindowsPlusToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Dark_Red_Brick_Triple_Large"),
+        "IGUI_BuildingMenuSubCat_Windows_Dark_Red_Brick_Triple_Large",
         "melos_tiles_windows_triple_large_dark_red_brick_01_0",
         melosDarkRedBrickTripleLarge
     )
@@ -16463,9 +16463,9 @@ local function addWindowsPlusToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Dark_Grey_Brick_Triple_Large"),
+        "IGUI_BuildingMenuSubCat_Windows_Dark_Grey_Brick_Triple_Large",
         "melos_tiles_windows_triple_large_grey_brick_01_0",
         melosGreyBrickTripleLarge
     )
@@ -16767,9 +16767,9 @@ local function addWindowsPlusToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Windows"),
+        "IGUI_BuildingMenuCat_Windows",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Windows_Dark_Yellow_Brick_Triple_Large"),
+        "IGUI_BuildingMenuSubCat_Windows_Dark_Yellow_Brick_Triple_Large",
         "melos_tiles_windows_triple_large_yellow_brick_01_0",
         melosYellowBrickTripleLarge
     )
@@ -16924,9 +16924,9 @@ local function addHighFencesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         "melos_tiles_fencing_02_50",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_High"),
+        "IGUI_BuildingMenuSubCat_Fencing_Fencing_High",
         "melos_tiles_fencing_02_50",
         melosWireFences
     )
@@ -16973,9 +16973,9 @@ local function addLowAndRailingFencesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Fencing_Stair_Railings"),
+        "IGUI_BuildingMenuSubCat_Fencing_Stair_Railings",
         "melos_tiles_railings_02_60",
         stairRailings
     )
@@ -17201,9 +17201,9 @@ local function addLowAndRailingFencesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Fencing_Railing"),
+        "IGUI_BuildingMenuSubCat_Fencing_Railing",
         "melos_tiles_railings_01_53",
         allRailingObjects
     )
@@ -17243,9 +17243,9 @@ local function addFloorsToMenu()
         end
         BuildingMenu.addObjectsToCategories(
             "Melos",
-            getText("IGUI_BuildingMenuCat_Floors"),
+            "IGUI_BuildingMenuCat_Floors",
             "melos_tiles_floors_01_0",
-            getText(subCategory),
+            subCategory,
             baseNameMelosFloors .. spriteNumbers[1],
             melosFloors
         )
@@ -17298,9 +17298,9 @@ local function addMelosStairsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Stairs"),
+        "IGUI_BuildingMenuCat_Stairs",
         "melos_tiles_stairs_01_16",
-        getText("IGUI_BuildingMenuSubCat_Stairs_Wooden"),
+        "IGUI_BuildingMenuSubCat_Stairs_Wooden",
         "melos_tiles_stairs_01_16",
         melosWoodenStairs
     )
@@ -17353,9 +17353,9 @@ local function addMelosStairsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Stairs"),
+        "IGUI_BuildingMenuCat_Stairs",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Stairs_Metal"),
+        "IGUI_BuildingMenuSubCat_Stairs_Metal",
         "melos_tiles_stairs_01_0",
         melosMetalStairs
     )
@@ -17392,9 +17392,9 @@ local function addKitchenCountersToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "melos_tiles_furniture_counters_02_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Residential"),
+        "IGUI_BuildingMenuSubCat_Containers_Residential",
         "melos_tiles_furniture_counters_01_3",
         melosCounters
     )
@@ -17406,9 +17406,9 @@ local function addKitchenCountersToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Upper_Counters"),
+        "IGUI_BuildingMenuSubCat_Containers_Upper_Counters",
         "melos_tiles_furniture_counters_01_11",
         melosCounters
     )
@@ -17449,9 +17449,9 @@ local function addMetalContainersToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
+        "IGUI_BuildingMenuSubCat_Containers_Lockers",
         "melos_tiles_furniture_storage_03_1",
         melosCounters
     )
@@ -17533,9 +17533,9 @@ local function addContainersOthersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Others"),
+        "IGUI_BuildingMenuSubCat_Containers_Others",
         "melos_tiles_gardencenter_02_104",
         melosCounters
     )
@@ -17567,9 +17567,9 @@ local function addMelosSmallTablesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         "melos_tiles_furniture_tables_01_0",
-        getText("IGUI_BuildingMenuSubCat_Furniture_Small_Tables"),
+        "IGUI_BuildingMenuSubCat_Furniture_Small_Tables",
         "melos_tiles_furniture_tables_01_0",
         melosSmallTables
     )
@@ -17665,9 +17665,9 @@ local function addMelosLargeTablesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Large_Tables"),
+        "IGUI_BuildingMenuSubCat_Furniture_Large_Tables",
         "melos_tiles_furniture_tables_01_67",
         melosLargeTables
     )
@@ -17745,9 +17745,9 @@ local function addMelosSimpleBedsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Simple_Beds"),
+        "IGUI_BuildingMenuSubCat_Furniture_Simple_Beds",
         "melos_tiles_furniture_bedding_01_3",
         melosSimpleBeds
     )
@@ -17827,9 +17827,9 @@ local function addMelosLargeBedsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Large_Beds"),
+        "IGUI_BuildingMenuSubCat_Furniture_Large_Beds",
         "melos_tiles_furniture_bedding_03a_15",
         melosLargeBeds
     )
@@ -18098,9 +18098,9 @@ local function addMelosCouchesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
+        "IGUI_BuildingMenuSubCat_Furniture_Couches",
         "melos_tiles_furniture_seating_02_1",
         melosCouches
     )
@@ -18316,9 +18316,9 @@ local function addMelosCharisToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Chairs"),
+        "IGUI_BuildingMenuSubCat_Furniture_Chairs",
         "melos_tiles_furniture_seating_01_0",
         melosChairs
     )
@@ -19577,9 +19577,9 @@ local function addMelosFurnitureSet1ToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Melos_Furniture_Sets_1"),
+        "IGUI_BuildingMenuSubCat_Furniture_Melos_Furniture_Sets_1",
         "melos_tiles_furniture_storage_02a_3",
         melosFurnitureSets1
     )
@@ -20838,9 +20838,9 @@ local function addMelosFurnitureSet2ToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Melos_Furniture_Sets_2"),
+        "IGUI_BuildingMenuSubCat_Furniture_Melos_Furniture_Sets_2",
         "melos_tiles_furniture_storage_02_3",
         melosFurnitureSets2
     )
@@ -20910,9 +20910,9 @@ local function addMelosFlowersToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Vegetation"),
+        "IGUI_BuildingMenuCat_Vegetation",
         "melos_tiles_gardencenter_01_0",
-        getText("IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor"),
+        "IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor",
         "melos_tiles_gardencenter_01_0",
         melosIndoorFlowers
     );
@@ -20947,9 +20947,9 @@ local function addMelosPlantersToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Vegetation"),
+        "IGUI_BuildingMenuCat_Vegetation",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Vegetation_Melos_Flower_Planter_Set1"),
+        "IGUI_BuildingMenuSubCat_Vegetation_Melos_Flower_Planter_Set1",
         "melos_tiles_gardencenter_plants_01_0",
         melosFlowerPlanters
     )
@@ -20961,9 +20961,9 @@ local function addMelosPlantersToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Vegetation"),
+        "IGUI_BuildingMenuCat_Vegetation",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Vegetation_Melos_Flower_Planter_Set2"),
+        "IGUI_BuildingMenuSubCat_Vegetation_Melos_Flower_Planter_Set2",
         "melos_tiles_gardencenter_plants_01_64",
         melosFlowerPlanters
     )
@@ -21402,9 +21402,9 @@ local function addMelosWallVinesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Vegetation"),
+        "IGUI_BuildingMenuCat_Vegetation",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Vegetation_Vines"),
+        "IGUI_BuildingMenuSubCat_Vegetation_Vines",
         "melos_tiles_gardencenter_vines_01_102",
         melosWallVines
     )
@@ -21730,9 +21730,9 @@ local function addMelosGrapeVinesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Vegetation"),
+        "IGUI_BuildingMenuCat_Vegetation",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Vegetation_Vines"),
+        "IGUI_BuildingMenuSubCat_Vegetation_Vines",
         "melos_tiles_gardencenter_vines_01_102",
         melosGrapeVines
     )
@@ -21774,9 +21774,9 @@ local function addMelosCookingObjsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "melos_tiles_appliances_01_0",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
+        "IGUI_BuildingMenuSubCat_Appliances_Cooking",
         "melos_tiles_appliances_01_0",
         melosCookingObjects
     )
@@ -21832,9 +21832,9 @@ local function addMelosFridgesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Melos",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "melos_tiles_appliances_01_87",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "IGUI_BuildingMenuSubCat_Appliances_Fridges",
         "melos_tiles_appliances_01_87",
         melosFridgesObjects
     )

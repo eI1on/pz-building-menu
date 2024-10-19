@@ -28,9 +28,9 @@ local function addDylanContainersToMenu()
     table.insert(dylanCounter, createCounterObject("Block_Trasher_", 50))
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "",
-        getText("IGUI_BuildingMenuSubCat_Containers_Block_Trasher"),
+        "IGUI_BuildingMenuSubCat_Containers_Block_Trasher",
         "Block_Trasher_51",
         dylanCounter
     )
@@ -40,9 +40,9 @@ local function addDylanContainersToMenu()
     table.insert(dylanCounter, createCounterObject("DylansBar01_", 42))
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "",
-        getText("IGUI_BuildingMenuSubCat_Containers_Restaurant"),
+        "IGUI_BuildingMenuSubCat_Containers_Restaurant",
         "DylansBar01_43",
         dylanCounter
     )
@@ -76,9 +76,9 @@ local function addDylanContainersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "Block_Trasher_1",
-        getText("IGUI_BuildingMenuSubCat_Containers_Shelves"),
+        "IGUI_BuildingMenuSubCat_Containers_Shelves",
         "Block_Trasher_1",
         dylanBookshelves
     )
@@ -133,9 +133,9 @@ local function addGardenStuffToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Garden_Stuff"),
+        "IGUI_BuildingMenuCat_Garden_Stuff",
         "DylansGardenStuff02_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Crates"),
+        "IGUI_BuildingMenuSubCat_Containers_Crates",
         "DylansGardenStuff01_18",
         crateObjects
     )
@@ -182,9 +182,9 @@ local function addGardenStuffToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Garden_Stuff"),
+        "IGUI_BuildingMenuCat_Garden_Stuff",
         "",
-        getText("IGUI_BuildingMenuSubCat_Plant_Containers"),
+        "IGUI_BuildingMenuSubCat_Plant_Containers",
         "DylansGardenStuff01_21",
         plantCrateObjects
     )
@@ -263,9 +263,9 @@ local function addGardenStuffToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Garden_Stuff"),
+        "IGUI_BuildingMenuCat_Garden_Stuff",
         "",
-        getText("IGUI_BuildingMenuSubCat_Plant_Shelves"),
+        "IGUI_BuildingMenuSubCat_Plant_Shelves",
         "DylansGardenStuff02_36",
         plantCrateObjects
     )
@@ -298,9 +298,9 @@ local function addGardenStuffToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Garden_Stuff"),
+        "IGUI_BuildingMenuCat_Garden_Stuff",
         "",
-        getText("IGUI_BuildingMenuSubCat_Small_Plant_Containers"),
+        "IGUI_BuildingMenuSubCat_Small_Plant_Containers",
         "building_menu_dylan_garden_stuff_8",
         plantCrateObjects
     )
@@ -376,9 +376,9 @@ local function addGardenStuffToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Garden_Stuff"),
+        "IGUI_BuildingMenuCat_Garden_Stuff",
         "",
-        getText("IGUI_BuildingMenuSubCat_Garden_Fencing"),
+        "IGUI_BuildingMenuSubCat_Garden_Fencing",
         "DylansGardenStuff02_8",
         gardenWallsObjects
     )
@@ -407,9 +407,9 @@ local function addMetalCountersToMenu()
     table.insert(blackCoffeeContainer, createLockerObject("BlackCoffeeCo01_9"))
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "BlackCoffeeCo01_8",
-        getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
+        "IGUI_BuildingMenuSubCat_Containers_Lockers",
         "BlackCoffeeCo01_8",
         blackCoffeeContainer
     )
@@ -492,9 +492,9 @@ local function addMetalCountersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "BlackCoffeeCo01_8",
-        getText("IGUI_BuildingMenuSubCat_Containers_Metal"),
+        "IGUI_BuildingMenuSubCat_Containers_Metal",
         "DarthGunStore_10",
         metalCounterObjects
     )
@@ -631,9 +631,9 @@ local function addMetalCountersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "BlackCoffeeCo01_8",
-        getText("IGUI_BuildingMenuSubCat_Lab_Containers"),
+        "IGUI_BuildingMenuSubCat_Lab_Containers",
         "DylansRandomFurniture03_38",
         labCounterObjects
     )
@@ -660,9 +660,9 @@ local function addFridgeAppliancesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "DylansElectronics01_50",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "IGUI_BuildingMenuSubCat_Appliances_Fridges",
         "DylansElectronics01_50",
         fridgesObjects
     )
@@ -700,9 +700,9 @@ local function addBarricadesToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Barricades"),
+        "IGUI_BuildingMenuCat_Barricades",
         "DylansJunkstacks01_0",
-        getText("IGUI_BuildingMenuSubCat_Low_Barricades"),
+        "IGUI_BuildingMenuSubCat_Low_Barricades",
         "DylansJunkstacks01_1",
         barricadeObjects
     )
@@ -718,9 +718,9 @@ local function addBarricadesToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Dylan",
-        getText("IGUI_BuildingMenuCat_Barricades"),
+        "IGUI_BuildingMenuCat_Barricades",
         "DylansJunkstacks01_0",
-        getText("IGUI_BuildingMenuSubCat_High_Barricades"),
+        "IGUI_BuildingMenuSubCat_High_Barricades",
         "DylansJunkstacks01_0",
         barricadeObjects
     )

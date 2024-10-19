@@ -91,9 +91,9 @@ local function addCommercialWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         "LC_Fast_Food_Walls_01_0",
-        getText("IGUI_BuildingMenuSubCat_Walls_Fast_Food_Pink"),
+        "IGUI_BuildingMenuSubCat_Walls_Fast_Food_Pink",
         "LC_Fast_Food_Walls_01_0",
         fastFoodPinkWalls
     )
@@ -185,9 +185,9 @@ local function addCommercialWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Fast_Food_Light_Yellow"),
+        "IGUI_BuildingMenuSubCat_Walls_Fast_Food_Light_Yellow",
         "LC_Fast_Food_Walls_01_16",
         fastFoodLightYellowWalls
     )
@@ -379,9 +379,9 @@ local function addCommercialWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Greasy_Joe"),
+        "IGUI_BuildingMenuSubCat_Walls_Greasy_Joe",
         "LC_Greasy_Joe_16",
         greasyJoeWalls
     )
@@ -411,9 +411,9 @@ local function addCommercialWallsToMenu()
         end
         BuildingMenu.addObjectsToCategories(
             "TryHonesty's Tiles",
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuCat_Walls",
             nil,
-            getText("IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategory),
+            "IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategory,
             baseStorefront .. spriteNumbers[1][1],
             storefrontWalls
         )
@@ -474,9 +474,9 @@ local function addCommercialWallsToMenu()
     };
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Storefront_Rifle_Green"),
+        "IGUI_BuildingMenuSubCat_Walls_Storefront_Rifle_Green",
         nil,
         storefrontWalls
     );
@@ -1340,9 +1340,9 @@ local function addCommercialWallsToMenu()
     };
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Storefront_Rifle_Green"),
+        "IGUI_BuildingMenuSubCat_Walls_Storefront_Rifle_Green",
         nil,
         storefrontWalls
     );
@@ -1377,9 +1377,9 @@ local function addCommercialWallsToMenu()
             end
             BuildingMenu.addObjectsToCategories(
                 "TryHonesty's Tiles",
-                getText("IGUI_BuildingMenuCat_Walls"),
+                "IGUI_BuildingMenuCat_Walls",
                 nil,
-                getText("IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName),
+                "IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName,
                 nil,
                 walls
             );
@@ -1412,9 +1412,9 @@ local function addCommercialWallsToMenu()
             end
             BuildingMenu.addObjectsToCategories(
                 "TryHonesty's Tiles",
-                getText("IGUI_BuildingMenuCat_Walls"),
+                "IGUI_BuildingMenuCat_Walls",
                 nil,
-                getText("IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName),
+                "IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName,
                 nil,
                 corners
             );
@@ -1446,9 +1446,9 @@ local function addCommercialWallsToMenu()
             end
             BuildingMenu.addObjectsToCategories(
                 "TryHonesty's Tiles",
-                getText("IGUI_BuildingMenuCat_Walls"),
+                "IGUI_BuildingMenuCat_Walls",
                 nil,
-                getText("IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName),
+                "IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName,
                 nil,
                 pillars
             );
@@ -1479,9 +1479,9 @@ local function addCommercialWallsToMenu()
             end
             BuildingMenu.addObjectsToCategories(
                 "TryHonesty's Tiles",
-                getText("IGUI_BuildingMenuCat_Walls"),
+                "IGUI_BuildingMenuCat_Walls",
                 nil,
-                getText("IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName),
+                "IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName,
                 nil,
                 door_frames
             );
@@ -1515,9 +1515,9 @@ local function addCommercialWallsToMenu()
             end
             BuildingMenu.addObjectsToCategories(
                 "TryHonesty's Tiles",
-                getText("IGUI_BuildingMenuCat_Walls"),
+                "IGUI_BuildingMenuCat_Walls",
                 nil,
-                getText("IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName),
+                "IGUI_BuildingMenuSubCat_Walls_Storefront_" .. subCategoryName,
                 nil,
                 window_frames
             );
@@ -1650,9 +1650,9 @@ local function addFloorsToMenu()
         end
         BuildingMenu.addObjectsToCategories(
             "TryHonesty's Tiles",
-            getText("IGUI_BuildingMenuCat_Floors"),
+            "IGUI_BuildingMenuCat_Floors",
             "LC_Fancyfloor_18",
-            getText(subCategory),
+            subCategory,
             baseFloorName .. spriteNumbers[1],
             floors
         )
@@ -1668,7 +1668,7 @@ end
 local function addGarageDoorsToMenu()
     local garageDoors = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Double_Door_Gates"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Double_Door_Gates",
             subCategoryIcon = "LC_fencing_56",
             objects = {
                 BuildingMenu.createObject(
@@ -1711,7 +1711,7 @@ local function addGarageDoorsToMenu()
     for k, subCatData in pairs(garageDoors) do
         BuildingMenu.addObjectsToCategories(
             "TryHonesty's Tiles",
-            getText("IGUI_BuildingMenuCat_Doors"),
+            "IGUI_BuildingMenuCat_Doors",
             "LC_fencing_56",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -1784,9 +1784,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors",
         "LC_garage_doors_0",
         garageDoorsObjects
     )
@@ -1800,9 +1800,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors",
         "LC_garage_doors_0",
         garageDoorsObjects
     )
@@ -2128,9 +2128,9 @@ local function addHighFencesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         "LC_fencing_40",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_High"),
+        "IGUI_BuildingMenuSubCat_Fencing_Fencing_High",
         "LC_fencing_40",
         highFences
     )
@@ -2139,7 +2139,7 @@ end
 local function addTablesToMenu()
     local tables = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Large_Tables"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Large_Tables",
             subCategoryIcon = "LC_Greasy_Joe_22",
             objects = {
                 BuildingMenu.createObject(
@@ -2164,7 +2164,7 @@ local function addTablesToMenu()
     for k, subCatData in pairs(tables) do
         BuildingMenu.addObjectsToCategories(
             "TryHonesty's Tiles",
-            getText("IGUI_BuildingMenuCat_Furniture"),
+            "IGUI_BuildingMenuCat_Furniture",
             "LC_Greasy_Joe_22",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -2275,9 +2275,9 @@ local function addBedsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         "LC_bedroom1_23",
-        getText("IGUI_BuildingMenuSubCat_Furniture_Large_Beds"),
+        "IGUI_BuildingMenuSubCat_Furniture_Large_Beds",
         "LC_bedroom1_23",
         beds
     )
@@ -2311,9 +2311,9 @@ local function addSeatingFurnitureToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
+        "IGUI_BuildingMenuSubCat_Furniture_Couches",
         "LC_bedroom1_62",
         couches
     )
@@ -2385,9 +2385,9 @@ local function addSeatingFurnitureToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Chairs"),
+        "IGUI_BuildingMenuSubCat_Furniture_Chairs",
         "LC_bedroom1_45",
         chairs
     )
@@ -2415,9 +2415,9 @@ local function addBookshelvesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Bookshelves"),
+        "IGUI_BuildingMenuSubCat_Furniture_Bookshelves",
         "LC_Club_52",
         bookshelves
     )
@@ -2462,9 +2462,9 @@ local function addKitchenCountersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "LC_Kitchen_01_9",
-        getText("IGUI_BuildingMenuSubCat_Containers_Residential"),
+        "IGUI_BuildingMenuSubCat_Containers_Residential",
         "LC_Kitchen_01_9",
         kitchenCounters
     )
@@ -2487,9 +2487,9 @@ local function addKitchenCountersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "LC_Kitchen_01_17",
-        getText("IGUI_BuildingMenuSubCat_Containers_Upper_Counters"),
+        "IGUI_BuildingMenuSubCat_Containers_Upper_Counters",
         "LC_Kitchen_01_17",
         kitchenCounters
     )
@@ -2498,7 +2498,7 @@ end
 local function addCommercialCountersToMenu()
     local commercialCounters = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Restaurant"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Restaurant",
             subCategoryIcon = "LC_Greasy_Joe_3",
             objects = {
                 BuildingMenu.createObject(
@@ -2541,7 +2541,7 @@ local function addCommercialCountersToMenu()
     for k, subCatData in pairs(commercialCounters) do
         BuildingMenu.addObjectsToCategories(
             "TryHonesty's Tiles",
-            getText("IGUI_BuildingMenuCat_Containers"),
+            "IGUI_BuildingMenuCat_Containers",
             "LC_Greasy_Joe_3",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -2612,9 +2612,9 @@ local function addCratesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "LC_Bitch_n_dogfood_01_0",
-        getText("IGUI_BuildingMenuSubCat_Containers_Crates"),
+        "IGUI_BuildingMenuSubCat_Containers_Crates",
         "LC_Bitch_n_dogfood_01_0",
         crate
     );
@@ -2656,9 +2656,9 @@ local function addContainersOthersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Others"),
+        "IGUI_BuildingMenuSubCat_Containers_Others",
         "LC_Decorative_Accessories_01_3",
         containersOthers
     )
@@ -2844,9 +2844,9 @@ local function addClothesRacksToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Clothing"),
+        "IGUI_BuildingMenuSubCat_Containers_Clothing",
         "LC_Clothing_Store_01_4",
         clothesRacks
     )
@@ -2926,9 +2926,9 @@ local function addTrashCansToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Trash_Cans"),
+        "IGUI_BuildingMenuSubCat_Containers_Trash_Cans",
         "LC_Trash_Containers_57",
         trashCans
     )
@@ -3121,9 +3121,9 @@ local function addRugsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Decorations"),
+        "IGUI_BuildingMenuCat_Decorations",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Decorations_Rugs"),
+        "IGUI_BuildingMenuSubCat_Decorations_Rugs",
         "LC_rugs_6",
         rugs
     )
@@ -3132,7 +3132,7 @@ end
 local function addPostersAndSignsToMenu()
     local postersAndSigns = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Posters"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Posters",
             subCategoryIcon = "LC_Clothing_Store_01_25",
             objects = {
                 BuildingMenu.createObject(
@@ -3388,7 +3388,7 @@ local function addPostersAndSignsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Signs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Signs",
             subCategoryIcon = "LC_Club_57",
             objects = {
                 BuildingMenu.createObject(
@@ -3625,7 +3625,7 @@ local function addPostersAndSignsToMenu()
     for k, subCatData in pairs(postersAndSigns) do
         BuildingMenu.addObjectsToCategories(
             "TryHonesty's Tiles",
-            getText("IGUI_BuildingMenuCat_Decorations"),
+            "IGUI_BuildingMenuCat_Decorations",
             "LC_Clothing_Store_01_25",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -3671,9 +3671,9 @@ local function addCurtainsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Decorations"),
+        "IGUI_BuildingMenuCat_Decorations",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Decorations_Curtains"),
+        "IGUI_BuildingMenuSubCat_Decorations_Curtains",
         "LC_fixtures_windows_curtains_01_20",
         curtains
     );
@@ -3728,9 +3728,9 @@ local function addOtherDecorationsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Decorations"),
+        "IGUI_BuildingMenuCat_Decorations",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Decorations_Others"),
+        "IGUI_BuildingMenuSubCat_Decorations_Others",
         "LC_Decorative_Accessories_01_9",
         otherDecorations
     )
@@ -3770,9 +3770,9 @@ local function addFridgeAppliancesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "LC_Club_30",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "IGUI_BuildingMenuSubCat_Appliances_Fridges",
         "LC_Club_30",
         fridgesObjects
     )
@@ -3802,9 +3802,9 @@ local function addCookingAppliancesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "LC_Kitchen_01_1",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
+        "IGUI_BuildingMenuSubCat_Appliances_Cooking",
         "LC_Kitchen_01_1",
         cookingObjects
     )
@@ -3853,16 +3853,16 @@ local function addChinatownObjectsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_TryHonestys_Chinatown"),
+        "IGUI_BuildingMenuCat_TryHonestys_Chinatown",
         "LC_Chinatown_104",
-        getText("IGUI_BuildingMenuSubCat_Furniture_Chairs"),
+        "IGUI_BuildingMenuSubCat_Furniture_Chairs",
         "LC_Chinatown_2",
         chairs
     )
 
     local postersAndSigns = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Posters"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Posters",
             subCategoryIcon = "LC_Chinatown_13",
             objects = {
                 BuildingMenu.createObject(
@@ -4062,7 +4062,7 @@ local function addChinatownObjectsToMenu()
     for k, subCatData in pairs(postersAndSigns) do
         BuildingMenu.addObjectsToCategories(
             "TryHonesty's Tiles",
-            getText("IGUI_BuildingMenuCat_TryHonestys_Chinatown"),
+            "IGUI_BuildingMenuCat_TryHonestys_Chinatown",
             nil,
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -4169,9 +4169,9 @@ local function addChinatownObjectsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "TryHonesty's Tiles",
-        getText("IGUI_BuildingMenuCat_TryHonestys_Chinatown"),
+        "IGUI_BuildingMenuCat_TryHonestys_Chinatown",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Chinatown_Decorative_Objects"),
+        "IGUI_BuildingMenuSubCat_Chinatown_Decorative_Objects",
         "LC_Chinatown_34",
         decorativeObjects
     )

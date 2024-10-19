@@ -126,10 +126,10 @@ For the earlier example you can insert the object like this:
 
 ```lua
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),        -- tabName
-        getText("IGUI_BuildingMenuCat_Cat_Test"),       -- categoryName
+        "IGUI_BuildingMenuTab_General",        -- tabName
+        "IGUI_BuildingMenuCat_Cat_Test",       -- categoryName
         "",                                             -- categoryIcon
-        getText("IGUI_BuildingMenuSubCat_SubCat_Test"), -- subcategoryName
+        "IGUI_BuildingMenuSubCat_SubCat_Test", -- subcategoryName
         "",                                             -- subCategoryIcon
         {
             exampleObject

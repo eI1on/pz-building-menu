@@ -6,7 +6,7 @@ require("BuildingMenu04_CategoriesDefinitions")
 local function addWallsToMenu()
     local industrialWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Dirkea_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Dirkea_Walls",
             subCategoryIcon = "industry_dirkea_ddd_01_8",
             objects = {
                 BuildingMenu.createObject(
@@ -100,7 +100,7 @@ local function addWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Industrial_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Industrial_Walls",
             subCategoryIcon = "more_walls_ddd_01_76",
             objects = {
                 BuildingMenu.createObject(
@@ -284,7 +284,7 @@ local function addWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Corrugated_Metal_Sheet"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Corrugated_Metal_Sheet",
             subCategoryIcon = "more_walls_ddd_02_16",
             objects = {
                 BuildingMenu.createObject(
@@ -513,7 +513,7 @@ local function addWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Rusted_Corrugated_Metal_Sheet"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Rusted_Corrugated_Metal_Sheet",
             subCategoryIcon = "more_walls_ddd_02_16",
             objects = {
                 BuildingMenu.createObject(
@@ -769,7 +769,7 @@ local function addWallsToMenu()
     for k, subCatData in pairs(industrialWalls) do
         BuildingMenu.addObjectsToCategories(
             "Daddy Dirkie",
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuCat_Walls",
             "more_walls_ddd_02_16",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -781,7 +781,7 @@ end
 local function addRoofingToMenu()
     local roofs = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Rusted_Corrugated_Metal_Sheet_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Rusted_Corrugated_Metal_Sheet_Roofs",
             subCategoryIcon = "roofs_ddd_04_0",
             objects = {
                 BuildingMenu.createObject(
@@ -1200,7 +1200,7 @@ local function addRoofingToMenu()
     for k, subCatData in pairs(roofs) do
         BuildingMenu.addObjectsToCategories(
             "Daddy Dirkie",
-            getText("IGUI_BuildingMenuCat_Roofing"),
+            "IGUI_BuildingMenuCat_Roofing",
             "roofs_ddd_04_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -1267,9 +1267,9 @@ local function addDoorsToMenu()
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenDoorRecipe)
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "d_doors_01_0",
-        getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Wooden_Doors",
         "d_doors_01_0",
         daddyDirkieDoors
     )
@@ -1284,9 +1284,9 @@ local function addDoorsToMenu()
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenSingleGlassDoorRecipe)
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "",
-        getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Glass_Doors",
         "d_doors_01_4",
         daddyDirkieDoors
     )
@@ -1309,9 +1309,9 @@ local function addDoorsToMenu()
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.WoodenDoubleGlassDoorRecipe)
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "d_doors_01_0",
-        getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Glass_Doors",
         "d_doors_01_8",
         daddyDirkieDoors
     )
@@ -1324,9 +1324,9 @@ local function addDoorsToMenu()
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.MetalDoorRecipe)
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "d_doors_01_0",
-        getText("IGUI_BuildingMenuSubCat_Doors_Metal_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Metal_Doors",
         "d_doors_01_28",
         daddyDirkieDoors
     )
@@ -1339,9 +1339,9 @@ local function addDoorsToMenu()
     daddyDirkieDoors = createDoorObjects(doorSpriteRanges, BuildingMenu.MetalSingleGlassDoorRecipe)
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "d_doors_01_0",
-        getText("IGUI_BuildingMenuSubCat_Doors_Metal_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Metal_Doors",
         "d_doors_01_12",
         daddyDirkieDoors
     )
@@ -1350,7 +1350,7 @@ end
 local function addArchitecturePlusToMenu()
     local architecturePlus = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation",
             subCategoryIcon = "walls_trim_ddd_02_14",
             objects = {
                 BuildingMenu.createObject(
@@ -1574,7 +1574,7 @@ local function addArchitecturePlusToMenu()
     for k, subCatData in pairs(architecturePlus) do
         BuildingMenu.addObjectsToCategories(
             "Daddy Dirkie",
-            getText("IGUI_BuildingMenuCat_ArchitecturePlus"),
+            "IGUI_BuildingMenuCat_ArchitecturePlus",
             "walls_trim_ddd_02_14",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -1825,9 +1825,9 @@ local function addHighFencesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         "fencing_ddd_01_11",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_High"),
+        "IGUI_BuildingMenuSubCat_Fencing_Fencing_High",
         "fencing_ddd_01_11",
         highFences
     )
@@ -1859,9 +1859,9 @@ local function addFloorsToMenu()
         end
         BuildingMenu.addObjectsToCategories(
             "Daddy Dirkie",
-            getText("IGUI_BuildingMenuCat_Floors"),
+            "IGUI_BuildingMenuCat_Floors",
             "misc_ddd_01_16",
-            getText(subCategory),
+            subCategory,
             baseFloorName .. spriteNumbersTable[1][1],
             floors
         )
@@ -2097,9 +2097,9 @@ local function addLowAndRailingFencesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         "fencing_ddd_01_11",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_Low"),
+        "IGUI_BuildingMenuSubCat_Fencing_Fencing_Low",
         "location_farm_accesories_spyjack_01_11",
         lowFences
     )
@@ -2365,9 +2365,9 @@ local function addBedroomFurnitureToMenu()
     for i, set in ipairs(furnitureSets) do
         BuildingMenu.addObjectsToCategories(
             "Daddy Dirkie",
-            getText("IGUI_BuildingMenuCat_Furniture"),
+            "IGUI_BuildingMenuCat_Furniture",
             "d_furniture_bedroom_0" .. i .. "_25",
-            getText("IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_" .. i),
+            "IGUI_BuildingMenuSubCat_DaddyDirkie_Furniture_Furniture_Set_" .. i,
             "d_furniture_bedroom_0" .. i .. "_25",
             set
         )
@@ -2652,9 +2652,9 @@ local function addBedroomFurnitureToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         "edit_ddd_RUS_furniture_storage_03_8",
-        getText("IGUI_BuildingMenuSubCat_Furniture_Dressers"),
+        "IGUI_BuildingMenuSubCat_Furniture_Dressers",
         "edit_ddd_RUS_furniture_storage_03_8",
         furnitureDressers
     )
@@ -2877,9 +2877,9 @@ local function addCouchesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
+        "IGUI_BuildingMenuSubCat_Furniture_Couches",
         "d_furniture_couches_01_13",
         daddyDirkieCouches
     )
@@ -2953,9 +2953,9 @@ local function addKitchenCountersToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "d_furniture_kitchen_01_11",
-        getText("IGUI_BuildingMenuSubCat_Containers_Residential"),
+        "IGUI_BuildingMenuSubCat_Containers_Residential",
         "d_furniture_kitchen_01_11",
         daddyDirkieCounters
     )
@@ -3007,9 +3007,9 @@ local function addKitchenCountersToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Upper_Counters"),
+        "IGUI_BuildingMenuSubCat_Containers_Upper_Counters",
         "d_furniture_kitchen_01_1",
         daddyDirkieCounters
     )
@@ -3176,9 +3176,9 @@ local function addMetalContainersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Metal"),
+        "IGUI_BuildingMenuSubCat_Containers_Metal",
         "edit_ddd_RUS_location_business_machinery_02_1",
         daddyDirkieCounters
     )
@@ -3462,9 +3462,9 @@ local function addCratesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Crates"),
+        "IGUI_BuildingMenuSubCat_Containers_Crates",
         "furniture_storage_ddd_01_7",
         daddyDirkieCrates
     )
@@ -3532,9 +3532,9 @@ local function addStairsToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Stairs"),
+        "IGUI_BuildingMenuCat_Stairs",
         "fixtures_stairs_ddd_01_32",
-        getText("IGUI_BuildingMenuSubCat_Stairs_Wooden"),
+        "IGUI_BuildingMenuSubCat_Stairs_Wooden",
         "fixtures_stairs_ddd_01_32",
         melosWoodenStairs
     )
@@ -3587,9 +3587,9 @@ local function addStairsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Stairs"),
+        "IGUI_BuildingMenuCat_Stairs",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Stairs_Metal"),
+        "IGUI_BuildingMenuSubCat_Stairs_Metal",
         "fixtures_stairs_ddd_01_0",
         melosMetalStairs
     )
@@ -3670,9 +3670,9 @@ local function addOthersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_DaddyDirkie_Others"),
+        "IGUI_BuildingMenuCat_DaddyDirkie_Others",
         "d_doors_02_64",
-        getText("IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances"),
+        "IGUI_BuildingMenuSubCat_DaddyDirkie_Secret_Entrances",
         "d_doors_02_64",
         daddyDirkieOthers
     )
@@ -4063,9 +4063,9 @@ local function addForestSurvivalToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_DaddyDirkie_Others"),
+        "IGUI_BuildingMenuCat_DaddyDirkie_Others",
         "edit_ddd_RUS_Forest Survival_01_0",
-        getText("IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival"),
+        "IGUI_BuildingMenuSubCat_DaddyDirkie_Forest_Survival",
         "edit_ddd_RUS_Forest Survival_01_0",
         forestSurvival
     )
@@ -4110,9 +4110,9 @@ local function addCraftedStoveToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "edit_ddd_RUS_House_Furnace_35",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
+        "IGUI_BuildingMenuSubCat_Appliances_Cooking",
         "edit_ddd_RUS_House_Furnace_35",
         craftedStove
     )
@@ -4184,9 +4184,9 @@ local function addBathroomAppliancesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "fixtures_sinks_01_21",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Bathroom"),
+        "IGUI_BuildingMenuSubCat_Appliances_Bathroom",
         "fixtures_sinks_01_21",
         bathroomObjects
     )
@@ -4220,9 +4220,9 @@ local function addRoadworkDirtandGrassToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuCat_Road_Work",
         "ramps_ddd_11",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Asphalt_Ramp"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Asphalt_Ramp",
         "ramps_ddd_11",
         roadworkAsphalt
     )
@@ -4685,9 +4685,9 @@ local function addRoadworkDirtandGrassToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuCat_Road_Work",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Grass_Ramp"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Grass_Ramp",
         "ramps_ddd_5",
         roadworkGrass
     )
@@ -5096,9 +5096,9 @@ local function addRoadworkDirtandGrassToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuCat_Road_Work",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Dirt_Ramp"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Dirt_Ramp",
         "ramps_ddd_85",
         roadworkDirt
     )
@@ -5333,9 +5333,9 @@ local function addRoadworkDirtandGrassToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Daddy Dirkie",
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuCat_Road_Work",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Sand_Ramp"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Sand_Ramp",
         "ramps_ddd_37",
         roadworkSand
     )

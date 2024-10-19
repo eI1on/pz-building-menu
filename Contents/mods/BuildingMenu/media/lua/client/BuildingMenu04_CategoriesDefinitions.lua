@@ -112,11 +112,11 @@ BuildingMenu.ObjectCounts = {}
 --- Initializes the tabs in the building menu with default tab values
 BuildingMenu.Tabs = table.newarray(
     {
-        tabName = getText("IGUI_BuildingMenuTab_Favorite"),
+        tabName = "IGUI_BuildingMenuTab_Favorite",
         categories = table.newarray(),
     },
     {
-        tabName = getText("IGUI_BuildingMenuTab_General"),
+        tabName = "IGUI_BuildingMenuTab_General",
         categories = table.newarray(),
     }
 )
@@ -341,10 +341,10 @@ local function addWoodWallsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Old_Wood_Panel"),
+        "IGUI_BuildingMenuSubCat_Walls_Old_Wood_Panel",
         "walls_exterior_wooden_01_28",
         oldWoodPanelWalls
     )
@@ -566,10 +566,10 @@ local function addWoodWallsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Wooden_Panel"),
+        "IGUI_BuildingMenuSubCat_Walls_Wooden_Panel",
         "walls_exterior_wooden_01_24",
         woodenPanelWalls
     )
@@ -791,10 +791,10 @@ local function addWoodWallsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_White_Panel"),
+        "IGUI_BuildingMenuSubCat_Walls_White_Panel",
         "walls_exterior_wooden_02_0",
         whitePanelWalls
     )
@@ -1016,10 +1016,10 @@ local function addWoodWallsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Red_Barn_Wood"),
+        "IGUI_BuildingMenuSubCat_Walls_Red_Barn_Wood",
         "walls_exterior_wooden_01_0",
         redBarnWood
     )
@@ -1268,10 +1268,10 @@ local function addWoodWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Brown_Panel"),
+        "IGUI_BuildingMenuSubCat_Walls_Brown_Panel",
         "location_shop_bargNclothes_01_24",
         brownPanelWoodWalls
     )
@@ -1385,10 +1385,10 @@ local function addWoodWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel"),
+        "IGUI_BuildingMenuSubCat_Walls_Fancy_Wood_Panel",
         "location_restaurant_bar_01_44",
         fancyWoodPanelWalls
     )
@@ -1610,10 +1610,10 @@ local function addClapboardWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Blue_Clapboard",
         "walls_exterior_house_02_20",
         blueClapboardWalls
     )
@@ -1833,10 +1833,10 @@ local function addClapboardWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard",
         "walls_exterior_house_02_32",
         tanClapboardWalls
     )
@@ -1930,10 +1930,10 @@ local function addClapboardWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Pink_Clapboard",
         "walls_exterior_house_02_68",
         pinkClapboardWalls
     )
@@ -2029,10 +2029,10 @@ local function addClapboardWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Turquoise_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Turquoise_Clapboard",
         "walls_exterior_house_02_80",
         turquoiseClapboardWalls
     )
@@ -2166,10 +2166,10 @@ local function addClapboardWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_White_Wide_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_White_Wide_Clapboard",
         "location_trailer_01_0",
         whiteWideClapboardWalls
     )
@@ -2390,10 +2390,10 @@ local function addClapboardWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_White_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_White_Clapboard",
         "walls_exterior_house_01_32",
         whiteClapboardWalls
     )
@@ -2613,10 +2613,10 @@ local function addClapboardWallsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Walls",
         "walls_exterior_wooden_01_24",
-        getText("IGUI_BuildingMenuSubCat_Walls_Brown_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Brown_Clapboard",
         "walls_exterior_house_01_48",
         brownClapboardWalls
     )
@@ -2625,7 +2625,7 @@ end
 local function addStoneWallsToMenu()
     local stoneWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Grey_Stone"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Grey_Stone",
             subCategoryIcon = "walls_exterior_house_02_0",
             objects = {
                 BuildingMenu.createObject(
@@ -2843,7 +2843,7 @@ local function addStoneWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Tan_Stone"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Tan_Stone",
             subCategoryIcon = "walls_exterior_house_02_4",
             objects = {
                 BuildingMenu.createObject(
@@ -2937,8 +2937,8 @@ local function addStoneWallsToMenu()
     }
     for k, subCatData in pairs(stoneWalls) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Walls",
             "walls_exterior_wooden_01_24",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -2950,7 +2950,7 @@ end
 local function addBrickWallsToMenu()
     local brickWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Pink_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Pink_Brick",
             subCategoryIcon = "walls_exterior_house_01_4",
             objects = {
                 BuildingMenu.createObject(
@@ -3168,7 +3168,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Red_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Red_Brick",
             subCategoryIcon = "walls_exterior_house_02_64",
             objects = {
                 BuildingMenu.createObject(
@@ -3386,7 +3386,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Old_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Old_Brick",
             subCategoryIcon = "walls_exterior_house_01_52",
             objects = {
                 BuildingMenu.createObject(
@@ -3604,7 +3604,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Brown_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Brown_Brick",
             subCategoryIcon = "walls_exterior_house_02_96",
             objects = {
                 BuildingMenu.createObject(
@@ -3696,7 +3696,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Classic_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Classic_Brick",
             subCategoryIcon = "walls_exterior_house_01_16",
             objects = {
                 BuildingMenu.createObject(
@@ -3914,7 +3914,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Blue_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Blue_Brick",
             subCategoryIcon = "walls_exterior_house_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -4132,7 +4132,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Grey_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Grey_Brick",
             subCategoryIcon = "walls_exterior_house_02_16",
             objects = {
                 BuildingMenu.createObject(
@@ -4350,7 +4350,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Beige_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Beige_Brick",
             subCategoryIcon = "walls_exterior_house_02_36",
             objects = {
                 BuildingMenu.createObject(
@@ -4568,7 +4568,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_White_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_White_Brick",
             subCategoryIcon = "walls_exterior_house_02_48",
             objects = {
                 BuildingMenu.createObject(
@@ -4786,7 +4786,7 @@ local function addBrickWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Green_Brick"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Green_Brick",
             subCategoryIcon = "walls_exterior_house_02_52",
             objects = {
                 BuildingMenu.createObject(
@@ -4880,8 +4880,8 @@ local function addBrickWallsToMenu()
     }
     for k, subCatData in pairs(brickWalls) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Walls",
             nil,
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -4893,7 +4893,7 @@ end
 local function addCinderblocWallsToMenu()
     local cinderblockWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Bathroom_Medium_Tiles",
             subCategoryIcon = "walls_interior_bathroom_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -4985,7 +4985,7 @@ local function addCinderblocWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_White_Cinderblock"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_White_Cinderblock",
             subCategoryIcon = "walls_commercial_01_48",
             objects = {
                 BuildingMenu.createObject(
@@ -5077,7 +5077,7 @@ local function addCinderblocWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Brown_Cinderblock",
             subCategoryIcon = "walls_commercial_03_0",
             objects = {
                 BuildingMenu.createObject(
@@ -5169,7 +5169,7 @@ local function addCinderblocWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Tan_Cinderblock",
             subCategoryIcon = "walls_commercial_03_16",
             objects = {
                 BuildingMenu.createObject(
@@ -5390,7 +5390,7 @@ local function addCinderblocWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Dark_Grey_Cinderblock"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Dark_Grey_Cinderblock",
             subCategoryIcon = "walls_commercial_03_32",
             objects = {
                 BuildingMenu.createObject(
@@ -5482,7 +5482,7 @@ local function addCinderblocWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Light_Grey_Cinderblock"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Light_Grey_Cinderblock",
             subCategoryIcon = "walls_commercial_03_48",
             objects = {
                 BuildingMenu.createObject(
@@ -5574,7 +5574,7 @@ local function addCinderblocWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_School_Cinderblock_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_School_Cinderblock_Walls",
             subCategoryIcon = "location_community_school_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -5668,8 +5668,8 @@ local function addCinderblocWallsToMenu()
     }
     for k, subCatData in pairs(cinderblockWalls) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Walls",
             "walls_exterior_wooden_01_24",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -5681,7 +5681,7 @@ end
 local function addPaintedWallsToMenu()
     local paintedWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Painted_Blue"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Painted_Blue",
             subCategoryIcon = "walls_interior_house_02_32",
             objects = {
                 BuildingMenu.createObject(
@@ -6117,7 +6117,7 @@ local function addPaintedWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Painted_Green"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Painted_Green",
             subCategoryIcon = "walls_interior_house_03_16",
             objects = {
                 BuildingMenu.createObject(
@@ -6553,7 +6553,7 @@ local function addPaintedWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Painted_Purple"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Painted_Purple",
             subCategoryIcon = "walls_interior_house_03_4",
             objects = {
                 BuildingMenu.createObject(
@@ -6817,7 +6817,7 @@ local function addPaintedWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Painted_Pink"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Painted_Pink",
             subCategoryIcon = "walls_interior_house_04_52",
             objects = {
                 BuildingMenu.createObject(
@@ -7170,7 +7170,7 @@ local function addPaintedWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Painted_Other_Colours"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Painted_Other_Colours",
             subCategoryIcon = "walls_interior_house_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -8124,8 +8124,8 @@ local function addPaintedWallsToMenu()
     }
     for k, subCatData in pairs(paintedWalls) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Walls",
             "walls_exterior_wooden_01_24",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -8137,7 +8137,7 @@ end
 local function addArchedWindowWallsToMenu()
     local archedWindowWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Interior_Arched_Windows"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Interior_Arched_Windows",
             subCategoryIcon = "walls_interior_house_05_0",
             objects = {
                 BuildingMenu.createObject(
@@ -8751,7 +8751,7 @@ local function addArchedWindowWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Exterior_Arched_Windows"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Exterior_Arched_Windows",
             subCategoryIcon = "walls_exterior_house_03_0",
             objects = {
                 BuildingMenu.createObject(
@@ -9122,8 +9122,8 @@ local function addArchedWindowWallsToMenu()
 
     for k, subCatData in pairs(archedWindowWalls) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Walls",
             "walls_exterior_wooden_01_24",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -9135,7 +9135,7 @@ end
 local function addCommercialWallsToMenu()
     local commercialWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_PileoCrepe"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_PileoCrepe",
             subCategoryIcon = "location_restaurant_pileocrepe_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -9264,7 +9264,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Diner_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Diner_Walls",
             subCategoryIcon = "location_restaurant_diner_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -9363,7 +9363,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Spiffos_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Spiffos_Walls",
             subCategoryIcon = "location_restaurant_spiffos_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -9685,7 +9685,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Fossoil_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Fossoil_Walls",
             subCategoryIcon = "location_shop_fossoil_01_6",
             objects = {
                 BuildingMenu.createObject(
@@ -9771,7 +9771,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Gas2Go_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Gas2Go_Walls",
             subCategoryIcon = "location_shop_gas2go_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -9857,7 +9857,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Bank_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Bank_Walls",
             subCategoryIcon = "location_business_bank_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -9949,7 +9949,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Brown_Frame_Glass",
             subCategoryIcon = "walls_commercial_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -10067,7 +10067,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Black_Frame_Glass",
             subCategoryIcon = "walls_commercial_01_96",
             objects = {
                 BuildingMenu.createObject(
@@ -10364,7 +10364,7 @@ local function addCommercialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Grey_Frame_Glass",
             subCategoryIcon = "walls_commercial_02_0",
             objects = {
                 BuildingMenu.createObject(
@@ -10415,8 +10415,8 @@ local function addCommercialWallsToMenu()
 
     for k, subCatData in pairs(commercialWalls) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Walls",
             "walls_exterior_wooden_01_24",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -10428,7 +10428,7 @@ end
 local function addIndustrialWallsToMenu()
     local industrialWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Metal_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Metal_Walls",
             subCategoryIcon = "industry_trucks_01_4",
             objects = {
                 BuildingMenu.createObject(
@@ -10707,7 +10707,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Scaffold"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Scaffold",
             subCategoryIcon = "construction_01_29",
             objects = {
                 BuildingMenu.createObject(
@@ -10915,7 +10915,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Garage_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Garage_Walls",
             subCategoryIcon = "walls_garage_01_32",
             objects = {
                 BuildingMenu.createObject(
@@ -11093,7 +11093,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Industrial_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Industrial_Walls",
             subCategoryIcon = "industry_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -11411,7 +11411,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Sewer_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Sewer_Walls",
             subCategoryIcon = "location_sewer_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -11590,7 +11590,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Tent_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Tent_Walls",
             subCategoryIcon = "location_military_tent_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -11925,8 +11925,8 @@ local function addIndustrialWallsToMenu()
 
     for k, subCatData in pairs(industrialWalls) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Walls",
             "walls_exterior_wooden_01_24",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -11938,7 +11938,7 @@ end
 local function addRoofingToMenu()
     local roofs = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Black_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Black_Roofs",
             subCategoryIcon = "roofs_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -12495,7 +12495,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Brown_Shingles_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Brown_Shingles_Roofs",
             subCategoryIcon = "roofs_02_0",
             objects = {
                 BuildingMenu.createObject(
@@ -13052,7 +13052,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Light_Brown_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Light_Brown_Roofs",
             subCategoryIcon = "roofs_03_0",
             objects = {
                 BuildingMenu.createObject(
@@ -13346,7 +13346,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Pink_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Pink_Roofs",
             subCategoryIcon = "roofs_04_0",
             objects = {
                 BuildingMenu.createObject(
@@ -13640,7 +13640,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Green_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Green_Roofs",
             subCategoryIcon = "roofs_05_0",
             objects = {
                 BuildingMenu.createObject(
@@ -13934,7 +13934,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Grey_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Grey_Roofs",
             subCategoryIcon = "roofs_05_32",
             objects = {
                 BuildingMenu.createObject(
@@ -14491,7 +14491,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Brown_Shakes_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Brown_Shakes_Roofs",
             subCategoryIcon = "roofs_01_32",
             objects = {
                 BuildingMenu.createObject(
@@ -14785,7 +14785,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Glass_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Glass_Roofs",
             subCategoryIcon = "roofs_02_32",
             objects = {
                 BuildingMenu.createObject(
@@ -15079,7 +15079,7 @@ local function addRoofingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Roofing_Tent_Roofs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Roofing_Tent_Roofs",
             subCategoryIcon = "location_military_tent_01_24",
             objects = {
                 BuildingMenu.createObject(
@@ -15433,8 +15433,8 @@ local function addRoofingToMenu()
 
     for k, subCatData in pairs(roofs) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Roofing"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Roofing",
             "roofs_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -15446,7 +15446,7 @@ end
 local function addDoorsToMenu()
     local doors = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Wooden_Doors",
             subCategoryIcon = "fixtures_doors_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -15667,7 +15667,7 @@ local function addDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Low_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Low_Doors",
             subCategoryIcon = "fixtures_doors_02_20",
             objects = {
                 BuildingMenu.createObject(
@@ -15727,7 +15727,7 @@ local function addDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Panel_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Panel_Doors",
             subCategoryIcon = "fixtures_doors_fences_01_4",
             objects = {
                 BuildingMenu.createObject(
@@ -15809,7 +15809,7 @@ local function addDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Metal_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Metal_Doors",
             subCategoryIcon = "fixtures_doors_01_24",
             objects = {
                 BuildingMenu.createObject(
@@ -16067,7 +16067,7 @@ local function addDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Glass_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Glass_Doors",
             subCategoryIcon = "fixtures_doors_02_40",
             objects = {
                 BuildingMenu.createObject(
@@ -16235,7 +16235,7 @@ local function addDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Jail_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Jail_Doors",
             subCategoryIcon = "location_community_police_01_4",
             objects = {
                 BuildingMenu.createObject(
@@ -16259,7 +16259,7 @@ local function addDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Security_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Security_Doors",
             subCategoryIcon = "fixtures_doors_01_32",
             objects = {
                 BuildingMenu.createObject(
@@ -16283,7 +16283,7 @@ local function addDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_Sliding_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_Sliding_Doors",
             subCategoryIcon = "fixtures_doors_01_106",
             objects = {
                 BuildingMenu.createObject(
@@ -16364,8 +16364,8 @@ local function addDoorsToMenu()
 
     for k, subCatData in pairs(doors) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Doors"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Doors",
             "fixtures_doors_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -16377,7 +16377,7 @@ end
 local function addGarageDoorsToMenu()
     local garageDoors = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors",
             subCategoryIcon = "walls_garage_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -16491,7 +16491,7 @@ local function addGarageDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors",
             subCategoryIcon = "walls_garage_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -16617,7 +16617,7 @@ local function addGarageDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Double_Door_Gates"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Double_Door_Gates",
             subCategoryIcon = "fixtures_doors_fences_01_72",
             objects = {
                 BuildingMenu.createObject(
@@ -16677,8 +16677,8 @@ local function addGarageDoorsToMenu()
 
     for k, subCatData in pairs(garageDoors) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Doors"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Doors",
             "",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -16690,7 +16690,7 @@ end
 local function addArchitecturePlusToMenu()
     local architecturePlus = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Door_Trims",
             subCategoryIcon = "fixtures_doors_frames_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -16877,7 +16877,7 @@ local function addArchitecturePlusToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Crown_Molding"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Crown_Molding",
             subCategoryIcon = "walls_detailing_01_61",
             objects = {
                 BuildingMenu.createObject(
@@ -17022,7 +17022,7 @@ local function addArchitecturePlusToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Edge_Detailing",
             subCategoryIcon = "walls_detailing_01_9",
             objects = {
                 BuildingMenu.createObject(
@@ -17168,7 +17168,7 @@ local function addArchitecturePlusToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Floor_Molding",
             subCategoryIcon = "walls_detailing_01_5",
             objects = {
                 BuildingMenu.createObject(
@@ -17373,7 +17373,7 @@ local function addArchitecturePlusToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Wall_Panels",
             subCategoryIcon = "walls_detailing_01_16",
             objects = {
                 BuildingMenu.createObject(
@@ -18284,7 +18284,7 @@ local function addArchitecturePlusToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Foundation",
             subCategoryIcon = "walls_detailing_01_64",
             objects = {
                 BuildingMenu.createObject(
@@ -18350,7 +18350,7 @@ local function addArchitecturePlusToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Roof_Accents",
             subCategoryIcon = "roofs_accents_01_21",
             objects = {
                 BuildingMenu.createObject(
@@ -18571,7 +18571,7 @@ local function addArchitecturePlusToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_ArchitecturePlus_Canvas_Covers"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_ArchitecturePlus_Canvas_Covers",
             subCategoryIcon = "industry_trucks_01_64",
             objects = {
                 BuildingMenu.createObject(
@@ -18710,8 +18710,8 @@ local function addArchitecturePlusToMenu()
 
     for k, subCatData in pairs(architecturePlus) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_ArchitecturePlus"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_ArchitecturePlus",
             "fixtures_doors_frames_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -18723,7 +18723,7 @@ end
 local function addWindowsPlusToMenu()
     local windows = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Wooden_Windows"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Windows_Wooden_Windows",
             subCategoryIcon = "fixtures_windows_01_72",
             objects = {
                 BuildingMenu.createObject(
@@ -18837,8 +18837,8 @@ local function addWindowsPlusToMenu()
 
     for k, subCatData in pairs(windows) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Windows"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Windows",
             "fixtures_windows_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -19176,10 +19176,10 @@ local function addHighFencesToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Fencing",
         "fencing_01_50",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_High"),
+        "IGUI_BuildingMenuSubCat_Fencing_Fencing_High",
         "fencing_01_50",
         highFences
     )
@@ -19329,10 +19329,10 @@ local function addLowAndRailingFencesToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Fencing",
         "fencing_01_50",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Fencing_Low"),
+        "IGUI_BuildingMenuSubCat_Fencing_Fencing_Low",
         "fencing_01_0",
         lowFences
     )
@@ -19874,10 +19874,10 @@ local function addLowAndRailingFencesToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Fencing",
         "fencing_01_50",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Railing"),
+        "IGUI_BuildingMenuSubCat_Fencing_Railing",
         "fixtures_railings_01_27",
         railing
     )
@@ -20005,10 +20005,10 @@ local function addLowAndRailingFencesToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Fencing",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Fencing_Stair_Railings"),
+        "IGUI_BuildingMenuSubCat_Fencing_Stair_Railings",
         "fixtures_railings_01_0",
         stairRailings
     )
@@ -20126,10 +20126,10 @@ local function addOtherFencesToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Fencing",
         "fencing_01_50",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Other"),
+        "IGUI_BuildingMenuSubCat_Fencing_Other",
         "fencing_01_96",
         otherFences
     )
@@ -20138,7 +20138,7 @@ end
 local function addFloorsToMenu()
     local floors = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Wooden"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Wooden",
             subCategoryIcon = "floors_interior_tilesandwood_01_40",
             objects = {
                 BuildingMenu.createObject(
@@ -20313,7 +20313,7 @@ local function addFloorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Carpets"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Carpets",
             subCategoryIcon = "floors_interior_carpet_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -20506,7 +20506,7 @@ local function addFloorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Industrial"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Industrial",
             subCategoryIcon = "floors_exterior_street_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -20662,7 +20662,7 @@ local function addFloorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Tile_Checkered_Small"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Tile_Checkered_Small",
             subCategoryIcon = "floors_interior_tilesandwood_01_2",
             objects = {
                 BuildingMenu.createObject(
@@ -20746,7 +20746,7 @@ local function addFloorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Tile_Checkered_Large"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Tile_Checkered_Large",
             subCategoryIcon = "floors_interior_tilesandwood_01_7",
             objects = {
                 BuildingMenu.createObject(
@@ -20856,7 +20856,7 @@ local function addFloorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Tile_Diagonal"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Tile_Diagonal",
             subCategoryIcon = "floors_interior_tilesandwood_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -20940,7 +20940,7 @@ local function addFloorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Tile_Smooth"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Tile_Smooth",
             subCategoryIcon = "floors_interior_tilesandwood_01_16",
             objects = {
                 BuildingMenu.createObject(
@@ -20998,7 +20998,7 @@ local function addFloorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Floors_Tile_Exterior"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Floors_Tile_Exterior",
             subCategoryIcon = "floors_exterior_tilesandstone_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -21098,8 +21098,8 @@ local function addFloorsToMenu()
 
     for k, subCatData in pairs(floors) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Floors"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Floors",
             "floors_interior_tilesandwood_01_40",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -21151,7 +21151,7 @@ end
 local function addStairsToMenu()
     local stairs = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Stairs_Wooden"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Stairs_Wooden",
             subCategoryIcon = "fixtures_stairs_01_64",
             objects = {
                 BuildingMenu.createObject(
@@ -21289,7 +21289,7 @@ local function addStairsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Stairs_Metal"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Stairs_Metal",
             subCategoryIcon = "fixtures_stairs_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -21364,8 +21364,8 @@ local function addStairsToMenu()
 
     for k, subCatData in pairs(stairs) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Stairs"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Stairs",
             "fixtures_stairs_01_64",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -21781,10 +21781,10 @@ local function addRoadworkAsphaltToMenu()
 
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Asphalt"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Asphalt",
         "blends_street_01_32",
         roadworkAsphalt
     )
@@ -22491,10 +22491,10 @@ local function addRoadworkOverlaysToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Street_Overlay"),
+        "IGUI_BuildingMenuSubCat_Street_Overlay",
         "d_streetcracks_1_16",
         roadworkOverlays
     )
@@ -22784,10 +22784,10 @@ local function addRoadworkOverlaysToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Floor_Overlay"),
+        "IGUI_BuildingMenuSubCat_Floor_Overlay",
         "overlay_grime_floor_01_0",
         roadworkOverlays
     )
@@ -23278,10 +23278,10 @@ local function addRoadworkSidewalkEdgeToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Sidewalk_Edge"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Sidewalk_Edge",
         "street_curbs_01_0",
         roadworkSidewalkEdge
     )
@@ -23478,10 +23478,10 @@ local function addRoadworkDirtandGrassToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Dirt"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Dirt",
         "blends_natural_01_64",
         roadworkDirtandGrass
     )
@@ -23613,10 +23613,10 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line",
         "street_trafficlines_01_8",
         whitePaintedRoadMarkings
     )
@@ -24928,10 +24928,10 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Painted_White_Line",
         "street_trafficlines_01_8",
         whiteTrafficLines
     )
@@ -24982,10 +24982,10 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_Yellow_Line"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Painted_Yellow_Line",
         "street_trafficlines_01_24",
         yellowPaintedRoadMarkings
     )
@@ -26297,10 +26297,10 @@ local function addRoadworkPaintedRoadMarkingsToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Road_Work"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Road_Work",
         "blends_street_01_32",
-        getText("IGUI_BuildingMenuSubCat_Road_Work_Painted_Yellow_Line"),
+        "IGUI_BuildingMenuSubCat_Road_Work_Painted_Yellow_Line",
         "street_trafficlines_01_24",
         yellowTrafficLines
     )
@@ -26633,10 +26633,10 @@ local function addKitchenCountersToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Containers",
         "fixtures_counters_01_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Residential"),
+        "IGUI_BuildingMenuSubCat_Containers_Residential",
         "fixtures_counters_01_3",
         kitchenCounters
     )
@@ -26671,10 +26671,10 @@ local function addKitchenCountersToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Containers",
         "fixtures_counters_01_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Upper_Counters"),
+        "IGUI_BuildingMenuSubCat_Containers_Upper_Counters",
         "fixtures_counters_01_27",
         kitchenCounters
     )
@@ -26691,7 +26691,7 @@ end);
 local function addCommercialCountersToMenu()
     local commercialCounters = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Restaurant"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Restaurant",
             subCategoryIcon = "location_restaurant_pizzawhirled_01_35",
             objects = {
                 BuildingMenu.createObject(
@@ -27123,7 +27123,7 @@ local function addCommercialCountersToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_GasStation"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_GasStation",
             subCategoryIcon = "location_shop_fossoil_01_19",
             objects = {
                 BuildingMenu.createObject(
@@ -27197,7 +27197,7 @@ local function addCommercialCountersToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Shop_Generic"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Shop_Generic",
             subCategoryIcon = "location_shop_generic_01_19",
             objects = {
                 BuildingMenu.createObject(
@@ -27482,8 +27482,8 @@ local function addCommercialCountersToMenu()
     }
     for k, subCatData in pairs(commercialCounters) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Containers"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Containers",
             "fixtures_counters_01_3",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -27590,10 +27590,10 @@ local function addCratesToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Containers",
         "fixtures_counters_01_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Crates"),
+        "IGUI_BuildingMenuSubCat_Containers_Crates",
         "location_shop_greenes_01_35",
         crate
     )
@@ -27602,7 +27602,7 @@ end
 local function addMetalContainersToMenu()
     local metalContainers = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Filing_Cabinets"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Filing_Cabinets",
             subCategoryIcon = "location_business_office_generic_01_33",
             objects = {
                 BuildingMenu.createObject(
@@ -27644,7 +27644,7 @@ local function addMetalContainersToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Metal"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Metal",
             subCategoryIcon = "trashcontainers_01_32",
             objects = {
                 BuildingMenu.createObject(
@@ -27720,7 +27720,7 @@ local function addMetalContainersToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Lockers",
             subCategoryIcon = "location_business_bank_01_40",
             objects = {
                 BuildingMenu.createObject(
@@ -27834,8 +27834,8 @@ local function addMetalContainersToMenu()
 
     for k, subCatData in pairs(metalContainers) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Containers"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Containers",
             "fixtures_counters_01_3",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -28129,10 +28129,10 @@ local function addClothesRacksToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Containers",
         "fixtures_counters_01_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Clothing"),
+        "IGUI_BuildingMenuSubCat_Containers_Clothing",
         "location_shop_mall_01_64",
         clothesRacks
     )
@@ -28303,10 +28303,10 @@ local function addTrashCansToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Containers",
         "fixtures_counters_01_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Trash_Cans"),
+        "IGUI_BuildingMenuSubCat_Containers_Trash_Cans",
         "trashcontainers_01_16",
         trashCans
     )
@@ -28607,10 +28607,10 @@ local function addContainersOthersToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Containers",
         "fixtures_counters_01_3",
-        getText("IGUI_BuildingMenuSubCat_Containers_Others"),
+        "IGUI_BuildingMenuSubCat_Containers_Others",
         "construction_01_4",
         containersOthers
     )
@@ -28657,10 +28657,10 @@ local function addMusicObjectsToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Recreational"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Recreational",
         "recreational_01_0",
-        getText("IGUI_BuildingMenuSubCat_Recreational_Music"),
+        "IGUI_BuildingMenuSubCat_Recreational_Music",
         "recreational_01_0",
         musicObjects
     )
@@ -28669,7 +28669,7 @@ end
 local function addTablesToMenu()
     local tables = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Small_Tables"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Small_Tables",
             subCategoryIcon = "furniture_tables_low_01_16",
             objects = {
                 BuildingMenu.createObject(
@@ -28827,7 +28827,7 @@ local function addTablesToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Large_Tables"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Large_Tables",
             subCategoryIcon = "location_restaurant_pileocrepe_01_33",
             objects = {
                 BuildingMenu.createObject(
@@ -29147,8 +29147,8 @@ local function addTablesToMenu()
     }
     for k, subCatData in pairs(tables) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Furniture"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Furniture",
             "furniture_tables_low_01_16",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -29160,7 +29160,7 @@ end
 local function addBedsToMenu()
     local beds = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Simple_Beds"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Simple_Beds",
             subCategoryIcon = "furniture_bedding_01_3",
             objects = {
                 BuildingMenu.createObject(
@@ -29358,7 +29358,7 @@ local function addBedsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Large_Beds"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Large_Beds",
             subCategoryIcon = "furniture_bedding_01_31",
             objects = {
                 BuildingMenu.createObject(
@@ -29486,8 +29486,8 @@ local function addBedsToMenu()
     }
     for k, subCatData in pairs(beds) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Furniture"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Furniture",
             "furniture_tables_low_01_16",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -29499,7 +29499,7 @@ end
 local function addSeatingFurnitureToMenu()
     local seatingFurniture = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Benches"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Benches",
             subCategoryIcon = "location_shop_mall_01_39",
             objects = {
                 BuildingMenu.createObject(
@@ -29823,7 +29823,7 @@ local function addSeatingFurnitureToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Couches",
             subCategoryIcon = "furniture_seating_indoor_01_1",
             objects = {
                 BuildingMenu.createObject(
@@ -30684,7 +30684,7 @@ local function addSeatingFurnitureToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Chairs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Chairs",
             subCategoryIcon = "furniture_seating_indoor_01_36",
             objects = {
                 BuildingMenu.createObject(
@@ -30955,8 +30955,8 @@ local function addSeatingFurnitureToMenu()
     }
     for k, subCatData in pairs(seatingFurniture) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Furniture"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Furniture",
             "furniture_tables_low_01_16",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -31030,10 +31030,10 @@ local function addBookshelvesToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Furniture",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Furniture_Bookshelves"),
+        "IGUI_BuildingMenuSubCat_Furniture_Bookshelves",
         "furniture_shelving_01_41",
         bookshelves
     )
@@ -31316,10 +31316,10 @@ local function addDressersAndWardrobesToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Furniture"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Furniture",
         "furniture_tables_low_01_16",
-        getText("IGUI_BuildingMenuSubCat_Furniture_Dressers"),
+        "IGUI_BuildingMenuSubCat_Furniture_Dressers",
         "furniture_storage_01_49",
         dressersAndWardrobes
     )
@@ -31979,10 +31979,10 @@ local function addRugsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Decorations"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Decorations",
         "location_community_medical_01_12",
-        getText("IGUI_BuildingMenuSubCat_Decorations_Rugs"),
+        "IGUI_BuildingMenuSubCat_Decorations_Rugs",
         "floors_rugs_01_0",
         rugs
     )
@@ -31991,7 +31991,7 @@ end
 local function addPostersAndSignsToMenu()
     local postersAndSigns = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Posters"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Posters",
             subCategoryIcon = "location_community_medical_01_12",
             objects = {
                 BuildingMenu.createObject(
@@ -32430,7 +32430,7 @@ local function addPostersAndSignsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Signs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Signs",
             subCategoryIcon = "location_restaurant_spiffos_02_58",
             objects = {
                 BuildingMenu.createObject(
@@ -32918,8 +32918,8 @@ local function addPostersAndSignsToMenu()
 
     for k, subCatData in pairs(postersAndSigns) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Decorations"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Decorations",
             "location_community_medical_01_12",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -32974,10 +32974,10 @@ local function addCurtainsToMenu()
     end
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Decorations"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Decorations",
         "fixtures_windows_curtains_01_8",
-        getText("IGUI_BuildingMenuSubCat_Decorations_Curtains"),
+        "IGUI_BuildingMenuSubCat_Decorations_Curtains",
         "fixtures_windows_curtains_01_8",
         curtains
     );
@@ -33224,10 +33224,10 @@ local function addGraffitiToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Decorations"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Decorations",
         "location_community_medical_01_12",
-        getText("IGUI_BuildingMenuSubCat_Decorations_Graffiti"),
+        "IGUI_BuildingMenuSubCat_Decorations_Graffiti",
         "overlay_graffiti_wall_01_85",
         graffiti
     )
@@ -33236,7 +33236,7 @@ end
 local function addOtherDecorationsToMenu()
     local otherDecorations = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Roadway"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Roadway",
             subCategoryIcon = "construction_01_9",
             objects = {
                 BuildingMenu.createObject(
@@ -33391,7 +33391,7 @@ local function addOtherDecorationsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Garage"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Garage",
             subCategoryIcon = "location_business_machinery_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -33477,7 +33477,7 @@ local function addOtherDecorationsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Decorations_Graves"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Decorations_Graves",
             subCategoryIcon = "location_community_cemetary_01_1",
             objects = {
                 BuildingMenu.createObject(
@@ -33572,8 +33572,8 @@ local function addOtherDecorationsToMenu()
 
     for k, subCatData in pairs(otherDecorations) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Decorations"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Decorations",
             "location_community_medical_01_12",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -33757,10 +33757,10 @@ local function addFlowerBedsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Vegetation"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Vegetation",
         "vegetation_ornamental_01_1",
-        getText("IGUI_BuildingMenuSubCat_Vegetation_Flower_Beds"),
+        "IGUI_BuildingMenuSubCat_Vegetation_Flower_Beds",
         "vegetation_ornamental_01_17",
         flowerBeds
     )
@@ -33869,10 +33869,10 @@ local function addIndoorPlantsToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Vegetation"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Vegetation",
         "vegetation_ornamental_01_1",
-        getText("IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor"),
+        "IGUI_BuildingMenuSubCat_Vegetation_Plants_Indoor",
         "vegetation_indoor_01_7",
         indoorPlants
     )
@@ -33882,7 +33882,7 @@ local function addLandscapingToMenu()
     local landscaping = {
 
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Vegetation_Grass"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Vegetation_Grass",
             subCategoryIcon = "blends_grassoverlays_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -34302,7 +34302,7 @@ local function addLandscapingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Vegetation_Hedges"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Vegetation_Hedges",
             subCategoryIcon = "vegetation_ornamental_01_1",
             objects = {
                 BuildingMenu.createObject(
@@ -34394,7 +34394,7 @@ local function addLandscapingToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Vegetation_Vines"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Vegetation_Vines",
             subCategoryIcon = "f_wallvines_1_43",
             objects = {
                 BuildingMenu.createObject(
@@ -34611,8 +34611,8 @@ local function addLandscapingToMenu()
 
     for k, subCatData in pairs(landscaping) do
         BuildingMenu.addObjectsToCategories(
-            getText("IGUI_BuildingMenuTab_General"),
-            getText("IGUI_BuildingMenuCat_Vegetation"),
+            "IGUI_BuildingMenuTab_General",
+            "IGUI_BuildingMenuCat_Vegetation",
             "vegetation_ornamental_01_1",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -34977,10 +34977,10 @@ local function addFireplaceToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Survival"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Survival",
         "fixtures_fireplaces_01_0",
-        getText("IGUI_BuildingMenuSubCat_Survival_Fireplace"),
+        "IGUI_BuildingMenuSubCat_Survival_Fireplace",
         "fixtures_fireplaces_01_0",
         fireplace
     )
@@ -35002,10 +35002,10 @@ local function addGeneratorToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Survival"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Survival",
         "fixtures_fireplaces_01_0",
-        getText("IGUI_BuildingMenuSubCat_Survival_Generator"),
+        "IGUI_BuildingMenuSubCat_Survival_Generator",
         "appliances_misc_01_0",
         generator
     )
@@ -35092,10 +35092,10 @@ local function addMetalDrumsToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Survival"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Survival",
         "fixtures_fireplaces_01_0",
-        getText("IGUI_BuildingMenuSubCat_Survival_Metal_Drums"),
+        "IGUI_BuildingMenuSubCat_Survival_Metal_Drums",
         "crafted_01_24",
         metalDrums
     )
@@ -35120,10 +35120,10 @@ local function addWaterWellToMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Survival"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Survival",
         "fixtures_fireplaces_01_0",
-        getText("IGUI_BuildingMenuSubCat_Survival_Water_Well"),
+        "IGUI_BuildingMenuSubCat_Survival_Water_Well",
         "camping_01_16",
         well
     )

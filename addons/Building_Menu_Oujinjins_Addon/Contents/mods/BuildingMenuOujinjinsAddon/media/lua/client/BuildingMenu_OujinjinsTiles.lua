@@ -73,9 +73,9 @@ local function addResidentialCountersToMenu()
     
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "Chinatown_EX_home_2_0",
-        getText("IGUI_BuildingMenuSubCat_Containers_Residential"),
+        "IGUI_BuildingMenuSubCat_Containers_Residential",
         "Chinatown_EX_home_2_0",
         residentailContainers
     )
@@ -206,9 +206,9 @@ local function addCommercialCountersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Shop_Generic"),
+        "IGUI_BuildingMenuSubCat_Containers_Shop_Generic",
         "Chinatown_EX_generic_1_0",
         shopGenericContainers
     )
@@ -222,7 +222,7 @@ local function addMetalContainersToMenu()
 
     local metalContainers = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Metal"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Metal",
             subCategoryIcon = "guizi_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -322,7 +322,7 @@ local function addMetalContainersToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Military"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Military",
             subCategoryIcon = "Guizi_tiles_01_7",
             objects = {
                 BuildingMenu.createObject(
@@ -429,7 +429,7 @@ local function addMetalContainersToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Vault_Tec"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Vault_Tec",
             subCategoryIcon = "Vaulttec_2_6",
             objects = {
                 BuildingMenu.createObject(
@@ -726,7 +726,7 @@ local function addMetalContainersToMenu()
     for k, subCatData in pairs(metalContainers) do
         BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "guizi_01_0",
         subCatData.subcategoryName,
         subCatData.subCategoryIcon,
@@ -767,9 +767,9 @@ local function addContainersOthersToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Others"),
+        "IGUI_BuildingMenuSubCat_Containers_Others",
         "Industry_1_8",
         containersOthers
     )
@@ -792,9 +792,9 @@ local function addTrashCansToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Trash_Cans"),
+        "IGUI_BuildingMenuSubCat_Containers_Trash_Cans",
         "Vaulttec_6_16",
         trashCans
     )
@@ -804,7 +804,7 @@ end
 local function addSeatingFurnitureToMenu()
     local seatingFurniture = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Couches",
             subCategoryIcon = "Chinatown_EX_home_1_43",
             objects = {
                 BuildingMenu.createObject(
@@ -1052,7 +1052,7 @@ local function addSeatingFurnitureToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Chairs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Chairs",
             subCategoryIcon = "Chinatown_1_2",
             objects = {
                 BuildingMenu.createObject(
@@ -1173,7 +1173,7 @@ local function addSeatingFurnitureToMenu()
     for k, subCatData in pairs(seatingFurniture) do
         BuildingMenu.addObjectsToCategories(
             "Oujinjin's",
-            getText("IGUI_BuildingMenuCat_Furniture"),
+            "IGUI_BuildingMenuCat_Furniture",
             "Chinatown_EX_home_1_43",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -1246,9 +1246,9 @@ local function addCookingAppliancesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         "Chinatown_EX_kitchen_1_0",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
+        "IGUI_BuildingMenuSubCat_Appliances_Cooking",
         "Chinatown_EX_kitchen_1_0",
         cookingObjects
     )
@@ -1379,9 +1379,9 @@ local function addFridgeAppliancesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "IGUI_BuildingMenuSubCat_Appliances_Fridges",
         "Chinatown_EX_generic_1_73",
         fridgesObjects
     )
@@ -1445,9 +1445,9 @@ local function addBathroomAppliancesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuCat_Appliances",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Appliances_Bathroom"),
+        "IGUI_BuildingMenuSubCat_Appliances_Bathroom",
         "Chinatown_EX_home_2_8",
         bathroomObjects
     )
@@ -1513,9 +1513,9 @@ local function addOtherFencesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Oujinjin's",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         "Chinatown_EX_military_1_120",
-        getText("IGUI_BuildingMenuSubCat_Fencing_Other"),
+        "IGUI_BuildingMenuSubCat_Fencing_Other",
         "Chinatown_EX_military_1_120",
         otherFences
     )

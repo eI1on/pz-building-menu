@@ -59,10 +59,10 @@ local function addSafesToBuildingMenu()
     }
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Containers"),
-        "",
-        getText("IGUI_BuildingMenuSubCat_Containers_Safes"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Containers",
+        nil,
+        "IGUI_BuildingMenuSubCat_Containers_Safes",
         "building_menu_dylan_safes_0",
         safes
     )

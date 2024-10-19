@@ -37,9 +37,9 @@ local function addExtraNoisesNewburbsFlagsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_ExtraNoiseNewburbs_Others"),
+        "IGUI_BuildingMenuCat_ExtraNoiseNewburbs_Others",
         "en_newburbs_details_01_16",
-        getText("IGUI_BuildingMenuSubCat_ExtraNoiseNewburbs_Others_Flags"),
+        "IGUI_BuildingMenuSubCat_ExtraNoiseNewburbs_Others_Flags",
         "en_newburbs_details_01_16",
         flags
     )
@@ -83,9 +83,9 @@ local function addDoorsToMenu()
     end
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "en_newburbs_doors_01_0",
-        getText("IGUI_BuildingMenuSubCat_Doors_Wooden_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Wooden_Doors",
         "en_newburbs_doors_01_0",
         extraNoiseDoorObjects
     )
@@ -147,9 +147,9 @@ local function addDoorsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "en_newburbs_doors_01_0",
-        getText("IGUI_BuildingMenuSubCat_Doors_Sliding_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_Sliding_Doors",
         "en_newburbs_doors_01_78",
         slidingDoors
     )
@@ -216,9 +216,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors",
         "en_newburbs_doors_garages_01_0",
         extraNoiseGarageDoorsObjects
     )
@@ -231,9 +231,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors",
         "en_newburbs_doors_garages_01_0",
         extraNoiseGarageDoorsObjects
     )
@@ -271,8 +271,8 @@ local function addExtraNoisesNewburbsColouredWallsToMenu()
 
     local function addWallsToMenu(baseSprite, wallColor, objects)
         local categoryName = "ExtraNoise's Newburbs";
-        local categoryText = getText("IGUI_BuildingMenuCat_Walls");
-        local subCategoryText = getText("IGUI_BuildingMenuSubCat_Walls_Painted_" .. wallColor);
+        local categoryText = "IGUI_BuildingMenuCat_Walls";
+        local subCategoryText = "IGUI_BuildingMenuSubCat_Walls_Painted_" .. wallColor;
         BuildingMenu.addObjectsToCategories(categoryName, categoryText, objects[1].data.sprites.sprite, subCategoryText, objects[1].data.sprites.sprite, objects);
     end
 
@@ -767,9 +767,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_White_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_White_Clapboard",
         "en_newburbs_walls_01_white_0",
         whiteWalls
     )
@@ -835,9 +835,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Light_Grey_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Light_Grey_Clapboard",
         "en_newburbs_walls_02_lightgray_0",
         lightGreyWalls
     )
@@ -902,9 +902,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Eggshell_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Eggshell_Clapboard",
         "en_newburbs_walls_03_eggshell_0",
         eggshellWalls
     )
@@ -970,9 +970,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Warm_Grey_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Warm_Grey_Clapboard",
         "en_newburbs_walls_04_warmgray_0",
         warmGreyWalls
     )
@@ -1039,9 +1039,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Red_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Red_Clapboard",
         "en_newburbs_walls_05_red_0",
         redWalls
     )
@@ -1107,9 +1107,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Orange_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Orange_Clapboard",
         "en_newburbs_walls_06_orange_0",
         orangeWalls
     )
@@ -1175,9 +1175,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_RedBrown_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_RedBrown_Clapboard",
         "en_newburbs_walls_07_redbrown_0",
         redbrownWalls
     )
@@ -1243,9 +1243,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Brown_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Brown_Clapboard",
         "en_newburbs_walls_08_brown_0",
         brownWalls
     )
@@ -1311,9 +1311,9 @@ local function addExtraNoisesNewburbsClapboardWallsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "ExtraNoise's Newburbs",
-        getText("IGUI_BuildingMenuCat_Walls"),
+        "IGUI_BuildingMenuCat_Walls",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard"),
+        "IGUI_BuildingMenuSubCat_Walls_Tan_Clapboard",
         "en_newburbs_walls_09_tan_0",
         tanWalls
     )
@@ -1322,7 +1322,7 @@ end
 local function addWindowsPlusToMenu()
     local windows = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Windows_Wooden_Windows"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Windows_Wooden_Windows",
             subCategoryIcon = "en_newburbs_windows_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -1449,7 +1449,7 @@ local function addWindowsPlusToMenu()
     for k, subCatData in pairs(windows) do
         BuildingMenu.addObjectsToCategories(
             "ExtraNoise's Newburbs",
-            getText("IGUI_BuildingMenuCat_Windows"),
+            "IGUI_BuildingMenuCat_Windows",
             "en_newburbs_windows_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -1611,17 +1611,17 @@ local function addRoofingToMenu()
 
         BuildingMenu.addObjectsToCategories(
             "ExtraNoise's Newburbs",
-            getText("IGUI_BuildingMenuCat_Roofing"),
+            "IGUI_BuildingMenuCat_Roofing",
             colorConfig.texturePrefix[1] .. "_16",
-            getText("IGUI_BuildingMenuSubCat_" .. colorConfig.subCategory),
+            "IGUI_BuildingMenuSubCat_" .. colorConfig.subCategory,
             colorConfig.texturePrefix[1] .. "_16",
             roofsObjects
         )
         BuildingMenu.addObjectsToCategories(
             "ExtraNoise's Newburbs",
-            getText("IGUI_BuildingMenuCat_Roofing"),
+            "IGUI_BuildingMenuCat_Roofing",
             colorConfig.texturePrefix[2] .. "_16",
-            getText("IGUI_BuildingMenuSubCat_" .. colorConfig.subCategory),
+            "IGUI_BuildingMenuSubCat_" .. colorConfig.subCategory,
             colorConfig.texturePrefix[2] .. "_16",
             fasciaObjects
         )

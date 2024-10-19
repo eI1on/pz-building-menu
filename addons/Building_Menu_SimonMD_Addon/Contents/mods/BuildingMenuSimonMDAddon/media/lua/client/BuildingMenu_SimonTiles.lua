@@ -307,9 +307,9 @@ local function addSimonMDWallsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
     "Simon MDs",
-    getText("IGUI_BuildingMenuCat_Walls"),
+    "IGUI_BuildingMenuCat_Walls",
     "walls_Simon_MD_92",
-    getText("IGUI_BuildingMenuSubCat_Walls_Scrap"),
+    "IGUI_BuildingMenuSubCat_Walls_Scrap",
     "walls_Simon_MD_92",
     simonMDScrapWalls
     )
@@ -539,9 +539,9 @@ local function addHighFencesToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_Fencing"),
+        "IGUI_BuildingMenuCat_Fencing",
         "fencing_Simon_MD_31",
-        getText("IGUI_BuildingMenuSubCat_High_Fences_Scrap"),
+        "IGUI_BuildingMenuSubCat_High_Fences_Scrap",
         "fencing_Simon_MD_31",
         highFences
     )
@@ -841,9 +841,9 @@ local function addRoofingToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_Roofing"),
+        "IGUI_BuildingMenuCat_Roofing",
         "roofs_Simon_MD_8",
-        getText("IGUI_BuildingMenuSubCat_Roofing_Scrap"),
+        "IGUI_BuildingMenuSubCat_Roofing_Scrap",
         "roofs_Simon_MD_8",
         simonMDCorrugatedRoof
     )
@@ -872,9 +872,9 @@ local function addSimonMDSecretEntrancesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_SimonMD_Others"),
+        "IGUI_BuildingMenuCat_SimonMD_Others",
         "fixtures_doors_Simon_MD_30",
-        getText("IGUI_BuildingMenuSubCat_SimonMD_Secret_Entrances"),
+        "IGUI_BuildingMenuSubCat_SimonMD_Secret_Entrances",
         "fixtures_doors_Simon_MD_30",
         simonMDOthers
     )
@@ -940,9 +940,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "furniture_Simon_MD_72",
-        getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors",
         "furniture_Simon_MD_72",
         simonMDGarageDoorsObjects
     )
@@ -955,9 +955,9 @@ local function addGarageDoorsToMenu()
 
     BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "furniture_Simon_MD_72",
-        getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
+        "IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors",
         "furniture_Simon_MD_72",
         simonMDGarageDoorsObjects
     )
@@ -966,7 +966,7 @@ end
 local function addMetalContainersToMenu()
     local metalContainers = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Lockers"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Lockers",
             subCategoryIcon = "furniture_Simon_MD_1",
             objects = {
                 BuildingMenu.createObject(
@@ -1046,7 +1046,7 @@ local function addMetalContainersToMenu()
     for k, subCatData in pairs(metalContainers) do
         BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         "furniture_Simon_MD_1",
         subCatData.subcategoryName,
         subCatData.subCategoryIcon,
@@ -1058,7 +1058,7 @@ end
 local function addDoubleDoorToMenu()
     local doubleDoors = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Double_Door_Gates"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Double_Door_Gates",
             subCategoryIcon = "fixtures_doors_fences_Simon_MD_0",
             objects = {
                 BuildingMenu.createObject(
@@ -1084,7 +1084,7 @@ local function addDoubleDoorToMenu()
     for k, subCatData in pairs(doubleDoors) do
         BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "fixtures_doors_fences_Simon_MD_0",
         subCatData.subcategoryName,
         subCatData.subCategoryIcon,
@@ -1097,7 +1097,7 @@ local function addDoorsToMenu()
     local doors =
     {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Scrap_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Scrap_Doors",
             subCategoryIcon = "fixtures_doors_Simon_MD_20",
             objects = {
                 BuildingMenu.createObject(
@@ -1143,7 +1143,7 @@ local function addDoorsToMenu()
     for k, subCatData in pairs(doors) do
         BuildingMenu.addObjectsToCategories(
         "Simon MDs",
-        getText("IGUI_BuildingMenuCat_Doors"),
+        "IGUI_BuildingMenuCat_Doors",
         "fixtures_doors_Simon_MD_20",
         subCatData.subcategoryName,
         subCatData.subCategoryIcon,

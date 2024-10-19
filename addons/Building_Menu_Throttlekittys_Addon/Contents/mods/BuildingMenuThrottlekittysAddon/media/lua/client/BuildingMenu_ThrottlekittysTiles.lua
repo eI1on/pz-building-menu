@@ -7,7 +7,7 @@ require("BuildingMenu04_CategoriesDefinitions")
 local function addMetalContainersToMenu()
     local metalContainers = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Containers_Metal"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Containers_Metal",
             subCategoryIcon = "fixtures_counters_tk_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -66,7 +66,7 @@ local function addMetalContainersToMenu()
     for k, subCatData in pairs(metalContainers) do
         BuildingMenu.addObjectsToCategories(
             "Throttlekitty",
-            getText("IGUI_BuildingMenuCat_Containers"),
+            "IGUI_BuildingMenuCat_Containers",
             "fixtures_counters_tk_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -104,9 +104,9 @@ local function addCratesToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Throttlekitty",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Crates"),
+        "IGUI_BuildingMenuSubCat_Containers_Crates",
         "industry_tk_02_32",
         crate
     )
@@ -139,9 +139,9 @@ local function addStairsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Throttlekitty",
-        getText("IGUI_BuildingMenuCat_Junkyard"),
+        "IGUI_BuildingMenuCat_Junkyard",
         "junkyard_tk_02_5",
-        getText("IGUI_BuildingMenuSubCat_Stairs_Junkyard"),
+        "IGUI_BuildingMenuSubCat_Stairs_Junkyard",
         "junkyard_tk_02_5",
         junkyardStairs
     )
@@ -266,9 +266,9 @@ local function addStairsToMenu()
         }
         BuildingMenu.addObjectsToCategories(
             "Throttlekitty",
-            getText("IGUI_BuildingMenuCat_Junkyard"),
+            "IGUI_BuildingMenuCat_Junkyard",
             nil,
-            getText("IGUI_BuildingMenuSubCat_Junkyard_Decorations"),
+            "IGUI_BuildingMenuSubCat_Junkyard_Decorations",
             "junkyard_tk_02_18",
             decorations
         )
@@ -408,9 +408,9 @@ local function addStairsToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Throttlekitty",
-        getText("IGUI_BuildingMenuCat_Junkyard"),
+        "IGUI_BuildingMenuCat_Junkyard",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Junkyard_Decorations"),
+        "IGUI_BuildingMenuSubCat_Junkyard_Decorations",
         "junkyard_tk_02_18",
         decorations
     )
@@ -419,7 +419,7 @@ end
 local function addIndustrialWallsToMenu()
     local industrialWalls = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_White_Industrial_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_White_Industrial_Walls",
             subCategoryIcon = "industry_tk_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -637,7 +637,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Blue_Industrial_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Blue_Industrial_Walls",
             subCategoryIcon = "industry_tk_01_4",
             objects = {
                 BuildingMenu.createObject(
@@ -855,7 +855,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Light_Green_Industrial_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Light_Green_Industrial_Walls",
             subCategoryIcon = "industry_tk_01_24",
             objects = {
                 BuildingMenu.createObject(
@@ -1073,7 +1073,7 @@ local function addIndustrialWallsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Walls_Green_Industrial_Walls"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Walls_Green_Industrial_Walls",
             subCategoryIcon = "industry_tk_01_28",
             objects = {
                 BuildingMenu.createObject(
@@ -1294,7 +1294,7 @@ local function addIndustrialWallsToMenu()
     for k, subCatData in pairs(industrialWalls) do
         BuildingMenu.addObjectsToCategories(
             "Throttlekitty",
-            getText("IGUI_BuildingMenuCat_Walls"),
+            "IGUI_BuildingMenuCat_Walls",
             "industry_tk_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -1362,9 +1362,9 @@ local function addLightingToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Throttlekitty",
-        getText("IGUI_BuildingMenuCat_Lighting"),
+        "IGUI_BuildingMenuCat_Lighting",
         "lighting_outdoor_tk_01_12",
-        getText("IGUI_BuildingMenuSubCat_Lighting_Outdoor"),
+        "IGUI_BuildingMenuSubCat_Lighting_Outdoor",
         "lighting_outdoor_tk_01_12",
         lighting
     )
@@ -1373,7 +1373,7 @@ end
 local function addSeatingFurnitureToMenu()
     local seatingFurniture = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Couches"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Couches",
             subCategoryIcon = "seating_outdoor_tk_01_7",
             objects = {
                 BuildingMenu.createObject(
@@ -1475,7 +1475,7 @@ local function addSeatingFurnitureToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Furniture_Chairs"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Furniture_Chairs",
             subCategoryIcon = "seating_outdoor_tk_01_16",
             objects = {
                 BuildingMenu.createObject(
@@ -1516,7 +1516,7 @@ local function addSeatingFurnitureToMenu()
     for k, subCatData in pairs(seatingFurniture) do
         BuildingMenu.addObjectsToCategories(
             "Throttlekitty",
-            getText("IGUI_BuildingMenuCat_Furniture"),
+            "IGUI_BuildingMenuCat_Furniture",
             "seating_outdoor_tk_01_7",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,
@@ -1671,9 +1671,9 @@ local function addTrashCansToMenu()
     }
     BuildingMenu.addObjectsToCategories(
         "Throttlekitty",
-        getText("IGUI_BuildingMenuCat_Containers"),
+        "IGUI_BuildingMenuCat_Containers",
         nil,
-        getText("IGUI_BuildingMenuSubCat_Containers_Trash_Cans"),
+        "IGUI_BuildingMenuSubCat_Containers_Trash_Cans",
         "trash_containers_tk_01_0",
         trashCans
     )
@@ -1682,7 +1682,7 @@ end
 local function addGarageDoorsToMenu()
     local garageDoors = {
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_3_Tiles_Garage_Doors",
             subCategoryIcon = "walls_garage_tk_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -1706,7 +1706,7 @@ local function addGarageDoorsToMenu()
             }
         },
         {
-            subcategoryName = getText("IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors"),
+            subcategoryName = "IGUI_BuildingMenuSubCat_Doors_4_Tiles_Garage_Doors",
             subCategoryIcon = "walls_garage_tk_01_0",
             objects = {
                 BuildingMenu.createObject(
@@ -1736,7 +1736,7 @@ local function addGarageDoorsToMenu()
     for k, subCatData in pairs(garageDoors) do
         BuildingMenu.addObjectsToCategories(
             "Throttlekitty",
-            getText("IGUI_BuildingMenuCat_Doors"),
+            "IGUI_BuildingMenuCat_Doors",
             "walls_garage_tk_01_0",
             subCatData.subcategoryName,
             subCatData.subCategoryIcon,

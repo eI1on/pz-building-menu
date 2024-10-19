@@ -47,10 +47,10 @@ local function addLightingToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Lighting"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Lighting",
         "lighting_outdoor_01_49",
-        getText("IGUI_BuildingMenuSubCat_Lighting_Indoor"),
+        "IGUI_BuildingMenuSubCat_Lighting_Indoor",
         "building_menu_lighting_29",
         lighting
     )
@@ -179,10 +179,10 @@ local function addLightingToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Lighting"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Lighting",
         "lighting_outdoor_01_49",
-        getText("IGUI_BuildingMenuSubCat_Lighting_Outdoor"),
+        "IGUI_BuildingMenuSubCat_Lighting_Outdoor",
         "lighting_outdoor_01_27",
         lighting
     )
@@ -332,10 +332,10 @@ local function addLightingToMenu()
         ),
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Lighting"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Lighting",
         "lighting_outdoor_01_49",
-        getText("IGUI_BuildingMenuSubCat_Lighting_Light_Posts"),
+        "IGUI_BuildingMenuSubCat_Lighting_Light_Posts",
         "lighting_outdoor_01_49",
         lighting
     )
@@ -515,10 +515,10 @@ local function addBathroomAppliancesToMenu()
     )
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Appliances",
         "fixtures_sinks_01_21",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Bathroom"),
+        "IGUI_BuildingMenuSubCat_Appliances_Bathroom",
         "fixtures_sinks_01_21",
         bathroomObjects
     )
@@ -631,10 +631,10 @@ local function addCookingAppliancesToMenu()
     )
 
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Appliances",
         "appliances_cooking_01_35",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Cooking"),
+        "IGUI_BuildingMenuSubCat_Appliances_Cooking",
         "appliances_cooking_01_35",
         cookingObjects
     )
@@ -784,10 +784,10 @@ local function addFridgeAppliancesToMenu()
         )
     )
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Appliances",
         "appliances_refrigeration_01_1",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Fridges"),
+        "IGUI_BuildingMenuSubCat_Appliances_Fridges",
         "appliances_refrigeration_01_1",
         fridgesObjects
     )
@@ -874,10 +874,10 @@ local function addLaundryAppliancesToMenu()
         )
     }
     BuildingMenu.addObjectsToCategories(
-        getText("IGUI_BuildingMenuTab_General"),
-        getText("IGUI_BuildingMenuCat_Appliances"),
+        "IGUI_BuildingMenuTab_General",
+        "IGUI_BuildingMenuCat_Appliances",
         "appliances_laundry_01_1",
-        getText("IGUI_BuildingMenuSubCat_Appliances_Laundry"),
+        "IGUI_BuildingMenuSubCat_Appliances_Laundry",
         "appliances_laundry_01_1",
         laundryObjects
     )
