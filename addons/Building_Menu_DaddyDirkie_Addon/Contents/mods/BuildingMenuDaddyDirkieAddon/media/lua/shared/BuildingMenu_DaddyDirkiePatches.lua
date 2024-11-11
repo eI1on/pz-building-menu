@@ -211,6 +211,86 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         "PlaceTool",
     });
 
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "industry_dirkea_ddd_01_15",
+    }, {
+        { "BlocksPlacement", "", false },
+        { "CanBreak", "", false },
+        { "CanScrap", "", false },
+        { "CustomName", "Shelves", false },
+        { "Eoffset", "-2", false },
+        { "Facing", "S", false },
+        { "IsMoveAble", "", false },
+        { "ItemHeight", "60", false },
+        { "Material", "MetalPlates", false },
+        { "Material2", "MetalBars", false },
+        { "PickUpLevel", "4", false },
+        { "PickUpWeight", "200", false },
+        { "SpriteGridPos", "1,0", false },
+        { "container", "metal_shelves", false },
+        { IsoFlagType.container },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "industry_dirkea_ddd_01_14",
+    }, {
+        { "BlocksPlacement", "", false },
+        { "CanBreak", "", false },
+        { "CanScrap", "", false },
+        { "CustomName", "Shelves", false },
+        { "Eoffset", "-1", false },
+        { "Facing", "S", false },
+        { "IsMoveAble", "", false },
+        { "ItemHeight", "60", false },
+        { "Material", "MetalPlates", false },
+        { "Material2", "MetalBars", false },
+        { "PickUpLevel", "4", false },
+        { "PickUpWeight", "200", false },
+        { "SpriteGridPos", "0,0", false },
+        { "container", "metal_shelves", false },
+        { IsoFlagType.container },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "industry_dirkea_ddd_01_12",
+    }, {
+        { "BlocksPlacement", "", false },
+        { "CanBreak", "", false },
+        { "CanScrap", "", false },
+        { "CustomName", "Shelves", false },
+        { "Soffset", "2", false },
+        { "Facing", "E", false },
+        { "IsMoveAble", "", false },
+        { "ItemHeight", "60", false },
+        { "Material", "MetalPlates", false },
+        { "Material2", "MetalBars", false },
+        { "PickUpLevel", "4", false },
+        { "PickUpWeight", "200", false },
+        { "SpriteGridPos", "0,1", false },
+        { "container", "metal_shelves", false },
+        { IsoFlagType.container },
+    });
+
+    BM_Utils.setOrUnsetSpriteProperties(manager, {
+        "industry_dirkea_ddd_01_13",
+    }, {
+        { "BlocksPlacement", "", false },
+        { "CanBreak", "", false },
+        { "CanScrap", "", false },
+        { "CustomName", "Shelves", false },
+        { "Soffset", "1", false },
+        { "Facing", "E", false },
+        { "IsMoveAble", "", false },
+        { "ItemHeight", "60", false },
+        { "Material", "MetalPlates", false },
+        { "Material2", "MetalBars", false },
+        { "PickUpLevel", "4", false },
+        { "PickUpWeight", "200", false },
+        { "SpriteGridPos", "0,0", false },
+        { "container", "metal_shelves", false },
+        { IsoFlagType.container },
+    });
+
     -- BM_Utils.setOrUnsetSpriteProperties(manager, {
     --     "industry_dirkea_ddd_01_10"
     -- }, {

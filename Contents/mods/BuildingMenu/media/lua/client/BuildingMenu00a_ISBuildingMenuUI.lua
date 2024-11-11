@@ -634,53 +634,49 @@ ISBuildingMenuUI.players             = {};
 
 local objectsInitialized             = false;
 
---- Opens the Building Menu UI panel
+--- Opens the Building Menu UI panel for the player.
 ---@param playerObj IsoPlayer
 function ISBuildingMenuUI.openPanel(playerObj)
+    local function calculateDurationMs(startTime, endTime)
+        local durationNs = endTime - startTime;
+        return string.format("%.2f", durationNs / 1000000);
+    end
+
     local modData = playerObj:getModData();
     local savedPosition = modData.BMUIPosition;
-    local width, height, x, y;
+
     local screenWidth = getCore():getScreenWidth();
     local screenHeight = getCore():getScreenHeight();
+
+    local width, height, x, y = 570, 400, (screenWidth / 2) - 285, (screenHeight / 2) - 200;
 
     if savedPosition then
         width = savedPosition.width;
         height = savedPosition.height;
         x = savedPosition.x;
         y = savedPosition.y;
-    else
-        width = 570;
-        height = 400;
-        x = (screenWidth / 2) - (width / 2);
-        y = (screenHeight / 2) - (height / 2);
     end
 
-    if x + width > screenWidth then
-        x = screenWidth - width;
-    end
-    if y + height > screenHeight then
-        y = screenHeight - height;
-    end
-    if x < 0 then x = 0; end
-    if y < 0 then y = 0; end
+    x = math.max(0, math.min(x, screenWidth - width));
+    y = math.max(0, math.min(y, screenHeight - height));
+
+    GameTime.setServerTimeShift(0);
+    local getTime = GameTime.getServerTime;
 
     if not objectsInitialized then
-        local startTime = getTimestampMs();
+        local startTime = getTime();
         triggerEvent("OnInitializeBuildingMenuRecipes");
-        local midTime = getTimestampMs();
+        local midTime = getTime();
         triggerEvent("OnInitializeBuildingMenuObjects");
-        local endTime = getTimestampMs();
+        local endTime = getTime();
 
-        local recipesDuration = midTime - startTime;
-        local objectsDuration = endTime - midTime;
-
-        BM_Logger:debug("Time taken to initialize recipes: " .. recipesDuration .. " ms");
-        BM_Logger:debug("Time taken to initialize objects: " .. objectsDuration .. " ms");
+        BM_Logger:debug("Time taken to initialize recipes: " .. calculateDurationMs(startTime, midTime) .. " ms");
+        BM_Logger:debug("Time taken to initialize objects: " .. calculateDurationMs(midTime, endTime) .. " ms");
 
         objectsInitialized = true;
     end
 
-    local uiStartTime = getTimestampMs();
+    local uiStartTime = getTime();
     containerDetailsBySpriteCache = {};
 
     local BMUI = ISBuildingMenuUI.instance;
@@ -699,9 +695,8 @@ function ISBuildingMenuUI.openPanel(playerObj)
         end
     end
 
-    local uiEndTime = getTimestampMs();
-    local uiDuration = uiEndTime - uiStartTime;
-    BM_Logger:debug("Time taken to initialize UI: " .. uiDuration .. " ms");
+    local uiEndTime = getTime();
+    BM_Logger:debug("Time taken to initialize UI: " .. calculateDurationMs(uiStartTime, uiEndTime) .. " ms");
 end
 
 function ISBuildingMenuUI:close()
@@ -861,7 +856,7 @@ function ISBuildingMenuUI:onGearButtonClick()
     if isBuildRoofActive then
         local option = context:addOption("Floor is Ceiling", self, function(self)
             self.floorIsRoof = not self.floorIsRoof;
-            BM_Logger:info("Floor Is Roof: " .. self.floorIsRoof);
+            BM_Logger:info("Floor Is Roof: " .. tostring(self.floorIsRoof));
         end);
         context:setOptionChecked(option, self.floorIsRoof);
     end

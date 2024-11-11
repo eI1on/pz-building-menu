@@ -2111,6 +2111,8 @@ Tooltip_EN = {
   Tooltip_BuildingMenuObj_Car_Lift_Lower = "Car Lift Lower Part",
   Tooltip_BuildingMenuObj_Car_Lift_Middle = "Car Lift Lower Middle Part",
 
+  Tooltip_BuildingMenuObj_Concrete_Wheel_Stop = "Concrete Wheel Stop",
+
   Tooltip_Posters_Generic = "Decorative poster that can add some character to your safehouse. Personalize your space with your favorite images and artwork.",
   Tooltip_Signs_Generic = "Generic sign, useful for conveying messages or marking key locations",
   Tooltip_Rug_Generic = "A cozy and versatile rug, adding warmth and style to your post-apocalyptic hideout.",

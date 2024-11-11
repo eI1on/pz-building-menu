@@ -7,8 +7,6 @@ local getTextOrNull = getTextOrNull
 local pairs = pairs
 ---@type function
 local ipairs = ipairs
----@type function
-local getText = getText
 
 --- Finds an item in a list by a key-value pair, or creates and adds it if not found
 --- @param list table The list to search or add the item to
@@ -33243,7 +33241,7 @@ local function addOtherDecorationsToMenu()
                     "",
                     "Tooltip_Roadway_Generic",
                     BuildingMenu.onBuildSimpleFurniture,
-                    BuildingMenu.FlowerBedRecipe,
+                    BuildingMenu.BirdBathRecipe,
                     true,
                     {
                         completionSound = "BuildWoodenStructureLarge",
@@ -33386,6 +33384,68 @@ local function addOtherDecorationsToMenu()
                         northSprite2 = "street_decoration_01_61",
                         northSprite3 = "street_decoration_01_62",
                         northSprite4 = "street_decoration_01_63"
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "",
+                    "Tooltip_Roadway_Generic",
+                    BuildingMenu.onBuildSimpleFurniture,
+                    BuildingMenu.ConcreteBarrierRecipe,
+                    true,
+                    {
+                        completionSound = "BuildMetalStructureMedium"
+                    },
+                    {
+                        sprite = "street_decoration_01_29",
+                        northSprite = "street_decoration_01_28",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Concrete_Wheel_Stop",
+                    "Tooltip_Roadway_Generic",
+                    BuildingMenu.onBuildThreeTileSimpleFurniture,
+                    BuildingMenu.ConcreteBarrierRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isCorner = true,
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = false,
+                        canPassThrough = true,
+                        canBarricade = false
+                    },
+                    {
+                        sprite = "street_decoration_01_35",
+                        sprite2 = "street_decoration_01_36",
+                        sprite3 = "street_decoration_01_37",
+                        northSprite = "street_decoration_01_32",
+                        northSprite2 = "street_decoration_01_33",
+                        northSprite3 = "street_decoration_01_34",
+                    }
+                ),
+                BuildingMenu.createObject(
+                    "Tooltip_BuildingMenuObj_Concrete_Wheel_Stop",
+                    "Tooltip_Roadway_Generic",
+                    BuildingMenu.onBuildThreeTileSimpleFurniture,
+                    BuildingMenu.ConcreteBarrierRecipe,
+                    true,
+                    {
+                        completionSound = "BuildWoodenStructureSmall",
+                        isCorner = true,
+                        needToBeAgainstWall = false,
+                        blockAllTheSquare = false,
+                        renderFloorHelper = false,
+                        canPassThrough = true,
+                        canBarricade = false
+                    },
+                    {
+                        sprite = "street_decoration_01_43",
+                        sprite2 = "street_decoration_01_44",
+                        sprite3 = "street_decoration_01_45",
+                        northSprite = "street_decoration_01_40",
+                        northSprite2 = "street_decoration_01_41",
+                        northSprite3 = "street_decoration_01_42",
                     }
                 ),
             }

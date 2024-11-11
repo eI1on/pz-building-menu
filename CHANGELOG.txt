@@ -1,7 +1,29 @@
- OCT 24
+11 NOV 24
 
 Changelog:
 [list]
+Main mod:
+[list]
+[*] Fixed an error with "Floor is Roof" option in the gear setting when trying to enable it
+[*] Added new buildable items: Concrete Barrier and Concrete Wheel Stop
+[*] Fixed an issue with Stair Railings not consuming materials during construction
+[/list]
+Daddy Dirkie Tiles Addon:
+[list]
+[*] Fixed not being able to pick up Large Metal Shelves
+[/list]
+[/list]
+
+
+19 OCT 24
+06d4a19
+
+Changelog:
+[list]
+All mods:
+[list]
+[*] Modifications on how translations are retrieved for subcategories and categories names
+[/list]
 Main mod:
 [list]
 [*] Added trailer windows. Enabled the ability to pick them up

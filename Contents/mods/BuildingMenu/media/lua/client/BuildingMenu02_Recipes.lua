@@ -6444,6 +6444,54 @@ local function initBuildingMenuRecipes()
         }
     }
 
+    BuildingMenu.BirdBathRecipe = {
+        neededTools = {
+            "Shovel"
+        },
+        neededMaterials = {
+            {
+                Material = "Base.Stone",
+                Amount = 3
+            }
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BucketWaterFull",
+                Amount = 3
+            },
+            {
+                Consumable = "Base.BucketConcreteFull",
+                Amount = 1
+            }
+        },
+        skills = {
+            {
+                Skill = "Farming",
+                Level = 4,
+                Xp = 15
+            }
+        }
+    }
+
+    BuildingMenu.ConcreteBarrierRecipe = {
+        neededTools = {
+            "HandShovel"
+        },
+        useConsumable = {
+            {
+                Consumable = "Base.BucketConcreteFull",
+                Amount = 3
+            }
+        },
+        skills = {
+            {
+                Skill = "Woodwork",
+                Level = smallObjectsCarpentrySkill,
+                Xp = BuildingMenu.round(smallObjectsCarpentrySkill * carpentryXpPerLevel)
+            },
+        }
+    }
+
     BuildingMenu.HedgeRecipe = {
         neededTools = {
             "Shovel"

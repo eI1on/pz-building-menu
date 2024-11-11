@@ -17,7 +17,7 @@ ISStairRailings = ISBuildingObject:derive('ISStairRailings')
 --- @param northSprite5 string North-facing variant of the fifth sprite
 --- @return ISStairRailings ISBuildingObject instance
 function ISStairRailings:new(sprite, sprite2, sprite3, sprite4, sprite5, northSprite, northSprite2, northSprite3,
-                                  northSprite4, northSprite5)
+                             northSprite4, northSprite5)
     local o = {};
     setmetatable(o, self);
     self.__index = self;
@@ -46,11 +46,10 @@ function ISStairRailings:new(sprite, sprite2, sprite3, sprite4, sprite5, northSp
     return o;
 end
 
-
 --- Creates the four parts of the garage railing on the map
 --- @param x integer x coordinate in the world
 --- @param y integer y coordinate in the world
---- @param z integer z coordinate 
+--- @param z integer z coordinate
 --- @param north boolean Whether the railing is facing north
 function ISStairRailings:create(x, y, z, north, sprite)
     local cell = getWorld():getCell();
@@ -78,13 +77,14 @@ function ISStairRailings:create(x, y, z, north, sprite)
     self:createPart(xb, yb, zb, north, spriteBName, 3);
     self:createPart(xc, yc, zc, north, spriteCName, 4);
     self:createPart(xd, yd, zd, north, spriteDName, 5);
-end
 
+    buildUtil.consumeMaterial(self);
+end
 
 --- Adds a single part of the garage railing to the specified location
 --- @param x integer x coordinate where the part should be placed
 --- @param y integer y coordinate where the part should be placed
---- @param z integer z coordinate 
+--- @param z integer z coordinate
 --- @param north boolean Orientation of the part
 --- @param sprite string The sprite for this part
 --- @param index integer The index of the part (1-4)
@@ -107,21 +107,19 @@ function ISStairRailings:createPart(x, y, z, north, sprite, index)
     self.javaObject:transmitCompleteItemToServer();
 end
 
-
 --- Returns the health of the garage railing based on material and construction
 --- @return integer health The calculated health value
 function ISStairRailings:getHealth()
     if self.usedTools then
-		for i, tool in ipairs(self.usedTools) do
-			local toolType = tool.toolType;
-			if toolType == "BlowTorch" then
-				return 300 + BM_Utils.getMetalHealth(self);
-			end
-		end
-	end
-	return 250 + buildUtil.getWoodHealth(self);
+        for i, tool in ipairs(self.usedTools) do
+            local toolType = tool.toolType;
+            if toolType == "BlowTorch" then
+                return 300 + BM_Utils.getMetalHealth(self);
+            end
+        end
+    end
+    return 250 + buildUtil.getWoodHealth(self);
 end
-
 
 --- Checks if the specified square is a valid location for placing the garage railing
 --- @param square IsoGridSquare The square to check for validity
@@ -169,11 +167,10 @@ function ISStairRailings:isValid(square)
     return true;
 end
 
-
 --- Renders a ghost tile of the garage railing at the specified location for pre-placement visualization
 --- @param x integer x coordinate in the world
 --- @param y integer y coordinate in the world
---- @param z integer z coordinate 
+--- @param z integer z coordinate
 --- @param square IsoGridSquare The square where the garage railing will be placed
 function ISStairRailings:render(x, y, z, square)
     local haveMaterials = self:haveMaterial(square);
@@ -201,28 +198,28 @@ function ISStairRailings:render(x, y, z, square)
     -- squares for the additional tiles
     local squareA = getCell():getGridSquare(xa, ya, za)
     if squareA == nil and getWorld():isValidSquare(xa, ya, za) then
----@diagnostic disable-next-line: param-type-mismatch
+        ---@diagnostic disable-next-line: param-type-mismatch
         squareA = IsoGridSquare.new(getCell(), nil, xa, ya, za);
         getCell():ConnectNewSquare(squareA, false);
     end
 
     local squareB = getCell():getGridSquare(xb, yb, zb)
     if squareB == nil and getWorld():isValidSquare(xb, yb, zb) then
----@diagnostic disable-next-line: param-type-mismatch
+        ---@diagnostic disable-next-line: param-type-mismatch
         squareB = IsoGridSquare.new(getCell(), nil, xb, yb, zb);
         getCell():ConnectNewSquare(squareB, false);
     end
 
     local squareC = getCell():getGridSquare(xc, yc, zc)
     if squareC == nil and getWorld():isValidSquare(xc, yc, zc) then
----@diagnostic disable-next-line: param-type-mismatch
+        ---@diagnostic disable-next-line: param-type-mismatch
         squareC = IsoGridSquare.new(getCell(), nil, xc, yc, zc);
         getCell():ConnectNewSquare(squareC, false);
     end
 
     local squareD = getCell():getGridSquare(xd, yd, zd)
     if squareD == nil and getWorld():isValidSquare(xd, yd, zd) then
----@diagnostic disable-next-line: param-type-mismatch
+        ---@diagnostic disable-next-line: param-type-mismatch
         squareD = IsoGridSquare.new(getCell(), nil, xd, yd, zd);
         getCell():ConnectNewSquare(squareD, false);
     end
@@ -254,9 +251,15 @@ function ISStairRailings:render(x, y, z, square)
         spriteDFree = false;
     end
 
-    if square:isSomethingTo(squareA) then spriteFree = false; spriteAFree = false; end
-    if squareA:isSomethingTo(squareB) then spriteAFree = false; spriteBFree = false; end
-    if squareC:isSomethingTo(squareD) then spriteCFree = false; spriteDFree = false; end
+    if square:isSomethingTo(squareA) then
+        spriteFree = false; spriteAFree = false;
+    end
+    if squareA:isSomethingTo(squareB) then
+        spriteAFree = false; spriteBFree = false;
+    end
+    if squareC:isSomethingTo(squareD) then
+        spriteCFree = false; spriteDFree = false;
+    end
 
     -- render floor helpers if enabled
     if self.renderFloorHelper then
@@ -274,12 +277,11 @@ function ISStairRailings:render(x, y, z, square)
     self:renderPart(spriteDName, xd, yd, zd, spriteDFree);
 end
 
-
 ---Renders a ghost tile part of the furniture
 ---@param spriteName string The name of the sprite to render
 ---@param x integer x coordinate in the world
 ---@param y integer y coordinate in the world
----@param z integer z coordinate 
+---@param z integer z coordinate
 ---@param isFree boolean Whether the tile is free to place the part
 function ISStairRailings:renderPart(spriteName, x, y, z, isFree)
     if not self.RENDER_SPRITE_CACHE[spriteName] then
@@ -295,12 +297,11 @@ function ISStairRailings:renderPart(spriteName, x, y, z, isFree)
     end
 end
 
-
 ---Renders a floor helper tile
 ---@param index integer The index of the part to check for
 ---@param x integer x coordinate in the world
 ---@param y integer y coordinate in the world
----@param z integer z coordinate 
+---@param z integer z coordinate
 function ISStairRailings:renderFloorHelperTile(index, x, y, z)
     local helperSpriteName = 'carpentry_02_56';
     if not self.RENDER_SPRITE_FLOOR_CACHE then
@@ -313,28 +314,27 @@ function ISStairRailings:renderFloorHelperTile(index, x, y, z)
     self.RENDER_SPRITE_FLOOR_CACHE[index]:RenderGhostTile(x, y, z);
 end
 
-
 ---Checks if a single tile is valid for furniture placement
 ---@param square IsoGridSquare The square to check
 ---@return boolean validity
 function ISStairRailings:checkSingleTileValidity(square)
     if not square then return false; end
 
-    -- ISBuildingObject:isValid without the check for materials on square, we only check for the first part of the obj 
----@diagnostic disable-next-line: param-type-mismatch
+    -- ISBuildingObject:isValid without the check for materials on square, we only check for the first part of the obj
+    ---@diagnostic disable-next-line: param-type-mismatch
     if self.notExterior and not square:Is(IsoFlagType.exterior) then return false; end
-	if square:isVehicleIntersecting() then return false end
-	if self.canBeAlwaysPlaced then
-		-- even if we can place this item everywhere, we can't place 2 same objects on the same tile
-		for i=0,square:getObjects():size()-1 do
-			local obj = square:getObjects():get(i);
-			if self:getSprite() == obj:getTextureName() then
-				return false
-			end
-		end
-		return true
-	end
-	local blockedByCharacters = self.isWallLike ~= true;
+    if square:isVehicleIntersecting() then return false end
+    if self.canBeAlwaysPlaced then
+        -- even if we can place this item everywhere, we can't place 2 same objects on the same tile
+        for i = 0, square:getObjects():size() - 1 do
+            local obj = square:getObjects():get(i);
+            if self:getSprite() == obj:getTextureName() then
+                return false
+            end
+        end
+        return true
+    end
+    local blockedByCharacters = self.isWallLike ~= true;
     if not square:isFreeOrMidair(blockedByCharacters) or not buildUtil.canBePlace(self, square) then return false; end
 
     -- if buildUtil.stairIsBlockingPlacement(square, true) then return false; end
@@ -345,7 +345,6 @@ function ISStairRailings:checkSingleTileValidity(square)
     -- if all checks passed, return true
     return true;
 end
-
 
 --- Calculates the world coordinates for the second part of the garage railing based on its orientation
 --- @param square IsoGridSquare The square where the main part is placed
@@ -362,7 +361,6 @@ function ISStairRailings:getSquare2Pos(square, north)
     return x, y, z;
 end
 
-
 --- Calculates the world coordinates for the third part of the garage railing based on its orientation
 --- @param square IsoGridSquare The square where the main part is placed
 --- @param north boolean True if the railing is facing north, affecting the calculation of positions
@@ -377,7 +375,6 @@ function ISStairRailings:getSquare3Pos(square, north)
     end
     return x, y, z;
 end
-
 
 --- Calculates the world coordinates for the fourth part of the garage railing based on its orientation
 --- @param square IsoGridSquare The square where the main part is placed
@@ -396,7 +393,6 @@ function ISStairRailings:getSquare4Pos(square, north)
     return x, y, z;
 end
 
-
 --- Calculates the world coordinates for the fifth part of the garage railing based on its orientation
 --- @param square IsoGridSquare The square where the main part is placed
 --- @param north boolean True if the railing is facing north, affecting the calculation of positions
@@ -413,7 +409,6 @@ function ISStairRailings:getSquare5Pos(square, north)
 
     return x, y, z;
 end
-
 
 --- Checks if a specific part of the garage railing already exists at a given square
 --- This is used to prevent duplicating parts on the same square and ensures each part is unique
@@ -436,7 +431,6 @@ function ISStairRailings:partExists(square, index)
     end
     return false;
 end
-
 
 ---Gets the sprite name for a part based on its index and orientation
 ---@param index integer|string|nil The index of the part

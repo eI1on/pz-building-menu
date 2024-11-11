@@ -1,3 +1,5 @@
+if not getActivatedMods():contains("BuildingMenu") then return; end
+
 ---@class BuildingMenu
 local BuildingMenu = require("BuildingMenu01_Main")
 require("BuildingMenu04_CategoriesDefinitions")
@@ -69,8 +71,6 @@ local function addSafesToBuildingMenu()
 end
 
 local function addCategoriesToBuildingMenu()
-    if getActivatedMods():contains("BuildingMenu") then
-        addSafesToBuildingMenu()
-    end
+    addSafesToBuildingMenu()
 end
 Events.OnInitializeBuildingMenuObjects.Add(addCategoriesToBuildingMenu)
