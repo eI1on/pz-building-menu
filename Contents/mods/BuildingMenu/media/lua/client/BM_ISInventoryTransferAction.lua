@@ -1,28 +1,86 @@
-require "TimedActions/ISInventoryTransferAction"
+local RestrictedItemsManager = {};
 
-local restrictedItems = {
-    TreeBranch = true, Twigs = true, Plank = true, Log = true, LogStacks2 = true, LogStacks3 = true, LogStacks4 = true,
-    ["10pkRopeBranch"] = true, ["5pkRopeBranch"] = true, ["10pkSheetRopeBranch"] = true, ["5pkSheetRopeBranch"] = true, 
-    ["10pkSheetRopePlank"] = true, ["5pkSheetRopePlank"] = true, ["10pkRopePlank"] = true, ["5pkRopePlank"] = true
+RestrictedItemsManager.restrictedItemsRepository = {
+    ["logs"] = {
+        ["Base.TreeBranch"] = true,
+        ["Base.Twigs"] = true,
+        ["Base.Plank"] = true,
+        ["Base.Log"] = true,
+        ["Base.LogStacks2"] = true,
+        ["Base.LogStacks3"] = true,
+        ["Base.LogStacks4"] = true,
+        ["Packing.10pkRopeBranch"] = true,
+        ["Packing.5pkRopeBranch"] = true,
+        ["Packing.10pkSheetRopeBranch"] = true,
+        ["Packing.5pkSheetRopeBranch"] = true,
+        ["Packing.10pkSheetRopePlank"] = true,
+        ["Packing.5pkSheetRopePlank"] = true,
+        ["Packing.10pkRopePlank"] = true,
+        ["Packing.5pkRopePlank"] = true,
+        ["A_Little_Handy.Stack_of_Planks"] = true,
+    }
 };
 
-local function isLogItemTransferRestricted(item, destContainer)
-    local itemType = item:getType();
-    local isLogContainer = destContainer:getType() == "logs";
-    local isRestrictedItem = restrictedItems[itemType] or false;
+--- Check if item transfer is restricted
+--- @param item InventoryItem
+--- @param destContainer ItemContainer
+--- @return boolean
+function RestrictedItemsManager.isItemTransferRestricted(item, destContainer)
+    local itemFullType = item:getFullType();
+    local containerType = destContainer:getType();
 
-    -- restrict transfer if the destination is a log container and the item is in the restricted list
-    if isLogContainer and not isRestrictedItem then return true; end
+    local sandboxEnabled = SandboxVars.BuildingMenu and SandboxVars.BuildingMenu[containerType .. "Restrictions"];
 
-    -- in all other cases, do not restrict
+    if sandboxEnabled == true or sandboxEnabled == nil then
+        local allowedItems = RestrictedItemsManager.restrictedItemsRepository[containerType];
+        if allowedItems then
+            local isAllowedItem = allowedItems[itemFullType] or false;
+            if not isAllowedItem then return true; end
+        end
+    end
+
     return false;
 end
 
-local originalIsValid = ISInventoryTransferAction.isValid
+--- Add a single restriction
+--- @param containerType string
+--- @param itemFullType string
+function RestrictedItemsManager.addRestriction(containerType, itemFullType)
+    RestrictedItemsManager.restrictedItemsRepository[containerType] =
+        RestrictedItemsManager.restrictedItemsRepository[containerType] or {};
+    RestrictedItemsManager.restrictedItemsRepository[containerType][itemFullType] = true;
+end
+
+--- Add multiple restrictions from a table
+--- @param containerType string
+--- @param itemFullTypes table
+function RestrictedItemsManager.addRestrictions(containerType, itemFullTypes)
+    RestrictedItemsManager.restrictedItemsRepository[containerType] =
+        RestrictedItemsManager.restrictedItemsRepository[containerType] or {};
+
+    for i = 1, #itemFullTypes do
+        local itemFullType = itemFullTypes[i];
+        RestrictedItemsManager.restrictedItemsRepository[containerType][itemFullType] = true;
+    end
+end
+
+--- Remove a single restriction
+--- @param containerType string
+--- @param itemFullType string
+function RestrictedItemsManager.removeRestriction(containerType, itemFullType)
+    if RestrictedItemsManager.restrictedItemsRepository[containerType] and RestrictedItemsManager.restrictedItemsRepository[containerType][itemFullType] then
+        RestrictedItemsManager.restrictedItemsRepository[containerType][itemFullType] = nil;
+    end
+end
+
+RestrictedItemsManager.originalIsValid = ISInventoryTransferAction.isValid;
 function ISInventoryTransferAction.isValid(self)
     if not self.item then return false; end
     if not self.destContainer then return false; end
-    if isLogItemTransferRestricted(self.item, self.destContainer) then return false; end
 
-    return originalIsValid(self);
+    if RestrictedItemsManager.isItemTransferRestricted(self.item, self.destContainer) then return false; end
+
+    return RestrictedItemsManager.originalIsValid(self);
 end
+
+return RestrictedItemsManager;

@@ -20,6 +20,7 @@ This document is currently a work in progress and presents practical guidelines 
 - [Buildables Sprites](#buildables-sprites)
   - [Sprites Definition](#sprites-definition)
 - [Building Menu Events](#building-menu-events)
+- [Adding Items and Container Restrictions](#adding-items-and-container-restrictions)
   <br>
   <br>
 
@@ -1121,9 +1122,9 @@ sprites =   {
 
 **Parameters**
 
-|   Name   |  Type |     Notes      |
-| -------- | ----- | -------------- |
-|  `None`  |    -  | No parameters. |
+| Name   | Type | Notes          |
+| ------ | ---- | -------------- |
+| `None` | -    | No parameters. |
 
 ## OnInitializeBuildingMenuObjects
 
@@ -1131,6 +1132,143 @@ sprites =   {
 
 **Parameters**
 
-|   Name   |  Type |     Notes      |
-| -------- | ----- | -------------- |
-|  `None`  |    -  | No parameters. |
+| Name   | Type | Notes          |
+| ------ | ---- | -------------- |
+| `None` | -    | No parameters. |
+
+<br>
+<br>
+
+# Adding Items and Container Restrictions
+
+This section provides guidelines for adding restrictions for specific items and containers. These restrictions control which items can be placed in certain container types.
+
+## Overview
+
+The restriction system allows you to define which items can be stored in specific containers. For instance, log containers can be restricted to only accept logs and related items. This is configured using Lua tables and sandbox options.
+
+### Key Components
+
+The `RestrictedItemsManager` module manages item restrictions for different container types. You can add, remove, or modify these restrictions using three key functions:
+
+- `addRestriction`: Adds a single restriction for a container type.
+- `addRestrictions`: Adds multiple restrictions for a container type.
+- `removeRestriction`: Removes a single restriction for a container type.
+
+The restrictions are further customizable through the **Sandbox Options** to enable or disable them dynamically based on player choices in the game.
+
+### Required File
+
+First, make sure to require the `RestrictedItemsManager` file in your Lua script.
+
+```lua
+local RestrictedItemsManager = require("BM_ISInventoryTransferAction");
+```
+
+### Functions
+
+<br>
+1. Adding a Single Restriction
+Use `addRestriction` to add a single item to the restriction list of a specific container. This ensures that only the specified items can be placed in the container.
+
+_function signature_
+
+```lua
+function RestrictedItemsManager.addRestriction(containerType, itemFullType);
+```
+
+`containerType`: The type of the container (e.g. "logs", "crates").<br>
+`itemFullType`: The full type of the item (e.g. "Base.Log", "Base.Plank").<br>
+
+Example<br>
+To add a restriction where only logs can be placed in the "logs" container:
+
+```lua
+RestrictedItemsManager.addRestriction("logs", "Base.Log");
+```
+
+<br>
+2. Adding Multiple Restrictions
+Use `addRestrictions` to add multiple items at once to the restriction list for a container. This is useful when you want to restrict several items in one container type.
+
+_function signature_
+
+```lua
+function RestrictedItemsManager.addRestrictions(containerType, itemFullTypes);
+```
+
+`containerType`: The type of the container (e.g. "logs", "crates").<br>
+`itemFullTypes`: A table containing the full types of items to be restricted (e.g. {"Base.Log", "Base.Twig", "Base.Plank"}).<br>
+
+Example<br>
+To restrict multiple items (logs, twigs, and planks) from being placed in the "logs" container:
+
+```lua
+local itemsToRestrict = {"Base.Log", "Base.Twig", "Base.Plank"};
+RestrictedItemsManager.addRestrictions("logs", itemsToRestrict);
+```
+
+<br>
+3. Removing a Single Restriction
+Use `removeRestriction` to remove a specific item from the restriction list for a container. This allows the item to be placed in the container again.
+
+_function signature_
+
+```lua
+function RestrictedItemsManager.removeRestriction(containerType, itemFullType);
+```
+
+`containerType`: The type of the container (e.g. "logs", "crates").<br>
+`itemFullTypes`: The full type of the item to be removed from the restriction list (e.g. "Base.Log", "Base.Twig").<br>
+
+Example:<br>
+To remove the restriction for logs being placed in the "logs" container:
+
+```lua
+RestrictedItemsManager.removeRestriction("logs", "Base.Log");
+```
+
+### Example: Complete Flow
+
+Here’s an example that adds and removes restrictions for a container type "logs".
+
+```lua
+if not getActivatedMods():contains("BuildingMenu") then return; end
+local RestrictedItemsManager = require("BM_ISInventoryTransferAction");
+
+-- add multiple restrictions for the "logs" container
+local itemsToRestrict = {"Base.Log", "Base.Twig", "Base.Plank"};
+RestrictedItemsManager.addRestrictions("logs", itemsToRestrict);
+
+-- add a single restriction for a "newContainer"
+RestrictedItemsManager.addRestriction("newContainer", "Base.NewItem");
+
+-- remove a restriction for "logs"
+RestrictedItemsManager.removeRestriction("logs", "Base.Log");
+```
+
+## Sandbox Options Integration
+
+Sandbox options offer players more flexibility to customize restrictions per playthrough.
+
+### Example of Sandbox Option Integration
+
+To add the ability to toggle restrictions per container, you need to add a new option in the `BuildingMenu` sandbox configuration table in `sandbox-options.txt` of your mod. The sandbox name will be made from `container_type` + `"Restrictions"`, like this:
+
+```lua
+option BuildingMenu.newContainerRestrictions
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_newContainerRestrictions,
+}
+```
+
+Add a user-friendly name and tooltip in the localization file (e.g. for `Sandbox_EN.txt`):
+```lua
+    Sandbox_BuildingMenu_newContainerRestrictions = "Logs Container Restrictions",
+    Sandbox_BuildingMenu_newContainerRestrictions_tooltip = "Turn <SPACE><RGB:1,0.8,0> OFF <RGB:1,1,1><SPACE> to allow any item to be placed in newContainer containers. Turn <SPACE><RGB:1,0.8,0> ON <RGB:1,1,1><SPACE> to restrict them to ... items.",
+```
+
+The `RestrictedItemsManager` automatically checks sandbox options and applies restrictions. No further updates to the core code are needed unless introducing new functionality.

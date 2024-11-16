@@ -8,6 +8,14 @@ option BuildingMenu.isThumpable
     translation = BuildingMenu_isThumpable,
 }
 
+option BuildingMenu.logsRestrictions
+{
+    type = boolean,
+    default = true,
+    page = BuildingMenu,
+    translation = BuildingMenu_logsRestrictions,
+}
+
 option BuildingMenu.EmptyBox1
 {
     type = boolean,
