@@ -167,6 +167,7 @@ Events.OnLoadedTileDefinitions.Add(function(manager)
         { IsoFlagType.container },
         { "container",          "bin",  false },
         { "ContainerCapacity",  "50",   false },
+        { "IsTrashCan",  "",   false },
     });
 
     BM_Utils.setOrUnsetSpriteProperties(manager, {
