@@ -28,16 +28,6 @@ local function initBuildingMenuRecipes()
                 BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, bigWallNailsCount, "Material")
             }
         },
-        useConsumable = {
-            {
-                Consumable = "Base.PaintRed",
-                Amount = 1
-            },
-            {
-                Consumable = "Base.PaintBrown",
-                Amount = 1
-            },
-        },
         skills = {
             {
                 Skill = "Woodwork",
@@ -46,6 +36,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBrownBigWoodWallRecipe, {
+        { type = "Base.PaintRed", amount = 1 },
+        { type = "Base.PaintBrown", amount = 1 },
+    })
 
     BuildingMenu.RedBrownSmallWoodWallRecipe = {
         neededTools = {
@@ -61,16 +55,6 @@ local function initBuildingMenuRecipes()
                 BuildingMenu.generateGroupAlternatives(BuildingMenu.GroupsAlternatives.Nails, smallWallNailsCount, "Material")
             },
         },
-        useConsumable = {
-            {
-                Consumable = "Base.PaintRed",
-                Amount = 1
-            },
-            {
-                Consumable = "Base.PaintBrown",
-                Amount = 1
-            },
-        },
         skills = {
             {
                 Skill = "Woodwork",
@@ -79,6 +63,10 @@ local function initBuildingMenuRecipes()
             }
         }
     }
+    BuildingMenu.addPaintToRecipe(BuildingMenu.RedBrownSmallWoodWallRecipe, {
+        { type = "Base.PaintRed", amount = 1 },
+        { type = "Base.PaintBrown", amount = 1 },
+    })
 
 end
 

@@ -1,3 +1,13 @@
+24 JAN 24
+
+Changelog:
+[list]
+ExtraNoise's Newburbs Tiles addon:
+[list]
+[*] Added the paint as optional to Red Brown Small Wood Wall Recipe and Red Brown Big Wood Wall Recipe
+[/list]
+[/list]
+
 11 NOV 24
 2bdf566
 
